@@ -54,6 +54,8 @@ The [artifact/manifest contract](../experiments/dependency_memory/ARTIFACT_WORKF
 
 The [development results](../experiments/dependency_memory/results/artifact_workflow_report.md) cover 320 constructed configurations and one explicit paired retention witness. Costs are synthetic action units, memory limits are receipt records, and serialized bytes are separate diagnostics. Fixtures and environment code are hashed in the outputs. All seeds are development seeds; there is no held-out empirical claim. These runs neither validate the bit-optimal theorem on natural language nor compare a new method with native compaction.
 
+The [metered recovery reference](../experiments/dependency_memory/RECOVERY_FRONTIER.md) now adds a separately declared late archive read and a complete uniform-route enumeration. It reports an exact expected incremental-cost frontier for atomic-record selectors under reliable recovery and nonbinding episode limits. The 2,640 scripted episodes verify executable reference policies and fixed heuristics; the 3,000-configuration grid is a deterministic calculation, not additional independent trials. Archive storage and API costs remain unmeasured. A model pilot should retain cheap-recovery and later-bottleneck controls where inspection does not pay, rather than evaluating only the favorable regime.
+
 ## Claim boundary
 
 The Theo/Jev criticism was supplied by the user; the specific Jev implementation and original post were not independently audited. It motivates failure cases but is not a citable measurement. No universal claim that filtering always harms performance, that native compaction is optimal, or that cache writes occupy a fixed share of spending follows from that discussion.

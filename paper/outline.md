@@ -4,14 +4,14 @@ This outline is a writing plan, not a list of achieved contributions.
 
 | Section | Argument | Evidence / claim IDs | Remaining work |
 |---|---|---|---|
-| Abstract | Delayed relevance can make individually adequate compressed representations incompatible. | C03–C05 | Rewrite after the actual final contribution is known. |
+| Abstract | Delayed relevance can make compressed representations incompatible; recovery changes the economics of inspection. | C03–C05, C11–C12, C17–C20 | Refine the final contribution after external review and model evidence. |
 | Introduction | Context length alone does not describe the information an agent must retain. Future obligations and available recovery matter. | C01–C02, C07–C09 | Choose one concrete motivating task and delimit claims about deployed systems. |
 | Related work | Relate the problem to prompt rate–distortion, random access, successive refinement, causal coding, and agent memory. | Bibliography; related-work map | Complete functional-compression comparison and novelty audit. |
-| Model | Specify X, S, J, E, U, D, budgets, public information, and no-reread rule. | C02 | Audit the new block-family extension before incorporating C11-C12. |
+| Model | Specify X, S, J, E, U, D, budgets, public information, and no-reread rule. | C02, C11–C12 | Local audit complete; external review outstanding. |
 | Finite obstruction | Prove the child-optimal decoder characterization, joint-signature lower bound, and three-bit witness. | C03–C05 | Independent mathematical review; optionally compute exact two-bit chain distortion. |
-| Structural result | Bound compatibility overhead for a restricted family. | C10: open | This is the proposed mathematical contribution, not an existing result. |
+| Structural result | Exact 3k-bit threshold and a uniform gap for a restricted block family. | C11–C13, C16 | External review, novelty, and possible tightening. |
 | Experimental design | Separate representation, natural-language updating, and autonomous task completion. | Protocol | Implement adapters, declare hidden-state treatment, and freeze tasks. |
-| Results | Report only completed diagnostics until genuine agent measurements exist. | C06 | Pilot, held-out evaluation, uncertainty and cost analysis. |
+| Results | Separate scripted timing diagnostics from exact restricted recovery expectations. | C06, C14–C15, C17–C20 | Freeze model pilot before adding empirical performance claims. |
 | Discussion | Native continuity, caching, recovery, complementarity, and limits of the abstraction. | C07–C09 | Relate any observed effect back to the formal mechanism. |
 | Reproducibility | Code, fixed instances, exact certificates, complete usage, and artifact provenance. | Prototype and migration manifest | Add model-run manifests only when runs exist. |
 

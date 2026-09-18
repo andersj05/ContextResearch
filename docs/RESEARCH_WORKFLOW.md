@@ -23,6 +23,7 @@ python experiments/dependency_memory/compatibility.py
 python experiments/dependency_memory/compatibility_scaling.py
 python experiments/dependency_memory/audit_scaling.py
 python experiments/dependency_memory/run_artifact_workflow.py
+python experiments/dependency_memory/run_recovery_frontier.py
 python scripts/validate_context_repo.py
 python scripts/build_paper.py
 ```

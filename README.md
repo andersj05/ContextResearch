@@ -4,7 +4,7 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
-The repository contains a checked finite example, a locally audited scaling derivation with a uniform error gap, and a deterministic artifact/manifest environment. External proof review and a novelty comparison remain open. The project does **not** yet establish an LLM performance improvement or savings over native Codex or Claude compaction.
+The repository contains a checked finite example, a locally audited scaling derivation with a uniform error gap, and a deterministic artifact/manifest environment with an exact restricted recovery reference. Start with the [living findings draft](paper/findings-draft.md) for a short account of the results and next research step. External proof review and novelty assessment remain open. The project does **not** yet establish an LLM performance improvement or savings over native Codex or Claude compaction.
 
 ## Start here
 
@@ -14,6 +14,7 @@ The repository contains a checked finite example, a locally audited scaling deri
 4. [Detailed research proposal](research/LIVE_DEPENDENCY_RESEARCH_PROPOSAL_2026-09-16.md) — model, proof, and experiment design.
 5. [Experiment protocol](docs/EXPERIMENT_PROTOCOL.md) — information access, native reasoning state, cache costs, and controls.
 6. [Proof audit](research/PROOF_AUDIT_2026-09-18.md) and [deterministic environment results](experiments/dependency_memory/results/artifact_workflow_report.md) — the latest completed work.
+7. [Recovery comparison](experiments/dependency_memory/results/recovery_frontier_report.md) and [literature positioning](research/LITERATURE_POSITIONING_2026-09-18.md) — when early inspection is worth its cost, and what remains unresolved.
 
 Agents should first read [AGENTS.md](AGENTS.md). Historical notes are evidence and background; they do not override the current direction in `docs/STATUS.md`.
 
@@ -43,6 +44,7 @@ python experiments/dependency_memory/compatibility.py
 python experiments/dependency_memory/compatibility_scaling.py
 python experiments/dependency_memory/audit_scaling.py
 python experiments/dependency_memory/run_artifact_workflow.py
+python experiments/dependency_memory/run_recovery_frontier.py
 python scripts/validate_context_repo.py
 python scripts/build_paper.py
 ```
@@ -53,4 +55,4 @@ The experiment scripts regenerate their committed diagnostic results. The paper 
 
 The active compaction investigation is dated September 16–18, 2026. The broader inherited literature snapshot is dated September 4, 2026; its review labels have not been upgraded by moving the files. Read the [migration record](provenance/README.md) and [historical corpus overview](HARNESS_CORPUS_README.md) for provenance and scope.
 
-This repository preserves the existing `ContextResearch` Git history. The imported `HarnessResearch` folder remains available as a migration backup. Continue this paper here to avoid divergent working copies. Historical setup commits are on `codex/context-research-setup`; current work uses `task/` branches per the user's preference. The audit and environment are on `task/proof-audit-environment`. No remote publication was requested.
+This repository preserves the existing `ContextResearch` Git history. The imported `HarnessResearch` folder remains available as a migration backup. Continue this paper here to avoid divergent working copies. Historical setup commits are on `codex/context-research-setup`; current work uses `task/` branches per the user's preference. The audit and initial environment are on `task/proof-audit-environment`; the recovery comparison and living draft continue on `task/recovery-frontier-draft`. No remote publication was requested.

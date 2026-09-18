@@ -22,6 +22,7 @@ Develop a mathematically precise and implementable study of repeated agent compa
 - A source-pinned survey of Codex, Pi, and OMP; supporting academic and official documentation review.
 - A focused literature comparison covering source-coding actions, cascade access, functional compression, and a July 2026 compaction survey. The signature proof has an elementary complete-multipartite graph interpretation; a new general graph principle is not claimed. See the [positioning note](../research/LITERATURE_POSITIONING_2026-09-18.md).
 - A metered late-recovery channel and an exact reference over uniform candidate/target routes for atomic-record selection. The [recovery results](../experiments/dependency_memory/results/recovery_frontier_report.md) include 2,640 scripted episodes and 3,000 exact configurations. Cheap recovery can dominate inspection; the public revision rule materially changes the break-even cost. This is a restricted finite reference, not the unknown two-bit chain optimum or an LLM policy optimum.
+- A short [living findings draft](../paper/findings-draft.md) and updated [manuscript](../paper/manuscript.md), with claim IDs and evidence links separating local mathematics, constructed diagnostics, and unperformed model work.
 
 ## Not yet established
 
@@ -33,11 +34,11 @@ Develop a mathematically precise and implementable study of repeated agent compa
 
 ## Next bounded tasks
 
-1. Complete an external review and novelty comparison of the scaling argument. The local audit found no block-proof defect, supplied an analytic entropy lemma, and corrected the leave-one-out domain to even n >= 4.
-2. Assess and tighten the robust block-family gap. Investigate costed actions that reveal dependencies before a binding compaction, with explicit comparison to action-dependent side-information coding.
-3. Draft the introduction, model, and finite-example sections using the claim register. These sections can progress before model experiments.
-4. Design a small controlled LLM pilot after the information-access and reasoning-state controls are fixed. The proposed 36-run pilot is for debugging, not a powered benchmark.
-5. Use the completed deterministic environment and recovery reference to specify a model adapter with isolated evaluator state and held-out task templates. Automatic witness minimization and native-provider baselines remain unimplemented.
+1. Freeze a small LLM pilot specification using both beneficial and dominated inspection regimes. Include inferred dependencies, held-out task templates, an explicit revision schedule, evaluator isolation, matched recovery channels, model revision, and spending. The earlier 36-run sketch is a debugging proposal, not a powered benchmark or a completed run.
+2. Obtain external review of the block-family proof and deepen the novelty comparison with functional compression/direct-sum results. The targeted literature comparison narrows the contribution but does not settle priority.
+3. Build a model adapter only after its information-access and reasoning-state contracts are specified. Automatic witness minimization and native-provider baselines remain unimplemented.
+4. Consider imperfect clues, unreliable recovery, and multiple obligations only as separately specified extensions. The current exact frontier should remain a calibration reference with its assumptions intact.
+5. Update the living draft, manuscript, and claim register together when evidence changes. The conservative gap may be tightened later, but that is not required to test the cost-aware behavioral hypothesis.
 
 ## Implementation refinement from September 18
 
@@ -46,12 +47,14 @@ The discussion of classifier-based deletion reinforces cache-aware timing, reten
 ## Working locations
 
 - [Paper drafting](../paper/README.md)
+- [Short living findings draft](../paper/findings-draft.md)
 - [Full proposal and proof](../research/LIVE_DEPENDENCY_RESEARCH_PROPOSAL_2026-09-16.md)
 - [Creative directions, scaling derivations, and action-policy proposal](../research/CREATIVE_RESEARCH_DIRECTIONS_2026-09-18.md)
 - [Local proof audit and remaining review boundaries](../research/PROOF_AUDIT_2026-09-18.md)
 - [Prototype](../experiments/dependency_memory/README.md)
 - [Deterministic environment and information contract](../experiments/dependency_memory/ARTIFACT_WORKFLOW.md)
 - [Deterministic environment results](../experiments/dependency_memory/results/artifact_workflow_report.md)
+- [Exact recovery comparison](../experiments/dependency_memory/results/recovery_frontier_report.md)
 - [Research map and cautions](RESEARCH_MAP.md)
 - [Setup validation](../provenance/SETUP_VALIDATION.md)
 

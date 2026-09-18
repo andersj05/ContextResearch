@@ -13,6 +13,9 @@
 | Scaling extensions and proposed next contribution | [September 18 research memo](../research/CREATIVE_RESEARCH_DIRECTIONS_2026-09-18.md) | Local derivations; see the audit for corrected scope and analytic entropy proof |
 | Proof validity and remaining novelty questions | [Local proof audit](../research/PROOF_AUDIT_2026-09-18.md) | Local analytic audit and independent computational formulations; external review open |
 | Scripted actions and delayed terminal outcomes | [Artifact/manifest environment](../experiments/dependency_memory/ARTIFACT_WORKFLOW.md) | 320 constructed development configurations; no LLM trial |
+| Inspection, retention, and late recovery | [Exact recovery reference](../experiments/dependency_memory/RECOVERY_FRONTIER.md) | Exact finite expectations and executable checks within a restricted record-selection class |
+| Contribution relative to prior work | [Focused literature comparison](../research/LITERATURE_POSITIONING_2026-09-18.md) | Reviewed definitions and theorem statements; no priority certification |
+| Findings in plain language | [Living findings draft](../paper/findings-draft.md) | Versioned short account linked to the claim register |
 | Current writing | [Paper workspace](../paper/README.md) | Draft; incomplete results clearly marked |
 
 ## Broader inherited library

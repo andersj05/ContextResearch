@@ -1,10 +1,10 @@
 # Repeated Context Compression with Delayed Task Dependencies
 
-Working draft — September 18, 2026. Authorship and venue are not set. This draft reports a finite mathematical diagnostic. A subsequent [scaling derivation](../research/CREATIVE_RESEARCH_DIRECTIONS_2026-09-18.md) is recorded separately pending independent review and novelty comparison; it is not incorporated as a manuscript result. Agent evaluation remains open.
+Working draft — September 18, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports finite diagnostics, a locally audited scaling derivation, and an exact restricted recovery reference. External mathematical review, novelty assessment, and LLM evaluation remain open.
 
 ## Abstract
 
-Long-running language-model agents must preserve information whose relevance may only become clear later. We study a finite model in which a memory first compresses independent values, then observes a subset of potentially relevant coordinates, compresses again, and finally receives a query. This separates memory capacity from the timing of task information. In a four-bit example, the minimum distortions of the isolated bottlenecks do not characterize the achievable distortion of their composition: attaining the child-optimal error of one quarter requires three initial bits, while two are insufficient. An analytic argument and exhaustive finite certificate establish this obstruction. We outline controlled experiments to assess whether analogous losses affect practical context management, accounting explicitly for retrieval, provider-managed reasoning state, and cache costs. No improvement over a deployed agent harness is claimed.
+Long-running language-model agents must preserve information whose relevance may only become clear later. We study a finite model that separates memory capacity from the timing of task information. In a four-bit example, attaining the child-optimal error of one quarter requires three initial bits, while two are insufficient despite the optima of the isolated bottlenecks. A locally audited independent-block extension gives a uniform positive error gap. Separately, a deterministic artifact workflow compares retaining evidence, inspecting relevance before compression, and recovering a missing record later. An exact reference within an atomic-record policy class shows that cheap recovery can dominate early inspection, and that improved retention need not lower the cost of completed work. The evidence is mathematical and scripted; no LLM or deployed-harness improvement is claimed, and novelty remains unresolved.
 
 ## 1. Introduction
 
@@ -13,6 +13,8 @@ An agent's transcript grows with its activity, but the amount of information nee
 Prompt compression has already been studied through rate–distortion formulations, and hierarchical agent memory already summarizes work around subgoals. These provide foundations rather than novelty claims for the present study [@nagle2024; @hiagent2025]. Our question concerns the compatibility of representations across successive bottlenecks when additional task information arrives between them. Classical successive refinement establishes that separately optimal descriptions need not compose without suitable structure; translating that insight to a finite, shrinking-memory, delayed-query protocol requires stating the information constraints precisely [@equitz1991].
 
 The practical motivation is a completed subtask whose result is needed later. A record saying that the subtask is finished may preserve immediate continuity while losing an identifier, qualification, or negative result required by a subsequent obligation. The present mathematical model abstracts this timing issue. It does not model all semantics of natural-language summaries or all behavior of a tool-using agent.
+
+Costed information acquisition and functional compression are established foundations, with especially close connections to cascade encoders and request-dependent cache updates [@vending2009; @cascadevending2012; @caching2016; @graphcoloring]. A recent compaction preprint also addresses reversibility and query timing [@compactionview2026]. Our proposed scope is a restricted compatibility result and a controlled action-timing experiment; a broad new theory of agent memory is not claimed. The [positioning note](../research/LITERATURE_POSITIONING_2026-09-18.md) specifies the source sections reviewed and the remaining reduction questions.
 
 ## 2. Model and information timing
 
@@ -46,7 +48,17 @@ Since 1/4 corresponds to 48 errors among those 192 cases, impossibility gives th
 
 This is a checked finite obstruction. It is not presented as a new general successive-refinement theorem. The full formulae, proof, certificate, and implementation are maintained with the research artifacts.
 
-## 4. Sparse dependencies and future queries
+## 4. Locally audited scaling result
+
+Let the source consist of k independent uniform four-bit blocks. The parent memory is formed before a uniformly selected block and omitted coordinate are revealed. An updater then forms one child bit before the final coordinate within the remaining triple is disclosed. Only that bit and the specified public side information are available at final decoding.
+
+In this family, exactly 3k parent bits are necessary and sufficient to attain error 1/4. With at most 2k parent bits, every valid chain has error strictly greater than 1/4 + 1/512 for every k >= 1. Joint encoding across blocks is allowed. Hard state capacities and source-independent randomization are essential assumptions.
+
+The exact-target statement uses Cartesian products of required branch-signature ranges. For the robust gap, an analytic antipodal-fiber argument gives signature entropy at least 4 - (5/8) log_2 5 > 5/2. A signature-reconstruction bound and source independence then conflict with a 2k-bit parent at the stated error threshold. The [derivation](../research/CREATIVE_RESEARCH_DIRECTIONS_2026-09-18.md) and [audit](../research/PROOF_AUDIT_2026-09-18.md) contain the full argument and independent finite certificates.
+
+These are locally audited results pending external review and priority assessment. The signature graph itself is an elementary complete multipartite construction, not a new general functional-compression principle. The error-gap constant is conservative; no exact two-bit chain optimum is asserted.
+
+## 5. Sparse dependencies and future queries
 
 If exactly k of n named fields are active and each stores an arbitrary b-bit value, exact memory needs at least log_2 binomial(n, k) + kb bits when every configuration can be distinguished by future queries and no external channel supplies missing information. This is an elementary counting bound. It applies to identifiable active fields, not automatically to the much smaller set that happens to be queried in hindsight.
 
@@ -54,20 +66,32 @@ Before an unknown uniform coordinate query to A independent fair bits, a B-bit m
 
 Sound public retirement events yield a simple feasibility reference: a dictionary can keep the current values of all unresolved records. Identifying valid retirements from natural-language evidence is a separate inference problem. The implemented record-stream diagnostic assumes explicit sound events and should be interpreted accordingly.
 
-## 5. Proposed agent evaluation
+## 6. Scripted workflow and recovery results
+
+The [implemented environment](../experiments/dependency_memory/ARTIFACT_WORKFLOW.md) has once-only receipts, two forced record-memory boundaries, optional early manifest inspection, a possible revision, delayed intervening work, and an exact terminal verifier. Its initial 320-case development diagnostic showed the intended timing effect: structured retention succeeded in 16/16 tight/cheap cases with inspection versus 9/16 without, at costs 11 versus 10 synthetic units. Ample initial memory removed the need to inspect. These are constructed cases, not independent model trials.
+
+The [recovery extension](../experiments/dependency_memory/RECOVERY_FRONTIER.md) adds a declared archive channel that returns only the latest required receipt after the final query. We compute an exact reference over every uniformly selected candidate subset and final target, within an atomic-record policy class. The first retained set precedes an unrevealed manifest; the second precedes the final query. An independent decision-tree enumeration and executable reference policies check the calculation.
+
+Let p_0 and p_1 be the optimal probabilities of retaining the required receipt without and with inspection. At reliable recovery price c_R, the success-one expected extra costs are (1-p_0)c_R without inspection and c_I+(1-p_1)c_R with inspection. Thus inspection is cheaper exactly when c_I < (p_1-p_0)c_R. The complete expected-cost frontier is the appropriate convex boundary of the retained-only and recovered endpoints. This elementary reference permits randomized policies and assumes nonbinding per-episode limits; it is not a hard-budget optimum.
+
+For six jobs, two candidates, two record slots at each boundary, and no revisions, p_0=1/3 and p_1=1. Inspection at price one is dominated by recovery at price one, whose expected extra cost is 2/3. Recovery at price four reverses the preference. With one child record, inspection raises pre-recovery success from 3/10 to 1/2 but increases success-one extra cost from 14/5 to three at those latter prices. A known first-candidate refresh raises p_0 to 4/5 in the two-slot case, demonstrating the importance of retaining revision conditions separately.
+
+The [generated comparison](../experiments/dependency_memory/results/recovery_frontier_report.md) records 2,640 scripted episodes and 3,000 exact parameter configurations. These are finite diagnostic computations, not estimates of real-world prevalence or API savings. Record slots, serialized bytes, synthetic action units, and theoretical information bits remain separate quantities.
+
+## 7. Proposed LLM evaluation
 
 **This section is a design, not a report of completed model experiments.**
 
-The first LLM experiment would compare rolling prose summaries, structured summaries, and explicit unresolved-dependency records under matched visible evidence and declared budgets. Paired instances would reveal the same relevance clue before or after a binding compaction. A subsequent environment would include state-changing actions and a deterministic verifier for delayed terminal obligations.
+The first LLM experiment would compare rolling prose summaries, structured summaries, and explicit unresolved-dependency records under matched visible evidence and declared budgets. Paired instances would reveal the same relevance clue before or after a binding compaction. The scripted environment now supplies state-changing actions and a deterministic verifier; a model adapter, isolated evaluator, frozen task split, and complete run manifest are still needed. Recovery must be available on the same terms within a comparison, and inspection should be evaluated in both beneficial and dominated regimes.
 
 Provider-managed state requires particular care. OpenAI's compaction interface returns opaque state and instructs clients to preserve the returned window. Anthropic documents model-dependent reasoning preservation and prefix binding. An intervention that edits history may therefore change both visible memory and reasoning continuity [@openai-compaction; @anthropic-thinking]. Controlled representation tests must enforce their declared channels; production comparisons must evaluate the complete supported intervention against an intact native baseline.
 
 Cost accounting includes every model call, compactor call, cache read/write, retrieval, and retry. Prefix invalidation may outweigh short-horizon token savings, whereas sufficiently repeated future use may repay consolidation [@openai-caching; @anthropic-editing]. Report task success alongside cost and latency. A smaller prompt is not itself evidence of improvement.
 
-## 6. Limitations and open results
+## 8. Limitations and open results
 
-The source values are independent bits; real tasks have semantic structure, correlated observations, and adaptive actions. The current record diagnostics are constructed examples, not independent task samples. No natural-language updater, learned dependency classifier, or autonomous benchmark has been evaluated here. The exact two-bit chain optimum, independent review and novelty assessment of the separate scaling derivation, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires a fuller comparison with functional compression and causal coding [@kaspi2013].
+The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. No learned dependency classifier or LLM-agent benchmark has been evaluated here. The exact two-bit chain optimum, external review and novelty assessment of the scaling derivation, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013].
 
-## 7. Reproducibility
+## 9. Reproducibility
 
-The standard-library Python artifact contains 17 tests, exact small-codebook enumeration, a 256-assignment compatibility certificate, an explicit three-bit witness, and deterministic record-policy diagnostics. Source provenance and the repository migration are documented separately. The current artifact uses no model API, network, training, or GPU. Larger experimental claims will require additional artifacts and complete run-level accounting.
+The standard-library Python artifact contains 50 tests, exact small-codebook enumeration, compatibility certificates, independent audit formulations, a three-bit witness, and deterministic workflow/recovery diagnostics. The repository validator regenerates expected diagnostic outputs in memory and verifies source/data provenance. Source provenance and the repository migration are documented separately. The offline experiment commands use no model API, network, training, or GPU. Larger experimental claims will require additional artifacts and complete run-level accounting.

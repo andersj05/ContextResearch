@@ -4,7 +4,8 @@ Working title: **Repeated Context Compression with Delayed Task Dependencies**. 
 
 ## Documents to edit
 
-- [Manuscript starter](manuscript.md): initial prose for the motivation, model, finite example, and limitations. Empirical sections remain explicitly prospective.
+- [Manuscript](manuscript.md): the main paper entry point, including the finite example, locally audited scaling result, scripted recovery comparison, and limitations. LLM evaluation remains prospective.
+- [Living findings draft](findings-draft.md): a short account of what we know, what the new results change, and the next milestone. Update it together with the claim register as evidence changes.
 - [Outline](outline.md): section-by-section argument and remaining work.
 - [Related-work map](related-work.md): nearby results and the distinctions a novelty argument must address.
 - [Claim register](claims.csv): what may currently be stated, with evidence and limitations.
@@ -19,8 +20,8 @@ python scripts/validate_context_repo.py
 
 Generated files are under ignored `build/paper/`. No external typesetting software is required to begin drafting.
 
-## Ready to draft now
+## Current draft and update discipline
 
-The problem statement, information timing, elementary lower bounds, finite example, and limitations have enough local evidence for a careful first draft. The [September 18 scaling derivation](../research/CREATIVE_RESEARCH_DIRECTIONS_2026-09-18.md) is recorded separately pending independent review and novelty comparison; it has not been incorporated into the manuscript. The exact two-bit chain optimum and realistic agent results remain unresolved. Do not fill those gaps with prospective language disguised as results.
+The manuscript now incorporates the [locally audited scaling derivation](../research/PROOF_AUDIT_2026-09-18.md), with external review and novelty clearly open, and the [exact restricted recovery results](../experiments/dependency_memory/results/recovery_frontier_report.md). The short findings draft is versioned and dated. For a new result, update its claim-register evidence and limitation, then the relevant manuscript/draft paragraphs and `docs/STATUS.md`. Keep the negative controls and avoid turning experiment plans into reported outcomes. The exact two-bit chain optimum and realistic agent performance remain unresolved.
 
 Templates: [derivation](templates/derivation.md), [source note](templates/source-note.md), [experiment plan](templates/experiment-plan.md). The [current protocol](../docs/EXPERIMENT_PROTOCOL.md) is the governing experimental specification.
