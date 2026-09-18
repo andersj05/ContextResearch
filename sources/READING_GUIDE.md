@@ -23,9 +23,13 @@ The [September 18 memo](../research/CREATIVE_RESEARCH_DIRECTIONS_2026-09-18.md) 
 | Source | Read for | Review scope on September 18, 2026 |
 |---|---|---|
 | [ARC](https://arxiv.org/html/2601.12030v1) | Existing active revision of working context | Method Sections 3.1-3.3 read; reflection changes internal representations and is separated from action generation. |
-| [Source Coding with a Side Information Vending Machine](https://arxiv.org/abs/0904.2311v2) | Established joint treatment of actions, side information, rate, distortion, and cost | Abstract and metadata only; full theorem comparison outstanding. |
-| [Cascade Source Coding with a Side Information Vending Machine](https://arxiv.org/abs/1207.2793v1) | Multistage descriptions and side-information acquisition | Abstract, metadata, and Sections II-A and III-A model definitions read during the proof audit; full reduction outstanding. |
-| [Information-Theoretic Caching: Sequential Coding for Computing](https://arxiv.org/abs/1504.00553v2) | Cache before a request, then a request-dependent update | Abstract, related-work discussion, and Section II model definition read; full theorem comparison outstanding. |
+| [Source Coding with a Side Information Vending Machine](https://arxiv.org/abs/0904.2311v2) | Established joint treatment of actions, side information, rate, distortion, and cost | Section II-A, Theorem 1 and its following remark read; full proof not audited. |
+| [Cascade Source Coding with a Side Information Vending Machine](https://arxiv.org/abs/1207.2793v1) | Multistage descriptions and side-information acquisition | Sections II-A/B including Proposition 1 and III-A definitions read; full reduction outstanding. |
+| [Information-Theoretic Caching: Sequential Coding for Computing](https://arxiv.org/abs/1504.00553v2) | Cache before a request, then a request-dependent update | Section II and Theorem 1 in Section III read; full proof not audited. |
+| [Graph Coloring and Conditional Graph Entropy](https://www.mit.edu/~medard/itmanet/papers/asilomar.pdf) | Functional compression and confusability graphs | Section I definitions and Theorem 1 statement read; full proof and publication metadata unverified. |
+| [What to Keep, What to Forget](https://arxiv.org/html/2607.08032v1) | Recent overlap in repeated compaction, query timing, and recovery evaluation | Sections 2 and 13 read; preprint claims and experiments not independently validated. |
+
+The [focused positioning note](../research/LITERATURE_POSITIONING_2026-09-18.md) records the comparison and an elementary graph interpretation of our signature proof. It narrows the proposed contribution; it does not certify novelty.
 
 The [local proof audit](../research/PROOF_AUDIT_2026-09-18.md) also rechecks Equitz-Cover Sections II-III and records an analytic entropy lemma. Independent external review and novelty assessment remain open.
 

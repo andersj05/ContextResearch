@@ -20,3 +20,7 @@ The user authorized a proof audit and one deterministic environment, with freque
 The completed deterministic matrix uses five resource/availability settings, eight development seeds, two revision conditions, and four scripted policies. Its 320 configurations are diagnostics. The budgeted inspection rule has a declared two-unit price ceiling, so expensive inspection can trade success for cost; no optimality or cost-normalized superiority is claimed. A separately constructed paired witness restores context and environment and compares retention at equal cost. Source and fixture hashes plus fresh regeneration checks anchor the outputs.
 
 Open decisions: target venue, authorship, final dependency family, exact chain optimum, model for the pilot, spending budget, and power analysis. None is silently fixed by the repository setup.
+
+## September 18: autonomous follow-up and living draft
+
+The user authorized research direction, further investigation, and a short draft to maintain as findings accumulate. Work continues on `task/recovery-frontier-draft`. The focused literature comparison narrows the claim: graph signatures, costed information acquisition, and repeated-compaction evaluation already have close precedents. The next bounded milestone is metered recovery plus an exact finite record-selection reference, followed by a concise findings draft and an updated manuscript. This milestone uses no model services; paid/model-dependent experiments still need their specified protocol.
