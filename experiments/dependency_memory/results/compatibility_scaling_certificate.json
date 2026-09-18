@@ -1,0 +1,117 @@
+{
+  "scope": "Independent finite checks of an exploratory analytic derivation; novelty unresolved.",
+  "child_codebook_checks": [
+    {
+      "child_bits": 1,
+      "codebooks_checked": 1,
+      "optimal_codebooks": 1,
+      "error": "0"
+    },
+    {
+      "child_bits": 3,
+      "codebooks_checked": 28,
+      "optimal_codebooks": 4,
+      "error": "1/4"
+    },
+    {
+      "child_bits": 5,
+      "codebooks_checked": 496,
+      "optimal_codebooks": 16,
+      "error": "5/16"
+    },
+    {
+      "child_bits": 7,
+      "codebooks_checked": 8128,
+      "optimal_codebooks": 64,
+      "error": "11/32"
+    }
+  ],
+  "leave_one_out_checks": [
+    {
+      "source_bits": 4,
+      "directly_graded_outcomes": 192,
+      "child_optimal_error": "1/4",
+      "isolated_first_cut_two_bit_witness_error": "3/16",
+      "analytic_parent_states_lower_bound_at_exact_target": 8,
+      "analytic_parent_bits_lower_bound_at_exact_target": 3,
+      "unsigned_majority_witness_parent_states": 8,
+      "unsigned_majority_witness_parent_bits": 3,
+      "unsigned_majority_witness_chain_error": "1/4",
+      "global_majority_one_bit_chain_error": "5/16",
+      "two_bit_chain_excess_error_upper_bound": "1/16",
+      "top_fourier_coefficient_unsigned_branch": "-1/2",
+      "exact_minimum_parent_states": "not computed here",
+      "exact_two_bit_chain_error": "not computed"
+    },
+    {
+      "source_bits": 6,
+      "directly_graded_outcomes": 1920,
+      "child_optimal_error": "5/16",
+      "isolated_first_cut_two_bit_witness_error": "25/96",
+      "analytic_parent_states_lower_bound_at_exact_target": 12,
+      "analytic_parent_bits_lower_bound_at_exact_target": 4,
+      "unsigned_majority_witness_parent_states": 22,
+      "unsigned_majority_witness_parent_bits": 5,
+      "unsigned_majority_witness_chain_error": "5/16",
+      "global_majority_one_bit_chain_error": "11/32",
+      "two_bit_chain_excess_error_upper_bound": "1/32",
+      "top_fourier_coefficient_unsigned_branch": "3/8",
+      "exact_minimum_parent_states": "not computed here",
+      "exact_two_bit_chain_error": "not computed"
+    },
+    {
+      "source_bits": 8,
+      "directly_graded_outcomes": 14336,
+      "child_optimal_error": "11/32",
+      "isolated_first_cut_two_bit_witness_error": "77/256",
+      "analytic_parent_states_lower_bound_at_exact_target": 16,
+      "analytic_parent_bits_lower_bound_at_exact_target": 4,
+      "unsigned_majority_witness_parent_states": 72,
+      "unsigned_majority_witness_parent_bits": 7,
+      "unsigned_majority_witness_chain_error": "11/32",
+      "global_majority_one_bit_chain_error": "93/256",
+      "two_bit_chain_excess_error_upper_bound": "5/256",
+      "top_fourier_coefficient_unsigned_branch": "-5/16",
+      "exact_minimum_parent_states": "not computed here",
+      "exact_two_bit_chain_error": "not computed"
+    },
+    {
+      "source_bits": 10,
+      "directly_graded_outcomes": 92160,
+      "child_optimal_error": "93/256",
+      "isolated_first_cut_two_bit_witness_error": "837/2560",
+      "analytic_parent_states_lower_bound_at_exact_target": 20,
+      "analytic_parent_bits_lower_bound_at_exact_target": 5,
+      "unsigned_majority_witness_parent_states": 254,
+      "unsigned_majority_witness_parent_bits": 8,
+      "unsigned_majority_witness_chain_error": "93/256",
+      "global_majority_one_bit_chain_error": "193/512",
+      "two_bit_chain_excess_error_upper_bound": "7/512",
+      "top_fourier_coefficient_unsigned_branch": "35/128",
+      "exact_minimum_parent_states": "not computed here",
+      "exact_two_bit_chain_error": "not computed"
+    }
+  ],
+  "block_entropy_check": {
+    "optimal_branch_assignments_checked": 256,
+    "minimum_signature_states": 8,
+    "maximum_fiber_product": 9765625,
+    "entropy_minimizing_fiber_sizes": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      5,
+      5
+    ],
+    "certified_signature_entropy_lower_bound_bits": "5/2",
+    "entropy_certificate_integer_bound": "5**10 < 2**24",
+    "binary_entropy_certificate": "3**3 * 125**125 > 2**874 implies h2(3/128) < 11/64",
+    "block_family_exact_target_parent_bits": "3*k",
+    "block_family_two_bit_per_block_excess_error_strict_lower_bound": "1/512",
+    "scope": "The certificates support the general information argument in the note; they do not enumerate joint encoders across k blocks."
+  },
+  "limitation": "General bounds use proofs in the note. The leave-one-out family has vanishing excess error; the separate block family has a uniform positive lower bound. Neither exact two-bit chain optimum nor LLM outcomes are computed."
+}

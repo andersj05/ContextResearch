@@ -7,6 +7,7 @@ Run from the repository root:
 ```powershell
 python experiments/dependency_memory/experiment.py
 python experiments/dependency_memory/compatibility.py
+python experiments/dependency_memory/compatibility_scaling.py
 python -m unittest discover -s experiments/dependency_memory -v
 ```
 
@@ -26,9 +27,12 @@ The record test uses a record budget. Serialized dictionary payload bytes are al
 
 ## Generated artifacts
 
+`compatibility_scaling.py` adds independent finite checks for the [September 18 derivations](../../research/CREATIVE_RESEARCH_DIRECTIONS_2026-09-18.md). It enumerates one-bit child codebooks, grades leave-one-out witnesses, and certifies an entropy bound across all 256 optimal four-bit branch assignments using exact integers. An information argument in the note turns that finite certificate into a uniform error gap for arbitrary joint encoders across independent blocks. These are local derivations awaiting independent review and novelty comparison, not LLM trials or computed chain optima.
+
 - `exact_frontier.csv`: exact finite optimum, an entropy lower bound, coordinate-retention error, and a witness codebook.
 - `disclosure_timing.csv`: same source size with relevance disclosed on either side of the bottleneck.
 - `compatibility_certificate.json`: exhaustive state-count histogram, explicit three-bit parent witness, and a conservative two-bit error lower bound.
+- `compatibility_scaling_certificate.json`: child-codebook checks, leave-one-out witnesses, and the finite entropy certificate used by the block-family proof.
 - `workflow_retention.csv`: 810 deterministic record-policy configurations.
 - `example_events.json`: a small inspectable generated event stream.
 - `summary.json`: scope and aggregate diagnostic counts.
@@ -37,4 +41,4 @@ Tests cross-check codebook enumeration against independent enumeration of binary
 
 ## What remains to build
 
-This is not an LLM or closed-loop agent evaluation. Next work is a restricted compatibility theorem, larger finite search where tractable, a natural-language compiler adapter with explicit token accounting, and an environment whose actions alter state and whose final result can be checked. Keep raw transcripts outside the compiler's accessible inputs when testing irreversible memory; enabling retrieval requires a separately declared and metered condition.
+This is not an LLM or closed-loop agent evaluation. Next work is independent review and novelty comparison of the scaling derivation, tighter bounds where useful, a natural-language compiler adapter with explicit token accounting, and an environment whose actions alter state and whose final result can be checked. Keep raw transcripts outside the compiler's accessible inputs when testing irreversible memory; enabling retrieval requires a separately declared and metered condition.

@@ -4,7 +4,7 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
-The repository contains a checked finite example and an offline prototype. It does **not** yet establish a new general theorem, an LLM performance improvement, or savings over native Codex or Claude compaction.
+The repository contains a checked finite example, an exploratory scaling derivation with a uniform error gap, and an offline prototype. The scaling argument awaits independent review and a novelty comparison. The project does **not** yet establish an LLM performance improvement or savings over native Codex or Claude compaction.
 
 ## Start here
 
@@ -39,6 +39,7 @@ Python 3.10 or newer is sufficient for the active prototype. No packages, model 
 python -m unittest discover -s experiments/dependency_memory -v
 python experiments/dependency_memory/experiment.py
 python experiments/dependency_memory/compatibility.py
+python experiments/dependency_memory/compatibility_scaling.py
 python scripts/validate_context_repo.py
 python scripts/build_paper.py
 ```

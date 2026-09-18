@@ -16,6 +16,18 @@ Start with the [proposal](../research/LIVE_DEPENDENCY_RESEARCH_PROPOSAL_2026-09-
 
 Read [the related-work map](../paper/related-work.md) for DeMem, HiAgent, MemoBrain, The Compaction Cliff, TRACE, and observation masking. Most recent preprints were reviewed online during the investigation; the import does not create PDFs that were never downloaded. Their versioned URLs and analysis are preserved in the proposal/survey. The broader [academic index](../paper-notes/INDEX.md) covers the inherited local library.
 
+## Action-dependent information and the scaling extension
+
+The [September 18 memo](../research/CREATIVE_RESEARCH_DIRECTIONS_2026-09-18.md) records a local scaling derivation and proposes selecting external actions before compaction. Review status is specific to the material actually read:
+
+| Source | Read for | Review scope on September 18, 2026 |
+|---|---|---|
+| [ARC](https://arxiv.org/html/2601.12030v1) | Existing active revision of working context | Method Sections 3.1-3.3 read; reflection changes internal representations and is separated from action generation. |
+| [Source Coding with a Side Information Vending Machine](https://arxiv.org/abs/0904.2311v2) | Established joint treatment of actions, side information, rate, distortion, and cost | Abstract and metadata only; full theorem comparison outstanding. |
+| [Cascade Source Coding with a Side Information Vending Machine](https://arxiv.org/abs/1207.2793v1) | Multistage descriptions and side-information acquisition | Abstract and metadata only; especially important prior art for the proposed extension. |
+
+TRACE Section 4.1 was reread for its paired, restored-environment continuations and blocked/repeated-action verifier. A delayed-obligation witness generator would extend this evaluation idea; paired continuations themselves are established. No broad-corpus review labels were upgraded.
+
 ## Harness implementation
 
 Read [the survey](../research/CONTEXT_MANAGEMENT_SURVEY_2026-09-16.md) alongside [the pinned snapshots](harness-snapshots/2026-09-16/README.md). Distinguish output truncation, observation masking, summaries, native opaque state, archives, and KV policies. Client source cannot reveal a remote service's private compactor or training objective.

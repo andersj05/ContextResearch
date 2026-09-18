@@ -13,4 +13,6 @@ These entries record the working interpretation of the discussion. Dates identif
 | 2026-09-18 | Make `ContextResearch` the paper's working repository and preserve the original folder as a migration backup. | Keep the destination's existing Git history, import provenance, and avoid losing the broader source library. |
 | 2026-09-18 | Use plain Markdown for the first drafts, with BibTeX references and an offline preview builder. | Documents remain easy for people and agents to edit; venue formatting can be selected once the paper has a clearer contribution. |
 
-Open decisions: target venue, authorship, selected dependency family, exact chain optimum, model/environment for the pilot, spending budget, and power analysis. None is silently fixed by the repository setup.
+The [September 18 exploratory memo](../research/CREATIVE_RESEARCH_DIRECTIONS_2026-09-18.md) adds block and leave-one-out dependency families, a local robust-gap derivation, and an action-policy proposal. Its methodological recommendation is to require robustness to nonzero excess error before treating an exact-memory obstruction as practically important. These are research candidates, not a commitment to a model, environment, budget, or paper claim of novelty.
+
+Open decisions: target venue, authorship, final dependency family, exact chain optimum, model/environment for the pilot, spending budget, and power analysis. None is silently fixed by the repository setup.

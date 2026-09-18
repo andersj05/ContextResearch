@@ -1,6 +1,6 @@
 # Repeated Context Compression with Delayed Task Dependencies
 
-Working draft — September 18, 2026. Authorship and venue are not set. This draft reports a finite mathematical diagnostic; the general theorem and agent evaluation remain open.
+Working draft — September 18, 2026. Authorship and venue are not set. This draft reports a finite mathematical diagnostic. A subsequent [scaling derivation](../research/CREATIVE_RESEARCH_DIRECTIONS_2026-09-18.md) is recorded separately pending independent review and novelty comparison; it is not incorporated as a manuscript result. Agent evaluation remains open.
 
 ## Abstract
 
@@ -66,7 +66,7 @@ Cost accounting includes every model call, compactor call, cache read/write, ret
 
 ## 6. Limitations and open results
 
-The source values are independent bits; real tasks have semantic structure, correlated observations, and adaptive actions. The current record diagnostics are constructed examples, not independent task samples. No natural-language updater, learned dependency classifier, or autonomous benchmark has been evaluated here. The exact two-bit chain optimum, structural compatibility bounds for a scaling family, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires a fuller comparison with functional compression and causal coding [@kaspi2013].
+The source values are independent bits; real tasks have semantic structure, correlated observations, and adaptive actions. The current record diagnostics are constructed examples, not independent task samples. No natural-language updater, learned dependency classifier, or autonomous benchmark has been evaluated here. The exact two-bit chain optimum, independent review and novelty assessment of the separate scaling derivation, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires a fuller comparison with functional compression and causal coding [@kaspi2013].
 
 ## 7. Reproducibility
 

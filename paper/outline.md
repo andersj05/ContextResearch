@@ -7,7 +7,7 @@ This outline is a writing plan, not a list of achieved contributions.
 | Abstract | Delayed relevance can make individually adequate compressed representations incompatible. | C03–C05 | Rewrite after the actual final contribution is known. |
 | Introduction | Context length alone does not describe the information an agent must retain. Future obligations and available recovery matter. | C01–C02, C07–C09 | Choose one concrete motivating task and delimit claims about deployed systems. |
 | Related work | Relate the problem to prompt rate–distortion, random access, successive refinement, causal coding, and agent memory. | Bibliography; related-work map | Complete functional-compression comparison and novelty audit. |
-| Model | Specify X, S, J, E, U, D, budgets, public information, and no-reread rule. | C02 | Decide which dependency family to generalize. |
+| Model | Specify X, S, J, E, U, D, budgets, public information, and no-reread rule. | C02 | Audit the new block-family extension before incorporating C11-C12. |
 | Finite obstruction | Prove the child-optimal decoder characterization, joint-signature lower bound, and three-bit witness. | C03–C05 | Independent mathematical review; optionally compute exact two-bit chain distortion. |
 | Structural result | Bound compatibility overhead for a restricted family. | C10: open | This is the proposed mathematical contribution, not an existing result. |
 | Experimental design | Separate representation, natural-language updating, and autonomous task completion. | Protocol | Implement adapters, declare hidden-state treatment, and freeze tasks. |

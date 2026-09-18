@@ -21,6 +21,6 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Ready to draft now
 
-The problem statement, information timing, elementary lower bounds, finite example, and limitations have enough local evidence for a careful first draft. A general contribution, exact two-bit chain optimum, and realistic agent results are unresolved. Do not fill those gaps with prospective language disguised as results.
+The problem statement, information timing, elementary lower bounds, finite example, and limitations have enough local evidence for a careful first draft. The [September 18 scaling derivation](../research/CREATIVE_RESEARCH_DIRECTIONS_2026-09-18.md) is recorded separately pending independent review and novelty comparison; it has not been incorporated into the manuscript. The exact two-bit chain optimum and realistic agent results remain unresolved. Do not fill those gaps with prospective language disguised as results.
 
 Templates: [derivation](templates/derivation.md), [source note](templates/source-note.md), [experiment plan](templates/experiment-plan.md). The [current protocol](../docs/EXPERIMENT_PROTOCOL.md) is the governing experimental specification.

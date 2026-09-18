@@ -10,6 +10,7 @@
 | Mathematical connections | [Mathematics addendum](../research/CONTEXT_COMPACTION_MATHEMATICS_2026-09-16.md) | Established foundations and conditional deductions |
 | Native-state and cache controls | [Experiment protocol](EXPERIMENT_PROTOCOL.md) | Planned experimental contract |
 | Completed computations | [Prototype README](../experiments/dependency_memory/README.md) | Reproducible offline diagnostics |
+| Scaling extensions and proposed next contribution | [September 18 research memo](../research/CREATIVE_RESEARCH_DIRECTIONS_2026-09-18.md) | Local derivations with finite certificates; independent review and novelty unresolved; action experiments unperformed |
 | Current writing | [Paper workspace](../paper/README.md) | Draft; incomplete results clearly marked |
 
 ## Broader inherited library
