@@ -74,7 +74,7 @@ def diagnostics():
                 "mean_cost_units": str(Fraction(sum(r["cost_units"] for r in group), len(group))),
             })
     summary = {
-        "environment_version": "artifact_manifest_v1",
+        "environment_version": "artifact_manifest_v2",
         "source_sha256": {name: hashlib.sha256((Path(__file__).parent / name).read_bytes()).hexdigest()
                           for name in ("artifact_workflow.py", "run_artifact_workflow.py")},
         "scope": "Constructed development diagnostics using stateless scripted policies; no LLM trials or significance claim.",

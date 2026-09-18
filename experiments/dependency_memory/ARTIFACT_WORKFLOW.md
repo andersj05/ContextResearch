@@ -2,6 +2,8 @@
 
 September 18, 2026. Implemented in [artifact_workflow.py](artifact_workflow.py), with [invariant and counterfactual tests](test_artifact_workflow.py). These are scripted diagnostic workflows, not LLM trials or evidence of superiority over a deployed harness.
 
+The environment now also supports an explicitly enabled [metered recovery condition and exact reference](RECOVERY_FRONTIER.md). Recovery remains disabled in the original 320-case diagnostic. The description below specifies the common workflow and identifies the additional channel.
+
 ## Task
 
 Collect once-only receipts for several build jobs, preserve enough information through two forced memory boundaries, process a possible revision, complete intervening work, and submit the exact latest receipt for a job revealed only at the end. Submission creates the terminal package and is allowed once. There is no retry oracle or intermediate package storage.
@@ -10,7 +12,7 @@ Before the first boundary, an optional manifest inspection reveals the candidate
 
 ## Transitions and costs
 
-Every action costs one synthetic action unit except `inspect_manifest`, whose cost is configurable. A blocked admitted action is charged too. An action rejected because it would exceed the total budget is not executed or charged. Calls count attempts, including rejected ones. These units are neither dollars, model tokens, nor measured latency.
+Every action costs one synthetic action unit except `inspect_manifest` and `recover_receipt`, whose costs are configurable. Recovery can be free; inspection costs at least one unit. A blocked admitted action is charged too. An action rejected because it would exceed the total budget is not executed or charged. Calls count attempts, including rejected ones. These units are neither dollars, model tokens, nor measured latency.
 
 | Phase | Action | Observation / state change |
 |---|---|---|
@@ -22,9 +24,10 @@ Every action costs one synthetic action unit except `inspect_manifest`, whose co
 | Before second boundary | `seal_build` | Second forced compaction; observation window discarded again. |
 | Work | `work` repeated for the configured delay | Advances completed-work state; no receipt information. |
 | Requirement | `get_requirement` | Required key and revision, without its token. |
+| Submit | `recover_receipt` (optional, one attempt) | Latest required receipt if the archive channel is enabled; stays in the submit phase. |
 | Submit | `submit` | Creates the package and ends the episode with success or a precise failure code. |
 
-Other phase/action combinations are blocked and cannot reread a receipt, skip work, or submit early. The terminal verifier compares the submitted key, revision, and exact token with evaluator truth. A stale receipt fails even when its job is correct. A revision may legitimately replenish information lost at the first boundary; results must retain that condition explicitly.
+Other phase/action combinations are blocked and cannot reread a receipt, skip work, or submit early. The only archive read is the declared late recovery action. The terminal verifier compares the submitted key, revision, and exact token with evaluator truth. A stale receipt fails even when its job is correct. A revision may legitimately replenish information lost at the first boundary; results must retain that condition explicitly.
 
 ## Information contract
 
@@ -38,7 +41,7 @@ At a boundary, the compactor receives only those records and observations. Its o
 
 Memory is capped **at boundaries**, not during the temporary observation window. Limits are **record slots**, and serialized bytes (including key/revision/format overhead) are reported separately. Policies select exact records; arbitrary coding into labels or token strings is not permitted. These experiments do not instantiate the bit-optimal encoders of the theorem.
 
-Configuration and workflow phase are persistent public control information. The candidate set must be observed by the current compactor; it is not an implicit persistent field in policy memory. The final query arrives after the second boundary. Evaluator traces and snapshots contain private values and are never supplied to policies. No archive, filesystem tool, provider state, or retrieval interface is available through this API.
+Configuration and workflow phase are persistent public control information. The candidate set must be observed by the current compactor; it is not an implicit persistent field in policy memory. The final query arrives after the second boundary. Evaluator traces and snapshots contain private values and are never supplied to policies. There is no filesystem tool or provider state. The optional recovery channel exposes one current receipt after the query, charges its declared cost, and never exposes the full archive. Archive storage costs are outside this diagnostic.
 
 This is a contract for trusted Python policies, not isolation against hostile Python introspection. A future LLM adapter must isolate evaluator files and session history before making an irreversible-memory claim. There is currently no model adapter, native-compaction baseline, learned retirement, or paid model call.
 
@@ -54,6 +57,8 @@ All policies receive the same tool interface and initial information. Each can o
 | `structured_budgeted` | Inspect when candidate records fit but all jobs do not, inspection is available, and price <= 2 units | Same structured retention. |
 
 Every baseline handles revisions. The budgeted rule is a specified heuristic, not a learned or optimal value-of-information policy. Its two-unit ceiling is a declared design choice, not a conversion from success to money. In expensive conditions it may trade success for fewer action units. Report both outcomes; do not silently combine them into a tuned score.
+
+The recovery study adds `if_missing` retrieval and `planned` retention. Planned retention uses a fixed set of job keys optimized over the declared public distribution; it never receives a test fixture or final target. With an early manifest it can avoid a receipt known to be refreshed at the build step. The [reference derivation](RECOVERY_FRONTIER.md) states this narrower policy class and checks executable attainment over all routes.
 
 ## Pairing and deterministic fixtures
 

@@ -1,0 +1,1169 @@
+{
+  "version": "recovery_frontier_v1",
+  "date": "2026-09-18",
+  "scope": "Exact uniform-route expectations in the declared atomic-record policy class; no LLM trials.",
+  "cost_scope": "Expected incremental synthetic action units above 7+delay; not a hard-budget frontier or API dollars.",
+  "source_sha256": {
+    "artifact_workflow.py": "9f4c8bf801d03cc07e798346c50d88f4ce8ba1a6cc6f33c3ded1d9ed08b454eb",
+    "recovery_frontier.py": "207a6ec63bd1a010f8fb4b7b084549dd6aaf63763aa0cbb7073b32f9cb8583ca",
+    "run_recovery_frontier.py": "a2279126a9f047e6f2aa6900ea04a113c1361d1374c90cc3dfc4f033108e3e24"
+  },
+  "grid_configurations": 3000,
+  "executed_episodes": 2640,
+  "scenarios": [
+    {
+      "scenario": "cheap_recovery",
+      "config": {
+        "jobs": 6,
+        "candidate_count": 2,
+        "first_capacity": 2,
+        "second_capacity": 2,
+        "probe_available": true,
+        "probe_cost": 1,
+        "revise": false,
+        "delay": 3,
+        "cost_budget": 100,
+        "call_limit": 128,
+        "recovery_available": true,
+        "recovery_cost": 1
+      },
+      "route_count": 30,
+      "first_keys": [
+        "job-0",
+        "job-1"
+      ],
+      "p0": "1/3",
+      "p1": "1",
+      "points": [
+        {
+          "strategy": "retain",
+          "incremental_cost": "0",
+          "success": "1/3"
+        },
+        {
+          "strategy": "inspect",
+          "incremental_cost": "1",
+          "success": "1"
+        },
+        {
+          "strategy": "retain+recover",
+          "incremental_cost": "2/3",
+          "success": "1"
+        },
+        {
+          "strategy": "inspect+recover",
+          "incremental_cost": "1",
+          "success": "1"
+        }
+      ],
+      "frontier": [
+        {
+          "strategy": "retain",
+          "incremental_cost": "0",
+          "success": "1/3"
+        },
+        {
+          "strategy": "retain+recover",
+          "incremental_cost": "2/3",
+          "success": "1"
+        }
+      ],
+      "policies": [
+        {
+          "policy": "reference_retain",
+          "success": "1/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_retain_recover",
+          "success": "1",
+          "incremental_cost": "2/3",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_inspect",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_inspect_recover",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "recent_never",
+          "success": "1/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_never",
+          "success": "1/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_always",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_budgeted",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_never_recover",
+          "success": "1",
+          "incremental_cost": "2/3",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_always_recover",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        }
+      ]
+    },
+    {
+      "scenario": "costly_recovery",
+      "config": {
+        "jobs": 6,
+        "candidate_count": 2,
+        "first_capacity": 2,
+        "second_capacity": 2,
+        "probe_available": true,
+        "probe_cost": 1,
+        "revise": false,
+        "delay": 3,
+        "cost_budget": 100,
+        "call_limit": 128,
+        "recovery_available": true,
+        "recovery_cost": 4
+      },
+      "route_count": 30,
+      "first_keys": [
+        "job-0",
+        "job-1"
+      ],
+      "p0": "1/3",
+      "p1": "1",
+      "points": [
+        {
+          "strategy": "retain",
+          "incremental_cost": "0",
+          "success": "1/3"
+        },
+        {
+          "strategy": "inspect",
+          "incremental_cost": "1",
+          "success": "1"
+        },
+        {
+          "strategy": "retain+recover",
+          "incremental_cost": "8/3",
+          "success": "1"
+        },
+        {
+          "strategy": "inspect+recover",
+          "incremental_cost": "1",
+          "success": "1"
+        }
+      ],
+      "frontier": [
+        {
+          "strategy": "retain",
+          "incremental_cost": "0",
+          "success": "1/3"
+        },
+        {
+          "strategy": "inspect",
+          "incremental_cost": "1",
+          "success": "1"
+        }
+      ],
+      "policies": [
+        {
+          "policy": "reference_retain",
+          "success": "1/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_retain_recover",
+          "success": "1",
+          "incremental_cost": "8/3",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_inspect",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_inspect_recover",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "recent_never",
+          "success": "1/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_never",
+          "success": "1/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_always",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_budgeted",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_never_recover",
+          "success": "1",
+          "incremental_cost": "8/3",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_always_recover",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        }
+      ]
+    },
+    {
+      "scenario": "revision_cheap_recovery",
+      "config": {
+        "jobs": 6,
+        "candidate_count": 2,
+        "first_capacity": 2,
+        "second_capacity": 2,
+        "probe_available": true,
+        "probe_cost": 1,
+        "revise": true,
+        "delay": 3,
+        "cost_budget": 100,
+        "call_limit": 128,
+        "recovery_available": true,
+        "recovery_cost": 4
+      },
+      "route_count": 30,
+      "first_keys": [
+        "job-4",
+        "job-5"
+      ],
+      "p0": "4/5",
+      "p1": "1",
+      "points": [
+        {
+          "strategy": "retain",
+          "incremental_cost": "0",
+          "success": "4/5"
+        },
+        {
+          "strategy": "inspect",
+          "incremental_cost": "1",
+          "success": "1"
+        },
+        {
+          "strategy": "retain+recover",
+          "incremental_cost": "4/5",
+          "success": "1"
+        },
+        {
+          "strategy": "inspect+recover",
+          "incremental_cost": "1",
+          "success": "1"
+        }
+      ],
+      "frontier": [
+        {
+          "strategy": "retain",
+          "incremental_cost": "0",
+          "success": "4/5"
+        },
+        {
+          "strategy": "retain+recover",
+          "incremental_cost": "4/5",
+          "success": "1"
+        }
+      ],
+      "policies": [
+        {
+          "policy": "reference_retain",
+          "success": "4/5",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_retain_recover",
+          "success": "1",
+          "incremental_cost": "4/5",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_inspect",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_inspect_recover",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "recent_never",
+          "success": "2/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_never",
+          "success": "4/5",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_always",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_budgeted",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_never_recover",
+          "success": "1",
+          "incremental_cost": "4/5",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_always_recover",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        }
+      ]
+    },
+    {
+      "scenario": "revision_costly_recovery",
+      "config": {
+        "jobs": 6,
+        "candidate_count": 2,
+        "first_capacity": 2,
+        "second_capacity": 2,
+        "probe_available": true,
+        "probe_cost": 1,
+        "revise": true,
+        "delay": 3,
+        "cost_budget": 100,
+        "call_limit": 128,
+        "recovery_available": true,
+        "recovery_cost": 8
+      },
+      "route_count": 30,
+      "first_keys": [
+        "job-4",
+        "job-5"
+      ],
+      "p0": "4/5",
+      "p1": "1",
+      "points": [
+        {
+          "strategy": "retain",
+          "incremental_cost": "0",
+          "success": "4/5"
+        },
+        {
+          "strategy": "inspect",
+          "incremental_cost": "1",
+          "success": "1"
+        },
+        {
+          "strategy": "retain+recover",
+          "incremental_cost": "8/5",
+          "success": "1"
+        },
+        {
+          "strategy": "inspect+recover",
+          "incremental_cost": "1",
+          "success": "1"
+        }
+      ],
+      "frontier": [
+        {
+          "strategy": "retain",
+          "incremental_cost": "0",
+          "success": "4/5"
+        },
+        {
+          "strategy": "inspect",
+          "incremental_cost": "1",
+          "success": "1"
+        }
+      ],
+      "policies": [
+        {
+          "policy": "reference_retain",
+          "success": "4/5",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_retain_recover",
+          "success": "1",
+          "incremental_cost": "8/5",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_inspect",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_inspect_recover",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "recent_never",
+          "success": "2/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_never",
+          "success": "4/5",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_always",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_budgeted",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_never_recover",
+          "success": "1",
+          "incremental_cost": "8/5",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_always_recover",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        }
+      ]
+    },
+    {
+      "scenario": "ample_parent",
+      "config": {
+        "jobs": 6,
+        "candidate_count": 2,
+        "first_capacity": 6,
+        "second_capacity": 2,
+        "probe_available": true,
+        "probe_cost": 1,
+        "revise": false,
+        "delay": 3,
+        "cost_budget": 100,
+        "call_limit": 128,
+        "recovery_available": true,
+        "recovery_cost": 4
+      },
+      "route_count": 30,
+      "first_keys": [
+        "job-0",
+        "job-1",
+        "job-2",
+        "job-3",
+        "job-4",
+        "job-5"
+      ],
+      "p0": "1",
+      "p1": "1",
+      "points": [
+        {
+          "strategy": "retain",
+          "incremental_cost": "0",
+          "success": "1"
+        },
+        {
+          "strategy": "inspect",
+          "incremental_cost": "1",
+          "success": "1"
+        },
+        {
+          "strategy": "retain+recover",
+          "incremental_cost": "0",
+          "success": "1"
+        },
+        {
+          "strategy": "inspect+recover",
+          "incremental_cost": "1",
+          "success": "1"
+        }
+      ],
+      "frontier": [
+        {
+          "strategy": "retain",
+          "incremental_cost": "0",
+          "success": "1"
+        }
+      ],
+      "policies": [
+        {
+          "policy": "reference_retain",
+          "success": "1",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_retain_recover",
+          "success": "1",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_inspect",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_inspect_recover",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "recent_never",
+          "success": "1/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_never",
+          "success": "1",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_always",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_budgeted",
+          "success": "1",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_never_recover",
+          "success": "1",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_always_recover",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        }
+      ]
+    },
+    {
+      "scenario": "small_child",
+      "config": {
+        "jobs": 6,
+        "candidate_count": 2,
+        "first_capacity": 2,
+        "second_capacity": 1,
+        "probe_available": true,
+        "probe_cost": 1,
+        "revise": false,
+        "delay": 3,
+        "cost_budget": 100,
+        "call_limit": 128,
+        "recovery_available": true,
+        "recovery_cost": 4
+      },
+      "route_count": 30,
+      "first_keys": [
+        "job-0",
+        "job-1"
+      ],
+      "p0": "3/10",
+      "p1": "1/2",
+      "points": [
+        {
+          "strategy": "retain",
+          "incremental_cost": "0",
+          "success": "3/10"
+        },
+        {
+          "strategy": "inspect",
+          "incremental_cost": "1",
+          "success": "1/2"
+        },
+        {
+          "strategy": "retain+recover",
+          "incremental_cost": "14/5",
+          "success": "1"
+        },
+        {
+          "strategy": "inspect+recover",
+          "incremental_cost": "3",
+          "success": "1"
+        }
+      ],
+      "frontier": [
+        {
+          "strategy": "retain",
+          "incremental_cost": "0",
+          "success": "3/10"
+        },
+        {
+          "strategy": "retain+recover",
+          "incremental_cost": "14/5",
+          "success": "1"
+        }
+      ],
+      "policies": [
+        {
+          "policy": "reference_retain",
+          "success": "3/10",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_retain_recover",
+          "success": "1",
+          "incremental_cost": "14/5",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_inspect",
+          "success": "1/2",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_inspect_recover",
+          "success": "1",
+          "incremental_cost": "3",
+          "episodes": 30
+        },
+        {
+          "policy": "recent_never",
+          "success": "1/6",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_never",
+          "success": "3/10",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_always",
+          "success": "1/2",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_budgeted",
+          "success": "1/2",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_never_recover",
+          "success": "1",
+          "incremental_cost": "14/5",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_always_recover",
+          "success": "1",
+          "incremental_cost": "3",
+          "episodes": 30
+        }
+      ]
+    },
+    {
+      "scenario": "uninformative_manifest",
+      "config": {
+        "jobs": 6,
+        "candidate_count": 6,
+        "first_capacity": 2,
+        "second_capacity": 2,
+        "probe_available": true,
+        "probe_cost": 1,
+        "revise": false,
+        "delay": 3,
+        "cost_budget": 100,
+        "call_limit": 128,
+        "recovery_available": true,
+        "recovery_cost": 4
+      },
+      "route_count": 6,
+      "first_keys": [
+        "job-0",
+        "job-1"
+      ],
+      "p0": "1/3",
+      "p1": "1/3",
+      "points": [
+        {
+          "strategy": "retain",
+          "incremental_cost": "0",
+          "success": "1/3"
+        },
+        {
+          "strategy": "inspect",
+          "incremental_cost": "1",
+          "success": "1/3"
+        },
+        {
+          "strategy": "retain+recover",
+          "incremental_cost": "8/3",
+          "success": "1"
+        },
+        {
+          "strategy": "inspect+recover",
+          "incremental_cost": "11/3",
+          "success": "1"
+        }
+      ],
+      "frontier": [
+        {
+          "strategy": "retain",
+          "incremental_cost": "0",
+          "success": "1/3"
+        },
+        {
+          "strategy": "retain+recover",
+          "incremental_cost": "8/3",
+          "success": "1"
+        }
+      ],
+      "policies": [
+        {
+          "policy": "reference_retain",
+          "success": "1/3",
+          "incremental_cost": "0",
+          "episodes": 6
+        },
+        {
+          "policy": "reference_retain_recover",
+          "success": "1",
+          "incremental_cost": "8/3",
+          "episodes": 6
+        },
+        {
+          "policy": "reference_inspect",
+          "success": "1/3",
+          "incremental_cost": "1",
+          "episodes": 6
+        },
+        {
+          "policy": "reference_inspect_recover",
+          "success": "1",
+          "incremental_cost": "11/3",
+          "episodes": 6
+        },
+        {
+          "policy": "recent_never",
+          "success": "1/3",
+          "incremental_cost": "0",
+          "episodes": 6
+        },
+        {
+          "policy": "structured_never",
+          "success": "1/3",
+          "incremental_cost": "0",
+          "episodes": 6
+        },
+        {
+          "policy": "structured_always",
+          "success": "1/3",
+          "incremental_cost": "1",
+          "episodes": 6
+        },
+        {
+          "policy": "structured_budgeted",
+          "success": "1/3",
+          "incremental_cost": "0",
+          "episodes": 6
+        },
+        {
+          "policy": "structured_never_recover",
+          "success": "1",
+          "incremental_cost": "8/3",
+          "episodes": 6
+        },
+        {
+          "policy": "structured_always_recover",
+          "success": "1",
+          "incremental_cost": "11/3",
+          "episodes": 6
+        }
+      ]
+    },
+    {
+      "scenario": "inspection_unavailable",
+      "config": {
+        "jobs": 6,
+        "candidate_count": 2,
+        "first_capacity": 2,
+        "second_capacity": 2,
+        "probe_available": false,
+        "probe_cost": 1,
+        "revise": false,
+        "delay": 3,
+        "cost_budget": 100,
+        "call_limit": 128,
+        "recovery_available": true,
+        "recovery_cost": 4
+      },
+      "route_count": 30,
+      "first_keys": [
+        "job-0",
+        "job-1"
+      ],
+      "p0": "1/3",
+      "p1": "1",
+      "points": [
+        {
+          "strategy": "retain",
+          "incremental_cost": "0",
+          "success": "1/3"
+        },
+        {
+          "strategy": "retain+recover",
+          "incremental_cost": "8/3",
+          "success": "1"
+        }
+      ],
+      "frontier": [
+        {
+          "strategy": "retain",
+          "incremental_cost": "0",
+          "success": "1/3"
+        },
+        {
+          "strategy": "retain+recover",
+          "incremental_cost": "8/3",
+          "success": "1"
+        }
+      ],
+      "policies": [
+        {
+          "policy": "reference_retain",
+          "success": "1/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_retain_recover",
+          "success": "1",
+          "incremental_cost": "8/3",
+          "episodes": 30
+        },
+        {
+          "policy": "recent_never",
+          "success": "1/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_never",
+          "success": "1/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_always",
+          "success": "1/3",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_budgeted",
+          "success": "1/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_never_recover",
+          "success": "1",
+          "incremental_cost": "8/3",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_always_recover",
+          "success": "1",
+          "incremental_cost": "11/3",
+          "episodes": 30
+        }
+      ]
+    },
+    {
+      "scenario": "recovery_unavailable",
+      "config": {
+        "jobs": 6,
+        "candidate_count": 2,
+        "first_capacity": 2,
+        "second_capacity": 2,
+        "probe_available": true,
+        "probe_cost": 1,
+        "revise": false,
+        "delay": 3,
+        "cost_budget": 100,
+        "call_limit": 128,
+        "recovery_available": false,
+        "recovery_cost": 4
+      },
+      "route_count": 30,
+      "first_keys": [
+        "job-0",
+        "job-1"
+      ],
+      "p0": "1/3",
+      "p1": "1",
+      "points": [
+        {
+          "strategy": "retain",
+          "incremental_cost": "0",
+          "success": "1/3"
+        },
+        {
+          "strategy": "inspect",
+          "incremental_cost": "1",
+          "success": "1"
+        }
+      ],
+      "frontier": [
+        {
+          "strategy": "retain",
+          "incremental_cost": "0",
+          "success": "1/3"
+        },
+        {
+          "strategy": "inspect",
+          "incremental_cost": "1",
+          "success": "1"
+        }
+      ],
+      "policies": [
+        {
+          "policy": "reference_retain",
+          "success": "1/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_inspect",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "recent_never",
+          "success": "1/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_never",
+          "success": "1/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_always",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_budgeted",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_never_recover",
+          "success": "1/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_always_recover",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        }
+      ]
+    },
+    {
+      "scenario": "anticipate_revision",
+      "config": {
+        "jobs": 6,
+        "candidate_count": 2,
+        "first_capacity": 1,
+        "second_capacity": 2,
+        "probe_available": true,
+        "probe_cost": 1,
+        "revise": true,
+        "delay": 3,
+        "cost_budget": 100,
+        "call_limit": 128,
+        "recovery_available": true,
+        "recovery_cost": 4
+      },
+      "route_count": 30,
+      "first_keys": [
+        "job-5"
+      ],
+      "p0": "2/3",
+      "p1": "1",
+      "points": [
+        {
+          "strategy": "retain",
+          "incremental_cost": "0",
+          "success": "2/3"
+        },
+        {
+          "strategy": "inspect",
+          "incremental_cost": "1",
+          "success": "1"
+        },
+        {
+          "strategy": "retain+recover",
+          "incremental_cost": "4/3",
+          "success": "1"
+        },
+        {
+          "strategy": "inspect+recover",
+          "incremental_cost": "1",
+          "success": "1"
+        }
+      ],
+      "frontier": [
+        {
+          "strategy": "retain",
+          "incremental_cost": "0",
+          "success": "2/3"
+        },
+        {
+          "strategy": "inspect",
+          "incremental_cost": "1",
+          "success": "1"
+        }
+      ],
+      "policies": [
+        {
+          "policy": "reference_retain",
+          "success": "2/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_retain_recover",
+          "success": "1",
+          "incremental_cost": "4/3",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_inspect",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "reference_inspect_recover",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "recent_never",
+          "success": "2/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_never",
+          "success": "2/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_always",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_budgeted",
+          "success": "2/3",
+          "incremental_cost": "0",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_never_recover",
+          "success": "1",
+          "incremental_cost": "4/3",
+          "episodes": 30
+        },
+        {
+          "policy": "structured_always_recover",
+          "success": "1",
+          "incremental_cost": "1",
+          "episodes": 30
+        }
+      ]
+    }
+  ]
+}

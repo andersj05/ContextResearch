@@ -148,6 +148,20 @@ def main() -> int:
     if actual_report != run_artifact_workflow.report(artifact_summary):
         errors.append("Artifact workflow report is stale; regenerate it")
     counts["artifact_workflow_configurations"] = len(artifact_rows)
+    import run_recovery_frontier
+    recovery_rows, recovery_grid, recovery_summary = run_recovery_frontier.diagnostics()
+    for filename, expected in (("recovery_episodes.csv", recovery_rows), ("recovery_grid.csv", recovery_grid)):
+        actual = rows("experiments/dependency_memory/results/" + filename)
+        if actual != [{key: str(value) for key, value in row.items()} for row in expected]:
+            errors.append(f"{filename} is stale; regenerate it")
+    recovery_path = ROOT / "experiments/dependency_memory/results/recovery_frontier_summary.json"
+    if json.loads(recovery_path.read_text(encoding="utf-8")) != json.loads(json.dumps(recovery_summary)):
+        errors.append("Recovery frontier summary is stale; regenerate it")
+    recovery_report = ROOT / "experiments/dependency_memory/results/recovery_frontier_report.md"
+    if recovery_report.read_text(encoding="utf-8") != run_recovery_frontier.report(recovery_summary):
+        errors.append("Recovery frontier report is stale; regenerate it")
+    counts["recovery_executed_episodes"] = len(recovery_rows)
+    counts["recovery_exact_configurations"] = len(recovery_grid)
     workflow = rows("experiments/dependency_memory/results/workflow_retention.csv")
     summary = json.loads((ROOT / "experiments/dependency_memory/results/summary.json").read_text(encoding="utf-8"))
     if len(workflow) != summary["workflow_runs"]:

@@ -10,6 +10,7 @@ python experiments/dependency_memory/compatibility.py
 python experiments/dependency_memory/compatibility_scaling.py
 python experiments/dependency_memory/audit_scaling.py
 python experiments/dependency_memory/run_artifact_workflow.py
+python experiments/dependency_memory/run_recovery_frontier.py
 python -m unittest discover -s experiments/dependency_memory -v
 ```
 
@@ -29,6 +30,8 @@ The record test uses a record budget. Serialized dictionary payload bytes are al
 
 ## Generated artifacts
 
+The [exact recovery reference](RECOVERY_FRONTIER.md) extends the same environment with one charged late archive read. It derives the success versus expected incremental-cost frontier for a declared finite record-selection class and checks attainment through the actual tool state machine. The [report](results/recovery_frontier_report.md) includes 2,640 scripted episodes and 3,000 exact configurations, with cheap-recovery, costly-recovery, revision, and capacity controls. These counts are not independent experimental samples.
+
 The [artifact/manifest environment](ARTIFACT_WORKFLOW.md) adds scripted actions that change workflow state, optional early manifest inspection, receipt revisions, two forced memory boundaries, and a delayed terminal verifier. Its [results report](results/artifact_workflow_report.md) describes 320 constructed development configurations and a paired failure witness. Both the first-stage record budget and later memory budget are explicit; action units and serialized bytes are not model tokens or dollars.
 
 `audit_scaling.py` independently checks proof ingredients using sign tuples and all 4,096 oriented assignments. The [audit note](../../research/PROOF_AUDIT_2026-09-18.md) supplies an analytic entropy proof and corrects the leave-one-out domain to n >= 4. External review and novelty comparison remain open.
@@ -43,6 +46,9 @@ The [artifact/manifest environment](ARTIFACT_WORKFLOW.md) adds scripted actions 
 - `artifact_workflow.csv` and `artifact_workflow_summary.json`: development configuration outcomes, synthetic costs, memory accounting, and provenance hashes.
 - `artifact_workflow_witness.json`: complete paired continuations of a controlled delayed-obligation regression fixture.
 - `artifact_workflow_report.md`: concise generated comparison and limitations.
+- `recovery_episodes.csv`: complete-route outcomes for the exact reference and fixed heuristics.
+- `recovery_grid.csv`: 3,000 exact parameter configurations.
+- `recovery_frontier_summary.json` and `recovery_frontier_report.md`: endpoint expectations, attainable frontier vertices, provenance, and interpretation.
 - `workflow_retention.csv`: 810 deterministic record-policy configurations.
 - `example_events.json`: a small inspectable generated event stream.
 - `summary.json`: scope and aggregate diagnostic counts.

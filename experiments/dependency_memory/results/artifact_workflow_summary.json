@@ -1,8 +1,8 @@
 {
-  "environment_version": "artifact_manifest_v1",
+  "environment_version": "artifact_manifest_v2",
   "source_sha256": {
-    "artifact_workflow.py": "acd7eaadeb0ebbdbd4b4114222fa07b7967b761549543e83767268479473ae72",
-    "run_artifact_workflow.py": "b97a908dfae18212432fe1efdc3203ff9999d9d9c96a11310c567a64ce737668"
+    "artifact_workflow.py": "9f4c8bf801d03cc07e798346c50d88f4ce8ba1a6cc6f33c3ded1d9ed08b454eb",
+    "run_artifact_workflow.py": "b343cf578d577df78080778f82fdb2d4fd95bee43b6757404547a545ea0cf81b"
   },
   "scope": "Constructed development diagnostics using stateless scripted policies; no LLM trials or significance claim.",
   "seeds": [
@@ -24,25 +24,37 @@
       "name": "recent_never",
       "probing": "never",
       "retention": "recent",
-      "probe_cost_ceiling": 2
+      "probe_cost_ceiling": 2,
+      "recovery": "never",
+      "first_keys": [],
+      "skip_refresh": false
     },
     {
       "name": "structured_never",
       "probing": "never",
       "retention": "manifest",
-      "probe_cost_ceiling": 2
+      "probe_cost_ceiling": 2,
+      "recovery": "never",
+      "first_keys": [],
+      "skip_refresh": false
     },
     {
       "name": "structured_always",
       "probing": "always",
       "retention": "manifest",
-      "probe_cost_ceiling": 2
+      "probe_cost_ceiling": 2,
+      "recovery": "never",
+      "first_keys": [],
+      "skip_refresh": false
     },
     {
       "name": "structured_budgeted",
       "probing": "budgeted",
       "retention": "manifest",
-      "probe_cost_ceiling": 2
+      "probe_cost_ceiling": 2,
+      "recovery": "never",
+      "first_keys": [],
+      "skip_refresh": false
     }
   ],
   "configurations": 320,

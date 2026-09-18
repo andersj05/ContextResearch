@@ -25,11 +25,13 @@ class Config:
     delay: int = 3
     cost_budget: int = 100
     call_limit: int = 128
+    recovery_available: bool = False
+    recovery_cost: int = 1
 
     def __post_init__(self):
         numbers = (self.jobs, self.candidate_count, self.first_capacity,
                    self.second_capacity, self.probe_cost, self.delay,
-                   self.cost_budget, self.call_limit)
+                   self.cost_budget, self.call_limit, self.recovery_cost)
         if any(type(n) is not int for n in numbers):
             raise ValueError("Dimensions, capacities, and costs must be integers")
         if not (1 <= self.candidate_count <= self.jobs):
@@ -38,6 +40,10 @@ class Config:
             raise ValueError("Capacities, delay, and budget must be nonnegative")
         if self.probe_cost < 1 or self.call_limit < 1:
             raise ValueError("Probe cost and call limit must be positive")
+        if self.recovery_cost < 0:
+            raise ValueError("Recovery cost must be nonnegative")
+        if any(type(v) is not bool for v in (self.probe_available, self.revise, self.recovery_available)):
+            raise ValueError("Availability and revision flags must be booleans")
 
 
 @dataclass(frozen=True)
@@ -111,6 +117,7 @@ class ArtifactEnvironment:
         self._current = {r.key: r for r in fixture.receipts}
         self.phase = "collect"
         self.probe_attempted = False
+        self.recovery_attempted = False
         self.calls = 0
         self.cost_units = 0
         self.completed_steps = 0
@@ -127,6 +134,8 @@ class ArtifactEnvironment:
             raise ValueError("An episode has exactly one terminal result")
         self.calls += 1
         charge = self.config.probe_cost if action.name == "inspect_manifest" else 1
+        if action.name == "recover_receipt":
+            charge = self.config.recovery_cost
         if self.calls > self.config.call_limit:
             return self._finish("call_limit")
         if self.cost_units + charge > self.config.cost_budget:
@@ -168,6 +177,14 @@ class ArtifactEnvironment:
             self.phase = "submit"
             expected = self._current[self._fixture.target]
             return Observation("requirement", required_key=expected.key, required_revision=expected.revision)
+        if self.phase == "submit" and action.name == "recover_receipt":
+            if self.recovery_attempted:
+                return Observation("blocked", error="recovery_already_attempted")
+            self.recovery_attempted = True
+            if not self.config.recovery_available:
+                return Observation("blocked", error="recovery_unavailable")
+            # Declared archive channel, restricted to the now-public requirement.
+            return Observation("recovery", receipts=(self._current[self._fixture.target],))
         if self.phase == "submit" and action.name == "submit":
             self.package = action.receipt
             expected = self._current[self._fixture.target]
@@ -198,12 +215,19 @@ class Policy:
     probing: str = "never"
     retention: str = "manifest"
     probe_cost_ceiling: int = 2
+    recovery: str = "never"
+    first_keys: tuple[str, ...] = ()
+    skip_refresh: bool = False
 
     def __post_init__(self):
         if self.probing not in ("never", "always", "budgeted"):
             raise ValueError("Unknown probe strategy")
-        if self.retention not in ("recent", "manifest"):
+        if self.retention not in ("recent", "manifest", "planned"):
             raise ValueError("Unknown retention strategy")
+        if self.recovery not in ("never", "if_missing"):
+            raise ValueError("Unknown recovery strategy")
+        if len(set(self.first_keys)) != len(self.first_keys):
+            raise ValueError("Planned keys must be distinct")
 
 
 POLICIES = (
@@ -230,8 +254,13 @@ def compact(memory, window, capacity, policy):
         raise ValueError("Negative record capacity")
     records = visible_records(memory, window)
     manifests = [event.candidates for event in window if event.kind == "manifest"]
-    if policy.retention == "manifest" and manifests:
+    if policy.retention in ("manifest", "planned") and manifests:
         records = tuple(r for r in records if r.key in manifests[-1])
+    if policy.retention == "planned" and window and window[-1].checkpoint == 1:
+        if manifests and policy.skip_refresh:
+            records = tuple(r for r in records if r.key != manifests[-1][0])
+        elif not manifests:
+            records = tuple(r for r in records if r.key in policy.first_keys)
     return records[-capacity:] if capacity else ()
 
 
@@ -245,7 +274,13 @@ def choose_action(view: PublicView, policy: Policy) -> Action:
     if view.phase == "submit":
         requirement = next(event for event in reversed(view.window) if event.kind == "requirement")
         receipt = next((r for r in visible_records(view.memory, view.window)
-                        if r.key == requirement.required_key), None)
+                        if r.key == requirement.required_key
+                        and r.revision == requirement.required_revision), None)
+        attempted = any(event.kind == "recovery" or event.error in
+                        ("recovery_unavailable", "recovery_already_attempted") for event in view.window)
+        if (receipt is None and policy.recovery == "if_missing"
+                and view.config.recovery_available and not attempted):
+            return Action("recover_receipt")
         return Action("submit", receipt)
     return Action({"collect": "collect_receipts", "manifest": "read_manifest",
                    "build": "process_build", "before_second": "seal_build",
@@ -274,6 +309,7 @@ class Episode:
     cost_units: int
     calls: int
     probe_attempted: bool
+    recovery_attempted: bool
     compactions: list[dict]
     trace: list[dict]
     package: Receipt | None
@@ -323,5 +359,6 @@ def run_episode(config: Config, fixture: Fixture, policy: Policy, *,
                 return Checkpoint(deepcopy(environment), memory, window, deepcopy(trace), deepcopy(compactions))
             memory, window = _apply_boundary(environment, memory, window, policy, compactions)
     return Episode(**environment.verdict, cost_units=environment.cost_units, calls=environment.calls,
-                   probe_attempted=environment.probe_attempted, compactions=compactions,
+                   probe_attempted=environment.probe_attempted, recovery_attempted=environment.recovery_attempted,
+                   compactions=compactions,
                    trace=trace, package=environment.package)

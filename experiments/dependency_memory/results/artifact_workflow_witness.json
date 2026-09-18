@@ -10,7 +10,9 @@
     "revise": true,
     "delay": 2,
     "cost_budget": 100,
-    "call_limit": 128
+    "call_limit": 128,
+    "recovery_available": false,
+    "recovery_cost": 1
   },
   "fixture": {
     "receipts": [
@@ -60,6 +62,7 @@
     "cost_units": 10,
     "calls": 10,
     "probe_attempted": true,
+    "recovery_attempted": false,
     "compactions": [
       {
         "boundary": 1,
@@ -313,6 +316,7 @@
     "cost_units": 10,
     "calls": 10,
     "probe_attempted": true,
+    "recovery_attempted": false,
     "compactions": [
       {
         "boundary": 1,
