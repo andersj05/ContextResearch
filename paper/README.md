@@ -10,7 +10,7 @@ Working title: **Repeated Context Compression with Delayed Task Dependencies**. 
 - [Claim register](claims.csv): what may currently be stated, with evidence and limitations.
 - [Bibliography](references.bib): stable citation keys and known metadata. Entries with incomplete metadata say so.
 
-Use `[@citation-key]` citations in Markdown. The builder checks keys and appends readable references to the assembled Markdown. Its HTML preview is a self-contained reading aid showing the draft source; it does not typeset LaTeX mathematics. The editable document is always `paper/manuscript.md`, not a generated preview.
+Use `[@citation-key]` citations in Markdown. The builder checks keys and appends readable references to the assembled Markdown. Its HTML preview is a self-contained reading copy with headings and linked citations; it does not typeset LaTeX mathematics. The editable document is always `paper/manuscript.md`, not a generated preview.
 
 ```powershell
 python scripts/build_paper.py

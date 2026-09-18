@@ -1,6 +1,6 @@
 # Related-work map for drafting
 
-These are distinctions to verify and explain, not declarations of novelty. The detailed review is in the September 16 proposal and survey. Bibliography entries with abbreviated titles or missing authors are explicitly marked as incomplete.
+These are distinctions to verify and explain, not declarations of novelty. The detailed review is in the September 16 proposal and survey. The focused bibliography records verified titles and authors; outstanding final publication metadata are identified in its notes.
 
 | Work | Connection | Distinction to maintain |
 |---|---|---|

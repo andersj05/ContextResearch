@@ -10,7 +10,7 @@ Do not upgrade an inherited `skimmed` label merely because a file was imported. 
 
 Edit [the manuscript](../paper/manuscript.md) and [the outline](../paper/outline.md). Use stable citation keys from [the bibliography](../paper/references.bib), in the form `[@key]`. Track nontrivial claims in [the claim register](../paper/claims.csv). Mark prospective experiments and missing results explicitly; no placeholder number should look like a measurement.
 
-Run `python scripts/build_paper.py` to generate `build/paper/manuscript.md` and `build/paper/preview.html`. The HTML preview displays the Markdown faithfully as readable source with navigation; it is not a typeset submission or a mathematical renderer. The assembled Markdown embeds the reference list so it can be shared without repository-relative links. Venue-specific PDF/LaTeX or Word production is a later formatting step.
+Run `python scripts/build_paper.py` to generate `build/paper/manuscript.md` and `build/paper/preview.html`. The HTML preview renders headings, prose, code blocks, and citations locally with navigation. Mathematics remains in readable text/code form; this is not a venue-formatted submission or a LaTeX renderer. The assembled Markdown embeds the reference list so it can be shared without repository-relative links. Venue-specific PDF/LaTeX or Word production is a later formatting step.
 
 For a new derivation, use [the derivation template](../paper/templates/derivation.md). For an experiment, use [the experiment-plan template](../paper/templates/experiment-plan.md). For source-specific notes, use [the source-note template](../paper/templates/source-note.md).
 
