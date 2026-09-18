@@ -1,0 +1,20 @@
+[
+  {
+    "path": "sources/harness-snapshots/2026-09-16/codex/LICENSE",
+    "url": "https://raw.githubusercontent.com/openai/codex/da18000cae9884ab45f83b2d07fbd5a220a1de39/LICENSE",
+    "sha256": "d17f227e4df5da1600391338865ce0f3055211760a36688f816941d58232d8dc",
+    "accessed": "2026-09-18"
+  },
+  {
+    "path": "sources/harness-snapshots/2026-09-16/pi/LICENSE",
+    "url": "https://raw.githubusercontent.com/earendil-works/pi/bdee230f1ea4beec1972c54716433ced691a92b5/LICENSE",
+    "sha256": "0457f5bcec3b3b211605dfb5d1a49042fd638f3686a410fe099c24a25af13c48",
+    "accessed": "2026-09-18"
+  },
+  {
+    "path": "sources/harness-snapshots/2026-09-16/omp/LICENSE",
+    "url": "https://raw.githubusercontent.com/can1357/oh-my-pi/60c9a115b2e8decc0f75825459362d14188a8bc0/LICENSE",
+    "sha256": "16c45f9d667442781f03fa198914cc39abcaa48ec5ed8f644643e554ca2fbf63",
+    "accessed": "2026-09-18"
+  }
+]
