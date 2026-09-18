@@ -14,9 +14,10 @@ Develop a mathematically precise and implementable study of repeated agent compa
 - An analytic eight-state lower bound, an exhaustive 256-assignment certificate, and an explicit three-bit witness graded on 192 cases.
 - A conservative two-bit chain-error lower bound of 49/192. The exact optimum remains unknown here.
 - A deterministic record-retention diagnostic with revisions and observable retirement events: 810 configurations, deliberately constructed to expose plain LRU's weakness. This does not compare LLMs or native harnesses.
-- Thirty-six offline tests and reproducible outputs, including an independent tuple/sign audit and deterministic environment invariants.
+- Thirty-seven offline tests and reproducible outputs, including an independent tuple/sign audit and deterministic environment invariants.
 - A state-changing artifact/manifest environment with two forced record-memory boundaries, optional costed early inspection, revisions, delayed obligations, a terminal verifier, and paired restoration of context and environment. Only scripted policies are implemented.
-- A September 18 exploratory block-family derivation: attaining 25% chain error requires exactly 3k parent bits; with 2k parent bits the error is greater than 25% + 1/512 for every k. The proof allows joint encoding across blocks and uses an exact finite entropy certificate. Independent proof review and novelty comparison remain open.
+- A locally audited block-family derivation: attaining error 1/4 requires exactly 3k parent bits; with 2k parent bits the error is greater than 1/4 + 1/512 for every k. The proof allows joint encoding across blocks. The audit supplies an analytic entropy lemma and checks 4,096 oriented branch assignments independently. External proof review and novelty comparison remain open.
+- A 320-configuration artifact/manifest development matrix and an explicit paired delayed-failure witness. In the 16 tight/cheap structured-policy cases, early inspection succeeds 16/16 versus 9/16 without it, costing 11 versus 10 synthetic action units. With ample initial memory, both succeed 16/16 and inspection adds cost. These are constructed scripted diagnostics, not independent trials or LLM gains.
 - A separate leave-one-out generalization whose exact-memory lower bound grows, but whose excess error can vanish. This motivates distinguishing an exact-optimum obstruction from a robust error gap.
 - A source-pinned survey of Codex, Pi, and OMP; supporting academic and official documentation review.
 
@@ -24,7 +25,7 @@ Develop a mathematically precise and implementable study of repeated agent compa
 
 - Novelty and external validation of the locally audited scaling argument, or a practically large composition penalty.
 - An exact optimum for the obstructed two-bit chain.
-- Natural-language compiler performance, learned retirement accuracy, or closed-loop agent results.
+- Natural-language compiler performance, learned retirement accuracy, or closed-loop LLM-agent results.
 - Cost or quality gains over native provider compaction.
 - The internal training objective, prompt, or algorithm of a proprietary compaction service.
 
@@ -34,7 +35,7 @@ Develop a mathematically precise and implementable study of repeated agent compa
 2. Assess and tighten the robust block-family gap. Investigate costed actions that reveal dependencies before a binding compaction, with explicit comparison to action-dependent side-information coding.
 3. Draft the introduction, model, and finite-example sections using the claim register. These sections can progress before model experiments.
 4. Design a small controlled LLM pilot after the information-access and reasoning-state controls are fixed. The proposed 36-run pilot is for debugging, not a powered benchmark.
-5. Run and inspect the deterministic artifact/manifest diagnostic matrix before designing any model adapter. The environment is implemented; model experiments remain unperformed.
+5. Use the completed deterministic environment to specify a model adapter with isolated evaluator state and held-out task templates. A metered recovery condition, automatic witness minimization, and native-provider baselines remain unimplemented.
 
 ## Implementation refinement from September 18
 
@@ -48,6 +49,7 @@ The discussion of classifier-based deletion reinforces cache-aware timing, reten
 - [Local proof audit and remaining review boundaries](../research/PROOF_AUDIT_2026-09-18.md)
 - [Prototype](../experiments/dependency_memory/README.md)
 - [Deterministic environment and information contract](../experiments/dependency_memory/ARTIFACT_WORKFLOW.md)
+- [Deterministic environment results](../experiments/dependency_memory/results/artifact_workflow_report.md)
 - [Research map and cautions](RESEARCH_MAP.md)
 - [Setup validation](../provenance/SETUP_VALIDATION.md)
 

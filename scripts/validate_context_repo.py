@@ -134,6 +134,20 @@ def main() -> int:
     if expected_audit != actual_audit:
         errors.append("Scaling audit certificate is stale; regenerate it")
     counts["audit_signed_assignments"] = expected_audit["signed_majority_assignments"]
+    import run_artifact_workflow
+    artifact_rows, artifact_summary, artifact_witness = run_artifact_workflow.diagnostics()
+    expected_rows = [{key: str(value) for key, value in row.items()} for row in artifact_rows]
+    if expected_rows != rows("experiments/dependency_memory/results/artifact_workflow.csv"):
+        errors.append("Artifact workflow CSV is stale; regenerate it")
+    for filename, expected in (("artifact_workflow_summary.json", artifact_summary),
+                               ("artifact_workflow_witness.json", artifact_witness)):
+        actual = json.loads((ROOT / "experiments/dependency_memory/results" / filename).read_text(encoding="utf-8"))
+        if actual != json.loads(json.dumps(expected)):
+            errors.append(f"{filename} is stale; regenerate it")
+    actual_report = (ROOT / "experiments/dependency_memory/results/artifact_workflow_report.md").read_text(encoding="utf-8")
+    if actual_report != run_artifact_workflow.report(artifact_summary):
+        errors.append("Artifact workflow report is stale; regenerate it")
+    counts["artifact_workflow_configurations"] = len(artifact_rows)
     workflow = rows("experiments/dependency_memory/results/workflow_retention.csv")
     summary = json.loads((ROOT / "experiments/dependency_memory/results/summary.json").read_text(encoding="utf-8"))
     if len(workflow) != summary["workflow_runs"]:

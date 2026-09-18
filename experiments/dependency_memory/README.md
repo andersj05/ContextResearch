@@ -8,6 +8,8 @@ Run from the repository root:
 python experiments/dependency_memory/experiment.py
 python experiments/dependency_memory/compatibility.py
 python experiments/dependency_memory/compatibility_scaling.py
+python experiments/dependency_memory/audit_scaling.py
+python experiments/dependency_memory/run_artifact_workflow.py
 python -m unittest discover -s experiments/dependency_memory -v
 ```
 
@@ -27,12 +29,20 @@ The record test uses a record budget. Serialized dictionary payload bytes are al
 
 ## Generated artifacts
 
+The [artifact/manifest environment](ARTIFACT_WORKFLOW.md) adds scripted actions that change workflow state, optional early manifest inspection, receipt revisions, two forced memory boundaries, and a delayed terminal verifier. Its [results report](results/artifact_workflow_report.md) describes 320 constructed development configurations and a paired failure witness. Both the first-stage record budget and later memory budget are explicit; action units and serialized bytes are not model tokens or dollars.
+
+`audit_scaling.py` independently checks proof ingredients using sign tuples and all 4,096 oriented assignments. The [audit note](../../research/PROOF_AUDIT_2026-09-18.md) supplies an analytic entropy proof and corrects the leave-one-out domain to n >= 4. External review and novelty comparison remain open.
+
 `compatibility_scaling.py` adds independent finite checks for the [September 18 derivations](../../research/CREATIVE_RESEARCH_DIRECTIONS_2026-09-18.md). It enumerates one-bit child codebooks, grades leave-one-out witnesses, and certifies an entropy bound across all 256 optimal four-bit branch assignments using exact integers. An information argument in the note turns that finite certificate into a uniform error gap for arbitrary joint encoders across independent blocks. These are local derivations awaiting independent review and novelty comparison, not LLM trials or computed chain optima.
 
 - `exact_frontier.csv`: exact finite optimum, an entropy lower bound, coordinate-retention error, and a witness codebook.
 - `disclosure_timing.csv`: same source size with relevance disclosed on either side of the bottleneck.
 - `compatibility_certificate.json`: exhaustive state-count histogram, explicit three-bit parent witness, and a conservative two-bit error lower bound.
 - `compatibility_scaling_certificate.json`: child-codebook checks, leave-one-out witnesses, and the finite entropy certificate used by the block-family proof.
+- `scaling_audit_certificate.json`: independent sign-based and abstract antipodal-fiber checks.
+- `artifact_workflow.csv` and `artifact_workflow_summary.json`: development configuration outcomes, synthetic costs, memory accounting, and provenance hashes.
+- `artifact_workflow_witness.json`: complete paired continuations of a controlled delayed-obligation regression fixture.
+- `artifact_workflow_report.md`: concise generated comparison and limitations.
 - `workflow_retention.csv`: 810 deterministic record-policy configurations.
 - `example_events.json`: a small inspectable generated event stream.
 - `summary.json`: scope and aggregate diagnostic counts.
@@ -41,4 +51,4 @@ Tests cross-check codebook enumeration against independent enumeration of binary
 
 ## What remains to build
 
-This is not an LLM or closed-loop agent evaluation. Next work is independent review and novelty comparison of the scaling derivation, tighter bounds where useful, a natural-language compiler adapter with explicit token accounting, and an environment whose actions alter state and whose final result can be checked. Keep raw transcripts outside the compiler's accessible inputs when testing irreversible memory; enabling retrieval requires a separately declared and metered condition.
+The environment now supports closed-loop scripted policies; no LLM evaluation has been performed. Next work is external review and novelty comparison of the scaling derivation, tighter bounds where useful, a natural-language adapter with evaluator isolation and explicit token accounting, and held-out task templates. Keep raw transcripts outside the compiler's accessible inputs when testing irreversible memory; enabling retrieval requires a separately declared and metered condition. Automatic witness minimization and native-provider baselines remain unimplemented.

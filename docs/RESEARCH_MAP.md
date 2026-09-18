@@ -10,7 +10,9 @@
 | Mathematical connections | [Mathematics addendum](../research/CONTEXT_COMPACTION_MATHEMATICS_2026-09-16.md) | Established foundations and conditional deductions |
 | Native-state and cache controls | [Experiment protocol](EXPERIMENT_PROTOCOL.md) | Planned experimental contract |
 | Completed computations | [Prototype README](../experiments/dependency_memory/README.md) | Reproducible offline diagnostics |
-| Scaling extensions and proposed next contribution | [September 18 research memo](../research/CREATIVE_RESEARCH_DIRECTIONS_2026-09-18.md) | Local derivations with finite certificates; independent review and novelty unresolved; action experiments unperformed |
+| Scaling extensions and proposed next contribution | [September 18 research memo](../research/CREATIVE_RESEARCH_DIRECTIONS_2026-09-18.md) | Local derivations; see the audit for corrected scope and analytic entropy proof |
+| Proof validity and remaining novelty questions | [Local proof audit](../research/PROOF_AUDIT_2026-09-18.md) | Local analytic audit and independent computational formulations; external review open |
+| Scripted actions and delayed terminal outcomes | [Artifact/manifest environment](../experiments/dependency_memory/ARTIFACT_WORKFLOW.md) | 320 constructed development configurations; no LLM trial |
 | Current writing | [Paper workspace](../paper/README.md) | Draft; incomplete results clearly marked |
 
 ## Broader inherited library

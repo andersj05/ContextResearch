@@ -70,5 +70,8 @@ Tests cover a delayed missing-receipt witness; an ample-memory control; insuffic
 The environment deliberately makes information timing consequential. It does not estimate how often this situation occurs in ordinary work. No held-out LLM evaluation has been run. There is no automatically minimized failure search yet; paired explicit witnesses establish the initial debugging interface.
 
 ```powershell
+python experiments/dependency_memory/run_artifact_workflow.py
 python -m unittest discover -s experiments/dependency_memory -v
 ```
+
+The generator writes a [report](results/artifact_workflow_report.md), all 320 development configurations, provenance hashes, and an explicit paired witness under `results/`. Use `--output PATH` for a separate output directory. The repository validator reconstructs all of these artifacts in memory and checks freshness. Validated locally with Python 3.14.2; only standard-library modules are used.

@@ -1,6 +1,6 @@
 # Experiment protocol draft
 
-Status: proposed protocol, September 18, 2026. Only the finite diagnostics are implemented. This document incorporates the follow-up discussion about blind filtering, reasoning continuity, and prompt-cache economics.
+Status: protocol draft, September 18, 2026. Finite coding diagnostics and a scripted artifact/manifest environment are implemented. LLM and provider-native experiments remain unperformed. This document incorporates the follow-up discussion about blind filtering, reasoning continuity, and prompt-cache economics.
 
 ## Questions and stages
 
@@ -47,6 +47,12 @@ Primary behavioral outcome: deterministic terminal task success, including delay
 Restore both environment and context in paired checkpoint continuations. Complete runs are also needed because actions and future observations change after a memory intervention. Immediate next-action agreement cannot establish preservation of a late obligation.
 
 The proposed 36-run pilot (six paired templates, two disclosure timings, three methods, one budget) is a debugging exercise. Choose final sample size from a prespecified effect size and pilot variability; do not claim significance from constructed configurations or tune against held-out tasks. Save model/configuration versions, seeds, immutable task definitions, usage records, and analysis code with each result.
+
+## Implemented deterministic environment
+
+The [artifact/manifest contract](../experiments/dependency_memory/ARTIFACT_WORKFLOW.md) specifies the state machine, exact policy inputs, two forced record-capacity boundaries, observation-window deletion, receipt revisions, optional manifest inspection, and terminal verifier. The runner passes neither source seeds nor evaluator truth, snapshots, or full logs to scripted policies. This is an interface contract for trusted functions; it is not yet an isolation boundary for an untrusted model tool process.
+
+The [development results](../experiments/dependency_memory/results/artifact_workflow_report.md) cover 320 constructed configurations and one explicit paired retention witness. Costs are synthetic action units, memory limits are receipt records, and serialized bytes are separate diagnostics. Fixtures and environment code are hashed in the outputs. All seeds are development seeds; there is no held-out empirical claim. These runs neither validate the bit-optimal theorem on natural language nor compare a new method with native compaction.
 
 ## Claim boundary
 

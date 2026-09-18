@@ -169,6 +169,16 @@ class ArtifactWorkflowTests(unittest.TestCase):
                 second = run_episode(config, make_fixture(seed, config), POLICIES[3])
                 self.assertEqual(first, second)
                 self.assertTrue(all(c["retained_records"] <= c["capacity_records"] for c in first.compactions))
+                if capacity == config.jobs:
+                    self.assertTrue(first.success)
+
+    def test_final_target_is_not_disclosed_in_the_shared_prefix(self):
+        config, fixture = instance()
+        first = run_episode(config, fixture, POLICIES[2], stop_at_first_boundary=True)
+        second = run_episode(config, replace(fixture, target="job-0"), POLICIES[2], stop_at_first_boundary=True)
+        self.assertEqual(first.memory, second.memory)
+        self.assertEqual(first.window, second.window)
+        self.assertEqual(first.trace, second.trace)
 
     def test_out_of_order_submission_cannot_skip_obligations(self):
         config, fixture = instance()

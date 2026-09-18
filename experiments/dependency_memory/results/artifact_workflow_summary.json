@@ -1,0 +1,213 @@
+{
+  "environment_version": "artifact_manifest_v1",
+  "source_sha256": {
+    "artifact_workflow.py": "acd7eaadeb0ebbdbd4b4114222fa07b7967b761549543e83767268479473ae72",
+    "run_artifact_workflow.py": "b97a908dfae18212432fe1efdc3203ff9999d9d9c96a11310c567a64ce737668"
+  },
+  "scope": "Constructed development diagnostics using stateless scripted policies; no LLM trials or significance claim.",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "revision_conditions": [
+    false,
+    true
+  ],
+  "policies": [
+    {
+      "name": "recent_never",
+      "probing": "never",
+      "retention": "recent",
+      "probe_cost_ceiling": 2
+    },
+    {
+      "name": "structured_never",
+      "probing": "never",
+      "retention": "manifest",
+      "probe_cost_ceiling": 2
+    },
+    {
+      "name": "structured_always",
+      "probing": "always",
+      "retention": "manifest",
+      "probe_cost_ceiling": 2
+    },
+    {
+      "name": "structured_budgeted",
+      "probing": "budgeted",
+      "retention": "manifest",
+      "probe_cost_ceiling": 2
+    }
+  ],
+  "configurations": 320,
+  "cost_unit": "synthetic action unit, not API dollars",
+  "memory_unit": "receipt record slots at boundaries; serialized bytes reported separately",
+  "aggregates": [
+    {
+      "scenario": "tight_cheap",
+      "policy": "recent_never",
+      "configurations": 16,
+      "successes": 7,
+      "total_cost_units": 160,
+      "mean_cost_units": "10"
+    },
+    {
+      "scenario": "tight_cheap",
+      "policy": "structured_never",
+      "configurations": 16,
+      "successes": 9,
+      "total_cost_units": 160,
+      "mean_cost_units": "10"
+    },
+    {
+      "scenario": "tight_cheap",
+      "policy": "structured_always",
+      "configurations": 16,
+      "successes": 16,
+      "total_cost_units": 176,
+      "mean_cost_units": "11"
+    },
+    {
+      "scenario": "tight_cheap",
+      "policy": "structured_budgeted",
+      "configurations": 16,
+      "successes": 16,
+      "total_cost_units": 176,
+      "mean_cost_units": "11"
+    },
+    {
+      "scenario": "ample_cheap",
+      "policy": "recent_never",
+      "configurations": 16,
+      "successes": 7,
+      "total_cost_units": 160,
+      "mean_cost_units": "10"
+    },
+    {
+      "scenario": "ample_cheap",
+      "policy": "structured_never",
+      "configurations": 16,
+      "successes": 16,
+      "total_cost_units": 160,
+      "mean_cost_units": "10"
+    },
+    {
+      "scenario": "ample_cheap",
+      "policy": "structured_always",
+      "configurations": 16,
+      "successes": 16,
+      "total_cost_units": 176,
+      "mean_cost_units": "11"
+    },
+    {
+      "scenario": "ample_cheap",
+      "policy": "structured_budgeted",
+      "configurations": 16,
+      "successes": 16,
+      "total_cost_units": 160,
+      "mean_cost_units": "10"
+    },
+    {
+      "scenario": "tight_expensive",
+      "policy": "recent_never",
+      "configurations": 16,
+      "successes": 7,
+      "total_cost_units": 160,
+      "mean_cost_units": "10"
+    },
+    {
+      "scenario": "tight_expensive",
+      "policy": "structured_never",
+      "configurations": 16,
+      "successes": 9,
+      "total_cost_units": 160,
+      "mean_cost_units": "10"
+    },
+    {
+      "scenario": "tight_expensive",
+      "policy": "structured_always",
+      "configurations": 16,
+      "successes": 16,
+      "total_cost_units": 288,
+      "mean_cost_units": "18"
+    },
+    {
+      "scenario": "tight_expensive",
+      "policy": "structured_budgeted",
+      "configurations": 16,
+      "successes": 9,
+      "total_cost_units": 160,
+      "mean_cost_units": "10"
+    },
+    {
+      "scenario": "tight_unavailable",
+      "policy": "recent_never",
+      "configurations": 16,
+      "successes": 7,
+      "total_cost_units": 160,
+      "mean_cost_units": "10"
+    },
+    {
+      "scenario": "tight_unavailable",
+      "policy": "structured_never",
+      "configurations": 16,
+      "successes": 9,
+      "total_cost_units": 160,
+      "mean_cost_units": "10"
+    },
+    {
+      "scenario": "tight_unavailable",
+      "policy": "structured_always",
+      "configurations": 16,
+      "successes": 9,
+      "total_cost_units": 176,
+      "mean_cost_units": "11"
+    },
+    {
+      "scenario": "tight_unavailable",
+      "policy": "structured_budgeted",
+      "configurations": 16,
+      "successes": 9,
+      "total_cost_units": 160,
+      "mean_cost_units": "10"
+    },
+    {
+      "scenario": "child_too_small",
+      "policy": "recent_never",
+      "configurations": 16,
+      "successes": 5,
+      "total_cost_units": 160,
+      "mean_cost_units": "10"
+    },
+    {
+      "scenario": "child_too_small",
+      "policy": "structured_never",
+      "configurations": 16,
+      "successes": 7,
+      "total_cost_units": 160,
+      "mean_cost_units": "10"
+    },
+    {
+      "scenario": "child_too_small",
+      "policy": "structured_always",
+      "configurations": 16,
+      "successes": 8,
+      "total_cost_units": 176,
+      "mean_cost_units": "11"
+    },
+    {
+      "scenario": "child_too_small",
+      "policy": "structured_budgeted",
+      "configurations": 16,
+      "successes": 8,
+      "total_cost_units": 176,
+      "mean_cost_units": "11"
+    }
+  ]
+}

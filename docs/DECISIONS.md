@@ -17,4 +17,6 @@ The [September 18 exploratory memo](../research/CREATIVE_RESEARCH_DIRECTIONS_202
 
 The user authorized a proof audit and one deterministic environment, with frequent commits on `task/` branches. The local audit preserves the block result, adds an analytic entropy lemma, and corrects the leave-one-out domain. Its independent formulations are not independent external review. The first environment will use a small artifact/manifest workflow and declared record budgets and action costs; it will not launch model calls.
 
+The completed deterministic matrix uses five resource/availability settings, eight development seeds, two revision conditions, and four scripted policies. Its 320 configurations are diagnostics. The budgeted inspection rule has a declared two-unit price ceiling, so expensive inspection can trade success for cost; no optimality or cost-normalized superiority is claimed. A separately constructed paired witness restores context and environment and compares retention at equal cost. Source and fixture hashes plus fresh regeneration checks anchor the outputs.
+
 Open decisions: target venue, authorship, final dependency family, exact chain optimum, model for the pilot, spending budget, and power analysis. None is silently fixed by the repository setup.

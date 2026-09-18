@@ -4,7 +4,7 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
-The repository contains a checked finite example, an exploratory scaling derivation with a uniform error gap, and an offline prototype. The scaling argument awaits independent review and a novelty comparison. The project does **not** yet establish an LLM performance improvement or savings over native Codex or Claude compaction.
+The repository contains a checked finite example, a locally audited scaling derivation with a uniform error gap, and a deterministic artifact/manifest environment. External proof review and a novelty comparison remain open. The project does **not** yet establish an LLM performance improvement or savings over native Codex or Claude compaction.
 
 ## Start here
 
@@ -13,6 +13,7 @@ The repository contains a checked finite example, an exploratory scaling derivat
 3. [Paper workspace](paper/README.md) — outline, manuscript starter, bibliography, and claim register.
 4. [Detailed research proposal](research/LIVE_DEPENDENCY_RESEARCH_PROPOSAL_2026-09-16.md) — model, proof, and experiment design.
 5. [Experiment protocol](docs/EXPERIMENT_PROTOCOL.md) — information access, native reasoning state, cache costs, and controls.
+6. [Proof audit](research/PROOF_AUDIT_2026-09-18.md) and [deterministic environment results](experiments/dependency_memory/results/artifact_workflow_report.md) — the latest completed work.
 
 Agents should first read [AGENTS.md](AGENTS.md). Historical notes are evidence and background; they do not override the current direction in `docs/STATUS.md`.
 
@@ -22,7 +23,7 @@ Agents should first read [AGENTS.md](AGENTS.md). Historical notes are evidence a
 |---|---|
 | `paper/` | Editable paper documents, references, and claim tracking |
 | `docs/` | Current status, decisions, protocols, and contribution workflow |
-| `experiments/dependency_memory/` | Standard-library Python prototype, 17 tests, and deterministic results |
+| `experiments/dependency_memory/` | Standard-library Python diagnostics, tested workflow environment, and reproducible results |
 | `research/` | Compaction survey, mathematics, proposal, and earlier research notes |
 | `sources/` | Focused reading guide and pinned Codex, Pi, and OMP source snapshots |
 | `papers/`, `paper-notes/` | Inherited library of 171 academic PDFs and associated notes |
@@ -40,6 +41,8 @@ python -m unittest discover -s experiments/dependency_memory -v
 python experiments/dependency_memory/experiment.py
 python experiments/dependency_memory/compatibility.py
 python experiments/dependency_memory/compatibility_scaling.py
+python experiments/dependency_memory/audit_scaling.py
+python experiments/dependency_memory/run_artifact_workflow.py
 python scripts/validate_context_repo.py
 python scripts/build_paper.py
 ```
@@ -50,4 +53,4 @@ The experiment scripts regenerate their committed diagnostic results. The paper 
 
 The active compaction investigation is dated September 16–18, 2026. The broader inherited literature snapshot is dated September 4, 2026; its review labels have not been upgraded by moving the files. Read the [migration record](provenance/README.md) and [historical corpus overview](HARNESS_CORPUS_README.md) for provenance and scope.
 
-This repository preserves the existing `ContextResearch` Git history. The imported `HarnessResearch` folder remains available as a migration backup. Continue this paper here to avoid divergent working copies. Setup commits are on `codex/context-research-setup`; no remote publication was part of this migration.
+This repository preserves the existing `ContextResearch` Git history. The imported `HarnessResearch` folder remains available as a migration backup. Continue this paper here to avoid divergent working copies. Historical setup commits are on `codex/context-research-setup`; current work uses `task/` branches per the user's preference. The audit and environment are on `task/proof-audit-environment`. No remote publication was requested.
