@@ -1,0 +1,1396 @@
+{
+  "examples_master.parquet": [
+    {
+      "name": "schema_version",
+      "type": "string",
+      "nullable": false,
+      "description": "Stable release schema identifier."
+    },
+    {
+      "name": "example_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Stable identifier for one input-prefix/compaction observation."
+    },
+    {
+      "name": "split",
+      "type": "string",
+      "nullable": false,
+      "description": "Parent-window-isolated train, validation, or test assignment."
+    },
+    {
+      "name": "parent_window_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Identifier of the full synthetic parent window from which this prefix was cut."
+    },
+    {
+      "name": "parent_window_sha256",
+      "type": "string",
+      "nullable": false,
+      "description": "SHA-256 of the complete parent window canonical serialization."
+    },
+    {
+      "name": "prefix_sha256",
+      "type": "string",
+      "nullable": false,
+      "description": "SHA-256 of the exact prefix message list used for compaction."
+    },
+    {
+      "name": "stored_input_window_sha16",
+      "type": "string",
+      "nullable": true,
+      "description": "Legacy truncated source SHA retained for backward joins."
+    },
+    {
+      "name": "nominal_window_target_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "Requested generation size for the parent window; not an observed tokenizer count."
+    },
+    {
+      "name": "cutoff_requested_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "Requested prefix cutoff budget used by the scaling harness."
+    },
+    {
+      "name": "actual_input_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "API-reported input tokens for the compaction request; ground-truth token count for the prefix."
+    },
+    {
+      "name": "input_message_count",
+      "type": "int32",
+      "nullable": true,
+      "description": "Number of chat messages in the compacted prefix."
+    },
+    {
+      "name": "input_messages",
+      "type": "large_list<element: struct<role: string not null, content: large_string not null>>",
+      "nullable": false,
+      "description": "Complete role/content message sequence submitted for compaction."
+    },
+    {
+      "name": "context_family",
+      "type": "string",
+      "nullable": false,
+      "description": "Synthetic workload family used to generate the context."
+    },
+    {
+      "name": "context_50k_bin",
+      "type": "int64",
+      "nullable": true,
+      "description": "Lower bound of the 50,000-token context-size analysis bin."
+    },
+    {
+      "name": "producer_model",
+      "type": "string",
+      "nullable": true,
+      "description": "Model requested when producing the compaction envelope."
+    },
+    {
+      "name": "capture_endpoint",
+      "type": "string",
+      "nullable": true,
+      "description": "Remote API endpoint used to obtain the fresh envelope."
+    },
+    {
+      "name": "capture_kind",
+      "type": "string",
+      "nullable": true,
+      "description": "Capture path classification, here standalone cutoff compaction."
+    },
+    {
+      "name": "original_discarded_item_id",
+      "type": "string",
+      "nullable": true,
+      "description": "Item ID recorded during generation when full ciphertext was discarded."
+    },
+    {
+      "name": "fresh_capture_item_id",
+      "type": "string",
+      "nullable": true,
+      "description": "Item ID from the later full-envelope fresh recapture."
+    },
+    {
+      "name": "fresh_capture_id_matches_original",
+      "type": "bool",
+      "nullable": true,
+      "description": "Whether fresh and original item IDs match; false for every observation."
+    },
+    {
+      "name": "stochastic_fresh_capture",
+      "type": "bool",
+      "nullable": true,
+      "description": "True: this is a valid fresh instance for the same input, not byte restoration."
+    },
+    {
+      "name": "raw_compaction_encrypted_content",
+      "type": "large_string",
+      "nullable": false,
+      "description": "Exact opaque encrypted_content string returned by fresh remote /responses/compact/."
+    },
+    {
+      "name": "raw_compaction_envelope_chars",
+      "type": "int32",
+      "nullable": true,
+      "description": "Unicode character count of encrypted_content."
+    },
+    {
+      "name": "raw_compaction_sha256",
+      "type": "string",
+      "nullable": true,
+      "description": "SHA-256 of raw_compaction_encrypted_content."
+    },
+    {
+      "name": "raw_envelope_is_plaintext",
+      "type": "bool",
+      "nullable": true,
+      "description": "Always false; encrypted_content is opaque ciphertext."
+    },
+    {
+      "name": "remote_compact_output_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "API-reported output tokens from the same fresh compact call that produced the retained envelope."
+    },
+    {
+      "name": "legacy_decoder_model",
+      "type": "string",
+      "nullable": true,
+      "description": "Decoder model used by the initial semantic recovery pass."
+    },
+    {
+      "name": "legacy_recovery_prompt_key",
+      "type": "string",
+      "nullable": true,
+      "description": "Winning legacy prompt family."
+    },
+    {
+      "name": "legacy_selection_metric",
+      "type": "string",
+      "nullable": true,
+      "description": "Explicit oracle selection rule used for the legacy weak label."
+    },
+    {
+      "name": "legacy_recovery_text",
+      "type": "large_string",
+      "nullable": true,
+      "description": "Initial semantic recovered-state candidate selected using synthetic sentinels."
+    },
+    {
+      "name": "legacy_echo_input_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "API input-token count when legacy text was re-fed as one user message."
+    },
+    {
+      "name": "legacy_adjusted_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "legacy_echo_input_tokens minus calibrated six-token message framing overhead."
+    },
+    {
+      "name": "legacy_token_ratio",
+      "type": "float",
+      "nullable": true,
+      "description": "legacy_adjusted_tokens / remote_compact_output_tokens."
+    },
+    {
+      "name": "legacy_token_error",
+      "type": "float",
+      "nullable": true,
+      "description": "Absolute value of 1 - legacy_token_ratio."
+    },
+    {
+      "name": "legacy_candidate_metadata",
+      "type": "large_list<element: struct<prompt_key: string, length_chars: int32, dump_length_chars: int32, input_tokens: int64, legacy_occurrence_fact_hits: int32>>",
+      "nullable": true,
+      "description": "Metadata for all initial recovery attempts; full candidate text was not retained in the legacy pass."
+    },
+    {
+      "name": "advanced_available",
+      "type": "bool",
+      "nullable": false,
+      "description": "Whether this example belongs to the selected advanced benchmark."
+    },
+    {
+      "name": "advanced_benchmark_partition",
+      "type": "string",
+      "nullable": true,
+      "description": "Discovery or pre-registered holdout partition."
+    },
+    {
+      "name": "advanced_decoder_model",
+      "type": "string",
+      "nullable": true,
+      "description": "Luna or Terra model yielding the selected advanced rendering."
+    },
+    {
+      "name": "advanced_variant",
+      "type": "string",
+      "nullable": true,
+      "description": "Advanced state-aware prompt variant yielding the selected rendering."
+    },
+    {
+      "name": "advanced_replicate",
+      "type": "int32",
+      "nullable": true,
+      "description": "Replicate number within the advanced candidate run."
+    },
+    {
+      "name": "advanced_selection_pipeline",
+      "type": "string",
+      "nullable": true,
+      "description": "Recorded best-of-N/fallback selection lineage."
+    },
+    {
+      "name": "advanced_recovery_text",
+      "type": "large_string",
+      "nullable": true,
+      "description": "Selected high-token-fidelity compacted-state rendering; not verified verbatim plaintext."
+    },
+    {
+      "name": "advanced_echo_input_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "API token count when advanced recovery was re-fed as one user message."
+    },
+    {
+      "name": "advanced_adjusted_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "advanced_echo_input_tokens minus calibrated six-token framing overhead."
+    },
+    {
+      "name": "advanced_token_ratio",
+      "type": "float",
+      "nullable": true,
+      "description": "advanced_adjusted_tokens / remote_compact_output_tokens."
+    },
+    {
+      "name": "advanced_token_error",
+      "type": "float",
+      "nullable": true,
+      "description": "Absolute value of 1 - advanced_token_ratio; primary recovery confidence metric."
+    },
+    {
+      "name": "advanced_improves_legacy",
+      "type": "bool",
+      "nullable": true,
+      "description": "Whether advanced token error is strictly below the paired legacy error."
+    },
+    {
+      "name": "target_status",
+      "type": "string",
+      "nullable": false,
+      "description": "Plain-language target provenance and confidence classification."
+    },
+    {
+      "name": "verified_plaintext",
+      "type": "bool",
+      "nullable": false,
+      "description": "Always false: no cryptographic or byte-exact plaintext oracle exists."
+    },
+    {
+      "name": "label_is_gold",
+      "type": "bool",
+      "nullable": false,
+      "description": "Always false: recovered states are pseudo-labels despite strong token evidence."
+    },
+    {
+      "name": "ground_truth_fact_occurrences",
+      "type": "large_list<element: string>",
+      "nullable": true,
+      "description": "Original occurrence-weighted synthetic sentinels; retained for backward reproduction only."
+    },
+    {
+      "name": "ground_truth_facts_unique",
+      "type": "large_list<element: string>",
+      "nullable": true,
+      "description": "Deduplicated sentinels known to occur in this exact input prefix."
+    },
+    {
+      "name": "static_ground_truth_facts_unique",
+      "type": "large_list<element: string>",
+      "nullable": true,
+      "description": "Deduplicated recurring generator sentinels."
+    },
+    {
+      "name": "dynamic_ground_truth_facts_unique",
+      "type": "large_list<element: string>",
+      "nullable": true,
+      "description": "Deduplicated per-block salts/tags and other dynamic sentinels."
+    },
+    {
+      "name": "legacy_unique_fact_hits",
+      "type": "int32",
+      "nullable": true,
+      "description": "Count of unique input sentinels appearing verbatim in legacy recovery."
+    },
+    {
+      "name": "legacy_unique_fact_recall",
+      "type": "float",
+      "nullable": true,
+      "description": "legacy_unique_fact_hits / count of unique input sentinels."
+    },
+    {
+      "name": "legacy_dynamic_fact_hits",
+      "type": "int32",
+      "nullable": true,
+      "description": "Count of unique dynamic sentinels appearing verbatim in legacy recovery."
+    },
+    {
+      "name": "legacy_dynamic_fact_recall",
+      "type": "float",
+      "nullable": true,
+      "description": "legacy_dynamic_fact_hits / count of unique dynamic sentinels."
+    },
+    {
+      "name": "advanced_unique_fact_hits",
+      "type": "int32",
+      "nullable": true,
+      "description": "Count of unique input sentinels appearing in advanced recovery."
+    },
+    {
+      "name": "advanced_unique_fact_recall",
+      "type": "float",
+      "nullable": true,
+      "description": "advanced unique sentinel recall; completeness is not expected for selective summaries."
+    },
+    {
+      "name": "advanced_dynamic_fact_hits",
+      "type": "int32",
+      "nullable": true,
+      "description": "Count of unique dynamic sentinels appearing in advanced recovery."
+    },
+    {
+      "name": "advanced_dynamic_fact_recall",
+      "type": "float",
+      "nullable": true,
+      "description": "Advanced dynamic sentinel recall."
+    },
+    {
+      "name": "advanced_lexical_support",
+      "type": "float",
+      "nullable": true,
+      "description": "Fraction of recovery output word tokens supported by the source context vocabulary."
+    },
+    {
+      "name": "advanced_identifier_support",
+      "type": "float",
+      "nullable": true,
+      "description": "Fraction of extracted identifier-like tokens supported by source identifiers."
+    },
+    {
+      "name": "confidence_tier",
+      "type": "string",
+      "nullable": false,
+      "description": "Machine-readable label tier; advanced A/B/C or legacy v1 tier."
+    },
+    {
+      "name": "recommended_sft",
+      "type": "bool",
+      "nullable": false,
+      "description": "True only for parent-train advanced rows with <=5% token error."
+    },
+    {
+      "name": "recommended_evaluation",
+      "type": "bool",
+      "nullable": false,
+      "description": "True for advanced rows in held-out validation/test folds."
+    },
+    {
+      "name": "key_limitations",
+      "type": "large_list<element: string>",
+      "nullable": false,
+      "description": "Per-row copy of load-bearing interpretation caveats."
+    }
+  ],
+  "advanced_selected_examples.parquet": [
+    {
+      "name": "schema_version",
+      "type": "string",
+      "nullable": false,
+      "description": "Stable release schema identifier."
+    },
+    {
+      "name": "example_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Stable identifier for one input-prefix/compaction observation."
+    },
+    {
+      "name": "split",
+      "type": "string",
+      "nullable": false,
+      "description": "Parent-window-isolated train, validation, or test assignment."
+    },
+    {
+      "name": "parent_window_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Identifier of the full synthetic parent window from which this prefix was cut."
+    },
+    {
+      "name": "parent_window_sha256",
+      "type": "string",
+      "nullable": false,
+      "description": "SHA-256 of the complete parent window canonical serialization."
+    },
+    {
+      "name": "prefix_sha256",
+      "type": "string",
+      "nullable": false,
+      "description": "SHA-256 of the exact prefix message list used for compaction."
+    },
+    {
+      "name": "stored_input_window_sha16",
+      "type": "string",
+      "nullable": true,
+      "description": "Legacy truncated source SHA retained for backward joins."
+    },
+    {
+      "name": "nominal_window_target_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "Requested generation size for the parent window; not an observed tokenizer count."
+    },
+    {
+      "name": "cutoff_requested_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "Requested prefix cutoff budget used by the scaling harness."
+    },
+    {
+      "name": "actual_input_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "API-reported input tokens for the compaction request; ground-truth token count for the prefix."
+    },
+    {
+      "name": "input_message_count",
+      "type": "int32",
+      "nullable": true,
+      "description": "Number of chat messages in the compacted prefix."
+    },
+    {
+      "name": "input_messages",
+      "type": "large_list<element: struct<role: string not null, content: large_string not null>>",
+      "nullable": false,
+      "description": "Complete role/content message sequence submitted for compaction."
+    },
+    {
+      "name": "context_family",
+      "type": "string",
+      "nullable": false,
+      "description": "Synthetic workload family used to generate the context."
+    },
+    {
+      "name": "context_50k_bin",
+      "type": "int64",
+      "nullable": true,
+      "description": "Lower bound of the 50,000-token context-size analysis bin."
+    },
+    {
+      "name": "producer_model",
+      "type": "string",
+      "nullable": true,
+      "description": "Model requested when producing the compaction envelope."
+    },
+    {
+      "name": "capture_endpoint",
+      "type": "string",
+      "nullable": true,
+      "description": "Remote API endpoint used to obtain the fresh envelope."
+    },
+    {
+      "name": "capture_kind",
+      "type": "string",
+      "nullable": true,
+      "description": "Capture path classification, here standalone cutoff compaction."
+    },
+    {
+      "name": "original_discarded_item_id",
+      "type": "string",
+      "nullable": true,
+      "description": "Item ID recorded during generation when full ciphertext was discarded."
+    },
+    {
+      "name": "fresh_capture_item_id",
+      "type": "string",
+      "nullable": true,
+      "description": "Item ID from the later full-envelope fresh recapture."
+    },
+    {
+      "name": "fresh_capture_id_matches_original",
+      "type": "bool",
+      "nullable": true,
+      "description": "Whether fresh and original item IDs match; false for every observation."
+    },
+    {
+      "name": "stochastic_fresh_capture",
+      "type": "bool",
+      "nullable": true,
+      "description": "True: this is a valid fresh instance for the same input, not byte restoration."
+    },
+    {
+      "name": "raw_compaction_encrypted_content",
+      "type": "large_string",
+      "nullable": false,
+      "description": "Exact opaque encrypted_content string returned by fresh remote /responses/compact/."
+    },
+    {
+      "name": "raw_compaction_envelope_chars",
+      "type": "int32",
+      "nullable": true,
+      "description": "Unicode character count of encrypted_content."
+    },
+    {
+      "name": "raw_compaction_sha256",
+      "type": "string",
+      "nullable": true,
+      "description": "SHA-256 of raw_compaction_encrypted_content."
+    },
+    {
+      "name": "raw_envelope_is_plaintext",
+      "type": "bool",
+      "nullable": true,
+      "description": "Always false; encrypted_content is opaque ciphertext."
+    },
+    {
+      "name": "remote_compact_output_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "API-reported output tokens from the same fresh compact call that produced the retained envelope."
+    },
+    {
+      "name": "legacy_decoder_model",
+      "type": "string",
+      "nullable": true,
+      "description": "Decoder model used by the initial semantic recovery pass."
+    },
+    {
+      "name": "legacy_recovery_prompt_key",
+      "type": "string",
+      "nullable": true,
+      "description": "Winning legacy prompt family."
+    },
+    {
+      "name": "legacy_selection_metric",
+      "type": "string",
+      "nullable": true,
+      "description": "Explicit oracle selection rule used for the legacy weak label."
+    },
+    {
+      "name": "legacy_recovery_text",
+      "type": "large_string",
+      "nullable": true,
+      "description": "Initial semantic recovered-state candidate selected using synthetic sentinels."
+    },
+    {
+      "name": "legacy_echo_input_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "API input-token count when legacy text was re-fed as one user message."
+    },
+    {
+      "name": "legacy_adjusted_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "legacy_echo_input_tokens minus calibrated six-token message framing overhead."
+    },
+    {
+      "name": "legacy_token_ratio",
+      "type": "float",
+      "nullable": true,
+      "description": "legacy_adjusted_tokens / remote_compact_output_tokens."
+    },
+    {
+      "name": "legacy_token_error",
+      "type": "float",
+      "nullable": true,
+      "description": "Absolute value of 1 - legacy_token_ratio."
+    },
+    {
+      "name": "legacy_candidate_metadata",
+      "type": "large_list<element: struct<prompt_key: string, length_chars: int32, dump_length_chars: int32, input_tokens: int64, legacy_occurrence_fact_hits: int32>>",
+      "nullable": true,
+      "description": "Metadata for all initial recovery attempts; full candidate text was not retained in the legacy pass."
+    },
+    {
+      "name": "advanced_available",
+      "type": "bool",
+      "nullable": false,
+      "description": "Whether this example belongs to the selected advanced benchmark."
+    },
+    {
+      "name": "advanced_benchmark_partition",
+      "type": "string",
+      "nullable": true,
+      "description": "Discovery or pre-registered holdout partition."
+    },
+    {
+      "name": "advanced_decoder_model",
+      "type": "string",
+      "nullable": true,
+      "description": "Luna or Terra model yielding the selected advanced rendering."
+    },
+    {
+      "name": "advanced_variant",
+      "type": "string",
+      "nullable": true,
+      "description": "Advanced state-aware prompt variant yielding the selected rendering."
+    },
+    {
+      "name": "advanced_replicate",
+      "type": "int32",
+      "nullable": true,
+      "description": "Replicate number within the advanced candidate run."
+    },
+    {
+      "name": "advanced_selection_pipeline",
+      "type": "string",
+      "nullable": true,
+      "description": "Recorded best-of-N/fallback selection lineage."
+    },
+    {
+      "name": "advanced_recovery_text",
+      "type": "large_string",
+      "nullable": true,
+      "description": "Selected high-token-fidelity compacted-state rendering; not verified verbatim plaintext."
+    },
+    {
+      "name": "advanced_echo_input_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "API token count when advanced recovery was re-fed as one user message."
+    },
+    {
+      "name": "advanced_adjusted_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "advanced_echo_input_tokens minus calibrated six-token framing overhead."
+    },
+    {
+      "name": "advanced_token_ratio",
+      "type": "float",
+      "nullable": true,
+      "description": "advanced_adjusted_tokens / remote_compact_output_tokens."
+    },
+    {
+      "name": "advanced_token_error",
+      "type": "float",
+      "nullable": true,
+      "description": "Absolute value of 1 - advanced_token_ratio; primary recovery confidence metric."
+    },
+    {
+      "name": "advanced_improves_legacy",
+      "type": "bool",
+      "nullable": true,
+      "description": "Whether advanced token error is strictly below the paired legacy error."
+    },
+    {
+      "name": "target_status",
+      "type": "string",
+      "nullable": false,
+      "description": "Plain-language target provenance and confidence classification."
+    },
+    {
+      "name": "verified_plaintext",
+      "type": "bool",
+      "nullable": false,
+      "description": "Always false: no cryptographic or byte-exact plaintext oracle exists."
+    },
+    {
+      "name": "label_is_gold",
+      "type": "bool",
+      "nullable": false,
+      "description": "Always false: recovered states are pseudo-labels despite strong token evidence."
+    },
+    {
+      "name": "ground_truth_fact_occurrences",
+      "type": "large_list<element: string>",
+      "nullable": true,
+      "description": "Original occurrence-weighted synthetic sentinels; retained for backward reproduction only."
+    },
+    {
+      "name": "ground_truth_facts_unique",
+      "type": "large_list<element: string>",
+      "nullable": true,
+      "description": "Deduplicated sentinels known to occur in this exact input prefix."
+    },
+    {
+      "name": "static_ground_truth_facts_unique",
+      "type": "large_list<element: string>",
+      "nullable": true,
+      "description": "Deduplicated recurring generator sentinels."
+    },
+    {
+      "name": "dynamic_ground_truth_facts_unique",
+      "type": "large_list<element: string>",
+      "nullable": true,
+      "description": "Deduplicated per-block salts/tags and other dynamic sentinels."
+    },
+    {
+      "name": "legacy_unique_fact_hits",
+      "type": "int32",
+      "nullable": true,
+      "description": "Count of unique input sentinels appearing verbatim in legacy recovery."
+    },
+    {
+      "name": "legacy_unique_fact_recall",
+      "type": "float",
+      "nullable": true,
+      "description": "legacy_unique_fact_hits / count of unique input sentinels."
+    },
+    {
+      "name": "legacy_dynamic_fact_hits",
+      "type": "int32",
+      "nullable": true,
+      "description": "Count of unique dynamic sentinels appearing verbatim in legacy recovery."
+    },
+    {
+      "name": "legacy_dynamic_fact_recall",
+      "type": "float",
+      "nullable": true,
+      "description": "legacy_dynamic_fact_hits / count of unique dynamic sentinels."
+    },
+    {
+      "name": "advanced_unique_fact_hits",
+      "type": "int32",
+      "nullable": true,
+      "description": "Count of unique input sentinels appearing in advanced recovery."
+    },
+    {
+      "name": "advanced_unique_fact_recall",
+      "type": "float",
+      "nullable": true,
+      "description": "advanced unique sentinel recall; completeness is not expected for selective summaries."
+    },
+    {
+      "name": "advanced_dynamic_fact_hits",
+      "type": "int32",
+      "nullable": true,
+      "description": "Count of unique dynamic sentinels appearing in advanced recovery."
+    },
+    {
+      "name": "advanced_dynamic_fact_recall",
+      "type": "float",
+      "nullable": true,
+      "description": "Advanced dynamic sentinel recall."
+    },
+    {
+      "name": "advanced_lexical_support",
+      "type": "float",
+      "nullable": true,
+      "description": "Fraction of recovery output word tokens supported by the source context vocabulary."
+    },
+    {
+      "name": "advanced_identifier_support",
+      "type": "float",
+      "nullable": true,
+      "description": "Fraction of extracted identifier-like tokens supported by source identifiers."
+    },
+    {
+      "name": "confidence_tier",
+      "type": "string",
+      "nullable": false,
+      "description": "Machine-readable label tier; advanced A/B/C or legacy v1 tier."
+    },
+    {
+      "name": "recommended_sft",
+      "type": "bool",
+      "nullable": false,
+      "description": "True only for parent-train advanced rows with <=5% token error."
+    },
+    {
+      "name": "recommended_evaluation",
+      "type": "bool",
+      "nullable": false,
+      "description": "True for advanced rows in held-out validation/test folds."
+    },
+    {
+      "name": "key_limitations",
+      "type": "large_list<element: string>",
+      "nullable": false,
+      "description": "Per-row copy of load-bearing interpretation caveats."
+    }
+  ],
+  "recovery_candidates.parquet": [
+    {
+      "name": "schema_version",
+      "type": "string",
+      "nullable": false,
+      "description": "Stable release schema identifier."
+    },
+    {
+      "name": "candidate_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Stable row-unique identifier for one decoder candidate."
+    },
+    {
+      "name": "example_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Stable identifier for one input-prefix/compaction observation."
+    },
+    {
+      "name": "parent_window_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Identifier of the full synthetic parent window from which this prefix was cut."
+    },
+    {
+      "name": "cutoff_requested_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "Requested prefix cutoff budget used by the scaling harness."
+    },
+    {
+      "name": "prefix_sha256",
+      "type": "string",
+      "nullable": false,
+      "description": "SHA-256 of the exact prefix message list used for compaction."
+    },
+    {
+      "name": "input_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "API-reported input tokens associated with the candidate's source prefix."
+    },
+    {
+      "name": "model",
+      "type": "string",
+      "nullable": true,
+      "description": "Decoder model for this candidate or method."
+    },
+    {
+      "name": "variant",
+      "type": "string",
+      "nullable": true,
+      "description": "Recovery prompt/template variant."
+    },
+    {
+      "name": "replicate",
+      "type": "int32",
+      "nullable": true,
+      "description": "Candidate replicate index."
+    },
+    {
+      "name": "raw_compaction_item_id",
+      "type": "string",
+      "nullable": true,
+      "description": "Native compaction_summary item ID replayed to the decoder."
+    },
+    {
+      "name": "raw_compaction_envelope_chars",
+      "type": "int32",
+      "nullable": true,
+      "description": "Unicode character count of encrypted_content."
+    },
+    {
+      "name": "reported_compact_output_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "Remote compact output-token target used for candidate scoring."
+    },
+    {
+      "name": "decode_input_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "Decoder call input tokens."
+    },
+    {
+      "name": "decode_output_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "Decoder call output tokens."
+    },
+    {
+      "name": "decode_reasoning_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "Reasoning-token component reported for decoder output."
+    },
+    {
+      "name": "decode_errors",
+      "type": "large_list<element: string>",
+      "nullable": true,
+      "description": "Captured decoder/API errors serialized as strings."
+    },
+    {
+      "name": "raw_output",
+      "type": "large_string",
+      "nullable": true,
+      "description": "Unmodified decoder text before tagged-body extraction."
+    },
+    {
+      "name": "extracted_text",
+      "type": "large_string",
+      "nullable": true,
+      "description": "Candidate body after removing optional <dump> wrapper."
+    },
+    {
+      "name": "extracted_chars",
+      "type": "int32",
+      "nullable": true,
+      "description": "Character count of extracted_text."
+    },
+    {
+      "name": "echo_input_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "API input tokens from re-feeding extracted_text."
+    },
+    {
+      "name": "echo_overhead_tokens",
+      "type": "int32",
+      "nullable": true,
+      "description": "Calibrated chat framing overhead subtracted from echo_input_tokens; six tokens."
+    },
+    {
+      "name": "adjusted_extracted_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "echo_input_tokens - echo_overhead_tokens."
+    },
+    {
+      "name": "token_ratio",
+      "type": "float",
+      "nullable": true,
+      "description": "adjusted_extracted_tokens / reported_compact_output_tokens."
+    },
+    {
+      "name": "extraction_error",
+      "type": "float",
+      "nullable": true,
+      "description": "Absolute value of 1 - token_ratio."
+    },
+    {
+      "name": "unique_fact_count",
+      "type": "int32",
+      "nullable": true,
+      "description": "Number of deduplicated source sentinels."
+    },
+    {
+      "name": "unique_fact_hits",
+      "type": "int32",
+      "nullable": true,
+      "description": "Deduplicated source sentinels found in candidate text."
+    },
+    {
+      "name": "unique_fact_recall",
+      "type": "float",
+      "nullable": true,
+      "description": "unique_fact_hits / unique_fact_count."
+    },
+    {
+      "name": "dynamic_fact_count",
+      "type": "int32",
+      "nullable": true,
+      "description": "Number of deduplicated dynamic source sentinels."
+    },
+    {
+      "name": "dynamic_fact_hits",
+      "type": "int32",
+      "nullable": true,
+      "description": "Dynamic sentinels found in candidate text."
+    },
+    {
+      "name": "dynamic_fact_recall",
+      "type": "float",
+      "nullable": true,
+      "description": "dynamic_fact_hits / dynamic_fact_count."
+    },
+    {
+      "name": "lexical_support",
+      "type": "float",
+      "nullable": true,
+      "description": "Source-vocabulary lexical support score."
+    },
+    {
+      "name": "identifier_support",
+      "type": "float",
+      "nullable": true,
+      "description": "Source-identifier grounding score."
+    },
+    {
+      "name": "refusal",
+      "type": "bool",
+      "nullable": true,
+      "description": "Heuristic refusal marker."
+    },
+    {
+      "name": "tagged_output",
+      "type": "bool",
+      "nullable": true,
+      "description": "Whether output used the requested <dump> wrapper."
+    },
+    {
+      "name": "baseline_prompt_key",
+      "type": "string",
+      "nullable": true,
+      "description": "Paired legacy winning prompt key."
+    },
+    {
+      "name": "baseline_text",
+      "type": "large_string",
+      "nullable": true,
+      "description": "Paired legacy recovered text."
+    },
+    {
+      "name": "baseline_echo_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "Paired legacy echo-back token count."
+    },
+    {
+      "name": "selected_final",
+      "type": "bool",
+      "nullable": false,
+      "description": "Whether this candidate is the final selected recovery for its example."
+    },
+    {
+      "name": "benchmark_partition",
+      "type": "string",
+      "nullable": true,
+      "description": "Discovery or holdout partition inherited from selected example."
+    }
+  ],
+  "recovery_experiment_runs.parquet": [
+    {
+      "name": "experiment_record_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Stable identifier for one raw experimental observation in one source log."
+    },
+    {
+      "name": "source_path",
+      "type": "string",
+      "nullable": false,
+      "description": "Repository-relative source artifact path."
+    },
+    {
+      "name": "source_sha256",
+      "type": "string",
+      "nullable": false,
+      "description": "SHA-256 of the source artifact."
+    },
+    {
+      "name": "source_row",
+      "type": "int64",
+      "nullable": false,
+      "description": "Zero-based row ordinal within the source JSONL."
+    },
+    {
+      "name": "experiment_stage",
+      "type": "string",
+      "nullable": false,
+      "description": "Paper control, prompt discovery, null control, holdout, fallback, rescue, or chunk probe stage."
+    },
+    {
+      "name": "control_condition",
+      "type": "string",
+      "nullable": false,
+      "description": "Native compaction_summary envelope or no-envelope prompt-only control."
+    },
+    {
+      "name": "window_id",
+      "type": "string",
+      "nullable": true,
+      "description": "See artifact-specific README and method catalog."
+    },
+    {
+      "name": "cutoff_requested_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "Requested prefix cutoff budget used by the scaling harness."
+    },
+    {
+      "name": "prefix_sha256",
+      "type": "string",
+      "nullable": true,
+      "description": "SHA-256 of the exact prefix message list used for compaction."
+    },
+    {
+      "name": "input_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "API-reported input tokens associated with the candidate's source prefix."
+    },
+    {
+      "name": "model",
+      "type": "string",
+      "nullable": true,
+      "description": "Decoder model for this candidate or method."
+    },
+    {
+      "name": "variant",
+      "type": "string",
+      "nullable": true,
+      "description": "Recovery prompt/template variant."
+    },
+    {
+      "name": "replicate",
+      "type": "int32",
+      "nullable": true,
+      "description": "Candidate replicate index."
+    },
+    {
+      "name": "raw_compaction_item_id",
+      "type": "string",
+      "nullable": true,
+      "description": "Native compaction_summary item ID replayed to the decoder."
+    },
+    {
+      "name": "reported_compact_output_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "Remote compact output-token target used for candidate scoring."
+    },
+    {
+      "name": "echo_input_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "API input tokens from re-feeding extracted_text."
+    },
+    {
+      "name": "adjusted_extracted_tokens",
+      "type": "int64",
+      "nullable": true,
+      "description": "echo_input_tokens - echo_overhead_tokens."
+    },
+    {
+      "name": "token_ratio",
+      "type": "float",
+      "nullable": true,
+      "description": "adjusted_extracted_tokens / reported_compact_output_tokens."
+    },
+    {
+      "name": "extraction_error",
+      "type": "float",
+      "nullable": true,
+      "description": "Absolute value of 1 - token_ratio."
+    },
+    {
+      "name": "refusal",
+      "type": "bool",
+      "nullable": true,
+      "description": "Heuristic refusal marker."
+    },
+    {
+      "name": "raw_output",
+      "type": "large_string",
+      "nullable": true,
+      "description": "Unmodified decoder text before tagged-body extraction."
+    },
+    {
+      "name": "extracted_text",
+      "type": "large_string",
+      "nullable": true,
+      "description": "Candidate body after removing optional <dump> wrapper."
+    },
+    {
+      "name": "matches_final_selection",
+      "type": "bool",
+      "nullable": false,
+      "description": "Whether this raw observation matches a final selected output; duplicate source logs can yield multiple matches per example."
+    },
+    {
+      "name": "record_json",
+      "type": "large_string",
+      "nullable": false,
+      "description": "Canonical lossless JSON serialization of the complete original experimental record."
+    }
+  ],
+  "statistical_evidence.parquet": [
+    {
+      "name": "analysis_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Stable analysis family identifier."
+    },
+    {
+      "name": "cohort",
+      "type": "string",
+      "nullable": false,
+      "description": "Population or subgroup to which the statistic applies."
+    },
+    {
+      "name": "metric",
+      "type": "string",
+      "nullable": false,
+      "description": "Machine-readable metric name."
+    },
+    {
+      "name": "value",
+      "type": "double",
+      "nullable": true,
+      "description": "Statistic value."
+    },
+    {
+      "name": "numerator",
+      "type": "int64",
+      "nullable": true,
+      "description": "Event count for rate metrics."
+    },
+    {
+      "name": "denominator",
+      "type": "int64",
+      "nullable": true,
+      "description": "Population count for rate metrics."
+    },
+    {
+      "name": "ci95_low",
+      "type": "double",
+      "nullable": true,
+      "description": "Lower 95% confidence bound where applicable."
+    },
+    {
+      "name": "ci95_high",
+      "type": "double",
+      "nullable": true,
+      "description": "Upper 95% confidence bound where applicable."
+    },
+    {
+      "name": "unit",
+      "type": "string",
+      "nullable": true,
+      "description": "Value unit or ratio definition."
+    },
+    {
+      "name": "method",
+      "type": "large_string",
+      "nullable": true,
+      "description": "Estimator, interval, test, or selection method."
+    },
+    {
+      "name": "source_artifact",
+      "type": "string",
+      "nullable": true,
+      "description": "Release artifact from which the statistic can be recomputed."
+    },
+    {
+      "name": "interpretation",
+      "type": "large_string",
+      "nullable": true,
+      "description": "Caveat or intended interpretation."
+    }
+  ],
+  "method_catalog.parquet": [
+    {
+      "name": "method_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Stable recovery/training method identifier."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "nullable": false,
+      "description": "Human-readable method name."
+    },
+    {
+      "name": "provenance",
+      "type": "string",
+      "nullable": false,
+      "description": "Paper-authored, local adaptation, or inferred training instruction."
+    },
+    {
+      "name": "provider_surface",
+      "type": "string",
+      "nullable": true,
+      "description": "API/item surface to which the method applies."
+    },
+    {
+      "name": "model",
+      "type": "string",
+      "nullable": true,
+      "description": "Decoder model for this candidate or method."
+    },
+    {
+      "name": "prompt_or_template",
+      "type": "large_string",
+      "nullable": true,
+      "description": "Exact local prompt where available, otherwise faithful bounded method description."
+    },
+    {
+      "name": "sampling",
+      "type": "string",
+      "nullable": true,
+      "description": "Candidate count and sampling protocol."
+    },
+    {
+      "name": "selection",
+      "type": "string",
+      "nullable": true,
+      "description": "Candidate ranking/selection rule."
+    },
+    {
+      "name": "fallback",
+      "type": "string",
+      "nullable": true,
+      "description": "Fallback model or procedure."
+    },
+    {
+      "name": "observed_result",
+      "type": "large_string",
+      "nullable": true,
+      "description": "Observed result on this dataset/surface."
+    },
+    {
+      "name": "recommended_use",
+      "type": "large_string",
+      "nullable": true,
+      "description": "Safe research or training role."
+    },
+    {
+      "name": "source_citation",
+      "type": "large_string",
+      "nullable": true,
+      "description": "Paper section or local artifact establishing provenance."
+    }
+  ],
+  "source_provenance.parquet": [
+    {
+      "name": "source_path",
+      "type": "string",
+      "nullable": false,
+      "description": "Repository-relative source artifact path."
+    },
+    {
+      "name": "source_role",
+      "type": "large_string",
+      "nullable": false,
+      "description": "Role in constructing the release."
+    },
+    {
+      "name": "source_sha256",
+      "type": "string",
+      "nullable": false,
+      "description": "SHA-256 of the source artifact."
+    },
+    {
+      "name": "source_rows",
+      "type": "int64",
+      "nullable": true,
+      "description": "Logical record count where applicable."
+    },
+    {
+      "name": "materialized_into",
+      "type": "large_list<element: string>",
+      "nullable": false,
+      "description": "Release artifacts containing the source's relevant data."
+    },
+    {
+      "name": "bundled_verbatim",
+      "type": "bool",
+      "nullable": false,
+      "description": "Whether the source file itself is included in the release."
+    }
+  ]
+}

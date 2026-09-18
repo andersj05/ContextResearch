@@ -1,0 +1,9 @@
+source_id,pdf_page,rendered_asset,inspection,result,checked
+barbaste-2026-harness-anatomy,1,tmp/pdf-visual-qa/barbaste-harness-01.png,"Title, author block, abstract, page number, and dense text render legibly without clipping or missing visible glyphs.",pass,2026-09-04
+chen-2021-codex-passk,3,tmp/pdf-visual-qa/chen-passk-03.png,"Code examples, Figure 3, equation (1), binomial notation, subscripts, and body text render legibly without clipping.",pass,2026-09-04
+choi-2025-debate-or-vote,1,tmp/pdf-visual-qa/choi-debate-01.png,"Title, author block, abstract, link, footer, and two-column text render legibly without clipping or missing visible glyphs.",pass,2026-09-04
+wang-2026-swe-solved-correctly,1,tmp/pdf-visual-qa/wang-swe-01.png,"Title, author block, abstract, metadata, vertical arXiv mark, and two-column body render legibly; Poppler font-substitution warnings were non-fatal on visual inspection.",pass,2026-09-04
+zhang-2026-self-harness,1,tmp/pdf-visual-qa/self-harness-01.png,"Title, authors, abstract panel, equations-free body text, links, and vertical arXiv identifier render cleanly without clipping or missing visible glyphs.",pass,2026-09-04
+shannon-1959-rate-distortion,5,tmp/pdf-visual-qa/shannon-rate-distortion-05.png,"Archival text, subscripts, inequalities, the rate-distortion curve, axis labels, and figure caption remain legible and correctly positioned.",pass,2026-09-04
+wei-2026-evo-harness,1,tmp/pdf-visual-qa/evo-harness-01.png,"Title, author block, two-column abstract and introduction, colored architecture figure, caption, links, and arXiv identifier render cleanly.",pass,2026-09-04
+weitzman-1979-optimal-search,7,tmp/pdf-visual-qa/weitzman-search-07.png,"The lawful archival scan's first substantive page is legible: typewritten title, summary, introduction, mathematical prose, page number, and margins are intact; non-content cover pages are dark scans.",pass,2026-09-04

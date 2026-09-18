@@ -1,0 +1,28 @@
+{
+  "files": {
+    "all_candidates.jsonl": {
+      "rows": 1410,
+      "sha256": "520fa8daa6048b155f22bff751103868ba7c11dd6a696d6a35ea585e2f5ac192"
+    },
+    "selected_recoveries.jsonl": {
+      "rows": 104,
+      "sha256": "367f5971d7f91a5d881b772e315e5d24808f2b31504bf4d652a413451b39ecaf"
+    },
+    "summary.json": {
+      "sha256": "c4a8b48ad01ed8a2302f5d5069dab240af42358e2987a31ccc006999f32a19df"
+    }
+  },
+  "limitations": [
+    "Best-of-N selection optimizes a length metric and creates selection optimism.",
+    "The 92-row holdout was not used to choose the state_exact prompt.",
+    "Outputs are semantic state renderings, not exact paper transcription-template successes.",
+    "Synthetic conversations contain repeated templates and sentinels."
+  ],
+  "source_files": [
+    "advanced_recovery_120.jsonl",
+    "advanced_recovery_120_terra.jsonl",
+    "advanced_recovery_rescue_luna.jsonl",
+    "advanced_recovery_rescue_terra.jsonl",
+    "advanced_recovery_n50.jsonl"
+  ]
+}

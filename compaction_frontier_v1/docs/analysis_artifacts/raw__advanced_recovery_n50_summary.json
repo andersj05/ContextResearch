@@ -1,0 +1,37 @@
+{
+  "beats_prior_baseline": 0,
+  "candidates": 100,
+  "echo_overhead_subtracted": 6,
+  "global_best_error_le_0_1": 0,
+  "global_best_error_le_0_2": 0,
+  "global_best_error_median": 0.9867596418732782,
+  "limitations": [
+    "Token-count agreement is independent length evidence, not proof of verbatim plaintext.",
+    "compaction_summary is a state item, not necessarily the paper's encrypted reasoning item.",
+    "Best-of selection creates multiple-comparisons optimism."
+  ],
+  "prior_baseline_error_median": 0.7479683195592287,
+  "samples": 2,
+  "selection": "lowest token-count extraction error after refusal filtering",
+  "source": "raw/advanced_recovery_n50.jsonl",
+  "variant_stats": {
+    "state_exact": {
+      "best_dynamic_fact_recall_median": 0.0,
+      "best_error_le_0_1": 0,
+      "best_error_le_0_2": 0,
+      "best_error_le_0_5": 0,
+      "best_error_mean": 0.9867596418732782,
+      "best_error_median": 0.9867596418732782,
+      "best_identifier_support_median": 1.0,
+      "best_token_ratio_median": 0.013240358126721762,
+      "best_unique_fact_recall_median": 0.0,
+      "candidate_error_rate": 0.01,
+      "candidate_refusal_rate": 0.17,
+      "candidates": 100,
+      "samples_with_valid_candidate": 2
+    }
+  },
+  "winning_variant_counts": {
+    "state_exact": 2
+  }
+}

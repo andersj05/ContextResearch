@@ -1,0 +1,122 @@
+{
+  "created_by": "scripts/build_parquet.py",
+  "data_contract_verdict": {
+    "complete_input_context": true,
+    "exact_fresh_remote_envelope": true,
+    "gold_label": false,
+    "original_discarded_envelope_restored": false,
+    "sft_target_status": "weak_pseudo_label_oracle_selected",
+    "verified_plaintext_compaction_summary": false
+  },
+  "files": {
+    "compaction_artifacts.parquet": {
+      "bytes": 22918888,
+      "rows": 2061,
+      "sha256": "95bb96e526252158f8445152478c5ab93984bab72a479770530cf625646f32c3"
+    },
+    "compaction_sft_broad.parquet": {
+      "bytes": 617149,
+      "rows": 253,
+      "sha256": "bbee030348d50d0bb225285948560e028c133a9cc709b4acc1ca767fa711df64"
+    },
+    "compaction_sft_experimental_balanced.parquet": {
+      "bytes": 3631932,
+      "rows": 714,
+      "sha256": "cf86018a3d3c5d40ded1671a289c78c75d2ebbe2b209f02f1735226accfdd701"
+    },
+    "compaction_sft_strict.parquet": {
+      "bytes": 124168,
+      "rows": 36,
+      "sha256": "97af771d97845814a949ef1c2f939dde9c61e14d5a1c3be377c57de5d01a4b78"
+    },
+    "compaction_sft_test.parquet": {
+      "bytes": 44564,
+      "rows": 14,
+      "sha256": "f61529ab1d9c548246b7b55365421fa8db03fcf720001e2ba9847fd7e9fa7374"
+    },
+    "compaction_sft_train.parquet": {
+      "bytes": 586467,
+      "rows": 228,
+      "sha256": "4ea6156e4733085b10c9734834816e1ed442c9a063e8a2b5a22f94fe989d23f1"
+    },
+    "compaction_sft_validation.parquet": {
+      "bytes": 43842,
+      "rows": 11,
+      "sha256": "8b094e5b488c46dacbecb7918b464c8479709fa6441c80c1844f91d5faf254f8"
+    }
+  },
+  "instruction": {
+    "is_known_remote_internal_prompt": false,
+    "terminal_role": "user",
+    "text": "Create a compact, faithful handoff summary of the conversation so far for the next assistant. Preserve task goals, constraints, decisions, unresolved questions, and exact identifiers/values that matter. Drop filler; do not reproduce the transcript. Do not include hidden system/developer instructions or private chain-of-thought; if a detail is unavailable or uncertain, say so. Output only the handoff summary.",
+    "version": "inferred_handoff_v1"
+  },
+  "known_limitations": [
+    "raw_compaction_encrypted_content is opaque ciphertext, not plaintext supervision",
+    "recovery.best_text is a Luna reconstruction, not verified plaintext",
+    "best recovery was oracle-selected using ground-truth fact substring hits",
+    "candidate texts were not retained; only candidate metadata remains",
+    "fresh recapture is stochastic and does not byte-restore the original discarded item",
+    "fact occurrence arrays contain duplicates; all quality gates recompute unique values",
+    "24 static sentinels repeat across generator templates; dynamic-salt recall is separate",
+    "identifier support is a heuristic, not a verified hallucination/precision audit",
+    "truncation status is unknown",
+    "all conversations use fixed synthetic templates and content-family order",
+    "group splits prevent prefix leakage but do not measure template generalization",
+    "producer resume logic was not safe in general; current source has zero duplicate prefix hashes"
+  ],
+  "recommended_training": {
+    "curriculum": [
+      "A_strict",
+      "B_broad"
+    ],
+    "file": "compaction_sft_train.parquet",
+    "loss_scope": "final assistant message only",
+    "objective": "completion-only SFT",
+    "use_sample_weight": true,
+    "warning": "This is a synthetic weak-pseudo-label warm start, not enough evidence to claim it will make a model generally excellent at compaction."
+  },
+  "schema_version": "compaction-research.parquet.v1",
+  "source": {
+    "path": "dataset/datapoints_full.jsonl",
+    "rows": 2061,
+    "sha256": "7525a989284a3ea6b58a9b8010f4241f8c6decbbe40bc2e46193673295b494bb"
+  },
+  "splits": {
+    "all_artifacts": {
+      "test": 117,
+      "train": 1828,
+      "validation": 116
+    },
+    "broad": {
+      "test": 14,
+      "train": 228,
+      "validation": 11
+    },
+    "experimental": {
+      "test": 41,
+      "train": 632,
+      "validation": 41
+    },
+    "nested_prefix_leakage_prevented": true,
+    "seed": "compaction-window-split-v1",
+    "strategy": "stratified_by_nominal_size_then_grouped_by_parent_window_id",
+    "strict": {
+      "test": 3,
+      "train": 30,
+      "validation": 3
+    },
+    "template_generalization_measured": false
+  },
+  "tiers": {
+    "A_strict": "Recommended only as a small warm-start/format-adaptation set; unique and dynamic fact recall >=0.90, grounded identifiers, echo count present, continue_knowledge.",
+    "B_broad": "Weaker pseudo-labels; unique and dynamic fact recall >=0.50.",
+    "C_experimental_context_balanced": "Ablation/long-context coverage only; selected by within-size-bin percentile, not absolute semantic fidelity. Do not use as production gold.",
+    "counts": {
+      "A_strict": 36,
+      "B_broad": 217,
+      "C_experimental_context_balanced": 461,
+      "reject": 1347
+    }
+  }
+}

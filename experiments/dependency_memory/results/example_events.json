@@ -1,0 +1,112 @@
+[
+  {
+    "kind": "value",
+    "key": "anchor",
+    "value": 7106521602475165645
+  },
+  {
+    "kind": "value",
+    "key": "job_0_0",
+    "value": 16422101724900707500
+  },
+  {
+    "kind": "value",
+    "key": "anchor",
+    "value": 746805015404516437
+  },
+  {
+    "kind": "noise",
+    "key": "",
+    "value": null
+  },
+  {
+    "kind": "noise",
+    "key": "",
+    "value": null
+  },
+  {
+    "kind": "checkpoint",
+    "key": "",
+    "value": null
+  },
+  {
+    "kind": "query",
+    "key": "job_0_0",
+    "value": null
+  },
+  {
+    "kind": "retire",
+    "key": "job_0_0",
+    "value": null
+  },
+  {
+    "kind": "value",
+    "key": "job_1_0",
+    "value": 17809683713383489082
+  },
+  {
+    "kind": "noise",
+    "key": "",
+    "value": null
+  },
+  {
+    "kind": "noise",
+    "key": "",
+    "value": null
+  },
+  {
+    "kind": "checkpoint",
+    "key": "",
+    "value": null
+  },
+  {
+    "kind": "query",
+    "key": "job_1_0",
+    "value": null
+  },
+  {
+    "kind": "retire",
+    "key": "job_1_0",
+    "value": null
+  },
+  {
+    "kind": "value",
+    "key": "job_2_0",
+    "value": 8963783824838420066
+  },
+  {
+    "kind": "noise",
+    "key": "",
+    "value": null
+  },
+  {
+    "kind": "noise",
+    "key": "",
+    "value": null
+  },
+  {
+    "kind": "checkpoint",
+    "key": "",
+    "value": null
+  },
+  {
+    "kind": "query",
+    "key": "job_2_0",
+    "value": null
+  },
+  {
+    "kind": "retire",
+    "key": "job_2_0",
+    "value": null
+  },
+  {
+    "kind": "query",
+    "key": "anchor",
+    "value": null
+  },
+  {
+    "kind": "retire",
+    "key": "anchor",
+    "value": null
+  }
+]

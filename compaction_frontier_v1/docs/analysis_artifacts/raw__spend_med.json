@@ -1,0 +1,22 @@
+[
+  {
+    "window_id": "med-seedB-25k",
+    "datapoints": 5,
+    "spend_tokens": 64300
+  },
+  {
+    "window_id": "med-seed42-10k",
+    "datapoints": 5,
+    "spend_tokens": 25151
+  },
+  {
+    "window_id": "med-seed42-25k",
+    "datapoints": 5,
+    "spend_tokens": 64320
+  },
+  {
+    "window_id": "med-seedB-10k",
+    "datapoints": 5,
+    "spend_tokens": 25034
+  }
+]

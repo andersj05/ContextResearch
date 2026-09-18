@@ -1,0 +1,34 @@
+{
+  "migration_date": "2026-09-18",
+  "source_repository": "HarnessResearch",
+  "source_head": "b74402bf0d0949c845c933f5c64282f438b15764",
+  "destination_initial_head": "092a27ebf11349bbdcc93cb6181057148c1f188f",
+  "imported_files": 658,
+  "imported_bytes": 574612536,
+  "source_deleted": false,
+  "source_history_imported": false,
+  "excluded": [
+    "source .git directory",
+    "Python bytecode",
+    "temporary paper text and rendered previews",
+    "temporary installed dependencies",
+    "unrelated temporary files"
+  ],
+  "portable_link_transformations": [
+    "research/COMPACTION_FRONTIER_REVERSE_ENGINEERING.md"
+  ],
+  "snapshot_repositories": {
+    "codex": {
+      "repository": "openai/codex",
+      "commit": "da18000cae9884ab45f83b2d07fbd5a220a1de39"
+    },
+    "pi": {
+      "repository": "earendil-works/pi",
+      "commit": "bdee230f1ea4beec1972c54716433ced691a92b5"
+    },
+    "omp": {
+      "repository": "can1357/oh-my-pi",
+      "commit": "60c9a115b2e8decc0f75825459362d14188a8bc0"
+    }
+  }
+}

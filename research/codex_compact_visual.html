@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Codex compact · 100k → 900 is deletion</title>
+<style>
+  :root { color-scheme: light; --bg:#f5f5f0; --surface:#fff; --soft:#eeeee8; --ink:#202f2b; --muted:#626e68; --line:#d8ded6; --accent:#176c56; --accent-soft:#e5f2eb; --purple:#7052a0; --purple-soft:#eee8f7; --amber:#98620a; --amber-soft:#fff2d9; --red:#a54136; --red-soft:#fbece8; --shadow:0 8px 30px #253b2d06; }
+  @media (prefers-color-scheme:dark) { :root { color-scheme:dark; --bg:#141c19; --surface:#1d2722; --soft:#25312b; --ink:#e8eee7; --muted:#a6b4ab; --line:#3b4840; --accent:#87d6b5; --accent-soft:#243e32; --purple:#c4a9ef; --purple-soft:#342c42; --amber:#e9bc72; --amber-soft:#3e3322; --red:#f4aaa0; --red-soft:#412c29; --shadow:none; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  button,input,select { font:inherit; color:inherit; }
+  button,select { cursor:pointer; }
+  button:disabled { cursor:default; opacity:.45; }
+  button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+  a { color:var(--accent); text-underline-offset:3px; }
+  h1,h2,h3,p { margin:0; }
+  h1 { font-size:clamp(32px,4.4vw,52px); font-weight:650; line-height:1.12; letter-spacing:-.045em; }
+  h2 { font-size:23px; line-height:1.25; letter-spacing:-.025em; font-weight:620; }
+  h3 { font-size:16px; font-weight:650; }
+  pre,code,.mono { font-family:ui-monospace,"Cascadia Code",Consolas,monospace; }
+  pre { white-space:pre-wrap; overflow-wrap:anywhere; margin:0; font-size:13px; line-height:1.65; }
+  code { font-size:.9em; overflow-wrap:anywhere; }
+  [hidden] { display:none!important; }
+  .shell { max-width:1480px; margin:auto; padding:28px 38px 36px; }
+  .masthead { display:flex; align-items:center; justify-content:space-between; gap:18px; padding-bottom:25px; border-bottom:1px solid var(--line); font-size:12px; }
+  .wordmark { display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+  .brand { display:flex; align-items:flex-end; gap:3px; width:23px; height:21px; }
+  .brand i { width:5px; background:var(--accent); border-radius:2px; }
+  .brand i:nth-child(1) { height:21px; }.brand i:nth-child(2) { height:14px; }.brand i:nth-child(3) { height:7px; }
+  .hero { display:flex; align-items:flex-end; justify-content:space-between; gap:32px; padding:32px 0 28px; }
+  .eyebrow { font-size:11px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:var(--muted); }
+  .hero h1 { margin:10px 0 14px; }
+  .hero p { max-width:760px; font-size:16px; color:var(--muted); }
+  .hero-aside { flex:0 0 220px; border-left:2px solid var(--line); padding-left:18px; color:var(--muted); font-size:12px; }
+  .tabs { display:flex; gap:28px; border-bottom:1px solid var(--line); margin-bottom:26px; }
+  .tab { border:0; border-bottom:3px solid transparent; padding:13px 0; background:none; color:var(--muted); text-align:left; }
+  .tab span { font:12px ui-monospace,Consolas,monospace; margin-right:8px; }
+  .tab[aria-selected=true] { color:var(--accent); border-bottom-color:var(--accent); font-weight:650; }
+  .panel-intro { display:flex; justify-content:space-between; align-items:center; gap:22px; margin-bottom:20px; }
+  .panel-intro p { color:var(--muted); margin-top:6px; max-width:870px; }
+  .tag { display:inline-flex; align-items:center; padding:4px 9px; border-radius:5px; font-size:11px; font-weight:650; white-space:nowrap; background:var(--soft); color:var(--muted); }
+  .tag.teal { background:var(--accent-soft); color:var(--accent); }
+  .tag.amber { background:var(--amber-soft); color:var(--amber); }
+  .controls { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:18px; padding:16px 20px; border:1px solid var(--line); border-radius:10px; background:var(--surface); }
+  .settings { display:flex; flex-wrap:wrap; gap:18px; align-items:center; }
+  .settings label { display:flex; align-items:center; gap:9px; font-size:13px; }
+  select { border:1px solid var(--line); border-radius:6px; padding:7px 10px; background:var(--bg); max-width:100%; }
+  input[type=range] { accent-color:var(--accent); width:min(420px,70vw); }
+  .btn { border:1px solid var(--line); background:var(--surface); border-radius:6px; padding:8px 13px; font-size:13px; font-weight:600; }
+  .btn:hover:not(:disabled) { background:var(--soft); }
+  .btn.primary { background:var(--accent); color:var(--bg); border-color:var(--accent); }
+  .meters { display:grid; grid-template-columns:1.2fr 1fr; gap:18px; margin:18px 0 20px; }
+  .meter { padding:18px 20px; border:1px solid var(--line); border-radius:10px; background:var(--surface); }
+  .meter-top { display:flex; justify-content:space-between; align-items:baseline; gap:12px; font-size:12px; }
+  .meter-top strong { font-size:28px; font-weight:600; font-variant-numeric:tabular-nums; letter-spacing:-.03em; }
+  .track { height:10px; background:var(--soft); margin:12px 0 8px; overflow:hidden; border-radius:2px; }
+  .fill { height:100%; background:var(--accent); width:0; transition:width .35s; }
+  .fill.purple { background:var(--purple); }
+  .meter p { font-size:12px; color:var(--muted); }
+  .workbench { display:grid; grid-template-columns:minmax(0,1.05fr) minmax(240px,.72fr) minmax(0,1fr); gap:16px; align-items:start; }
+  .pane { min-width:0; background:var(--surface); border:1px solid var(--line); border-radius:10px; box-shadow:var(--shadow); overflow:hidden; }
+  .pane-header { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:17px 18px; border-bottom:1px solid var(--line); }
+  .pane-header h3 { font-size:14px; }
+  .pane-sub { color:var(--muted); font-size:12px; padding:12px 18px 0; }
+  .message-list { padding:12px; display:grid; gap:7px; max-height:640px; overflow:auto; }
+  .message,.fold { display:block; width:100%; text-align:left; border:1px solid var(--line); border-radius:7px; padding:10px 12px; background:var(--surface); }
+  .message { transition:background .2s,border-color .2s; }
+  .message:hover { transform:none; }
+  .message-head { display:flex; justify-content:space-between; gap:9px; margin-bottom:5px; font-size:10px; font-weight:650; letter-spacing:.04em; }
+  .message-head span:first-child { color:var(--muted); }
+  .message .body { display:block; font-size:12px; line-height:1.5; overflow-wrap:anywhere; }
+  .message[data-state=keep] { background:var(--accent-soft); border-color:var(--accent); }
+  .message[data-state=pattern] { background:var(--purple-soft); border-color:var(--purple); }
+  .message[data-state=drop] { background:var(--soft); border-style:dashed; }
+  .message[data-state=drop] .body { color:var(--muted); }
+  .message[aria-pressed=true] { outline:2px solid var(--ink); outline-offset:1px; }
+  .fold { background:var(--purple-soft); border-color:var(--purple); color:var(--ink); font-size:13px; }
+  .fold strong { display:block; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--purple); margin-bottom:4px; }
+  .decision { background:var(--soft); border-radius:10px; padding:21px 19px; }
+  .decision .eyebrow { color:var(--accent); }
+  .decision h3 { margin:10px 0; font-size:22px; letter-spacing:-.03em; line-height:1.2; }
+  .decision p { color:var(--muted); font-size:13px; }
+  .rule-code { margin:16px 0; padding:13px; background:var(--surface); border-radius:6px; font-size:12px; color:var(--accent); }
+  .explain { margin-top:16px; padding-top:16px; border-top:1px solid var(--line); }
+  .explain strong { display:block; font-size:12px; margin-bottom:6px; }
+  .explain p { font-size:12px; }
+  .checkpoint { padding:12px; display:grid; gap:8px; min-height:280px; align-content:start; }
+  .fragment { padding:12px; border:1px solid var(--line); border-left:3px solid var(--accent); border-radius:5px; background:var(--surface); }
+  .fragment[data-kind=pattern] { border-left-color:var(--purple); }
+  .fragment[data-kind=caution] { border-left-color:var(--amber); }
+  .fragment.selected { background:var(--accent-soft); outline:1px solid var(--accent); }
+  .fragment strong { display:block; color:var(--muted); text-transform:uppercase; letter-spacing:.08em; font-size:10px; margin-bottom:5px; }
+  .fragment p { font-size:12px; overflow-wrap:anywhere; }
+  .checkpoint-foot { border-top:1px solid var(--line); padding:13px 18px; font-size:12px; color:var(--muted); }
+  .legend { display:flex; flex-wrap:wrap; gap:17px; margin:17px 0; font-size:11px; color:var(--muted); }
+  .legend span { display:flex; align-items:center; gap:6px; }
+  .dot { width:8px; height:8px; border-radius:2px; background:var(--accent); }
+  .dot.purple { background:var(--purple); }.dot.gray { background:var(--muted); }
+  .outcome { border-left:3px solid var(--accent); background:var(--accent-soft); padding:16px 20px; border-radius:0 7px 7px 0; margin:17px 0 0; }
+  .outcome.warning { border-color:var(--red); background:var(--red-soft); }
+  .outcome h3 { margin-bottom:5px; font-size:14px; }
+  .outcome p { font-size:13px; }
+  details { border-top:1px solid var(--line); padding:17px 0; margin-top:22px; }
+  summary { cursor:pointer; font-size:13px; font-weight:600; }
+  details pre { margin-top:16px; padding:18px; background:var(--surface); border:1px solid var(--line); border-radius:8px; }
+  .footnote { color:var(--muted); font-size:12px; margin-top:12px; }
+  .case-picker { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:20px; }
+  .case-button { background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:15px 18px; text-align:left; }
+  .case-button[aria-pressed=true] { border-color:var(--accent); box-shadow:inset 0 0 0 1px var(--accent); background:var(--accent-soft); }
+  .case-button strong { display:block; font-size:18px; margin:4px 0; font-weight:620; }
+  .case-button small { color:var(--muted); font-size:12px; }
+  .metrics { display:grid; grid-template-columns:1.15fr 1fr 1fr; gap:24px; padding:20px; background:var(--surface); border:1px solid var(--line); border-radius:9px; margin-bottom:18px; }
+  .metric + .metric { border-left:1px solid var(--line); padding-left:24px; }
+  .metric-top { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:baseline; gap:10px; font-size:12px; }
+  .metric-top strong { font-size:22px; font-weight:600; font-variant-numeric:tabular-nums; }
+  .evidence-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:20px; }
+  .evidence-content { padding:17px 18px; max-height:520px; overflow:auto; }
+  .source-message + .source-message { margin-top:17px; padding-top:17px; border-top:1px solid var(--line); }
+  .scale-bars { display:grid; gap:10px; margin:18px 0; }
+  .scale-row { display:grid; grid-template-columns:110px 1fr 90px; gap:12px; align-items:center; font-size:12px; }
+  .scale-row span:last-child { font-variant-numeric:tabular-nums; text-align:right; color:var(--muted); }
+  .compare { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:18px; }
+  footer { margin-top:32px; border-top:1px solid var(--line); padding-top:18px; display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between; font-size:11px; color:var(--muted); }
+  .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+  @media (max-width:1050px) {
+    .shell { padding:22px; }
+    .workbench,.evidence-grid,.meters,.compare,.metrics { grid-template-columns:1fr; }
+    .hero-aside { display:none; }
+    .metric + .metric { border-left:0; border-top:1px solid var(--line); padding:15px 0 0; }
+  }
+  @media (max-width:700px) {
+    .shell { padding:18px 15px; }
+    .case-picker { grid-template-columns:1fr; }
+    .tabs { gap:16px; }
+    .tab span { display:block; margin-bottom:4px; }
+  }
+  @media (pointer:coarse) { button,select,summary { min-height:44px; } }
+  @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none!important; transition:none!important; } }
+</style>
+</head>
+<body>
+<div class="shell">
+  <header>
+    <div class="masthead">
+      <div class="wordmark"><span class="brand" aria-hidden="true"><i></i><i></i><i></i></span>Harness Research <span style="font-weight:400;color:var(--muted)">/ Field guide 02</span></div>
+      <span>LOCAL RESEARCH · SEPTEMBER 2026</span>
+    </div>
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Unrolled loop → pattern + current turn</div>
+        <h1>100k tokens become ~900 because most of them are thrown away.</h1>
+        <p>Codex compact does not squeeze the transcript. It replaces hundreds of repeated block-and-ack turns with a short continuation note: the repeating machine, the latest payload, and the next reply template.</p>
+      </div>
+      <div class="hero-aside">A teaching simulation of the reconstructed Codex compact policy, plus three saved remote compact cases. Not provider source.</div>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="Explore Codex compact">
+      <button class="tab" id="tab-grow" role="tab" aria-selected="true" aria-controls="grow" tabindex="0"><span>01</span>Grow the loop</button>
+      <button class="tab" id="tab-evidence" role="tab" aria-selected="false" aria-controls="evidence" tabindex="-1"><span>02</span>Saved compact objects</button>
+      <button class="tab" id="tab-rule" role="tab" aria-selected="false" aria-controls="rule" tabindex="-1"><span>03</span>The rule</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="grow" role="tabpanel" aria-labelledby="tab-grow">
+      <div class="panel-intro">
+        <div>
+          <h2>Watch history grow while compact stays flat</h2>
+          <p>Each wave is six synthetic turns (code, math, config, logs, dialogue, search) with a new unique salt. Drag the slider. Grey salts are deleted. Green is copied. Purple is described once.</p>
+        </div>
+        <span class="tag teal">RECONSTRUCTED POLICY</span>
+      </div>
+      <div class="controls">
+        <div class="settings">
+          <label for="waves">Waves <strong id="waves-label" class="mono">1</strong></label>
+          <input id="waves" type="range" min="1" max="80" value="1" step="1">
+          <label for="last-kind">Latest block <select id="last-kind">
+            <option value="dialogue">Dialogue (small)</option>
+            <option value="json">Config JSON (large)</option>
+            <option value="logs">Log block</option>
+            <option value="code">Code block</option>
+          </select></label>
+        </div>
+        <div class="transport">
+          <button class="btn" id="play" aria-pressed="false">Play growth</button>
+          <button class="btn primary" id="jump-long">Jump to ~100k</button>
+        </div>
+      </div>
+      <div class="meters">
+        <div class="meter">
+          <div class="meter-top"><span>History tokens (unrolled loop)</span><strong id="hist-tokens">0</strong></div>
+          <div class="track" aria-hidden="true"><div class="fill" id="hist-fill"></div></div>
+          <p id="hist-caption">Approximate teaching tokens for this synthetic generator.</p>
+        </div>
+        <div class="meter">
+          <div class="meter-top"><span>Compact note tokens</span><strong id="comp-tokens">0</strong></div>
+          <div class="track" aria-hidden="true"><div class="fill purple" id="comp-fill"></div></div>
+          <p id="comp-caption">If this were 1% compression, the note would grow with the history. It does not.</p>
+        </div>
+      </div>
+      <div class="workbench">
+        <section class="pane">
+          <div class="pane-header"><h3>01 / Conversation</h3><span class="tag" id="message-count"></span></div>
+          <p class="pane-sub">Oldest at top · select a message to see why it is kept, folded, or dropped</p>
+          <div class="message-list" id="messages"></div>
+        </section>
+        <div class="decision-wrap">
+          <section class="decision" aria-label="Current compact decision">
+            <div class="eyebrow" id="mode-eyebrow">Mode</div>
+            <h3 id="mode-title"></h3>
+            <p id="mode-description"></p>
+            <pre class="rule-code" id="mode-code"></pre>
+            <div class="explain">
+              <strong id="inspect-title">Trace a message</strong>
+              <p id="inspect-description">Select a source message or a checkpoint fragment.</p>
+            </div>
+          </section>
+        </div>
+        <section class="pane">
+          <div class="pane-header"><h3>02 / Compact note</h3><span class="tag teal" id="checkpoint-status"></span></div>
+          <div class="checkpoint" id="checkpoint"></div>
+          <div class="checkpoint-foot" id="checkpoint-foot"></div>
+        </section>
+      </div>
+      <div class="legend">
+        <span><i class="dot"></i>Keep / copy latest turn</span>
+        <span><i class="dot purple"></i>Fold into the pattern</span>
+        <span><i class="dot gray"></i>Drop unique older salt</span>
+      </div>
+      <div id="outcome" class="outcome"></div>
+      <p class="footnote">Teaching tokens are a calibrated stand-in (~1,850 tokens per six-turn wave). They illustrate the reconstructed selection rule. Remote compact output on real saved rows is shown in tab 02.</p>
+    </section>
+
+    <section id="evidence" role="tabpanel" aria-labelledby="tab-evidence" hidden>
+      <div class="panel-intro">
+        <div>
+          <h2>Three actual remote compact cases</h2>
+          <p>These are recovered renderings of standalone <code>/responses/compact</code> items, selected by input size. Last four source messages versus the complete recovered note.</p>
+        </div>
+        <span class="tag">SAVED OBSERVATIONS</span>
+      </div>
+      <div class="case-picker" id="case-picker" role="group" aria-label="Saved compact case"></div>
+      <div class="metrics">
+        <div class="metric"><div class="metric-top"><span>Input → compact tokens</span><strong id="case-ratio"></strong></div><div class="track" aria-hidden="true"><div class="fill" id="case-size-fill"></div></div><p id="case-size-caption"></p></div>
+        <div class="metric"><div class="metric-top"><span>Unique sentinels retained</span><strong id="case-recall"></strong></div><div class="track" aria-hidden="true"><div class="fill purple" id="case-recall-fill"></div></div><p>Exact source identifiers that still appear in the recovered note.</p></div>
+        <div class="metric"><div class="metric-top"><span>Identifier support</span><strong id="case-support"></strong></div><div class="track" aria-hidden="true"><div class="fill" id="case-support-fill"></div></div><p>Recovered identifiers that exist in the source. High support can coexist with near-zero recall.</p></div>
+      </div>
+      <div class="evidence-grid">
+        <section class="pane">
+          <div class="pane-header"><h3>Last four source messages</h3><span class="tag" id="source-count"></span></div>
+          <p class="pane-sub" id="source-omitted"></p>
+          <div class="evidence-content" id="source-text"></div>
+        </section>
+        <section class="pane">
+          <div class="pane-header"><h3>Complete recovered compact note</h3><span class="tag teal" id="recovered-count"></span></div>
+          <p class="pane-sub">Decoder rendering · not verified plaintext</p>
+          <div class="evidence-content"><pre id="recovered-text"></pre></div>
+        </section>
+      </div>
+      <p class="footnote" id="case-footnote"></p>
+      <p class="footnote"><a id="example-link" href="compaction-frontier-inspection/example-2.md">Open the source export</a> · <a href="CODEX_COMPACTION_TECHNICAL.md">Read the technical document</a></p>
+    </section>
+
+    <section id="rule" role="tabpanel" aria-labelledby="tab-rule" hidden>
+      <div class="panel-intro">
+        <div>
+          <h2>The reconstructed compact procedure</h2>
+          <p>Client sends the whole prefix to <code>/responses/compact</code> with no summarizer prompt and no budget. The server returns an encrypted <code>compaction_summary</code>. Recovered notes behave as follows.</p>
+        </div>
+        <span class="tag amber">NOT PROVIDER SOURCE</span>
+      </div>
+      <div class="compare">
+        <div class="pane">
+          <div class="pane-header"><h3>If the prefix still fits</h3><span class="tag teal">Replay</span></div>
+          <div class="pane-sub" style="padding-bottom:16px">Example 1 · 1,127 → 1,070 tokens · 12 messages · 100% sentinel recall</div>
+          <pre class="rule-code" style="margin:0 18px 18px">C = numbered copy of every block
+  + each assistant one-liner
+  + turn status
+  + a short caution</pre>
+        </div>
+        <div class="pane">
+          <div class="pane-header"><h3>If it is a long repeating loop</h3><span class="tag">Pattern + latest</span></div>
+          <div class="pane-sub" style="padding-bottom:16px">Example 2 · 99,667 → 138 tokens · 1,170 messages · 0.335% sentinel recall</div>
+          <pre class="rule-code" style="margin:0 18px 18px">C = describe the block-and-ack machine once
+  + copy the latest user payload
+  + script the next template
+  + drop unique older salts</pre>
+        </div>
+      </div>
+      <h2 style="margin-top:28px">Measured compact size stays in a band</h2>
+      <p class="footnote" style="margin-top:8px">2,061 standalone compact calls. Median compact output tokens by input-token band. Compact does not grow like a percentage of the source.</p>
+      <div class="scale-bars" id="scale-bars"></div>
+      <div class="outcome warning" style="margin-top:22px">
+        <h3>The next turn can look right while a later fact is already gone.</h3>
+        <p>Immediate continuation only needs the current salt. A unique identifier from wave 1 is not in the compact note. If the user asks for it 200 turns later, this algorithm cannot supply it.</p>
+      </div>
+      <details>
+        <summary>Read the reconstructed pseudocode</summary>
+        <pre>codex_compact(history) -&gt; compaction_summary
+
+    pattern = describe repeating user-block / assistant-template cycle
+    latest  = last user payload (prefer exact) + last assistant template
+    next    = likely next assistant utterance, as state
+    caution = do not invent tools, validation, or derivations
+
+    if history still fits a near-replay:
+        emit numbered transcript of blocks + replies
+    else:
+        emit pattern + latest + next + caution
+        drop unique older identifiers
+
+    encrypt as compaction_summary</pre>
+        <p class="footnote">Full write-up: <a href="CODEX_COMPACTION_TECHNICAL.md">CODEX_COMPACTION_TECHNICAL.md</a>. The five-step obligation-aware walkthrough is a different, proposed compiler: <a href="compaction_algorithm_visualizer.html">compaction_algorithm_visualizer.html</a>.</p>
+      </details>
+    </section>
+  </main>
+  <footer>
+    <span>Codex compact visual · Offline · No network dependencies</span>
+    <a href="CODEX_COMPACTION_TECHNICAL.md">Technical document ↗</a>
+  </footer>
+  <div class="sr-only" id="announcement" role="status" aria-live="polite" aria-atomic="true"></div>
+  <noscript><p>This visual needs JavaScript. Read the <a href="CODEX_COMPACTION_TECHNICAL.md">technical document</a> instead.</p></noscript>
+</div>
+
+<script type="application/json" id="saved-examples">
+[
+  {
+    "title": "Short replay",
+    "blurb": "12 messages still fit, so compact copies them.",
+    "link": "compaction-frontier-inspection/example-1.md",
+    "meta": {
+      "example_id": "cmp-15d33472fc545680ffa49a21",
+      "actual_input_tokens": 1127,
+      "input_message_count": 12,
+      "remote_compact_output_tokens": 1070,
+      "advanced_unique_fact_recall": 1.0,
+      "advanced_identifier_support": 1.0
+    },
+    "omitted": "8 earlier messages in this 12-message prefix are also copied into the recovered note.",
+    "messages": [
+      {"role":"user","text":"Config document 0:\n{\n  \"config\": \"QLARK-SEG-001\",\n  \"flag\": \"SALT-6FF61CC0-C1B7F15C\"\n}"},
+      {"role":"assistant","text":"Config 0 validated; key QLARK-SEG-001."},
+      {"role":"user","text":"Config document 1:\n{\n  \"config\": \"0x9f33c12b8a4de071\",\n  \"flag\": \"SALT-36512BE6-D7D21336\"\n}"},
+      {"role":"assistant","text":"Config 1 validated; key 0x9f33c12b8a4de071."}
+    ],
+    "recovered": "The conversation consists of the user supplying several code/math/config blocks and the assistant acknowledging each.\n\nUser provided:\n1. Code block 0: reconcile_0 with salt SALT-BF70B418-5AE14DA6, flag 0x3f8e91ab7c42d605. Assistant: “Compiled block 0; flag 0x3f8e91ab7c42d605 noted.”\n2. Code block 1: reconcile_1 with salt SALT-7BA9B83C-C4CF1BA8, flag MERGE-MANIFEST-88.\n3–4. Math blocks with phi=1.618033 and m+n+p=193, tagged with unique salts, acknowledged without derivation.\n5. Config 0 QLARK-SEG-001 / SALT-6FF61CC0-C1B7F15C, acknowledged.\n6. Config 1 0x9f33c12b8a4de071 / SALT-36512BE6-D7D21336, acknowledged.\n\nNo unresolved direct question in the latest user turn; latest user message was just Config document 1, already acknowledged."
+  },
+  {
+    "title": "~100k deletion",
+    "blurb": "1,170 messages become a 138-token next-turn script.",
+    "link": "compaction-frontier-inspection/example-2.md",
+    "meta": {
+      "example_id": "cmp-050c26fb0a3c0e45595c2540",
+      "actual_input_tokens": 99667,
+      "input_message_count": 1170,
+      "remote_compact_output_tokens": 138,
+      "advanced_unique_fact_recall": 0.003350083716213703,
+      "advanced_identifier_support": 1.0
+    },
+    "omitted": "1,166 earlier messages are not in the recovered note. Their unique salts are gone.",
+    "messages": [
+      {"role":"user","text":"Log block 1:\nt=0ms trace=0xdeadbeef wave=512 SALT-59C14FD2-2B94F8CC status=ok"},
+      {"role":"assistant","text":"Logs 1 parsed; trace 0xdeadbeef flagged SALT-59C14FD2-2B94F8CC."},
+      {"role":"user","text":"Dialogue user 0: note the fact AURORA-SEGMENT-001 and the reserved flag SALT-504DED28-698CAEF0."},
+      {"role":"assistant","text":"Noted AURORA-SEGMENT-001 and SALT-504DED28-698CAEF0."}
+    ],
+    "recovered": "We need answer latest user message. Conversation is a long repetitive synthetic ingestion stream. User has been sending “Code block”, “Math block”, “Config document”, “Log block”, “Dialogue”, “Search task” and assistant has acknowledged in short templated responses. Latest user message:\n\n“Dialogue user 0: note the fact AURORA-SEGMENT-001 and the reserved flag SALT-504DED28-698CAEF0.”\n\nNeed respond likely exactly consistent template: “Noted AURORA-SEGMENT-001 and SALT-504DED28-698CAEF0.”\n\nNo need mention concerns. Ensure no unsupported validation, just note."
+  },
+  {
+    "title": "~400k, same policy",
+    "blurb": "4,692 messages. Compact copies the latest config JSON and the ack template.",
+    "link": "compaction-frontier-inspection/example-3.md",
+    "meta": {
+      "example_id": "cmp-cdf4ae899afc22275406199b",
+      "actual_input_tokens": 398958,
+      "input_message_count": 4692,
+      "remote_compact_output_tokens": 329,
+      "advanced_unique_fact_recall": 0.0008481764234602451,
+      "advanced_identifier_support": 1.0
+    },
+    "omitted": "4,688 earlier messages omitted. Compact size grew because the latest payload is a JSON document, not because the history is longer.",
+    "messages": [
+      {"role":"user","text":"Config document 0:\n{\n  \"config\": \"QLARK-SEG-001\",\n  \"flag\": \"SALT-E07398EE-CFB91807\"\n}"},
+      {"role":"assistant","text":"Config 0 validated; key QLARK-SEG-001."},
+      {"role":"user","text":"Config document 1:\n{\n  \"config\": \"0x9f33c12b8a4de071\",\n  \"flag\": \"SALT-8C06325B-ADA80B25\"\n}"},
+      {"role":"assistant","text":"Config 1 validated; key 0x9f33c12b8a4de071."}
+    ],
+    "recovered": "We need answer the latest user message. The conversation is a long repetitive sequence where user sends structured blocks and assistant acknowledges them minimally. Most recent user message is Config document 1 with key 0x9f33c12b8a4de071 and flag SALT-8C06325B-ADA80B25. Pattern: “Config 1 validated; key 0x9f33c12b8a4de071.” Need continue same concise pattern."
+  }
+]
+</script>
+
+<script type="application/json" id="scale-data">
+[
+  {"label":"<5k","n":1175,"median":663,"input":2625},
+  {"label":"5–25k","n":528,"median":724,"input":10009},
+  {"label":"25–100k","n":260,"median":697,"input":49677},
+  {"label":"100–200k","n":64,"median":934,"input":159389},
+  {"label":"200–300k","n":26,"median":852,"input":254047},
+  {"label":"300–400k","n":8,"median":690,"input":368798}
+]
+</script>
+
+<script id="codex-compact-model">
+"use strict";
+(() => {
+  const KINDS = [
+    { id:"code", label:"Code block", flag:"0x3f8e91ab7c42d605", ack:"Compiled block 0; flag 0x3f8e91ab7c42d605 noted.", payload:180,
+      user:(salt) => `Code block 0 (tooling):\ndef reconcile_0(rows, wave=512):\n    salt = "${salt}"\n    flag = "0x3f8e91ab7c42d605"` },
+    { id:"math", label:"Math block", flag:"phi=1.618033", ack:"Derivation 0 complete. Constant phi=1.618033; tag SALT-MATH.", payload:70,
+      user:(salt) => `Math block 0: show the integral and derive phi=1.618033. Tag ${salt}.` },
+    { id:"json", label:"Config document", flag:"QLARK-SEG-001", ack:"Config 0 validated; key QLARK-SEG-001.", payload:220,
+      user:(salt) => `Config document 0:\n{ "config": "QLARK-SEG-001", "flag": "${salt}", "ring": 3 }` },
+    { id:"logs", label:"Log block", flag:"0xdeadbeef", ack:"Logs 0 parsed; trace 0xdeadbeef flagged SALT-LOG.", payload:110,
+      user:(salt) => `Log block 0:\nt=0ms trace=0xdeadbeef ${salt} status=ok` },
+    { id:"dialogue", label:"Dialogue", flag:"AURORA-SEGMENT-001", ack:"Noted AURORA-SEGMENT-001 and SALT-DLG.", payload:40,
+      user:(salt) => `Dialogue user 0: note the fact AURORA-SEGMENT-001 and the reserved flag ${salt}.` },
+    { id:"search", label:"Search task", flag:"rosebud.saltness.cairn:4410", ack:"Result 0: rosebud.saltness.cairn:4410 -> SALT-SEA.", payload:40,
+      user:(salt) => `Search task 0: retrieve records matching rosebud.saltness.cairn:4410; bind ${salt}.` }
+  ];
+  const ACK_TOKENS = 18;
+  const WAVE_TOKENS = 1850;
+  const ORDER = KINDS.map(kind => kind.id);
+  const REPLAY_WAVES = 2;
+
+  function pad(wave) {
+    return String(wave).padStart(2, "0");
+  }
+  function salt(wave, kindId) {
+    return `SALT-W${pad(wave)}-${kindId.toUpperCase()}`;
+  }
+  function kindById(id) {
+    const kind = KINDS.find(item => item.id === id);
+    if (!kind) throw new RangeError("Unknown kind: " + id);
+    return kind;
+  }
+  function waveKinds(lastKindId) {
+    const last = kindById(lastKindId);
+    return ORDER.filter(id => id !== last.id).concat(last.id).map(kindById);
+  }
+  function pair(wave, kind, fate) {
+    const token = salt(wave, kind.id);
+    return [
+      { id:`u${wave}-${kind.id}`, role:"user", wave, kind:kind.id, salt:token, flag:kind.flag, fate,
+        text:kind.user(token), reason: fate === "keep" ? "Latest user payload. Copied into the compact note." : fate === "pattern" ? "Same block type as later turns. Folded into one pattern sentence." : "Unique salt from an earlier wave. Not needed for the next ack." },
+      { id:`a${wave}-${kind.id}`, role:"assistant", wave, kind:kind.id, salt:token, flag:kind.flag, fate: fate === "drop" ? "pattern" : fate,
+        text: kind.id === "dialogue" ? `Noted AURORA-SEGMENT-001 and ${token}.` : kind.id === "json" ? `Config 0 validated; key QLARK-SEG-001.` : kind.ack.replace("SALT-MATH.", token).replace("SALT-LOG.", token).replace("SALT-SEA.", token),
+        reason: fate === "keep" ? "Established reply template for this block type. Copied so the next assistant can reuse it." : "Earlier ack. Represented by the pattern, not copied." }
+    ];
+  }
+  function compactTokens(waves, lastKindId) {
+    const history = waves * WAVE_TOKENS;
+    if (waves <= REPLAY_WAVES) return { history, compact: Math.round(history * 0.95), mode:"replay" };
+    const latest = kindById(lastKindId).payload;
+    return { history, compact: 90 + latest + 30, mode:"pattern" };
+  }
+  function checkpoint(waves, lastKindId, lastUser, lastAck, lastSalt) {
+    const last = kindById(lastKindId);
+    if (waves <= REPLAY_WAVES) {
+      return [
+        { id:"replay", kind:"evidence", label:"Near-replay", text:`${waves} wave${waves===1?"":"s"} still fit. Copy each block, each ack, and the unique salts, including ${salt(1, "code")} through ${lastSalt}.`, sources:["u1-code"] },
+        { id:"latest", kind:"evidence", label:"Latest turn", text:lastUser, sources:[`u${waves}-${lastKindId}`] },
+        { id:"next", kind:"evidence", label:"Next action", text:`If the user sends another ${last.label.toLowerCase()}, continue the same ack style.`, sources:[`a${waves}-${lastKindId}`] },
+        { id:"caution", kind:"caution", label:"Caution", text:"Do not claim real compilation, search, or cryptographic validation.", sources:[`a${waves}-${lastKindId}`] }
+      ];
+    }
+    return [
+      { id:"pattern", kind:"pattern", label:"Pattern", text:"Long repetitive ingestion stream. User sends Code, Math, Config, Log, Dialogue, and Search blocks. Assistant replies with a short template each time.", sources:["u1-code"] },
+      { id:"latest", kind:"evidence", label:"Latest user payload", text:lastUser, sources:[`u${waves}-${lastKindId}`] },
+      { id:"next", kind:"evidence", label:"Scripted next reply", text: lastKindId === "dialogue" ? `Noted AURORA-SEGMENT-001 and ${lastSalt}.` : lastAck, sources:[`a${waves}-${lastKindId}`] },
+      { id:"caution", kind:"caution", label:"Caution", text:"Do not invent tools or validation. Unique earlier salts are not retained.", sources:[`u1-code`] }
+    ];
+  }
+  function build(waves, lastKindId) {
+    waves = Math.max(1, Math.min(80, Math.trunc(Number(waves) || 1)));
+    lastKindId = ORDER.includes(lastKindId) ? lastKindId : "dialogue";
+    const kinds = waveKinds(lastKindId);
+    const mode = waves <= REPLAY_WAVES ? "replay" : "pattern";
+    const messages = [];
+    for (const kind of kinds) messages.push(...pair(1, kind, mode === "replay" ? "keep" : "drop"));
+    const lastPairs = [];
+    if (waves > 1) {
+      for (const kind of kinds) lastPairs.push(...pair(waves, kind, "keep"));
+    }
+    const visible = waves === 1 ? messages : messages.concat(lastPairs);
+    const lastUser = visible.filter(m => m.role === "user").at(-1);
+    const lastAck = visible.filter(m => m.role === "assistant").at(-1);
+    const tokens = compactTokens(waves, lastKindId);
+    const foldedWaves = Math.max(0, waves - 2);
+    return {
+      waves, lastKindId, mode, messages:visible, kinds:kinds.map(k => k.id),
+      foldedWaves, foldedMessages: Math.max(0, (waves - 2) * 12),
+      firstSalt: salt(1, "code"),
+      lastSalt: lastUser.salt,
+      lastUserText: lastUser.text,
+      lastAckText: lastAck.text,
+      fragments: checkpoint(waves, lastKindId, lastUser.text, lastAck.text, lastUser.salt),
+      historyTokens: tokens.history,
+      compactTokens: tokens.compact,
+      percentIfLossless: Math.round(tokens.history * 0.01)
+    };
+  }
+  globalThis.CodexCompactViz = Object.freeze({ KINDS, WAVE_TOKENS, REPLAY_WAVES, ORDER, salt, compactTokens, build });
+})();
+</script>
+
+<script id="codex-compact-ui">
+"use strict";
+(() => {
+  const $ = id => document.getElementById(id);
+  const viz = globalThis.CodexCompactViz;
+  const examples = JSON.parse($("saved-examples").textContent);
+  const scale = JSON.parse($("scale-data").textContent);
+  let selected = null;
+  let caseIndex = 1;
+  let timer = null;
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function announce(text) { $("announcement").textContent = text; }
+  function fmt(n) { return Math.round(n).toLocaleString("en-US"); }
+  function state() {
+    return viz.build($("waves").value, $("last-kind").value);
+  }
+  function stop() {
+    clearInterval(timer);
+    timer = null;
+    $("play").textContent = "Play growth";
+    $("play").setAttribute("aria-pressed", "false");
+  }
+  function inspectFrom(state, id) {
+    const msg = state.messages.find(m => m.id === id);
+    if (!msg) {
+      $("inspect-title").textContent = "Trace a message";
+      $("inspect-description").textContent = "Select a source message or a checkpoint fragment.";
+      return;
+    }
+    const hits = state.fragments.filter(f => f.sources.includes(msg.id)).map(f => f.label);
+    $("inspect-title").textContent = `${msg.role} · wave ${msg.wave} · ${msg.kind}`;
+    $("inspect-description").textContent = msg.reason + (hits.length ? " Checkpoint: " + hits.join(", ") + "." : " No checkpoint fragment cites this message.");
+  }
+  function renderGrow() {
+    const s = state();
+    $("waves-label").textContent = String(s.waves);
+    $("hist-tokens").textContent = fmt(s.historyTokens);
+    $("comp-tokens").textContent = fmt(s.compactTokens);
+    $("hist-fill").style.width = Math.min(100, (s.historyTokens / (80 * viz.WAVE_TOKENS)) * 100) + "%";
+    $("comp-fill").style.width = Math.min(100, (s.compactTokens / 2500) * 100) + "%";
+    $("hist-caption").textContent = `${s.waves} wave${s.waves===1?"":"s"} · ${s.waves * 12} messages · ~${fmt(s.historyTokens)} teaching tokens`;
+    $("comp-caption").textContent = s.mode === "replay"
+      ? "Prefix still fits, so compact is almost a copy of the transcript."
+      : `1% of this history would be ${fmt(s.percentIfLossless)} tokens. Compact wrote ${fmt(s.compactTokens)} instead.`;
+    $("message-count").textContent = s.waves * 12 + " msgs";
+    $("mode-eyebrow").textContent = s.mode === "replay" ? "Replay branch" : "Pattern branch";
+    $("mode-title").textContent = s.mode === "replay" ? "Copy the prefix" : "Write the loop, keep the current turn";
+    $("mode-description").textContent = s.mode === "replay"
+      ? "Short histories are not worth folding. Compact restates each block and ack, unique salts included."
+      : "The extra waves add no new structure. Compact names the machine once, copies the latest payload, and drops earlier unique salts.";
+    $("mode-code").textContent = s.mode === "replay"
+      ? "if waves <= 2:\n  C = copy(history)"
+      : "else:\n  C = pattern + latest + next\n  drop(older unique salts)";
+    const rows = [];
+    const firstWave = s.messages.filter(m => m.wave === 1);
+    for (const msg of firstWave) {
+      rows.push(msg);
+    }
+    if (s.foldedWaves > 0) {
+      rows.push({ fold:true, waves:s.foldedWaves, messages:s.foldedMessages });
+    }
+    if (s.waves > 1) {
+      for (const msg of s.messages.filter(m => m.wave === s.waves)) rows.push(msg);
+    }
+    $("messages").innerHTML = rows.map(item => {
+      if (item.fold) {
+        return `<div class="fold"><strong>Folded</strong>${item.waves} intermediate wave${item.waves===1?"":"s"} · ${item.messages} messages described once. Unique salts from those waves are not in the compact note.</div>`;
+      }
+      const pressed = item.id === selected ? "true" : "false";
+      const preview = item.text.split("\n")[0];
+      return `<button class="message" data-msg="${item.id}" data-state="${item.fate}" aria-pressed="${pressed}"><div class="message-head"><span>${item.role} · wave ${String(item.wave).padStart(2,"0")} · ${item.kind}</span><span>${item.fate}</span></div><span class="body">${escapeHtml(preview)}</span></button>`;
+    }).join("");
+    $("checkpoint-status").textContent = s.mode === "replay" ? "Near-replay" : "Continuation note";
+    $("checkpoint").innerHTML = s.fragments.map(f => {
+      const on = f.sources.includes(selected) ? " selected" : "";
+      return `<button class="fragment${on}" data-fragment="${f.id}" data-kind="${f.kind}"><strong>${escapeHtml(f.label)}</strong><p>${escapeHtml(f.text)}</p></button>`;
+    }).join("");
+    $("checkpoint-foot").textContent = `${s.fragments.length} fields · compact does not execute the next reply`;
+    const outcome = $("outcome");
+    if (s.mode === "replay") {
+      outcome.className = "outcome";
+      outcome.innerHTML = `<h3>The next assistant still has every salt in this prefix.</h3><p>Wave 1 salt <code>${s.firstSalt}</code> is copied. This is why the short saved case is 1,127 → 1,070 tokens with 100% sentinel recall.</p>`;
+    } else {
+      outcome.className = "outcome warning";
+      outcome.innerHTML = `<h3>The next ack can be produced. Wave 1 cannot be reconstructed.</h3><p>Latest salt <code>${s.lastSalt}</code> is in the note. Earlier salt <code>${s.firstSalt}</code> is not. If the user later asks for it, this compact object cannot supply it.</p>`;
+    }
+    inspectFrom(s, selected);
+  }
+  function escapeHtml(value) {
+    return String(value).replace(/[&<>"']/g, ch => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[ch]));
+  }
+  function renderEvidence() {
+    const ex = examples[caseIndex];
+    const m = ex.meta;
+    $("case-ratio").textContent = `${fmt(m.actual_input_tokens)} → ${fmt(m.remote_compact_output_tokens)}`;
+    $("case-recall").textContent = (m.advanced_unique_fact_recall * 100).toFixed(m.advanced_unique_fact_recall < 0.01 ? 2 : 1) + "%";
+    $("case-support").textContent = Math.round(m.advanced_identifier_support * 100) + "%";
+    $("case-size-fill").style.width = Math.min(100, (m.remote_compact_output_tokens / Math.max(m.actual_input_tokens, 1)) * 100) + "%";
+    $("case-recall-fill").style.width = Math.min(100, m.advanced_unique_fact_recall * 100) + "%";
+    $("case-support-fill").style.width = Math.min(100, m.advanced_identifier_support * 100) + "%";
+    $("case-size-caption").textContent = `${fmt(m.input_message_count)} source messages. Compact output is the hidden note length, not a percentage of input.`;
+    $("source-count").textContent = "4 shown";
+    $("source-omitted").textContent = ex.omitted;
+    $("source-text").innerHTML = ex.messages.map(msg => `<div class="source-message"><div class="eyebrow">${msg.role}</div><pre>${escapeHtml(msg.text)}</pre></div>`).join("");
+    $("recovered-text").textContent = ex.recovered;
+    $("recovered-count").textContent = fmt(m.remote_compact_output_tokens) + " tok";
+    $("case-footnote").textContent = `${ex.title}: ${ex.blurb} Example ${m.example_id}.`;
+    $("example-link").setAttribute("href", ex.link);
+    $("case-picker").querySelectorAll(".case-button").forEach((btn, i) => btn.setAttribute("aria-pressed", i === caseIndex ? "true" : "false"));
+  }
+  function renderScale() {
+    const max = Math.max(...scale.map(row => row.median));
+    $("scale-bars").innerHTML = scale.map(row => {
+      const width = (row.median / max) * 100;
+      return `<div class="scale-row"><span>${row.label}</span><div class="track"><div class="fill purple" style="width:${width}%"></div></div><span>${row.median} tok · n=${row.n}</span></div>`;
+    }).join("");
+  }
+
+  $("case-picker").innerHTML = examples.map((ex, i) => `<button class="case-button" data-case="${i}" aria-pressed="${i===1}"><span class="eyebrow">Case 0${i+1}</span><strong>${escapeHtml(ex.title)}</strong><small>${escapeHtml(ex.blurb)}</small></button>`).join("");
+
+  $("waves").addEventListener("input", () => { stop(); renderGrow(); });
+  $("last-kind").addEventListener("change", () => { stop(); renderGrow(); announce("Latest block type updated."); });
+  $("jump-long").addEventListener("click", () => { stop(); $("waves").value = "54"; renderGrow(); announce("Jumped to 54 waves, about 100,000 teaching tokens."); });
+  $("play").addEventListener("click", () => {
+    if (timer) { stop(); return; }
+    if (reduced) { $("waves").value = "54"; renderGrow(); announce("Reduced motion: jumped to 54 waves."); return; }
+    $("waves").value = "1";
+    renderGrow();
+    $("play").textContent = "Pause";
+    $("play").setAttribute("aria-pressed", "true");
+    timer = setInterval(() => {
+      const next = Number($("waves").value) + (Number($("waves").value) < 8 ? 1 : 4);
+      if (next > 54) { $("waves").value = "54"; renderGrow(); stop(); announce("Growth finished at about 100,000 tokens."); return; }
+      $("waves").value = String(next);
+      renderGrow();
+    }, 420);
+  });
+  $("messages").addEventListener("click", e => {
+    const btn = e.target.closest("[data-msg]");
+    if (!btn) return;
+    selected = btn.getAttribute("data-msg");
+    renderGrow();
+    announce($("inspect-description").textContent);
+  });
+  $("checkpoint").addEventListener("click", e => {
+    const btn = e.target.closest("[data-fragment]");
+    if (!btn) return;
+    const s = state();
+    const frag = s.fragments.find(f => f.id === btn.getAttribute("data-fragment"));
+    selected = frag.sources[frag.sources.length - 1];
+    renderGrow();
+    announce($("inspect-description").textContent);
+  });
+  $("case-picker").addEventListener("click", e => {
+    const btn = e.target.closest("[data-case]");
+    if (!btn) return;
+    caseIndex = Number(btn.getAttribute("data-case"));
+    renderEvidence();
+    announce(examples[caseIndex].title);
+  });
+
+  const tabs = [
+    { name:"grow", tab:"tab-grow", panel:"grow" },
+    { name:"evidence", tab:"tab-evidence", panel:"evidence" },
+    { name:"rule", tab:"tab-rule", panel:"rule" }
+  ];
+  function switchTab(name) {
+    for (const item of tabs) {
+      const on = item.name === name;
+      $(item.tab).setAttribute("aria-selected", on ? "true" : "false");
+      $(item.tab).tabIndex = on ? 0 : -1;
+      $(item.panel).hidden = !on;
+    }
+  }
+  for (const item of tabs) {
+    $(item.tab).addEventListener("click", () => switchTab(item.name));
+  }
+  document.querySelector(".tabs").addEventListener("keydown", e => {
+    const i = tabs.findIndex(t => $(t.tab).getAttribute("aria-selected") === "true");
+    if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+    e.preventDefault();
+    const next = tabs[(i + (e.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length];
+    switchTab(next.name);
+    $(next.tab).focus();
+  });
+
+  renderGrow();
+  renderEvidence();
+  renderScale();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+source_id,arxiv_id,title,authors,published,updated,primary_category,categories,doi,journal_reference,metadata_source
+li-2025-agent-paradigms,,,Xinzhe Li,,,,,,,ACL Anthology record
+yehudai-2026-agent-evaluation-survey,,,Asaf Yehudai; Lilach Eden; Alan Li; Guy Uziel; Yilun Zhao; Roy Bar-Haim; Arman Cohan; Michal Shmueli-Scheuer,,,,,,,ACL Anthology record
+ruaibox-2026-agent-systems-harness,,,Xinyu Tang; Han Peng; Guoxin Chen; Yuze Shi; Zitao Su; Peiyu Liu; Wayne Xin Zhao; Yawen Li; Zhe Xue,,,,,,,OpenReview record
+patil-2025-bfcl,,,Shishir G. Patil; Huanzhi Mao; Fanjia Yan; Charlie Cheng-Jie Ji; Vishnu Suresh; Ion Stoica; Joseph E. Gonzalez,,,,,,,ICML proceedings record
+xie-2025-planning-barriers,,,Jian Xie; Kexun Zhang; Jiangjie Chen; Siyu Yuan; Kai Zhang; Yikai Zhang; Lei Li; Yanghua Xiao,,,,,,,ACL Anthology record
+kwa-2025-long-software-tasks,,,Thomas Kwa; Ben West; Joel Becker; Amy Deng; Katharyn Garcia; Max Hasin; Sami Jawhar; Megan Kinniment; Nate Rush; Sydney Von Arx; Ryan Bloom; Thomas Broadley; Haoxing Du; Brian Goodrich; Nikola Jurkovic; Luke Harold Miles; Seraphina Nix; Tao Lin; Chris Painter; Neev Parikh; David Rein; Lucas Jun Koba Sato; Hjalmar Wijk; Daniel M. Ziegler; Elizabeth Barnes; Lawrence Chan,,,,,,,NeurIPS proceedings record
+choi-2025-debate-or-vote,,,Hyeong Kyu Choi; Xiaojin Zhu; Sharon Li,,,,,,,NeurIPS proceedings record
+cawley-2010-model-selection-overfitting,,,Gavin C. Cawley; Nicola L. C. Talbot,2010-07-01T00:00:00Z,2010-07-01T00:00:00Z,,,,Journal of Machine Learning Research 11 (2010) 2079-2107,JMLR record
+shannon-1959-rate-distortion,,,Claude E. Shannon,1959-03-01T00:00:00Z,1959-03-01T00:00:00Z,,,10.1109/TIT.1959.1057299,IRE National Convention Record 4 (1959) 142-163,IEEE record and openly accessible author-copy scan
+weitzman-1979-optimal-search,,,Martin L. Weitzman,1979-05-01T00:00:00Z,1979-05-01T00:00:00Z,,,10.2307/1910412,Econometrica 47(3) (1979) 641-654,Econometric Society record and author copy
+smith-2006-optimizers-curse,,,James E. Smith; Robert L. Winkler,2006-03-01T00:00:00Z,2006-03-01T00:00:00Z,,,10.1287/mnsc.1050.0451,Management Science 52(3) (2006) 311-322,INFORMS record and author copy
+solar-lezama-2006-sketch,,,Armando Solar-Lezama; Liviu Tancau; Rastislav Bodik; Sanjit Seshia; Vijay Saraswat,2006-10-01T00:00:00Z,2006-10-01T00:00:00Z,,,10.1145/1168857.1168907,ASPLOS XII (2006) 404-415,ACM record and author copy
+alur-2013-sygus,,,Rajeev Alur; Rastislav Bodik; Garvit Juniwal; Milo M. K. Martin; Mukund Raghothaman; Sanjit A. Seshia; Rishabh Singh; Armando Solar-Lezama; Emina Torlak; Abhishek Udupa,2013-10-01T00:00:00Z,2013-10-01T00:00:00Z,,,10.1109/FMCAD.2013.6679385,FMCAD 2013 1-8,IEEE record and author copy
+yang-2026-evotool,,,Shuo Yang; Caren Han; Xueqi Ma; Yan Li; Mohammad Reza Ghasemi Madani; Eduard Hovy,2026-07-01T00:00:00Z,2026-07-01T00:00:00Z,,,10.18653/v1/2026.acl-long.2016,Proceedings of ACL 2026 Volume 1 pages 43553-43572,ACL Anthology record
+cheng-2026-mem2evolve,,,Zihao Cheng; Zeming Liu; Yingyu Shan; Xinyi Wang; Xiangrong Zhu; Yunpu Ma; Hongru Wang; Yuhang Guo; Wei Lin; Yunhong Wang,2026-07-01T00:00:00Z,2026-07-01T00:00:00Z,,,10.18653/v1/2026.acl-long.952,Proceedings of ACL 2026 Volume 1 pages 20784-20831,ACL Anthology record

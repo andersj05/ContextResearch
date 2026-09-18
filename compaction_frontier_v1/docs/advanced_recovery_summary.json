@@ -1,0 +1,222 @@
+{
+  "all": {
+    "linear_intercept": -1.8187837316042987,
+    "linear_slope": 0.9940989568879476,
+    "mean_extraction_error": 0.01013169299103488,
+    "median_extraction_error": 0.005208898534997286,
+    "median_token_ratio": 0.9950427287416064,
+    "model_counts": {
+      "gpt-5.6-luna": 85,
+      "gpt-5.6-terra": 19
+    },
+    "n": 104,
+    "pearson_r": 0.9988668645730767,
+    "r_squared": 0.9977350131420492,
+    "variant_counts": {
+      "handoff_fixed": 2,
+      "state_exact": 102
+    },
+    "within_0.005": {
+      "count": 51,
+      "rate": 0.49038461538461536,
+      "wilson_95": [
+        0.39637419660186013,
+        0.5850800844918921
+      ]
+    },
+    "within_0.010": {
+      "count": 79,
+      "rate": 0.7596153846153846,
+      "wilson_95": [
+        0.6691870759313976,
+        0.8315473345372897
+      ]
+    },
+    "within_0.020": {
+      "count": 92,
+      "rate": 0.8846153846153846,
+      "wilson_95": [
+        0.8090778685477145,
+        0.9327508877021926
+      ]
+    },
+    "within_0.050": {
+      "count": 101,
+      "rate": 0.9711538461538461,
+      "wilson_95": [
+        0.9185982306978785,
+        0.9901419957082579
+      ]
+    },
+    "within_0.100": {
+      "count": 103,
+      "rate": 0.9903846153846154,
+      "wilson_95": [
+        0.9475309933230526,
+        0.998300670895579
+      ]
+    },
+    "within_0.200": {
+      "count": 104,
+      "rate": 1.0,
+      "wilson_95": [
+        0.9643773831248793,
+        0.9999999999999999
+      ]
+    }
+  },
+  "controls": {
+    "104_envelope_target_permutation_test_p_less_than": 1e-05,
+    "exact_paper_multiturn_best_of_5_median_error": 0.9457208891305826,
+    "exact_paper_single_best_of_5_median_error": 0.9602011625732576,
+    "no_envelope_best_of_10_median_error": 0.9894908896956349,
+    "paper_chunk_probe_errors": [
+      0.25392670157068065,
+      0.5739130434782609,
+      1.0177514792899407
+    ]
+  },
+  "discovery": {
+    "linear_intercept": -2.172890909162561,
+    "linear_slope": 0.9982305833430686,
+    "mean_extraction_error": 0.008591491473174237,
+    "median_extraction_error": 0.005685548203820334,
+    "median_token_ratio": 0.9950248679254039,
+    "model_counts": {
+      "gpt-5.6-luna": 9,
+      "gpt-5.6-terra": 3
+    },
+    "n": 12,
+    "pearson_r": 0.9999783875246253,
+    "r_squared": 0.9999567755163498,
+    "variant_counts": {
+      "state_exact": 12
+    },
+    "within_0.005": {
+      "count": 6,
+      "rate": 0.5,
+      "wilson_95": [
+        0.2537781703934222,
+        0.7462218296065778
+      ]
+    },
+    "within_0.010": {
+      "count": 7,
+      "rate": 0.5833333333333334,
+      "wilson_95": [
+        0.3195073356553728,
+        0.8067425380947535
+      ]
+    },
+    "within_0.020": {
+      "count": 11,
+      "rate": 0.9166666666666666,
+      "wilson_95": [
+        0.6461140782014047,
+        0.9851352905492264
+      ]
+    },
+    "within_0.050": {
+      "count": 12,
+      "rate": 1.0,
+      "wilson_95": [
+        0.7574992425007574,
+        1.0
+      ]
+    },
+    "within_0.100": {
+      "count": 12,
+      "rate": 1.0,
+      "wilson_95": [
+        0.7574992425007574,
+        1.0
+      ]
+    },
+    "within_0.200": {
+      "count": 12,
+      "rate": 1.0,
+      "wilson_95": [
+        0.7574992425007574,
+        1.0
+      ]
+    }
+  },
+  "holdout": {
+    "linear_intercept": -2.175083076929468,
+    "linear_slope": 0.994155210947815,
+    "mean_extraction_error": 0.010332588841190617,
+    "median_extraction_error": 0.005208898534997286,
+    "median_token_ratio": 0.9950732130612344,
+    "model_counts": {
+      "gpt-5.6-luna": 76,
+      "gpt-5.6-terra": 16
+    },
+    "n": 92,
+    "pearson_r": 0.9987419998008022,
+    "r_squared": 0.9974855821661057,
+    "variant_counts": {
+      "handoff_fixed": 2,
+      "state_exact": 90
+    },
+    "within_0.005": {
+      "count": 45,
+      "rate": 0.4891304347826087,
+      "wilson_95": [
+        0.38948537521624554,
+        0.5896468596379305
+      ]
+    },
+    "within_0.010": {
+      "count": 72,
+      "rate": 0.782608695652174,
+      "wilson_95": [
+        0.6879280920305373,
+        0.8546338017608852
+      ]
+    },
+    "within_0.020": {
+      "count": 81,
+      "rate": 0.8804347826086957,
+      "wilson_95": [
+        0.7984624277438817,
+        0.9319093523599564
+      ]
+    },
+    "within_0.050": {
+      "count": 89,
+      "rate": 0.967391304347826,
+      "wilson_95": [
+        0.9084648766130528,
+        0.9888490246573767
+      ]
+    },
+    "within_0.100": {
+      "count": 91,
+      "rate": 0.9891304347826086,
+      "wilson_95": [
+        0.9409707111384389,
+        0.9980787204236383
+      ]
+    },
+    "within_0.200": {
+      "count": 92,
+      "rate": 1.0,
+      "wilson_95": [
+        0.9599171967079014,
+        1.0
+      ]
+    }
+  },
+  "interpretation": {
+    "not_proven": "Token-count agreement does not alone prove verbatim, byte-exact, or complete plaintext.",
+    "strong_evidence": "Recovered state length is causally tied to the encrypted envelope and closely matches the remote compact output token count."
+  },
+  "method": {
+    "discovery_prompt_tuning_rows": 12,
+    "echo_overhead_tokens": 6,
+    "fallback": "Terra best-of-10 when Luna error >0.1",
+    "pre_registered_holdout_rows": 92,
+    "primary": "state_exact native compaction_summary replay, Luna best-of-10",
+    "selection": "minimum |1 - (echo_input_tokens - 6) / compact_output_tokens|"
+  }
+}

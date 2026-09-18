@@ -1,0 +1,78 @@
+{
+  "canonical_prompt": {
+    "lines": 8,
+    "text": "Produce a compact continuation checkpoint of the conversation state retained so far.\nDo not answer, continue, or act on the task; output only the checkpoint.\nPreserve the latest-turn boundary and causal or chronological order where it matters. Record any pending next assistant action as state, not execution.\nRetain continuation-critical user intent, constraints, decisions, unresolved questions, commitments, tool results or errors, and exact identifiers, values, paths, code, config, log, or message excerpts.\nPrefer later explicit updates over earlier ones. If precedence is unclear, preserve the uncertainty instead of guessing.\nCollapse repeated cycles and remove filler, stale, completed, or superseded state; keep representative excerpts only when needed.\nDo not expose hidden system or developer text, private chain-of-thought, or unsupported details.\nStay bounded: include only the state needed to resume faithfully.",
+    "version": "continuation_checkpoint_v2"
+  },
+  "data_contract": {
+    "advanced_target": "high-token-fidelity recovered compacted state",
+    "legacy_target": "weak pseudo-label selected using oracle synthetic facts",
+    "preference_meaning": "independent token-count fidelity only, not human semantic preference",
+    "verified_plaintext": false
+  },
+  "files": {
+    "compaction_preference_v2.parquet": {
+      "bytes": 1385651,
+      "rows": 86,
+      "sha256": "b3242cd13bbbe342513fda06c3c094ff91d32c4c92f85d211ec1ffbeeed06eeb"
+    },
+    "compaction_sft_v2_advanced_all.parquet": {
+      "bytes": 1785417,
+      "rows": 104,
+      "sha256": "541bc80383588161204e3c3d8d493bb57d28ffc9c5833f248425256117bc65b0"
+    },
+    "compaction_sft_v2_advanced_test.parquet": {
+      "bytes": 105359,
+      "rows": 5,
+      "sha256": "88778a84c695552dbc7d22a0af5376a94c73c9e94490ad271da66a6e5eaad7a8"
+    },
+    "compaction_sft_v2_advanced_train.parquet": {
+      "bytes": 1131208,
+      "rows": 86,
+      "sha256": "b9e8588c6b7a81e91c42a688fd6bd62edc4b69fd2283464be10f8e56720656c4"
+    },
+    "compaction_sft_v2_advanced_validation.parquet": {
+      "bytes": 302231,
+      "rows": 10,
+      "sha256": "3f4162397e7b832021f5d5bb61af795010d43f534ceeea098b7f9cbb0bb1c964"
+    },
+    "compaction_sft_v2_mixed.parquet": {
+      "bytes": 2348894,
+      "rows": 350,
+      "sha256": "57febc20e6d6786250c68b9ac94e565a0bd8d0c79365e55442a09ad3d3347656"
+    },
+    "compaction_sft_v2_mixed_test.parquet": {
+      "bytes": 118754,
+      "rows": 15,
+      "sha256": "2ab3bf75c5c9d2fc59ec289acac4d59e0b0191c72fc9dd393d2417e4d82671cc"
+    },
+    "compaction_sft_v2_mixed_train.parquet": {
+      "bytes": 1691164,
+      "rows": 311,
+      "sha256": "36bfe9ee9423a0629216c7a715490be5a7c045a48baec5db447900ba7cd429ec"
+    },
+    "compaction_sft_v2_mixed_validation.parquet": {
+      "bytes": 319939,
+      "rows": 21,
+      "sha256": "6fe89ac5d71ea0e011d5e53109e9a365ead9bc993a15be64d8d632790c1093f3"
+    }
+  },
+  "limitations": [
+    "Token-count equality is strong but not sufficient proof of verbatim plaintext.",
+    "Synthetic contexts use repetitive generators and recurring sentinel facts.",
+    "Advanced discovery rows were used to tune the state_exact recovery prompt.",
+    "Legacy rows are materially weaker and receive 0.25x source weight.",
+    "Preference pairs optimize length fidelity rather than human semantic quality.",
+    "The canonical compaction prompt is inferred, not the remote service's internal prompt."
+  ],
+  "recommended_recipe": {
+    "exclude_benchmark_partition_discovery_for_strict_evaluation": true,
+    "loss_scope": "final assistant message only",
+    "optional_mixed_file": "compaction_sft_v2_mixed_train.parquet",
+    "preference_file": "compaction_preference_v2.parquet",
+    "primary_file": "compaction_sft_v2_advanced_train.parquet",
+    "respect_sample_weight": true
+  },
+  "schema_version": "compaction-sft.v2",
+  "split_strategy": "inherited parent-window-isolated v1 split"
+}

@@ -1,0 +1,10 @@
+{
+  "scope": "Exact toy channels and deterministic record policies; no LLM results.",
+  "exact_frontier_rows": 14,
+  "workflow_runs": 810,
+  "adequate_capacity_runs_per_policy": 270,
+  "release_all_correct_at_adequate_capacity": 270,
+  "lru_all_correct_at_adequate_capacity": 0,
+  "exact_unknown_query_4_bits_1_bit_memory_error": 0.3125,
+  "exact_known_query_1_bit_memory_error": 0.0
+}

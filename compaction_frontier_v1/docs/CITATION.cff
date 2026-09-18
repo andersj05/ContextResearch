@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: Compaction Frontier Research Release
+type: dataset
+version: 1.0.0
+date-released: 2026-08-12
+message: Cite this dataset release and Panfilov et al. arXiv:2608.09867 for recovery-method inspiration.
+references:
+  - type: article
+    title: Stealing Reasoning Traces from Proprietary LLM APIs
+    authors:
+      - family-names: Panfilov
+        given-names: Alexander
+      - family-names: Schmotz
+        given-names: David
+      - family-names: Shumailov
+        given-names: Ilia
+      - family-names: Beurer-Kellner
+        given-names: Luca
+      - family-names: Schaeffer
+        given-names: Joachim
+      - family-names: Prabhu
+        given-names: Ameya
+      - family-names: Geiping
+        given-names: Jonas
+      - family-names: Andriushchenko
+        given-names: Maksym
+    year: 2026
+    url: https://arxiv.org/abs/2608.09867
+    identifiers:
+      - type: arxiv
+        value: 2608.09867
