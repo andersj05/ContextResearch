@@ -37,6 +37,6 @@ Regenerate diagnostic results after changes to their generators. Tests should ch
 
 ## Git and handoffs
 
-Make small, coherent commits as work progresses, as requested by the user. Use `codex/` for new branch names unless instructed otherwise. Inspect the working tree before changing files; preserve other contributors' changes. Update `docs/STATUS.md` when a milestone or scientific conclusion changes. Record important research choices in `docs/DECISIONS.md`. Do not commit credentials, local environments, generated previews, or uncontrolled raw session logs.
+Make small, coherent commits as work progresses, as requested by the user. Use `task/` for new branch names, following the user's September 18 preference. Inspect the working tree before changing files; preserve other contributors' changes. Update `docs/STATUS.md` when a milestone or scientific conclusion changes. Record important research choices in `docs/DECISIONS.md`. Do not commit credentials, local environments, generated previews, or uncontrolled raw session logs.
 
 The Windows GitHub CLI account `andersj05` is stored in Windows Credential Manager. Sandboxed outbound failures can look like invalid authentication. Verify a relevant `gh` operation outside the sandbox with the narrowest appropriate approval before recommending re-authentication; never infer a need to log out from a sandboxed check alone.

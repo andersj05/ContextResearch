@@ -24,7 +24,10 @@ The [September 18 memo](../research/CREATIVE_RESEARCH_DIRECTIONS_2026-09-18.md) 
 |---|---|---|
 | [ARC](https://arxiv.org/html/2601.12030v1) | Existing active revision of working context | Method Sections 3.1-3.3 read; reflection changes internal representations and is separated from action generation. |
 | [Source Coding with a Side Information Vending Machine](https://arxiv.org/abs/0904.2311v2) | Established joint treatment of actions, side information, rate, distortion, and cost | Abstract and metadata only; full theorem comparison outstanding. |
-| [Cascade Source Coding with a Side Information Vending Machine](https://arxiv.org/abs/1207.2793v1) | Multistage descriptions and side-information acquisition | Abstract and metadata only; especially important prior art for the proposed extension. |
+| [Cascade Source Coding with a Side Information Vending Machine](https://arxiv.org/abs/1207.2793v1) | Multistage descriptions and side-information acquisition | Abstract, metadata, and Sections II-A and III-A model definitions read during the proof audit; full reduction outstanding. |
+| [Information-Theoretic Caching: Sequential Coding for Computing](https://arxiv.org/abs/1504.00553v2) | Cache before a request, then a request-dependent update | Abstract, related-work discussion, and Section II model definition read; full theorem comparison outstanding. |
+
+The [local proof audit](../research/PROOF_AUDIT_2026-09-18.md) also rechecks Equitz-Cover Sections II-III and records an analytic entropy lemma. Independent external review and novelty assessment remain open.
 
 TRACE Section 4.1 was reread for its paired, restored-environment continuations and blocked/repeated-action verifier. A delayed-obligation witness generator would extend this evaluation idea; paired continuations themselves are established. No broad-corpus review labels were upgraded.
 

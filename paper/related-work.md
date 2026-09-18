@@ -16,7 +16,8 @@ These are distinctions to verify and explain, not declarations of novelty. The d
 | The Complexity Trap [@complexitytrap2025] | Observation masking versus summarization | Strong simple baselines can compete; results in its harness are not savings against current Codex. |
 | ARC [@arc2026] | Active internal context revision | The reviewed method separates reflection from external action generation. The proposed extension selects actions for their effect on future memory needs. |
 | Side-information vending machines [@vending2009] | Actions jointly affect source-coding rate, distortion, and cost | Abstract reviewed only. Acquiring information to improve compression is established; full theorem comparison is required. |
-| Cascade vending machines [@cascadevending2012] | Multistage coding with costed side information | Abstract reviewed only. Particularly close prior art for the proposed action extension. |
+| Cascade vending machines [@cascadevending2012] | Multistage coding with costed side information | Model definitions II-A and III-A reviewed. Intermediate encoding from received messages and local side information is close prior art; an exact reduction remains open. |
+| Sequential coding for computing [@caching2016] | Cache before requests, followed by request-dependent updates | Section II gives the update encoder both source and request; our updater cannot reread the source. |
 
 Additional leads from the proposal: [query-visibility audit](https://arxiv.org/abs/2607.11942), [online KV compaction](https://arxiv.org/html/2608.00902v1), [MemRefine](https://arxiv.org/html/2606.13177v1), [caching with fallible predictions](https://proceedings.mlr.press/v80/lykouris18a.html), and [approximate information states](https://jmlr.org/papers/v23/20-1165.html).
 

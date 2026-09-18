@@ -128,6 +128,12 @@ def main() -> int:
         errors.append("Compatibility scaling certificate is stale; regenerate it")
     counts["scaling_child_codebooks"] = sum(row["codebooks_checked"] for row in expected_scaling["child_codebook_checks"])
     counts["scaling_entropy_assignments"] = expected_scaling["block_entropy_check"]["optimal_branch_assignments_checked"]
+    import audit_scaling
+    expected_audit = json.loads(json.dumps(audit_scaling.certificate()))
+    actual_audit = json.loads((ROOT / "experiments/dependency_memory/results/scaling_audit_certificate.json").read_text(encoding="utf-8"))
+    if expected_audit != actual_audit:
+        errors.append("Scaling audit certificate is stale; regenerate it")
+    counts["audit_signed_assignments"] = expected_audit["signed_majority_assignments"]
     workflow = rows("experiments/dependency_memory/results/workflow_retention.csv")
     summary = json.loads((ROOT / "experiments/dependency_memory/results/summary.json").read_text(encoding="utf-8"))
     if len(workflow) != summary["workflow_runs"]:

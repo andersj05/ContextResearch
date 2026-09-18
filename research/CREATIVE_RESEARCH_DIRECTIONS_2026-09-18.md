@@ -1,6 +1,6 @@
 # A contribution through memory limits, information timing, and action
 
-September 18, 2026. Exploratory research memo. Sections 2-4 contain local derivations with executable finite certificates; novelty and independent proof review remain open. Sections 5-7 propose experiments, not results. This memo extends the [active proposal](LIVE_DEPENDENCY_RESEARCH_PROPOSAL_2026-09-16.md); it does not select a venue, model, or spending budget.
+September 18, 2026. Exploratory research memo. Sections 2-4 contain local derivations with executable finite certificates. A subsequent [local proof audit](PROOF_AUDIT_2026-09-18.md) adds an analytic entropy argument, checks independent formulations, and corrects the leave-one-out domain to n >= 4. External review and novelty assessment remain open. Sections 5-7 propose experiments, not results. This memo extends the [active proposal](LIVE_DEPENDENCY_RESEARCH_PROPOSAL_2026-09-16.md); it does not select a venue, model, or spending budget.
 
 ## 1. Recommended research bet
 
@@ -47,7 +47,7 @@ The additive constant is conservative: about 0.195 percentage points. It is not 
 
 ## 3. Proof of the uniform gap
 
-It suffices to consider deterministic schemes: fix all random coins in a randomized protocol to obtain a deterministic protocol with no larger average loss and the same capacity constraints.
+It suffices to consider deterministic schemes: random coins are independent of the instance, and the state-count capacities hold for every realization. Fix all coins to obtain a deterministic protocol with no larger average loss and the same capacity constraints. This reduction does not justify replacing the hard state-count constraint by an expected-memory constraint.
 
 For each block r, let delta_r be its conditional error minus 1/4. Every delta_r is nonnegative, since giving the child encoder all source values cannot improve beyond the one-bit three-coordinate optimum. Let delta be the average of delta_r.
 
@@ -107,11 +107,11 @@ At delta <= 1/512 the lower bound is strictly greater than 2, because h2(3/128) 
 
 The strict entropy inequality is certified by the exact integer comparison 3^3 * 125^125 > 2^874. This is a contradiction. It proves the claimed lower bound for arbitrary joint encoders and, by fixing random coins, randomized protocols too.
 
-The certificate supplies a finite lemma; the entropy argument supplies the result for all k. Enumerating four-bit cases alone would not establish the general result.
+The certificate checks a finite lemma; the entropy argument supplies the result for all k. The [audit](PROOF_AUDIT_2026-09-18.md) also proves the finite entropy lemma analytically using antipodal fiber pairs. Enumerating four-bit cases alone would not establish the general result.
 
 ## 4. A useful failed direction: more memory need can hide negligible loss
 
-An alternative extension uses n even source bits and all n subsets obtained by omitting one coordinate. The child still has one bit. Write m=n-1 and
+An alternative extension uses n even source bits, with n >= 4, and all n subsets obtained by omitting one coordinate. The child still has one bit. Write m=n-1 and
 
 \[
 d_m=\frac12-\frac{\binom{m-1}{(m-1)/2}}{2^m}.
