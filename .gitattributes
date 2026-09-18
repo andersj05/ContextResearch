@@ -1,0 +1,7 @@
+# Preserve imported evidence bytes and checksum reproducibility on all platforms.
+# Authored text is written as UTF-8 with LF; Git must not rewrite snapshots.
+* -text
+*.pdf binary
+*.parquet binary
+*.png binary
+*.jpg binary

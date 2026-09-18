@@ -1,0 +1,53 @@
+# Experiment protocol draft
+
+Status: proposed protocol, September 18, 2026. Only the finite diagnostics are implemented. This document incorporates the follow-up discussion about blind filtering, reasoning continuity, and prompt-cache economics.
+
+## Questions and stages
+
+1. **Finite representation:** characterize the extra loss or parent-memory cost imposed by successive irreversible bottlenecks with delayed side information.
+2. **Natural-language updates:** compare prose, structured state, and explicit unresolved-dependency retention on matched event streams.
+3. **Agent behavior:** measure delayed task completion and full cost in a state-changing tool environment, against the harness's supported native policy.
+
+Do not present success in an earlier stage as a result in a later one. The currently implemented dictionary baseline receives explicit sound retirement events; inferred retirement is a different experimental condition.
+
+## Information available to each method
+
+Declare each input at every boundary: retained memory, new tool result, public task instructions, candidate subset, final query, environment files, provider session state, opaque reasoning items, and any archive. A no-archive condition must not retain access to evicted values through hidden API history or evaluator files. Fixed codebooks may encode a public rule, not an individual test instance.
+
+Pair the same source values, final query, and task with the relevance clue arriving before versus after a binding compaction. Every method in a condition receives the same evidence. Report the altered information order as the treatment. Use held-out templates; development clues and evaluator answers must not enter test-time memory inputs.
+
+## Provider-native state is part of the experiment
+
+An opaque reasoning or compaction item is a memory channel. Removing it may change reasoning continuity independently of the visible text summary. Keeping it may preserve information supposedly removed by an irreversible bottleneck.
+
+- OpenAI documents opaque compaction state and says to pass the returned compacted window forward unchanged. [Compaction guide](https://developers.openai.com/api/docs/guides/compaction).
+- Anthropic documents model-dependent preservation and prefix-binding rules. Some client-side edits can invalidate later thinking blocks; supported server-side compaction/context editing has different semantics. [Preserved thinking](https://platform.claude.com/docs/en/build-with-claude/preserved-thinking), [context editing](https://platform.claude.com/docs/en/build-with-claude/context-editing).
+- Record the provider, model revision, API, thinking settings, continuity rules, and dropped-block/error metadata where available. Recheck these living documents when implementing the experiment; the review above was September 18, 2026.
+
+For the controlled representation study, ensure the actual accessible channels match the model's declared assumptions. For the production comparison, prefer supported provider mechanisms and evaluate the complete intervention. If an intervention necessarily discards reasoning state, report that treatment explicitly; it does not isolate visible-summary quality.
+
+## Baselines and failure signals
+
+Use an intact native harness policy; a strong structured summary; a prose-summary baseline; and a recent-observation masking baseline when the API permits it without an undeclared continuity change. Hold task, environment, model, available evidence, and declared budget constant within each comparison. Add dependency records only after these controls are working.
+
+Retain exact unresolved identifiers and constraints, relevant negative results, the scope/revision of verification, and residual obligations from completed subtasks. Test the tempting error of replacing a subtask by a bare `done` marker. Include transient observations that cannot be recreated by reading a current file. Recovery is a separately evaluated mechanism, not an assumption.
+
+## Cost and timing
+
+Count every manager, summarizer, main-model, and retrieval call. Use mutually exclusive provider billing buckets for uncached input, cache reads, cache writes, and output/reasoning; do not charge a cache-write token again as uncached input. Track raw tool bytes, admitted tokens, repeated tokens, and retained memory separately. API dollars and internal serving cost are distinct outcomes.
+
+A simplified break-even calculation is `N * D * r > K`: expected future reuses times net tokens removed times the read price must exceed incremental compactor/cache-rebuild cost. This omits behavioral changes; add rework, retrieval, and failure when evaluating runs. A smaller prompt alone is not evidence of lower total cost. [OpenAI prompt caching](https://developers.openai.com/api/docs/guides/prompt-caching), [Anthropic context editing](https://platform.claude.com/docs/en/build-with-claude/context-editing).
+
+Append small state updates during a stable cached window and evaluate consolidation at meaningful boundaries. Compare timing policies rather than assuming a universal percentage threshold.
+
+## Outcomes and study discipline
+
+Primary behavioral outcome: deterministic terminal task success, including delayed obligations. Report total cost and latency alongside success; retain unsuccessful runs in accounting. Diagnostics include stale facts, repeated failed actions, invalid completion claims, exact retention, retrieval success, and cumulative compaction count.
+
+Restore both environment and context in paired checkpoint continuations. Complete runs are also needed because actions and future observations change after a memory intervention. Immediate next-action agreement cannot establish preservation of a late obligation.
+
+The proposed 36-run pilot (six paired templates, two disclosure timings, three methods, one budget) is a debugging exercise. Choose final sample size from a prespecified effect size and pilot variability; do not claim significance from constructed configurations or tune against held-out tasks. Save model/configuration versions, seeds, immutable task definitions, usage records, and analysis code with each result.
+
+## Claim boundary
+
+The Theo/Jev criticism was supplied by the user; the specific Jev implementation and original post were not independently audited. It motivates failure cases but is not a citable measurement. No universal claim that filtering always harms performance, that native compaction is optimal, or that cache writes occupy a fixed share of spending follows from that discussion.
