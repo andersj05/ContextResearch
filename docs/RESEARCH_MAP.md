@@ -18,6 +18,7 @@
 | Contribution relative to prior work | [Focused literature comparison](../research/LITERATURE_POSITIONING_2026-09-18.md) | Reviewed definitions and theorem statements; no priority certification |
 | Pilot evaluation controls | [September 19 source review](../research/PILOT_EVALUATION_REVIEW_2026-09-19.md) | Version-pinned readings; no source replication or model result |
 | Next model study | [Pilot design](LLM_PILOT_SPEC.md) | Executable offline schedule/calibration; renderers, adapter, model revision, and spending unresolved |
+| Correctness review and next gates | [September 19 audit](../research/CORRECTNESS_AUDIT_2026-09-19.md) | Local math/source/design review, two validation fixes, full search rerun; no external certification |
 | Findings in plain language | [Living findings draft](../paper/findings-draft.md) | Versioned short account linked to the claim register |
 | Current writing | [Paper workspace](../paper/README.md) | Draft; incomplete results clearly marked |
 

@@ -1,6 +1,6 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.2 — September 19, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.3 — September 19, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
 
 ## The question
 
@@ -45,12 +45,14 @@ This is elementary cost accounting within our declared model. Its value is as a 
 
 Successive refinement, functional compression, and costed side information already provide relevant theory. Recent compaction work also discusses query timing and recovery. The [literature comparison](../research/LITERATURE_POSITIONING_2026-09-18.md) therefore supports a narrow direction: a restricted compatibility result, plus a reproducible experiment that identifies when an action before compaction changes later task success and total cost. Broad novelty claims would be premature.
 
-The current evidence comprises checked mathematics, 60 offline tests, the exhaustive finite-chain computation, 2,640 complete-route scripted episodes, and a 3,000-configuration exact reference grid. The earlier 320-case workflow and 810-case retention diagnostics remain separate constructed examples. None of these counts represents independent LLM trials. Archive storage, model tokens, provider state, latency, and API dollars have not been evaluated by the recovery model.
+The current evidence comprises checked mathematics, 65 offline tests, the exhaustive finite-chain computation, 2,640 complete-route scripted episodes, and a 3,000-configuration exact reference grid. The earlier 320-case workflow and 810-case retention diagnostics remain separate constructed examples. None of these counts represents independent LLM trials. Archive storage, model tokens, provider state, latency, and API dollars have not been evaluated by the recovery model.
+
+The [correctness audit](../research/CORRECTNESS_AUDIT_2026-09-19.md) reproduced the complete finite search and fixed two validation gaps without changing those numerical results. It also exposed an evaluation limit: reliable recovery lets an agent forget everything and still finish. The pilot must measure what survives before recovery and the cost of completing the task; completion alone cannot demonstrate good memory. [C23]
 
 ## Next update
 
 The [pilot design and offline schedule](../docs/LLM_PILOT_SPEC.md) are now specified. Stage A asks whether a model chooses inspection when it pays, with optimal retention supplied by code. Stage B adds model retention and dependencies inferred from task evidence. Separating these questions matters: a model that retains poorly may have different inspection costs than the ideal reference. The design reserves six favorable, null, and adverse regimes, with 12 decision requests and 180 paired episodes; these are planned counts, with no model runs completed. [C22]
 
-The next practical step is to implement the reserved task renderers and isolated request serializer, then validate them with a fake client. Model revision, actual spending, and provider-state rules remain launch gates. A [focused evaluation review](../research/PILOT_EVALUATION_REVIEW_2026-09-19.md) adds whole-episode and information-sufficient controls. External mathematical review and novelty assessment remain separate work. The single-block exact gap does not strengthen the proved all-k bound automatically.
+The next practical step is one development renderer plus an isolated request serializer, validated with a fake client. Then complete the held-out renderers and specify model revision, spending, and provider-state rules. The tiny held-out sample cannot separate template effects from route effects; two strict population cost preferences become ties on its actual routes, which we retain and report. A [focused evaluation review](../research/PILOT_EVALUATION_REVIEW_2026-09-19.md) adds whole-episode and information-sufficient controls. External mathematical review and novelty assessment remain separate work. The single-block exact gap does not strengthen the proved all-k bound automatically.
 
 For each update, revise the result paragraphs and the claim register together, link the supporting artifact, and retain null or negative findings. Keep proposed work visibly separate from completed evidence.
