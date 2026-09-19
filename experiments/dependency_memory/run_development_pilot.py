@@ -11,6 +11,7 @@ from dataclasses import asdict
 from fractions import Fraction
 import hashlib
 import json
+import os
 from pathlib import Path
 import time
 
@@ -71,8 +72,12 @@ class RequestLedger:
     def _persist(self):
         if self.path is not None:
             # Evaluator-only structured audit, never a provider conversation log.
-            self.path.write_text("".join(canonical(row).decode() + "\n" for row in self.rows),
-                                 encoding="utf-8", newline="\n")
+            temporary = self.path.with_suffix(".part")
+            with temporary.open("w", encoding="utf-8", newline="\n") as stream:
+                stream.write("".join(canonical(row).decode() + "\n" for row in self.rows))
+                stream.flush()
+                os.fsync(stream.fileno())
+            temporary.replace(self.path)
 
     def complete(self, request, evaluator_id, validator):
         if self.stopped or len(self.rows) >= self.cap:
@@ -181,10 +186,16 @@ def make_manifest(cap=MAX_REQUESTS, client="fake-optimal"):
 
 def execute(client, *, cap=MAX_REQUESTS, fake=True, output=None, client_name="fake-optimal"):
     if not fake:
-        raise ValueError("Live execution is not enabled until the provider launch contract passes")
+        from luna_appserver import LunaClient
+        if not isinstance(client, LunaClient) or not client.audit.get("launch_ready"):
+            raise ValueError("Live execution is not enabled until the provider launch contract passes")
+        if output is None:
+            raise ValueError("Live execution requires a persisted output directory")
     if type(cap) is not int or not 0 <= cap <= MAX_REQUESTS:
         raise ValueError("Development request cap must be an integer from zero to 96")
     manifest = make_manifest(cap, client_name)
+    if not fake:
+        manifest["transport"] = client.metadata
     if output is not None:
         output = Path(output)
         output.mkdir(parents=True, exist_ok=True)
@@ -233,15 +244,21 @@ def execute(client, *, cap=MAX_REQUESTS, fake=True, output=None, client_name="fa
         episodes.append({**item, **result, "fixed_policy_reference": references})
     summary = {"version": VERSION, "client": client_name, "fake": fake,
                "manifest_sha256": digest(manifest), "request_attempts": len(ledger.rows),
-               "model_requests": 0 if fake else len(ledger.rows), "heldout_requests": 0,
+               "model_requests": 0 if fake else sum(r["provider_metadata"].get("dispatched", False) for r in ledger.rows), "heldout_requests": 0,
                "request_cap": cap, "attempt_status_counts": {status: sum(r["status"] == status for r in ledger.rows)
                    for status in ("completed", "policy_failure", "transport_failure", "reserved")},
                "request_audit_sha256": digest(ledger.rows), "stage_a": decisions, "stage_b": episodes,
-               "cost_accounting": {"api_dollars": 0 if fake else None,
+               "cost_accounting": {"api_dollars": 0,
                                    "subscription_usage": "none" if fake else "see provider ledger; not API dollars"},
                "limitations": ["One development route; repeated paired measurements.",
                    "Reliable recovery permits success even after empty retention.",
                    "Fake-client results validate plumbing, not model performance."]}
+    if not fake:
+        summary["limitations"][-1] = "Controlled single-response Luna diagnostic with declared fixed harness instructions."
+        summary["transport_manifest"] = client.metadata
+        summary["cost_accounting"]["credit_budget"] = client.budget.snapshot()
+        summary["request_metrics"] = [{key: row[key] for key in (
+            "evaluator_id", "status", "latency_seconds", "provider_metadata")} for row in ledger.rows]
     if output is not None:
         (output / "summary.json").write_bytes(canonical(summary) + b"\n")
     return summary, ledger

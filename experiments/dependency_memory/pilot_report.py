@@ -37,10 +37,12 @@ def _number(value):
     return type(value) in (int, float) and value >= 0
 
 
-def _measurement(metrics, expected, name, *, usage=False):
+def _measurement(metrics, expected, name, *, usage=False, credit=False):
     values = []
     for metric in metrics:
         data = metric.get("provider_metadata", {}).get("usage", {}) if usage else metric
+        if credit:
+            data = metric.get("provider_metadata", {}).get("credit_accounting", {})
         value = data.get(name)
         if _number(value):
             values.append(value)
@@ -102,6 +104,8 @@ def report(summary):
         raise ValueError("Attempt status counts do not reconcile with request attempts")
     contract = summary.get("transport_manifest", {})
     accounting = summary.get("cost_accounting", {})
+    credit_budget = accounting.get("credit_budget", contract.get("budget", {}))
+    reservation = credit_budget.get("reservation_assumptions", {})
     planned = sum(row.get("maximum_model_requests", 1) for row in stage_a)
     planned += sum(row["maximum_model_requests"] for row in stage_b)
     completed_b = [row for row in stage_b if row.get("status") == "completed"]
@@ -134,6 +138,13 @@ def report(summary):
         ("API dollars", accounting.get("api_dollars")),
         ("Subscription usage", accounting.get("subscription_usage")),
         ("Subscription credits consumed", accounting.get("subscription_credits")),
+        ("Planning cap, credit equivalents (not an invoice cap)", credit_budget.get("cap_credit_equivalent")),
+        ("Reservation per generation, credit equivalents", credit_budget.get("per_attempt_reservation")),
+        ("Settled conservative credit equivalents", credit_budget.get("settled_credit_equivalent")),
+        ("Uncertain held reservations, credit equivalents", credit_budget.get("uncertain_credit_reservations")),
+        ("Committed total, credit equivalents", credit_budget.get("committed_credit_equivalent")),
+        ("Remaining planning budget, credit equivalents", credit_budget.get("remaining_credit_equivalent")),
+        ("Basic-rate credit estimate, measured usage", _measurement(metrics, attempts, "basic_rate_credit_estimate", credit=True)),
         ("Total measured request latency (seconds)", _measurement(metrics, attempts, "latency_seconds")),
         *((name.replace("_", " ").capitalize(), _measurement(metrics, attempts, name, usage=True))
           for name in ("input_tokens", "cached_input_tokens", "output_tokens", "reasoning_output_tokens")),
@@ -142,16 +153,22 @@ def report(summary):
     lines += ["Request statuses: " + "; ".join(f"{_text(k)}={v}" for k, v in sorted(counts.items())) + ".", "",
               "Input includes cached input; reasoning may overlap output. These buckets are not added together. "
               "Reported subtotals with incomplete coverage are not full-run totals. Synthetic action units, "
-              "tokens, subscription credits, and API dollars are distinct quantities.", ""]
+              "tokens, subscription credits, and API dollars are distinct quantities. Credit equivalents are "
+              "conditional token-derived planning amounts, not observed account debits. Shared-account quota "
+              "movement is not attributed wholly to this run.", ""]
     lines += _table(["Transport field", "Recorded value"], [
         ("Model alias", contract.get("model")),
         ("Immutable model revision", contract.get("model_revision")),
-        ("CLI/client version", contract.get("installed_cli_version", contract.get("reviewed_cli_version"))),
+        ("CLI/client version", contract.get("installed_cli_version", contract.get("reviewed_cli_version", contract.get("cli_version")))),
         ("Reasoning effort", contract.get("reasoning_effort")),
-        ("Underlying provider retries", contract.get("provider_retries")),
+        ("Service tier", contract.get("service_tier")),
+        ("Configured HTTP and stream retries", contract.get("http_and_stream_retries", contract.get("provider_retries"))),
+        ("Generation continuation guard", contract.get("generation_guard")),
         ("Hard output token cap", contract.get("hard_output_token_cap")),
-        ("Subscription charge bound", contract.get("subscription_charge_bound")),
-        ("Cross-request state contract", contract.get("cross_request_state")),
+        ("Published output maximum used for planning", reservation.get("output_model_maximum")),
+        ("Verified subscription charge bound", contract.get("subscription_charge_bound")),
+        ("Account quota stop, percent used", contract.get("account_quota_stop_used_percent")),
+        ("Cross-request state contract", contract.get("cross_request_state", contract.get("state"))),
     ])
     lines += ["Missing transport/accounting fields mean unknown, not zero. A model alias is not an immutable revision.", "",
               "## Stage A: inspection decisions", "",

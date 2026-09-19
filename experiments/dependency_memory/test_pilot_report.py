@@ -98,6 +98,33 @@ class PilotReportTests(unittest.TestCase):
         self.assertIn("even empty retention succeed", text)
         self.assertIn("fake-client software checks, not model-performance results", text)
 
+    def test_luna_contract_aliases_keep_planning_equivalents_separate_from_charges(self):
+        summary, ledger = execute(FakeClient("optimal"), cap=1)
+        summary["transport_manifest"] = {
+            "model": "gpt-5.6-luna", "cli_version": "0.155.0-alpha.9.2",
+            "reasoning_effort": "low", "service_tier": "default", "http_and_stream_retries": 0,
+            "state": "Fresh process and ephemeral thread", "account_quota_stop_used_percent": 80,
+        }
+        summary["cost_accounting"]["credit_budget"] = {
+            "cap_credit_equivalent": 20, "per_attempt_reservation": 10.4025,
+            "settled_credit_equivalent": 0.007, "uncertain_credit_reservations": 0,
+            "committed_credit_equivalent": 0.007, "remaining_credit_equivalent": 19.993,
+            "reservation_assumptions": {"output_model_maximum": 128000},
+        }
+        summary["request_metrics"] = ledger.rows
+        ledger.rows[0]["provider_metadata"] = {"credit_accounting": {"basic_rate_credit_estimate": 0.005}}
+        text = report(summary)
+        self.assertIn("| CLI/client version | 0.155.0-alpha.9.2 |", text)
+        self.assertIn("| Configured HTTP and stream retries | 0 |", text)
+        self.assertIn("| Cross-request state contract | Fresh process and ephemeral thread |", text)
+        self.assertIn("| Planning cap, credit equivalents (not an invoice cap) | 20 |", text)
+        self.assertIn("| Settled conservative credit equivalents | 0.007 |", text)
+        self.assertIn("| Subscription credits consumed | unknown |", text)
+        self.assertIn("| Verified subscription charge bound | unknown |", text)
+        self.assertIn("| Hard output token cap | unknown |", text)
+        self.assertIn("| Published output maximum used for planning | 128000 |", text)
+        self.assertIn("0.005 reported (1/1 attempts measured)", text)
+
     def test_inconsistent_reference_and_accounting_fail_closed(self):
         summary, _ = execute(FakeClient("optimal"), cap=0)
         bad = deepcopy(summary)
