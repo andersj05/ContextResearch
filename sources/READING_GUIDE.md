@@ -35,6 +35,17 @@ The [local proof audit](../research/PROOF_AUDIT_2026-09-18.md) also rechecks Equ
 
 TRACE Section 4.1 was reread for its paired, restored-environment continuations and blocked/repeated-action verifier. A delayed-obligation witness generator would extend this evaluation idea; paired continuations themselves are established. No broad-corpus review labels were upgraded.
 
+## Pilot evaluation controls
+
+The [September 19 evaluation review](../research/PILOT_EVALUATION_REVIEW_2026-09-19.md) adds two bounded source readings:
+
+| Source | Read for | Review scope on September 19, 2026 |
+|---|---|---|
+| [MemoryAgentBench](https://arxiv.org/html/2507.05257v1) | Sequential ingestion and revisions | Sections 3.1-3.4, 4.1, 4.4/4.4.1, 4.4.3, and A.4; v1 only. |
+| [AMemGym](https://arxiv.org/html/2603.01966v1) | Interactive evaluation and diagnostics | Sections 3.1-3.4 and 4.1-4.2; v1 only. |
+
+These readings inform proposed controls, not a completed model experiment. The note distinguishes source observations from our proposed probe-isolation and cost-accounting rules. No inherited review labels were upgraded.
+
 ## Harness implementation
 
 Read [the survey](../research/CONTEXT_MANAGEMENT_SURVEY_2026-09-16.md) alongside [the pinned snapshots](harness-snapshots/2026-09-16/README.md). Distinguish output truncation, observation masking, summaries, native opaque state, archives, and KV policies. Client source cannot reveal a remote service's private compactor or training objective.
