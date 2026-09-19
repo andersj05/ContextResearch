@@ -17,10 +17,11 @@
 | Inspection, retention, and late recovery | [Exact recovery reference](../experiments/dependency_memory/RECOVERY_FRONTIER.md) | Exact finite expectations and executable checks within a restricted record-selection class |
 | Contribution relative to prior work | [Focused literature comparison](../research/LITERATURE_POSITIONING_2026-09-18.md) | Reviewed definitions and theorem statements; no priority certification |
 | Pilot evaluation controls | [September 19 source review](../research/PILOT_EVALUATION_REVIEW_2026-09-19.md) | Version-pinned readings; no source replication or model result |
-| Next model study | [Pilot design](LLM_PILOT_SPEC.md) | Offline schedule/calibration and development fake-client implementation; provider launch remains gated |
+| Staged model study | [Pilot design](LLM_PILOT_SPEC.md) | Historical full schedule and completed 96-request development tranche; held-out launch remains future work |
 | Correctness review and next gates | [September 19 audit](../research/CORRECTNESS_AUDIT_2026-09-19.md) | Local math/source/design review, two validation fixes, full search rerun; no external certification |
-| Implemented development pilot | [Setup and offline results](DEVELOPMENT_PILOT.md) | Fake-client controls complete; zero model calls; 96-request live tranche still gated |
-| Requested subscription transport | [Codex/Luna review](../research/CODEX_SUBSCRIPTION_TRANSPORT_2026-09-19.md) | Existing sign-in verified; isolation and accounting unresolved |
+| Implemented development pilot | [Setup and offline results](DEVELOPMENT_PILOT.md) | Historical fake-client validation, separate from later model observations |
+| Subscription transport contract | [Luna v0.4 contract](LUNA_DEVELOPMENT_RUN.md) | Audited client controls and declared fixed background; remote internals unverified |
+| First model observations | [Luna findings](../research/LUNA_DEVELOPMENT_FINDINGS_2026-09-19.md) | 96 valid requests; one development route; no general superiority or held-out evidence |
 | External correctness and novelty questions | [Review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) | Prepared with primary-source comparisons; external review pending |
 | Findings in plain language | [Living findings draft](../paper/findings-draft.md) | Versioned short account linked to the claim register |
 | Current writing | [Paper workspace](../paper/README.md) | Draft; incomplete results clearly marked |

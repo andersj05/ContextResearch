@@ -11,7 +11,7 @@ This outline is a writing plan, not a list of achieved contributions.
 | Finite obstruction | Prove the child-optimal decoder characterization, joint-signature lower bound, three-bit witness, and computed exact 9/32 chain optimum. | C03–C05, C21 | External mathematical review and priority assessment. |
 | Structural result | Exact 3k-bit threshold and a uniform gap for a restricted block family. | C11–C13, C16 | External review, novelty, and possible tightening. |
 | Experimental design | Separate inspection calibration, inferred-dependency record selection, and later autonomous task completion. | Protocol; C22 | Implement renderers/isolation; resolve provider and spending fields before launch. |
-| Results | Separate scripted timing diagnostics from exact restricted recovery expectations. | C06, C14–C15, C17–C20 | Freeze model pilot before adding empirical performance claims. |
+| Results | Separate scripted timing diagnostics, exact restricted recovery expectations, and the first Luna development observations. | C06, C14–C15, C17–C20, C25 | One-route model observations support debugging; held-out and native-harness evidence remain absent. |
 | Discussion | Native continuity, caching, recovery, complementarity, and limits of the abstraction. | C07–C09 | Relate any observed effect back to the formal mechanism. |
 | Reproducibility | Code, fixed instances, exact certificates, complete usage, and artifact provenance. | Prototype and migration manifest | Add model-run manifests only when runs exist. |
 

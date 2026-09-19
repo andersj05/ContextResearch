@@ -1,6 +1,6 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.4 — September 19, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.5 — September 19, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
 
 ## The question
 
@@ -49,12 +49,18 @@ The current evidence comprises checked mathematics, offline invariant tests, the
 
 The [correctness audit](../research/CORRECTNESS_AUDIT_2026-09-19.md) reproduced the complete finite search and fixed two validation gaps without changing those numerical results. It also exposed an evaluation limit: reliable recovery lets an agent forget everything and still finish. The pilot must measure what survives before recovery and the cost of completing the task; completion alone cannot demonstrate good memory. [C23]
 
-## Next update
+## First Luna development results
 
-The [pilot design and offline schedule](../docs/LLM_PILOT_SPEC.md) are now specified. Stage A asks whether a model chooses inspection when it pays, with optimal retention supplied by code. Stage B adds model retention and dependencies inferred from task evidence. Separating these questions matters: a model that retains poorly may have different inspection costs than the ideal reference. The design reserves six favorable, null, and adverse regimes, with 12 decision requests and 180 paired episodes; these are planned counts, with no model runs completed. [C22]
+The [pilot design](../docs/LLM_PILOT_SPEC.md) separates inspection choice with ideal scripted retention from inspection with model-selected records. Its historical full schedule reserves 432 requests; only the 96-request development tranche has run. The four held-out families remain unimplemented and unrun. [C22]
 
 The development renderer and strict request interface are now implemented. In fake-client checks, both optimal and forget-all controls completed 36 episodes with 96 requests; their pre-recovery availability differed, 26/36 versus 0/36. These are software controls on one route, not model trials. [C24; implementation and audit](../docs/DEVELOPMENT_PILOT.md)
 
-The existing Codex subscription sign-in is verified, with GPT-5.6-Luna selected for the proposed run. The [provider review](../research/CODEX_SUBSCRIPTION_TRANSPORT_2026-09-19.md) found unresolved context/tool isolation, underlying retry counts, and generation/credit bounds. Live execution stays disabled; no model request or API charge has occurred. The next step is to close those gates, then complete the held-out renderers before held-out evaluation. The tiny held-out sample cannot separate template effects from route effects; two strict population cost preferences become ties on its actual routes, which we retain and report. A [focused evaluation review](../research/PILOT_EVALUATION_REVIEW_2026-09-19.md) adds whole-episode and information-sufficient controls. An [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) now states concrete correctness and theorem-transfer questions; no reviewer has yet been contacted. External mathematical review and novelty assessment remain separate work. The single-block exact gap does not strengthen the proved all-k bound automatically.
+The [first live run](../experiments/dependency_memory/results/luna_development_2026-09-19/report.md) completed all **96 Luna requests** through the existing Codex subscription, with no schema or transport failures. Ten of the 12 calibration decisions selected the exact lower-cost action. The two disagreements involved revisions, and identical repeated prompts produced different choices in those cells. This is a debugging observation, not an estimated general accuracy rate. [C25]
+
+All 36 workflow episodes finished, but the required receipt survived before recovery in only **21/36**; the other 15 needed recovery. Never, always, and model-selected inspection had availability 3/12, 10/12, and 8/12, and synthetic action costs 154, 140, and 137. These totals describe one paired route. They do not establish population superiority, and a different valid tie-break can change the result on that route. Reliable recovery explains why completion alone would hide the retention differences. [C25; detailed findings](../research/LUNA_DEVELOPMENT_FINDINGS_2026-09-19.md)
+
+The run used 276,048 input and 27,140 output tokens, including reasoning within output. Its conservative accounting equivalent was **2.5395 credits** under a 20-equivalent cap; the experiment's actual subscription debit is unknown. There was no API billing, credit purchase, reset redemption, or held-out call. The [transport contract](../docs/LUNA_DEVELOPMENT_RUN.md) declares fixed background instructions and restricted wrappers, fresh processes and threads, zero configured retries, and a one-generation guard. It does not expose remote internals or make the mutable model alias an immutable revision.
+
+The next useful work is an offline analysis of parent-record selection under the public revision rule, followed by a separately budgeted, frozen follow-up if warranted. Complete and freeze the held-out renderers before using them; their tiny sample remains debugging evidence. An [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) is ready, but no reviewer has been contacted. External mathematical review and novelty remain open, and the single-block exact gap does not strengthen the all-k bound automatically.
 
 For each update, revise the result paragraphs and the claim register together, link the supporting artifact, and retain null or negative findings. Keep proposed work visibly separate from completed evidence.

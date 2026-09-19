@@ -4,7 +4,7 @@ Working title: **Repeated Context Compression with Delayed Task Dependencies**. 
 
 ## Documents to edit
 
-- [Manuscript](manuscript.md): the main paper entry point, including the finite example, locally audited scaling result, scripted recovery comparison, and limitations. LLM evaluation remains prospective.
+- [Manuscript](manuscript.md): the main paper entry point, including the finite example, locally audited scaling result, scripted recovery comparison, first Luna development diagnostic, and limitations.
 - [Living findings draft](findings-draft.md): a short account of what we know, what the new results change, and the next milestone. Update it together with the claim register as evidence changes.
 - [Outline](outline.md): section-by-section argument and remaining work.
 - [Related-work map](related-work.md): nearby results and the distinctions a novelty argument must address.
@@ -26,4 +26,4 @@ The manuscript now incorporates the [exact finite-chain optimum](../research/EXA
 
 Templates: [derivation](templates/derivation.md), [source note](templates/source-note.md), [experiment plan](templates/experiment-plan.md). The [current protocol](../docs/EXPERIMENT_PROTOCOL.md) is the governing experimental specification.
 
-Living draft v0.4 adds completed development fake-client controls, claim C24, and the requested subscription integration's remaining launch gates. It also links the external review packet. No model result or external endorsement is claimed.
+Living draft v0.5 adds the completed 96-request Luna development tranche, claim C25, accounting, and the revision-handling follow-up. The earlier fake controls remain claim C24. The run uses one route and establishes no native-harness superiority or external endorsement; held-out evaluation remains unperformed.
