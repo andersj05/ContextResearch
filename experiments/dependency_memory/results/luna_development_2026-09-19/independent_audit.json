@@ -1,0 +1,138 @@
+{
+  "canonical_hash_schema_guard_and_tool_checks": 96,
+  "discarded_original_token_checks": 120,
+  "fixed_parent_pair_formula_checks": [
+    {
+      "enumerated_availability": "8/15",
+      "formula_availability": "8/15",
+      "parent_keys": [
+        "job-0",
+        "job-1"
+      ],
+      "routes": 30
+    },
+    {
+      "enumerated_availability": "3/5",
+      "formula_availability": "3/5",
+      "parent_keys": [
+        "job-1",
+        "job-2"
+      ],
+      "routes": 30
+    },
+    {
+      "enumerated_availability": "4/5",
+      "formula_availability": "4/5",
+      "parent_keys": [
+        "job-4",
+        "job-5"
+      ],
+      "routes": 30
+    }
+  ],
+  "manifest_sha256": "a88f9e53d6a3f80fabb2f5f77900aa5c63c7d58d22b24a3704417b1826c4aadb",
+  "new_model_requests": 0,
+  "passed": true,
+  "request_audit_sha256": "7b4d83a3658ad913932f02bd682cd869f94177800886665f3a67e4604d579ef3",
+  "scope": "Read-only saved public requests and evaluator outcomes; no model calls or production-wire capture",
+  "script_sha256": "c20708a60787ed755234fa89d4cba5afc4cab4739ac84e943db5ae3def23386e",
+  "stage_a_decisions": [
+    {
+      "exact_regret": "0",
+      "inspection": false,
+      "replicate": 0,
+      "scenario": "cheap_recovery"
+    },
+    {
+      "exact_regret": "0",
+      "inspection": false,
+      "replicate": 1,
+      "scenario": "cheap_recovery"
+    },
+    {
+      "exact_regret": "0",
+      "inspection": true,
+      "replicate": 0,
+      "scenario": "costly_recovery"
+    },
+    {
+      "exact_regret": "0",
+      "inspection": true,
+      "replicate": 1,
+      "scenario": "costly_recovery"
+    },
+    {
+      "exact_regret": "0",
+      "inspection": false,
+      "replicate": 0,
+      "scenario": "revision_cheap_recovery"
+    },
+    {
+      "exact_regret": "1/5",
+      "inspection": true,
+      "replicate": 1,
+      "scenario": "revision_cheap_recovery"
+    },
+    {
+      "exact_regret": "0",
+      "inspection": true,
+      "replicate": 0,
+      "scenario": "revision_costly_recovery"
+    },
+    {
+      "exact_regret": "3/5",
+      "inspection": false,
+      "replicate": 1,
+      "scenario": "revision_costly_recovery"
+    },
+    {
+      "exact_regret": "0",
+      "inspection": false,
+      "replicate": 0,
+      "scenario": "ample_parent"
+    },
+    {
+      "exact_regret": "0",
+      "inspection": false,
+      "replicate": 1,
+      "scenario": "ample_parent"
+    },
+    {
+      "exact_regret": "0",
+      "inspection": false,
+      "replicate": 0,
+      "scenario": "small_child"
+    },
+    {
+      "exact_regret": "0",
+      "inspection": false,
+      "replicate": 1,
+      "scenario": "small_child"
+    }
+  ],
+  "stage_a_decisions_checked": 12,
+  "stage_a_reference_matches": 10,
+  "stage_a_total_exact_regret": "4/5",
+  "stage_b_arms": {
+    "always_inspect": {
+      "episodes": 12,
+      "pre_recovery_available": 10,
+      "recoveries": 2,
+      "synthetic_cost_units": 140
+    },
+    "model_selective": {
+      "episodes": 12,
+      "pre_recovery_available": 8,
+      "recoveries": 4,
+      "synthetic_cost_units": 137
+    },
+    "never_inspect": {
+      "episodes": 12,
+      "pre_recovery_available": 3,
+      "recoveries": 9,
+      "synthetic_cost_units": 154
+    }
+  },
+  "stage_b_latest_receipt_and_cost_checks": 36,
+  "version": "luna_development_independent_result_audit_v1"
+}
