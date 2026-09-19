@@ -18,7 +18,7 @@ import time
 
 from codex_subscription import MODEL, REVIEWED_CLI_SHA256
 from luna_budget import CreditBudget
-from pilot_interface import request_bytes
+from request_contracts import request_bytes
 
 
 PROVIDER = "luna_research"
@@ -314,8 +314,9 @@ class LunaClient:
                     raise TransportError("missing_audited_generation_guard_termination")
                 self.last_metadata["usage"] = {target: usage.get(source, 0) for source, target in (
                     ("inputTokens", "input_tokens"), ("cachedInputTokens", "cached_input_tokens"),
-                    ("outputTokens", "output_tokens"), ("reasoningOutputTokens", "reasoning_output_tokens"),
-                    ("cacheWriteInputTokens", "cache_write_input_tokens"))}
+                    ("outputTokens", "output_tokens"), ("reasoningOutputTokens", "reasoning_output_tokens"))}
+                self.last_metadata["usage"]["cache_write_input_tokens"] = usage.get("cacheWriteInputTokens")
+                self.last_metadata["cache_write_tokens_reported"] = "cacheWriteInputTokens" in usage
                 self.last_metadata["harness_termination"] = "session_budget_exceeded" if guard_stop else "completed"
                 self.last_metadata["credit_accounting"] = self.budget.settle(ticket, usage)
                 ticket = None

@@ -23,15 +23,19 @@ from luna_appserver import AppServer
 from luna_isolation import (ISOLATION_OVERRIDES, MAX_FIXED_WIRE_BYTES, MAX_WIRE_BYTES,
                             audit_payload, thread_parameters, turn_parameters,
                             schema_projection, wire_body_byte_bound)
-from pilot_interface import inspection_request, request_bytes
+from pilot_interface import inspection_request
+from request_contracts import request_bytes
 
 
-def run_case(executable: str, global_instructions_text: str, case: str) -> dict:
+def run_case(executable: str, global_instructions_text: str, case: str,
+             public_request: dict | None = None) -> dict:
     if case not in {"final_message", "tool_call", "http_503", "truncated_sse"}:
         raise ValueError("Unknown synthetic case")
     observed = []
-    public_request = inspection_request(Config(recovery_available=True), calibration=True)
+    if public_request is None:
+        public_request = inspection_request(Config(recovery_available=True), calibration=True)
     public_text = request_bytes(public_request).decode()
+    synthetic_final = synthetic_response(public_request)
 
     class Handler(BaseHTTPRequestHandler):
         def log_message(self, *_):
@@ -46,7 +50,7 @@ def run_case(executable: str, global_instructions_text: str, case: str) -> dict:
                              "body": json.loads(raw)})
             message = {"id": "synthetic_message", "type": "message", "role": "assistant",
                        "status": "completed", "content": [{"type": "output_text",
-                       "text": '{"inspect":false}', "annotations": []}]}
+                       "text": synthetic_final, "annotations": []}]}
             if case == "tool_call":
                 message = {"id": "synthetic_call", "type": "custom_tool_call", "name": "exec",
                            "call_id": "synthetic_call", "input": "text(ALL_TOOLS.map(x => x.name));"}
@@ -115,7 +119,7 @@ def run_case(executable: str, global_instructions_text: str, case: str) -> dict:
     codes = [(x.get("error") or {}).get("codexErrorInfo") for x in terminals]
     if case in {"final_message", "tool_call"} and codes != ["sessionBudgetExceeded"]:
         raise ValueError("Rollout guard did not produce the expected controlled stop")
-    if case == "final_message" and (finals != ['{"inspect":false}'] or len(usage) != 1):
+    if case == "final_message" and (finals != [synthetic_final] or len(usage) != 1):
         raise ValueError("Completed final response or complete usage absent")
     if case != "final_message" and finals:
         raise ValueError("Unexpected final response in negative control")
@@ -127,17 +131,35 @@ def run_case(executable: str, global_instructions_text: str, case: str) -> dict:
             "terminal_error_codes": codes, "real_model_generations": 0}
 
 
+def synthetic_response(public_request: dict) -> str:
+    """A valid minimal response for each approved schema, without an oracle."""
+    request_bytes(public_request)
+    fields = set(public_request["response_schema"]["properties"])
+    if fields == {"inspect"}:
+        return '{"inspect":false}'
+    if fields == {"keys"}:
+        return '{"keys":[]}'
+    raise ValueError("No synthetic response for the approved request schema")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--executable", default=shutil.which("codex"))
     parser.add_argument("--global-instructions", required=True, type=Path)
+    parser.add_argument("--request-json", type=Path,
+                        help="Optional approved public request; defaults to the historical pilot calibration request")
     parser.add_argument("--output", required=True, type=Path)
     args = parser.parse_args()
     binary_hash = hashlib.sha256(Path(args.executable).read_bytes()).hexdigest()
     if binary_hash != REVIEWED_CLI_SHA256:
         raise ValueError("Client binary differs from reviewed version")
     global_text = args.global_instructions.read_text(encoding="utf-8")
-    cases = [run_case(args.executable, global_text, name)
+    public_request = None
+    if args.request_json is not None:
+        from luna_appserver import strict_json
+        public_request = strict_json(args.request_json.read_text(encoding="utf-8"))
+        request_bytes(public_request)
+    cases = [run_case(args.executable, global_text, name, public_request)
              for name in ("final_message", "tool_call", "http_503", "truncated_sse")]
     report = {"version": "luna_mock_transport_audit_v0.1", "date": "2026-09-19",
               "client_sha256": binary_hash,
@@ -149,6 +171,9 @@ def main():
               "maximum_provider_wire_bytes": MAX_WIRE_BYTES,
               "production_authentication_and_spend_gate": "Separate review required",
               "cases": cases}
+    if public_request is not None:
+        report["public_request_contract"] = public_request["version"]
+        report["public_request_sha256"] = hashlib.sha256(request_bytes(public_request)).hexdigest()
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps({"isolation_passed": True, "cases": len(cases), "real_model_generations": 0, "output": str(args.output)}))

@@ -1,6 +1,6 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.5 — September 19, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.6 — September 19, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
 
 ## The question
 
@@ -61,6 +61,12 @@ All 36 workflow episodes finished, but the required receipt survived before reco
 
 The run used 276,048 input and 27,140 output tokens, including reasoning within output. Its conservative accounting equivalent was **2.5395 credits** under a 20-equivalent cap; the experiment's actual subscription debit is unknown. There was no API billing, credit purchase, reset redemption, or held-out call. The [transport contract](../docs/LUNA_DEVELOPMENT_RUN.md) declares fixed background instructions and restricted wrappers, fresh processes and threads, zero configured retries, and a one-generation guard. It does not expose remote internals or make the mutable model alias an immutable revision.
 
-The next useful work is an offline analysis of parent-record selection under the public revision rule, followed by a separately budgeted, frozen follow-up if warranted. Complete and freeze the held-out renderers before using them; their tiny sample remains debugging evidence. An [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) is ready, but no reviewer has been contacted. External mathematical review and novelty remain open, and the single-block exact gap does not strengthen the all-k bound automatically.
+The [completed offline analysis](../experiments/dependency_memory/results/revision_analysis_report.md) now isolates three strictly worse first-boundary choices, all in uninspected revision cases. The other 33 parent choices attain the reference for their public view. All 36 observed later choices are optimal given the surviving records. This matters because a miss on one realized target can also be an equally good tie choice; the analysis distinguishes those cases from avoidable parent loss. It reuses existing responses and makes no new model calls. [C26]
+
+The mechanism is concrete. If the smaller member of the future pair will be refreshed, retaining the two largest keys gives ideal later availability 4/5. The observed low-key pairs instead give 3/5 or 8/15. With no refresh, all two-key parents tie at 1/3. This is an exact calculation for the declared uniform-pair model, not a claim about Luna's hidden reasoning.
+
+The next [prepared diagnostic](../docs/REVISION_DIAGNOSTIC.md) reverses the refresh direction and changes visible-record order. It has 24 planned cold parent requests, evaluated over all 30 routes with an optimal later selector. The fake controls distinguish rule-sensitive selection from static key/position preferences. A new model allocation is pending; the first 96-call tranche remains untouched. [C27]
+
+Complete and freeze the held-out renderers before using them; their tiny sample remains debugging evidence. An [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) is ready, but no reviewer has been contacted. External mathematical review and novelty remain open, and the single-block exact gap does not strengthen the all-k bound automatically.
 
 For each update, revise the result paragraphs and the claim register together, link the supporting artifact, and retain null or negative findings. Keep proposed work visibly separate from completed evidence.

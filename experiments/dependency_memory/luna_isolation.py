@@ -141,7 +141,7 @@ def wire_body_byte_bound(request: dict[str, Any]) -> int:
     audit, and the binary/profile/global-instruction hashes must stay fixed.
     This is not a claim about undocumented server-side context.
     """
-    from pilot_interface import request_bytes
+    from request_contracts import request_bytes
     public_text = request_bytes(request).decode("utf-8")
     encoded_public = json.dumps(public_text, ensure_ascii=True).encode("utf-8")
     encoded_schema = json.dumps(schema_projection(request["response_schema"]), ensure_ascii=True).encode("utf-8")
@@ -150,7 +150,7 @@ def wire_body_byte_bound(request: dict[str, Any]) -> int:
 
 def turn_parameters(thread_id: str, request: dict[str, Any], *,
                     max_public_bytes: int = 32768) -> dict[str, Any]:
-    from pilot_interface import request_bytes
+    from request_contracts import request_bytes
     if type(max_public_bytes) is not int or max_public_bytes <= 0:
         raise ValueError("max_public_bytes must be a positive integer")
     raw = request_bytes(request)

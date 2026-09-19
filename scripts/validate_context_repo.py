@@ -207,6 +207,101 @@ def validate_luna_runs(results: Path) -> tuple[dict, list[str]]:
     return counts, errors
 
 
+def validate_revision_runs(results: Path) -> tuple[dict, list[str]]:
+    """Audit every separate revision run and enforce one combined allocation.
+
+    A named run directory is evidence of an attempted run, even if interrupted;
+    missing summaries or ledgers are errors rather than silently omitted usage.
+    The initial 96-request/20-credit tranche is checked separately above.
+    """
+    from audit_revision_run import audit
+
+    errors = []
+    counts = {"revision_luna_runs": 0, "revision_luna_validated_runs": 0,
+              "revision_luna_request_rows": 0, "completed_revision_model_requests": 0}
+    committed = Decimal(0)
+    for directory in sorted(results.glob("revision_luna_*")):
+        if not directory.is_dir():
+            continue
+        counts["revision_luna_runs"] += 1
+        try:
+            evidence = audit(directory)
+            if evidence.get("passed") is not True or evidence.get("fake") is not False:
+                raise ValueError("revision run must be audited live evidence")
+            dispatches = evidence["model_requests"]
+            if type(dispatches) is not int or not 0 <= dispatches <= 24:
+                raise ValueError("invalid audited model dispatch count")
+            cost = (Decimal(evidence["settled_credit_equivalent"])
+                    + Decimal(evidence["retained_credit_equivalent"]))
+            if not cost.is_finite() or not 0 <= cost <= 12:
+                raise ValueError("invalid audited committed credit equivalents")
+            counts["revision_luna_validated_runs"] += 1
+            counts["revision_luna_request_rows"] += evidence["requests_checked"]
+            counts["completed_revision_model_requests"] += dispatches
+            committed += cost
+        except (OSError, ValueError, TypeError, KeyError, AttributeError, InvalidOperation) as error:
+            errors.append(f"{directory.name}: {error}")
+    if counts["completed_revision_model_requests"] > 24:
+        errors.append("Combined revision Luna model dispatches exceed the separate 24-request allocation")
+    if committed > 12:
+        errors.append("Combined revision Luna credit equivalents exceed the separate 12-credit allocation")
+    counts["revision_credit_equivalent_committed"] = str(committed)
+    return counts, errors
+
+
+def validate_revision_artifacts(results: Path) -> tuple[dict, list[str]]:
+    """Regenerate the post-hoc analysis and unrun follow-up's offline controls.
+
+    These counts stay separate from the immutable first Luna allocation: reused
+    choices, exact route calculations, plans, and fake calls are not new model
+    requests. This does not validate or authorize a future live allocation.
+    """
+    import revision_analysis
+    import revision_diagnostic
+
+    counts, errors = {}, []
+    try:
+        analysis = revision_analysis.analyze(results / "luna_development_2026-09-19")
+        actual = _strict_json((results / "revision_analysis.json").read_text(encoding="utf-8"))
+        if actual != json.loads(json.dumps(analysis)):
+            errors.append("Post-hoc revision analysis is stale; regenerate it from the unchanged Luna run")
+        actual_report = (results / "revision_analysis_report.md").read_text(encoding="utf-8")
+        if actual_report != revision_analysis.report(analysis):
+            errors.append("Post-hoc revision analysis report is stale; regenerate it")
+        if analysis.get("new_model_requests") != 0:
+            errors.append("Post-hoc revision analysis must not count model requests")
+        counts["revision_posthoc_saved_parent_selections"] = analysis["counts"]["saved_parent_selections"]
+        counts["revision_posthoc_population_selections"] = analysis["counts"]["full_population_parent_selections"]
+        counts["revision_posthoc_manifest_conditioned_selections"] = analysis["counts"]["manifest_conditioned_parent_selections"]
+        counts["revision_posthoc_strict_parent_deficits"] = analysis["counts"]["strict_parent_deficits"]
+        counts["revision_posthoc_new_model_requests"] = analysis["new_model_requests"]
+    except (OSError, ValueError, TypeError, KeyError, AttributeError) as error:
+        errors.append(f"Post-hoc revision analysis validation failed: {error}")
+
+    try:
+        plan, fake_audit = revision_diagnostic.make_plan(), revision_diagnostic.fake_audit()
+        for filename, expected in (("revision_diagnostic_plan.json", plan),
+                                   ("revision_diagnostic_audit.json", fake_audit)):
+            actual = _strict_json((results / filename).read_text(encoding="utf-8"))
+            if actual != json.loads(json.dumps(expected)):
+                errors.append(f"{filename} is stale; regenerate the offline revision diagnostic")
+        if (plan.get("split") != "development" or plan.get("heldout_requests") != 0
+                or plan.get("model_requests_completed_by_plan") != 0
+                or plan.get("realized_routes_sampled") != 0 or fake_audit.get("model_requests") != 0):
+            errors.append("Revision diagnostic plan/fake controls must remain unrun development evidence")
+        if (plan.get("planned_cases") != len(plan["cases"])
+                or len(plan["cases"]) > plan["maximum_model_requests"]):
+            errors.append("Revision diagnostic plan case count exceeds its separate request ceiling")
+        counts["revision_diagnostic_planned_request_ceiling"] = plan["maximum_model_requests"]
+        counts["revision_diagnostic_planned_cases"] = plan["planned_cases"]
+        counts["revision_diagnostic_fake_requests"] = fake_audit["fake_requests"]
+        counts["revision_diagnostic_model_requests_in_offline_artifacts"] = (
+            plan["model_requests_completed_by_plan"] + fake_audit["model_requests"])
+    except (OSError, ValueError, TypeError, KeyError, AttributeError) as error:
+        errors.append(f"Offline revision diagnostic validation failed: {error}")
+    return counts, errors
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--exact-chain-compiler", help="Also rerun the full partition search with this C99 compiler")
@@ -349,12 +444,20 @@ def main() -> int:
     luna_counts, luna_errors = validate_luna_runs(ROOT / "experiments/dependency_memory/results")
     counts.update(luna_counts)
     errors.extend(luna_errors)
+    revision_run_counts, revision_run_errors = validate_revision_runs(ROOT / "experiments/dependency_memory/results")
+    counts.update(revision_run_counts)
+    errors.extend(revision_run_errors)
+    counts["all_development_model_requests"] = (counts["completed_pilot_model_requests"]
+                                                + counts["completed_revision_model_requests"])
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"
     if json.loads(fake_path.read_text(encoding="utf-8")) != fake_audit:
         errors.append("Development fake-client audit is stale; regenerate it")
     counts["development_fake_requests"] = sum(r["fake_request_attempts"] for r in fake_audit["controls"])
+    revision_counts, revision_errors = validate_revision_artifacts(ROOT / "experiments/dependency_memory/results")
+    counts.update(revision_counts)
+    errors.extend(revision_errors)
     import exact_chain
     chain_path = ROOT / "experiments/dependency_memory/results/exact_chain_certificate.json"
     chain = json.loads(chain_path.read_text(encoding="utf-8"))

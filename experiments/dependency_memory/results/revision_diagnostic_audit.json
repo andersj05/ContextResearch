@@ -1,0 +1,449 @@
+{
+  "version": "revision_parent_diagnostic_v1",
+  "plan_sha256": "d382e3a179121d1af2c5b7b65b1559763b5413478c5e312f20767921e37680a4",
+  "fake_requests": 120,
+  "model_requests": 0,
+  "controls": [
+    {
+      "mode": "optimal",
+      "by_rule": [
+        {
+          "refresh_rule": "lexicographic_first",
+          "scheduled": 8,
+          "completed": 8,
+          "policy_failures": 0,
+          "transport_failures": 0,
+          "incomplete": 0,
+          "optimal_parent_count": 8,
+          "mean_availability": "4/5",
+          "mean_exact_parent_regret": "0"
+        },
+        {
+          "refresh_rule": "lexicographic_last",
+          "scheduled": 8,
+          "completed": 8,
+          "policy_failures": 0,
+          "transport_failures": 0,
+          "incomplete": 0,
+          "optimal_parent_count": 8,
+          "mean_availability": "4/5",
+          "mean_exact_parent_regret": "0"
+        },
+        {
+          "refresh_rule": "none",
+          "scheduled": 8,
+          "completed": 8,
+          "policy_failures": 0,
+          "transport_failures": 0,
+          "incomplete": 0,
+          "optimal_parent_count": 8,
+          "mean_availability": "1/3",
+          "mean_exact_parent_regret": "0"
+        }
+      ],
+      "paired_direction_shifts": [
+        {
+          "fixture": 0,
+          "order": 0,
+          "complete": true,
+          "first_minus_last_rank_sum": 8
+        },
+        {
+          "fixture": 0,
+          "order": 1,
+          "complete": true,
+          "first_minus_last_rank_sum": 8
+        },
+        {
+          "fixture": 0,
+          "order": 2,
+          "complete": true,
+          "first_minus_last_rank_sum": 8
+        },
+        {
+          "fixture": 0,
+          "order": 3,
+          "complete": true,
+          "first_minus_last_rank_sum": 8
+        },
+        {
+          "fixture": 1,
+          "order": 0,
+          "complete": true,
+          "first_minus_last_rank_sum": 8
+        },
+        {
+          "fixture": 1,
+          "order": 1,
+          "complete": true,
+          "first_minus_last_rank_sum": 8
+        },
+        {
+          "fixture": 1,
+          "order": 2,
+          "complete": true,
+          "first_minus_last_rank_sum": 8
+        },
+        {
+          "fixture": 1,
+          "order": 3,
+          "complete": true,
+          "first_minus_last_rank_sum": 8
+        }
+      ]
+    },
+    {
+      "mode": "always_low",
+      "by_rule": [
+        {
+          "refresh_rule": "lexicographic_first",
+          "scheduled": 8,
+          "completed": 8,
+          "policy_failures": 0,
+          "transport_failures": 0,
+          "incomplete": 0,
+          "optimal_parent_count": 0,
+          "mean_availability": "8/15",
+          "mean_exact_parent_regret": "4/15"
+        },
+        {
+          "refresh_rule": "lexicographic_last",
+          "scheduled": 8,
+          "completed": 8,
+          "policy_failures": 0,
+          "transport_failures": 0,
+          "incomplete": 0,
+          "optimal_parent_count": 8,
+          "mean_availability": "4/5",
+          "mean_exact_parent_regret": "0"
+        },
+        {
+          "refresh_rule": "none",
+          "scheduled": 8,
+          "completed": 8,
+          "policy_failures": 0,
+          "transport_failures": 0,
+          "incomplete": 0,
+          "optimal_parent_count": 8,
+          "mean_availability": "1/3",
+          "mean_exact_parent_regret": "0"
+        }
+      ],
+      "paired_direction_shifts": [
+        {
+          "fixture": 0,
+          "order": 0,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 0,
+          "order": 1,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 0,
+          "order": 2,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 0,
+          "order": 3,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 1,
+          "order": 0,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 1,
+          "order": 1,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 1,
+          "order": 2,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 1,
+          "order": 3,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        }
+      ]
+    },
+    {
+      "mode": "always_high",
+      "by_rule": [
+        {
+          "refresh_rule": "lexicographic_first",
+          "scheduled": 8,
+          "completed": 8,
+          "policy_failures": 0,
+          "transport_failures": 0,
+          "incomplete": 0,
+          "optimal_parent_count": 8,
+          "mean_availability": "4/5",
+          "mean_exact_parent_regret": "0"
+        },
+        {
+          "refresh_rule": "lexicographic_last",
+          "scheduled": 8,
+          "completed": 8,
+          "policy_failures": 0,
+          "transport_failures": 0,
+          "incomplete": 0,
+          "optimal_parent_count": 0,
+          "mean_availability": "8/15",
+          "mean_exact_parent_regret": "4/15"
+        },
+        {
+          "refresh_rule": "none",
+          "scheduled": 8,
+          "completed": 8,
+          "policy_failures": 0,
+          "transport_failures": 0,
+          "incomplete": 0,
+          "optimal_parent_count": 8,
+          "mean_availability": "1/3",
+          "mean_exact_parent_regret": "0"
+        }
+      ],
+      "paired_direction_shifts": [
+        {
+          "fixture": 0,
+          "order": 0,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 0,
+          "order": 1,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 0,
+          "order": 2,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 0,
+          "order": 3,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 1,
+          "order": 0,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 1,
+          "order": 1,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 1,
+          "order": 2,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 1,
+          "order": 3,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        }
+      ]
+    },
+    {
+      "mode": "first_visible",
+      "by_rule": [
+        {
+          "refresh_rule": "lexicographic_first",
+          "scheduled": 8,
+          "completed": 8,
+          "policy_failures": 0,
+          "transport_failures": 0,
+          "incomplete": 0,
+          "optimal_parent_count": 2,
+          "mean_availability": "2/3",
+          "mean_exact_parent_regret": "2/15"
+        },
+        {
+          "refresh_rule": "lexicographic_last",
+          "scheduled": 8,
+          "completed": 8,
+          "policy_failures": 0,
+          "transport_failures": 0,
+          "incomplete": 0,
+          "optimal_parent_count": 2,
+          "mean_availability": "2/3",
+          "mean_exact_parent_regret": "2/15"
+        },
+        {
+          "refresh_rule": "none",
+          "scheduled": 8,
+          "completed": 8,
+          "policy_failures": 0,
+          "transport_failures": 0,
+          "incomplete": 0,
+          "optimal_parent_count": 8,
+          "mean_availability": "1/3",
+          "mean_exact_parent_regret": "0"
+        }
+      ],
+      "paired_direction_shifts": [
+        {
+          "fixture": 0,
+          "order": 0,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 0,
+          "order": 1,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 0,
+          "order": 2,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 0,
+          "order": 3,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 1,
+          "order": 0,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 1,
+          "order": 1,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 1,
+          "order": 2,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        },
+        {
+          "fixture": 1,
+          "order": 3,
+          "complete": true,
+          "first_minus_last_rank_sum": 0
+        }
+      ]
+    },
+    {
+      "mode": "invalid",
+      "by_rule": [
+        {
+          "refresh_rule": "lexicographic_first",
+          "scheduled": 8,
+          "completed": 0,
+          "policy_failures": 8,
+          "transport_failures": 0,
+          "incomplete": 0,
+          "optimal_parent_count": 0,
+          "mean_availability": null,
+          "mean_exact_parent_regret": null
+        },
+        {
+          "refresh_rule": "lexicographic_last",
+          "scheduled": 8,
+          "completed": 0,
+          "policy_failures": 8,
+          "transport_failures": 0,
+          "incomplete": 0,
+          "optimal_parent_count": 0,
+          "mean_availability": null,
+          "mean_exact_parent_regret": null
+        },
+        {
+          "refresh_rule": "none",
+          "scheduled": 8,
+          "completed": 0,
+          "policy_failures": 8,
+          "transport_failures": 0,
+          "incomplete": 0,
+          "optimal_parent_count": 0,
+          "mean_availability": null,
+          "mean_exact_parent_regret": null
+        }
+      ],
+      "paired_direction_shifts": [
+        {
+          "fixture": 0,
+          "order": 0,
+          "complete": false,
+          "first_minus_last_rank_sum": null
+        },
+        {
+          "fixture": 0,
+          "order": 1,
+          "complete": false,
+          "first_minus_last_rank_sum": null
+        },
+        {
+          "fixture": 0,
+          "order": 2,
+          "complete": false,
+          "first_minus_last_rank_sum": null
+        },
+        {
+          "fixture": 0,
+          "order": 3,
+          "complete": false,
+          "first_minus_last_rank_sum": null
+        },
+        {
+          "fixture": 1,
+          "order": 0,
+          "complete": false,
+          "first_minus_last_rank_sum": null
+        },
+        {
+          "fixture": 1,
+          "order": 1,
+          "complete": false,
+          "first_minus_last_rank_sum": null
+        },
+        {
+          "fixture": 1,
+          "order": 2,
+          "complete": false,
+          "first_minus_last_rank_sum": null
+        },
+        {
+          "fixture": 1,
+          "order": 3,
+          "complete": false,
+          "first_minus_last_rank_sum": null
+        }
+      ]
+    }
+  ],
+  "interpretation": "Offline controls only; no follow-up model outcome"
+}

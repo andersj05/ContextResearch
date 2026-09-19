@@ -153,6 +153,8 @@ class LunaAppServerTests(unittest.TestCase):
         self.assertFalse(client.stopped)
         self.assertTrue(server.closed)
         self.assertEqual(sum(method == "turn/start" for method, _ in server.calls), 1)
+        self.assertIsNone(client.last_metadata["usage"]["cache_write_input_tokens"])
+        self.assertFalse(client.last_metadata["cache_write_tokens_reported"])
 
     def test_missing_one_generation_guard_stop_is_rejected(self):
         self.assert_failed_reserved(FakeServer(events=successful_events(controlled_stop=False)))

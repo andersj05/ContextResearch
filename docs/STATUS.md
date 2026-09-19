@@ -32,6 +32,8 @@ Reported usage was 276,048 input and 27,140 output tokens (reasoning included in
 
 The [offline controls](DEVELOPMENT_PILOT.md) remain separate evidence: optimal and forget-all selectors each complete 36 episodes with availability 26/36 and 0/36. An [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) is prepared; nobody has been contacted.
 
+The [revision-aware offline grading](../experiments/dependency_memory/results/revision_analysis_report.md) is now complete. Seventeen saved parent choices are graded over all 30 unrevealed routes, while 19 are conditioned on their already visible pair. Exactly three parents have strict deficits, all in uninspected revision conditions; the remaining 33 attain the same-view reference. All 36 observed child choices are conditionally optimal. This reuses the first run and makes zero new model calls. An independently tested [24-request diagnostic](REVISION_DIAGNOSTIC.md) is prepared with reversed refresh direction, four paired record orders, and two token fixtures. It is pending a new allocation; fake controls and a separate no-auth wire audit pass.
+
 ## Not yet established
 
 
@@ -43,7 +45,7 @@ The [offline controls](DEVELOPMENT_PILOT.md) remain separate evidence: optimal a
 
 ## Next bounded tasks
 
-1. Use the completed development evidence to investigate revision handling offline and prespecify any follow-up. Distinguish poor use of visible revision evidence from equally good population policies choosing different records on this one realized route. The initial 96-request allocation is exhausted; further model work requires a new explicit budget and frozen manifest, not retries hidden as setup.
+1. Resolve the new allocation for the prepared [revision diagnostic](REVISION_DIAGNOSTIC.md): at most 24 additional requests and 12 conservative credit equivalents, with no API billing or purchases. The original 96-request allocation is exhausted. Once authorized, freeze the launch manifest and evaluate every selected parent over all 30 routes; preserve failures and avoid answer-dependent tuning. Until then, the completed offline diagnosis and five fake controls are the result.
 2. Obtain external review of the exact finite search/reduction and block-family proof, and deepen the novelty comparison with functional compression/direct-sum results. The targeted literature comparison narrows the contribution but does not settle priority.
 3. Complete and freeze the four held-out renderers before any held-out call. The tiny sample remains debugging evidence. Automatic witness minimization and native-provider baselines remain unimplemented.
 4. Consider imperfect clues, unreliable recovery, and multiple obligations only as separately specified extensions. The current exact frontier should remain a calibration reference with its assumptions intact.
