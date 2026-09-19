@@ -1,0 +1,2663 @@
+{
+  "counts": {
+    "full_population_parent_selections": 17,
+    "full_population_strict_deficits": 3,
+    "manifest_conditioned_parent_selections": 19,
+    "manifest_conditioned_strict_deficits": 0,
+    "observed_child_selections": 36,
+    "saved_parent_selections": 36,
+    "strict_observed_child_deficits": 0,
+    "strict_parent_deficits": 3
+  },
+  "date": "2026-09-19",
+  "dimension_controls": [
+    {
+      "best_availability": "0",
+      "first_capacity": 0,
+      "full_capacity_value_distribution": {
+        "0": 1
+      },
+      "optimal_parent_set_count": 1,
+      "parent_sets_checked": 1,
+      "revise": false,
+      "route_count": 30,
+      "second_capacity": 0
+    },
+    {
+      "best_availability": "0",
+      "first_capacity": 0,
+      "full_capacity_value_distribution": {
+        "0": 1
+      },
+      "optimal_parent_set_count": 1,
+      "parent_sets_checked": 1,
+      "revise": false,
+      "route_count": 30,
+      "second_capacity": 1
+    },
+    {
+      "best_availability": "0",
+      "first_capacity": 0,
+      "full_capacity_value_distribution": {
+        "0": 1
+      },
+      "optimal_parent_set_count": 1,
+      "parent_sets_checked": 1,
+      "revise": false,
+      "route_count": 30,
+      "second_capacity": 2
+    },
+    {
+      "best_availability": "0",
+      "first_capacity": 0,
+      "full_capacity_value_distribution": {
+        "0": 1
+      },
+      "optimal_parent_set_count": 1,
+      "parent_sets_checked": 1,
+      "revise": false,
+      "route_count": 30,
+      "second_capacity": 6
+    },
+    {
+      "best_availability": "0",
+      "first_capacity": 1,
+      "full_capacity_value_distribution": {
+        "0": 6
+      },
+      "optimal_parent_set_count": 7,
+      "parent_sets_checked": 7,
+      "revise": false,
+      "route_count": 30,
+      "second_capacity": 0
+    },
+    {
+      "best_availability": "1/6",
+      "first_capacity": 1,
+      "full_capacity_value_distribution": {
+        "1/6": 6
+      },
+      "optimal_parent_set_count": 6,
+      "parent_sets_checked": 7,
+      "revise": false,
+      "route_count": 30,
+      "second_capacity": 1
+    },
+    {
+      "best_availability": "1/6",
+      "first_capacity": 1,
+      "full_capacity_value_distribution": {
+        "1/6": 6
+      },
+      "optimal_parent_set_count": 6,
+      "parent_sets_checked": 7,
+      "revise": false,
+      "route_count": 30,
+      "second_capacity": 2
+    },
+    {
+      "best_availability": "1/6",
+      "first_capacity": 1,
+      "full_capacity_value_distribution": {
+        "1/6": 6
+      },
+      "optimal_parent_set_count": 6,
+      "parent_sets_checked": 7,
+      "revise": false,
+      "route_count": 30,
+      "second_capacity": 6
+    },
+    {
+      "best_availability": "0",
+      "first_capacity": 2,
+      "full_capacity_value_distribution": {
+        "0": 15
+      },
+      "optimal_parent_set_count": 22,
+      "parent_sets_checked": 22,
+      "revise": false,
+      "route_count": 30,
+      "second_capacity": 0
+    },
+    {
+      "best_availability": "3/10",
+      "first_capacity": 2,
+      "full_capacity_value_distribution": {
+        "3/10": 15
+      },
+      "optimal_parent_set_count": 15,
+      "parent_sets_checked": 22,
+      "revise": false,
+      "route_count": 30,
+      "second_capacity": 1
+    },
+    {
+      "best_availability": "1/3",
+      "first_capacity": 2,
+      "full_capacity_value_distribution": {
+        "1/3": 15
+      },
+      "optimal_parent_set_count": 15,
+      "parent_sets_checked": 22,
+      "revise": false,
+      "route_count": 30,
+      "second_capacity": 2
+    },
+    {
+      "best_availability": "1/3",
+      "first_capacity": 2,
+      "full_capacity_value_distribution": {
+        "1/3": 15
+      },
+      "optimal_parent_set_count": 15,
+      "parent_sets_checked": 22,
+      "revise": false,
+      "route_count": 30,
+      "second_capacity": 6
+    },
+    {
+      "best_availability": "0",
+      "first_capacity": 6,
+      "full_capacity_value_distribution": {
+        "0": 1
+      },
+      "optimal_parent_set_count": 64,
+      "parent_sets_checked": 64,
+      "revise": false,
+      "route_count": 30,
+      "second_capacity": 0
+    },
+    {
+      "best_availability": "1/2",
+      "first_capacity": 6,
+      "full_capacity_value_distribution": {
+        "1/2": 1
+      },
+      "optimal_parent_set_count": 7,
+      "parent_sets_checked": 64,
+      "revise": false,
+      "route_count": 30,
+      "second_capacity": 1
+    },
+    {
+      "best_availability": "1",
+      "first_capacity": 6,
+      "full_capacity_value_distribution": {
+        "1": 1
+      },
+      "optimal_parent_set_count": 1,
+      "parent_sets_checked": 64,
+      "revise": false,
+      "route_count": 30,
+      "second_capacity": 2
+    },
+    {
+      "best_availability": "1",
+      "first_capacity": 6,
+      "full_capacity_value_distribution": {
+        "1": 1
+      },
+      "optimal_parent_set_count": 1,
+      "parent_sets_checked": 64,
+      "revise": false,
+      "route_count": 30,
+      "second_capacity": 6
+    },
+    {
+      "best_availability": "0",
+      "first_capacity": 0,
+      "full_capacity_value_distribution": {
+        "0": 1
+      },
+      "optimal_parent_set_count": 1,
+      "parent_sets_checked": 1,
+      "revise": true,
+      "route_count": 30,
+      "second_capacity": 0
+    },
+    {
+      "best_availability": "1/2",
+      "first_capacity": 0,
+      "full_capacity_value_distribution": {
+        "1/2": 1
+      },
+      "optimal_parent_set_count": 1,
+      "parent_sets_checked": 1,
+      "revise": true,
+      "route_count": 30,
+      "second_capacity": 1
+    },
+    {
+      "best_availability": "1/2",
+      "first_capacity": 0,
+      "full_capacity_value_distribution": {
+        "1/2": 1
+      },
+      "optimal_parent_set_count": 1,
+      "parent_sets_checked": 1,
+      "revise": true,
+      "route_count": 30,
+      "second_capacity": 2
+    },
+    {
+      "best_availability": "1/2",
+      "first_capacity": 0,
+      "full_capacity_value_distribution": {
+        "1/2": 1
+      },
+      "optimal_parent_set_count": 1,
+      "parent_sets_checked": 1,
+      "revise": true,
+      "route_count": 30,
+      "second_capacity": 6
+    },
+    {
+      "best_availability": "0",
+      "first_capacity": 1,
+      "full_capacity_value_distribution": {
+        "0": 6
+      },
+      "optimal_parent_set_count": 7,
+      "parent_sets_checked": 7,
+      "revise": true,
+      "route_count": 30,
+      "second_capacity": 0
+    },
+    {
+      "best_availability": "1/2",
+      "first_capacity": 1,
+      "full_capacity_value_distribution": {
+        "1/2": 6
+      },
+      "optimal_parent_set_count": 7,
+      "parent_sets_checked": 7,
+      "revise": true,
+      "route_count": 30,
+      "second_capacity": 1
+    },
+    {
+      "best_availability": "2/3",
+      "first_capacity": 1,
+      "full_capacity_value_distribution": {
+        "1/2": 1,
+        "17/30": 1,
+        "19/30": 1,
+        "2/3": 1,
+        "3/5": 1,
+        "8/15": 1
+      },
+      "optimal_parent_set_count": 1,
+      "parent_sets_checked": 7,
+      "revise": true,
+      "route_count": 30,
+      "second_capacity": 2
+    },
+    {
+      "best_availability": "2/3",
+      "first_capacity": 1,
+      "full_capacity_value_distribution": {
+        "1/2": 1,
+        "17/30": 1,
+        "19/30": 1,
+        "2/3": 1,
+        "3/5": 1,
+        "8/15": 1
+      },
+      "optimal_parent_set_count": 1,
+      "parent_sets_checked": 7,
+      "revise": true,
+      "route_count": 30,
+      "second_capacity": 6
+    },
+    {
+      "best_availability": "0",
+      "first_capacity": 2,
+      "full_capacity_value_distribution": {
+        "0": 15
+      },
+      "optimal_parent_set_count": 22,
+      "parent_sets_checked": 22,
+      "revise": true,
+      "route_count": 30,
+      "second_capacity": 0
+    },
+    {
+      "best_availability": "1/2",
+      "first_capacity": 2,
+      "full_capacity_value_distribution": {
+        "1/2": 15
+      },
+      "optimal_parent_set_count": 22,
+      "parent_sets_checked": 22,
+      "revise": true,
+      "route_count": 30,
+      "second_capacity": 1
+    },
+    {
+      "best_availability": "4/5",
+      "first_capacity": 2,
+      "full_capacity_value_distribution": {
+        "11/15": 2,
+        "17/30": 1,
+        "19/30": 2,
+        "2/3": 3,
+        "23/30": 1,
+        "3/5": 2,
+        "4/5": 1,
+        "7/10": 2,
+        "8/15": 1
+      },
+      "optimal_parent_set_count": 1,
+      "parent_sets_checked": 22,
+      "revise": true,
+      "route_count": 30,
+      "second_capacity": 2
+    },
+    {
+      "best_availability": "4/5",
+      "first_capacity": 2,
+      "full_capacity_value_distribution": {
+        "11/15": 2,
+        "17/30": 1,
+        "19/30": 2,
+        "2/3": 3,
+        "23/30": 1,
+        "3/5": 2,
+        "4/5": 1,
+        "7/10": 2,
+        "8/15": 1
+      },
+      "optimal_parent_set_count": 1,
+      "parent_sets_checked": 22,
+      "revise": true,
+      "route_count": 30,
+      "second_capacity": 6
+    },
+    {
+      "best_availability": "0",
+      "first_capacity": 6,
+      "full_capacity_value_distribution": {
+        "0": 1
+      },
+      "optimal_parent_set_count": 64,
+      "parent_sets_checked": 64,
+      "revise": true,
+      "route_count": 30,
+      "second_capacity": 0
+    },
+    {
+      "best_availability": "1/2",
+      "first_capacity": 6,
+      "full_capacity_value_distribution": {
+        "1/2": 1
+      },
+      "optimal_parent_set_count": 64,
+      "parent_sets_checked": 64,
+      "revise": true,
+      "route_count": 30,
+      "second_capacity": 1
+    },
+    {
+      "best_availability": "1",
+      "first_capacity": 6,
+      "full_capacity_value_distribution": {
+        "1": 1
+      },
+      "optimal_parent_set_count": 2,
+      "parent_sets_checked": 64,
+      "revise": true,
+      "route_count": 30,
+      "second_capacity": 2
+    },
+    {
+      "best_availability": "1",
+      "first_capacity": 6,
+      "full_capacity_value_distribution": {
+        "1": 1
+      },
+      "optimal_parent_set_count": 2,
+      "parent_sets_checked": 64,
+      "revise": true,
+      "route_count": 30,
+      "second_capacity": 6
+    }
+  ],
+  "limitations": [
+    "Offline reuse of one development route, not new model trials or a population estimate of the model policy.",
+    "Unknown counterfactual child actions are replaced by declared ideal downstream selection.",
+    "Inspected parents are graded only conditional on their observed manifest; no unseen-manifest answers are invented.",
+    "Exact gaps isolate parent choice at fixed inspection and visible information, not end-to-end inspection regret.",
+    "All old run artifacts remain unchanged; no held-out evidence or native-harness comparison."
+  ],
+  "method": "Exact fixed-parent grading with optimal downstream selection; same observed public view",
+  "new_model_requests": 0,
+  "selections": [
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "always_inspect",
+      "episode_id": "development/direct_artifact_tags/ample_parent/explicit_labels/always_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1",
+        "conditioning": "observed_manifest",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 6,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": false,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-0",
+          "job-1",
+          "job-2",
+          "job-3",
+          "job-4",
+          "job-5"
+        ],
+        "ideal_child_availability": "1",
+        "known_candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "one_optimal_parent": [
+          "job-2",
+          "job-4"
+        ],
+        "optimal_full_capacity_parent_count": 1,
+        "optimal_parent_set_count": 16,
+        "parent_sets_checked": 64,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 2
+      },
+      "render_mode": "explicit_labels",
+      "scenario": "ample_parent"
+    },
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "model_selective",
+      "episode_id": "development/direct_artifact_tags/ample_parent/explicit_labels/model_selective",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1",
+        "conditioning": "all_unrevealed_manifests",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 6,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": false,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-0",
+          "job-1",
+          "job-2",
+          "job-3",
+          "job-4",
+          "job-5"
+        ],
+        "ideal_child_availability": "1",
+        "known_candidates": null,
+        "one_optimal_parent": [
+          "job-0",
+          "job-1",
+          "job-2",
+          "job-3",
+          "job-4",
+          "job-5"
+        ],
+        "optimal_full_capacity_parent_count": 1,
+        "optimal_parent_set_count": 1,
+        "parent_sets_checked": 64,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 30
+      },
+      "render_mode": "explicit_labels",
+      "scenario": "ample_parent"
+    },
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "never_inspect",
+      "episode_id": "development/direct_artifact_tags/ample_parent/explicit_labels/never_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1",
+        "conditioning": "all_unrevealed_manifests",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 6,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": false,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-0",
+          "job-1",
+          "job-2",
+          "job-3",
+          "job-4",
+          "job-5"
+        ],
+        "ideal_child_availability": "1",
+        "known_candidates": null,
+        "one_optimal_parent": [
+          "job-0",
+          "job-1",
+          "job-2",
+          "job-3",
+          "job-4",
+          "job-5"
+        ],
+        "optimal_full_capacity_parent_count": 1,
+        "optimal_parent_set_count": 1,
+        "parent_sets_checked": 64,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 30
+      },
+      "render_mode": "explicit_labels",
+      "scenario": "ample_parent"
+    },
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "always_inspect",
+      "episode_id": "development/direct_artifact_tags/ample_parent/inferred_dependencies/always_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1",
+        "conditioning": "observed_manifest",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 6,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": false,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-0",
+          "job-1",
+          "job-2",
+          "job-3",
+          "job-4",
+          "job-5"
+        ],
+        "ideal_child_availability": "1",
+        "known_candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "one_optimal_parent": [
+          "job-2",
+          "job-4"
+        ],
+        "optimal_full_capacity_parent_count": 1,
+        "optimal_parent_set_count": 16,
+        "parent_sets_checked": 64,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 2
+      },
+      "render_mode": "inferred_dependencies",
+      "scenario": "ample_parent"
+    },
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "model_selective",
+      "episode_id": "development/direct_artifact_tags/ample_parent/inferred_dependencies/model_selective",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1",
+        "conditioning": "all_unrevealed_manifests",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 6,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": false,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-0",
+          "job-1",
+          "job-2",
+          "job-3",
+          "job-4",
+          "job-5"
+        ],
+        "ideal_child_availability": "1",
+        "known_candidates": null,
+        "one_optimal_parent": [
+          "job-0",
+          "job-1",
+          "job-2",
+          "job-3",
+          "job-4",
+          "job-5"
+        ],
+        "optimal_full_capacity_parent_count": 1,
+        "optimal_parent_set_count": 1,
+        "parent_sets_checked": 64,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 30
+      },
+      "render_mode": "inferred_dependencies",
+      "scenario": "ample_parent"
+    },
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "never_inspect",
+      "episode_id": "development/direct_artifact_tags/ample_parent/inferred_dependencies/never_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1",
+        "conditioning": "all_unrevealed_manifests",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 6,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": false,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-0",
+          "job-1",
+          "job-2",
+          "job-3",
+          "job-4",
+          "job-5"
+        ],
+        "ideal_child_availability": "1",
+        "known_candidates": null,
+        "one_optimal_parent": [
+          "job-0",
+          "job-1",
+          "job-2",
+          "job-3",
+          "job-4",
+          "job-5"
+        ],
+        "optimal_full_capacity_parent_count": 1,
+        "optimal_parent_set_count": 1,
+        "parent_sets_checked": 64,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 30
+      },
+      "render_mode": "inferred_dependencies",
+      "scenario": "ample_parent"
+    },
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "always_inspect",
+      "episode_id": "development/direct_artifact_tags/cheap_recovery/explicit_labels/always_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1",
+        "conditioning": "observed_manifest",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 1,
+          "revise": false,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "ideal_child_availability": "1",
+        "known_candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "one_optimal_parent": [
+          "job-2",
+          "job-4"
+        ],
+        "optimal_full_capacity_parent_count": 1,
+        "optimal_parent_set_count": 1,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 2
+      },
+      "render_mode": "explicit_labels",
+      "scenario": "cheap_recovery"
+    },
+    {
+      "actual_pre_recovery_available": false,
+      "arm": "model_selective",
+      "episode_id": "development/direct_artifact_tags/cheap_recovery/explicit_labels/model_selective",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [],
+        "best_same_view_availability": "0",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [],
+        "conditional_availability": "0",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1/3",
+        "conditioning": "all_unrevealed_manifests",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 1,
+          "revise": false,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-0",
+          "job-1"
+        ],
+        "ideal_child_availability": "1/3",
+        "known_candidates": null,
+        "one_optimal_parent": [
+          "job-0",
+          "job-1"
+        ],
+        "optimal_full_capacity_parent_count": 15,
+        "optimal_parent_set_count": 15,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 30
+      },
+      "render_mode": "explicit_labels",
+      "scenario": "cheap_recovery"
+    },
+    {
+      "actual_pre_recovery_available": false,
+      "arm": "never_inspect",
+      "episode_id": "development/direct_artifact_tags/cheap_recovery/explicit_labels/never_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [],
+        "best_same_view_availability": "0",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [],
+        "conditional_availability": "0",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1/3",
+        "conditioning": "all_unrevealed_manifests",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 1,
+          "revise": false,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-0",
+          "job-1"
+        ],
+        "ideal_child_availability": "1/3",
+        "known_candidates": null,
+        "one_optimal_parent": [
+          "job-0",
+          "job-1"
+        ],
+        "optimal_full_capacity_parent_count": 15,
+        "optimal_parent_set_count": 15,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 30
+      },
+      "render_mode": "explicit_labels",
+      "scenario": "cheap_recovery"
+    },
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "always_inspect",
+      "episode_id": "development/direct_artifact_tags/cheap_recovery/inferred_dependencies/always_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1",
+        "conditioning": "observed_manifest",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 1,
+          "revise": false,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "ideal_child_availability": "1",
+        "known_candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "one_optimal_parent": [
+          "job-2",
+          "job-4"
+        ],
+        "optimal_full_capacity_parent_count": 1,
+        "optimal_parent_set_count": 1,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 2
+      },
+      "render_mode": "inferred_dependencies",
+      "scenario": "cheap_recovery"
+    },
+    {
+      "actual_pre_recovery_available": false,
+      "arm": "model_selective",
+      "episode_id": "development/direct_artifact_tags/cheap_recovery/inferred_dependencies/model_selective",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [],
+        "best_same_view_availability": "0",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [],
+        "conditional_availability": "0",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1/3",
+        "conditioning": "all_unrevealed_manifests",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 1,
+          "revise": false,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-0",
+          "job-1"
+        ],
+        "ideal_child_availability": "1/3",
+        "known_candidates": null,
+        "one_optimal_parent": [
+          "job-0",
+          "job-1"
+        ],
+        "optimal_full_capacity_parent_count": 15,
+        "optimal_parent_set_count": 15,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 30
+      },
+      "render_mode": "inferred_dependencies",
+      "scenario": "cheap_recovery"
+    },
+    {
+      "actual_pre_recovery_available": false,
+      "arm": "never_inspect",
+      "episode_id": "development/direct_artifact_tags/cheap_recovery/inferred_dependencies/never_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [],
+        "best_same_view_availability": "0",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [],
+        "conditional_availability": "0",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1/3",
+        "conditioning": "all_unrevealed_manifests",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 1,
+          "revise": false,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-0",
+          "job-1"
+        ],
+        "ideal_child_availability": "1/3",
+        "known_candidates": null,
+        "one_optimal_parent": [
+          "job-0",
+          "job-1"
+        ],
+        "optimal_full_capacity_parent_count": 15,
+        "optimal_parent_set_count": 15,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 30
+      },
+      "render_mode": "inferred_dependencies",
+      "scenario": "cheap_recovery"
+    },
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "always_inspect",
+      "episode_id": "development/direct_artifact_tags/costly_recovery/explicit_labels/always_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1",
+        "conditioning": "observed_manifest",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": false,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "ideal_child_availability": "1",
+        "known_candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "one_optimal_parent": [
+          "job-2",
+          "job-4"
+        ],
+        "optimal_full_capacity_parent_count": 1,
+        "optimal_parent_set_count": 1,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 2
+      },
+      "render_mode": "explicit_labels",
+      "scenario": "costly_recovery"
+    },
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "model_selective",
+      "episode_id": "development/direct_artifact_tags/costly_recovery/explicit_labels/model_selective",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1",
+        "conditioning": "observed_manifest",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": false,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "ideal_child_availability": "1",
+        "known_candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "one_optimal_parent": [
+          "job-2",
+          "job-4"
+        ],
+        "optimal_full_capacity_parent_count": 1,
+        "optimal_parent_set_count": 1,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 2
+      },
+      "render_mode": "explicit_labels",
+      "scenario": "costly_recovery"
+    },
+    {
+      "actual_pre_recovery_available": false,
+      "arm": "never_inspect",
+      "episode_id": "development/direct_artifact_tags/costly_recovery/explicit_labels/never_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [],
+        "best_same_view_availability": "0",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [],
+        "conditional_availability": "0",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1/3",
+        "conditioning": "all_unrevealed_manifests",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": false,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-0",
+          "job-1"
+        ],
+        "ideal_child_availability": "1/3",
+        "known_candidates": null,
+        "one_optimal_parent": [
+          "job-0",
+          "job-1"
+        ],
+        "optimal_full_capacity_parent_count": 15,
+        "optimal_parent_set_count": 15,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 30
+      },
+      "render_mode": "explicit_labels",
+      "scenario": "costly_recovery"
+    },
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "always_inspect",
+      "episode_id": "development/direct_artifact_tags/costly_recovery/inferred_dependencies/always_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1",
+        "conditioning": "observed_manifest",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": false,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "ideal_child_availability": "1",
+        "known_candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "one_optimal_parent": [
+          "job-2",
+          "job-4"
+        ],
+        "optimal_full_capacity_parent_count": 1,
+        "optimal_parent_set_count": 1,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 2
+      },
+      "render_mode": "inferred_dependencies",
+      "scenario": "costly_recovery"
+    },
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "model_selective",
+      "episode_id": "development/direct_artifact_tags/costly_recovery/inferred_dependencies/model_selective",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1",
+        "conditioning": "observed_manifest",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": false,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "ideal_child_availability": "1",
+        "known_candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "one_optimal_parent": [
+          "job-2",
+          "job-4"
+        ],
+        "optimal_full_capacity_parent_count": 1,
+        "optimal_parent_set_count": 1,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 2
+      },
+      "render_mode": "inferred_dependencies",
+      "scenario": "costly_recovery"
+    },
+    {
+      "actual_pre_recovery_available": false,
+      "arm": "never_inspect",
+      "episode_id": "development/direct_artifact_tags/costly_recovery/inferred_dependencies/never_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [],
+        "best_same_view_availability": "0",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [],
+        "conditional_availability": "0",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1/3",
+        "conditioning": "all_unrevealed_manifests",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": false,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-0",
+          "job-1"
+        ],
+        "ideal_child_availability": "1/3",
+        "known_candidates": null,
+        "one_optimal_parent": [
+          "job-0",
+          "job-1"
+        ],
+        "optimal_full_capacity_parent_count": 15,
+        "optimal_parent_set_count": 15,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 30
+      },
+      "render_mode": "inferred_dependencies",
+      "scenario": "costly_recovery"
+    },
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "always_inspect",
+      "episode_id": "development/direct_artifact_tags/revision_cheap_recovery/explicit_labels/always_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1",
+        "conditioning": "observed_manifest",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": true,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "ideal_child_availability": "1",
+        "known_candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "one_optimal_parent": [
+          "job-4"
+        ],
+        "optimal_full_capacity_parent_count": 5,
+        "optimal_parent_set_count": 6,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 2
+      },
+      "render_mode": "explicit_labels",
+      "scenario": "revision_cheap_recovery"
+    },
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "model_selective",
+      "episode_id": "development/direct_artifact_tags/revision_cheap_recovery/explicit_labels/model_selective",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1",
+        "conditioning": "observed_manifest",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": true,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "ideal_child_availability": "1",
+        "known_candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "one_optimal_parent": [
+          "job-4"
+        ],
+        "optimal_full_capacity_parent_count": 5,
+        "optimal_parent_set_count": 6,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 2
+      },
+      "render_mode": "explicit_labels",
+      "scenario": "revision_cheap_recovery"
+    },
+    {
+      "actual_pre_recovery_available": false,
+      "arm": "never_inspect",
+      "episode_id": "development/direct_artifact_tags/revision_cheap_recovery/explicit_labels/never_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2"
+        ],
+        "best_same_view_availability": "1/2",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2"
+        ],
+        "conditional_availability": "1/2",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "1/5",
+        "best_same_view_availability": "4/5",
+        "conditioning": "all_unrevealed_manifests",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": true,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-1",
+          "job-2"
+        ],
+        "ideal_child_availability": "3/5",
+        "known_candidates": null,
+        "one_optimal_parent": [
+          "job-4",
+          "job-5"
+        ],
+        "optimal_full_capacity_parent_count": 1,
+        "optimal_parent_set_count": 1,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": false,
+        "recovery_cost_gap_synthetic_units": "4/5",
+        "route_count": 30
+      },
+      "render_mode": "explicit_labels",
+      "scenario": "revision_cheap_recovery"
+    },
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "always_inspect",
+      "episode_id": "development/direct_artifact_tags/revision_cheap_recovery/inferred_dependencies/always_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1",
+        "conditioning": "observed_manifest",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": true,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "ideal_child_availability": "1",
+        "known_candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "one_optimal_parent": [
+          "job-4"
+        ],
+        "optimal_full_capacity_parent_count": 5,
+        "optimal_parent_set_count": 6,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 2
+      },
+      "render_mode": "inferred_dependencies",
+      "scenario": "revision_cheap_recovery"
+    },
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "model_selective",
+      "episode_id": "development/direct_artifact_tags/revision_cheap_recovery/inferred_dependencies/model_selective",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1",
+        "conditioning": "observed_manifest",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": true,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "ideal_child_availability": "1",
+        "known_candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "one_optimal_parent": [
+          "job-4"
+        ],
+        "optimal_full_capacity_parent_count": 5,
+        "optimal_parent_set_count": 6,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 2
+      },
+      "render_mode": "inferred_dependencies",
+      "scenario": "revision_cheap_recovery"
+    },
+    {
+      "actual_pre_recovery_available": false,
+      "arm": "never_inspect",
+      "episode_id": "development/direct_artifact_tags/revision_cheap_recovery/inferred_dependencies/never_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2"
+        ],
+        "best_same_view_availability": "1/2",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2"
+        ],
+        "conditional_availability": "1/2",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "4/15",
+        "best_same_view_availability": "4/5",
+        "conditioning": "all_unrevealed_manifests",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": true,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-0",
+          "job-1"
+        ],
+        "ideal_child_availability": "8/15",
+        "known_candidates": null,
+        "one_optimal_parent": [
+          "job-4",
+          "job-5"
+        ],
+        "optimal_full_capacity_parent_count": 1,
+        "optimal_parent_set_count": 1,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": false,
+        "recovery_cost_gap_synthetic_units": "16/15",
+        "route_count": 30
+      },
+      "render_mode": "inferred_dependencies",
+      "scenario": "revision_cheap_recovery"
+    },
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "always_inspect",
+      "episode_id": "development/direct_artifact_tags/revision_costly_recovery/explicit_labels/always_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1",
+        "conditioning": "observed_manifest",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 8,
+          "revise": true,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "ideal_child_availability": "1",
+        "known_candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "one_optimal_parent": [
+          "job-4"
+        ],
+        "optimal_full_capacity_parent_count": 5,
+        "optimal_parent_set_count": 6,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 2
+      },
+      "render_mode": "explicit_labels",
+      "scenario": "revision_costly_recovery"
+    },
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "model_selective",
+      "episode_id": "development/direct_artifact_tags/revision_costly_recovery/explicit_labels/model_selective",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1",
+        "conditioning": "observed_manifest",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 8,
+          "revise": true,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "ideal_child_availability": "1",
+        "known_candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "one_optimal_parent": [
+          "job-4"
+        ],
+        "optimal_full_capacity_parent_count": 5,
+        "optimal_parent_set_count": 6,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 2
+      },
+      "render_mode": "explicit_labels",
+      "scenario": "revision_costly_recovery"
+    },
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "never_inspect",
+      "episode_id": "development/direct_artifact_tags/revision_costly_recovery/explicit_labels/never_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "4/5",
+        "conditioning": "all_unrevealed_manifests",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 8,
+          "revise": true,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-4",
+          "job-5"
+        ],
+        "ideal_child_availability": "4/5",
+        "known_candidates": null,
+        "one_optimal_parent": [
+          "job-4",
+          "job-5"
+        ],
+        "optimal_full_capacity_parent_count": 1,
+        "optimal_parent_set_count": 1,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 30
+      },
+      "render_mode": "explicit_labels",
+      "scenario": "revision_costly_recovery"
+    },
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "always_inspect",
+      "episode_id": "development/direct_artifact_tags/revision_costly_recovery/inferred_dependencies/always_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1",
+        "conditioning": "observed_manifest",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 8,
+          "revise": true,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "ideal_child_availability": "1",
+        "known_candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "one_optimal_parent": [
+          "job-4"
+        ],
+        "optimal_full_capacity_parent_count": 5,
+        "optimal_parent_set_count": 6,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 2
+      },
+      "render_mode": "inferred_dependencies",
+      "scenario": "revision_costly_recovery"
+    },
+    {
+      "actual_pre_recovery_available": true,
+      "arm": "model_selective",
+      "episode_id": "development/direct_artifact_tags/revision_costly_recovery/inferred_dependencies/model_selective",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "conditional_availability": "1",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1",
+        "conditioning": "observed_manifest",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 8,
+          "revise": true,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "ideal_child_availability": "1",
+        "known_candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "one_optimal_parent": [
+          "job-4"
+        ],
+        "optimal_full_capacity_parent_count": 5,
+        "optimal_parent_set_count": 6,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 2
+      },
+      "render_mode": "inferred_dependencies",
+      "scenario": "revision_costly_recovery"
+    },
+    {
+      "actual_pre_recovery_available": false,
+      "arm": "never_inspect",
+      "episode_id": "development/direct_artifact_tags/revision_costly_recovery/inferred_dependencies/never_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2"
+        ],
+        "best_same_view_availability": "1/2",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2"
+        ],
+        "conditional_availability": "1/2",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "1/5",
+        "best_same_view_availability": "4/5",
+        "conditioning": "all_unrevealed_manifests",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 8,
+          "revise": true,
+          "second_capacity": 2
+        },
+        "first_keys": [
+          "job-1",
+          "job-2"
+        ],
+        "ideal_child_availability": "3/5",
+        "known_candidates": null,
+        "one_optimal_parent": [
+          "job-4",
+          "job-5"
+        ],
+        "optimal_full_capacity_parent_count": 1,
+        "optimal_parent_set_count": 1,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": false,
+        "recovery_cost_gap_synthetic_units": "8/5",
+        "route_count": 30
+      },
+      "render_mode": "inferred_dependencies",
+      "scenario": "revision_costly_recovery"
+    },
+    {
+      "actual_pre_recovery_available": false,
+      "arm": "always_inspect",
+      "episode_id": "development/direct_artifact_tags/small_child/explicit_labels/always_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1/2",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2"
+        ],
+        "conditional_availability": "1/2",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1/2",
+        "conditioning": "observed_manifest",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": false,
+          "second_capacity": 1
+        },
+        "first_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "ideal_child_availability": "1/2",
+        "known_candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "one_optimal_parent": [
+          "job-2"
+        ],
+        "optimal_full_capacity_parent_count": 9,
+        "optimal_parent_set_count": 11,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 2
+      },
+      "render_mode": "explicit_labels",
+      "scenario": "small_child"
+    },
+    {
+      "actual_pre_recovery_available": false,
+      "arm": "model_selective",
+      "episode_id": "development/direct_artifact_tags/small_child/explicit_labels/model_selective",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1/2",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2"
+        ],
+        "conditional_availability": "1/2",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1/2",
+        "conditioning": "observed_manifest",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": false,
+          "second_capacity": 1
+        },
+        "first_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "ideal_child_availability": "1/2",
+        "known_candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "one_optimal_parent": [
+          "job-2"
+        ],
+        "optimal_full_capacity_parent_count": 9,
+        "optimal_parent_set_count": 11,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 2
+      },
+      "render_mode": "explicit_labels",
+      "scenario": "small_child"
+    },
+    {
+      "actual_pre_recovery_available": false,
+      "arm": "never_inspect",
+      "episode_id": "development/direct_artifact_tags/small_child/explicit_labels/never_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [],
+        "best_same_view_availability": "0",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [],
+        "conditional_availability": "0",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "3/10",
+        "conditioning": "all_unrevealed_manifests",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": false,
+          "second_capacity": 1
+        },
+        "first_keys": [
+          "job-0",
+          "job-1"
+        ],
+        "ideal_child_availability": "3/10",
+        "known_candidates": null,
+        "one_optimal_parent": [
+          "job-0",
+          "job-1"
+        ],
+        "optimal_full_capacity_parent_count": 15,
+        "optimal_parent_set_count": 15,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 30
+      },
+      "render_mode": "explicit_labels",
+      "scenario": "small_child"
+    },
+    {
+      "actual_pre_recovery_available": false,
+      "arm": "always_inspect",
+      "episode_id": "development/direct_artifact_tags/small_child/inferred_dependencies/always_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "best_same_view_availability": "1/2",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [
+          "job-2"
+        ],
+        "conditional_availability": "1/2",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "1/2",
+        "conditioning": "observed_manifest",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": false,
+          "second_capacity": 1
+        },
+        "first_keys": [
+          "job-2",
+          "job-4"
+        ],
+        "ideal_child_availability": "1/2",
+        "known_candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "one_optimal_parent": [
+          "job-2"
+        ],
+        "optimal_full_capacity_parent_count": 9,
+        "optimal_parent_set_count": 11,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 2
+      },
+      "render_mode": "inferred_dependencies",
+      "scenario": "small_child"
+    },
+    {
+      "actual_pre_recovery_available": false,
+      "arm": "model_selective",
+      "episode_id": "development/direct_artifact_tags/small_child/inferred_dependencies/model_selective",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [],
+        "best_same_view_availability": "0",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [],
+        "conditional_availability": "0",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "3/10",
+        "conditioning": "all_unrevealed_manifests",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": false,
+          "second_capacity": 1
+        },
+        "first_keys": [
+          "job-0",
+          "job-1"
+        ],
+        "ideal_child_availability": "3/10",
+        "known_candidates": null,
+        "one_optimal_parent": [
+          "job-0",
+          "job-1"
+        ],
+        "optimal_full_capacity_parent_count": 15,
+        "optimal_parent_set_count": 15,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 30
+      },
+      "render_mode": "inferred_dependencies",
+      "scenario": "small_child"
+    },
+    {
+      "actual_pre_recovery_available": false,
+      "arm": "never_inspect",
+      "episode_id": "development/direct_artifact_tags/small_child/inferred_dependencies/never_inspect",
+      "observed_child": {
+        "availability_gap": "0",
+        "available_candidate_keys": [],
+        "best_same_view_availability": "0",
+        "candidates": [
+          "job-2",
+          "job-4"
+        ],
+        "chosen_candidate_keys": [],
+        "conditional_availability": "0",
+        "route_count": 2,
+        "same_view_optimal": true
+      },
+      "parent": {
+        "availability_gap": "0",
+        "best_same_view_availability": "3/10",
+        "conditioning": "all_unrevealed_manifests",
+        "config": {
+          "call_limit": 128,
+          "candidate_count": 2,
+          "cost_budget": 100,
+          "delay": 3,
+          "first_capacity": 2,
+          "jobs": 6,
+          "probe_available": true,
+          "probe_cost": 1,
+          "recovery_available": true,
+          "recovery_cost": 4,
+          "revise": false,
+          "second_capacity": 1
+        },
+        "first_keys": [
+          "job-0",
+          "job-1"
+        ],
+        "ideal_child_availability": "3/10",
+        "known_candidates": null,
+        "one_optimal_parent": [
+          "job-0",
+          "job-1"
+        ],
+        "optimal_full_capacity_parent_count": 15,
+        "optimal_parent_set_count": 15,
+        "parent_sets_checked": 22,
+        "population_optimal_parent": true,
+        "recovery_cost_gap_synthetic_units": "0",
+        "route_count": 30
+      },
+      "render_mode": "inferred_dependencies",
+      "scenario": "small_child"
+    }
+  ],
+  "source_sha256": {
+    "artifact_workflow.py": "27a9791f7f15e430724f00aa8aeff71d0203cee1a51e5295159cbc17eb9b7554",
+    "pilot_interface.py": "322af4a8d24e2e942ae0ee00592d142c2ef327c3593368c860314c718850c7ea",
+    "requests.jsonl": "2ea0f932b3147c543c347f07aed3251b876313e05f098a69d8ade49b34a4b1f8",
+    "revision_analysis.py": "fa92b8447f1d3ff2e94610aba37ecc4108901391111859abbd6f88e6c5f39d61",
+    "summary.json": "61229c34732ef82e4ca9179525cc006849dd53bdd4526ba7916eee962f10e405"
+  },
+  "version": "revision_parent_analysis_v1"
+}
