@@ -2,12 +2,14 @@
 """Read-only, offline checks for the research workspace and committed evidence."""
 from __future__ import annotations
 
+import argparse
 import csv
 import hashlib
 import importlib.util
 import json
 from pathlib import Path
 import re
+import subprocess
 import sys
 from urllib.parse import unquote
 
@@ -36,6 +38,9 @@ def inside(path: Path) -> bool:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--exact-chain-compiler", help="Also rerun the full partition search with this C99 compiler")
+    args = parser.parse_args()
     errors = []
     counts = {}
     bibliography = read_bibliography(ROOT / "paper/references.bib")
@@ -187,10 +192,32 @@ def main() -> int:
     # digest/count. It does NOT rerun 171 million partitions or require a compiler.
     counts["exact_chain_partitions_recorded"] = chain["partitions"]
     counts["exact_chain_witness_outcomes_checked"] = checked_chain["outcomes"]
-    workflow = rows("experiments/dependency_memory/results/workflow_retention.csv")
-    summary = json.loads((ROOT / "experiments/dependency_memory/results/summary.json").read_text(encoding="utf-8"))
-    if len(workflow) != summary["workflow_runs"]:
-        errors.append("Workflow result count disagrees with summary")
+    counts["exact_chain_full_search_rerun"] = False
+    if args.exact_chain_compiler:
+        try:
+            fresh_chain = json.loads(json.dumps(exact_chain.certificate(
+                exact_chain.search_native(args.exact_chain_compiler))))
+            # Search time and compiler metadata may vary. Scientific outputs,
+            # the complete histogram, and the deterministic witness must match.
+            compare_keys = set(checked_chain) | {"native_source_sha256"}
+            if any(chain.get(key) != fresh_chain.get(key) for key in compare_keys):
+                errors.append("Full exact-chain rerun disagrees with the committed certificate")
+            counts["exact_chain_full_search_rerun"] = True
+        except (ValueError, OSError, subprocess.CalledProcessError) as exc:
+            errors.append(f"Could not complete exact-chain rerun: {exc}")
+    import experiment
+    frontier, disclosure, workflow, example_events, summary = experiment.diagnostics()
+    for filename, expected in (("exact_frontier.csv", frontier), ("disclosure_timing.csv", disclosure),
+                               ("workflow_retention.csv", workflow)):
+        actual = rows("experiments/dependency_memory/results/" + filename)
+        if actual != [{key: str(value) for key, value in row.items()} for row in expected]:
+            errors.append(f"{filename} is stale; regenerate it")
+    for filename, expected in (("example_events.json", example_events), ("summary.json", summary)):
+        actual = json.loads((ROOT / "experiments/dependency_memory/results" / filename).read_text(encoding="utf-8"))
+        if actual != expected:
+            errors.append(f"{filename} is stale; regenerate it")
+    counts["exact_frontier_rows_regenerated"] = len(frontier)
+    counts["disclosure_rows_regenerated"] = len(disclosure)
     counts["compatibility_assignments"] = expected_certificate["branch_code_assignments_examined"]
     counts["workflow_configurations"] = len(workflow)
 

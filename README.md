@@ -56,6 +56,8 @@ The experiment scripts regenerate their committed diagnostic results. The paper 
 
 To rerun the full 171,798,901-partition search efficiently, use an installed C99 compiler: `python experiments/dependency_memory/exact_chain.py --compiler clang --output experiments/dependency_memory/results/exact_chain_certificate.json`. The recorded run used Clang 19.1.0. The standard test/validation workflow needs no compiler and checks the search source hash, count, and complete witness rather than rerunning the full search. The script also supplies a slower standard-library Python backend.
 
+For a read-only comparison of a fresh full search against the committed certificate, run `python scripts/validate_context_repo.py --exact-chain-compiler clang`. The ordinary validator also regenerates the original 14-row coding frontier, six timing comparisons, and all 810 record-policy configurations in memory; row-count agreement alone is not sufficient.
+
 ## Evidence and provenance
 
 The active compaction investigation is dated September 16–19, 2026. The broader inherited literature snapshot is dated September 4, 2026; its review labels have not been upgraded by moving the files. Read the [migration record](provenance/README.md) and [historical corpus overview](HARNESS_CORPUS_README.md) for provenance and scope.

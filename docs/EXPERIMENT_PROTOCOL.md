@@ -4,6 +4,8 @@ Status: protocol draft, September 18, 2026. Finite coding diagnostics and a scri
 
 September 19 update: the [pilot specification](LLM_PILOT_SPEC.md) separates inspection-decision calibration with scripted optimal retention from model retention with inferred dependencies. Its [offline schedule and calibration](../experiments/dependency_memory/results/pilot_calibration_report.md) reserve 12 decisions and 180 episodes, with a 432-request ceiling. These are planned counts, not completed trials. Renderers, isolation, model revision, token caps, and spending remain unresolved launch fields. The earlier 36-run sketch below is superseded for this pilot, while the eventual native-harness comparison remains a separate requirement.
 
+The correctness audit refines the pilot to v0.2: with reliable scripted recovery/submission, successful completion alone cannot distinguish good retention from forgetting every receipt. Stage B therefore measures pre-recovery availability and completion cost, while terminal success checks interface/execution validity. Fixed-policy comparisons on the same reserved routes are mandatory; the tiny sample cannot separate template-family effects from route effects. This does not change the broader end-to-end protocol's task-success objective.
+
 ## Questions and stages
 
 1. **Finite representation:** characterize the extra loss or parent-memory cost imposed by successive irreversible bottlenecks with delayed side information.

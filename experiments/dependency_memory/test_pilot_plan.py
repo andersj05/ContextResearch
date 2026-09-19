@@ -3,6 +3,7 @@
 from collections import defaultdict
 from fractions import Fraction
 import unittest
+from unittest.mock import patch
 
 from artifact_workflow import run_episode
 from pilot_plan import ARMS, build_plan, calibration
@@ -64,6 +65,31 @@ class PilotPlanTests(unittest.TestCase):
         # 12 decisions + 180*2 boundary calls + 60 selective decisions.
         self.assertEqual(plan["counts"]["total_maximum_model_requests"], 432)
         self.assertEqual(sum(e["maximum_model_requests"] for e in episodes.values()), 420)
+
+    def test_sample_composition_does_not_inherit_population_preferences(self):
+        plan = build_plan()
+        rows = {r["scenario"]: r for r in plan["sampled_scripted_reference"] if r["split"] == "heldout"}
+        population = {r["scenario"]: r for r in plan["calibration"]}
+        for name in ("costly_recovery", "revision_cheap_recovery"):
+            self.assertEqual(rows[name]["fixture_count"], 4)
+            self.assertEqual(rows[name]["skip_mean_extra_cost"], "1")
+            self.assertEqual(rows[name]["inspect_mean_extra_cost"], "1")
+            self.assertNotEqual(population[name]["inspection_minus_skip_cost"], "0")
+
+    def test_reliable_recovery_masks_forgetting_in_all_pilot_regimes(self):
+        # Empty selection is a valid but maximally forgetful compactor. Use the
+        # actual tool state machine at unchanged capacities and costs.
+        for cell in calibration():
+            config = scenarios()[cell["scenario"]]
+            policy = executable_policy(config, inspect=False, recover=True)
+            with patch("artifact_workflow.compact", return_value=()):
+                results = [run_episode(config, f, policy) for f in route_fixtures(config)]
+            self.assertEqual(len(results), 30)
+            for result in results:
+                self.assertTrue(result.success)
+                self.assertTrue(result.recovery_attempted)
+                self.assertTrue(all(c["retained_records"] == 0 for c in result.compactions))
+                self.assertEqual(result.cost_units, 7 + config.delay + config.recovery_cost)
 
 
 if __name__ == "__main__":

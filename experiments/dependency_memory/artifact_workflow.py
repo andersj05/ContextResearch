@@ -105,6 +105,8 @@ class ArtifactEnvironment:
                 or not set(fixture.candidates) <= set(keys)
                 or fixture.target not in fixture.candidates):
             raise ValueError("Invalid fixture manifest")
+        if fixture.candidates != tuple(sorted(fixture.candidates)):
+            raise ValueError("Fixture candidates must be in lexicographic order")
         if any(r.revision != 1 or not r.token for r in fixture.receipts):
             raise ValueError("Initial receipts must have revision one and a nonempty token")
         if bool(fixture.revision) != config.revise:

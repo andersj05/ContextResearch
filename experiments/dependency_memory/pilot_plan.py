@@ -12,8 +12,9 @@ import json
 from pathlib import Path
 import random
 
-from recovery_frontier import reference_plan
-from run_recovery_frontier import scenarios
+from artifact_workflow import run_episode
+from recovery_frontier import executable_policy, reference_plan
+from run_recovery_frontier import route_fixtures, scenarios
 
 
 SCENARIOS = (
@@ -75,6 +76,34 @@ natural-language fixtures. The committed manifest pins the sampled indices.
     ]
 
 
+def sampled_reference(assignments):
+    """Realized costs of fixed population-reference policies on reserved routes.
+
+    Compile each policy without the sampled targets. Do not optimize retention
+    for these few selected routes or call their average a population optimum.
+    """
+    rows = []
+    configs = scenarios()
+    for split in FAMILIES:
+        routes = [a["route_index"] for a in assignments if a["split"] == split]
+        for name in SCENARIOS:
+            config = configs[name]
+            fixtures = tuple(route_fixtures(config))
+            row = {"split": split, "scenario": name, "route_indices": routes,
+                   "fixture_count": len(routes)}
+            for inspect, prefix in ((False, "skip"), (True, "inspect")):
+                policy = executable_policy(config, inspect=inspect, recover=True)
+                episodes = [run_episode(config, fixtures[r], policy) for r in routes]
+                if not all(e.success for e in episodes):
+                    raise AssertionError("Reference recovery did not complete the sampled workflow")
+                row[prefix + "_mean_extra_cost"] = str(Fraction(
+                    sum(e.cost_units - 7 - config.delay for e in episodes), len(episodes)))
+                row[prefix + "_pre_recovery_hit_rate"] = str(Fraction(
+                    sum(not e.recovery_attempted for e in episodes), len(episodes)))
+            rows.append(row)
+    return rows
+
+
 def build_plan():
     cells = calibration()
     assignments = fixture_assignments()
@@ -100,11 +129,15 @@ def build_plan():
                 "decision_id": f"calibration/{name}/{replicate}", "maximum_model_requests": 1}
                for name in SCENARIOS for replicate in range(2)]
     return {
-        "version": "inspection_pilot_design_v0.1", "date": "2026-09-19",
+        "version": "inspection_pilot_design_v0.2", "date": "2026-09-19",
         "status": "offline design and calibration only; model launch not ready",
         "completed_model_requests": 0,
         "information_contract": "docs/LLM_PILOT_SPEC.md",
         "manifest_access": "Evaluator only; never include routes, seeds, answer labels, or this manifest in model messages.",
+        "request_exclusions": ["scenario", "episode_id", "pair_id", "route_index", "seeds",
+                               "reference_labels", "reference_costs", "verifier_truth", "previous_session_state"],
+        "stage_b_interpretation": "With reliable recovery and scripted submission, valid completed episodes succeed even with empty memory. Pre-recovery availability and cost measure retention; terminal success checks execution/schema validity.",
+        "sampling_limitation": "One route per family confounds family and route. Use mandatory same-fixture scripted comparisons; no family-effect or population-generalization claim.",
         "calibration_scope": "Stage A uses scripted optimal retention. Stage B uses learned retention; exact labels are references, not model-specific rationality labels.",
         "seeds": SEEDS,
         "model_launch_fields": {
@@ -122,11 +155,12 @@ def build_plan():
             "Author and validate all five renderer families before test prompt freeze.",
             "Implement evaluator isolation and an allowlisted stateless request serializer.",
             "Verify no old response/session IDs, opaque state, archives, logs, seeds, or hidden routes enter requests.",
-            "Pass the offline answer-visible verifier and stale/wrong receipt controls.",
+            "Pass offline full-memory, answer-visible, forget-all/recovery, and stale/wrong receipt controls.",
             "Freeze immutable fixtures, prompts, model settings, official documentation/prices, and dollar/token caps.",
             "Resolve all model_launch_fields in a reviewed run manifest before any model call.",
         ],
         "calibration": cells, "fixture_assignments": assignments,
+        "sampled_scripted_reference": sampled_reference(assignments),
         "stage_a_decisions": stage_a, "stage_b_episodes": episodes,
         "stage_b_execution_order": execution_order,
         "counts": {
@@ -166,6 +200,16 @@ def report(plan):
         f"The maximum planned total is {counts['total_maximum_model_requests']} requests, with no automatic retries. Exact model revision, settings, token caps, official price snapshot, dollar budget, renderer/prompt hashes, and isolation audit remain open. A request ceiling alone is not spending authorization.", "",
         "## Interpretation", "",
         "Under perfect scripted retention, costly recovery and costly recovery with the scheduled revision favor inspection. Cheap recovery, cheaper recovery with that revision, ample parent memory, and the small child capacity favor skipping it. In Stage B an imperfect model may face different effective hit rates; reference disagreement alone is not proof of an irrational inspection decision.", "",
+        "## Same-fixture reference for the reserved held-out sample", "",
+        "These are realized averages on four selected routes, using policies fixed from the full public distribution. They are not new optimality labels or estimates with useful sampling precision. One route per family also prevents separating family effects from route effects.", "",
+        "| Regime | Sampled extra cost: skip / inspect |", "|---|---|",
+    ]
+    for row in plan["sampled_scripted_reference"]:
+        if row["split"] == "heldout":
+            lines.append(f"| {row['scenario']} | {row['skip_mean_extra_cost']} / {row['inspect_mean_extra_cost']} |")
+    lines += [
+        "", "In this small sample, costly_recovery and revision_cheap_recovery are ties (one unit either way), although their full-distribution expectations favor different decisions. Do not interpret disagreement with the population comparison as a measured model effect. The same-fixture scripted comparison is mandatory for Stage B.", "",
+        "Reliable recovery and scripted submission let even a forget-all policy complete every valid episode. Pre-recovery availability and total cost are the retention signals; terminal success is mainly an interface/execution check in this design. The offline forget-all control is checked across all six regimes and all 30 routes. Scenario names and evaluator pair/episode identifiers must be excluded from model requests because they can suggest the intended decision.", "",
         "[Machine-readable plan](pilot_plan.json) includes evaluator-only route indices, reserved seeds, pair identifiers, execution order, unresolved launch fields, and source hashes. It must never be serialized wholesale into a model request. All counts are planned; the existing recovery report remains the completed scripted evidence.", "",
     ]
     return "\n".join(lines)

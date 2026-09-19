@@ -267,12 +267,30 @@ def grade_witness(cells: tuple[int, ...], source_bits: int = 4) -> dict:
 
 def certificate(result: dict, source_bits: int = 4, parent_states: int = 4) -> dict:
     validate_parameters(source_bits, parent_states)
-    expected = stirling_second_kind(1 << source_bits, parent_states)
-    if result["partitions"] != expected or sum(result["gain_histogram"].values()) != expected:
-        raise ValueError("incomplete partition enumeration")
-    if result["best_gain"] != max(result["gain_histogram"]):
-        raise ValueError("best score disagrees with histogram")
     baseline = (1 << (source_bits - 1)) * source_bits * (source_bits - 1)
+    histogram = result["gain_histogram"]
+
+    def integer_in_range(value, lower, upper):
+        return type(value) is int and lower <= value <= upper
+
+    expected = stirling_second_kind(1 << source_bits, parent_states)
+    if not integer_in_range(result["partitions"], 1, expected):
+        raise ValueError("partition count must be a positive integer within the search domain")
+    if (not isinstance(histogram, dict) or not histogram
+            or any(not integer_in_range(gain, 0, baseline)
+                   or not integer_in_range(count, 1, expected)
+                   for gain, count in histogram.items())):
+        raise ValueError("gain histogram must have integer scores and positive integer counts")
+    if not integer_in_range(result["best_gain"], 0, baseline):
+        raise ValueError("best score must be an integer within the gain domain")
+    if result["partitions"] != expected or sum(histogram.values()) != expected:
+        raise ValueError("incomplete partition enumeration")
+    if result["best_gain"] != max(histogram):
+        raise ValueError("best score disagrees with histogram")
+    # Both backends enumerate exactly this many nonempty cells, including when
+    # a smaller partition could attain the same loss after refinement.
+    if len(result["witness_masks"]) != parent_states:
+        raise ValueError("witness must match the declared parent-state capacity")
     witness = grade_witness(result["witness_masks"], source_bits)
     if witness["errors"] != baseline - result["best_gain"]:
         raise ValueError("independent witness grading disagrees with search objective")

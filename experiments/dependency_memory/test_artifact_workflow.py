@@ -193,6 +193,17 @@ class ArtifactWorkflowTests(unittest.TestCase):
             with self.subTest(change=change), self.assertRaises(ValueError):
                 Config(**change)
 
+    def test_unsorted_candidates_cannot_change_public_revision_rule(self):
+        for revise in (False, True):
+            config, fixture = instance(revise=revise)
+            candidates = tuple(reversed(fixture.candidates))
+            # This revision matches the first listed candidate, so the former
+            # revision check alone accepted a different refresh schedule.
+            revision = Receipt(candidates[0], 2, "revised-last") if revise else None
+            reordered = replace(fixture, candidates=candidates, revision=revision)
+            with self.subTest(revise=revise), self.assertRaisesRegex(ValueError, "lexicographic order"):
+                ArtifactEnvironment(config, reordered)
+
 
 if __name__ == "__main__":
     unittest.main()

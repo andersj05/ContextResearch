@@ -1,3 +1,4 @@
+import copy
 import itertools
 import unittest
 from collections import Counter
@@ -72,7 +73,44 @@ class ExactChainTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             grade_witness((255, 255))
         with self.assertRaises(ValueError):
-            certificate({"partitions": 1, "gain_histogram": {42: 1}}, 4, 4)
+            certificate({"partitions": 1, "best_gain": 42,
+                         "gain_histogram": {42: 1}}, 4, 4)
+
+    def test_certificate_rejects_witness_exceeding_declared_capacity(self):
+        # Four singleton states remember two source bits perfectly, but the
+        # claimed one-state encoder cannot distinguish any source values.
+        # Count, histogram, and outcome grading alone previously accepted this.
+        invalid = {"partitions": 1, "best_gain": 4, "gain_histogram": {4: 1},
+                   "witness_masks": (1, 2, 4, 8)}
+        self.assertEqual(grade_witness(invalid["witness_masks"], 2)["errors"], 0)
+        with self.assertRaisesRegex(ValueError, "parent-state capacity"):
+            certificate(invalid, source_bits=2, parent_states=1)
+
+    def test_certificate_rejects_invalid_count_and_score_domains(self):
+        valid = search_python(source_bits=2, parent_states=2)
+        invalid_fields = [
+            {"partitions": 7.0},
+            {"partitions": True},
+            {"partitions": -1},
+            {"best_gain": 2.0},
+            {"best_gain": -1},
+            {"best_gain": 5},
+            {"best_gain": 0},
+            {"gain_histogram": {}},
+            {"gain_histogram": {0: 1.0, 2: 6}},
+            {"gain_histogram": {0: True, 2: 6}},
+            {"gain_histogram": {0: -1, 2: 8}},
+            {"gain_histogram": {0: 1, 1: 0, 2: 6}},
+            {"gain_histogram": {-1: 1, 2: 6}},
+            {"gain_histogram": {0: 1, 2.0: 6}},
+            {"gain_histogram": {0: 1, 5: 6}},
+        ]
+        for fields in invalid_fields:
+            with self.subTest(fields=fields):
+                invalid = copy.deepcopy(valid)
+                invalid.update(fields)
+                with self.assertRaises(ValueError):
+                    certificate(invalid, source_bits=2, parent_states=2)
 
 
 if __name__ == "__main__":

@@ -27,4 +27,21 @@ The maximum planned total is 432 requests, with no automatic retries. Exact mode
 
 Under perfect scripted retention, costly recovery and costly recovery with the scheduled revision favor inspection. Cheap recovery, cheaper recovery with that revision, ample parent memory, and the small child capacity favor skipping it. In Stage B an imperfect model may face different effective hit rates; reference disagreement alone is not proof of an irrational inspection decision.
 
+## Same-fixture reference for the reserved held-out sample
+
+These are realized averages on four selected routes, using policies fixed from the full public distribution. They are not new optimality labels or estimates with useful sampling precision. One route per family also prevents separating family effects from route effects.
+
+| Regime | Sampled extra cost: skip / inspect |
+|---|---|
+| cheap_recovery | 1/4 / 1 |
+| costly_recovery | 1 / 1 |
+| revision_cheap_recovery | 1 / 1 |
+| revision_costly_recovery | 2 / 1 |
+| ample_parent | 0 / 1 |
+| small_child | 1 / 4 |
+
+In this small sample, costly_recovery and revision_cheap_recovery are ties (one unit either way), although their full-distribution expectations favor different decisions. Do not interpret disagreement with the population comparison as a measured model effect. The same-fixture scripted comparison is mandatory for Stage B.
+
+Reliable recovery and scripted submission let even a forget-all policy complete every valid episode. Pre-recovery availability and total cost are the retention signals; terminal success is mainly an interface/execution check in this design. The offline forget-all control is checked across all six regimes and all 30 routes. Scenario names and evaluator pair/episode identifiers must be excluded from model requests because they can suggest the intended decision.
+
 [Machine-readable plan](pilot_plan.json) includes evaluator-only route indices, reserved seeds, pair identifiers, execution order, unresolved launch fields, and source hashes. It must never be serialized wholesale into a model request. All counts are planned; the existing recovery report remains the completed scripted evidence.

@@ -4,7 +4,7 @@
   "scope": "Exact uniform-route expectations in the declared atomic-record policy class; no LLM trials.",
   "cost_scope": "Expected incremental synthetic action units above 7+delay; not a hard-budget frontier or API dollars.",
   "source_sha256": {
-    "artifact_workflow.py": "9f4c8bf801d03cc07e798346c50d88f4ce8ba1a6cc6f33c3ded1d9ed08b454eb",
+    "artifact_workflow.py": "27a9791f7f15e430724f00aa8aeff71d0203cee1a51e5295159cbc17eb9b7554",
     "recovery_frontier.py": "207a6ec63bd1a010f8fb4b7b084549dd6aaf63763aa0cbb7073b32f9cb8583ca",
     "run_recovery_frontier.py": "a2279126a9f047e6f2aa6900ea04a113c1361d1374c90cc3dfc4f033108e3e24"
   },

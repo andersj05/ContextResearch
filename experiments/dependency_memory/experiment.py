@@ -215,12 +215,8 @@ def write_csv(path: Path, rows: list[dict]) -> None:
         writer.writerows(rows)
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=Path(__file__).parent / "results")
-    args = parser.parse_args()
-    args.output.mkdir(parents=True, exist_ok=True)
-
+def diagnostics() -> tuple[list[dict], list[dict], list[dict], list[dict], dict]:
+    """Recompute every result in memory for read-only artifact validation."""
     frontier = []
     for n in range(1, 5):
         for budget in range(n + 1):
@@ -234,8 +230,6 @@ def main() -> None:
                 "codebook": " ".join(format(x, f"0{n}b") for x in code),
                 "codebooks_evaluated": evaluated,
             })
-    write_csv(args.output / "exact_frontier.csv", frontier)
-
     # Four original bits. Public clue selects one equal-size block independent
     # of the values. The final query is uniform in that block. Moving only the
     # clue across the first bottleneck changes what the encoder can exploit.
@@ -252,8 +246,6 @@ def main() -> None:
                 "clue_after_bottleneck_error": late,
                 "timing_gap": late - early,
             })
-    write_csv(args.output / "disclosure_timing.csv", disclosure)
-
     workflows = []
     for seed, width, batches, checkpoints in itertools.product(
         range(5), (2, 4, 8), (4, 16, 64), (0, 1, 5)
@@ -263,10 +255,7 @@ def main() -> None:
             for release in (False, True):
                 row = run_workflow(events, capacity, release)
                 workflows.append({"seed": seed, "width": width, "batches": batches, **row})
-    write_csv(args.output / "workflow_retention.csv", workflows)
-    with (args.output / "example_events.json").open("w", encoding="utf-8") as handle:
-        json.dump([asdict(x) for x in make_workflow(0, 2, 3)], handle, indent=2)
-
+    example_events = [asdict(x) for x in make_workflow(0, 2, 3)]
     fit = [r for r in workflows if r["capacity_records"] >= r["width"]]
     summary = {
         "scope": "Exact toy channels and deterministic record policies; no LLM results.",
@@ -282,7 +271,21 @@ def main() -> None:
         "exact_unknown_query_4_bits_1_bit_memory_error": exact_codebook(4, 1)[0],
         "exact_known_query_1_bit_memory_error": 0.0,
     }
-    (args.output / "summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
+    return frontier, disclosure, workflows, example_events, summary
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", type=Path, default=Path(__file__).parent / "results")
+    args = parser.parse_args()
+    args.output.mkdir(parents=True, exist_ok=True)
+    frontier, disclosure, workflows, example_events, summary = diagnostics()
+    for name, result in (("exact_frontier.csv", frontier), ("disclosure_timing.csv", disclosure),
+                         ("workflow_retention.csv", workflows)):
+        write_csv(args.output / name, result)
+    # Preserve the established CRLF serialization of these original artifacts.
+    (args.output / "example_events.json").write_text(json.dumps(example_events, indent=2), encoding="utf-8", newline="\r\n")
+    (args.output / "summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8", newline="\r\n")
     print(json.dumps(summary, indent=2))
 
 

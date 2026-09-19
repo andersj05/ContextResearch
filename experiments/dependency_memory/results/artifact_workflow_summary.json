@@ -1,7 +1,7 @@
 {
   "environment_version": "artifact_manifest_v2",
   "source_sha256": {
-    "artifact_workflow.py": "9f4c8bf801d03cc07e798346c50d88f4ce8ba1a6cc6f33c3ded1d9ed08b454eb",
+    "artifact_workflow.py": "27a9791f7f15e430724f00aa8aeff71d0203cee1a51e5295159cbc17eb9b7554",
     "run_artifact_workflow.py": "b343cf578d577df78080778f82fdb2d4fd95bee43b6757404547a545ea0cf81b"
   },
   "scope": "Constructed development diagnostics using stateless scripted policies; no LLM trials or significance claim.",
