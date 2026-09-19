@@ -8,9 +8,9 @@ This outline is a writing plan, not a list of achieved contributions.
 | Introduction | Context length alone does not describe the information an agent must retain. Future obligations and available recovery matter. | C01–C02, C07–C09 | Choose one concrete motivating task and delimit claims about deployed systems. |
 | Related work | Relate the problem to prompt rate–distortion, random access, successive refinement, causal coding, and agent memory. | Bibliography; related-work map | Complete functional-compression comparison and novelty audit. |
 | Model | Specify X, S, J, E, U, D, budgets, public information, and no-reread rule. | C02, C11–C12 | Local audit complete; external review outstanding. |
-| Finite obstruction | Prove the child-optimal decoder characterization, joint-signature lower bound, and three-bit witness. | C03–C05 | Independent mathematical review; optionally compute exact two-bit chain distortion. |
+| Finite obstruction | Prove the child-optimal decoder characterization, joint-signature lower bound, three-bit witness, and computed exact 9/32 chain optimum. | C03–C05, C21 | External mathematical review and priority assessment. |
 | Structural result | Exact 3k-bit threshold and a uniform gap for a restricted block family. | C11–C13, C16 | External review, novelty, and possible tightening. |
-| Experimental design | Separate representation, natural-language updating, and autonomous task completion. | Protocol | Implement adapters, declare hidden-state treatment, and freeze tasks. |
+| Experimental design | Separate inspection calibration, inferred-dependency record selection, and later autonomous task completion. | Protocol; C22 | Implement renderers/isolation; resolve provider and spending fields before launch. |
 | Results | Separate scripted timing diagnostics from exact restricted recovery expectations. | C06, C14–C15, C17–C20 | Freeze model pilot before adding empirical performance claims. |
 | Discussion | Native continuity, caching, recovery, complementarity, and limits of the abstraction. | C07–C09 | Relate any observed effect back to the formal mechanism. |
 | Reproducibility | Code, fixed instances, exact certificates, complete usage, and artifact provenance. | Prototype and migration manifest | Add model-run manifests only when runs exist. |

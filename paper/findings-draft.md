@@ -1,6 +1,6 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.1 — September 18, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.2 — September 19, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
 
 ## The question
 
@@ -10,7 +10,9 @@ We study when those choices are useful. The working hypothesis is that context m
 
 ## What we have found
 
-**1. Individually adequate memory budgets can become incompatible when used in sequence.** In our four-bit example, two initial bits achieve 3/16 error for the isolated first task, and one later bit suffices for 25% error when its encoder sees the original source. But a two-bit memory compressed again to one bit cannot attain that 25% target after relevance is disclosed. Three initial bits can. The exact optimum with two initial bits remains unknown. This is a checked finite result, not a new general claim about compression. [C03–C05; proof and audit](../research/PROOF_AUDIT_2026-09-18.md)
+**1. Individually adequate memory budgets can become incompatible when used in sequence—and we now know the exact penalty in the small example.** Two initial bits achieve 3/16 error for the isolated first task, and one later bit suffices for 25% error when its encoder sees the original source. With delayed relevance and a two-bit memory compressed again to one bit, the best error is **9/32 = 28.125%**. That is a 3.125 percentage-point penalty relative to the later task's isolated optimum. Three initial bits recover the 25% target. [C03–C05, C21; exact result](../research/EXACT_CHAIN_OPTIMUM_2026-09-19.md)
+
+The September 19 computation examines all 171,798,901 partitions of the 16 possible source strings into four nonempty parent states. An independent decoder check grades a winning representation on all 192 outcomes. This closes the exact-optimum question for this finite example; it does not establish a new general compression theorem or an LLM effect.
 
 **2. The obstruction survives a particular scaling construction.** For k independent four-bit blocks with the specified late block/subset reveal, exactly 3k initial bits are needed to attain error 1/4. With 2k initial bits, error is strictly greater than 1/4 + 1/512, even with joint encoding across blocks. A local audit added an analytic entropy proof and independent finite checks. External review and novelty assessment remain open. These are information bits, not receipt slots or model tokens. [C11–C12; derivation](../research/CREATIVE_RESEARCH_DIRECTIONS_2026-09-18.md)
 
@@ -43,10 +45,12 @@ This is elementary cost accounting within our declared model. Its value is as a 
 
 Successive refinement, functional compression, and costed side information already provide relevant theory. Recent compaction work also discusses query timing and recovery. The [literature comparison](../research/LITERATURE_POSITIONING_2026-09-18.md) therefore supports a narrow direction: a restricted compatibility result, plus a reproducible experiment that identifies when an action before compaction changes later task success and total cost. Broad novelty claims would be premature.
 
-The current evidence comprises checked mathematics, 50 offline tests, 2,640 complete-route scripted episodes, and a 3,000-configuration exact reference grid. The earlier 320-case workflow and 810-case retention diagnostics remain separate constructed examples. None of these counts represents independent LLM trials. Archive storage, model tokens, provider state, latency, and API dollars have not been evaluated by the recovery model.
+The current evidence comprises checked mathematics, 60 offline tests, the exhaustive finite-chain computation, 2,640 complete-route scripted episodes, and a 3,000-configuration exact reference grid. The earlier 320-case workflow and 810-case retention diagnostics remain separate constructed examples. None of these counts represents independent LLM trials. Archive storage, model tokens, provider state, latency, and API dollars have not been evaluated by the recovery model.
 
 ## Next update
 
-The next empirical milestone is a frozen pilot specification: dependencies inferred from task evidence, a declared refresh process, isolated evaluator state, recovery access matched across methods, and complete cost accounting. Then test whether a model can choose inspection when it pays and decline it when recovery is cheaper. Model revision and spending must be specified before running that pilot. External review of the mathematical argument remains a separate task.
+The [pilot design and offline schedule](../docs/LLM_PILOT_SPEC.md) are now specified. Stage A asks whether a model chooses inspection when it pays, with optimal retention supplied by code. Stage B adds model retention and dependencies inferred from task evidence. Separating these questions matters: a model that retains poorly may have different inspection costs than the ideal reference. The design reserves six favorable, null, and adverse regimes, with 12 decision requests and 180 paired episodes; these are planned counts, with no model runs completed. [C22]
+
+The next practical step is to implement the reserved task renderers and isolated request serializer, then validate them with a fake client. Model revision, actual spending, and provider-state rules remain launch gates. A [focused evaluation review](../research/PILOT_EVALUATION_REVIEW_2026-09-19.md) adds whole-episode and information-sufficient controls. External mathematical review and novelty assessment remain separate work. The single-block exact gap does not strengthen the proved all-k bound automatically.
 
 For each update, revise the result paragraphs and the claim register together, link the supporting artifact, and retain null or negative findings. Keep proposed work visibly separate from completed evidence.

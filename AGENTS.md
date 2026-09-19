@@ -10,7 +10,7 @@ This repository studies repeated context compression with gradually revealed dep
 
 - Distinguish published results, elementary deductions, checked finite examples, hypotheses, and unperformed experiments.
 - Do not claim novelty for rate–distortion, INDEX, successive refinement, dependency graphs, subtask summaries, or the existing dictionary baseline without a literature comparison.
-- The two-bit-then-one-bit example has a proved lower bound, **not a computed exact chain optimum**. Three first-stage bits attain the child-optimal 25% error in the stated four-bit example.
+- The September 18 two-bit-then-one-bit certificate gives only a conservative lower bound. The separate September 19 exhaustive computation establishes exact error **9/32** in the stated four-bit example; see `research/EXACT_CHAIN_OPTIMUM_2026-09-19.md`. Three first-stage bits attain the child-optimal 25% error. Do not extrapolate the one-block 1/32 excess to arbitrary jointly encoded blocks.
 - The 810 record-policy configurations are constructed diagnostics, not independent LLM trials. No improvement over a deployed harness has been measured here.
 - Preserve timing assumptions, decoder access to public side information, and the distinction between bits, record slots, bytes, tokens, and dollars.
 - Opaque reasoning state, provider session history, archives, and environment files are information channels. Declare them in an experiment; do not leave hidden access available in a supposedly irreversible-memory condition.

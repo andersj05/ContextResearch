@@ -172,6 +172,21 @@ def main() -> int:
         errors.append("Pilot calibration report is stale; regenerate it")
     counts["planned_pilot_request_ceiling"] = expected_plan["counts"]["total_maximum_model_requests"]
     counts["completed_pilot_model_requests"] = expected_plan["completed_model_requests"]
+    import exact_chain
+    chain_path = ROOT / "experiments/dependency_memory/results/exact_chain_certificate.json"
+    chain = json.loads(chain_path.read_text(encoding="utf-8"))
+    if chain.get("native_source_sha256") != hashlib.sha256(exact_chain.NATIVE_SOURCE.encode()).hexdigest():
+        errors.append("Exact-chain native source changed; rerun the exhaustive search")
+    raw_chain = {"partitions": chain["partitions"], "best_gain": chain["best_gain"],
+                 "gain_histogram": {int(k): v for k, v in chain["gain_histogram"].items()},
+                 "witness_masks": tuple(chain["witness"]["parent_masks"])}
+    checked_chain = json.loads(json.dumps(exact_chain.certificate(raw_chain)))
+    if any(chain.get(key) != value for key, value in checked_chain.items()):
+        errors.append("Exact-chain certificate disagrees with count/objective/witness checks")
+    # The normal offline check grades all witness outcomes and checks the search
+    # digest/count. It does NOT rerun 171 million partitions or require a compiler.
+    counts["exact_chain_partitions_recorded"] = chain["partitions"]
+    counts["exact_chain_witness_outcomes_checked"] = checked_chain["outcomes"]
     workflow = rows("experiments/dependency_memory/results/workflow_retention.csv")
     summary = json.loads((ROOT / "experiments/dependency_memory/results/summary.json").read_text(encoding="utf-8"))
     if len(workflow) != summary["workflow_runs"]:

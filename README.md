@@ -4,7 +4,7 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
-The repository contains a checked finite example, a locally audited scaling derivation with a uniform error gap, and a deterministic artifact/manifest environment with an exact restricted recovery reference. Start with the [living findings draft](paper/findings-draft.md) for a short account of the results and next research step. External proof review and novelty assessment remain open. The project does **not** yet establish an LLM performance improvement or savings over native Codex or Claude compaction.
+The repository contains an exact finite-chain computation (9/32 error versus a 1/4 isolated-child optimum), a locally audited scaling derivation with a uniform error gap, and a deterministic artifact/manifest environment with an exact restricted recovery reference. Start with the [living findings draft](paper/findings-draft.md) for a short account of the results and next research step. External proof review and novelty assessment remain open. The project does **not** yet establish an LLM performance improvement or savings over native Codex or Claude compaction.
 
 ## Start here
 
@@ -15,6 +15,8 @@ The repository contains a checked finite example, a locally audited scaling deri
 5. [Experiment protocol](docs/EXPERIMENT_PROTOCOL.md) — information access, native reasoning state, cache costs, and controls.
 6. [Proof audit](research/PROOF_AUDIT_2026-09-18.md) and [deterministic environment results](experiments/dependency_memory/results/artifact_workflow_report.md) — the latest completed work.
 7. [Recovery comparison](experiments/dependency_memory/results/recovery_frontier_report.md) and [literature positioning](research/LITERATURE_POSITIONING_2026-09-18.md) — when early inspection is worth its cost, and what remains unresolved.
+8. [Exact finite-chain optimum](research/EXACT_CHAIN_OPTIMUM_2026-09-19.md) — exhaustive search and a simple attaining construction.
+9. [Pilot specification](docs/LLM_PILOT_SPEC.md) — staged decision/retention evaluation, offline schedule, and unresolved launch fields.
 
 Agents should first read [AGENTS.md](AGENTS.md). Historical notes are evidence and background; they do not override the current direction in `docs/STATUS.md`.
 
@@ -45,14 +47,17 @@ python experiments/dependency_memory/compatibility_scaling.py
 python experiments/dependency_memory/audit_scaling.py
 python experiments/dependency_memory/run_artifact_workflow.py
 python experiments/dependency_memory/run_recovery_frontier.py
+python experiments/dependency_memory/pilot_plan.py
 python scripts/validate_context_repo.py
 python scripts/build_paper.py
 ```
 
 The experiment scripts regenerate their committed diagnostic results. The paper builder writes an assembled Markdown draft and a self-contained HTML preview under ignored `build/paper/`. The validator is read-only. See [the workflow](docs/RESEARCH_WORKFLOW.md) for details.
 
+To rerun the full 171,798,901-partition search efficiently, use an installed C99 compiler: `python experiments/dependency_memory/exact_chain.py --compiler clang --output experiments/dependency_memory/results/exact_chain_certificate.json`. The recorded run used Clang 19.1.0. The standard test/validation workflow needs no compiler and checks the search source hash, count, and complete witness rather than rerunning the full search. The script also supplies a slower standard-library Python backend.
+
 ## Evidence and provenance
 
-The active compaction investigation is dated September 16–18, 2026. The broader inherited literature snapshot is dated September 4, 2026; its review labels have not been upgraded by moving the files. Read the [migration record](provenance/README.md) and [historical corpus overview](HARNESS_CORPUS_README.md) for provenance and scope.
+The active compaction investigation is dated September 16–19, 2026. The broader inherited literature snapshot is dated September 4, 2026; its review labels have not been upgraded by moving the files. Read the [migration record](provenance/README.md) and [historical corpus overview](HARNESS_CORPUS_README.md) for provenance and scope.
 
-This repository preserves the existing `ContextResearch` Git history. The imported `HarnessResearch` folder remains available as a migration backup. Continue this paper here to avoid divergent working copies. Historical setup commits are on `codex/context-research-setup`; current work uses `task/` branches per the user's preference. The audit and initial environment are on `task/proof-audit-environment`; the recovery comparison and living draft continue on `task/recovery-frontier-draft`. No remote publication was requested.
+This repository preserves the existing `ContextResearch` Git history. The imported `HarnessResearch` folder remains available as a migration backup. Continue this paper here to avoid divergent working copies. Historical setup commits are on `codex/context-research-setup`; current work uses `task/` branches per the user's preference. The audit and initial environment are on `task/proof-audit-environment`; recovery and the first living draft are on `task/recovery-frontier-draft`; the exact finite optimum and staged pilot continue on `task/pilot-calibration-exact-chain`. No remote publication was requested.
