@@ -17,8 +17,11 @@
 | Inspection, retention, and late recovery | [Exact recovery reference](../experiments/dependency_memory/RECOVERY_FRONTIER.md) | Exact finite expectations and executable checks within a restricted record-selection class |
 | Contribution relative to prior work | [Focused literature comparison](../research/LITERATURE_POSITIONING_2026-09-18.md) | Reviewed definitions and theorem statements; no priority certification |
 | Pilot evaluation controls | [September 19 source review](../research/PILOT_EVALUATION_REVIEW_2026-09-19.md) | Version-pinned readings; no source replication or model result |
-| Next model study | [Pilot design](LLM_PILOT_SPEC.md) | Executable offline schedule/calibration; renderers, adapter, model revision, and spending unresolved |
+| Next model study | [Pilot design](LLM_PILOT_SPEC.md) | Offline schedule/calibration and development fake-client implementation; provider launch remains gated |
 | Correctness review and next gates | [September 19 audit](../research/CORRECTNESS_AUDIT_2026-09-19.md) | Local math/source/design review, two validation fixes, full search rerun; no external certification |
+| Implemented development pilot | [Setup and offline results](DEVELOPMENT_PILOT.md) | Fake-client controls complete; zero model calls; 96-request live tranche still gated |
+| Requested subscription transport | [Codex/Luna review](../research/CODEX_SUBSCRIPTION_TRANSPORT_2026-09-19.md) | Existing sign-in verified; isolation and accounting unresolved |
+| External correctness and novelty questions | [Review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) | Prepared with primary-source comparisons; external review pending |
 | Findings in plain language | [Living findings draft](../paper/findings-draft.md) | Versioned short account linked to the claim register |
 | Current writing | [Paper workspace](../paper/README.md) | Draft; incomplete results clearly marked |
 

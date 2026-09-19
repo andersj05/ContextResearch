@@ -46,6 +46,17 @@ The [September 19 evaluation review](../research/PILOT_EVALUATION_REVIEW_2026-09
 
 These readings inform proposed controls, not a completed model experiment. The note distinguishes source observations from our proposed probe-isolation and cost-accounting rules. No inherited review labels were upgraded.
 
+## Further mathematical review
+
+The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) adds two mathematical readings on September 19, 2026:
+
+| Source | Read scope | Open comparison |
+|---|---|---|
+| [Functional Compression through Graph Coloring](https://www.mit.edu/~medard/2010papers/funccomp.pdf) | Hosted manuscript II-A/B and II-C/III-A through Theorem 13; no proof audit or journal-version comparison | Relate asymptotic graph coloring to the hard-cardinality, nested-message restriction. |
+| [Causal successive refinement, v2](https://arxiv.org/pdf/1901.01356v2) | II-A/B Definitions 1–2, Theorem 1; III-B Theorems 3–4; no proof audit | Account for source-aware encoders and later decoders retaining earlier messages. |
+
+The packet gives exact theorem-transfer questions rather than novelty certification. No external review has yet occurred.
+
 ## Harness implementation
 
 Read [the survey](../research/CONTEXT_MANAGEMENT_SURVEY_2026-09-16.md) alongside [the pinned snapshots](harness-snapshots/2026-09-16/README.md). Distinguish output truncation, observation masking, summaries, native opaque state, archives, and KV policies. Client source cannot reveal a remote service's private compactor or training objective.
@@ -53,6 +64,8 @@ Read [the survey](../research/CONTEXT_MANAGEMENT_SURVEY_2026-09-16.md) alongside
 ## Provider contracts
 
 The September 18 review checked [OpenAI compaction](https://developers.openai.com/api/docs/guides/compaction), [OpenAI caching](https://developers.openai.com/api/docs/guides/prompt-caching), [Anthropic preserved thinking](https://platform.claude.com/docs/en/build-with-claude/preserved-thinking), and [Anthropic context editing](https://platform.claude.com/docs/en/build-with-claude/context-editing). These are living documents; the [protocol](../docs/EXPERIMENT_PROTOCOL.md) records their implications, not a permanent guarantee about all models.
+
+The [September 19 subscription transport review](../research/CODEX_SUBSCRIPTION_TRANSPORT_2026-09-19.md) checks official Codex authentication, model selection, non-interactive execution, configuration, and pricing documentation against the installed CLI. Existing ChatGPT sign-in is verified, while complete request isolation, underlying retry bounds, and conservative subscription charges remain unresolved. These are dated client observations, not claims about inaccessible server internals.
 
 ## Before citing historical compaction data
 

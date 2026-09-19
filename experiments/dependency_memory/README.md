@@ -66,4 +66,6 @@ Tests cross-check codebook enumeration against independent enumeration of binary
 
 ## What remains to build
 
+The [development implementation](../../docs/DEVELOPMENT_PILOT.md) now supplies the direct-artifact template, strict public requests, a 96-request fake-client runner, and a reproducible [three-control audit](results/development_pilot_audit.json). `codex_subscription.py` verifies supported subscription setup and reports unresolved isolation/accounting gates; it cannot dispatch model requests. Existing ChatGPT sign-in was verified, but no Luna experiment has run. See the setup document for commands and the remaining provider work.
+
 The environment now supports closed-loop scripted policies; no LLM evaluation has been performed. Next work is external review and novelty comparison of the scaling derivation, tighter bounds where useful, a natural-language adapter with evaluator isolation and explicit token accounting, and held-out task templates. Keep raw transcripts outside the compiler's accessible inputs when testing irreversible memory; enabling retrieval requires a separately declared and metered condition. Automatic witness minimization and native-provider baselines remain unimplemented.

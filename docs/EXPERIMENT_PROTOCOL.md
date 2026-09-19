@@ -8,6 +8,8 @@ The correctness audit refines the pilot to v0.2: with reliable scripted recovery
 
 ## Questions and stages
 
+September 19 implementation update: the [development pilot](DEVELOPMENT_PILOT.md) now implements one template, allowlisted requests, fake-client controls, and the 96-request development ceiling. Existing Codex subscription sign-in is verified and GPT-5.6-Luna is selected provisionally. Provider context isolation, internal retries, and subscription charge bounds still prevent live dispatch. The reserved held-out families remain unfinished. This update supplies no model result and does not relax the launch contract.
+
 1. **Finite representation:** characterize the extra loss or parent-memory cost imposed by successive irreversible bottlenecks with delayed side information.
 2. **Natural-language updates:** compare prose, structured state, and explicit unresolved-dependency retention on matched event streams.
 3. **Agent behavior:** measure delayed task completion and full cost in a state-changing tool environment, against the harness's supported native policy.

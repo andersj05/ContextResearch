@@ -1,6 +1,6 @@
 # Pilot specification: choosing inspection before compaction
 
-September 19, 2026. Design candidate v0.2; **offline scheduling and calibration only**. No model adapter, natural-language fixture renderer, model result, or approved spending allocation is supplied by this document. The model launch remains gated on the unresolved fields below. Version 0.2 records the correctness audit's interpretation and input-validation fixes; it leaves the reserved routes and 432-request ceiling unchanged. The governing [experiment protocol](EXPERIMENT_PROTOCOL.md) and [atomic-record environment contract](../experiments/dependency_memory/ARTIFACT_WORKFLOW.md) still apply.
+September 19, 2026. Design candidate v0.2, with the [development implementation v0.3](DEVELOPMENT_PILOT.md). The development renderer, allowlisted requests, fake-client runner, and subscription preflight now exist; **no model experiment has run**. The saved v0.2 schedule remains the historical planning artifact, with unchanged routes and 432-request ceiling. The selected provider is the Codex subscription with GPT-5.6-Luna, but provider isolation, request accounting, and charge bounds remain unresolved. The governing [experiment protocol](EXPERIMENT_PROTOCOL.md) and [atomic-record environment contract](../experiments/dependency_memory/ARTIFACT_WORKFLOW.md) still apply.
 
 ## Question and scope
 
@@ -55,7 +55,7 @@ Each B fixture has two render modes. In `explicit_labels`, the manifest directly
 
 Public task metadata may describe all six jobs and the dependency relationships needed to interpret a clue. It must be generated independently of the chosen candidate pair and target, be equally available in every arm, and be listed as persistent public side information. Only the manifest identifies the applicable dependency request, and it appears early only after paid inspection. Receipt values, the selected manifest, and past observations cannot be hidden in public metadata or a re-presented task instruction. The final target is uniform within the two inferred candidates and is still revealed only after the second boundary.
 
-Reserve these renderer families; their text and executable validation are **not yet implemented**:
+The development family is implemented and validated in both modes; the four held-out families remain reserved and unimplemented:
 
 | Split | Family ID | Required dependency structure |
 |---|---|---|
