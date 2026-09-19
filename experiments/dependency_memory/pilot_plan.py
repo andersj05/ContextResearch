@@ -109,10 +109,14 @@ def build_plan():
         "seeds": SEEDS,
         "model_launch_fields": {
             "provider": None, "model_revision": None, "api_version": None,
+            "client_or_sdk_revision": None, "official_documentation_review": None,
+            "cross_request_state_contract": None, "request_timeout": None,
             "reasoning_and_sampling_settings": None, "provider_sampling_seed_support": None,
             "usd_spending_cap": None, "price_snapshot": None, "per_request_token_caps": None,
             "prompt_artifact_hashes": None, "renderer_and_fixture_hashes": None,
             "adapter_and_isolation_audit": None, "approved_run_manifest_hash": None,
+            "maximum_spend_and_reservation_audit": None,
+            "full_memory_and_answer_visible_control_artifacts": None,
         },
         "launch_gates": [
             "Author and validate all five renderer families before test prompt freeze.",
@@ -173,8 +177,8 @@ def main():
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
     plan = build_plan()
-    (args.output / "pilot_plan.json").write_text(json.dumps(plan, indent=2) + "\n", encoding="utf-8")
-    (args.output / "pilot_calibration_report.md").write_text(report(plan), encoding="utf-8")
+    (args.output / "pilot_plan.json").write_text(json.dumps(plan, indent=2) + "\n", encoding="utf-8", newline="\n")
+    (args.output / "pilot_calibration_report.md").write_text(report(plan), encoding="utf-8", newline="\n")
     print(json.dumps({"status": plan["status"], **plan["counts"]}, indent=2))
 
 

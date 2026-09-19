@@ -17,6 +17,10 @@
     "provider": null,
     "model_revision": null,
     "api_version": null,
+    "client_or_sdk_revision": null,
+    "official_documentation_review": null,
+    "cross_request_state_contract": null,
+    "request_timeout": null,
     "reasoning_and_sampling_settings": null,
     "provider_sampling_seed_support": null,
     "usd_spending_cap": null,
@@ -25,7 +29,9 @@
     "prompt_artifact_hashes": null,
     "renderer_and_fixture_hashes": null,
     "adapter_and_isolation_audit": null,
-    "approved_run_manifest_hash": null
+    "approved_run_manifest_hash": null,
+    "maximum_spend_and_reservation_audit": null,
+    "full_memory_and_answer_visible_control_artifacts": null
   },
   "launch_gates": [
     "Author and validate all five renderer families before test prompt freeze.",
@@ -2479,7 +2485,7 @@
     "diagnostic_calls": "Any additional paid diagnostic requires a versioned cap/manifest amendment."
   },
   "source_sha256": {
-    "pilot_plan.py": "dc7d912a1508967b5b023e260554c7688c81aa8589a984ff0550d3e6ee04ded1",
+    "pilot_plan.py": "b914955b82c0f413107e2e1fcf37335aaaf194accec74b9672514d1eebdf87ce",
     "artifact_workflow.py": "9f4c8bf801d03cc07e798346c50d88f4ce8ba1a6cc6f33c3ded1d9ed08b454eb",
     "recovery_frontier.py": "207a6ec63bd1a010f8fb4b7b084549dd6aaf63763aa0cbb7073b32f9cb8583ca",
     "run_recovery_frontier.py": "a2279126a9f047e6f2aa6900ea04a113c1361d1374c90cc3dfc4f033108e3e24"
