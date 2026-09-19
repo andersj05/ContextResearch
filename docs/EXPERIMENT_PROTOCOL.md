@@ -2,6 +2,8 @@
 
 Status: protocol draft, September 18, 2026. Finite coding diagnostics and a scripted artifact/manifest environment are implemented. LLM and provider-native experiments remain unperformed. This document incorporates the follow-up discussion about blind filtering, reasoning continuity, and prompt-cache economics.
 
+September 19 update: the [pilot specification](LLM_PILOT_SPEC.md) separates inspection-decision calibration with scripted optimal retention from model retention with inferred dependencies. Its [offline schedule and calibration](../experiments/dependency_memory/results/pilot_calibration_report.md) reserve 12 decisions and 180 episodes, with a 432-request ceiling. These are planned counts, not completed trials. Renderers, isolation, model revision, token caps, and spending remain unresolved launch fields. The earlier 36-run sketch below is superseded for this pilot, while the eventual native-harness comparison remains a separate requirement.
+
 ## Questions and stages
 
 1. **Finite representation:** characterize the extra loss or parent-memory cost imposed by successive irreversible bottlenecks with delayed side information.

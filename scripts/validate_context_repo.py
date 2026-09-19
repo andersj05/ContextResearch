@@ -162,6 +162,16 @@ def main() -> int:
         errors.append("Recovery frontier report is stale; regenerate it")
     counts["recovery_executed_episodes"] = len(recovery_rows)
     counts["recovery_exact_configurations"] = len(recovery_grid)
+    import pilot_plan
+    expected_plan = pilot_plan.build_plan()
+    plan_path = ROOT / "experiments/dependency_memory/results/pilot_plan.json"
+    if json.loads(plan_path.read_text(encoding="utf-8")) != expected_plan:
+        errors.append("Offline pilot plan is stale; regenerate it")
+    plan_report = ROOT / "experiments/dependency_memory/results/pilot_calibration_report.md"
+    if plan_report.read_text(encoding="utf-8") != pilot_plan.report(expected_plan):
+        errors.append("Pilot calibration report is stale; regenerate it")
+    counts["planned_pilot_request_ceiling"] = expected_plan["counts"]["total_maximum_model_requests"]
+    counts["completed_pilot_model_requests"] = expected_plan["completed_model_requests"]
     workflow = rows("experiments/dependency_memory/results/workflow_retention.csv")
     summary = json.loads((ROOT / "experiments/dependency_memory/results/summary.json").read_text(encoding="utf-8"))
     if len(workflow) != summary["workflow_runs"]:

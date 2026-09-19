@@ -1,6 +1,6 @@
 # Current research status
 
-Updated: September 18, 2026. This document is the current handoff; older scope documents are historical.
+Updated: September 19, 2026. This document is the current handoff; older scope documents are historical.
 
 ## Objective
 
@@ -23,6 +23,7 @@ Develop a mathematically precise and implementable study of repeated agent compa
 - A focused literature comparison covering source-coding actions, cascade access, functional compression, and a July 2026 compaction survey. The signature proof has an elementary complete-multipartite graph interpretation; a new general graph principle is not claimed. See the [positioning note](../research/LITERATURE_POSITIONING_2026-09-18.md).
 - A metered late-recovery channel and an exact reference over uniform candidate/target routes for atomic-record selection. The [recovery results](../experiments/dependency_memory/results/recovery_frontier_report.md) include 2,640 scripted episodes and 3,000 exact configurations. Cheap recovery can dominate inspection; the public revision rule materially changes the break-even cost. This is a restricted finite reference, not the unknown two-bit chain optimum or an LLM policy optimum.
 - A short [living findings draft](../paper/findings-draft.md) and updated [manuscript](../paper/manuscript.md), with claim IDs and evidence links separating local mathematics, constructed diagnostics, and unperformed model work.
+- A [two-stage pilot design](LLM_PILOT_SPEC.md) with an executable offline schedule and six exact calibration cells. It reserves 12 decision requests and 180 paired workflow episodes (432 requests maximum), with no model calls completed. Model revision, spending, prompts, renderers, and isolation remain launch gates. The [source review](../research/PILOT_EVALUATION_REVIEW_2026-09-19.md) adds interactive evaluation and information-sufficient controls.
 
 ## Not yet established
 
@@ -34,7 +35,7 @@ Develop a mathematically precise and implementable study of repeated agent compa
 
 ## Next bounded tasks
 
-1. Freeze a small LLM pilot specification using both beneficial and dominated inspection regimes. Include inferred dependencies, held-out task templates, an explicit revision schedule, evaluator isolation, matched recovery channels, model revision, and spending. The earlier 36-run sketch is a debugging proposal, not a powered benchmark or a completed run.
+1. Implement the pilot's five reserved renderer families and isolated request serializer with a scripted fake client. Validate the information channels and full-memory/answer-visible controls offline. Then fill the model revision, provider contract, price snapshot, token caps, and spending fields before freezing a launch manifest. The [current pilot](LLM_PILOT_SPEC.md) is an exploratory design, not a powered benchmark or completed model experiment.
 2. Obtain external review of the block-family proof and deepen the novelty comparison with functional compression/direct-sum results. The targeted literature comparison narrows the contribution but does not settle priority.
 3. Build a model adapter only after its information-access and reasoning-state contracts are specified. Automatic witness minimization and native-provider baselines remain unimplemented.
 4. Consider imperfect clues, unreliable recovery, and multiple obligations only as separately specified extensions. The current exact frontier should remain a calibration reference with its assumptions intact.
