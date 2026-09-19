@@ -1,5 +1,7 @@
 # Development pilot implementation and subscription setup
 
+This v0.3 note records the earlier offline milestone. The later [v0.4 Luna launch contract](LUNA_DEVELOPMENT_RUN.md) resolves the client controls through a separately audited adapter and explicitly declared fixed background. See [current status](STATUS.md) for live outcomes; the historical statements below describe the original preflight.
+
 September 19, 2026. Implementation v0.3. The development template, public request interface, evaluator, and fake-client controls are implemented. **No live model request has been made.** The requested provider is the existing ChatGPT/Codex subscription with `gpt-5.6-luna`; the provider launch gate remains closed.
 
 ## What is ready

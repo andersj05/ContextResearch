@@ -16,7 +16,7 @@ The repository contains an exact finite-chain computation (9/32 error versus a 1
 6. [Proof audit](research/PROOF_AUDIT_2026-09-18.md) and [deterministic environment results](experiments/dependency_memory/results/artifact_workflow_report.md) — the latest completed work.
 7. [Recovery comparison](experiments/dependency_memory/results/recovery_frontier_report.md) and [literature positioning](research/LITERATURE_POSITIONING_2026-09-18.md) — when early inspection is worth its cost, and what remains unresolved.
 8. [Exact finite-chain optimum](research/EXACT_CHAIN_OPTIMUM_2026-09-19.md) — exhaustive search and a simple attaining construction.
-9. [Pilot specification](docs/LLM_PILOT_SPEC.md) — staged decision/retention evaluation, offline schedule, and unresolved launch fields.
+9. [Pilot specification](docs/LLM_PILOT_SPEC.md) and [Luna development contract](docs/LUNA_DEVELOPMENT_RUN.md) — staged decision/retention evaluation, schedule, and bounded subscription transport.
 
 Agents should first read [AGENTS.md](AGENTS.md). Historical notes are evidence and background; they do not override the current direction in `docs/STATUS.md`.
 
@@ -37,7 +37,7 @@ Agents should first read [AGENTS.md](AGENTS.md). Historical notes are evidence a
 
 ## Reproduce the completed work
 
-Python 3.10 or newer is sufficient for the active prototype. No packages, model API, network, credentials, or GPU are needed.
+Python 3.11 or newer runs the complete current test suite, including the subscription adapter's offline TOML configuration checks. The mathematical diagnostics themselves remain compatible with Python 3.10. The offline commands below need no packages, model API, network, credentials, or GPU.
 
 ```powershell
 python -m unittest discover -s experiments/dependency_memory -v

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+from decimal import Decimal, InvalidOperation
 import hashlib
 import importlib.util
 import json
@@ -35,6 +36,175 @@ def sha256(path: Path) -> str:
 
 def inside(path: Path) -> bool:
     return path.resolve().is_relative_to(ROOT)
+
+
+def _canonical_hash(value) -> str:
+    data = json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode("utf-8")
+    return hashlib.sha256(data).hexdigest()
+
+
+def _strict_json(text):
+    def unique(pairs):
+        result = {}
+        for key, value in pairs:
+            if key in result:
+                raise ValueError("duplicate JSON key")
+            result[key] = value
+        return result
+    def invalid_constant(_):
+        raise ValueError("nonfinite JSON constant")
+    return json.loads(text, object_pairs_hook=unique, parse_constant=invalid_constant)
+
+
+def validate_luna_runs(results: Path) -> tuple[dict, list[str]]:
+    """Check saved live evidence internally, without rerunning any model.
+
+    Historical source hashes identify the code used then. They are deliberately
+    not compared with today's files. Request and summary content, accounting,
+    and the combined first-tranche ceilings remain independently checkable.
+    """
+    errors = []
+    counts = {"luna_development_runs": 0, "luna_development_request_rows": 0,
+              "completed_pilot_model_requests": 0, "completed_pilot_model_responses": 0}
+    total_committed = Decimal(0)
+    statuses = ("completed", "policy_failure", "transport_failure", "reserved")
+
+    for directory in sorted(results.glob("luna_development_*")):
+        if not directory.is_dir():
+            continue
+        files = [directory / name for name in ("manifest.json", "requests.jsonl", "summary.json")]
+        # A live run writes its manifest and reservation ledger incrementally.
+        # Only a saved summary marks evidence ready for finished-run checks.
+        if not files[2].is_file():
+            continue
+        counts["luna_development_runs"] += 1
+        prefix = directory.name
+        def require(condition, message):
+            if not condition:
+                raise ValueError(message)
+        try:
+            require(all(path.is_file() for path in files), "missing manifest, request ledger, or summary")
+            manifest = _strict_json(files[0].read_text(encoding="utf-8"))
+            ledger = [_strict_json(line) for line in files[1].read_text(encoding="utf-8").splitlines() if line.strip()]
+            summary = _strict_json(files[2].read_text(encoding="utf-8"))
+            counts["luna_development_request_rows"] += len(ledger)
+            require(type(manifest) is dict and type(summary) is dict, "manifest and summary must be objects")
+            require(summary.get("fake") is False, "Luna evidence must be explicitly live")
+            require(summary.get("manifest_sha256") == _canonical_hash(manifest), "manifest hash mismatch")
+            require(summary.get("request_audit_sha256") == _canonical_hash(ledger), "request-ledger hash mismatch")
+            cap = manifest.get("request_cap")
+            require(type(cap) is int and 0 <= cap <= 96, "invalid declared request cap")
+            require(summary.get("request_cap") == cap and len(ledger) <= cap, "request cap mismatch or exceeded")
+            require(summary.get("request_attempts") == len(ledger), "summary request count mismatch")
+            require(manifest.get("split") == "development" and manifest.get("heldout_requests") == 0
+                    and summary.get("heldout_requests") == 0, "held-out calls are outside this tranche")
+            for episode in manifest.get("stage_b", []) + summary.get("stage_b", []):
+                require(episode.get("split") == "development", "non-development episode in live evidence")
+            expected_counts = {status: sum(row.get("status") == status for row in ledger) for status in statuses}
+            require(sum(expected_counts.values()) == len(ledger), "unknown request status")
+            require(summary.get("attempt_status_counts") == expected_counts, "summary status counts mismatch")
+            transport = manifest.get("transport")
+            require(type(transport) is dict, "missing frozen transport contract")
+            require(summary.get("transport_manifest") == transport, "summary transport differs from frozen manifest")
+            require(transport.get("model") == "gpt-5.6-luna", "unexpected model")
+            # Validate hash format only: later implementation edits do not make
+            # a frozen historical run stale.
+            for name, value in transport.get("source_sha256", {}).items():
+                require(isinstance(name, str) and isinstance(value, str)
+                        and re.fullmatch(r"[0-9a-f]{64}", value) is not None, "invalid historical source hash")
+            final_budget = summary.get("cost_accounting", {}).get("credit_budget")
+            require(type(final_budget) is dict, "missing final credit-equivalent budget")
+            require(summary.get("cost_accounting", {}).get("api_dollars") == 0, "unexpected API billing")
+            latest_budget = transport.get("budget")
+            require(type(latest_budget) is dict, "missing initial credit-equivalent budget")
+            dispatches = settled = failed = 0
+            settled_credits = uncertain_credits = Decimal(0)
+            for number, row in enumerate(ledger, 1):
+                require(type(row.get("attempt")) is int and row["attempt"] == number, "nonsequential attempt numbers")
+                request = row.get("request_utf8")
+                require(isinstance(request, str), "missing exact request bytes")
+                raw = request.encode("utf-8")
+                require(type(row.get("request_bytes")) is int and row["request_bytes"] == len(raw), "request byte-length mismatch")
+                require(row.get("request_sha256") == hashlib.sha256(raw).hexdigest(), "request hash mismatch")
+                require(isinstance(row.get("evaluator_id"), str)
+                        and row["evaluator_id"].startswith(("calibration/", "development/")), "unexpected evaluator split")
+                metadata = row.get("provider_metadata")
+                require(type(metadata) is dict and type(metadata.get("dispatched")) is bool, "missing dispatch classification")
+                if not metadata["dispatched"]:
+                    require(row["status"] == "transport_failure", "nondispatched request cannot be a model result")
+                    continue
+                dispatches += 1
+                require(metadata.get("model") == "gpt-5.6-luna", "request model mismatch")
+                accounting = metadata.get("credit_accounting")
+                require(type(accounting) is dict, "dispatched request lacks reservation accounting")
+                require(accounting.get("ticket") == dispatches, "nonsequential generation tickets")
+                latest_budget = accounting.get("budget")
+                require(type(latest_budget) is dict, "missing per-attempt budget snapshot")
+                if accounting.get("status") == "settled":
+                    settled += 1
+                    usage = accounting.get("usage")
+                    require(type(usage) is dict, "settled request lacks token accounting")
+                    fields = ("inputTokens", "cachedInputTokens", "cacheWriteInputTokens",
+                              "outputTokens", "reasoningOutputTokens", "totalTokens")
+                    require(all(type(usage.get(key)) is int and usage[key] >= 0 for key in fields),
+                            "invalid settled token counts")
+                    require(0 < usage["inputTokens"] < 272_000 and usage["outputTokens"] <= 128_000,
+                            "settled tokens exceed the reviewed envelope")
+                    require(usage["cachedInputTokens"] + usage["cacheWriteInputTokens"] <= usage["inputTokens"]
+                            and usage["reasoningOutputTokens"] <= usage["outputTokens"]
+                            and usage["totalTokens"] == usage["inputTokens"] + usage["outputTokens"],
+                            "inconsistent settled token buckets")
+                    expected_credit = (Decimal(usage["inputTokens"]) * Decimal("6.25")
+                                       + Decimal(usage["outputTokens"]) * 30) / 1_000_000
+                    require(Decimal(accounting["conservative_credit_equivalent_exact"]) == expected_credit,
+                            "settled credit equivalent disagrees with token accounting")
+                    require(Decimal(str(accounting["conservative_credit_equivalent"])) == expected_credit,
+                            "numeric settled credit equivalent disagrees with exact value")
+                    settled_credits += expected_credit
+                    require(metadata.get("harness_termination") == "session_budget_exceeded", "missing controlled generation guard")
+                elif accounting.get("status") == "reservation_retained":
+                    failed += 1
+                    uncertain_credits += Decimal(latest_budget["per_attempt_reservation_exact"])
+                    require(row["status"] == "transport_failure", "uncertain reservation reported as a success")
+                else:
+                    raise ValueError("unknown reservation-accounting status")
+            counts["completed_pilot_model_requests"] += dispatches
+            counts["completed_pilot_model_responses"] += sum(
+                row.get("status") in ("completed", "policy_failure") for row in ledger)
+            require(type(summary.get("model_requests")) is int and summary["model_requests"] == dispatches,
+                    "summary model-dispatch count mismatch")
+            require(final_budget == latest_budget, "final budget differs from the latest request accounting")
+            require(final_budget.get("generation_attempts") == dispatches
+                    and final_budget.get("settled_attempts") == settled
+                    and final_budget.get("failed_attempts") == failed, "budget attempt counters mismatch")
+            attempt_ceiling = final_budget.get("generation_attempt_ceiling")
+            require(type(attempt_ceiling) is int and dispatches <= attempt_ceiling <= 96,
+                    "invalid budget generation ceiling")
+            require(final_budget.get("pending_ticket") is None, "unfinished reservation in completed run")
+            require(final_budget.get("api_dollar_spend_authorized") == 0
+                    and final_budget.get("api_key_fallback") is False
+                    and final_budget.get("credit_purchases") == 0
+                    and final_budget.get("reset_redemptions") == 0, "unexpected billing or reset authorization")
+            credit_cap = Decimal(final_budget["cap_credit_equivalent_exact"])
+            committed = Decimal(final_budget["committed_credit_equivalent_exact"])
+            require(credit_cap.is_finite() and 0 <= credit_cap <= 20, "invalid credit-equivalent ceiling")
+            require(committed.is_finite() and 0 <= committed <= credit_cap, "credit-equivalent ceiling exceeded")
+            require(Decimal(final_budget["settled_credit_equivalent_exact"]) == settled_credits
+                    and Decimal(final_budget["uncertain_credit_reservations_exact"]) == uncertain_credits
+                    and committed == settled_credits + uncertain_credits, "credit-equivalent totals mismatch")
+            total_committed += committed
+            if "request_metrics" in summary:
+                expected_metrics = [{key: row[key] for key in (
+                    "evaluator_id", "status", "latency_seconds", "provider_metadata")} for row in ledger]
+                require(summary["request_metrics"] == expected_metrics, "summary request metrics differ from ledger")
+        except (OSError, ValueError, TypeError, KeyError, AttributeError, InvalidOperation) as error:
+            errors.append(f"{prefix}: {error}")
+    if counts["completed_pilot_model_requests"] > 96:
+        errors.append("Combined Luna development model dispatches exceed the 96-request tranche")
+    if total_committed > 20:
+        errors.append("Combined Luna development credit equivalents exceed the 20-credit tranche")
+    counts["luna_credit_equivalent_committed"] = str(total_committed)
+    return counts, errors
 
 
 def main() -> int:
@@ -176,7 +346,9 @@ def main() -> int:
     if plan_report.read_text(encoding="utf-8") != pilot_plan.report(expected_plan):
         errors.append("Pilot calibration report is stale; regenerate it")
     counts["planned_pilot_request_ceiling"] = expected_plan["counts"]["total_maximum_model_requests"]
-    counts["completed_pilot_model_requests"] = expected_plan["completed_model_requests"]
+    luna_counts, luna_errors = validate_luna_runs(ROOT / "experiments/dependency_memory/results")
+    counts.update(luna_counts)
+    errors.extend(luna_errors)
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"

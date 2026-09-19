@@ -1,5 +1,7 @@
 # Codex subscription transport review
 
+Historical preflight finding. The subsequent [isolation follow-up](LUNA_ISOLATION_FOLLOWUP_2026-09-19.md), [accounting follow-up](LUNA_ACCOUNTING_FOLLOWUP_2026-09-19.md), and [v0.4 launch contract](../docs/LUNA_DEVELOPMENT_RUN.md) document the amended controlled transport. The original review below remains unchanged as evidence of what was unresolved at that stage.
+
 Date: September 19, 2026. Status: account connection verified; **controlled model execution remains blocked**. No model request was made by this review. The implementation is [codex_subscription.py](../experiments/dependency_memory/codex_subscription.py); its local checks are [test_codex_subscription.py](../experiments/dependency_memory/test_codex_subscription.py).
 
 ## What works
