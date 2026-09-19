@@ -177,6 +177,12 @@ def main() -> int:
         errors.append("Pilot calibration report is stale; regenerate it")
     counts["planned_pilot_request_ceiling"] = expected_plan["counts"]["total_maximum_model_requests"]
     counts["completed_pilot_model_requests"] = expected_plan["completed_model_requests"]
+    import run_development_pilot
+    fake_audit = run_development_pilot.offline_audit()
+    fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"
+    if json.loads(fake_path.read_text(encoding="utf-8")) != fake_audit:
+        errors.append("Development fake-client audit is stale; regenerate it")
+    counts["development_fake_requests"] = sum(r["fake_request_attempts"] for r in fake_audit["controls"])
     import exact_chain
     chain_path = ROOT / "experiments/dependency_memory/results/exact_chain_certificate.json"
     chain = json.loads(chain_path.read_text(encoding="utf-8"))
