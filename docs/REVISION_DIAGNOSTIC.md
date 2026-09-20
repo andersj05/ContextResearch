@@ -1,5 +1,7 @@
 # Revision-aware parent retention: development diagnostic v1
 
+Current status: the separately authorized 24-request run is complete. See the [findings](../research/REVISION_LUNA_FINDINGS_2026-09-19.md). The prelaunch specification below is preserved as design history; the live manifest fingerprints its launch version at `aa6c0e5`. Both completed request allocations are exhausted.
+
 September 19, 2026. **Prepared; no follow-up model calls yet.** The initial 96-request Luna tranche is complete and remains immutable. This diagnostic is a separate, post-pilot development question. Its [plan](../experiments/dependency_memory/results/revision_diagnostic_plan.json) and [fake controls](../experiments/dependency_memory/results/revision_diagnostic_audit.json) are executable offline artifacts, not model outcomes.
 
 ## Question and motivating evidence

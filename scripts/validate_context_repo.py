@@ -250,7 +250,7 @@ def validate_revision_runs(results: Path) -> tuple[dict, list[str]]:
 
 
 def validate_revision_artifacts(results: Path) -> tuple[dict, list[str]]:
-    """Regenerate the post-hoc analysis and unrun follow-up's offline controls.
+    """Regenerate the post-hoc analysis and diagnostic's separate offline controls.
 
     These counts stay separate from the immutable first Luna allocation: reused
     choices, exact route calculations, plans, and fake calls are not new model

@@ -1,6 +1,6 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.7 — September 19, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.8 — September 19, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
 
 ## The question
 
@@ -65,7 +65,9 @@ The [completed offline analysis](../experiments/dependency_memory/results/revisi
 
 The mechanism is concrete. If the smaller member of the future pair will be refreshed, retaining the two largest keys gives ideal later availability 4/5. The observed low-key pairs instead give 3/5 or 8/15. With no refresh, all two-key parents tie at 1/3. This is an exact calculation for the declared uniform-pair model, not a claim about Luna's hidden reasoning.
 
-The next [prepared diagnostic](../docs/REVISION_DIAGNOSTIC.md) reverses the refresh direction and changes visible-record order. It has 24 planned cold parent requests, evaluated over all 30 routes with an optimal later selector. The fake controls distinguish rule-sensitive selection from static key/position preferences. A new model allocation is pending; the first 96-call tranche remains untouched. [C27]
+The separately authorized [24-request diagnostic](../research/REVISION_LUNA_FINDINGS_2026-09-19.md) is now complete. Every response selected an optimal full pair: `job-4/job-5` in all eight refresh-first cells, `job-0/job-1` in all eight refresh-last cells, and that same low pair in all eight no-refresh cells, where all full pairs tie. All eight matched direction shifts equal eight, unlike the prespecified static controls. Exact regret is zero throughout; its paired form is algebraically equivalent to the direction shift for full outputs, not independent confirmation. The result shows rule-sensitive choices in these simplified prompts, but the changed framing and explicitly optimal later selector prevent calling it a fix for the first workflow's errors. The 30 evaluated routes per answer are exact scoring continuations, not extra model trials. [C27, C29]
+
+The new run had no policy/transport failures, retries, or held-out calls. Reported usage was 66,200 input and 5,651 output tokens, or **0.58328 conservative credit equivalents** under its separately authorized 12-equivalent cap. Attributable subscription debit is unknown. Both request allocations are exhausted, at 120 model requests total; no API billing, purchases, or resets occurred. The next useful behavioral comparison should vary framing and the downstream guarantee separately on matched inputs, under a new protocol and allocation. [C29]
 
 The [held-out semantic checkpoint](../docs/HELDOUT_RENDERERS.md) covers alias chains, package prerequisites, validation scopes, and deployment handoffs. All 15 candidate pairs in both explicit and inferred formats resolve to the same intended pair, giving 120 clue forms and 240 pair/target checks across the four families. The renderer has no final-target or receipt-value input. This is offline software evidence only, with no change to the reserved routes or previous model results. Final request integration, boundary deletion checks, and a complete launch freeze remain necessary. Catalog sizes differ, and the tiny one-route-per-family sample cannot establish generalization or isolate family effects. [C28]
 

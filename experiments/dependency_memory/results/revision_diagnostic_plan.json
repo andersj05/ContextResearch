@@ -54,7 +54,7 @@
     "experiments/dependency_memory/test_revision_diagnostic.py": "f501186c71f70f91e36f772565d647053db255b5dc7d49f9ee5951f2380ad376",
     "experiments/dependency_memory/test_scaling_audit.py": "17544efa8cc3ffe67262868d8f21bfb3ff8d480d8fd94889054d61183283fee7",
     "experiments/dependency_memory/results/revision_transport_audit.json": "36ef0c9878578f91c9dfda0a770576eca4ba72d202bd40d132efc24bf93d166d",
-    "docs/REVISION_DIAGNOSTIC.md": "d82f395c8a7bd5be6bfa346606499927557e6bcb4440f28fff5eed0dd84c6d06"
+    "docs/REVISION_DIAGNOSTIC.md": "75d56ceb917bf18ff42917f12a69648625283ff51bec81d355a9ce30328bd1a4"
   },
   "proposed_transport": {
     "model": "gpt-5.6-luna",

@@ -17,7 +17,7 @@ The repository contains an exact finite-chain computation (9/32 error versus a 1
 7. [Recovery comparison](experiments/dependency_memory/results/recovery_frontier_report.md) and [literature positioning](research/LITERATURE_POSITIONING_2026-09-18.md) — when early inspection is worth its cost, and what remains unresolved.
 8. [Exact finite-chain optimum](research/EXACT_CHAIN_OPTIMUM_2026-09-19.md) — exhaustive search and a simple attaining construction.
 9. [Pilot specification](docs/LLM_PILOT_SPEC.md) and [Luna development contract](docs/LUNA_DEVELOPMENT_RUN.md) — staged decision/retention evaluation, schedule, and bounded subscription transport.
-10. [Revision analysis](experiments/dependency_memory/results/revision_analysis_report.md) and [prepared follow-up](docs/REVISION_DIAGNOSTIC.md) — exact grading of saved Luna choices and the next bounded diagnostic.
+10. [Revision analysis](experiments/dependency_memory/results/revision_analysis_report.md) and [completed follow-up](research/REVISION_LUNA_FINDINGS_2026-09-19.md) — three early-retention deficits in the first run, followed by 24 optimal selections in a separate simplified diagnostic.
 11. [Held-out clue checkpoint](docs/HELDOUT_RENDERERS.md) — four implemented offline dependency formats; provider integration and evaluation remain unfinished.
 
 Agents should first read [AGENTS.md](AGENTS.md). Historical notes are evidence and background; they do not override the current direction in `docs/STATUS.md`.

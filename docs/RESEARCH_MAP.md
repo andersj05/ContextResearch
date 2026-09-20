@@ -22,7 +22,7 @@
 | Implemented development pilot | [Setup and offline results](DEVELOPMENT_PILOT.md) | Historical fake-client validation, separate from later model observations |
 | Subscription transport contract | [Luna v0.4 contract](LUNA_DEVELOPMENT_RUN.md) | Audited client controls and declared fixed background; remote internals unverified |
 | First model observations | [Luna findings](../research/LUNA_DEVELOPMENT_FINDINGS_2026-09-19.md) | 96 valid requests; one development route; no general superiority or held-out evidence |
-| Revision-aware selection | [Offline grading](../experiments/dependency_memory/results/revision_analysis_report.md) and [follow-up contract](REVISION_DIAGNOSTIC.md) | Three strict parent deficits in reused answers; 24-call diagnostic prepared but unperformed |
+| Revision-aware selection | [Offline grading](../experiments/dependency_memory/results/revision_analysis_report.md), [follow-up contract](REVISION_DIAGNOSTIC.md), and [completed diagnostic](../research/REVISION_LUNA_FINDINGS_2026-09-19.md) | Three strict parent deficits in reused answers; 24 optimal choices in a separate simplified diagnostic, not a causal improvement comparison |
 | Held-out clue semantics | [Renderer contract](HELDOUT_RENDERERS.md) and [offline checkpoint](../experiments/dependency_memory/results/heldout_renderer_report.md) | Four families, 120 forms, 240 pair/target checks; no model calls or live request integration |
 | External correctness and novelty questions | [Review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) | Prepared with primary-source comparisons; external review pending |
 | Findings in plain language | [Living findings draft](../paper/findings-draft.md) | Versioned short account linked to the claim register |

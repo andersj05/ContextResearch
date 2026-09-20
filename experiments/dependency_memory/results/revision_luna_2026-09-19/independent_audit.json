@@ -1,0 +1,26 @@
+{
+  "version": "revision_run_evidence_audit_v1",
+  "passed": true,
+  "fake": false,
+  "planned_cases_checked": 24,
+  "requests_checked": 24,
+  "model_requests": 24,
+  "manifest_sha256": "85178a85756710df6849686889577212216514cfd8c9ff80dbbecf64b50f47a9",
+  "request_audit_sha256": "cf2152b811465b3f89d0306f13dc7d81fd141d25d8098678221412180f0ff116",
+  "status_counts": {
+    "completed": 24,
+    "policy_failure": 0,
+    "transport_failure": 0,
+    "reserved": 0
+  },
+  "source_hash_policy": "historical format only",
+  "new_model_requests": 0,
+  "usage_totals": {
+    "input_tokens": 66200,
+    "cached_input_tokens": 17920,
+    "output_tokens": 5651,
+    "reasoning_output_tokens": 5075
+  },
+  "settled_credit_equivalent": "0.58328000",
+  "retained_credit_equivalent": "0"
+}
