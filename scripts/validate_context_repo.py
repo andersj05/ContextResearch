@@ -249,6 +249,66 @@ def validate_revision_runs(results: Path) -> tuple[dict, list[str]]:
     return counts, errors
 
 
+def validate_transfer_runs(results: Path) -> tuple[dict, list[str]]:
+    """Check the separate fixed allocation, including interrupted run evidence."""
+    from audit_transfer_run import audit
+    errors = []
+    counts = {"transfer_luna_runs": 0, "transfer_luna_validated_runs": 0,
+              "transfer_luna_request_rows": 0, "completed_transfer_model_requests": 0}
+    committed = Decimal(0)
+    for directory in sorted(results.glob("transfer_luna_*")):
+        if not directory.is_dir():
+            continue
+        counts["transfer_luna_runs"] += 1
+        try:
+            evidence = audit(directory)
+            if evidence.get("passed") is not True or evidence.get("fake") is not False:
+                raise ValueError("transfer run must be audited live evidence")
+            dispatches = evidence["model_requests"]
+            cost = Decimal(evidence["settled_credit_equivalent"]) + Decimal(evidence["retained_credit_equivalent"])
+            if type(dispatches) is not int or not 0 <= dispatches <= 1536:
+                raise ValueError("invalid transfer dispatch count")
+            if not cost.is_finite() or not 0 <= cost <= 200:
+                raise ValueError("invalid transfer committed credit equivalents")
+            counts["transfer_luna_validated_runs"] += 1
+            counts["transfer_luna_request_rows"] += evidence["requests_checked"]
+            counts["completed_transfer_model_requests"] += dispatches
+            committed += cost
+        except (OSError, ValueError, TypeError, KeyError, AttributeError, InvalidOperation) as error:
+            errors.append(f"{directory.name}: {error}")
+    if counts["completed_transfer_model_requests"] > 1536 or committed > 200:
+        errors.append("Combined transfer runs exceed the separate 1536-request/200-credit allocation")
+    counts["transfer_credit_equivalent_committed"] = str(committed)
+    return counts, errors
+
+
+def validate_transfer_artifacts(results: Path) -> tuple[dict, list[str]]:
+    import transfer_study
+    import run_transfer_study
+    errors, counts = [], {}
+    try:
+        plan = transfer_study.make_plan()
+        run_transfer_study.validate_plan(plan)
+        actual = _strict_json((results / "transfer_study_plan.json").read_text(encoding="utf-8"))
+        if actual != plan or not plan["protocol_and_wire_audit_present"]:
+            errors.append("Transfer plan is stale or missing frozen dependencies")
+        controls = []
+        for mode in ("optimal", "static_low", "first_visible", "invalid"):
+            summary = run_transfer_study.execute([transfer_study.FakeClient(mode) for _ in range(4)])
+            controls.append({"mode": mode, **{k: v for k, v in summary.items()
+                            if k not in ("rows", "worker_summaries")}})
+        expected = {"version": transfer_study.VERSION, "model_requests": 0,
+                    "plan_sha256": _canonical_hash(plan), "controls": controls}
+        if _strict_json((results / "transfer_study_audit.json").read_text(encoding="utf-8")) != expected:
+            errors.append("Transfer fake controls are stale; regenerate the offline audit")
+        counts["transfer_planned_cases"] = len(plan["cases"])
+        counts["transfer_fake_requests"] = sum(c["request_attempts"] for c in controls)
+        counts["transfer_offline_model_requests"] = sum(c["model_requests"] for c in controls)
+    except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
+        errors.append(f"Offline transfer validation failed: {error}")
+    return counts, errors
+
+
 def validate_revision_artifacts(results: Path) -> tuple[dict, list[str]]:
     """Regenerate the post-hoc analysis and diagnostic's separate offline controls.
 
@@ -464,8 +524,12 @@ def main() -> int:
     revision_run_counts, revision_run_errors = validate_revision_runs(ROOT / "experiments/dependency_memory/results")
     counts.update(revision_run_counts)
     errors.extend(revision_run_errors)
+    transfer_run_counts, transfer_run_errors = validate_transfer_runs(ROOT / "experiments/dependency_memory/results")
+    counts.update(transfer_run_counts)
+    errors.extend(transfer_run_errors)
     counts["all_development_model_requests"] = (counts["completed_pilot_model_requests"]
-                                                + counts["completed_revision_model_requests"])
+                                                + counts["completed_revision_model_requests"]
+                                                + counts["completed_transfer_model_requests"])
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"
@@ -475,6 +539,9 @@ def main() -> int:
     revision_counts, revision_errors = validate_revision_artifacts(ROOT / "experiments/dependency_memory/results")
     counts.update(revision_counts)
     errors.extend(revision_errors)
+    transfer_counts, transfer_errors = validate_transfer_artifacts(ROOT / "experiments/dependency_memory/results")
+    counts.update(transfer_counts)
+    errors.extend(transfer_errors)
     import exact_chain
     chain_path = ROOT / "experiments/dependency_memory/results/exact_chain_certificate.json"
     chain = json.loads(chain_path.read_text(encoding="utf-8"))

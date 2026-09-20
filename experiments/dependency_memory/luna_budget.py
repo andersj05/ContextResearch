@@ -103,6 +103,8 @@ class CreditBudget:
     counted as generations; hidden provider work is not measured by this class.
     """
 
+    ATTEMPT_LIMIT = MAX_ATTEMPTS
+
     def __init__(self, cap_credits: int | float | str | Decimal = 20, max_attempts: int = MAX_ATTEMPTS):
         if isinstance(cap_credits, bool):
             raise ValueError("Credit cap must be a finite non-negative number")
@@ -112,8 +114,8 @@ class CreditBudget:
             raise ValueError("Credit cap must be a finite non-negative number") from error
         if not cap.is_finite() or cap < 0:
             raise ValueError("Credit cap must be a finite non-negative number")
-        if type(max_attempts) is not int or not 0 <= max_attempts <= MAX_ATTEMPTS:
-            raise ValueError("Generation-attempt ceiling must be an integer from 0 to 96")
+        if type(max_attempts) is not int or not 0 <= max_attempts <= self.ATTEMPT_LIMIT:
+            raise ValueError(f"Generation-attempt ceiling must be an integer from 0 to {self.ATTEMPT_LIMIT}")
         self.cap = cap
         self.max_attempts = max_attempts
         self.attempts = 0

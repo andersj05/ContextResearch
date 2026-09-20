@@ -26,6 +26,7 @@
 | Held-out clue semantics | [Renderer contract](HELDOUT_RENDERERS.md) and [offline checkpoint](../experiments/dependency_memory/results/heldout_renderer_report.md) | Four families, 120 forms, 240 pair/target checks; no model calls or live request integration |
 | External correctness and novelty questions | [Review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) | Prepared with primary-source comparisons; external review pending |
 | Findings in plain language | [Living findings draft](../paper/findings-draft.md) | Versioned short account linked to the claim register |
+| Matched retention transfer | [Frozen factorial design](TRANSFER_STUDY.md) | Newly authorized 1,536-request development study; 32 blocks, four workers, matched randomized priorities; no outcomes at the prelaunch milestone |
 | Current writing | [Paper workspace](../paper/README.md) | Draft; incomplete results clearly marked |
 
 ## Broader inherited library

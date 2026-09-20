@@ -148,13 +148,21 @@ def main():
     parser.add_argument("--global-instructions", required=True, type=Path)
     parser.add_argument("--request-json", type=Path,
                         help="Optional approved public request; defaults to the historical pilot calibration request")
+    parser.add_argument("--transfer", action="store_true",
+                        help="Audit the largest frozen transfer-study public request; no model calls")
     parser.add_argument("--output", required=True, type=Path)
     args = parser.parse_args()
+    if args.transfer and args.request_json is not None:
+        parser.error("Use --transfer or --request-json, not both")
     binary_hash = hashlib.sha256(Path(args.executable).read_bytes()).hexdigest()
     if binary_hash != REVIEWED_CLI_SHA256:
         raise ValueError("Client binary differs from reviewed version")
     global_text = args.global_instructions.read_text(encoding="utf-8")
     public_request = None
+    if args.transfer:
+        from transfer_study import make_plan
+        public_request = max((case["request"] for case in make_plan()["cases"]),
+                             key=wire_body_byte_bound)
     if args.request_json is not None:
         from luna_appserver import strict_json
         public_request = strict_json(args.request_json.read_text(encoding="utf-8"))

@@ -16,6 +16,8 @@ def request_bytes(request: dict) -> bytes:
         from pilot_interface import request_bytes as serialize
     elif version == "revision_parent_request_v1":
         from revision_interface import request_bytes as serialize
+    elif version == "transfer_parent_request_v1":
+        from transfer_interface import request_bytes as serialize
     else:
         raise ValueError("Unknown public request contract")
     return serialize(request)

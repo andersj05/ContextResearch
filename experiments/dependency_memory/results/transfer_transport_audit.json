@@ -1,0 +1,145 @@
+{
+  "version": "luna_mock_transport_audit_v0.1",
+  "date": "2026-09-19",
+  "client_sha256": "bc45017e8239dc150258f69309ced9df6bbcdf5b8e4f346decf780ac0999e226",
+  "isolation_overrides_sha256": "8ae79da1c4c7374480428d45732de3e3cd475cf11cc1715409cb8a4e2542da9c",
+  "scope": "Installed client plus synthetic loopback provider; no production credentials or model generations",
+  "isolation_passed": true,
+  "launch_ready": false,
+  "global_instructions_sha256": "263fbf5f86b6338244e956ebe986e34e3aecafb5c061fe95d140a677b8d60714",
+  "fixed_wire_allowance_bytes": 16000,
+  "maximum_provider_wire_bytes": 32768,
+  "production_authentication_and_spend_gate": "Separate review required",
+  "cases": [
+    {
+      "case": "final_message",
+      "http_attempts": 1,
+      "authorization_present": false,
+      "payload_audit": {
+        "model": "gpt-5.6-luna",
+        "input_message_count": 5,
+        "global_instructions_sha256": "263fbf5f86b6338244e956ebe986e34e3aecafb5c061fe95d140a677b8d60714",
+        "public_text_sha256": "86ab60eb0d82d6c0296b96672dca76e6cfba75dc5938a17b4277c0516ace3777",
+        "allowed_wrapper_tools": [
+          "exec",
+          "request_user_input",
+          "wait"
+        ],
+        "nested_tools": [],
+        "external_information_tools": [],
+        "skill_catalog_present": false,
+        "environment_context_present": false,
+        "audit_scope": "synthetic no-auth loopback client serialization"
+      },
+      "final_response_count": 1,
+      "observed_wire_bytes": 14889,
+      "fixed_wire_bytes_upper_observation": 10140,
+      "usage_records": 1,
+      "terminal_statuses": [
+        "failed"
+      ],
+      "terminal_error_codes": [
+        "sessionBudgetExceeded"
+      ],
+      "real_model_generations": 0
+    },
+    {
+      "case": "tool_call",
+      "http_attempts": 1,
+      "authorization_present": false,
+      "payload_audit": {
+        "model": "gpt-5.6-luna",
+        "input_message_count": 5,
+        "global_instructions_sha256": "263fbf5f86b6338244e956ebe986e34e3aecafb5c061fe95d140a677b8d60714",
+        "public_text_sha256": "86ab60eb0d82d6c0296b96672dca76e6cfba75dc5938a17b4277c0516ace3777",
+        "allowed_wrapper_tools": [
+          "exec",
+          "request_user_input",
+          "wait"
+        ],
+        "nested_tools": [],
+        "external_information_tools": [],
+        "skill_catalog_present": false,
+        "environment_context_present": false,
+        "audit_scope": "synthetic no-auth loopback client serialization"
+      },
+      "final_response_count": 0,
+      "observed_wire_bytes": 14889,
+      "fixed_wire_bytes_upper_observation": 10140,
+      "usage_records": 1,
+      "terminal_statuses": [
+        "failed"
+      ],
+      "terminal_error_codes": [
+        "sessionBudgetExceeded"
+      ],
+      "real_model_generations": 0
+    },
+    {
+      "case": "http_503",
+      "http_attempts": 1,
+      "authorization_present": false,
+      "payload_audit": {
+        "model": "gpt-5.6-luna",
+        "input_message_count": 5,
+        "global_instructions_sha256": "263fbf5f86b6338244e956ebe986e34e3aecafb5c061fe95d140a677b8d60714",
+        "public_text_sha256": "86ab60eb0d82d6c0296b96672dca76e6cfba75dc5938a17b4277c0516ace3777",
+        "allowed_wrapper_tools": [
+          "exec",
+          "request_user_input",
+          "wait"
+        ],
+        "nested_tools": [],
+        "external_information_tools": [],
+        "skill_catalog_present": false,
+        "environment_context_present": false,
+        "audit_scope": "synthetic no-auth loopback client serialization"
+      },
+      "final_response_count": 0,
+      "observed_wire_bytes": 14889,
+      "fixed_wire_bytes_upper_observation": 10140,
+      "usage_records": 0,
+      "terminal_statuses": [
+        "failed"
+      ],
+      "terminal_error_codes": [
+        "other"
+      ],
+      "real_model_generations": 0
+    },
+    {
+      "case": "truncated_sse",
+      "http_attempts": 1,
+      "authorization_present": false,
+      "payload_audit": {
+        "model": "gpt-5.6-luna",
+        "input_message_count": 5,
+        "global_instructions_sha256": "263fbf5f86b6338244e956ebe986e34e3aecafb5c061fe95d140a677b8d60714",
+        "public_text_sha256": "86ab60eb0d82d6c0296b96672dca76e6cfba75dc5938a17b4277c0516ace3777",
+        "allowed_wrapper_tools": [
+          "exec",
+          "request_user_input",
+          "wait"
+        ],
+        "nested_tools": [],
+        "external_information_tools": [],
+        "skill_catalog_present": false,
+        "environment_context_present": false,
+        "audit_scope": "synthetic no-auth loopback client serialization"
+      },
+      "final_response_count": 0,
+      "observed_wire_bytes": 14889,
+      "fixed_wire_bytes_upper_observation": 10140,
+      "usage_records": 0,
+      "terminal_statuses": [
+        "failed"
+      ],
+      "terminal_error_codes": [
+        "other"
+      ],
+      "real_model_generations": 0
+    }
+  ],
+  "public_request_contract": "transfer_parent_request_v1",
+  "public_request_sha256": "86ab60eb0d82d6c0296b96672dca76e6cfba75dc5938a17b4277c0516ace3777"
+}

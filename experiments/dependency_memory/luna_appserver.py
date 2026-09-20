@@ -7,6 +7,7 @@ official CLI. No direct HTTP endpoint, token extraction, or API-key fallback.
 from __future__ import annotations
 
 import hashlib
+from contextlib import nullcontext
 import json
 import os
 from pathlib import Path
@@ -272,9 +273,12 @@ class LunaClient:
                         raise TransportError("unexpected_instruction_source")
                 thread_id = start["thread"]["id"]
                 self.last_metadata["thread_id"] = thread_id
-                ticket = self.budget.reserve()
-                self.last_metadata.update(dispatched=True, attempt_ticket=ticket)
-                turn = server.rpc("turn/start", self.turn_parameters(thread_id, request))
+                # Optional study-wide gate makes the stop check atomic with
+                # generation dispatch across independently budgeted workers.
+                with getattr(self, "dispatch_gate", None) or nullcontext():
+                    ticket = self.budget.reserve()
+                    self.last_metadata.update(dispatched=True, attempt_ticket=ticket)
+                    turn = server.rpc("turn/start", self.turn_parameters(thread_id, request))
                 turn_id = turn["turn"]["id"]
                 self.last_metadata["turn_id"] = turn_id
                 deadline = time.monotonic() + self.timeout
@@ -351,6 +355,8 @@ class LunaClient:
                 raise
             except Exception as error:
                 self.stopped = True
+                if getattr(self, "dispatch_gate", None) is not None:
+                    self.dispatch_gate.stop()
                 self.last_metadata.update(status="failed", error_type=type(error).__name__,
                                           error_code=str(error)[:200])
                 if ticket is not None:
