@@ -8,6 +8,8 @@ The repository contains an exact finite-chain computation (9/32 error versus a 1
 
 ## Start here
 
+For a nontechnical explanation of the question, completed findings, and remaining work, read [What this research is trying to find out](research/PLAIN_LANGUAGE_GUIDE_2026-09-19.md).
+
 1. [Current status and next work](docs/STATUS.md) — the shortest reliable handoff.
 2. [Research map](docs/RESEARCH_MAP.md) — active work, background, and evidence limitations.
 3. [Paper workspace](paper/README.md) — outline, manuscript starter, bibliography, and claim register.
