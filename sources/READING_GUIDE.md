@@ -52,10 +52,19 @@ The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) a
 
 | Source | Read scope | Open comparison |
 |---|---|---|
-| [Functional Compression through Graph Coloring](https://www.mit.edu/~medard/2010papers/funccomp.pdf) | Hosted manuscript II-A/B and II-C/III-A through Theorem 13; no proof audit or journal-version comparison | Relate asymptotic graph coloring to the hard-cardinality, nested-message restriction. |
+| [Functional Compression through Graph Coloring](https://www.mit.edu/~medard/2010papers/funccomp.pdf) [@functionalcoloring2010] | Hosted manuscript II-A/B and II-C/III-A through Theorem 13; no proof audit or journal-version comparison | The exact signature argument is a characteristic-graph special case; asymptotic rates do not directly give the hard-cardinality, nested-message result. |
 | [Causal successive refinement, v2](https://arxiv.org/pdf/1901.01356v2) | II-A/B Definitions 1–2, Theorem 1; III-B Theorems 3–4; no proof audit | Account for source-aware encoders and later decoders retaining earlier messages. |
 
 The packet gives exact theorem-transfer questions rather than novelty certification. No external review has yet occurred.
+
+The [September 19 scaling literature check](../research/SCALING_LITERATURE_CHECK_2026-09-19.md) revisits the Doshi et al. manuscript above and adds two primary-source readings:
+
+| Source | Review scope on September 19, 2026 | Implication and limit |
+|---|---|---|
+| [A direct sum theorem in communication complexity via message compression, v2](https://arxiv.org/pdf/cs/0304020v2) [@jain2003compression] | Introduction; Section 2.3 Definition 2 and Facts 6–7; Theorem 4 and Corollary 3 statements; no full proof audit | Information superadditivity across independent copies is established machinery; arbitrary joint encoders do not make that proof step new. |
+| [Optimal Direct Sum and Privacy Trade-off Results, v1](https://arxiv.org/pdf/0807.1267v1) [@jain2008directsum] | Section 1.1, Theorem 1, Definition 1, and Section 3.2; no full proof audit; the detailed argument is quantum and analogous classical proofs are omitted in the manuscript | Classical one-way direct-sum scaling and indexed-copy query formulations are established; overall-output success and decoder access differ from our one-bit intermediate state and uniform single-query loss. |
+
+The remaining priority question concerns the specific four-bit construction, exact 3k attainment threshold, and quantitative gap at 2k. The check supports attribution to established functional-compression and information methods; it does not certify novelty of those local results. Version and review statements apply only to the linked primary material. No inherited catalog metadata or review labels were upgraded.
 
 ## Harness implementation
 

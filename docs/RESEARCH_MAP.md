@@ -16,6 +16,7 @@
 | Scripted actions and delayed terminal outcomes | [Artifact/manifest environment](../experiments/dependency_memory/ARTIFACT_WORKFLOW.md) | 320 constructed development configurations; no LLM trial |
 | Inspection, retention, and late recovery | [Exact recovery reference](../experiments/dependency_memory/RECOVERY_FRONTIER.md) | Exact finite expectations and executable checks within a restricted record-selection class |
 | Contribution relative to prior work | [Focused literature comparison](../research/LITERATURE_POSITIONING_2026-09-18.md) | Reviewed definitions and theorem statements; no priority certification |
+| Scaling proof and direct-sum prior art | [September 19 focused check](../research/SCALING_LITERATURE_CHECK_2026-09-19.md) | Three primary manuscripts reviewed in specified sections; general signature and information methods established, priority of the particular construction and constants unresolved |
 | Pilot evaluation controls | [September 19 source review](../research/PILOT_EVALUATION_REVIEW_2026-09-19.md) | Version-pinned readings; no source replication or model result |
 | Staged model study | [Pilot design](LLM_PILOT_SPEC.md) | Historical full schedule and completed 96-request development tranche; held-out launch remains future work |
 | Correctness review and next gates | [September 19 audit](../research/CORRECTNESS_AUDIT_2026-09-19.md) | Local math/source/design review, two validation fixes, full search rerun; no external certification |
