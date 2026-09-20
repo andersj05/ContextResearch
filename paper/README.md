@@ -26,4 +26,4 @@ The manuscript now incorporates the [exact finite-chain optimum](../research/EXA
 
 Templates: [derivation](templates/derivation.md), [source note](templates/source-note.md), [experiment plan](templates/experiment-plan.md). The [current protocol](../docs/EXPERIMENT_PROTOCOL.md) is the governing experimental specification.
 
-Living draft v0.6 includes the 96-request Luna tranche (C25), exact post-hoc parent/child grading (C26), and the prepared revision-direction diagnostic (C27). The latter has not made new model calls. The earlier fake controls remain C24. Model observations use one route and establish no native-harness superiority or external endorsement; held-out evaluation remains unperformed.
+Living draft v0.7 includes the 96-request Luna tranche (C25), exact post-hoc parent/child grading (C26), the prepared revision-direction diagnostic (C27), and the offline held-out clue checkpoint (C28). The latter two have not made new model calls. The earlier fake controls remain C24. Model observations use one route and establish no native-harness superiority or external endorsement; held-out request integration and evaluation remain unfinished.

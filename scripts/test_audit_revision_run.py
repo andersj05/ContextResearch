@@ -7,7 +7,7 @@ import tempfile
 import unittest
 
 from audit_revision_run import audit
-from luna_appserver import LunaClient
+from luna_appserver import LunaClient, ResponseFormatError
 from luna_budget import CreditBudget
 from luna_isolation import wire_body_byte_bound
 from revision_diagnostic import FakeClient, digest, make_plan
@@ -51,6 +51,9 @@ class SyntheticLive(LunaClient):
         if self.fail == "postsettlement":
             self.last_metadata["status"] = "failed"
             raise RuntimeError("synthetic post-settlement failure")
+        if self.fail == "invalid_json":
+            self.last_metadata["response_status"] = "invalid_json"
+            raise ResponseFormatError("invalid_json")
         return self.control.complete(request)
 
 
@@ -114,6 +117,30 @@ class RevisionRunAuditTests(unittest.TestCase):
         self.assertEqual(result["retained_credit_equivalent"], "10.4025")
         self.assertEqual(result["status_counts"]["transport_failure"], 1)
         self.assertEqual(result["planned_cases_checked"], 24)
+
+    def test_unknown_cache_write_count_cannot_be_replaced_with_zero(self):
+        self.run_live(cap=1)
+        manifest, ledger, summary = self.load()
+        accounting = ledger[0]["provider_metadata"]["credit_accounting"]
+        self.assertIsNone(accounting["usage"]["cacheWriteInputTokens"])
+        self.assertIs(accounting["cache_write_tokens_reported"], False)
+        self.assertIs(accounting["cache_write_pricing_unresolved"], True)
+        accounting["usage"]["cacheWriteInputTokens"] = 0
+        self.save(manifest, ledger, summary)
+        with self.assertRaisesRegex(ValueError, "Token accounting differs"):
+            audit(self.directory)
+
+    def test_malformed_completed_answers_are_charged_and_do_not_stop_schedule(self):
+        self.run_live(cap=3, fail="invalid_json")
+        result = audit(self.directory)
+        self.assertEqual(result["status_counts"]["policy_failure"], 3)
+        self.assertEqual(result["status_counts"]["transport_failure"], 0)
+        self.assertEqual(Decimal(result["settled_credit_equivalent"]), Decimal("0.0315"))
+        manifest, ledger, summary = self.load()
+        ledger[0]["provider_metadata"]["response_status"] = "completed"
+        self.save(manifest, ledger, summary)
+        with self.assertRaisesRegex(ValueError, "response-format evidence"):
+            audit(self.directory)
 
     def test_preflight_failure_has_no_generation_or_charge(self):
         self.run_live(fail="preflight")

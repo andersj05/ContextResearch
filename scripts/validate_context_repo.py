@@ -441,6 +441,23 @@ def main() -> int:
     if plan_report.read_text(encoding="utf-8") != pilot_plan.report(expected_plan):
         errors.append("Pilot calibration report is stale; regenerate it")
     counts["planned_pilot_request_ceiling"] = expected_plan["counts"]["total_maximum_model_requests"]
+    import audit_heldout_renderers
+    try:
+        renderer_audit = audit_heldout_renderers.build_audit()
+        renderer_path = ROOT / "experiments/dependency_memory/results/heldout_renderer_audit.json"
+        if _strict_json(renderer_path.read_text(encoding="utf-8")) != renderer_audit:
+            errors.append("Held-out renderer semantics checkpoint is stale; regenerate it")
+        renderer_report = ROOT / "experiments/dependency_memory/results/heldout_renderer_report.md"
+        if renderer_report.read_text(encoding="utf-8") != audit_heldout_renderers.report(renderer_audit):
+            errors.append("Held-out renderer report is stale; regenerate it")
+        if renderer_audit["model_requests"] != 0 or renderer_audit["provider_launch_ready"] is not False:
+            errors.append("Held-out renderer checkpoint must remain offline-only evidence")
+        counts["heldout_renderer_families"] = renderer_audit["counts"]["families"]
+        counts["heldout_renderer_clue_entries"] = renderer_audit["counts"]["family_mode_clue_entries"]
+        counts["heldout_renderer_unique_serialized_clues"] = renderer_audit["counts"]["unique_serialized_clues"]
+        counts["heldout_renderer_semantic_route_checks"] = renderer_audit["counts"]["target_route_checks"]
+    except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
+        errors.append(f"Held-out renderer validation failed: {error}")
     luna_counts, luna_errors = validate_luna_runs(ROOT / "experiments/dependency_memory/results")
     counts.update(luna_counts)
     errors.extend(luna_errors)

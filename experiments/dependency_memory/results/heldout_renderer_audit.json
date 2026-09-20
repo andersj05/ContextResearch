@@ -1,0 +1,1992 @@
+{
+  "version": "heldout_renderer_semantics_audit_v1",
+  "renderer_version": "heldout_renderer_semantics_v1",
+  "date": "2026-09-19",
+  "status": "offline semantic checkpoint; no live integration",
+  "model_requests": 0,
+  "provider_launch_ready": false,
+  "evaluator_only": true,
+  "counts": {
+    "families": 4,
+    "candidate_pairs_per_family": 15,
+    "render_modes": 2,
+    "family_mode_clue_entries": 120,
+    "unique_serialized_clues": 75,
+    "target_route_checks": 240
+  },
+  "source_sha256": {
+    "heldout_renderers.py": "5dbb011c53e98242c84ef56dcb5e644ba61f30f57832c78e69f7879489586b13",
+    "test_heldout_renderers.py": "203ee95a32c31dc2f66a6b2cb9e1a7a632de1decc98704d18b47796364a5298e",
+    "audit_heldout_renderers.py": "1b3838a215b3459f976a02ffe7ae95947e3970b1ec4a9758a90d9b06dccbe69a"
+  },
+  "families": [
+    {
+      "family": "alias_chain",
+      "public_metadata": {
+        "version": "heldout_renderer_semantics_v1",
+        "family": "alias_chain",
+        "jobs": [
+          {
+            "key": "job-0",
+            "artifact": "ledger-snapshot"
+          },
+          {
+            "key": "job-1",
+            "artifact": "route-schema"
+          },
+          {
+            "key": "job-2",
+            "artifact": "asset-index"
+          },
+          {
+            "key": "job-3",
+            "artifact": "clock-profile"
+          },
+          {
+            "key": "job-4",
+            "artifact": "quota-map"
+          },
+          {
+            "key": "job-5",
+            "artifact": "trace-catalog"
+          }
+        ],
+        "aliases": [
+          {
+            "alias": "westgate",
+            "intermediate_name": "cinder"
+          },
+          {
+            "alias": "northstar",
+            "intermediate_name": "fern"
+          },
+          {
+            "alias": "lowtide",
+            "intermediate_name": "bramble"
+          },
+          {
+            "alias": "sunrise",
+            "intermediate_name": "opal"
+          },
+          {
+            "alias": "highridge",
+            "intermediate_name": "lark"
+          },
+          {
+            "alias": "eastwind",
+            "intermediate_name": "marsh"
+          }
+        ],
+        "names": [
+          {
+            "intermediate_name": "lark",
+            "artifact": "quota-map"
+          },
+          {
+            "intermediate_name": "bramble",
+            "artifact": "ledger-snapshot"
+          },
+          {
+            "intermediate_name": "cinder",
+            "artifact": "trace-catalog"
+          },
+          {
+            "intermediate_name": "marsh",
+            "artifact": "asset-index"
+          },
+          {
+            "intermediate_name": "opal",
+            "artifact": "route-schema"
+          },
+          {
+            "intermediate_name": "fern",
+            "artifact": "clock-profile"
+          }
+        ]
+      },
+      "metadata_sha256": "029ab122c9bd63ae7567cf965801f3cec92fdd94ecacdc523e1c01b1c19a621a",
+      "candidate_pairs": 15,
+      "target_routes_per_mode": 30,
+      "clues": [
+        {
+          "candidate_keys": [
+            "job-0",
+            "job-1"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-0",
+                "job-1"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve each requested alias through its intermediate name to its artifact. The eventual handoff requires a receipt for one of those two artifacts.",
+              "requested_aliases": [
+                "lowtide",
+                "sunrise"
+              ]
+            }
+          },
+          "forms_sha256": "f1efbeabe91e0b27f12238505ae40a0a3668fdf85e874c8ad43ca537fa70b03f"
+        },
+        {
+          "candidate_keys": [
+            "job-0",
+            "job-2"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-0",
+                "job-2"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve each requested alias through its intermediate name to its artifact. The eventual handoff requires a receipt for one of those two artifacts.",
+              "requested_aliases": [
+                "eastwind",
+                "lowtide"
+              ]
+            }
+          },
+          "forms_sha256": "359023040faddded54ea5edec79c643e8176755b0f86fc225f22f342c18ac840"
+        },
+        {
+          "candidate_keys": [
+            "job-0",
+            "job-3"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-0",
+                "job-3"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve each requested alias through its intermediate name to its artifact. The eventual handoff requires a receipt for one of those two artifacts.",
+              "requested_aliases": [
+                "lowtide",
+                "northstar"
+              ]
+            }
+          },
+          "forms_sha256": "eb28757f4e9959806e3d9800fae22280bb9f9d47bd966d2ff4d346a0b021725e"
+        },
+        {
+          "candidate_keys": [
+            "job-0",
+            "job-4"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-0",
+                "job-4"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve each requested alias through its intermediate name to its artifact. The eventual handoff requires a receipt for one of those two artifacts.",
+              "requested_aliases": [
+                "highridge",
+                "lowtide"
+              ]
+            }
+          },
+          "forms_sha256": "9a51737339b674175b91fd4a83e1cc6b43412892ccde2e0266ac32a9d6478007"
+        },
+        {
+          "candidate_keys": [
+            "job-0",
+            "job-5"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-0",
+                "job-5"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve each requested alias through its intermediate name to its artifact. The eventual handoff requires a receipt for one of those two artifacts.",
+              "requested_aliases": [
+                "lowtide",
+                "westgate"
+              ]
+            }
+          },
+          "forms_sha256": "d2bd8083b34784a596bf5003d82e7e6985fcb7f6f637ae0c2ea6a30a0ec39400"
+        },
+        {
+          "candidate_keys": [
+            "job-1",
+            "job-2"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-1",
+                "job-2"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve each requested alias through its intermediate name to its artifact. The eventual handoff requires a receipt for one of those two artifacts.",
+              "requested_aliases": [
+                "eastwind",
+                "sunrise"
+              ]
+            }
+          },
+          "forms_sha256": "25fe28c70fbf6aed5f85b84aba2e7b4bd00ea216e8b06a46f6745ec202780536"
+        },
+        {
+          "candidate_keys": [
+            "job-1",
+            "job-3"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-1",
+                "job-3"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve each requested alias through its intermediate name to its artifact. The eventual handoff requires a receipt for one of those two artifacts.",
+              "requested_aliases": [
+                "northstar",
+                "sunrise"
+              ]
+            }
+          },
+          "forms_sha256": "c0c29673ac6d95982f6202bb1496822368c92e2135e8a912174adc4b4e0282b8"
+        },
+        {
+          "candidate_keys": [
+            "job-1",
+            "job-4"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-1",
+                "job-4"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve each requested alias through its intermediate name to its artifact. The eventual handoff requires a receipt for one of those two artifacts.",
+              "requested_aliases": [
+                "highridge",
+                "sunrise"
+              ]
+            }
+          },
+          "forms_sha256": "16b0e12c325341cc063a58bf4f1144f35ad7642fefbd923e63a69eefd83eb290"
+        },
+        {
+          "candidate_keys": [
+            "job-1",
+            "job-5"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-1",
+                "job-5"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve each requested alias through its intermediate name to its artifact. The eventual handoff requires a receipt for one of those two artifacts.",
+              "requested_aliases": [
+                "sunrise",
+                "westgate"
+              ]
+            }
+          },
+          "forms_sha256": "9520cf26ce890f361f0062252189d1428e7d1e52daa056c807928ce226b5bf0e"
+        },
+        {
+          "candidate_keys": [
+            "job-2",
+            "job-3"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-2",
+                "job-3"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve each requested alias through its intermediate name to its artifact. The eventual handoff requires a receipt for one of those two artifacts.",
+              "requested_aliases": [
+                "eastwind",
+                "northstar"
+              ]
+            }
+          },
+          "forms_sha256": "2b5cc8393022fb5e04ab177d3207798b80a25762acfe88140ab9d94841cc3a5b"
+        },
+        {
+          "candidate_keys": [
+            "job-2",
+            "job-4"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-2",
+                "job-4"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve each requested alias through its intermediate name to its artifact. The eventual handoff requires a receipt for one of those two artifacts.",
+              "requested_aliases": [
+                "eastwind",
+                "highridge"
+              ]
+            }
+          },
+          "forms_sha256": "c51d2a0c07b587cea7864b7788cec636654bc8dc711261247b11362b68d90f9c"
+        },
+        {
+          "candidate_keys": [
+            "job-2",
+            "job-5"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-2",
+                "job-5"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve each requested alias through its intermediate name to its artifact. The eventual handoff requires a receipt for one of those two artifacts.",
+              "requested_aliases": [
+                "eastwind",
+                "westgate"
+              ]
+            }
+          },
+          "forms_sha256": "3d5d60adc4d03206a0fb5e61612c5c42e3f5c776b61b38a9fa9e920e44a4f17d"
+        },
+        {
+          "candidate_keys": [
+            "job-3",
+            "job-4"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-3",
+                "job-4"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve each requested alias through its intermediate name to its artifact. The eventual handoff requires a receipt for one of those two artifacts.",
+              "requested_aliases": [
+                "highridge",
+                "northstar"
+              ]
+            }
+          },
+          "forms_sha256": "cf7c57aadb6423efdd5a6ddaee3a2382825400147b021d4a7079fccf1225d564"
+        },
+        {
+          "candidate_keys": [
+            "job-3",
+            "job-5"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-3",
+                "job-5"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve each requested alias through its intermediate name to its artifact. The eventual handoff requires a receipt for one of those two artifacts.",
+              "requested_aliases": [
+                "northstar",
+                "westgate"
+              ]
+            }
+          },
+          "forms_sha256": "ca11785d58b5f61c2d82123c4b733488ca65dfc22b69a5f4294248d14ee4883c"
+        },
+        {
+          "candidate_keys": [
+            "job-4",
+            "job-5"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-4",
+                "job-5"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve each requested alias through its intermediate name to its artifact. The eventual handoff requires a receipt for one of those two artifacts.",
+              "requested_aliases": [
+                "highridge",
+                "westgate"
+              ]
+            }
+          },
+          "forms_sha256": "9df15d2afbb0e40c22008a40dbd75e8b72d285abb9f4ae62e6940acf93cb2d83"
+        }
+      ]
+    },
+    {
+      "family": "package_prerequisites",
+      "public_metadata": {
+        "version": "heldout_renderer_semantics_v1",
+        "family": "package_prerequisites",
+        "jobs": [
+          {
+            "key": "job-0",
+            "artifact": "ledger-snapshot"
+          },
+          {
+            "key": "job-1",
+            "artifact": "route-schema"
+          },
+          {
+            "key": "job-2",
+            "artifact": "asset-index"
+          },
+          {
+            "key": "job-3",
+            "artifact": "clock-profile"
+          },
+          {
+            "key": "job-4",
+            "artifact": "quota-map"
+          },
+          {
+            "key": "job-5",
+            "artifact": "trace-catalog"
+          }
+        ],
+        "components": [
+          {
+            "component": "adapter",
+            "source_artifact": "asset-index"
+          },
+          {
+            "component": "catalogue",
+            "source_artifact": "quota-map"
+          },
+          {
+            "component": "resolver",
+            "source_artifact": "route-schema"
+          },
+          {
+            "component": "scheduler",
+            "source_artifact": "trace-catalog"
+          },
+          {
+            "component": "signer",
+            "source_artifact": "clock-profile"
+          },
+          {
+            "component": "writer",
+            "source_artifact": "ledger-snapshot"
+          }
+        ],
+        "packages": [
+          {
+            "package": "bundle-dune",
+            "prerequisites": [
+              "resolver",
+              "writer"
+            ]
+          },
+          {
+            "package": "bundle-kelp",
+            "prerequisites": [
+              "adapter",
+              "writer"
+            ]
+          },
+          {
+            "package": "bundle-coral",
+            "prerequisites": [
+              "signer",
+              "writer"
+            ]
+          },
+          {
+            "package": "bundle-juniper",
+            "prerequisites": [
+              "catalogue",
+              "writer"
+            ]
+          },
+          {
+            "package": "bundle-birch",
+            "prerequisites": [
+              "scheduler",
+              "writer"
+            ]
+          },
+          {
+            "package": "bundle-iris",
+            "prerequisites": [
+              "adapter",
+              "resolver"
+            ]
+          },
+          {
+            "package": "bundle-aurora",
+            "prerequisites": [
+              "resolver",
+              "signer"
+            ]
+          },
+          {
+            "package": "bundle-heather",
+            "prerequisites": [
+              "catalogue",
+              "resolver"
+            ]
+          },
+          {
+            "package": "bundle-orchid",
+            "prerequisites": [
+              "resolver",
+              "scheduler"
+            ]
+          },
+          {
+            "package": "bundle-grove",
+            "prerequisites": [
+              "adapter",
+              "signer"
+            ]
+          },
+          {
+            "package": "bundle-nectar",
+            "prerequisites": [
+              "adapter",
+              "catalogue"
+            ]
+          },
+          {
+            "package": "bundle-flint",
+            "prerequisites": [
+              "adapter",
+              "scheduler"
+            ]
+          },
+          {
+            "package": "bundle-meadow",
+            "prerequisites": [
+              "catalogue",
+              "signer"
+            ]
+          },
+          {
+            "package": "bundle-elm",
+            "prerequisites": [
+              "scheduler",
+              "signer"
+            ]
+          },
+          {
+            "package": "bundle-linden",
+            "prerequisites": [
+              "catalogue",
+              "scheduler"
+            ]
+          }
+        ]
+      },
+      "metadata_sha256": "523633f1e965f4ca6fa0191aa0fb21512db0a6358cf7c2c0ba3431376adf0794",
+      "candidate_pairs": 15,
+      "target_routes_per_mode": 30,
+      "clues": [
+        {
+          "candidate_keys": [
+            "job-0",
+            "job-1"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-0",
+                "job-1"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Trace the requested package's prerequisite components to their source artifacts. The eventual handoff requires a receipt for one of those two source artifacts.",
+              "requested_package": "bundle-dune"
+            }
+          },
+          "forms_sha256": "5afe3f206d101a15e40bf18bc11dcee9d3a82f74df19f05c8dbc3234702e9883"
+        },
+        {
+          "candidate_keys": [
+            "job-0",
+            "job-2"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-0",
+                "job-2"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Trace the requested package's prerequisite components to their source artifacts. The eventual handoff requires a receipt for one of those two source artifacts.",
+              "requested_package": "bundle-kelp"
+            }
+          },
+          "forms_sha256": "b6548470222382f7ca40cd806033a64edf3ba755c441ac2eb7294ec7324cef6f"
+        },
+        {
+          "candidate_keys": [
+            "job-0",
+            "job-3"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-0",
+                "job-3"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Trace the requested package's prerequisite components to their source artifacts. The eventual handoff requires a receipt for one of those two source artifacts.",
+              "requested_package": "bundle-coral"
+            }
+          },
+          "forms_sha256": "67ef7b8682d1e25b934dcfab776787a58e57d3130fcfbc1531e39186d8567740"
+        },
+        {
+          "candidate_keys": [
+            "job-0",
+            "job-4"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-0",
+                "job-4"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Trace the requested package's prerequisite components to their source artifacts. The eventual handoff requires a receipt for one of those two source artifacts.",
+              "requested_package": "bundle-juniper"
+            }
+          },
+          "forms_sha256": "ee373985e49d7243756a62ff18ee7da162270023f11cee0b3e696ca3a4c05713"
+        },
+        {
+          "candidate_keys": [
+            "job-0",
+            "job-5"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-0",
+                "job-5"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Trace the requested package's prerequisite components to their source artifacts. The eventual handoff requires a receipt for one of those two source artifacts.",
+              "requested_package": "bundle-birch"
+            }
+          },
+          "forms_sha256": "64a27e84e4c0e4be485cbdd99ad86e308dc0c7a913d05766b84a26ecf840ec70"
+        },
+        {
+          "candidate_keys": [
+            "job-1",
+            "job-2"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-1",
+                "job-2"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Trace the requested package's prerequisite components to their source artifacts. The eventual handoff requires a receipt for one of those two source artifacts.",
+              "requested_package": "bundle-iris"
+            }
+          },
+          "forms_sha256": "bbb92e6acf56fb4f187df122546e1927b2d8876a08f0362bc3b801f6c758d5c2"
+        },
+        {
+          "candidate_keys": [
+            "job-1",
+            "job-3"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-1",
+                "job-3"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Trace the requested package's prerequisite components to their source artifacts. The eventual handoff requires a receipt for one of those two source artifacts.",
+              "requested_package": "bundle-aurora"
+            }
+          },
+          "forms_sha256": "e15f804421602d7b97167dc0f112cffaf1a5f5e53400683b6bf3b81ff7f1800b"
+        },
+        {
+          "candidate_keys": [
+            "job-1",
+            "job-4"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-1",
+                "job-4"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Trace the requested package's prerequisite components to their source artifacts. The eventual handoff requires a receipt for one of those two source artifacts.",
+              "requested_package": "bundle-heather"
+            }
+          },
+          "forms_sha256": "3e130f0c6c713e935891790e976eead30564f17b5e65501a5112a890f09cf2d5"
+        },
+        {
+          "candidate_keys": [
+            "job-1",
+            "job-5"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-1",
+                "job-5"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Trace the requested package's prerequisite components to their source artifacts. The eventual handoff requires a receipt for one of those two source artifacts.",
+              "requested_package": "bundle-orchid"
+            }
+          },
+          "forms_sha256": "589d5db58541bc813a64a46381e4244a2af3710d59cdd9f8e9497d0d92adbba5"
+        },
+        {
+          "candidate_keys": [
+            "job-2",
+            "job-3"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-2",
+                "job-3"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Trace the requested package's prerequisite components to their source artifacts. The eventual handoff requires a receipt for one of those two source artifacts.",
+              "requested_package": "bundle-grove"
+            }
+          },
+          "forms_sha256": "81c2c63f170e501fe686872f81e18a0c5764403509e8c34e7374106ef849b61d"
+        },
+        {
+          "candidate_keys": [
+            "job-2",
+            "job-4"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-2",
+                "job-4"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Trace the requested package's prerequisite components to their source artifacts. The eventual handoff requires a receipt for one of those two source artifacts.",
+              "requested_package": "bundle-nectar"
+            }
+          },
+          "forms_sha256": "eabe884f4ce8bdd72240d778224714379c2901482c77631c80f538f084c335f1"
+        },
+        {
+          "candidate_keys": [
+            "job-2",
+            "job-5"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-2",
+                "job-5"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Trace the requested package's prerequisite components to their source artifacts. The eventual handoff requires a receipt for one of those two source artifacts.",
+              "requested_package": "bundle-flint"
+            }
+          },
+          "forms_sha256": "42a2fe92c0536a224406f192d09a10d8fe80e306b5e5c99db565c246665e29af"
+        },
+        {
+          "candidate_keys": [
+            "job-3",
+            "job-4"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-3",
+                "job-4"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Trace the requested package's prerequisite components to their source artifacts. The eventual handoff requires a receipt for one of those two source artifacts.",
+              "requested_package": "bundle-meadow"
+            }
+          },
+          "forms_sha256": "447113514098f1bff1a418b7b564472e88a7262329c10c86ff86beaa2edd92e7"
+        },
+        {
+          "candidate_keys": [
+            "job-3",
+            "job-5"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-3",
+                "job-5"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Trace the requested package's prerequisite components to their source artifacts. The eventual handoff requires a receipt for one of those two source artifacts.",
+              "requested_package": "bundle-elm"
+            }
+          },
+          "forms_sha256": "c0ed150b9e43edcb5bf65d1e1b018749233b9aa390220f17afbd76325b2e6c95"
+        },
+        {
+          "candidate_keys": [
+            "job-4",
+            "job-5"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-4",
+                "job-5"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Trace the requested package's prerequisite components to their source artifacts. The eventual handoff requires a receipt for one of those two source artifacts.",
+              "requested_package": "bundle-linden"
+            }
+          },
+          "forms_sha256": "de7bc690338a524e3ed5195d4a8d329f117cadcd83df659f38d4f37cd4075d33"
+        }
+      ]
+    },
+    {
+      "family": "validation_scope",
+      "public_metadata": {
+        "version": "heldout_renderer_semantics_v1",
+        "family": "validation_scope",
+        "jobs": [
+          {
+            "key": "job-0",
+            "artifact": "ledger-snapshot"
+          },
+          {
+            "key": "job-1",
+            "artifact": "route-schema"
+          },
+          {
+            "key": "job-2",
+            "artifact": "asset-index"
+          },
+          {
+            "key": "job-3",
+            "artifact": "clock-profile"
+          },
+          {
+            "key": "job-4",
+            "artifact": "quota-map"
+          },
+          {
+            "key": "job-5",
+            "artifact": "trace-catalog"
+          }
+        ],
+        "scopes": [
+          {
+            "scope": "scope-dune",
+            "artifacts": [
+              "ledger-snapshot",
+              "route-schema"
+            ]
+          },
+          {
+            "scope": "scope-kelp",
+            "artifacts": [
+              "asset-index",
+              "ledger-snapshot"
+            ]
+          },
+          {
+            "scope": "scope-coral",
+            "artifacts": [
+              "clock-profile",
+              "ledger-snapshot"
+            ]
+          },
+          {
+            "scope": "scope-juniper",
+            "artifacts": [
+              "ledger-snapshot",
+              "quota-map"
+            ]
+          },
+          {
+            "scope": "scope-birch",
+            "artifacts": [
+              "ledger-snapshot",
+              "trace-catalog"
+            ]
+          },
+          {
+            "scope": "scope-iris",
+            "artifacts": [
+              "asset-index",
+              "route-schema"
+            ]
+          },
+          {
+            "scope": "scope-aurora",
+            "artifacts": [
+              "clock-profile",
+              "route-schema"
+            ]
+          },
+          {
+            "scope": "scope-heather",
+            "artifacts": [
+              "quota-map",
+              "route-schema"
+            ]
+          },
+          {
+            "scope": "scope-orchid",
+            "artifacts": [
+              "route-schema",
+              "trace-catalog"
+            ]
+          },
+          {
+            "scope": "scope-grove",
+            "artifacts": [
+              "asset-index",
+              "clock-profile"
+            ]
+          },
+          {
+            "scope": "scope-nectar",
+            "artifacts": [
+              "asset-index",
+              "quota-map"
+            ]
+          },
+          {
+            "scope": "scope-flint",
+            "artifacts": [
+              "asset-index",
+              "trace-catalog"
+            ]
+          },
+          {
+            "scope": "scope-meadow",
+            "artifacts": [
+              "clock-profile",
+              "quota-map"
+            ]
+          },
+          {
+            "scope": "scope-elm",
+            "artifacts": [
+              "clock-profile",
+              "trace-catalog"
+            ]
+          },
+          {
+            "scope": "scope-linden",
+            "artifacts": [
+              "quota-map",
+              "trace-catalog"
+            ]
+          }
+        ],
+        "obligations": [
+          {
+            "obligation": "verify-aurora",
+            "scope": "scope-dune",
+            "coverage": "all_scope_artifacts"
+          },
+          {
+            "obligation": "verify-birch",
+            "scope": "scope-kelp",
+            "coverage": "all_scope_artifacts"
+          },
+          {
+            "obligation": "verify-coral",
+            "scope": "scope-coral",
+            "coverage": "all_scope_artifacts"
+          },
+          {
+            "obligation": "verify-dune",
+            "scope": "scope-juniper",
+            "coverage": "all_scope_artifacts"
+          },
+          {
+            "obligation": "verify-elm",
+            "scope": "scope-birch",
+            "coverage": "all_scope_artifacts"
+          },
+          {
+            "obligation": "verify-flint",
+            "scope": "scope-iris",
+            "coverage": "all_scope_artifacts"
+          },
+          {
+            "obligation": "verify-grove",
+            "scope": "scope-aurora",
+            "coverage": "all_scope_artifacts"
+          },
+          {
+            "obligation": "verify-heather",
+            "scope": "scope-heather",
+            "coverage": "all_scope_artifacts"
+          },
+          {
+            "obligation": "verify-iris",
+            "scope": "scope-orchid",
+            "coverage": "all_scope_artifacts"
+          },
+          {
+            "obligation": "verify-juniper",
+            "scope": "scope-grove",
+            "coverage": "all_scope_artifacts"
+          },
+          {
+            "obligation": "verify-kelp",
+            "scope": "scope-nectar",
+            "coverage": "all_scope_artifacts"
+          },
+          {
+            "obligation": "verify-linden",
+            "scope": "scope-flint",
+            "coverage": "all_scope_artifacts"
+          },
+          {
+            "obligation": "verify-meadow",
+            "scope": "scope-meadow",
+            "coverage": "all_scope_artifacts"
+          },
+          {
+            "obligation": "verify-nectar",
+            "scope": "scope-elm",
+            "coverage": "all_scope_artifacts"
+          },
+          {
+            "obligation": "verify-orchid",
+            "scope": "scope-linden",
+            "coverage": "all_scope_artifacts"
+          }
+        ]
+      },
+      "metadata_sha256": "e3565a8fac9afd1e5193e563aac3477885d0f4232d2456c897d151bd85a3698c",
+      "candidate_pairs": 15,
+      "target_routes_per_mode": 30,
+      "clues": [
+        {
+          "candidate_keys": [
+            "job-0",
+            "job-1"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-0",
+                "job-1"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "The stated verification obligation covers every artifact in its named scope. The eventual handoff requires a receipt for one of those two scoped artifacts.",
+              "verification_obligation": "verify-aurora"
+            }
+          },
+          "forms_sha256": "e6b5456182f4f2d590d55d23497162822c98d8d897a991c4dc5bbc8c25a7158a"
+        },
+        {
+          "candidate_keys": [
+            "job-0",
+            "job-2"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-0",
+                "job-2"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "The stated verification obligation covers every artifact in its named scope. The eventual handoff requires a receipt for one of those two scoped artifacts.",
+              "verification_obligation": "verify-birch"
+            }
+          },
+          "forms_sha256": "66a408498ec789ab8d94a51648c5ef73c3a8b206f26ab2c569f900c1d0f4460c"
+        },
+        {
+          "candidate_keys": [
+            "job-0",
+            "job-3"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-0",
+                "job-3"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "The stated verification obligation covers every artifact in its named scope. The eventual handoff requires a receipt for one of those two scoped artifacts.",
+              "verification_obligation": "verify-coral"
+            }
+          },
+          "forms_sha256": "5519f08f71946d018cbc12614900c01e349231d2c5ae0a43d5099f880d6cee36"
+        },
+        {
+          "candidate_keys": [
+            "job-0",
+            "job-4"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-0",
+                "job-4"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "The stated verification obligation covers every artifact in its named scope. The eventual handoff requires a receipt for one of those two scoped artifacts.",
+              "verification_obligation": "verify-dune"
+            }
+          },
+          "forms_sha256": "cea2033a613acf1f3749432c4b1201069f332f83abfef85043c48ebdd0e84ae9"
+        },
+        {
+          "candidate_keys": [
+            "job-0",
+            "job-5"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-0",
+                "job-5"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "The stated verification obligation covers every artifact in its named scope. The eventual handoff requires a receipt for one of those two scoped artifacts.",
+              "verification_obligation": "verify-elm"
+            }
+          },
+          "forms_sha256": "5b815af14eb8d9bb73f3ba4088d87a369711e5bc4eda87819a807c16cc908c24"
+        },
+        {
+          "candidate_keys": [
+            "job-1",
+            "job-2"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-1",
+                "job-2"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "The stated verification obligation covers every artifact in its named scope. The eventual handoff requires a receipt for one of those two scoped artifacts.",
+              "verification_obligation": "verify-flint"
+            }
+          },
+          "forms_sha256": "8be0852c13a4e0b99aae19e6a8b3674819fe76684dc39be11912b7984dff0428"
+        },
+        {
+          "candidate_keys": [
+            "job-1",
+            "job-3"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-1",
+                "job-3"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "The stated verification obligation covers every artifact in its named scope. The eventual handoff requires a receipt for one of those two scoped artifacts.",
+              "verification_obligation": "verify-grove"
+            }
+          },
+          "forms_sha256": "7be2695b2ad1432c85261a109e53d7a0e0fa0f8a3806e221ccb23bcc254592a7"
+        },
+        {
+          "candidate_keys": [
+            "job-1",
+            "job-4"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-1",
+                "job-4"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "The stated verification obligation covers every artifact in its named scope. The eventual handoff requires a receipt for one of those two scoped artifacts.",
+              "verification_obligation": "verify-heather"
+            }
+          },
+          "forms_sha256": "d0604c0e969ba7e8f556e40e502046a46c779f9183cf15b359de578bc763526e"
+        },
+        {
+          "candidate_keys": [
+            "job-1",
+            "job-5"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-1",
+                "job-5"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "The stated verification obligation covers every artifact in its named scope. The eventual handoff requires a receipt for one of those two scoped artifacts.",
+              "verification_obligation": "verify-iris"
+            }
+          },
+          "forms_sha256": "8769c67b6b23fb2b6979f8fd6defcf6ccad4cb671ddfa47b5b738942178334ec"
+        },
+        {
+          "candidate_keys": [
+            "job-2",
+            "job-3"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-2",
+                "job-3"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "The stated verification obligation covers every artifact in its named scope. The eventual handoff requires a receipt for one of those two scoped artifacts.",
+              "verification_obligation": "verify-juniper"
+            }
+          },
+          "forms_sha256": "4cc2a7a8d7c7c940f2e8715859ff7e408f4c16eb6470ad34f4a8cb63b8e8d15b"
+        },
+        {
+          "candidate_keys": [
+            "job-2",
+            "job-4"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-2",
+                "job-4"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "The stated verification obligation covers every artifact in its named scope. The eventual handoff requires a receipt for one of those two scoped artifacts.",
+              "verification_obligation": "verify-kelp"
+            }
+          },
+          "forms_sha256": "141f0aa4f8506806a3ce7b9aba278de8e52f0aa1e9b87fd0ab22880e33f0fe0b"
+        },
+        {
+          "candidate_keys": [
+            "job-2",
+            "job-5"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-2",
+                "job-5"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "The stated verification obligation covers every artifact in its named scope. The eventual handoff requires a receipt for one of those two scoped artifacts.",
+              "verification_obligation": "verify-linden"
+            }
+          },
+          "forms_sha256": "520561cde161a94a4973b6010797c16b012f3cf78a99ce67879fafa6da7c9067"
+        },
+        {
+          "candidate_keys": [
+            "job-3",
+            "job-4"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-3",
+                "job-4"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "The stated verification obligation covers every artifact in its named scope. The eventual handoff requires a receipt for one of those two scoped artifacts.",
+              "verification_obligation": "verify-meadow"
+            }
+          },
+          "forms_sha256": "37fd7a5e459af583a69465e99297ec322fe8342a0d9bd1e28c2cfd3702049911"
+        },
+        {
+          "candidate_keys": [
+            "job-3",
+            "job-5"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-3",
+                "job-5"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "The stated verification obligation covers every artifact in its named scope. The eventual handoff requires a receipt for one of those two scoped artifacts.",
+              "verification_obligation": "verify-nectar"
+            }
+          },
+          "forms_sha256": "82ba3e6db791e0bdc60ba7d634d457daf43f6794889220094efa6362a1759947"
+        },
+        {
+          "candidate_keys": [
+            "job-4",
+            "job-5"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-4",
+                "job-5"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "The stated verification obligation covers every artifact in its named scope. The eventual handoff requires a receipt for one of those two scoped artifacts.",
+              "verification_obligation": "verify-orchid"
+            }
+          },
+          "forms_sha256": "aa9300549fb3b23e4472d8ff9e97d85c4c10b60606f25881203d1403ce98a842"
+        }
+      ]
+    },
+    {
+      "family": "deployment_handoff",
+      "public_metadata": {
+        "version": "heldout_renderer_semantics_v1",
+        "family": "deployment_handoff",
+        "jobs": [
+          {
+            "key": "job-0",
+            "artifact": "ledger-snapshot"
+          },
+          {
+            "key": "job-1",
+            "artifact": "route-schema"
+          },
+          {
+            "key": "job-2",
+            "artifact": "asset-index"
+          },
+          {
+            "key": "job-3",
+            "artifact": "clock-profile"
+          },
+          {
+            "key": "job-4",
+            "artifact": "quota-map"
+          },
+          {
+            "key": "job-5",
+            "artifact": "trace-catalog"
+          }
+        ],
+        "delivery_roles": [
+          {
+            "role": "publisher",
+            "evidence_artifact": "clock-profile"
+          },
+          {
+            "role": "registrar",
+            "evidence_artifact": "trace-catalog"
+          },
+          {
+            "role": "dispatcher",
+            "evidence_artifact": "ledger-snapshot"
+          },
+          {
+            "role": "attestor",
+            "evidence_artifact": "quota-map"
+          },
+          {
+            "role": "operator",
+            "evidence_artifact": "asset-index"
+          },
+          {
+            "role": "curator",
+            "evidence_artifact": "route-schema"
+          }
+        ],
+        "handoffs": [
+          {
+            "handoff": "handoff-dune",
+            "required_roles": [
+              "curator",
+              "dispatcher"
+            ]
+          },
+          {
+            "handoff": "handoff-kelp",
+            "required_roles": [
+              "dispatcher",
+              "operator"
+            ]
+          },
+          {
+            "handoff": "handoff-coral",
+            "required_roles": [
+              "dispatcher",
+              "publisher"
+            ]
+          },
+          {
+            "handoff": "handoff-juniper",
+            "required_roles": [
+              "attestor",
+              "dispatcher"
+            ]
+          },
+          {
+            "handoff": "handoff-birch",
+            "required_roles": [
+              "dispatcher",
+              "registrar"
+            ]
+          },
+          {
+            "handoff": "handoff-iris",
+            "required_roles": [
+              "curator",
+              "operator"
+            ]
+          },
+          {
+            "handoff": "handoff-aurora",
+            "required_roles": [
+              "curator",
+              "publisher"
+            ]
+          },
+          {
+            "handoff": "handoff-heather",
+            "required_roles": [
+              "attestor",
+              "curator"
+            ]
+          },
+          {
+            "handoff": "handoff-orchid",
+            "required_roles": [
+              "curator",
+              "registrar"
+            ]
+          },
+          {
+            "handoff": "handoff-grove",
+            "required_roles": [
+              "operator",
+              "publisher"
+            ]
+          },
+          {
+            "handoff": "handoff-nectar",
+            "required_roles": [
+              "attestor",
+              "operator"
+            ]
+          },
+          {
+            "handoff": "handoff-flint",
+            "required_roles": [
+              "operator",
+              "registrar"
+            ]
+          },
+          {
+            "handoff": "handoff-meadow",
+            "required_roles": [
+              "attestor",
+              "publisher"
+            ]
+          },
+          {
+            "handoff": "handoff-elm",
+            "required_roles": [
+              "publisher",
+              "registrar"
+            ]
+          },
+          {
+            "handoff": "handoff-linden",
+            "required_roles": [
+              "attestor",
+              "registrar"
+            ]
+          }
+        ]
+      },
+      "metadata_sha256": "deba267894a524d1b15744bacf0dc3f02c266c3374a05ea4206ba0e5477d905c",
+      "candidate_pairs": 15,
+      "target_routes_per_mode": 30,
+      "clues": [
+        {
+          "candidate_keys": [
+            "job-0",
+            "job-1"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-0",
+                "job-1"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve the stated deployment handoff's required delivery roles to the artifacts whose evidence they require. The eventual handoff requires a receipt for one of those two artifacts.",
+              "deployment_handoff": "handoff-dune"
+            }
+          },
+          "forms_sha256": "5898694eca0b7457c787917c115fd2b4e71ce99a78b6c11c8b54ad4187d6c686"
+        },
+        {
+          "candidate_keys": [
+            "job-0",
+            "job-2"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-0",
+                "job-2"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve the stated deployment handoff's required delivery roles to the artifacts whose evidence they require. The eventual handoff requires a receipt for one of those two artifacts.",
+              "deployment_handoff": "handoff-kelp"
+            }
+          },
+          "forms_sha256": "4eea339de9e362c97bdc6838c8676d0f425ccf01b872baca69df17620dce0ddd"
+        },
+        {
+          "candidate_keys": [
+            "job-0",
+            "job-3"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-0",
+                "job-3"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve the stated deployment handoff's required delivery roles to the artifacts whose evidence they require. The eventual handoff requires a receipt for one of those two artifacts.",
+              "deployment_handoff": "handoff-coral"
+            }
+          },
+          "forms_sha256": "7e1568fa7c7e30bd5272086fc4e70e2c881ca05efb99201ed028714c38f11ab0"
+        },
+        {
+          "candidate_keys": [
+            "job-0",
+            "job-4"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-0",
+                "job-4"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve the stated deployment handoff's required delivery roles to the artifacts whose evidence they require. The eventual handoff requires a receipt for one of those two artifacts.",
+              "deployment_handoff": "handoff-juniper"
+            }
+          },
+          "forms_sha256": "68f9bc606bd8849757d962bd38788a4a85d5cc358a2bbe6be2882b4dbe1fd059"
+        },
+        {
+          "candidate_keys": [
+            "job-0",
+            "job-5"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-0",
+                "job-5"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve the stated deployment handoff's required delivery roles to the artifacts whose evidence they require. The eventual handoff requires a receipt for one of those two artifacts.",
+              "deployment_handoff": "handoff-birch"
+            }
+          },
+          "forms_sha256": "e1f215f60610eeb1b18b90f7d65431f99a431140acf655ee3c9e5de00e1ed81c"
+        },
+        {
+          "candidate_keys": [
+            "job-1",
+            "job-2"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-1",
+                "job-2"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve the stated deployment handoff's required delivery roles to the artifacts whose evidence they require. The eventual handoff requires a receipt for one of those two artifacts.",
+              "deployment_handoff": "handoff-iris"
+            }
+          },
+          "forms_sha256": "2ac80e8af9d2fb6694eaf98bdba5b63f84b1dadebe7d7326c494c03be3871142"
+        },
+        {
+          "candidate_keys": [
+            "job-1",
+            "job-3"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-1",
+                "job-3"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve the stated deployment handoff's required delivery roles to the artifacts whose evidence they require. The eventual handoff requires a receipt for one of those two artifacts.",
+              "deployment_handoff": "handoff-aurora"
+            }
+          },
+          "forms_sha256": "67a53d9a8f12822ed0e0ef5b780f2bcec0cd606531082a97d131885a49555f21"
+        },
+        {
+          "candidate_keys": [
+            "job-1",
+            "job-4"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-1",
+                "job-4"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve the stated deployment handoff's required delivery roles to the artifacts whose evidence they require. The eventual handoff requires a receipt for one of those two artifacts.",
+              "deployment_handoff": "handoff-heather"
+            }
+          },
+          "forms_sha256": "3af3860ab081e28511063ac5915ec29c10029cc71ddf936feab4c55d6dcae570"
+        },
+        {
+          "candidate_keys": [
+            "job-1",
+            "job-5"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-1",
+                "job-5"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve the stated deployment handoff's required delivery roles to the artifacts whose evidence they require. The eventual handoff requires a receipt for one of those two artifacts.",
+              "deployment_handoff": "handoff-orchid"
+            }
+          },
+          "forms_sha256": "5314ac81d24df1972b74861c16b4763fb45fab916e8b8fbaf3bbd0e0240f1187"
+        },
+        {
+          "candidate_keys": [
+            "job-2",
+            "job-3"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-2",
+                "job-3"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve the stated deployment handoff's required delivery roles to the artifacts whose evidence they require. The eventual handoff requires a receipt for one of those two artifacts.",
+              "deployment_handoff": "handoff-grove"
+            }
+          },
+          "forms_sha256": "3551b30361ea4b2b2fa188b13a6036e39c78148edf2b9588ee11a63cac61b41f"
+        },
+        {
+          "candidate_keys": [
+            "job-2",
+            "job-4"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-2",
+                "job-4"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve the stated deployment handoff's required delivery roles to the artifacts whose evidence they require. The eventual handoff requires a receipt for one of those two artifacts.",
+              "deployment_handoff": "handoff-nectar"
+            }
+          },
+          "forms_sha256": "772f663808e59875e3d5057464e156f83b7c756921c17cd01eaf33199ed2bfcf"
+        },
+        {
+          "candidate_keys": [
+            "job-2",
+            "job-5"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-2",
+                "job-5"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve the stated deployment handoff's required delivery roles to the artifacts whose evidence they require. The eventual handoff requires a receipt for one of those two artifacts.",
+              "deployment_handoff": "handoff-flint"
+            }
+          },
+          "forms_sha256": "b8648f94e532cb820a776b9e02179e3bc9d41a080fbe76dd70ae9fcb1381d858"
+        },
+        {
+          "candidate_keys": [
+            "job-3",
+            "job-4"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-3",
+                "job-4"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve the stated deployment handoff's required delivery roles to the artifacts whose evidence they require. The eventual handoff requires a receipt for one of those two artifacts.",
+              "deployment_handoff": "handoff-meadow"
+            }
+          },
+          "forms_sha256": "ca424327dd5a8ac4209ab4cf704b3f50d05ccb3898f9f984d4541f641dfb6551"
+        },
+        {
+          "candidate_keys": [
+            "job-3",
+            "job-5"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-3",
+                "job-5"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve the stated deployment handoff's required delivery roles to the artifacts whose evidence they require. The eventual handoff requires a receipt for one of those two artifacts.",
+              "deployment_handoff": "handoff-elm"
+            }
+          },
+          "forms_sha256": "5aa426a870feb23b7b149dfdf0ab6c6e01f70b7ee0e57a4b7f930a86b2df3adc"
+        },
+        {
+          "candidate_keys": [
+            "job-4",
+            "job-5"
+          ],
+          "forms": {
+            "explicit_labels": {
+              "kind": "manifest",
+              "candidate_keys": [
+                "job-4",
+                "job-5"
+              ]
+            },
+            "inferred_dependencies": {
+              "kind": "manifest",
+              "task": "Resolve the stated deployment handoff's required delivery roles to the artifacts whose evidence they require. The eventual handoff requires a receipt for one of those two artifacts.",
+              "deployment_handoff": "handoff-linden"
+            }
+          },
+          "forms_sha256": "2280aca843eac573435f1360872bc0dd35d8e72fc88207e4f85ce2211aab0d4b"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Exact synthetic relation lookup; no natural-task or model-generalization evidence.",
+    "Route repetitions are semantic checks, not independent observations.",
+    "Fixed authored names and mappings; no model-guided prompt or name search.",
+    "Historical route, payload, and call-order reservations remain unchanged.",
+    "Provider allowlist, boundary serialization, and full launch freeze remain future work.",
+    "Static metadata grows with the catalog; byte/token cost is not held equal between families.",
+    "One reserved route per family still confounds family and route effects."
+  ]
+}

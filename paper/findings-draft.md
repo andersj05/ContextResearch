@@ -1,6 +1,6 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.6 — September 19, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.7 — September 19, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
 
 ## The question
 
@@ -51,7 +51,7 @@ The [correctness audit](../research/CORRECTNESS_AUDIT_2026-09-19.md) reproduced 
 
 ## First Luna development results
 
-The [pilot design](../docs/LLM_PILOT_SPEC.md) separates inspection choice with ideal scripted retention from inspection with model-selected records. Its historical full schedule reserves 432 requests; only the 96-request development tranche has run. The four held-out families remain unimplemented and unrun. [C22]
+The [pilot design](../docs/LLM_PILOT_SPEC.md) separates inspection choice with ideal scripted retention from inspection with model-selected records. Its historical full schedule reserves 432 requests; only the 96-request development tranche has run. The four held-out families now have offline clue renderers, while request integration and model evaluation remain unfinished. [C22, C28]
 
 The development renderer and strict request interface are now implemented. In fake-client checks, both optimal and forget-all controls completed 36 episodes with 96 requests; their pre-recovery availability differed, 26/36 versus 0/36. These are software controls on one route, not model trials. [C24; implementation and audit](../docs/DEVELOPMENT_PILOT.md)
 
@@ -67,6 +67,8 @@ The mechanism is concrete. If the smaller member of the future pair will be refr
 
 The next [prepared diagnostic](../docs/REVISION_DIAGNOSTIC.md) reverses the refresh direction and changes visible-record order. It has 24 planned cold parent requests, evaluated over all 30 routes with an optimal later selector. The fake controls distinguish rule-sensitive selection from static key/position preferences. A new model allocation is pending; the first 96-call tranche remains untouched. [C27]
 
-Complete and freeze the held-out renderers before using them; their tiny sample remains debugging evidence. An [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) is ready, but no reviewer has been contacted. External mathematical review and novelty remain open, and the single-block exact gap does not strengthen the all-k bound automatically.
+The [held-out semantic checkpoint](../docs/HELDOUT_RENDERERS.md) covers alias chains, package prerequisites, validation scopes, and deployment handoffs. All 15 candidate pairs in both explicit and inferred formats resolve to the same intended pair, giving 120 clue forms and 240 pair/target checks across the four families. The renderer has no final-target or receipt-value input. This is offline software evidence only, with no change to the reserved routes or previous model results. Final request integration, boundary deletion checks, and a complete launch freeze remain necessary. Catalog sizes differ, and the tiny one-route-per-family sample cannot establish generalization or isolate family effects. [C28]
+
+An [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) is ready, but no reviewer has been contacted. External mathematical review and novelty remain open, and the single-block exact gap does not strengthen the all-k bound automatically.
 
 For each update, revise the result paragraphs and the claim register together, link the supporting artifact, and retain null or negative findings. Keep proposed work visibly separate from completed evidence.

@@ -18,6 +18,7 @@ import time
 from artifact_workflow import (Action, ArtifactEnvironment, Fixture, Policy, PublicView,
                                Receipt, choose_action, memory_bytes, run_episode,
                                visible_records)
+from luna_appserver import ResponseFormatError
 from pilot_interface import (FakeClient, inspection_request, public_metadata,
                              request_bytes, retention_request,
                              validate_inspection_response, validate_retention_response)
@@ -96,6 +97,9 @@ class RequestLedger:
                 self.client.last_metadata = {}
             # Round-trip prevents mutation/identity links to evaluator request objects.
             response = self.client.complete(json.loads(payload))
+        except ResponseFormatError as error:
+            row.update(status="policy_failure", error_type=type(error).__name__)
+            raise RequestFailure("invalid_response") from error
         except Exception as error:
             row.update(status="transport_failure", error_type=type(error).__name__)
             self.stopped = True

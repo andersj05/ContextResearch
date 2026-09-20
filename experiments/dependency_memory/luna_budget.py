@@ -58,6 +58,10 @@ def usage_estimates(usage: dict[str, Any]) -> dict[str, Any]:
     cached = _tokens(usage, "cachedInputTokens")
     outputs = _tokens(usage, "outputTokens")
     reasoning = _tokens(usage, "reasoningOutputTokens")
+    cache_writes_reported = "cacheWriteInputTokens" in usage
+    # Zero is only a validation fallback for the optional bucket. Preserve its
+    # unknown measurement in saved evidence; the conservative charge uses all
+    # input tokens and does not depend on an observed cache-write count.
     cache_writes = _tokens(usage, "cacheWriteInputTokens", default=0)
     if cached > inputs or cache_writes > inputs or cached + cache_writes > inputs:
         raise InvalidUsage("Cache buckets must fit within total input tokens")
@@ -75,12 +79,14 @@ def usage_estimates(usage: dict[str, Any]) -> dict[str, Any]:
     return {
         "usage": {
             "inputTokens": inputs, "cachedInputTokens": cached,
-            "cacheWriteInputTokens": cache_writes, "outputTokens": outputs,
+            "cacheWriteInputTokens": cache_writes if cache_writes_reported else None,
+            "outputTokens": outputs,
             "reasoningOutputTokens": reasoning, "totalTokens": inputs + outputs,
         },
         **_credit_fields("conservative_credit_equivalent", conservative),
         **_credit_fields("basic_rate_credit_estimate", basic),
-        "cache_write_pricing_unresolved": cache_writes > 0,
+        "cache_write_tokens_reported": cache_writes_reported,
+        "cache_write_pricing_unresolved": not cache_writes_reported or cache_writes > 0,
         "reasoning_already_in_output": True,
         "observed_credit_balance_debit": None,
         "observed_dollar_charge": None,

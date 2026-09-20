@@ -4,7 +4,7 @@ import unittest
 from unittest.mock import patch
 
 from artifact_workflow import Config
-from luna_appserver import LunaClient, MODEL, PROVIDER, TransportError, check_quota, quota_snapshot
+from luna_appserver import LunaClient, MODEL, PROVIDER, ResponseFormatError, TransportError, check_quota, quota_snapshot
 from luna_budget import CreditBudget, InvalidUsage, PER_ATTEMPT_RESERVATION
 from luna_isolation import expected_isolation_config
 from pilot_interface import inspection_request
@@ -155,6 +155,85 @@ class LunaAppServerTests(unittest.TestCase):
         self.assertEqual(sum(method == "turn/start" for method, _ in server.calls), 1)
         self.assertIsNone(client.last_metadata["usage"]["cache_write_input_tokens"])
         self.assertFalse(client.last_metadata["cache_write_tokens_reported"])
+        self.assertIsNone(client.last_metadata["credit_accounting"]["usage"]["cacheWriteInputTokens"])
+        self.assertFalse(client.last_metadata["credit_accounting"]["cache_write_tokens_reported"])
+        self.assertTrue(client.last_metadata["credit_accounting"]["cache_write_pricing_unresolved"])
+
+    def test_invalid_json_is_a_settled_policy_failure_and_next_request_can_run(self):
+        for text in ("{", '{"inspect":true,"inspect":false}', '{"inspect":NaN}'):
+            with self.subTest(text=text):
+                events = successful_events()
+                events[0]["params"]["item"]["text"] = text
+                server, client = FakeServer(events=events), make_client()
+                with self.assertRaisesRegex(ResponseFormatError, "invalid_response_json"):
+                    self.invoke(server, client)
+                self.assertFalse(client.stopped)
+                self.assertTrue(server.closed)
+                self.assertEqual(client.last_metadata["status"], "completed")
+                self.assertEqual(client.last_metadata["response_status"], "invalid_json")
+                self.assertEqual(client.last_metadata["credit_accounting"]["status"], "settled")
+                self.assertEqual(client.budget.settled_attempts, 1)
+                self.assertEqual(client.budget.snapshot()["uncertain_credit_reservations"], 0)
+                self.assertIsNone(client.budget.snapshot()["pending_ticket"])
+                _, answer = self.invoke(FakeServer(), client)
+                self.assertEqual(answer, {"inspect": True})
+                self.assertEqual(client.budget.settled_attempts, 2)
+                self.assertNotIn("response_status", client.last_metadata)
+
+    def test_invalid_json_with_missing_usage_still_stops_with_uncertain_reservation(self):
+        events = successful_events()
+        events[0]["params"]["item"]["text"] = "{"
+        del events[1]["params"]["tokenUsage"]["total"]["outputTokens"]
+        client = make_client()
+        with self.assertRaises(InvalidUsage):
+            self.invoke(FakeServer(events=events), client)
+        self.assertTrue(client.stopped)
+        self.assertEqual(client.budget.committed, PER_ATTEMPT_RESERVATION)
+        self.assertEqual(client.budget.failed_attempts, 1)
+        self.assertEqual(client.budget.settled_attempts, 0)
+        self.assertNotIn("response_status", client.last_metadata)
+
+    def test_both_runners_keep_invalid_json_in_denominator_and_continue_without_retry(self):
+        from run_development_pilot import execute as execute_development
+        from run_revision_diagnostic import execute as execute_revision
+
+        for execute, response in ((execute_development, '{"inspect":true}'),
+                                  (execute_revision, '{"keys":["job-0","job-1"]}')):
+            with self.subTest(runner=execute.__module__):
+                client = make_client()
+                servers = []
+                for text in ("{", response):
+                    events = successful_events()
+                    events[0]["params"]["item"]["text"] = text
+                    server = FakeServer(events=events)
+                    server.client = client
+                    servers.append(server)
+                with patch("luna_appserver.AppServer", side_effect=servers) as factory:
+                    summary, ledger = execute(client, fake=True, cap=2)
+                rows = ledger.rows if hasattr(ledger, "rows") else ledger
+                self.assertEqual(factory.call_count, 2)
+                self.assertEqual([row["status"] for row in rows], ["policy_failure", "completed"])
+                self.assertEqual(rows[0]["error_type"], "ResponseFormatError")
+                self.assertIsNone(rows[0]["response"])
+                # Development intentionally repeats identical calibration
+                # requests; advancing the scheduled case distinguishes that
+                # planned replication from a retry of the failed case.
+                case_field = "evaluator_id" if "evaluator_id" in rows[0] else "case_id"
+                self.assertNotEqual(rows[0][case_field], rows[1][case_field])
+                self.assertEqual(summary["attempt_status_counts"]["transport_failure"], 0)
+                self.assertEqual(client.budget.settled_attempts, 2)
+                self.assertFalse(client.stopped)
+                for row in rows:
+                    self.assertEqual(row["provider_metadata"]["credit_accounting"]["status"], "settled")
+                if "rows" in summary:
+                    self.assertEqual(len(summary["rows"]), 24)
+                    self.assertEqual(sum(row["scheduled"] for row in summary["by_rule"]), 24)
+                    self.assertEqual([row["status"] for row in summary["rows"][:2]],
+                                     ["policy_failure", "completed"])
+                else:
+                    self.assertEqual((len(summary["stage_a"]), len(summary["stage_b"])), (12, 36))
+                    self.assertEqual([row["status"] for row in summary["stage_a"][:2]],
+                                     ["policy_failure", "completed"])
 
     def test_missing_one_generation_guard_stop_is_rejected(self):
         self.assert_failed_reserved(FakeServer(events=successful_events(controlled_stop=False)))

@@ -38,6 +38,14 @@ class TransportError(RuntimeError):
     pass
 
 
+class ResponseFormatError(ValueError):
+    """A complete, fully metered generation returned invalid response JSON.
+
+    Its usage is settled and its transport remains valid. Runners should retain
+    a policy failure and continue the schedule without retrying this request.
+    """
+
+
 def strict_json(raw):
     def unique(pairs):
         result = {}
@@ -329,7 +337,18 @@ class LunaClient:
                                           provider_http_request_count=None)
                 if getattr(self, "progress", None):
                     self.progress(self.budget.attempts, self.last_metadata)
-                return strict_json(answers[0])
+                try:
+                    return strict_json(answers[0])
+                except (ValueError, RecursionError) as error:
+                    self.last_metadata.update(response_status="invalid_json",
+                        response_error_type=type(error).__name__,
+                        response_error_code="invalid_response_json")
+                    raise ResponseFormatError("invalid_response_json") from error
+            except ResponseFormatError:
+                # This complete generation has already passed the guard,
+                # accounting, and post-generation quota checks. Invalid answer
+                # syntax does not make its transport or charged usage uncertain.
+                raise
             except Exception as error:
                 self.stopped = True
                 self.last_metadata.update(status="failed", error_type=type(error).__name__,

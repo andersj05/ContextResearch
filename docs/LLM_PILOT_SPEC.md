@@ -55,7 +55,7 @@ Each B fixture has two render modes. In `explicit_labels`, the manifest directly
 
 Public task metadata may describe all six jobs and the dependency relationships needed to interpret a clue. It must be generated independently of the chosen candidate pair and target, be equally available in every arm, and be listed as persistent public side information. Only the manifest identifies the applicable dependency request, and it appears early only after paid inspection. Receipt values, the selected manifest, and past observations cannot be hidden in public metadata or a re-presented task instruction. The final target is uniform within the two inferred candidates and is still revealed only after the second boundary.
 
-The development family is implemented and validated in both modes; the four held-out families remain reserved and unimplemented:
+The development family is implemented and validated in both modes. The four held-out families now have an [offline semantic implementation and checkpoint](HELDOUT_RENDERERS.md); their provider request integration and evaluation remain unfinished:
 
 | Split | Family ID | Required dependency structure |
 |---|---|---|
@@ -69,7 +69,7 @@ These are controlled synthetic templates, not natural workload observations. Aut
 
 The future pilot fixture builder must require exactly the canonical six `job-*` keys, sort each candidate tuple, and choose the scheduled revision by that public order. The general environment now rejects unsorted candidate tuples rather than silently altering their revision. This closes a construction error that could change the reference distribution; existing generated fixtures were already sorted.
 
-Freeze the four held-out families, renderer code, instructions, schemas, and hashes before any held-out model response is viewed. Their implementation and freeze are deferred while the development tranche runs; they are not a prerequisite for using only the completed development renderer. A held-out launch requires its own frozen manifest and budget amendment. Development uses only its designated family. Labels versus inference is a paired change in evidence format, not evidence that the model has generalized to naturally occurring tasks. If a held-out family must be changed after evaluation, preserve its original result and call the replacement a new version; it cannot remain an untouched test set.
+Freeze the four held-out families, renderer code, instructions, schemas, and hashes before any held-out model response is viewed. The offline checkpoint freezes clue semantics and static metadata only; the final provider request format, boundary deletion checks, fixture payloads, and launch manifest remain to be integrated and frozen. A held-out launch requires its own budget amendment. Development uses only its designated family. Labels versus inference is a paired change in evidence format, not evidence that the model has generalized to naturally occurring tasks. If a held-out family must be changed after evaluation, preserve its original result and call the replacement a new version; it cannot remain an untouched test set.
 
 ## Counts, seeds, and stopping
 
@@ -155,7 +155,7 @@ Do not infer a reasoning failure from a retained-key list alone. Distinguish an 
 ## Staging and artifacts
 
 1. **Now, offline:** generate the schedule and exact calibration references; validate sample separation, pair keys, counts, and unresolved launch gates. Run the repository's existing tests, validator, and paper build. This is an implemented-plan check, not model evidence.
-2. **Development prerequisites, offline:** validate the completed development renderer, fresh-request adapter, fake-client controls, allowlist serializer, full-memory/answer-visible controls, cost reservation, and analysis/report writer. The four held-out renderers remain deferred. The synthetic installed-client audit makes no model generation.
+2. **Development prerequisites, offline:** validate the completed development renderer, fresh-request adapter, fake-client controls, allowlist serializer, full-memory/answer-visible controls, cost reservation, and analysis/report writer. The four held-out clue renderers now have a separate offline semantic checkpoint; live integration remains deferred. The synthetic installed-client audit makes no model generation.
 3. **After the development gate passes:** run A and B development under the v0.4 96-attempt/20-credit-equivalent allocation; inspect feasibility and errors. Freeze any development-driven amendments before touching held-out responses. A failure may justify stopping the pilot rather than consuming the remaining ceiling.
 4. **Separately authorized held-out run:** finish and freeze its four renderers and instructions, record a new manifest and budget, execute the paired schedule once, and preserve failures before analysis. Update the [claim register](../paper/claims.csv), [living findings draft](../paper/findings-draft.md), [manuscript](../paper/manuscript.md), and [status](STATUS.md) only with the resulting evidence and its limits.
 

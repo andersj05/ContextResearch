@@ -43,6 +43,29 @@ class CreditBudgetTests(unittest.TestCase):
         self.assertTrue(result["cache_write_pricing_unresolved"])
         self.assertEqual(result["conservative_credit_equivalent"], 0.00925)
 
+    def test_optional_cache_write_measurement_distinguishes_unknown_zero_and_positive(self):
+        missing = usage_estimates(usage())
+        zero = usage_estimates(usage(cacheWriteInputTokens=0))
+        positive = usage_estimates(usage(cacheWriteInputTokens=300))
+        self.assertIsNone(missing["usage"]["cacheWriteInputTokens"])
+        self.assertFalse(missing["cache_write_tokens_reported"])
+        self.assertTrue(missing["cache_write_pricing_unresolved"])
+        self.assertEqual(zero["usage"]["cacheWriteInputTokens"], 0)
+        self.assertTrue(zero["cache_write_tokens_reported"])
+        self.assertFalse(zero["cache_write_pricing_unresolved"])
+        self.assertEqual(positive["usage"]["cacheWriteInputTokens"], 300)
+        self.assertTrue(positive["cache_write_tokens_reported"])
+        self.assertTrue(positive["cache_write_pricing_unresolved"])
+        # Optional measurement provenance must not change the established
+        # conservative reservation or settlement arithmetic.
+        for result in (missing, zero, positive):
+            self.assertEqual(Decimal(result["conservative_credit_equivalent_exact"]), Decimal("0.00925"))
+            self.assertEqual(Decimal(result["basic_rate_credit_estimate_exact"]), Decimal("0.0071"))
+        ledger = CreditBudget()
+        settled = ledger.settle(ledger.reserve(), usage())
+        self.assertIsNone(json.loads(json.dumps(settled))["usage"]["cacheWriteInputTokens"])
+        self.assertEqual(ledger.committed, Decimal("0.00925"))
+
     def test_settlement_releases_reservation_then_allows_next(self):
         ledger = CreditBudget()
         first = ledger.reserve()
@@ -108,6 +131,7 @@ class CreditBudgetTests(unittest.TestCase):
         invalid = [
             {"inputTokens": -1}, {"cachedInputTokens": -1}, {"outputTokens": -1},
             {"reasoningOutputTokens": -1}, {"cacheWriteInputTokens": -1},
+            {"cacheWriteInputTokens": None}, {"cacheWriteInputTokens": True},
             {"inputTokens": True}, {"outputTokens": 1.0}, {"inputTokens": "1000"},
             {"cachedInputTokens": 1001}, {"cacheWriteInputTokens": 801},
             {"reasoningOutputTokens": 101}, {"inputTokens": 272_000},

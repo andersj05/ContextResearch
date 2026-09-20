@@ -14,6 +14,7 @@ from pathlib import Path
 import tempfile
 import time
 
+from luna_appserver import ResponseFormatError
 from revision_diagnostic import MAX_REQUESTS, FakeClient, aggregate, canonical, digest, fake_audit, grade, make_plan, report
 from revision_interface import request_bytes, validate_response
 
@@ -71,6 +72,9 @@ def execute(client, *, fake=True, cap=MAX_REQUESTS, output=None, authorization=N
             if hasattr(client, "last_metadata"):
                 client.last_metadata = {}
             response = client.complete(json.loads(raw))
+        except ResponseFormatError as error:
+            attempt.update(status="policy_failure", error_type=type(error).__name__)
+            row.update(status="policy_failure")
         except Exception as error:
             attempt.update(status="transport_failure", error_type=type(error).__name__)
             row.update(status="transport_failure")

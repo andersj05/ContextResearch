@@ -122,9 +122,12 @@ def live_accounting(ledger, summary, manifest, cap):
             require(0 < inputs < 272000 and cached + (writes or 0) <= inputs
                     and reasoning <= outputs <= 128000, "Token accounting envelope violated")
             expected_usage = {"inputTokens": inputs, "cachedInputTokens": cached,
-                "cacheWriteInputTokens": writes or 0, "outputTokens": outputs,
+                "cacheWriteInputTokens": writes, "outputTokens": outputs,
                 "reasoningOutputTokens": reasoning, "totalTokens": inputs + outputs}
             require(accounting.get("usage") == expected_usage, "Token accounting differs from provider usage")
+            require(accounting.get("cache_write_tokens_reported") is (writes is not None)
+                    and accounting.get("cache_write_pricing_unresolved") is (writes is None or writes > 0),
+                    "Unknown cache-write usage was misreported as resolved or measured")
             actual = (Decimal(inputs) * Decimal("6.25") + Decimal(outputs) * 30) / 1000000
             basic = (Decimal(inputs - cached) * 5 + Decimal(cached) / 2 + Decimal(outputs) * 30) / 1000000
             amount(accounting, "conservative_credit_equivalent", actual)
@@ -223,6 +226,11 @@ def audit(run_dir, *, allow_fake=False):
         if status != "completed":
             require(row.get("grade") is None and row.get("displayed_positions") is None, "Failure imputed as a grade")
             require(type(attempt.get("error_type")) is str and attempt["error_type"], "Missing failure category")
+            if not fake and attempt["error_type"] == "ResponseFormatError":
+                require(status == "policy_failure" and attempt.get("response") is None
+                        and attempt["provider_metadata"].get("response_status") == "invalid_json"
+                        and attempt["provider_metadata"].get("credit_accounting", {}).get("status") == "settled",
+                        "Malformed completed answer lacks settled response-format evidence")
     require(len(ledger) == cap or terminal_failure, "Unexplained early stop")
     expected_counts = {key: attempts[key] for key in ("completed", "policy_failure", "transport_failure", "reserved")}
     require(summary.get("attempt_status_counts") == expected_counts, "Attempt status totals mismatch")
