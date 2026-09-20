@@ -261,7 +261,12 @@ def validate_transfer_runs(results: Path) -> tuple[dict, list[str]]:
             continue
         counts["transfer_luna_runs"] += 1
         try:
-            evidence = audit(directory)
+            manifest = _strict_json((directory / "manifest.json").read_text(encoding="utf-8"))
+            if manifest.get("version") == "transfer_continuation_run_v1":
+                from audit_transfer_continuation import audit as audit_continuation
+                evidence = audit_continuation(directory)
+            else:
+                evidence = audit(directory)
             if evidence.get("passed") is not True or evidence.get("fake") is not False:
                 raise ValueError("transfer run must be audited live evidence")
             dispatches = evidence["model_requests"]

@@ -7,6 +7,8 @@ official CLI. No direct HTTP endpoint, token extraction, or API-key fallback.
 from __future__ import annotations
 
 import hashlib
+from decimal import Decimal, InvalidOperation
+import math
 from contextlib import nullcontext
 import json
 import os
@@ -139,14 +141,15 @@ class AppServer:
 
 
 def quota_snapshot(value):
-    if value.get("ordinaryUsageAllowed") is False:
-        raise TransportError("ordinary_usage_not_allowed")
     snapshots = value.get("rateLimitsByLimitId") or {"codex": value.get("rateLimits")}
     result = {}
     for name, row in snapshots.items():
         if row:
             result[name] = {key: row.get(key) for key in ("primary", "secondary", "credits",
                 "rateLimitReachedType", "individualLimit", "spendControlReached")}
+            # Preserve the included-usage flag in each bucket without changing
+            # the historical bucket-map shape consumed by saved-run auditors.
+            result[name]["ordinaryUsageAllowed"] = value.get("ordinaryUsageAllowed")
     return result
 
 
@@ -156,12 +159,94 @@ def validate_quota_limit(used_limit):
     return used_limit
 
 
-def check_quota(snapshot, used_limit=80):
+def validate_credit_backed_quota(enabled):
+    if type(enabled) is not bool:
+        raise ValueError("Credit-backed quota policy must be an explicit Boolean")
+    return enabled
+
+
+def _has_existing_credits(row):
+    credits = row.get("credits")
+    if not isinstance(credits, dict) or credits.get("hasCredits") is not True:
+        return False
+    # The pinned CreditsSnapshot explicitly distinguishes unlimited credit
+    # entitlement from a numeric balance. Neither branch purchases credits.
+    if credits.get("unlimited") is True:
+        return True
+    if credits.get("unlimited") is not False or not isinstance(credits.get("balance"), str):
+        return False
+    try:
+        balance = Decimal(credits["balance"])
+    except InvalidOperation:
+        return False
+    return balance.is_finite() and balance > 0
+
+
+def _check_credit_backed_quota(snapshot, used_limit):
+    """Permit normal admission using this account's existing Codex credits.
+
+    Included-limit telemetry is not a generation rejection. Every actual RPC
+    or generation error still follows the unchanged global-stop path.
+    """
+    if not isinstance(snapshot, dict) or not snapshot:
+        raise TransportError("missing_quota_snapshot")
+    observed, credit_path = False, False
+    for name, row in snapshot.items():
+        if not isinstance(row, dict):
+            raise TransportError("unusable_quota_snapshot")
+        ordinary = row.get("ordinaryUsageAllowed")
+        if type(ordinary) is not bool:
+            raise TransportError("unavailable_included_usage_permission")
+        reached = row.get("rateLimitReachedType")
+        if reached not in (None, "rate_limit_reached"):
+            raise TransportError("account_rate_limit_reached")
+        if row.get("spendControlReached") is not False:
+            raise TransportError("account_spend_control_reached_or_unavailable")
+        individual = row.get("individualLimit")
+        if individual is not None:
+            remaining = individual.get("remainingPercent") if isinstance(individual, dict) else None
+            if (type(remaining) not in (int, float) or not math.isfinite(remaining)
+                    or not 0 < remaining <= 100):
+                raise TransportError("individual_spend_limit_reached_or_unavailable")
+        used_values = []
+        for key in ("primary", "secondary"):
+            window = row.get(key)
+            if window is not None:
+                used = window.get("usedPercent") if isinstance(window, dict) else None
+                if (type(used) not in (int, float) or not math.isfinite(used)
+                        or not 0 <= used <= 100):
+                    raise TransportError("unusable_allowance_window")
+                used_values.append(used)
+                observed = True
+        included_exhausted = ordinary is False or any(used >= 100 for used in used_values)
+        if reached == "rate_limit_reached" and not included_exhausted:
+            raise TransportError("unclassified_account_rate_limit")
+        if ordinary is True and reached is None and all(used < used_limit for used in used_values):
+            continue
+        # Do not turn an 80-percent historical safety margin into a credit
+        # override while included usage is still available. The new path is
+        # specifically for included exhaustion, on the observed Codex bucket.
+        if not included_exhausted:
+            raise TransportError(f"quota_guard_{used_limit}_percent")
+        if name != "codex" or not used_values or not _has_existing_credits(row):
+            raise TransportError("existing_codex_credits_unavailable")
+        credit_path = True
+    if not observed:
+        raise TransportError("no_observed_allowance_window")
+    return "existing_credits" if credit_path else "included"
+
+
+def check_quota(snapshot, used_limit=80, *, credit_backed=False):
     validate_quota_limit(used_limit)
+    validate_credit_backed_quota(credit_backed)
+    if credit_backed:
+        return _check_credit_backed_quota(snapshot, used_limit)
     if not snapshot:
         raise TransportError("missing_quota_snapshot")
     observed = False
     for row in snapshot.values():
+        if row.get("ordinaryUsageAllowed") is False:
+            raise TransportError("ordinary_usage_not_allowed")
         if row.get("rateLimitReachedType") is not None:
             raise TransportError("account_rate_limit_reached")
         if row.get("spendControlReached") is True:
@@ -177,12 +262,14 @@ def check_quota(snapshot, used_limit=80):
                 observed = True
     if not observed:
         raise TransportError("no_observed_allowance_window")
+    return "included"
 
 
 class LunaClient:
     def __init__(self, executable, audit, *, budget=None, timeout=120, progress=None,
-                 quota_used_limit=80):
+                 quota_used_limit=80, credit_backed_quota=False):
         self.quota_used_limit = validate_quota_limit(quota_used_limit)
+        self.credit_backed_quota = validate_credit_backed_quota(credit_backed_quota)
         self.executable = str(Path(executable).resolve())
         self.audit = audit
         self.budget = budget or CreditBudget()
@@ -227,6 +314,8 @@ class LunaClient:
             "maximum_wire_body_bytes": 32768,
             "account_quota_stop_used_percent": self.quota_used_limit,
             "quota_guard_used_percent": self.quota_used_limit,
+            "credit_backed_quota": self.credit_backed_quota,
+            "quota_policy": "included_or_existing_credits" if self.credit_backed_quota else "included_only",
             "budget": self.budget.snapshot(),
             "audit_scope": "Pinned client no-auth loopback serialization plus managed production-auth preflight; server internals unobserved",
             "provider_routing_source": "openai/codex@da18000cae9884ab45f83b2d07fbd5a220a1de39:codex-rs/model-provider-info/src/lib.rs",
@@ -246,6 +335,9 @@ class LunaClient:
             raise ValueError("complete_request_exceeds_wire_bound")
         self.last_metadata = {"dispatched": False, "model": MODEL, "provider": PROVIDER}
         quota_used_limit = getattr(self, "quota_used_limit", 80)
+        credit_backed_quota = getattr(self, "credit_backed_quota", False)
+        self.last_metadata["credit_backed_quota"] = credit_backed_quota
+        self.last_metadata["quota_policy"] = "included_or_existing_credits" if credit_backed_quota else "included_only"
         self.last_metadata["quota_guard_used_percent"] = quota_used_limit
         self.last_metadata["wire_body_byte_bound"] = wire_bound
         ticket = None
@@ -258,7 +350,9 @@ class LunaClient:
                     raise TransportError("chatgpt_subscription_required")
                 before = quota_snapshot(server.rpc("account/rateLimits/read", {}))
                 self.last_metadata["quota_before"] = before
-                check_quota(before, used_limit=quota_used_limit)
+                self.last_metadata["quota_before_mode"] = "blocked"
+                self.last_metadata["quota_before_mode"] = check_quota(
+                    before, used_limit=quota_used_limit, credit_backed=credit_backed_quota)
                 config = server.rpc("config/read", {"includeLayers": False})["config"]
                 from luna_isolation import validate_effective_config
                 self.last_metadata["effective_isolation"] = validate_effective_config(config)
@@ -347,7 +441,9 @@ class LunaClient:
                 # Quota changes are account-wide, not attributed to this request.
                 after = quota_snapshot(server.rpc("account/rateLimits/read", {}))
                 self.last_metadata["quota_after"] = after
-                check_quota(after, used_limit=quota_used_limit)
+                self.last_metadata["quota_after_mode"] = "blocked"
+                self.last_metadata["quota_after_mode"] = check_quota(
+                    after, used_limit=quota_used_limit, credit_backed=credit_backed_quota)
                 self.last_metadata.update(status="completed", tool_events_observed=0,
                                           provider_generation_count_observed=1,
                                           provider_http_request_count=None)

@@ -430,5 +430,139 @@ class LunaAppServerTests(unittest.TestCase):
                 self.assertFalse(any(method == "turn/start" for method, _ in server.calls))
 
 
+    def test_credit_policy_is_explicit_and_default_guards_stay_active(self):
+        for enabled in (1, 0, "true", None, []):
+            with self.subTest(enabled=enabled), self.assertRaises(ValueError):
+                check_quota(quota_snapshot(limits()), credit_backed=enabled)
+            with self.assertRaises(ValueError):
+                LunaClient("never-read.exe", {}, credit_backed_quota=enabled)
+        exhausted = limits(100)
+        for threshold in (80, 100):
+            with self.subTest(threshold=threshold), self.assertRaises(TransportError):
+                check_quota(quota_snapshot(exhausted), used_limit=threshold)
+        with self.assertRaisesRegex(TransportError, "quota_guard_80_percent"):
+            check_quota(quota_snapshot(limits(85)), credit_backed=True)
+        no_credits = limits(85, credits=None)
+        self.assertEqual(check_quota(quota_snapshot(no_credits), used_limit=100,
+                                    credit_backed=True), "included")
+
+    def test_existing_credits_allow_exhaustion_without_changing_route(self):
+        before, after = limits(100), limits(100)
+        after["ordinaryUsageAllowed"] = False
+        after["rateLimitsByLimitId"]["codex"]["rateLimitReachedType"] = "rate_limit_reached"
+        client = make_client()
+        client.quota_used_limit, client.credit_backed_quota = 100, True
+        server = FakeServer(before=before, after=after)
+        _, answer = self.invoke(server, client)
+        self.assertEqual(answer, {"inspect": True})
+        self.assertFalse(client.stopped)
+        self.assertEqual(client.budget.settled_attempts, 1)
+        self.assertEqual(client.last_metadata["quota_policy"], "included_or_existing_credits")
+        for phase, ordinary in (("before", True), ("after", False)):
+            self.assertEqual(client.last_metadata[f"quota_{phase}_mode"], "existing_credits")
+            self.assertIs(client.last_metadata[f"quota_{phase}"]["codex"]["ordinaryUsageAllowed"], ordinary)
+        self.assertEqual(sum(method == "turn/start" for method, _ in server.calls), 1)
+        self.assertEqual(next(params["modelProvider"] for method, params in server.calls
+                              if method == "thread/start"), PROVIDER)
+
+    def test_included_to_credit_transition_is_recorded(self):
+        client = make_client()
+        client.quota_used_limit, client.credit_backed_quota = 100, True
+        self.invoke(FakeServer(before=limits(99), after=limits(100)), client)
+        self.assertEqual(client.last_metadata["quota_before_mode"], "included")
+        self.assertEqual(client.last_metadata["quota_after_mode"], "existing_credits")
+
+    def test_ordinary_false_is_included_only_and_unlimited_is_explicit(self):
+        value = limits(20)
+        value["ordinaryUsageAllowed"] = False
+        with self.assertRaisesRegex(TransportError, "ordinary_usage_not_allowed"):
+            check_quota(quota_snapshot(value))
+        self.assertEqual(check_quota(quota_snapshot(value), credit_backed=True), "existing_credits")
+        row = value["rateLimitsByLimitId"]["codex"]
+        row["credits"] = {"hasCredits": True, "unlimited": True, "balance": None}
+        self.assertEqual(check_quota(quota_snapshot(value), credit_backed=True), "existing_credits")
+        row["credits"]["hasCredits"] = False
+        with self.assertRaises(TransportError):
+            check_quota(quota_snapshot(value), credit_backed=True)
+
+    def test_credit_path_rejects_bad_balances_and_unrelated_bucket_credit(self):
+        bad = [None, {}, {"hasCredits": False, "unlimited": False, "balance": "100"},
+               {"hasCredits": True, "unlimited": None, "balance": "100"}]
+        bad.extend({"hasCredits": True, "unlimited": False, "balance": value}
+                   for value in (None, 100, True, "", "not-a-number", "NaN", "Infinity", "-1", "0"))
+        for credits in bad:
+            with self.subTest(credits=credits), self.assertRaises(TransportError):
+                check_quota(quota_snapshot(limits(100, credits=credits)), used_limit=100,
+                            credit_backed=True)
+        value = limits(100)
+        value["rateLimitsByLimitId"] = {"unrelated": value["rateLimits"]}
+        with self.assertRaisesRegex(TransportError, "existing_codex_credits_unavailable"):
+            check_quota(quota_snapshot(value), used_limit=100, credit_backed=True)
+
+    def test_credit_path_rejects_hard_limits_and_unknown_states(self):
+        cases = [{"rateLimitReachedType": reason} for reason in (
+            "workspace_owner_credits_depleted", "workspace_member_credits_depleted",
+            "workspace_owner_usage_limit_reached", "workspace_member_usage_limit_reached",
+            "future_unknown_block")]
+        cases += [{"spendControlReached": value} for value in (True, None, "false")]
+        cases += [{"individualLimit": value} for value in ({}, [],
+            {"remainingPercent": 0}, {"remainingPercent": -1}, {"remainingPercent": "100"},
+            {"remainingPercent": float("nan")})]
+        for fields in cases:
+            with self.subTest(fields=fields), self.assertRaises(TransportError):
+                check_quota(quota_snapshot(limits(100, **fields)), used_limit=100,
+                            credit_backed=True)
+        for ordinary in (None, "true", 1):
+            value = limits(100)
+            value["ordinaryUsageAllowed"] = ordinary
+            with self.subTest(ordinary=ordinary), self.assertRaises(TransportError):
+                check_quota(quota_snapshot(value), used_limit=100, credit_backed=True)
+        for used in (True, "100", -1, 101, float("nan"), float("inf")):
+            with self.subTest(used=used), self.assertRaises(TransportError):
+                check_quota(quota_snapshot(limits(used)), used_limit=100, credit_backed=True)
+        with self.assertRaisesRegex(TransportError, "unclassified_account_rate_limit"):
+            check_quota(quota_snapshot(limits(20, rateLimitReachedType="rate_limit_reached")),
+                        used_limit=100, credit_backed=True)
+        with self.assertRaises(TransportError):
+            check_quota(quota_snapshot(limits(100, primary=None)), used_limit=100,
+                        credit_backed=True)
+
+    def test_credit_rejection_keeps_before_and_after_snapshots_and_accounting(self):
+        for phase in ("before", "after"):
+            with self.subTest(phase=phase):
+                denied = limits(100, credits={"hasCredits": False, "unlimited": False, "balance": "0"})
+                denied["ordinaryUsageAllowed"] = False
+                client = make_client()
+                client.quota_used_limit, client.credit_backed_quota = 100, True
+                server = FakeServer(**{phase: denied})
+                with self.assertRaisesRegex(TransportError, "existing_codex_credits_unavailable"):
+                    self.invoke(server, client)
+                self.assertTrue(client.stopped)
+                self.assertEqual(client.last_metadata[f"quota_{phase}_mode"], "blocked")
+                self.assertIs(client.last_metadata[f"quota_{phase}"]["codex"]["ordinaryUsageAllowed"], False)
+                self.assertEqual(client.last_metadata[f"quota_{phase}"]["codex"]["credits"]["balance"], "0")
+                self.assertEqual(client.budget.attempts, int(phase == "after"))
+                self.assertEqual(client.budget.settled_attempts, int(phase == "after"))
+                self.assertEqual(client.budget.snapshot()["uncertain_credit_reservations"], 0)
+
+    def test_credit_permission_never_overrides_provider_rejection_or_retries(self):
+        from run_transfer_study import DispatchGate
+        client = make_client()
+        client.quota_used_limit, client.credit_backed_quota = 100, True
+        client.dispatch_gate = DispatchGate()
+        events = [event("error", error={"codexErrorInfo": "usageLimitExceeded"}, willRetry=False)]
+        server = FakeServer(before=limits(100), events=events)
+        with self.assertRaisesRegex(TransportError, "provider_error"):
+            self.invoke(server, client)
+        self.assertTrue(client.stopped)
+        self.assertTrue(client.dispatch_gate.event.is_set())
+        self.assertEqual(sum(method == "turn/start" for method, _ in server.calls), 1)
+        self.assertEqual(client.budget.attempts, 1)
+        self.assertEqual(client.last_metadata["credit_accounting"]["status"], "reservation_retained")
+        with patch("luna_appserver.AppServer") as factory, self.assertRaises(TransportError):
+            client.complete(self.request)
+        factory.assert_not_called()
+
+
 if __name__ == "__main__":
     unittest.main()

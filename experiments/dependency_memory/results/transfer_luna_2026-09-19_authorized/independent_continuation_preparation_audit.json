@@ -1,0 +1,47 @@
+{
+  "auditor_sha256": "4caa95b0bf2f7c6f50e7808fda88420d1f876453369e13518b7334ba81fb93d0",
+  "fake": false,
+  "limitations": "Local saved-evidence consistency audit; cannot authenticate inaccessible provider internals or actual subscription debit. Cross-worker dispatch chronology is not present in these ledgers; the shared-stop gate is covered by runner tests.",
+  "manifest_sha256": "912ecc4f2bb15bc405e3869e961a5e4298447772476c314255ff86bff1d61a6f",
+  "model_requests": 888,
+  "new_model_requests": 0,
+  "passed": true,
+  "planned_cases_checked": 1536,
+  "requests_checked": 889,
+  "retained_credit_equivalent": "0",
+  "settled_credit_equivalent": "28.25661250",
+  "source_blobs_checked": 52,
+  "source_commit": "04141984d56fa0f80429d19dc45f589fef8ac5a6",
+  "source_hash_policy": "raw Git blobs at explicit frozen commit",
+  "status_counts": {
+    "completed": 885,
+    "policy_failure": 0,
+    "reserved": 0,
+    "transport_failure": 4
+  },
+  "summary_sha256": "fc9b474e92aed980f528c6d6f5a8d824eb3472382c5e777d12f20d569d6a6dd9",
+  "unique_threads_checked": 888,
+  "usage_totals": {
+    "cache_write_input_tokens": {
+      "measured_attempts": 888,
+      "reported": 0
+    },
+    "cached_input_tokens": {
+      "measured_attempts": 888,
+      "reported": 1317120
+    },
+    "input_tokens": {
+      "measured_attempts": 888,
+      "reported": 2754970
+    },
+    "output_tokens": {
+      "measured_attempts": 888,
+      "reported": 367935
+    },
+    "reasoning_output_tokens": {
+      "measured_attempts": 888,
+      "reported": 346623
+    }
+  },
+  "version": "transfer_run_evidence_audit_v1"
+}

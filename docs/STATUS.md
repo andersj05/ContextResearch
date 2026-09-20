@@ -42,6 +42,8 @@ The [active transfer study's prespecified first-eight-block checkpoint](../resea
 
 ## Not yet established
 
+Operational continuation update: the active launch subsequently stopped at the local 100%-used guard after 888 dispatched requests: 885 accepted responses and three fully metered post-check failures whose answers were not retained. One further host preflight generated nothing. Fresh account telemetry still allowed ordinary usage and reported existing credits, with no provider rejection. The [documented continuation](TRANSFER_CONTINUATION.md) consumes only the 648 never-dispatched cases and 171.74338750 remaining conservative equivalents. Historical evidence and the three lost outcomes remain fixed. The full scientific analysis awaits the new phase and pooled audit; later response outcomes have not been used to alter the design.
+
 
 - Novelty and external validation of the locally audited scaling argument, or a practically large composition penalty.
 - A matching exact error formula for arbitrary jointly encoded blocks; the one-block 1/32 excess does not replace the independently proved all-k bound.
