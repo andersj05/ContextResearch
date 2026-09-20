@@ -10,9 +10,10 @@ import unittest
 from unittest.mock import patch
 
 from continue_transfer_study import ContinuationCreditBudget, eligible_cases, execute, prepare_clients
-from luna_appserver import LunaClient
+from luna_appserver import LunaClient, MODEL
 from luna_budget import BudgetExceeded, BudgetStopped
 from run_transfer_study import _hash
+from transfer_interface import VERSION as REQUEST_VERSION
 from transfer_study import FakeClient, make_plan
 
 
@@ -31,6 +32,40 @@ def fixture():
 
 
 class ContinuationTests(unittest.TestCase):
+    def test_saved_raw_audit_reaches_client_attestation_before_launch_readiness(self):
+        # The real saved no-auth probe is intentionally not launch-ready:
+        # LunaClient must still attest the installed binary and instructions.
+        raw = (Path(__file__).parent / "results/transfer_transport_audit.json").read_bytes()
+        audit = json.loads(raw)
+        self.assertIs(audit["launch_ready"], False)
+        self.assertIs(audit["isolation_passed"], True)
+        self.assertEqual(audit["public_request_contract"], REQUEST_VERSION)
+        plan = fixture()
+        audit_path = "experiments/dependency_memory/results/transfer_transport_audit.json"
+        plan["source_sha256"][audit_path] = hashlib.sha256(raw).hexdigest()
+        args = SimpleNamespace(executable=Path("never-started.exe"), authorization="bounded continuation")
+        clients = [SimpleNamespace(metadata={}) for _ in range(4)]
+        advertised = {"model": MODEL, "hidden": False}
+        with patch("continue_transfer_study.make_launch_plan", return_value=plan), \
+             patch("continue_transfer_study.runner.source_commit", return_value="0" * 40), \
+             patch.object(Path, "read_bytes", return_value=raw), \
+             patch("continue_transfer_study.LunaClient", side_effect=clients) as client_factory, \
+             patch("continue_transfer_study.AppServer") as server_factory:
+            server = server_factory.return_value
+            server.rpc.return_value = {"data": [advertised]}
+            prepared = prepare_clients(args, plan)
+        self.assertEqual(prepared, clients)
+        self.assertEqual(client_factory.call_count, 4)
+        for call in client_factory.call_args_list:
+            self.assertIs(call.args[1]["launch_ready"], False)
+            self.assertEqual(call.args[1]["public_request_contract"], REQUEST_VERSION)
+            self.assertTrue(call.kwargs["credit_backed_quota"])
+        server_factory.assert_called_once()
+        server.initialize.assert_called_once_with()
+        server.rpc.assert_called_once_with("model/list", {"includeHidden": True, "limit": 100})
+        server.close.assert_called_once_with()
+        self.assertTrue(all(client.metadata["advertised_model"] == advertised for client in prepared))
+
     def test_wrong_wire_contract_is_rejected_before_client_or_process_creation(self):
         plan = fixture()
         audit = {"public_request_contract": "different_request_contract", "launch_ready": True}

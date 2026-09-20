@@ -1,0 +1,16 @@
+{
+  "version": "transfer_continuation_zero_generation_preflight_v1",
+  "recorded_utc": "2026-09-20T02:52:37.280118+00:00",
+  "source_commit": "cfa1ba9",
+  "exit_code": 1,
+  "model_requests": 0,
+  "provider_clients_constructed": 0,
+  "credit_equivalent_committed": "0",
+  "output_directory_created": false,
+  "error": "Raw offline audit readiness checked before LunaClient verification",
+  "correction": "Check the raw public request contract; retain client-validated readiness gate before execution",
+  "scientific_requests_changed": false,
+  "remaining_case_cap": 648,
+  "cumulative_case_cap": 1536,
+  "cumulative_credit_equivalent_cap": 200
+}

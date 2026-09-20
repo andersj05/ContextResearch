@@ -91,7 +91,7 @@ def prepare_clients(args, plan):
     if hashlib.sha256(audit_bytes).hexdigest() != plan["source_sha256"][audit_path.relative_to(ROOT).as_posix()]:
         raise ValueError("Wire audit changed")
     audit = json.loads(audit_bytes)
-    if audit.get("public_request_contract") != REQUEST_VERSION or not audit.get("launch_ready"):
+    if audit.get("public_request_contract") != REQUEST_VERSION:
         raise ValueError("The reviewed wire audit must cover the transfer request contract")
     clients = [LunaClient(args.executable, audit, budget=ContinuationCreditBudget(row),
                          quota_used_limit=100, credit_backed_quota=True)
