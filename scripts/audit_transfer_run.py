@@ -152,6 +152,29 @@ def usage_totals(ledger):
     return result
 
 
+def quota_allows_generation(snapshot, ceiling):
+    """Independent interpretation of the recorded normalized quota snapshot."""
+    if type(snapshot) is not dict or not snapshot:
+        return False
+    observed = False
+    for row in snapshot.values():
+        if type(row) is not dict or row.get("rateLimitReachedType") is not None or row.get("spendControlReached") is True:
+            return False
+        individual = row.get("individualLimit")
+        if individual and (type(individual) is not dict
+                           or type(individual.get("remainingPercent")) not in (int, float)
+                           or individual["remainingPercent"] <= 0):
+            return False
+        for name in ("primary", "secondary"):
+            window = row.get(name)
+            if window is not None:
+                if (type(window) is not dict or type(window.get("usedPercent")) not in (int, float)
+                        or not 0 <= window["usedPercent"] < ceiling):
+                    return False
+                observed = True
+    return observed
+
+
 def live_accounting(ledger, summary, manifest, plan, thread_ids):
     transport = manifest.get("transport")
     require(type(transport) is dict and transport == summary.get("transport_manifest"), "Transport manifest mismatch")
@@ -165,6 +188,14 @@ def live_accounting(ledger, summary, manifest, plan, thread_ids):
     require(transport.get("provider") == "luna_research" and transport.get("reasoning_effort") == "low"
             and transport.get("service_tier") == "default" and transport.get("http_and_stream_retries") == 0
             and transport.get("maximum_wire_body_bytes") == 32768, "Transport contract drift")
+    # The original zero-generation launch used the historical 80% headroom
+    # guard, with no explicit quota_guard_used_percent field. The amendment
+    # pins 100% for this transfer allocation; provider denial still stops it.
+    amended_quota = "quota_guard_used_percent" in transport
+    quota_ceiling = transport.get("quota_guard_used_percent", 80)
+    require(type(quota_ceiling) is int and quota_ceiling == (100 if amended_quota else 80)
+            and transport.get("account_quota_stop_used_percent", 80) == quota_ceiling,
+            "Unexpected declared transfer quota ceiling")
     require(type(manifest.get("authorization")) is str and manifest["authorization"].strip(), "Missing allocation note")
     budget_snapshot(transport.get("budget"), attempts=0, settled_count=0, failed_count=0,
                     spent=Decimal(0), uncertain=Decimal(0))
@@ -172,6 +203,11 @@ def live_accounting(ledger, summary, manifest, plan, thread_ids):
     attempts = settled_count = failed_count = 0
     for row in ledger:
         meta = row["provider_metadata"]
+        if amended_quota and meta:
+            # A shared-stop admission rejection may occur before client.complete
+            # creates metadata. Once client metadata exists its ceiling is fixed.
+            require(meta.get("quota_guard_used_percent") == quota_ceiling,
+                    "Attempt quota ceiling differs from declared transport")
         dispatched = meta.get("dispatched", False)
         require(type(dispatched) is bool, "Invalid dispatch flag")
         thread = meta.get("thread_id")
@@ -183,6 +219,9 @@ def live_accounting(ledger, summary, manifest, plan, thread_ids):
                     "Undispatched attempt was completed or charged")
             continue
         require(thread is not None, "Dispatched request lacks fresh thread id")
+        if amended_quota:
+            require(quota_allows_generation(meta.get("quota_before"), quota_ceiling),
+                    "Dispatched request lacked eligible preflight quota evidence")
         require(not failed_count and spent + RESERVATION <= WORKER_CREDITS, "Dispatch exceeded worker reservation")
         attempts += 1
         require(type(meta.get("wire_body_byte_bound")) is int and meta["wire_body_byte_bound"]
@@ -231,6 +270,9 @@ def live_accounting(ledger, summary, manifest, plan, thread_ids):
                     and type(meta.get("tool_events_observed")) is int and meta["tool_events_observed"] == 0
                     and type(meta.get("provider_generation_count_observed")) is int
                     and meta["provider_generation_count_observed"] == 1, "Response lacks clean completed transport evidence")
+            if amended_quota:
+                require(quota_allows_generation(meta.get("quota_after"), quota_ceiling),
+                        "Accepted response lacked eligible post-generation quota evidence")
     require(type(summary.get("model_requests")) is int and summary["model_requests"] == attempts, "Worker dispatch count mismatch")
     budget_snapshot(summary.get("credit_budget"), attempts=attempts, settled_count=settled_count,
                     failed_count=failed_count, spent=spent, uncertain=uncertain)
@@ -408,13 +450,47 @@ def audit(run_dir, *, allow_fake=False, frozen_commit=None, source_commit=None):
         "limitations": "Local saved-evidence consistency audit; cannot authenticate inaccessible provider internals or actual subscription debit. Cross-worker dispatch chronology is not present in these ledgers; the shared-stop gate is covered by runner tests."}
 
 
+def audit_allocation(run_dirs, *, allow_fake=False):
+    """Reconcile unchanged public cases after zero-generation preflight launches.
+
+    Host preflight attempts do not consume model-request allocations. This does
+    not permit resuming or replacing a run that already generated model answers.
+    """
+    directories = [Path(path).resolve() for path in run_dirs]
+    require(directories and len(set(directories)) == len(directories), "Allocation directories must be unique")
+    results = [audit(directory, allow_fake=allow_fake) for directory in directories]
+    require(all(result["model_requests"] == 0 for result in results[:-1]),
+            "Only zero-generation preflight launches may precede the active allocation")
+    public_cases = []
+    for directory in directories:
+        manifest = strict_json((directory / "manifest.json").read_text(encoding="utf-8"))
+        public_cases.append([(case["case_id"], case["request_sha256"]) for case in manifest["plan"]["cases"]])
+    require(all(cases == public_cases[0] for cases in public_cases), "Public requests changed between allocation launches")
+    generations = sum(result["model_requests"] for result in results)
+    spent = sum((Decimal(result["settled_credit_equivalent"]) for result in results), Decimal(0))
+    uncertain = sum((Decimal(result["retained_credit_equivalent"]) for result in results), Decimal(0))
+    require(generations <= 1536 and spent + uncertain <= TOTAL_CREDITS, "Combined allocation cap exceeded")
+    return {"version": "transfer_allocation_evidence_audit_v1", "passed": True,
+        "run_count": len(results), "requests_checked": sum(result["requests_checked"] for result in results),
+        "model_requests": generations, "model_request_cap": 1536,
+        "settled_credit_equivalent": str(spent), "retained_credit_equivalent": str(uncertain),
+        "credit_equivalent_cap": 200, "public_cases_unchanged": True,
+        "new_model_requests": 0, "runs": results}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run-dir", required=True, type=Path)
     parser.add_argument("--allow-fake", action="store_true")
     parser.add_argument("--source-commit")
+    parser.add_argument("--prior-run-dir", action="append", default=[], type=Path)
     args = parser.parse_args()
-    print(json.dumps(audit(args.run_dir, allow_fake=args.allow_fake, frozen_commit=args.source_commit), indent=2))
+    if args.prior_run_dir:
+        require(args.source_commit is None, "Allocation audit reads each manifest's distinct source commit")
+        result = audit_allocation([*args.prior_run_dir, args.run_dir], allow_fake=args.allow_fake)
+    else:
+        result = audit(args.run_dir, allow_fake=args.allow_fake, frozen_commit=args.source_commit)
+    print(json.dumps(result, indent=2))
 
 
 if __name__ == "__main__":

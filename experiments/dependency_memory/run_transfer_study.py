@@ -235,6 +235,8 @@ def execute(clients, *, fake=True, output=None, authorization=None,
                     or client.audit.get("public_request_contract") != REQUEST_VERSION
                     or type(client.budget) is not TransferCreditBudget
                     or client.budget.snapshot() != TransferCreditBudget().snapshot()
+                    or getattr(client, "quota_used_limit", None) != 100
+                    or client.metadata.get("quota_guard_used_percent") != 100
                     or client.metadata.get("fingerprinted_sources_match_commit") is not True
                     or not client.metadata.get("source_commit")
                     or client.metadata.get("approved_plan_sha256") != _hash(plan)):
@@ -330,7 +332,8 @@ def prepare_clients(args):
     commit = source_commit(frozen)
     if frozen != study.make_plan():
         raise ValueError("Fingerprinted sources changed during commit verification")
-    clients = [LunaClient(args.executable, audit, budget=TransferCreditBudget()) for _ in range(WORKERS)]
+    clients = [LunaClient(args.executable, audit, budget=TransferCreditBudget(),
+                          quota_used_limit=100) for _ in range(WORKERS)]
     with tempfile.TemporaryDirectory(prefix="contextresearch-transfer-catalog-") as cwd:
         server = AppServer(args.executable, cwd, (*ISOLATION_OVERRIDES, *PROVIDER_OVERRIDES))
         try:

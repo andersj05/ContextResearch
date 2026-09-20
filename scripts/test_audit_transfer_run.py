@@ -253,6 +253,57 @@ class IndependentTransferAccountingTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 live_accounting(ledger, summary, manifest, plan, set())
 
+    def amended_fixture(self, status="completed", used=85):
+        ledger, summary, manifest, plan = self.fixture((status,))
+        manifest["transport"].update(quota_guard_used_percent=100, account_quota_stop_used_percent=100)
+        quota = {"codex": {"primary": {"usedPercent": used}, "secondary": None,
+                 "rateLimitReachedType": None, "individualLimit": None, "spendControlReached": False}}
+        ledger[0]["provider_metadata"].update(quota_guard_used_percent=100,
+            quota_before=deepcopy(quota), quota_after=deepcopy(quota))
+        return ledger, summary, manifest, plan
+
+    def test_amended_ceiling_accepts_85_percent_with_both_recorded_checks(self):
+        self.assertEqual(live_accounting(*self.amended_fixture(), set()), (Decimal("0.0105"), Decimal(0)))
+
+    def test_amended_ceiling_rejects_exhaustion_provider_denial_and_missing_snapshots(self):
+        for mutation in ("exhausted", "denied", "missing", "wrong_ceiling"):
+            with self.subTest(mutation=mutation):
+                ledger, summary, manifest, plan = self.amended_fixture()
+                meta = ledger[0]["provider_metadata"]
+                if mutation == "exhausted":
+                    meta["quota_before"]["codex"]["primary"]["usedPercent"] = 100
+                elif mutation == "denied":
+                    meta["quota_before"]["codex"]["rateLimitReachedType"] = "usage"
+                elif mutation == "missing":
+                    meta.pop("quota_after")
+                else:
+                    meta["quota_guard_used_percent"] = 80
+                with self.assertRaises(ValueError):
+                    live_accounting(ledger, summary, manifest, plan, set())
+
+    def test_after_generation_exhaustion_preserves_settled_failure_usage(self):
+        ledger, summary, manifest, plan = self.amended_fixture(status="postsettlement")
+        ledger[0]["provider_metadata"]["quota_after"]["codex"]["primary"]["usedPercent"] = 100
+        self.assertEqual(live_accounting(ledger, summary, manifest, plan, set()), (Decimal("0.0105"), Decimal(0)))
+
+    def test_zero_generation_preflight_and_new_run_share_one_allocation(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            directories = [Path(temporary) / name for name in ("old", "new")]
+            for directory in directories:
+                directory.mkdir()
+                atomic_json(directory / "manifest.json", {"plan": {"cases": [
+                    {"case_id": "same-public-case", "request_sha256": "a" * 64}]}})
+            old = {"model_requests": 0, "requests_checked": 4,
+                   "settled_credit_equivalent": "0", "retained_credit_equivalent": "0"}
+            new = {"model_requests": 1536, "requests_checked": 1536,
+                   "settled_credit_equivalent": "50", "retained_credit_equivalent": "0"}
+            with patch.object(audit_module, "audit", side_effect=[old, new]):
+                result = audit_module.audit_allocation(directories)
+            self.assertEqual((result["model_requests"], result["requests_checked"]), (1536, 1540))
+            with patch.object(audit_module, "audit", side_effect=[{**old, "model_requests": 1}, new]):
+                with self.assertRaisesRegex(ValueError, "zero-generation"):
+                    audit_module.audit_allocation(directories)
+
 
 if __name__ == "__main__":
     unittest.main()

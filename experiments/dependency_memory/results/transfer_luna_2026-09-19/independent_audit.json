@@ -1,0 +1,47 @@
+{
+  "version": "transfer_run_evidence_audit_v1",
+  "passed": true,
+  "fake": false,
+  "planned_cases_checked": 1536,
+  "requests_checked": 4,
+  "model_requests": 0,
+  "unique_threads_checked": 0,
+  "status_counts": {
+    "completed": 0,
+    "policy_failure": 0,
+    "transport_failure": 4,
+    "reserved": 0
+  },
+  "usage_totals": {
+    "input_tokens": {
+      "reported": null,
+      "measured_attempts": 0
+    },
+    "cached_input_tokens": {
+      "reported": null,
+      "measured_attempts": 0
+    },
+    "output_tokens": {
+      "reported": null,
+      "measured_attempts": 0
+    },
+    "reasoning_output_tokens": {
+      "reported": null,
+      "measured_attempts": 0
+    },
+    "cache_write_input_tokens": {
+      "reported": null,
+      "measured_attempts": 0
+    }
+  },
+  "settled_credit_equivalent": "0",
+  "retained_credit_equivalent": "0",
+  "manifest_sha256": "3103380c473303c790850c16e792247160748b1089f4a45256d044bfe25be0a7",
+  "summary_sha256": "da4642833f11c0361023704078b3c8dde31e05b07904c8694b63cd0b7701fa09",
+  "auditor_sha256": "685312790e0fa3400e8a5f1fae48e14bf2b5d7a0d2769e7917c54a0ca3949fda",
+  "new_model_requests": 0,
+  "source_commit": "999f14db9537391cc3349886f1b8fb42a14625a6",
+  "source_blobs_checked": 52,
+  "source_hash_policy": "raw Git blobs at explicit frozen commit",
+  "limitations": "Local saved-evidence consistency audit; cannot authenticate inaccessible provider internals or actual subscription debit. Cross-worker dispatch chronology is not present in these ledgers; the shared-stop gate is covered by runner tests."
+}

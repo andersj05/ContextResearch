@@ -333,6 +333,59 @@ class LunaAppServerTests(unittest.TestCase):
                 self.assertEqual(client.budget.attempts, 0)
                 self.assertFalse(any(method == "turn/start" for method, _ in server.calls))
 
+    def test_transfer_quota_policy_allows_85_but_stops_at_100(self):
+        # The default remains conservative for the historical runners.
+        with self.assertRaisesRegex(TransportError, "quota_guard_80_percent"):
+            check_quota(quota_snapshot(limits(85)))
+        client = make_client()
+        client.quota_used_limit = 100
+        _, answer = self.invoke(FakeServer(before=limits(85), after=limits(86)), client)
+        self.assertEqual(answer, {"inspect": True})
+        self.assertEqual(client.budget.settled_attempts, 1)
+        self.assertEqual(client.last_metadata["quota_guard_used_percent"], 100)
+        self.assertEqual(client.last_metadata["quota_before"]["codex"]["primary"]["usedPercent"], 85)
+        self.assertEqual(client.last_metadata["quota_after"]["codex"]["primary"]["usedPercent"], 86)
+        client = make_client()
+        client.quota_used_limit = 100
+        server = FakeServer(before=limits(100))
+        with self.assertRaisesRegex(TransportError, "quota_guard_100_percent"):
+            self.invoke(server, client)
+        self.assertEqual(client.budget.attempts, 0)
+        self.assertEqual(client.last_metadata["quota_before"]["codex"]["primary"]["usedPercent"], 100)
+        self.assertFalse(any(method == "turn/start" for method, _ in server.calls))
+
+    def test_quota_failure_snapshots_survive_before_and_after_checks(self):
+        before_client = make_client()
+        with self.assertRaises(TransportError):
+            self.invoke(FakeServer(before=limits(85)), before_client)
+        self.assertEqual(before_client.last_metadata["quota_before"]["codex"]["primary"]["usedPercent"], 85)
+        after_client = make_client()
+        after_client.quota_used_limit = 100
+        with self.assertRaises(TransportError):
+            self.invoke(FakeServer(before=limits(85), after=limits(100)), after_client)
+        self.assertEqual(after_client.budget.settled_attempts, 1)
+        self.assertEqual(after_client.last_metadata["quota_after"]["codex"]["primary"]["usedPercent"], 100)
+        self.assertTrue(after_client.stopped)
+
+    def test_new_quota_policy_keeps_provider_denials_and_rejects_unreviewed_limits(self):
+        for fields in ({"rateLimitReachedType": "rate_limit_reached"},
+                       {"spendControlReached": True},
+                       {"individualLimit": {"remainingPercent": 0}}):
+            with self.subTest(fields=fields), self.assertRaises(TransportError):
+                check_quota(quota_snapshot(limits(85, **fields)), used_limit=100)
+        for used_limit in (True, 0, 79, 81, 101, 100.0, "100", None):
+            with self.subTest(used_limit=used_limit), self.assertRaises(ValueError):
+                check_quota(quota_snapshot(limits(85)), used_limit=used_limit)
+            with self.assertRaises(ValueError):
+                LunaClient("never-read.exe", {}, quota_used_limit=used_limit)
+        denied = limits(85)
+        denied["ordinaryUsageAllowed"] = False
+        client = make_client()
+        client.quota_used_limit = 100
+        with self.assertRaisesRegex(TransportError, "ordinary_usage_not_allowed"):
+            self.invoke(FakeServer(before=denied), client)
+        self.assertEqual(client.budget.attempts, 0)
+
     def test_reached_provider_limit_overrides_low_window_percentage(self):
         for fields in ({"rateLimitReachedType": "rate_limit_reached"},
                        {"spendControlReached": True},

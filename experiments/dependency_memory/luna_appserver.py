@@ -150,7 +150,14 @@ def quota_snapshot(value):
     return result
 
 
-def check_quota(snapshot):
+def validate_quota_limit(used_limit):
+    if type(used_limit) is not int or used_limit not in (80, 100):
+        raise ValueError("Quota used limit must be the reviewed 80 or 100 percent policy")
+    return used_limit
+
+
+def check_quota(snapshot, used_limit=80):
+    validate_quota_limit(used_limit)
     if not snapshot:
         raise TransportError("missing_quota_snapshot")
     observed = False
@@ -165,15 +172,17 @@ def check_quota(snapshot):
             window = row.get(key)
             if window is not None:
                 used = window.get("usedPercent")
-                if type(used) not in (int, float) or not 0 <= used < 80:
-                    raise TransportError("quota_guard_80_percent")
+                if type(used) not in (int, float) or not 0 <= used < used_limit:
+                    raise TransportError(f"quota_guard_{used_limit}_percent")
                 observed = True
     if not observed:
         raise TransportError("no_observed_allowance_window")
 
 
 class LunaClient:
-    def __init__(self, executable, audit, *, budget=None, timeout=120, progress=None):
+    def __init__(self, executable, audit, *, budget=None, timeout=120, progress=None,
+                 quota_used_limit=80):
+        self.quota_used_limit = validate_quota_limit(quota_used_limit)
         self.executable = str(Path(executable).resolve())
         self.audit = audit
         self.budget = budget or CreditBudget()
@@ -216,7 +225,8 @@ class LunaClient:
             "public_background": "Fixed base/developer instructions, reviewed global GitHub guidance, pure wrapper registry, fixed rollout reminder",
             "state": "New app-server process and ephemeral thread per request; no environments, archive, prior outputs, or session links",
             "maximum_wire_body_bytes": 32768,
-            "account_quota_stop_used_percent": 80,
+            "account_quota_stop_used_percent": self.quota_used_limit,
+            "quota_guard_used_percent": self.quota_used_limit,
             "budget": self.budget.snapshot(),
             "audit_scope": "Pinned client no-auth loopback serialization plus managed production-auth preflight; server internals unobserved",
             "provider_routing_source": "openai/codex@da18000cae9884ab45f83b2d07fbd5a220a1de39:codex-rs/model-provider-info/src/lib.rs",
@@ -235,6 +245,8 @@ class LunaClient:
         if wire_bound > 32768:
             raise ValueError("complete_request_exceeds_wire_bound")
         self.last_metadata = {"dispatched": False, "model": MODEL, "provider": PROVIDER}
+        quota_used_limit = getattr(self, "quota_used_limit", 80)
+        self.last_metadata["quota_guard_used_percent"] = quota_used_limit
         self.last_metadata["wire_body_byte_bound"] = wire_bound
         ticket = None
         with tempfile.TemporaryDirectory(prefix="contextresearch-luna-") as cwd:
@@ -245,8 +257,8 @@ class LunaClient:
                 if (account.get("account") or {}).get("type") != "chatgpt":
                     raise TransportError("chatgpt_subscription_required")
                 before = quota_snapshot(server.rpc("account/rateLimits/read", {}))
-                check_quota(before)
                 self.last_metadata["quota_before"] = before
+                check_quota(before, used_limit=quota_used_limit)
                 config = server.rpc("config/read", {"includeLayers": False})["config"]
                 from luna_isolation import validate_effective_config
                 self.last_metadata["effective_isolation"] = validate_effective_config(config)
@@ -334,8 +346,8 @@ class LunaClient:
                 ticket = None
                 # Quota changes are account-wide, not attributed to this request.
                 after = quota_snapshot(server.rpc("account/rateLimits/read", {}))
-                check_quota(after)
                 self.last_metadata["quota_after"] = after
+                check_quota(after, used_limit=quota_used_limit)
                 self.last_metadata.update(status="completed", tool_events_observed=0,
                                           provider_generation_count_observed=1,
                                           provider_http_request_count=None)
