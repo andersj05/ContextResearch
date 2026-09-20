@@ -1,0 +1,3748 @@
+{
+  "all_48_condition_summaries": [
+    {
+      "completed": 31,
+      "framing": "compact",
+      "guarantee": "explicit_optimal",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "11/465",
+      "optimal_count": 27,
+      "policy_failures": 0,
+      "refresh_rule": "first",
+      "scheduled": 32,
+      "transport_failures": 1,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 31
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "explicit_optimal",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "7/320",
+      "optimal_count": 28,
+      "policy_failures": 0,
+      "refresh_rule": "last",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "explicit_optimal",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "0",
+      "optimal_count": 32,
+      "policy_failures": 0,
+      "refresh_rule": "none",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "explicit_optimal",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "11/480",
+      "optimal_count": 28,
+      "policy_failures": 0,
+      "refresh_rule": "first",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "explicit_optimal",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "3/320",
+      "optimal_count": 30,
+      "policy_failures": 0,
+      "refresh_rule": "last",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "explicit_optimal",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "0",
+      "optimal_count": 32,
+      "policy_failures": 0,
+      "refresh_rule": "none",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "unspecified",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "1/64",
+      "optimal_count": 27,
+      "policy_failures": 0,
+      "refresh_rule": "first",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "unspecified",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "1/40",
+      "optimal_count": 27,
+      "policy_failures": 0,
+      "refresh_rule": "last",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 31,
+      "framing": "compact",
+      "guarantee": "unspecified",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "0",
+      "optimal_count": 31,
+      "policy_failures": 0,
+      "refresh_rule": "none",
+      "scheduled": 32,
+      "transport_failures": 1,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 31
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "unspecified",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "1/320",
+      "optimal_count": 30,
+      "policy_failures": 0,
+      "refresh_rule": "first",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "unspecified",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "1/120",
+      "optimal_count": 30,
+      "policy_failures": 0,
+      "refresh_rule": "last",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "unspecified",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "0",
+      "optimal_count": 32,
+      "policy_failures": 0,
+      "refresh_rule": "none",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "explicit_optimal",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "1/96",
+      "optimal_count": 29,
+      "policy_failures": 0,
+      "refresh_rule": "first",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "explicit_optimal",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "1/64",
+      "optimal_count": 29,
+      "policy_failures": 0,
+      "refresh_rule": "last",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "explicit_optimal",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "0",
+      "optimal_count": 32,
+      "policy_failures": 0,
+      "refresh_rule": "none",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 31,
+      "framing": "workflow",
+      "guarantee": "explicit_optimal",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "1/93",
+      "optimal_count": 29,
+      "policy_failures": 0,
+      "refresh_rule": "first",
+      "scheduled": 32,
+      "transport_failures": 1,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 31
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "explicit_optimal",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "1/96",
+      "optimal_count": 30,
+      "policy_failures": 0,
+      "refresh_rule": "last",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "explicit_optimal",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "0",
+      "optimal_count": 32,
+      "policy_failures": 0,
+      "refresh_rule": "none",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "unspecified",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "1/80",
+      "optimal_count": 28,
+      "policy_failures": 0,
+      "refresh_rule": "first",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "unspecified",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "17/960",
+      "optimal_count": 29,
+      "policy_failures": 0,
+      "refresh_rule": "last",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "unspecified",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "0",
+      "optimal_count": 32,
+      "policy_failures": 0,
+      "refresh_rule": "none",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "unspecified",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "1/96",
+      "optimal_count": 30,
+      "policy_failures": 0,
+      "refresh_rule": "first",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "unspecified",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "13/480",
+      "optimal_count": 28,
+      "policy_failures": 0,
+      "refresh_rule": "last",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "unspecified",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 6,
+      "mean_exact_regret": "0",
+      "optimal_count": 32,
+      "policy_failures": 0,
+      "refresh_rule": "none",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "explicit_optimal",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "1/4224",
+      "optimal_count": 31,
+      "policy_failures": 0,
+      "refresh_rule": "first",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "explicit_optimal",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "37/1408",
+      "optimal_count": 24,
+      "policy_failures": 0,
+      "refresh_rule": "last",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "explicit_optimal",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "0",
+      "optimal_count": 32,
+      "policy_failures": 0,
+      "refresh_rule": "none",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "explicit_optimal",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "41/4224",
+      "optimal_count": 28,
+      "policy_failures": 0,
+      "refresh_rule": "first",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "explicit_optimal",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "49/2112",
+      "optimal_count": 27,
+      "policy_failures": 0,
+      "refresh_rule": "last",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "explicit_optimal",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "0",
+      "optimal_count": 32,
+      "policy_failures": 0,
+      "refresh_rule": "none",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "unspecified",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "1/132",
+      "optimal_count": 27,
+      "policy_failures": 0,
+      "refresh_rule": "first",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "unspecified",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "7/1056",
+      "optimal_count": 30,
+      "policy_failures": 0,
+      "refresh_rule": "last",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "unspecified",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "1/192",
+      "optimal_count": 31,
+      "policy_failures": 0,
+      "refresh_rule": "none",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 1,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "unspecified",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "17/4224",
+      "optimal_count": 28,
+      "policy_failures": 0,
+      "refresh_rule": "first",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "unspecified",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "5/264",
+      "optimal_count": 28,
+      "policy_failures": 0,
+      "refresh_rule": "last",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "compact",
+      "guarantee": "unspecified",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "0",
+      "optimal_count": 32,
+      "policy_failures": 0,
+      "refresh_rule": "none",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "explicit_optimal",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "31/4224",
+      "optimal_count": 29,
+      "policy_failures": 0,
+      "refresh_rule": "first",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "explicit_optimal",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "5/176",
+      "optimal_count": 26,
+      "policy_failures": 0,
+      "refresh_rule": "last",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "explicit_optimal",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "0",
+      "optimal_count": 32,
+      "policy_failures": 0,
+      "refresh_rule": "none",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "explicit_optimal",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "1/192",
+      "optimal_count": 28,
+      "policy_failures": 0,
+      "refresh_rule": "first",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "explicit_optimal",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "5/528",
+      "optimal_count": 30,
+      "policy_failures": 0,
+      "refresh_rule": "last",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "explicit_optimal",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "0",
+      "optimal_count": 32,
+      "policy_failures": 0,
+      "refresh_rule": "none",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "unspecified",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "1/132",
+      "optimal_count": 29,
+      "policy_failures": 0,
+      "refresh_rule": "first",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "unspecified",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "25/1408",
+      "optimal_count": 28,
+      "policy_failures": 0,
+      "refresh_rule": "last",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "unspecified",
+      "guidance": "generic",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "0",
+      "optimal_count": 32,
+      "policy_failures": 0,
+      "refresh_rule": "none",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "unspecified",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "1/1056",
+      "optimal_count": 31,
+      "policy_failures": 0,
+      "refresh_rule": "first",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "unspecified",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "1/132",
+      "optimal_count": 29,
+      "policy_failures": 0,
+      "refresh_rule": "last",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    },
+    {
+      "completed": 32,
+      "framing": "workflow",
+      "guarantee": "unspecified",
+      "guidance": "prospective",
+      "incomplete": 0,
+      "jobs": 12,
+      "mean_exact_regret": "0",
+      "optimal_count": 32,
+      "policy_failures": 0,
+      "refresh_rule": "none",
+      "scheduled": 32,
+      "transport_failures": 0,
+      "underfilled": 0,
+      "valid_and_optimal_denominator": 32
+    }
+  ],
+  "exploratory_suboptimal_patterns": {
+    "all": {
+      "all_eight_boolean_signatures": [
+        {
+          "count": 11,
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        {
+          "count": 35,
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        {
+          "count": 14,
+          "highest_two_key_names": true,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        {
+          "count": 1,
+          "highest_two_key_names": true,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        {
+          "count": 49,
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        {
+          "count": 1,
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": true
+        },
+        {
+          "count": 0,
+          "highest_two_key_names": true,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        {
+          "count": 0,
+          "highest_two_key_names": true,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": true
+        }
+      ],
+      "intersection_matches": {
+        "highest_two_key_names & opposite_refresh_optimum": 1,
+        "lowest_two_key_names & highest_two_key_names": 0,
+        "lowest_two_key_names & highest_two_key_names & opposite_refresh_optimum": 0,
+        "lowest_two_key_names & opposite_refresh_optimum": 1
+      },
+      "marginal_matches": {
+        "highest_two_key_names": 15,
+        "lowest_two_key_names": 50,
+        "opposite_refresh_optimum": 37
+      },
+      "other_choices": 11,
+      "overlap_note": "Marginal and intersection counts may overlap; union plus other equals the denominator.",
+      "strict_suboptimal_valid_choices": 111,
+      "underfilled": 1,
+      "union_matches": 100
+    },
+    "by_primary_guidance": {
+      "generic": {
+        "all_eight_boolean_signatures": [
+          {
+            "count": 0,
+            "highest_two_key_names": false,
+            "lowest_two_key_names": false,
+            "opposite_refresh_optimum": false
+          },
+          {
+            "count": 6,
+            "highest_two_key_names": false,
+            "lowest_two_key_names": false,
+            "opposite_refresh_optimum": true
+          },
+          {
+            "count": 4,
+            "highest_two_key_names": true,
+            "lowest_two_key_names": false,
+            "opposite_refresh_optimum": false
+          },
+          {
+            "count": 0,
+            "highest_two_key_names": true,
+            "lowest_two_key_names": false,
+            "opposite_refresh_optimum": true
+          },
+          {
+            "count": 4,
+            "highest_two_key_names": false,
+            "lowest_two_key_names": true,
+            "opposite_refresh_optimum": false
+          },
+          {
+            "count": 0,
+            "highest_two_key_names": false,
+            "lowest_two_key_names": true,
+            "opposite_refresh_optimum": true
+          },
+          {
+            "count": 0,
+            "highest_two_key_names": true,
+            "lowest_two_key_names": true,
+            "opposite_refresh_optimum": false
+          },
+          {
+            "count": 0,
+            "highest_two_key_names": true,
+            "lowest_two_key_names": true,
+            "opposite_refresh_optimum": true
+          }
+        ],
+        "intersection_matches": {
+          "highest_two_key_names & opposite_refresh_optimum": 0,
+          "lowest_two_key_names & highest_two_key_names": 0,
+          "lowest_two_key_names & highest_two_key_names & opposite_refresh_optimum": 0,
+          "lowest_two_key_names & opposite_refresh_optimum": 0
+        },
+        "marginal_matches": {
+          "highest_two_key_names": 4,
+          "lowest_two_key_names": 4,
+          "opposite_refresh_optimum": 6
+        },
+        "other_choices": 0,
+        "overlap_note": "Marginal and intersection counts may overlap; union plus other equals the denominator.",
+        "strict_suboptimal_valid_choices": 14,
+        "underfilled": 0,
+        "union_matches": 14
+      },
+      "prospective": {
+        "all_eight_boolean_signatures": [
+          {
+            "count": 1,
+            "highest_two_key_names": false,
+            "lowest_two_key_names": false,
+            "opposite_refresh_optimum": false
+          },
+          {
+            "count": 3,
+            "highest_two_key_names": false,
+            "lowest_two_key_names": false,
+            "opposite_refresh_optimum": true
+          },
+          {
+            "count": 0,
+            "highest_two_key_names": true,
+            "lowest_two_key_names": false,
+            "opposite_refresh_optimum": false
+          },
+          {
+            "count": 0,
+            "highest_two_key_names": true,
+            "lowest_two_key_names": false,
+            "opposite_refresh_optimum": true
+          },
+          {
+            "count": 6,
+            "highest_two_key_names": false,
+            "lowest_two_key_names": true,
+            "opposite_refresh_optimum": false
+          },
+          {
+            "count": 0,
+            "highest_two_key_names": false,
+            "lowest_two_key_names": true,
+            "opposite_refresh_optimum": true
+          },
+          {
+            "count": 0,
+            "highest_two_key_names": true,
+            "lowest_two_key_names": true,
+            "opposite_refresh_optimum": false
+          },
+          {
+            "count": 0,
+            "highest_two_key_names": true,
+            "lowest_two_key_names": true,
+            "opposite_refresh_optimum": true
+          }
+        ],
+        "intersection_matches": {
+          "highest_two_key_names & opposite_refresh_optimum": 0,
+          "lowest_two_key_names & highest_two_key_names": 0,
+          "lowest_two_key_names & highest_two_key_names & opposite_refresh_optimum": 0,
+          "lowest_two_key_names & opposite_refresh_optimum": 0
+        },
+        "marginal_matches": {
+          "highest_two_key_names": 0,
+          "lowest_two_key_names": 6,
+          "opposite_refresh_optimum": 3
+        },
+        "other_choices": 1,
+        "overlap_note": "Marginal and intersection counts may overlap; union plus other equals the denominator.",
+        "strict_suboptimal_valid_choices": 10,
+        "underfilled": 0,
+        "union_matches": 9
+      }
+    },
+    "cases": [
+      {
+        "block": 0,
+        "case_id": "b00-n6-workflow-explicit_optimal-prospective-first",
+        "exact_parent_regret": "1/10",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": true,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-04",
+          "job-05"
+        ],
+        "selected_priorities": [
+          1,
+          5
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 0,
+        "case_id": "b00-n6-workflow-unspecified-generic-first",
+        "exact_parent_regret": "1/10",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": true,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-04",
+          "job-05"
+        ],
+        "selected_priorities": [
+          1,
+          5
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 0,
+        "case_id": "b00-n12-workflow-explicit_optimal-generic-last",
+        "exact_parent_regret": "5/33",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-03",
+          "job-09"
+        ],
+        "selected_priorities": [
+          11,
+          10
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 0,
+        "case_id": "b00-n6-compact-unspecified-generic-last",
+        "exact_parent_regret": "1/5",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          3,
+          4
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 0,
+        "case_id": "b00-n6-compact-explicit_optimal-prospective-first",
+        "exact_parent_regret": "1/15",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          3,
+          4
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 1,
+        "case_id": "b01-n12-compact-explicit_optimal-prospective-last",
+        "exact_parent_regret": "5/33",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-01",
+          "job-03"
+        ],
+        "selected_priorities": [
+          10,
+          11
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 1,
+        "case_id": "b01-n6-compact-unspecified-generic-last",
+        "exact_parent_regret": "1/10",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          1,
+          3
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 1,
+        "case_id": "b01-n12-workflow-explicit_optimal-generic-last",
+        "exact_parent_regret": "5/33",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-01",
+          "job-03"
+        ],
+        "selected_priorities": [
+          10,
+          11
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 2,
+        "case_id": "b02-n6-compact-unspecified-prospective-first",
+        "exact_parent_regret": "1/30",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-01",
+          "job-02"
+        ],
+        "selected_priorities": [
+          3,
+          5
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 2,
+        "case_id": "b02-n6-workflow-explicit_optimal-generic-last",
+        "exact_parent_regret": "4/15",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-02"
+        ],
+        "selected_priorities": [
+          4,
+          5
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 2,
+        "case_id": "b02-n12-workflow-unspecified-generic-last",
+        "exact_parent_regret": "5/33",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-09",
+          "job-11"
+        ],
+        "selected_priorities": [
+          11,
+          10
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 2,
+        "case_id": "b02-n12-workflow-explicit_optimal-prospective-last",
+        "exact_parent_regret": "5/33",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-09",
+          "job-11"
+        ],
+        "selected_priorities": [
+          11,
+          10
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 3,
+        "case_id": "b03-n6-workflow-unspecified-generic-last",
+        "exact_parent_regret": "1/30",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          0,
+          2
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 3,
+        "case_id": "b03-n12-compact-explicit_optimal-generic-last",
+        "exact_parent_regret": "1/11",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          9,
+          4
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 3,
+        "case_id": "b03-n6-compact-explicit_optimal-prospective-last",
+        "exact_parent_regret": "1/30",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          0,
+          2
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 3,
+        "case_id": "b03-n6-workflow-unspecified-generic-first",
+        "exact_parent_regret": "1/30",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": true,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-04",
+          "job-05"
+        ],
+        "selected_priorities": [
+          5,
+          3
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 3,
+        "case_id": "b03-n12-compact-unspecified-generic-last",
+        "exact_parent_regret": "1/11",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          9,
+          4
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 3,
+        "case_id": "b03-n6-compact-unspecified-generic-last",
+        "exact_parent_regret": "1/30",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          0,
+          2
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 4,
+        "case_id": "b04-n6-workflow-unspecified-generic-last",
+        "exact_parent_regret": "4/15",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-01",
+          "job-05"
+        ],
+        "selected_priorities": [
+          5,
+          4
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 4,
+        "case_id": "b04-n12-workflow-unspecified-prospective-last",
+        "exact_parent_regret": "5/44",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          7,
+          9
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 4,
+        "case_id": "b04-n12-workflow-unspecified-generic-last",
+        "exact_parent_regret": "5/44",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          7,
+          9
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 4,
+        "case_id": "b04-n12-compact-explicit_optimal-generic-last",
+        "exact_parent_regret": "5/44",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          7,
+          9
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 5,
+        "case_id": "b05-n12-workflow-explicit_optimal-prospective-first",
+        "exact_parent_regret": "2/33",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          9,
+          4
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 5,
+        "case_id": "b05-n12-compact-unspecified-generic-first",
+        "exact_parent_regret": "2/33",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          9,
+          4
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 6,
+        "case_id": "b06-n6-workflow-unspecified-prospective-last",
+        "exact_parent_regret": "4/15",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-03"
+        ],
+        "selected_priorities": [
+          5,
+          4
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 6,
+        "case_id": "b06-n12-compact-unspecified-generic-first",
+        "exact_parent_regret": "1/132",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-09"
+        ],
+        "selected_priorities": [
+          9,
+          11
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 6,
+        "case_id": "b06-n12-compact-explicit_optimal-generic-last",
+        "exact_parent_regret": "5/33",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-05",
+          "job-09"
+        ],
+        "selected_priorities": [
+          10,
+          11
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 7,
+        "case_id": "b07-n12-compact-unspecified-prospective-last",
+        "exact_parent_regret": "5/33",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-04",
+          "job-09"
+        ],
+        "selected_priorities": [
+          10,
+          11
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 7,
+        "case_id": "b07-n6-compact-unspecified-generic-first",
+        "exact_parent_regret": "1/6",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          0,
+          4
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 7,
+        "case_id": "b07-n12-compact-unspecified-prospective-first",
+        "exact_parent_regret": "1/132",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-07",
+          "job-09"
+        ],
+        "selected_priorities": [
+          9,
+          11
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 8,
+        "case_id": "b08-n12-compact-explicit_optimal-prospective-last",
+        "exact_parent_regret": "5/33",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-04",
+          "job-07"
+        ],
+        "selected_priorities": [
+          11,
+          10
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 8,
+        "case_id": "b08-n6-compact-unspecified-generic-last",
+        "exact_parent_regret": "4/15",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-03"
+        ],
+        "selected_priorities": [
+          4,
+          5
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 8,
+        "case_id": "b08-n12-workflow-unspecified-prospective-last",
+        "exact_parent_regret": "5/44",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          9,
+          7
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 8,
+        "case_id": "b08-n12-workflow-explicit_optimal-generic-last",
+        "exact_parent_regret": "5/33",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-04",
+          "job-07"
+        ],
+        "selected_priorities": [
+          11,
+          10
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 9,
+        "case_id": "b09-n6-compact-unspecified-prospective-first",
+        "exact_parent_regret": "1/15",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          3,
+          4
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 9,
+        "case_id": "b09-n6-compact-unspecified-generic-first",
+        "exact_parent_regret": "1/10",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": true,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-04",
+          "job-05"
+        ],
+        "selected_priorities": [
+          1,
+          5
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 9,
+        "case_id": "b09-n12-compact-explicit_optimal-generic-last",
+        "exact_parent_regret": "1/12",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          11,
+          1
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 9,
+        "case_id": "b09-n12-workflow-explicit_optimal-prospective-first",
+        "exact_parent_regret": "3/44",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          11,
+          1
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 9,
+        "case_id": "b09-n6-workflow-unspecified-prospective-last",
+        "exact_parent_regret": "1/5",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          3,
+          4
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 10,
+        "case_id": "b10-n6-compact-explicit_optimal-generic-last",
+        "exact_parent_regret": "7/30",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          5,
+          3
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 10,
+        "case_id": "b10-n6-workflow-unspecified-prospective-last",
+        "exact_parent_regret": "2/15",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-04"
+        ],
+        "selected_priorities": [
+          5,
+          0
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 10,
+        "case_id": "b10-n6-compact-explicit_optimal-generic-first",
+        "exact_parent_regret": "1/10",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-02"
+        ],
+        "selected_priorities": [
+          5,
+          1
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 10,
+        "case_id": "b10-n12-workflow-unspecified-generic-first",
+        "exact_parent_regret": "1/66",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": true,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-10",
+          "job-11"
+        ],
+        "selected_priorities": [
+          8,
+          11
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 10,
+        "case_id": "b10-n12-compact-explicit_optimal-prospective-first",
+        "exact_parent_regret": "1/66",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": true,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-10",
+          "job-11"
+        ],
+        "selected_priorities": [
+          8,
+          11
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 10,
+        "case_id": "b10-n12-compact-unspecified-prospective-first",
+        "exact_parent_regret": "1/66",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": true,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-10",
+          "job-11"
+        ],
+        "selected_priorities": [
+          8,
+          11
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 10,
+        "case_id": "b10-n12-compact-unspecified-generic-first",
+        "exact_parent_regret": "1/66",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": true,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-10",
+          "job-11"
+        ],
+        "selected_priorities": [
+          8,
+          11
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 11,
+        "case_id": "b11-n6-workflow-unspecified-prospective-first",
+        "exact_parent_regret": "1/15",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          3,
+          4
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 11,
+        "case_id": "b11-n6-compact-unspecified-generic-last",
+        "exact_parent_regret": "1/5",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": true,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-04",
+          "job-05"
+        ],
+        "selected_priorities": [
+          2,
+          5
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 12,
+        "case_id": "b12-n12-workflow-unspecified-generic-last",
+        "exact_parent_regret": "5/33",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-02",
+          "job-08"
+        ],
+        "selected_priorities": [
+          11,
+          10
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 12,
+        "case_id": "b12-n6-workflow-unspecified-prospective-first",
+        "exact_parent_regret": "4/15",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-01",
+          "job-02"
+        ],
+        "selected_priorities": [
+          1,
+          0
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 12,
+        "case_id": "b12-n12-workflow-explicit_optimal-generic-first",
+        "exact_parent_regret": "5/66",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          5,
+          6
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 12,
+        "case_id": "b12-n12-compact-explicit_optimal-prospective-first",
+        "exact_parent_regret": "5/66",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          5,
+          6
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 12,
+        "case_id": "b12-n6-workflow-explicit_optimal-generic-last",
+        "exact_parent_regret": "1/10",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          3,
+          1
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 13,
+        "case_id": "b13-n12-workflow-unspecified-prospective-last",
+        "exact_parent_regret": "1/66",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          2,
+          1
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 13,
+        "case_id": "b13-n12-compact-explicit_optimal-generic-last",
+        "exact_parent_regret": "1/66",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          2,
+          1
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 14,
+        "case_id": "b14-n6-compact-unspecified-prospective-last",
+        "exact_parent_regret": "1/15",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          0,
+          3
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 15,
+        "case_id": "b15-n6-workflow-unspecified-generic-first",
+        "exact_parent_regret": "1/6",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          1,
+          3
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 15,
+        "case_id": "b15-n12-compact-explicit_optimal-generic-last",
+        "exact_parent_regret": "5/33",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-03",
+          "job-09"
+        ],
+        "selected_priorities": [
+          10,
+          11
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 15,
+        "case_id": "b15-n6-workflow-explicit_optimal-generic-first",
+        "exact_parent_regret": "4/15",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-02"
+        ],
+        "selected_priorities": [
+          1,
+          0
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 16,
+        "case_id": "b16-n6-compact-unspecified-generic-first",
+        "exact_parent_regret": "1/15",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": true,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-04",
+          "job-05"
+        ],
+        "selected_priorities": [
+          2,
+          5
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 16,
+        "case_id": "b16-n6-compact-explicit_optimal-generic-first",
+        "exact_parent_regret": "4/15",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          1,
+          0
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 17,
+        "case_id": "b17-n12-workflow-explicit_optimal-generic-first",
+        "exact_parent_regret": "1/33",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": true,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-10",
+          "job-11"
+        ],
+        "selected_priorities": [
+          6,
+          11
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 17,
+        "case_id": "b17-n6-compact-unspecified-generic-first",
+        "exact_parent_regret": "1/15",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          5,
+          2
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 17,
+        "case_id": "b17-n12-compact-unspecified-generic-first",
+        "exact_parent_regret": "1/33",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": true,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-10",
+          "job-11"
+        ],
+        "selected_priorities": [
+          6,
+          11
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 17,
+        "case_id": "b17-n6-compact-explicit_optimal-prospective-last",
+        "exact_parent_regret": "4/15",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-05"
+        ],
+        "selected_priorities": [
+          5,
+          4
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 17,
+        "case_id": "b17-n12-compact-unspecified-prospective-first",
+        "exact_parent_regret": "1/33",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": true,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-10",
+          "job-11"
+        ],
+        "selected_priorities": [
+          6,
+          11
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 18,
+        "case_id": "b18-n12-compact-explicit_optimal-prospective-last",
+        "exact_parent_regret": "3/22",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-01",
+          "job-11"
+        ],
+        "selected_priorities": [
+          9,
+          10
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 18,
+        "case_id": "b18-n6-compact-unspecified-generic-first",
+        "exact_parent_regret": "1/10",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          4,
+          2
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 19,
+        "case_id": "b19-n6-workflow-unspecified-generic-first",
+        "exact_parent_regret": "1/10",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": true,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-04",
+          "job-05"
+        ],
+        "selected_priorities": [
+          2,
+          4
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 19,
+        "case_id": "b19-n6-workflow-explicit_optimal-generic-first",
+        "exact_parent_regret": "1/30",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          3,
+          5
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 19,
+        "case_id": "b19-n12-compact-explicit_optimal-generic-first",
+        "exact_parent_regret": "1/132",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          9,
+          11
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 20,
+        "case_id": "b20-n6-compact-explicit_optimal-generic-last",
+        "exact_parent_regret": "1/10",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-01",
+          "job-02"
+        ],
+        "selected_priorities": [
+          4,
+          0
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 20,
+        "case_id": "b20-n12-compact-unspecified-generic-last",
+        "exact_parent_regret": "4/33",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          8,
+          9
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 20,
+        "case_id": "b20-n12-workflow-explicit_optimal-generic-last",
+        "exact_parent_regret": "5/33",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-05",
+          "job-10"
+        ],
+        "selected_priorities": [
+          10,
+          11
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 20,
+        "case_id": "b20-n12-workflow-explicit_optimal-prospective-first",
+        "exact_parent_regret": "1/33",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          8,
+          9
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 20,
+        "case_id": "b20-n12-workflow-unspecified-prospective-first",
+        "exact_parent_regret": "1/33",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          8,
+          9
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 21,
+        "case_id": "b21-n12-compact-unspecified-prospective-last",
+        "exact_parent_regret": "5/33",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-02",
+          "job-05"
+        ],
+        "selected_priorities": [
+          11,
+          10
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 21,
+        "case_id": "b21-n6-compact-explicit_optimal-generic-last",
+        "exact_parent_regret": "1/10",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-01",
+          "job-02"
+        ],
+        "selected_priorities": [
+          4,
+          0
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 22,
+        "case_id": "b22-n6-workflow-explicit_optimal-prospective-last",
+        "exact_parent_regret": "1/15",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          0,
+          3
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 22,
+        "case_id": "b22-n12-workflow-explicit_optimal-prospective-first",
+        "exact_parent_regret": "1/132",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-02",
+          "job-04"
+        ],
+        "selected_priorities": [
+          9,
+          11
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 22,
+        "case_id": "b22-n6-compact-explicit_optimal-generic-last",
+        "exact_parent_regret": "4/15",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-03",
+          "job-04"
+        ],
+        "selected_priorities": [
+          5,
+          4
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 22,
+        "case_id": "b22-n6-compact-explicit_optimal-prospective-first",
+        "exact_parent_regret": "1/5",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          0,
+          3
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 23,
+        "case_id": "b23-n6-workflow-unspecified-generic-last",
+        "exact_parent_regret": "4/15",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-02",
+          "job-03"
+        ],
+        "selected_priorities": [
+          4,
+          5
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 23,
+        "case_id": "b23-n12-compact-unspecified-prospective-last",
+        "exact_parent_regret": "5/33",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-03",
+          "job-08"
+        ],
+        "selected_priorities": [
+          11,
+          10
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 23,
+        "case_id": "b23-n6-compact-explicit_optimal-prospective-first",
+        "exact_parent_regret": "4/15",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": true,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-04",
+          "job-05"
+        ],
+        "selected_priorities": [
+          1,
+          0
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 23,
+        "case_id": "b23-n12-compact-explicit_optimal-generic-last",
+        "exact_parent_regret": "5/33",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-03",
+          "job-08"
+        ],
+        "selected_priorities": [
+          11,
+          10
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 23,
+        "case_id": "b23-n12-workflow-explicit_optimal-prospective-last",
+        "exact_parent_regret": "5/33",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-03",
+          "job-08"
+        ],
+        "selected_priorities": [
+          11,
+          10
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 24,
+        "case_id": "b24-n6-workflow-unspecified-prospective-last",
+        "exact_parent_regret": "4/15",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-04"
+        ],
+        "selected_priorities": [
+          5,
+          4
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 24,
+        "case_id": "b24-n6-compact-explicit_optimal-generic-first",
+        "exact_parent_regret": "2/15",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          5,
+          0
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 24,
+        "case_id": "b24-n12-workflow-unspecified-generic-first",
+        "exact_parent_regret": "5/33",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-04",
+          "job-11"
+        ],
+        "selected_priorities": [
+          0,
+          1
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 24,
+        "case_id": "b24-n6-workflow-explicit_optimal-generic-last",
+        "exact_parent_regret": "2/15",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          5,
+          0
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 24,
+        "case_id": "b24-n6-compact-explicit_optimal-prospective-first",
+        "exact_parent_regret": "1/5",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-03",
+          "job-05"
+        ],
+        "selected_priorities": [
+          2,
+          1
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 25,
+        "case_id": "b25-n6-workflow-explicit_optimal-prospective-first",
+        "exact_parent_regret": "7/30",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          2,
+          0
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 26,
+        "case_id": "b26-n6-workflow-explicit_optimal-generic-first",
+        "exact_parent_regret": "1/30",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          3,
+          5
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 26,
+        "case_id": "b26-n6-workflow-explicit_optimal-prospective-last",
+        "exact_parent_regret": "4/15",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-01",
+          "job-02"
+        ],
+        "selected_priorities": [
+          5,
+          4
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 26,
+        "case_id": "b26-n12-compact-explicit_optimal-prospective-last",
+        "exact_parent_regret": "5/33",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-03"
+        ],
+        "selected_priorities": [
+          10,
+          11
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 26,
+        "case_id": "b26-n12-compact-explicit_optimal-prospective-first",
+        "exact_parent_regret": "3/44",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          10,
+          2
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 26,
+        "case_id": "b26-n12-compact-explicit_optimal-generic-last",
+        "exact_parent_regret": "1/12",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          10,
+          2
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 27,
+        "case_id": "b27-n6-compact-explicit_optimal-generic-first",
+        "exact_parent_regret": "7/30",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          2,
+          0
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 27,
+        "case_id": "b27-n12-workflow-unspecified-generic-first",
+        "exact_parent_regret": "5/66",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          6,
+          5
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 27,
+        "case_id": "b27-n12-compact-unspecified-prospective-first",
+        "exact_parent_regret": "5/66",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          6,
+          5
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 27,
+        "case_id": "b27-n12-workflow-explicit_optimal-generic-last",
+        "exact_parent_regret": "5/33",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-02",
+          "job-03"
+        ],
+        "selected_priorities": [
+          11,
+          10
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 28,
+        "case_id": "b28-n12-compact-explicit_optimal-prospective-last",
+        "exact_parent_regret": "5/33",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-06",
+          "job-08"
+        ],
+        "selected_priorities": [
+          11,
+          10
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 28,
+        "case_id": "b28-n12-compact-explicit_optimal-prospective-first",
+        "exact_parent_regret": "5/33",
+        "framing": "compact",
+        "guarantee": "explicit_optimal",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-01",
+          "job-07"
+        ],
+        "selected_priorities": [
+          1,
+          0
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 29,
+        "case_id": "b29-n12-workflow-unspecified-generic-last",
+        "exact_parent_regret": "5/33",
+        "framing": "workflow",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-11"
+        ],
+        "selected_priorities": [
+          11,
+          10
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 29,
+        "case_id": "b29-n12-workflow-explicit_optimal-generic-last",
+        "exact_parent_regret": "5/33",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-11"
+        ],
+        "selected_priorities": [
+          11,
+          10
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 29,
+        "case_id": "b29-n12-compact-unspecified-prospective-last",
+        "exact_parent_regret": "5/33",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": true
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-11"
+        ],
+        "selected_priorities": [
+          11,
+          10
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 31,
+        "case_id": "b31-n12-compact-unspecified-generic-first",
+        "exact_parent_regret": "17/132",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          1,
+          3
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 31,
+        "case_id": "b31-n6-compact-unspecified-prospective-last",
+        "exact_parent_regret": "1/5",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "prospective",
+        "jobs": 6,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "last",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          2,
+          5
+        ],
+        "underfilled": false
+      },
+      {
+        "block": 31,
+        "case_id": "b31-n12-compact-unspecified-generic-none",
+        "exact_parent_regret": "1/6",
+        "framing": "compact",
+        "guarantee": "unspecified",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": false,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "none",
+        "selected_keys": [],
+        "selected_priorities": [],
+        "underfilled": true
+      },
+      {
+        "block": 31,
+        "case_id": "b31-n12-workflow-explicit_optimal-generic-first",
+        "exact_parent_regret": "17/132",
+        "framing": "workflow",
+        "guarantee": "explicit_optimal",
+        "guidance": "generic",
+        "jobs": 12,
+        "patterns": {
+          "highest_two_key_names": false,
+          "lowest_two_key_names": true,
+          "opposite_refresh_optimum": false
+        },
+        "refresh_rule": "first",
+        "selected_keys": [
+          "job-00",
+          "job-01"
+        ],
+        "selected_priorities": [
+          1,
+          3
+        ],
+        "underfilled": false
+      }
+    ],
+    "scope": "Valid strictly suboptimal choices only; matches are descriptive and can overlap."
+  },
+  "fake": false,
+  "interpretation_limits": [
+    "No additional significance calculation or causal-mechanism claim is made.",
+    "A matching key pair describes an output, not a persistent model policy or internal reasoning.",
+    "Failures and incomplete cases retain separate denominators; valid-only regret and complete-block intervals use different populations when data are missing.",
+    "Raw regret benefits by size and all primary estimates are the saved frozen estimands, not newly selected endpoints.",
+    "Synthetic development results do not establish natural-task, native-compaction, or deployed-agent gains."
+  ],
+  "new_model_requests": 0,
+  "no_refresh": {
+    "incomplete": 0,
+    "interpretation": "Every full two-record choice ties; optimal counts here do not demonstrate refresh-rule understanding.",
+    "optimal": 510,
+    "policy_failures": 0,
+    "scheduled": 512,
+    "strict_suboptimal": 1,
+    "transport_failures": 1,
+    "underfilled": 1,
+    "valid": 511,
+    "valid_and_optimal_denominator": 511
+  },
+  "overall": {
+    "incomplete": 0,
+    "optimal": 1422,
+    "policy_failures": 0,
+    "scheduled": 1536,
+    "strict_suboptimal": 111,
+    "transport_failures": 3,
+    "underfilled": 1,
+    "valid": 1533,
+    "valid_and_optimal_denominator": 1533
+  },
+  "primary": {
+    "arm_counts": {
+      "generic": {
+        "incomplete": 0,
+        "optimal": 114,
+        "policy_failures": 0,
+        "scheduled": 128,
+        "strict_suboptimal": 14,
+        "transport_failures": 0,
+        "underfilled": 0,
+        "valid": 128,
+        "valid_and_optimal_denominator": 128
+      },
+      "prospective": {
+        "incomplete": 0,
+        "optimal": 118,
+        "policy_failures": 0,
+        "scheduled": 128,
+        "strict_suboptimal": 10,
+        "transport_failures": 0,
+        "underfilled": 0,
+        "valid": 128,
+        "valid_and_optimal_denominator": 128
+      }
+    },
+    "definition": "Workflow, unspecified child, refresh present; generic minus prospective regret.",
+    "frozen_estimates": {
+      "block_bootstrap_95_percent_interval": [
+        -0.0203125,
+        0.060546875
+      ],
+      "bootstrap_resamples": 5000,
+      "complete_block_mean_normalized_regret_benefit": "107/5120",
+      "complete_blocks": 32,
+      "coverage_warning": "Regret uses valid pairs only; bootstrap uses fully valid blocks. Do not infer a clean treatment benefit when missingness differs.",
+      "mean_normalized_regret_benefit": "107/5120",
+      "mean_valid_and_optimal_benefit": "1/32",
+      "planned_blocks": 32,
+      "raw_regret_benefit_by_size": {
+        "12": "71/8448",
+        "6": "-7/1920"
+      },
+      "scheduled_pairs": 128,
+      "transport_complete_pairs": 128,
+      "valid_pairs": 128
+    },
+    "paired_regret_counts": {
+      "generic_favored": 9,
+      "not_both_valid": 0,
+      "prospective_favored": 13,
+      "tie": 106
+    },
+    "paired_valid_and_optimal_counts": {
+      "generic_favored": 9,
+      "not_both_transport_complete": 0,
+      "prospective_favored": 13,
+      "tie": 106
+    }
+  },
+  "refresh_present": {
+    "incomplete": 0,
+    "optimal": 912,
+    "policy_failures": 0,
+    "scheduled": 1024,
+    "strict_suboptimal": 110,
+    "transport_failures": 2,
+    "underfilled": 0,
+    "valid": 1022,
+    "valid_and_optimal_denominator": 1022
+  },
+  "script_sha256": "529a7b4d1487efd6cced866f116c02759a2efbf36bbbf087af6422f538f711dc",
+  "source_final_audit_sha256": "d7a40fb1606e50f95761944bbdc81cd7872d09dff3bd9b31bbceea4312ca9587",
+  "source_original_plan_sha256": "f4813b59c9adcf9fb79ef16631bf85ae09be496d66ac172676eac995da7801d6",
+  "source_pooled_summary_sha256": "2f2d6aac57ad9c06317619a7e56f5f601791e21d38af41af15f2f43a6efbe665",
+  "version": "transfer_final_descriptive_findings_v1"
+}

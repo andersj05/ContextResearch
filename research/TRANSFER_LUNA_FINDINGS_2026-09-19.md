@@ -1,29 +1,53 @@
-# Luna transfer study: provisional first-eight-block findings
+# Luna transfer study: final development findings
 
-September 19, 2026. **Interim only; the fixed study remains active and unchanged. No treatment gain is confirmed.** This note covers blocks 0–7, the descriptive checkpoint permitted before launch. It excludes all later responses and is not a final usage or whole-run accounting report.
+Study label: September 19, 2026. Both phases with model generations began on September 20 UTC, still September 19 locally. **The fixed allocation is complete: 1,536 dispatched requests, 1,533 valid selections, and three permanently missing outcomes. The primary comparison does not establish a prospective-guidance benefit.** Its positive normalized-regret estimate has a descriptive interval that includes zero. This is controlled synthetic development evidence, not a natural-task or native-compaction benchmark.
 
-The [independent interim audit](../experiments/dependency_memory/results/transfer_interim_8blocks.json) checks 384 public requests and their responses, re-enumerates their possible continuations, and verifies 52 source blobs against frozen commit `04141984d56fa0f80429d19dc45f589fef8ac5a6`. Its saved timestamp is September 20 at 02:05 UTC, still September 19 in the project's local time zone. This is a local evidence check, not external scientific review.
+The [descriptive findings](../experiments/dependency_memory/results/transfer_luna_2026-09-19_continuation/findings_summary.json), [pooled summary](../experiments/dependency_memory/results/transfer_luna_2026-09-19_continuation/pooled_summary.json), and [full report](../experiments/dependency_memory/results/transfer_luna_2026-09-19_continuation/report.md) preserve the denominators, all 48 condition summaries, and primary comparisons. The [saved independent local audit](../experiments/dependency_memory/results/transfer_luna_2026-09-19_continuation/independent_audit.json) passes. Local evidence checks establish consistency and provenance; they are not external scientific review or certification of provider internals.
 
-## What the checkpoint contains
+## Question and controlled design
 
-All **384 responses are valid**, and every response retains two records. **354/384 selections are optimal** under the declared later-selection reference. The useful separation is **226/256 optimal in refresh-present conditions** and **128/128 in no-refresh conditions**. Every full pair ties without refresh, so the latter result checks capacity and response validity rather than identifying a superior choice of records.
+The study asks whether guidance to consider future information arrivals helps a model choose what to retain. It follows three parent-selection deficits in the first workflow and 24 optimal selections in a separate simplified diagnostic. Those earlier experiments changed several features together and could not identify why their outcomes differed.
 
-The [frozen design](../docs/TRANSFER_STUDY.md) varies six versus twelve jobs, compact versus workflow framing, an explicit versus unspecified later-selector guarantee, generic versus prospective guidance, and refresh direction. Public priorities are randomized independently of job names, and visible order is shuffled. The 48 conditions within each block share materials. These eight generated blocks are therefore the units for the reported resampling, not 384 independent natural tasks.
+The [frozen design](../docs/TRANSFER_STUDY.md) crosses six or twelve jobs, compact or workflow framing, an explicit or unspecified optimal-later-selector guarantee, generic or prospective guidance, and minimum-priority, maximum-priority, or no refresh. All 48 combinations occur in each of 32 generated blocks. The workflow condition adds handoff wording and three fixed public events; it is not a naturalistic long-context execution.
 
-Every answer is graded over 30 possible continuations for six jobs or 132 for twelve. Those continuations provide exact conditional scores; they do not create additional model observations. The later selector itself is not run. Even where the prompt does not promise its skill, scoring measures the potential available to an optimal later selector.
+Public refresh priorities are randomized independently of stable job names, and visible-record order is independently shuffled. Matched conditions share materials. Canonical metadata and response-schema ordering remain visible. Each fresh isolated request selects at most two records, without access to the future candidate pair, final target, earlier answers, or outcome feedback. The model is the mutable `gpt-5.6-luna` alias, with low reasoning effort and default service tier.
 
-## Prespecified guidance comparison
+Every valid selection is graded over all 30 possible pair/target routes at six jobs or 132 at twelve. These are counterfactual calculations for one answer, not additional model trials. The later selector is never invoked: scoring assumes optimal later use even when the prompt does not promise that skill. Its two slots equal the two-candidate count, making the second boundary nonbinding. Availability includes scheduled refreshed records, not only information preserved from the original memory.
 
-The primary comparison uses workflow framing, unspecified later-selector behavior, and refresh-present conditions. It supplies **32 matched pairs** in this checkpoint. Generic guidance produces **26/32 optimal selections**, compared with **30/32** for guidance to consider future information arrivals.
+## Execution and missing outcomes
 
-Mean normalized regret benefit, defined as generic minus prospective regret, is **13/256**. The descriptive 95% block-bootstrap interval is **[-0.0546875, 0.15625]**, from the fixed 5,000-resample procedure. The interval includes zero. The positive point estimate is consequently a provisional observation, not a confirmed guidance benefit. Normalization accounts for the different available regret ranges at the two job counts; it is not a direct percentage-point change in task success.
+An initial launch at `999f14d` stopped before generation at its local quota guard. The launch at `0414198` subsequently dispatched 888 requests and accepted 885 responses. Three completed, fully metered generations failed a post-generation percentage check before their answers were retained. Those three outcomes remain transport failures; their quality is unknown.
 
-Mean raw availability-regret benefit is **1/96 at six jobs** and **5/528 at twelve**. Prospective guidance has lower regret in five matched pairs, generic guidance in one, and 26 tie. All eight blocks and all 32 primary pairs are complete, so missing-response exclusions do not separate the pair and complete-block estimates at this checkpoint.
+The [operational amendment](../docs/TRANSFER_CONTINUATION.md) permitted only the 648 provably never-dispatched cases to proceed through normal subscription routing with existing-credit eligibility checks. The continuation at `f9012a2` completed all 648. Public request bytes, case order within workers, scientific conditions, and the original 1,536-request/200-equivalent allocation were preserved. No dispatched case was retried or replaced. A separate zero-generation continuation-preparation error and its correction are also documented.
 
-## Error patterns and remaining boundaries
+The pooled evidence contains 1,541 host-attempt records: five preflight-only failures explain the difference from 1,536 model requests. Each model case contributes exactly once. All three lost responses fall outside the primary comparison, so its 128 pairs and all 32 primary blocks are complete. Full factorial blocks 16–18 retain their missing outcomes. The administrative interruption remains part of the study history.
 
-Among the 30 suboptimal selections, **17 match the two lowest or highest job names**, **10 match the optimum for the opposite refresh direction**, and **three match neither pattern**. These groups happen not to overlap in this interim. They describe outputs, not an identified internal mechanism, persistent policy, or explanation of why the model chose them. No answers are underfilled.
+## Final selection results
 
-The earlier [24-request diagnostic](REVISION_LUNA_FINDINGS_2026-09-19.md) produced only optimal selections under simpler conditions. The current observations do not causally reproduce or explain the first workflow's three mistakes: priorities, task presentation, and experimental conditions differ. Neither experiment establishes improved native compaction or real-world agent performance.
+| Conditions | Scheduled | Valid selections | Optimal | Strict deficits |
+|---|---:|---:|---:|---:|
+| Refresh present | 1,024 | 1,022 | 912 | 110 |
+| No refresh | 512 | 511 | 510 | 1 |
+| All conditions | 1,536 | 1,533 | 1,422 | 111 |
 
-The active allocation remains **1,536 requests and 200 conservative credit equivalents** across four workers. An earlier [launch at `999f14d`](../experiments/dependency_memory/results/transfer_luna_2026-09-19/summary.json) stopped before any model generation or credit reservation at the historical local quota threshold. That evidence is preserved. The documented operational amendment preceded the active launch and left all public requests unchanged. Final usage and conclusions await completion and the whole-run audit; this checkpoint causes no prompt change, retry, early stopping, or additional allocation.
+There were no schema-policy failures. One valid response selected no records; the other 1,532 selected two. Empty selection was permitted and is graded as suboptimal, not discarded as invalid. It occurred in a no-refresh condition, where every full two-record pair ties. Accordingly, the 510 optimal no-refresh answers do not demonstrate refresh-rule understanding. “Optimal” denotes the best achievable reference availability, not guaranteed success on every future route.
+
+The prespecified primary comparison uses workflow framing, an unspecified later selector, and refresh-present conditions. Generic guidance gives **114/128 optimal selections**, compared with **118/128** for prospective guidance. Across matched pairs, prospective guidance has lower regret in **13**, generic guidance in **nine**, and **106 tie**.
+
+Mean normalized regret benefit, defined as generic minus prospective regret, is **107/5120, approximately 0.0208984**. The complete-block mean is identical. Its descriptive 95% block-bootstrap interval, using the fixed 5,000-resample procedure, is **[-0.0203125, 0.060546875]**. Because the interval includes zero, this does not confirm a guidance gain; neither does it establish equivalence or absence of an effect.
+
+Normalization uses each job count's best-to-worst full-pair regret range: 4/15 at six jobs and 5/33 at twelve. The estimate is not a percentage-point increase in task success. Mean raw availability-regret benefit is **-7/1920 at six jobs** and **71/8448 at twelve**; the point estimates have opposite signs. Blocks are constructed task sets, and the descriptive resampling does not model all shared worker, timing, or backend dependence.
+
+## Descriptive error patterns
+
+Among the 111 suboptimal valid selections, **50** match the two lowest job names, **15** the two highest, and **37** the optimum for the opposite refresh direction. These are overlapping marginal counts: two outputs match both a key-extreme and opposite-rule pattern. Their union covers **100** selections; the other **11** include the empty response.
+
+These matches describe outputs. They do not identify internal reasoning, a stable model policy, or causes of error. The complete condition table remains available rather than selecting favorable cells after observing results. This study also does not causally explain the first workflow's mistakes or establish that its guidance fixes them.
+
+## Accounting and relation to the interim
+
+All 1,536 generations, including the three lost answers, have settled usage: **48.78528 conservative credit equivalents** against the original 200-equivalent cap, with no uncertain reservations. Reported totals are 4,768,512 input tokens, including 2,412,032 cached input, and 632,736 output tokens, including 595,880 reasoning tokens. Every generation explicitly reported zero cache-write tokens. Included categories are not added again. Actual experiment-attributable subscription debit remains unknown. No API billing, purchase, reset, or held-out call occurred.
+
+The [first-eight-block checkpoint](../experiments/dependency_memory/results/transfer_interim_8blocks.json) remains preserved: 384 valid selections, 354 optimal, and a primary normalized benefit of 13/256 with an interval including zero. It did not change the sample, prompts, or analysis. Final results replace its provisional estimates; the checkpoint is not an independent replication.
+
+The completed study supplies auditable record-selection evidence and a bounded, inconclusive guidance comparison. It does not measure repeated native compaction, unrestricted downstream agents, naturalistic long-context performance, or real-world savings. The mathematical bit-chain results remain a separate evidence layer; this record experiment neither proves nor empirically validates their practical prevalence.

@@ -28,7 +28,7 @@
 | External correctness and novelty questions | [Review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) | Prepared with primary-source comparisons; external review pending |
 | Findings in plain language | [Living findings draft](../paper/findings-draft.md) | Versioned short account linked to the claim register |
 | Research explained without prerequisites | [Plain-language guide](../research/PLAIN_LANGUAGE_GUIDE_2026-09-19.md) | Concrete handoff example; distinguishes proved mathematics, scripted checks, model observations, and ongoing work |
-| Matched retention transfer | [Frozen factorial design](TRANSFER_STUDY.md) | Newly authorized 1,536-request development study; 32 blocks, four workers, matched randomized priorities; no outcomes at the prelaunch milestone |
+| Matched retention transfer | [Completed findings](../research/TRANSFER_LUNA_FINDINGS_2026-09-19.md), [frozen design](TRANSFER_STUDY.md), and [continuation](TRANSFER_CONTINUATION.md) | 1,536 dispatches, 1,533 valid responses; primary 128 matched pairs/32 blocks, normalized benefit 0.02090 with descriptive interval including zero; no established improvement or native-compaction claim |
 | Current writing | [Paper workspace](../paper/README.md) | Draft; incomplete results clearly marked |
 
 ## Broader inherited library
