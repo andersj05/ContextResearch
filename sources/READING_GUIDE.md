@@ -92,3 +92,13 @@ The [September 19 subscription transport review](../research/CODEX_SUBSCRIPTION_
 ## Before citing historical compaction data
 
 Read [the qualified inspection](../research/COMPACTION_FRONTIER_REVERSE_ENGINEERING.md). Keep the supplied release's provenance, recovery procedure, and limitations attached to every use. It cannot establish a hidden model's full reasoning or exact compaction algorithm.
+
+## Decoder-complete rate-two certificate
+
+The [new proof](../research/DECODER_COMPLETE_FRONTIER_2026-09-21.md) adds a sharply certified converse allowing all decoder pairs. On September 21, 2026, the following primary material was read:
+
+- Polyanskiy and Wu, [Chapter 25](https://ocw.mit.edu/courses/6-441-information-theory-spring-2016/5721b7df786b416dadad7c7bb3364d00_MIT6_441S16_chapter_25.pdf), Section 25.2, Theorem 25.2 and support-condition remarks, pages 258-259. This extends the existing reading to rate-distortion supporting objectives; it is not a full proof audit of the chapter. [@polyanskiywu2016coding]
+- Dupuis, Yu, and Willems, [author-hosted ISIT 2004 slides](https://www.comm.toronto.edu/~weiyu/ab_isit04.pdf), title page and slides 11-16. Strategy alphabets and numerical duality are established prior art. This is a presentation reading, not a review of a journal/proceedings paper. [@dupuis2004strategies]
+- Basu et al. [v2](https://arxiv.org/html/2204.02586v2), II-A4 and V-B, Theorems 9-10, revisited for the cascade comparison. The recorded review scope remains bounded; no full-proof upgrade.
+
+The specific all-decoder numerical separation is the candidate contribution. Targeted searches did not settle priority; no external reviewer was contacted. Inherited broad-corpus review labels remain unchanged.

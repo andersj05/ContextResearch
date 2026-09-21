@@ -478,6 +478,16 @@ def main() -> int:
     if joint_report.read_text(encoding="utf-8") != joint_block_coding.report(expected_joint):
         errors.append("Joint-block report is stale; regenerate it")
     counts["joint_block_witness_outcomes_checked"] = expected_joint["finite_witness"]["outcomes"]
+    from joint_coding import decoder_frontier
+    expected_frontier = decoder_frontier.certificate()
+    frontier_path = ROOT / "experiments/dependency_memory/results/decoder_frontier_certificate.json"
+    if json.loads(frontier_path.read_text(encoding="utf-8")) != expected_frontier:
+        errors.append("Decoder frontier certificate is stale; regenerate it")
+    frontier_report = ROOT / "experiments/dependency_memory/results/decoder_frontier_report.md"
+    if frontier_report.read_text(encoding="utf-8") != decoder_frontier.report(expected_frontier):
+        errors.append("Decoder frontier report is stale; regenerate it")
+    counts["frontier_decoder_tables_checked"] = expected_frontier["decoder_tables_covered"]
+    counts["frontier_decoder_orbits_checked"] = expected_frontier["decoder_orbits"]
     import run_artifact_workflow
     artifact_rows, artifact_summary, artifact_witness = run_artifact_workflow.diagnostics()
     expected_rows = [{key: str(value) for key, value in row.items()} for row in artifact_rows]

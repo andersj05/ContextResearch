@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "evidence_status": "exact finite certificate plus analytic block-coding argument; external review open",
+  "source_symbols": 16,
+  "decision_words": 16,
+  "unordered_branch_pairs_including_repeats": 36,
+  "decoder_tables_covered": 1679616,
+  "symmetry_group_size": 384,
+  "decoder_orbits": 4751,
+  "orbit_size_histogram": {
+    "8": 2,
+    "16": 1,
+    "24": 2,
+    "32": 6,
+    "48": 9,
+    "64": 8,
+    "96": 70,
+    "128": 7,
+    "192": 590,
+    "384": 4056
+  },
+  "orbit_dual_products_sha256": "e1b679b27c0d39f4e1682a9a40e6f366a527935983713761d142b46cb69226f3",
+  "t": {
+    "numerator": 7270549,
+    "denominator": 62500000
+  },
+  "gradient_scale_bits": 160,
+  "log_interval_bits": 192,
+  "log_series_terms": 100,
+  "unsigned_weights": [
+    1009489803807342,
+    0,
+    0,
+    163503398730886,
+    0,
+    163503398730886,
+    163503398730886,
+    0,
+    0,
+    163503398730886,
+    163503398730886,
+    0,
+    163503398730886,
+    0,
+    0,
+    1009489803807342
+  ],
+  "worst_dual_orbit": {
+    "index": 335923,
+    "size": 8,
+    "pairs": [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        7
+      ]
+    ]
+  },
+  "runner_up_dual_orbit": {
+    "index": 335929,
+    "size": 96,
+    "pairs": [
+      [
+        1,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        7
+      ]
+    ]
+  },
+  "other_orbits_free_energy_strict_lower": "95/8",
+  "universal_free_energy_lower_enclosure": [
+    "11.7543331549651500",
+    "11.7543331549651501"
+  ],
+  "finite_all_k_distortion_lower_enclosure": [
+    "0.2618989799084461",
+    "0.2618989799084462"
+  ],
+  "achievable_asymptotic_distortion_enclosure": [
+    "0.2618989800764624",
+    "0.2618989800764625"
+  ],
+  "test_channel_information_upper_enclosure": [
+    "1.9999999937422941",
+    "1.9999999937422942"
+  ],
+  "certified_strict_interval": {
+    "lower": "2618989799/10000000000",
+    "upper": "2618989801/10000000000",
+    "decimal": [
+      "0.2618989799",
+      "0.2618989801"
+    ]
+  },
+  "finite_lower_bound": "D_k(2k) > 0.2618989799 for every k >= 1",
+  "asymptotic_upper_bound": "lim_k D_k(2k) < 0.2618989801",
+  "exact_closed_form_or_finite_optimal_code_claimed": false,
+  "model_requests": 0
+}
