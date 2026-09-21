@@ -488,6 +488,18 @@ def main() -> int:
         errors.append("Decoder frontier report is stale; regenerate it")
     counts["frontier_decoder_tables_checked"] = expected_frontier["decoder_tables_covered"]
     counts["frontier_decoder_orbits_checked"] = expected_frontier["decoder_orbits"]
+    from collision_audit import run as collision_audit_run
+    expected_collisions = collision_audit_run.certificate()
+    collision_path = ROOT / "experiments/dependency_memory/results/collision_audit_certificate.json"
+    if json.loads(collision_path.read_text(encoding="utf-8")) != expected_collisions:
+        errors.append("Collision audit certificate is stale; regenerate it")
+    collision_report = ROOT / "experiments/dependency_memory/results/collision_audit_report.md"
+    if collision_report.read_text(encoding="utf-8") != collision_audit_run.report(expected_collisions):
+        errors.append("Collision audit report is stale; regenerate it")
+    collision_example = ROOT / "experiments/dependency_memory/collision_audit/example.json"
+    if json.loads(collision_example.read_text(encoding="utf-8")) != expected_collisions["specifications"][0]:
+        errors.append("Collision audit input example is stale; regenerate it")
+    counts["collision_audit_constructed_specifications"] = len(expected_collisions["audits"])
     import run_artifact_workflow
     artifact_rows, artifact_summary, artifact_witness = run_artifact_workflow.diagnostics()
     expected_rows = [{key: str(value) for key, value in row.items()} for row in artifact_rows]

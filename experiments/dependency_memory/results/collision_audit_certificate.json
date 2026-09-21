@@ -1,0 +1,5514 @@
+{
+  "schema": 1,
+  "date": "2026-09-21",
+  "evidence": "constructed finite diagnostics",
+  "model_calls": 0,
+  "specifications": [
+    {
+      "name": "three_way_compatibility",
+      "budget": 0,
+      "worlds": [
+        {
+          "id": "w0",
+          "history": "Checked platform: supports A and B.",
+          "retained": {
+            "summary": "Compatibility checked; choose a supported build."
+          },
+          "public": {
+            "phase": "awaiting build request"
+          }
+        },
+        {
+          "id": "w1",
+          "history": "Checked platform: supports B and C.",
+          "retained": {
+            "summary": "Compatibility checked; choose a supported build."
+          },
+          "public": {
+            "phase": "awaiting build request"
+          }
+        },
+        {
+          "id": "w2",
+          "history": "Checked platform: supports A and C.",
+          "retained": {
+            "summary": "Compatibility checked; choose a supported build."
+          },
+          "public": {
+            "phase": "awaiting build request"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "name": "choose_build",
+          "trace": [
+            "User requests one supported build."
+          ],
+          "accepted": {
+            "w0": [
+              "A",
+              "B"
+            ],
+            "w1": [
+              "B",
+              "C"
+            ],
+            "w2": [
+              "A",
+              "C"
+            ]
+          }
+        }
+      ],
+      "tools": [
+        {
+          "name": "inspect_platform_family",
+          "cost": 1,
+          "observations": {
+            "w0": "AB",
+            "w1": "not-AB",
+            "w2": "not-AB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "rollback_with_archive",
+      "budget": 2,
+      "worlds": [
+        {
+          "id": "w0",
+          "history": "Release v1 receipt = cedar. Replaced by shared v2.",
+          "retained": {
+            "release": "v2",
+            "receipt": "shared"
+          },
+          "public": {
+            "workspace": "v2",
+            "old_transcript": "deleted"
+          }
+        },
+        {
+          "id": "w1",
+          "history": "Release v1 receipt = birch. Replaced by shared v2.",
+          "retained": {
+            "release": "v2",
+            "receipt": "shared"
+          },
+          "public": {
+            "workspace": "v2",
+            "old_transcript": "deleted"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "name": "current_release",
+          "trace": [
+            "User requests current release receipt."
+          ],
+          "accepted": {
+            "w0": [
+              "shared"
+            ],
+            "w1": [
+              "shared"
+            ]
+          }
+        },
+        {
+          "name": "original_release",
+          "trace": [
+            "Current release accepted.",
+            "Unrelated work completed.",
+            "User requests original release receipt for rollback."
+          ],
+          "accepted": {
+            "w0": [
+              "cedar"
+            ],
+            "w1": [
+              "birch"
+            ]
+          }
+        }
+      ],
+      "tools": [
+        {
+          "name": "read_current_workspace",
+          "cost": 1,
+          "observations": {
+            "w0": "shared",
+            "w1": "shared"
+          }
+        },
+        {
+          "name": "read_versioned_archive",
+          "cost": 3,
+          "observations": {
+            "w0": "cedar",
+            "w1": "birch"
+          }
+        }
+      ]
+    },
+    {
+      "name": "rollback_archive_expired",
+      "budget": 2,
+      "worlds": [
+        {
+          "id": "w0",
+          "history": "Release v1 receipt = cedar. Replaced by shared v2.",
+          "retained": {
+            "release": "v2",
+            "receipt": "shared"
+          },
+          "public": {
+            "workspace": "v2",
+            "old_transcript": "deleted"
+          }
+        },
+        {
+          "id": "w1",
+          "history": "Release v1 receipt = birch. Replaced by shared v2.",
+          "retained": {
+            "release": "v2",
+            "receipt": "shared"
+          },
+          "public": {
+            "workspace": "v2",
+            "old_transcript": "deleted"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "name": "current_release",
+          "trace": [
+            "User requests current release receipt."
+          ],
+          "accepted": {
+            "w0": [
+              "shared"
+            ],
+            "w1": [
+              "shared"
+            ]
+          }
+        },
+        {
+          "name": "original_release",
+          "trace": [
+            "Current release accepted.",
+            "Unrelated work completed.",
+            "User requests original release receipt for rollback."
+          ],
+          "accepted": {
+            "w0": [
+              "cedar"
+            ],
+            "w1": [
+              "birch"
+            ]
+          }
+        }
+      ],
+      "tools": [
+        {
+          "name": "read_current_workspace",
+          "cost": 1,
+          "observations": {
+            "w0": "shared",
+            "w1": "shared"
+          }
+        }
+      ]
+    },
+    {
+      "name": "adaptive_sharded_recovery",
+      "budget": 1,
+      "worlds": [
+        {
+          "id": "w0",
+          "history": "Directory showed shard 0; record value receipt-0.",
+          "retained": {
+            "summary": "Receipt is archived."
+          },
+          "public": {
+            "directory": "available",
+            "shards": 4
+          }
+        },
+        {
+          "id": "w1",
+          "history": "Directory showed shard 0; record value receipt-1.",
+          "retained": {
+            "summary": "Receipt is archived."
+          },
+          "public": {
+            "directory": "available",
+            "shards": 4
+          }
+        },
+        {
+          "id": "w2",
+          "history": "Directory showed shard 1; record value receipt-2.",
+          "retained": {
+            "summary": "Receipt is archived."
+          },
+          "public": {
+            "directory": "available",
+            "shards": 4
+          }
+        },
+        {
+          "id": "w3",
+          "history": "Directory showed shard 1; record value receipt-3.",
+          "retained": {
+            "summary": "Receipt is archived."
+          },
+          "public": {
+            "directory": "available",
+            "shards": 4
+          }
+        },
+        {
+          "id": "w4",
+          "history": "Directory showed shard 2; record value receipt-4.",
+          "retained": {
+            "summary": "Receipt is archived."
+          },
+          "public": {
+            "directory": "available",
+            "shards": 4
+          }
+        },
+        {
+          "id": "w5",
+          "history": "Directory showed shard 2; record value receipt-5.",
+          "retained": {
+            "summary": "Receipt is archived."
+          },
+          "public": {
+            "directory": "available",
+            "shards": 4
+          }
+        },
+        {
+          "id": "w6",
+          "history": "Directory showed shard 3; record value receipt-6.",
+          "retained": {
+            "summary": "Receipt is archived."
+          },
+          "public": {
+            "directory": "available",
+            "shards": 4
+          }
+        },
+        {
+          "id": "w7",
+          "history": "Directory showed shard 3; record value receipt-7.",
+          "retained": {
+            "summary": "Receipt is archived."
+          },
+          "public": {
+            "directory": "available",
+            "shards": 4
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "name": "submit_receipt",
+          "trace": [
+            "User requests the archived receipt."
+          ],
+          "accepted": {
+            "w0": [
+              "receipt-0"
+            ],
+            "w1": [
+              "receipt-1"
+            ],
+            "w2": [
+              "receipt-2"
+            ],
+            "w3": [
+              "receipt-3"
+            ],
+            "w4": [
+              "receipt-4"
+            ],
+            "w5": [
+              "receipt-5"
+            ],
+            "w6": [
+              "receipt-6"
+            ],
+            "w7": [
+              "receipt-7"
+            ]
+          }
+        }
+      ],
+      "tools": [
+        {
+          "name": "read_directory",
+          "cost": 1,
+          "observations": {
+            "w0": "shard-0",
+            "w1": "shard-0",
+            "w2": "shard-1",
+            "w3": "shard-1",
+            "w4": "shard-2",
+            "w5": "shard-2",
+            "w6": "shard-3",
+            "w7": "shard-3"
+          }
+        },
+        {
+          "name": "read_shard_0",
+          "cost": 1,
+          "observations": {
+            "w0": "receipt-0",
+            "w1": "receipt-1",
+            "w2": "absent",
+            "w3": "absent",
+            "w4": "absent",
+            "w5": "absent",
+            "w6": "absent",
+            "w7": "absent"
+          }
+        },
+        {
+          "name": "read_shard_1",
+          "cost": 1,
+          "observations": {
+            "w0": "absent",
+            "w1": "absent",
+            "w2": "receipt-2",
+            "w3": "receipt-3",
+            "w4": "absent",
+            "w5": "absent",
+            "w6": "absent",
+            "w7": "absent"
+          }
+        },
+        {
+          "name": "read_shard_2",
+          "cost": 1,
+          "observations": {
+            "w0": "absent",
+            "w1": "absent",
+            "w2": "absent",
+            "w3": "absent",
+            "w4": "receipt-4",
+            "w5": "receipt-5",
+            "w6": "absent",
+            "w7": "absent"
+          }
+        },
+        {
+          "name": "read_shard_3",
+          "cost": 1,
+          "observations": {
+            "w0": "absent",
+            "w1": "absent",
+            "w2": "absent",
+            "w3": "absent",
+            "w4": "absent",
+            "w5": "absent",
+            "w6": "receipt-6",
+            "w7": "receipt-7"
+          }
+        }
+      ]
+    },
+    {
+      "name": "harmless_lost_detail",
+      "budget": 0,
+      "worlds": [
+        {
+          "id": "w0",
+          "history": "Checked platform: supports A and B.",
+          "retained": {
+            "summary": "Compatibility checked; choose a supported build."
+          },
+          "public": {
+            "phase": "awaiting build request"
+          }
+        },
+        {
+          "id": "w1",
+          "history": "Checked platform: supports B and C.",
+          "retained": {
+            "summary": "Compatibility checked; choose a supported build."
+          },
+          "public": {
+            "phase": "awaiting build request"
+          }
+        },
+        {
+          "id": "w2",
+          "history": "Checked platform: supports A and C.",
+          "retained": {
+            "summary": "Compatibility checked; choose a supported build."
+          },
+          "public": {
+            "phase": "awaiting build request"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "name": "choose_build",
+          "trace": [
+            "User requests one supported build."
+          ],
+          "accepted": {
+            "w0": [
+              "A",
+              "B",
+              "portable"
+            ],
+            "w1": [
+              "B",
+              "C",
+              "portable"
+            ],
+            "w2": [
+              "A",
+              "C",
+              "portable"
+            ]
+          }
+        }
+      ],
+      "tools": []
+    },
+    {
+      "name": "public_evidence_control",
+      "budget": 2,
+      "worlds": [
+        {
+          "id": "w0",
+          "history": "Release v1 receipt = cedar. Replaced by shared v2.",
+          "retained": {
+            "release": "v2",
+            "receipt": "shared"
+          },
+          "public": {
+            "workspace": "v2",
+            "old_transcript": "deleted",
+            "original_receipt": "cedar"
+          }
+        },
+        {
+          "id": "w1",
+          "history": "Release v1 receipt = birch. Replaced by shared v2.",
+          "retained": {
+            "release": "v2",
+            "receipt": "shared"
+          },
+          "public": {
+            "workspace": "v2",
+            "old_transcript": "deleted",
+            "original_receipt": "birch"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "name": "current_release",
+          "trace": [
+            "User requests current release receipt."
+          ],
+          "accepted": {
+            "w0": [
+              "shared"
+            ],
+            "w1": [
+              "shared"
+            ]
+          }
+        },
+        {
+          "name": "original_release",
+          "trace": [
+            "Current release accepted.",
+            "Unrelated work completed.",
+            "User requests original release receipt for rollback."
+          ],
+          "accepted": {
+            "w0": [
+              "cedar"
+            ],
+            "w1": [
+              "birch"
+            ]
+          }
+        }
+      ],
+      "tools": [
+        {
+          "name": "read_current_workspace",
+          "cost": 1,
+          "observations": {
+            "w0": "shared",
+            "w1": "shared"
+          }
+        }
+      ]
+    },
+    {
+      "name": "affordable_archive_control",
+      "budget": 3,
+      "worlds": [
+        {
+          "id": "w0",
+          "history": "Release v1 receipt = cedar. Replaced by shared v2.",
+          "retained": {
+            "release": "v2",
+            "receipt": "shared"
+          },
+          "public": {
+            "workspace": "v2",
+            "old_transcript": "deleted"
+          }
+        },
+        {
+          "id": "w1",
+          "history": "Release v1 receipt = birch. Replaced by shared v2.",
+          "retained": {
+            "release": "v2",
+            "receipt": "shared"
+          },
+          "public": {
+            "workspace": "v2",
+            "old_transcript": "deleted"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "name": "current_release",
+          "trace": [
+            "User requests current release receipt."
+          ],
+          "accepted": {
+            "w0": [
+              "shared"
+            ],
+            "w1": [
+              "shared"
+            ]
+          }
+        },
+        {
+          "name": "original_release",
+          "trace": [
+            "Current release accepted.",
+            "Unrelated work completed.",
+            "User requests original release receipt for rollback."
+          ],
+          "accepted": {
+            "w0": [
+              "cedar"
+            ],
+            "w1": [
+              "birch"
+            ]
+          }
+        }
+      ],
+      "tools": [
+        {
+          "name": "read_current_workspace",
+          "cost": 1,
+          "observations": {
+            "w0": "shared",
+            "w1": "shared"
+          }
+        },
+        {
+          "name": "read_versioned_archive",
+          "cost": 3,
+          "observations": {
+            "w0": "cedar",
+            "w1": "birch"
+          }
+        }
+      ]
+    },
+    {
+      "name": "adaptive_recovery_budget_two",
+      "budget": 2,
+      "worlds": [
+        {
+          "id": "w0",
+          "history": "Directory showed shard 0; record value receipt-0.",
+          "retained": {
+            "summary": "Receipt is archived."
+          },
+          "public": {
+            "directory": "available",
+            "shards": 4
+          }
+        },
+        {
+          "id": "w1",
+          "history": "Directory showed shard 0; record value receipt-1.",
+          "retained": {
+            "summary": "Receipt is archived."
+          },
+          "public": {
+            "directory": "available",
+            "shards": 4
+          }
+        },
+        {
+          "id": "w2",
+          "history": "Directory showed shard 1; record value receipt-2.",
+          "retained": {
+            "summary": "Receipt is archived."
+          },
+          "public": {
+            "directory": "available",
+            "shards": 4
+          }
+        },
+        {
+          "id": "w3",
+          "history": "Directory showed shard 1; record value receipt-3.",
+          "retained": {
+            "summary": "Receipt is archived."
+          },
+          "public": {
+            "directory": "available",
+            "shards": 4
+          }
+        },
+        {
+          "id": "w4",
+          "history": "Directory showed shard 2; record value receipt-4.",
+          "retained": {
+            "summary": "Receipt is archived."
+          },
+          "public": {
+            "directory": "available",
+            "shards": 4
+          }
+        },
+        {
+          "id": "w5",
+          "history": "Directory showed shard 2; record value receipt-5.",
+          "retained": {
+            "summary": "Receipt is archived."
+          },
+          "public": {
+            "directory": "available",
+            "shards": 4
+          }
+        },
+        {
+          "id": "w6",
+          "history": "Directory showed shard 3; record value receipt-6.",
+          "retained": {
+            "summary": "Receipt is archived."
+          },
+          "public": {
+            "directory": "available",
+            "shards": 4
+          }
+        },
+        {
+          "id": "w7",
+          "history": "Directory showed shard 3; record value receipt-7.",
+          "retained": {
+            "summary": "Receipt is archived."
+          },
+          "public": {
+            "directory": "available",
+            "shards": 4
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "name": "submit_receipt",
+          "trace": [
+            "User requests the archived receipt."
+          ],
+          "accepted": {
+            "w0": [
+              "receipt-0"
+            ],
+            "w1": [
+              "receipt-1"
+            ],
+            "w2": [
+              "receipt-2"
+            ],
+            "w3": [
+              "receipt-3"
+            ],
+            "w4": [
+              "receipt-4"
+            ],
+            "w5": [
+              "receipt-5"
+            ],
+            "w6": [
+              "receipt-6"
+            ],
+            "w7": [
+              "receipt-7"
+            ]
+          }
+        }
+      ],
+      "tools": [
+        {
+          "name": "read_directory",
+          "cost": 1,
+          "observations": {
+            "w0": "shard-0",
+            "w1": "shard-0",
+            "w2": "shard-1",
+            "w3": "shard-1",
+            "w4": "shard-2",
+            "w5": "shard-2",
+            "w6": "shard-3",
+            "w7": "shard-3"
+          }
+        },
+        {
+          "name": "read_shard_0",
+          "cost": 1,
+          "observations": {
+            "w0": "receipt-0",
+            "w1": "receipt-1",
+            "w2": "absent",
+            "w3": "absent",
+            "w4": "absent",
+            "w5": "absent",
+            "w6": "absent",
+            "w7": "absent"
+          }
+        },
+        {
+          "name": "read_shard_1",
+          "cost": 1,
+          "observations": {
+            "w0": "absent",
+            "w1": "absent",
+            "w2": "receipt-2",
+            "w3": "receipt-3",
+            "w4": "absent",
+            "w5": "absent",
+            "w6": "absent",
+            "w7": "absent"
+          }
+        },
+        {
+          "name": "read_shard_2",
+          "cost": 1,
+          "observations": {
+            "w0": "absent",
+            "w1": "absent",
+            "w2": "absent",
+            "w3": "absent",
+            "w4": "receipt-4",
+            "w5": "receipt-5",
+            "w6": "absent",
+            "w7": "absent"
+          }
+        },
+        {
+          "name": "read_shard_3",
+          "cost": 1,
+          "observations": {
+            "w0": "absent",
+            "w1": "absent",
+            "w2": "absent",
+            "w3": "absent",
+            "w4": "absent",
+            "w5": "absent",
+            "w6": "receipt-6",
+            "w7": "receipt-7"
+          }
+        }
+      ]
+    },
+    {
+      "name": "binary_receipt_budget_0",
+      "budget": 0,
+      "worlds": [
+        {
+          "id": "w0",
+          "history": "Observed three-bit receipt 000.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w1",
+          "history": "Observed three-bit receipt 001.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w2",
+          "history": "Observed three-bit receipt 010.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w3",
+          "history": "Observed three-bit receipt 011.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w4",
+          "history": "Observed three-bit receipt 100.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w5",
+          "history": "Observed three-bit receipt 101.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w6",
+          "history": "Observed three-bit receipt 110.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w7",
+          "history": "Observed three-bit receipt 111.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "name": "submit_receipt",
+          "trace": [
+            "Submit the original receipt."
+          ],
+          "accepted": {
+            "w0": [
+              "000"
+            ],
+            "w1": [
+              "001"
+            ],
+            "w2": [
+              "010"
+            ],
+            "w3": [
+              "011"
+            ],
+            "w4": [
+              "100"
+            ],
+            "w5": [
+              "101"
+            ],
+            "w6": [
+              "110"
+            ],
+            "w7": [
+              "111"
+            ]
+          }
+        }
+      ],
+      "tools": [
+        {
+          "name": "read_bit_0",
+          "cost": 1,
+          "observations": {
+            "w0": "0",
+            "w1": "1",
+            "w2": "0",
+            "w3": "1",
+            "w4": "0",
+            "w5": "1",
+            "w6": "0",
+            "w7": "1"
+          }
+        },
+        {
+          "name": "read_bit_1",
+          "cost": 1,
+          "observations": {
+            "w0": "0",
+            "w1": "0",
+            "w2": "1",
+            "w3": "1",
+            "w4": "0",
+            "w5": "0",
+            "w6": "1",
+            "w7": "1"
+          }
+        },
+        {
+          "name": "read_bit_2",
+          "cost": 1,
+          "observations": {
+            "w0": "0",
+            "w1": "0",
+            "w2": "0",
+            "w3": "0",
+            "w4": "1",
+            "w5": "1",
+            "w6": "1",
+            "w7": "1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "binary_receipt_budget_1",
+      "budget": 1,
+      "worlds": [
+        {
+          "id": "w0",
+          "history": "Observed three-bit receipt 000.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w1",
+          "history": "Observed three-bit receipt 001.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w2",
+          "history": "Observed three-bit receipt 010.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w3",
+          "history": "Observed three-bit receipt 011.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w4",
+          "history": "Observed three-bit receipt 100.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w5",
+          "history": "Observed three-bit receipt 101.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w6",
+          "history": "Observed three-bit receipt 110.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w7",
+          "history": "Observed three-bit receipt 111.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "name": "submit_receipt",
+          "trace": [
+            "Submit the original receipt."
+          ],
+          "accepted": {
+            "w0": [
+              "000"
+            ],
+            "w1": [
+              "001"
+            ],
+            "w2": [
+              "010"
+            ],
+            "w3": [
+              "011"
+            ],
+            "w4": [
+              "100"
+            ],
+            "w5": [
+              "101"
+            ],
+            "w6": [
+              "110"
+            ],
+            "w7": [
+              "111"
+            ]
+          }
+        }
+      ],
+      "tools": [
+        {
+          "name": "read_bit_0",
+          "cost": 1,
+          "observations": {
+            "w0": "0",
+            "w1": "1",
+            "w2": "0",
+            "w3": "1",
+            "w4": "0",
+            "w5": "1",
+            "w6": "0",
+            "w7": "1"
+          }
+        },
+        {
+          "name": "read_bit_1",
+          "cost": 1,
+          "observations": {
+            "w0": "0",
+            "w1": "0",
+            "w2": "1",
+            "w3": "1",
+            "w4": "0",
+            "w5": "0",
+            "w6": "1",
+            "w7": "1"
+          }
+        },
+        {
+          "name": "read_bit_2",
+          "cost": 1,
+          "observations": {
+            "w0": "0",
+            "w1": "0",
+            "w2": "0",
+            "w3": "0",
+            "w4": "1",
+            "w5": "1",
+            "w6": "1",
+            "w7": "1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "binary_receipt_budget_2",
+      "budget": 2,
+      "worlds": [
+        {
+          "id": "w0",
+          "history": "Observed three-bit receipt 000.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w1",
+          "history": "Observed three-bit receipt 001.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w2",
+          "history": "Observed three-bit receipt 010.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w3",
+          "history": "Observed three-bit receipt 011.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w4",
+          "history": "Observed three-bit receipt 100.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w5",
+          "history": "Observed three-bit receipt 101.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w6",
+          "history": "Observed three-bit receipt 110.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w7",
+          "history": "Observed three-bit receipt 111.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "name": "submit_receipt",
+          "trace": [
+            "Submit the original receipt."
+          ],
+          "accepted": {
+            "w0": [
+              "000"
+            ],
+            "w1": [
+              "001"
+            ],
+            "w2": [
+              "010"
+            ],
+            "w3": [
+              "011"
+            ],
+            "w4": [
+              "100"
+            ],
+            "w5": [
+              "101"
+            ],
+            "w6": [
+              "110"
+            ],
+            "w7": [
+              "111"
+            ]
+          }
+        }
+      ],
+      "tools": [
+        {
+          "name": "read_bit_0",
+          "cost": 1,
+          "observations": {
+            "w0": "0",
+            "w1": "1",
+            "w2": "0",
+            "w3": "1",
+            "w4": "0",
+            "w5": "1",
+            "w6": "0",
+            "w7": "1"
+          }
+        },
+        {
+          "name": "read_bit_1",
+          "cost": 1,
+          "observations": {
+            "w0": "0",
+            "w1": "0",
+            "w2": "1",
+            "w3": "1",
+            "w4": "0",
+            "w5": "0",
+            "w6": "1",
+            "w7": "1"
+          }
+        },
+        {
+          "name": "read_bit_2",
+          "cost": 1,
+          "observations": {
+            "w0": "0",
+            "w1": "0",
+            "w2": "0",
+            "w3": "0",
+            "w4": "1",
+            "w5": "1",
+            "w6": "1",
+            "w7": "1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "binary_receipt_budget_3",
+      "budget": 3,
+      "worlds": [
+        {
+          "id": "w0",
+          "history": "Observed three-bit receipt 000.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w1",
+          "history": "Observed three-bit receipt 001.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w2",
+          "history": "Observed three-bit receipt 010.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w3",
+          "history": "Observed three-bit receipt 011.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w4",
+          "history": "Observed three-bit receipt 100.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w5",
+          "history": "Observed three-bit receipt 101.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w6",
+          "history": "Observed three-bit receipt 110.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        },
+        {
+          "id": "w7",
+          "history": "Observed three-bit receipt 111.",
+          "retained": {
+            "summary": "Receipt observed."
+          },
+          "public": {
+            "bits": 3
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "name": "submit_receipt",
+          "trace": [
+            "Submit the original receipt."
+          ],
+          "accepted": {
+            "w0": [
+              "000"
+            ],
+            "w1": [
+              "001"
+            ],
+            "w2": [
+              "010"
+            ],
+            "w3": [
+              "011"
+            ],
+            "w4": [
+              "100"
+            ],
+            "w5": [
+              "101"
+            ],
+            "w6": [
+              "110"
+            ],
+            "w7": [
+              "111"
+            ]
+          }
+        }
+      ],
+      "tools": [
+        {
+          "name": "read_bit_0",
+          "cost": 1,
+          "observations": {
+            "w0": "0",
+            "w1": "1",
+            "w2": "0",
+            "w3": "1",
+            "w4": "0",
+            "w5": "1",
+            "w6": "0",
+            "w7": "1"
+          }
+        },
+        {
+          "name": "read_bit_1",
+          "cost": 1,
+          "observations": {
+            "w0": "0",
+            "w1": "0",
+            "w2": "1",
+            "w3": "1",
+            "w4": "0",
+            "w5": "0",
+            "w6": "1",
+            "w7": "1"
+          }
+        },
+        {
+          "name": "read_bit_2",
+          "cost": 1,
+          "observations": {
+            "w0": "0",
+            "w1": "0",
+            "w2": "0",
+            "w3": "0",
+            "w4": "1",
+            "w5": "1",
+            "w6": "1",
+            "w7": "1"
+          }
+        }
+      ]
+    }
+  ],
+  "specifications_sha256": "14f0ecc34330efe4fdfd0a1eae66e45bbc753bdb8ed02dbcd46aef2f90ec22a1",
+  "source_sha256": {
+    "engine.py": "348e53e6d6e97124d0dfb59139701dd050262b8080875fde5ab9e0a8c4b97d14",
+    "fixtures.py": "393c02be60022b99c7cb7d3d334ebd2e3618d03c8e56d48dcc36f64303f52988",
+    "run.py": "539e3e3052df85fa0a648c7563b5524dfbfd744f732b6c86e739a169aebff974"
+  },
+  "audits": [
+    {
+      "schema": 1,
+      "name": "three_way_compatibility",
+      "world_ids": [
+        "w0",
+        "w1",
+        "w2"
+      ],
+      "budget": 0,
+      "tasks": [
+        {
+          "task": "choose_build",
+          "trace": [
+            "User requests one supported build."
+          ],
+          "cells": [
+            {
+              "worlds": [
+                0,
+                1,
+                2
+              ],
+              "minimum_worst_case_recovery_cost": 1,
+              "best_fixed_query_cost": 1,
+              "within_budget": false,
+              "policy": {
+                "tool": "inspect_platform_family",
+                "branches": {
+                  "\"AB\"": {
+                    "answer": "A"
+                  },
+                  "\"not-AB\"": {
+                    "answer": "C"
+                  }
+                }
+              },
+              "replays": [
+                {
+                  "world": "w0",
+                  "cost": 1,
+                  "answer": "A",
+                  "observations": [
+                    {
+                      "tool": "inspect_platform_family",
+                      "observation": "\"AB\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w1",
+                  "cost": 1,
+                  "answer": "C",
+                  "observations": [
+                    {
+                      "tool": "inspect_platform_family",
+                      "observation": "\"not-AB\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w2",
+                  "cost": 1,
+                  "answer": "C",
+                  "observations": [
+                    {
+                      "tool": "inspect_platform_family",
+                      "observation": "\"not-AB\""
+                    }
+                  ]
+                }
+              ],
+              "lower_bound_budget": 0,
+              "lower_bound_proof": {
+                "root": "[[0,1,2],0]",
+                "nodes": {
+                  "[[0,1,2],0]": {
+                    "worlds": [
+                      0,
+                      1,
+                      2
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "A": 1,
+                      "B": 2,
+                      "C": 0
+                    },
+                    "tools": {
+                      "inspect_platform_family": {
+                        "over_budget": true
+                      }
+                    }
+                  }
+                }
+              },
+              "smallest_failing_group": [
+                0,
+                1,
+                2
+              ],
+              "all_pairs_within_budget": true
+            }
+          ]
+        }
+      ],
+      "shortest_failing_declared_trace": {
+        "task": "choose_build",
+        "trace": [
+          "User requests one supported build."
+        ],
+        "worlds": [
+          0,
+          1,
+          2
+        ]
+      },
+      "repair": {
+        "partitions": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              2
+            ]
+          ]
+        ],
+        "extra_messages": 2,
+        "extra_fixed_bits": 1,
+        "scope": "exact finite codebook refining existing cells across all listed tasks"
+      },
+      "channels": {
+        "retained_utf8_bytes_by_world": [
+          62,
+          62,
+          62
+        ],
+        "public_utf8_bytes_by_world": [
+          34,
+          34,
+          34
+        ],
+        "recovery_observations_retained_until_terminal": true,
+        "further_forced_compaction": false,
+        "cost_unit": "synthetic recovery units; terminal action excluded"
+      }
+    },
+    {
+      "schema": 1,
+      "name": "rollback_with_archive",
+      "world_ids": [
+        "w0",
+        "w1"
+      ],
+      "budget": 2,
+      "tasks": [
+        {
+          "task": "current_release",
+          "trace": [
+            "User requests current release receipt."
+          ],
+          "cells": [
+            {
+              "worlds": [
+                0,
+                1
+              ],
+              "minimum_worst_case_recovery_cost": 0,
+              "best_fixed_query_cost": 0,
+              "within_budget": true,
+              "policy": {
+                "answer": "shared"
+              },
+              "replays": [
+                {
+                  "world": "w0",
+                  "cost": 0,
+                  "answer": "shared",
+                  "observations": []
+                },
+                {
+                  "world": "w1",
+                  "cost": 0,
+                  "answer": "shared",
+                  "observations": []
+                }
+              ],
+              "smallest_failing_group": null,
+              "all_pairs_within_budget": true
+            }
+          ]
+        },
+        {
+          "task": "original_release",
+          "trace": [
+            "Current release accepted.",
+            "Unrelated work completed.",
+            "User requests original release receipt for rollback."
+          ],
+          "cells": [
+            {
+              "worlds": [
+                0,
+                1
+              ],
+              "minimum_worst_case_recovery_cost": 3,
+              "best_fixed_query_cost": 3,
+              "within_budget": false,
+              "policy": {
+                "tool": "read_versioned_archive",
+                "branches": {
+                  "\"birch\"": {
+                    "answer": "birch"
+                  },
+                  "\"cedar\"": {
+                    "answer": "cedar"
+                  }
+                }
+              },
+              "replays": [
+                {
+                  "world": "w0",
+                  "cost": 3,
+                  "answer": "cedar",
+                  "observations": [
+                    {
+                      "tool": "read_versioned_archive",
+                      "observation": "\"cedar\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w1",
+                  "cost": 3,
+                  "answer": "birch",
+                  "observations": [
+                    {
+                      "tool": "read_versioned_archive",
+                      "observation": "\"birch\""
+                    }
+                  ]
+                }
+              ],
+              "lower_bound_budget": 2,
+              "lower_bound_proof": {
+                "root": "[[0,1],2]",
+                "nodes": {
+                  "[[0,1],2]": {
+                    "worlds": [
+                      0,
+                      1
+                    ],
+                    "budget": 2,
+                    "answers": {
+                      "birch": 0,
+                      "cedar": 1
+                    },
+                    "tools": {
+                      "read_current_workspace": {
+                        "no_information": true
+                      },
+                      "read_versioned_archive": {
+                        "over_budget": true
+                      }
+                    }
+                  }
+                }
+              },
+              "smallest_failing_group": [
+                0,
+                1
+              ],
+              "all_pairs_within_budget": false
+            }
+          ]
+        }
+      ],
+      "shortest_failing_declared_trace": {
+        "task": "original_release",
+        "trace": [
+          "Current release accepted.",
+          "Unrelated work completed.",
+          "User requests original release receipt for rollback."
+        ],
+        "worlds": [
+          0,
+          1
+        ]
+      },
+      "repair": {
+        "partitions": [
+          [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "extra_messages": 2,
+        "extra_fixed_bits": 1,
+        "scope": "exact finite codebook refining existing cells across all listed tasks"
+      },
+      "channels": {
+        "retained_utf8_bytes_by_world": [
+          35,
+          35
+        ],
+        "public_utf8_bytes_by_world": [
+          45,
+          45
+        ],
+        "recovery_observations_retained_until_terminal": true,
+        "further_forced_compaction": false,
+        "cost_unit": "synthetic recovery units; terminal action excluded"
+      }
+    },
+    {
+      "schema": 1,
+      "name": "rollback_archive_expired",
+      "world_ids": [
+        "w0",
+        "w1"
+      ],
+      "budget": 2,
+      "tasks": [
+        {
+          "task": "current_release",
+          "trace": [
+            "User requests current release receipt."
+          ],
+          "cells": [
+            {
+              "worlds": [
+                0,
+                1
+              ],
+              "minimum_worst_case_recovery_cost": 0,
+              "best_fixed_query_cost": 0,
+              "within_budget": true,
+              "policy": {
+                "answer": "shared"
+              },
+              "replays": [
+                {
+                  "world": "w0",
+                  "cost": 0,
+                  "answer": "shared",
+                  "observations": []
+                },
+                {
+                  "world": "w1",
+                  "cost": 0,
+                  "answer": "shared",
+                  "observations": []
+                }
+              ],
+              "smallest_failing_group": null,
+              "all_pairs_within_budget": true
+            }
+          ]
+        },
+        {
+          "task": "original_release",
+          "trace": [
+            "Current release accepted.",
+            "Unrelated work completed.",
+            "User requests original release receipt for rollback."
+          ],
+          "cells": [
+            {
+              "worlds": [
+                0,
+                1
+              ],
+              "minimum_worst_case_recovery_cost": null,
+              "best_fixed_query_cost": null,
+              "within_budget": false,
+              "policy": null,
+              "unrecoverable_at_any_budget": [
+                0,
+                1
+              ],
+              "lower_bound_budget": 2,
+              "lower_bound_proof": {
+                "root": "[[0,1],2]",
+                "nodes": {
+                  "[[0,1],2]": {
+                    "worlds": [
+                      0,
+                      1
+                    ],
+                    "budget": 2,
+                    "answers": {
+                      "birch": 0,
+                      "cedar": 1
+                    },
+                    "tools": {
+                      "read_current_workspace": {
+                        "no_information": true
+                      }
+                    }
+                  }
+                }
+              },
+              "smallest_failing_group": [
+                0,
+                1
+              ],
+              "all_pairs_within_budget": false
+            }
+          ]
+        }
+      ],
+      "shortest_failing_declared_trace": {
+        "task": "original_release",
+        "trace": [
+          "Current release accepted.",
+          "Unrelated work completed.",
+          "User requests original release receipt for rollback."
+        ],
+        "worlds": [
+          0,
+          1
+        ]
+      },
+      "repair": {
+        "partitions": [
+          [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "extra_messages": 2,
+        "extra_fixed_bits": 1,
+        "scope": "exact finite codebook refining existing cells across all listed tasks"
+      },
+      "channels": {
+        "retained_utf8_bytes_by_world": [
+          35,
+          35
+        ],
+        "public_utf8_bytes_by_world": [
+          45,
+          45
+        ],
+        "recovery_observations_retained_until_terminal": true,
+        "further_forced_compaction": false,
+        "cost_unit": "synthetic recovery units; terminal action excluded"
+      }
+    },
+    {
+      "schema": 1,
+      "name": "adaptive_sharded_recovery",
+      "world_ids": [
+        "w0",
+        "w1",
+        "w2",
+        "w3",
+        "w4",
+        "w5",
+        "w6",
+        "w7"
+      ],
+      "budget": 1,
+      "tasks": [
+        {
+          "task": "submit_receipt",
+          "trace": [
+            "User requests the archived receipt."
+          ],
+          "cells": [
+            {
+              "worlds": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "minimum_worst_case_recovery_cost": 2,
+              "best_fixed_query_cost": 4,
+              "within_budget": false,
+              "policy": {
+                "tool": "read_directory",
+                "branches": {
+                  "\"shard-0\"": {
+                    "tool": "read_shard_0",
+                    "branches": {
+                      "\"receipt-0\"": {
+                        "answer": "receipt-0"
+                      },
+                      "\"receipt-1\"": {
+                        "answer": "receipt-1"
+                      }
+                    }
+                  },
+                  "\"shard-1\"": {
+                    "tool": "read_shard_1",
+                    "branches": {
+                      "\"receipt-2\"": {
+                        "answer": "receipt-2"
+                      },
+                      "\"receipt-3\"": {
+                        "answer": "receipt-3"
+                      }
+                    }
+                  },
+                  "\"shard-2\"": {
+                    "tool": "read_shard_2",
+                    "branches": {
+                      "\"receipt-4\"": {
+                        "answer": "receipt-4"
+                      },
+                      "\"receipt-5\"": {
+                        "answer": "receipt-5"
+                      }
+                    }
+                  },
+                  "\"shard-3\"": {
+                    "tool": "read_shard_3",
+                    "branches": {
+                      "\"receipt-6\"": {
+                        "answer": "receipt-6"
+                      },
+                      "\"receipt-7\"": {
+                        "answer": "receipt-7"
+                      }
+                    }
+                  }
+                }
+              },
+              "replays": [
+                {
+                  "world": "w0",
+                  "cost": 2,
+                  "answer": "receipt-0",
+                  "observations": [
+                    {
+                      "tool": "read_directory",
+                      "observation": "\"shard-0\""
+                    },
+                    {
+                      "tool": "read_shard_0",
+                      "observation": "\"receipt-0\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w1",
+                  "cost": 2,
+                  "answer": "receipt-1",
+                  "observations": [
+                    {
+                      "tool": "read_directory",
+                      "observation": "\"shard-0\""
+                    },
+                    {
+                      "tool": "read_shard_0",
+                      "observation": "\"receipt-1\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w2",
+                  "cost": 2,
+                  "answer": "receipt-2",
+                  "observations": [
+                    {
+                      "tool": "read_directory",
+                      "observation": "\"shard-1\""
+                    },
+                    {
+                      "tool": "read_shard_1",
+                      "observation": "\"receipt-2\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w3",
+                  "cost": 2,
+                  "answer": "receipt-3",
+                  "observations": [
+                    {
+                      "tool": "read_directory",
+                      "observation": "\"shard-1\""
+                    },
+                    {
+                      "tool": "read_shard_1",
+                      "observation": "\"receipt-3\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w4",
+                  "cost": 2,
+                  "answer": "receipt-4",
+                  "observations": [
+                    {
+                      "tool": "read_directory",
+                      "observation": "\"shard-2\""
+                    },
+                    {
+                      "tool": "read_shard_2",
+                      "observation": "\"receipt-4\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w5",
+                  "cost": 2,
+                  "answer": "receipt-5",
+                  "observations": [
+                    {
+                      "tool": "read_directory",
+                      "observation": "\"shard-2\""
+                    },
+                    {
+                      "tool": "read_shard_2",
+                      "observation": "\"receipt-5\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w6",
+                  "cost": 2,
+                  "answer": "receipt-6",
+                  "observations": [
+                    {
+                      "tool": "read_directory",
+                      "observation": "\"shard-3\""
+                    },
+                    {
+                      "tool": "read_shard_3",
+                      "observation": "\"receipt-6\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w7",
+                  "cost": 2,
+                  "answer": "receipt-7",
+                  "observations": [
+                    {
+                      "tool": "read_directory",
+                      "observation": "\"shard-3\""
+                    },
+                    {
+                      "tool": "read_shard_3",
+                      "observation": "\"receipt-7\""
+                    }
+                  ]
+                }
+              ],
+              "lower_bound_budget": 1,
+              "lower_bound_proof": {
+                "root": "[[0,1,2,3,4,5,6,7],1]",
+                "nodes": {
+                  "[[0,1,2,3,4,5,6,7],1]": {
+                    "worlds": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "budget": 1,
+                    "answers": {
+                      "receipt-0": 1,
+                      "receipt-1": 0,
+                      "receipt-2": 0,
+                      "receipt-3": 0,
+                      "receipt-4": 0,
+                      "receipt-5": 0,
+                      "receipt-6": 0,
+                      "receipt-7": 0
+                    },
+                    "tools": {
+                      "read_directory": {
+                        "observation": "\"shard-0\"",
+                        "child": "[[0,1],0]"
+                      },
+                      "read_shard_0": {
+                        "observation": "\"absent\"",
+                        "child": "[[2,3,4,5,6,7],0]"
+                      },
+                      "read_shard_1": {
+                        "observation": "\"absent\"",
+                        "child": "[[0,1,4,5,6,7],0]"
+                      },
+                      "read_shard_2": {
+                        "observation": "\"absent\"",
+                        "child": "[[0,1,2,3,6,7],0]"
+                      },
+                      "read_shard_3": {
+                        "observation": "\"absent\"",
+                        "child": "[[0,1,2,3,4,5],0]"
+                      }
+                    }
+                  },
+                  "[[0,1],0]": {
+                    "worlds": [
+                      0,
+                      1
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "receipt-0": 1,
+                      "receipt-1": 0,
+                      "receipt-2": 0,
+                      "receipt-3": 0,
+                      "receipt-4": 0,
+                      "receipt-5": 0,
+                      "receipt-6": 0,
+                      "receipt-7": 0
+                    },
+                    "tools": {
+                      "read_directory": {
+                        "over_budget": true
+                      },
+                      "read_shard_0": {
+                        "over_budget": true
+                      },
+                      "read_shard_1": {
+                        "over_budget": true
+                      },
+                      "read_shard_2": {
+                        "over_budget": true
+                      },
+                      "read_shard_3": {
+                        "over_budget": true
+                      }
+                    }
+                  },
+                  "[[2,3,4,5,6,7],0]": {
+                    "worlds": [
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "receipt-0": 2,
+                      "receipt-1": 2,
+                      "receipt-2": 3,
+                      "receipt-3": 2,
+                      "receipt-4": 2,
+                      "receipt-5": 2,
+                      "receipt-6": 2,
+                      "receipt-7": 2
+                    },
+                    "tools": {
+                      "read_directory": {
+                        "over_budget": true
+                      },
+                      "read_shard_0": {
+                        "over_budget": true
+                      },
+                      "read_shard_1": {
+                        "over_budget": true
+                      },
+                      "read_shard_2": {
+                        "over_budget": true
+                      },
+                      "read_shard_3": {
+                        "over_budget": true
+                      }
+                    }
+                  },
+                  "[[0,1,4,5,6,7],0]": {
+                    "worlds": [
+                      0,
+                      1,
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "receipt-0": 1,
+                      "receipt-1": 0,
+                      "receipt-2": 0,
+                      "receipt-3": 0,
+                      "receipt-4": 0,
+                      "receipt-5": 0,
+                      "receipt-6": 0,
+                      "receipt-7": 0
+                    },
+                    "tools": {
+                      "read_directory": {
+                        "over_budget": true
+                      },
+                      "read_shard_0": {
+                        "over_budget": true
+                      },
+                      "read_shard_1": {
+                        "over_budget": true
+                      },
+                      "read_shard_2": {
+                        "over_budget": true
+                      },
+                      "read_shard_3": {
+                        "over_budget": true
+                      }
+                    }
+                  },
+                  "[[0,1,2,3,6,7],0]": {
+                    "worlds": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      6,
+                      7
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "receipt-0": 1,
+                      "receipt-1": 0,
+                      "receipt-2": 0,
+                      "receipt-3": 0,
+                      "receipt-4": 0,
+                      "receipt-5": 0,
+                      "receipt-6": 0,
+                      "receipt-7": 0
+                    },
+                    "tools": {
+                      "read_directory": {
+                        "over_budget": true
+                      },
+                      "read_shard_0": {
+                        "over_budget": true
+                      },
+                      "read_shard_1": {
+                        "over_budget": true
+                      },
+                      "read_shard_2": {
+                        "over_budget": true
+                      },
+                      "read_shard_3": {
+                        "over_budget": true
+                      }
+                    }
+                  },
+                  "[[0,1,2,3,4,5],0]": {
+                    "worlds": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "receipt-0": 1,
+                      "receipt-1": 0,
+                      "receipt-2": 0,
+                      "receipt-3": 0,
+                      "receipt-4": 0,
+                      "receipt-5": 0,
+                      "receipt-6": 0,
+                      "receipt-7": 0
+                    },
+                    "tools": {
+                      "read_directory": {
+                        "over_budget": true
+                      },
+                      "read_shard_0": {
+                        "over_budget": true
+                      },
+                      "read_shard_1": {
+                        "over_budget": true
+                      },
+                      "read_shard_2": {
+                        "over_budget": true
+                      },
+                      "read_shard_3": {
+                        "over_budget": true
+                      }
+                    }
+                  }
+                }
+              },
+              "smallest_failing_group": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "all_pairs_within_budget": true
+            }
+          ]
+        }
+      ],
+      "shortest_failing_declared_trace": {
+        "task": "submit_receipt",
+        "trace": [
+          "User requests the archived receipt."
+        ],
+        "worlds": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "repair": {
+        "partitions": [
+          [
+            [
+              0,
+              2,
+              4,
+              6
+            ],
+            [
+              1,
+              3,
+              5,
+              7
+            ]
+          ]
+        ],
+        "extra_messages": 2,
+        "extra_fixed_bits": 1,
+        "scope": "exact finite codebook refining existing cells across all listed tasks"
+      },
+      "channels": {
+        "retained_utf8_bytes_by_world": [
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34
+        ],
+        "public_utf8_bytes_by_world": [
+          36,
+          36,
+          36,
+          36,
+          36,
+          36,
+          36,
+          36
+        ],
+        "recovery_observations_retained_until_terminal": true,
+        "further_forced_compaction": false,
+        "cost_unit": "synthetic recovery units; terminal action excluded"
+      }
+    },
+    {
+      "schema": 1,
+      "name": "harmless_lost_detail",
+      "world_ids": [
+        "w0",
+        "w1",
+        "w2"
+      ],
+      "budget": 0,
+      "tasks": [
+        {
+          "task": "choose_build",
+          "trace": [
+            "User requests one supported build."
+          ],
+          "cells": [
+            {
+              "worlds": [
+                0,
+                1,
+                2
+              ],
+              "minimum_worst_case_recovery_cost": 0,
+              "best_fixed_query_cost": 0,
+              "within_budget": true,
+              "policy": {
+                "answer": "portable"
+              },
+              "replays": [
+                {
+                  "world": "w0",
+                  "cost": 0,
+                  "answer": "portable",
+                  "observations": []
+                },
+                {
+                  "world": "w1",
+                  "cost": 0,
+                  "answer": "portable",
+                  "observations": []
+                },
+                {
+                  "world": "w2",
+                  "cost": 0,
+                  "answer": "portable",
+                  "observations": []
+                }
+              ],
+              "smallest_failing_group": null,
+              "all_pairs_within_budget": true
+            }
+          ]
+        }
+      ],
+      "shortest_failing_declared_trace": null,
+      "repair": {
+        "partitions": [
+          [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        ],
+        "extra_messages": 1,
+        "extra_fixed_bits": 0,
+        "scope": "exact finite codebook refining existing cells across all listed tasks"
+      },
+      "channels": {
+        "retained_utf8_bytes_by_world": [
+          62,
+          62,
+          62
+        ],
+        "public_utf8_bytes_by_world": [
+          34,
+          34,
+          34
+        ],
+        "recovery_observations_retained_until_terminal": true,
+        "further_forced_compaction": false,
+        "cost_unit": "synthetic recovery units; terminal action excluded"
+      }
+    },
+    {
+      "schema": 1,
+      "name": "public_evidence_control",
+      "world_ids": [
+        "w0",
+        "w1"
+      ],
+      "budget": 2,
+      "tasks": [
+        {
+          "task": "current_release",
+          "trace": [
+            "User requests current release receipt."
+          ],
+          "cells": [
+            {
+              "worlds": [
+                0
+              ],
+              "minimum_worst_case_recovery_cost": 0,
+              "best_fixed_query_cost": 0,
+              "within_budget": true,
+              "policy": {
+                "answer": "shared"
+              },
+              "replays": [
+                {
+                  "world": "w0",
+                  "cost": 0,
+                  "answer": "shared",
+                  "observations": []
+                }
+              ],
+              "smallest_failing_group": null,
+              "all_pairs_within_budget": true
+            },
+            {
+              "worlds": [
+                1
+              ],
+              "minimum_worst_case_recovery_cost": 0,
+              "best_fixed_query_cost": 0,
+              "within_budget": true,
+              "policy": {
+                "answer": "shared"
+              },
+              "replays": [
+                {
+                  "world": "w1",
+                  "cost": 0,
+                  "answer": "shared",
+                  "observations": []
+                }
+              ],
+              "smallest_failing_group": null,
+              "all_pairs_within_budget": true
+            }
+          ]
+        },
+        {
+          "task": "original_release",
+          "trace": [
+            "Current release accepted.",
+            "Unrelated work completed.",
+            "User requests original release receipt for rollback."
+          ],
+          "cells": [
+            {
+              "worlds": [
+                0
+              ],
+              "minimum_worst_case_recovery_cost": 0,
+              "best_fixed_query_cost": 0,
+              "within_budget": true,
+              "policy": {
+                "answer": "cedar"
+              },
+              "replays": [
+                {
+                  "world": "w0",
+                  "cost": 0,
+                  "answer": "cedar",
+                  "observations": []
+                }
+              ],
+              "smallest_failing_group": null,
+              "all_pairs_within_budget": true
+            },
+            {
+              "worlds": [
+                1
+              ],
+              "minimum_worst_case_recovery_cost": 0,
+              "best_fixed_query_cost": 0,
+              "within_budget": true,
+              "policy": {
+                "answer": "birch"
+              },
+              "replays": [
+                {
+                  "world": "w1",
+                  "cost": 0,
+                  "answer": "birch",
+                  "observations": []
+                }
+              ],
+              "smallest_failing_group": null,
+              "all_pairs_within_budget": true
+            }
+          ]
+        }
+      ],
+      "shortest_failing_declared_trace": null,
+      "repair": {
+        "partitions": [
+          [
+            [
+              0
+            ]
+          ],
+          [
+            [
+              1
+            ]
+          ]
+        ],
+        "extra_messages": 1,
+        "extra_fixed_bits": 0,
+        "scope": "exact finite codebook refining existing cells across all listed tasks"
+      },
+      "channels": {
+        "retained_utf8_bytes_by_world": [
+          35,
+          35
+        ],
+        "public_utf8_bytes_by_world": [
+          72,
+          72
+        ],
+        "recovery_observations_retained_until_terminal": true,
+        "further_forced_compaction": false,
+        "cost_unit": "synthetic recovery units; terminal action excluded"
+      }
+    },
+    {
+      "schema": 1,
+      "name": "affordable_archive_control",
+      "world_ids": [
+        "w0",
+        "w1"
+      ],
+      "budget": 3,
+      "tasks": [
+        {
+          "task": "current_release",
+          "trace": [
+            "User requests current release receipt."
+          ],
+          "cells": [
+            {
+              "worlds": [
+                0,
+                1
+              ],
+              "minimum_worst_case_recovery_cost": 0,
+              "best_fixed_query_cost": 0,
+              "within_budget": true,
+              "policy": {
+                "answer": "shared"
+              },
+              "replays": [
+                {
+                  "world": "w0",
+                  "cost": 0,
+                  "answer": "shared",
+                  "observations": []
+                },
+                {
+                  "world": "w1",
+                  "cost": 0,
+                  "answer": "shared",
+                  "observations": []
+                }
+              ],
+              "smallest_failing_group": null,
+              "all_pairs_within_budget": true
+            }
+          ]
+        },
+        {
+          "task": "original_release",
+          "trace": [
+            "Current release accepted.",
+            "Unrelated work completed.",
+            "User requests original release receipt for rollback."
+          ],
+          "cells": [
+            {
+              "worlds": [
+                0,
+                1
+              ],
+              "minimum_worst_case_recovery_cost": 3,
+              "best_fixed_query_cost": 3,
+              "within_budget": true,
+              "policy": {
+                "tool": "read_versioned_archive",
+                "branches": {
+                  "\"birch\"": {
+                    "answer": "birch"
+                  },
+                  "\"cedar\"": {
+                    "answer": "cedar"
+                  }
+                }
+              },
+              "replays": [
+                {
+                  "world": "w0",
+                  "cost": 3,
+                  "answer": "cedar",
+                  "observations": [
+                    {
+                      "tool": "read_versioned_archive",
+                      "observation": "\"cedar\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w1",
+                  "cost": 3,
+                  "answer": "birch",
+                  "observations": [
+                    {
+                      "tool": "read_versioned_archive",
+                      "observation": "\"birch\""
+                    }
+                  ]
+                }
+              ],
+              "lower_bound_budget": 2,
+              "lower_bound_proof": {
+                "root": "[[0,1],2]",
+                "nodes": {
+                  "[[0,1],2]": {
+                    "worlds": [
+                      0,
+                      1
+                    ],
+                    "budget": 2,
+                    "answers": {
+                      "birch": 0,
+                      "cedar": 1
+                    },
+                    "tools": {
+                      "read_current_workspace": {
+                        "no_information": true
+                      },
+                      "read_versioned_archive": {
+                        "over_budget": true
+                      }
+                    }
+                  }
+                }
+              },
+              "smallest_failing_group": null,
+              "all_pairs_within_budget": true
+            }
+          ]
+        }
+      ],
+      "shortest_failing_declared_trace": null,
+      "repair": {
+        "partitions": [
+          [
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "extra_messages": 1,
+        "extra_fixed_bits": 0,
+        "scope": "exact finite codebook refining existing cells across all listed tasks"
+      },
+      "channels": {
+        "retained_utf8_bytes_by_world": [
+          35,
+          35
+        ],
+        "public_utf8_bytes_by_world": [
+          45,
+          45
+        ],
+        "recovery_observations_retained_until_terminal": true,
+        "further_forced_compaction": false,
+        "cost_unit": "synthetic recovery units; terminal action excluded"
+      }
+    },
+    {
+      "schema": 1,
+      "name": "adaptive_recovery_budget_two",
+      "world_ids": [
+        "w0",
+        "w1",
+        "w2",
+        "w3",
+        "w4",
+        "w5",
+        "w6",
+        "w7"
+      ],
+      "budget": 2,
+      "tasks": [
+        {
+          "task": "submit_receipt",
+          "trace": [
+            "User requests the archived receipt."
+          ],
+          "cells": [
+            {
+              "worlds": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "minimum_worst_case_recovery_cost": 2,
+              "best_fixed_query_cost": 4,
+              "within_budget": true,
+              "policy": {
+                "tool": "read_directory",
+                "branches": {
+                  "\"shard-0\"": {
+                    "tool": "read_shard_0",
+                    "branches": {
+                      "\"receipt-0\"": {
+                        "answer": "receipt-0"
+                      },
+                      "\"receipt-1\"": {
+                        "answer": "receipt-1"
+                      }
+                    }
+                  },
+                  "\"shard-1\"": {
+                    "tool": "read_shard_1",
+                    "branches": {
+                      "\"receipt-2\"": {
+                        "answer": "receipt-2"
+                      },
+                      "\"receipt-3\"": {
+                        "answer": "receipt-3"
+                      }
+                    }
+                  },
+                  "\"shard-2\"": {
+                    "tool": "read_shard_2",
+                    "branches": {
+                      "\"receipt-4\"": {
+                        "answer": "receipt-4"
+                      },
+                      "\"receipt-5\"": {
+                        "answer": "receipt-5"
+                      }
+                    }
+                  },
+                  "\"shard-3\"": {
+                    "tool": "read_shard_3",
+                    "branches": {
+                      "\"receipt-6\"": {
+                        "answer": "receipt-6"
+                      },
+                      "\"receipt-7\"": {
+                        "answer": "receipt-7"
+                      }
+                    }
+                  }
+                }
+              },
+              "replays": [
+                {
+                  "world": "w0",
+                  "cost": 2,
+                  "answer": "receipt-0",
+                  "observations": [
+                    {
+                      "tool": "read_directory",
+                      "observation": "\"shard-0\""
+                    },
+                    {
+                      "tool": "read_shard_0",
+                      "observation": "\"receipt-0\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w1",
+                  "cost": 2,
+                  "answer": "receipt-1",
+                  "observations": [
+                    {
+                      "tool": "read_directory",
+                      "observation": "\"shard-0\""
+                    },
+                    {
+                      "tool": "read_shard_0",
+                      "observation": "\"receipt-1\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w2",
+                  "cost": 2,
+                  "answer": "receipt-2",
+                  "observations": [
+                    {
+                      "tool": "read_directory",
+                      "observation": "\"shard-1\""
+                    },
+                    {
+                      "tool": "read_shard_1",
+                      "observation": "\"receipt-2\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w3",
+                  "cost": 2,
+                  "answer": "receipt-3",
+                  "observations": [
+                    {
+                      "tool": "read_directory",
+                      "observation": "\"shard-1\""
+                    },
+                    {
+                      "tool": "read_shard_1",
+                      "observation": "\"receipt-3\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w4",
+                  "cost": 2,
+                  "answer": "receipt-4",
+                  "observations": [
+                    {
+                      "tool": "read_directory",
+                      "observation": "\"shard-2\""
+                    },
+                    {
+                      "tool": "read_shard_2",
+                      "observation": "\"receipt-4\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w5",
+                  "cost": 2,
+                  "answer": "receipt-5",
+                  "observations": [
+                    {
+                      "tool": "read_directory",
+                      "observation": "\"shard-2\""
+                    },
+                    {
+                      "tool": "read_shard_2",
+                      "observation": "\"receipt-5\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w6",
+                  "cost": 2,
+                  "answer": "receipt-6",
+                  "observations": [
+                    {
+                      "tool": "read_directory",
+                      "observation": "\"shard-3\""
+                    },
+                    {
+                      "tool": "read_shard_3",
+                      "observation": "\"receipt-6\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w7",
+                  "cost": 2,
+                  "answer": "receipt-7",
+                  "observations": [
+                    {
+                      "tool": "read_directory",
+                      "observation": "\"shard-3\""
+                    },
+                    {
+                      "tool": "read_shard_3",
+                      "observation": "\"receipt-7\""
+                    }
+                  ]
+                }
+              ],
+              "lower_bound_budget": 1,
+              "lower_bound_proof": {
+                "root": "[[0,1,2,3,4,5,6,7],1]",
+                "nodes": {
+                  "[[0,1,2,3,4,5,6,7],1]": {
+                    "worlds": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "budget": 1,
+                    "answers": {
+                      "receipt-0": 1,
+                      "receipt-1": 0,
+                      "receipt-2": 0,
+                      "receipt-3": 0,
+                      "receipt-4": 0,
+                      "receipt-5": 0,
+                      "receipt-6": 0,
+                      "receipt-7": 0
+                    },
+                    "tools": {
+                      "read_directory": {
+                        "observation": "\"shard-0\"",
+                        "child": "[[0,1],0]"
+                      },
+                      "read_shard_0": {
+                        "observation": "\"absent\"",
+                        "child": "[[2,3,4,5,6,7],0]"
+                      },
+                      "read_shard_1": {
+                        "observation": "\"absent\"",
+                        "child": "[[0,1,4,5,6,7],0]"
+                      },
+                      "read_shard_2": {
+                        "observation": "\"absent\"",
+                        "child": "[[0,1,2,3,6,7],0]"
+                      },
+                      "read_shard_3": {
+                        "observation": "\"absent\"",
+                        "child": "[[0,1,2,3,4,5],0]"
+                      }
+                    }
+                  },
+                  "[[0,1],0]": {
+                    "worlds": [
+                      0,
+                      1
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "receipt-0": 1,
+                      "receipt-1": 0,
+                      "receipt-2": 0,
+                      "receipt-3": 0,
+                      "receipt-4": 0,
+                      "receipt-5": 0,
+                      "receipt-6": 0,
+                      "receipt-7": 0
+                    },
+                    "tools": {
+                      "read_directory": {
+                        "over_budget": true
+                      },
+                      "read_shard_0": {
+                        "over_budget": true
+                      },
+                      "read_shard_1": {
+                        "over_budget": true
+                      },
+                      "read_shard_2": {
+                        "over_budget": true
+                      },
+                      "read_shard_3": {
+                        "over_budget": true
+                      }
+                    }
+                  },
+                  "[[2,3,4,5,6,7],0]": {
+                    "worlds": [
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "receipt-0": 2,
+                      "receipt-1": 2,
+                      "receipt-2": 3,
+                      "receipt-3": 2,
+                      "receipt-4": 2,
+                      "receipt-5": 2,
+                      "receipt-6": 2,
+                      "receipt-7": 2
+                    },
+                    "tools": {
+                      "read_directory": {
+                        "over_budget": true
+                      },
+                      "read_shard_0": {
+                        "over_budget": true
+                      },
+                      "read_shard_1": {
+                        "over_budget": true
+                      },
+                      "read_shard_2": {
+                        "over_budget": true
+                      },
+                      "read_shard_3": {
+                        "over_budget": true
+                      }
+                    }
+                  },
+                  "[[0,1,4,5,6,7],0]": {
+                    "worlds": [
+                      0,
+                      1,
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "receipt-0": 1,
+                      "receipt-1": 0,
+                      "receipt-2": 0,
+                      "receipt-3": 0,
+                      "receipt-4": 0,
+                      "receipt-5": 0,
+                      "receipt-6": 0,
+                      "receipt-7": 0
+                    },
+                    "tools": {
+                      "read_directory": {
+                        "over_budget": true
+                      },
+                      "read_shard_0": {
+                        "over_budget": true
+                      },
+                      "read_shard_1": {
+                        "over_budget": true
+                      },
+                      "read_shard_2": {
+                        "over_budget": true
+                      },
+                      "read_shard_3": {
+                        "over_budget": true
+                      }
+                    }
+                  },
+                  "[[0,1,2,3,6,7],0]": {
+                    "worlds": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      6,
+                      7
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "receipt-0": 1,
+                      "receipt-1": 0,
+                      "receipt-2": 0,
+                      "receipt-3": 0,
+                      "receipt-4": 0,
+                      "receipt-5": 0,
+                      "receipt-6": 0,
+                      "receipt-7": 0
+                    },
+                    "tools": {
+                      "read_directory": {
+                        "over_budget": true
+                      },
+                      "read_shard_0": {
+                        "over_budget": true
+                      },
+                      "read_shard_1": {
+                        "over_budget": true
+                      },
+                      "read_shard_2": {
+                        "over_budget": true
+                      },
+                      "read_shard_3": {
+                        "over_budget": true
+                      }
+                    }
+                  },
+                  "[[0,1,2,3,4,5],0]": {
+                    "worlds": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "receipt-0": 1,
+                      "receipt-1": 0,
+                      "receipt-2": 0,
+                      "receipt-3": 0,
+                      "receipt-4": 0,
+                      "receipt-5": 0,
+                      "receipt-6": 0,
+                      "receipt-7": 0
+                    },
+                    "tools": {
+                      "read_directory": {
+                        "over_budget": true
+                      },
+                      "read_shard_0": {
+                        "over_budget": true
+                      },
+                      "read_shard_1": {
+                        "over_budget": true
+                      },
+                      "read_shard_2": {
+                        "over_budget": true
+                      },
+                      "read_shard_3": {
+                        "over_budget": true
+                      }
+                    }
+                  }
+                }
+              },
+              "smallest_failing_group": null,
+              "all_pairs_within_budget": true
+            }
+          ]
+        }
+      ],
+      "shortest_failing_declared_trace": null,
+      "repair": {
+        "partitions": [
+          [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          ]
+        ],
+        "extra_messages": 1,
+        "extra_fixed_bits": 0,
+        "scope": "exact finite codebook refining existing cells across all listed tasks"
+      },
+      "channels": {
+        "retained_utf8_bytes_by_world": [
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34
+        ],
+        "public_utf8_bytes_by_world": [
+          36,
+          36,
+          36,
+          36,
+          36,
+          36,
+          36,
+          36
+        ],
+        "recovery_observations_retained_until_terminal": true,
+        "further_forced_compaction": false,
+        "cost_unit": "synthetic recovery units; terminal action excluded"
+      }
+    },
+    {
+      "schema": 1,
+      "name": "binary_receipt_budget_0",
+      "world_ids": [
+        "w0",
+        "w1",
+        "w2",
+        "w3",
+        "w4",
+        "w5",
+        "w6",
+        "w7"
+      ],
+      "budget": 0,
+      "tasks": [
+        {
+          "task": "submit_receipt",
+          "trace": [
+            "Submit the original receipt."
+          ],
+          "cells": [
+            {
+              "worlds": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "minimum_worst_case_recovery_cost": 3,
+              "best_fixed_query_cost": 3,
+              "within_budget": false,
+              "policy": {
+                "tool": "read_bit_0",
+                "branches": {
+                  "\"0\"": {
+                    "tool": "read_bit_1",
+                    "branches": {
+                      "\"0\"": {
+                        "tool": "read_bit_2",
+                        "branches": {
+                          "\"0\"": {
+                            "answer": "000"
+                          },
+                          "\"1\"": {
+                            "answer": "100"
+                          }
+                        }
+                      },
+                      "\"1\"": {
+                        "tool": "read_bit_2",
+                        "branches": {
+                          "\"0\"": {
+                            "answer": "010"
+                          },
+                          "\"1\"": {
+                            "answer": "110"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "\"1\"": {
+                    "tool": "read_bit_1",
+                    "branches": {
+                      "\"0\"": {
+                        "tool": "read_bit_2",
+                        "branches": {
+                          "\"0\"": {
+                            "answer": "001"
+                          },
+                          "\"1\"": {
+                            "answer": "101"
+                          }
+                        }
+                      },
+                      "\"1\"": {
+                        "tool": "read_bit_2",
+                        "branches": {
+                          "\"0\"": {
+                            "answer": "011"
+                          },
+                          "\"1\"": {
+                            "answer": "111"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "replays": [
+                {
+                  "world": "w0",
+                  "cost": 3,
+                  "answer": "000",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"0\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w1",
+                  "cost": 3,
+                  "answer": "001",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"0\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w2",
+                  "cost": 3,
+                  "answer": "010",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"0\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w3",
+                  "cost": 3,
+                  "answer": "011",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"0\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w4",
+                  "cost": 3,
+                  "answer": "100",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"1\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w5",
+                  "cost": 3,
+                  "answer": "101",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"1\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w6",
+                  "cost": 3,
+                  "answer": "110",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"1\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w7",
+                  "cost": 3,
+                  "answer": "111",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"1\""
+                    }
+                  ]
+                }
+              ],
+              "lower_bound_budget": 2,
+              "lower_bound_proof": {
+                "root": "[[0,1,2,3,4,5,6,7],2]",
+                "nodes": {
+                  "[[0,1,2,3,4,5,6,7],2]": {
+                    "worlds": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "budget": 2,
+                    "answers": {
+                      "000": 1,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "observation": "\"0\"",
+                        "child": "[[0,2,4,6],1]"
+                      },
+                      "read_bit_1": {
+                        "observation": "\"0\"",
+                        "child": "[[0,1,4,5],1]"
+                      },
+                      "read_bit_2": {
+                        "observation": "\"0\"",
+                        "child": "[[0,1,2,3],1]"
+                      }
+                    }
+                  },
+                  "[[0,2,4,6],1]": {
+                    "worlds": [
+                      0,
+                      2,
+                      4,
+                      6
+                    ],
+                    "budget": 1,
+                    "answers": {
+                      "000": 2,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "no_information": true
+                      },
+                      "read_bit_1": {
+                        "observation": "\"0\"",
+                        "child": "[[0,4],0]"
+                      },
+                      "read_bit_2": {
+                        "observation": "\"0\"",
+                        "child": "[[0,2],0]"
+                      }
+                    }
+                  },
+                  "[[0,4],0]": {
+                    "worlds": [
+                      0,
+                      4
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "000": 4,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "over_budget": true
+                      },
+                      "read_bit_1": {
+                        "over_budget": true
+                      },
+                      "read_bit_2": {
+                        "over_budget": true
+                      }
+                    }
+                  },
+                  "[[0,2],0]": {
+                    "worlds": [
+                      0,
+                      2
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "000": 2,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "over_budget": true
+                      },
+                      "read_bit_1": {
+                        "over_budget": true
+                      },
+                      "read_bit_2": {
+                        "over_budget": true
+                      }
+                    }
+                  },
+                  "[[0,1,4,5],1]": {
+                    "worlds": [
+                      0,
+                      1,
+                      4,
+                      5
+                    ],
+                    "budget": 1,
+                    "answers": {
+                      "000": 1,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "observation": "\"0\"",
+                        "child": "[[0,4],0]"
+                      },
+                      "read_bit_1": {
+                        "no_information": true
+                      },
+                      "read_bit_2": {
+                        "observation": "\"0\"",
+                        "child": "[[0,1],0]"
+                      }
+                    }
+                  },
+                  "[[0,1],0]": {
+                    "worlds": [
+                      0,
+                      1
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "000": 1,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "over_budget": true
+                      },
+                      "read_bit_1": {
+                        "over_budget": true
+                      },
+                      "read_bit_2": {
+                        "over_budget": true
+                      }
+                    }
+                  },
+                  "[[0,1,2,3],1]": {
+                    "worlds": [
+                      0,
+                      1,
+                      2,
+                      3
+                    ],
+                    "budget": 1,
+                    "answers": {
+                      "000": 1,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "observation": "\"0\"",
+                        "child": "[[0,2],0]"
+                      },
+                      "read_bit_1": {
+                        "observation": "\"0\"",
+                        "child": "[[0,1],0]"
+                      },
+                      "read_bit_2": {
+                        "no_information": true
+                      }
+                    }
+                  }
+                }
+              },
+              "smallest_failing_group": [
+                0,
+                1
+              ],
+              "all_pairs_within_budget": false
+            }
+          ]
+        }
+      ],
+      "shortest_failing_declared_trace": {
+        "task": "submit_receipt",
+        "trace": [
+          "Submit the original receipt."
+        ],
+        "worlds": [
+          0,
+          1
+        ]
+      },
+      "repair": {
+        "partitions": [
+          [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ]
+          ]
+        ],
+        "extra_messages": 8,
+        "extra_fixed_bits": 3,
+        "scope": "exact finite codebook refining existing cells across all listed tasks"
+      },
+      "channels": {
+        "retained_utf8_bytes_by_world": [
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
+        ],
+        "public_utf8_bytes_by_world": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "recovery_observations_retained_until_terminal": true,
+        "further_forced_compaction": false,
+        "cost_unit": "synthetic recovery units; terminal action excluded"
+      }
+    },
+    {
+      "schema": 1,
+      "name": "binary_receipt_budget_1",
+      "world_ids": [
+        "w0",
+        "w1",
+        "w2",
+        "w3",
+        "w4",
+        "w5",
+        "w6",
+        "w7"
+      ],
+      "budget": 1,
+      "tasks": [
+        {
+          "task": "submit_receipt",
+          "trace": [
+            "Submit the original receipt."
+          ],
+          "cells": [
+            {
+              "worlds": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "minimum_worst_case_recovery_cost": 3,
+              "best_fixed_query_cost": 3,
+              "within_budget": false,
+              "policy": {
+                "tool": "read_bit_0",
+                "branches": {
+                  "\"0\"": {
+                    "tool": "read_bit_1",
+                    "branches": {
+                      "\"0\"": {
+                        "tool": "read_bit_2",
+                        "branches": {
+                          "\"0\"": {
+                            "answer": "000"
+                          },
+                          "\"1\"": {
+                            "answer": "100"
+                          }
+                        }
+                      },
+                      "\"1\"": {
+                        "tool": "read_bit_2",
+                        "branches": {
+                          "\"0\"": {
+                            "answer": "010"
+                          },
+                          "\"1\"": {
+                            "answer": "110"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "\"1\"": {
+                    "tool": "read_bit_1",
+                    "branches": {
+                      "\"0\"": {
+                        "tool": "read_bit_2",
+                        "branches": {
+                          "\"0\"": {
+                            "answer": "001"
+                          },
+                          "\"1\"": {
+                            "answer": "101"
+                          }
+                        }
+                      },
+                      "\"1\"": {
+                        "tool": "read_bit_2",
+                        "branches": {
+                          "\"0\"": {
+                            "answer": "011"
+                          },
+                          "\"1\"": {
+                            "answer": "111"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "replays": [
+                {
+                  "world": "w0",
+                  "cost": 3,
+                  "answer": "000",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"0\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w1",
+                  "cost": 3,
+                  "answer": "001",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"0\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w2",
+                  "cost": 3,
+                  "answer": "010",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"0\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w3",
+                  "cost": 3,
+                  "answer": "011",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"0\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w4",
+                  "cost": 3,
+                  "answer": "100",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"1\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w5",
+                  "cost": 3,
+                  "answer": "101",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"1\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w6",
+                  "cost": 3,
+                  "answer": "110",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"1\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w7",
+                  "cost": 3,
+                  "answer": "111",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"1\""
+                    }
+                  ]
+                }
+              ],
+              "lower_bound_budget": 2,
+              "lower_bound_proof": {
+                "root": "[[0,1,2,3,4,5,6,7],2]",
+                "nodes": {
+                  "[[0,1,2,3,4,5,6,7],2]": {
+                    "worlds": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "budget": 2,
+                    "answers": {
+                      "000": 1,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "observation": "\"0\"",
+                        "child": "[[0,2,4,6],1]"
+                      },
+                      "read_bit_1": {
+                        "observation": "\"0\"",
+                        "child": "[[0,1,4,5],1]"
+                      },
+                      "read_bit_2": {
+                        "observation": "\"0\"",
+                        "child": "[[0,1,2,3],1]"
+                      }
+                    }
+                  },
+                  "[[0,2,4,6],1]": {
+                    "worlds": [
+                      0,
+                      2,
+                      4,
+                      6
+                    ],
+                    "budget": 1,
+                    "answers": {
+                      "000": 2,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "no_information": true
+                      },
+                      "read_bit_1": {
+                        "observation": "\"0\"",
+                        "child": "[[0,4],0]"
+                      },
+                      "read_bit_2": {
+                        "observation": "\"0\"",
+                        "child": "[[0,2],0]"
+                      }
+                    }
+                  },
+                  "[[0,4],0]": {
+                    "worlds": [
+                      0,
+                      4
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "000": 4,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "over_budget": true
+                      },
+                      "read_bit_1": {
+                        "over_budget": true
+                      },
+                      "read_bit_2": {
+                        "over_budget": true
+                      }
+                    }
+                  },
+                  "[[0,2],0]": {
+                    "worlds": [
+                      0,
+                      2
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "000": 2,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "over_budget": true
+                      },
+                      "read_bit_1": {
+                        "over_budget": true
+                      },
+                      "read_bit_2": {
+                        "over_budget": true
+                      }
+                    }
+                  },
+                  "[[0,1,4,5],1]": {
+                    "worlds": [
+                      0,
+                      1,
+                      4,
+                      5
+                    ],
+                    "budget": 1,
+                    "answers": {
+                      "000": 1,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "observation": "\"0\"",
+                        "child": "[[0,4],0]"
+                      },
+                      "read_bit_1": {
+                        "no_information": true
+                      },
+                      "read_bit_2": {
+                        "observation": "\"0\"",
+                        "child": "[[0,1],0]"
+                      }
+                    }
+                  },
+                  "[[0,1],0]": {
+                    "worlds": [
+                      0,
+                      1
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "000": 1,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "over_budget": true
+                      },
+                      "read_bit_1": {
+                        "over_budget": true
+                      },
+                      "read_bit_2": {
+                        "over_budget": true
+                      }
+                    }
+                  },
+                  "[[0,1,2,3],1]": {
+                    "worlds": [
+                      0,
+                      1,
+                      2,
+                      3
+                    ],
+                    "budget": 1,
+                    "answers": {
+                      "000": 1,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "observation": "\"0\"",
+                        "child": "[[0,2],0]"
+                      },
+                      "read_bit_1": {
+                        "observation": "\"0\"",
+                        "child": "[[0,1],0]"
+                      },
+                      "read_bit_2": {
+                        "no_information": true
+                      }
+                    }
+                  }
+                }
+              },
+              "smallest_failing_group": [
+                0,
+                1,
+                2
+              ],
+              "all_pairs_within_budget": true
+            }
+          ]
+        }
+      ],
+      "shortest_failing_declared_trace": {
+        "task": "submit_receipt",
+        "trace": [
+          "Submit the original receipt."
+        ],
+        "worlds": [
+          0,
+          1,
+          2
+        ]
+      },
+      "repair": {
+        "partitions": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ]
+          ]
+        ],
+        "extra_messages": 4,
+        "extra_fixed_bits": 2,
+        "scope": "exact finite codebook refining existing cells across all listed tasks"
+      },
+      "channels": {
+        "retained_utf8_bytes_by_world": [
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
+        ],
+        "public_utf8_bytes_by_world": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "recovery_observations_retained_until_terminal": true,
+        "further_forced_compaction": false,
+        "cost_unit": "synthetic recovery units; terminal action excluded"
+      }
+    },
+    {
+      "schema": 1,
+      "name": "binary_receipt_budget_2",
+      "world_ids": [
+        "w0",
+        "w1",
+        "w2",
+        "w3",
+        "w4",
+        "w5",
+        "w6",
+        "w7"
+      ],
+      "budget": 2,
+      "tasks": [
+        {
+          "task": "submit_receipt",
+          "trace": [
+            "Submit the original receipt."
+          ],
+          "cells": [
+            {
+              "worlds": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "minimum_worst_case_recovery_cost": 3,
+              "best_fixed_query_cost": 3,
+              "within_budget": false,
+              "policy": {
+                "tool": "read_bit_0",
+                "branches": {
+                  "\"0\"": {
+                    "tool": "read_bit_1",
+                    "branches": {
+                      "\"0\"": {
+                        "tool": "read_bit_2",
+                        "branches": {
+                          "\"0\"": {
+                            "answer": "000"
+                          },
+                          "\"1\"": {
+                            "answer": "100"
+                          }
+                        }
+                      },
+                      "\"1\"": {
+                        "tool": "read_bit_2",
+                        "branches": {
+                          "\"0\"": {
+                            "answer": "010"
+                          },
+                          "\"1\"": {
+                            "answer": "110"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "\"1\"": {
+                    "tool": "read_bit_1",
+                    "branches": {
+                      "\"0\"": {
+                        "tool": "read_bit_2",
+                        "branches": {
+                          "\"0\"": {
+                            "answer": "001"
+                          },
+                          "\"1\"": {
+                            "answer": "101"
+                          }
+                        }
+                      },
+                      "\"1\"": {
+                        "tool": "read_bit_2",
+                        "branches": {
+                          "\"0\"": {
+                            "answer": "011"
+                          },
+                          "\"1\"": {
+                            "answer": "111"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "replays": [
+                {
+                  "world": "w0",
+                  "cost": 3,
+                  "answer": "000",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"0\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w1",
+                  "cost": 3,
+                  "answer": "001",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"0\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w2",
+                  "cost": 3,
+                  "answer": "010",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"0\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w3",
+                  "cost": 3,
+                  "answer": "011",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"0\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w4",
+                  "cost": 3,
+                  "answer": "100",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"1\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w5",
+                  "cost": 3,
+                  "answer": "101",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"1\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w6",
+                  "cost": 3,
+                  "answer": "110",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"1\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w7",
+                  "cost": 3,
+                  "answer": "111",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"1\""
+                    }
+                  ]
+                }
+              ],
+              "lower_bound_budget": 2,
+              "lower_bound_proof": {
+                "root": "[[0,1,2,3,4,5,6,7],2]",
+                "nodes": {
+                  "[[0,1,2,3,4,5,6,7],2]": {
+                    "worlds": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "budget": 2,
+                    "answers": {
+                      "000": 1,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "observation": "\"0\"",
+                        "child": "[[0,2,4,6],1]"
+                      },
+                      "read_bit_1": {
+                        "observation": "\"0\"",
+                        "child": "[[0,1,4,5],1]"
+                      },
+                      "read_bit_2": {
+                        "observation": "\"0\"",
+                        "child": "[[0,1,2,3],1]"
+                      }
+                    }
+                  },
+                  "[[0,2,4,6],1]": {
+                    "worlds": [
+                      0,
+                      2,
+                      4,
+                      6
+                    ],
+                    "budget": 1,
+                    "answers": {
+                      "000": 2,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "no_information": true
+                      },
+                      "read_bit_1": {
+                        "observation": "\"0\"",
+                        "child": "[[0,4],0]"
+                      },
+                      "read_bit_2": {
+                        "observation": "\"0\"",
+                        "child": "[[0,2],0]"
+                      }
+                    }
+                  },
+                  "[[0,4],0]": {
+                    "worlds": [
+                      0,
+                      4
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "000": 4,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "over_budget": true
+                      },
+                      "read_bit_1": {
+                        "over_budget": true
+                      },
+                      "read_bit_2": {
+                        "over_budget": true
+                      }
+                    }
+                  },
+                  "[[0,2],0]": {
+                    "worlds": [
+                      0,
+                      2
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "000": 2,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "over_budget": true
+                      },
+                      "read_bit_1": {
+                        "over_budget": true
+                      },
+                      "read_bit_2": {
+                        "over_budget": true
+                      }
+                    }
+                  },
+                  "[[0,1,4,5],1]": {
+                    "worlds": [
+                      0,
+                      1,
+                      4,
+                      5
+                    ],
+                    "budget": 1,
+                    "answers": {
+                      "000": 1,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "observation": "\"0\"",
+                        "child": "[[0,4],0]"
+                      },
+                      "read_bit_1": {
+                        "no_information": true
+                      },
+                      "read_bit_2": {
+                        "observation": "\"0\"",
+                        "child": "[[0,1],0]"
+                      }
+                    }
+                  },
+                  "[[0,1],0]": {
+                    "worlds": [
+                      0,
+                      1
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "000": 1,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "over_budget": true
+                      },
+                      "read_bit_1": {
+                        "over_budget": true
+                      },
+                      "read_bit_2": {
+                        "over_budget": true
+                      }
+                    }
+                  },
+                  "[[0,1,2,3],1]": {
+                    "worlds": [
+                      0,
+                      1,
+                      2,
+                      3
+                    ],
+                    "budget": 1,
+                    "answers": {
+                      "000": 1,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "observation": "\"0\"",
+                        "child": "[[0,2],0]"
+                      },
+                      "read_bit_1": {
+                        "observation": "\"0\"",
+                        "child": "[[0,1],0]"
+                      },
+                      "read_bit_2": {
+                        "no_information": true
+                      }
+                    }
+                  }
+                }
+              },
+              "smallest_failing_group": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "all_pairs_within_budget": true
+            }
+          ]
+        }
+      ],
+      "shortest_failing_declared_trace": {
+        "task": "submit_receipt",
+        "trace": [
+          "Submit the original receipt."
+        ],
+        "worlds": [
+          0,
+          1,
+          2,
+          4
+        ]
+      },
+      "repair": {
+        "partitions": [
+          [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              4,
+              5,
+              6,
+              7
+            ]
+          ]
+        ],
+        "extra_messages": 2,
+        "extra_fixed_bits": 1,
+        "scope": "exact finite codebook refining existing cells across all listed tasks"
+      },
+      "channels": {
+        "retained_utf8_bytes_by_world": [
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
+        ],
+        "public_utf8_bytes_by_world": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "recovery_observations_retained_until_terminal": true,
+        "further_forced_compaction": false,
+        "cost_unit": "synthetic recovery units; terminal action excluded"
+      }
+    },
+    {
+      "schema": 1,
+      "name": "binary_receipt_budget_3",
+      "world_ids": [
+        "w0",
+        "w1",
+        "w2",
+        "w3",
+        "w4",
+        "w5",
+        "w6",
+        "w7"
+      ],
+      "budget": 3,
+      "tasks": [
+        {
+          "task": "submit_receipt",
+          "trace": [
+            "Submit the original receipt."
+          ],
+          "cells": [
+            {
+              "worlds": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "minimum_worst_case_recovery_cost": 3,
+              "best_fixed_query_cost": 3,
+              "within_budget": true,
+              "policy": {
+                "tool": "read_bit_0",
+                "branches": {
+                  "\"0\"": {
+                    "tool": "read_bit_1",
+                    "branches": {
+                      "\"0\"": {
+                        "tool": "read_bit_2",
+                        "branches": {
+                          "\"0\"": {
+                            "answer": "000"
+                          },
+                          "\"1\"": {
+                            "answer": "100"
+                          }
+                        }
+                      },
+                      "\"1\"": {
+                        "tool": "read_bit_2",
+                        "branches": {
+                          "\"0\"": {
+                            "answer": "010"
+                          },
+                          "\"1\"": {
+                            "answer": "110"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "\"1\"": {
+                    "tool": "read_bit_1",
+                    "branches": {
+                      "\"0\"": {
+                        "tool": "read_bit_2",
+                        "branches": {
+                          "\"0\"": {
+                            "answer": "001"
+                          },
+                          "\"1\"": {
+                            "answer": "101"
+                          }
+                        }
+                      },
+                      "\"1\"": {
+                        "tool": "read_bit_2",
+                        "branches": {
+                          "\"0\"": {
+                            "answer": "011"
+                          },
+                          "\"1\"": {
+                            "answer": "111"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "replays": [
+                {
+                  "world": "w0",
+                  "cost": 3,
+                  "answer": "000",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"0\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w1",
+                  "cost": 3,
+                  "answer": "001",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"0\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w2",
+                  "cost": 3,
+                  "answer": "010",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"0\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w3",
+                  "cost": 3,
+                  "answer": "011",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"0\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w4",
+                  "cost": 3,
+                  "answer": "100",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"1\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w5",
+                  "cost": 3,
+                  "answer": "101",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"1\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w6",
+                  "cost": 3,
+                  "answer": "110",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"0\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"1\""
+                    }
+                  ]
+                },
+                {
+                  "world": "w7",
+                  "cost": 3,
+                  "answer": "111",
+                  "observations": [
+                    {
+                      "tool": "read_bit_0",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_1",
+                      "observation": "\"1\""
+                    },
+                    {
+                      "tool": "read_bit_2",
+                      "observation": "\"1\""
+                    }
+                  ]
+                }
+              ],
+              "lower_bound_budget": 2,
+              "lower_bound_proof": {
+                "root": "[[0,1,2,3,4,5,6,7],2]",
+                "nodes": {
+                  "[[0,1,2,3,4,5,6,7],2]": {
+                    "worlds": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "budget": 2,
+                    "answers": {
+                      "000": 1,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "observation": "\"0\"",
+                        "child": "[[0,2,4,6],1]"
+                      },
+                      "read_bit_1": {
+                        "observation": "\"0\"",
+                        "child": "[[0,1,4,5],1]"
+                      },
+                      "read_bit_2": {
+                        "observation": "\"0\"",
+                        "child": "[[0,1,2,3],1]"
+                      }
+                    }
+                  },
+                  "[[0,2,4,6],1]": {
+                    "worlds": [
+                      0,
+                      2,
+                      4,
+                      6
+                    ],
+                    "budget": 1,
+                    "answers": {
+                      "000": 2,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "no_information": true
+                      },
+                      "read_bit_1": {
+                        "observation": "\"0\"",
+                        "child": "[[0,4],0]"
+                      },
+                      "read_bit_2": {
+                        "observation": "\"0\"",
+                        "child": "[[0,2],0]"
+                      }
+                    }
+                  },
+                  "[[0,4],0]": {
+                    "worlds": [
+                      0,
+                      4
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "000": 4,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "over_budget": true
+                      },
+                      "read_bit_1": {
+                        "over_budget": true
+                      },
+                      "read_bit_2": {
+                        "over_budget": true
+                      }
+                    }
+                  },
+                  "[[0,2],0]": {
+                    "worlds": [
+                      0,
+                      2
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "000": 2,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "over_budget": true
+                      },
+                      "read_bit_1": {
+                        "over_budget": true
+                      },
+                      "read_bit_2": {
+                        "over_budget": true
+                      }
+                    }
+                  },
+                  "[[0,1,4,5],1]": {
+                    "worlds": [
+                      0,
+                      1,
+                      4,
+                      5
+                    ],
+                    "budget": 1,
+                    "answers": {
+                      "000": 1,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "observation": "\"0\"",
+                        "child": "[[0,4],0]"
+                      },
+                      "read_bit_1": {
+                        "no_information": true
+                      },
+                      "read_bit_2": {
+                        "observation": "\"0\"",
+                        "child": "[[0,1],0]"
+                      }
+                    }
+                  },
+                  "[[0,1],0]": {
+                    "worlds": [
+                      0,
+                      1
+                    ],
+                    "budget": 0,
+                    "answers": {
+                      "000": 1,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "over_budget": true
+                      },
+                      "read_bit_1": {
+                        "over_budget": true
+                      },
+                      "read_bit_2": {
+                        "over_budget": true
+                      }
+                    }
+                  },
+                  "[[0,1,2,3],1]": {
+                    "worlds": [
+                      0,
+                      1,
+                      2,
+                      3
+                    ],
+                    "budget": 1,
+                    "answers": {
+                      "000": 1,
+                      "001": 0,
+                      "010": 0,
+                      "011": 0,
+                      "100": 0,
+                      "101": 0,
+                      "110": 0,
+                      "111": 0
+                    },
+                    "tools": {
+                      "read_bit_0": {
+                        "observation": "\"0\"",
+                        "child": "[[0,2],0]"
+                      },
+                      "read_bit_1": {
+                        "observation": "\"0\"",
+                        "child": "[[0,1],0]"
+                      },
+                      "read_bit_2": {
+                        "no_information": true
+                      }
+                    }
+                  }
+                }
+              },
+              "smallest_failing_group": null,
+              "all_pairs_within_budget": true
+            }
+          ]
+        }
+      ],
+      "shortest_failing_declared_trace": null,
+      "repair": {
+        "partitions": [
+          [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          ]
+        ],
+        "extra_messages": 1,
+        "extra_fixed_bits": 0,
+        "scope": "exact finite codebook refining existing cells across all listed tasks"
+      },
+      "channels": {
+        "retained_utf8_bytes_by_world": [
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
+        ],
+        "public_utf8_bytes_by_world": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "recovery_observations_retained_until_terminal": true,
+        "further_forced_compaction": false,
+        "cost_unit": "synthetic recovery units; terminal action excluded"
+      }
+    }
+  ]
+}

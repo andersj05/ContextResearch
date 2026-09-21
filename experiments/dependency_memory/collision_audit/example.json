@@ -1,0 +1,69 @@
+{
+  "name": "three_way_compatibility",
+  "budget": 0,
+  "worlds": [
+    {
+      "id": "w0",
+      "history": "Checked platform: supports A and B.",
+      "retained": {
+        "summary": "Compatibility checked; choose a supported build."
+      },
+      "public": {
+        "phase": "awaiting build request"
+      }
+    },
+    {
+      "id": "w1",
+      "history": "Checked platform: supports B and C.",
+      "retained": {
+        "summary": "Compatibility checked; choose a supported build."
+      },
+      "public": {
+        "phase": "awaiting build request"
+      }
+    },
+    {
+      "id": "w2",
+      "history": "Checked platform: supports A and C.",
+      "retained": {
+        "summary": "Compatibility checked; choose a supported build."
+      },
+      "public": {
+        "phase": "awaiting build request"
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "name": "choose_build",
+      "trace": [
+        "User requests one supported build."
+      ],
+      "accepted": {
+        "w0": [
+          "A",
+          "B"
+        ],
+        "w1": [
+          "B",
+          "C"
+        ],
+        "w2": [
+          "A",
+          "C"
+        ]
+      }
+    }
+  ],
+  "tools": [
+    {
+      "name": "inspect_platform_family",
+      "cost": 1,
+      "observations": {
+        "w0": "AB",
+        "w1": "not-AB",
+        "w2": "not-AB"
+      }
+    }
+  ]
+}

@@ -2,6 +2,17 @@
 
 Start with the [proposal](../research/LIVE_DEPENDENCY_RESEARCH_PROPOSAL_2026-09-16.md). It records the exact local reasoning and the distinctions checked in the September 16 investigation. Then read original sources for the claim you are drafting.
 
+## New audit direction
+
+Latest research branch: the [compaction collision audit](../research/COMPACTION_COLLISION_AUDIT_2026-09-21.md)
+has a [focused prior-art reading note](../research/COMPACTION_AUDIT_PRIOR_ART_2026-09-21.md).
+It records September 21 reads of WiCER 7.1-7.2, TRACE 4.1-4.2,
+Context Codec's verification algorithm and rejection criteria, Basu et al.'s
+hypergraph definitions, and the JMLR approximate-information-state abstract.
+Review scope is section-specific; the new bibliography entries do not imply
+complete-paper review or independent replication. General summary repair,
+typed commitments, state abstraction, and hypergraph coding remain prior art.
+
 ## Mathematical core
 
 | Source | Read for | Local material |
