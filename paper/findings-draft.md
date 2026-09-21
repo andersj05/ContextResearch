@@ -1,6 +1,14 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.11 — September 21, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.12 — September 21, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## New direction: challenge a memory before accepting it
+
+We have built a [finite compaction auditor](../research/COMPACTION_COLLISION_AUDIT_2026-09-21.md) that asks whether any policy can finish from a proposed memory within the allowed recovery budget. It groups histories with identical retained and public state, considers every adaptive use of the declared tools, and produces a checkable obstruction when the budget is insufficient. It also computes the smallest additional message alphabet that would repair the declared task family before the future task is revealed. [C35]
+
+The first 12 constructed specifications expose a useful audit failure: every pair of three histories can share a correct action, while the whole group has none. One extra retained bit repairs that example. Another fixture needs two recovery calls adaptively but four in a fixed batch. Controls ensure that free public evidence, harmless lost details and sufficient recovery budgets do not trigger unnecessary memory. These are executable finite results, not LLM trials or evidence of deployed-system gains. [C36]
+
+This changes the active research direction from tightening a small coding bound to testing a proposed memory against future execution requirements. The [literature check](../research/COMPACTION_AUDIT_PRIOR_ART_2026-09-21.md) attributes existing summary repair, typed commitments, state abstraction and hypergraph coding. Novelty of the specific audit protocol remains provisional. The next decisive test is a sound execution-task adapter; inferring semantic equivalence between arbitrary prose summaries is not implemented.
 
 ## The question
 
@@ -50,7 +58,7 @@ at any finite size still needs **three bits per block**. Rare overflow
 cases can become negligible in the first setting; they cannot be ignored
 in the second. [C32-C33]
 
-## Latest: the remaining penalty is now sharply bounded
+## Earlier mathematical milestone: the remaining penalty is sharply bounded
 
 The [decoder-complete follow-up](../research/DECODER_COMPLETE_FRONTIER_2026-09-21.md)
 places the best limiting error between **26.18989799% and 26.18989801%**.

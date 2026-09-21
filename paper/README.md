@@ -22,6 +22,8 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.12 adds the [compaction collision auditor](../research/COMPACTION_COLLISION_AUDIT_2026-09-21.md), claims C35-C36. This is a user-directed research pivot to executable whole-group failure and recovery certificates, with 12 constructed diagnostics and a finite repair codebook. Established dynamic programming and hypergraph methods are attributed; publication novelty, natural-task integration and practical improvement remain open. Prior mathematical and model-study evidence is preserved.
+
 Living draft v0.11 adds the [decoder-complete rate-two certificate](../research/DECODER_COMPLETE_FRONTIER_2026-09-21.md), claim C34: a strict limiting-error interval (0.2618989799, 0.2618989801) and an all-k lower bound allowing every decoder. The standard-library verifier covers 1,679,616 decoder tables. Publication novelty and external correctness review remain open.
 
 Living draft v0.10 added the [September 21 joint-coding extension](../research/JOINT_BLOCK_CODING_2026-09-21.md), claims C31-C33: a finite two-block improvement, an asymptotic upper bound at rate two, and the approximately 2.5488-bit threshold for approaching the child optimum. The earlier model studies are unchanged. The explicit finite witness is executable; the long-block results are analytic existence statements, with novelty and external review open.

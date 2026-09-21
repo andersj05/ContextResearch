@@ -5,6 +5,8 @@
 | Read for | Document | Evidence status |
 |---|---|---|
 | Current task and next steps | [Status](STATUS.md) | Current handoff |
+| Active experimental direction | [Compaction collision auditor](../research/COMPACTION_COLLISION_AUDIT_2026-09-21.md) | Implemented finite audit, 12 constructed specifications; natural-task adapter and novelty open |
+| New direction's closest precedents | [Audit prior-art note](../research/COMPACTION_AUDIT_PRIOR_ART_2026-09-21.md) | Section-specific primary readings; not a comprehensive priority review |
 | Formal model, finite proof, implementation plan | [September 16 proposal](../research/LIVE_DEPENDENCY_RESEARCH_PROPOSAL_2026-09-16.md) | Checked finite example; proposed general research |
 | Harness mechanisms and cost model | [Compaction survey](../research/CONTEXT_MANAGEMENT_SURVEY_2026-09-16.md) | Dated official-source and pinned-code review |
 | Mathematical connections | [Mathematics addendum](../research/CONTEXT_COMPACTION_MATHEMATICS_2026-09-16.md) | Established foundations and conditional deductions |

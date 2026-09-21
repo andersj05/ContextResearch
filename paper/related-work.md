@@ -34,3 +34,19 @@ Additional leads from the proposal: [query-visibility audit](https://arxiv.org/a
 The [September 19 scaling check](../research/SCALING_LITERATURE_CHECK_2026-09-19.md) records the primary sections reviewed and sharpens the attribution: functional signatures and information direct-sum methods are established [@functionalcoloring2010; @jain2003compression; @jain2008directsum]. Describe the local result as a specific finite delayed-query separation using those methods, with priority of the construction and constants unresolved. The distinctive restriction to preserve in any reduction is that the child forms its one-bit replacement before learning the final coordinate. If the final decoder may retain the parent instead, two raw bits per block already attain error 1/4, so a lower bound for that relaxed access model cannot establish our strict excess.
 
 Outstanding novelty work: determine whether prior results imply the particular four-bit construction, exact 3k attainment threshold, or uniform gap at 2k under this access contract. The joint-signature graph's complete-multipartite interpretation and information superadditivity are not open novelty claims. The [September 18 derivation](../research/CREATIVE_RESEARCH_DIRECTIONS_2026-09-18.md) and [September 19 exact computation](../research/EXACT_CHAIN_OPTIMUM_2026-09-19.md) remain local results awaiting external review and specific priority comparison. Retain counterexamples to attractive but overbroad entropy claims.
+
+## Compaction audit direction, September 21
+
+The [new primary-source comparison](../research/COMPACTION_AUDIT_PRIOR_ART_2026-09-21.md)
+covers WiCER's diagnostic refinement [@wicer2026], TRACE's paired execution
+verifier [@trace2026], and Context Codec's typed commitment checks
+[@contextcodec2026]. The finite auditor instead certifies a budget obstruction
+over an entire collision group under all declared adaptive recovery policies.
+That restricted protocol is a candidate contribution, not established priority.
+
+The recurrence uses ordinary information-state planning [@subramanian2022ais],
+and grouping inputs by shared acceptable outcomes has direct hypergraph coding
+precedents [@basu2022hypergraph]. The pairwise/triple example is elementary.
+Natural-task extraction, exact channel equality, scaling and comparison with a
+simple critical-field baseline are open; the implementation is not evidence of
+a new general semantic theory or measured model improvement.

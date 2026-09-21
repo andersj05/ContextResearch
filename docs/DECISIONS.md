@@ -130,3 +130,26 @@ The user authorized the next research phase with novelty as a requirement. Pursu
 Exploratory floating-point calculations identify a candidate near 0.261898979908. Certify only a rigorous interval using fixed rational witnesses, integer dual products, and outward rational logarithm bounds. The [completed proof](../research/DECODER_COMPLETE_FRONTIER_2026-09-21.md) establishes 0.2618989799 < lim_k D_k(2k) < 0.2618989801, with the lower endpoint valid for every k. Do not call the enclosure a closed form, statistical confidence interval, finite practical encoder, or LLM effect. The near-matching upper bound uses an explicit rational test channel and standard asymptotic coding with small positive rate slack.
 
 Retain standard-library reproduction in the joint_coding subpackage, preserving historical top-level source fingerprints and all model-run evidence. The global validator regenerates this certificate. All 270 tests pass; the validator reports no errors; the manuscript builds with 23 cited sources. New literature review attributes strategy alphabets and dual optimization; the candidate contribution is the specific sharp, unrestricted composition penalty. External correctness and publication priority remain open. No model requests, paid allocation, external messages, or remote publication. Work is on task/decoder-complete-frontier. Next prioritize finite-length constructions and structural results across rates rather than more digits.
+
+## September 21: pivot to compaction collision certificates
+
+The user requested a substantive new direction rather than further tightening
+the four-bit example. We built a finite auditor for a proposed retained state:
+group exactly equal accessible channels, optimize adaptive read-only recovery,
+check lower obstructions independently, and synthesize the smallest extra
+message alphabet valid before a future task is revealed. The
+[research note](../research/COMPACTION_COLLISION_AUDIT_2026-09-21.md) records the
+12 constructed specifications, assumptions, source comparison and kill criteria.
+
+The novelty candidate is the compaction-specific audit protocol, not summary
+repair, typed commitments, state abstraction, hypergraphs or dynamic programming.
+The new source readings include direct precedents for those concepts. No model
+launch was made, and no prior completed allocation was reused. Historical code
+fingerprints remain intact because new Python lives in a separate subpackage.
+
+Prioritize a sound execution-task adapter and a reproducible failure/repair at
+matched total cost. Exact prose collisions may be too rare; inferred equivalence
+is a separate research problem. Further forced compaction during rescue and
+state-changing tools are outside the implemented solver. Keep those limitations
+visible, retain the existing mathematical results, and deprioritize more decimal
+tightening as the main research activity.
