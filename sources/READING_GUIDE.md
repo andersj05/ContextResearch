@@ -66,6 +66,19 @@ The [September 19 scaling literature check](../research/SCALING_LITERATURE_CHECK
 
 The remaining priority question concerns the specific four-bit construction, exact 3k attainment threshold, and quantitative gap at 2k. The check supports attribution to established functional-compression and information methods; it does not certify novelty of those local results. Version and review statements apply only to the linked primary material. No inherited catalog metadata or review labels were upgraded.
 
+## Joint coding and asymptotic thresholds
+
+The [September 21 joint-coding note](../research/JOINT_BLOCK_CODING_2026-09-21.md)
+records two additional primary readings. Polyanskiy and Wu's
+[6.441 notes](https://ocw.mit.edu/courses/6-441-information-theory-spring-2016/pages/lecture-notes/)
+[@polyanskiywu2016coding], Chapter 7.1's setup and Chapter 24 Theorems 24.1-24.2
+with Section 24.2.1, provide the standard fixed-length coding foundations.
+Basu et al. [v2](https://arxiv.org/html/2204.02586v2) [@basu2022hypergraph],
+Sections II-A4 and V-B/Theorems 9-10, add a close cascade comparison.
+The note states the access differences and priority limits; neither reading
+is a full proof audit. Review date: September 21, 2026. Inherited source
+metadata and review labels remain unchanged.
+
 ## Harness implementation
 
 Read [the survey](../research/CONTEXT_MANAGEMENT_SURVEY_2026-09-16.md) alongside [the pinned snapshots](harness-snapshots/2026-09-16/README.md). Distinguish output truncation, observation masking, summaries, native opaque state, archives, and KV policies. Client source cannot reveal a remote service's private compactor or training objective.

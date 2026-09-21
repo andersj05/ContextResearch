@@ -1,0 +1,729 @@
+{
+  "schema": "joint-block-coding-v1",
+  "model": "independent uniform four-bit blocks; late uniform block/omission/query",
+  "evidence_status": "exact achievable witnesses; no joint-optimum claim",
+  "finite_witness": {
+    "blocks": 2,
+    "parent_bits": 4,
+    "child_bits": 1,
+    "codebook": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        15
+      ],
+      [
+        1,
+        15
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        12,
+        0
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        15,
+        0
+      ],
+      [
+        15,
+        1
+      ],
+      [
+        15,
+        14
+      ],
+      [
+        15,
+        15
+      ]
+    ],
+    "parent_table_x_plus_16y": [
+      0,
+      0,
+      0,
+      10,
+      0,
+      9,
+      8,
+      12,
+      0,
+      7,
+      6,
+      12,
+      5,
+      12,
+      12,
+      12,
+      0,
+      0,
+      0,
+      10,
+      0,
+      9,
+      8,
+      12,
+      0,
+      7,
+      6,
+      12,
+      5,
+      12,
+      12,
+      12,
+      0,
+      0,
+      0,
+      10,
+      0,
+      9,
+      8,
+      12,
+      0,
+      7,
+      6,
+      12,
+      5,
+      12,
+      12,
+      12,
+      2,
+      2,
+      2,
+      10,
+      2,
+      9,
+      8,
+      14,
+      2,
+      7,
+      6,
+      14,
+      5,
+      14,
+      14,
+      14,
+      0,
+      0,
+      0,
+      10,
+      0,
+      9,
+      8,
+      12,
+      0,
+      7,
+      6,
+      12,
+      5,
+      12,
+      12,
+      12,
+      2,
+      2,
+      2,
+      10,
+      2,
+      9,
+      8,
+      14,
+      2,
+      7,
+      6,
+      14,
+      5,
+      14,
+      14,
+      14,
+      1,
+      1,
+      1,
+      10,
+      1,
+      9,
+      8,
+      13,
+      1,
+      7,
+      6,
+      13,
+      5,
+      13,
+      13,
+      13,
+      3,
+      3,
+      3,
+      11,
+      3,
+      11,
+      4,
+      15,
+      3,
+      11,
+      4,
+      15,
+      4,
+      15,
+      15,
+      15,
+      0,
+      0,
+      0,
+      10,
+      0,
+      9,
+      8,
+      12,
+      0,
+      7,
+      6,
+      12,
+      5,
+      12,
+      12,
+      12,
+      2,
+      2,
+      2,
+      10,
+      2,
+      9,
+      8,
+      14,
+      2,
+      7,
+      6,
+      14,
+      5,
+      14,
+      14,
+      14,
+      1,
+      1,
+      1,
+      10,
+      1,
+      9,
+      8,
+      13,
+      1,
+      7,
+      6,
+      13,
+      5,
+      13,
+      13,
+      13,
+      3,
+      3,
+      3,
+      11,
+      3,
+      11,
+      4,
+      15,
+      3,
+      11,
+      4,
+      15,
+      4,
+      15,
+      15,
+      15,
+      1,
+      1,
+      1,
+      10,
+      1,
+      9,
+      8,
+      13,
+      1,
+      7,
+      6,
+      13,
+      5,
+      13,
+      13,
+      13,
+      3,
+      3,
+      3,
+      11,
+      3,
+      11,
+      4,
+      15,
+      3,
+      11,
+      4,
+      15,
+      4,
+      15,
+      15,
+      15,
+      3,
+      3,
+      3,
+      11,
+      3,
+      11,
+      4,
+      15,
+      3,
+      11,
+      4,
+      15,
+      4,
+      15,
+      15,
+      15,
+      3,
+      3,
+      3,
+      11,
+      3,
+      11,
+      4,
+      15,
+      3,
+      11,
+      4,
+      15,
+      4,
+      15,
+      15,
+      15
+    ],
+    "errors": 1698,
+    "outcomes": 6144,
+    "distortion": {
+      "numerator": 283,
+      "denominator": 1024
+    },
+    "branch_errors": [
+      [
+        192,
+        202,
+        202,
+        202
+      ],
+      [
+        210,
+        230,
+        230,
+        230
+      ]
+    ],
+    "errors_by_second_source": [
+      48,
+      96,
+      96,
+      134,
+      96,
+      134,
+      134,
+      102,
+      96,
+      134,
+      134,
+      102,
+      134,
+      102,
+      102,
+      54
+    ],
+    "message_occupancies": [
+      25,
+      15,
+      15,
+      25,
+      15,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      15,
+      25,
+      15,
+      15,
+      25
+    ]
+  },
+  "product_reference": {
+    "codebook": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        15
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        14
+      ],
+      [
+        1,
+        15
+      ],
+      [
+        14,
+        0
+      ],
+      [
+        14,
+        1
+      ],
+      [
+        14,
+        14
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        15,
+        0
+      ],
+      [
+        15,
+        1
+      ],
+      [
+        15,
+        14
+      ],
+      [
+        15,
+        15
+      ]
+    ],
+    "errors": 1728,
+    "distortion": {
+      "numerator": 9,
+      "denominator": 32
+    }
+  },
+  "finite_improvement": {
+    "numerator": 5,
+    "denominator": 1024
+  },
+  "asymptotic_rate_two_witness": {
+    "reproduction_words": [
+      0,
+      3,
+      5,
+      6,
+      9,
+      10,
+      12,
+      15
+    ],
+    "conditional_probability_denominator": 48,
+    "conditional_probability_numerators": [
+      [
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        38,
+        5
+      ],
+      [
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0,
+        0,
+        0,
+        38,
+        0,
+        5
+      ],
+      [
+        5,
+        0,
+        0,
+        0,
+        38,
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        48
+      ],
+      [
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0,
+        38,
+        0,
+        0,
+        0,
+        5
+      ],
+      [
+        5,
+        0,
+        38,
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        48
+      ],
+      [
+        5,
+        38,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        48
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        48
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        48
+      ]
+    ],
+    "output_probabilities": [
+      {
+        "numerator": 45,
+        "denominator": 128
+      },
+      {
+        "numerator": 19,
+        "denominator": 384
+      },
+      {
+        "numerator": 19,
+        "denominator": 384
+      },
+      {
+        "numerator": 19,
+        "denominator": 384
+      },
+      {
+        "numerator": 19,
+        "denominator": 384
+      },
+      {
+        "numerator": 19,
+        "denominator": 384
+      },
+      {
+        "numerator": 19,
+        "denominator": 384
+      },
+      {
+        "numerator": 45,
+        "denominator": 128
+      }
+    ],
+    "distortion": {
+      "numerator": 101,
+      "denominator": 384
+    },
+    "mutual_information_bits": "(371 - 40*log2(5) - 95*log2(3))/64",
+    "mutual_information_less_than_two": {
+      "equivalent_inequality": "2^243 < 5^40 * 3^95",
+      "left_integer": 14134776518227074636666380005943348126619871175004951664972849610340958208,
+      "right_integer": 19289428992536287473663920423067290754534698016868787817656993865966796875,
+      "holds": true
+    },
+    "operational_status": "asymptotic existence via standard rate-distortion theorem",
+    "finite_length_encoder_at_this_distortion_implemented": false
+  },
+  "optimal_unsigned_signature_fibers": [
+    {
+      "signature": 0,
+      "sources": 5
+    },
+    {
+      "signature": 3,
+      "sources": 1
+    },
+    {
+      "signature": 5,
+      "sources": 1
+    },
+    {
+      "signature": 6,
+      "sources": 1
+    },
+    {
+      "signature": 9,
+      "sources": 1
+    },
+    {
+      "signature": 10,
+      "sources": 1
+    },
+    {
+      "signature": 12,
+      "sources": 1
+    },
+    {
+      "signature": 15,
+      "sources": 5
+    }
+  ],
+  "vanishing_excess_rate_threshold": {
+    "bits_per_block": "4 - (5/8)*log2(5)",
+    "exact_attainment_bits_per_block": 3,
+    "evidence": "analytic argument in research/JOINT_BLOCK_CODING_2026-09-21.md",
+    "proof_not_established_by_finite_enumeration_alone": true
+  }
+}

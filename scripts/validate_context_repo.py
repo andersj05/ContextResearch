@@ -469,6 +469,15 @@ def main() -> int:
     if expected_audit != actual_audit:
         errors.append("Scaling audit certificate is stale; regenerate it")
     counts["audit_signed_assignments"] = expected_audit["signed_majority_assignments"]
+    from joint_coding import coding as joint_block_coding
+    expected_joint = joint_block_coding.certificate()
+    joint_path = ROOT / "experiments/dependency_memory/results/joint_block_certificate.json"
+    if json.loads(joint_path.read_text(encoding="utf-8")) != expected_joint:
+        errors.append("Joint-block certificate is stale; regenerate it")
+    joint_report = ROOT / "experiments/dependency_memory/results/joint_block_report.md"
+    if joint_report.read_text(encoding="utf-8") != joint_block_coding.report(expected_joint):
+        errors.append("Joint-block report is stale; regenerate it")
+    counts["joint_block_witness_outcomes_checked"] = expected_joint["finite_witness"]["outcomes"]
     import run_artifact_workflow
     artifact_rows, artifact_summary, artifact_witness = run_artifact_workflow.diagnostics()
     expected_rows = [{key: str(value) for key, value in row.items()} for row in artifact_rows]
