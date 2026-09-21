@@ -4,7 +4,7 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
-The repository contains an exact finite-chain computation (9/32 error versus a 1/4 isolated-child optimum), a locally audited scaling derivation with a uniform error gap, and a deterministic artifact/manifest environment with an exact restricted recovery reference. Start with the [living findings draft](paper/findings-draft.md) for a short account of the results and next research step. External proof review and novelty assessment remain open. The project does **not** yet establish an LLM performance improvement or savings over native Codex or Claude compaction.
+The repository contains an exact finite-chain computation (9/32 error versus a 1/4 isolated-child optimum), a scaling derivation with a uniform error gap, and a [joint-coding extension](research/JOINT_BLOCK_CODING_2026-09-21.md): two blocks improve on the one-block loss, while the asymptotic threshold for approaching the child optimum is about 2.5488 bits per block. A deterministic artifact/manifest environment supplies an exact restricted recovery reference. Start with the [living findings draft](paper/findings-draft.md). External proof review and novelty assessment remain open. The project does **not** yet establish an LLM performance improvement or savings over native Codex or Claude compaction.
 
 ## Start here
 
@@ -50,6 +50,7 @@ python experiments/dependency_memory/experiment.py
 python experiments/dependency_memory/compatibility.py
 python experiments/dependency_memory/compatibility_scaling.py
 python experiments/dependency_memory/audit_scaling.py
+python experiments/dependency_memory/joint_coding/coding.py
 python experiments/dependency_memory/run_artifact_workflow.py
 python experiments/dependency_memory/run_recovery_frontier.py
 python experiments/dependency_memory/pilot_plan.py
@@ -65,6 +66,6 @@ For a read-only comparison of a fresh full search against the committed certific
 
 ## Evidence and provenance
 
-The active compaction investigation is dated September 16–19, 2026. The broader inherited literature snapshot is dated September 4, 2026; its review labels have not been upgraded by moving the files. Read the [migration record](provenance/README.md) and [historical corpus overview](HARNESS_CORPUS_README.md) for provenance and scope.
+The active compaction investigation began September 16–19, 2026, with the joint-coding extension on September 21. The broader inherited literature snapshot is dated September 4, 2026; its review labels have not been upgraded by moving the files. Read the [migration record](provenance/README.md) and [historical corpus overview](HARNESS_CORPUS_README.md) for provenance and scope.
 
 This repository preserves the existing `ContextResearch` Git history. The imported `HarnessResearch` folder remains available as a migration backup. Continue this paper here to avoid divergent working copies. Historical setup commits are on `codex/context-research-setup`; current work uses `task/` branches per the user's preference. The audit and initial environment are on `task/proof-audit-environment`; recovery and the first living draft are on `task/recovery-frontier-draft`; the exact finite optimum and staged pilot continue on `task/pilot-calibration-exact-chain`; the completed matched retention study is on `task/retention-transfer-study`. No remote publication was requested.

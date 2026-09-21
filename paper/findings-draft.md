@@ -1,6 +1,6 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.9 — September 19, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.10 — September 21, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
 
 ## The question
 
@@ -30,6 +30,31 @@ Both costs exclude the same mandatory ten-unit workflow. All episodes contribute
 **4. Better retention need not produce a cheaper completed task.** With only one receipt slot at the second boundary, inspection raises pre-recovery success from 3/10 to 1/2. Nevertheless, when inspection costs one and recovery costs four, reaching perfect success costs 3 extra units with inspection versus 14/5 without it. A later memory limit can erase enough of the early clue's benefit that inspection is no longer worth its price. [C20; exact reference](../experiments/dependency_memory/RECOVERY_FRONTIER.md)
 
 The revision rule matters too. Our public schedule refreshes the smallest candidate job. A reference policy can exploit that schedule, raising uninspected success to 4/5 and moving the inspection break-even recovery price to five. This is a property of that schedule; pooling revision conditions would conceal it. [C19]
+
+## New: storing blocks together changes the penalty
+
+The [September 21 extension](../research/JOINT_BLOCK_CODING_2026-09-21.md)
+shows that independently compressing each small block leaves performance
+on the table. A shared four-bit memory for two blocks achieves **27.64%
+error**, below the **28.125%** one-block optimum at the same two bits per
+block. Every one of its 6,144 possible outcomes is checked. The code is an
+explicit achievable construction; the best possible two-block error is
+still unknown. [C31]
+
+A separate analytic construction proves an asymptotic upper bound of
+**26.30% error** at two bits per block. Its rate calculation is certified
+by an exact integer inequality, but no finite encoder at that error has
+been implemented. We also derive a precise distinction: approaching the
+25% target needs about **2.549 bits per block**, while attaining it exactly
+at any finite size still needs **three bits per block**. Rare overflow
+cases can become negligible in the first setting; they cannot be ignored
+in the second. [C32-C33]
+
+The earlier robust lower bound remains valid. These are new deductions
+for this repository's mathematical model using established coding theory.
+The specific contribution's publication novelty and external correctness
+review remain open. This phase made no model calls and establishes no
+agent-performance improvement.
 
 ## The resulting decision rule
 

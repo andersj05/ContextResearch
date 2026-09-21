@@ -1,12 +1,16 @@
 # Current research status
 
-Updated: September 19, 2026. This document is the current handoff; older scope documents are historical.
+Updated: September 21, 2026. This document is the current handoff; older scope documents are historical.
 
 ## Objective
 
 Develop a mathematically precise and implementable study of repeated agent compaction when relevance is revealed over time. The target is a restricted compatibility result plus controlled evidence of whether the mechanism matters in tool-agent tasks.
 
 ## Established in this repository
+
+- **September 21 joint-coding milestone:** an explicit two-block, four-bit parent achieves error 283/1024, strictly below the one-block 9/32 optimum at the same two bits per block. All 6,144 outcomes are checked. Repeating pairs beats 9/32 for every k >= 2. This is an achievable construction, not the exact two-block optimum.
+- A rational branch-decision test channel and standard coding achievability give limsup D_k(2k) <= 101/384 (about 26.30%). Its information is strictly below two bits, certified by an integer inequality. This is an analytic asymptotic bound, not a finite implemented encoder at that error.
+- The same [joint-coding note](../research/JOINT_BLOCK_CODING_2026-09-21.md) proves the threshold for approaching error 1/4 is 4-(5/8)log2(5), about 2.5488 bits per block, including achievability with floor(k times that rate) bits. Exact finite attainment still needs 3k bits. The proof uses the existing signature lemma and established coding methods; external review and novelty remain open. No model requests were made in this phase.
 
 - A causal two-stage model: see all values, compress, learn a candidate subset, compress again, then learn the queried coordinate.
 - Standard counting and random-access lower bounds, with explicit assumptions and attribution.
@@ -49,12 +53,14 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 ## Not yet established
 
 - Novelty and external validation of the locally audited scaling argument, or a practically large composition penalty.
-- A matching exact error formula for arbitrary jointly encoded blocks; the one-block 1/32 excess does not replace the independently proved all-k bound.
+- A matching exact error formula for arbitrary jointly encoded blocks. Joint coding now provably beats the one-block 1/32 excess; the limiting rate-two error lies between 129/512 and 101/384, and the exact two-block optimum remains open.
 - Natural-language compiler performance, learned retirement accuracy, or unrestricted closed-loop LLM-agent results. The completed model work covers only isolated inspection and atomic-record selection.
 - Cost or quality gains over native provider compaction.
 - The internal training objective, prompt, or algorithm of a proprietary compaction service.
 
 ## Next bounded tasks
+
+The mathematical priority after September 21 is to tighten the certified rate-two interval and compare the new construction/threshold against cascade functional coding. Preserve arbitrary decoder pairs in any converse; an unsigned-decoder optimization alone cannot establish the unrestricted optimum. The behavioral follow-up below remains separately specified work.
 
 1. Specify and validate offline a follow-up with a binding downstream memory boundary and a declared later-selector policy. Preserve exact calibration, missing outcomes, and channel accounting; the completed [transfer study](TRANSFER_STUDY.md) does not test this setting. Prepare a separately versioned contract and bounded allocation before any new model launch; this next task does not automatically start model calls.
 2. Obtain external review of the exact finite search/reduction and block-family proof, and deepen the novelty comparison with functional compression/direct-sum results. The targeted literature comparison narrows the contribution but does not settle priority.

@@ -9,6 +9,7 @@ python experiments/dependency_memory/experiment.py
 python experiments/dependency_memory/compatibility.py
 python experiments/dependency_memory/compatibility_scaling.py
 python experiments/dependency_memory/audit_scaling.py
+python experiments/dependency_memory/joint_coding/coding.py
 python experiments/dependency_memory/run_artifact_workflow.py
 python experiments/dependency_memory/run_recovery_frontier.py
 python experiments/dependency_memory/pilot_plan.py
@@ -18,6 +19,8 @@ python -m unittest discover -s experiments/dependency_memory -v
 The scripts overwrite only their generated files under `results/`; `experiment.py --output PATH` can select another output directory for its files. The compatibility script always writes to its adjacent results directory.
 
 ## What each component establishes
+
+`joint_coding/coding.py` supplies a [two-block witness and rational test channel](results/joint_block_report.md). It directly grades all 6,144 outcomes of a four-bit parent with error 283/1024, below two independent optimal one-block codes. Its rational channel has distortion 101/384 and information strictly below two bits; an exact integer inequality checks the latter. The [analytic note](../../research/JOINT_BLOCK_CODING_2026-09-21.md) derives asymptotic achievability and the approximately 2.5488-bit threshold for vanishing excess error. Neither the two-block optimum nor a finite implementation attaining the asymptotic bound is claimed. The validator regenerates both artifacts, with no model calls.
 
 `experiment.py` enumerates the minimum average error for a fixed-length classical message encoding one to four independent fair bits, with the queried coordinate revealed afterward. The query is uniform. Each message label determines a vector of predicted bits, so enumerating decoder codebooks and assigning each source string to its nearest codeword exhausts deterministic encoders/decoders. A fixed public codebook does not store the particular source instance. Randomized mixtures cannot improve the minimum average loss.
 
