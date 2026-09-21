@@ -1,6 +1,6 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.10 — September 21, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.11 — September 21, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
 
 ## The question
 
@@ -31,7 +31,7 @@ Both costs exclude the same mandatory ten-unit workflow. All episodes contribute
 
 The revision rule matters too. Our public schedule refreshes the smallest candidate job. A reference policy can exploit that schedule, raising uninspected success to 4/5 and moving the inspection break-even recovery price to five. This is a property of that schedule; pooling revision conditions would conceal it. [C19]
 
-## New: storing blocks together changes the penalty
+## Storing blocks together changes the penalty
 
 The [September 21 extension](../research/JOINT_BLOCK_CODING_2026-09-21.md)
 shows that independently compressing each small block leaves performance
@@ -50,11 +50,26 @@ at any finite size still needs **three bits per block**. Rare overflow
 cases can become negligible in the first setting; they cannot be ignored
 in the second. [C32-C33]
 
-The earlier robust lower bound remains valid. These are new deductions
-for this repository's mathematical model using established coding theory.
-The specific contribution's publication novelty and external correctness
-review remain open. This phase made no model calls and establishes no
-agent-performance improvement.
+## Latest: the remaining penalty is now sharply bounded
+
+The [decoder-complete follow-up](../research/DECODER_COMPLETE_FRONTIER_2026-09-21.md)
+places the best limiting error between **26.18989799% and 26.18989801%**.
+The lower endpoint also bounds every finite block count. This is a
+mathematical certificate, not a statistical confidence interval. [C34]
+
+The check covers all **1,679,616 final-decoder tables**, including constant
+and noncomplementary prediction pairs, grouped into 4,751 symmetry classes.
+An analytic information bound then covers arbitrary joint encoders, while
+a rational channel supplies an asymptotically matching construction.
+Every decisive comparison uses exact integer or rational bounds.
+
+The unavoidable excess above 25% is therefore about **1.189898 percentage
+points**, over six times our previous guaranteed minimum. The candidate
+contribution is this sharply quantified penalty with every legal decoder
+allowed. No practical finite encoder at this error is supplied, and no
+model-performance improvement is established. The machinery comes from
+established coding theory; external correctness review and publication
+priority remain open. [C34]
 
 ## The resulting decision rule
 

@@ -1,6 +1,6 @@
 # What this research is trying to find out
 
-September 19, 2026. The 1,536-request study is complete. This guide explains what we have learned and what remains uncertain. The detailed model results are in the [completed-study findings](TRANSFER_LUNA_FINDINGS_2026-09-19.md).
+Updated September 21, 2026. The 1,536-request study is complete. This guide explains what we have learned and what remains uncertain. The detailed model results are in the [completed-study findings](TRANSFER_LUNA_FINDINGS_2026-09-19.md).
 
 The central question is: **How should an AI decide what to remember before it knows what it will need later?** We study repeated memory decisions as instructions arrive and memory shrinks.
 
@@ -19,6 +19,8 @@ The extra loss is **3.125 percentage points**. This is an exact result within th
 A bit is one yes/no storage unit. Two bits can encode four different messages, including messages about relationships between facts. A record slot instead holds one whole record, including its identifier and code. Two bits and two record slots are very different memory allowances. Model tokens are yet another unit: pieces of text processed by the model.
 
 We also have a locally checked proof for many four-fact pieces, with two initial bits per piece and a final one-bit memory after one piece is selected. The extra error cannot disappear by encoding the pieces together, although the exact 3.125-point penalty does not automatically carry over. External proof review and priority assessment remain open. The mathematical methods have established predecessors; what may be new is the particular construction and result. [Proof review](PROOF_AUDIT_2026-09-18.md), [literature check](SCALING_LITERATURE_CHECK_2026-09-19.md)
+
+The September 21 follow-up now sharply bounds the best error when many pieces share memory: **about 26.189898%**, in a certified interval of width 0.00000002 percentage points. The unavoidable penalty above 25% is about **1.189898 percentage points**. The proof allows every legal final decoder and joint encoding; it checks 1,679,616 decoder tables using exact arithmetic. This is a new mathematical result in the repository, not a measured AI error rate, a practical encoder, or established publication novelty. [Proof and certificate](DECODER_COMPLETE_FRONTIER_2026-09-21.md)
 
 ## The practical testing environment
 

@@ -54,3 +54,11 @@ python scripts/validate_context_repo.py --exact-chain-compiler clang
 The second command requires a C99-capable compiler; ordinary validation without that flag checks the recorded artifacts without repeating the complete search.
 
 When an external review actually occurs, append its date, reviewer-provided scope, reviewed commit, reproduction environment, objections/counterexamples, and responses. Record mathematical correctness, computational reproduction, and novelty opinions separately. Until then all three external-review outcomes remain **pending**.
+
+## September 21 addition: unrestricted rate-two certificate
+
+The [new derivation](DECODER_COMPLETE_FRONTIER_2026-09-21.md) proves an all-k lower bound of 0.2618989799 and a limiting upper bound of 0.2618989801. The [standard-library generator](../experiments/dependency_memory/joint_coding/decoder_frontier.py) covers all 36^4 decoder tables via 4,751 disjoint symmetry orbits, including repeated and noncomplementary pairs. Its dual inequalities, information reduction, and coding achievability are distinct proof obligations.
+
+Review the potential-output variable A_r as a function of M, the direction of the sum-information inequality, decoder labels and coordinate actions, the Jensen/KL dual bound, integer ceiling directions, rational logarithm enclosures, and strict rate slack. Independent tests include a Burnside count, actual query losses, and actual channel mutual information. A numerical optimizer is unnecessary for verification.
+
+The priority question includes this particular tightly quantified composition penalty. Strategy alphabets, rate-distortion duality, and information direct sums are attributed to earlier work. No external review or outreach has occurred.

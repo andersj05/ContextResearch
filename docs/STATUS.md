@@ -8,6 +8,8 @@ Develop a mathematically precise and implementable study of repeated agent compa
 
 ## Established in this repository
 
+- **Latest September 21 milestone:** a [decoder-complete certificate](../research/DECODER_COMPLETE_FRONTIER_2026-09-21.md) proves **0.2618989799 < lim_k D_k(2k) < 0.2618989801**. The lower inequality holds for every finite k. All 1,679,616 unordered decoder tables, including repeated and noncomplementary pairs, are covered by 4,751 disjoint orbits. Exact integer comparisons and outward rational logarithms support the converse for arbitrary joint encoders and block-dependent decoders. The upper bound is asymptotic coding from a rational channel; no finite code at that error is supplied. This raises the uniform guaranteed excess above 1/4 by more than sixfold. Claim C34; external correctness and publication novelty remain open. No model calls.
+
 - **September 21 joint-coding milestone:** an explicit two-block, four-bit parent achieves error 283/1024, strictly below the one-block 9/32 optimum at the same two bits per block. All 6,144 outcomes are checked. Repeating pairs beats 9/32 for every k >= 2. This is an achievable construction, not the exact two-block optimum.
 - A rational branch-decision test channel and standard coding achievability give limsup D_k(2k) <= 101/384 (about 26.30%). Its information is strictly below two bits, certified by an integer inequality. This is an analytic asymptotic bound, not a finite implemented encoder at that error.
 - The same [joint-coding note](../research/JOINT_BLOCK_CODING_2026-09-21.md) proves the threshold for approaching error 1/4 is 4-(5/8)log2(5), about 2.5488 bits per block, including achievability with floor(k times that rate) bits. Exact finite attainment still needs 3k bits. The proof uses the existing signature lemma and established coding methods; external review and novelty remain open. No model requests were made in this phase.
@@ -53,14 +55,14 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 ## Not yet established
 
 - Novelty and external validation of the locally audited scaling argument, or a practically large composition penalty.
-- A matching exact error formula for arbitrary jointly encoded blocks. Joint coding now provably beats the one-block 1/32 excess; the limiting rate-two error lies between 129/512 and 101/384, and the exact two-block optimum remains open.
+- A closed-form error formula or full rate-distortion curve for arbitrary jointly encoded blocks. The limiting rate-two error is now certified within (0.2618989799, 0.2618989801); the exact two-block optimum and efficient finite codes remain open.
 - Natural-language compiler performance, learned retirement accuracy, or unrestricted closed-loop LLM-agent results. The completed model work covers only isolated inspection and atomic-record selection.
 - Cost or quality gains over native provider compaction.
 - The internal training objective, prompt, or algorithm of a proprietary compaction service.
 
 ## Next bounded tasks
 
-The mathematical priority after September 21 is to tighten the certified rate-two interval and compare the new construction/threshold against cascade functional coding. Preserve arbitrary decoder pairs in any converse; an unsigned-decoder optimization alone cannot establish the unrestricted optimum. The behavioral follow-up below remains separately specified work.
+The decoder-complete phase resolves the wide rate-two interval to 2e-10 in error probability. Further decimal tightening has little research value. The mathematical priority is now external correctness/priority review, useful finite-length joint codes, and structural results across rates. Preserve arbitrary decoder pairs and the hard one-bit child contract. The behavioral follow-up below remains separately specified work.
 
 1. Specify and validate offline a follow-up with a binding downstream memory boundary and a declared later-selector policy. Preserve exact calibration, missing outcomes, and channel accounting; the completed [transfer study](TRANSFER_STUDY.md) does not test this setting. Prepare a separately versioned contract and bounded allocation before any new model launch; this next task does not automatically start model calls.
 2. Obtain external review of the exact finite search/reduction and block-family proof, and deepen the novelty comparison with functional compression/direct-sum results. The targeted literature comparison narrows the contribution but does not settle priority.

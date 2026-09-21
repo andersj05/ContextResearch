@@ -8,6 +8,8 @@ priority assessment remain open. There are no new model trials.
 
 ## Results
 
+Later September 21 update: the [decoder-complete follow-up](DECODER_COMPLETE_FRONTIER_2026-09-21.md) tightens this note's rate-two interval to (0.2618989799, 0.2618989801), with the lower endpoint valid at every k. The constructions, threshold, and dated verification below remain valid historical results.
+
 Write D_k(B) for the minimum average bit error in the existing k-block model
 with B parent bits and one child bit. The information contract is unchanged:
 k independent uniform four-bit blocks; compress before the uniform block R
