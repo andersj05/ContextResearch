@@ -1,0 +1,136 @@
+{
+  "case_id": "retry-evaluation-94122",
+  "decisions": [
+    {
+      "arm": "full",
+      "future_id": "retry-evaluation-94122-0",
+      "identity": "retry-evaluation-94122-0-full",
+      "memory_bytes": 3245,
+      "recovery_bytes": 3245,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "indexed",
+      "future_id": "retry-evaluation-94122-0",
+      "identity": "retry-evaluation-94122-0-indexed",
+      "memory_bytes": 809,
+      "recovery_bytes": 809,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "prompt",
+      "future_id": "retry-evaluation-94122-0",
+      "identity": "retry-evaluation-94122-0-prompt",
+      "memory_bytes": 359,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "automatic",
+      "future_id": "retry-evaluation-94122-0",
+      "identity": "retry-evaluation-94122-0-automatic",
+      "memory_bytes": 303,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "direct",
+      "future_id": "retry-evaluation-94122-0",
+      "identity": "retry-evaluation-94122-0-direct",
+      "memory_bytes": 210,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "prompt",
+      "future_id": "retry-evaluation-94122-1",
+      "identity": "retry-evaluation-94122-1-prompt",
+      "memory_bytes": 359,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "indexed",
+      "future_id": "retry-evaluation-94122-1",
+      "identity": "retry-evaluation-94122-1-indexed",
+      "memory_bytes": 814,
+      "recovery_bytes": 814,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "automatic",
+      "future_id": "retry-evaluation-94122-1",
+      "identity": "retry-evaluation-94122-1-automatic",
+      "memory_bytes": 303,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "full",
+      "future_id": "retry-evaluation-94122-1",
+      "identity": "retry-evaluation-94122-1-full",
+      "memory_bytes": 3245,
+      "recovery_bytes": 3245,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "direct",
+      "future_id": "retry-evaluation-94122-1",
+      "identity": "retry-evaluation-94122-1-direct",
+      "memory_bytes": 210,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    }
+  ],
+  "family": "retry",
+  "local": {
+    "automatic": {
+      "bytes_read": 8133,
+      "child_check": {
+        "cpu_ns": 0,
+        "identity_errors": 0,
+        "memory_bytes_read": 303,
+        "passed": true,
+        "relation_errors": 0,
+        "source_bytes_read": 384
+      },
+      "cpu_ns": 0,
+      "parent_check": {
+        "cpu_ns": 0,
+        "identity_errors": 0,
+        "memory_bytes_read": 478,
+        "passed": true,
+        "relation_errors": 0,
+        "source_bytes_read": 3245
+      }
+    },
+    "direct": {
+      "bytes_read": 3566,
+      "cpu_ns": 0
+    }
+  },
+  "memories": {
+    "automatic": {
+      "child": "{\"fields\":[\"attempt_key\",\"can_retry\",\"dispatch_state\",\"request_key\",\"reservation_key\",\"result_state\",\"retry_of\"],\"rows\":[[\"at-30a14d3e6f\",false,\"sent\",\"rq-b7f9e07d4d\",\"rs-c7920e54c8\",\"passed\",\"at-b3d242f32e\"],[\"at-c2b5216752\",false,\"not_sent\",\"rq-90a5bb9394\",\"rs-88425e11d1\",\"pending\",\"at-f53fc9a4bf\"]]}",
+      "parent": "{\"fields\":[\"attempt_key\",\"can_retry\",\"dispatch_state\",\"request_key\",\"reservation_key\",\"result_state\",\"retry_of\"],\"rows\":[[\"at-c2b5216752\",false,\"not_sent\",\"rq-90a5bb9394\",\"rs-88425e11d1\",\"pending\",\"at-f53fc9a4bf\"],[\"at-7e31c45aeb\",true,\"sent\",\"rq-201442de7e\",\"rs-e1c292fede\",\"failed\",\"at-dd2343fc9d\"],[\"at-30a14d3e6f\",false,\"sent\",\"rq-b7f9e07d4d\",\"rs-c7920e54c8\",\"passed\",\"at-b3d242f32e\"],[\"at-4e555b99e7\",false,\"sent\",\"rq-353a26983d\",\"rs-2d94c35e87\",\"failed\",\"at-29589b8fc5\"]]}"
+    },
+    "direct": {
+      "child": "{\"fields\":[\"request_key\",\"attempt_key\",\"dispatch_state\",\"result_state\",\"can_retry\"],\"rows\":[[\"rq-b7f9e07d4d\",\"at-30a14d3e6f\",\"sent\",\"passed\",false],[\"rq-90a5bb9394\",\"at-c2b5216752\",\"not_sent\",\"pending\",false]]}",
+      "parent": "{\"fields\":[\"request_key\",\"attempt_key\",\"dispatch_state\",\"result_state\",\"can_retry\"],\"rows\":[[\"rq-90a5bb9394\",\"at-c2b5216752\",\"not_sent\",\"pending\",false],[\"rq-201442de7e\",\"at-7e31c45aeb\",\"sent\",\"failed\",true],[\"rq-b7f9e07d4d\",\"at-30a14d3e6f\",\"sent\",\"passed\",false],[\"rq-353a26983d\",\"at-4e555b99e7\",\"sent\",\"failed\",false]]}"
+    },
+    "prompt": {
+      "child": "Candidates only: rq-b7f9e07d4d\u2192current attempt at-30a14d3e6f; reservation rs-c7920e54c8; dispatch_state=sent; result_state=passed; can_retry=false; retry_of=at-b3d242f32e. rq-90a5bb9394\u2192current attempt at-c2b5216752; reservation rs-88425e11d1; dispatch_state=not_sent; result_state=pending; can_retry=false; retry_of=at-f53fc9a4bf. No late event provided.",
+      "child_bounds": {
+        "admitted_bytes": 359,
+        "clipped": false,
+        "proposed_bytes": 359
+      },
+      "parent": "Records (request\u2192current attempt; reservation; dispatch/result; can_retry; retry_of): rq-90a5bb9394\u2192at-c2b5216752; rs-88425e11d1; not_sent/pending; false; at-f53fc9a4bf. rq-201442de7e\u2192at-7e31c45aeb; rs-e1c292fede; sent/failed; true; at-dd2343fc9d. rq-b7f9e07d4d\u2192at-30a14d3e6f; rs-c7920e54c8; sent/passed; false; at-b3d242f32e. rq-353a26983d\u2192at-4e555b99e7; rs-2d94c35e87; sent/failed; false; at-29589b8fc5. No late event provided.",
+      "parent_bounds": {
+        "admitted_bytes": 439,
+        "clipped": false,
+        "proposed_bytes": 439
+      }
+    }
+  }
+}

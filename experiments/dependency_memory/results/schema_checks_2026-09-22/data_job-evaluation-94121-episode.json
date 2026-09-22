@@ -1,0 +1,136 @@
+{
+  "case_id": "data_job-evaluation-94121",
+  "decisions": [
+    {
+      "arm": "full",
+      "future_id": "data_job-evaluation-94121-0",
+      "identity": "data_job-evaluation-94121-0-full",
+      "memory_bytes": 4157,
+      "recovery_bytes": 4157,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "automatic",
+      "future_id": "data_job-evaluation-94121-0",
+      "identity": "data_job-evaluation-94121-0-automatic",
+      "memory_bytes": 700,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "indexed",
+      "future_id": "data_job-evaluation-94121-0",
+      "identity": "data_job-evaluation-94121-0-indexed",
+      "memory_bytes": 1038,
+      "recovery_bytes": 1038,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "direct",
+      "future_id": "data_job-evaluation-94121-0",
+      "identity": "data_job-evaluation-94121-0-direct",
+      "memory_bytes": 487,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "prompt",
+      "future_id": "data_job-evaluation-94121-0",
+      "identity": "data_job-evaluation-94121-0-prompt",
+      "memory_bytes": 864,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "prompt",
+      "future_id": "data_job-evaluation-94121-1",
+      "identity": "data_job-evaluation-94121-1-prompt",
+      "memory_bytes": 864,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "direct",
+      "future_id": "data_job-evaluation-94121-1",
+      "identity": "data_job-evaluation-94121-1-direct",
+      "memory_bytes": 487,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "full",
+      "future_id": "data_job-evaluation-94121-1",
+      "identity": "data_job-evaluation-94121-1-full",
+      "memory_bytes": 4157,
+      "recovery_bytes": 4157,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "automatic",
+      "future_id": "data_job-evaluation-94121-1",
+      "identity": "data_job-evaluation-94121-1-automatic",
+      "memory_bytes": 700,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "indexed",
+      "future_id": "data_job-evaluation-94121-1",
+      "identity": "data_job-evaluation-94121-1-indexed",
+      "memory_bytes": 1038,
+      "recovery_bytes": 1038,
+      "recovery_cpu_ns": 0
+    }
+  ],
+  "family": "data_job",
+  "local": {
+    "automatic": {
+      "bytes_read": 12171,
+      "child_check": {
+        "cpu_ns": 0,
+        "identity_errors": 0,
+        "memory_bytes_read": 700,
+        "passed": true,
+        "relation_errors": 0,
+        "source_bytes_read": 961
+      },
+      "cpu_ns": 0,
+      "parent_check": {
+        "cpu_ns": 0,
+        "identity_errors": 0,
+        "memory_bytes_read": 1098,
+        "passed": true,
+        "relation_errors": 0,
+        "source_bytes_read": 4157
+      }
+    },
+    "direct": {
+      "bytes_read": 4914,
+      "cpu_ns": 0
+    }
+  },
+  "memories": {
+    "automatic": {
+      "child": "{\"fields\":[\"extract.output_key\",\"extract.run_key\",\"extract.state\",\"load.input_key\",\"load.output_key\",\"load.run_key\",\"load.state\",\"pipeline_key\",\"publish_approval.approval_key\",\"publish_approval.covers_output\",\"transform.input_key\",\"transform.output_key\",\"transform.run_key\",\"transform.state\"],\"rows\":[[\"ds-09090ebaa9\",\"ex-b86266f061\",\"pass\",\"ds-e23813e711\",\"ds-4c1e9a7b7c\",\"ld-54b0f64861\",\"pass\",\"pl-84843781fb\",\"ap-ab30ea24ec\",\"ds-4c1e9a7b7c\",\"ds-a1bd587705\",\"ds-e23813e711\",\"tr-0ff8d3dedb\",\"pass\"],[\"ds-61f986dc63\",\"ex-f67f0031f9\",\"pass\",\"ds-9b476e233e\",\"ds-a96586f72c\",\"ld-4f2f87a16f\",\"pass\",\"pl-32b22a1cea\",\"ap-670ce3ab80\",\"ds-d2507e7eed\",\"ds-61f986dc63\",\"ds-9b476e233e\",\"tr-aeb949b8e1\",\"pass\"]]}",
+      "parent": "{\"fields\":[\"extract.output_key\",\"extract.run_key\",\"extract.state\",\"load.input_key\",\"load.output_key\",\"load.run_key\",\"load.state\",\"pipeline_key\",\"publish_approval.approval_key\",\"publish_approval.covers_output\",\"transform.input_key\",\"transform.output_key\",\"transform.run_key\",\"transform.state\"],\"rows\":[[\"ds-ae6401e345\",\"ex-52bcc740c2\",\"pass\",\"ds-998d8c1ea8\",\"ds-6fe00a6e91\",\"ld-4bc3c624bc\",\"fail\",\"pl-5a021f1e10\",\"ap-ce9fd50716\",\"ds-6fe00a6e91\",\"ds-ae6401e345\",\"ds-998d8c1ea8\",\"tr-3827a4edf2\",\"pass\"],[\"ds-61f986dc63\",\"ex-f67f0031f9\",\"pass\",\"ds-9b476e233e\",\"ds-a96586f72c\",\"ld-4f2f87a16f\",\"pass\",\"pl-32b22a1cea\",\"ap-670ce3ab80\",\"ds-d2507e7eed\",\"ds-61f986dc63\",\"ds-9b476e233e\",\"tr-aeb949b8e1\",\"pass\"],[\"ds-09090ebaa9\",\"ex-b86266f061\",\"pass\",\"ds-e23813e711\",\"ds-4c1e9a7b7c\",\"ld-54b0f64861\",\"pass\",\"pl-84843781fb\",\"ap-ab30ea24ec\",\"ds-4c1e9a7b7c\",\"ds-a1bd587705\",\"ds-e23813e711\",\"tr-0ff8d3dedb\",\"pass\"],[\"ds-558bc38a9a\",\"ex-7441d88f67\",\"pass\",\"ds-ccc51d90ee\",\"ds-8ce0fbb131\",\"ld-44874b827d\",\"pass\",\"pl-862ae40b9e\",\"ap-a418cc0dbd\",\"ds-8ce0fbb131\",\"ds-558bc38a9a\",\"ds-ccc51d90ee\",\"tr-3f31742b33\",\"pass\"]]}"
+    },
+    "direct": {
+      "child": "{\"fields\":[\"pipeline_key\",\"extract.output_key\",\"extract.state\",\"transform.input_key\",\"transform.output_key\",\"transform.state\",\"load.input_key\",\"load.output_key\",\"load.state\",\"publish_approval.covers_output\"],\"rows\":[[\"pl-84843781fb\",\"ds-09090ebaa9\",\"pass\",\"ds-a1bd587705\",\"ds-e23813e711\",\"pass\",\"ds-e23813e711\",\"ds-4c1e9a7b7c\",\"pass\",\"ds-4c1e9a7b7c\"],[\"pl-32b22a1cea\",\"ds-61f986dc63\",\"pass\",\"ds-61f986dc63\",\"ds-9b476e233e\",\"pass\",\"ds-9b476e233e\",\"ds-a96586f72c\",\"pass\",\"ds-d2507e7eed\"]]}",
+      "parent": "{\"fields\":[\"pipeline_key\",\"extract.output_key\",\"extract.state\",\"transform.input_key\",\"transform.output_key\",\"transform.state\",\"load.input_key\",\"load.output_key\",\"load.state\",\"publish_approval.covers_output\"],\"rows\":[[\"pl-5a021f1e10\",\"ds-ae6401e345\",\"pass\",\"ds-ae6401e345\",\"ds-998d8c1ea8\",\"pass\",\"ds-998d8c1ea8\",\"ds-6fe00a6e91\",\"fail\",\"ds-6fe00a6e91\"],[\"pl-32b22a1cea\",\"ds-61f986dc63\",\"pass\",\"ds-61f986dc63\",\"ds-9b476e233e\",\"pass\",\"ds-9b476e233e\",\"ds-a96586f72c\",\"pass\",\"ds-d2507e7eed\"],[\"pl-84843781fb\",\"ds-09090ebaa9\",\"pass\",\"ds-a1bd587705\",\"ds-e23813e711\",\"pass\",\"ds-e23813e711\",\"ds-4c1e9a7b7c\",\"pass\",\"ds-4c1e9a7b7c\"],[\"pl-862ae40b9e\",\"ds-558bc38a9a\",\"pass\",\"ds-558bc38a9a\",\"ds-ccc51d90ee\",\"pass\",\"ds-ccc51d90ee\",\"ds-8ce0fbb131\",\"pass\",\"ds-8ce0fbb131\"]]}"
+    },
+    "prompt": {
+      "child": "Late event: none present. Retain only:\npl-84843781fb: extract ex-b86266f061 state=pass output=ds-09090ebaa9; transform tr-0ff8d3dedb state=pass input=ds-a1bd587705 output=ds-e23813e711; load ld-54b0f64861 state=pass input=ds-e23813e711 output=ds-4c1e9a7b7c; approval ap-ab30ea24ec covers_output=ds-4c1e9a7b7c. transform.input_key mismatches extract.output_key (ds-a1bd587705 != ds-09090ebaa9); other conditions pass. HOLD; target_id=ds-4c1e9a7b7c; work=[link:transform].\npl-32b22a1cea: extract ex-f67f0031f9 state=pass output=ds-61f986dc63; transform tr-aeb949b8e1 state=pass input=ds-61f986dc63 output=ds-9b476e233e; load ld-4f2f87a16f state=pass input=ds-9b476e233e output=ds-a96586f72c; approval ap-670ce3ab80 covers_output=ds-d2507e7eed. Approval mismatch (ds-d2507e7eed != ds-a96586f72c); other conditions pass. HOLD; target_id=ds-a96586f72c; work=[approval].",
+      "child_bounds": {
+        "admitted_bytes": 864,
+        "clipped": false,
+        "proposed_bytes": 864
+      },
+      "parent": "No distinct late event is present in the supplied observation. Four records (scheduler_log is irrelevant):\npl-5a021f1e10: extract ex-52bcc740c2 state=pass output=ds-ae6401e345; transform tr-3827a4edf2 state=pass input=ds-ae6401e345 output=ds-998d8c1ea8; load ld-4bc3c624bc state=fail input=ds-998d8c1ea8 output=ds-6fe00a6e91; approval ap-ce9fd50716 covers_output=ds-6fe00a6e91.\npl-32b22a1cea: extract ex-f67f0031f9 pass output=ds-61f986dc63; transform tr-aeb949b8e1 pass input=ds-61f986dc63 output=ds-9b476e233e; load ld-4f2f87a16f pass input=ds-9b476e233e output=ds-a96586f72c; approval ap-670ce3ab80 covers_output=ds-d2507e7eed.\npl-84843781fb: extract ex-b86266f061 pass output=ds-09090ebaa9; transform tr-0ff8d3dedb pass input=ds-a1bd587705 output=ds-e23813e711; load ld-54b0f64861 pass input=ds-e23813e711 output=ds-4c1e9a7b7c; approval ap-ab30ea24ec covers_output=ds-4c1e9a7b7c.\npl-862ae40b9e: extract ex-7441d88f67 pass output=ds-558bc38a9a; transform tr-3f31742b33 pass input=ds-558bc38a9a output=ds-ccc51d90ee; load ld-44874b827d pass input=ds-ccc51d90ee output=ds-8ce0fbb131; approval ap-a418cc0dbd covers_output=ds-8ce0fbb131.",
+      "parent_bounds": {
+        "admitted_bytes": 1136,
+        "clipped": false,
+        "proposed_bytes": 1136
+      }
+    }
+  }
+}

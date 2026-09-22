@@ -630,6 +630,26 @@ def main() -> int:
             counts["all_development_model_requests"] += 24
         except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
             errors.append(f"Combined Luna medium saved-evidence audit failed: {error}")
+    schema_directory = ROOT / "experiments/dependency_memory/results/schema_checks_2026-09-22"
+    if (schema_directory / "completion.json").is_file():
+        try:
+            from experiments.dependency_memory.schema_checks.analyze import analyze as analyze_schema_checks
+            evidence = analyze_schema_checks(schema_directory)
+            saved = json.loads((schema_directory / "analysis.json").read_text(encoding="utf-8"))
+            if saved != evidence:
+                raise ValueError("Schema-check saved analysis differs from evidence")
+            reconciled = json.loads((schema_directory / "reconciled_summary.json").read_text(encoding="utf-8"))
+            if reconciled["analysis_sha256"] != sha256(schema_directory / "analysis.json"):
+                raise ValueError("Schema-check reconciliation analysis hash differs")
+            if reconciled["calibration_sha256"] != sha256(schema_directory / "local_calibration.json"):
+                raise ValueError("Schema-check calibration hash differs")
+            if reconciled["prespecified_primary_success"] != evidence["criteria"]["primary_success"]:
+                raise ValueError("Schema-check success verdict differs")
+            counts["schema_check_model_requests"] = evidence["model_calls"]
+            counts["schema_check_terminal_decisions"] = sum(
+                row["decisions"] for row in evidence["arm_totals"].values())
+        except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
+            errors.append(f"Schema-check study validation failed: {error}")
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"

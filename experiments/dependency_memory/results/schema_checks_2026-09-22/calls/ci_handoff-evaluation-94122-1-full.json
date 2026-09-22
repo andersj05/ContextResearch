@@ -1,0 +1,99 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "ci_handoff-evaluation-94122-1-full",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0064055",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 0,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"target_id\":\"bd-5278fa5f54\",\"work\":[\"ci\"]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target, and late event. Handoff only if approval.covers_build and check.covers_build both equal current_build and check.verdict is pass. Otherwise hold. Return target_id=current_build. Work is the exact sorted set of approval when its scope is stale, and ci when CI scope is stale or verdict is not pass. Apply the late event first. Memory may be a field/rows table or prose. Return one exact terminal decision. Do not call tools.",
+    "observation": {
+      "late_event": {
+        "path": "note",
+        "value": "Schedule title corrected; state unchanged."
+      },
+      "memory": "[{\"approval\":{\"approval_key\":\"ap-968808992b\",\"covers_build\":\"bd-5278fa5f54\"},\"check\":{\"covers_build\":\"bd-5278fa5f54\",\"run_key\":\"ci-ba2d4ba784\",\"verdict\":\"fail\"},\"current_build\":\"bd-5278fa5f54\",\"handoff_note\":\"Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. \",\"service_key\":\"sv-3a5c06b84b\"},{\"approval\":{\"approval_key\":\"ap-f338da6287\",\"covers_build\":\"bd-8b9c1c9ce5\"},\"check\":{\"covers_build\":\"bd-e10f8e4793\",\"run_key\":\"ci-6131a97368\",\"verdict\":\"pass\"},\"current_build\":\"bd-e10f8e4793\",\"handoff_note\":\"Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. \",\"service_key\":\"sv-3963506353\"},{\"approval\":{\"approval_key\":\"ap-10f1f72398\",\"covers_build\":\"bd-530d03fd96\"},\"check\":{\"covers_build\":\"bd-530d03fd96\",\"run_key\":\"ci-9d780c692d\",\"verdict\":\"pass\"},\"current_build\":\"bd-530d03fd96\",\"handoff_note\":\"Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. \",\"service_key\":\"sv-734678271f\"},{\"approval\":{\"approval_key\":\"ap-a4e035cb5f\",\"covers_build\":\"bd-f5687178b4\"},\"check\":{\"covers_build\":\"bd-bb60996a09\",\"run_key\":\"ci-05cf4c7e8a\",\"verdict\":\"pass\"},\"current_build\":\"bd-f5687178b4\",\"handoff_note\":\"Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. \",\"service_key\":\"sv-30ef5b1b05\"}]",
+      "target": "sv-3a5c06b84b"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "dispatch",
+            "close",
+            "retry",
+            "hold",
+            "handoff",
+            "publish"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "7fb860b6ce6e16f0a30a0d767080ddb77d52f0288a2f43ef1c32b623678029a6",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "target_id": "bd-5278fa5f54",
+    "work": [
+      "ci"
+    ]
+  },
+  "started_at": "2026-09-22T21:56:35.949331+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3575,
+    "outputTokens": 120,
+    "reasoningOutputTokens": 86,
+    "totalTokens": 3695
+  },
+  "usage_events": 1,
+  "wall_seconds": 5.051677700015716,
+  "wire_body_byte_bound": 21154
+}

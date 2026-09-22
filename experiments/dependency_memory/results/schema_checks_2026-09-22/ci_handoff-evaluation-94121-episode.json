@@ -1,0 +1,136 @@
+{
+  "case_id": "ci_handoff-evaluation-94121",
+  "decisions": [
+    {
+      "arm": "indexed",
+      "future_id": "ci_handoff-evaluation-94121-0",
+      "identity": "ci_handoff-evaluation-94121-0-indexed",
+      "memory_bytes": 842,
+      "recovery_bytes": 842,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "direct",
+      "future_id": "ci_handoff-evaluation-94121-0",
+      "identity": "ci_handoff-evaluation-94121-0-direct",
+      "memory_bytes": 258,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "automatic",
+      "future_id": "ci_handoff-evaluation-94121-0",
+      "identity": "ci_handoff-evaluation-94121-0-automatic",
+      "memory_bytes": 362,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "prompt",
+      "future_id": "ci_handoff-evaluation-94121-0",
+      "identity": "ci_handoff-evaluation-94121-0-prompt",
+      "memory_bytes": 484,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "full",
+      "future_id": "ci_handoff-evaluation-94121-0",
+      "identity": "ci_handoff-evaluation-94121-0-full",
+      "memory_bytes": 3373,
+      "recovery_bytes": 3373,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "direct",
+      "future_id": "ci_handoff-evaluation-94121-1",
+      "identity": "ci_handoff-evaluation-94121-1-direct",
+      "memory_bytes": 258,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "prompt",
+      "future_id": "ci_handoff-evaluation-94121-1",
+      "identity": "ci_handoff-evaluation-94121-1-prompt",
+      "memory_bytes": 484,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "indexed",
+      "future_id": "ci_handoff-evaluation-94121-1",
+      "identity": "ci_handoff-evaluation-94121-1-indexed",
+      "memory_bytes": 842,
+      "recovery_bytes": 842,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "automatic",
+      "future_id": "ci_handoff-evaluation-94121-1",
+      "identity": "ci_handoff-evaluation-94121-1-automatic",
+      "memory_bytes": 362,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "full",
+      "future_id": "ci_handoff-evaluation-94121-1",
+      "identity": "ci_handoff-evaluation-94121-1-full",
+      "memory_bytes": 3373,
+      "recovery_bytes": 3373,
+      "recovery_cpu_ns": 0
+    }
+  ],
+  "family": "ci_handoff",
+  "local": {
+    "automatic": {
+      "bytes_read": 8725,
+      "child_check": {
+        "cpu_ns": 0,
+        "identity_errors": 0,
+        "memory_bytes_read": 362,
+        "passed": true,
+        "relation_errors": 0,
+        "source_bytes_read": 473
+      },
+      "cpu_ns": 0,
+      "parent_check": {
+        "cpu_ns": 0,
+        "identity_errors": 0,
+        "memory_bytes_read": 572,
+        "passed": true,
+        "relation_errors": 0,
+        "source_bytes_read": 3373
+      }
+    },
+    "direct": {
+      "bytes_read": 3777,
+      "cpu_ns": 0
+    }
+  },
+  "memories": {
+    "automatic": {
+      "child": "{\"fields\":[\"approval.approval_key\",\"approval.covers_build\",\"check.covers_build\",\"check.run_key\",\"check.verdict\",\"current_build\",\"service_key\"],\"rows\":[[\"ap-68c32da867\",\"bd-c8706f51ce\",\"bd-9f3e501e3c\",\"ci-f2641d1fa3\",\"pass\",\"bd-9f3e501e3c\",\"sv-66645cf0a4\"],[\"ap-ae3be913fc\",\"bd-0ad8b50849\",\"bd-27375c967d\",\"ci-07e452b655\",\"pass\",\"bd-0ad8b50849\",\"sv-ee53ffe1fc\"]]}",
+      "parent": "{\"fields\":[\"approval.approval_key\",\"approval.covers_build\",\"check.covers_build\",\"check.run_key\",\"check.verdict\",\"current_build\",\"service_key\"],\"rows\":[[\"ap-2c7235898a\",\"bd-7cbf802c3b\",\"bd-7cbf802c3b\",\"ci-065f41d271\",\"fail\",\"bd-7cbf802c3b\",\"sv-0e1d1891ec\"],[\"ap-ae3be913fc\",\"bd-0ad8b50849\",\"bd-27375c967d\",\"ci-07e452b655\",\"pass\",\"bd-0ad8b50849\",\"sv-ee53ffe1fc\"],[\"ap-68c32da867\",\"bd-c8706f51ce\",\"bd-9f3e501e3c\",\"ci-f2641d1fa3\",\"pass\",\"bd-9f3e501e3c\",\"sv-66645cf0a4\"],[\"ap-b89e6eba69\",\"bd-a68bdacb82\",\"bd-a68bdacb82\",\"ci-7e7dee6a14\",\"pass\",\"bd-a68bdacb82\",\"sv-243512c8ec\"]]}"
+    },
+    "direct": {
+      "child": "{\"fields\":[\"service_key\",\"current_build\",\"approval.covers_build\",\"check.covers_build\",\"check.verdict\"],\"rows\":[[\"sv-66645cf0a4\",\"bd-9f3e501e3c\",\"bd-c8706f51ce\",\"bd-9f3e501e3c\",\"pass\"],[\"sv-ee53ffe1fc\",\"bd-0ad8b50849\",\"bd-0ad8b50849\",\"bd-27375c967d\",\"pass\"]]}",
+      "parent": "{\"fields\":[\"service_key\",\"current_build\",\"approval.covers_build\",\"check.covers_build\",\"check.verdict\"],\"rows\":[[\"sv-0e1d1891ec\",\"bd-7cbf802c3b\",\"bd-7cbf802c3b\",\"bd-7cbf802c3b\",\"fail\"],[\"sv-ee53ffe1fc\",\"bd-0ad8b50849\",\"bd-0ad8b50849\",\"bd-27375c967d\",\"pass\"],[\"sv-66645cf0a4\",\"bd-9f3e501e3c\",\"bd-c8706f51ce\",\"bd-9f3e501e3c\",\"pass\"],[\"sv-243512c8ec\",\"bd-a68bdacb82\",\"bd-a68bdacb82\",\"bd-a68bdacb82\",\"pass\"]]}"
+    },
+    "prompt": {
+      "child": "Late event: no separate payload supplied. Candidates only:\n- service_key sv-ee53ffe1fc: current_build/target_id bd-0ad8b50849; approval_key ap-ae3be913fc covers_build bd-0ad8b50849; check run_key ci-07e452b655 covers_build bd-27375c967d, verdict pass. Hold; work [ci].\n- service_key sv-66645cf0a4: current_build/target_id bd-9f3e501e3c; approval_key ap-68c32da867 covers_build bd-c8706f51ce; check run_key ci-f2641d1fa3 covers_build bd-9f3e501e3c, verdict pass. Hold; work [approval].",
+      "child_bounds": {
+        "admitted_bytes": 484,
+        "clipped": false,
+        "proposed_bytes": 484
+      },
+      "parent": "Observation facts (handoff_note is ephemeral; no separate late-event payload was supplied):\n- service_key sv-0e1d1891ec: current_build/target_id bd-7cbf802c3b; approval_key ap-2c7235898a covers_build bd-7cbf802c3b; check run_key ci-065f41d271 covers_build bd-7cbf802c3b, verdict fail. Hold; work [ci].\n- service_key sv-ee53ffe1fc: current_build/target_id bd-0ad8b50849; approval_key ap-ae3be913fc covers_build bd-0ad8b50849; check run_key ci-07e452b655 covers_build bd-27375c967d, verdict pass. Hold; work [ci].\n- service_key sv-66645cf0a4: current_build/target_id bd-9f3e501e3c; approval_key ap-68c32da867 covers_build bd-c8706f51ce; check run_key ci-f2641d1fa3 covers_build bd-9f3e501e3c, verdict pass. Hold; work [approval].\n- service_key sv-243512c8ec: current_build/target_id bd-a68bdacb82; approval_key ap-b89e6eba69 covers_build bd-a68bdacb82; check run_key ci-7e7dee6a14 covers_build bd-a68bdacb82, verdict pass. Handoff; work [].",
+      "parent_bounds": {
+        "admitted_bytes": 938,
+        "clipped": false,
+        "proposed_bytes": 938
+      }
+    }
+  }
+}

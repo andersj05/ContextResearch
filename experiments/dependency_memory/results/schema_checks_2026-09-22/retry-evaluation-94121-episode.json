@@ -1,0 +1,136 @@
+{
+  "case_id": "retry-evaluation-94121",
+  "decisions": [
+    {
+      "arm": "full",
+      "future_id": "retry-evaluation-94121-0",
+      "identity": "retry-evaluation-94121-0-full",
+      "memory_bytes": 3245,
+      "recovery_bytes": 3245,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "direct",
+      "future_id": "retry-evaluation-94121-0",
+      "identity": "retry-evaluation-94121-0-direct",
+      "memory_bytes": 204,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "automatic",
+      "future_id": "retry-evaluation-94121-0",
+      "identity": "retry-evaluation-94121-0-automatic",
+      "memory_bytes": 297,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "indexed",
+      "future_id": "retry-evaluation-94121-0",
+      "identity": "retry-evaluation-94121-0-indexed",
+      "memory_bytes": 808,
+      "recovery_bytes": 808,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "prompt",
+      "future_id": "retry-evaluation-94121-0",
+      "identity": "retry-evaluation-94121-0-prompt",
+      "memory_bytes": 454,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "prompt",
+      "future_id": "retry-evaluation-94121-1",
+      "identity": "retry-evaluation-94121-1-prompt",
+      "memory_bytes": 454,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "automatic",
+      "future_id": "retry-evaluation-94121-1",
+      "identity": "retry-evaluation-94121-1-automatic",
+      "memory_bytes": 297,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "full",
+      "future_id": "retry-evaluation-94121-1",
+      "identity": "retry-evaluation-94121-1-full",
+      "memory_bytes": 3245,
+      "recovery_bytes": 3245,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "direct",
+      "future_id": "retry-evaluation-94121-1",
+      "identity": "retry-evaluation-94121-1-direct",
+      "memory_bytes": 204,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "indexed",
+      "future_id": "retry-evaluation-94121-1",
+      "identity": "retry-evaluation-94121-1-indexed",
+      "memory_bytes": 809,
+      "recovery_bytes": 809,
+      "recovery_cpu_ns": 0
+    }
+  ],
+  "family": "retry",
+  "local": {
+    "automatic": {
+      "bytes_read": 8121,
+      "child_check": {
+        "cpu_ns": 0,
+        "identity_errors": 0,
+        "memory_bytes_read": 297,
+        "passed": true,
+        "relation_errors": 0,
+        "source_bytes_read": 378
+      },
+      "cpu_ns": 0,
+      "parent_check": {
+        "cpu_ns": 0,
+        "identity_errors": 0,
+        "memory_bytes_read": 478,
+        "passed": true,
+        "relation_errors": 0,
+        "source_bytes_read": 3245
+      }
+    },
+    "direct": {
+      "bytes_read": 3566,
+      "cpu_ns": 0
+    }
+  },
+  "memories": {
+    "automatic": {
+      "child": "{\"fields\":[\"attempt_key\",\"can_retry\",\"dispatch_state\",\"request_key\",\"reservation_key\",\"result_state\",\"retry_of\"],\"rows\":[[\"at-f7a4d9f14f\",true,\"sent\",\"rq-ff89e0914b\",\"rs-69304892ef\",\"failed\",\"at-84f7537253\"],[\"at-1017c99b6f\",false,\"sent\",\"rq-a1ba841797\",\"rs-0957901197\",\"failed\",\"at-254a2c74e4\"]]}",
+      "parent": "{\"fields\":[\"attempt_key\",\"can_retry\",\"dispatch_state\",\"request_key\",\"reservation_key\",\"result_state\",\"retry_of\"],\"rows\":[[\"at-cb3d5f701a\",false,\"not_sent\",\"rq-dc9b2837f8\",\"rs-9ab4181a5e\",\"pending\",\"at-f102584418\"],[\"at-1017c99b6f\",false,\"sent\",\"rq-a1ba841797\",\"rs-0957901197\",\"failed\",\"at-254a2c74e4\"],[\"at-f7a4d9f14f\",true,\"sent\",\"rq-ff89e0914b\",\"rs-69304892ef\",\"failed\",\"at-84f7537253\"],[\"at-b7169ada79\",false,\"sent\",\"rq-e3554870f7\",\"rs-e128546bcc\",\"passed\",\"at-27d0c685d8\"]]}"
+    },
+    "direct": {
+      "child": "{\"fields\":[\"request_key\",\"attempt_key\",\"dispatch_state\",\"result_state\",\"can_retry\"],\"rows\":[[\"rq-ff89e0914b\",\"at-f7a4d9f14f\",\"sent\",\"failed\",true],[\"rq-a1ba841797\",\"at-1017c99b6f\",\"sent\",\"failed\",false]]}",
+      "parent": "{\"fields\":[\"request_key\",\"attempt_key\",\"dispatch_state\",\"result_state\",\"can_retry\"],\"rows\":[[\"rq-dc9b2837f8\",\"at-cb3d5f701a\",\"not_sent\",\"pending\",false],[\"rq-a1ba841797\",\"at-1017c99b6f\",\"sent\",\"failed\",false],[\"rq-ff89e0914b\",\"at-f7a4d9f14f\",\"sent\",\"failed\",true],[\"rq-e3554870f7\",\"at-b7169ada79\",\"sent\",\"passed\",false]]}"
+    },
+    "prompt": {
+      "child": "Candidates only (no separate late-event record supplied):\n- request_key=rq-ff89e0914b; current attempt_key=at-f7a4d9f14f; reservation_key=rs-69304892ef; dispatch_state=sent; result_state=failed; can_retry=true; retry_of=at-84f7537253 (historical attempt).\n- request_key=rq-a1ba841797; current attempt_key=at-1017c99b6f; reservation_key=rs-0957901197; dispatch_state=sent; result_state=failed; can_retry=false; retry_of=at-254a2c74e4 (historical attempt).",
+      "child_bounds": {
+        "admitted_bytes": 454,
+        "clipped": false,
+        "proposed_bytes": 454
+      },
+      "parent": "Observed tool results (no separate late-event record supplied):\n- attempt_key=at-cb3d5f701a; request_key=rq-dc9b2837f8; reservation_key=rs-9ab4181a5e; dispatch_state=not_sent; result_state=pending; can_retry=false; retry_of=at-f102584418.\n- attempt_key=at-1017c99b6f; request_key=rq-a1ba841797; reservation_key=rs-0957901197; dispatch_state=sent; result_state=failed; can_retry=false; retry_of=at-254a2c74e4.\n- attempt_key=at-f7a4d9f14f; request_key=rq-ff89e0914b; reservation_key=rs-69304892ef; dispatch_state=sent; result_state=failed; can_retry=true; retry_of=at-84f7537253.\n- attempt_key=at-b7169ada79; request_key=rq-e3554870f7; reservation_key=rs-e128546bcc; dispatch_state=sent; result_state=passed; can_retry=false; retry_of=at-27d0c685d8.\nEach retry_of names a historical attempt, not the current attempt. Ignore ephemeral operator_note.",
+      "parent_bounds": {
+        "admitted_bytes": 846,
+        "clipped": false,
+        "proposed_bytes": 846
+      }
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry-evaluation-94122-prompt-parent",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.011313",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476690,
+        "usedPercent": 100,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "existing_credits",
+  "raw_answer": "{\"memory\":\"Records (request\u2192current attempt; reservation; dispatch/result; can_retry; retry_of): rq-90a5bb9394\u2192at-c2b5216752; rs-88425e11d1; not_sent/pending; false; at-f53fc9a4bf. rq-201442de7e\u2192at-7e31c45aeb; rs-e1c292fede; sent/failed; true; at-dd2343fc9d. rq-b7f9e07d4d\u2192at-30a14d3e6f; rs-c7920e54c8; sent/passed; false; at-b3d242f32e. rq-353a26983d\u2192at-4e555b99e7; rs-2d94c35e87; sent/failed; false; at-29589b8fc5. No late event provided.\"}",
+  "request": {
+    "instruction": "The complete public decision rule and output schema will be supplied again at execution. Use the whole memory allowance for instance-specific facts. Preserve complete opaque identifiers, state values, and who or what each reference covers. Do not shorten IDs or replace a scoped reference with a generic ready/done claim. Only the memory string survives this boundary. Return a JSON object with that memory string. Limit memory to 2600 UTF-8 bytes. Keep enough for any later target. For the selected request, use dispatch if dispatch_state is not_sent; otherwise use close if result_state is passed, retry if it is failed and can_retry is true, or hold. Return target_id=request_key. Work is [] for dispatch/close, [attempt:<attempt_key>] for retry, or [await:<attempt_key>] for hold. A retry_of link is historical and never changes the current attempt. Apply the late event first.",
+    "observation": {
+      "tool_results": [
+        {
+          "attempt_key": "at-c2b5216752",
+          "can_retry": false,
+          "dispatch_state": "not_sent",
+          "operator_note": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+          "request_key": "rq-90a5bb9394",
+          "reservation_key": "rs-88425e11d1",
+          "result_state": "pending",
+          "retry_of": "at-f53fc9a4bf"
+        },
+        {
+          "attempt_key": "at-7e31c45aeb",
+          "can_retry": true,
+          "dispatch_state": "sent",
+          "operator_note": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+          "request_key": "rq-201442de7e",
+          "reservation_key": "rs-e1c292fede",
+          "result_state": "failed",
+          "retry_of": "at-dd2343fc9d"
+        },
+        {
+          "attempt_key": "at-30a14d3e6f",
+          "can_retry": false,
+          "dispatch_state": "sent",
+          "operator_note": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+          "request_key": "rq-b7f9e07d4d",
+          "reservation_key": "rs-c7920e54c8",
+          "result_state": "passed",
+          "retry_of": "at-b3d242f32e"
+        },
+        {
+          "attempt_key": "at-4e555b99e7",
+          "can_retry": false,
+          "dispatch_state": "sent",
+          "operator_note": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+          "request_key": "rq-353a26983d",
+          "reservation_key": "rs-2d94c35e87",
+          "result_state": "failed",
+          "retry_of": "at-29589b8fc5"
+        }
+      ],
+      "tool_schema": {
+        "properties": {
+          "attempt_key": {
+            "format": "opaque-id",
+            "type": "string"
+          },
+          "can_retry": {
+            "type": "boolean"
+          },
+          "dispatch_state": {
+            "enum": [
+              "sent",
+              "not_sent"
+            ],
+            "type": "string"
+          },
+          "operator_note": {
+            "type": "string",
+            "x-ephemeral": true
+          },
+          "request_key": {
+            "format": "opaque-id",
+            "type": "string"
+          },
+          "reservation_key": {
+            "format": "opaque-id",
+            "type": "string"
+          },
+          "result_state": {
+            "enum": [
+              "failed",
+              "passed",
+              "pending"
+            ],
+            "type": "string"
+          },
+          "retry_of": {
+            "type": "string",
+            "x-reference": true
+          }
+        },
+        "type": "object"
+      }
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "parent",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "b67583e16a265d1320ceb1c8195d5f271c50a229583fb52b645766811fae3e3c",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Records (request\u2192current attempt; reservation; dispatch/result; can_retry; retry_of): rq-90a5bb9394\u2192at-c2b5216752; rs-88425e11d1; not_sent/pending; false; at-f53fc9a4bf. rq-201442de7e\u2192at-7e31c45aeb; rs-e1c292fede; sent/failed; true; at-dd2343fc9d. rq-b7f9e07d4d\u2192at-30a14d3e6f; rs-c7920e54c8; sent/passed; false; at-b3d242f32e. rq-353a26983d\u2192at-4e555b99e7; rs-2d94c35e87; sent/failed; false; at-29589b8fc5. No late event provided."
+  },
+  "started_at": "2026-09-22T21:52:36.485642+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3568,
+    "outputTokens": 514,
+    "reasoningOutputTokens": 304,
+    "totalTokens": 4082
+  },
+  "usage_events": 1,
+  "wall_seconds": 12.21790470002452,
+  "wire_body_byte_bound": 21197
+}

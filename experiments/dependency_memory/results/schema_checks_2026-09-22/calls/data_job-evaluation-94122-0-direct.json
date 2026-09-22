@@ -1,0 +1,97 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "data_job-evaluation-94122-0-direct",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0048205",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 0,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"publish\",\"target_id\":\"ds-ed87b62201\",\"work\":[]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target, and late event. Publish only if extract, transform, and load states are pass; transform.input_key equals extract.output_key; load.input_key equals transform.output_key; and publish_approval.covers_output equals load.output_key. Otherwise hold. Return target_id=load.output_key. Work is the exact sorted set drawn from extract, transform, load, link:transform, link:load, approval for each failed condition respectively. Apply the late event first. Memory may be a field/rows table or prose. Return one exact terminal decision. Do not call tools.",
+    "observation": {
+      "late_event": {
+        "path": "load.state",
+        "value": "pass"
+      },
+      "memory": "{\"fields\":[\"pipeline_key\",\"extract.output_key\",\"extract.state\",\"transform.input_key\",\"transform.output_key\",\"transform.state\",\"load.input_key\",\"load.output_key\",\"load.state\",\"publish_approval.covers_output\"],\"rows\":[[\"pl-3b2db43c9f\",\"ds-66499ff5c3\",\"pass\",\"ds-66499ff5c3\",\"ds-5b5a5e65f7\",\"pass\",\"ds-5b5a5e65f7\",\"ds-ed87b62201\",\"pass\",\"ds-ed87b62201\"],[\"pl-885fa2e291\",\"ds-0748b85ebd\",\"pass\",\"ds-0748b85ebd\",\"ds-3c6e809a5c\",\"pass\",\"ds-3c6e809a5c\",\"ds-8cf79da746\",\"fail\",\"ds-8cf79da746\"]]}",
+      "target": "pl-3b2db43c9f"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "dispatch",
+            "close",
+            "retry",
+            "hold",
+            "handoff",
+            "publish"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "193c6b6f3649dc7f590026823d50385ed9e82ba22cd83caeb530643e9eee5dbf",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "publish",
+    "target_id": "ds-ed87b62201",
+    "work": []
+  },
+  "started_at": "2026-09-22T22:00:00.155367+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3056,
+    "outputTokens": 97,
+    "reasoningOutputTokens": 67,
+    "totalTokens": 3153
+  },
+  "usage_events": 1,
+  "wall_seconds": 5.152139499958139,
+  "wire_body_byte_bound": 18119
+}

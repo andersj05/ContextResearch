@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "data_job-evaluation-94121-prompt-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.02081",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 0,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Late event: none present. Retain only:\\npl-84843781fb: extract ex-b86266f061 state=pass output=ds-09090ebaa9; transform tr-0ff8d3dedb state=pass input=ds-a1bd587705 output=ds-e23813e711; load ld-54b0f64861 state=pass input=ds-e23813e711 output=ds-4c1e9a7b7c; approval ap-ab30ea24ec covers_output=ds-4c1e9a7b7c. transform.input_key mismatches extract.output_key (ds-a1bd587705 != ds-09090ebaa9); other conditions pass. HOLD; target_id=ds-4c1e9a7b7c; work=[link:transform].\\npl-32b22a1cea: extract ex-f67f0031f9 state=pass output=ds-61f986dc63; transform tr-aeb949b8e1 state=pass input=ds-61f986dc63 output=ds-9b476e233e; load ld-4f2f87a16f state=pass input=ds-9b476e233e output=ds-a96586f72c; approval ap-670ce3ab80 covers_output=ds-d2507e7eed. Approval mismatch (ds-d2507e7eed != ds-a96586f72c); other conditions pass. HOLD; target_id=ds-a96586f72c; work=[approval].\"}",
+  "request": {
+    "instruction": "The complete public decision rule and output schema will be supplied again at execution. Use the whole memory allowance for instance-specific facts. Preserve complete opaque identifiers, state values, and who or what each reference covers. Do not shorten IDs or replace a scoped reference with a generic ready/done claim. Only the memory string survives this boundary. Return a JSON object with that memory string. Limit memory to 1300 UTF-8 bytes. Retain only the named candidates. Publish only if extract, transform, and load states are pass; transform.input_key equals extract.output_key; load.input_key equals transform.output_key; and publish_approval.covers_output equals load.output_key. Otherwise hold. Return target_id=load.output_key. Work is the exact sorted set drawn from extract, transform, load, link:transform, link:load, approval for each failed condition respectively. Apply the late event first.",
+    "observation": {
+      "candidates": [
+        "pl-84843781fb",
+        "pl-32b22a1cea"
+      ],
+      "previous_memory": "No distinct late event is present in the supplied observation. Four records (scheduler_log is irrelevant):\npl-5a021f1e10: extract ex-52bcc740c2 state=pass output=ds-ae6401e345; transform tr-3827a4edf2 state=pass input=ds-ae6401e345 output=ds-998d8c1ea8; load ld-4bc3c624bc state=fail input=ds-998d8c1ea8 output=ds-6fe00a6e91; approval ap-ce9fd50716 covers_output=ds-6fe00a6e91.\npl-32b22a1cea: extract ex-f67f0031f9 pass output=ds-61f986dc63; transform tr-aeb949b8e1 pass input=ds-61f986dc63 output=ds-9b476e233e; load ld-4f2f87a16f pass input=ds-9b476e233e output=ds-a96586f72c; approval ap-670ce3ab80 covers_output=ds-d2507e7eed.\npl-84843781fb: extract ex-b86266f061 pass output=ds-09090ebaa9; transform tr-0ff8d3dedb pass input=ds-a1bd587705 output=ds-e23813e711; load ld-54b0f64861 pass input=ds-e23813e711 output=ds-4c1e9a7b7c; approval ap-ab30ea24ec covers_output=ds-4c1e9a7b7c.\npl-862ae40b9e: extract ex-7441d88f67 pass output=ds-558bc38a9a; transform tr-3f31742b33 pass input=ds-558bc38a9a output=ds-ccc51d90ee; load ld-44874b827d pass input=ds-ccc51d90ee output=ds-8ce0fbb131; approval ap-a418cc0dbd covers_output=ds-8ce0fbb131."
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "48ed9310bc1f3d36a86010425dac6c12c06cd7feacb0f62e539c9f24d988f936",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Late event: none present. Retain only:\npl-84843781fb: extract ex-b86266f061 state=pass output=ds-09090ebaa9; transform tr-0ff8d3dedb state=pass input=ds-a1bd587705 output=ds-e23813e711; load ld-54b0f64861 state=pass input=ds-e23813e711 output=ds-4c1e9a7b7c; approval ap-ab30ea24ec covers_output=ds-4c1e9a7b7c. transform.input_key mismatches extract.output_key (ds-a1bd587705 != ds-09090ebaa9); other conditions pass. HOLD; target_id=ds-4c1e9a7b7c; work=[link:transform].\npl-32b22a1cea: extract ex-f67f0031f9 state=pass output=ds-61f986dc63; transform tr-aeb949b8e1 state=pass input=ds-61f986dc63 output=ds-9b476e233e; load ld-4f2f87a16f state=pass input=ds-9b476e233e output=ds-a96586f72c; approval ap-670ce3ab80 covers_output=ds-d2507e7eed. Approval mismatch (ds-d2507e7eed != ds-a96586f72c); other conditions pass. HOLD; target_id=ds-a96586f72c; work=[approval]."
+  },
+  "started_at": "2026-09-22T21:57:26.523497+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 3304,
+    "outputTokens": 1004,
+    "reasoningOutputTokens": 652,
+    "totalTokens": 4308
+  },
+  "usage_events": 1,
+  "wall_seconds": 20.84442159999162,
+  "wire_body_byte_bound": 18508
+}

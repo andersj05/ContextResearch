@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "ci_handoff-evaluation-94122-prompt-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.01349",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 0,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Candidates: sv-734678271f and sv-3a5c06b84b. No separate late-event data was supplied; apply none. sv-734678271f: current_build=bd-530d03fd96; approval_key=ap-10f1f72398 covers_build=bd-530d03fd96; check run_key=ci-9d780c692d covers_build=bd-530d03fd96 verdict=pass; handoff; target_id=bd-530d03fd96; work=[]. sv-3a5c06b84b: current_build=bd-5278fa5f54; approval_key=ap-968808992b covers_build=bd-5278fa5f54; check run_key=ci-ba2d4ba784 covers_build=bd-5278fa5f54 verdict=fail; hold; target_id=bd-5278fa5f54; work=[ci].\"}",
+  "request": {
+    "instruction": "The complete public decision rule and output schema will be supplied again at execution. Use the whole memory allowance for instance-specific facts. Preserve complete opaque identifiers, state values, and who or what each reference covers. Do not shorten IDs or replace a scoped reference with a generic ready/done claim. Only the memory string survives this boundary. Return a JSON object with that memory string. Limit memory to 1300 UTF-8 bytes. Retain only the named candidates. Handoff only if approval.covers_build and check.covers_build both equal current_build and check.verdict is pass. Otherwise hold. Return target_id=current_build. Work is the exact sorted set of approval when its scope is stale, and ci when CI scope is stale or verdict is not pass. Apply the late event first.",
+    "observation": {
+      "candidates": [
+        "sv-734678271f",
+        "sv-3a5c06b84b"
+      ],
+      "previous_memory": "Instance records (service: current_build; approval_key covers_build; check run_key covers_build verdict): sv-3a5c06b84b: bd-5278fa5f54; ap-968808992b covers bd-5278fa5f54; ci-ba2d4ba784 covers bd-5278fa5f54, fail. sv-3963506353: bd-e10f8e4793; ap-f338da6287 covers bd-8b9c1c9ce5; ci-6131a97368 covers bd-e10f8e4793, pass. sv-734678271f: bd-530d03fd96; ap-10f1f72398 covers bd-530d03fd96; ci-9d780c692d covers bd-530d03fd96, pass. sv-30ef5b1b05: bd-f5687178b4; ap-a4e035cb5f covers bd-f5687178b4; ci-05cf4c7e8a covers bd-bb60996a09, pass. No separate late-event data appears in the supplied observation."
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "55603eac8c3173018b664bbae963a3a199aefefa86db7c50151faaeaa3b3ed84",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Candidates: sv-734678271f and sv-3a5c06b84b. No separate late-event data was supplied; apply none. sv-734678271f: current_build=bd-530d03fd96; approval_key=ap-10f1f72398 covers_build=bd-530d03fd96; check run_key=ci-9d780c692d covers_build=bd-530d03fd96 verdict=pass; handoff; target_id=bd-530d03fd96; work=[]. sv-3a5c06b84b: current_build=bd-5278fa5f54; approval_key=ap-968808992b covers_build=bd-5278fa5f54; check run_key=ci-ba2d4ba784 covers_build=bd-5278fa5f54 verdict=fail; hold; target_id=bd-5278fa5f54; work=[ci]."
+  },
+  "started_at": "2026-09-22T21:55:38.345993+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 3061,
+    "outputTokens": 467,
+    "reasoningOutputTokens": 249,
+    "totalTokens": 3528
+  },
+  "usage_events": 1,
+  "wall_seconds": 11.409365600033198,
+  "wire_body_byte_bound": 17843
+}

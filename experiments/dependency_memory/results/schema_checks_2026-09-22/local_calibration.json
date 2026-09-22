@@ -1,0 +1,182 @@
+{
+  "version": "schema_checks_local_calibration_v1",
+  "script_sha256": "732fc28715de541774f09b520b8ee0699f62a6d9d72f2c05747a06175fb32b59",
+  "python": "3.14.2",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "method": "perf_counter_ns; seven 1000-repetition batches on development traces after the live run",
+  "rows": [
+    {
+      "family": "retry",
+      "seed": 41011,
+      "automatic": {
+        "median_ns_per_operation": 198774,
+        "max_batch_ns_per_operation": 214262,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      },
+      "direct": {
+        "median_ns_per_operation": 20911,
+        "max_batch_ns_per_operation": 22052,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      },
+      "indexed_two_reads": {
+        "median_ns_per_operation": 15621,
+        "max_batch_ns_per_operation": 19417,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      },
+      "full_two_reads": {
+        "median_ns_per_operation": 40948,
+        "max_batch_ns_per_operation": 45272,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      }
+    },
+    {
+      "family": "retry",
+      "seed": 41012,
+      "automatic": {
+        "median_ns_per_operation": 203428,
+        "max_batch_ns_per_operation": 217349,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      },
+      "direct": {
+        "median_ns_per_operation": 25420,
+        "max_batch_ns_per_operation": 51296,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      },
+      "indexed_two_reads": {
+        "median_ns_per_operation": 17785,
+        "max_batch_ns_per_operation": 31815,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      },
+      "full_two_reads": {
+        "median_ns_per_operation": 44636,
+        "max_batch_ns_per_operation": 47684,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      }
+    },
+    {
+      "family": "ci_handoff",
+      "seed": 41011,
+      "automatic": {
+        "median_ns_per_operation": 280630,
+        "max_batch_ns_per_operation": 286584,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      },
+      "direct": {
+        "median_ns_per_operation": 31038,
+        "max_batch_ns_per_operation": 33570,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      },
+      "indexed_two_reads": {
+        "median_ns_per_operation": 18447,
+        "max_batch_ns_per_operation": 24499,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      },
+      "full_two_reads": {
+        "median_ns_per_operation": 48721,
+        "max_batch_ns_per_operation": 55080,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      }
+    },
+    {
+      "family": "ci_handoff",
+      "seed": 41012,
+      "automatic": {
+        "median_ns_per_operation": 278194,
+        "max_batch_ns_per_operation": 288401,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      },
+      "direct": {
+        "median_ns_per_operation": 30221,
+        "max_batch_ns_per_operation": 66565,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      },
+      "indexed_two_reads": {
+        "median_ns_per_operation": 20183,
+        "max_batch_ns_per_operation": 27323,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      },
+      "full_two_reads": {
+        "median_ns_per_operation": 47479,
+        "max_batch_ns_per_operation": 62176,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      }
+    },
+    {
+      "family": "data_job",
+      "seed": 41011,
+      "automatic": {
+        "median_ns_per_operation": 545180,
+        "max_batch_ns_per_operation": 612149,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      },
+      "direct": {
+        "median_ns_per_operation": 52963,
+        "max_batch_ns_per_operation": 62587,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      },
+      "indexed_two_reads": {
+        "median_ns_per_operation": 24538,
+        "max_batch_ns_per_operation": 26350,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      },
+      "full_two_reads": {
+        "median_ns_per_operation": 76147,
+        "max_batch_ns_per_operation": 79338,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      }
+    },
+    {
+      "family": "data_job",
+      "seed": 41012,
+      "automatic": {
+        "median_ns_per_operation": 550562,
+        "max_batch_ns_per_operation": 602231,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      },
+      "direct": {
+        "median_ns_per_operation": 49291,
+        "max_batch_ns_per_operation": 53354,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      },
+      "indexed_two_reads": {
+        "median_ns_per_operation": 27340,
+        "max_batch_ns_per_operation": 34208,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      },
+      "full_two_reads": {
+        "median_ns_per_operation": 71383,
+        "max_batch_ns_per_operation": 80590,
+        "batches": 7,
+        "repeats_per_batch": 1000
+      }
+    }
+  ],
+  "estimated_six_case_cpu_ns": {
+    "automatic": 2069240,
+    "direct": 218842
+  },
+  "limitations": "Calibration is post-run on same-schema development traces; wall-clock CPU proxy, not per-call measured launch CPU or provider bill."
+}

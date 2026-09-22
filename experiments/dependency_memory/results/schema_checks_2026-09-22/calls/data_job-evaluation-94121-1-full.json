@@ -1,0 +1,99 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "data_job-evaluation-94121-1-full",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0075105",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 0,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"target_id\":\"ds-a96586f72c\",\"work\":[\"approval\"]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target, and late event. Publish only if extract, transform, and load states are pass; transform.input_key equals extract.output_key; load.input_key equals transform.output_key; and publish_approval.covers_output equals load.output_key. Otherwise hold. Return target_id=load.output_key. Work is the exact sorted set drawn from extract, transform, load, link:transform, link:load, approval for each failed condition respectively. Apply the late event first. Memory may be a field/rows table or prose. Return one exact terminal decision. Do not call tools.",
+    "observation": {
+      "late_event": {
+        "path": "load.state",
+        "value": "pass"
+      },
+      "memory": "[{\"extract\":{\"output_key\":\"ds-ae6401e345\",\"run_key\":\"ex-52bcc740c2\",\"state\":\"pass\"},\"load\":{\"input_key\":\"ds-998d8c1ea8\",\"output_key\":\"ds-6fe00a6e91\",\"run_key\":\"ld-4bc3c624bc\",\"state\":\"fail\"},\"pipeline_key\":\"pl-5a021f1e10\",\"publish_approval\":{\"approval_key\":\"ap-ce9fd50716\",\"covers_output\":\"ds-6fe00a6e91\"},\"scheduler_log\":\"Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. \",\"transform\":{\"input_key\":\"ds-ae6401e345\",\"output_key\":\"ds-998d8c1ea8\",\"run_key\":\"tr-3827a4edf2\",\"state\":\"pass\"}},{\"extract\":{\"output_key\":\"ds-61f986dc63\",\"run_key\":\"ex-f67f0031f9\",\"state\":\"pass\"},\"load\":{\"input_key\":\"ds-9b476e233e\",\"output_key\":\"ds-a96586f72c\",\"run_key\":\"ld-4f2f87a16f\",\"state\":\"pass\"},\"pipeline_key\":\"pl-32b22a1cea\",\"publish_approval\":{\"approval_key\":\"ap-670ce3ab80\",\"covers_output\":\"ds-d2507e7eed\"},\"scheduler_log\":\"Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. \",\"transform\":{\"input_key\":\"ds-61f986dc63\",\"output_key\":\"ds-9b476e233e\",\"run_key\":\"tr-aeb949b8e1\",\"state\":\"pass\"}},{\"extract\":{\"output_key\":\"ds-09090ebaa9\",\"run_key\":\"ex-b86266f061\",\"state\":\"pass\"},\"load\":{\"input_key\":\"ds-e23813e711\",\"output_key\":\"ds-4c1e9a7b7c\",\"run_key\":\"ld-54b0f64861\",\"state\":\"pass\"},\"pipeline_key\":\"pl-84843781fb\",\"publish_approval\":{\"approval_key\":\"ap-ab30ea24ec\",\"covers_output\":\"ds-4c1e9a7b7c\"},\"scheduler_log\":\"Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. \",\"transform\":{\"input_key\":\"ds-a1bd587705\",\"output_key\":\"ds-e23813e711\",\"run_key\":\"tr-0ff8d3dedb\",\"state\":\"pass\"}},{\"extract\":{\"output_key\":\"ds-558bc38a9a\",\"run_key\":\"ex-7441d88f67\",\"state\":\"pass\"},\"load\":{\"input_key\":\"ds-ccc51d90ee\",\"output_key\":\"ds-8ce0fbb131\",\"run_key\":\"ld-44874b827d\",\"state\":\"pass\"},\"pipeline_key\":\"pl-862ae40b9e\",\"publish_approval\":{\"approval_key\":\"ap-a418cc0dbd\",\"covers_output\":\"ds-8ce0fbb131\"},\"scheduler_log\":\"Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. \",\"transform\":{\"input_key\":\"ds-558bc38a9a\",\"output_key\":\"ds-ccc51d90ee\",\"run_key\":\"tr-3f31742b33\",\"state\":\"pass\"}}]",
+      "target": "pl-32b22a1cea"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "dispatch",
+            "close",
+            "retry",
+            "hold",
+            "handoff",
+            "publish"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "838c8179fa139a2993f2d7925805641e596ed5237cd50ad3ccaa560eab0dfc72",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "target_id": "ds-a96586f72c",
+    "work": [
+      "approval"
+    ]
+  },
+  "started_at": "2026-09-22T21:58:33.083036+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3887,
+    "outputTokens": 146,
+    "reasoningOutputTokens": 113,
+    "totalTokens": 4033
+  },
+  "usage_events": 1,
+  "wall_seconds": 6.259775199985597,
+  "wire_body_byte_bound": 22413
+}

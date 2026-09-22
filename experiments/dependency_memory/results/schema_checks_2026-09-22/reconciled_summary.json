@@ -1,0 +1,71 @@
+{
+  "version": "schema_checks_reconciled_v1",
+  "protocol_commit": "284405d",
+  "frozen_implementation_commit": "75ab94f",
+  "analysis_sha256": "e6126dc04688b165d8db979882d8d9a4fb9e240a7ff32387c8630f14938d26ea",
+  "calibration_sha256": "67db0bd02218ebb3b8e0ef62ae580c56d998bb75da51cb70835b60fbb56af399",
+  "arms": {
+    "prompt": {
+      "failures": 0,
+      "model_calls": 24,
+      "model_credits": "0.2537065",
+      "local_bytes_read": 0,
+      "calibrated_cpu_ns_upper_batch": 0,
+      "byte_credits": "0E-8",
+      "cpu_credits": "0.0000",
+      "sensitivity_total_credits": "0.25370650"
+    },
+    "automatic": {
+      "failures": 0,
+      "model_calls": 12,
+      "model_credits": "0.0725445",
+      "local_bytes_read": 58046,
+      "calibrated_cpu_ns_upper_batch": 2235798,
+      "byte_credits": "0.00058046",
+      "cpu_credits": "2.235798E-7",
+      "sensitivity_total_credits": "0.0731251835798"
+    },
+    "direct": {
+      "failures": 0,
+      "model_calls": 12,
+      "model_credits": "0.0667650",
+      "local_bytes_read": 24514,
+      "calibrated_cpu_ns_upper_batch": 360896,
+      "byte_credits": "0.00024514",
+      "cpu_credits": "3.60896E-8",
+      "sensitivity_total_credits": "0.0670101760896"
+    },
+    "indexed": {
+      "failures": 0,
+      "model_calls": 12,
+      "model_credits": "0.0628880",
+      "local_bytes_read": 10760,
+      "calibrated_cpu_ns_upper_batch": 186692,
+      "byte_credits": "0.00010760",
+      "cpu_credits": "1.86692E-8",
+      "sensitivity_total_credits": "0.0629956186692"
+    },
+    "full": {
+      "failures": 0,
+      "model_calls": 12,
+      "model_credits": "0.0951865",
+      "local_bytes_read": 43100,
+      "calibrated_cpu_ns_upper_batch": 380900,
+      "byte_credits": "0.00043100",
+      "cpu_credits": "3.809E-8",
+      "sensitivity_total_credits": "0.09561753809"
+    }
+  },
+  "matched_allowance_credits": "0.25370650",
+  "eligible_at_matched_allowance": [
+    "prompt",
+    "automatic",
+    "direct",
+    "indexed",
+    "full"
+  ],
+  "prespecified_primary_success": false,
+  "parity_with_direct": true,
+  "cpu_price_break_even_credits_per_second": "80.76827155226008789702826463",
+  "limitation": "The live Windows process_time_ns timer quantized short local operations to zero; CPU is repriced from a post-run high-resolution development-trace calibration. This is a sensitivity estimate, not a per-run CPU measurement or provider debit."
+}

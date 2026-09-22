@@ -1,0 +1,97 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry-evaluation-94121-0-prompt",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0082125",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476689,
+        "usedPercent": 100,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "existing_credits",
+  "raw_answer": "{\"action\":\"close\",\"target_id\":\"rq-ff89e0914b\",\"work\":[]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target, and late event. For the selected request, use dispatch if dispatch_state is not_sent; otherwise use close if result_state is passed, retry if it is failed and can_retry is true, or hold. Return target_id=request_key. Work is [] for dispatch/close, [attempt:<attempt_key>] for retry, or [await:<attempt_key>] for hold. A retry_of link is historical and never changes the current attempt. Apply the late event first. Memory may be a field/rows table or prose. Return one exact terminal decision. Do not call tools.",
+    "observation": {
+      "late_event": {
+        "path": "result_state",
+        "value": "passed"
+      },
+      "memory": "Candidates only (no separate late-event record supplied):\n- request_key=rq-ff89e0914b; current attempt_key=at-f7a4d9f14f; reservation_key=rs-69304892ef; dispatch_state=sent; result_state=failed; can_retry=true; retry_of=at-84f7537253 (historical attempt).\n- request_key=rq-a1ba841797; current attempt_key=at-1017c99b6f; reservation_key=rs-0957901197; dispatch_state=sent; result_state=failed; can_retry=false; retry_of=at-254a2c74e4 (historical attempt).",
+      "target": "rq-ff89e0914b"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "dispatch",
+            "close",
+            "retry",
+            "hold",
+            "handoff",
+            "publish"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "6652aed841a4d5015301d15098efe7db1faf1cd33c362aa3e19db62096034591",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "close",
+    "target_id": "rq-ff89e0914b",
+    "work": []
+  },
+  "started_at": "2026-09-22T21:51:55.570863+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 3005,
+    "outputTokens": 56,
+    "reasoningOutputTokens": 24,
+    "totalTokens": 3061
+  },
+  "usage_events": 1,
+  "wall_seconds": 3.5799520000000484,
+  "wire_body_byte_bound": 17869
+}

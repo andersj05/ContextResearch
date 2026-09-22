@@ -1,0 +1,97 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "data_job-evaluation-94122-0-indexed",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.005228",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 0,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"publish\",\"target_id\":\"ds-ed87b62201\",\"work\":[]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target, and late event. Publish only if extract, transform, and load states are pass; transform.input_key equals extract.output_key; load.input_key equals transform.output_key; and publish_approval.covers_output equals load.output_key. Otherwise hold. Return target_id=load.output_key. Work is the exact sorted set drawn from extract, transform, load, link:transform, link:load, approval for each failed condition respectively. Apply the late event first. Memory may be a field/rows table or prose. Return one exact terminal decision. Do not call tools.",
+    "observation": {
+      "late_event": {
+        "path": "load.state",
+        "value": "pass"
+      },
+      "memory": "{\"extract\":{\"output_key\":\"ds-66499ff5c3\",\"run_key\":\"ex-b158cdc193\",\"state\":\"pass\"},\"load\":{\"input_key\":\"ds-5b5a5e65f7\",\"output_key\":\"ds-ed87b62201\",\"run_key\":\"ld-1c0d747835\",\"state\":\"pass\"},\"pipeline_key\":\"pl-3b2db43c9f\",\"publish_approval\":{\"approval_key\":\"ap-7d1bf770f1\",\"covers_output\":\"ds-ed87b62201\"},\"scheduler_log\":\"Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. \",\"transform\":{\"input_key\":\"ds-66499ff5c3\",\"output_key\":\"ds-5b5a5e65f7\",\"run_key\":\"tr-f79d11d633\",\"state\":\"pass\"}}",
+      "target": "pl-3b2db43c9f"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "dispatch",
+            "close",
+            "retry",
+            "hold",
+            "handoff",
+            "publish"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "df6d2019273e3982712163722973726280fb8a89b6abbc3c242d7bbb6dd3229f",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "publish",
+    "target_id": "ds-ed87b62201",
+    "work": []
+  },
+  "started_at": "2026-09-22T21:59:34.962427+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3119,
+    "outputTokens": 117,
+    "reasoningOutputTokens": 87,
+    "totalTokens": 3236
+  },
+  "usage_events": 1,
+  "wall_seconds": 4.801598799997009,
+  "wire_body_byte_bound": 18682
+}

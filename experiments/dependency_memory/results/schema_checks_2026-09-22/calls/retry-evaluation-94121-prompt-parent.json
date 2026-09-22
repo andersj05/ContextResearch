@@ -1,0 +1,155 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry-evaluation-94121-prompt-parent",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0136255",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476689,
+        "usedPercent": 99,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Observed tool results (no separate late-event record supplied):\\n- attempt_key=at-cb3d5f701a; request_key=rq-dc9b2837f8; reservation_key=rs-9ab4181a5e; dispatch_state=not_sent; result_state=pending; can_retry=false; retry_of=at-f102584418.\\n- attempt_key=at-1017c99b6f; request_key=rq-a1ba841797; reservation_key=rs-0957901197; dispatch_state=sent; result_state=failed; can_retry=false; retry_of=at-254a2c74e4.\\n- attempt_key=at-f7a4d9f14f; request_key=rq-ff89e0914b; reservation_key=rs-69304892ef; dispatch_state=sent; result_state=failed; can_retry=true; retry_of=at-84f7537253.\\n- attempt_key=at-b7169ada79; request_key=rq-e3554870f7; reservation_key=rs-e128546bcc; dispatch_state=sent; result_state=passed; can_retry=false; retry_of=at-27d0c685d8.\\nEach retry_of names a historical attempt, not the current attempt. Ignore ephemeral operator_note.\"}",
+  "request": {
+    "instruction": "The complete public decision rule and output schema will be supplied again at execution. Use the whole memory allowance for instance-specific facts. Preserve complete opaque identifiers, state values, and who or what each reference covers. Do not shorten IDs or replace a scoped reference with a generic ready/done claim. Only the memory string survives this boundary. Return a JSON object with that memory string. Limit memory to 2600 UTF-8 bytes. Keep enough for any later target. For the selected request, use dispatch if dispatch_state is not_sent; otherwise use close if result_state is passed, retry if it is failed and can_retry is true, or hold. Return target_id=request_key. Work is [] for dispatch/close, [attempt:<attempt_key>] for retry, or [await:<attempt_key>] for hold. A retry_of link is historical and never changes the current attempt. Apply the late event first.",
+    "observation": {
+      "tool_results": [
+        {
+          "attempt_key": "at-cb3d5f701a",
+          "can_retry": false,
+          "dispatch_state": "not_sent",
+          "operator_note": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+          "request_key": "rq-dc9b2837f8",
+          "reservation_key": "rs-9ab4181a5e",
+          "result_state": "pending",
+          "retry_of": "at-f102584418"
+        },
+        {
+          "attempt_key": "at-1017c99b6f",
+          "can_retry": false,
+          "dispatch_state": "sent",
+          "operator_note": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+          "request_key": "rq-a1ba841797",
+          "reservation_key": "rs-0957901197",
+          "result_state": "failed",
+          "retry_of": "at-254a2c74e4"
+        },
+        {
+          "attempt_key": "at-f7a4d9f14f",
+          "can_retry": true,
+          "dispatch_state": "sent",
+          "operator_note": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+          "request_key": "rq-ff89e0914b",
+          "reservation_key": "rs-69304892ef",
+          "result_state": "failed",
+          "retry_of": "at-84f7537253"
+        },
+        {
+          "attempt_key": "at-b7169ada79",
+          "can_retry": false,
+          "dispatch_state": "sent",
+          "operator_note": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+          "request_key": "rq-e3554870f7",
+          "reservation_key": "rs-e128546bcc",
+          "result_state": "passed",
+          "retry_of": "at-27d0c685d8"
+        }
+      ],
+      "tool_schema": {
+        "properties": {
+          "attempt_key": {
+            "format": "opaque-id",
+            "type": "string"
+          },
+          "can_retry": {
+            "type": "boolean"
+          },
+          "dispatch_state": {
+            "enum": [
+              "sent",
+              "not_sent"
+            ],
+            "type": "string"
+          },
+          "operator_note": {
+            "type": "string",
+            "x-ephemeral": true
+          },
+          "request_key": {
+            "format": "opaque-id",
+            "type": "string"
+          },
+          "reservation_key": {
+            "format": "opaque-id",
+            "type": "string"
+          },
+          "result_state": {
+            "enum": [
+              "failed",
+              "passed",
+              "pending"
+            ],
+            "type": "string"
+          },
+          "retry_of": {
+            "type": "string",
+            "x-reference": true
+          }
+        },
+        "type": "object"
+      }
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "parent",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "cce876651f61bb72d12dd98892d417acd5c19f76b49b9d88095ce147db4baa69",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Observed tool results (no separate late-event record supplied):\n- attempt_key=at-cb3d5f701a; request_key=rq-dc9b2837f8; reservation_key=rs-9ab4181a5e; dispatch_state=not_sent; result_state=pending; can_retry=false; retry_of=at-f102584418.\n- attempt_key=at-1017c99b6f; request_key=rq-a1ba841797; reservation_key=rs-0957901197; dispatch_state=sent; result_state=failed; can_retry=false; retry_of=at-254a2c74e4.\n- attempt_key=at-f7a4d9f14f; request_key=rq-ff89e0914b; reservation_key=rs-69304892ef; dispatch_state=sent; result_state=failed; can_retry=true; retry_of=at-84f7537253.\n- attempt_key=at-b7169ada79; request_key=rq-e3554870f7; reservation_key=rs-e128546bcc; dispatch_state=sent; result_state=passed; can_retry=false; retry_of=at-27d0c685d8.\nEach retry_of names a historical attempt, not the current attempt. Ignore ephemeral operator_note."
+  },
+  "started_at": "2026-09-22T21:51:03.750098+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3558,
+    "outputTokens": 701,
+    "reasoningOutputTokens": 405,
+    "totalTokens": 4259
+  },
+  "usage_events": 1,
+  "wall_seconds": 16.625798899971414,
+  "wire_body_byte_bound": 21197
+}

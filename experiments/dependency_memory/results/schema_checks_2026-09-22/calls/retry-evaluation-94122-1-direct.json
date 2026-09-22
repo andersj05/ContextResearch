@@ -1,0 +1,97 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry-evaluation-94122-1-direct",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0040405",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476689,
+        "usedPercent": 100,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "existing_credits",
+  "raw_answer": "{\"action\":\"dispatch\",\"target_id\":\"rq-90a5bb9394\",\"work\":[]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target, and late event. For the selected request, use dispatch if dispatch_state is not_sent; otherwise use close if result_state is passed, retry if it is failed and can_retry is true, or hold. Return target_id=request_key. Work is [] for dispatch/close, [attempt:<attempt_key>] for retry, or [await:<attempt_key>] for hold. A retry_of link is historical and never changes the current attempt. Apply the late event first. Memory may be a field/rows table or prose. Return one exact terminal decision. Do not call tools.",
+    "observation": {
+      "late_event": {
+        "path": "note",
+        "value": "Schedule title corrected; state unchanged."
+      },
+      "memory": "{\"fields\":[\"request_key\",\"attempt_key\",\"dispatch_state\",\"result_state\",\"can_retry\"],\"rows\":[[\"rq-b7f9e07d4d\",\"at-30a14d3e6f\",\"sent\",\"passed\",false],[\"rq-90a5bb9394\",\"at-c2b5216752\",\"not_sent\",\"pending\",false]]}",
+      "target": "rq-90a5bb9394"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "dispatch",
+            "close",
+            "retry",
+            "hold",
+            "handoff",
+            "publish"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "ef01cf7a8a591bfbbcb4ee62cd8c99fd503fa611e23b14a9885717dbaabbd18b",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "dispatch",
+    "target_id": "rq-90a5bb9394",
+    "work": []
+  },
+  "started_at": "2026-09-22T21:53:43.873488+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 2944,
+    "outputTokens": 57,
+    "reasoningOutputTokens": 25,
+    "totalTokens": 3001
+  },
+  "usage_events": 1,
+  "wall_seconds": 3.6123281000182033,
+  "wire_body_byte_bound": 17739
+}

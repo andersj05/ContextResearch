@@ -1,0 +1,99 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "ci_handoff-evaluation-94122-1-indexed",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.005033",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 0,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"target_id\":\"bd-5278fa5f54\",\"work\":[\"ci\"]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target, and late event. Handoff only if approval.covers_build and check.covers_build both equal current_build and check.verdict is pass. Otherwise hold. Return target_id=current_build. Work is the exact sorted set of approval when its scope is stale, and ci when CI scope is stale or verdict is not pass. Apply the late event first. Memory may be a field/rows table or prose. Return one exact terminal decision. Do not call tools.",
+    "observation": {
+      "late_event": {
+        "path": "note",
+        "value": "Schedule title corrected; state unchanged."
+      },
+      "memory": "{\"approval\":{\"approval_key\":\"ap-968808992b\",\"covers_build\":\"bd-5278fa5f54\"},\"check\":{\"covers_build\":\"bd-5278fa5f54\",\"run_key\":\"ci-ba2d4ba784\",\"verdict\":\"fail\"},\"current_build\":\"bd-5278fa5f54\",\"handoff_note\":\"Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. \",\"service_key\":\"sv-3a5c06b84b\"}",
+      "target": "sv-3a5c06b84b"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "dispatch",
+            "close",
+            "retry",
+            "hold",
+            "handoff",
+            "publish"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "1db7650aa7133ad31499d83a079a90fbc315554161652e9bfba3631e079e9fc5",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "target_id": "bd-5278fa5f54",
+    "work": [
+      "ci"
+    ]
+  },
+  "started_at": "2026-09-22T21:56:21.681297+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3026,
+    "outputTokens": 120,
+    "reasoningOutputTokens": 86,
+    "totalTokens": 3146
+  },
+  "usage_events": 1,
+  "wall_seconds": 7.91302810003981,
+  "wire_body_byte_bound": 18299
+}

@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry-evaluation-94122-prompt-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0082755",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476689,
+        "usedPercent": 100,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "existing_credits",
+  "raw_answer": "{\"memory\":\"Candidates only: rq-b7f9e07d4d\u2192current attempt at-30a14d3e6f; reservation rs-c7920e54c8; dispatch_state=sent; result_state=passed; can_retry=false; retry_of=at-b3d242f32e. rq-90a5bb9394\u2192current attempt at-c2b5216752; reservation rs-88425e11d1; dispatch_state=not_sent; result_state=pending; can_retry=false; retry_of=at-f53fc9a4bf. No late event provided.\"}",
+  "request": {
+    "instruction": "The complete public decision rule and output schema will be supplied again at execution. Use the whole memory allowance for instance-specific facts. Preserve complete opaque identifiers, state values, and who or what each reference covers. Do not shorten IDs or replace a scoped reference with a generic ready/done claim. Only the memory string survives this boundary. Return a JSON object with that memory string. Limit memory to 1300 UTF-8 bytes. Retain only the named candidates. For the selected request, use dispatch if dispatch_state is not_sent; otherwise use close if result_state is passed, retry if it is failed and can_retry is true, or hold. Return target_id=request_key. Work is [] for dispatch/close, [attempt:<attempt_key>] for retry, or [await:<attempt_key>] for hold. A retry_of link is historical and never changes the current attempt. Apply the late event first.",
+    "observation": {
+      "candidates": [
+        "rq-b7f9e07d4d",
+        "rq-90a5bb9394"
+      ],
+      "previous_memory": "Records (request\u2192current attempt; reservation; dispatch/result; can_retry; retry_of): rq-90a5bb9394\u2192at-c2b5216752; rs-88425e11d1; not_sent/pending; false; at-f53fc9a4bf. rq-201442de7e\u2192at-7e31c45aeb; rs-e1c292fede; sent/failed; true; at-dd2343fc9d. rq-b7f9e07d4d\u2192at-30a14d3e6f; rs-c7920e54c8; sent/passed; false; at-b3d242f32e. rq-353a26983d\u2192at-4e555b99e7; rs-2d94c35e87; sent/failed; false; at-29589b8fc5. No late event provided."
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "40095da31ad7255dc98ff4934b37a9ebf97ae6410d97e117872823f85291bdde",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Candidates only: rq-b7f9e07d4d\u2192current attempt at-30a14d3e6f; reservation rs-c7920e54c8; dispatch_state=sent; result_state=passed; can_retry=false; retry_of=at-b3d242f32e. rq-90a5bb9394\u2192current attempt at-c2b5216752; reservation rs-88425e11d1; dispatch_state=not_sent; result_state=pending; can_retry=false; retry_of=at-f53fc9a4bf. No late event provided."
+  },
+  "started_at": "2026-09-22T21:52:49.265158+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3043,
+    "outputTokens": 376,
+    "reasoningOutputTokens": 236,
+    "totalTokens": 3419
+  },
+  "usage_events": 1,
+  "wall_seconds": 9.737172499997541,
+  "wire_body_byte_bound": 17790
+}

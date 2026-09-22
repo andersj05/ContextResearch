@@ -1,0 +1,179 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "ci_handoff-evaluation-94122-prompt-parent",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.02107",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 0,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Instance records (service: current_build; approval_key covers_build; check run_key covers_build verdict): sv-3a5c06b84b: bd-5278fa5f54; ap-968808992b covers bd-5278fa5f54; ci-ba2d4ba784 covers bd-5278fa5f54, fail. sv-3963506353: bd-e10f8e4793; ap-f338da6287 covers bd-8b9c1c9ce5; ci-6131a97368 covers bd-e10f8e4793, pass. sv-734678271f: bd-530d03fd96; ap-10f1f72398 covers bd-530d03fd96; ci-9d780c692d covers bd-530d03fd96, pass. sv-30ef5b1b05: bd-f5687178b4; ap-a4e035cb5f covers bd-f5687178b4; ci-05cf4c7e8a covers bd-bb60996a09, pass. No separate late-event data appears in the supplied observation.\"}",
+  "request": {
+    "instruction": "The complete public decision rule and output schema will be supplied again at execution. Use the whole memory allowance for instance-specific facts. Preserve complete opaque identifiers, state values, and who or what each reference covers. Do not shorten IDs or replace a scoped reference with a generic ready/done claim. Only the memory string survives this boundary. Return a JSON object with that memory string. Limit memory to 2600 UTF-8 bytes. Keep enough for any later target. Handoff only if approval.covers_build and check.covers_build both equal current_build and check.verdict is pass. Otherwise hold. Return target_id=current_build. Work is the exact sorted set of approval when its scope is stale, and ci when CI scope is stale or verdict is not pass. Apply the late event first.",
+    "observation": {
+      "tool_results": [
+        {
+          "approval": {
+            "approval_key": "ap-968808992b",
+            "covers_build": "bd-5278fa5f54"
+          },
+          "check": {
+            "covers_build": "bd-5278fa5f54",
+            "run_key": "ci-ba2d4ba784",
+            "verdict": "fail"
+          },
+          "current_build": "bd-5278fa5f54",
+          "handoff_note": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+          "service_key": "sv-3a5c06b84b"
+        },
+        {
+          "approval": {
+            "approval_key": "ap-f338da6287",
+            "covers_build": "bd-8b9c1c9ce5"
+          },
+          "check": {
+            "covers_build": "bd-e10f8e4793",
+            "run_key": "ci-6131a97368",
+            "verdict": "pass"
+          },
+          "current_build": "bd-e10f8e4793",
+          "handoff_note": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+          "service_key": "sv-3963506353"
+        },
+        {
+          "approval": {
+            "approval_key": "ap-10f1f72398",
+            "covers_build": "bd-530d03fd96"
+          },
+          "check": {
+            "covers_build": "bd-530d03fd96",
+            "run_key": "ci-9d780c692d",
+            "verdict": "pass"
+          },
+          "current_build": "bd-530d03fd96",
+          "handoff_note": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+          "service_key": "sv-734678271f"
+        },
+        {
+          "approval": {
+            "approval_key": "ap-a4e035cb5f",
+            "covers_build": "bd-f5687178b4"
+          },
+          "check": {
+            "covers_build": "bd-bb60996a09",
+            "run_key": "ci-05cf4c7e8a",
+            "verdict": "pass"
+          },
+          "current_build": "bd-f5687178b4",
+          "handoff_note": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+          "service_key": "sv-30ef5b1b05"
+        }
+      ],
+      "tool_schema": {
+        "properties": {
+          "approval": {
+            "properties": {
+              "approval_key": {
+                "format": "opaque-id",
+                "type": "string"
+              },
+              "covers_build": {
+                "type": "string",
+                "x-reference": true
+              }
+            },
+            "type": "object"
+          },
+          "check": {
+            "properties": {
+              "covers_build": {
+                "type": "string",
+                "x-reference": true
+              },
+              "run_key": {
+                "format": "opaque-id",
+                "type": "string"
+              },
+              "verdict": {
+                "enum": [
+                  "pass",
+                  "fail",
+                  "pending"
+                ],
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "current_build": {
+            "format": "opaque-id",
+            "type": "string"
+          },
+          "handoff_note": {
+            "type": "string",
+            "x-ephemeral": true
+          },
+          "service_key": {
+            "format": "opaque-id",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "parent",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "c22f032369515a92e698219fc34553e2b2757d8e192fa77221adb7c5965cd757",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Instance records (service: current_build; approval_key covers_build; check run_key covers_build verdict): sv-3a5c06b84b: bd-5278fa5f54; ap-968808992b covers bd-5278fa5f54; ci-ba2d4ba784 covers bd-5278fa5f54, fail. sv-3963506353: bd-e10f8e4793; ap-f338da6287 covers bd-8b9c1c9ce5; ci-6131a97368 covers bd-e10f8e4793, pass. sv-734678271f: bd-530d03fd96; ap-10f1f72398 covers bd-530d03fd96; ci-9d780c692d covers bd-530d03fd96, pass. sv-30ef5b1b05: bd-f5687178b4; ap-a4e035cb5f covers bd-f5687178b4; ci-05cf4c7e8a covers bd-bb60996a09, pass. No separate late-event data appears in the supplied observation."
+  },
+  "started_at": "2026-09-22T21:55:16.418206+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 3638,
+    "outputTokens": 958,
+    "reasoningOutputTokens": 695,
+    "totalTokens": 4596
+  },
+  "usage_events": 1,
+  "wall_seconds": 21.340123299974948,
+  "wire_body_byte_bound": 21361
+}

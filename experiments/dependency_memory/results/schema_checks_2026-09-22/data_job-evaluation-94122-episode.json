@@ -1,0 +1,136 @@
+{
+  "case_id": "data_job-evaluation-94122",
+  "decisions": [
+    {
+      "arm": "indexed",
+      "future_id": "data_job-evaluation-94122-0",
+      "identity": "data_job-evaluation-94122-0-indexed",
+      "memory_bytes": 1038,
+      "recovery_bytes": 1038,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "full",
+      "future_id": "data_job-evaluation-94122-0",
+      "identity": "data_job-evaluation-94122-0-full",
+      "memory_bytes": 4157,
+      "recovery_bytes": 4157,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "automatic",
+      "future_id": "data_job-evaluation-94122-0",
+      "identity": "data_job-evaluation-94122-0-automatic",
+      "memory_bytes": 700,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "prompt",
+      "future_id": "data_job-evaluation-94122-0",
+      "identity": "data_job-evaluation-94122-0-prompt",
+      "memory_bytes": 570,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "direct",
+      "future_id": "data_job-evaluation-94122-0",
+      "identity": "data_job-evaluation-94122-0-direct",
+      "memory_bytes": 487,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "automatic",
+      "future_id": "data_job-evaluation-94122-1",
+      "identity": "data_job-evaluation-94122-1-automatic",
+      "memory_bytes": 700,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "direct",
+      "future_id": "data_job-evaluation-94122-1",
+      "identity": "data_job-evaluation-94122-1-direct",
+      "memory_bytes": 487,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "prompt",
+      "future_id": "data_job-evaluation-94122-1",
+      "identity": "data_job-evaluation-94122-1-prompt",
+      "memory_bytes": 570,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "full",
+      "future_id": "data_job-evaluation-94122-1",
+      "identity": "data_job-evaluation-94122-1-full",
+      "memory_bytes": 4157,
+      "recovery_bytes": 4157,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "indexed",
+      "future_id": "data_job-evaluation-94122-1",
+      "identity": "data_job-evaluation-94122-1-indexed",
+      "memory_bytes": 1038,
+      "recovery_bytes": 1038,
+      "recovery_cpu_ns": 0
+    }
+  ],
+  "family": "data_job",
+  "local": {
+    "automatic": {
+      "bytes_read": 12171,
+      "child_check": {
+        "cpu_ns": 0,
+        "identity_errors": 0,
+        "memory_bytes_read": 700,
+        "passed": true,
+        "relation_errors": 0,
+        "source_bytes_read": 961
+      },
+      "cpu_ns": 0,
+      "parent_check": {
+        "cpu_ns": 0,
+        "identity_errors": 0,
+        "memory_bytes_read": 1098,
+        "passed": true,
+        "relation_errors": 0,
+        "source_bytes_read": 4157
+      }
+    },
+    "direct": {
+      "bytes_read": 4914,
+      "cpu_ns": 0
+    }
+  },
+  "memories": {
+    "automatic": {
+      "child": "{\"fields\":[\"extract.output_key\",\"extract.run_key\",\"extract.state\",\"load.input_key\",\"load.output_key\",\"load.run_key\",\"load.state\",\"pipeline_key\",\"publish_approval.approval_key\",\"publish_approval.covers_output\",\"transform.input_key\",\"transform.output_key\",\"transform.run_key\",\"transform.state\"],\"rows\":[[\"ds-66499ff5c3\",\"ex-b158cdc193\",\"pass\",\"ds-5b5a5e65f7\",\"ds-ed87b62201\",\"ld-1c0d747835\",\"pass\",\"pl-3b2db43c9f\",\"ap-7d1bf770f1\",\"ds-ed87b62201\",\"ds-66499ff5c3\",\"ds-5b5a5e65f7\",\"tr-f79d11d633\",\"pass\"],[\"ds-0748b85ebd\",\"ex-6f2f416415\",\"pass\",\"ds-3c6e809a5c\",\"ds-8cf79da746\",\"ld-ad8d879b7f\",\"fail\",\"pl-885fa2e291\",\"ap-49a157d5a8\",\"ds-8cf79da746\",\"ds-0748b85ebd\",\"ds-3c6e809a5c\",\"tr-d549e39cf7\",\"pass\"]]}",
+      "parent": "{\"fields\":[\"extract.output_key\",\"extract.run_key\",\"extract.state\",\"load.input_key\",\"load.output_key\",\"load.run_key\",\"load.state\",\"pipeline_key\",\"publish_approval.approval_key\",\"publish_approval.covers_output\",\"transform.input_key\",\"transform.output_key\",\"transform.run_key\",\"transform.state\"],\"rows\":[[\"ds-0748b85ebd\",\"ex-6f2f416415\",\"pass\",\"ds-3c6e809a5c\",\"ds-8cf79da746\",\"ld-ad8d879b7f\",\"fail\",\"pl-885fa2e291\",\"ap-49a157d5a8\",\"ds-8cf79da746\",\"ds-0748b85ebd\",\"ds-3c6e809a5c\",\"tr-d549e39cf7\",\"pass\"],[\"ds-1b6a54c590\",\"ex-410fa2dbed\",\"pass\",\"ds-b0077a0daa\",\"ds-2bca5dc804\",\"ld-82a10e5227\",\"pass\",\"pl-ee1cce1ee0\",\"ap-68ecd02829\",\"ds-2bca5dc804\",\"ds-ae29974cd6\",\"ds-b0077a0daa\",\"tr-2633efe742\",\"pass\"],[\"ds-66499ff5c3\",\"ex-b158cdc193\",\"pass\",\"ds-5b5a5e65f7\",\"ds-ed87b62201\",\"ld-1c0d747835\",\"pass\",\"pl-3b2db43c9f\",\"ap-7d1bf770f1\",\"ds-ed87b62201\",\"ds-66499ff5c3\",\"ds-5b5a5e65f7\",\"tr-f79d11d633\",\"pass\"],[\"ds-83f932b946\",\"ex-68a3d39833\",\"pass\",\"ds-ebc516d013\",\"ds-81d5541ab3\",\"ld-2e8fc74cf9\",\"pass\",\"pl-0eb0edec4f\",\"ap-895b266601\",\"ds-4f147ff948\",\"ds-83f932b946\",\"ds-ebc516d013\",\"tr-aec450cc36\",\"pass\"]]}"
+    },
+    "direct": {
+      "child": "{\"fields\":[\"pipeline_key\",\"extract.output_key\",\"extract.state\",\"transform.input_key\",\"transform.output_key\",\"transform.state\",\"load.input_key\",\"load.output_key\",\"load.state\",\"publish_approval.covers_output\"],\"rows\":[[\"pl-3b2db43c9f\",\"ds-66499ff5c3\",\"pass\",\"ds-66499ff5c3\",\"ds-5b5a5e65f7\",\"pass\",\"ds-5b5a5e65f7\",\"ds-ed87b62201\",\"pass\",\"ds-ed87b62201\"],[\"pl-885fa2e291\",\"ds-0748b85ebd\",\"pass\",\"ds-0748b85ebd\",\"ds-3c6e809a5c\",\"pass\",\"ds-3c6e809a5c\",\"ds-8cf79da746\",\"fail\",\"ds-8cf79da746\"]]}",
+      "parent": "{\"fields\":[\"pipeline_key\",\"extract.output_key\",\"extract.state\",\"transform.input_key\",\"transform.output_key\",\"transform.state\",\"load.input_key\",\"load.output_key\",\"load.state\",\"publish_approval.covers_output\"],\"rows\":[[\"pl-885fa2e291\",\"ds-0748b85ebd\",\"pass\",\"ds-0748b85ebd\",\"ds-3c6e809a5c\",\"pass\",\"ds-3c6e809a5c\",\"ds-8cf79da746\",\"fail\",\"ds-8cf79da746\"],[\"pl-ee1cce1ee0\",\"ds-1b6a54c590\",\"pass\",\"ds-ae29974cd6\",\"ds-b0077a0daa\",\"pass\",\"ds-b0077a0daa\",\"ds-2bca5dc804\",\"pass\",\"ds-2bca5dc804\"],[\"pl-3b2db43c9f\",\"ds-66499ff5c3\",\"pass\",\"ds-66499ff5c3\",\"ds-5b5a5e65f7\",\"pass\",\"ds-5b5a5e65f7\",\"ds-ed87b62201\",\"pass\",\"ds-ed87b62201\"],[\"pl-0eb0edec4f\",\"ds-83f932b946\",\"pass\",\"ds-83f932b946\",\"ds-ebc516d013\",\"pass\",\"ds-ebc516d013\",\"ds-81d5541ab3\",\"pass\",\"ds-4f147ff948\"]]}"
+    },
+    "prompt": {
+      "child": "No late event is explicitly labeled in the supplied observation.\npl-3b2db43c9f; extract ex-b158cdc193/pass/output ds-66499ff5c3; transform tr-f79d11d633/pass/input ds-66499ff5c3/output ds-5b5a5e65f7; load ld-1c0d747835/pass/input ds-5b5a5e65f7/output ds-ed87b62201; approval ap-7d1bf770f1 covers_output ds-ed87b62201.\npl-885fa2e291; extract ex-6f2f416415/pass/output ds-0748b85ebd; transform tr-d549e39cf7/pass/input ds-0748b85ebd/output ds-3c6e809a5c; load ld-ad8d879b7f/fail/input ds-3c6e809a5c/output ds-8cf79da746; approval ap-49a157d5a8 covers_output ds-8cf79da746.",
+      "child_bounds": {
+        "admitted_bytes": 570,
+        "clipped": false,
+        "proposed_bytes": 570
+      },
+      "parent": "Instance facts (each row: pipeline; extract run/state/output; transform run/state/input\u2192output; load run/state/input\u2192output; approval key/covers_output). Supplied tool_results order; scheduler_log omitted as ephemeral. Apply any identified late event first; none is explicitly labeled here.\npl-885fa2e291; ex-6f2f416415/pass/ds-0748b85ebd; tr-d549e39cf7/pass/ds-0748b85ebd\u2192ds-3c6e809a5c; ld-ad8d879b7f/fail/ds-3c6e809a5c\u2192ds-8cf79da746; ap-49a157d5a8 covers ds-8cf79da746.\npl-ee1cce1ee0; ex-410fa2dbed/pass/ds-1b6a54c590; tr-2633efe742/pass/ds-ae29974cd6\u2192ds-b0077a0daa; ld-82a10e5227/pass/ds-b0077a0daa\u2192ds-2bca5dc804; ap-68ecd02829 covers ds-2bca5dc804.\npl-3b2db43c9f; ex-b158cdc193/pass/ds-66499ff5c3; tr-f79d11d633/pass/ds-66499ff5c3\u2192ds-5b5a5e65f7; ld-1c0d747835/pass/ds-5b5a5e65f7\u2192ds-ed87b62201; ap-7d1bf770f1 covers ds-ed87b62201.\npl-0eb0edec4f; ex-68a3d39833/pass/ds-83f932b946; tr-aec450cc36/pass/ds-83f932b946\u2192ds-ebc516d013; ld-2e8fc74cf9/pass/ds-ebc516d013\u2192ds-81d5541ab3; ap-895b266601 covers ds-4f147ff948.",
+      "parent_bounds": {
+        "admitted_bytes": 1034,
+        "clipped": false,
+        "proposed_bytes": 1034
+      }
+    }
+  }
+}

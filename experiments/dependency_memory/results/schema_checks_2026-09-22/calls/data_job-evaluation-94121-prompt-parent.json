@@ -1,0 +1,269 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "data_job-evaluation-94121-prompt-parent",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.019943",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718871,
+        "usedPercent": 0,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"No distinct late event is present in the supplied observation. Four records (scheduler_log is irrelevant):\\npl-5a021f1e10: extract ex-52bcc740c2 state=pass output=ds-ae6401e345; transform tr-3827a4edf2 state=pass input=ds-ae6401e345 output=ds-998d8c1ea8; load ld-4bc3c624bc state=fail input=ds-998d8c1ea8 output=ds-6fe00a6e91; approval ap-ce9fd50716 covers_output=ds-6fe00a6e91.\\npl-32b22a1cea: extract ex-f67f0031f9 pass output=ds-61f986dc63; transform tr-aeb949b8e1 pass input=ds-61f986dc63 output=ds-9b476e233e; load ld-4f2f87a16f pass input=ds-9b476e233e output=ds-a96586f72c; approval ap-670ce3ab80 covers_output=ds-d2507e7eed.\\npl-84843781fb: extract ex-b86266f061 pass output=ds-09090ebaa9; transform tr-0ff8d3dedb pass input=ds-a1bd587705 output=ds-e23813e711; load ld-54b0f64861 pass input=ds-e23813e711 output=ds-4c1e9a7b7c; approval ap-ab30ea24ec covers_output=ds-4c1e9a7b7c.\\npl-862ae40b9e: extract ex-7441d88f67 pass output=ds-558bc38a9a; transform tr-3f31742b33 pass input=ds-558bc38a9a output=ds-ccc51d90ee; load ld-44874b827d pass input=ds-ccc51d90ee output=ds-8ce0fbb131; approval ap-a418cc0dbd covers_output=ds-8ce0fbb131.\"}",
+  "request": {
+    "instruction": "The complete public decision rule and output schema will be supplied again at execution. Use the whole memory allowance for instance-specific facts. Preserve complete opaque identifiers, state values, and who or what each reference covers. Do not shorten IDs or replace a scoped reference with a generic ready/done claim. Only the memory string survives this boundary. Return a JSON object with that memory string. Limit memory to 2600 UTF-8 bytes. Keep enough for any later target. Publish only if extract, transform, and load states are pass; transform.input_key equals extract.output_key; load.input_key equals transform.output_key; and publish_approval.covers_output equals load.output_key. Otherwise hold. Return target_id=load.output_key. Work is the exact sorted set drawn from extract, transform, load, link:transform, link:load, approval for each failed condition respectively. Apply the late event first.",
+    "observation": {
+      "tool_results": [
+        {
+          "extract": {
+            "output_key": "ds-ae6401e345",
+            "run_key": "ex-52bcc740c2",
+            "state": "pass"
+          },
+          "load": {
+            "input_key": "ds-998d8c1ea8",
+            "output_key": "ds-6fe00a6e91",
+            "run_key": "ld-4bc3c624bc",
+            "state": "fail"
+          },
+          "pipeline_key": "pl-5a021f1e10",
+          "publish_approval": {
+            "approval_key": "ap-ce9fd50716",
+            "covers_output": "ds-6fe00a6e91"
+          },
+          "scheduler_log": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+          "transform": {
+            "input_key": "ds-ae6401e345",
+            "output_key": "ds-998d8c1ea8",
+            "run_key": "tr-3827a4edf2",
+            "state": "pass"
+          }
+        },
+        {
+          "extract": {
+            "output_key": "ds-61f986dc63",
+            "run_key": "ex-f67f0031f9",
+            "state": "pass"
+          },
+          "load": {
+            "input_key": "ds-9b476e233e",
+            "output_key": "ds-a96586f72c",
+            "run_key": "ld-4f2f87a16f",
+            "state": "pass"
+          },
+          "pipeline_key": "pl-32b22a1cea",
+          "publish_approval": {
+            "approval_key": "ap-670ce3ab80",
+            "covers_output": "ds-d2507e7eed"
+          },
+          "scheduler_log": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+          "transform": {
+            "input_key": "ds-61f986dc63",
+            "output_key": "ds-9b476e233e",
+            "run_key": "tr-aeb949b8e1",
+            "state": "pass"
+          }
+        },
+        {
+          "extract": {
+            "output_key": "ds-09090ebaa9",
+            "run_key": "ex-b86266f061",
+            "state": "pass"
+          },
+          "load": {
+            "input_key": "ds-e23813e711",
+            "output_key": "ds-4c1e9a7b7c",
+            "run_key": "ld-54b0f64861",
+            "state": "pass"
+          },
+          "pipeline_key": "pl-84843781fb",
+          "publish_approval": {
+            "approval_key": "ap-ab30ea24ec",
+            "covers_output": "ds-4c1e9a7b7c"
+          },
+          "scheduler_log": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+          "transform": {
+            "input_key": "ds-a1bd587705",
+            "output_key": "ds-e23813e711",
+            "run_key": "tr-0ff8d3dedb",
+            "state": "pass"
+          }
+        },
+        {
+          "extract": {
+            "output_key": "ds-558bc38a9a",
+            "run_key": "ex-7441d88f67",
+            "state": "pass"
+          },
+          "load": {
+            "input_key": "ds-ccc51d90ee",
+            "output_key": "ds-8ce0fbb131",
+            "run_key": "ld-44874b827d",
+            "state": "pass"
+          },
+          "pipeline_key": "pl-862ae40b9e",
+          "publish_approval": {
+            "approval_key": "ap-a418cc0dbd",
+            "covers_output": "ds-8ce0fbb131"
+          },
+          "scheduler_log": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+          "transform": {
+            "input_key": "ds-558bc38a9a",
+            "output_key": "ds-ccc51d90ee",
+            "run_key": "tr-3f31742b33",
+            "state": "pass"
+          }
+        }
+      ],
+      "tool_schema": {
+        "properties": {
+          "extract": {
+            "properties": {
+              "output_key": {
+                "format": "opaque-id",
+                "type": "string"
+              },
+              "run_key": {
+                "format": "opaque-id",
+                "type": "string"
+              },
+              "state": {
+                "enum": [
+                  "pass",
+                  "fail",
+                  "pending"
+                ],
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "load": {
+            "properties": {
+              "input_key": {
+                "type": "string",
+                "x-reference": true
+              },
+              "output_key": {
+                "format": "opaque-id",
+                "type": "string"
+              },
+              "run_key": {
+                "format": "opaque-id",
+                "type": "string"
+              },
+              "state": {
+                "enum": [
+                  "pass",
+                  "fail",
+                  "pending"
+                ],
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "pipeline_key": {
+            "format": "opaque-id",
+            "type": "string"
+          },
+          "publish_approval": {
+            "properties": {
+              "approval_key": {
+                "format": "opaque-id",
+                "type": "string"
+              },
+              "covers_output": {
+                "type": "string",
+                "x-reference": true
+              }
+            },
+            "type": "object"
+          },
+          "scheduler_log": {
+            "type": "string",
+            "x-ephemeral": true
+          },
+          "transform": {
+            "properties": {
+              "input_key": {
+                "type": "string",
+                "x-reference": true
+              },
+              "output_key": {
+                "format": "opaque-id",
+                "type": "string"
+              },
+              "run_key": {
+                "format": "opaque-id",
+                "type": "string"
+              },
+              "state": {
+                "enum": [
+                  "pass",
+                  "fail",
+                  "pending"
+                ],
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "parent",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "4e8deb11d91e09c2dbf0f08e0d205313bd0f3de714d968d4ddbab51442f1b91f",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "No distinct late event is present in the supplied observation. Four records (scheduler_log is irrelevant):\npl-5a021f1e10: extract ex-52bcc740c2 state=pass output=ds-ae6401e345; transform tr-3827a4edf2 state=pass input=ds-ae6401e345 output=ds-998d8c1ea8; load ld-4bc3c624bc state=fail input=ds-998d8c1ea8 output=ds-6fe00a6e91; approval ap-ce9fd50716 covers_output=ds-6fe00a6e91.\npl-32b22a1cea: extract ex-f67f0031f9 pass output=ds-61f986dc63; transform tr-aeb949b8e1 pass input=ds-61f986dc63 output=ds-9b476e233e; load ld-4f2f87a16f pass input=ds-9b476e233e output=ds-a96586f72c; approval ap-670ce3ab80 covers_output=ds-d2507e7eed.\npl-84843781fb: extract ex-b86266f061 pass output=ds-09090ebaa9; transform tr-0ff8d3dedb pass input=ds-a1bd587705 output=ds-e23813e711; load ld-54b0f64861 pass input=ds-e23813e711 output=ds-4c1e9a7b7c; approval ap-ab30ea24ec covers_output=ds-4c1e9a7b7c.\npl-862ae40b9e: extract ex-7441d88f67 pass output=ds-558bc38a9a; transform tr-3f31742b33 pass input=ds-558bc38a9a output=ds-ccc51d90ee; load ld-44874b827d pass input=ds-ccc51d90ee output=ds-8ce0fbb131; approval ap-a418cc0dbd covers_output=ds-8ce0fbb131."
+  },
+  "started_at": "2026-09-22T21:56:54.444665+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 4065,
+    "outputTokens": 1105,
+    "reasoningOutputTokens": 618,
+    "totalTokens": 5170
+  },
+  "usage_events": 1,
+  "wall_seconds": 31.51235869998345,
+  "wire_body_byte_bound": 22947
+}

@@ -1,0 +1,99 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "ci_handoff-evaluation-94121-1-automatic",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0050655",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 0,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"target_id\":\"bd-0ad8b50849\",\"work\":[\"ci\"]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target, and late event. Handoff only if approval.covers_build and check.covers_build both equal current_build and check.verdict is pass. Otherwise hold. Return target_id=current_build. Work is the exact sorted set of approval when its scope is stale, and ci when CI scope is stale or verdict is not pass. Apply the late event first. Memory may be a field/rows table or prose. Return one exact terminal decision. Do not call tools.",
+    "observation": {
+      "late_event": {
+        "path": "check.verdict",
+        "value": "pass"
+      },
+      "memory": "{\"fields\":[\"approval.approval_key\",\"approval.covers_build\",\"check.covers_build\",\"check.run_key\",\"check.verdict\",\"current_build\",\"service_key\"],\"rows\":[[\"ap-68c32da867\",\"bd-c8706f51ce\",\"bd-9f3e501e3c\",\"ci-f2641d1fa3\",\"pass\",\"bd-9f3e501e3c\",\"sv-66645cf0a4\"],[\"ap-ae3be913fc\",\"bd-0ad8b50849\",\"bd-27375c967d\",\"ci-07e452b655\",\"pass\",\"bd-0ad8b50849\",\"sv-ee53ffe1fc\"]]}",
+      "target": "sv-ee53ffe1fc"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "dispatch",
+            "close",
+            "retry",
+            "hold",
+            "handoff",
+            "publish"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "c1a008fea5661d589104ccb1c510c06d59954d3d23cb37aa25a0b775ff633348",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "target_id": "bd-0ad8b50849",
+    "work": [
+      "ci"
+    ]
+  },
+  "started_at": "2026-09-22T21:55:04.416120+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 2989,
+    "outputTokens": 130,
+    "reasoningOutputTokens": 96,
+    "totalTokens": 3119
+  },
+  "usage_events": 1,
+  "wall_seconds": 4.9868659999920055,
+  "wire_body_byte_bound": 17820
+}

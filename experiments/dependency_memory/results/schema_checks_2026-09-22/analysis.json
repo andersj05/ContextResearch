@@ -1,0 +1,1403 @@
+{
+  "version": "schema_checks_analysis_v1",
+  "source_commit": "284405d",
+  "cases": 6,
+  "paired_terminal_decisions": 12,
+  "model_calls": 72,
+  "actual_model_planning_credits": "0.5510905",
+  "usage": {
+    "inputTokens": 230898,
+    "cachedInputTokens": 100352,
+    "outputTokens": 15971,
+    "reasoningOutputTokens": 10558
+  },
+  "arm_totals": {
+    "prompt": {
+      "decisions": 12,
+      "failures": 0,
+      "model_credits": "0.2537065",
+      "cpu_ns": 0,
+      "local_bytes_read": 0,
+      "model_calls": 24,
+      "input_tokens": 78163,
+      "cached_input_tokens": 32256,
+      "output_tokens": 10470,
+      "local_credits": "0E-8",
+      "total_credits": "0.25370650"
+    },
+    "automatic": {
+      "decisions": 12,
+      "failures": 0,
+      "model_credits": "0.0725445",
+      "cpu_ns": 0,
+      "local_bytes_read": 58046,
+      "model_calls": 12,
+      "input_tokens": 36453,
+      "cached_input_tokens": 16128,
+      "output_tokens": 1416,
+      "local_credits": "0.00058046",
+      "total_credits": "0.07312496"
+    },
+    "direct": {
+      "decisions": 12,
+      "failures": 0,
+      "model_credits": "0.0667650",
+      "cpu_ns": 0,
+      "local_bytes_read": 24514,
+      "model_calls": 12,
+      "input_tokens": 35759,
+      "cached_input_tokens": 17920,
+      "output_tokens": 1415,
+      "local_credits": "0.00024514",
+      "total_credits": "0.06701014"
+    },
+    "indexed": {
+      "decisions": 12,
+      "failures": 0,
+      "model_credits": "0.0628880",
+      "cpu_ns": 0,
+      "local_bytes_read": 10760,
+      "model_calls": 12,
+      "input_tokens": 36646,
+      "cached_input_tokens": 19712,
+      "output_tokens": 1250,
+      "local_credits": "0.00010760",
+      "total_credits": "0.06299560"
+    },
+    "full": {
+      "decisions": 12,
+      "failures": 0,
+      "model_credits": "0.0951865",
+      "cpu_ns": 0,
+      "local_bytes_read": 43100,
+      "model_calls": 12,
+      "input_tokens": 43877,
+      "cached_input_tokens": 14336,
+      "output_tokens": 1420,
+      "local_credits": "0.00043100",
+      "total_credits": "0.09561750"
+    }
+  },
+  "by_family": {
+    "retry": {
+      "prompt": {
+        "decisions": 4,
+        "failures": 0
+      },
+      "automatic": {
+        "decisions": 4,
+        "failures": 0
+      },
+      "direct": {
+        "decisions": 4,
+        "failures": 0
+      },
+      "indexed": {
+        "decisions": 4,
+        "failures": 0
+      },
+      "full": {
+        "decisions": 4,
+        "failures": 0
+      }
+    },
+    "ci_handoff": {
+      "prompt": {
+        "decisions": 4,
+        "failures": 0
+      },
+      "automatic": {
+        "decisions": 4,
+        "failures": 0
+      },
+      "direct": {
+        "decisions": 4,
+        "failures": 0
+      },
+      "indexed": {
+        "decisions": 4,
+        "failures": 0
+      },
+      "full": {
+        "decisions": 4,
+        "failures": 0
+      }
+    },
+    "data_job": {
+      "prompt": {
+        "decisions": 4,
+        "failures": 0
+      },
+      "automatic": {
+        "decisions": 4,
+        "failures": 0
+      },
+      "direct": {
+        "decisions": 4,
+        "failures": 0
+      },
+      "indexed": {
+        "decisions": 4,
+        "failures": 0
+      },
+      "full": {
+        "decisions": 4,
+        "failures": 0
+      }
+    }
+  },
+  "decisions": [
+    {
+      "identity": "retry-evaluation-94121-0-full",
+      "family": "retry",
+      "arm": "full",
+      "correct": true,
+      "expected": {
+        "action": "close",
+        "target_id": "rq-ff89e0914b",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "rq-ff89e0914b",
+        "work": []
+      },
+      "model_credits": "0.0099275",
+      "memory_bytes": 3245,
+      "recovery_bytes": 3245
+    },
+    {
+      "identity": "retry-evaluation-94121-0-direct",
+      "family": "retry",
+      "arm": "direct",
+      "correct": true,
+      "expected": {
+        "action": "close",
+        "target_id": "rq-ff89e0914b",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "rq-ff89e0914b",
+        "work": []
+      },
+      "model_credits": "0.008105",
+      "memory_bytes": 204,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "retry-evaluation-94121-0-automatic",
+      "family": "retry",
+      "arm": "automatic",
+      "correct": true,
+      "expected": {
+        "action": "close",
+        "target_id": "rq-ff89e0914b",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "rq-ff89e0914b",
+        "work": []
+      },
+      "model_credits": "0.008215",
+      "memory_bytes": 297,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "retry-evaluation-94121-0-indexed",
+      "family": "retry",
+      "arm": "indexed",
+      "correct": true,
+      "expected": {
+        "action": "close",
+        "target_id": "rq-ff89e0914b",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "rq-ff89e0914b",
+        "work": []
+      },
+      "model_credits": "0.008275",
+      "memory_bytes": 808,
+      "recovery_bytes": 808
+    },
+    {
+      "identity": "retry-evaluation-94121-0-prompt",
+      "family": "retry",
+      "arm": "prompt",
+      "correct": true,
+      "expected": {
+        "action": "close",
+        "target_id": "rq-ff89e0914b",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "rq-ff89e0914b",
+        "work": []
+      },
+      "model_credits": "0.0082125",
+      "memory_bytes": 454,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "retry-evaluation-94121-1-prompt",
+      "family": "retry",
+      "arm": "prompt",
+      "correct": true,
+      "expected": {
+        "action": "retry",
+        "target_id": "rq-a1ba841797",
+        "work": [
+          "attempt:at-1017c99b6f"
+        ]
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "rq-a1ba841797",
+        "work": [
+          "attempt:at-1017c99b6f"
+        ]
+      },
+      "model_credits": "0.0089175",
+      "memory_bytes": 454,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "retry-evaluation-94121-1-automatic",
+      "family": "retry",
+      "arm": "automatic",
+      "correct": true,
+      "expected": {
+        "action": "retry",
+        "target_id": "rq-a1ba841797",
+        "work": [
+          "attempt:at-1017c99b6f"
+        ]
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "rq-a1ba841797",
+        "work": [
+          "attempt:at-1017c99b6f"
+        ]
+      },
+      "model_credits": "0.0044505",
+      "memory_bytes": 297,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "retry-evaluation-94121-1-full",
+      "family": "retry",
+      "arm": "full",
+      "correct": true,
+      "expected": {
+        "action": "retry",
+        "target_id": "rq-a1ba841797",
+        "work": [
+          "attempt:at-1017c99b6f"
+        ]
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "rq-a1ba841797",
+        "work": [
+          "attempt:at-1017c99b6f"
+        ]
+      },
+      "model_credits": "0.01077",
+      "memory_bytes": 3245,
+      "recovery_bytes": 3245
+    },
+    {
+      "identity": "retry-evaluation-94121-1-direct",
+      "family": "retry",
+      "arm": "direct",
+      "correct": true,
+      "expected": {
+        "action": "retry",
+        "target_id": "rq-a1ba841797",
+        "work": [
+          "attempt:at-1017c99b6f"
+        ]
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "rq-a1ba841797",
+        "work": [
+          "attempt:at-1017c99b6f"
+        ]
+      },
+      "model_credits": "0.0044405",
+      "memory_bytes": 204,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "retry-evaluation-94121-1-indexed",
+      "family": "retry",
+      "arm": "indexed",
+      "correct": true,
+      "expected": {
+        "action": "retry",
+        "target_id": "rq-a1ba841797",
+        "work": [
+          "attempt:at-1017c99b6f"
+        ]
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "rq-a1ba841797",
+        "work": [
+          "attempt:at-1017c99b6f"
+        ]
+      },
+      "model_credits": "0.0045455",
+      "memory_bytes": 809,
+      "recovery_bytes": 809
+    },
+    {
+      "identity": "retry-evaluation-94122-0-full",
+      "family": "retry",
+      "arm": "full",
+      "correct": true,
+      "expected": {
+        "action": "close",
+        "target_id": "rq-b7f9e07d4d",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "rq-b7f9e07d4d",
+        "work": []
+      },
+      "model_credits": "0.0056355",
+      "memory_bytes": 3245,
+      "recovery_bytes": 3245
+    },
+    {
+      "identity": "retry-evaluation-94122-0-indexed",
+      "family": "retry",
+      "arm": "indexed",
+      "correct": true,
+      "expected": {
+        "action": "close",
+        "target_id": "rq-b7f9e07d4d",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "rq-b7f9e07d4d",
+        "work": []
+      },
+      "model_credits": "0.0042455",
+      "memory_bytes": 809,
+      "recovery_bytes": 809
+    },
+    {
+      "identity": "retry-evaluation-94122-0-prompt",
+      "family": "retry",
+      "arm": "prompt",
+      "correct": true,
+      "expected": {
+        "action": "close",
+        "target_id": "rq-b7f9e07d4d",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "rq-b7f9e07d4d",
+        "work": []
+      },
+      "model_credits": "0.0042855",
+      "memory_bytes": 359,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "retry-evaluation-94122-0-automatic",
+      "family": "retry",
+      "arm": "automatic",
+      "correct": true,
+      "expected": {
+        "action": "close",
+        "target_id": "rq-b7f9e07d4d",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "rq-b7f9e07d4d",
+        "work": []
+      },
+      "model_credits": "0.008335",
+      "memory_bytes": 303,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "retry-evaluation-94122-0-direct",
+      "family": "retry",
+      "arm": "direct",
+      "correct": true,
+      "expected": {
+        "action": "close",
+        "target_id": "rq-b7f9e07d4d",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "rq-b7f9e07d4d",
+        "work": []
+      },
+      "model_credits": "0.004408",
+      "memory_bytes": 210,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "retry-evaluation-94122-1-prompt",
+      "family": "retry",
+      "arm": "prompt",
+      "correct": true,
+      "expected": {
+        "action": "dispatch",
+        "target_id": "rq-90a5bb9394",
+        "work": []
+      },
+      "response": {
+        "action": "dispatch",
+        "target_id": "rq-90a5bb9394",
+        "work": []
+      },
+      "model_credits": "0.0084",
+      "memory_bytes": 359,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "retry-evaluation-94122-1-indexed",
+      "family": "retry",
+      "arm": "indexed",
+      "correct": true,
+      "expected": {
+        "action": "dispatch",
+        "target_id": "rq-90a5bb9394",
+        "work": []
+      },
+      "response": {
+        "action": "dispatch",
+        "target_id": "rq-90a5bb9394",
+        "work": []
+      },
+      "model_credits": "0.004393",
+      "memory_bytes": 814,
+      "recovery_bytes": 814
+    },
+    {
+      "identity": "retry-evaluation-94122-1-automatic",
+      "family": "retry",
+      "arm": "automatic",
+      "correct": true,
+      "expected": {
+        "action": "dispatch",
+        "target_id": "rq-90a5bb9394",
+        "work": []
+      },
+      "response": {
+        "action": "dispatch",
+        "target_id": "rq-90a5bb9394",
+        "work": []
+      },
+      "model_credits": "0.0081925",
+      "memory_bytes": 303,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "retry-evaluation-94122-1-full",
+      "family": "retry",
+      "arm": "full",
+      "correct": true,
+      "expected": {
+        "action": "dispatch",
+        "target_id": "rq-90a5bb9394",
+        "work": []
+      },
+      "response": {
+        "action": "dispatch",
+        "target_id": "rq-90a5bb9394",
+        "work": []
+      },
+      "model_credits": "0.009575",
+      "memory_bytes": 3245,
+      "recovery_bytes": 3245
+    },
+    {
+      "identity": "retry-evaluation-94122-1-direct",
+      "family": "retry",
+      "arm": "direct",
+      "correct": true,
+      "expected": {
+        "action": "dispatch",
+        "target_id": "rq-90a5bb9394",
+        "work": []
+      },
+      "response": {
+        "action": "dispatch",
+        "target_id": "rq-90a5bb9394",
+        "work": []
+      },
+      "model_credits": "0.0040405",
+      "memory_bytes": 210,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "ci_handoff-evaluation-94121-0-indexed",
+      "family": "ci_handoff",
+      "arm": "indexed",
+      "correct": true,
+      "expected": {
+        "action": "handoff",
+        "target_id": "bd-9f3e501e3c",
+        "work": []
+      },
+      "response": {
+        "action": "handoff",
+        "target_id": "bd-9f3e501e3c",
+        "work": []
+      },
+      "model_credits": "0.0046905",
+      "memory_bytes": 842,
+      "recovery_bytes": 842
+    },
+    {
+      "identity": "ci_handoff-evaluation-94121-0-direct",
+      "family": "ci_handoff",
+      "arm": "direct",
+      "correct": true,
+      "expected": {
+        "action": "handoff",
+        "target_id": "bd-9f3e501e3c",
+        "work": []
+      },
+      "response": {
+        "action": "handoff",
+        "target_id": "bd-9f3e501e3c",
+        "work": []
+      },
+      "model_credits": "0.0046505",
+      "memory_bytes": 258,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "ci_handoff-evaluation-94121-0-automatic",
+      "family": "ci_handoff",
+      "arm": "automatic",
+      "correct": true,
+      "expected": {
+        "action": "handoff",
+        "target_id": "bd-9f3e501e3c",
+        "work": []
+      },
+      "response": {
+        "action": "handoff",
+        "target_id": "bd-9f3e501e3c",
+        "work": []
+      },
+      "model_credits": "0.0049205",
+      "memory_bytes": 362,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "ci_handoff-evaluation-94121-0-prompt",
+      "family": "ci_handoff",
+      "arm": "prompt",
+      "correct": true,
+      "expected": {
+        "action": "handoff",
+        "target_id": "bd-9f3e501e3c",
+        "work": []
+      },
+      "response": {
+        "action": "handoff",
+        "target_id": "bd-9f3e501e3c",
+        "work": []
+      },
+      "model_credits": "0.0046405",
+      "memory_bytes": 484,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "ci_handoff-evaluation-94121-0-full",
+      "family": "ci_handoff",
+      "arm": "full",
+      "correct": true,
+      "expected": {
+        "action": "handoff",
+        "target_id": "bd-9f3e501e3c",
+        "work": []
+      },
+      "response": {
+        "action": "handoff",
+        "target_id": "bd-9f3e501e3c",
+        "work": []
+      },
+      "model_credits": "0.0103225",
+      "memory_bytes": 3373,
+      "recovery_bytes": 3373
+    },
+    {
+      "identity": "ci_handoff-evaluation-94121-1-direct",
+      "family": "ci_handoff",
+      "arm": "direct",
+      "correct": true,
+      "expected": {
+        "action": "hold",
+        "target_id": "bd-0ad8b50849",
+        "work": [
+          "ci"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "bd-0ad8b50849",
+        "work": [
+          "ci"
+        ]
+      },
+      "model_credits": "0.005008",
+      "memory_bytes": 258,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "ci_handoff-evaluation-94121-1-prompt",
+      "family": "ci_handoff",
+      "arm": "prompt",
+      "correct": true,
+      "expected": {
+        "action": "hold",
+        "target_id": "bd-0ad8b50849",
+        "work": [
+          "ci"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "bd-0ad8b50849",
+        "work": [
+          "ci"
+        ]
+      },
+      "model_credits": "0.0047605",
+      "memory_bytes": 484,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "ci_handoff-evaluation-94121-1-indexed",
+      "family": "ci_handoff",
+      "arm": "indexed",
+      "correct": true,
+      "expected": {
+        "action": "hold",
+        "target_id": "bd-0ad8b50849",
+        "work": [
+          "ci"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "bd-0ad8b50849",
+        "work": [
+          "ci"
+        ]
+      },
+      "model_credits": "0.004793",
+      "memory_bytes": 842,
+      "recovery_bytes": 842
+    },
+    {
+      "identity": "ci_handoff-evaluation-94121-1-automatic",
+      "family": "ci_handoff",
+      "arm": "automatic",
+      "correct": true,
+      "expected": {
+        "action": "hold",
+        "target_id": "bd-0ad8b50849",
+        "work": [
+          "ci"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "bd-0ad8b50849",
+        "work": [
+          "ci"
+        ]
+      },
+      "model_credits": "0.0050655",
+      "memory_bytes": 362,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "ci_handoff-evaluation-94121-1-full",
+      "family": "ci_handoff",
+      "arm": "full",
+      "correct": true,
+      "expected": {
+        "action": "hold",
+        "target_id": "bd-0ad8b50849",
+        "work": [
+          "ci"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "bd-0ad8b50849",
+        "work": [
+          "ci"
+        ]
+      },
+      "model_credits": "0.006523",
+      "memory_bytes": 3373,
+      "recovery_bytes": 3373
+    },
+    {
+      "identity": "ci_handoff-evaluation-94122-0-indexed",
+      "family": "ci_handoff",
+      "arm": "indexed",
+      "correct": true,
+      "expected": {
+        "action": "handoff",
+        "target_id": "bd-530d03fd96",
+        "work": []
+      },
+      "response": {
+        "action": "handoff",
+        "target_id": "bd-530d03fd96",
+        "work": []
+      },
+      "model_credits": "0.004918",
+      "memory_bytes": 842,
+      "recovery_bytes": 842
+    },
+    {
+      "identity": "ci_handoff-evaluation-94122-0-prompt",
+      "family": "ci_handoff",
+      "arm": "prompt",
+      "correct": true,
+      "expected": {
+        "action": "handoff",
+        "target_id": "bd-530d03fd96",
+        "work": []
+      },
+      "response": {
+        "action": "handoff",
+        "target_id": "bd-530d03fd96",
+        "work": []
+      },
+      "model_credits": "0.005023",
+      "memory_bytes": 519,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "ci_handoff-evaluation-94122-0-automatic",
+      "family": "ci_handoff",
+      "arm": "automatic",
+      "correct": true,
+      "expected": {
+        "action": "handoff",
+        "target_id": "bd-530d03fd96",
+        "work": []
+      },
+      "response": {
+        "action": "handoff",
+        "target_id": "bd-530d03fd96",
+        "work": []
+      },
+      "model_credits": "0.0046705",
+      "memory_bytes": 362,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "ci_handoff-evaluation-94122-0-direct",
+      "family": "ci_handoff",
+      "arm": "direct",
+      "correct": true,
+      "expected": {
+        "action": "handoff",
+        "target_id": "bd-530d03fd96",
+        "work": []
+      },
+      "response": {
+        "action": "handoff",
+        "target_id": "bd-530d03fd96",
+        "work": []
+      },
+      "model_credits": "0.004488",
+      "memory_bytes": 258,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "ci_handoff-evaluation-94122-0-full",
+      "family": "ci_handoff",
+      "arm": "full",
+      "correct": true,
+      "expected": {
+        "action": "handoff",
+        "target_id": "bd-530d03fd96",
+        "work": []
+      },
+      "response": {
+        "action": "handoff",
+        "target_id": "bd-530d03fd96",
+        "work": []
+      },
+      "model_credits": "0.0063255",
+      "memory_bytes": 3373,
+      "recovery_bytes": 3373
+    },
+    {
+      "identity": "ci_handoff-evaluation-94122-1-indexed",
+      "family": "ci_handoff",
+      "arm": "indexed",
+      "correct": true,
+      "expected": {
+        "action": "hold",
+        "target_id": "bd-5278fa5f54",
+        "work": [
+          "ci"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "bd-5278fa5f54",
+        "work": [
+          "ci"
+        ]
+      },
+      "model_credits": "0.005033",
+      "memory_bytes": 842,
+      "recovery_bytes": 842
+    },
+    {
+      "identity": "ci_handoff-evaluation-94122-1-direct",
+      "family": "ci_handoff",
+      "arm": "direct",
+      "correct": true,
+      "expected": {
+        "action": "hold",
+        "target_id": "bd-5278fa5f54",
+        "work": [
+          "ci"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "bd-5278fa5f54",
+        "work": [
+          "ci"
+        ]
+      },
+      "model_credits": "0.009",
+      "memory_bytes": 258,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "ci_handoff-evaluation-94122-1-full",
+      "family": "ci_handoff",
+      "arm": "full",
+      "correct": true,
+      "expected": {
+        "action": "hold",
+        "target_id": "bd-5278fa5f54",
+        "work": [
+          "ci"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "bd-5278fa5f54",
+        "work": [
+          "ci"
+        ]
+      },
+      "model_credits": "0.0064055",
+      "memory_bytes": 3373,
+      "recovery_bytes": 3373
+    },
+    {
+      "identity": "ci_handoff-evaluation-94122-1-automatic",
+      "family": "ci_handoff",
+      "arm": "automatic",
+      "correct": true,
+      "expected": {
+        "action": "hold",
+        "target_id": "bd-5278fa5f54",
+        "work": [
+          "ci"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "bd-5278fa5f54",
+        "work": [
+          "ci"
+        ]
+      },
+      "model_credits": "0.0049755",
+      "memory_bytes": 362,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "ci_handoff-evaluation-94122-1-prompt",
+      "family": "ci_handoff",
+      "arm": "prompt",
+      "correct": true,
+      "expected": {
+        "action": "hold",
+        "target_id": "bd-5278fa5f54",
+        "work": [
+          "ci"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "bd-5278fa5f54",
+        "work": [
+          "ci"
+        ]
+      },
+      "model_credits": "0.0051905",
+      "memory_bytes": 519,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "data_job-evaluation-94121-0-full",
+      "family": "data_job",
+      "arm": "full",
+      "correct": true,
+      "expected": {
+        "action": "publish",
+        "target_id": "ds-4c1e9a7b7c",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "ds-4c1e9a7b7c",
+        "work": []
+      },
+      "model_credits": "0.007998",
+      "memory_bytes": 4157,
+      "recovery_bytes": 4157
+    },
+    {
+      "identity": "data_job-evaluation-94121-0-automatic",
+      "family": "data_job",
+      "arm": "automatic",
+      "correct": true,
+      "expected": {
+        "action": "publish",
+        "target_id": "ds-4c1e9a7b7c",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "ds-4c1e9a7b7c",
+        "work": []
+      },
+      "model_credits": "0.0056155",
+      "memory_bytes": 700,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "data_job-evaluation-94121-0-indexed",
+      "family": "data_job",
+      "arm": "indexed",
+      "correct": true,
+      "expected": {
+        "action": "publish",
+        "target_id": "ds-4c1e9a7b7c",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "ds-4c1e9a7b7c",
+        "work": []
+      },
+      "model_credits": "0.005498",
+      "memory_bytes": 1038,
+      "recovery_bytes": 1038
+    },
+    {
+      "identity": "data_job-evaluation-94121-0-direct",
+      "family": "data_job",
+      "arm": "direct",
+      "correct": true,
+      "expected": {
+        "action": "publish",
+        "target_id": "ds-4c1e9a7b7c",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "ds-4c1e9a7b7c",
+        "work": []
+      },
+      "model_credits": "0.0068655",
+      "memory_bytes": 487,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "data_job-evaluation-94121-0-prompt",
+      "family": "data_job",
+      "arm": "prompt",
+      "correct": true,
+      "expected": {
+        "action": "publish",
+        "target_id": "ds-4c1e9a7b7c",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "ds-4c1e9a7b7c",
+        "work": []
+      },
+      "model_credits": "0.0053505",
+      "memory_bytes": 864,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "data_job-evaluation-94121-1-prompt",
+      "family": "data_job",
+      "arm": "prompt",
+      "correct": true,
+      "expected": {
+        "action": "hold",
+        "target_id": "ds-a96586f72c",
+        "work": [
+          "approval"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "ds-a96586f72c",
+        "work": [
+          "approval"
+        ]
+      },
+      "model_credits": "0.0050755",
+      "memory_bytes": 864,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "data_job-evaluation-94121-1-direct",
+      "family": "data_job",
+      "arm": "direct",
+      "correct": true,
+      "expected": {
+        "action": "hold",
+        "target_id": "ds-a96586f72c",
+        "work": [
+          "approval"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "ds-a96586f72c",
+        "work": [
+          "approval"
+        ]
+      },
+      "model_credits": "0.0053405",
+      "memory_bytes": 487,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "data_job-evaluation-94121-1-full",
+      "family": "data_job",
+      "arm": "full",
+      "correct": true,
+      "expected": {
+        "action": "hold",
+        "target_id": "ds-a96586f72c",
+        "work": [
+          "approval"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "ds-a96586f72c",
+        "work": [
+          "approval"
+        ]
+      },
+      "model_credits": "0.0075105",
+      "memory_bytes": 4157,
+      "recovery_bytes": 4157
+    },
+    {
+      "identity": "data_job-evaluation-94121-1-automatic",
+      "family": "data_job",
+      "arm": "automatic",
+      "correct": true,
+      "expected": {
+        "action": "hold",
+        "target_id": "ds-a96586f72c",
+        "work": [
+          "approval"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "ds-a96586f72c",
+        "work": [
+          "approval"
+        ]
+      },
+      "model_credits": "0.0060905",
+      "memory_bytes": 700,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "data_job-evaluation-94121-1-indexed",
+      "family": "data_job",
+      "arm": "indexed",
+      "correct": true,
+      "expected": {
+        "action": "hold",
+        "target_id": "ds-a96586f72c",
+        "work": [
+          "approval"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "ds-a96586f72c",
+        "work": [
+          "approval"
+        ]
+      },
+      "model_credits": "0.0061005",
+      "memory_bytes": 1038,
+      "recovery_bytes": 1038
+    },
+    {
+      "identity": "data_job-evaluation-94122-0-indexed",
+      "family": "data_job",
+      "arm": "indexed",
+      "correct": true,
+      "expected": {
+        "action": "publish",
+        "target_id": "ds-ed87b62201",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "ds-ed87b62201",
+        "work": []
+      },
+      "model_credits": "0.005228",
+      "memory_bytes": 1038,
+      "recovery_bytes": 1038
+    },
+    {
+      "identity": "data_job-evaluation-94122-0-full",
+      "family": "data_job",
+      "arm": "full",
+      "correct": true,
+      "expected": {
+        "action": "publish",
+        "target_id": "ds-ed87b62201",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "ds-ed87b62201",
+        "work": []
+      },
+      "model_credits": "0.007058",
+      "memory_bytes": 4157,
+      "recovery_bytes": 4157
+    },
+    {
+      "identity": "data_job-evaluation-94122-0-automatic",
+      "family": "data_job",
+      "arm": "automatic",
+      "correct": true,
+      "expected": {
+        "action": "publish",
+        "target_id": "ds-ed87b62201",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "ds-ed87b62201",
+        "work": []
+      },
+      "model_credits": "0.005918",
+      "memory_bytes": 700,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "data_job-evaluation-94122-0-prompt",
+      "family": "data_job",
+      "arm": "prompt",
+      "correct": true,
+      "expected": {
+        "action": "publish",
+        "target_id": "ds-ed87b62201",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "ds-ed87b62201",
+        "work": []
+      },
+      "model_credits": "0.0059005",
+      "memory_bytes": 570,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "data_job-evaluation-94122-0-direct",
+      "family": "data_job",
+      "arm": "direct",
+      "correct": true,
+      "expected": {
+        "action": "publish",
+        "target_id": "ds-ed87b62201",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "ds-ed87b62201",
+        "work": []
+      },
+      "model_credits": "0.0048205",
+      "memory_bytes": 487,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "data_job-evaluation-94122-1-automatic",
+      "family": "data_job",
+      "arm": "automatic",
+      "correct": true,
+      "expected": {
+        "action": "hold",
+        "target_id": "ds-8cf79da746",
+        "work": [
+          "load"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "ds-8cf79da746",
+        "work": [
+          "load"
+        ]
+      },
+      "model_credits": "0.0060955",
+      "memory_bytes": 700,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "data_job-evaluation-94122-1-direct",
+      "family": "data_job",
+      "arm": "direct",
+      "correct": true,
+      "expected": {
+        "action": "hold",
+        "target_id": "ds-8cf79da746",
+        "work": [
+          "load"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "ds-8cf79da746",
+        "work": [
+          "load"
+        ]
+      },
+      "model_credits": "0.005598",
+      "memory_bytes": 487,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "data_job-evaluation-94122-1-prompt",
+      "family": "data_job",
+      "arm": "prompt",
+      "correct": true,
+      "expected": {
+        "action": "hold",
+        "target_id": "ds-8cf79da746",
+        "work": [
+          "load"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "ds-8cf79da746",
+        "work": [
+          "load"
+        ]
+      },
+      "model_credits": "0.007053",
+      "memory_bytes": 570,
+      "recovery_bytes": 0
+    },
+    {
+      "identity": "data_job-evaluation-94122-1-full",
+      "family": "data_job",
+      "arm": "full",
+      "correct": true,
+      "expected": {
+        "action": "hold",
+        "target_id": "ds-8cf79da746",
+        "work": [
+          "load"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "ds-8cf79da746",
+        "work": [
+          "load"
+        ]
+      },
+      "model_credits": "0.0071355",
+      "memory_bytes": 4157,
+      "recovery_bytes": 4157
+    },
+    {
+      "identity": "data_job-evaluation-94122-1-indexed",
+      "family": "data_job",
+      "arm": "indexed",
+      "correct": true,
+      "expected": {
+        "action": "hold",
+        "target_id": "ds-8cf79da746",
+        "work": [
+          "load"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "ds-8cf79da746",
+        "work": [
+          "load"
+        ]
+      },
+      "model_credits": "0.005168",
+      "memory_bytes": 1038,
+      "recovery_bytes": 1038
+    }
+  ],
+  "criteria": {
+    "fewer_failures_than_prompt": false,
+    "total_cost_no_higher_than_prompt": true,
+    "no_more_failures_than_direct": true,
+    "primary_success": false,
+    "matches_direct_and_primary_success": false
+  },
+  "cpu_price_break_even_vs_prompt_credits_per_second": null,
+  "price_assumptions": {
+    "cpu_credit_per_second": "0.0001",
+    "local_read_credit_per_byte": "1E-8"
+  }
+}

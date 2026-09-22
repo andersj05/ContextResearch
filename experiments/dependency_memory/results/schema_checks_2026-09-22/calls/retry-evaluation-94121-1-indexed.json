@@ -1,0 +1,99 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry-evaluation-94121-1-indexed",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0045455",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476689,
+        "usedPercent": 100,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "existing_credits",
+  "raw_answer": "{\"action\":\"retry\",\"target_id\":\"rq-a1ba841797\",\"work\":[\"attempt:at-1017c99b6f\"]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target, and late event. For the selected request, use dispatch if dispatch_state is not_sent; otherwise use close if result_state is passed, retry if it is failed and can_retry is true, or hold. Return target_id=request_key. Work is [] for dispatch/close, [attempt:<attempt_key>] for retry, or [await:<attempt_key>] for hold. A retry_of link is historical and never changes the current attempt. Apply the late event first. Memory may be a field/rows table or prose. Return one exact terminal decision. Do not call tools.",
+    "observation": {
+      "late_event": {
+        "path": "can_retry",
+        "value": true
+      },
+      "memory": "{\"attempt_key\":\"at-1017c99b6f\",\"can_retry\":false,\"dispatch_state\":\"sent\",\"operator_note\":\"Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. \",\"request_key\":\"rq-a1ba841797\",\"reservation_key\":\"rs-0957901197\",\"result_state\":\"failed\",\"retry_of\":\"at-254a2c74e4\"}",
+      "target": "rq-a1ba841797"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "dispatch",
+            "close",
+            "retry",
+            "hold",
+            "handoff",
+            "publish"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "d212e53ee639e14c489289d7ad715a9de9d686fdfe975aee03e30429b9506094",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "retry",
+    "target_id": "rq-a1ba841797",
+    "work": [
+      "attempt:at-1017c99b6f"
+    ]
+  },
+  "started_at": "2026-09-22T21:52:26.077394+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3016,
+    "outputTokens": 83,
+    "reasoningOutputTokens": 41,
+    "totalTokens": 3099
+  },
+  "usage_events": 1,
+  "wall_seconds": 9.811262400005944,
+  "wire_body_byte_bound": 18301
+}

@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "data_job-evaluation-94122-prompt-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.011588",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 0,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"No late event is explicitly labeled in the supplied observation.\\npl-3b2db43c9f; extract ex-b158cdc193/pass/output ds-66499ff5c3; transform tr-f79d11d633/pass/input ds-66499ff5c3/output ds-5b5a5e65f7; load ld-1c0d747835/pass/input ds-5b5a5e65f7/output ds-ed87b62201; approval ap-7d1bf770f1 covers_output ds-ed87b62201.\\npl-885fa2e291; extract ex-6f2f416415/pass/output ds-0748b85ebd; transform tr-d549e39cf7/pass/input ds-0748b85ebd/output ds-3c6e809a5c; load ld-ad8d879b7f/fail/input ds-3c6e809a5c/output ds-8cf79da746; approval ap-49a157d5a8 covers_output ds-8cf79da746.\"}",
+  "request": {
+    "instruction": "The complete public decision rule and output schema will be supplied again at execution. Use the whole memory allowance for instance-specific facts. Preserve complete opaque identifiers, state values, and who or what each reference covers. Do not shorten IDs or replace a scoped reference with a generic ready/done claim. Only the memory string survives this boundary. Return a JSON object with that memory string. Limit memory to 1300 UTF-8 bytes. Retain only the named candidates. Publish only if extract, transform, and load states are pass; transform.input_key equals extract.output_key; load.input_key equals transform.output_key; and publish_approval.covers_output equals load.output_key. Otherwise hold. Return target_id=load.output_key. Work is the exact sorted set drawn from extract, transform, load, link:transform, link:load, approval for each failed condition respectively. Apply the late event first.",
+    "observation": {
+      "candidates": [
+        "pl-3b2db43c9f",
+        "pl-885fa2e291"
+      ],
+      "previous_memory": "Instance facts (each row: pipeline; extract run/state/output; transform run/state/input\u2192output; load run/state/input\u2192output; approval key/covers_output). Supplied tool_results order; scheduler_log omitted as ephemeral. Apply any identified late event first; none is explicitly labeled here.\npl-885fa2e291; ex-6f2f416415/pass/ds-0748b85ebd; tr-d549e39cf7/pass/ds-0748b85ebd\u2192ds-3c6e809a5c; ld-ad8d879b7f/fail/ds-3c6e809a5c\u2192ds-8cf79da746; ap-49a157d5a8 covers ds-8cf79da746.\npl-ee1cce1ee0; ex-410fa2dbed/pass/ds-1b6a54c590; tr-2633efe742/pass/ds-ae29974cd6\u2192ds-b0077a0daa; ld-82a10e5227/pass/ds-b0077a0daa\u2192ds-2bca5dc804; ap-68ecd02829 covers ds-2bca5dc804.\npl-3b2db43c9f; ex-b158cdc193/pass/ds-66499ff5c3; tr-f79d11d633/pass/ds-66499ff5c3\u2192ds-5b5a5e65f7; ld-1c0d747835/pass/ds-5b5a5e65f7\u2192ds-ed87b62201; ap-7d1bf770f1 covers ds-ed87b62201.\npl-0eb0edec4f; ex-68a3d39833/pass/ds-83f932b946; tr-aec450cc36/pass/ds-83f932b946\u2192ds-ebc516d013; ld-2e8fc74cf9/pass/ds-ebc516d013\u2192ds-81d5541ab3; ap-895b266601 covers ds-4f147ff948."
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "8531bc273dc46269e3d5b4fbc74d6af092854b4c21d94e166d5c7e1410ede9e8",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "No late event is explicitly labeled in the supplied observation.\npl-3b2db43c9f; extract ex-b158cdc193/pass/output ds-66499ff5c3; transform tr-f79d11d633/pass/input ds-66499ff5c3/output ds-5b5a5e65f7; load ld-1c0d747835/pass/input ds-5b5a5e65f7/output ds-ed87b62201; approval ap-7d1bf770f1 covers_output ds-ed87b62201.\npl-885fa2e291; extract ex-6f2f416415/pass/output ds-0748b85ebd; transform tr-d549e39cf7/pass/input ds-0748b85ebd/output ds-3c6e809a5c; load ld-ad8d879b7f/fail/input ds-3c6e809a5c/output ds-8cf79da746; approval ap-49a157d5a8 covers_output ds-8cf79da746."
+  },
+  "started_at": "2026-09-22T21:59:21.085779+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3313,
+    "outputTokens": 587,
+    "reasoningOutputTokens": 341,
+    "totalTokens": 3900
+  },
+  "usage_events": 1,
+  "wall_seconds": 13.302462199993897,
+  "wire_body_byte_bound": 18446
+}

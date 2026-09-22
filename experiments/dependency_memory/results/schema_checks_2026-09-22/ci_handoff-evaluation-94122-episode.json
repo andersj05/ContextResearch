@@ -1,0 +1,136 @@
+{
+  "case_id": "ci_handoff-evaluation-94122",
+  "decisions": [
+    {
+      "arm": "indexed",
+      "future_id": "ci_handoff-evaluation-94122-0",
+      "identity": "ci_handoff-evaluation-94122-0-indexed",
+      "memory_bytes": 842,
+      "recovery_bytes": 842,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "prompt",
+      "future_id": "ci_handoff-evaluation-94122-0",
+      "identity": "ci_handoff-evaluation-94122-0-prompt",
+      "memory_bytes": 519,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "automatic",
+      "future_id": "ci_handoff-evaluation-94122-0",
+      "identity": "ci_handoff-evaluation-94122-0-automatic",
+      "memory_bytes": 362,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "direct",
+      "future_id": "ci_handoff-evaluation-94122-0",
+      "identity": "ci_handoff-evaluation-94122-0-direct",
+      "memory_bytes": 258,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "full",
+      "future_id": "ci_handoff-evaluation-94122-0",
+      "identity": "ci_handoff-evaluation-94122-0-full",
+      "memory_bytes": 3373,
+      "recovery_bytes": 3373,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "indexed",
+      "future_id": "ci_handoff-evaluation-94122-1",
+      "identity": "ci_handoff-evaluation-94122-1-indexed",
+      "memory_bytes": 842,
+      "recovery_bytes": 842,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "direct",
+      "future_id": "ci_handoff-evaluation-94122-1",
+      "identity": "ci_handoff-evaluation-94122-1-direct",
+      "memory_bytes": 258,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "full",
+      "future_id": "ci_handoff-evaluation-94122-1",
+      "identity": "ci_handoff-evaluation-94122-1-full",
+      "memory_bytes": 3373,
+      "recovery_bytes": 3373,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "automatic",
+      "future_id": "ci_handoff-evaluation-94122-1",
+      "identity": "ci_handoff-evaluation-94122-1-automatic",
+      "memory_bytes": 362,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "prompt",
+      "future_id": "ci_handoff-evaluation-94122-1",
+      "identity": "ci_handoff-evaluation-94122-1-prompt",
+      "memory_bytes": 519,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    }
+  ],
+  "family": "ci_handoff",
+  "local": {
+    "automatic": {
+      "bytes_read": 8725,
+      "child_check": {
+        "cpu_ns": 0,
+        "identity_errors": 0,
+        "memory_bytes_read": 362,
+        "passed": true,
+        "relation_errors": 0,
+        "source_bytes_read": 473
+      },
+      "cpu_ns": 0,
+      "parent_check": {
+        "cpu_ns": 0,
+        "identity_errors": 0,
+        "memory_bytes_read": 572,
+        "passed": true,
+        "relation_errors": 0,
+        "source_bytes_read": 3373
+      }
+    },
+    "direct": {
+      "bytes_read": 3777,
+      "cpu_ns": 0
+    }
+  },
+  "memories": {
+    "automatic": {
+      "child": "{\"fields\":[\"approval.approval_key\",\"approval.covers_build\",\"check.covers_build\",\"check.run_key\",\"check.verdict\",\"current_build\",\"service_key\"],\"rows\":[[\"ap-10f1f72398\",\"bd-530d03fd96\",\"bd-530d03fd96\",\"ci-9d780c692d\",\"pass\",\"bd-530d03fd96\",\"sv-734678271f\"],[\"ap-968808992b\",\"bd-5278fa5f54\",\"bd-5278fa5f54\",\"ci-ba2d4ba784\",\"fail\",\"bd-5278fa5f54\",\"sv-3a5c06b84b\"]]}",
+      "parent": "{\"fields\":[\"approval.approval_key\",\"approval.covers_build\",\"check.covers_build\",\"check.run_key\",\"check.verdict\",\"current_build\",\"service_key\"],\"rows\":[[\"ap-968808992b\",\"bd-5278fa5f54\",\"bd-5278fa5f54\",\"ci-ba2d4ba784\",\"fail\",\"bd-5278fa5f54\",\"sv-3a5c06b84b\"],[\"ap-f338da6287\",\"bd-8b9c1c9ce5\",\"bd-e10f8e4793\",\"ci-6131a97368\",\"pass\",\"bd-e10f8e4793\",\"sv-3963506353\"],[\"ap-10f1f72398\",\"bd-530d03fd96\",\"bd-530d03fd96\",\"ci-9d780c692d\",\"pass\",\"bd-530d03fd96\",\"sv-734678271f\"],[\"ap-a4e035cb5f\",\"bd-f5687178b4\",\"bd-bb60996a09\",\"ci-05cf4c7e8a\",\"pass\",\"bd-f5687178b4\",\"sv-30ef5b1b05\"]]}"
+    },
+    "direct": {
+      "child": "{\"fields\":[\"service_key\",\"current_build\",\"approval.covers_build\",\"check.covers_build\",\"check.verdict\"],\"rows\":[[\"sv-734678271f\",\"bd-530d03fd96\",\"bd-530d03fd96\",\"bd-530d03fd96\",\"pass\"],[\"sv-3a5c06b84b\",\"bd-5278fa5f54\",\"bd-5278fa5f54\",\"bd-5278fa5f54\",\"fail\"]]}",
+      "parent": "{\"fields\":[\"service_key\",\"current_build\",\"approval.covers_build\",\"check.covers_build\",\"check.verdict\"],\"rows\":[[\"sv-3a5c06b84b\",\"bd-5278fa5f54\",\"bd-5278fa5f54\",\"bd-5278fa5f54\",\"fail\"],[\"sv-3963506353\",\"bd-e10f8e4793\",\"bd-8b9c1c9ce5\",\"bd-e10f8e4793\",\"pass\"],[\"sv-734678271f\",\"bd-530d03fd96\",\"bd-530d03fd96\",\"bd-530d03fd96\",\"pass\"],[\"sv-30ef5b1b05\",\"bd-f5687178b4\",\"bd-f5687178b4\",\"bd-bb60996a09\",\"pass\"]]}"
+    },
+    "prompt": {
+      "child": "Candidates: sv-734678271f and sv-3a5c06b84b. No separate late-event data was supplied; apply none. sv-734678271f: current_build=bd-530d03fd96; approval_key=ap-10f1f72398 covers_build=bd-530d03fd96; check run_key=ci-9d780c692d covers_build=bd-530d03fd96 verdict=pass; handoff; target_id=bd-530d03fd96; work=[]. sv-3a5c06b84b: current_build=bd-5278fa5f54; approval_key=ap-968808992b covers_build=bd-5278fa5f54; check run_key=ci-ba2d4ba784 covers_build=bd-5278fa5f54 verdict=fail; hold; target_id=bd-5278fa5f54; work=[ci].",
+      "child_bounds": {
+        "admitted_bytes": 519,
+        "clipped": false,
+        "proposed_bytes": 519
+      },
+      "parent": "Instance records (service: current_build; approval_key covers_build; check run_key covers_build verdict): sv-3a5c06b84b: bd-5278fa5f54; ap-968808992b covers bd-5278fa5f54; ci-ba2d4ba784 covers bd-5278fa5f54, fail. sv-3963506353: bd-e10f8e4793; ap-f338da6287 covers bd-8b9c1c9ce5; ci-6131a97368 covers bd-e10f8e4793, pass. sv-734678271f: bd-530d03fd96; ap-10f1f72398 covers bd-530d03fd96; ci-9d780c692d covers bd-530d03fd96, pass. sv-30ef5b1b05: bd-f5687178b4; ap-a4e035cb5f covers bd-f5687178b4; ci-05cf4c7e8a covers bd-bb60996a09, pass. No separate late-event data appears in the supplied observation.",
+      "parent_bounds": {
+        "admitted_bytes": 602,
+        "clipped": false,
+        "proposed_bytes": 602
+      }
+    }
+  }
+}
