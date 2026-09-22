@@ -1,0 +1,632 @@
+{
+  "candidate_ids": [
+    "fc664c947981e7d8",
+    "3c5fcd13c9c0abd1"
+  ],
+  "family": "retry_queue",
+  "futures": [
+    {
+      "event": {
+        "path": "note",
+        "value": "Schedule title updated; gate fields unchanged."
+      },
+      "id": "retry_queue-2144838585-0",
+      "target": "3c5fcd13c9c0abd1"
+    },
+    {
+      "event": {
+        "path": "result.state",
+        "value": "passed"
+      },
+      "id": "retry_queue-2144838585-1",
+      "target": "3c5fcd13c9c0abd1"
+    },
+    {
+      "event": {
+        "path": "dispatch.attempt_uuid",
+        "value": "ed1847b2162b7a41"
+      },
+      "id": "retry_queue-2144838585-2",
+      "target": "fc664c947981e7d8"
+    }
+  ],
+  "id": "retry_queue-2144838585",
+  "private_truth_rows": {
+    "3c5fcd13c9c0abd1": {
+      "billing": {
+        "charge_token": "5d3b6f34cc4e1d86",
+        "for_attempt": "332f21f06bef90d0",
+        "state": "settled"
+      },
+      "dispatch": {
+        "attempt_uuid": "332f21f06bef90d0",
+        "idempotency_key": "1155e1b66e587856",
+        "state": "sent"
+      },
+      "operator_notes": "Worker log archived an earlier draft 130321ca2aa1308b; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 130321ca2aa1308b; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 130321ca2aa1308b; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 130321ca2aa1308b; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 130321ca2aa1308b; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 130321ca2aa1308b; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 130321ca2aa1308b; dashboard labels, timing and operator chat are not gate evidence. ",
+      "request_token": "3c5fcd13c9c0abd1",
+      "result": {
+        "attempt_uuid": "332f21f06bef90d0",
+        "state": "failed"
+      },
+      "retry_policy": {
+        "prior_attempt": "2b5ce45ead0b260f",
+        "retry_allowed": true
+      }
+    },
+    "4a000b1e8132bfe2": {
+      "billing": {
+        "charge_token": "4c8b8ebea43410cd",
+        "for_attempt": "ab1a572bf4c18e43",
+        "state": "settled"
+      },
+      "dispatch": {
+        "attempt_uuid": "ab1a572bf4c18e43",
+        "idempotency_key": "8297fe635b8a38a0",
+        "state": "sent"
+      },
+      "operator_notes": "Worker log archived an earlier draft 32ae69629cdc8d60; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 32ae69629cdc8d60; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 32ae69629cdc8d60; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 32ae69629cdc8d60; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 32ae69629cdc8d60; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 32ae69629cdc8d60; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 32ae69629cdc8d60; dashboard labels, timing and operator chat are not gate evidence. ",
+      "request_token": "4a000b1e8132bfe2",
+      "result": {
+        "attempt_uuid": "ab1a572bf4c18e43",
+        "state": "passed"
+      },
+      "retry_policy": {
+        "prior_attempt": "f80aade00651b3ec",
+        "retry_allowed": false
+      }
+    },
+    "5a060964637086b0": {
+      "billing": {
+        "charge_token": "0f9126edb3d42dde",
+        "for_attempt": "501bb3a1e18a3b63",
+        "state": "settled"
+      },
+      "dispatch": {
+        "attempt_uuid": "1264c843325c819f",
+        "idempotency_key": "1c8203436e14acf3",
+        "state": "sent"
+      },
+      "operator_notes": "Worker log archived an earlier draft f390fa104ef37853; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f390fa104ef37853; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f390fa104ef37853; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f390fa104ef37853; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f390fa104ef37853; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f390fa104ef37853; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f390fa104ef37853; dashboard labels, timing and operator chat are not gate evidence. ",
+      "request_token": "5a060964637086b0",
+      "result": {
+        "attempt_uuid": "1264c843325c819f",
+        "state": "passed"
+      },
+      "retry_policy": {
+        "prior_attempt": "2223f5abe8085425",
+        "retry_allowed": false
+      }
+    },
+    "dc0301393c80b859": {
+      "billing": {
+        "charge_token": "80579304042e2014",
+        "for_attempt": "6746406e2f6f69df",
+        "state": "settled"
+      },
+      "dispatch": {
+        "attempt_uuid": "b1a7c2d1db993af1",
+        "idempotency_key": "2af3a5d81b442fd3",
+        "state": "sent"
+      },
+      "operator_notes": "Worker log archived an earlier draft 1e85a4bfaae142bc; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1e85a4bfaae142bc; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1e85a4bfaae142bc; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1e85a4bfaae142bc; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1e85a4bfaae142bc; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1e85a4bfaae142bc; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1e85a4bfaae142bc; dashboard labels, timing and operator chat are not gate evidence. ",
+      "request_token": "dc0301393c80b859",
+      "result": {
+        "attempt_uuid": "b1a7c2d1db993af1",
+        "state": "passed"
+      },
+      "retry_policy": {
+        "prior_attempt": "890ee4e63d6f1992",
+        "retry_allowed": false
+      }
+    },
+    "dea057a073b25900": {
+      "billing": {
+        "charge_token": "a195dd428343189f",
+        "for_attempt": "1f7f2faf1dbef5f7",
+        "state": "settled"
+      },
+      "dispatch": {
+        "attempt_uuid": "1f7f2faf1dbef5f7",
+        "idempotency_key": "9ca8937d30a7bf99",
+        "state": "sent"
+      },
+      "operator_notes": "Worker log archived an earlier draft 4171ae84d024adc2; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 4171ae84d024adc2; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 4171ae84d024adc2; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 4171ae84d024adc2; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 4171ae84d024adc2; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 4171ae84d024adc2; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 4171ae84d024adc2; dashboard labels, timing and operator chat are not gate evidence. ",
+      "request_token": "dea057a073b25900",
+      "result": {
+        "attempt_uuid": "1f7f2faf1dbef5f7",
+        "state": "failed"
+      },
+      "retry_policy": {
+        "prior_attempt": "10ab7e634afbea2c",
+        "retry_allowed": true
+      }
+    },
+    "f9ed9bfaf67d0565": {
+      "billing": {
+        "charge_token": "868eb1477011b6d8",
+        "for_attempt": "4b35cfe1bcc04b07",
+        "state": "settled"
+      },
+      "dispatch": {
+        "attempt_uuid": "4b35cfe1bcc04b07",
+        "idempotency_key": "39cb9eb7c4ed9654",
+        "state": "not_sent"
+      },
+      "operator_notes": "Worker log archived an earlier draft 91f51a369a3b80bd; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 91f51a369a3b80bd; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 91f51a369a3b80bd; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 91f51a369a3b80bd; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 91f51a369a3b80bd; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 91f51a369a3b80bd; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 91f51a369a3b80bd; dashboard labels, timing and operator chat are not gate evidence. ",
+      "request_token": "f9ed9bfaf67d0565",
+      "result": {
+        "attempt_uuid": "4b35cfe1bcc04b07",
+        "state": "passed"
+      },
+      "retry_policy": {
+        "prior_attempt": "59ca1aac64c45829",
+        "retry_allowed": false
+      }
+    },
+    "fc664c947981e7d8": {
+      "billing": {
+        "charge_token": "7f63ac5066a48326",
+        "for_attempt": "b6ce1b9691f129b0",
+        "state": "settled"
+      },
+      "dispatch": {
+        "attempt_uuid": "b6ce1b9691f129b0",
+        "idempotency_key": "fecd2eb839c7d091",
+        "state": "sent"
+      },
+      "operator_notes": "Worker log archived an earlier draft 9d379693c9a47a83; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9d379693c9a47a83; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9d379693c9a47a83; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9d379693c9a47a83; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9d379693c9a47a83; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9d379693c9a47a83; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9d379693c9a47a83; dashboard labels, timing and operator chat are not gate evidence. ",
+      "request_token": "fc664c947981e7d8",
+      "result": {
+        "attempt_uuid": "b6ce1b9691f129b0",
+        "state": "passed"
+      },
+      "retry_policy": {
+        "prior_attempt": "139269bb263e3ef0",
+        "retry_allowed": false
+      }
+    }
+  },
+  "rule": "Select the root record whose request_token equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. For the selected request: if dispatch.state is not_sent, action=submit and work=[]; otherwise require result.attempt_uuid and billing.for_attempt to match dispatch.attempt_uuid. If a scope mismatches, hold with result_scope or billing_scope. Otherwise close if result.state is passed and billing.state is settled; retry if result.state is failed and retry_policy.retry_allowed is true; otherwise hold with result, billing or retry_policy for the applicable failed conditions. Return target_id=request_token. Apply the late event first.",
+  "split": "evaluation",
+  "tool_results": [
+    {
+      "data": {
+        "prior_attempt": "139269bb263e3ef0",
+        "record_id": "13e68cd9303fdb5a",
+        "retry_allowed": false,
+        "workflow_key": "433456db4d6003e3"
+      },
+      "tool": "retry_policy"
+    },
+    {
+      "data": {
+        "attempt_uuid": "b1a7c2d1db993af1",
+        "record_id": "baf19e4115f347cd",
+        "state": "passed",
+        "workflow_key": "2713f21af0f0c621"
+      },
+      "tool": "result"
+    },
+    {
+      "data": {
+        "attempt_uuid": "4b35cfe1bcc04b07",
+        "idempotency_key": "39cb9eb7c4ed9654",
+        "record_id": "3d83325e6181730b",
+        "state": "not_sent",
+        "workflow_key": "3ca17e4562ecd62c"
+      },
+      "tool": "dispatch"
+    },
+    {
+      "data": {
+        "charge_token": "4c8b8ebea43410cd",
+        "for_attempt": "ab1a572bf4c18e43",
+        "record_id": "b3b05b475216e63c",
+        "state": "settled",
+        "workflow_key": "d50a7aa3a7023463"
+      },
+      "tool": "billing"
+    },
+    {
+      "data": {
+        "charge_token": "0f9126edb3d42dde",
+        "for_attempt": "501bb3a1e18a3b63",
+        "record_id": "87f972d23bba363a",
+        "state": "settled",
+        "workflow_key": "91caeedcf48227a8"
+      },
+      "tool": "billing"
+    },
+    {
+      "data": {
+        "charge_token": "7f63ac5066a48326",
+        "for_attempt": "b6ce1b9691f129b0",
+        "record_id": "7db0c41b165afced",
+        "state": "settled",
+        "workflow_key": "433456db4d6003e3"
+      },
+      "tool": "billing"
+    },
+    {
+      "data": {
+        "prior_attempt": "2b5ce45ead0b260f",
+        "record_id": "5f7620ace2cc0b83",
+        "retry_allowed": true,
+        "workflow_key": "75a1719927c1aef3"
+      },
+      "tool": "retry_policy"
+    },
+    {
+      "data": {
+        "attempt_uuid": "b1a7c2d1db993af1",
+        "idempotency_key": "2af3a5d81b442fd3",
+        "record_id": "753266fa8c07eb0c",
+        "state": "sent",
+        "workflow_key": "2713f21af0f0c621"
+      },
+      "tool": "dispatch"
+    },
+    {
+      "data": {
+        "operator_notes": "Worker log mentions obsolete draft 4b49393d7c1a361e. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 4b49393d7c1a361e. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 4b49393d7c1a361e. Dashboard labels and timings are not gate evidence. ",
+        "request_token": "dc0301393c80b859",
+        "workflow_key": "2713f21af0f0c621"
+      },
+      "tool": "root"
+    },
+    {
+      "data": {
+        "attempt_uuid": "ab1a572bf4c18e43",
+        "record_id": "b2666d9dcc17421b",
+        "state": "passed",
+        "workflow_key": "d50a7aa3a7023463"
+      },
+      "tool": "result"
+    },
+    {
+      "data": {
+        "operator_notes": "Worker log mentions obsolete draft 2f3f480a27fbc5bf. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 2f3f480a27fbc5bf. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 2f3f480a27fbc5bf. Dashboard labels and timings are not gate evidence. ",
+        "request_token": "fc664c947981e7d8",
+        "workflow_key": "433456db4d6003e3"
+      },
+      "tool": "root"
+    },
+    {
+      "data": {
+        "charge_token": "5d3b6f34cc4e1d86",
+        "for_attempt": "332f21f06bef90d0",
+        "record_id": "45977daf99f17b5b",
+        "state": "settled",
+        "workflow_key": "75a1719927c1aef3"
+      },
+      "tool": "billing"
+    },
+    {
+      "data": {
+        "operator_notes": "Worker log mentions obsolete draft 2cf359c00020eca2. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 2cf359c00020eca2. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 2cf359c00020eca2. Dashboard labels and timings are not gate evidence. ",
+        "request_token": "5a060964637086b0",
+        "workflow_key": "91caeedcf48227a8"
+      },
+      "tool": "root"
+    },
+    {
+      "data": {
+        "attempt_uuid": "1f7f2faf1dbef5f7",
+        "idempotency_key": "9ca8937d30a7bf99",
+        "record_id": "2916503c9f3549e9",
+        "state": "sent",
+        "workflow_key": "a70ccb6fd1320f31"
+      },
+      "tool": "dispatch"
+    },
+    {
+      "data": {
+        "attempt_uuid": "1264c843325c819f",
+        "record_id": "372d6121d3716351",
+        "state": "passed",
+        "workflow_key": "91caeedcf48227a8"
+      },
+      "tool": "result"
+    },
+    {
+      "data": {
+        "prior_attempt": "890ee4e63d6f1992",
+        "record_id": "e3fbb00712604bb2",
+        "retry_allowed": false,
+        "workflow_key": "2713f21af0f0c621"
+      },
+      "tool": "retry_policy"
+    },
+    {
+      "data": {
+        "attempt_uuid": "1264c843325c819f",
+        "idempotency_key": "1c8203436e14acf3",
+        "record_id": "1a9b87be1372cceb",
+        "state": "sent",
+        "workflow_key": "91caeedcf48227a8"
+      },
+      "tool": "dispatch"
+    },
+    {
+      "data": {
+        "prior_attempt": "f80aade00651b3ec",
+        "record_id": "1a601740ffb1327b",
+        "retry_allowed": false,
+        "workflow_key": "d50a7aa3a7023463"
+      },
+      "tool": "retry_policy"
+    },
+    {
+      "data": {
+        "attempt_uuid": "4b35cfe1bcc04b07",
+        "record_id": "52647b0faf8a04cc",
+        "state": "passed",
+        "workflow_key": "3ca17e4562ecd62c"
+      },
+      "tool": "result"
+    },
+    {
+      "data": {
+        "charge_token": "80579304042e2014",
+        "for_attempt": "6746406e2f6f69df",
+        "record_id": "6c02cb86a9a856cb",
+        "state": "settled",
+        "workflow_key": "2713f21af0f0c621"
+      },
+      "tool": "billing"
+    },
+    {
+      "data": {
+        "prior_attempt": "59ca1aac64c45829",
+        "record_id": "95c324705671f340",
+        "retry_allowed": false,
+        "workflow_key": "3ca17e4562ecd62c"
+      },
+      "tool": "retry_policy"
+    },
+    {
+      "data": {
+        "prior_attempt": "10ab7e634afbea2c",
+        "record_id": "aaeb33fa4699e3c5",
+        "retry_allowed": true,
+        "workflow_key": "a70ccb6fd1320f31"
+      },
+      "tool": "retry_policy"
+    },
+    {
+      "data": {
+        "attempt_uuid": "1f7f2faf1dbef5f7",
+        "record_id": "5d826046859455c4",
+        "state": "failed",
+        "workflow_key": "a70ccb6fd1320f31"
+      },
+      "tool": "result"
+    },
+    {
+      "data": {
+        "operator_notes": "Worker log mentions obsolete draft b3b7211968fb0dd5. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft b3b7211968fb0dd5. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft b3b7211968fb0dd5. Dashboard labels and timings are not gate evidence. ",
+        "request_token": "4a000b1e8132bfe2",
+        "workflow_key": "d50a7aa3a7023463"
+      },
+      "tool": "root"
+    },
+    {
+      "data": {
+        "operator_notes": "Worker log mentions obsolete draft 4a62c14158ea196d. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 4a62c14158ea196d. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 4a62c14158ea196d. Dashboard labels and timings are not gate evidence. ",
+        "request_token": "f9ed9bfaf67d0565",
+        "workflow_key": "3ca17e4562ecd62c"
+      },
+      "tool": "root"
+    },
+    {
+      "data": {
+        "operator_notes": "Worker log mentions obsolete draft 8656b5af9572794e. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 8656b5af9572794e. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 8656b5af9572794e. Dashboard labels and timings are not gate evidence. ",
+        "request_token": "3c5fcd13c9c0abd1",
+        "workflow_key": "75a1719927c1aef3"
+      },
+      "tool": "root"
+    },
+    {
+      "data": {
+        "prior_attempt": "2223f5abe8085425",
+        "record_id": "7caedea9b6128713",
+        "retry_allowed": false,
+        "workflow_key": "91caeedcf48227a8"
+      },
+      "tool": "retry_policy"
+    },
+    {
+      "data": {
+        "attempt_uuid": "332f21f06bef90d0",
+        "idempotency_key": "1155e1b66e587856",
+        "record_id": "5659f9d5e03f6b58",
+        "state": "sent",
+        "workflow_key": "75a1719927c1aef3"
+      },
+      "tool": "dispatch"
+    },
+    {
+      "data": {
+        "charge_token": "868eb1477011b6d8",
+        "for_attempt": "4b35cfe1bcc04b07",
+        "record_id": "f26aade62c7de04e",
+        "state": "settled",
+        "workflow_key": "3ca17e4562ecd62c"
+      },
+      "tool": "billing"
+    },
+    {
+      "data": {
+        "attempt_uuid": "ab1a572bf4c18e43",
+        "idempotency_key": "8297fe635b8a38a0",
+        "record_id": "6cf6c1475af45849",
+        "state": "sent",
+        "workflow_key": "d50a7aa3a7023463"
+      },
+      "tool": "dispatch"
+    },
+    {
+      "data": {
+        "attempt_uuid": "b6ce1b9691f129b0",
+        "idempotency_key": "fecd2eb839c7d091",
+        "record_id": "867e9ca691819124",
+        "state": "sent",
+        "workflow_key": "433456db4d6003e3"
+      },
+      "tool": "dispatch"
+    },
+    {
+      "data": {
+        "attempt_uuid": "332f21f06bef90d0",
+        "record_id": "ec3161c93496854b",
+        "state": "failed",
+        "workflow_key": "75a1719927c1aef3"
+      },
+      "tool": "result"
+    },
+    {
+      "data": {
+        "charge_token": "a195dd428343189f",
+        "for_attempt": "1f7f2faf1dbef5f7",
+        "record_id": "00c247de3a94b37f",
+        "state": "settled",
+        "workflow_key": "a70ccb6fd1320f31"
+      },
+      "tool": "billing"
+    },
+    {
+      "data": {
+        "attempt_uuid": "b6ce1b9691f129b0",
+        "record_id": "7d99d0abe6a73f71",
+        "state": "passed",
+        "workflow_key": "433456db4d6003e3"
+      },
+      "tool": "result"
+    },
+    {
+      "data": {
+        "operator_notes": "Worker log mentions obsolete draft c447fc7fe7633255. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft c447fc7fe7633255. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft c447fc7fe7633255. Dashboard labels and timings are not gate evidence. ",
+        "request_token": "dea057a073b25900",
+        "workflow_key": "a70ccb6fd1320f31"
+      },
+      "tool": "root"
+    }
+  ],
+  "tool_schemas": {
+    "billing": {
+      "properties": {
+        "charge_token": {
+          "pattern": "^[a-f0-9]{16}$",
+          "type": "string"
+        },
+        "for_attempt": {
+          "type": "string"
+        },
+        "record_id": {
+          "pattern": "^[a-f0-9]{16}$",
+          "type": "string"
+        },
+        "state": {
+          "enum": [
+            "settled",
+            "none"
+          ],
+          "type": "string"
+        },
+        "workflow_key": {
+          "pattern": "^[a-f0-9]{16}$",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "dispatch": {
+      "properties": {
+        "attempt_uuid": {
+          "pattern": "^[a-f0-9]{16}$",
+          "type": "string"
+        },
+        "idempotency_key": {
+          "type": "string"
+        },
+        "record_id": {
+          "pattern": "^[a-f0-9]{16}$",
+          "type": "string"
+        },
+        "state": {
+          "enum": [
+            "sent",
+            "not_sent"
+          ],
+          "type": "string"
+        },
+        "workflow_key": {
+          "pattern": "^[a-f0-9]{16}$",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "result": {
+      "properties": {
+        "attempt_uuid": {
+          "type": "string"
+        },
+        "record_id": {
+          "pattern": "^[a-f0-9]{16}$",
+          "type": "string"
+        },
+        "state": {
+          "enum": [
+            "passed",
+            "failed",
+            "pending"
+          ],
+          "type": "string"
+        },
+        "workflow_key": {
+          "pattern": "^[a-f0-9]{16}$",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "retry_policy": {
+      "properties": {
+        "prior_attempt": {
+          "type": "string"
+        },
+        "record_id": {
+          "pattern": "^[a-f0-9]{16}$",
+          "type": "string"
+        },
+        "retry_allowed": {
+          "type": "boolean"
+        },
+        "workflow_key": {
+          "pattern": "^[a-f0-9]{16}$",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "root": {
+      "properties": {
+        "operator_notes": {
+          "description": "Diagnostic text; old drafts are not gate evidence.",
+          "type": "string"
+        },
+        "request_token": {
+          "pattern": "^[a-f0-9]{16}$",
+          "type": "string"
+        },
+        "workflow_key": {
+          "pattern": "^[a-f0-9]{16}$",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  }
+}

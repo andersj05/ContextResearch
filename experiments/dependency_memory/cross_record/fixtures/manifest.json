@@ -30,6 +30,111 @@
       "bytes": 19209
     }
   ],
-  "evaluation": [],
-  "implementation_commit": null
+  "evaluation": [
+    {
+      "file": "evaluation-retry_queue-215957210.json",
+      "split": "evaluation",
+      "family": "retry_queue",
+      "sha256": "e4117cdc89b89ca61920a32b6a511a6bcfd3e963d7aa138613fe431f3013cf33",
+      "bytes": 24533
+    },
+    {
+      "file": "evaluation-retry_queue-4143903526.json",
+      "split": "evaluation",
+      "family": "retry_queue",
+      "sha256": "e5992551814d9f9a5736acf5664239313ce48678c73ea97fe80736602f8a6ca7",
+      "bytes": 24537
+    },
+    {
+      "file": "evaluation-retry_queue-2144838585.json",
+      "split": "evaluation",
+      "family": "retry_queue",
+      "sha256": "d9e9d8385a3650b45d2031c2b93b4f1566fd72a2e162f405398c78badabd54df",
+      "bytes": 24537
+    },
+    {
+      "file": "evaluation-retry_queue-1204688962.json",
+      "split": "evaluation",
+      "family": "retry_queue",
+      "sha256": "4ea4ac16eb806adc1f35b4bddd26f13c0643784aca88e0d767f020dac623fa2a",
+      "bytes": 24537
+    },
+    {
+      "file": "evaluation-ci_promotion-905618456.json",
+      "split": "evaluation",
+      "family": "ci_promotion",
+      "sha256": "2683c3318eb75ac7d822a3fa53d773186f7c457dee4bc2ac9578498690489702",
+      "bytes": 24141
+    },
+    {
+      "file": "evaluation-ci_promotion-849872531.json",
+      "split": "evaluation",
+      "family": "ci_promotion",
+      "sha256": "ddb0f5de374c6dbb416caeda58e6e6746cb097c94464dc806323172deb81fa40",
+      "bytes": 24141
+    },
+    {
+      "file": "evaluation-ci_promotion-3073140105.json",
+      "split": "evaluation",
+      "family": "ci_promotion",
+      "sha256": "a0f666d4b3aa59ea1fa145404f9d570d280dda031b8f7d40ca5f56ad93df6409",
+      "bytes": 24145
+    },
+    {
+      "file": "evaluation-ci_promotion-3868710405.json",
+      "split": "evaluation",
+      "family": "ci_promotion",
+      "sha256": "7bc665f6e26245dc0e7f09f6875cd8fd2974e834daa1606bece95037d9938823",
+      "bytes": 24145
+    },
+    {
+      "file": "evaluation-data_pipeline-4055490056.json",
+      "split": "evaluation",
+      "family": "data_pipeline",
+      "sha256": "78dc375c7aa6c998b1930017f8e376406342411b04db93a6785fe98c99236003",
+      "bytes": 30232
+    },
+    {
+      "file": "evaluation-data_pipeline-2023252911.json",
+      "split": "evaluation",
+      "family": "data_pipeline",
+      "sha256": "505a753ebff94454ec78c55baddd49c7198ebf260c1b4d222f9a6ef0fbf6c853",
+      "bytes": 30232
+    },
+    {
+      "file": "evaluation-data_pipeline-3054704387.json",
+      "split": "evaluation",
+      "family": "data_pipeline",
+      "sha256": "61793e3c457144bd19bbb4f3c7d15783bd95134d7ed3ebd6e8f9637f2b32ee4b",
+      "bytes": 30232
+    },
+    {
+      "file": "evaluation-data_pipeline-1854593748.json",
+      "split": "evaluation",
+      "family": "data_pipeline",
+      "sha256": "8bf580ab5f0a03eb47bca599722048105dd51e2c6be671684d8eb300240e9c6a",
+      "bytes": 30232
+    }
+  ],
+  "implementation_commit": "b7f774088392fe6377a8c8eee03eb493499a1bd2",
+  "evaluation_seeds": {
+    "retry_queue": [
+      215957210,
+      4143903526,
+      2144838585,
+      1204688962
+    ],
+    "ci_promotion": [
+      905618456,
+      849872531,
+      3073140105,
+      3868710405
+    ],
+    "data_pipeline": [
+      4055490056,
+      2023252911,
+      3054704387,
+      1854593748
+    ]
+  }
 }
