@@ -308,3 +308,35 @@ Final validation for the live-study milestone: 334 tests pass, the repository
 auditor reports PASS with no errors and reconciles 141 new requests/112 terminal
 decisions, and the manuscript builds with 34 cited sources. The branch remains
 local; no pull request, external message, deployment or publication was made.
+
+## September 22: annotated-schema checks on newly frozen traces
+
+The user requested two cheap automatic checks for exact identifiers and scoped
+relationships, separate development/evaluation cases for retry, CI handoff and
+multi-stage data jobs, and a matched-budget comparison with strong prompting,
+direct records, indexed recovery and full history. No suitable untouched traces
+were present; the user explicitly selected new frozen traces. The terminal
+grader and six evaluation cases were committed before the extractor. Their
+values are held out from development, while their annotated schemas and
+obligation families are shared. Do not describe this as transfer to unseen
+schema structures or real production traces.
+
+The generic extractor reads schema-provided opaque-ID, reference and ephemeral
+annotations, projects scalar tool-result fields, and checks exact ID values plus
+owner/path/reference triples across both byte boundaries. It does not validate
+unannotated status fields or arbitrary model prose. The automatic arm verifies
+its own deterministic projection; it is not a test of repairing a model-written
+summary. Development mutation controls detect ID corruption and role
+reassociation. Frozen implementation `75ab94f`, protocol `284405d`.
+
+All 72 fixed GPT-6 Luna medium calls complete for 0.5510905 planning credits.
+On 12 paired terminal cases, all five arms succeed 12/12. Automatic records
+match hand-written direct outcomes and are cheaper than the 24-call strong
+prompt pipeline, but direct and indexed controls remain cheaper. The primary
+criterion of fewer failures at equal or lower cost fails because the strong
+prompt has zero failures. Preserve this negative result; do not tune or extend
+the evaluated set after seeing it. The live Windows process timer quantized
+local work to zero, so a separate post-run high-resolution development-trace
+calibration supplies only a cost sensitivity. The synthetic local prices and
+unknown subscription debit preclude a fully measured production-total-cost
+claim. Claim C47 records the limit.

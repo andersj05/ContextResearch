@@ -8,6 +8,31 @@ Develop a mathematically precise and implementable study of repeated agent compa
 
 The September 21 user-directed pivot prioritizes a new mechanism: **auditing a memory collision before compaction and certifying the cheapest allowed recovery or required retained distinction**. Stop using tighter constants in the same example as the main research advance. The existing mathematics remains a calibration result.
 
+The newest [schema-check transfer test](../research/SCHEMA_CHECKS_UNSEEN_TRACES_2026-09-22.md)
+froze six new constructed evaluation traces across retry handling, CI handoff,
+and multi-stage data jobs before developing a generic extractor. It uses 72
+fresh GPT-6 Luna medium calls, 12 paired terminal cases, two byte boundaries,
+and five fully charged model arms. Every arm succeeds on 12/12. Schema-derived
+ID/reference checks match hand-written direct records and cost about 0.07312518
+experimental credits versus 0.25370650 for stronger prompting, but direct
+records (0.06701018) and indexed recovery (0.06299562) are cheaper. The
+prespecified primary criterion of **fewer terminal failures at equal or lower
+cost is not met**, because prompting has no failures. The 0.5510905 actual
+planning credits are token-derived; local CPU/byte prices are synthetic and CPU
+was calibrated after the run when the Windows live timer quantized short work
+to zero. Evaluation instances have new values but reuse development schemas;
+annotations expose ID/reference roles. No raw-trace inference, novel algorithm,
+native-compaction or production-cost gain is established. Claim C47; living
+draft v0.17. Frozen implementation `75ab94f`, protocol `284405d`.
+Final validation: 340 offline tests pass; repository validator PASS reconciles
+72 new requests and 60 terminal decisions; the paper builds with 34 cited
+sources. No rerun, purchase, reset or external publication occurred.
+
+The next discriminating test would hold out schema structures, introduce
+incomplete annotations, and check model-proposed memory under executable late
+obligations. This run does not justify tuning and rerunning its easy evaluation
+set to seek a positive result.
+
 The new [GPT-6 Luna medium evidence](../research/LUNA6_DELAYED_FAILURES_2026-09-22.md)
 contains **141 fresh model calls**: a 117-call fixed pilot and a prospectively
 frozen 24-call prompt follow-up. Both saved-evidence audits pass. Total reported

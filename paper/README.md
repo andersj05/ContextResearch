@@ -22,6 +22,8 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.17 adds the [annotated-schema follow-up](../research/SCHEMA_CHECKS_UNSEEN_TRACES_2026-09-22.md), claim C47. Six new constructed evaluation traces and 72 Luna medium calls yield 12/12 for prompting, automatic checks, direct records, indexed recovery and full history. Automatic records cost less than prompting and tie direct outcomes, but the prespecified fewer-failure criterion fails; direct and indexed controls are cheaper. Evaluation holds out values within known annotated schemas, not new schema structures or production incidents. The local CPU sensitivity was calibrated after the run because the live timer resolved short operations as zero.
+
 Living draft v0.16 adds the [fresh GPT-6 Luna medium study](../research/LUNA6_DELAYED_FAILURES_2026-09-22.md), claims C44-C46. It records 141 calls, live failures, complete model-cost accounting, and strong direct/recovery/full-history controls. A stronger prompt eliminates clipping but retains semantic failures. The study uses constructed handoffs and imposed byte limits; manual adapter knowledge, public-rule availability and development reuse remain explicit limitations.
 
 Living draft v0.15 adds the [historical workflow replay](../research/HISTORICAL_WORKFLOW_REPLAY_2026-09-22.md), claims C41-C43. Eight real attempt records support counterfactual delayed handoff failures, byte-limited receipt repair and conditional synthetic cost frontiers. Direct receipts outperform iterative repair costs. Scope controls test reuse/invalidation. The evidence was inspected during development; there is no held-out, compaction-causal or production-saving claim.

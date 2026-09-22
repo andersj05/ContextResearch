@@ -1,6 +1,6 @@
 # Repeated Context Compression with Delayed Task Dependencies
 
-Working draft — September 22, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an asymptotic threshold and a tightly certified rate-two error, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, and 141 fresh GPT-6 Luna medium calls in a controlled memory-writing study. External mathematical review, novelty assessment, held-out evaluation and production benefit remain open.
+Working draft — September 22, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an asymptotic threshold and a tightly certified rate-two error, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, and a 72-call annotated-schema transfer test. External mathematical review, novelty assessment, realistic unseen-workflow evaluation and production benefit remain open.
 
 ## Abstract
 
@@ -307,6 +307,38 @@ pure truncation explanation. It is a prompt package on reused development
 histories, not held-out or single-factor causal evidence. Both studies total
 141 calls and 1.3190825 credits; the original and follow-up sources are separately
 frozen. Claim C46.
+
+### 8.5 Annotated-schema checks on new tool-result traces
+
+The [frozen follow-up](../research/SCHEMA_CHECKS_UNSEEN_TRACES_2026-09-22.md)
+uses six newly constructed evaluation traces with disjoint development values
+across retry handling, CI handoffs, and multi-stage data jobs. Their obligation
+families and annotated tool schemas are shared with development; the evaluation
+is of new trace instances, not new schema structures. At 2,600- and 1,300-byte
+boundaries, a generic extractor keeps scalar tool-result fields and checks
+schema-annotated exact IDs and owner/path/reference triples before source
+deletion. The second check sees only the bounded parent memory. It does not
+certify unannotated state or inspect arbitrary model-proposed prose. The
+hand-written direct baseline uses explicit family-specific critical fields.
+
+A fixed GPT-6 Luna medium schedule makes 72 calls and records 0.5510905
+token-derived planning credits. Across 12 paired terminal decisions, stronger
+data-first prompting, automatic checked tables, hand-written direct records,
+indexed recovery and full history each score 12/12. The automatic arm removes
+memory-writing calls and costs 0.0725445 model credits versus 0.2537065 for
+prompting; direct records cost 0.0667650 and indexed recovery 0.0628880.
+Under declared synthetic local CPU/byte prices, the automatic total is about
+0.07312518 versus 0.25370650 for prompting. The live Windows timer quantized
+brief local operations to zero; this total uses a separately labeled post-run
+high-resolution development-trace CPU calibration. Actual subscription debit
+and full production costs remain unknown.
+
+The prespecified primary criterion of fewer failures at equal or lower total
+cost **fails**, because the strong prompt also has no failures. Automatic
+records tie the hand-written control in this small constructed set, but the
+direct and indexed arms are cheaper. This does not establish a novel mechanism,
+robust unannotated extraction, or an advantage over strong simple retention.
+Claim C47.
 
 ## 9. Limitations and open results
 

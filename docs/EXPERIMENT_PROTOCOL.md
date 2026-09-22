@@ -1,5 +1,15 @@
 # Experiment protocol draft
 
+Latest September 22 schema-check milestone: the
+[frozen 72-call contract](../experiments/dependency_memory/schema_checks/FROZEN_PROTOCOL.md)
+tests newly constructed retry, CI handoff, and data-job traces under two byte
+boundaries and five charged arms. All arms succeed on all 12 paired terminal
+decisions, so the prespecified fewer-failures criterion fails despite lower
+automatic model cost and parity with hand-written direct records. The
+[finding](../research/SCHEMA_CHECKS_UNSEEN_TRACES_2026-09-22.md) distinguishes
+schema annotations, held-out values, post-run local CPU calibration, and
+unmeasured provider debit from a claim of general automatic extraction.
+
 Latest September 22 milestone: the [historical workflow replay](../research/HISTORICAL_WORKFLOW_REPLAY_2026-09-22.md)
 uses eight pinned actual attempt records with exact opaque identities. Two imposed
 byte boundaries and costed archive tools produce conditional matched-allowance

@@ -1,6 +1,22 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.16 — September 22, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.17 — September 22, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## New frozen traces: automatic checks tie the controls
+
+The [schema-derived follow-up](../research/SCHEMA_CHECKS_UNSEEN_TRACES_2026-09-22.md)
+froze new retry, CI handoff and multi-stage data-job traces before writing its
+extractor. A generic table retains schema-annotated exact IDs and reference
+roles through two byte boundaries; two checks detect ID changes and role
+reassociation. Seventy-two GPT-6 Luna medium calls compare stronger prompting,
+automatic tables, hand-written direct records, indexed recovery and full
+history on 12 paired terminal cases. Every arm scores 12/12. The automatic arm
+costs about 0.0731 experimental credits versus 0.2537 for prompting, but
+direct records and indexed recovery cost less. **The prespecified fewer-failure
+criterion fails** because prompting also makes no terminal error. The traces
+hold out values within development schema families and the schemas explicitly
+label IDs/references; general automatic extraction and production savings are
+not established. [C47]
 
 ## Live memory failures and a stronger cost control
 
@@ -63,8 +79,9 @@ or evidence of model improvement. [C40]
 
 A useful systems contribution remains possible if we can extract sound delayed
 failure witnesses from realistic workflows at acceptable cost. The inspected
-historical replay above supplies one bounded adapter; automatic extraction and
-superiority over strong simple retention remain unperformed. The older
+historical replay supplies one bounded adapter; the annotated-schema test above
+does not cover unannotated tool results or show superiority over strong simple
+retention. The older
 delayed-query coding results have separate unresolved priority questions.
 
 ## Feedback-loop follow-up: preserve the failure constraints
