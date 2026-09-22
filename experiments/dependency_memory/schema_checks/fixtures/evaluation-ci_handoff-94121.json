@@ -1,0 +1,137 @@
+{
+  "candidates": [
+    "sv-66645cf0a4",
+    "sv-ee53ffe1fc"
+  ],
+  "family": "ci_handoff",
+  "futures": [
+    {
+      "event": {
+        "path": "approval.covers_build",
+        "value": "bd-9f3e501e3c"
+      },
+      "id": "ci_handoff-evaluation-94121-0",
+      "target": "sv-66645cf0a4"
+    },
+    {
+      "event": {
+        "path": "check.verdict",
+        "value": "pass"
+      },
+      "id": "ci_handoff-evaluation-94121-1",
+      "target": "sv-ee53ffe1fc"
+    }
+  ],
+  "id": "ci_handoff-evaluation-94121",
+  "schema_version": "tool_trace_v1",
+  "split": "evaluation",
+  "tool_results": [
+    {
+      "approval": {
+        "approval_key": "ap-2c7235898a",
+        "covers_build": "bd-7cbf802c3b"
+      },
+      "check": {
+        "covers_build": "bd-7cbf802c3b",
+        "run_key": "ci-065f41d271",
+        "verdict": "fail"
+      },
+      "current_build": "bd-7cbf802c3b",
+      "handoff_note": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+      "service_key": "sv-0e1d1891ec"
+    },
+    {
+      "approval": {
+        "approval_key": "ap-ae3be913fc",
+        "covers_build": "bd-0ad8b50849"
+      },
+      "check": {
+        "covers_build": "bd-27375c967d",
+        "run_key": "ci-07e452b655",
+        "verdict": "pass"
+      },
+      "current_build": "bd-0ad8b50849",
+      "handoff_note": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+      "service_key": "sv-ee53ffe1fc"
+    },
+    {
+      "approval": {
+        "approval_key": "ap-68c32da867",
+        "covers_build": "bd-c8706f51ce"
+      },
+      "check": {
+        "covers_build": "bd-9f3e501e3c",
+        "run_key": "ci-f2641d1fa3",
+        "verdict": "pass"
+      },
+      "current_build": "bd-9f3e501e3c",
+      "handoff_note": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+      "service_key": "sv-66645cf0a4"
+    },
+    {
+      "approval": {
+        "approval_key": "ap-b89e6eba69",
+        "covers_build": "bd-a68bdacb82"
+      },
+      "check": {
+        "covers_build": "bd-a68bdacb82",
+        "run_key": "ci-7e7dee6a14",
+        "verdict": "pass"
+      },
+      "current_build": "bd-a68bdacb82",
+      "handoff_note": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+      "service_key": "sv-243512c8ec"
+    }
+  ],
+  "tool_schema": {
+    "properties": {
+      "approval": {
+        "properties": {
+          "approval_key": {
+            "format": "opaque-id",
+            "type": "string"
+          },
+          "covers_build": {
+            "type": "string",
+            "x-reference": true
+          }
+        },
+        "type": "object"
+      },
+      "check": {
+        "properties": {
+          "covers_build": {
+            "type": "string",
+            "x-reference": true
+          },
+          "run_key": {
+            "format": "opaque-id",
+            "type": "string"
+          },
+          "verdict": {
+            "enum": [
+              "pass",
+              "fail",
+              "pending"
+            ],
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "current_build": {
+        "format": "opaque-id",
+        "type": "string"
+      },
+      "handoff_note": {
+        "type": "string",
+        "x-ephemeral": true
+      },
+      "service_key": {
+        "format": "opaque-id",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  }
+}

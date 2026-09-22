@@ -1,0 +1,113 @@
+{
+  "candidates": [
+    "rq-ff89e0914b",
+    "rq-a1ba841797"
+  ],
+  "family": "retry",
+  "futures": [
+    {
+      "event": {
+        "path": "result_state",
+        "value": "passed"
+      },
+      "id": "retry-evaluation-94121-0",
+      "target": "rq-ff89e0914b"
+    },
+    {
+      "event": {
+        "path": "can_retry",
+        "value": true
+      },
+      "id": "retry-evaluation-94121-1",
+      "target": "rq-a1ba841797"
+    }
+  ],
+  "id": "retry-evaluation-94121",
+  "schema_version": "tool_trace_v1",
+  "split": "evaluation",
+  "tool_results": [
+    {
+      "attempt_key": "at-cb3d5f701a",
+      "can_retry": false,
+      "dispatch_state": "not_sent",
+      "operator_note": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+      "request_key": "rq-dc9b2837f8",
+      "reservation_key": "rs-9ab4181a5e",
+      "result_state": "pending",
+      "retry_of": "at-f102584418"
+    },
+    {
+      "attempt_key": "at-1017c99b6f",
+      "can_retry": false,
+      "dispatch_state": "sent",
+      "operator_note": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+      "request_key": "rq-a1ba841797",
+      "reservation_key": "rs-0957901197",
+      "result_state": "failed",
+      "retry_of": "at-254a2c74e4"
+    },
+    {
+      "attempt_key": "at-f7a4d9f14f",
+      "can_retry": true,
+      "dispatch_state": "sent",
+      "operator_note": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+      "request_key": "rq-ff89e0914b",
+      "reservation_key": "rs-69304892ef",
+      "result_state": "failed",
+      "retry_of": "at-84f7537253"
+    },
+    {
+      "attempt_key": "at-b7169ada79",
+      "can_retry": false,
+      "dispatch_state": "sent",
+      "operator_note": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+      "request_key": "rq-e3554870f7",
+      "reservation_key": "rs-e128546bcc",
+      "result_state": "passed",
+      "retry_of": "at-27d0c685d8"
+    }
+  ],
+  "tool_schema": {
+    "properties": {
+      "attempt_key": {
+        "format": "opaque-id",
+        "type": "string"
+      },
+      "can_retry": {
+        "type": "boolean"
+      },
+      "dispatch_state": {
+        "enum": [
+          "sent",
+          "not_sent"
+        ],
+        "type": "string"
+      },
+      "operator_note": {
+        "type": "string",
+        "x-ephemeral": true
+      },
+      "request_key": {
+        "format": "opaque-id",
+        "type": "string"
+      },
+      "reservation_key": {
+        "format": "opaque-id",
+        "type": "string"
+      },
+      "result_state": {
+        "enum": [
+          "failed",
+          "passed",
+          "pending"
+        ],
+        "type": "string"
+      },
+      "retry_of": {
+        "type": "string",
+        "x-reference": true
+      }
+    },
+    "type": "object"
+  }
+}

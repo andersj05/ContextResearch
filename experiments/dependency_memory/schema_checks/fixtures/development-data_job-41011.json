@@ -1,0 +1,227 @@
+{
+  "candidates": [
+    "pl-09569768a9",
+    "pl-d3b943e440"
+  ],
+  "family": "data_job",
+  "futures": [
+    {
+      "event": {
+        "path": "transform.input_key",
+        "value": "ds-dfa51df0b8"
+      },
+      "id": "data_job-development-41011-0",
+      "target": "pl-09569768a9"
+    },
+    {
+      "event": {
+        "path": "load.state",
+        "value": "pass"
+      },
+      "id": "data_job-development-41011-1",
+      "target": "pl-d3b943e440"
+    }
+  ],
+  "id": "data_job-development-41011",
+  "schema_version": "tool_trace_v1",
+  "split": "development",
+  "tool_results": [
+    {
+      "extract": {
+        "output_key": "ds-dfa51df0b8",
+        "run_key": "ex-c13f6c29c1",
+        "state": "pass"
+      },
+      "load": {
+        "input_key": "ds-daea9b2740",
+        "output_key": "ds-a95f5ac60b",
+        "run_key": "ld-f46aad6767",
+        "state": "pass"
+      },
+      "pipeline_key": "pl-09569768a9",
+      "publish_approval": {
+        "approval_key": "ap-bcb0396420",
+        "covers_output": "ds-a95f5ac60b"
+      },
+      "scheduler_log": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+      "transform": {
+        "input_key": "ds-4457d28385",
+        "output_key": "ds-daea9b2740",
+        "run_key": "tr-a0364cc5eb",
+        "state": "pass"
+      }
+    },
+    {
+      "extract": {
+        "output_key": "ds-7a741693d0",
+        "run_key": "ex-af91ec33b5",
+        "state": "pass"
+      },
+      "load": {
+        "input_key": "ds-c40eb628e7",
+        "output_key": "ds-efd9e0690c",
+        "run_key": "ld-8748a66c4f",
+        "state": "pass"
+      },
+      "pipeline_key": "pl-d3b943e440",
+      "publish_approval": {
+        "approval_key": "ap-054e9f004d",
+        "covers_output": "ds-fdbb8b909f"
+      },
+      "scheduler_log": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+      "transform": {
+        "input_key": "ds-7a741693d0",
+        "output_key": "ds-c40eb628e7",
+        "run_key": "tr-62daa645a9",
+        "state": "pass"
+      }
+    },
+    {
+      "extract": {
+        "output_key": "ds-ea80c0fc01",
+        "run_key": "ex-973e1630a4",
+        "state": "pass"
+      },
+      "load": {
+        "input_key": "ds-6333168f7c",
+        "output_key": "ds-5d44574dcc",
+        "run_key": "ld-81b97f8014",
+        "state": "pass"
+      },
+      "pipeline_key": "pl-f41df8735c",
+      "publish_approval": {
+        "approval_key": "ap-9de7b8171d",
+        "covers_output": "ds-5d44574dcc"
+      },
+      "scheduler_log": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+      "transform": {
+        "input_key": "ds-ea80c0fc01",
+        "output_key": "ds-6333168f7c",
+        "run_key": "tr-638ceeded3",
+        "state": "pass"
+      }
+    },
+    {
+      "extract": {
+        "output_key": "ds-d46c599c60",
+        "run_key": "ex-c93f8ddd7a",
+        "state": "pass"
+      },
+      "load": {
+        "input_key": "ds-f4a2a986ea",
+        "output_key": "ds-d00cda05a5",
+        "run_key": "ld-7c527aa1c4",
+        "state": "fail"
+      },
+      "pipeline_key": "pl-d18effd26b",
+      "publish_approval": {
+        "approval_key": "ap-3ae32dced5",
+        "covers_output": "ds-d00cda05a5"
+      },
+      "scheduler_log": "Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. Worker transcript, elapsed discussion, dashboard colors and unrelated operator notes. ",
+      "transform": {
+        "input_key": "ds-d46c599c60",
+        "output_key": "ds-f4a2a986ea",
+        "run_key": "tr-c05a8e6237",
+        "state": "pass"
+      }
+    }
+  ],
+  "tool_schema": {
+    "properties": {
+      "extract": {
+        "properties": {
+          "output_key": {
+            "format": "opaque-id",
+            "type": "string"
+          },
+          "run_key": {
+            "format": "opaque-id",
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "pass",
+              "fail",
+              "pending"
+            ],
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "load": {
+        "properties": {
+          "input_key": {
+            "type": "string",
+            "x-reference": true
+          },
+          "output_key": {
+            "format": "opaque-id",
+            "type": "string"
+          },
+          "run_key": {
+            "format": "opaque-id",
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "pass",
+              "fail",
+              "pending"
+            ],
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "pipeline_key": {
+        "format": "opaque-id",
+        "type": "string"
+      },
+      "publish_approval": {
+        "properties": {
+          "approval_key": {
+            "format": "opaque-id",
+            "type": "string"
+          },
+          "covers_output": {
+            "type": "string",
+            "x-reference": true
+          }
+        },
+        "type": "object"
+      },
+      "scheduler_log": {
+        "type": "string",
+        "x-ephemeral": true
+      },
+      "transform": {
+        "properties": {
+          "input_key": {
+            "type": "string",
+            "x-reference": true
+          },
+          "output_key": {
+            "format": "opaque-id",
+            "type": "string"
+          },
+          "run_key": {
+            "format": "opaque-id",
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "pass",
+              "fail",
+              "pending"
+            ],
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    "type": "object"
+  }
+}
