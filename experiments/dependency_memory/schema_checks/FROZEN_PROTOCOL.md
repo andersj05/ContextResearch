@@ -46,8 +46,11 @@ Count every model write and final decision, including failures; raw token usage,
 cached inputs, output/reasoning, and wall time. Use the same dated published
 GPT-6 Luna short-context planning rates as the prior pilot; keep account debit
 unknown. Count extractor/check CPU, source bytes read, memory bytes written, and
-indexed recovered bytes separately. Report a conservative local CPU credit
-conversion as a sensitivity analysis, not as a measured provider bill. Final
+indexed recovered bytes separately. The preregistered experimental total adds
+measured model planning credits, **0.0001 credit per measured local CPU second**,
+and **0.00000001 credit per archive byte retrieved or full-history byte read**.
+These two local prices are synthetic sensitivity assumptions, not a measured
+provider bill; report the components and the break-even CPU price as well. Final
 decisions use `gpt-6-luna`, medium reasoning and the prior audited fresh-thread
 transport. Cap the new launch at 80 dispatched calls and 10 planning credits;
 the fixed schedule has 72 calls (12 memory writes and 60 decisions). No retries,
