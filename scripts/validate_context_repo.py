@@ -500,6 +500,19 @@ def main() -> int:
     if json.loads(collision_example.read_text(encoding="utf-8")) != expected_collisions["specifications"][0]:
         errors.append("Collision audit input example is stale; regenerate it")
     counts["collision_audit_constructed_specifications"] = len(expected_collisions["audits"])
+    # Use the full package name: this adapter imports its unchanged parent
+    # environment rather than copying or modifying historical launch modules.
+    sys.path.insert(0, str(ROOT))
+    from experiments.dependency_memory.feedback_compaction import run as feedback_run
+    expected_feedback = json.loads(json.dumps(feedback_run.certificate()))
+    feedback_path = ROOT / "experiments/dependency_memory/results/feedback_compaction_certificate.json"
+    if json.loads(feedback_path.read_text(encoding="utf-8")) != expected_feedback:
+        errors.append("Feedback compaction certificate is stale; regenerate it")
+    feedback_report = ROOT / "experiments/dependency_memory/results/feedback_compaction_report.md"
+    if feedback_report.read_text(encoding="utf-8") != feedback_run.report(expected_feedback):
+        errors.append("Feedback compaction report is stale; regenerate it")
+    counts["feedback_constructed_contracts"] = len(expected_feedback["matrix"])
+    counts["feedback_method_contract_checks"] = sum(len(r["arms"]) for r in expected_feedback["matrix"])
     import run_artifact_workflow
     artifact_rows, artifact_summary, artifact_witness = run_artifact_workflow.diagnostics()
     expected_rows = [{key: str(value) for key, value in row.items()} for row in artifact_rows]
