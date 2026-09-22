@@ -524,6 +524,17 @@ def main() -> int:
     counts["novelty_strategy_subset_checks"] = expected_novelty["small_strategy_check"]["nonempty_subset_budget_checks"]
     counts["novelty_strategy_coloring_checks"] = expected_novelty["small_strategy_check"]["coloring_checks"]
     counts["novelty_fixture_checks"] = len(expected_novelty["fixture_checks"])
+    from experiments.dependency_memory.workflow_replay import run as workflow_replay_run
+    expected_replay = json.loads(json.dumps(workflow_replay_run.certificate()))
+    replay_path = ROOT / "experiments/dependency_memory/results/workflow_replay_certificate.json"
+    if json.loads(replay_path.read_text(encoding="utf-8")) != expected_replay:
+        errors.append("Historical workflow replay certificate is stale; regenerate it")
+    replay_report = ROOT / "experiments/dependency_memory/results/workflow_replay_report.md"
+    if replay_report.read_text(encoding="utf-8") != workflow_replay_run.report(expected_replay):
+        errors.append("Historical workflow replay report is stale; regenerate it")
+    counts["workflow_replay_historical_records"] = len(expected_replay["records"])
+    counts["workflow_replay_constructed_contracts"] = len(expected_replay["matrix"])
+    counts["workflow_replay_allowance_frontiers"] = len(expected_replay["frontiers"])
     import run_artifact_workflow
     artifact_rows, artifact_summary, artifact_witness = run_artifact_workflow.diagnostics()
     expected_rows = [{key: str(value) for key, value in row.items()} for row in artifact_rows]
