@@ -188,6 +188,32 @@ family exhaustion is not unrestricted impossibility, and the existence of a
 successful decoder is not a performance guarantee for a chosen agent. Natural
 task extraction, scalable verification and practical superiority remain open.
 
+### 8.2 A stricter novelty boundary
+
+The [follow-up audit](../research/FEEDBACK_NOVELTY_AUDIT_2026-09-22.md) gives an
+exact elementary reformulation (C40). For a fixed task and hard recovery budget,
+regard each bounded decision tree as a strategy symbol. A collision group is
+safe iff its worlds share an accepted strategy. Requiring this for every future
+task gives a downward-closed safe family. Its minimal unsafe groups are forbidden
+hyperedges; the smallest extra memory alphabet is their weak chromatic number.
+Labels can be reused across already distinguishable retained/public cells.
+These are established strategy and coloring ideas [@dupuis2004strategies;
+@bennett2016weakstrong], with safe-group coding precedents [@basu2022hypergraph].
+No asymptotic coding theorem is imported into the one-shot cost contract.
+
+Forward strategy composition checks 7,203 subset/budget cases on the existing
+343 three-world answer tables, and 1,029 colorings agree with repair optimization.
+Independent color-assignment search also agrees on the 12 existing fixtures.
+These extend verification of an existing finite domain, not independent trials.
+
+Self-GC supplies pre-commit structural rehearsal and recoverable context objects
+[@selfgc2026]; this differs from exhaustive semantic certification. Executable
+counterexamples and learned-model refinement also have formal-methods precedents
+[@meijer2019blackbox]. Therefore neither the broad architecture nor our finite
+optimizer currently supports a general novelty claim. Cheap, sound extraction
+from realistic workflows and measurable benefit at matched total costs remain
+candidate systems contributions, not completed results.
+
 ## 9. Limitations and open results
 
 The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. No learned dependency classifier or LLM-agent benchmark has been evaluated here. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, useful finite-length joint codes, a wider rate-distortion characterization, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.

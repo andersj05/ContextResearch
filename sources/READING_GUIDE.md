@@ -17,6 +17,16 @@ No full-proof, experiment replication or inherited review-status upgrade occurre
 The [completed finite feedback experiment](../research/FEEDBACK_BEFORE_FORGETTING_2026-09-22.md)
 does not establish novelty for cumulative feedback or gains over strong static retention.
 
+The [stricter novelty audit](../research/FEEDBACK_NOVELTY_AUDIT_2026-09-22.md)
+adds Self-GC v1's framework and rehearsal/recovery sections, Meijer and van de
+Pol's black-box checking introduction and Sections 2.2-2.3, and Bennett et al.'s
+**abstract-only** coloring definitions. The Compaction Cliff Section 3.3 and
+Basu et al.'s safe-group definitions were revisited. Exact links and bounded
+read scopes are in the [source comparison](../research/FEEDBACK_PRIOR_ART_2026-09-22.md).
+No broad-corpus records or full-paper review statuses were upgraded. The local
+strategy/coloring reduction is an elementary deduction, not a transferred
+source-coding theorem or a new algorithm claim.
+
 ## New audit direction
 
 Latest research branch: the [compaction collision audit](../research/COMPACTION_COLLISION_AUDIT_2026-09-21.md)

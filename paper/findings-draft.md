@@ -1,6 +1,21 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.13 — September 22, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.14 — September 22, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## Novelty verdict: no new feedback algorithm established
+
+The [stricter investigation](../research/FEEDBACK_NOVELTY_AUDIT_2026-09-22.md)
+finds close context-management and formal-methods precedents and gives an exact
+elementary reduction of our finite repair objective to accepted recovery
+strategies and weak hypergraph coloring. Independent checks cover 7,203 small
+subset/budget cases, 1,029 colorings and all 12 existing audit fixtures. These
+reuse prior finite domains and narrow the claim; they are not a new algorithm
+or evidence of model improvement. [C40]
+
+A useful systems contribution remains possible if we can extract sound delayed
+failure witnesses from realistic workflows at acceptable cost. That capability
+and superiority over strong simple retention are unperformed. The older
+delayed-query coding results have separate unresolved priority questions.
 
 ## Feedback-loop follow-up: preserve the failure constraints
 

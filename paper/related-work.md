@@ -8,6 +8,13 @@ adapter is a finite calibration; feedback alone, persistence of old failures and
 finite candidate elimination are not novelty claims. The critical-field baseline
 matches it in the tested family.
 
+The [subsequent novelty audit](../research/FEEDBACK_NOVELTY_AUDIT_2026-09-22.md)
+finds closer architectural precedent in Self-GC [@selfgc2026] and formal-methods
+precedent in black-box checking [@meijer2019blackbox]. It explicitly reduces the
+finite repair objective to shared accepted strategies and weak coloring of
+minimal unsafe groups (C40). This removes a general algorithmic novelty claim;
+useful extraction and cost-effective application remain unperformed.
+
 | Work | Connection | Distinction to maintain |
 |---|---|---|
 | Nagle et al. [@nagle2024] | Black-box prompt rate–distortion and query visibility | Our updater cannot reread the original source after the first bottleneck. |
@@ -49,6 +56,12 @@ verifier [@trace2026], and Context Codec's typed commitment checks
 [@contextcodec2026]. The finite auditor instead certifies a budget obstruction
 over an entire collision group under all declared adaptive recovery policies.
 That restricted protocol is a candidate contribution, not established priority.
+
+The later C40 reduction sharpens this assessment: the finite objective is an
+ordinary strategy/weak-coloring construction. A compaction-specific interface
+could still support an engineering contribution, but is not by itself a new
+general algorithm. Weak coloring forbids monochromatic unsafe groups; it does
+not require pairwise different colors inside each group [@bennett2016weakstrong].
 
 The recurrence uses ordinary information-state planning [@subramanian2022ais],
 and grouping inputs by shared acceptable outcomes has direct hypergraph coding

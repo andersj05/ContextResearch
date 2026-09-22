@@ -189,3 +189,29 @@ The [next-stage design](FEEDBACK_RESEARCH_PROTOCOL.md) requires opaque-payload,
 execution-graded snapshots and equally informed controls before model spending;
 model revision, transport, sample size, seeds and allocation remain unfilled.
 Work is on `task/feedback-compaction-research`.
+
+## September 22: test novelty by reduction, not terminology
+
+In response to the user's request to continue and assess novelty, read closer
+primary precedents and explicitly reformulate the existing finite algorithm.
+The [novelty memo](../research/FEEDBACK_NOVELTY_AUDIT_2026-09-22.md) shows that
+bounded recovery policies form an accepted-strategy relation. Downward closure
+then makes minimum additional-state repair exactly weak coloring of minimal
+unsafe groups. Preserve the distinction from strong coloring and from sources
+whose hyperedges denote safe groups. Import no asymptotic source-coding theorem.
+
+The new `novelty_audit` subpackage independently composes forward strategies and
+searches color assignments. It checks 7,203 subset/budget cases and 1,029 small
+colorings on the existing domain, plus the 12 original fixtures. This extends
+verification rather than creating new independent tasks. Keep historical modules,
+fingerprints, observations and model allocations unchanged. Claim C40 and living
+draft v0.14 record the conclusion together with the manuscript and current status.
+
+Do not claim novelty for generic feedback, cumulative constraints, pre-commit
+validation, executable counterexamples or the present finite optimizer. Self-GC's
+structural rehearsal must not be misrepresented as exhaustive semantic checking.
+The remaining candidate systems contribution needs sound evidence extraction,
+appropriate invalidation/reuse of checks and measured utility at matched total
+costs. If simple critical-field retention continues to match it, report that
+result and evaluate the auditor as a diagnostic tool. No new model calls or
+external communications were made.

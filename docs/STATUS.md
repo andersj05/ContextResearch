@@ -12,10 +12,17 @@ The September 22 feedback-loop investigation now connects that auditor to the
 existing executable workflow. It supports a bounded propose-audit-repair loop,
 but the strong critical-field baseline matches its feasible contracts. Treat
 this as calibration and a useful negative result, not a better-compactor claim.
-Final checks: 303 tests passed, the offline validator reported no errors, and
-the paper built with 30 cited sources. Historical study evidence is unchanged.
+The subsequent [strict novelty audit](../research/FEEDBACK_NOVELTY_AUDIT_2026-09-22.md)
+also reformulates the finite optimizer as accepted-strategy selection and weak
+hypergraph coloring. Close architectural precedents further narrow the claim.
+No general feedback-algorithm novelty is established. Historical study evidence
+is unchanged; the new checks are offline and use zero model calls.
+Milestone validation: all 310 tests passed, the repository validator reported
+PASS with no errors, and the paper built with 33 cited sources.
 
 ## Established in this repository
+
+- **September 22 novelty conclusion:** the [C40 reduction](../research/FEEDBACK_NOVELTY_AUDIT_2026-09-22.md) exactly expresses finite recovery as an accepted-strategy relation and extra memory as weak coloring of minimal unsafe groups. Forward enumeration agrees on 7,203 subset/budget comparisons and 1,029 colorings in the existing 343-table domain; independent color assignment also matches all 12 existing fixtures. These are additional representations of established methods, not a new algorithm or new task samples. Self-GC and black-box checking supply closer architectural/formal-methods precedents. Useful extraction from realistic workflows and matched-cost benefit remain unperformed.
 
 - **September 22 feedback milestone:** the [execution-graded feedback adapter](../research/FEEDBACK_BEFORE_FORGETTING_2026-09-22.md) enforces two record-memory boundaries, derives accepted actions through restored terminal execution, and accumulates independently checked unsafe-group constraints. In the main fixture it repairs 32/48 successes to 48/48 in three audits; last-only feedback cycles. Critical-field retention also attains 48/48 with one audit. Across 48 constructed contracts and five methods, accumulated feedback, enumeration and the strong baseline certify the same 18 contracts; last-only feedback cycles in 15. Claims C37-C38. Eighteen focused tests include 1,872 independent forward controller comparisons and a separate algebraic check of the capacity/recovery sweep. Zero model calls.
 - **September 22 channel controls:** a one-record priority child fails where an early-target treatment succeeds; a distinct value-dependent record-identity code also succeeds using four states and a public two-value catalog. Ordinary receipt submission on that coded memory succeeds only 24/48, while its catalog decoder succeeds 48/48. Partial probes miss an untested obligation, and late true-value feedback supplies an additional conditional bit. Claim C39. These are constructed controls, not natural-task evidence or compression of arbitrary receipts. The [prior-art note](../research/FEEDBACK_PRIOR_ART_2026-09-22.md) rules out novelty for generic feedback, cumulative constraints and finite refinement.
@@ -88,7 +95,11 @@ specified; model revision, sample size, seeds, transport and spend cap remain
 unfilled. The present strong-baseline tie is a reason to downgrade practical
 superiority, not to scale up repetitions of the same fixture. Exact semantic
 collisions, tractable sound verification, native integration and novelty remain
-open. General generated continuation search remains unimplemented.
+open. General generated continuation search remains unimplemented. The strict
+novelty audit adds concrete gates: replayable evidence extraction, correct reuse
+and invalidation of prior checks, and a matched-cost comparison or useful audit
+decisions beyond strong simple retention. These are candidate engineering
+contributions, not a new verification principle.
 
 The decoder-complete phase resolved the rate-two interval to 2e-10. Further decimal tightening is deprioritized. External correctness/priority review remains useful, while the earlier behavioral tasks below remain separately specified follow-ups rather than a request to reuse completed launch allocations.
 

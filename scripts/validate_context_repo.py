@@ -513,6 +513,17 @@ def main() -> int:
         errors.append("Feedback compaction report is stale; regenerate it")
     counts["feedback_constructed_contracts"] = len(expected_feedback["matrix"])
     counts["feedback_method_contract_checks"] = sum(len(r["arms"]) for r in expected_feedback["matrix"])
+    from experiments.dependency_memory.novelty_audit import run as novelty_run
+    expected_novelty = json.loads(json.dumps(novelty_run.certificate()))
+    novelty_path = ROOT / "experiments/dependency_memory/results/feedback_novelty_certificate.json"
+    if json.loads(novelty_path.read_text(encoding="utf-8")) != expected_novelty:
+        errors.append("Feedback novelty certificate is stale; regenerate it")
+    novelty_report = ROOT / "experiments/dependency_memory/results/feedback_novelty_report.md"
+    if novelty_report.read_text(encoding="utf-8") != novelty_run.report(expected_novelty):
+        errors.append("Feedback novelty report is stale; regenerate it")
+    counts["novelty_strategy_subset_checks"] = expected_novelty["small_strategy_check"]["nonempty_subset_budget_checks"]
+    counts["novelty_strategy_coloring_checks"] = expected_novelty["small_strategy_check"]["coloring_checks"]
+    counts["novelty_fixture_checks"] = len(expected_novelty["fixture_checks"])
     import run_artifact_workflow
     artifact_rows, artifact_summary, artifact_witness = run_artifact_workflow.diagnostics()
     expected_rows = [{key: str(value) for key, value in row.items()} for row in artifact_rows]

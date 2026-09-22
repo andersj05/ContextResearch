@@ -5,6 +5,7 @@
 | Read for | Document | Evidence status |
 |---|---|---|
 | Current task and next steps | [Status](STATUS.md) | Current handoff |
+| Strict feedback novelty verdict | [September 22 audit and reduction](../research/FEEDBACK_NOVELTY_AUDIT_2026-09-22.md), [finite checks](../experiments/dependency_memory/results/feedback_novelty_report.md) | Exact elementary strategy/weak-coloring reformulation; close precedents; no general algorithmic novelty or practical superiority established |
 | Feedback loop and execution adapter | [September 22 findings](../research/FEEDBACK_BEFORE_FORGETTING_2026-09-22.md) | Completed finite adapter, two record boundaries, 48 contracts; accumulated repairs work but strong static retention matches them |
 | Feedback prior art and next design | [Source comparison](../research/FEEDBACK_PRIOR_ART_2026-09-22.md), [protocol](FEEDBACK_RESEARCH_PROTOCOL.md) | Focused primary readings; generic feedback and cumulative constraints are established; model experiment remains unperformed |
 | Active experimental direction | [Compaction collision auditor](../research/COMPACTION_COLLISION_AUDIT_2026-09-21.md) | Implemented finite audit, 12 constructed specifications; natural-task adapter and novelty open |

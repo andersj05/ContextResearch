@@ -16,6 +16,14 @@ are hand-written, worlds are enumerated, and the public rule gives the strong
 baseline the exact solution. Do not launch a larger copy of that easy family
 and call its repetitions natural-task evidence.
 
+The [strict novelty audit](../research/FEEDBACK_NOVELTY_AUDIT_2026-09-22.md)
+also removes a general algorithmic novelty claim: finite recovery/repair is an
+accepted-strategy and weak-coloring problem. Before a new launch, demonstrate
+extraction of replayable delayed-failure evidence from executable snapshots,
+state which coverage remains unknown, and measure reuse/invalidation of old
+checks across revisions. These are candidate engineering capabilities; their
+mere combination does not establish priority over existing verification systems.
+
 ## Required task material before a launch
 
 Prepare pinned local workflow snapshots with versioned artifacts, completed

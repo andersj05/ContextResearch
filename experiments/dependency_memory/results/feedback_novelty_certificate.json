@@ -1,0 +1,1319 @@
+{
+  "schema": 1,
+  "date": "2026-09-22",
+  "model_calls": 0,
+  "evidence": "elementary representation equivalence with finite checks; no novelty claim",
+  "source_sha256": {
+    "representations.py": "523508bd8cf49bddbbcb13f8a8f3d9d59749ec4f24530bbfce3078fed6cc13b0",
+    "run.py": "adcf0756a854ea67b802fa45e33680c4d55101798059e178c1831cf25383e00d"
+  },
+  "fixture_specifications_sha256": "14f0ecc34330efe4fdfd0a1eae66e45bbc753bdb8ed02dbcd46aef2f90ec22a1",
+  "small_strategy_check": {
+    "accepted_action_tables": 343,
+    "budgets": [
+      0,
+      1,
+      2
+    ],
+    "distinct_strategy_output_vectors_by_budget": [
+      3,
+      15,
+      27
+    ],
+    "nonempty_subset_budget_checks": 7203,
+    "coloring_checks": 1029,
+    "comparison_sha256": "94e8d5c7e93f07749e3df0c7fb8727cc742f5243616316ff871bbceace875330"
+  },
+  "fixture_checks": [
+    {
+      "name": "three_way_compatibility",
+      "budget": 0,
+      "cells": [
+        {
+          "worlds": [
+            0,
+            1,
+            2
+          ],
+          "nonempty_subsets_checked": 7,
+          "minimal_unsafe_groups": [
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "weak_coloring": [
+            0,
+            0,
+            1
+          ],
+          "minimum_colors": 2,
+          "minimum_repair_states": 2
+        }
+      ],
+      "extra_message_states": 2
+    },
+    {
+      "name": "rollback_with_archive",
+      "budget": 2,
+      "cells": [
+        {
+          "worlds": [
+            0,
+            1
+          ],
+          "nonempty_subsets_checked": 3,
+          "minimal_unsafe_groups": [
+            [
+              0,
+              1
+            ]
+          ],
+          "weak_coloring": [
+            0,
+            1
+          ],
+          "minimum_colors": 2,
+          "minimum_repair_states": 2
+        }
+      ],
+      "extra_message_states": 2
+    },
+    {
+      "name": "rollback_archive_expired",
+      "budget": 2,
+      "cells": [
+        {
+          "worlds": [
+            0,
+            1
+          ],
+          "nonempty_subsets_checked": 3,
+          "minimal_unsafe_groups": [
+            [
+              0,
+              1
+            ]
+          ],
+          "weak_coloring": [
+            0,
+            1
+          ],
+          "minimum_colors": 2,
+          "minimum_repair_states": 2
+        }
+      ],
+      "extra_message_states": 2
+    },
+    {
+      "name": "adaptive_sharded_recovery",
+      "budget": 1,
+      "cells": [
+        {
+          "worlds": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "nonempty_subsets_checked": 255,
+          "minimal_unsafe_groups": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              4
+            ],
+            [
+              0,
+              1,
+              3,
+              4
+            ],
+            [
+              0,
+              2,
+              3,
+              4
+            ],
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              0,
+              1,
+              2,
+              5
+            ],
+            [
+              0,
+              1,
+              3,
+              5
+            ],
+            [
+              0,
+              2,
+              3,
+              5
+            ],
+            [
+              1,
+              2,
+              3,
+              5
+            ],
+            [
+              0,
+              1,
+              4,
+              5
+            ],
+            [
+              0,
+              2,
+              4,
+              5
+            ],
+            [
+              1,
+              2,
+              4,
+              5
+            ],
+            [
+              0,
+              3,
+              4,
+              5
+            ],
+            [
+              1,
+              3,
+              4,
+              5
+            ],
+            [
+              2,
+              3,
+              4,
+              5
+            ],
+            [
+              0,
+              1,
+              2,
+              6
+            ],
+            [
+              0,
+              1,
+              3,
+              6
+            ],
+            [
+              0,
+              2,
+              3,
+              6
+            ],
+            [
+              1,
+              2,
+              3,
+              6
+            ],
+            [
+              0,
+              1,
+              4,
+              6
+            ],
+            [
+              2,
+              3,
+              4,
+              6
+            ],
+            [
+              0,
+              1,
+              5,
+              6
+            ],
+            [
+              2,
+              3,
+              5,
+              6
+            ],
+            [
+              0,
+              4,
+              5,
+              6
+            ],
+            [
+              1,
+              4,
+              5,
+              6
+            ],
+            [
+              2,
+              4,
+              5,
+              6
+            ],
+            [
+              3,
+              4,
+              5,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              7
+            ],
+            [
+              0,
+              1,
+              3,
+              7
+            ],
+            [
+              0,
+              2,
+              3,
+              7
+            ],
+            [
+              1,
+              2,
+              3,
+              7
+            ],
+            [
+              0,
+              1,
+              4,
+              7
+            ],
+            [
+              2,
+              3,
+              4,
+              7
+            ],
+            [
+              0,
+              1,
+              5,
+              7
+            ],
+            [
+              2,
+              3,
+              5,
+              7
+            ],
+            [
+              0,
+              4,
+              5,
+              7
+            ],
+            [
+              1,
+              4,
+              5,
+              7
+            ],
+            [
+              2,
+              4,
+              5,
+              7
+            ],
+            [
+              3,
+              4,
+              5,
+              7
+            ],
+            [
+              0,
+              1,
+              6,
+              7
+            ],
+            [
+              0,
+              2,
+              6,
+              7
+            ],
+            [
+              1,
+              2,
+              6,
+              7
+            ],
+            [
+              0,
+              3,
+              6,
+              7
+            ],
+            [
+              1,
+              3,
+              6,
+              7
+            ],
+            [
+              2,
+              3,
+              6,
+              7
+            ],
+            [
+              0,
+              4,
+              6,
+              7
+            ],
+            [
+              1,
+              4,
+              6,
+              7
+            ],
+            [
+              2,
+              4,
+              6,
+              7
+            ],
+            [
+              3,
+              4,
+              6,
+              7
+            ],
+            [
+              0,
+              5,
+              6,
+              7
+            ],
+            [
+              1,
+              5,
+              6,
+              7
+            ],
+            [
+              2,
+              5,
+              6,
+              7
+            ],
+            [
+              3,
+              5,
+              6,
+              7
+            ],
+            [
+              4,
+              5,
+              6,
+              7
+            ]
+          ],
+          "weak_coloring": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "minimum_colors": 2,
+          "minimum_repair_states": 2
+        }
+      ],
+      "extra_message_states": 2
+    },
+    {
+      "name": "harmless_lost_detail",
+      "budget": 0,
+      "cells": [
+        {
+          "worlds": [
+            0,
+            1,
+            2
+          ],
+          "nonempty_subsets_checked": 7,
+          "minimal_unsafe_groups": [],
+          "weak_coloring": [
+            0,
+            0,
+            0
+          ],
+          "minimum_colors": 1,
+          "minimum_repair_states": 1
+        }
+      ],
+      "extra_message_states": 1
+    },
+    {
+      "name": "public_evidence_control",
+      "budget": 2,
+      "cells": [
+        {
+          "worlds": [
+            0
+          ],
+          "nonempty_subsets_checked": 1,
+          "minimal_unsafe_groups": [],
+          "weak_coloring": [
+            0
+          ],
+          "minimum_colors": 1,
+          "minimum_repair_states": 1
+        },
+        {
+          "worlds": [
+            1
+          ],
+          "nonempty_subsets_checked": 1,
+          "minimal_unsafe_groups": [],
+          "weak_coloring": [
+            0
+          ],
+          "minimum_colors": 1,
+          "minimum_repair_states": 1
+        }
+      ],
+      "extra_message_states": 1
+    },
+    {
+      "name": "affordable_archive_control",
+      "budget": 3,
+      "cells": [
+        {
+          "worlds": [
+            0,
+            1
+          ],
+          "nonempty_subsets_checked": 3,
+          "minimal_unsafe_groups": [],
+          "weak_coloring": [
+            0,
+            0
+          ],
+          "minimum_colors": 1,
+          "minimum_repair_states": 1
+        }
+      ],
+      "extra_message_states": 1
+    },
+    {
+      "name": "adaptive_recovery_budget_two",
+      "budget": 2,
+      "cells": [
+        {
+          "worlds": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "nonempty_subsets_checked": 255,
+          "minimal_unsafe_groups": [],
+          "weak_coloring": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "minimum_colors": 1,
+          "minimum_repair_states": 1
+        }
+      ],
+      "extra_message_states": 1
+    },
+    {
+      "name": "binary_receipt_budget_0",
+      "budget": 0,
+      "cells": [
+        {
+          "worlds": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "nonempty_subsets_checked": 255,
+          "minimal_unsafe_groups": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              4,
+              7
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "weak_coloring": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "minimum_colors": 8,
+          "minimum_repair_states": 8
+        }
+      ],
+      "extra_message_states": 8
+    },
+    {
+      "name": "binary_receipt_budget_1",
+      "budget": 1,
+      "cells": [
+        {
+          "worlds": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "nonempty_subsets_checked": 255,
+          "minimal_unsafe_groups": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              4
+            ],
+            [
+              0,
+              2,
+              4
+            ],
+            [
+              1,
+              2,
+              4
+            ],
+            [
+              0,
+              3,
+              4
+            ],
+            [
+              1,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              0,
+              1,
+              5
+            ],
+            [
+              0,
+              2,
+              5
+            ],
+            [
+              1,
+              2,
+              5
+            ],
+            [
+              0,
+              3,
+              5
+            ],
+            [
+              1,
+              3,
+              5
+            ],
+            [
+              2,
+              3,
+              5
+            ],
+            [
+              0,
+              4,
+              5
+            ],
+            [
+              1,
+              4,
+              5
+            ],
+            [
+              2,
+              4,
+              5
+            ],
+            [
+              3,
+              4,
+              5
+            ],
+            [
+              0,
+              1,
+              6
+            ],
+            [
+              0,
+              2,
+              6
+            ],
+            [
+              1,
+              2,
+              6
+            ],
+            [
+              0,
+              3,
+              6
+            ],
+            [
+              1,
+              3,
+              6
+            ],
+            [
+              2,
+              3,
+              6
+            ],
+            [
+              0,
+              4,
+              6
+            ],
+            [
+              1,
+              4,
+              6
+            ],
+            [
+              2,
+              4,
+              6
+            ],
+            [
+              3,
+              4,
+              6
+            ],
+            [
+              0,
+              5,
+              6
+            ],
+            [
+              1,
+              5,
+              6
+            ],
+            [
+              2,
+              5,
+              6
+            ],
+            [
+              3,
+              5,
+              6
+            ],
+            [
+              4,
+              5,
+              6
+            ],
+            [
+              0,
+              1,
+              7
+            ],
+            [
+              0,
+              2,
+              7
+            ],
+            [
+              1,
+              2,
+              7
+            ],
+            [
+              0,
+              3,
+              7
+            ],
+            [
+              1,
+              3,
+              7
+            ],
+            [
+              2,
+              3,
+              7
+            ],
+            [
+              0,
+              4,
+              7
+            ],
+            [
+              1,
+              4,
+              7
+            ],
+            [
+              2,
+              4,
+              7
+            ],
+            [
+              3,
+              4,
+              7
+            ],
+            [
+              0,
+              5,
+              7
+            ],
+            [
+              1,
+              5,
+              7
+            ],
+            [
+              2,
+              5,
+              7
+            ],
+            [
+              3,
+              5,
+              7
+            ],
+            [
+              4,
+              5,
+              7
+            ],
+            [
+              0,
+              6,
+              7
+            ],
+            [
+              1,
+              6,
+              7
+            ],
+            [
+              2,
+              6,
+              7
+            ],
+            [
+              3,
+              6,
+              7
+            ],
+            [
+              4,
+              6,
+              7
+            ],
+            [
+              5,
+              6,
+              7
+            ]
+          ],
+          "weak_coloring": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3
+          ],
+          "minimum_colors": 4,
+          "minimum_repair_states": 4
+        }
+      ],
+      "extra_message_states": 4
+    },
+    {
+      "name": "binary_receipt_budget_2",
+      "budget": 2,
+      "cells": [
+        {
+          "worlds": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "nonempty_subsets_checked": 255,
+          "minimal_unsafe_groups": [
+            [
+              0,
+              1,
+              2,
+              4
+            ],
+            [
+              0,
+              1,
+              3,
+              5
+            ],
+            [
+              0,
+              2,
+              3,
+              4,
+              5
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            [
+              0,
+              2,
+              3,
+              6
+            ],
+            [
+              0,
+              1,
+              3,
+              4,
+              6
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              5,
+              6
+            ],
+            [
+              1,
+              2,
+              3,
+              5,
+              6
+            ],
+            [
+              0,
+              4,
+              5,
+              6
+            ],
+            [
+              1,
+              2,
+              4,
+              5,
+              6
+            ],
+            [
+              1,
+              3,
+              4,
+              5,
+              6
+            ],
+            [
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            [
+              1,
+              2,
+              3,
+              7
+            ],
+            [
+              0,
+              1,
+              3,
+              4,
+              7
+            ],
+            [
+              0,
+              2,
+              3,
+              4,
+              7
+            ],
+            [
+              0,
+              1,
+              2,
+              5,
+              7
+            ],
+            [
+              0,
+              2,
+              3,
+              5,
+              7
+            ],
+            [
+              1,
+              4,
+              5,
+              7
+            ],
+            [
+              0,
+              2,
+              4,
+              5,
+              7
+            ],
+            [
+              0,
+              3,
+              4,
+              5,
+              7
+            ],
+            [
+              2,
+              3,
+              4,
+              5,
+              7
+            ],
+            [
+              0,
+              1,
+              2,
+              6,
+              7
+            ],
+            [
+              0,
+              1,
+              3,
+              6,
+              7
+            ],
+            [
+              0,
+              1,
+              4,
+              6,
+              7
+            ],
+            [
+              2,
+              4,
+              6,
+              7
+            ],
+            [
+              0,
+              3,
+              4,
+              6,
+              7
+            ],
+            [
+              1,
+              3,
+              4,
+              6,
+              7
+            ],
+            [
+              0,
+              1,
+              5,
+              6,
+              7
+            ],
+            [
+              0,
+              2,
+              5,
+              6,
+              7
+            ],
+            [
+              1,
+              2,
+              5,
+              6,
+              7
+            ],
+            [
+              3,
+              5,
+              6,
+              7
+            ]
+          ],
+          "weak_coloring": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "minimum_colors": 2,
+          "minimum_repair_states": 2
+        }
+      ],
+      "extra_message_states": 2
+    },
+    {
+      "name": "binary_receipt_budget_3",
+      "budget": 3,
+      "cells": [
+        {
+          "worlds": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "nonempty_subsets_checked": 255,
+          "minimal_unsafe_groups": [],
+          "weak_coloring": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "minimum_colors": 1,
+          "minimum_repair_states": 1
+        }
+      ],
+      "extra_message_states": 1
+    }
+  ]
+}
