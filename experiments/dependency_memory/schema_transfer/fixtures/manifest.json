@@ -1,0 +1,75 @@
+{
+  "version": "schema_transfer_v1",
+  "cases": [
+    {
+      "file": "development-escrow-52011.json",
+      "split": "development",
+      "family": "escrow",
+      "sha256": "0e6afe54ceedfcddb6dbd59769a07a2ae4b83a9eea16d6a6031f5a6a0a43bddd",
+      "bytes": 9386
+    },
+    {
+      "file": "development-escrow-52012.json",
+      "split": "development",
+      "family": "escrow",
+      "sha256": "d9ce19c2cf928e79a65b530289816f30df05eb86c14109dc09f9e2f27f9dab67",
+      "bytes": 9386
+    },
+    {
+      "file": "development-package-52011.json",
+      "split": "development",
+      "family": "package",
+      "sha256": "f99e49cd124486ea5ba7472856a819277eb23a7ad3ce3791d1198dbcaa4be649",
+      "bytes": 10639
+    },
+    {
+      "file": "development-package-52012.json",
+      "split": "development",
+      "family": "package",
+      "sha256": "33fab2bc6ae36d8c3895a980ab2a477ee73ab6eca0b14724ec6293e5adbeb214",
+      "bytes": 10639
+    },
+    {
+      "file": "evaluation-retry_queue-97031.json",
+      "split": "evaluation",
+      "family": "retry_queue",
+      "sha256": "8717dea41199d0643ab2b2feb085815065acf56ef9157777dfd9162935fdeda8",
+      "bytes": 12389
+    },
+    {
+      "file": "evaluation-retry_queue-97032.json",
+      "split": "evaluation",
+      "family": "retry_queue",
+      "sha256": "6bf5b35205c9363c6867c020fb09ce8e59eb3ba02cd84e7662c222f45ed02c1e",
+      "bytes": 12389
+    },
+    {
+      "file": "evaluation-ci_promotion-97031.json",
+      "split": "evaluation",
+      "family": "ci_promotion",
+      "sha256": "b1580b29be4baeb2c22d573b0aee832765a2e7169821e7c9cb5e211ddfd585e3",
+      "bytes": 12345
+    },
+    {
+      "file": "evaluation-ci_promotion-97032.json",
+      "split": "evaluation",
+      "family": "ci_promotion",
+      "sha256": "a73fafcf0f7ed536dec438eca9184ea222181518dd05f5431f4374c59f545069",
+      "bytes": 12345
+    },
+    {
+      "file": "evaluation-data_pipeline-97031.json",
+      "split": "evaluation",
+      "family": "data_pipeline",
+      "sha256": "5315b73cb95df342ba4a8471a1c76e1e0557393a0c05f43b356755f9e6c053a9",
+      "bytes": 15238
+    },
+    {
+      "file": "evaluation-data_pipeline-97032.json",
+      "split": "evaluation",
+      "family": "data_pipeline",
+      "sha256": "f92aa8f4f4c811caf9d83d4c405e4244a1298935d1e86c72d9b5724069f6b438",
+      "bytes": 15238
+    }
+  ]
+}

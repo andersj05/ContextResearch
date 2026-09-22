@@ -1,0 +1,371 @@
+{
+  "candidate_ids": [
+    "8567bfb77cc57fa4",
+    "81f5b4dafe84005e"
+  ],
+  "family": "data_pipeline",
+  "futures": [
+    {
+      "event": {
+        "path": "note",
+        "value": "Schedule title updated; gate fields unchanged."
+      },
+      "id": "data_pipeline-97032-0",
+      "target": "81f5b4dafe84005e"
+    },
+    {
+      "event": {
+        "path": "consent.approved_output",
+        "value": "c97f775933c48408"
+      },
+      "id": "data_pipeline-97032-1",
+      "target": "81f5b4dafe84005e"
+    },
+    {
+      "event": {
+        "path": "load.output_dataset",
+        "value": "b7fd6bf3e9ed081f"
+      },
+      "id": "data_pipeline-97032-2",
+      "target": "8567bfb77cc57fa4"
+    }
+  ],
+  "id": "data_pipeline-97032",
+  "split": "evaluation",
+  "tool_results": [
+    {
+      "consent": {
+        "approval": "331e761377eb3194",
+        "approved_output": "5239223fd171e88a",
+        "state": "approved"
+      },
+      "extract": {
+        "output_dataset": "7b9bbcb062a1d0a9",
+        "run": "9c335a40a732c9f8",
+        "state": "pass"
+      },
+      "load": {
+        "input_dataset": "bb9c35a11822aff6",
+        "output_dataset": "5239223fd171e88a",
+        "run": "ceec3b2e30880dfe",
+        "state": "pass"
+      },
+      "operator_notes": "Worker log archived an earlier draft 0b794f779cf5e24e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 0b794f779cf5e24e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 0b794f779cf5e24e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 0b794f779cf5e24e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 0b794f779cf5e24e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 0b794f779cf5e24e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 0b794f779cf5e24e; dashboard labels, timing and operator chat are not gate evidence. ",
+      "pipeline_run": "bded92cea4bd7422",
+      "quality": {
+        "check": "6e858a8635d2c700",
+        "state": "pass",
+        "subject_dataset": "5239223fd171e88a"
+      },
+      "transform": {
+        "input_dataset": "bd13bab2480afa43",
+        "output_dataset": "bb9c35a11822aff6",
+        "run": "32f14f7429452b2b",
+        "state": "pass"
+      }
+    },
+    {
+      "consent": {
+        "approval": "9c45c60a6b84acad",
+        "approved_output": "758eb754b514954e",
+        "state": "approved"
+      },
+      "extract": {
+        "output_dataset": "c974af28bfcf44a9",
+        "run": "fc4dce30618de222",
+        "state": "pass"
+      },
+      "load": {
+        "input_dataset": "dff4d2d216af953c",
+        "output_dataset": "758eb754b514954e",
+        "run": "273b85f30945cdb7",
+        "state": "pass"
+      },
+      "operator_notes": "Worker log archived an earlier draft c573b6745fc44438; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c573b6745fc44438; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c573b6745fc44438; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c573b6745fc44438; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c573b6745fc44438; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c573b6745fc44438; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c573b6745fc44438; dashboard labels, timing and operator chat are not gate evidence. ",
+      "pipeline_run": "4484f1b164d84d71",
+      "quality": {
+        "check": "574869ed20f37f30",
+        "state": "fail",
+        "subject_dataset": "758eb754b514954e"
+      },
+      "transform": {
+        "input_dataset": "c974af28bfcf44a9",
+        "output_dataset": "dff4d2d216af953c",
+        "run": "2b9114d13ee2314d",
+        "state": "pass"
+      }
+    },
+    {
+      "consent": {
+        "approval": "a9f98854321c2c56",
+        "approved_output": "64b0676856170f25",
+        "state": "approved"
+      },
+      "extract": {
+        "output_dataset": "07041ae96efeb95e",
+        "run": "d4ec1fd909cac9b1",
+        "state": "pass"
+      },
+      "load": {
+        "input_dataset": "dd2ee8aab01275f5",
+        "output_dataset": "64b0676856170f25",
+        "run": "e48fe57bef7cb4dd",
+        "state": "pass"
+      },
+      "operator_notes": "Worker log archived an earlier draft 1a5664a1ba4a645e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1a5664a1ba4a645e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1a5664a1ba4a645e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1a5664a1ba4a645e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1a5664a1ba4a645e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1a5664a1ba4a645e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1a5664a1ba4a645e; dashboard labels, timing and operator chat are not gate evidence. ",
+      "pipeline_run": "8567bfb77cc57fa4",
+      "quality": {
+        "check": "ac0c89ac0f6010ca",
+        "state": "pass",
+        "subject_dataset": "64b0676856170f25"
+      },
+      "transform": {
+        "input_dataset": "07041ae96efeb95e",
+        "output_dataset": "dd2ee8aab01275f5",
+        "run": "412de27e9eaa0a1b",
+        "state": "pass"
+      }
+    },
+    {
+      "consent": {
+        "approval": "72c5e974bc922909",
+        "approved_output": "8fcf2713bc9fa210",
+        "state": "approved"
+      },
+      "extract": {
+        "output_dataset": "cdd9dc35b924d8df",
+        "run": "1027910cd3a558cb",
+        "state": "pass"
+      },
+      "load": {
+        "input_dataset": "e58a371568e694c9",
+        "output_dataset": "e9ed1765008187cf",
+        "run": "8906cea2f88d514a",
+        "state": "pass"
+      },
+      "operator_notes": "Worker log archived an earlier draft b57e62cdde5ea779; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft b57e62cdde5ea779; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft b57e62cdde5ea779; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft b57e62cdde5ea779; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft b57e62cdde5ea779; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft b57e62cdde5ea779; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft b57e62cdde5ea779; dashboard labels, timing and operator chat are not gate evidence. ",
+      "pipeline_run": "564fd04322d7aa1e",
+      "quality": {
+        "check": "dc55440f79535a75",
+        "state": "pass",
+        "subject_dataset": "e9ed1765008187cf"
+      },
+      "transform": {
+        "input_dataset": "cdd9dc35b924d8df",
+        "output_dataset": "e58a371568e694c9",
+        "run": "7cacd25762dc03bc",
+        "state": "pass"
+      }
+    },
+    {
+      "consent": {
+        "approval": "ece9d43ef0d48a8f",
+        "approved_output": "05ccf55a56b73baa",
+        "state": "approved"
+      },
+      "extract": {
+        "output_dataset": "2bfddb5dbd4f2533",
+        "run": "476148a5d0e64272",
+        "state": "pass"
+      },
+      "load": {
+        "input_dataset": "21d2331769e3ec64",
+        "output_dataset": "c97f775933c48408",
+        "run": "ac92fc957bfc54db",
+        "state": "pass"
+      },
+      "operator_notes": "Worker log archived an earlier draft 8742bad3fa1ca6c2; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 8742bad3fa1ca6c2; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 8742bad3fa1ca6c2; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 8742bad3fa1ca6c2; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 8742bad3fa1ca6c2; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 8742bad3fa1ca6c2; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 8742bad3fa1ca6c2; dashboard labels, timing and operator chat are not gate evidence. ",
+      "pipeline_run": "81f5b4dafe84005e",
+      "quality": {
+        "check": "534dca089da4f4cc",
+        "state": "pass",
+        "subject_dataset": "c97f775933c48408"
+      },
+      "transform": {
+        "input_dataset": "2bfddb5dbd4f2533",
+        "output_dataset": "21d2331769e3ec64",
+        "run": "ed85802362922541",
+        "state": "pass"
+      }
+    },
+    {
+      "consent": {
+        "approval": "c4da05a8cf1b31b1",
+        "approved_output": "1266ddfecb01fe6b",
+        "state": "approved"
+      },
+      "extract": {
+        "output_dataset": "06dfd064b39c3914",
+        "run": "75259526bdb0586c",
+        "state": "pass"
+      },
+      "load": {
+        "input_dataset": "0d71d6185b668abe",
+        "output_dataset": "1266ddfecb01fe6b",
+        "run": "cc0369f943f0689f",
+        "state": "pass"
+      },
+      "operator_notes": "Worker log archived an earlier draft abf46e4029d1b870; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft abf46e4029d1b870; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft abf46e4029d1b870; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft abf46e4029d1b870; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft abf46e4029d1b870; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft abf46e4029d1b870; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft abf46e4029d1b870; dashboard labels, timing and operator chat are not gate evidence. ",
+      "pipeline_run": "1568ee79eb8b834f",
+      "quality": {
+        "check": "fdf556ce440d6d80",
+        "state": "pass",
+        "subject_dataset": "1266ddfecb01fe6b"
+      },
+      "transform": {
+        "input_dataset": "e793f5b6627e6d99",
+        "output_dataset": "0d71d6185b668abe",
+        "run": "ff7a4f4687cd19e5",
+        "state": "pass"
+      }
+    },
+    {
+      "consent": {
+        "approval": "63bd6dc190c97f25",
+        "approved_output": "d147fdaa6abe186d",
+        "state": "approved"
+      },
+      "extract": {
+        "output_dataset": "b9b2fedd98e1768c",
+        "run": "df322a3bb8d09b2d",
+        "state": "pass"
+      },
+      "load": {
+        "input_dataset": "f38a2fccc552ef3b",
+        "output_dataset": "d147fdaa6abe186d",
+        "run": "67b713f40d9e8a93",
+        "state": "pass"
+      },
+      "operator_notes": "Worker log archived an earlier draft 781718a1e5fb336c; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 781718a1e5fb336c; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 781718a1e5fb336c; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 781718a1e5fb336c; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 781718a1e5fb336c; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 781718a1e5fb336c; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 781718a1e5fb336c; dashboard labels, timing and operator chat are not gate evidence. ",
+      "pipeline_run": "fa50812e9cebcf09",
+      "quality": {
+        "check": "d31993de599ccc26",
+        "state": "pass",
+        "subject_dataset": "d147fdaa6abe186d"
+      },
+      "transform": {
+        "input_dataset": "b9b2fedd98e1768c",
+        "output_dataset": "f38a2fccc552ef3b",
+        "run": "12ca48f436c0369f",
+        "state": "pass"
+      }
+    }
+  ],
+  "tool_schema": {
+    "properties": {
+      "consent": {
+        "properties": {
+          "approval": {
+            "pattern": "^[a-f0-9]{16}$",
+            "type": "string"
+          },
+          "approved_output": {
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "approved",
+              "pending"
+            ],
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "extract": {
+        "properties": {
+          "output_dataset": {
+            "pattern": "^[a-f0-9]{16}$",
+            "type": "string"
+          },
+          "run": {
+            "pattern": "^[a-f0-9]{16}$",
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "pass",
+              "fail"
+            ],
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "load": {
+        "properties": {
+          "input_dataset": {
+            "type": "string"
+          },
+          "output_dataset": {
+            "pattern": "^[a-f0-9]{16}$",
+            "type": "string"
+          },
+          "run": {
+            "pattern": "^[a-f0-9]{16}$",
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "pass",
+              "fail"
+            ],
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "operator_notes": {
+        "description": "Free-form diagnostic transcript.",
+        "type": "string"
+      },
+      "pipeline_run": {
+        "pattern": "^[a-f0-9]{16}$",
+        "type": "string"
+      },
+      "quality": {
+        "properties": {
+          "check": {
+            "pattern": "^[a-f0-9]{16}$",
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "pass",
+              "fail"
+            ],
+            "type": "string"
+          },
+          "subject_dataset": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "transform": {
+        "properties": {
+          "input_dataset": {
+            "type": "string"
+          },
+          "output_dataset": {
+            "pattern": "^[a-f0-9]{16}$",
+            "type": "string"
+          },
+          "run": {
+            "pattern": "^[a-f0-9]{16}$",
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "pass",
+              "fail"
+            ],
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    "type": "object"
+  }
+}

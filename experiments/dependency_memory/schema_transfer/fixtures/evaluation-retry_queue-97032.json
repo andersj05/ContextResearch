@@ -1,0 +1,269 @@
+{
+  "candidate_ids": [
+    "a89cbf87ec269b5b",
+    "65417b255f260d12"
+  ],
+  "family": "retry_queue",
+  "futures": [
+    {
+      "event": {
+        "path": "note",
+        "value": "Schedule title updated; gate fields unchanged."
+      },
+      "id": "retry_queue-97032-0",
+      "target": "65417b255f260d12"
+    },
+    {
+      "event": {
+        "path": "result.state",
+        "value": "passed"
+      },
+      "id": "retry_queue-97032-1",
+      "target": "65417b255f260d12"
+    },
+    {
+      "event": {
+        "path": "dispatch.attempt_uuid",
+        "value": "d7039b2d5cd86102"
+      },
+      "id": "retry_queue-97032-2",
+      "target": "a89cbf87ec269b5b"
+    }
+  ],
+  "id": "retry_queue-97032",
+  "split": "evaluation",
+  "tool_results": [
+    {
+      "billing": {
+        "charge_token": "aa7356fc5c558cbf",
+        "for_attempt": "25c450507d3dad9e",
+        "state": "settled"
+      },
+      "dispatch": {
+        "attempt_uuid": "a1a282a11cf77e60",
+        "idempotency_key": "77d3887bebb4c4fd",
+        "state": "sent"
+      },
+      "operator_notes": "Worker log archived an earlier draft 5e693e52c7240d28; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 5e693e52c7240d28; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 5e693e52c7240d28; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 5e693e52c7240d28; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 5e693e52c7240d28; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 5e693e52c7240d28; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 5e693e52c7240d28; dashboard labels, timing and operator chat are not gate evidence. ",
+      "request_token": "dbc0bbe057cc76da",
+      "result": {
+        "attempt_uuid": "a1a282a11cf77e60",
+        "state": "passed"
+      },
+      "retry_policy": {
+        "prior_attempt": "b189b83d1f8c73e2",
+        "retry_allowed": false
+      }
+    },
+    {
+      "billing": {
+        "charge_token": "66121ecd2fe2f1c8",
+        "for_attempt": "a88134d15fedb4f6",
+        "state": "settled"
+      },
+      "dispatch": {
+        "attempt_uuid": "a88134d15fedb4f6",
+        "idempotency_key": "3978fa830042f91e",
+        "state": "not_sent"
+      },
+      "operator_notes": "Worker log archived an earlier draft a58b28a07c410073; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a58b28a07c410073; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a58b28a07c410073; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a58b28a07c410073; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a58b28a07c410073; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a58b28a07c410073; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a58b28a07c410073; dashboard labels, timing and operator chat are not gate evidence. ",
+      "request_token": "d23b22e91b188454",
+      "result": {
+        "attempt_uuid": "a88134d15fedb4f6",
+        "state": "passed"
+      },
+      "retry_policy": {
+        "prior_attempt": "9cff3697a69063bf",
+        "retry_allowed": false
+      }
+    },
+    {
+      "billing": {
+        "charge_token": "57bde6b4689913a8",
+        "for_attempt": "57efd42e98defc34",
+        "state": "settled"
+      },
+      "dispatch": {
+        "attempt_uuid": "57efd42e98defc34",
+        "idempotency_key": "3eaa0f195d784296",
+        "state": "sent"
+      },
+      "operator_notes": "Worker log archived an earlier draft 35256ec5a13ad69a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 35256ec5a13ad69a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 35256ec5a13ad69a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 35256ec5a13ad69a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 35256ec5a13ad69a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 35256ec5a13ad69a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 35256ec5a13ad69a; dashboard labels, timing and operator chat are not gate evidence. ",
+      "request_token": "a89cbf87ec269b5b",
+      "result": {
+        "attempt_uuid": "57efd42e98defc34",
+        "state": "passed"
+      },
+      "retry_policy": {
+        "prior_attempt": "7f669ead3de83ce4",
+        "retry_allowed": false
+      }
+    },
+    {
+      "billing": {
+        "charge_token": "12fcc078303bd740",
+        "for_attempt": "d250c8f968daf98f",
+        "state": "settled"
+      },
+      "dispatch": {
+        "attempt_uuid": "d250c8f968daf98f",
+        "idempotency_key": "2bcf0debdef2c699",
+        "state": "sent"
+      },
+      "operator_notes": "Worker log archived an earlier draft c93f8920c57eacc7; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c93f8920c57eacc7; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c93f8920c57eacc7; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c93f8920c57eacc7; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c93f8920c57eacc7; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c93f8920c57eacc7; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c93f8920c57eacc7; dashboard labels, timing and operator chat are not gate evidence. ",
+      "request_token": "b2901f4b7ac69abf",
+      "result": {
+        "attempt_uuid": "d250c8f968daf98f",
+        "state": "failed"
+      },
+      "retry_policy": {
+        "prior_attempt": "f7dc2dce1acfdafa",
+        "retry_allowed": true
+      }
+    },
+    {
+      "billing": {
+        "charge_token": "a171c76b8e971606",
+        "for_attempt": "31ecb7a8eec2fa70",
+        "state": "settled"
+      },
+      "dispatch": {
+        "attempt_uuid": "31ecb7a8eec2fa70",
+        "idempotency_key": "1863babe9fc76748",
+        "state": "sent"
+      },
+      "operator_notes": "Worker log archived an earlier draft 440cab12a4ca4eda; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 440cab12a4ca4eda; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 440cab12a4ca4eda; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 440cab12a4ca4eda; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 440cab12a4ca4eda; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 440cab12a4ca4eda; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 440cab12a4ca4eda; dashboard labels, timing and operator chat are not gate evidence. ",
+      "request_token": "65417b255f260d12",
+      "result": {
+        "attempt_uuid": "31ecb7a8eec2fa70",
+        "state": "failed"
+      },
+      "retry_policy": {
+        "prior_attempt": "bf2124d4c186c8aa",
+        "retry_allowed": true
+      }
+    },
+    {
+      "billing": {
+        "charge_token": "3074ed1c2f4f59cd",
+        "for_attempt": "c324161605690ee4",
+        "state": "settled"
+      },
+      "dispatch": {
+        "attempt_uuid": "b7b0aab4e2cf700f",
+        "idempotency_key": "3a0ed11bdacc548c",
+        "state": "sent"
+      },
+      "operator_notes": "Worker log archived an earlier draft 23ddd05ed27aaab4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 23ddd05ed27aaab4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 23ddd05ed27aaab4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 23ddd05ed27aaab4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 23ddd05ed27aaab4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 23ddd05ed27aaab4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 23ddd05ed27aaab4; dashboard labels, timing and operator chat are not gate evidence. ",
+      "request_token": "cc436573ce01bba7",
+      "result": {
+        "attempt_uuid": "b7b0aab4e2cf700f",
+        "state": "passed"
+      },
+      "retry_policy": {
+        "prior_attempt": "d16692326af04f6b",
+        "retry_allowed": false
+      }
+    },
+    {
+      "billing": {
+        "charge_token": "4196a4f0e30755ce",
+        "for_attempt": "8f7a9b2ef1d8bc2d",
+        "state": "settled"
+      },
+      "dispatch": {
+        "attempt_uuid": "8f7a9b2ef1d8bc2d",
+        "idempotency_key": "411210e36801e491",
+        "state": "sent"
+      },
+      "operator_notes": "Worker log archived an earlier draft e500b05c8673254a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e500b05c8673254a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e500b05c8673254a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e500b05c8673254a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e500b05c8673254a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e500b05c8673254a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e500b05c8673254a; dashboard labels, timing and operator chat are not gate evidence. ",
+      "request_token": "9221dab29a9d6460",
+      "result": {
+        "attempt_uuid": "8f7a9b2ef1d8bc2d",
+        "state": "passed"
+      },
+      "retry_policy": {
+        "prior_attempt": "5daf377dca04ef47",
+        "retry_allowed": false
+      }
+    }
+  ],
+  "tool_schema": {
+    "properties": {
+      "billing": {
+        "properties": {
+          "charge_token": {
+            "pattern": "^[a-f0-9]{16}$",
+            "type": "string"
+          },
+          "for_attempt": {
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "settled",
+              "none"
+            ],
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "dispatch": {
+        "properties": {
+          "attempt_uuid": {
+            "pattern": "^[a-f0-9]{16}$",
+            "type": "string"
+          },
+          "idempotency_key": {
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "sent",
+              "not_sent"
+            ],
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "operator_notes": {
+        "description": "Free-form diagnostic transcript.",
+        "type": "string"
+      },
+      "request_token": {
+        "pattern": "^[a-f0-9]{16}$",
+        "type": "string"
+      },
+      "result": {
+        "properties": {
+          "attempt_uuid": {
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "passed",
+              "failed",
+              "pending"
+            ],
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "retry_policy": {
+        "properties": {
+          "prior_attempt": {
+            "type": "string"
+          },
+          "retry_allowed": {
+            "type": "boolean"
+          }
+        },
+        "type": "object"
+      }
+    },
+    "type": "object"
+  }
+}

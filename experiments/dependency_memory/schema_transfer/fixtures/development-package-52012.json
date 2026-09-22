@@ -1,0 +1,197 @@
+{
+  "candidate_ids": [
+    "cd56819bd376cac0",
+    "bf5d7f73cb21b144"
+  ],
+  "family": "package",
+  "futures": [
+    {
+      "event": {
+        "path": "note",
+        "value": "Schedule title updated; gate fields unchanged."
+      },
+      "id": "package-52012-0",
+      "target": "bf5d7f73cb21b144"
+    },
+    {
+      "event": {
+        "path": "scan.subject_digest",
+        "value": "f6ebd05726163562"
+      },
+      "id": "package-52012-1",
+      "target": "bf5d7f73cb21b144"
+    },
+    {
+      "event": {
+        "path": "release_digest",
+        "value": "db52027f40bb5fdb"
+      },
+      "id": "package-52012-2",
+      "target": "cd56819bd376cac0"
+    }
+  ],
+  "id": "package-52012",
+  "split": "development",
+  "tool_results": [
+    {
+      "operator_notes": "Worker log archived an earlier draft 4b43279edd8033b4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 4b43279edd8033b4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 4b43279edd8033b4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 4b43279edd8033b4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 4b43279edd8033b4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 4b43279edd8033b4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 4b43279edd8033b4; dashboard labels, timing and operator chat are not gate evidence. ",
+      "package_id": "f113ad1c80a61d2b",
+      "release_digest": "8e097cce4a255316",
+      "scan": {
+        "run_id": "786f8411f4224058",
+        "state": "pass",
+        "subject_digest": "8e423d9abc9e8306"
+      },
+      "signature": {
+        "key_id": "18c3546f129bfd57",
+        "state": "pass",
+        "subject_digest": "8e097cce4a255316"
+      }
+    },
+    {
+      "operator_notes": "Worker log archived an earlier draft 1791249d94e708e4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1791249d94e708e4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1791249d94e708e4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1791249d94e708e4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1791249d94e708e4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1791249d94e708e4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1791249d94e708e4; dashboard labels, timing and operator chat are not gate evidence. ",
+      "package_id": "ef7df44dacfa12ad",
+      "release_digest": "aac2f4252948a710",
+      "scan": {
+        "run_id": "bf6e3d19730e325e",
+        "state": "pass",
+        "subject_digest": "aac2f4252948a710"
+      },
+      "signature": {
+        "key_id": "27cfaeaea6a70f81",
+        "state": "pass",
+        "subject_digest": "aac2f4252948a710"
+      }
+    },
+    {
+      "operator_notes": "Worker log archived an earlier draft 57101792ee844cac; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 57101792ee844cac; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 57101792ee844cac; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 57101792ee844cac; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 57101792ee844cac; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 57101792ee844cac; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 57101792ee844cac; dashboard labels, timing and operator chat are not gate evidence. ",
+      "package_id": "1bb9cffe8b542e58",
+      "release_digest": "bfc514186eb56203",
+      "scan": {
+        "run_id": "1bbe3e612599eb5b",
+        "state": "pass",
+        "subject_digest": "bfc514186eb56203"
+      },
+      "signature": {
+        "key_id": "c1672b7808086a29",
+        "state": "pass",
+        "subject_digest": "bfc514186eb56203"
+      }
+    },
+    {
+      "operator_notes": "Worker log archived an earlier draft f67c2b626d6b461e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f67c2b626d6b461e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f67c2b626d6b461e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f67c2b626d6b461e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f67c2b626d6b461e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f67c2b626d6b461e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f67c2b626d6b461e; dashboard labels, timing and operator chat are not gate evidence. ",
+      "package_id": "cd56819bd376cac0",
+      "release_digest": "55af7f8d1427778d",
+      "scan": {
+        "run_id": "03adac53a8f34530",
+        "state": "pass",
+        "subject_digest": "55af7f8d1427778d"
+      },
+      "signature": {
+        "key_id": "1edff485bda5cc9a",
+        "state": "pass",
+        "subject_digest": "55af7f8d1427778d"
+      }
+    },
+    {
+      "operator_notes": "Worker log archived an earlier draft 9fed9fdd9075f286; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9fed9fdd9075f286; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9fed9fdd9075f286; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9fed9fdd9075f286; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9fed9fdd9075f286; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9fed9fdd9075f286; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9fed9fdd9075f286; dashboard labels, timing and operator chat are not gate evidence. ",
+      "package_id": "bf5d7f73cb21b144",
+      "release_digest": "f6ebd05726163562",
+      "scan": {
+        "run_id": "0a8feb74a28e888b",
+        "state": "pass",
+        "subject_digest": "f2cc8d081f3e1c62"
+      },
+      "signature": {
+        "key_id": "6cc0e2de26130f03",
+        "state": "pass",
+        "subject_digest": "f6ebd05726163562"
+      }
+    },
+    {
+      "operator_notes": "Worker log archived an earlier draft 6522ee67adfad288; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 6522ee67adfad288; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 6522ee67adfad288; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 6522ee67adfad288; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 6522ee67adfad288; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 6522ee67adfad288; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 6522ee67adfad288; dashboard labels, timing and operator chat are not gate evidence. ",
+      "package_id": "9888620c443e32d4",
+      "release_digest": "cd560cd9dec8f164",
+      "scan": {
+        "run_id": "29dc9df8bbb7e5f2",
+        "state": "pass",
+        "subject_digest": "cd560cd9dec8f164"
+      },
+      "signature": {
+        "key_id": "fa6743a0df37087e",
+        "state": "missing",
+        "subject_digest": "cd560cd9dec8f164"
+      }
+    },
+    {
+      "operator_notes": "Worker log archived an earlier draft c6c0dc6cd06ca74a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c6c0dc6cd06ca74a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c6c0dc6cd06ca74a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c6c0dc6cd06ca74a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c6c0dc6cd06ca74a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c6c0dc6cd06ca74a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c6c0dc6cd06ca74a; dashboard labels, timing and operator chat are not gate evidence. ",
+      "package_id": "2cfbca84d3553aab",
+      "release_digest": "cb0f9919307149af",
+      "scan": {
+        "run_id": "2ba1f9c3ec586c47",
+        "state": "pass",
+        "subject_digest": "cb0f9919307149af"
+      },
+      "signature": {
+        "key_id": "373823b2a08c21e6",
+        "state": "missing",
+        "subject_digest": "cb0f9919307149af"
+      }
+    }
+  ],
+  "tool_schema": {
+    "properties": {
+      "operator_notes": {
+        "description": "Free-form diagnostic transcript.",
+        "type": "string"
+      },
+      "package_id": {
+        "pattern": "^[a-f0-9]{16}$",
+        "type": "string"
+      },
+      "release_digest": {
+        "pattern": "^[a-f0-9]{16}$",
+        "type": "string"
+      },
+      "scan": {
+        "properties": {
+          "run_id": {
+            "pattern": "^[a-f0-9]{16}$",
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "pass",
+              "fail"
+            ],
+            "type": "string"
+          },
+          "subject_digest": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "signature": {
+        "properties": {
+          "key_id": {
+            "pattern": "^[a-f0-9]{16}$",
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "pass",
+              "missing"
+            ],
+            "type": "string"
+          },
+          "subject_digest": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    "type": "object"
+  }
+}

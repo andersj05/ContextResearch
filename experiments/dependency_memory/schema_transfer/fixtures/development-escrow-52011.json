@@ -1,0 +1,143 @@
+{
+  "candidate_ids": [
+    "77a49cfea2967314",
+    "b346acc01b10a936"
+  ],
+  "family": "escrow",
+  "futures": [
+    {
+      "event": {
+        "path": "note",
+        "value": "Schedule title updated; gate fields unchanged."
+      },
+      "id": "escrow-52011-0",
+      "target": "b346acc01b10a936"
+    },
+    {
+      "event": {
+        "path": "authorization.for_receipt",
+        "value": "306e7c8270503443"
+      },
+      "id": "escrow-52011-1",
+      "target": "b346acc01b10a936"
+    },
+    {
+      "event": {
+        "path": "current_receipt",
+        "value": "bf454c6e647862c6"
+      },
+      "id": "escrow-52011-2",
+      "target": "77a49cfea2967314"
+    }
+  ],
+  "id": "escrow-52011",
+  "split": "development",
+  "tool_results": [
+    {
+      "authorization": {
+        "approval_id": "0ce88b03651ac8ac",
+        "for_receipt": "18d5bb09cd8c017d",
+        "state": "accepted"
+      },
+      "current_receipt": "18d5bb09cd8c017d",
+      "invoice_id": "77a49cfea2967314",
+      "operator_notes": "Worker log archived an earlier draft 3ba54db4c4e94b66; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 3ba54db4c4e94b66; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 3ba54db4c4e94b66; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 3ba54db4c4e94b66; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 3ba54db4c4e94b66; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 3ba54db4c4e94b66; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 3ba54db4c4e94b66; dashboard labels, timing and operator chat are not gate evidence. "
+    },
+    {
+      "authorization": {
+        "approval_id": "15eb043376c4303c",
+        "for_receipt": "b987a136009499cc",
+        "state": "pending"
+      },
+      "current_receipt": "b987a136009499cc",
+      "invoice_id": "326985e5bd1778a1",
+      "operator_notes": "Worker log archived an earlier draft acc2d4979f086e0c; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft acc2d4979f086e0c; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft acc2d4979f086e0c; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft acc2d4979f086e0c; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft acc2d4979f086e0c; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft acc2d4979f086e0c; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft acc2d4979f086e0c; dashboard labels, timing and operator chat are not gate evidence. "
+    },
+    {
+      "authorization": {
+        "approval_id": "f75c46e3395ef21f",
+        "for_receipt": "4c1ee066ba639e01",
+        "state": "accepted"
+      },
+      "current_receipt": "306e7c8270503443",
+      "invoice_id": "b346acc01b10a936",
+      "operator_notes": "Worker log archived an earlier draft 58a9769ba6c5c6f5; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 58a9769ba6c5c6f5; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 58a9769ba6c5c6f5; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 58a9769ba6c5c6f5; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 58a9769ba6c5c6f5; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 58a9769ba6c5c6f5; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 58a9769ba6c5c6f5; dashboard labels, timing and operator chat are not gate evidence. "
+    },
+    {
+      "authorization": {
+        "approval_id": "27ee0dd21dd7a737",
+        "for_receipt": "657030edc16fce50",
+        "state": "pending"
+      },
+      "current_receipt": "657030edc16fce50",
+      "invoice_id": "3568f5031c02358d",
+      "operator_notes": "Worker log archived an earlier draft 9de0b31cd01b7a62; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9de0b31cd01b7a62; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9de0b31cd01b7a62; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9de0b31cd01b7a62; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9de0b31cd01b7a62; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9de0b31cd01b7a62; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9de0b31cd01b7a62; dashboard labels, timing and operator chat are not gate evidence. "
+    },
+    {
+      "authorization": {
+        "approval_id": "efd2179d58cc4e61",
+        "for_receipt": "428952d7d6e0f6fb",
+        "state": "accepted"
+      },
+      "current_receipt": "9b104a64d818951f",
+      "invoice_id": "0832d76b80366ec3",
+      "operator_notes": "Worker log archived an earlier draft 589497a1fde798a2; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 589497a1fde798a2; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 589497a1fde798a2; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 589497a1fde798a2; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 589497a1fde798a2; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 589497a1fde798a2; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 589497a1fde798a2; dashboard labels, timing and operator chat are not gate evidence. "
+    },
+    {
+      "authorization": {
+        "approval_id": "bd30332137195cf0",
+        "for_receipt": "607d73ca977ee8f6",
+        "state": "accepted"
+      },
+      "current_receipt": "607d73ca977ee8f6",
+      "invoice_id": "e69b5e93e049ef2d",
+      "operator_notes": "Worker log archived an earlier draft 952fb86909b0f42e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 952fb86909b0f42e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 952fb86909b0f42e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 952fb86909b0f42e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 952fb86909b0f42e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 952fb86909b0f42e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 952fb86909b0f42e; dashboard labels, timing and operator chat are not gate evidence. "
+    },
+    {
+      "authorization": {
+        "approval_id": "05fb73dbb7cc9b0a",
+        "for_receipt": "8a7757477420915b",
+        "state": "accepted"
+      },
+      "current_receipt": "8a7757477420915b",
+      "invoice_id": "991cfc2817d8467f",
+      "operator_notes": "Worker log archived an earlier draft 33326b42626e6a37; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 33326b42626e6a37; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 33326b42626e6a37; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 33326b42626e6a37; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 33326b42626e6a37; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 33326b42626e6a37; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 33326b42626e6a37; dashboard labels, timing and operator chat are not gate evidence. "
+    }
+  ],
+  "tool_schema": {
+    "properties": {
+      "authorization": {
+        "properties": {
+          "approval_id": {
+            "pattern": "^[a-f0-9]{16}$",
+            "type": "string"
+          },
+          "for_receipt": {
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "accepted",
+              "pending"
+            ],
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "current_receipt": {
+        "pattern": "^[a-f0-9]{16}$",
+        "type": "string"
+      },
+      "invoice_id": {
+        "pattern": "^[a-f0-9]{16}$",
+        "type": "string"
+      },
+      "operator_notes": {
+        "description": "Free-form diagnostic transcript.",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  }
+}
