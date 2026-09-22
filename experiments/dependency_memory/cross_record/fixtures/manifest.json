@@ -1,0 +1,35 @@
+{
+  "version": "cross_record_v1",
+  "development": [
+    {
+      "file": "development-escrow-61011.json",
+      "split": "development",
+      "family": "escrow",
+      "sha256": "b6b741d0e1bb42682c259518d21fef0c406a6335729bdc137942c656cb9d2b7d",
+      "bytes": 16075
+    },
+    {
+      "file": "development-escrow-61012.json",
+      "split": "development",
+      "family": "escrow",
+      "sha256": "85e2c902b1869ae0809e65359aaada5cc699bd2f7ff2440d9a31bac883b71bb6",
+      "bytes": 16075
+    },
+    {
+      "file": "development-package-61011.json",
+      "split": "development",
+      "family": "package",
+      "sha256": "61ddb4aee9f71d4d01f1c31e83f2ef6ee34146cd4c1344b841177ff4232826c6",
+      "bytes": 19209
+    },
+    {
+      "file": "development-package-61012.json",
+      "split": "development",
+      "family": "package",
+      "sha256": "2628710963ed123faeb3a85e5a19e48f8145a067f79ace7e3fbe20fbc22000e6",
+      "bytes": 19209
+    }
+  ],
+  "evaluation": [],
+  "implementation_commit": null
+}

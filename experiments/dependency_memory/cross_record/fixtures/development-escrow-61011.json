@@ -1,0 +1,293 @@
+{
+  "candidate_ids": [
+    "ce04c1906190b716",
+    "6ef0fc4318252868"
+  ],
+  "family": "escrow",
+  "futures": [
+    {
+      "event": {
+        "path": "note",
+        "value": "Schedule title updated; gate fields unchanged."
+      },
+      "id": "escrow-61011-0",
+      "target": "6ef0fc4318252868"
+    },
+    {
+      "event": {
+        "path": "authorization.for_receipt",
+        "value": "25b3f8cc8116ebad"
+      },
+      "id": "escrow-61011-1",
+      "target": "6ef0fc4318252868"
+    },
+    {
+      "event": {
+        "path": "current_receipt",
+        "value": "4ff58cdda6f60df5"
+      },
+      "id": "escrow-61011-2",
+      "target": "ce04c1906190b716"
+    }
+  ],
+  "id": "escrow-61011",
+  "private_truth_rows": {
+    "6ef0fc4318252868": {
+      "authorization": {
+        "approval_id": "c4b2587f2f6b7b42",
+        "for_receipt": "7efb6633968b6ee0",
+        "state": "accepted"
+      },
+      "current_receipt": "25b3f8cc8116ebad",
+      "invoice_id": "6ef0fc4318252868",
+      "operator_notes": "Worker log archived an earlier draft 7086ecacb7112252; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 7086ecacb7112252; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 7086ecacb7112252; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 7086ecacb7112252; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 7086ecacb7112252; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 7086ecacb7112252; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 7086ecacb7112252; dashboard labels, timing and operator chat are not gate evidence. "
+    },
+    "743ec56e63e945d1": {
+      "authorization": {
+        "approval_id": "6b489391b0f6580e",
+        "for_receipt": "ff92545c9dcac24c",
+        "state": "pending"
+      },
+      "current_receipt": "ff92545c9dcac24c",
+      "invoice_id": "743ec56e63e945d1",
+      "operator_notes": "Worker log archived an earlier draft 153768c5d4fa7525; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 153768c5d4fa7525; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 153768c5d4fa7525; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 153768c5d4fa7525; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 153768c5d4fa7525; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 153768c5d4fa7525; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 153768c5d4fa7525; dashboard labels, timing and operator chat are not gate evidence. "
+    },
+    "92dd3832b4345d04": {
+      "authorization": {
+        "approval_id": "b487a6ab6cd7486a",
+        "for_receipt": "98323f33eacb4867",
+        "state": "accepted"
+      },
+      "current_receipt": "98323f33eacb4867",
+      "invoice_id": "92dd3832b4345d04",
+      "operator_notes": "Worker log archived an earlier draft 79dac60132333d4e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 79dac60132333d4e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 79dac60132333d4e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 79dac60132333d4e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 79dac60132333d4e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 79dac60132333d4e; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 79dac60132333d4e; dashboard labels, timing and operator chat are not gate evidence. "
+    },
+    "9d85e2d427e62435": {
+      "authorization": {
+        "approval_id": "c8a6776467e6c9b5",
+        "for_receipt": "a3bdf2931dcccece",
+        "state": "accepted"
+      },
+      "current_receipt": "a3bdf2931dcccece",
+      "invoice_id": "9d85e2d427e62435",
+      "operator_notes": "Worker log archived an earlier draft bd4adff4dba59299; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft bd4adff4dba59299; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft bd4adff4dba59299; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft bd4adff4dba59299; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft bd4adff4dba59299; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft bd4adff4dba59299; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft bd4adff4dba59299; dashboard labels, timing and operator chat are not gate evidence. "
+    },
+    "a377c573c55a2d4b": {
+      "authorization": {
+        "approval_id": "79f555dcddb8afb2",
+        "for_receipt": "6be87bf4ceb1c707",
+        "state": "accepted"
+      },
+      "current_receipt": "bcd45ab768ef5b5c",
+      "invoice_id": "a377c573c55a2d4b",
+      "operator_notes": "Worker log archived an earlier draft 333490bd8a4b78fa; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 333490bd8a4b78fa; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 333490bd8a4b78fa; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 333490bd8a4b78fa; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 333490bd8a4b78fa; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 333490bd8a4b78fa; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 333490bd8a4b78fa; dashboard labels, timing and operator chat are not gate evidence. "
+    },
+    "ce04c1906190b716": {
+      "authorization": {
+        "approval_id": "0450deb70e7892c2",
+        "for_receipt": "553ee220dc715433",
+        "state": "accepted"
+      },
+      "current_receipt": "553ee220dc715433",
+      "invoice_id": "ce04c1906190b716",
+      "operator_notes": "Worker log archived an earlier draft a7b4f723bdb48baf; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a7b4f723bdb48baf; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a7b4f723bdb48baf; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a7b4f723bdb48baf; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a7b4f723bdb48baf; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a7b4f723bdb48baf; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a7b4f723bdb48baf; dashboard labels, timing and operator chat are not gate evidence. "
+    },
+    "da6ecc49ee8501ee": {
+      "authorization": {
+        "approval_id": "48054b0869d9fdcb",
+        "for_receipt": "a3e9fc684e5b0f17",
+        "state": "pending"
+      },
+      "current_receipt": "a3e9fc684e5b0f17",
+      "invoice_id": "da6ecc49ee8501ee",
+      "operator_notes": "Worker log archived an earlier draft 1742462d55812d51; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1742462d55812d51; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1742462d55812d51; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1742462d55812d51; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1742462d55812d51; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1742462d55812d51; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 1742462d55812d51; dashboard labels, timing and operator chat are not gate evidence. "
+    }
+  },
+  "rule": "Select the root record whose invoice_id equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. Submit only if authorization.state is accepted and authorization.for_receipt equals current_receipt. Return target_id=invoice_id and work=[] or the sorted set of approval and receipt_scope for failed conditions.",
+  "split": "development",
+  "tool_results": [
+    {
+      "data": {
+        "approval_id": "c4b2587f2f6b7b42",
+        "for_receipt": "7efb6633968b6ee0",
+        "record_id": "c046c65b8ce5f93a",
+        "state": "accepted",
+        "workflow_key": "11833f2e512d6813"
+      },
+      "tool": "authorization"
+    },
+    {
+      "data": {
+        "current_receipt": "25b3f8cc8116ebad",
+        "invoice_id": "6ef0fc4318252868",
+        "operator_notes": "Worker log mentions obsolete draft ced868491687447f. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft ced868491687447f. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft ced868491687447f. Dashboard labels and timings are not gate evidence. ",
+        "workflow_key": "11833f2e512d6813"
+      },
+      "tool": "root"
+    },
+    {
+      "data": {
+        "approval_id": "c8a6776467e6c9b5",
+        "for_receipt": "a3bdf2931dcccece",
+        "record_id": "e39624a91a8f8349",
+        "state": "accepted",
+        "workflow_key": "83c87fadb00dd903"
+      },
+      "tool": "authorization"
+    },
+    {
+      "data": {
+        "current_receipt": "bcd45ab768ef5b5c",
+        "invoice_id": "a377c573c55a2d4b",
+        "operator_notes": "Worker log mentions obsolete draft 5c01bc0d62365f2e. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 5c01bc0d62365f2e. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 5c01bc0d62365f2e. Dashboard labels and timings are not gate evidence. ",
+        "workflow_key": "3fbb2aabd3329599"
+      },
+      "tool": "root"
+    },
+    {
+      "data": {
+        "current_receipt": "98323f33eacb4867",
+        "invoice_id": "92dd3832b4345d04",
+        "operator_notes": "Worker log mentions obsolete draft a151b980dad89d97. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft a151b980dad89d97. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft a151b980dad89d97. Dashboard labels and timings are not gate evidence. ",
+        "workflow_key": "4e3b97300e274ef9"
+      },
+      "tool": "root"
+    },
+    {
+      "data": {
+        "current_receipt": "a3bdf2931dcccece",
+        "invoice_id": "9d85e2d427e62435",
+        "operator_notes": "Worker log mentions obsolete draft 8f7ffb419136ed3a. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 8f7ffb419136ed3a. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 8f7ffb419136ed3a. Dashboard labels and timings are not gate evidence. ",
+        "workflow_key": "83c87fadb00dd903"
+      },
+      "tool": "root"
+    },
+    {
+      "data": {
+        "current_receipt": "a3e9fc684e5b0f17",
+        "invoice_id": "da6ecc49ee8501ee",
+        "operator_notes": "Worker log mentions obsolete draft d93bceb61843aff2. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft d93bceb61843aff2. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft d93bceb61843aff2. Dashboard labels and timings are not gate evidence. ",
+        "workflow_key": "209e5948a6fb79e5"
+      },
+      "tool": "root"
+    },
+    {
+      "data": {
+        "current_receipt": "ff92545c9dcac24c",
+        "invoice_id": "743ec56e63e945d1",
+        "operator_notes": "Worker log mentions obsolete draft 7876b3c45eb63d91. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 7876b3c45eb63d91. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 7876b3c45eb63d91. Dashboard labels and timings are not gate evidence. ",
+        "workflow_key": "3cbe8bf83f57471a"
+      },
+      "tool": "root"
+    },
+    {
+      "data": {
+        "approval_id": "48054b0869d9fdcb",
+        "for_receipt": "a3e9fc684e5b0f17",
+        "record_id": "9b77e105d7e01b83",
+        "state": "pending",
+        "workflow_key": "209e5948a6fb79e5"
+      },
+      "tool": "authorization"
+    },
+    {
+      "data": {
+        "approval_id": "b487a6ab6cd7486a",
+        "for_receipt": "98323f33eacb4867",
+        "record_id": "256e28d143bb631f",
+        "state": "accepted",
+        "workflow_key": "4e3b97300e274ef9"
+      },
+      "tool": "authorization"
+    },
+    {
+      "data": {
+        "approval_id": "6b489391b0f6580e",
+        "for_receipt": "ff92545c9dcac24c",
+        "record_id": "e56dc5906f563b92",
+        "state": "pending",
+        "workflow_key": "3cbe8bf83f57471a"
+      },
+      "tool": "authorization"
+    },
+    {
+      "data": {
+        "approval_id": "79f555dcddb8afb2",
+        "for_receipt": "6be87bf4ceb1c707",
+        "record_id": "80cec34b553947ca",
+        "state": "accepted",
+        "workflow_key": "3fbb2aabd3329599"
+      },
+      "tool": "authorization"
+    },
+    {
+      "data": {
+        "current_receipt": "553ee220dc715433",
+        "invoice_id": "ce04c1906190b716",
+        "operator_notes": "Worker log mentions obsolete draft 3a742b45a59763bd. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 3a742b45a59763bd. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 3a742b45a59763bd. Dashboard labels and timings are not gate evidence. ",
+        "workflow_key": "1b7fccfd8b32d381"
+      },
+      "tool": "root"
+    },
+    {
+      "data": {
+        "approval_id": "0450deb70e7892c2",
+        "for_receipt": "553ee220dc715433",
+        "record_id": "2b674fc5e3e72ba3",
+        "state": "accepted",
+        "workflow_key": "1b7fccfd8b32d381"
+      },
+      "tool": "authorization"
+    }
+  ],
+  "tool_schemas": {
+    "authorization": {
+      "properties": {
+        "approval_id": {
+          "pattern": "^[a-f0-9]{16}$",
+          "type": "string"
+        },
+        "for_receipt": {
+          "type": "string"
+        },
+        "record_id": {
+          "pattern": "^[a-f0-9]{16}$",
+          "type": "string"
+        },
+        "state": {
+          "enum": [
+            "accepted",
+            "pending"
+          ],
+          "type": "string"
+        },
+        "workflow_key": {
+          "pattern": "^[a-f0-9]{16}$",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "root": {
+      "properties": {
+        "current_receipt": {
+          "pattern": "^[a-f0-9]{16}$",
+          "type": "string"
+        },
+        "invoice_id": {
+          "pattern": "^[a-f0-9]{16}$",
+          "type": "string"
+        },
+        "operator_notes": {
+          "description": "Diagnostic text; old drafts are not gate evidence.",
+          "type": "string"
+        },
+        "workflow_key": {
+          "pattern": "^[a-f0-9]{16}$",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  }
+}
