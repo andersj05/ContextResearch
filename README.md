@@ -4,7 +4,9 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
-**New September 21 direction:** [audit a proposed memory before forgetting](research/COMPACTION_COLLISION_AUDIT_2026-09-21.md). The implemented finite auditor finds groups of histories with identical accessible state, computes the best adaptive recovery cost, checks impossibility certificates below that cost, and synthesizes minimum extra-state repairs. Twelve constructed specifications include a case where every pair passes but the whole group fails. This branches into executable compaction diagnostics; publication novelty and natural-task usefulness are unestablished. [Run it](experiments/dependency_memory/collision_audit/README.md).
+**Latest September 22 result:** [feedback before forgetting](research/FEEDBACK_BEFORE_FORGETTING_2026-09-22.md). An execution-graded adapter closes a propose-audit-repair loop through two record-memory boundaries. Accumulated failure constraints repair a weak schema; latest-only feedback cycles. A strong critical-field baseline matches the loop across all 48 constructed contracts, so no practical superiority is established. Controls expose missed obligations and extra information carried by record identity or oracle feedback. [Run it](experiments/dependency_memory/feedback_compaction/README.md).
+
+The [September 21 collision auditor](research/COMPACTION_COLLISION_AUDIT_2026-09-21.md) supplies whole-group recovery certificates and minimum extra-state repairs. The feedback extension adapts it to the existing constructed workflow; natural-task extraction, scalability and publication novelty remain open.
 
 The repository contains an exact finite-chain computation (9/32 error versus a 1/4 isolated-child optimum), a scaling derivation with a uniform error gap, and a [joint-coding extension](research/JOINT_BLOCK_CODING_2026-09-21.md): two blocks improve on the one-block loss, while the asymptotic threshold for approaching the child optimum is about 2.5488 bits per block. The [decoder-complete follow-up](research/DECODER_COMPLETE_FRONTIER_2026-09-21.md) now certifies the limiting error at two bits per block within **(0.2618989799, 0.2618989801)**, covering all 1,679,616 decoder tables and arbitrary joint encoders. A deterministic artifact/manifest environment supplies an exact restricted recovery reference. Start with the [living findings draft](paper/findings-draft.md). External proof review and novelty assessment remain open. The project does **not** yet establish an LLM performance improvement or savings over native Codex or Claude compaction.
 
@@ -55,6 +57,7 @@ python experiments/dependency_memory/audit_scaling.py
 python experiments/dependency_memory/joint_coding/coding.py
 python experiments/dependency_memory/joint_coding/decoder_frontier.py
 python -m experiments.dependency_memory.collision_audit.run
+python -m experiments.dependency_memory.feedback_compaction.run
 python experiments/dependency_memory/run_artifact_workflow.py
 python experiments/dependency_memory/run_recovery_frontier.py
 python experiments/dependency_memory/pilot_plan.py

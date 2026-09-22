@@ -2,6 +2,21 @@
 
 Start with the [proposal](../research/LIVE_DEPENDENCY_RESEARCH_PROPOSAL_2026-09-16.md). It records the exact local reasoning and the distinctions checked in the September 16 investigation. Then read original sources for the claim you are drafting.
 
+## Feedback before forgetting
+
+The [September 22 source comparison](../research/FEEDBACK_PRIOR_ART_2026-09-22.md)
+extends the audit review. WiCER Sections 7.1-7.2 and Appendix I were reread;
+TRACE Sections 4.1-4.2 remain direct precedents. New primary readings are the
+Microsoft Research Memento article's data-construction and information-channel
+sections, the Clarke et al. CEGAR manuscript's introduction and refinement/
+termination overview, and Zhang et al. v4's definitions and CEGAR overview.
+Self-Refine v2 and Reflexion v4 received **abstract/metadata-only** readings.
+Exact URLs, versions and limits are in the note and focused bibliography.
+No full-proof, experiment replication or inherited review-status upgrade occurred.
+
+The [completed finite feedback experiment](../research/FEEDBACK_BEFORE_FORGETTING_2026-09-22.md)
+does not establish novelty for cumulative feedback or gains over strong static retention.
+
 ## New audit direction
 
 Latest research branch: the [compaction collision audit](../research/COMPACTION_COLLISION_AUDIT_2026-09-21.md)

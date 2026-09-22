@@ -1,6 +1,28 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.12 — September 21, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.13 — September 22, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## Feedback-loop follow-up: preserve the failure constraints
+
+The [new offline adapter](../research/FEEDBACK_BEFORE_FORGETTING_2026-09-22.md)
+executes the receipt workflow through two memory boundaries and uses checked
+collision failures to revise a finite retention schema. Accumulated feedback
+repairs a 32/48 initial schema to 48/48; keeping only the newest failure cycles.
+However, a simple critical-field rule also gets 48/48 with fewer full audits.
+The same strong baseline matches feasibility across all 48 capacity/recovery
+contracts. This is useful calibration, not a demonstrated better compactor. [C37-C38]
+
+A separate control shows why one record cannot be equated with one bit: choosing
+which tagged receipt to keep can encode four source states. A public catalog
+decoder exploits that identity, while a receipt-only executor does not. Other
+controls cover a later binding memory limit, missed obligations, and feedback
+that reveals a deleted value as an additional information channel. [C39]
+
+The [prior-art check](../research/FEEDBACK_PRIOR_ART_2026-09-22.md) confirms that
+feedback loops and cumulative preservation constraints are established. The
+next test must make the retention rule nontrivial to infer and compare full
+costs against an equally informed critical-field baseline. No new model calls
+or natural-task gains are claimed.
 
 ## New direction: challenge a memory before accepting it
 

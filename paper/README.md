@@ -22,6 +22,8 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.13 adds the [execution-graded feedback loop](../research/FEEDBACK_BEFORE_FORGETTING_2026-09-22.md), claims C37-C39. The finite loop repairs a weak schema and exposes cycling and information-channel mistakes, while the strong critical-field baseline matches it. Two actual record boundaries and 48 constructed contracts are implemented. No LLM, natural-task or matched-total-cost advantage is established; generic feedback and cumulative constraints are attributed to prior work.
+
 Living draft v0.12 adds the [compaction collision auditor](../research/COMPACTION_COLLISION_AUDIT_2026-09-21.md), claims C35-C36. This is a user-directed research pivot to executable whole-group failure and recovery certificates, with 12 constructed diagnostics and a finite repair codebook. Established dynamic programming and hypergraph methods are attributed; publication novelty, natural-task integration and practical improvement remain open. Prior mathematical and model-study evidence is preserved.
 
 Living draft v0.11 adds the [decoder-complete rate-two certificate](../research/DECODER_COMPLETE_FRONTIER_2026-09-21.md), claim C34: a strict limiting-error interval (0.2618989799, 0.2618989801) and an all-k lower bound allowing every decoder. The standard-library verifier covers 1,679,616 decoder tables. Publication novelty and external correctness review remain open.

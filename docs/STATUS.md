@@ -1,6 +1,6 @@
 # Current research status
 
-Updated: September 21, 2026. This document is the current handoff; older scope documents are historical.
+Updated: September 22, 2026. This document is the current handoff; older scope documents are historical.
 
 ## Objective
 
@@ -8,7 +8,17 @@ Develop a mathematically precise and implementable study of repeated agent compa
 
 The September 21 user-directed pivot prioritizes a new mechanism: **auditing a memory collision before compaction and certifying the cheapest allowed recovery or required retained distinction**. Stop using tighter constants in the same example as the main research advance. The existing mathematics remains a calibration result.
 
+The September 22 feedback-loop investigation now connects that auditor to the
+existing executable workflow. It supports a bounded propose-audit-repair loop,
+but the strong critical-field baseline matches its feasible contracts. Treat
+this as calibration and a useful negative result, not a better-compactor claim.
+Final checks: 303 tests passed, the offline validator reported no errors, and
+the paper built with 30 cited sources. Historical study evidence is unchanged.
+
 ## Established in this repository
+
+- **September 22 feedback milestone:** the [execution-graded feedback adapter](../research/FEEDBACK_BEFORE_FORGETTING_2026-09-22.md) enforces two record-memory boundaries, derives accepted actions through restored terminal execution, and accumulates independently checked unsafe-group constraints. In the main fixture it repairs 32/48 successes to 48/48 in three audits; last-only feedback cycles. Critical-field retention also attains 48/48 with one audit. Across 48 constructed contracts and five methods, accumulated feedback, enumeration and the strong baseline certify the same 18 contracts; last-only feedback cycles in 15. Claims C37-C38. Eighteen focused tests include 1,872 independent forward controller comparisons and a separate algebraic check of the capacity/recovery sweep. Zero model calls.
+- **September 22 channel controls:** a one-record priority child fails where an early-target treatment succeeds; a distinct value-dependent record-identity code also succeeds using four states and a public two-value catalog. Ordinary receipt submission on that coded memory succeeds only 24/48, while its catalog decoder succeeds 48/48. Partial probes miss an untested obligation, and late true-value feedback supplies an additional conditional bit. Claim C39. These are constructed controls, not natural-task evidence or compression of arbitrary receipts. The [prior-art note](../research/FEEDBACK_PRIOR_ART_2026-09-22.md) rules out novelty for generic feedback, cumulative constraints and finite refinement.
 
 - **Latest September 21 direction:** the [compaction collision auditor](../research/COMPACTION_COLLISION_AUDIT_2026-09-21.md) is executable. It handles whole groups with identical retained/public state, multiple correct terminal actions, deterministic adaptive recovery, separately checked lower proofs, and minimum additional-state repairs valid before the future task is known. Twelve constructed specifications include a pairwise-pass/triple-fail case, adaptive versus fixed recovery costs of two versus four, versioned-archive access, and negative controls. Forward controller enumeration independently checks all 343 three-world accepted-action tables (2,401 subset values). Claims C35-C36. No model calls; no further forced compaction during rescue, semantic prose-equivalence inference, native integration, natural-task gain, or certified publication novelty.
 
@@ -66,7 +76,19 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 
 ## Next bounded tasks
 
-The active priority is a sound adapter from execution-graded task snapshots to the new collision auditor. Freeze visible prehistories, actual retained/public channels, accepted outcomes and allowed recovery tools; then seek a reproducible failure and a matched-cost retained-state repair. Exact semantic collisions, scalability and superiority to simple critical-field retention are open and are explicit kill criteria. General generated continuation search and native-agent integration remain unimplemented. Do not turn the 12 constructed specifications into a performance claim. The [prior-art note](../research/COMPACTION_AUDIT_PRIOR_ART_2026-09-21.md) rules out broad novelty for QA-based repair, typed commitments, dynamic programming or hypergraph coding.
+The constructed execution adapter is complete; arbitrary natural-task extraction
+is not. The next bounded task is to prepare pinned local task snapshots with
+opaque payloads, executable obligations and a declared information contract,
+where the retention rule must be inferred rather than supplied directly. Use the
+[feedback research protocol](FEEDBACK_RESEARCH_PROTOCOL.md): equally informed
+critical-field retention, generic revision, last-only and accumulated diagnosis,
+two binding memory limits, and full resource accounting. Freeze development and
+evaluation continuations before optimizing the policy. No new live launch is
+specified; model revision, sample size, seeds, transport and spend cap remain
+unfilled. The present strong-baseline tie is a reason to downgrade practical
+superiority, not to scale up repetitions of the same fixture. Exact semantic
+collisions, tractable sound verification, native integration and novelty remain
+open. General generated continuation search remains unimplemented.
 
 The decoder-complete phase resolved the rate-two interval to 2e-10. Further decimal tightening is deprioritized. External correctness/priority review remains useful, while the earlier behavioral tasks below remain separately specified follow-ups rather than a request to reuse completed launch allocations.
 

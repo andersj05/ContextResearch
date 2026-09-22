@@ -158,6 +158,36 @@ Twelve constructed specifications include three accepted-action sets {A,B}, {B,C
 
 This proposed audit protocol is distinct from scoring a sampled continuation, but diagnostic summary repair, verifier-guided continuation evaluation and typed commitment verification already exist [@wicer2026; @trace2026; @contextcodec2026]. Information-state dynamic programming and group-based functional compression are also established [@subramanian2022ais; @basu2022hypergraph]. We claim neither a new general planning theorem nor novelty for the elementary three-set example. Publication priority, a sound natural-task adapter, and usefulness beyond simple critical-field retention remain open.
 
+### 8.1 Feedback before forgetting
+
+A new [execution adapter](../research/FEEDBACK_BEFORE_FORGETTING_2026-09-22.md)
+closes a finite propose-audit-repair loop around the existing artifact environment
+(C37). It derives accepted actions from restored terminal execution, enforces two
+record-memory boundaries, and feeds independently checked unsafe collision groups
+back into a finite candidate search. Under a fixed contract, each accumulated
+constraint rejects its current candidate and no feasible candidate, giving the
+elementary at-most-|C| full-audit bound. This is established refinement and finite
+elimination machinery [@clarke2000cegar; @zhang2017pomdp].
+
+In the main constructed case, a weak schema succeeds on 32/48 world/routes;
+accumulated feedback finds a 48/48 schema in three audits. Latest-only feedback
+cycles. A workflow-aware critical-field baseline already attains 48/48 with one
+audit. Across 48 capacity/recovery contracts the accumulated, exhaustive and
+critical-field methods certify the same 18 cases (C38). Offline synthesis costs
+are separate from execution action units; no matched-total-cost advantage or
+model improvement follows. Cumulative preservation constraints already occur in
+WiCER [@wicer2026], while the Memento team describes specific judge feedback for
+compression retries [@memento2026article].
+
+Controls show that a binding child boundary can defeat the priority-selector
+family, that incomplete probes miss obligations, and that value-dependent choice
+of a tagged receipt can encode two binary values in four one-record states (C39).
+The latter succeeds with a finite public-catalog decoder but not with ordinary
+receipt-only submission on every outcome. Thus record counts are not state bits,
+family exhaustion is not unrestricted impossibility, and the existence of a
+successful decoder is not a performance guarantee for a chosen agent. Natural
+task extraction, scalable verification and practical superiority remain open.
+
 ## 9. Limitations and open results
 
 The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. No learned dependency classifier or LLM-agent benchmark has been evaluated here. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, useful finite-length joint codes, a wider rate-distortion characterization, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.

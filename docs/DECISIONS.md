@@ -153,3 +153,39 @@ is a separate research problem. Further forced compaction during rescue and
 state-changing tools are outside the implemented solver. Keep those limitations
 visible, retain the existing mathematical results, and deprioritize more decimal
 tightening as the main research activity.
+
+## September 22: feedback before forgetting, with a strong negative control
+
+The user asked to pursue the feedback-loop direction intensively. Build an
+execution-graded adapter over the existing receipt environment in a separate
+subpackage, preserving all historical source fingerprints and model evidence.
+Use eight explicit worlds, six public continuations, two record-memory boundaries
+and costed final recovery. Derive accepted actions by restored terminal execution;
+keep actual retained/public channels exact. No model calls or external messages.
+
+The [completed loop](../research/FEEDBACK_BEFORE_FORGETTING_2026-09-22.md) preserves
+verified unsafe-group constraints, not only the latest failure. It repairs the
+main weak schema from 32/48 to 48/48 executions in three audits, while last-only
+repair cycles. The strong critical-field baseline also achieves 48/48 in one
+audit and matches the same 18 feasible contracts across the 48-contract sweep.
+Record this as a negative control against practical superiority. Do not describe
+fewer audits than enumeration as a full compute or economic gain.
+
+Make the scope of family exhaustion explicit: a deliberate record-identity code
+supports four binary source states in one tagged record. This finite public-
+catalog construction invalidates an unrestricted one-record impossibility claim,
+while ordinary receipt submission on it still fails half the outcomes. Add late
+oracle feedback and partial-probe controls. Feedback packets, selected identifiers,
+public catalogs and decoder code are information channels when they depend on
+instance values. Two boundaries precede final rescue; no further compaction occurs
+during rescue. All interfaces are trusted Python, not process isolation.
+
+The [new primary readings](../research/FEEDBACK_PRIOR_ART_2026-09-22.md) include
+WiCER's cumulative constraints and Appendix I limitations, Memento's specific
+judge feedback, and established CEGAR/POMDP refinement. Generic feedback and
+remembering prior failures are not novel. Record claims C37-C39 and the strong
+baseline tie in the manuscript, living draft, status and claim register together.
+The [next-stage design](FEEDBACK_RESEARCH_PROTOCOL.md) requires opaque-payload,
+execution-graded snapshots and equally informed controls before model spending;
+model revision, transport, sample size, seeds and allocation remain unfilled.
+Work is on `task/feedback-compaction-research`.

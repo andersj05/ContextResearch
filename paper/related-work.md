@@ -2,6 +2,12 @@
 
 These are distinctions to verify and explain, not declarations of novelty. The detailed review is in the September 16 proposal and survey. The focused bibliography records verified titles and authors; outstanding final publication metadata are identified in its notes.
 
+The [September 22 feedback comparison](../research/FEEDBACK_PRIOR_ART_2026-09-22.md)
+adds explicit cumulative-constraint and refinement precedents. Our new execution
+adapter is a finite calibration; feedback alone, persistence of old failures and
+finite candidate elimination are not novelty claims. The critical-field baseline
+matches it in the tested family.
+
 | Work | Connection | Distinction to maintain |
 |---|---|---|
 | Nagle et al. [@nagle2024] | Black-box prompt rate–distortion and query visibility | Our updater cannot reread the original source after the first bottleneck. |
