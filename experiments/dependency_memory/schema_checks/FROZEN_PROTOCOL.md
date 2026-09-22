@@ -48,7 +48,7 @@ GPT-6 Luna short-context planning rates as the prior pilot; keep account debit
 unknown. Count extractor/check CPU, source bytes read, memory bytes written, and
 indexed recovered bytes separately. The preregistered experimental total adds
 measured model planning credits, **0.0001 credit per measured local CPU second**,
-and **0.00000001 credit per archive byte retrieved or full-history byte read**.
+and **0.00000001 credit per local source, memory, or archive byte read**.
 These two local prices are synthetic sensitivity assumptions, not a measured
 provider bill; report the components and the break-even CPU price as well. Final
 decisions use `gpt-6-luna`, medium reasoning and the prior audited fresh-thread
