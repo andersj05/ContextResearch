@@ -138,3 +138,17 @@ The [new proof](../research/DECODER_COMPLETE_FRONTIER_2026-09-21.md) adds a shar
 - Basu et al. [v2](https://arxiv.org/html/2204.02586v2), II-A4 and V-B, Theorems 9-10, revisited for the cascade comparison. The recorded review scope remains bounded; no full-proof upgrade.
 
 The specific all-decoder numerical separation is the candidate contribution. Targeted searches did not settle priority; no external reviewer was contacted. Inherited broad-corpus review labels remain unchanged.
+
+## Historical workflow evidence used in the September 22 replay
+
+The [historical handoff note](../research/HISTORICAL_WORKFLOW_REPLAY_2026-09-22.md)
+reads the four final worker-ledger slices, the saved continuation dispositions,
+and the pure `classify_attempt`/`exact` functions in
+[the continuation preparer](../scripts/prepare_transfer_continuation.py).
+The [extraction module](../experiments/dependency_memory/workflow_replay/evidence.py)
+pins original file hashes and retains array positions and record hashes. The
+[continuation record](../docs/TRANSFER_CONTINUATION.md) supplies historical context.
+These are internal primary artifacts, not newly reviewed academic publications.
+No bibliography metadata or inherited review label is upgraded. Their real
+transport observations support counterfactual handoff tests, not an attribution
+of those failures to compaction or a measurement of deployed memory savings.

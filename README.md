@@ -4,7 +4,9 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
-**Latest September 22 conclusion:** the [strict novelty audit](research/FEEDBACK_NOVELTY_AUDIT_2026-09-22.md) finds close precedents and explicitly reformulates our finite repair objective as accepted recovery strategies and weak hypergraph coloring. Independent finite checks agree. No general feedback-algorithm novelty or practical superiority is established; useful extraction from realistic workflows remains the candidate contribution.
+**Latest September 22 milestone:** a [historical workflow replay](research/HISTORICAL_WORKFLOW_REPLAY_2026-09-22.md) extracts eight real attempt records and exposes delayed resumption and stale-check failures. With two byte limits and a common synthetic total allowance, checked memory repair completes 24/24 routes where compact fields complete 18/24, including a whole-record recovery comparison. Direct checked receipts achieve the same result more cheaply; cheap retrieval can erase the advantage. These are counterfactual replays of inspected evidence, not observed compaction failures or production savings. [Run it](experiments/dependency_memory/workflow_replay/README.md).
+
+The earlier [strict novelty audit](research/FEEDBACK_NOVELTY_AUDIT_2026-09-22.md) finds close precedents and explicitly reformulates our finite repair objective as accepted recovery strategies and weak hypergraph coloring. No general feedback-algorithm novelty or practical superiority is established. Automatic extraction on unseen workflow structures and measured production benefit remain open.
 
 The [feedback-before-forgetting adapter](research/FEEDBACK_BEFORE_FORGETTING_2026-09-22.md) closes a propose-audit-repair loop through two record-memory boundaries. Accumulated failure constraints repair a weak schema; latest-only feedback cycles. A strong critical-field baseline matches the loop across all 48 constructed contracts. Controls expose missed obligations and extra information carried by record identity or oracle feedback. [Run it](experiments/dependency_memory/feedback_compaction/README.md).
 
@@ -60,6 +62,7 @@ python experiments/dependency_memory/joint_coding/coding.py
 python experiments/dependency_memory/joint_coding/decoder_frontier.py
 python -m experiments.dependency_memory.collision_audit.run
 python -m experiments.dependency_memory.feedback_compaction.run
+python -m experiments.dependency_memory.workflow_replay.run
 python experiments/dependency_memory/run_artifact_workflow.py
 python experiments/dependency_memory/run_recovery_frontier.py
 python experiments/dependency_memory/pilot_plan.py

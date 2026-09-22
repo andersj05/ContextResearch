@@ -5,6 +5,14 @@ The completed [finite adapter](../research/FEEDBACK_BEFORE_FORGETTING_2026-09-22
 provides failure controls. No new model allocation has been used or established
 by this document; all previous completed study artifacts remain unchanged.
 
+The subsequent [historical handoff replay](../research/HISTORICAL_WORKFLOW_REPLAY_2026-09-22.md)
+implements one pinned evidence adapter with opaque identities, byte limits and
+explicit synthetic total allowances. It is exploratory, not held-out or a live
+launch. Directly applying the public rule to retain checked receipts is cheaper
+than diagnosis and repair. The next extractor evaluation needs a different frozen
+obligation structure and equally informed indexed recovery; repeating this
+inspected workflow cannot establish natural-task transfer.
+
 ## Decision to test
 
 Can specific, independently validated failure feedback improve downstream task

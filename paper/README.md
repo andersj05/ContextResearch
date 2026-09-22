@@ -22,6 +22,8 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.15 adds the [historical workflow replay](../research/HISTORICAL_WORKFLOW_REPLAY_2026-09-22.md), claims C41-C43. Eight real attempt records support counterfactual delayed handoff failures, byte-limited receipt repair and conditional synthetic cost frontiers. Direct receipts outperform iterative repair costs. Scope controls test reuse/invalidation. The evidence was inspected during development; there is no held-out, compaction-causal or production-saving claim.
+
 Living draft v0.14 adds the [strict novelty audit](../research/FEEDBACK_NOVELTY_AUDIT_2026-09-22.md), claim C40. The finite recovery/repair objective is explicitly reformulated as accepted strategies and weak coloring, with independent checks. Close architectural precedents further narrow the claim: no general feedback-algorithm novelty or practical superiority is established. Realistic evidence extraction and measured utility remain open systems questions.
 
 Living draft v0.13 adds the [execution-graded feedback loop](../research/FEEDBACK_BEFORE_FORGETTING_2026-09-22.md), claims C37-C39. The finite loop repairs a weak schema and exposes cycling and information-channel mistakes, while the strong critical-field baseline matches it. Two actual record boundaries and 48 constructed contracts are implemented. No LLM, natural-task or matched-total-cost advantage is established; generic feedback and cumulative constraints are attributed to prior work.

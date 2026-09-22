@@ -5,6 +5,7 @@
 | Read for | Document | Evidence status |
 |---|---|---|
 | Current task and next steps | [Status](STATUS.md) | Current handoff |
+| Real workflow evidence and conditional cost benefit | [Historical replay](../research/HISTORICAL_WORKFLOW_REPLAY_2026-09-22.md), [contract](../experiments/dependency_memory/workflow_replay/CONTRACT.md) | Eight actual records; counterfactual byte-limited continuations, exact synthetic allowance frontiers and scoped invalidation. Direct receipts outperform iterative repair costs; no compaction-causal, held-out or production-saving claim |
 | Strict feedback novelty verdict | [September 22 audit and reduction](../research/FEEDBACK_NOVELTY_AUDIT_2026-09-22.md), [finite checks](../experiments/dependency_memory/results/feedback_novelty_report.md) | Exact elementary strategy/weak-coloring reformulation; close precedents; no general algorithmic novelty or practical superiority established |
 | Feedback loop and execution adapter | [September 22 findings](../research/FEEDBACK_BEFORE_FORGETTING_2026-09-22.md) | Completed finite adapter, two record boundaries, 48 contracts; accumulated repairs work but strong static retention matches them |
 | Feedback prior art and next design | [Source comparison](../research/FEEDBACK_PRIOR_ART_2026-09-22.md), [protocol](FEEDBACK_RESEARCH_PROTOCOL.md) | Focused primary readings; generic feedback and cumulative constraints are established; model experiment remains unperformed |

@@ -215,3 +215,37 @@ appropriate invalidation/reuse of checks and measured utility at matched total
 costs. If simple critical-field retention continues to match it, report that
 result and evaluate the auditor as a diagnostic tool. No new model calls or
 external communications were made.
+
+## September 22: real workflow evidence and cheap checked receipts
+
+The user requested sustained work on concrete delayed failures and repairs that
+improve outcomes at the same total cost. Work on
+`task/real-workflow-memory-replay`. Mine the last two attempts from each worker
+of the completed transfer phase, including four successful controls and four
+failed-status records. Keep source files and historical launch artifacts intact;
+record hashes and selectors instead of duplicating raw session logs.
+
+The [historical replay](../research/HISTORICAL_WORKFLOW_REPLAY_2026-09-22.md)
+separates three already dispatched failures from one preflight stop. Status-only
+retry/hold plans have concrete delayed errors. Impose two byte boundaries and
+meter exact canonical transfers, checks, repair, retrieval and unsuccessful work.
+Retain named fields, compact fields and direct checked receipts as equally
+informed baselines. Enumerate all allowance thresholds as well as the fixed
+180-contract grid; do not choose a favorable budget and hide other regimes.
+
+Checked receipts preserve the required identity/dispatch/accounting result more
+compactly than all checker inputs. At one explicit synthetic resource envelope,
+repair completes 24/24 routes versus 18/24 compact fields, including full archive
+recovery. Direct receipts achieve the same outcomes more cheaply and never lose
+to repair in the grid. Prefer this simpler mechanism for subsequent development.
+The 17 wins and 30 losses against compact fields reinforce that repair is not a
+universal default. Add scope controls for changed evidence, field presence,
+request identity and checker revision, charging the current-evidence read.
+
+The records were inspected, the routing/compactions are counterfactual, and the
+prices are synthetic. Do not attribute historical transport failures to memory,
+call the routes independent trials, claim native-agent gains, or equate byte
+prices with dollars. The next evaluation must freeze a different workflow's
+obligations before developing its extractor and compare indexed recovery. No
+new model launch, allocation, purchase, reset or external message occurred.
+Claims C41-C43 and living draft v0.15 record this bounded milestone together.

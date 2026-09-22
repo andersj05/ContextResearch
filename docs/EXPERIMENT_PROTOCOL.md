@@ -1,5 +1,14 @@
 # Experiment protocol draft
 
+Latest September 22 milestone: the [historical workflow replay](../research/HISTORICAL_WORKFLOW_REPLAY_2026-09-22.md)
+uses eight pinned actual attempt records with exact opaque identities. Two imposed
+byte boundaries and costed archive tools produce conditional matched-allowance
+improvements; direct checked receipts cost less than diagnosis and repair. The
+[specific contract](../experiments/dependency_memory/workflow_replay/CONTRACT.md)
+declares synthetic byte/check/tool prices, inspected evidence, information channels
+and scope controls. No historical failure is attributed to compaction, and no
+new model or production-cost claim is made. Previous launch allocations stay closed.
+
 September 22 feedback milestone: the [execution adapter and repair loop](../research/FEEDBACK_BEFORE_FORGETTING_2026-09-22.md) now exercise the existing receipt workflow through two record-memory boundaries. The 48-contract offline sweep uses a finite public token catalog and scripted schema candidates. Accumulated feedback repairs weak retention but does not outperform the strong critical-field baseline. Identifier and late-feedback controls make additional information channels explicit. The [next-stage design](FEEDBACK_RESEARCH_PROTOCOL.md) is not a live launch contract and leaves model/transport/allocation fields unfilled. Zero new model calls were made; completed allocations remain unchanged.
 
 September 21 research pivot: the [finite collision auditor](../research/COMPACTION_COLLISION_AUDIT_2026-09-21.md) adds 12 constructed offline specifications, exact adaptive recovery policies, independently checked obstructions and finite repair codebooks. It has no new model launch and no second forced memory boundary during recovery. Natural-task adapters and empirical gains remain unperformed; existing completed allocations are unchanged.

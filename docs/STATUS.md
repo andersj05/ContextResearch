@@ -8,6 +8,19 @@ Develop a mathematically precise and implementable study of repeated agent compa
 
 The September 21 user-directed pivot prioritizes a new mechanism: **auditing a memory collision before compaction and certifying the cheapest allowed recovery or required retained distinction**. Stop using tighter constants in the same example as the main research advance. The existing mathematics remains a calibration result.
 
+The latest [historical workflow replay](../research/HISTORICAL_WORKFLOW_REPLAY_2026-09-22.md)
+mines eight real records with opaque request identities from the completed transfer
+workflow. Three failed-status requests had dispatched; a fourth had not. Two
+byte-limited counterfactual handoffs expose different later obligations. At a
+common synthetic total allowance, repair achieves 24/24 routes versus 18/24 for
+compact critical fields, including a whole-record archive comparison. Direct
+checked receipts are cheaper and never worse across the 180-contract grid.
+Scope controls reject stale receipts. This is an exploratory replay capability,
+not evidence that compaction caused the historical failures or that a deployed
+agent saves money. New claims C41-C43; no new model calls.
+Validation for this milestone: all 326 tests passed, the full repository validator
+reported PASS with no errors, and the paper built with 33 cited sources.
+
 The September 22 feedback-loop investigation now connects that auditor to the
 existing executable workflow. It supports a bounded propose-audit-repair loop,
 but the strong critical-field baseline matches its feasible contracts. Treat
@@ -17,10 +30,12 @@ also reformulates the finite optimizer as accepted-strategy selection and weak
 hypergraph coloring. Close architectural precedents further narrow the claim.
 No general feedback-algorithm novelty is established. Historical study evidence
 is unchanged; the new checks are offline and use zero model calls.
-Milestone validation: all 310 tests passed, the repository validator reported
+Prior novelty-milestone validation: all 310 tests passed, the repository validator reported
 PASS with no errors, and the paper built with 33 cited sources.
 
 ## Established in this repository
+
+- **September 22 historical replay:** eight position-selected records, two actual byte boundaries, 24 enumerated continuation routes and 180 constructed resource contracts. Original pinned classifier and saved continuation evidence agree; 1,388 adversarial inputs independently check the new field adapter. At caps 1,536/768 bytes and whole-record archive access, 62,501 synthetic total units permit 24/24 repaired outcomes versus 3/24 status, 11/24 named fields and 18/24 compact fields. Direct receipts also get 24/24 and need only 58,761 units. Eleven scope controls distinguish harmless metadata edits from changed evidence/identity/checker versions. The [report](../experiments/dependency_memory/results/workflow_replay_report.md) includes all 45 allowance frontiers and unfavorable conditions. One inspected historical workflow; no held-out/model/production-cost claim.
 
 - **September 22 novelty conclusion:** the [C40 reduction](../research/FEEDBACK_NOVELTY_AUDIT_2026-09-22.md) exactly expresses finite recovery as an accepted-strategy relation and extra memory as weak coloring of minimal unsafe groups. Forward enumeration agrees on 7,203 subset/budget comparisons and 1,029 colorings in the existing 343-table domain; independent color assignment also matches all 12 existing fixtures. These are additional representations of established methods, not a new algorithm or new task samples. Self-GC and black-box checking supply closer architectural/formal-methods precedents. Useful extraction from realistic workflows and matched-cost benefit remain unperformed.
 
@@ -83,10 +98,14 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 
 ## Next bounded tasks
 
-The constructed execution adapter is complete; arbitrary natural-task extraction
-is not. The next bounded task is to prepare pinned local task snapshots with
-opaque payloads, executable obligations and a declared information contract,
-where the retention rule must be inferred rather than supplied directly. Use the
+The constructed execution adapter and one historical evidence replay are complete;
+arbitrary natural-task extraction is not. The next bounded task is to freeze a
+different workflow's obligation structure and grader before developing its
+extractor. Prefer cheap direct checked receipts with scoped invalidation; retain
+equally informed compact fields and indexed recovery as strong baselines. The
+current resume snapshot was inspected and is not a held-out split. Prepare pinned
+snapshots with opaque payloads, executable obligations and a declared information
+contract, where the retention rule must be inferred rather than supplied directly. Use the
 [feedback research protocol](FEEDBACK_RESEARCH_PROTOCOL.md): equally informed
 critical-field retention, generic revision, last-only and accumulated diagnosis,
 two binding memory limits, and full resource accounting. Freeze development and

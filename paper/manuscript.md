@@ -1,6 +1,6 @@
 # Repeated Context Compression with Delayed Task Dependencies
 
-Working draft — September 21, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an asymptotic threshold and a tightly certified rate-two error, an exact restricted recovery reference, two small Luna development tranches, and a completed 1,536-request matched retention study. External mathematical review, novelty assessment, and held-out evaluation remain open.
+Working draft — September 22, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an asymptotic threshold and a tightly certified rate-two error, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, and an exploratory historical workflow replay. External mathematical review, novelty assessment, held-out evaluation and production benefit remain open.
 
 ## Abstract
 
@@ -213,6 +213,51 @@ counterexamples and learned-model refinement also have formal-methods precedents
 optimizer currently supports a general novelty claim. Cheap, sound extraction
 from realistic workflows and measurable benefit at matched total costs remain
 candidate systems contributions, not completed results.
+
+### 8.3 Historical workflow extraction and conditional resource benefit
+
+The [new replay](../research/HISTORICAL_WORKFLOW_REPLAY_2026-09-22.md) extracts the
+last two attempts from each of four workers in the completed transfer phase.
+The four final attempts all have `transport_failure` status, but three generated
+and settled before their answers were lost, whereas one stopped before dispatch.
+A local plan that retries all four contains three duplicate-dispatch IDs; holding
+all four loses one eligible first submission. These are counterfactual handoff
+failures derived from observed evidence, not evidence that historical compaction
+caused the transport events. The pinned original classifier and saved continuation
+certificate independently agree on all eight extracted records. Claim C41.
+
+All methods receive the same 53,736-byte canonical input. The task imposes two
+byte limits, reveals a worker pair between them and a case ID afterward. Six pairs
+and four targets produce 24 routes over the same records, not independent trials.
+Lossless named fields require 2,722 bytes, a compact fixed schema 1,649, and checked
+dispatch/accounting receipts 1,231. Case IDs, request hashes, exact amounts, schema
+tags and wrappers count in these totals; no finite payload catalog is provided.
+
+At caps of 1,536/768 bytes, a checker price of 128 units, a tool price of 128 units
+and one unit per transferred UTF-8 byte, the first whole-record-recovery frontier
+threshold where repair completes all routes is 62,501 total units. At that same
+allowance, status summaries complete 3/24, named fields 11/24, compact fields 18/24,
+and both repaired and direct receipts 24/24. The threshold is descriptive and
+comes from the complete enumerated frontier. Direct receipts need only 58,761
+units for all routes. These prices cover declared replay transfers and operations,
+including failed work; they do not measure CPU, archive infrastructure, model
+tokens, provider caching or production dollars. Claim C42.
+
+Across 180 constructed contracts, repair never beats direct receipts (147 ties,
+33 losses). It beats compact fields in 17, ties in 133 and loses in 30. Cheap
+indexed recovery and expensive up-front checks supply adverse conditions. The
+known public rule makes diagnosis redundant here; the candidate engineering
+mechanism is cheap result retention with appropriate scope, not a better generic
+feedback algorithm.
+
+The separately authored projection/classifier agrees with pinned original
+semantics on 1,388 adversarial inputs. Eleven receipt-scope controls permit reuse
+for unchanged or irrelevant metadata and invalidate changed evidence, previously
+absent fields, request/case identity and checker revision. Current evidence must
+be read and hashed for this check; its byte cost is reported. These perturbations
+are synthetic controls, separate from the immutable-artifact replay. Automatic
+extraction on unseen workflow structures, adversarial isolation and live
+matched-production-cost benefit remain unperformed. Claim C43.
 
 ## 9. Limitations and open results
 

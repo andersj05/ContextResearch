@@ -1,6 +1,30 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.14 — September 22, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.15 — September 22, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## A real handoff distinction and a cheap memory repair
+
+The [historical workflow replay](../research/HISTORICAL_WORKFLOW_REPLAY_2026-09-22.md)
+uses eight actual attempt records. Three failed-status requests had dispatched
+and settled; a fourth failed before dispatch. A later plan that retries all four
+would duplicate three generations, while holding all four would miss one eligible
+first submission. These are local counterfactual plans. The historical transport
+events were observed; compaction was not shown to cause them. [C41]
+
+Checked decision receipts preserve request identity, dispatch class and exact
+accounting in 1,231 bytes, compared with 1,649 for lossless compact fields. Through
+1,536/768-byte boundaries and with whole-record archive recovery available, a
+common allowance of 62,501 synthetic units yields 24/24 repaired continuations
+versus 18/24 for compact fields. The direct-receipt baseline also succeeds on all
+24 and needs less work. Cheap retrieval and expensive checking can make repair
+lose. All 45 allowance frontiers are retained; the routes reuse one inspected
+workflow and are not independent trials. No dollar savings are measured. [C42]
+
+Eleven scope controls show when old receipts must be invalidated, including
+changed settlement, newly present usage metadata and changed request/checker
+identity. The new adapter matches the original source on 1,388 adversarial
+inputs. Reading current evidence for invalidation has an explicit cost. Automatic
+extraction on unseen task structures and production benefit remain open. [C43]
 
 ## Novelty verdict: no new feedback algorithm established
 
@@ -13,8 +37,9 @@ reuse prior finite domains and narrow the claim; they are not a new algorithm
 or evidence of model improvement. [C40]
 
 A useful systems contribution remains possible if we can extract sound delayed
-failure witnesses from realistic workflows at acceptable cost. That capability
-and superiority over strong simple retention are unperformed. The older
+failure witnesses from realistic workflows at acceptable cost. The inspected
+historical replay above supplies one bounded adapter; automatic extraction and
+superiority over strong simple retention remain unperformed. The older
 delayed-query coding results have separate unresolved priority questions.
 
 ## Feedback-loop follow-up: preserve the failure constraints
