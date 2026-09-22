@@ -1,0 +1,94 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "w2-t1-e1",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0050405",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476689,
+        "usedPercent": 97,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"release\",\"artifact\":\"44060274\",\"work\":[]}",
+  "request": {
+    "instruction": "Continue the release workflow using only the supplied evidence. Release only when approval equals the current artifact, every required CI test has result pass, and there are no open blockers. CI is bound to the artifact in ci_artifact; all required tests need rerunning when that differs. Optional failing tests do not block. Work names are exactly approval (missing/stale approval), ci:<test> (required test absent/failing/stale), and blocker:<id> (one per open blocker). Work is a set. If work is empty choose release; otherwise hold. Notes, owners, and elapsed discussion do not change gates. Apply the late event before deciding. If necessary facts were forgotten, choose inspect, with the facts you can recover from memory. Return the exact current artifact and all outstanding work. The event applies only to the target. Do not call tools.",
+    "observation": {
+      "late_event": {
+        "kind": "ci_artifact",
+        "value": "44060274"
+      },
+      "memory": "Notation: A=artifact; Ap=approval; C=ci_artifact; R=required CI (unit,integ); O=optional perf; B=open blockers; results apply at C. delta-e58 A=543e05fe Ap=543e05fe C=543e05fe R unit=pass,integ=pass; O perf=fail; B=REL-543e. fjord-f14 A=44060274 Ap=44060274 C=87eda946 R unit=pass,integ=pass (stale vs A); O perf=fail; B=none.",
+      "target": "fjord-f14"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "release",
+            "hold",
+            "inspect"
+          ],
+          "type": "string"
+        },
+        "artifact": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "artifact",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "a06ccfae4427ff16e8ca823eb5a04b326a1f8588e047b9e4afc9fd70175ab80d",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "release",
+    "artifact": "44060274",
+    "work": []
+  },
+  "started_at": "2026-09-22T20:16:51.733357+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3014,
+    "outputTokens": 123,
+    "reasoningOutputTokens": 97,
+    "totalTokens": 3137
+  },
+  "usage_events": 1,
+  "wall_seconds": 5.917418400000315,
+  "wire_body_byte_bound": 17962
+}

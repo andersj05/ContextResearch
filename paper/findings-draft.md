@@ -1,6 +1,31 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.15 — September 22, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.16 — September 22, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## Live memory failures and a stronger cost control
+
+The [new GPT-6 Luna medium pilot](../research/LUNA6_DELAYED_FAILURES_2026-09-22.md)
+made 117 fresh calls after freezing its gate, byte budgets and grader. Structured
+memory succeeds on 8/16 delayed decisions, prose on 12/16, and checked replacement,
+direct dependency rows, indexed recovery and full history each on 16/16. One
+structured continuation releases a simulated service after its open blocker is
+cut off at the second memory boundary. Other saved summaries lose explicit
+negative evidence or change exact identifiers. The histories are constructed
+and their continuations correlated; native compaction is not tested. [C44]
+
+Checked replacement uses 8.9% fewer model credits than the original structured
+pipeline while fixing its observed errors. Direct serialization and indexed
+recovery are much cheaper still. Both cache-discounted and cache-neutral costs
+are reported, including all memory-writing calls. The adapter is hand-written
+for a known executable gate, and many summaries are overlong, so this is not a
+general extraction or fully monetized production-saving result. [C45]
+
+A separately frozen 24-call follow-up announces that public rules are repeated
+and asks for service facts first. It eliminates all clipping but still succeeds
+12/16: summaries shorten exact IDs and confuse approval with the current artifact.
+This supplies concrete failures beyond truncation. The prompt is cheaper, while
+direct checked rows and indexed recovery remain the best observed controls.
+Both studies total 141 calls and 1.3190825 planning credits. [C46]
 
 ## A real handoff distinction and a cheap memory repair
 

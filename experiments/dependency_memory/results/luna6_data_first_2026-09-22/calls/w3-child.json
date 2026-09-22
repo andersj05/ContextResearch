@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "w3-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.008328",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476690,
+        "usedPercent": 97,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Notation a=artifact,p=approval,c=ci_artifact; req=required tests,opt=optional tests; P=pass,F=fail; b=open blockers, \u2205=none. atlas-313: a=p=c=d06d406c; req unit=P,integ=P; opt perf=F; b=\u2205. ember-0c: a=p=c=1105c344; req unit=P,integ=P; opt perf=F; b=\u2205.\"}",
+  "request": {
+    "instruction": "The complete gate rules and output schema are public and will be supplied again at every later stage. Do not spend retained memory repeating those rules. Start with compact service-specific facts. Preserve complete service/test/blocker identifiers without renaming or abbreviating their values. At the child boundary retain only the named candidate services. Write a compact structured handoff. Preserve exact artifact identifiers, approval and CI scope, required versus optional tests, explicit absence of blockers, unresolved blockers, and revision-sensitive dependencies. Do not replace scoped evidence with just done/ready. Your entire retained memory string must fit 440 UTF-8 bytes. Only that string survives from the private source history; the public gate rules are repeated. The future target and event are not yet revealed; keep enough for every candidate. You may use compact notation and must define it in memory. Release only when approval equals the current artifact, every required CI test has result pass, and there are no open blockers. CI is bound to the artifact in ci_artifact; all required tests need rerunning when that differs. Optional failing tests do not block. Work names are exactly approval (missing/stale approval), ci:<test> (required test absent/failing/stale), and blocker:<id> (one per open blocker). Work is a set. If work is empty choose release; otherwise hold. Notes, owners, and elapsed discussion do not change gates. Apply the late event before deciding. If necessary facts were forgotten, choose inspect, with the facts you can recover from memory.",
+    "observation": {
+      "candidate_services": [
+        "atlas-313",
+        "ember-0c4"
+      ],
+      "previous_memory": "Notation per service: a=artifact; p=approval; c=ci_artifact; r=required test results; o=optional test results; b=open blockers. fjord-324: a=500c107f p=500c107f c=9255cbb0 r=unit pass, integ pass (stale: c differs from a) o=perf fail b=none. cedar-97: a=p=c=94a1e8d5 r=unit pass, integ fail o=perf fail b=none. birch-124: a=c=30e72291 p=572b8d45 r=unit pass, integ pass o=perf fail b=none. ember-0c: a=p=c=1105c344 r=unit pass, integ pass o=perf fail b=none. delta-153: a=p=c=186c733f r=unit pass, integ pass o=perf fail b=REL-186c. atlas-313: a=p=c=d06d406c r=unit pass, integ pass o=perf fail b=none."
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "f2f26bbafba99efe179d1d84cf6405736273cff41445d8924835eabd1bf491da",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Notation a=artifact,p=approval,c=ci_artifact; req=required tests,opt=optional tests; P=pass,F=fail; b=open blockers, \u2205=none. atlas-313: a=p=c=d06d406c; req unit=P,integ=P; opt perf=F; b=\u2205. ember-0c: a=p=c=1105c344; req unit=P,integ=P; opt perf=F; b=\u2205."
+  },
+  "started_at": "2026-09-22T20:17:12.762836+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3184,
+    "outputTokens": 352,
+    "reasoningOutputTokens": 235,
+    "totalTokens": 3536
+  },
+  "usage_events": 1,
+  "wall_seconds": 11.032605700020213,
+  "wire_body_byte_bound": 18642
+}

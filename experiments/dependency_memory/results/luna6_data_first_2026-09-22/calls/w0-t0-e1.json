@@ -1,0 +1,94 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "w0-t0-e1",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0072255",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476689,
+        "usedPercent": 97,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"inspect\",\"artifact\":\"a0110d9d\",\"work\":[]}",
+  "request": {
+    "instruction": "Continue the release workflow using only the supplied evidence. Release only when approval equals the current artifact, every required CI test has result pass, and there are no open blockers. CI is bound to the artifact in ci_artifact; all required tests need rerunning when that differs. Optional failing tests do not block. Work names are exactly approval (missing/stale approval), ci:<test> (required test absent/failing/stale), and blocker:<id> (one per open blocker). Work is a set. If work is empty choose release; otherwise hold. Notes, owners, and elapsed discussion do not change gates. Apply the late event before deciding. If necessary facts were forgotten, choose inspect, with the facts you can recover from memory. Return the exact current artifact and all outstanding work. The event applies only to the target. Do not call tools.",
+    "observation": {
+      "late_event": {
+        "kind": "artifact",
+        "value": "a0110d9d"
+      },
+      "memory": "Notation: A=approval, C=ci_artifact; R=required unit/integ results at C; O=optional. atlas-99: A=C=c7d544cd; R=pass/pass; B=none. birch-274: A=1120b4ed, C=f6cafa82; R=pass/pass, stale vs A; B=none. O=perf fail for both.",
+      "target": "atlas-99c"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "release",
+            "hold",
+            "inspect"
+          ],
+          "type": "string"
+        },
+        "artifact": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "artifact",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "48013a21c773e855a87e7f33fa15d26b63cff1831ac8faedac2ce7557de3fb62",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "inspect",
+    "artifact": "a0110d9d",
+    "work": []
+  },
+  "started_at": "2026-09-22T20:14:54.916868+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 2978,
+    "outputTokens": 305,
+    "reasoningOutputTokens": 276,
+    "totalTokens": 3283
+  },
+  "usage_events": 1,
+  "wall_seconds": 8.375971299945377,
+  "wire_body_byte_bound": 17852
+}

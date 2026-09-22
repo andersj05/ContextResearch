@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "w2-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.010243",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476689,
+        "usedPercent": 97,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Notation: A=artifact; Ap=approval; C=ci_artifact; R=required CI (unit,integ); O=optional perf; B=open blockers; results apply at C. delta-e58 A=543e05fe Ap=543e05fe C=543e05fe R unit=pass,integ=pass; O perf=fail; B=REL-543e. fjord-f14 A=44060274 Ap=44060274 C=87eda946 R unit=pass,integ=pass (stale vs A); O perf=fail; B=none.\"}",
+  "request": {
+    "instruction": "The complete gate rules and output schema are public and will be supplied again at every later stage. Do not spend retained memory repeating those rules. Start with compact service-specific facts. Preserve complete service/test/blocker identifiers without renaming or abbreviating their values. At the child boundary retain only the named candidate services. Write a compact structured handoff. Preserve exact artifact identifiers, approval and CI scope, required versus optional tests, explicit absence of blockers, unresolved blockers, and revision-sensitive dependencies. Do not replace scoped evidence with just done/ready. Your entire retained memory string must fit 440 UTF-8 bytes. Only that string survives from the private source history; the public gate rules are repeated. The future target and event are not yet revealed; keep enough for every candidate. You may use compact notation and must define it in memory. Release only when approval equals the current artifact, every required CI test has result pass, and there are no open blockers. CI is bound to the artifact in ci_artifact; all required tests need rerunning when that differs. Optional failing tests do not block. Work names are exactly approval (missing/stale approval), ci:<test> (required test absent/failing/stale), and blocker:<id> (one per open blocker). Work is a set. If work is empty choose release; otherwise hold. Notes, owners, and elapsed discussion do not change gates. Apply the late event before deciding. If necessary facts were forgotten, choose inspect, with the facts you can recover from memory.",
+    "observation": {
+      "candidate_services": [
+        "delta-e58",
+        "fjord-f14"
+      ],
+      "previous_memory": "Notation: svc: artifact/approval; ci_artifact; required CI results; optional CI; blockers. All require unit,integ; optional perf fails; if ci_artifact != artifact, rerun all required CI. atlas-820: 860ad063/860ad063; ci=860ad063; unit=pass,integ=pass; blk=none. cedar-7c7: 242f637f/242f637f; ci=242f637f; unit=pass,integ=fail; blk=none. fjord-f14: 44060274/44060274; ci=87eda946; unit=pass,integ=pass; blk=none. delta-e58: 543e05fe/543e05fe; ci=543e05fe; unit=pass,integ=pass; blk=REL-543e. ember-2e3: 6c27d1b3/6c27d1b3; ci=6c27d1b3; unit=pass,integ=pass; blk=none. birch-932: 08b9169a/fd6cf744; ci=08b9169a; unit=pass,integ=pass; blk=none."
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "3c80a112073115c4f4843a9103ab67f6d0e3a14c1ebcae3fc8415794cbc8b173",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Notation: A=artifact; Ap=approval; C=ci_artifact; R=required CI (unit,integ); O=optional perf; B=open blockers; results apply at C. delta-e58 A=543e05fe Ap=543e05fe C=543e05fe R unit=pass,integ=pass; O perf=fail; B=REL-543e. fjord-f14 A=44060274 Ap=44060274 C=87eda946 R unit=pass,integ=pass (stale vs A); O perf=fail; B=none."
+  },
+  "started_at": "2026-09-22T20:16:23.267952+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3220,
+    "outputTokens": 498,
+    "reasoningOutputTokens": 356,
+    "totalTokens": 3718
+  },
+  "usage_events": 1,
+  "wall_seconds": 11.593917799997143,
+  "wire_body_byte_bound": 18680
+}

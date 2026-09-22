@@ -615,6 +615,21 @@ def main() -> int:
             counts["all_development_model_requests"] += luna6_report["actual_dispatches"]
         except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
             errors.append(f"GPT-6 Luna saved-evidence audit failed: {error}")
+    luna6_combined = ROOT / "experiments/dependency_memory/results/luna6_memory_summary.json"
+    if luna6_combined.is_file():
+        try:
+            import summarize_luna6_studies
+            combined = summarize_luna6_studies.summarize()
+            if json.loads(luna6_combined.read_text(encoding="utf-8")) != combined:
+                errors.append("Combined Luna medium evidence is stale")
+            if luna6_combined.with_name("luna6_memory_report.md").read_text(encoding="utf-8") != summarize_luna6_studies.render(combined):
+                errors.append("Combined Luna medium report is stale")
+            counts["luna6_medium_model_requests"] = combined["actual_model_calls"]
+            counts["luna6_medium_followup_requests"] = 24
+            counts["luna6_medium_terminal_decisions"] += 16
+            counts["all_development_model_requests"] += 24
+        except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
+            errors.append(f"Combined Luna medium saved-evidence audit failed: {error}")
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"

@@ -8,7 +8,37 @@ Develop a mathematically precise and implementable study of repeated agent compa
 
 The September 21 user-directed pivot prioritizes a new mechanism: **auditing a memory collision before compaction and certifying the cheapest allowed recovery or required retained distinction**. Stop using tighter constants in the same example as the main research advance. The existing mathematics remains a calibration result.
 
-The latest [historical workflow replay](../research/HISTORICAL_WORKFLOW_REPLAY_2026-09-22.md)
+The new [GPT-6 Luna medium evidence](../research/LUNA6_DELAYED_FAILURES_2026-09-22.md)
+contains **141 fresh model calls**: a 117-call fixed pilot and a prospectively
+frozen 24-call prompt follow-up. Both saved-evidence audits pass. Total reported
+usage is 456,012 input tokens (194,560 cached), 49,345 output tokens (39,589
+reasoning), and **1.3190825 planning credits**, within 144 calls/20 credits.
+All calls use the exact requested alias and medium reasoning; actual account
+debit is not attributable. No purchases, resets or API-key calls occurred.
+
+In sixteen correlated delayed continuations over four constructed release
+histories, structured summaries succeed 8/16 with one unsafe simulated release;
+prose succeeds 12/16; checked replacement, direct dependency rows, indexed
+recovery and full history each succeed 16/16. Repair costs 0.2653020 credits
+versus structured memory 0.2912620, but direct (0.0865340) and indexed recovery
+(0.0830870) are much cheaper. Cache-neutral accounting preserves the repair
+saving but reverses direct/indexed ranking. All memory-writing calls count.
+The known gate projection fits 769 bytes then 311–321 bytes.
+
+The data-first follow-up explicitly announces repeated public rules. It removes
+all clipping yet succeeds 12/16 at 0.1908300 credits: exact IDs are shortened,
+and one child confuses approval with the current artifact/CI reference. These
+are concrete surviving semantic failures. The prompt package was designed from
+pilot evidence and reuses the histories; it is not held-out or a single-factor
+causal test. The adapter remains manual. Native-agent improvement, automatic
+extraction, fully monetized total-cost gain and publication novelty are open.
+See [combined results](../experiments/dependency_memory/results/luna6_memory_report.md).
+Claims C44-C46; living draft v0.16. Launch commits `136d589` and `8d8a358`.
+Final validation: 334 tests pass; the repository audit passes with 141 new model
+requests and 112 terminal decisions reconciled; the paper builds with 34 cited
+sources. Both fixed schedules completed without transport failures.
+
+The earlier [historical workflow replay](../research/HISTORICAL_WORKFLOW_REPLAY_2026-09-22.md)
 mines eight real records with opaque request identities from the completed transfer
 workflow. Three failed-status requests had dispatched; a fourth had not. Two
 byte-limited counterfactual handoffs expose different later obligations. At a
@@ -92,37 +122,41 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 
 - Novelty and external validation of the locally audited scaling argument, or a practically large composition penalty.
 - A closed-form error formula or full rate-distortion curve for arbitrary jointly encoded blocks. The limiting rate-two error is now certified within (0.2618989799, 0.2618989801); the exact two-block optimum and efficient finite codes remain open.
-- Natural-language compiler performance, learned retirement accuracy, or unrestricted closed-loop LLM-agent results. The completed model work covers only isolated inspection and atomic-record selection.
+- Natural-language compiler performance, learned retirement accuracy, or unrestricted closed-loop LLM-agent results. Live model work now also covers an imposed two-stage memory-writing pipeline; open-ended native-agent performance remains unestablished.
 - Cost or quality gains over native provider compaction.
 - The internal training objective, prompt, or algorithm of a proprietary compaction service.
 
 ## Next bounded tasks
 
-The constructed execution adapter and one historical evidence replay are complete;
-arbitrary natural-task extraction is not. The next bounded task is to freeze a
-different workflow's obligation structure and grader before developing its
-extractor. Prefer cheap direct checked receipts with scoped invalidation; retain
-equally informed compact fields and indexed recovery as strong baselines. The
-current resume snapshot was inspected and is not a held-out split. Prepare pinned
-snapshots with opaque payloads, executable obligations and a declared information
-contract, where the retention rule must be inferred rather than supplied directly. Use the
-[feedback research protocol](FEEDBACK_RESEARCH_PROTOCOL.md): equally informed
-critical-field retention, generic revision, last-only and accumulated diagnosis,
-two binding memory limits, and full resource accounting. Freeze development and
-evaluation continuations before optimizing the policy. No new live launch is
-specified; model revision, sample size, seeds, transport and spend cap remain
-unfilled. The present strong-baseline tie is a reason to downgrade practical
-superiority, not to scale up repetitions of the same fixture. Exact semantic
-collisions, tractable sound verification, native integration and novelty remain
-open. General generated continuation search remains unimplemented. The strict
-novelty audit adds concrete gates: replayable evidence extraction, correct reuse
-and invalidation of prior checks, and a matched-cost comparison or useful audit
-decisions beyond strong simple retention. These are candidate engineering
-contributions, not a new verification principle.
+The constructed execution adapter, historical evidence replay, and first live
+release-gate pilot are complete. The new evidence narrows the next task: infer
+an inexpensive identity/role/dependency contract from an unseen executable
+workflow, rather than supplying the projection manually. Freeze that workflow's
+grader and information order before tuning extraction. The release examples
+have now been inspected and are not a held-out set.
+
+Announce public side information to every compactor and enforce exact identifier
+preservation. Retain data-first prompting, direct checked rows, indexed recovery
+and full-history access as strong controls. Charge extraction, checker CPU,
+recovery, every model call and failed decisions; compare cache-discounted and
+cache-neutral costs. The completed four-history experiment leaves only 0.038785
+cache-neutral credits for extra extraction before direct retention loses its
+observed advantage over full history. This is a workload-specific break-even
+calculation, not a universal budget.
+
+Use the [feedback protocol](FEEDBACK_RESEARCH_PROTOCOL.md) for a separately
+frozen development/evaluation split and a new bounded launch contract if further
+calls are needed. Do not reuse exhausted historical allocations or silently
+extend the completed 141-call schedule. Exact semantic checking of arbitrary
+prose, native integration, workflow prevalence and novelty remain open. Repeating
+the same known gate cannot establish those results. The candidate engineering
+contribution is cheap automatically obtained checks that survive later scope
+changes and beat strong baselines in a complete cost comparison; it is not a
+new generic verification principle.
 
 The decoder-complete phase resolved the rate-two interval to 2e-10. Further decimal tightening is deprioritized. External correctness/priority review remains useful, while the earlier behavioral tasks below remain separately specified follow-ups rather than a request to reuse completed launch allocations.
 
-1. Specify and validate offline a follow-up with a binding downstream memory boundary and a declared later-selector policy. Preserve exact calibration, missing outcomes, and channel accounting; the completed [transfer study](TRANSFER_STUDY.md) does not test this setting. Prepare a separately versioned contract and bounded allocation before any new model launch; this next task does not automatically start model calls.
+1. Extend the live two-stage pipeline to an unseen workflow with automatically extracted checks and separately frozen evaluation continuations. Preserve the stronger prompt and direct/recovery/full controls, information deletion, complete outcome accounting and explicit launch limits.
 2. Obtain external review of the exact finite search/reduction and block-family proof, and deepen the novelty comparison with functional compression/direct-sum results. The targeted literature comparison narrows the contribution but does not settle priority.
 3. Integrate the four [implemented held-out clue renderers](HELDOUT_RENDERERS.md) into a versioned request/runner contract, validate information deletion and controls, and freeze the complete launch before any held-out call. A more naturalistic workflow remains an unperformed extension, and the tiny reserved sample remains debugging evidence. General executable-continuation minimization and native-provider baselines remain unimplemented; the new finite auditor minimizes world subsets and selects among declared traces only.
 4. Consider imperfect clues, unreliable recovery, and multiple obligations only as separately specified extensions. The current exact frontier should remain a calibration reference with its assumptions intact.

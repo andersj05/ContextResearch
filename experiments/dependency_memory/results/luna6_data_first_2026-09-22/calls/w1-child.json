@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "w1-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0073605",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476690,
+        "usedPercent": 97,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Notation A=approved artifact; X=current artifact; C=ci_artifact; req=unit,integ; opt=perf. cedar-58d: A=X=C=ed052220; unit pass, integ fail; blockers none. ember-60a: A=X=C=157c67da; unit/integ pass; blockers none. opt perf fail (nonblocking).\"}",
+  "request": {
+    "instruction": "The complete gate rules and output schema are public and will be supplied again at every later stage. Do not spend retained memory repeating those rules. Start with compact service-specific facts. Preserve complete service/test/blocker identifiers without renaming or abbreviating their values. At the child boundary retain only the named candidate services. Write a compact structured handoff. Preserve exact artifact identifiers, approval and CI scope, required versus optional tests, explicit absence of blockers, unresolved blockers, and revision-sensitive dependencies. Do not replace scoped evidence with just done/ready. Your entire retained memory string must fit 440 UTF-8 bytes. Only that string survives from the private source history; the public gate rules are repeated. The future target and event are not yet revealed; keep enough for every candidate. You may use compact notation and must define it in memory. Release only when approval equals the current artifact, every required CI test has result pass, and there are no open blockers. CI is bound to the artifact in ci_artifact; all required tests need rerunning when that differs. Optional failing tests do not block. Work names are exactly approval (missing/stale approval), ci:<test> (required test absent/failing/stale), and blocker:<id> (one per open blocker). Work is a set. If work is empty choose release; otherwise hold. Notes, owners, and elapsed discussion do not change gates. Apply the late event before deciding. If necessary facts were forgotten, choose inspect, with the facts you can recover from memory.",
+    "observation": {
+      "candidate_services": [
+        "cedar-58d",
+        "ember-60a"
+      ],
+      "previous_memory": "Notation per service: A=approval, X=artifact, C=ci_artifact; R=required CI results; B=open blockers. All: R unit=pass, integ as below; optional perf=fail (nonblocking). cedar-58d A=X=C=ed052220; integ=fail; B=none. fjord-170 A=X=8f79b174, C=752b0417 (stale vs X; rerun required tests); integ=pass; B=none. ember-60a A=X=C=157c67da; integ=pass; B=none. atlas-aad A=X=C=72d7fad3; integ=pass; B=none. delta-d95 A=X=C=47abba9e; integ=pass; B=REL-47ab. birch-c53 A=29c51de7, X=C=58e8d547; integ=pass; B=none. Required tests for all: unit, integ."
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "d95abe769813148430ba8e93aa510d3b96406f58eac011c78fc3329209320e4a",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Notation A=approved artifact; X=current artifact; C=ci_artifact; req=unit,integ; opt=perf. cedar-58d: A=X=C=ed052220; unit pass, integ fail; blockers none. ember-60a: A=X=C=157c67da; unit/integ pass; blockers none. opt perf fail (nonblocking)."
+  },
+  "started_at": "2026-09-22T20:15:36.161831+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3162,
+    "outputTokens": 279,
+    "reasoningOutputTokens": 184,
+    "totalTokens": 3441
+  },
+  "usage_events": 1,
+  "wall_seconds": 9.74028210004326,
+  "wire_body_byte_bound": 18580
+}

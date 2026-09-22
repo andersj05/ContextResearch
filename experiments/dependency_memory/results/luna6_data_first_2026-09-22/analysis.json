@@ -1,0 +1,422 @@
+{
+  "audit_passed": true,
+  "cache_neutral_credits": "0.2714700",
+  "cases": 16,
+  "clipped_memories": 0,
+  "combined_calls": 141,
+  "combined_credits": "1.3190825",
+  "decisions": [
+    {
+      "action_correct": false,
+      "answer": {
+        "action": "inspect",
+        "artifact": "unknown",
+        "work": []
+      },
+      "artifact_correct": false,
+      "id": "w0-t0-e0",
+      "schema_valid": true,
+      "success": false,
+      "truth": {
+        "action": "release",
+        "artifact": "c7d544cd",
+        "work": []
+      },
+      "unsafe_release": false,
+      "work_correct": true
+    },
+    {
+      "action_correct": false,
+      "answer": {
+        "action": "inspect",
+        "artifact": "a0110d9d",
+        "work": []
+      },
+      "artifact_correct": true,
+      "id": "w0-t0-e1",
+      "schema_valid": true,
+      "success": false,
+      "truth": {
+        "action": "hold",
+        "artifact": "a0110d9d",
+        "work": [
+          "approval",
+          "ci:integ",
+          "ci:unit"
+        ]
+      },
+      "unsafe_release": false,
+      "work_correct": false
+    },
+    {
+      "action_correct": true,
+      "answer": {
+        "action": "hold",
+        "artifact": "1120b4ed",
+        "work": [
+          "ci:unit",
+          "ci:integ"
+        ]
+      },
+      "artifact_correct": false,
+      "id": "w0-t1-e0",
+      "schema_valid": true,
+      "success": false,
+      "truth": {
+        "action": "hold",
+        "artifact": "f6cafa82",
+        "work": [
+          "approval"
+        ]
+      },
+      "unsafe_release": false,
+      "work_correct": false
+    },
+    {
+      "action_correct": true,
+      "answer": {
+        "action": "release",
+        "artifact": "f6cafa82",
+        "work": []
+      },
+      "artifact_correct": true,
+      "id": "w0-t1-e1",
+      "schema_valid": true,
+      "success": true,
+      "truth": {
+        "action": "release",
+        "artifact": "f6cafa82",
+        "work": []
+      },
+      "unsafe_release": false,
+      "work_correct": true
+    },
+    {
+      "action_correct": true,
+      "answer": {
+        "action": "hold",
+        "artifact": "ed052220",
+        "work": [
+          "ci:integ"
+        ]
+      },
+      "artifact_correct": true,
+      "id": "w1-t0-e0",
+      "schema_valid": true,
+      "success": true,
+      "truth": {
+        "action": "hold",
+        "artifact": "ed052220",
+        "work": [
+          "ci:integ"
+        ]
+      },
+      "unsafe_release": false,
+      "work_correct": true
+    },
+    {
+      "action_correct": true,
+      "answer": {
+        "action": "release",
+        "artifact": "ed052220",
+        "work": []
+      },
+      "artifact_correct": true,
+      "id": "w1-t0-e1",
+      "schema_valid": true,
+      "success": true,
+      "truth": {
+        "action": "release",
+        "artifact": "ed052220",
+        "work": []
+      },
+      "unsafe_release": false,
+      "work_correct": true
+    },
+    {
+      "action_correct": true,
+      "answer": {
+        "action": "release",
+        "artifact": "157c67da",
+        "work": []
+      },
+      "artifact_correct": true,
+      "id": "w1-t1-e0",
+      "schema_valid": true,
+      "success": true,
+      "truth": {
+        "action": "release",
+        "artifact": "157c67da",
+        "work": []
+      },
+      "unsafe_release": false,
+      "work_correct": true
+    },
+    {
+      "action_correct": true,
+      "answer": {
+        "action": "hold",
+        "artifact": "157c67da",
+        "work": [
+          "blocker:REL-5c0b"
+        ]
+      },
+      "artifact_correct": true,
+      "id": "w1-t1-e1",
+      "schema_valid": true,
+      "success": true,
+      "truth": {
+        "action": "hold",
+        "artifact": "157c67da",
+        "work": [
+          "blocker:REL-5c0b"
+        ]
+      },
+      "unsafe_release": false,
+      "work_correct": true
+    },
+    {
+      "action_correct": true,
+      "answer": {
+        "action": "hold",
+        "artifact": "543e05fe",
+        "work": [
+          "blocker:REL-543e"
+        ]
+      },
+      "artifact_correct": true,
+      "id": "w2-t0-e0",
+      "schema_valid": true,
+      "success": true,
+      "truth": {
+        "action": "hold",
+        "artifact": "543e05fe",
+        "work": [
+          "blocker:REL-543e"
+        ]
+      },
+      "unsafe_release": false,
+      "work_correct": true
+    },
+    {
+      "action_correct": true,
+      "answer": {
+        "action": "release",
+        "artifact": "543e05fe",
+        "work": []
+      },
+      "artifact_correct": true,
+      "id": "w2-t0-e1",
+      "schema_valid": true,
+      "success": true,
+      "truth": {
+        "action": "release",
+        "artifact": "543e05fe",
+        "work": []
+      },
+      "unsafe_release": false,
+      "work_correct": true
+    },
+    {
+      "action_correct": true,
+      "answer": {
+        "action": "hold",
+        "artifact": "44060274",
+        "work": [
+          "ci:unit",
+          "ci:integ"
+        ]
+      },
+      "artifact_correct": true,
+      "id": "w2-t1-e0",
+      "schema_valid": true,
+      "success": true,
+      "truth": {
+        "action": "hold",
+        "artifact": "44060274",
+        "work": [
+          "ci:integ",
+          "ci:unit"
+        ]
+      },
+      "unsafe_release": false,
+      "work_correct": true
+    },
+    {
+      "action_correct": true,
+      "answer": {
+        "action": "release",
+        "artifact": "44060274",
+        "work": []
+      },
+      "artifact_correct": true,
+      "id": "w2-t1-e1",
+      "schema_valid": true,
+      "success": true,
+      "truth": {
+        "action": "release",
+        "artifact": "44060274",
+        "work": []
+      },
+      "unsafe_release": false,
+      "work_correct": true
+    },
+    {
+      "action_correct": true,
+      "answer": {
+        "action": "release",
+        "artifact": "d06d406c",
+        "work": []
+      },
+      "artifact_correct": true,
+      "id": "w3-t0-e0",
+      "schema_valid": true,
+      "success": true,
+      "truth": {
+        "action": "release",
+        "artifact": "d06d406c",
+        "work": []
+      },
+      "unsafe_release": false,
+      "work_correct": true
+    },
+    {
+      "action_correct": true,
+      "answer": {
+        "action": "hold",
+        "artifact": "d06d406c",
+        "work": [
+          "blocker:REL-50a1"
+        ]
+      },
+      "artifact_correct": true,
+      "id": "w3-t0-e1",
+      "schema_valid": true,
+      "success": true,
+      "truth": {
+        "action": "hold",
+        "artifact": "d06d406c",
+        "work": [
+          "blocker:REL-50a1"
+        ]
+      },
+      "unsafe_release": false,
+      "work_correct": true
+    },
+    {
+      "action_correct": false,
+      "answer": {
+        "action": "inspect",
+        "artifact": "",
+        "work": []
+      },
+      "artifact_correct": false,
+      "id": "w3-t1-e0",
+      "schema_valid": true,
+      "success": false,
+      "truth": {
+        "action": "release",
+        "artifact": "1105c344",
+        "work": []
+      },
+      "unsafe_release": false,
+      "work_correct": true
+    },
+    {
+      "action_correct": true,
+      "answer": {
+        "action": "hold",
+        "artifact": "1105c344",
+        "work": [
+          "ci:perf"
+        ]
+      },
+      "artifact_correct": true,
+      "id": "w3-t1-e1",
+      "schema_valid": true,
+      "success": true,
+      "truth": {
+        "action": "hold",
+        "artifact": "1105c344",
+        "work": [
+          "ci:perf"
+        ]
+      },
+      "unsafe_release": false,
+      "work_correct": true
+    }
+  ],
+  "limitations": "Post-pilot prompt package on the same four constructed histories; development evidence, not held-out, statistically independent, or a single-factor causal effect.",
+  "memories": [
+    {
+      "child": "Notation: A=approval, C=ci_artifact; R=required unit/integ results at C; O=optional. atlas-99: A=C=c7d544cd; R=pass/pass; B=none. birch-274: A=1120b4ed, C=f6cafa82; R=pass/pass, stale vs A; B=none. O=perf fail for both.",
+      "child_bounds": {
+        "admitted_bytes": 219,
+        "clipped": false,
+        "proposed_bytes": 219
+      },
+      "history": "w0",
+      "parent": "Notation S=A/artifact/ci_artifact; R=required tests (unit,integ); statuses listed unit/integ; B=open blockers; perf optional and fail for all. birch-274: S=1120b4ed/f6cafa82/f6cafa82; R=pass/pass; B=none. ember-ebd: S=654ca646/654ca646/654ca646; R=pass/pass; B=none. fjord-a88: S=6d500079/6d500079/dd7d8d44; R=pass/pass; B=none. atlas-99c: S=c7d544cd/c7d544cd/c7d544cd; R=pass/pass; B=none. delta-cf0: S=ad8d7925/ad8d7925/ad8d7925; R=pass/pass; B=REL-ad8d. cedar-dde: S=ce99bc65/ce99bc65/ce99bc65; R=pass/fail; B=none.",
+      "parent_bounds": {
+        "admitted_bytes": 518,
+        "clipped": false,
+        "proposed_bytes": 518
+      }
+    },
+    {
+      "child": "Notation A=approved artifact; X=current artifact; C=ci_artifact; req=unit,integ; opt=perf. cedar-58d: A=X=C=ed052220; unit pass, integ fail; blockers none. ember-60a: A=X=C=157c67da; unit/integ pass; blockers none. opt perf fail (nonblocking).",
+      "child_bounds": {
+        "admitted_bytes": 243,
+        "clipped": false,
+        "proposed_bytes": 243
+      },
+      "history": "w1",
+      "parent": "Notation per service: A=approval, X=artifact, C=ci_artifact; R=required CI results; B=open blockers. All: R unit=pass, integ as below; optional perf=fail (nonblocking). cedar-58d A=X=C=ed052220; integ=fail; B=none. fjord-170 A=X=8f79b174, C=752b0417 (stale vs X; rerun required tests); integ=pass; B=none. ember-60a A=X=C=157c67da; integ=pass; B=none. atlas-aad A=X=C=72d7fad3; integ=pass; B=none. delta-d95 A=X=C=47abba9e; integ=pass; B=REL-47ab. birch-c53 A=29c51de7, X=C=58e8d547; integ=pass; B=none. Required tests for all: unit, integ.",
+      "parent_bounds": {
+        "admitted_bytes": 540,
+        "clipped": false,
+        "proposed_bytes": 540
+      }
+    },
+    {
+      "child": "Notation: A=artifact; Ap=approval; C=ci_artifact; R=required CI (unit,integ); O=optional perf; B=open blockers; results apply at C. delta-e58 A=543e05fe Ap=543e05fe C=543e05fe R unit=pass,integ=pass; O perf=fail; B=REL-543e. fjord-f14 A=44060274 Ap=44060274 C=87eda946 R unit=pass,integ=pass (stale vs A); O perf=fail; B=none.",
+      "child_bounds": {
+        "admitted_bytes": 326,
+        "clipped": false,
+        "proposed_bytes": 326
+      },
+      "history": "w2",
+      "parent": "Notation: svc: artifact/approval; ci_artifact; required CI results; optional CI; blockers. All require unit,integ; optional perf fails; if ci_artifact != artifact, rerun all required CI. atlas-820: 860ad063/860ad063; ci=860ad063; unit=pass,integ=pass; blk=none. cedar-7c7: 242f637f/242f637f; ci=242f637f; unit=pass,integ=fail; blk=none. fjord-f14: 44060274/44060274; ci=87eda946; unit=pass,integ=pass; blk=none. delta-e58: 543e05fe/543e05fe; ci=543e05fe; unit=pass,integ=pass; blk=REL-543e. ember-2e3: 6c27d1b3/6c27d1b3; ci=6c27d1b3; unit=pass,integ=pass; blk=none. birch-932: 08b9169a/fd6cf744; ci=08b9169a; unit=pass,integ=pass; blk=none.",
+      "parent_bounds": {
+        "admitted_bytes": 640,
+        "clipped": false,
+        "proposed_bytes": 640
+      }
+    },
+    {
+      "child": "Notation a=artifact,p=approval,c=ci_artifact; req=required tests,opt=optional tests; P=pass,F=fail; b=open blockers, \u2205=none. atlas-313: a=p=c=d06d406c; req unit=P,integ=P; opt perf=F; b=\u2205. ember-0c: a=p=c=1105c344; req unit=P,integ=P; opt perf=F; b=\u2205.",
+      "child_bounds": {
+        "admitted_bytes": 257,
+        "clipped": false,
+        "proposed_bytes": 257
+      },
+      "history": "w3",
+      "parent": "Notation per service: a=artifact; p=approval; c=ci_artifact; r=required test results; o=optional test results; b=open blockers. fjord-324: a=500c107f p=500c107f c=9255cbb0 r=unit pass, integ pass (stale: c differs from a) o=perf fail b=none. cedar-97: a=p=c=94a1e8d5 r=unit pass, integ fail o=perf fail b=none. birch-124: a=c=30e72291 p=572b8d45 r=unit pass, integ pass o=perf fail b=none. ember-0c: a=p=c=1105c344 r=unit pass, integ pass o=perf fail b=none. delta-153: a=p=c=186c733f r=unit pass, integ pass o=perf fail b=REL-186c. atlas-313: a=p=c=d06d406c r=unit pass, integ pass o=perf fail b=none.",
+      "parent_bounds": {
+        "admitted_bytes": 602,
+        "clipped": false,
+        "proposed_bytes": 602
+      }
+    }
+  ],
+  "new_calls": 24,
+  "planning_credits": "0.1908300",
+  "success": 12,
+  "unsafe_release": 0,
+  "usage": {
+    "cachedInputTokens": 35840,
+    "inputTokens": 76473,
+    "outputTokens": 6423,
+    "reasoningOutputTokens": 4487
+  }
+}

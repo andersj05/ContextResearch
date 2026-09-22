@@ -1,0 +1,185 @@
+{
+  "audit_passed": true,
+  "actual_model_calls": 141,
+  "actual_planning_credits": "1.3190825",
+  "model": "gpt-6-luna",
+  "reasoning_effort": "medium",
+  "usage": {
+    "inputTokens": 456012,
+    "cachedInputTokens": 194560,
+    "outputTokens": 49345,
+    "reasoningOutputTokens": 39589
+  },
+  "methods": [
+    {
+      "arm": "prose",
+      "cases": 16,
+      "success": 12,
+      "unsafe_release": 0,
+      "planning_credits": "0.3379850",
+      "cache_neutral_credits": "0.3984650",
+      "model_calls_charged": 24,
+      "wall_seconds": 387.883,
+      "recovered_bytes": 0,
+      "checker_cpu_ns": 0,
+      "checked_source_bytes": 0,
+      "clipped_memories": 4,
+      "phase": "fixed pilot"
+    },
+    {
+      "arm": "structured",
+      "cases": 16,
+      "success": 8,
+      "unsafe_release": 1,
+      "planning_credits": "0.2912620",
+      "cache_neutral_credits": "0.3678700",
+      "model_calls_charged": 24,
+      "wall_seconds": 340.125,
+      "recovered_bytes": 0,
+      "checker_cpu_ns": 0,
+      "checked_source_bytes": 0,
+      "clipped_memories": 5,
+      "phase": "fixed pilot"
+    },
+    {
+      "arm": "data_first",
+      "phase": "post-pilot development",
+      "cases": 16,
+      "success": 12,
+      "unsafe_release": 0,
+      "planning_credits": "0.1908300",
+      "cache_neutral_credits": "0.2714700",
+      "model_calls_charged": 24,
+      "clipped_memories": 0
+    },
+    {
+      "arm": "repair",
+      "cases": 16,
+      "success": 16,
+      "unsafe_release": 0,
+      "planning_credits": "0.2653020",
+      "cache_neutral_credits": "0.3361500",
+      "model_calls_charged": 24,
+      "wall_seconds": 298.95,
+      "recovered_bytes": 0,
+      "checker_cpu_ns": 0,
+      "checked_source_bytes": 20138,
+      "clipped_memories": 5,
+      "phase": "fixed pilot"
+    },
+    {
+      "arm": "direct",
+      "cases": 16,
+      "success": 16,
+      "unsafe_release": 0,
+      "planning_credits": "0.0865340",
+      "cache_neutral_credits": "0.1389500",
+      "model_calls_charged": 16,
+      "wall_seconds": 93.423,
+      "recovered_bytes": 0,
+      "checker_cpu_ns": 0,
+      "checked_source_bytes": 0,
+      "clipped_memories": 0,
+      "phase": "fixed pilot"
+    },
+    {
+      "arm": "indexed",
+      "cases": 16,
+      "success": 16,
+      "unsafe_release": 0,
+      "planning_credits": "0.0830870",
+      "cache_neutral_credits": "0.1395350",
+      "model_calls_charged": 16,
+      "wall_seconds": 73.823,
+      "recovered_bytes": 12404,
+      "checker_cpu_ns": 0,
+      "checked_source_bytes": 0,
+      "clipped_memories": 0,
+      "phase": "fixed pilot"
+    },
+    {
+      "arm": "full",
+      "cases": 16,
+      "success": 16,
+      "unsafe_release": 0,
+      "planning_credits": "0.1293510",
+      "cache_neutral_credits": "0.1777350",
+      "model_calls_charged": 16,
+      "wall_seconds": 84.098,
+      "recovered_bytes": 0,
+      "checker_cpu_ns": 0,
+      "checked_source_bytes": 0,
+      "clipped_memories": 0,
+      "phase": "fixed pilot"
+    }
+  ],
+  "main_launch_commit": "136d589",
+  "followup_launch_commit": "8d8a358",
+  "followup_failed_ids": [
+    "w0-t0-e0",
+    "w0-t0-e1",
+    "w0-t1-e0",
+    "w3-t1-e0"
+  ],
+  "local_cost_calibration": {
+    "scope": "Offline local CPU calibration: seven batches of 250 repetitions, four histories each; no model calls. Indexed includes building the index and serializing four target reads; repair uses an empty proposal and whole replacement. Disk storage, arbitrary text extraction and provider compute are excluded.",
+    "timer": "GetProcessTimes()",
+    "timer_resolution_seconds": 1e-07,
+    "script_sha256": "24852f5250f9971feb53adcdc6e9d62d630d90035fd1683666f99034e40992e2",
+    "study_sha256": "596f082b90b19cd8f5b718514d0df67603f9196017267ec84ced965bb3372b6b",
+    "methods": {
+      "direct": {
+        "cpu_ns_per_four_histories_batches": [
+          250000.0,
+          187500.0,
+          250000.0,
+          187500.0,
+          250000.0,
+          187500.0,
+          187500.0
+        ],
+        "median_cpu_ns_per_four_histories": 187500.0
+      },
+      "repair": {
+        "cpu_ns_per_four_histories_batches": [
+          500000.0,
+          500000.0,
+          625000.0,
+          500000.0,
+          437500.0,
+          437500.0,
+          437500.0
+        ],
+        "median_cpu_ns_per_four_histories": 500000.0
+      },
+      "indexed": {
+        "cpu_ns_per_four_histories_batches": [
+          187500.0,
+          125000.0,
+          187500.0,
+          125000.0,
+          187500.0,
+          187500.0,
+          125000.0
+        ],
+        "median_cpu_ns_per_four_histories": 187500.0
+      }
+    }
+  },
+  "additional_extraction_headroom": {
+    "scope": "Post-hoc observed headroom for an additional projection extractor across these four histories, if it preserves the direct method's outcomes; no extractor was run.",
+    "observed_full_minus_direct_credits": "0.0428170",
+    "cache_neutral_full_minus_direct_credits": "0.0387850",
+    "same_observed_success": true
+  },
+  "limitations": [
+    "Four constructed histories; 16 correlated continuations per arm; development only.",
+    "Imposed byte caps and fresh reasoning state; not native provider compaction.",
+    "Hand-written gate adapter; no automatic extraction or generic feedback novelty.",
+    "Credits are token-metered planning equivalents; actual debit and infrastructure conversion unknown.",
+    "Costs start at the handoff; prior workflow execution and adapter development are unmeasured.",
+    "Direct and repaired final prompts are identical; differences there are sampling variation.",
+    "Overlong generated memories are clipped; this may explain errors and must be reported.",
+    "Post-pilot prompt package on the same four constructed histories; development evidence, not held-out, statistically independent, or a single-factor causal effect."
+  ]
+}

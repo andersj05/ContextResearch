@@ -1,0 +1,27 @@
+{
+  "fingerprints": {
+    "docs/LUNA6_DATA_FIRST_FOLLOWUP.md": "716c45080b530ea0696f62e1a6cc7fdbe01aa8b30ca85cade72f057d454f2c2e",
+    "experiments/dependency_memory/luna6_revision/__init__.py": "3fa7c2b1ebdc5abe76ab377ba2e3e54c1cbfb6eb472006666abe37938be41d1f",
+    "experiments/dependency_memory/luna6_revision/audit.py": "2a2df63d3fc850c61bc8d818ca7cb62efe294675e67b307a39e239a98dc8e860",
+    "experiments/dependency_memory/luna6_revision/preflight.py": "58cfdad6f858f17dce4f181e52804c1788d21f3f0c184ec91f4d9b9fe8cdd188",
+    "experiments/dependency_memory/luna6_revision/profile.py": "e4c49a337da45d76aca8994acb1642af9eff87b733c931e8575147d1f47b4ba7",
+    "experiments/dependency_memory/luna6_revision/protocol.py": "c6129cdbf96fbe967c46832ccc5ac04eea914fb75c9df8ce921c5cc0f4e4e829",
+    "experiments/dependency_memory/luna6_revision/run.py": "ec05733ae64386f8b2f7e08f37ccdde55df7c3e8c29a937555fb4cf7900807eb",
+    "experiments/dependency_memory/luna6_revision/study.py": "596f082b90b19cd8f5b718514d0df67603f9196017267ec84ced965bb3372b6b",
+    "experiments/dependency_memory/luna6_revision/test_study.py": "d33604f2cbc422244fe95bac6325b8f1a607e4859831713a144b88ac1f5e20f2",
+    "experiments/dependency_memory/luna6_revision/transport.py": "af9b1cd09a91eeceb5dbeff71be5d366670bba6f988138c105c789f3bbc27924",
+    "scripts/analyze_luna6_revision.py": "50874a150979f100a35c8c8214459aadb88f12744e4783832e6a65d6992495a2",
+    "scripts/luna6_data_first_followup.py": "7d320bd1d13210be3d5eafac4d3d7e2949cbe2cd5c19eea40cc108332f8e4588"
+  },
+  "guidance": "The complete gate rules and output schema are public and will be supplied again at every later stage. Do not spend retained memory repeating those rules. Start with compact service-specific facts. Preserve complete service/test/blocker identifiers without renaming or abbreviating their values. At the child boundary retain only the named candidate services. ",
+  "main_manifest_sha256": "b2b89a9b93ab4ee19bf00651bd12d631ceb4dccad1b0466d5a6980c046fc5511",
+  "model": "gpt-6-luna",
+  "prior_calls": 117,
+  "prior_credits": "1.1282525",
+  "reasoning_effort": "medium",
+  "scheduled_new_calls": 24,
+  "shared_call_cap": 144,
+  "shared_credit_cap": "20",
+  "status": "frozen-before-followup-answers",
+  "variant": "data_first_v1"
+}

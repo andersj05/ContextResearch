@@ -1,6 +1,6 @@
 # Repeated Context Compression with Delayed Task Dependencies
 
-Working draft — September 22, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an asymptotic threshold and a tightly certified rate-two error, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, and an exploratory historical workflow replay. External mathematical review, novelty assessment, held-out evaluation and production benefit remain open.
+Working draft — September 22, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an asymptotic threshold and a tightly certified rate-two error, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, and 141 fresh GPT-6 Luna medium calls in a controlled memory-writing study. External mathematical review, novelty assessment, held-out evaluation and production benefit remain open.
 
 ## Abstract
 
@@ -266,9 +266,51 @@ are synthetic controls, separate from the immutable-artifact replay. Automatic
 extraction on unseen workflow structures, adversarial isolation and live
 matched-production-cost benefit remain unperformed. Claim C43.
 
+### 8.4 Fresh GPT-6 Luna medium compaction calls
+
+The [new release pilot](../research/LUNA6_DELAYED_FAILURES_2026-09-22.md) freezes
+four constructed six-service histories, two memory boundaries of 900 and 440
+UTF-8 bytes, and sixteen delayed continuations per method. It makes 117 fresh
+`gpt-6-luna` calls at medium reasoning, including a smoke request. The exact
+request/usage audit passes. Source histories, public rules, model inputs and
+memory limits are saved; opaque reasoning, session history and tools are not
+available to accepted continuation responses. This is a fresh-thread controlled
+pipeline, not native provider compaction. Claim C44.
+
+Prose succeeds on 12/16 decisions and structured summaries on 8/16, with one
+unsafe simulated release in the latter. Checked dependency replacement, direct
+dependency rows, indexed recovery and full-history access each achieve 16/16.
+The unsafe release follows loss of an open blocker when the second structured
+summary exceeds its cap. Unclipped summaries also omit negative evidence or
+alter executable identifiers. All four structured child proposals are overlong,
+so semantic omission and host clipping are not isolated explanations.
+
+Including every memory-writing call, checked replacement costs 0.2653020
+planning credits versus 0.2912620 for structured summaries, an observed 8.9%
+reduction; the reduction is 8.6% without cache discounts. Direct rows cost
+0.0865340, indexed recovery 0.0830870, and full history 0.1293510. The
+direct/indexed ordering reverses without cache discounts. Repair and direct
+final inputs are identical. A manually known gate permits direct serialization;
+iterative proposals are not the best method here. Local CPU, recovery bytes,
+unknown infrastructure costs and unknown subscription debit remain distinct
+from token-based planning credits. No fully monetized production-cost or
+held-out gain is established. Claim C45.
+
+A 24-call follow-up, frozen after inspecting the pilot, explicitly announces
+that public rules will be repeated and prioritizes service facts and exact
+identifiers. It eliminates clipping in all eight retained memories but succeeds
+on 12/16 decisions, at 0.1908300 credits (0.2714700 without cache discounts).
+Unclipped memories shorten exact service IDs and confuse an approval identifier
+with the current-artifact reference, creating incorrect delayed work. This
+demonstrates surviving semantic failures in the tested pipeline, rather than a
+pure truncation explanation. It is a prompt package on reused development
+histories, not held-out or single-factor causal evidence. Both studies total
+141 calls and 1.3190825 credits; the original and follow-up sources are separately
+frozen. Claim C46.
+
 ## 9. Limitations and open results
 
-The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. No learned dependency classifier or LLM-agent benchmark has been evaluated here. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, useful finite-length joint codes, a wider rate-distortion characterization, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.
+The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. No learned dependency classifier or open-ended native-agent benchmark has been evaluated here. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, useful finite-length joint codes, a wider rate-distortion characterization, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.
 
 ## 10. Reproducibility
 

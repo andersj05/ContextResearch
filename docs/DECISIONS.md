@@ -285,3 +285,26 @@ gate, correcting the historical answer-loss pattern in the new adapter. Account
 debit and unknown infrastructure costs remain distinct from planning credits.
 The [scope/pinning reading](../research/LUNA6_SCOPE_PRIOR_ART_2026-09-22.md) keeps
 close precedents and the unresolved novelty question explicit.
+
+The fixed pilot completes 117 calls for 1.1282525 planning credits. Structured
+memory obtains 8/16 exact decisions with one unsafe simulated release; checked
+replacement obtains 16/16 at 8.9% lower model cost. Direct dependency rows,
+indexed recovery and full history each obtain 16/16 more cheaply than repair.
+Retain the strong-control result; do not promote the repair loop as optimal.
+
+All four structured child proposals are clipped, so test the baseline weakness
+before interpreting its failures as semantic loss. Freeze a 24-call data-first
+prompt control in `8d8a358` and carry forward the original request/credit counters.
+This adds no checker or archive. It completes with zero clipped memories but
+12/16 correct decisions, at 0.1908300 credits; role and identity corruption remain.
+Report the prompt package as post-pilot development on reused histories.
+The combined allocation ends at 141 calls and 1.3190825 planning credits; three
+unused request slots do not justify further launches. Preserve both original
+launch sources and all failed decisions. The next useful test is an inexpensive
+automatically extracted identity/role contract on an unseen workflow, with its
+extraction cost included and direct/indexed/full controls retained.
+
+Final validation for the live-study milestone: 334 tests pass, the repository
+auditor reports PASS with no errors and reconciles 141 new requests/112 terminal
+decisions, and the manuscript builds with 34 cited sources. The branch remains
+local; no pull request, external message, deployment or publication was made.
