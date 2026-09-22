@@ -1,0 +1,100 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry_queue-97031-2-automatic",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0056605",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 1,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"target_id\":\"dca3ad42e7e323d9\",\"work\":[\"billing_scope\",\"result_scope\"]}",
+  "request": {
+    "instruction": "Use only supplied memory, target and late event. Memory may be prose, one original tool result, a list of results, or a JSON table with f=full field paths and r=rows in that field order. Apply the event to the named target, then return one exact terminal decision with sorted work. Do not call tools. For the selected request: if dispatch.state is not_sent, action=submit and work=[]; otherwise require result.attempt_uuid and billing.for_attempt to match dispatch.attempt_uuid. If a scope mismatches, hold with result_scope or billing_scope. Otherwise close if result.state is passed and billing.state is settled; retry if result.state is failed and retry_policy.retry_allowed is true; otherwise hold with result, billing or retry_policy for the applicable failed conditions. Return target_id=request_token. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "dispatch.attempt_uuid",
+        "value": "5d645eee95a335d5"
+      },
+      "memory": "{\"f\":[\"billing.charge_token\",\"billing.for_attempt\",\"billing.state\",\"dispatch.attempt_uuid\",\"dispatch.idempotency_key\",\"dispatch.state\",\"request_token\",\"result.attempt_uuid\",\"result.state\",\"retry_policy.prior_attempt\",\"retry_policy.retry_allowed\"],\"r\":[[\"b399bb24dda17459\",\"5e31bce95bff05ff\",\"settled\",\"5e31bce95bff05ff\",\"7e88c4399dc2537f\",\"sent\",\"dca3ad42e7e323d9\",\"5e31bce95bff05ff\",\"passed\",\"d32ed5f14625e83b\",false],[\"387531c677072254\",\"3e84306c12739b9e\",\"settled\",\"3e84306c12739b9e\",\"15528bb27e3f3836\",\"sent\",\"e56e02725a80db68\",\"3e84306c12739b9e\",\"failed\",\"77f0c7d3b863f903\",true]]}",
+      "target": "dca3ad42e7e323d9"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "25be986f949b15007e8235c449dbcce70a04908e3ab7e0e996a3243f606ba45e",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "target_id": "dca3ad42e7e323d9",
+    "work": [
+      "billing_scope",
+      "result_scope"
+    ]
+  },
+  "started_at": "2026-09-22T22:43:06.785880+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3147,
+    "outputTokens": 146,
+    "reasoningOutputTokens": 105,
+    "totalTokens": 3293
+  },
+  "usage_events": 1,
+  "wall_seconds": 7.282095900038257,
+  "wire_body_byte_bound": 18499
+}

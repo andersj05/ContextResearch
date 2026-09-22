@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "ci_promotion-97031-prompt-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.017588",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 1,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Late event: none supplied. Candidates (deployment_slot): 490549d84db133a0, ed99c84337253490. f=[build.digest,build.channel,authorization.approved_digest,authorization.state,authorization.ticket,deployment_slot,handoff.environment,verification.subject,verification.unit,verification.integration,verification.run,operator_notes.archived_draft]; r=[[b7bb13742d9bb474,stable,b7bb13742d9bb474,approved,c929fb57115922ac,490549d84db133a0,prod,b7bb13742d9bb474,pass,pass,6132b96a12091854,c48a9df3e0faa4ab],[fd05a4ea3b2746a9,stable,afed465d050c8164,approved,877302d237e0aa12,ed99c84337253490,prod,fd05a4ea3b2746a9,pass,pass,b0a0b140b9d45554,fdbc0c3fc5dd2ec3]]. Order as candidates. Gate: promote only stable, approved, approved_digest=digest, verification.subject=digest, unit/integration pass, environment prod; else hold with sorted failed set among channel,approval,approval_scope,ci_scope,unit,integration,environment. 490549d84db133a0 passes. ed99c84337253490 fails approval_scope only. target_id=build.digest.\"}",
+  "request": {
+    "instruction": "Only the memory string survives this boundary. The public decision rule and output schema repeat at execution. Use the allowance for instance facts across all possible later targets. Preserve every exact opaque identifier, status, and the field/record to which each reference belongs. Do not abbreviate values or collapse an approval of one artifact into generic approval. A compact table is allowed: JSON f lists full field paths and r lists rows in that order. Return {\"memory\":\"...\"}. Limit memory to 1050 UTF-8 bytes. Retain only the named candidates. Promote only if build.channel=stable, authorization.state=approved, authorization.approved_digest=build.digest, verification.subject=build.digest, verification.unit and integration both pass, and handoff.environment=prod. Otherwise hold with the exact sorted set of channel, approval, approval_scope, ci_scope, unit, integration, environment for each failed condition. Return target_id=build.digest. Apply the late event first.",
+    "observation": {
+      "candidates": [
+        "490549d84db133a0",
+        "ed99c84337253490"
+      ],
+      "previous_memory": "f=[build.digest,build.channel,authorization.approved_digest,authorization.state,authorization.ticket,deployment_slot,handoff.environment,verification.subject,verification.unit,verification.integration,verification.run,operator_notes.archived_draft];r=[ [c54f85d4704b7a00,stable,c54f85d4704b7a00,approved,8c741a41a089f402,db893b803f602524,prod,f10e4c976dc3a9d7,pass,pass,15de45b65fd38c27,22b3241c2b36e354],[0f6720bf6f35fb16,stable,0f6720bf6f35fb16,approved,d4eec4d3d134b997,30682ecba9fbb9d3,prod,0f6720bf6f35fb16,pass,pass,292e4cf91726b92a,d58b2fa5634ca5f8],[466cb0cb79576e93,stable,466cb0cb79576e93,approved,b0d6247d517632a1,8cf6802b4c8e0662,prod,466cb0cb79576e93,pass,fail,8cc189ab23ff4173,f0af12ca89fca7d4],[b7bb13742d9bb474,stable,b7bb13742d9bb474,approved,c929fb57115922ac,490549d84db133a0,prod,b7bb13742d9bb474,pass,pass,6132b96a12091854,c48a9df3e0faa4ab],[fd05a4ea3b2746a9,stable,afed465d050c8164,approved,877302d237e0aa12,ed99c84337253490,prod,fd05a4ea3b2746a9,pass,pass,b0a0b140b9d45554,fdbc0c3fc5dd2ec3],[d9d3f336c0653f65,stable,722b60fee112bfa9,approved,2b620c408f9df40b,46125d5bf41afc97,prod,d9d3f336c0653f65,pass,pass,048b2da00002f270,608dd07f851669a1],[d111bd64aea68952,stable,d111bd64aea68952,approved,a370e9aa84839ec2,4a474d49b59f2cdc,prod,d111bd64aea68952,pass,fail,8b930bac0b3dfb00,85bc448ad5b43382]]; records in tool_results order; no separate late-event payload supplied. operator_notes drafts are diagnostic only, not gate evidence."
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "266d92afc0dce472f527d727c533a79e47f56838ec98cb91a56eb3eb0a7f9461",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Late event: none supplied. Candidates (deployment_slot): 490549d84db133a0, ed99c84337253490. f=[build.digest,build.channel,authorization.approved_digest,authorization.state,authorization.ticket,deployment_slot,handoff.environment,verification.subject,verification.unit,verification.integration,verification.run,operator_notes.archived_draft]; r=[[b7bb13742d9bb474,stable,b7bb13742d9bb474,approved,c929fb57115922ac,490549d84db133a0,prod,b7bb13742d9bb474,pass,pass,6132b96a12091854,c48a9df3e0faa4ab],[fd05a4ea3b2746a9,stable,afed465d050c8164,approved,877302d237e0aa12,ed99c84337253490,prod,fd05a4ea3b2746a9,pass,pass,b0a0b140b9d45554,fdbc0c3fc5dd2ec3]]. Order as candidates. Gate: promote only stable, approved, approved_digest=digest, verification.subject=digest, unit/integration pass, environment prod; else hold with sorted failed set among channel,approval,approval_scope,ci_scope,unit,integration,environment. 490549d84db133a0 passes. ed99c84337253490 fails approval_scope only. target_id=build.digest."
+  },
+  "started_at": "2026-09-22T22:46:40.338494+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3478,
+    "outputTokens": 1034,
+    "reasoningOutputTokens": 705,
+    "totalTokens": 4512
+  },
+  "usage_events": 1,
+  "wall_seconds": 21.95952660002513,
+  "wire_body_byte_bound": 18903
+}

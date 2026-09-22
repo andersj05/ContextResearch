@@ -1,0 +1,263 @@
+{
+  "case_id": "data_pipeline-97031",
+  "checks": {
+    "automatic_child": {
+      "candidate_bytes_read": 932,
+      "cpu_ns": 142000,
+      "exact_ids": true,
+      "passed": true,
+      "reason": "passed",
+      "relationships": true,
+      "required_id_fields": 13,
+      "source_bytes_read": 1263
+    },
+    "automatic_parent": {
+      "candidate_bytes_read": 2372,
+      "cpu_ns": 494500,
+      "exact_ids": true,
+      "passed": true,
+      "reason": "passed",
+      "relationships": true,
+      "required_id_fields": 13,
+      "source_bytes_read": 9976
+    },
+    "child_fallback": true,
+    "parent_fallback": true,
+    "proposed_child": {
+      "candidate_bytes_read": 932,
+      "cpu_ns": 257300,
+      "exact_ids": false,
+      "passed": false,
+      "reason": "identifier_or_relationship_loss",
+      "relationships": false,
+      "required_id_fields": 13,
+      "source_bytes_read": 1263
+    },
+    "proposed_parent": {
+      "candidate_bytes_read": 2746,
+      "cpu_ns": 326200,
+      "exact_ids": false,
+      "passed": false,
+      "reason": "unstructured_or_ambiguous_memory",
+      "relationships": false,
+      "required_id_fields": 13,
+      "source_bytes_read": 9976
+    }
+  },
+  "decisions": [
+    {
+      "arm": "automatic",
+      "future_id": "data_pipeline-97031-0",
+      "identity": "data_pipeline-97031-0-automatic",
+      "memory_bytes": 932,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "indexed",
+      "future_id": "data_pipeline-97031-0",
+      "identity": "data_pipeline-97031-0-indexed",
+      "memory_bytes": 1424,
+      "recovery_bytes": 1424,
+      "recovery_cpu_ns": 3900
+    },
+    {
+      "arm": "direct",
+      "future_id": "data_pipeline-97031-0",
+      "identity": "data_pipeline-97031-0-direct",
+      "memory_bytes": 666,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "prompt",
+      "future_id": "data_pipeline-97031-0",
+      "identity": "data_pipeline-97031-0-prompt",
+      "memory_bytes": 1050,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "checked",
+      "future_id": "data_pipeline-97031-0",
+      "identity": "data_pipeline-97031-0-checked",
+      "memory_bytes": 932,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "full",
+      "future_id": "data_pipeline-97031-0",
+      "identity": "data_pipeline-97031-0-full",
+      "memory_bytes": 9976,
+      "recovery_bytes": 9976,
+      "recovery_cpu_ns": 189600
+    },
+    {
+      "arm": "prompt",
+      "future_id": "data_pipeline-97031-1",
+      "identity": "data_pipeline-97031-1-prompt",
+      "memory_bytes": 1050,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "full",
+      "future_id": "data_pipeline-97031-1",
+      "identity": "data_pipeline-97031-1-full",
+      "memory_bytes": 9976,
+      "recovery_bytes": 9976,
+      "recovery_cpu_ns": 184100
+    },
+    {
+      "arm": "direct",
+      "future_id": "data_pipeline-97031-1",
+      "identity": "data_pipeline-97031-1-direct",
+      "memory_bytes": 666,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "automatic",
+      "future_id": "data_pipeline-97031-1",
+      "identity": "data_pipeline-97031-1-automatic",
+      "memory_bytes": 932,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "indexed",
+      "future_id": "data_pipeline-97031-1",
+      "identity": "data_pipeline-97031-1-indexed",
+      "memory_bytes": 1424,
+      "recovery_bytes": 1424,
+      "recovery_cpu_ns": 2700
+    },
+    {
+      "arm": "checked",
+      "future_id": "data_pipeline-97031-1",
+      "identity": "data_pipeline-97031-1-checked",
+      "memory_bytes": 932,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "direct",
+      "future_id": "data_pipeline-97031-2",
+      "identity": "data_pipeline-97031-2-direct",
+      "memory_bytes": 666,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "full",
+      "future_id": "data_pipeline-97031-2",
+      "identity": "data_pipeline-97031-2-full",
+      "memory_bytes": 9976,
+      "recovery_bytes": 9976,
+      "recovery_cpu_ns": 203900
+    },
+    {
+      "arm": "checked",
+      "future_id": "data_pipeline-97031-2",
+      "identity": "data_pipeline-97031-2-checked",
+      "memory_bytes": 932,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "automatic",
+      "future_id": "data_pipeline-97031-2",
+      "identity": "data_pipeline-97031-2-automatic",
+      "memory_bytes": 932,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "indexed",
+      "future_id": "data_pipeline-97031-2",
+      "identity": "data_pipeline-97031-2-indexed",
+      "memory_bytes": 1424,
+      "recovery_bytes": 1424,
+      "recovery_cpu_ns": 4800
+    },
+    {
+      "arm": "prompt",
+      "future_id": "data_pipeline-97031-2",
+      "identity": "data_pipeline-97031-2-prompt",
+      "memory_bytes": 1050,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    }
+  ],
+  "family": "data_pipeline",
+  "index": {
+    "26e55b78e1502bdd": "{\"consent\":{\"approval\":\"d7f24bb310555978\",\"approved_output\":\"3062f900262db50c\",\"state\":\"approved\"},\"extract\":{\"output_dataset\":\"8951ea0fee59b386\",\"run\":\"7443b886a2266d2a\",\"state\":\"pass\"},\"load\":{\"input_dataset\":\"5aafc31fd7da550a\",\"output_dataset\":\"3062f900262db50c\",\"run\":\"e4ceb3394bad47c9\",\"state\":\"pass\"},\"operator_notes\":\"Worker log archived an earlier draft e438466417cb3f39; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e438466417cb3f39; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e438466417cb3f39; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e438466417cb3f39; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e438466417cb3f39; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e438466417cb3f39; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e438466417cb3f39; dashboard labels, timing and operator chat are not gate evidence. \",\"pipeline_run\":\"26e55b78e1502bdd\",\"quality\":{\"check\":\"d301d780edaf5f32\",\"state\":\"pass\",\"subject_dataset\":\"3062f900262db50c\"},\"transform\":{\"input_dataset\":\"8951ea0fee59b386\",\"output_dataset\":\"5aafc31fd7da550a\",\"run\":\"1259e0078e35a8a4\",\"state\":\"pass\"}}",
+    "3704668c0d0a6454": "{\"consent\":{\"approval\":\"e21bee031c41b187\",\"approved_output\":\"4e703b84a93831a0\",\"state\":\"approved\"},\"extract\":{\"output_dataset\":\"b6de6b92df4b3743\",\"run\":\"8e8878e77173d631\",\"state\":\"pass\"},\"load\":{\"input_dataset\":\"46b2bd71b9982163\",\"output_dataset\":\"d1b6325fbb6fb477\",\"run\":\"adf156b1456b74c2\",\"state\":\"pass\"},\"operator_notes\":\"Worker log archived an earlier draft ff51d3a042a8ebcb; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft ff51d3a042a8ebcb; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft ff51d3a042a8ebcb; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft ff51d3a042a8ebcb; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft ff51d3a042a8ebcb; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft ff51d3a042a8ebcb; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft ff51d3a042a8ebcb; dashboard labels, timing and operator chat are not gate evidence. \",\"pipeline_run\":\"3704668c0d0a6454\",\"quality\":{\"check\":\"ca4539c4438aca3c\",\"state\":\"pass\",\"subject_dataset\":\"d1b6325fbb6fb477\"},\"transform\":{\"input_dataset\":\"b6de6b92df4b3743\",\"output_dataset\":\"46b2bd71b9982163\",\"run\":\"2dbd23ff118aea82\",\"state\":\"pass\"}}",
+    "4fd047477af52cce": "{\"consent\":{\"approval\":\"faf568ccb98a0672\",\"approved_output\":\"72a187c4cdd928ee\",\"state\":\"approved\"},\"extract\":{\"output_dataset\":\"3db4a294547e5826\",\"run\":\"e5e43fb221684fe7\",\"state\":\"pass\"},\"load\":{\"input_dataset\":\"86402b247dd018e2\",\"output_dataset\":\"72a187c4cdd928ee\",\"run\":\"88ac63e1c42ea0f9\",\"state\":\"pass\"},\"operator_notes\":\"Worker log archived an earlier draft c5f43791880bc14f; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c5f43791880bc14f; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c5f43791880bc14f; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c5f43791880bc14f; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c5f43791880bc14f; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c5f43791880bc14f; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c5f43791880bc14f; dashboard labels, timing and operator chat are not gate evidence. \",\"pipeline_run\":\"4fd047477af52cce\",\"quality\":{\"check\":\"09506109b6cc1c20\",\"state\":\"fail\",\"subject_dataset\":\"72a187c4cdd928ee\"},\"transform\":{\"input_dataset\":\"3db4a294547e5826\",\"output_dataset\":\"86402b247dd018e2\",\"run\":\"5715914ab783c19e\",\"state\":\"pass\"}}",
+    "5ceae9f025e9de53": "{\"consent\":{\"approval\":\"bc4bc82374fecb18\",\"approved_output\":\"3f5edb664fdef74f\",\"state\":\"approved\"},\"extract\":{\"output_dataset\":\"a211253f05e58589\",\"run\":\"c3870172b0927237\",\"state\":\"pass\"},\"load\":{\"input_dataset\":\"993ec5bc7f1aeb70\",\"output_dataset\":\"b1ab9b410ea7602c\",\"run\":\"ca6d9362dc6d0697\",\"state\":\"pass\"},\"operator_notes\":\"Worker log archived an earlier draft 8f4e7d11009d36c1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 8f4e7d11009d36c1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 8f4e7d11009d36c1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 8f4e7d11009d36c1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 8f4e7d11009d36c1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 8f4e7d11009d36c1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 8f4e7d11009d36c1; dashboard labels, timing and operator chat are not gate evidence. \",\"pipeline_run\":\"5ceae9f025e9de53\",\"quality\":{\"check\":\"7e1d756553a96031\",\"state\":\"pass\",\"subject_dataset\":\"b1ab9b410ea7602c\"},\"transform\":{\"input_dataset\":\"a211253f05e58589\",\"output_dataset\":\"993ec5bc7f1aeb70\",\"run\":\"530a326c54a109fa\",\"state\":\"pass\"}}",
+    "7033c2750f446916": "{\"consent\":{\"approval\":\"9d71793518a0f400\",\"approved_output\":\"e4a459cb02bea5c0\",\"state\":\"approved\"},\"extract\":{\"output_dataset\":\"337eed998e3f1229\",\"run\":\"d59d19cbf618c45a\",\"state\":\"pass\"},\"load\":{\"input_dataset\":\"40a690b85a84fdf1\",\"output_dataset\":\"e4a459cb02bea5c0\",\"run\":\"8cd9361294aa2ad8\",\"state\":\"pass\"},\"operator_notes\":\"Worker log archived an earlier draft b7f1990b38476c08; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft b7f1990b38476c08; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft b7f1990b38476c08; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft b7f1990b38476c08; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft b7f1990b38476c08; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft b7f1990b38476c08; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft b7f1990b38476c08; dashboard labels, timing and operator chat are not gate evidence. \",\"pipeline_run\":\"7033c2750f446916\",\"quality\":{\"check\":\"3ee2f17daf317a8a\",\"state\":\"pass\",\"subject_dataset\":\"e4a459cb02bea5c0\"},\"transform\":{\"input_dataset\":\"337eed998e3f1229\",\"output_dataset\":\"40a690b85a84fdf1\",\"run\":\"97d674c75410cbed\",\"state\":\"pass\"}}",
+    "87d1da10a57ac458": "{\"consent\":{\"approval\":\"8fec1584fc543c4b\",\"approved_output\":\"183fce4cb0aae950\",\"state\":\"approved\"},\"extract\":{\"output_dataset\":\"dfb51714bc2a0ce9\",\"run\":\"2c733f9bf3eaa9f4\",\"state\":\"pass\"},\"load\":{\"input_dataset\":\"72616636d3014016\",\"output_dataset\":\"183fce4cb0aae950\",\"run\":\"4a77bc3cb7c48e9e\",\"state\":\"pass\"},\"operator_notes\":\"Worker log archived an earlier draft aea2052cff4cbe65; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft aea2052cff4cbe65; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft aea2052cff4cbe65; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft aea2052cff4cbe65; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft aea2052cff4cbe65; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft aea2052cff4cbe65; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft aea2052cff4cbe65; dashboard labels, timing and operator chat are not gate evidence. \",\"pipeline_run\":\"87d1da10a57ac458\",\"quality\":{\"check\":\"b465eb6d371c965c\",\"state\":\"pass\",\"subject_dataset\":\"183fce4cb0aae950\"},\"transform\":{\"input_dataset\":\"2abbaade0ff2addb\",\"output_dataset\":\"72616636d3014016\",\"run\":\"93f47e2dba27b5bd\",\"state\":\"pass\"}}",
+    "df98a256585ca9f1": "{\"consent\":{\"approval\":\"08772d0e9a3d7446\",\"approved_output\":\"89c7cfd3b3bd77ef\",\"state\":\"approved\"},\"extract\":{\"output_dataset\":\"c3f7fc7add029d72\",\"run\":\"9458343170a6a396\",\"state\":\"pass\"},\"load\":{\"input_dataset\":\"1144e1ce73e1d4ab\",\"output_dataset\":\"89c7cfd3b3bd77ef\",\"run\":\"81c661887dd838bf\",\"state\":\"pass\"},\"operator_notes\":\"Worker log archived an earlier draft 60bfc7fecfd50286; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 60bfc7fecfd50286; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 60bfc7fecfd50286; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 60bfc7fecfd50286; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 60bfc7fecfd50286; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 60bfc7fecfd50286; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 60bfc7fecfd50286; dashboard labels, timing and operator chat are not gate evidence. \",\"pipeline_run\":\"df98a256585ca9f1\",\"quality\":{\"check\":\"fd92045ca2debdce\",\"state\":\"pass\",\"subject_dataset\":\"89c7cfd3b3bd77ef\"},\"transform\":{\"input_dataset\":\"e68f545fc677ec94\",\"output_dataset\":\"1144e1ce73e1d4ab\",\"run\":\"1f62ad7a00852cf1\",\"state\":\"pass\"}}"
+  },
+  "infeasible": {},
+  "local": {
+    "automatic": {
+      "bytes_read": 30493,
+      "cpu_ns": 1127900
+    },
+    "checked": {
+      "bytes_read": 55062,
+      "cpu_ns": 2001000
+    },
+    "direct": {
+      "bytes_read": 11607,
+      "cpu_ns": 409100
+    },
+    "full": {
+      "bytes_read": 29928,
+      "cpu_ns": 577600
+    },
+    "indexed": {
+      "bytes_read": 14248,
+      "cpu_ns": 168700
+    },
+    "prompt": {
+      "bytes_read": 3806,
+      "cpu_ns": 23200
+    }
+  },
+  "memories": {
+    "automatic": {
+      "child": "{\"f\":[\"consent.approval\",\"consent.approved_output\",\"consent.state\",\"extract.output_dataset\",\"extract.run\",\"extract.state\",\"load.input_dataset\",\"load.output_dataset\",\"load.run\",\"load.state\",\"pipeline_run\",\"quality.check\",\"quality.state\",\"quality.subject_dataset\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.run\",\"transform.state\"],\"r\":[[\"d7f24bb310555978\",\"3062f900262db50c\",\"approved\",\"8951ea0fee59b386\",\"7443b886a2266d2a\",\"pass\",\"5aafc31fd7da550a\",\"3062f900262db50c\",\"e4ceb3394bad47c9\",\"pass\",\"26e55b78e1502bdd\",\"d301d780edaf5f32\",\"pass\",\"3062f900262db50c\",\"8951ea0fee59b386\",\"5aafc31fd7da550a\",\"1259e0078e35a8a4\",\"pass\"],[\"e21bee031c41b187\",\"4e703b84a93831a0\",\"approved\",\"b6de6b92df4b3743\",\"8e8878e77173d631\",\"pass\",\"46b2bd71b9982163\",\"d1b6325fbb6fb477\",\"adf156b1456b74c2\",\"pass\",\"3704668c0d0a6454\",\"ca4539c4438aca3c\",\"pass\",\"d1b6325fbb6fb477\",\"b6de6b92df4b3743\",\"46b2bd71b9982163\",\"2dbd23ff118aea82\",\"pass\"]]}",
+      "parent": "{\"f\":[\"consent.approval\",\"consent.approved_output\",\"consent.state\",\"extract.output_dataset\",\"extract.run\",\"extract.state\",\"load.input_dataset\",\"load.output_dataset\",\"load.run\",\"load.state\",\"pipeline_run\",\"quality.check\",\"quality.state\",\"quality.subject_dataset\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.run\",\"transform.state\"],\"r\":[[\"faf568ccb98a0672\",\"72a187c4cdd928ee\",\"approved\",\"3db4a294547e5826\",\"e5e43fb221684fe7\",\"pass\",\"86402b247dd018e2\",\"72a187c4cdd928ee\",\"88ac63e1c42ea0f9\",\"pass\",\"4fd047477af52cce\",\"09506109b6cc1c20\",\"fail\",\"72a187c4cdd928ee\",\"3db4a294547e5826\",\"86402b247dd018e2\",\"5715914ab783c19e\",\"pass\"],[\"9d71793518a0f400\",\"e4a459cb02bea5c0\",\"approved\",\"337eed998e3f1229\",\"d59d19cbf618c45a\",\"pass\",\"40a690b85a84fdf1\",\"e4a459cb02bea5c0\",\"8cd9361294aa2ad8\",\"pass\",\"7033c2750f446916\",\"3ee2f17daf317a8a\",\"pass\",\"e4a459cb02bea5c0\",\"337eed998e3f1229\",\"40a690b85a84fdf1\",\"97d674c75410cbed\",\"pass\"],[\"08772d0e9a3d7446\",\"89c7cfd3b3bd77ef\",\"approved\",\"c3f7fc7add029d72\",\"9458343170a6a396\",\"pass\",\"1144e1ce73e1d4ab\",\"89c7cfd3b3bd77ef\",\"81c661887dd838bf\",\"pass\",\"df98a256585ca9f1\",\"fd92045ca2debdce\",\"pass\",\"89c7cfd3b3bd77ef\",\"e68f545fc677ec94\",\"1144e1ce73e1d4ab\",\"1f62ad7a00852cf1\",\"pass\"],[\"d7f24bb310555978\",\"3062f900262db50c\",\"approved\",\"8951ea0fee59b386\",\"7443b886a2266d2a\",\"pass\",\"5aafc31fd7da550a\",\"3062f900262db50c\",\"e4ceb3394bad47c9\",\"pass\",\"26e55b78e1502bdd\",\"d301d780edaf5f32\",\"pass\",\"3062f900262db50c\",\"8951ea0fee59b386\",\"5aafc31fd7da550a\",\"1259e0078e35a8a4\",\"pass\"],[\"e21bee031c41b187\",\"4e703b84a93831a0\",\"approved\",\"b6de6b92df4b3743\",\"8e8878e77173d631\",\"pass\",\"46b2bd71b9982163\",\"d1b6325fbb6fb477\",\"adf156b1456b74c2\",\"pass\",\"3704668c0d0a6454\",\"ca4539c4438aca3c\",\"pass\",\"d1b6325fbb6fb477\",\"b6de6b92df4b3743\",\"46b2bd71b9982163\",\"2dbd23ff118aea82\",\"pass\"],[\"bc4bc82374fecb18\",\"3f5edb664fdef74f\",\"approved\",\"a211253f05e58589\",\"c3870172b0927237\",\"pass\",\"993ec5bc7f1aeb70\",\"b1ab9b410ea7602c\",\"ca6d9362dc6d0697\",\"pass\",\"5ceae9f025e9de53\",\"7e1d756553a96031\",\"pass\",\"b1ab9b410ea7602c\",\"a211253f05e58589\",\"993ec5bc7f1aeb70\",\"530a326c54a109fa\",\"pass\"],[\"8fec1584fc543c4b\",\"183fce4cb0aae950\",\"approved\",\"dfb51714bc2a0ce9\",\"2c733f9bf3eaa9f4\",\"pass\",\"72616636d3014016\",\"183fce4cb0aae950\",\"4a77bc3cb7c48e9e\",\"pass\",\"87d1da10a57ac458\",\"b465eb6d371c965c\",\"pass\",\"183fce4cb0aae950\",\"2abbaade0ff2addb\",\"72616636d3014016\",\"93f47e2dba27b5bd\",\"pass\"]]}"
+    },
+    "checked": {
+      "child": "{\"f\":[\"consent.approval\",\"consent.approved_output\",\"consent.state\",\"extract.output_dataset\",\"extract.run\",\"extract.state\",\"load.input_dataset\",\"load.output_dataset\",\"load.run\",\"load.state\",\"pipeline_run\",\"quality.check\",\"quality.state\",\"quality.subject_dataset\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.run\",\"transform.state\"],\"r\":[[\"d7f24bb310555978\",\"3062f900262db50c\",\"approved\",\"8951ea0fee59b386\",\"7443b886a2266d2a\",\"pass\",\"5aafc31fd7da550a\",\"3062f900262db50c\",\"e4ceb3394bad47c9\",\"pass\",\"26e55b78e1502bdd\",\"d301d780edaf5f32\",\"pass\",\"3062f900262db50c\",\"8951ea0fee59b386\",\"5aafc31fd7da550a\",\"1259e0078e35a8a4\",\"pass\"],[\"e21bee031c41b187\",\"4e703b84a93831a0\",\"approved\",\"b6de6b92df4b3743\",\"8e8878e77173d631\",\"pass\",\"46b2bd71b9982163\",\"d1b6325fbb6fb477\",\"adf156b1456b74c2\",\"pass\",\"3704668c0d0a6454\",\"ca4539c4438aca3c\",\"pass\",\"d1b6325fbb6fb477\",\"b6de6b92df4b3743\",\"46b2bd71b9982163\",\"2dbd23ff118aea82\",\"pass\"]]}",
+      "child_bounds": {
+        "admitted_bytes": 932,
+        "clipped": false,
+        "proposed_bytes": 932
+      },
+      "parent": "{\"f\":[\"consent.approval\",\"consent.approved_output\",\"consent.state\",\"extract.output_dataset\",\"extract.run\",\"extract.state\",\"load.input_dataset\",\"load.output_dataset\",\"load.run\",\"load.state\",\"pipeline_run\",\"quality.check\",\"quality.state\",\"quality.subject_dataset\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.run\",\"transform.state\"],\"r\":[[\"faf568ccb98a0672\",\"72a187c4cdd928ee\",\"approved\",\"3db4a294547e5826\",\"e5e43fb221684fe7\",\"pass\",\"86402b247dd018e2\",\"72a187c4cdd928ee\",\"88ac63e1c42ea0f9\",\"pass\",\"4fd047477af52cce\",\"09506109b6cc1c20\",\"fail\",\"72a187c4cdd928ee\",\"3db4a294547e5826\",\"86402b247dd018e2\",\"5715914ab783c19e\",\"pass\"],[\"9d71793518a0f400\",\"e4a459cb02bea5c0\",\"approved\",\"337eed998e3f1229\",\"d59d19cbf618c45a\",\"pass\",\"40a690b85a84fdf1\",\"e4a459cb02bea5c0\",\"8cd9361294aa2ad8\",\"pass\",\"7033c2750f446916\",\"3ee2f17daf317a8a\",\"pass\",\"e4a459cb02bea5c0\",\"337eed998e3f1229\",\"40a690b85a84fdf1\",\"97d674c75410cbed\",\"pass\"],[\"08772d0e9a3d7446\",\"89c7cfd3b3bd77ef\",\"approved\",\"c3f7fc7add029d72\",\"9458343170a6a396\",\"pass\",\"1144e1ce73e1d4ab\",\"89c7cfd3b3bd77ef\",\"81c661887dd838bf\",\"pass\",\"df98a256585ca9f1\",\"fd92045ca2debdce\",\"pass\",\"89c7cfd3b3bd77ef\",\"e68f545fc677ec94\",\"1144e1ce73e1d4ab\",\"1f62ad7a00852cf1\",\"pass\"],[\"d7f24bb310555978\",\"3062f900262db50c\",\"approved\",\"8951ea0fee59b386\",\"7443b886a2266d2a\",\"pass\",\"5aafc31fd7da550a\",\"3062f900262db50c\",\"e4ceb3394bad47c9\",\"pass\",\"26e55b78e1502bdd\",\"d301d780edaf5f32\",\"pass\",\"3062f900262db50c\",\"8951ea0fee59b386\",\"5aafc31fd7da550a\",\"1259e0078e35a8a4\",\"pass\"],[\"e21bee031c41b187\",\"4e703b84a93831a0\",\"approved\",\"b6de6b92df4b3743\",\"8e8878e77173d631\",\"pass\",\"46b2bd71b9982163\",\"d1b6325fbb6fb477\",\"adf156b1456b74c2\",\"pass\",\"3704668c0d0a6454\",\"ca4539c4438aca3c\",\"pass\",\"d1b6325fbb6fb477\",\"b6de6b92df4b3743\",\"46b2bd71b9982163\",\"2dbd23ff118aea82\",\"pass\"],[\"bc4bc82374fecb18\",\"3f5edb664fdef74f\",\"approved\",\"a211253f05e58589\",\"c3870172b0927237\",\"pass\",\"993ec5bc7f1aeb70\",\"b1ab9b410ea7602c\",\"ca6d9362dc6d0697\",\"pass\",\"5ceae9f025e9de53\",\"7e1d756553a96031\",\"pass\",\"b1ab9b410ea7602c\",\"a211253f05e58589\",\"993ec5bc7f1aeb70\",\"530a326c54a109fa\",\"pass\"],[\"8fec1584fc543c4b\",\"183fce4cb0aae950\",\"approved\",\"dfb51714bc2a0ce9\",\"2c733f9bf3eaa9f4\",\"pass\",\"72616636d3014016\",\"183fce4cb0aae950\",\"4a77bc3cb7c48e9e\",\"pass\",\"87d1da10a57ac458\",\"b465eb6d371c965c\",\"pass\",\"183fce4cb0aae950\",\"2abbaade0ff2addb\",\"72616636d3014016\",\"93f47e2dba27b5bd\",\"pass\"]]}"
+    },
+    "direct": {
+      "child": "{\"f\":[\"pipeline_run\",\"extract.output_dataset\",\"extract.state\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.state\",\"load.input_dataset\",\"load.output_dataset\",\"load.state\",\"quality.subject_dataset\",\"quality.state\",\"consent.approved_output\",\"consent.state\"],\"r\":[[\"26e55b78e1502bdd\",\"8951ea0fee59b386\",\"pass\",\"8951ea0fee59b386\",\"5aafc31fd7da550a\",\"pass\",\"5aafc31fd7da550a\",\"3062f900262db50c\",\"pass\",\"3062f900262db50c\",\"pass\",\"3062f900262db50c\",\"approved\"],[\"3704668c0d0a6454\",\"b6de6b92df4b3743\",\"pass\",\"b6de6b92df4b3743\",\"46b2bd71b9982163\",\"pass\",\"46b2bd71b9982163\",\"d1b6325fbb6fb477\",\"pass\",\"d1b6325fbb6fb477\",\"pass\",\"4e703b84a93831a0\",\"approved\"]]}",
+      "parent": "{\"f\":[\"pipeline_run\",\"extract.output_dataset\",\"extract.state\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.state\",\"load.input_dataset\",\"load.output_dataset\",\"load.state\",\"quality.subject_dataset\",\"quality.state\",\"consent.approved_output\",\"consent.state\"],\"r\":[[\"4fd047477af52cce\",\"3db4a294547e5826\",\"pass\",\"3db4a294547e5826\",\"86402b247dd018e2\",\"pass\",\"86402b247dd018e2\",\"72a187c4cdd928ee\",\"pass\",\"72a187c4cdd928ee\",\"fail\",\"72a187c4cdd928ee\",\"approved\"],[\"7033c2750f446916\",\"337eed998e3f1229\",\"pass\",\"337eed998e3f1229\",\"40a690b85a84fdf1\",\"pass\",\"40a690b85a84fdf1\",\"e4a459cb02bea5c0\",\"pass\",\"e4a459cb02bea5c0\",\"pass\",\"e4a459cb02bea5c0\",\"approved\"],[\"df98a256585ca9f1\",\"c3f7fc7add029d72\",\"pass\",\"e68f545fc677ec94\",\"1144e1ce73e1d4ab\",\"pass\",\"1144e1ce73e1d4ab\",\"89c7cfd3b3bd77ef\",\"pass\",\"89c7cfd3b3bd77ef\",\"pass\",\"89c7cfd3b3bd77ef\",\"approved\"],[\"26e55b78e1502bdd\",\"8951ea0fee59b386\",\"pass\",\"8951ea0fee59b386\",\"5aafc31fd7da550a\",\"pass\",\"5aafc31fd7da550a\",\"3062f900262db50c\",\"pass\",\"3062f900262db50c\",\"pass\",\"3062f900262db50c\",\"approved\"],[\"3704668c0d0a6454\",\"b6de6b92df4b3743\",\"pass\",\"b6de6b92df4b3743\",\"46b2bd71b9982163\",\"pass\",\"46b2bd71b9982163\",\"d1b6325fbb6fb477\",\"pass\",\"d1b6325fbb6fb477\",\"pass\",\"4e703b84a93831a0\",\"approved\"],[\"5ceae9f025e9de53\",\"a211253f05e58589\",\"pass\",\"a211253f05e58589\",\"993ec5bc7f1aeb70\",\"pass\",\"993ec5bc7f1aeb70\",\"b1ab9b410ea7602c\",\"pass\",\"b1ab9b410ea7602c\",\"pass\",\"3f5edb664fdef74f\",\"approved\"],[\"87d1da10a57ac458\",\"dfb51714bc2a0ce9\",\"pass\",\"2abbaade0ff2addb\",\"72616636d3014016\",\"pass\",\"72616636d3014016\",\"183fce4cb0aae950\",\"pass\",\"183fce4cb0aae950\",\"pass\",\"183fce4cb0aae950\",\"approved\"]]}"
+    },
+    "prompt": {
+      "child": "Late event applied. f=[candidate,pipeline_run,extract.run,extract.state,extract.output_dataset,transform.run,transform.state,transform.input_dataset,transform.output_dataset,load.run,load.state,load.input_dataset,load.output_dataset,quality.check,quality.state,quality.subject_dataset,consent.approval,consent.state,consent.approved_output]. r:\n[26e55b78e1502bdd,7443b886a2266d2a,1259e0078e35a8a4,pass,8951ea0fee59b386,e4ceb3394bad47c9,pass,8951ea0fee59b386,5aafc31fd7da550a,e4ceb3394bad47c9,pass,5aafc31fd7da550a,3062f900262db50c,d301d780edaf5f32,pass,3062f900262db50c,d7f24bb310555978,approved,3062f900262db50c]\n[3704668c0d0a6454,8e8878e77173d631,2dbd23ff118aea82,pass,b6de6b92df4b3743,adf156b1456b74c2,pass,b6de6b92df4b3743,46b2bd71b9982163,adf156b1456b74c2,pass,46b2bd71b9982163,d1b6325fbb6fb477,ca4539c4438aca3c,pass,d1b6325fbb6fb477,e21bee031c41b187,approved,4e703b84a93831a0]\nOutcomes: 26e55b78e1502bdd publish target 3062f900262db50c; 3704668c0d0a6454 hold approval_scope target d1b6325fbb6fb477. Ignore archived operator_notes drafts as gate",
+      "child_bounds": {
+        "admitted_bytes": 1050,
+        "clipped": true,
+        "proposed_bytes": 1060
+      },
+      "parent": "Apply late event before evaluation. f=[pipeline_run,extract.run,extract.state,extract.output_dataset,transform.run,transform.state,transform.input_dataset,transform.output_dataset,load.run,load.state,load.input_dataset,load.output_dataset,quality.check,quality.state,quality.subject_dataset,consent.approval,consent.state,consent.approved_output,operator_notes.archived_draft]. r in observation order:\n[4fd047477af52cce,e5e43fb221684fe7,pass,3db4a294547e5826,5715914ab783c19e,pass,3db4a294547e5826,86402b247dd018e2,88ac63e1c42ea0f9,pass,86402b247dd018e2,72a187c4cdd928ee,09506109b6cc1c20,fail,72a187c4cdd928ee,faf568ccb098a0672,approved,72a187c4cdd928ee,c5f43791880bc14f]\n[7033c2750f446916,d59d19cbf618c45a,pass,337eed998e3f1229,97d674c75410cbed,pass,337eed998e3f1229,40a690b85a84fdf1,8cd9361294aa2ad8,pass,40a690b85a84fdf1,e4a459cb02bea5c0,3ee2f17daf317a8a,pass,e4a459cb02bea5c0,9d71793518a0f400,approved,e4a459cb02bea5c0,b7f1990b38476c08]\n[df98a256585ca9f1,9458343170a6a396,pass,c3f7fc7add029d72,1f62ad7a00852cf1,pass,e68f545fc677ec94,1144e1ce73e1d4ab,81c661887dd838bf,pass,1144e1ce73e1d4ab,89c7cfd3b3bd77ef,fd92045ca2debdce,pass,89c7cfd3b3bd77ef,08772d0e9a3d7446,approved,89c7cfd3b3bd77ef,60bfc7fecfd50286]\n[26e55b78e1502bdd,7443b886a2266d2a,pass,8951ea0fee59b386,1259e0078e35a8a4,pass,8951ea0fee59b386,5aafc31fd7da550a,e4ceb3394bad47c9,pass,5aafc31fd7da550a,3062f900262db50c,d301d780edaf5f32,pass,3062f900262db50c,d7f24bb310555978,approved,3062f900262db50c,e438466417cb3f39]\n[3704668c0d0a6454,8e8878e77173d631,pass,b6de6b92df4b3743,2dbd23ff118aea82,pass,b6de6b92df4b3743,46b2bd71b9982163,adf156b1456b74c2,pass,46b2bd71b9982163,d1b6325fbb6fb477,ca4539c4438aca3c,pass,d1b6325fbb6fb477,e21bee031c41b187,approved,4e703b84a93831a0,ff51d3a042a8ebcb]\n[5ceae9f025e9de53,c3870172b0927237,pass,a211253f05e58589,530a326c54a109fa,pass,a211253f05e58589,993ec5bc7f1aeb70,ca6d9362dc6d0697,pass,993ec5bc7f1aeb70,b1ab9b410ea7602c,7e1d756553a96031,pass,b1ab9b410ea7602c,bc4bc82374fecb18,approved,3f5edb664fdef74f,8f4e7d11009d36c1]\n[87d1da10a57ac458,2c733f9bf3eaa9f4,pass,dfb51714bc2a0ce9,93f47e2dba27b5bd,pass,2abbaade0ff2addb,72616636d3014016,4a77bc3cb7c48e9e,pass,72616636d3014016,183fce4cb0aae950,b465eb6d371c965c,pass,183fce4cb0aae950,8fec1584fc543c4b,approved,183fce4cb0aae950,aea2052cff4cbe65]. Notes drafts are archived earlier drafts, not gate evidence; dashboard labels, timing, operator chat are not gate evidence. Outcomes: row1 hold quality, target 72a187c4cdd928ee; row2 publish, target e4a459cb02bea5c0; row3 hold link_transform, target 89c7cfd3b3bd77ef; row4 publish, target 3062f900262db50c; row5 hold approval_scope, target d1b6325fbb6fb477; row6 hold approval_scope, target b1ab9b410ea7602c; row7 hold link_transform, target 183fce4cb0aae950.",
+      "parent_bounds": {
+        "admitted_bytes": 2746,
+        "clipped": false,
+        "proposed_bytes": 2746
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "data_pipeline-97031-0-automatic",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0073105",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 1,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"target_id\":\"adf156b1456b74c2\",\"work\":[\"approval_scope\",\"link_load\",\"quality_scope\"]}",
+  "request": {
+    "instruction": "Use only supplied memory, target and late event. Memory may be prose, one original tool result, a list of results, or a JSON table with f=full field paths and r=rows in that field order. Apply the event to the named target, then return one exact terminal decision with sorted work. Do not call tools. Publish only if extract, transform, load, quality states pass, transform.input_dataset=extract.output_dataset, load.input_dataset=transform.output_dataset, quality.subject_dataset=load.output_dataset, consent.state=approved, and consent.approved_output=load.output_dataset. Otherwise hold with the exact sorted set of extract, transform, load, quality, link_transform, link_load, quality_scope, approval, approval_scope for failed conditions. Return target_id=load.output_dataset. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "note",
+        "value": "Schedule title updated; gate fields unchanged."
+      },
+      "memory": "{\"f\":[\"consent.approval\",\"consent.approved_output\",\"consent.state\",\"extract.output_dataset\",\"extract.run\",\"extract.state\",\"load.input_dataset\",\"load.output_dataset\",\"load.run\",\"load.state\",\"pipeline_run\",\"quality.check\",\"quality.state\",\"quality.subject_dataset\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.run\",\"transform.state\"],\"r\":[[\"d7f24bb310555978\",\"3062f900262db50c\",\"approved\",\"8951ea0fee59b386\",\"7443b886a2266d2a\",\"pass\",\"5aafc31fd7da550a\",\"3062f900262db50c\",\"e4ceb3394bad47c9\",\"pass\",\"26e55b78e1502bdd\",\"d301d780edaf5f32\",\"pass\",\"3062f900262db50c\",\"8951ea0fee59b386\",\"5aafc31fd7da550a\",\"1259e0078e35a8a4\",\"pass\"],[\"e21bee031c41b187\",\"4e703b84a93831a0\",\"approved\",\"b6de6b92df4b3743\",\"8e8878e77173d631\",\"pass\",\"46b2bd71b9982163\",\"d1b6325fbb6fb477\",\"adf156b1456b74c2\",\"pass\",\"3704668c0d0a6454\",\"ca4539c4438aca3c\",\"pass\",\"d1b6325fbb6fb477\",\"b6de6b92df4b3743\",\"46b2bd71b9982163\",\"2dbd23ff118aea82\",\"pass\"]]}",
+      "target": "3704668c0d0a6454"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "f0f2037b0ae89a86beb396d4993b701abef7013156ba339416d2b121f0a03542",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "target_id": "adf156b1456b74c2",
+    "work": [
+      "approval_scope",
+      "link_load",
+      "quality_scope"
+    ]
+  },
+  "started_at": "2026-09-22T22:54:33.780458+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3277,
+    "outputTokens": 252,
+    "reasoningOutputTokens": 209,
+    "totalTokens": 3529
+  },
+  "usage_events": 1,
+  "wall_seconds": 8.720083499967586,
+  "wire_body_byte_bound": 18969
+}

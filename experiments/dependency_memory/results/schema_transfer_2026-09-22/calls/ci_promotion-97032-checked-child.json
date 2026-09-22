@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "ci_promotion-97032-checked-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.017623",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 1,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"{\\\"f\\\":[\\\"authorization.approved_digest\\\",\\\"authorization.state\\\",\\\"authorization.ticket\\\",\\\"build.channel\\\",\\\"build.digest\\\",\\\"deployment_slot\\\",\\\"handoff.environment\\\",\\\"verification.integration\\\",\\\"verification.run\\\",\\\"verification.subject\\\",\\\"verification.unit\\\"],\\\"r\\\":[[\\\"f351d36f669b4461\\\",\\\"approved\\\",\\\"db330a6d3beba3d9\\\",\\\"stable\\\",\\\"f351d36f669b4461\\\",\\\"b5852f78805f1347\\\",\\\"prod\\\",\\\"pass\\\",\\\"b879ce2c63941200\\\",\\\"f351d36f669b4461\\\",\\\"pass\\\"],[\\\"23cab765bdb49682\\\",\\\"approved\\\",\\\"23cab765bdb49682\\\",\\\"stable\\\",\\\"3ca34db912aa2060\\\",\\\"d0e28fc2fdc951e0\\\",\\\"prod\\\",\\\"pass\\\",\\\"47481e51d1431b8c\\\",\\\"3ca34db912aa2060\\\",\\\"pass\\\"]]}\"}",
+  "request": {
+    "instruction": "Continue from the certified bounded parent table. Only the memory string survives this boundary. The public decision rule and output schema repeat at execution. Use the allowance for instance facts across all possible later targets. Preserve every exact opaque identifier, status, and the field/record to which each reference belongs. Do not abbreviate values or collapse an approval of one artifact into generic approval. A compact table is allowed: JSON f lists full field paths and r lists rows in that order. Return {\"memory\":\"...\"}. Limit memory to 1050 UTF-8 bytes. Retain only the named candidates. Promote only if build.channel=stable, authorization.state=approved, authorization.approved_digest=build.digest, verification.subject=build.digest, verification.unit and integration both pass, and handoff.environment=prod. Otherwise hold with the exact sorted set of channel, approval, approval_scope, ci_scope, unit, integration, environment for each failed condition. Return target_id=build.digest. Apply the late event first.",
+    "observation": {
+      "candidates": [
+        "b5852f78805f1347",
+        "d0e28fc2fdc951e0"
+      ],
+      "previous_memory": "{\"f\":[\"authorization.approved_digest\",\"authorization.state\",\"authorization.ticket\",\"build.channel\",\"build.digest\",\"deployment_slot\",\"handoff.environment\",\"verification.integration\",\"verification.run\",\"verification.subject\",\"verification.unit\"],\"r\":[[\"ac079caf54fc9c4d\",\"approved\",\"b947dd54c723be23\",\"stable\",\"ac079caf54fc9c4d\",\"5c94bf273ec9ec02\",\"prod\",\"fail\",\"2e3e3cf365203d16\",\"ac079caf54fc9c4d\",\"pass\"],[\"f334689a72c3f26f\",\"approved\",\"079e8c36298ccbba\",\"stable\",\"f334689a72c3f26f\",\"9a2cba29f26aeb33\",\"prod\",\"pass\",\"2fd838d624b55277\",\"6ed2e6a908278f47\",\"pass\"],[\"f351d36f669b4461\",\"approved\",\"db330a6d3beba3d9\",\"stable\",\"f351d36f669b4461\",\"b5852f78805f1347\",\"prod\",\"pass\",\"b879ce2c63941200\",\"f351d36f669b4461\",\"pass\"],[\"e08fb033ecd551c9\",\"approved\",\"f98cde3e3b42a41a\",\"stable\",\"4073a93cf992b124\",\"a50d685f35973085\",\"prod\",\"pass\",\"3a6147fb49c08d0a\",\"4073a93cf992b124\",\"pass\"],[\"05dda87bb5b431aa\",\"approved\",\"23cab765bdb49682\",\"stable\",\"3ca34db912aa2060\",\"d0e28fc2fdc951e0\",\"prod\",\"pass\",\"47481e51d1431b8c\",\"3ca34db912aa2060\",\"pass\"],[\"1da9a368e48223ac\",\"approved\",\"25a959811fc53cb3\",\"stable\",\"1da9a368e48223ac\",\"eb9abb410d915b7a\",\"prod\",\"fail\",\"abc1fabfb0dc7c7c\",\"1da9a368e48223ac\",\"pass\"],[\"a74857948d408401\",\"approved\",\"41e67f92cd3e1e8c\",\"stable\",\"a74857948d408401\",\"ba2e995ced8e3578\",\"prod\",\"pass\",\"9910319d216f6455\",\"a74857948d408401\",\"pass\"]]}"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "0e42c4773891b25a0be3724e2591c147917dec0138861cbd7addfb955c7ee8d6",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "{\"f\":[\"authorization.approved_digest\",\"authorization.state\",\"authorization.ticket\",\"build.channel\",\"build.digest\",\"deployment_slot\",\"handoff.environment\",\"verification.integration\",\"verification.run\",\"verification.subject\",\"verification.unit\"],\"r\":[[\"f351d36f669b4461\",\"approved\",\"db330a6d3beba3d9\",\"stable\",\"f351d36f669b4461\",\"b5852f78805f1347\",\"prod\",\"pass\",\"b879ce2c63941200\",\"f351d36f669b4461\",\"pass\"],[\"23cab765bdb49682\",\"approved\",\"23cab765bdb49682\",\"stable\",\"3ca34db912aa2060\",\"d0e28fc2fdc951e0\",\"prod\",\"pass\",\"47481e51d1431b8c\",\"3ca34db912aa2060\",\"pass\"]]}"
+  },
+  "started_at": "2026-09-22T22:50:11.035754+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3412,
+    "outputTokens": 1050,
+    "reasoningOutputTokens": 845,
+    "totalTokens": 4462
+  },
+  "usage_events": 1,
+  "wall_seconds": 22.283947599993553,
+  "wire_body_byte_bound": 19390
+}

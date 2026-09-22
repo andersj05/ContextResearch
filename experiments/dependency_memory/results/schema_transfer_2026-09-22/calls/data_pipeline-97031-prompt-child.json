@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "data_pipeline-97031-prompt-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0194805",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 1,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Late event applied. f=[candidate,pipeline_run,extract.run,extract.state,extract.output_dataset,transform.run,transform.state,transform.input_dataset,transform.output_dataset,load.run,load.state,load.input_dataset,load.output_dataset,quality.check,quality.state,quality.subject_dataset,consent.approval,consent.state,consent.approved_output]. r:\\n[26e55b78e1502bdd,7443b886a2266d2a,1259e0078e35a8a4,pass,8951ea0fee59b386,e4ceb3394bad47c9,pass,8951ea0fee59b386,5aafc31fd7da550a,e4ceb3394bad47c9,pass,5aafc31fd7da550a,3062f900262db50c,d301d780edaf5f32,pass,3062f900262db50c,d7f24bb310555978,approved,3062f900262db50c]\\n[3704668c0d0a6454,8e8878e77173d631,2dbd23ff118aea82,pass,b6de6b92df4b3743,adf156b1456b74c2,pass,b6de6b92df4b3743,46b2bd71b9982163,adf156b1456b74c2,pass,46b2bd71b9982163,d1b6325fbb6fb477,ca4539c4438aca3c,pass,d1b6325fbb6fb477,e21bee031c41b187,approved,4e703b84a93831a0]\\nOutcomes: 26e55b78e1502bdd publish target 3062f900262db50c; 3704668c0d0a6454 hold approval_scope target d1b6325fbb6fb477. Ignore archived operator_notes drafts as gate evidence.\"}",
+  "request": {
+    "instruction": "Only the memory string survives this boundary. The public decision rule and output schema repeat at execution. Use the allowance for instance facts across all possible later targets. Preserve every exact opaque identifier, status, and the field/record to which each reference belongs. Do not abbreviate values or collapse an approval of one artifact into generic approval. A compact table is allowed: JSON f lists full field paths and r lists rows in that order. Return {\"memory\":\"...\"}. Limit memory to 1050 UTF-8 bytes. Retain only the named candidates. Publish only if extract, transform, load, quality states pass, transform.input_dataset=extract.output_dataset, load.input_dataset=transform.output_dataset, quality.subject_dataset=load.output_dataset, consent.state=approved, and consent.approved_output=load.output_dataset. Otherwise hold with the exact sorted set of extract, transform, load, quality, link_transform, link_load, quality_scope, approval, approval_scope for failed conditions. Return target_id=load.output_dataset. Apply the late event first.",
+    "observation": {
+      "candidates": [
+        "26e55b78e1502bdd",
+        "3704668c0d0a6454"
+      ],
+      "previous_memory": "Apply late event before evaluation. f=[pipeline_run,extract.run,extract.state,extract.output_dataset,transform.run,transform.state,transform.input_dataset,transform.output_dataset,load.run,load.state,load.input_dataset,load.output_dataset,quality.check,quality.state,quality.subject_dataset,consent.approval,consent.state,consent.approved_output,operator_notes.archived_draft]. r in observation order:\n[4fd047477af52cce,e5e43fb221684fe7,pass,3db4a294547e5826,5715914ab783c19e,pass,3db4a294547e5826,86402b247dd018e2,88ac63e1c42ea0f9,pass,86402b247dd018e2,72a187c4cdd928ee,09506109b6cc1c20,fail,72a187c4cdd928ee,faf568ccb098a0672,approved,72a187c4cdd928ee,c5f43791880bc14f]\n[7033c2750f446916,d59d19cbf618c45a,pass,337eed998e3f1229,97d674c75410cbed,pass,337eed998e3f1229,40a690b85a84fdf1,8cd9361294aa2ad8,pass,40a690b85a84fdf1,e4a459cb02bea5c0,3ee2f17daf317a8a,pass,e4a459cb02bea5c0,9d71793518a0f400,approved,e4a459cb02bea5c0,b7f1990b38476c08]\n[df98a256585ca9f1,9458343170a6a396,pass,c3f7fc7add029d72,1f62ad7a00852cf1,pass,e68f545fc677ec94,1144e1ce73e1d4ab,81c661887dd838bf,pass,1144e1ce73e1d4ab,89c7cfd3b3bd77ef,fd92045ca2debdce,pass,89c7cfd3b3bd77ef,08772d0e9a3d7446,approved,89c7cfd3b3bd77ef,60bfc7fecfd50286]\n[26e55b78e1502bdd,7443b886a2266d2a,pass,8951ea0fee59b386,1259e0078e35a8a4,pass,8951ea0fee59b386,5aafc31fd7da550a,e4ceb3394bad47c9,pass,5aafc31fd7da550a,3062f900262db50c,d301d780edaf5f32,pass,3062f900262db50c,d7f24bb310555978,approved,3062f900262db50c,e438466417cb3f39]\n[3704668c0d0a6454,8e8878e77173d631,pass,b6de6b92df4b3743,2dbd23ff118aea82,pass,b6de6b92df4b3743,46b2bd71b9982163,adf156b1456b74c2,pass,46b2bd71b9982163,d1b6325fbb6fb477,ca4539c4438aca3c,pass,d1b6325fbb6fb477,e21bee031c41b187,approved,4e703b84a93831a0,ff51d3a042a8ebcb]\n[5ceae9f025e9de53,c3870172b0927237,pass,a211253f05e58589,530a326c54a109fa,pass,a211253f05e58589,993ec5bc7f1aeb70,ca6d9362dc6d0697,pass,993ec5bc7f1aeb70,b1ab9b410ea7602c,7e1d756553a96031,pass,b1ab9b410ea7602c,bc4bc82374fecb18,approved,3f5edb664fdef74f,8f4e7d11009d36c1]\n[87d1da10a57ac458,2c733f9bf3eaa9f4,pass,dfb51714bc2a0ce9,93f47e2dba27b5bd,pass,2abbaade0ff2addb,72616636d3014016,4a77bc3cb7c48e9e,pass,72616636d3014016,183fce4cb0aae950,b465eb6d371c965c,pass,183fce4cb0aae950,8fec1584fc543c4b,approved,183fce4cb0aae950,aea2052cff4cbe65]. Notes drafts are archived earlier drafts, not gate evidence; dashboard labels, timing, operator chat are not gate evidence. Outcomes: row1 hold quality, target 72a187c4cdd928ee; row2 publish, target e4a459cb02bea5c0; row3 hold link_transform, target 89c7cfd3b3bd77ef; row4 publish, target 3062f900262db50c; row5 hold approval_scope, target d1b6325fbb6fb477; row6 hold approval_scope, target b1ab9b410ea7602c; row7 hold link_transform, target 183fce4cb0aae950."
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "6e7a73d39fc00d9180a73c8ee08a7ec82605b9c2efcaae0077b3526ce4a15437",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Late event applied. f=[candidate,pipeline_run,extract.run,extract.state,extract.output_dataset,transform.run,transform.state,transform.input_dataset,transform.output_dataset,load.run,load.state,load.input_dataset,load.output_dataset,quality.check,quality.state,quality.subject_dataset,consent.approval,consent.state,consent.approved_output]. r:\n[26e55b78e1502bdd,7443b886a2266d2a,1259e0078e35a8a4,pass,8951ea0fee59b386,e4ceb3394bad47c9,pass,8951ea0fee59b386,5aafc31fd7da550a,e4ceb3394bad47c9,pass,5aafc31fd7da550a,3062f900262db50c,d301d780edaf5f32,pass,3062f900262db50c,d7f24bb310555978,approved,3062f900262db50c]\n[3704668c0d0a6454,8e8878e77173d631,2dbd23ff118aea82,pass,b6de6b92df4b3743,adf156b1456b74c2,pass,b6de6b92df4b3743,46b2bd71b9982163,adf156b1456b74c2,pass,46b2bd71b9982163,d1b6325fbb6fb477,ca4539c4438aca3c,pass,d1b6325fbb6fb477,e21bee031c41b187,approved,4e703b84a93831a0]\nOutcomes: 26e55b78e1502bdd publish target 3062f900262db50c; 3704668c0d0a6454 hold approval_scope target d1b6325fbb6fb477. Ignore archived operator_notes drafts as gate evidence."
+  },
+  "started_at": "2026-09-22T22:53:34.917189+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 4160,
+    "outputTokens": 1049,
+    "reasoningOutputTokens": 593,
+    "totalTokens": 5209
+  },
+  "usage_events": 1,
+  "wall_seconds": 21.70830429997295,
+  "wire_body_byte_bound": 20292
+}

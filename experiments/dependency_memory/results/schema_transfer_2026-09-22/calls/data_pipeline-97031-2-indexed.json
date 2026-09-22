@@ -1,0 +1,100 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "data_pipeline-97031-2-indexed",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.006448",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 1,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"target_id\":\"998613b8c26d54e9\",\"work\":[\"approval_scope\",\"quality_scope\"]}",
+  "request": {
+    "instruction": "Use only supplied memory, target and late event. Memory may be prose, one original tool result, a list of results, or a JSON table with f=full field paths and r=rows in that field order. Apply the event to the named target, then return one exact terminal decision with sorted work. Do not call tools. Publish only if extract, transform, load, quality states pass, transform.input_dataset=extract.output_dataset, load.input_dataset=transform.output_dataset, quality.subject_dataset=load.output_dataset, consent.state=approved, and consent.approved_output=load.output_dataset. Otherwise hold with the exact sorted set of extract, transform, load, quality, link_transform, link_load, quality_scope, approval, approval_scope for failed conditions. Return target_id=load.output_dataset. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "load.output_dataset",
+        "value": "998613b8c26d54e9"
+      },
+      "memory": "{\"consent\":{\"approval\":\"d7f24bb310555978\",\"approved_output\":\"3062f900262db50c\",\"state\":\"approved\"},\"extract\":{\"output_dataset\":\"8951ea0fee59b386\",\"run\":\"7443b886a2266d2a\",\"state\":\"pass\"},\"load\":{\"input_dataset\":\"5aafc31fd7da550a\",\"output_dataset\":\"3062f900262db50c\",\"run\":\"e4ceb3394bad47c9\",\"state\":\"pass\"},\"operator_notes\":\"Worker log archived an earlier draft e438466417cb3f39; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e438466417cb3f39; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e438466417cb3f39; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e438466417cb3f39; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e438466417cb3f39; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e438466417cb3f39; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e438466417cb3f39; dashboard labels, timing and operator chat are not gate evidence. \",\"pipeline_run\":\"26e55b78e1502bdd\",\"quality\":{\"check\":\"d301d780edaf5f32\",\"state\":\"pass\",\"subject_dataset\":\"3062f900262db50c\"},\"transform\":{\"input_dataset\":\"8951ea0fee59b386\",\"output_dataset\":\"5aafc31fd7da550a\",\"run\":\"1259e0078e35a8a4\",\"state\":\"pass\"}}",
+      "target": "26e55b78e1502bdd"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "199b679e9a5697f88f9430197849a846e0cb2c78372eb4d14ed6f9efc19316bb",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "target_id": "998613b8c26d54e9",
+    "work": [
+      "approval_scope",
+      "quality_scope"
+    ]
+  },
+  "started_at": "2026-09-22T22:56:39.921199+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3312,
+    "outputTokens": 176,
+    "reasoningOutputTokens": 136,
+    "totalTokens": 3488
+  },
+  "usage_events": 1,
+  "wall_seconds": 6.897977399989031,
+  "wire_body_byte_bound": 19368
+}

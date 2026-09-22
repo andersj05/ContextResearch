@@ -1,0 +1,97 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry_queue-97032-0-full",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0103555",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718871,
+        "usedPercent": 1,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"retry\",\"target_id\":\"65417b255f260d12\",\"work\":[]}",
+  "request": {
+    "instruction": "Use only supplied memory, target and late event. Memory may be prose, one original tool result, a list of results, or a JSON table with f=full field paths and r=rows in that field order. Apply the event to the named target, then return one exact terminal decision with sorted work. Do not call tools. For the selected request: if dispatch.state is not_sent, action=submit and work=[]; otherwise require result.attempt_uuid and billing.for_attempt to match dispatch.attempt_uuid. If a scope mismatches, hold with result_scope or billing_scope. Otherwise close if result.state is passed and billing.state is settled; retry if result.state is failed and retry_policy.retry_allowed is true; otherwise hold with result, billing or retry_policy for the applicable failed conditions. Return target_id=request_token. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "note",
+        "value": "Schedule title updated; gate fields unchanged."
+      },
+      "memory": "[{\"billing\":{\"charge_token\":\"aa7356fc5c558cbf\",\"for_attempt\":\"25c450507d3dad9e\",\"state\":\"settled\"},\"dispatch\":{\"attempt_uuid\":\"a1a282a11cf77e60\",\"idempotency_key\":\"77d3887bebb4c4fd\",\"state\":\"sent\"},\"operator_notes\":\"Worker log archived an earlier draft 5e693e52c7240d28; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 5e693e52c7240d28; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 5e693e52c7240d28; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 5e693e52c7240d28; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 5e693e52c7240d28; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 5e693e52c7240d28; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 5e693e52c7240d28; dashboard labels, timing and operator chat are not gate evidence. \",\"request_token\":\"dbc0bbe057cc76da\",\"result\":{\"attempt_uuid\":\"a1a282a11cf77e60\",\"state\":\"passed\"},\"retry_policy\":{\"prior_attempt\":\"b189b83d1f8c73e2\",\"retry_allowed\":false}},{\"billing\":{\"charge_token\":\"66121ecd2fe2f1c8\",\"for_attempt\":\"a88134d15fedb4f6\",\"state\":\"settled\"},\"dispatch\":{\"attempt_uuid\":\"a88134d15fedb4f6\",\"idempotency_key\":\"3978fa830042f91e\",\"state\":\"not_sent\"},\"operator_notes\":\"Worker log archived an earlier draft a58b28a07c410073; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a58b28a07c410073; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a58b28a07c410073; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a58b28a07c410073; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a58b28a07c410073; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a58b28a07c410073; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a58b28a07c410073; dashboard labels, timing and operator chat are not gate evidence. \",\"request_token\":\"d23b22e91b188454\",\"result\":{\"attempt_uuid\":\"a88134d15fedb4f6\",\"state\":\"passed\"},\"retry_policy\":{\"prior_attempt\":\"9cff3697a69063bf\",\"retry_allowed\":false}},{\"billing\":{\"charge_token\":\"57bde6b4689913a8\",\"for_attempt\":\"57efd42e98defc34\",\"state\":\"settled\"},\"dispatch\":{\"attempt_uuid\":\"57efd42e98defc34\",\"idempotency_key\":\"3eaa0f195d784296\",\"state\":\"sent\"},\"operator_notes\":\"Worker log archived an earlier draft 35256ec5a13ad69a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 35256ec5a13ad69a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 35256ec5a13ad69a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 35256ec5a13ad69a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 35256ec5a13ad69a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 35256ec5a13ad69a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 35256ec5a13ad69a; dashboard labels, timing and operator chat are not gate evidence. \",\"request_token\":\"a89cbf87ec269b5b\",\"result\":{\"attempt_uuid\":\"57efd42e98defc34\",\"state\":\"passed\"},\"retry_policy\":{\"prior_attempt\":\"7f669ead3de83ce4\",\"retry_allowed\":false}},{\"billing\":{\"charge_token\":\"12fcc078303bd740\",\"for_attempt\":\"d250c8f968daf98f\",\"state\":\"settled\"},\"dispatch\":{\"attempt_uuid\":\"d250c8f968daf98f\",\"idempotency_key\":\"2bcf0debdef2c699\",\"state\":\"sent\"},\"operator_notes\":\"Worker log archived an earlier draft c93f8920c57eacc7; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c93f8920c57eacc7; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c93f8920c57eacc7; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c93f8920c57eacc7; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c93f8920c57eacc7; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c93f8920c57eacc7; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c93f8920c57eacc7; dashboard labels, timing and operator chat are not gate evidence. \",\"request_token\":\"b2901f4b7ac69abf\",\"result\":{\"attempt_uuid\":\"d250c8f968daf98f\",\"state\":\"failed\"},\"retry_policy\":{\"prior_attempt\":\"f7dc2dce1acfdafa\",\"retry_allowed\":true}},{\"billing\":{\"charge_token\":\"a171c76b8e971606\",\"for_attempt\":\"31ecb7a8eec2fa70\",\"state\":\"settled\"},\"dispatch\":{\"attempt_uuid\":\"31ecb7a8eec2fa70\",\"idempotency_key\":\"1863babe9fc76748\",\"state\":\"sent\"},\"operator_notes\":\"Worker log archived an earlier draft 440cab12a4ca4eda; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 440cab12a4ca4eda; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 440cab12a4ca4eda; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 440cab12a4ca4eda; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 440cab12a4ca4eda; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 440cab12a4ca4eda; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 440cab12a4ca4eda; dashboard labels, timing and operator chat are not gate evidence. \",\"request_token\":\"65417b255f260d12\",\"result\":{\"attempt_uuid\":\"31ecb7a8eec2fa70\",\"state\":\"failed\"},\"retry_policy\":{\"prior_attempt\":\"bf2124d4c186c8aa\",\"retry_allowed\":true}},{\"billing\":{\"charge_token\":\"3074ed1c2f4f59cd\",\"for_attempt\":\"c324161605690ee4\",\"state\":\"settled\"},\"dispatch\":{\"attempt_uuid\":\"b7b0aab4e2cf700f\",\"idempotency_key\":\"3a0ed11bdacc548c\",\"state\":\"sent\"},\"operator_notes\":\"Worker log archived an earlier draft 23ddd05ed27aaab4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 23ddd05ed27aaab4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 23ddd05ed27aaab4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 23ddd05ed27aaab4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 23ddd05ed27aaab4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 23ddd05ed27aaab4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 23ddd05ed27aaab4; dashboard labels, timing and operator chat are not gate evidence. \",\"request_token\":\"cc436573ce01bba7\",\"result\":{\"attempt_uuid\":\"b7b0aab4e2cf700f\",\"state\":\"passed\"},\"retry_policy\":{\"prior_attempt\":\"d16692326af04f6b\",\"retry_allowed\":false}},{\"billing\":{\"charge_token\":\"4196a4f0e30755ce\",\"for_attempt\":\"8f7a9b2ef1d8bc2d\",\"state\":\"settled\"},\"dispatch\":{\"attempt_uuid\":\"8f7a9b2ef1d8bc2d\",\"idempotency_key\":\"411210e36801e491\",\"state\":\"sent\"},\"operator_notes\":\"Worker log archived an earlier draft e500b05c8673254a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e500b05c8673254a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e500b05c8673254a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e500b05c8673254a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e500b05c8673254a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e500b05c8673254a; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft e500b05c8673254a; dashboard labels, timing and operator chat are not gate evidence. \",\"request_token\":\"9221dab29a9d6460\",\"result\":{\"attempt_uuid\":\"8f7a9b2ef1d8bc2d\",\"state\":\"passed\"},\"retry_policy\":{\"prior_attempt\":\"5daf377dca04ef47\",\"retry_allowed\":false}}]",
+      "target": "65417b255f260d12"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "cf3563f4ef8cd210dff3721cf7f3f0a374cf0039ca646ca50c043f2f62fc2bf3",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "retry",
+    "target_id": "65417b255f260d12",
+    "work": []
+  },
+  "started_at": "2026-09-22T22:45:05.024904+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 5280,
+    "outputTokens": 95,
+    "reasoningOutputTokens": 63,
+    "totalTokens": 5375
+  },
+  "usage_events": 1,
+  "wall_seconds": 4.837148599966895,
+  "wire_body_byte_bound": 27517
+}

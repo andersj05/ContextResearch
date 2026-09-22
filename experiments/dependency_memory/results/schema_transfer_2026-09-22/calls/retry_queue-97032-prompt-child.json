@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry_queue-97032-prompt-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0133905",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 1,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"f=[request_token,dispatch.attempt_uuid,dispatch.idempotency_key,dispatch.state,result.attempt_uuid,result.state,billing.for_attempt,billing.charge_token,billing.state,retry_policy.prior_attempt,retry_policy.retry_allowed]; r (values in f order): [a89cbf87ec269b5b,57efd42e98defc34,3eaa0f195d784296,sent,57efd42e98defc34,passed,57efd42e98defc34,57bde6b4689913a8,settled,7f669ead3de83ce4,false]; [65417b255f260d12,31ecb7a8eec2fa70,1863babe9fc76748,sent,31ecb7a8eec2fa70,failed,31ecb7a8eec2fa70,a171c76b8e971606,settled,bf2124d4c186c8aa,true]. No late event supplied.\"}",
+  "request": {
+    "instruction": "Only the memory string survives this boundary. The public decision rule and output schema repeat at execution. Use the allowance for instance facts across all possible later targets. Preserve every exact opaque identifier, status, and the field/record to which each reference belongs. Do not abbreviate values or collapse an approval of one artifact into generic approval. A compact table is allowed: JSON f lists full field paths and r lists rows in that order. Return {\"memory\":\"...\"}. Limit memory to 1050 UTF-8 bytes. Retain only the named candidates. For the selected request: if dispatch.state is not_sent, action=submit and work=[]; otherwise require result.attempt_uuid and billing.for_attempt to match dispatch.attempt_uuid. If a scope mismatches, hold with result_scope or billing_scope. Otherwise close if result.state is passed and billing.state is settled; retry if result.state is failed and retry_policy.retry_allowed is true; otherwise hold with result, billing or retry_policy for the applicable failed conditions. Return target_id=request_token. Apply the late event first.",
+    "observation": {
+      "candidates": [
+        "a89cbf87ec269b5b",
+        "65417b255f260d12"
+      ],
+      "previous_memory": "Records in tool_results order; rows encode [request_token,dispatch.attempt_uuid,dispatch.idempotency_key,dispatch.state,result.attempt_uuid,result.state,billing.for_attempt,billing.charge_token,billing.state,retry_policy.prior_attempt,retry_policy.retry_allowed]. Operator notes contain non-gating archived drafts.\n1 [dbc0bbe057cc76da,a1a282a11cf77e60,77d3887bebb4c4fd,sent,a1a282a11cf77e60,passed,25c450507d3dad9e,aa7356fc5c558cbf,settled,b189b83d1f8c73e2,false]\n2 [d23b22e91b188454,a88134d15fedb4f6,3978fa830042f91e,not_sent,a88134d15fedb4f6,passed,a88134d15fedb4f6,66121ecd2fe2f1c8,settled,9cff3697a69063bf,false]\n3 [a89cbf87ec269b5b,57efd42e98defc34,3eaa0f195d784296,sent,57efd42e98defc34,passed,57efd42e98defc34,57bde6b4689913a8,settled,7f669ead3de83ce4,false]\n4 [b2901f4b7ac69abf,d250c8f968daf98f,2bcf0debdef2c699,sent,d250c8f968daf98f,failed,d250c8f968daf98f,12fcc078303bd740,settled,f7dc2dce1acfdafa,true]\n5 [65417b255f260d12,31ecb7a8eec2fa70,1863babe9fc76748,sent,31ecb7a8eec2fa70,failed,31ecb7a8eec2fa70,a171c76b8e971606,settled,bf2124d4c186c8aa,true]\n6 [cc436573ce01bba7,b7b0aab4e2cf700f,3a0ed11bdacc548c,sent,b7b0aab4e2cf700f,passed,c324161605690ee4,3074ed1c2f4f59cd,settled,d16692326af04f6b,false]\n7 [9221dab29a9d6460,8f7a9b2ef1d8bc2d,411210e36801e491,sent,8f7a9b2ef1d8bc2d,passed,8f7a9b2ef1d8bc2d,4196a4f0e30755ce,settled,5daf377dca04ef47,false]"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "89dfad08b367dcbc11325b4f2432c178f80b6c5f747f61d81354c49e07d30f68",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "f=[request_token,dispatch.attempt_uuid,dispatch.idempotency_key,dispatch.state,result.attempt_uuid,result.state,billing.for_attempt,billing.charge_token,billing.state,retry_policy.prior_attempt,retry_policy.retry_allowed]; r (values in f order): [a89cbf87ec269b5b,57efd42e98defc34,3eaa0f195d784296,sent,57efd42e98defc34,passed,57efd42e98defc34,57bde6b4689913a8,settled,7f669ead3de83ce4,false]; [65417b255f260d12,31ecb7a8eec2fa70,1863babe9fc76748,sent,31ecb7a8eec2fa70,failed,31ecb7a8eec2fa70,a171c76b8e971606,settled,bf2124d4c186c8aa,true]. No late event supplied."
+  },
+  "started_at": "2026-09-22T22:43:58.094136+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3519,
+    "outputTokens": 690,
+    "reasoningOutputTokens": 453,
+    "totalTokens": 4209
+  },
+  "usage_events": 1,
+  "wall_seconds": 15.44466380000813,
+  "wire_body_byte_bound": 18932
+}

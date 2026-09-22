@@ -1,0 +1,100 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry_queue-97031-2-indexed",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0057905",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 1,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"target_id\":\"dca3ad42e7e323d9\",\"work\":[\"billing_scope\",\"result_scope\"]}",
+  "request": {
+    "instruction": "Use only supplied memory, target and late event. Memory may be prose, one original tool result, a list of results, or a JSON table with f=full field paths and r=rows in that field order. Apply the event to the named target, then return one exact terminal decision with sorted work. Do not call tools. For the selected request: if dispatch.state is not_sent, action=submit and work=[]; otherwise require result.attempt_uuid and billing.for_attempt to match dispatch.attempt_uuid. If a scope mismatches, hold with result_scope or billing_scope. Otherwise close if result.state is passed and billing.state is settled; retry if result.state is failed and retry_policy.retry_allowed is true; otherwise hold with result, billing or retry_policy for the applicable failed conditions. Return target_id=request_token. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "dispatch.attempt_uuid",
+        "value": "5d645eee95a335d5"
+      },
+      "memory": "{\"billing\":{\"charge_token\":\"b399bb24dda17459\",\"for_attempt\":\"5e31bce95bff05ff\",\"state\":\"settled\"},\"dispatch\":{\"attempt_uuid\":\"5e31bce95bff05ff\",\"idempotency_key\":\"7e88c4399dc2537f\",\"state\":\"sent\"},\"operator_notes\":\"Worker log archived an earlier draft 12a4a6b6d5ab7cb1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 12a4a6b6d5ab7cb1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 12a4a6b6d5ab7cb1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 12a4a6b6d5ab7cb1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 12a4a6b6d5ab7cb1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 12a4a6b6d5ab7cb1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 12a4a6b6d5ab7cb1; dashboard labels, timing and operator chat are not gate evidence. \",\"request_token\":\"dca3ad42e7e323d9\",\"result\":{\"attempt_uuid\":\"5e31bce95bff05ff\",\"state\":\"passed\"},\"retry_policy\":{\"prior_attempt\":\"d32ed5f14625e83b\",\"retry_allowed\":false}}",
+      "target": "dca3ad42e7e323d9"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "adc240a7d3a2c2dd7aedc15b133718144e5633680bbc217c879140b10cdbc006",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "target_id": "dca3ad42e7e323d9",
+    "work": [
+      "billing_scope",
+      "result_scope"
+    ]
+  },
+  "started_at": "2026-09-22T22:43:14.607060+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3289,
+    "outputTokens": 128,
+    "reasoningOutputTokens": 87,
+    "totalTokens": 3417
+  },
+  "usage_events": 1,
+  "wall_seconds": 7.113771100004669,
+  "wire_body_byte_bound": 19112
+}

@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry_queue-97031-checked-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.016328",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 1,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"{\\\"f\\\":[\\\"billing.charge_token\\\",\\\"billing.for_attempt\\\",\\\"billing.state\\\",\\\"dispatch.attempt_uuid\\\",\\\"dispatch.idempotency_key\\\",\\\"dispatch.state\\\",\\\"request_token\\\",\\\"result.attempt_uuid\\\",\\\"result.state\\\",\\\"retry_policy.prior_attempt\\\",\\\"retry_policy.retry_allowed\\\"],\\\"r\\\":[[\\\"b399bb24dda17459\\\",\\\"5e31bce95bff05ff\\\",\\\"settled\\\",\\\"5e31bce95bff05ff\\\",\\\"7e88c4399dc2537f\\\",\\\"sent\\\",\\\"dca3ad42e7e323d9\\\",\\\"5e31bce95bff05ff\\\",\\\"passed\\\",\\\"d32ed5f14625e83b\\\",false],[\\\"387531c677072254\\\",\\\"3e84306c12739b9e\\\",\\\"settled\\\",\\\"3e84306c12739b9e\\\",\\\"15528bb27e3f3836\\\",\\\"sent\\\",\\\"e56e02725a80db68\\\",\\\"3e84306c12739b9e\\\",\\\"failed\\\",\\\"77f0c7d3b863f903\\\",true]],\\\"late_event\\\":null}\"}",
+  "request": {
+    "instruction": "Continue from the certified bounded parent table. Only the memory string survives this boundary. The public decision rule and output schema repeat at execution. Use the allowance for instance facts across all possible later targets. Preserve every exact opaque identifier, status, and the field/record to which each reference belongs. Do not abbreviate values or collapse an approval of one artifact into generic approval. A compact table is allowed: JSON f lists full field paths and r lists rows in that order. Return {\"memory\":\"...\"}. Limit memory to 1050 UTF-8 bytes. Retain only the named candidates. For the selected request: if dispatch.state is not_sent, action=submit and work=[]; otherwise require result.attempt_uuid and billing.for_attempt to match dispatch.attempt_uuid. If a scope mismatches, hold with result_scope or billing_scope. Otherwise close if result.state is passed and billing.state is settled; retry if result.state is failed and retry_policy.retry_allowed is true; otherwise hold with result, billing or retry_policy for the applicable failed conditions. Return target_id=request_token. Apply the late event first.",
+    "observation": {
+      "candidates": [
+        "dca3ad42e7e323d9",
+        "e56e02725a80db68"
+      ],
+      "previous_memory": "{\"f\":[\"billing.charge_token\",\"billing.for_attempt\",\"billing.state\",\"dispatch.attempt_uuid\",\"dispatch.idempotency_key\",\"dispatch.state\",\"request_token\",\"result.attempt_uuid\",\"result.state\",\"retry_policy.prior_attempt\",\"retry_policy.retry_allowed\"],\"r\":[[\"19140fd76758cd46\",\"0da0bd9602f97b14\",\"settled\",\"0da0bd9602f97b14\",\"653b7d1095dd26e9\",\"not_sent\",\"f1d1167e891d5ecb\",\"0da0bd9602f97b14\",\"passed\",\"a09457098525fd01\",false],[\"70915d4b1396389d\",\"78cd7508a5c27f7e\",\"settled\",\"78cd7508a5c27f7e\",\"db3e14c0eab8d25e\",\"sent\",\"80f1dcdc48b67c8a\",\"78cd7508a5c27f7e\",\"passed\",\"2c6bcc29c38d3dd3\",false],[\"4f0aaba0c0edf502\",\"84413e7844e9d1e8\",\"settled\",\"7a86033a2072ab5d\",\"d9cdb521798da95b\",\"sent\",\"8ba183de278c50a7\",\"7a86033a2072ab5d\",\"passed\",\"7bca5bf9aa4eb999\",false],[\"b399bb24dda17459\",\"5e31bce95bff05ff\",\"settled\",\"5e31bce95bff05ff\",\"7e88c4399dc2537f\",\"sent\",\"dca3ad42e7e323d9\",\"5e31bce95bff05ff\",\"passed\",\"d32ed5f14625e83b\",false],[\"387531c677072254\",\"3e84306c12739b9e\",\"settled\",\"3e84306c12739b9e\",\"15528bb27e3f3836\",\"sent\",\"e56e02725a80db68\",\"3e84306c12739b9e\",\"failed\",\"77f0c7d3b863f903\",true],[\"ea4e4084abe9b94b\",\"2d1f4a755ddbae84\",\"settled\",\"2d1f4a755ddbae84\",\"4238984e18a00b16\",\"sent\",\"570eb106f2307945\",\"2d1f4a755ddbae84\",\"failed\",\"1e904cd320af167e\",true],[\"436566388fb0a7d8\",\"48906905b55603a2\",\"settled\",\"e5ba4c74f738a6b4\",\"f40a979addbc974c\",\"sent\",\"425c37d637f4dca0\",\"e5ba4c74f738a6b4\",\"passed\",\"f1b6fea749798fd8\",false]]}"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "90e43db5ebbbce3da4c9eb0f3dda0a373e78dd3250a42ee7c7e3706aa63d8ead",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "{\"f\":[\"billing.charge_token\",\"billing.for_attempt\",\"billing.state\",\"dispatch.attempt_uuid\",\"dispatch.idempotency_key\",\"dispatch.state\",\"request_token\",\"result.attempt_uuid\",\"result.state\",\"retry_policy.prior_attempt\",\"retry_policy.retry_allowed\"],\"r\":[[\"b399bb24dda17459\",\"5e31bce95bff05ff\",\"settled\",\"5e31bce95bff05ff\",\"7e88c4399dc2537f\",\"sent\",\"dca3ad42e7e323d9\",\"5e31bce95bff05ff\",\"passed\",\"d32ed5f14625e83b\",false],[\"387531c677072254\",\"3e84306c12739b9e\",\"settled\",\"3e84306c12739b9e\",\"15528bb27e3f3836\",\"sent\",\"e56e02725a80db68\",\"3e84306c12739b9e\",\"failed\",\"77f0c7d3b863f903\",true]],\"late_event\":null}"
+  },
+  "started_at": "2026-09-22T22:41:13.049355+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3539,
+    "outputTokens": 921,
+    "reasoningOutputTokens": 673,
+    "totalTokens": 4460
+  },
+  "usage_events": 1,
+  "wall_seconds": 20.314922699995805,
+  "wire_body_byte_bound": 19531
+}

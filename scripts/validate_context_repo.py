@@ -650,6 +650,19 @@ def main() -> int:
                 row["decisions"] for row in evidence["arm_totals"].values())
         except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
             errors.append(f"Schema-check study validation failed: {error}")
+    transfer_directory = ROOT / "experiments/dependency_memory/results/schema_transfer_2026-09-22"
+    if (transfer_directory / "completion.json").is_file():
+        try:
+            from experiments.dependency_memory.schema_transfer.analyze import analyze as analyze_schema_transfer
+            evidence = analyze_schema_transfer(transfer_directory)
+            saved = json.loads((transfer_directory / "analysis.json").read_text(encoding="utf-8"))
+            if saved != evidence:
+                raise ValueError("Schema-transfer saved analysis differs from model and fixture evidence")
+            counts["schema_transfer_model_requests"] = evidence["actual_model_calls"]
+            counts["schema_transfer_terminal_decisions"] = sum(
+                row["decisions"] for row in evidence["arms"].values())
+        except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
+            errors.append(f"Schema-transfer study validation failed: {error}")
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"

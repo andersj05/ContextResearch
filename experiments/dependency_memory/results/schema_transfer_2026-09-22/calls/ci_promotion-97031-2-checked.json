@@ -1,0 +1,100 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "ci_promotion-97031-2-checked",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.005963",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 1,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"target_id\":\"de6f1f2aac0862de\",\"work\":[\"approval_scope\",\"ci_scope\"]}",
+  "request": {
+    "instruction": "Use only supplied memory, target and late event. Memory may be prose, one original tool result, a list of results, or a JSON table with f=full field paths and r=rows in that field order. Apply the event to the named target, then return one exact terminal decision with sorted work. Do not call tools. Promote only if build.channel=stable, authorization.state=approved, authorization.approved_digest=build.digest, verification.subject=build.digest, verification.unit and integration both pass, and handoff.environment=prod. Otherwise hold with the exact sorted set of channel, approval, approval_scope, ci_scope, unit, integration, environment for each failed condition. Return target_id=build.digest. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "build.digest",
+        "value": "de6f1f2aac0862de"
+      },
+      "memory": "{\"f\":[\"authorization.approved_digest\",\"authorization.state\",\"authorization.ticket\",\"build.channel\",\"build.digest\",\"deployment_slot\",\"handoff.environment\",\"verification.integration\",\"verification.run\",\"verification.subject\",\"verification.unit\"],\"r\":[[\"b7bb13742d9bb474\",\"approved\",\"c929fb57115922ac\",\"stable\",\"b7bb13742d9bb474\",\"490549d84db133a0\",\"prod\",\"pass\",\"6132b96a12091854\",\"b7bb13742d9bb474\",\"pass\"],[\"afed465d050c8164\",\"approved\",\"877302d237e0aa12\",\"stable\",\"fd05a4ea3b2746a9\",\"ed99c84337253490\",\"prod\",\"pass\",\"b0a0b140b9d45554\",\"fd05a4ea3b2746a9\",\"pass\"]]}",
+      "target": "490549d84db133a0"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "4d3ce21a818cce36fd0495d15ea692f6bee86dd6a22f890124ac98fbfe0d12d4",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "target_id": "de6f1f2aac0862de",
+    "work": [
+      "approval_scope",
+      "ci_scope"
+    ]
+  },
+  "started_at": "2026-09-22T22:48:42.344232+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3083,
+    "outputTokens": 183,
+    "reasoningOutputTokens": 143,
+    "totalTokens": 3266
+  },
+  "usage_events": 1,
+  "wall_seconds": 6.037850099964999,
+  "wire_body_byte_bound": 18372
+}

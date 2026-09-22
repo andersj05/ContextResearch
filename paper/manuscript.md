@@ -1,6 +1,6 @@
 # Repeated Context Compression with Delayed Task Dependencies
 
-Working draft — September 22, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an asymptotic threshold and a tightly certified rate-two error, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, and a 72-call annotated-schema transfer test. External mathematical review, novelty assessment, realistic unseen-workflow evaluation and production benefit remain open.
+Working draft — September 22, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an asymptotic threshold and a tightly certified rate-two error, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, and a separate 126-call prospective test on constructed new schema structures. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
 
 ## Abstract
 
@@ -263,8 +263,9 @@ for unchanged or irrelevant metadata and invalidate changed evidence, previously
 absent fields, request/case identity and checker revision. Current evidence must
 be read and hashed for this check; its byte cost is reported. These perturbations
 are synthetic controls, separate from the immutable-artifact replay. Automatic
-extraction on unseen workflow structures, adversarial isolation and live
-matched-production-cost benefit remain unperformed. Claim C43.
+extraction on observed external workflows, adversarial isolation and live
+matched-production-cost benefit remain unperformed; the separate constructed
+new-schema test below does not resolve them. Claim C43.
 
 ### 8.4 Fresh GPT-6 Luna medium compaction calls
 
@@ -339,6 +340,31 @@ records tie the hand-written control in this small constructed set, but the
 direct and indexed arms are cheaper. This does not establish a novel mechanism,
 robust unannotated extraction, or an advantage over strong simple retention.
 Claim C47.
+
+The separate [prospective transfer test](../research/SCHEMA_TRANSFER_PROSPECTIVE_2026-09-22.md)
+froze retry-queue, CI-promotion and multi-stage-data evaluation schemas before
+implementing a generic, annotation-free extractor. Development used escrow and
+package schemas. Seven tool results per trace pass through 3,000- and
+1,050-byte boundaries, with target and late event revealed only afterward.
+One check preserves exact detected identifiers; another preserves their owner
+and field-path associations, including approval scope. Model-proposed memory,
+automatic direct projection, hand-written direct records, indexed recovery,
+strong prompting and full history are compared on the same 18 terminal cases.
+All 126 fresh GPT-6 Luna medium calls complete for 1.2564565 token-derived
+planning credits; actual subscription debit is not attributable.
+
+Automatic direct has 1/18 exact terminal failures versus 2/18 for stronger
+prompting and hand-written direct. Its prespecified experimental total is
+0.12644885386 synthetic credits versus 0.43840213083 for prompting, so the
+**narrow primary success criterion is met**. Indexed recovery nevertheless
+has 0/18 failures at 0.11673546631 and dominates automatic direct in this
+finite comparison. The checked model-proposal path has 2/18 failures and costs
+0.44173514106: all six prose parent proposals fail the table-only certificate
+and fall back to automatic projection. One automatic final response confuses a
+retained load run ID with the required output dataset. Thus certified retention
+does not ensure correct execution. The evaluation uses newly constructed,
+correlated traces and synthetic local prices; it does not establish novelty,
+production savings, or superiority over cheap indexed recovery. Claim C48.
 
 ## 9. Limitations and open results
 

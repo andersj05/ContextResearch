@@ -1,0 +1,263 @@
+{
+  "case_id": "ci_promotion-97031",
+  "checks": {
+    "automatic_child": {
+      "candidate_bytes_read": 564,
+      "cpu_ns": 170600,
+      "exact_ids": true,
+      "passed": true,
+      "reason": "passed",
+      "relationships": true,
+      "required_id_fields": 6,
+      "source_bytes_read": 789
+    },
+    "automatic_parent": {
+      "candidate_bytes_read": 1349,
+      "cpu_ns": 591800,
+      "exact_ids": true,
+      "passed": true,
+      "reason": "passed",
+      "relationships": true,
+      "required_id_fields": 6,
+      "source_bytes_read": 8429
+    },
+    "child_fallback": false,
+    "parent_fallback": true,
+    "proposed_child": {
+      "candidate_bytes_read": 564,
+      "cpu_ns": 165200,
+      "exact_ids": true,
+      "passed": true,
+      "reason": "passed",
+      "relationships": true,
+      "required_id_fields": 6,
+      "source_bytes_read": 789
+    },
+    "proposed_parent": {
+      "candidate_bytes_read": 1452,
+      "cpu_ns": 378900,
+      "exact_ids": false,
+      "passed": false,
+      "reason": "unstructured_or_ambiguous_memory",
+      "relationships": false,
+      "required_id_fields": 6,
+      "source_bytes_read": 8429
+    }
+  },
+  "decisions": [
+    {
+      "arm": "direct",
+      "future_id": "ci_promotion-97031-0",
+      "identity": "ci_promotion-97031-0-direct",
+      "memory_bytes": 446,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "checked",
+      "future_id": "ci_promotion-97031-0",
+      "identity": "ci_promotion-97031-0-checked",
+      "memory_bytes": 564,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "indexed",
+      "future_id": "ci_promotion-97031-0",
+      "identity": "ci_promotion-97031-0-indexed",
+      "memory_bytes": 1203,
+      "recovery_bytes": 1203,
+      "recovery_cpu_ns": 3300
+    },
+    {
+      "arm": "full",
+      "future_id": "ci_promotion-97031-0",
+      "identity": "ci_promotion-97031-0-full",
+      "memory_bytes": 8429,
+      "recovery_bytes": 8429,
+      "recovery_cpu_ns": 152800
+    },
+    {
+      "arm": "automatic",
+      "future_id": "ci_promotion-97031-0",
+      "identity": "ci_promotion-97031-0-automatic",
+      "memory_bytes": 564,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "prompt",
+      "future_id": "ci_promotion-97031-0",
+      "identity": "ci_promotion-97031-0-prompt",
+      "memory_bytes": 1006,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "full",
+      "future_id": "ci_promotion-97031-1",
+      "identity": "ci_promotion-97031-1-full",
+      "memory_bytes": 8429,
+      "recovery_bytes": 8429,
+      "recovery_cpu_ns": 165100
+    },
+    {
+      "arm": "automatic",
+      "future_id": "ci_promotion-97031-1",
+      "identity": "ci_promotion-97031-1-automatic",
+      "memory_bytes": 564,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "direct",
+      "future_id": "ci_promotion-97031-1",
+      "identity": "ci_promotion-97031-1-direct",
+      "memory_bytes": 446,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "indexed",
+      "future_id": "ci_promotion-97031-1",
+      "identity": "ci_promotion-97031-1-indexed",
+      "memory_bytes": 1203,
+      "recovery_bytes": 1203,
+      "recovery_cpu_ns": 2900
+    },
+    {
+      "arm": "prompt",
+      "future_id": "ci_promotion-97031-1",
+      "identity": "ci_promotion-97031-1-prompt",
+      "memory_bytes": 1006,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "checked",
+      "future_id": "ci_promotion-97031-1",
+      "identity": "ci_promotion-97031-1-checked",
+      "memory_bytes": 564,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "prompt",
+      "future_id": "ci_promotion-97031-2",
+      "identity": "ci_promotion-97031-2-prompt",
+      "memory_bytes": 1006,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "checked",
+      "future_id": "ci_promotion-97031-2",
+      "identity": "ci_promotion-97031-2-checked",
+      "memory_bytes": 564,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "indexed",
+      "future_id": "ci_promotion-97031-2",
+      "identity": "ci_promotion-97031-2-indexed",
+      "memory_bytes": 1203,
+      "recovery_bytes": 1203,
+      "recovery_cpu_ns": 4100
+    },
+    {
+      "arm": "full",
+      "future_id": "ci_promotion-97031-2",
+      "identity": "ci_promotion-97031-2-full",
+      "memory_bytes": 8429,
+      "recovery_bytes": 8429,
+      "recovery_cpu_ns": 110300
+    },
+    {
+      "arm": "automatic",
+      "future_id": "ci_promotion-97031-2",
+      "identity": "ci_promotion-97031-2-automatic",
+      "memory_bytes": 564,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "direct",
+      "future_id": "ci_promotion-97031-2",
+      "identity": "ci_promotion-97031-2-direct",
+      "memory_bytes": 446,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    }
+  ],
+  "family": "ci_promotion",
+  "index": {
+    "30682ecba9fbb9d3": "{\"authorization\":{\"approved_digest\":\"0f6720bf6f35fb16\",\"state\":\"approved\",\"ticket\":\"d4eec4d3d134b997\"},\"build\":{\"channel\":\"stable\",\"digest\":\"0f6720bf6f35fb16\"},\"deployment_slot\":\"30682ecba9fbb9d3\",\"handoff\":{\"environment\":\"prod\"},\"operator_notes\":\"Worker log archived an earlier draft d58b2fa5634ca5f8; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft d58b2fa5634ca5f8; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft d58b2fa5634ca5f8; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft d58b2fa5634ca5f8; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft d58b2fa5634ca5f8; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft d58b2fa5634ca5f8; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft d58b2fa5634ca5f8; dashboard labels, timing and operator chat are not gate evidence. \",\"verification\":{\"integration\":\"pass\",\"run\":\"292e4cf91726b92a\",\"subject\":\"0f6720bf6f35fb16\",\"unit\":\"pass\"}}",
+    "46125d5bf41afc97": "{\"authorization\":{\"approved_digest\":\"722b60fee112bfa9\",\"state\":\"approved\",\"ticket\":\"2b620c408f9df40b\"},\"build\":{\"channel\":\"stable\",\"digest\":\"d9d3f336c0653f65\"},\"deployment_slot\":\"46125d5bf41afc97\",\"handoff\":{\"environment\":\"prod\"},\"operator_notes\":\"Worker log archived an earlier draft 608dd07f851669a1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 608dd07f851669a1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 608dd07f851669a1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 608dd07f851669a1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 608dd07f851669a1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 608dd07f851669a1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 608dd07f851669a1; dashboard labels, timing and operator chat are not gate evidence. \",\"verification\":{\"integration\":\"pass\",\"run\":\"048b2da00002f270\",\"subject\":\"d9d3f336c0653f65\",\"unit\":\"pass\"}}",
+    "490549d84db133a0": "{\"authorization\":{\"approved_digest\":\"b7bb13742d9bb474\",\"state\":\"approved\",\"ticket\":\"c929fb57115922ac\"},\"build\":{\"channel\":\"stable\",\"digest\":\"b7bb13742d9bb474\"},\"deployment_slot\":\"490549d84db133a0\",\"handoff\":{\"environment\":\"prod\"},\"operator_notes\":\"Worker log archived an earlier draft c48a9df3e0faa4ab; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c48a9df3e0faa4ab; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c48a9df3e0faa4ab; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c48a9df3e0faa4ab; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c48a9df3e0faa4ab; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c48a9df3e0faa4ab; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c48a9df3e0faa4ab; dashboard labels, timing and operator chat are not gate evidence. \",\"verification\":{\"integration\":\"pass\",\"run\":\"6132b96a12091854\",\"subject\":\"b7bb13742d9bb474\",\"unit\":\"pass\"}}",
+    "4a474d49b59f2cdc": "{\"authorization\":{\"approved_digest\":\"d111bd64aea68952\",\"state\":\"approved\",\"ticket\":\"a370e9aa84839ec2\"},\"build\":{\"channel\":\"stable\",\"digest\":\"d111bd64aea68952\"},\"deployment_slot\":\"4a474d49b59f2cdc\",\"handoff\":{\"environment\":\"prod\"},\"operator_notes\":\"Worker log archived an earlier draft 85bc448ad5b43382; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 85bc448ad5b43382; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 85bc448ad5b43382; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 85bc448ad5b43382; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 85bc448ad5b43382; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 85bc448ad5b43382; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 85bc448ad5b43382; dashboard labels, timing and operator chat are not gate evidence. \",\"verification\":{\"integration\":\"fail\",\"run\":\"8b930bac0b3dfb00\",\"subject\":\"d111bd64aea68952\",\"unit\":\"pass\"}}",
+    "8cf6802b4c8e0662": "{\"authorization\":{\"approved_digest\":\"466cb0cb79576e93\",\"state\":\"approved\",\"ticket\":\"b0d6247d517632a1\"},\"build\":{\"channel\":\"stable\",\"digest\":\"466cb0cb79576e93\"},\"deployment_slot\":\"8cf6802b4c8e0662\",\"handoff\":{\"environment\":\"prod\"},\"operator_notes\":\"Worker log archived an earlier draft f0af12ca89fca7d4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f0af12ca89fca7d4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f0af12ca89fca7d4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f0af12ca89fca7d4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f0af12ca89fca7d4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f0af12ca89fca7d4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f0af12ca89fca7d4; dashboard labels, timing and operator chat are not gate evidence. \",\"verification\":{\"integration\":\"fail\",\"run\":\"8cc189ab23ff4173\",\"subject\":\"466cb0cb79576e93\",\"unit\":\"pass\"}}",
+    "db893b803f602524": "{\"authorization\":{\"approved_digest\":\"c54f85d4704b7a00\",\"state\":\"approved\",\"ticket\":\"8c741a41a089f402\"},\"build\":{\"channel\":\"stable\",\"digest\":\"c54f85d4704b7a00\"},\"deployment_slot\":\"db893b803f602524\",\"handoff\":{\"environment\":\"prod\"},\"operator_notes\":\"Worker log archived an earlier draft 22b3241c2b36e354; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 22b3241c2b36e354; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 22b3241c2b36e354; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 22b3241c2b36e354; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 22b3241c2b36e354; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 22b3241c2b36e354; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 22b3241c2b36e354; dashboard labels, timing and operator chat are not gate evidence. \",\"verification\":{\"integration\":\"pass\",\"run\":\"15de45b65fd38c27\",\"subject\":\"f10e4c976dc3a9d7\",\"unit\":\"pass\"}}",
+    "ed99c84337253490": "{\"authorization\":{\"approved_digest\":\"afed465d050c8164\",\"state\":\"approved\",\"ticket\":\"877302d237e0aa12\"},\"build\":{\"channel\":\"stable\",\"digest\":\"fd05a4ea3b2746a9\"},\"deployment_slot\":\"ed99c84337253490\",\"handoff\":{\"environment\":\"prod\"},\"operator_notes\":\"Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. \",\"verification\":{\"integration\":\"pass\",\"run\":\"b0a0b140b9d45554\",\"subject\":\"fd05a4ea3b2746a9\",\"unit\":\"pass\"}}"
+  },
+  "infeasible": {},
+  "local": {
+    "automatic": {
+      "bytes_read": 23116,
+      "cpu_ns": 1311400
+    },
+    "checked": {
+      "bytes_read": 39922,
+      "cpu_ns": 2064900
+    },
+    "direct": {
+      "bytes_read": 9470,
+      "cpu_ns": 170400
+    },
+    "full": {
+      "bytes_read": 25287,
+      "cpu_ns": 428200
+    },
+    "indexed": {
+      "bytes_read": 12038,
+      "cpu_ns": 262300
+    },
+    "prompt": {
+      "bytes_read": 2458,
+      "cpu_ns": 31900
+    }
+  },
+  "memories": {
+    "automatic": {
+      "child": "{\"f\":[\"authorization.approved_digest\",\"authorization.state\",\"authorization.ticket\",\"build.channel\",\"build.digest\",\"deployment_slot\",\"handoff.environment\",\"verification.integration\",\"verification.run\",\"verification.subject\",\"verification.unit\"],\"r\":[[\"b7bb13742d9bb474\",\"approved\",\"c929fb57115922ac\",\"stable\",\"b7bb13742d9bb474\",\"490549d84db133a0\",\"prod\",\"pass\",\"6132b96a12091854\",\"b7bb13742d9bb474\",\"pass\"],[\"afed465d050c8164\",\"approved\",\"877302d237e0aa12\",\"stable\",\"fd05a4ea3b2746a9\",\"ed99c84337253490\",\"prod\",\"pass\",\"b0a0b140b9d45554\",\"fd05a4ea3b2746a9\",\"pass\"]]}",
+      "parent": "{\"f\":[\"authorization.approved_digest\",\"authorization.state\",\"authorization.ticket\",\"build.channel\",\"build.digest\",\"deployment_slot\",\"handoff.environment\",\"verification.integration\",\"verification.run\",\"verification.subject\",\"verification.unit\"],\"r\":[[\"c54f85d4704b7a00\",\"approved\",\"8c741a41a089f402\",\"stable\",\"c54f85d4704b7a00\",\"db893b803f602524\",\"prod\",\"pass\",\"15de45b65fd38c27\",\"f10e4c976dc3a9d7\",\"pass\"],[\"0f6720bf6f35fb16\",\"approved\",\"d4eec4d3d134b997\",\"stable\",\"0f6720bf6f35fb16\",\"30682ecba9fbb9d3\",\"prod\",\"pass\",\"292e4cf91726b92a\",\"0f6720bf6f35fb16\",\"pass\"],[\"466cb0cb79576e93\",\"approved\",\"b0d6247d517632a1\",\"stable\",\"466cb0cb79576e93\",\"8cf6802b4c8e0662\",\"prod\",\"fail\",\"8cc189ab23ff4173\",\"466cb0cb79576e93\",\"pass\"],[\"b7bb13742d9bb474\",\"approved\",\"c929fb57115922ac\",\"stable\",\"b7bb13742d9bb474\",\"490549d84db133a0\",\"prod\",\"pass\",\"6132b96a12091854\",\"b7bb13742d9bb474\",\"pass\"],[\"afed465d050c8164\",\"approved\",\"877302d237e0aa12\",\"stable\",\"fd05a4ea3b2746a9\",\"ed99c84337253490\",\"prod\",\"pass\",\"b0a0b140b9d45554\",\"fd05a4ea3b2746a9\",\"pass\"],[\"722b60fee112bfa9\",\"approved\",\"2b620c408f9df40b\",\"stable\",\"d9d3f336c0653f65\",\"46125d5bf41afc97\",\"prod\",\"pass\",\"048b2da00002f270\",\"d9d3f336c0653f65\",\"pass\"],[\"d111bd64aea68952\",\"approved\",\"a370e9aa84839ec2\",\"stable\",\"d111bd64aea68952\",\"4a474d49b59f2cdc\",\"prod\",\"fail\",\"8b930bac0b3dfb00\",\"d111bd64aea68952\",\"pass\"]]}"
+    },
+    "checked": {
+      "child": "{\"f\":[\"authorization.approved_digest\",\"authorization.state\",\"authorization.ticket\",\"build.channel\",\"build.digest\",\"deployment_slot\",\"handoff.environment\",\"verification.integration\",\"verification.run\",\"verification.subject\",\"verification.unit\"],\"r\":[[\"b7bb13742d9bb474\",\"approved\",\"c929fb57115922ac\",\"stable\",\"b7bb13742d9bb474\",\"490549d84db133a0\",\"prod\",\"pass\",\"6132b96a12091854\",\"b7bb13742d9bb474\",\"pass\"],[\"afed465d050c8164\",\"approved\",\"877302d237e0aa12\",\"stable\",\"fd05a4ea3b2746a9\",\"ed99c84337253490\",\"prod\",\"pass\",\"b0a0b140b9d45554\",\"fd05a4ea3b2746a9\",\"pass\"]]}",
+      "child_bounds": {
+        "admitted_bytes": 564,
+        "clipped": false,
+        "proposed_bytes": 564
+      },
+      "parent": "{\"f\":[\"authorization.approved_digest\",\"authorization.state\",\"authorization.ticket\",\"build.channel\",\"build.digest\",\"deployment_slot\",\"handoff.environment\",\"verification.integration\",\"verification.run\",\"verification.subject\",\"verification.unit\"],\"r\":[[\"c54f85d4704b7a00\",\"approved\",\"8c741a41a089f402\",\"stable\",\"c54f85d4704b7a00\",\"db893b803f602524\",\"prod\",\"pass\",\"15de45b65fd38c27\",\"f10e4c976dc3a9d7\",\"pass\"],[\"0f6720bf6f35fb16\",\"approved\",\"d4eec4d3d134b997\",\"stable\",\"0f6720bf6f35fb16\",\"30682ecba9fbb9d3\",\"prod\",\"pass\",\"292e4cf91726b92a\",\"0f6720bf6f35fb16\",\"pass\"],[\"466cb0cb79576e93\",\"approved\",\"b0d6247d517632a1\",\"stable\",\"466cb0cb79576e93\",\"8cf6802b4c8e0662\",\"prod\",\"fail\",\"8cc189ab23ff4173\",\"466cb0cb79576e93\",\"pass\"],[\"b7bb13742d9bb474\",\"approved\",\"c929fb57115922ac\",\"stable\",\"b7bb13742d9bb474\",\"490549d84db133a0\",\"prod\",\"pass\",\"6132b96a12091854\",\"b7bb13742d9bb474\",\"pass\"],[\"afed465d050c8164\",\"approved\",\"877302d237e0aa12\",\"stable\",\"fd05a4ea3b2746a9\",\"ed99c84337253490\",\"prod\",\"pass\",\"b0a0b140b9d45554\",\"fd05a4ea3b2746a9\",\"pass\"],[\"722b60fee112bfa9\",\"approved\",\"2b620c408f9df40b\",\"stable\",\"d9d3f336c0653f65\",\"46125d5bf41afc97\",\"prod\",\"pass\",\"048b2da00002f270\",\"d9d3f336c0653f65\",\"pass\"],[\"d111bd64aea68952\",\"approved\",\"a370e9aa84839ec2\",\"stable\",\"d111bd64aea68952\",\"4a474d49b59f2cdc\",\"prod\",\"fail\",\"8b930bac0b3dfb00\",\"d111bd64aea68952\",\"pass\"]]}"
+    },
+    "direct": {
+      "child": "{\"f\":[\"deployment_slot\",\"build.digest\",\"build.channel\",\"authorization.approved_digest\",\"authorization.state\",\"verification.subject\",\"verification.unit\",\"verification.integration\",\"handoff.environment\"],\"r\":[[\"490549d84db133a0\",\"b7bb13742d9bb474\",\"stable\",\"b7bb13742d9bb474\",\"approved\",\"b7bb13742d9bb474\",\"pass\",\"pass\",\"prod\"],[\"ed99c84337253490\",\"fd05a4ea3b2746a9\",\"stable\",\"afed465d050c8164\",\"approved\",\"fd05a4ea3b2746a9\",\"pass\",\"pass\",\"prod\"]]}",
+      "parent": "{\"f\":[\"deployment_slot\",\"build.digest\",\"build.channel\",\"authorization.approved_digest\",\"authorization.state\",\"verification.subject\",\"verification.unit\",\"verification.integration\",\"handoff.environment\"],\"r\":[[\"db893b803f602524\",\"c54f85d4704b7a00\",\"stable\",\"c54f85d4704b7a00\",\"approved\",\"f10e4c976dc3a9d7\",\"pass\",\"pass\",\"prod\"],[\"30682ecba9fbb9d3\",\"0f6720bf6f35fb16\",\"stable\",\"0f6720bf6f35fb16\",\"approved\",\"0f6720bf6f35fb16\",\"pass\",\"pass\",\"prod\"],[\"8cf6802b4c8e0662\",\"466cb0cb79576e93\",\"stable\",\"466cb0cb79576e93\",\"approved\",\"466cb0cb79576e93\",\"pass\",\"fail\",\"prod\"],[\"490549d84db133a0\",\"b7bb13742d9bb474\",\"stable\",\"b7bb13742d9bb474\",\"approved\",\"b7bb13742d9bb474\",\"pass\",\"pass\",\"prod\"],[\"ed99c84337253490\",\"fd05a4ea3b2746a9\",\"stable\",\"afed465d050c8164\",\"approved\",\"fd05a4ea3b2746a9\",\"pass\",\"pass\",\"prod\"],[\"46125d5bf41afc97\",\"d9d3f336c0653f65\",\"stable\",\"722b60fee112bfa9\",\"approved\",\"d9d3f336c0653f65\",\"pass\",\"pass\",\"prod\"],[\"4a474d49b59f2cdc\",\"d111bd64aea68952\",\"stable\",\"d111bd64aea68952\",\"approved\",\"d111bd64aea68952\",\"pass\",\"fail\",\"prod\"]]}"
+    },
+    "prompt": {
+      "child": "Late event: none supplied. Candidates (deployment_slot): 490549d84db133a0, ed99c84337253490. f=[build.digest,build.channel,authorization.approved_digest,authorization.state,authorization.ticket,deployment_slot,handoff.environment,verification.subject,verification.unit,verification.integration,verification.run,operator_notes.archived_draft]; r=[[b7bb13742d9bb474,stable,b7bb13742d9bb474,approved,c929fb57115922ac,490549d84db133a0,prod,b7bb13742d9bb474,pass,pass,6132b96a12091854,c48a9df3e0faa4ab],[fd05a4ea3b2746a9,stable,afed465d050c8164,approved,877302d237e0aa12,ed99c84337253490,prod,fd05a4ea3b2746a9,pass,pass,b0a0b140b9d45554,fdbc0c3fc5dd2ec3]]. Order as candidates. Gate: promote only stable, approved, approved_digest=digest, verification.subject=digest, unit/integration pass, environment prod; else hold with sorted failed set among channel,approval,approval_scope,ci_scope,unit,integration,environment. 490549d84db133a0 passes. ed99c84337253490 fails approval_scope only. target_id=build.digest.",
+      "child_bounds": {
+        "admitted_bytes": 1006,
+        "clipped": false,
+        "proposed_bytes": 1006
+      },
+      "parent": "f=[build.digest,build.channel,authorization.approved_digest,authorization.state,authorization.ticket,deployment_slot,handoff.environment,verification.subject,verification.unit,verification.integration,verification.run,operator_notes.archived_draft];r=[ [c54f85d4704b7a00,stable,c54f85d4704b7a00,approved,8c741a41a089f402,db893b803f602524,prod,f10e4c976dc3a9d7,pass,pass,15de45b65fd38c27,22b3241c2b36e354],[0f6720bf6f35fb16,stable,0f6720bf6f35fb16,approved,d4eec4d3d134b997,30682ecba9fbb9d3,prod,0f6720bf6f35fb16,pass,pass,292e4cf91726b92a,d58b2fa5634ca5f8],[466cb0cb79576e93,stable,466cb0cb79576e93,approved,b0d6247d517632a1,8cf6802b4c8e0662,prod,466cb0cb79576e93,pass,fail,8cc189ab23ff4173,f0af12ca89fca7d4],[b7bb13742d9bb474,stable,b7bb13742d9bb474,approved,c929fb57115922ac,490549d84db133a0,prod,b7bb13742d9bb474,pass,pass,6132b96a12091854,c48a9df3e0faa4ab],[fd05a4ea3b2746a9,stable,afed465d050c8164,approved,877302d237e0aa12,ed99c84337253490,prod,fd05a4ea3b2746a9,pass,pass,b0a0b140b9d45554,fdbc0c3fc5dd2ec3],[d9d3f336c0653f65,stable,722b60fee112bfa9,approved,2b620c408f9df40b,46125d5bf41afc97,prod,d9d3f336c0653f65,pass,pass,048b2da00002f270,608dd07f851669a1],[d111bd64aea68952,stable,d111bd64aea68952,approved,a370e9aa84839ec2,4a474d49b59f2cdc,prod,d111bd64aea68952,pass,fail,8b930bac0b3dfb00,85bc448ad5b43382]]; records in tool_results order; no separate late-event payload supplied. operator_notes drafts are diagnostic only, not gate evidence.",
+      "parent_bounds": {
+        "admitted_bytes": 1452,
+        "clipped": false,
+        "proposed_bytes": 1452
+      }
+    }
+  }
+}

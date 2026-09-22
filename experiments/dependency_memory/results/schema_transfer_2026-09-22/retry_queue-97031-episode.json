@@ -1,0 +1,263 @@
+{
+  "case_id": "retry_queue-97031",
+  "checks": {
+    "automatic_child": {
+      "candidate_bytes_read": 586,
+      "cpu_ns": 253600,
+      "exact_ids": true,
+      "passed": true,
+      "reason": "passed",
+      "relationships": true,
+      "required_id_fields": 7,
+      "source_bytes_read": 814
+    },
+    "automatic_parent": {
+      "candidate_bytes_read": 1424,
+      "cpu_ns": 576800,
+      "exact_ids": true,
+      "passed": true,
+      "reason": "passed",
+      "relationships": true,
+      "required_id_fields": 7,
+      "source_bytes_read": 8655
+    },
+    "child_fallback": true,
+    "parent_fallback": true,
+    "proposed_child": {
+      "candidate_bytes_read": 604,
+      "cpu_ns": 137600,
+      "exact_ids": false,
+      "passed": false,
+      "reason": "unstructured_or_ambiguous_memory",
+      "relationships": false,
+      "required_id_fields": 7,
+      "source_bytes_read": 814
+    },
+    "proposed_parent": {
+      "candidate_bytes_read": 2037,
+      "cpu_ns": 281400,
+      "exact_ids": false,
+      "passed": false,
+      "reason": "unstructured_or_ambiguous_memory",
+      "relationships": false,
+      "required_id_fields": 7,
+      "source_bytes_read": 8655
+    }
+  },
+  "decisions": [
+    {
+      "arm": "direct",
+      "future_id": "retry_queue-97031-0",
+      "identity": "retry_queue-97031-0-direct",
+      "memory_bytes": 393,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "indexed",
+      "future_id": "retry_queue-97031-0",
+      "identity": "retry_queue-97031-0-indexed",
+      "memory_bytes": 1234,
+      "recovery_bytes": 1234,
+      "recovery_cpu_ns": 2400
+    },
+    {
+      "arm": "checked",
+      "future_id": "retry_queue-97031-0",
+      "identity": "retry_queue-97031-0-checked",
+      "memory_bytes": 586,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "prompt",
+      "future_id": "retry_queue-97031-0",
+      "identity": "retry_queue-97031-0-prompt",
+      "memory_bytes": 1050,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "full",
+      "future_id": "retry_queue-97031-0",
+      "identity": "retry_queue-97031-0-full",
+      "memory_bytes": 8655,
+      "recovery_bytes": 8655,
+      "recovery_cpu_ns": 157000
+    },
+    {
+      "arm": "automatic",
+      "future_id": "retry_queue-97031-0",
+      "identity": "retry_queue-97031-0-automatic",
+      "memory_bytes": 586,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "prompt",
+      "future_id": "retry_queue-97031-1",
+      "identity": "retry_queue-97031-1-prompt",
+      "memory_bytes": 1050,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "full",
+      "future_id": "retry_queue-97031-1",
+      "identity": "retry_queue-97031-1-full",
+      "memory_bytes": 8655,
+      "recovery_bytes": 8655,
+      "recovery_cpu_ns": 152900
+    },
+    {
+      "arm": "indexed",
+      "future_id": "retry_queue-97031-1",
+      "identity": "retry_queue-97031-1-indexed",
+      "memory_bytes": 1234,
+      "recovery_bytes": 1234,
+      "recovery_cpu_ns": 4800
+    },
+    {
+      "arm": "checked",
+      "future_id": "retry_queue-97031-1",
+      "identity": "retry_queue-97031-1-checked",
+      "memory_bytes": 586,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "automatic",
+      "future_id": "retry_queue-97031-1",
+      "identity": "retry_queue-97031-1-automatic",
+      "memory_bytes": 586,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "direct",
+      "future_id": "retry_queue-97031-1",
+      "identity": "retry_queue-97031-1-direct",
+      "memory_bytes": 393,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "checked",
+      "future_id": "retry_queue-97031-2",
+      "identity": "retry_queue-97031-2-checked",
+      "memory_bytes": 586,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "direct",
+      "future_id": "retry_queue-97031-2",
+      "identity": "retry_queue-97031-2-direct",
+      "memory_bytes": 393,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "prompt",
+      "future_id": "retry_queue-97031-2",
+      "identity": "retry_queue-97031-2-prompt",
+      "memory_bytes": 1050,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "automatic",
+      "future_id": "retry_queue-97031-2",
+      "identity": "retry_queue-97031-2-automatic",
+      "memory_bytes": 586,
+      "recovery_bytes": 0,
+      "recovery_cpu_ns": 0
+    },
+    {
+      "arm": "indexed",
+      "future_id": "retry_queue-97031-2",
+      "identity": "retry_queue-97031-2-indexed",
+      "memory_bytes": 1235,
+      "recovery_bytes": 1235,
+      "recovery_cpu_ns": 3300
+    },
+    {
+      "arm": "full",
+      "future_id": "retry_queue-97031-2",
+      "identity": "retry_queue-97031-2-full",
+      "memory_bytes": 8655,
+      "recovery_bytes": 8655,
+      "recovery_cpu_ns": 144800
+    }
+  ],
+  "family": "retry_queue",
+  "index": {
+    "425c37d637f4dca0": "{\"billing\":{\"charge_token\":\"436566388fb0a7d8\",\"for_attempt\":\"48906905b55603a2\",\"state\":\"settled\"},\"dispatch\":{\"attempt_uuid\":\"e5ba4c74f738a6b4\",\"idempotency_key\":\"f40a979addbc974c\",\"state\":\"sent\"},\"operator_notes\":\"Worker log archived an earlier draft 3542023c858ea049; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 3542023c858ea049; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 3542023c858ea049; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 3542023c858ea049; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 3542023c858ea049; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 3542023c858ea049; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 3542023c858ea049; dashboard labels, timing and operator chat are not gate evidence. \",\"request_token\":\"425c37d637f4dca0\",\"result\":{\"attempt_uuid\":\"e5ba4c74f738a6b4\",\"state\":\"passed\"},\"retry_policy\":{\"prior_attempt\":\"f1b6fea749798fd8\",\"retry_allowed\":false}}",
+    "570eb106f2307945": "{\"billing\":{\"charge_token\":\"ea4e4084abe9b94b\",\"for_attempt\":\"2d1f4a755ddbae84\",\"state\":\"settled\"},\"dispatch\":{\"attempt_uuid\":\"2d1f4a755ddbae84\",\"idempotency_key\":\"4238984e18a00b16\",\"state\":\"sent\"},\"operator_notes\":\"Worker log archived an earlier draft 67c06ce0b8f20c44; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 67c06ce0b8f20c44; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 67c06ce0b8f20c44; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 67c06ce0b8f20c44; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 67c06ce0b8f20c44; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 67c06ce0b8f20c44; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 67c06ce0b8f20c44; dashboard labels, timing and operator chat are not gate evidence. \",\"request_token\":\"570eb106f2307945\",\"result\":{\"attempt_uuid\":\"2d1f4a755ddbae84\",\"state\":\"failed\"},\"retry_policy\":{\"prior_attempt\":\"1e904cd320af167e\",\"retry_allowed\":true}}",
+    "80f1dcdc48b67c8a": "{\"billing\":{\"charge_token\":\"70915d4b1396389d\",\"for_attempt\":\"78cd7508a5c27f7e\",\"state\":\"settled\"},\"dispatch\":{\"attempt_uuid\":\"78cd7508a5c27f7e\",\"idempotency_key\":\"db3e14c0eab8d25e\",\"state\":\"sent\"},\"operator_notes\":\"Worker log archived an earlier draft 3342d4ff21c97340; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 3342d4ff21c97340; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 3342d4ff21c97340; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 3342d4ff21c97340; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 3342d4ff21c97340; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 3342d4ff21c97340; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 3342d4ff21c97340; dashboard labels, timing and operator chat are not gate evidence. \",\"request_token\":\"80f1dcdc48b67c8a\",\"result\":{\"attempt_uuid\":\"78cd7508a5c27f7e\",\"state\":\"passed\"},\"retry_policy\":{\"prior_attempt\":\"2c6bcc29c38d3dd3\",\"retry_allowed\":false}}",
+    "8ba183de278c50a7": "{\"billing\":{\"charge_token\":\"4f0aaba0c0edf502\",\"for_attempt\":\"84413e7844e9d1e8\",\"state\":\"settled\"},\"dispatch\":{\"attempt_uuid\":\"7a86033a2072ab5d\",\"idempotency_key\":\"d9cdb521798da95b\",\"state\":\"sent\"},\"operator_notes\":\"Worker log archived an earlier draft 9728e9e0f75d111b; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9728e9e0f75d111b; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9728e9e0f75d111b; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9728e9e0f75d111b; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9728e9e0f75d111b; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9728e9e0f75d111b; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 9728e9e0f75d111b; dashboard labels, timing and operator chat are not gate evidence. \",\"request_token\":\"8ba183de278c50a7\",\"result\":{\"attempt_uuid\":\"7a86033a2072ab5d\",\"state\":\"passed\"},\"retry_policy\":{\"prior_attempt\":\"7bca5bf9aa4eb999\",\"retry_allowed\":false}}",
+    "dca3ad42e7e323d9": "{\"billing\":{\"charge_token\":\"b399bb24dda17459\",\"for_attempt\":\"5e31bce95bff05ff\",\"state\":\"settled\"},\"dispatch\":{\"attempt_uuid\":\"5e31bce95bff05ff\",\"idempotency_key\":\"7e88c4399dc2537f\",\"state\":\"sent\"},\"operator_notes\":\"Worker log archived an earlier draft 12a4a6b6d5ab7cb1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 12a4a6b6d5ab7cb1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 12a4a6b6d5ab7cb1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 12a4a6b6d5ab7cb1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 12a4a6b6d5ab7cb1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 12a4a6b6d5ab7cb1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 12a4a6b6d5ab7cb1; dashboard labels, timing and operator chat are not gate evidence. \",\"request_token\":\"dca3ad42e7e323d9\",\"result\":{\"attempt_uuid\":\"5e31bce95bff05ff\",\"state\":\"passed\"},\"retry_policy\":{\"prior_attempt\":\"d32ed5f14625e83b\",\"retry_allowed\":false}}",
+    "e56e02725a80db68": "{\"billing\":{\"charge_token\":\"387531c677072254\",\"for_attempt\":\"3e84306c12739b9e\",\"state\":\"settled\"},\"dispatch\":{\"attempt_uuid\":\"3e84306c12739b9e\",\"idempotency_key\":\"15528bb27e3f3836\",\"state\":\"sent\"},\"operator_notes\":\"Worker log archived an earlier draft a3f170472f835787; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a3f170472f835787; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a3f170472f835787; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a3f170472f835787; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a3f170472f835787; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a3f170472f835787; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a3f170472f835787; dashboard labels, timing and operator chat are not gate evidence. \",\"request_token\":\"e56e02725a80db68\",\"result\":{\"attempt_uuid\":\"3e84306c12739b9e\",\"state\":\"failed\"},\"retry_policy\":{\"prior_attempt\":\"77f0c7d3b863f903\",\"retry_allowed\":true}}",
+    "f1d1167e891d5ecb": "{\"billing\":{\"charge_token\":\"19140fd76758cd46\",\"for_attempt\":\"0da0bd9602f97b14\",\"state\":\"settled\"},\"dispatch\":{\"attempt_uuid\":\"0da0bd9602f97b14\",\"idempotency_key\":\"653b7d1095dd26e9\",\"state\":\"not_sent\"},\"operator_notes\":\"Worker log archived an earlier draft a7122c6106e775e9; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a7122c6106e775e9; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a7122c6106e775e9; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a7122c6106e775e9; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a7122c6106e775e9; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a7122c6106e775e9; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft a7122c6106e775e9; dashboard labels, timing and operator chat are not gate evidence. \",\"request_token\":\"f1d1167e891d5ecb\",\"result\":{\"attempt_uuid\":\"0da0bd9602f97b14\",\"state\":\"passed\"},\"retry_policy\":{\"prior_attempt\":\"a09457098525fd01\",\"retry_allowed\":false}}"
+  },
+  "infeasible": {},
+  "local": {
+    "automatic": {
+      "bytes_read": 23794,
+      "cpu_ns": 1441900
+    },
+    "checked": {
+      "bytes_read": 42205,
+      "cpu_ns": 2132600
+    },
+    "direct": {
+      "bytes_read": 9601,
+      "cpu_ns": 162600
+    },
+    "full": {
+      "bytes_read": 25965,
+      "cpu_ns": 454700
+    },
+    "indexed": {
+      "bytes_read": 12358,
+      "cpu_ns": 159200
+    },
+    "prompt": {
+      "bytes_read": 3168,
+      "cpu_ns": 52200
+    }
+  },
+  "memories": {
+    "automatic": {
+      "child": "{\"f\":[\"billing.charge_token\",\"billing.for_attempt\",\"billing.state\",\"dispatch.attempt_uuid\",\"dispatch.idempotency_key\",\"dispatch.state\",\"request_token\",\"result.attempt_uuid\",\"result.state\",\"retry_policy.prior_attempt\",\"retry_policy.retry_allowed\"],\"r\":[[\"b399bb24dda17459\",\"5e31bce95bff05ff\",\"settled\",\"5e31bce95bff05ff\",\"7e88c4399dc2537f\",\"sent\",\"dca3ad42e7e323d9\",\"5e31bce95bff05ff\",\"passed\",\"d32ed5f14625e83b\",false],[\"387531c677072254\",\"3e84306c12739b9e\",\"settled\",\"3e84306c12739b9e\",\"15528bb27e3f3836\",\"sent\",\"e56e02725a80db68\",\"3e84306c12739b9e\",\"failed\",\"77f0c7d3b863f903\",true]]}",
+      "parent": "{\"f\":[\"billing.charge_token\",\"billing.for_attempt\",\"billing.state\",\"dispatch.attempt_uuid\",\"dispatch.idempotency_key\",\"dispatch.state\",\"request_token\",\"result.attempt_uuid\",\"result.state\",\"retry_policy.prior_attempt\",\"retry_policy.retry_allowed\"],\"r\":[[\"19140fd76758cd46\",\"0da0bd9602f97b14\",\"settled\",\"0da0bd9602f97b14\",\"653b7d1095dd26e9\",\"not_sent\",\"f1d1167e891d5ecb\",\"0da0bd9602f97b14\",\"passed\",\"a09457098525fd01\",false],[\"70915d4b1396389d\",\"78cd7508a5c27f7e\",\"settled\",\"78cd7508a5c27f7e\",\"db3e14c0eab8d25e\",\"sent\",\"80f1dcdc48b67c8a\",\"78cd7508a5c27f7e\",\"passed\",\"2c6bcc29c38d3dd3\",false],[\"4f0aaba0c0edf502\",\"84413e7844e9d1e8\",\"settled\",\"7a86033a2072ab5d\",\"d9cdb521798da95b\",\"sent\",\"8ba183de278c50a7\",\"7a86033a2072ab5d\",\"passed\",\"7bca5bf9aa4eb999\",false],[\"b399bb24dda17459\",\"5e31bce95bff05ff\",\"settled\",\"5e31bce95bff05ff\",\"7e88c4399dc2537f\",\"sent\",\"dca3ad42e7e323d9\",\"5e31bce95bff05ff\",\"passed\",\"d32ed5f14625e83b\",false],[\"387531c677072254\",\"3e84306c12739b9e\",\"settled\",\"3e84306c12739b9e\",\"15528bb27e3f3836\",\"sent\",\"e56e02725a80db68\",\"3e84306c12739b9e\",\"failed\",\"77f0c7d3b863f903\",true],[\"ea4e4084abe9b94b\",\"2d1f4a755ddbae84\",\"settled\",\"2d1f4a755ddbae84\",\"4238984e18a00b16\",\"sent\",\"570eb106f2307945\",\"2d1f4a755ddbae84\",\"failed\",\"1e904cd320af167e\",true],[\"436566388fb0a7d8\",\"48906905b55603a2\",\"settled\",\"e5ba4c74f738a6b4\",\"f40a979addbc974c\",\"sent\",\"425c37d637f4dca0\",\"e5ba4c74f738a6b4\",\"passed\",\"f1b6fea749798fd8\",false]]}"
+    },
+    "checked": {
+      "child": "{\"f\":[\"billing.charge_token\",\"billing.for_attempt\",\"billing.state\",\"dispatch.attempt_uuid\",\"dispatch.idempotency_key\",\"dispatch.state\",\"request_token\",\"result.attempt_uuid\",\"result.state\",\"retry_policy.prior_attempt\",\"retry_policy.retry_allowed\"],\"r\":[[\"b399bb24dda17459\",\"5e31bce95bff05ff\",\"settled\",\"5e31bce95bff05ff\",\"7e88c4399dc2537f\",\"sent\",\"dca3ad42e7e323d9\",\"5e31bce95bff05ff\",\"passed\",\"d32ed5f14625e83b\",false],[\"387531c677072254\",\"3e84306c12739b9e\",\"settled\",\"3e84306c12739b9e\",\"15528bb27e3f3836\",\"sent\",\"e56e02725a80db68\",\"3e84306c12739b9e\",\"failed\",\"77f0c7d3b863f903\",true]]}",
+      "child_bounds": {
+        "admitted_bytes": 604,
+        "clipped": false,
+        "proposed_bytes": 604
+      },
+      "parent": "{\"f\":[\"billing.charge_token\",\"billing.for_attempt\",\"billing.state\",\"dispatch.attempt_uuid\",\"dispatch.idempotency_key\",\"dispatch.state\",\"request_token\",\"result.attempt_uuid\",\"result.state\",\"retry_policy.prior_attempt\",\"retry_policy.retry_allowed\"],\"r\":[[\"19140fd76758cd46\",\"0da0bd9602f97b14\",\"settled\",\"0da0bd9602f97b14\",\"653b7d1095dd26e9\",\"not_sent\",\"f1d1167e891d5ecb\",\"0da0bd9602f97b14\",\"passed\",\"a09457098525fd01\",false],[\"70915d4b1396389d\",\"78cd7508a5c27f7e\",\"settled\",\"78cd7508a5c27f7e\",\"db3e14c0eab8d25e\",\"sent\",\"80f1dcdc48b67c8a\",\"78cd7508a5c27f7e\",\"passed\",\"2c6bcc29c38d3dd3\",false],[\"4f0aaba0c0edf502\",\"84413e7844e9d1e8\",\"settled\",\"7a86033a2072ab5d\",\"d9cdb521798da95b\",\"sent\",\"8ba183de278c50a7\",\"7a86033a2072ab5d\",\"passed\",\"7bca5bf9aa4eb999\",false],[\"b399bb24dda17459\",\"5e31bce95bff05ff\",\"settled\",\"5e31bce95bff05ff\",\"7e88c4399dc2537f\",\"sent\",\"dca3ad42e7e323d9\",\"5e31bce95bff05ff\",\"passed\",\"d32ed5f14625e83b\",false],[\"387531c677072254\",\"3e84306c12739b9e\",\"settled\",\"3e84306c12739b9e\",\"15528bb27e3f3836\",\"sent\",\"e56e02725a80db68\",\"3e84306c12739b9e\",\"failed\",\"77f0c7d3b863f903\",true],[\"ea4e4084abe9b94b\",\"2d1f4a755ddbae84\",\"settled\",\"2d1f4a755ddbae84\",\"4238984e18a00b16\",\"sent\",\"570eb106f2307945\",\"2d1f4a755ddbae84\",\"failed\",\"1e904cd320af167e\",true],[\"436566388fb0a7d8\",\"48906905b55603a2\",\"settled\",\"e5ba4c74f738a6b4\",\"f40a979addbc974c\",\"sent\",\"425c37d637f4dca0\",\"e5ba4c74f738a6b4\",\"passed\",\"f1b6fea749798fd8\",false]]}"
+    },
+    "direct": {
+      "child": "{\"f\":[\"request_token\",\"dispatch.attempt_uuid\",\"dispatch.state\",\"result.attempt_uuid\",\"result.state\",\"billing.for_attempt\",\"billing.state\",\"retry_policy.retry_allowed\"],\"r\":[[\"dca3ad42e7e323d9\",\"5e31bce95bff05ff\",\"sent\",\"5e31bce95bff05ff\",\"passed\",\"5e31bce95bff05ff\",\"settled\",false],[\"e56e02725a80db68\",\"3e84306c12739b9e\",\"sent\",\"3e84306c12739b9e\",\"failed\",\"3e84306c12739b9e\",\"settled\",true]]}",
+      "parent": "{\"f\":[\"request_token\",\"dispatch.attempt_uuid\",\"dispatch.state\",\"result.attempt_uuid\",\"result.state\",\"billing.for_attempt\",\"billing.state\",\"retry_policy.retry_allowed\"],\"r\":[[\"f1d1167e891d5ecb\",\"0da0bd9602f97b14\",\"not_sent\",\"0da0bd9602f97b14\",\"passed\",\"0da0bd9602f97b14\",\"settled\",false],[\"80f1dcdc48b67c8a\",\"78cd7508a5c27f7e\",\"sent\",\"78cd7508a5c27f7e\",\"passed\",\"78cd7508a5c27f7e\",\"settled\",false],[\"8ba183de278c50a7\",\"7a86033a2072ab5d\",\"sent\",\"7a86033a2072ab5d\",\"passed\",\"84413e7844e9d1e8\",\"settled\",false],[\"dca3ad42e7e323d9\",\"5e31bce95bff05ff\",\"sent\",\"5e31bce95bff05ff\",\"passed\",\"5e31bce95bff05ff\",\"settled\",false],[\"e56e02725a80db68\",\"3e84306c12739b9e\",\"sent\",\"3e84306c12739b9e\",\"failed\",\"3e84306c12739b9e\",\"settled\",true],[\"570eb106f2307945\",\"2d1f4a755ddbae84\",\"sent\",\"2d1f4a755ddbae84\",\"failed\",\"2d1f4a755ddbae84\",\"settled\",true],[\"425c37d637f4dca0\",\"e5ba4c74f738a6b4\",\"sent\",\"e5ba4c74f738a6b4\",\"passed\",\"48906905b55603a2\",\"settled\",false]]}"
+    },
+    "prompt": {
+      "child": "Rule: apply late event first. Retain candidates dca3ad42e7e323d9,e56e02725a80db68 only. If dispatch.state=not_sent: action=submit,work=[]. Else require result.attempt_uuid=billing.for_attempt=dispatch.attempt_uuid; mismatch => hold,result_scope/billing_scope. Else close if result.state=passed and billing.state=settled; retry if result.state=failed and retry_policy.retry_allowed=true; otherwise hold for applicable result,billing,retry_policy condition. target_id=request_token. f=[request_token,dispatch.state,dispatch.attempt_uuid,dispatch.idempotency_key,result.attempt_uuid,result.state,billing.charge_token,billing.for_attempt,billing.state,retry_policy.prior_attempt,retry_policy.retry_allowed,operator_notes]. r (values in f order): dca3ad42e7e323d9|sent|5e31bce95bff05ff|7e88c4399dc2537f|5e31bce95bff05ff|passed|b399bb24dda17459|5e31bce95bff05ff|settled|d32ed5f14625e83b|false|12a4a6b6d5ab7cb1; e56e02725a80db68|sent|3e84306c12739b9e|15528bb27e3f3836|3e84306c12739b9e|failed|387531c677072254|3e84306c12739b9e|settled|77f0c7d3b863f903|true|a",
+      "child_bounds": {
+        "admitted_bytes": 1050,
+        "clipped": true,
+        "proposed_bytes": 1131
+      },
+      "parent": "Rule: apply late event first. For selected request: dispatch.state=not_sent => action=submit, work=[]. Else require result.attempt_uuid and billing.for_attempt == dispatch.attempt_uuid; mismatch => hold reason result_scope or billing_scope. Otherwise close iff result.state=passed and billing.state=settled; retry iff result.state=failed and retry_policy.retry_allowed=true; else hold reason result, billing, or retry_policy for applicable failed conditions. target_id=request_token. Operator notes are not gate evidence. Table columns: request_token | dispatch.state, dispatch.attempt_uuid, dispatch.idempotency_key | result.attempt_uuid, result.state | billing.charge_token, billing.for_attempt, billing.state | retry_policy.prior_attempt, retry_policy.retry_allowed | operator_notes archived draft (repeated 7 times per record).\nf1d1167e891d5ecb | not_sent,0da0bd9602f97b14,653b7d1095dd26e9 | 0da0bd9602f97b14,passed | 19140fd76758cd46,0da0bd9602f97b14,settled | a09457098525fd01,false | a7122c6106e775e9\n80f1dcdc48b67c8a | sent,78cd7508a5c27f7e,db3e14c0eab8d25e | 78cd7508a5c27f7e,passed | 70915d4b1396389d,78cd7508a5c27f7e,settled | 2c6bcc29c38d3dd3,false | 3342d4ff21c97340\n8ba183de278c50a7 | sent,7a86033a2072ab5d,d9cdb521798da95b | 7a86033a2072ab5d,passed | 4f0aaba0c0edf502,84413e7844e9d1e8,settled | 7bca5bf9aa4eb999,false | 9728e9e0f75d111b\ndca3ad42e7e323d9 | sent,5e31bce95bff05ff,7e88c4399dc2537f | 5e31bce95bff05ff,passed | b399bb24dda17459,5e31bce95bff05ff,settled | d32ed5f14625e83b,false | 12a4a6b6d5ab7cb1\ne56e02725a80db68 | sent,3e84306c12739b9e,15528bb27e3f3836 | 3e84306c12739b9e,failed | 387531c677072254,3e84306c12739b9e,settled | 77f0c7d3b863f903,true | a3f170472f835787\n570eb106f2307945 | sent,2d1f4a755ddbae84,4238984e18a00b16 | 2d1f4a755ddbae84,failed | ea4e4084abe9b94b,2d1f4a755ddbae84,settled | 1e904cd320af167e,true | 67c06ce0b8f20c44\n425c37d637f4dca0 | sent,e5ba4c74f738a6b4,f40a979addbc974c | e5ba4c74f738a6b4,passed | 436566388fb0a7d8,48906905b55603a2,settled | f1b6fea749798fd8,false | 3542023c858ea049",
+      "parent_bounds": {
+        "admitted_bytes": 2037,
+        "clipped": false,
+        "proposed_bytes": 2037
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "ci_promotion-97031-2-full",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0123555",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 1,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"target_id\":\"de6f1f2aac0862de\",\"work\":[\"approval_scope\",\"ci_scope\"]}",
+  "request": {
+    "instruction": "Use only supplied memory, target and late event. Memory may be prose, one original tool result, a list of results, or a JSON table with f=full field paths and r=rows in that field order. Apply the event to the named target, then return one exact terminal decision with sorted work. Do not call tools. Promote only if build.channel=stable, authorization.state=approved, authorization.approved_digest=build.digest, verification.subject=build.digest, verification.unit and integration both pass, and handoff.environment=prod. Otherwise hold with the exact sorted set of channel, approval, approval_scope, ci_scope, unit, integration, environment for each failed condition. Return target_id=build.digest. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "build.digest",
+        "value": "de6f1f2aac0862de"
+      },
+      "memory": "[{\"authorization\":{\"approved_digest\":\"c54f85d4704b7a00\",\"state\":\"approved\",\"ticket\":\"8c741a41a089f402\"},\"build\":{\"channel\":\"stable\",\"digest\":\"c54f85d4704b7a00\"},\"deployment_slot\":\"db893b803f602524\",\"handoff\":{\"environment\":\"prod\"},\"operator_notes\":\"Worker log archived an earlier draft 22b3241c2b36e354; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 22b3241c2b36e354; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 22b3241c2b36e354; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 22b3241c2b36e354; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 22b3241c2b36e354; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 22b3241c2b36e354; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 22b3241c2b36e354; dashboard labels, timing and operator chat are not gate evidence. \",\"verification\":{\"integration\":\"pass\",\"run\":\"15de45b65fd38c27\",\"subject\":\"f10e4c976dc3a9d7\",\"unit\":\"pass\"}},{\"authorization\":{\"approved_digest\":\"0f6720bf6f35fb16\",\"state\":\"approved\",\"ticket\":\"d4eec4d3d134b997\"},\"build\":{\"channel\":\"stable\",\"digest\":\"0f6720bf6f35fb16\"},\"deployment_slot\":\"30682ecba9fbb9d3\",\"handoff\":{\"environment\":\"prod\"},\"operator_notes\":\"Worker log archived an earlier draft d58b2fa5634ca5f8; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft d58b2fa5634ca5f8; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft d58b2fa5634ca5f8; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft d58b2fa5634ca5f8; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft d58b2fa5634ca5f8; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft d58b2fa5634ca5f8; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft d58b2fa5634ca5f8; dashboard labels, timing and operator chat are not gate evidence. \",\"verification\":{\"integration\":\"pass\",\"run\":\"292e4cf91726b92a\",\"subject\":\"0f6720bf6f35fb16\",\"unit\":\"pass\"}},{\"authorization\":{\"approved_digest\":\"466cb0cb79576e93\",\"state\":\"approved\",\"ticket\":\"b0d6247d517632a1\"},\"build\":{\"channel\":\"stable\",\"digest\":\"466cb0cb79576e93\"},\"deployment_slot\":\"8cf6802b4c8e0662\",\"handoff\":{\"environment\":\"prod\"},\"operator_notes\":\"Worker log archived an earlier draft f0af12ca89fca7d4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f0af12ca89fca7d4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f0af12ca89fca7d4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f0af12ca89fca7d4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f0af12ca89fca7d4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f0af12ca89fca7d4; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft f0af12ca89fca7d4; dashboard labels, timing and operator chat are not gate evidence. \",\"verification\":{\"integration\":\"fail\",\"run\":\"8cc189ab23ff4173\",\"subject\":\"466cb0cb79576e93\",\"unit\":\"pass\"}},{\"authorization\":{\"approved_digest\":\"b7bb13742d9bb474\",\"state\":\"approved\",\"ticket\":\"c929fb57115922ac\"},\"build\":{\"channel\":\"stable\",\"digest\":\"b7bb13742d9bb474\"},\"deployment_slot\":\"490549d84db133a0\",\"handoff\":{\"environment\":\"prod\"},\"operator_notes\":\"Worker log archived an earlier draft c48a9df3e0faa4ab; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c48a9df3e0faa4ab; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c48a9df3e0faa4ab; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c48a9df3e0faa4ab; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c48a9df3e0faa4ab; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c48a9df3e0faa4ab; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft c48a9df3e0faa4ab; dashboard labels, timing and operator chat are not gate evidence. \",\"verification\":{\"integration\":\"pass\",\"run\":\"6132b96a12091854\",\"subject\":\"b7bb13742d9bb474\",\"unit\":\"pass\"}},{\"authorization\":{\"approved_digest\":\"afed465d050c8164\",\"state\":\"approved\",\"ticket\":\"877302d237e0aa12\"},\"build\":{\"channel\":\"stable\",\"digest\":\"fd05a4ea3b2746a9\"},\"deployment_slot\":\"ed99c84337253490\",\"handoff\":{\"environment\":\"prod\"},\"operator_notes\":\"Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. \",\"verification\":{\"integration\":\"pass\",\"run\":\"b0a0b140b9d45554\",\"subject\":\"fd05a4ea3b2746a9\",\"unit\":\"pass\"}},{\"authorization\":{\"approved_digest\":\"722b60fee112bfa9\",\"state\":\"approved\",\"ticket\":\"2b620c408f9df40b\"},\"build\":{\"channel\":\"stable\",\"digest\":\"d9d3f336c0653f65\"},\"deployment_slot\":\"46125d5bf41afc97\",\"handoff\":{\"environment\":\"prod\"},\"operator_notes\":\"Worker log archived an earlier draft 608dd07f851669a1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 608dd07f851669a1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 608dd07f851669a1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 608dd07f851669a1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 608dd07f851669a1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 608dd07f851669a1; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 608dd07f851669a1; dashboard labels, timing and operator chat are not gate evidence. \",\"verification\":{\"integration\":\"pass\",\"run\":\"048b2da00002f270\",\"subject\":\"d9d3f336c0653f65\",\"unit\":\"pass\"}},{\"authorization\":{\"approved_digest\":\"d111bd64aea68952\",\"state\":\"approved\",\"ticket\":\"a370e9aa84839ec2\"},\"build\":{\"channel\":\"stable\",\"digest\":\"d111bd64aea68952\"},\"deployment_slot\":\"4a474d49b59f2cdc\",\"handoff\":{\"environment\":\"prod\"},\"operator_notes\":\"Worker log archived an earlier draft 85bc448ad5b43382; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 85bc448ad5b43382; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 85bc448ad5b43382; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 85bc448ad5b43382; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 85bc448ad5b43382; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 85bc448ad5b43382; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft 85bc448ad5b43382; dashboard labels, timing and operator chat are not gate evidence. \",\"verification\":{\"integration\":\"fail\",\"run\":\"8b930bac0b3dfb00\",\"subject\":\"d111bd64aea68952\",\"unit\":\"pass\"}}]",
+      "target": "490549d84db133a0"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "3059b3802a0cee8dd42c3c4441b332892ae37c66fcb2fc547b5b5025feee5a6f",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "target_id": "de6f1f2aac0862de",
+    "work": [
+      "approval_scope",
+      "ci_scope"
+    ]
+  },
+  "started_at": "2026-09-22T22:48:56.503717+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 5170,
+    "outputTokens": 277,
+    "reasoningOutputTokens": 237,
+    "totalTokens": 5447
+  },
+  "usage_events": 1,
+  "wall_seconds": 7.793449099990539,
+  "wire_body_byte_bound": 27203
+}

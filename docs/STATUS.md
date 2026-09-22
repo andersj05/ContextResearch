@@ -6,6 +6,28 @@ Updated: September 22, 2026. This document is the current handoff; older scope d
 
 Develop a mathematically precise and implementable study of repeated agent compaction when relevance is revealed over time. The target is a restricted compatibility result plus controlled evidence of whether the mechanism matters in tool-agent tasks.
 
+The newest [prospective schema-transfer study](../research/SCHEMA_TRANSFER_PROSPECTIVE_2026-09-22.md)
+froze six constructed evaluation traces with **new schema structures** for
+retry queues, CI promotion and multi-stage data jobs. Casebook/protocol commit
+`7067963` preceded generic-extractor implementation commit `649bbc9`, which
+preceded the held-out preflight and live calls. All 126 GPT-6 Luna medium calls
+completed for 1.2564565 token-derived planning credits. Across 18 paired
+terminal cases, automatic direct projection/checking fails 1 versus 2 for
+strong prompting and 2 for hand-written direct records, at 0.12644885386
+versus 0.43840213083 and 0.11684766975 synthetic experimental credits.
+The **prespecified narrow primary criterion is met**. Indexed recovery,
+however, has 0 failures at 0.11673546631 credits and dominates automatic
+direct in this finite comparison. The checked model-proposal method has 2
+failures and costs 0.44173514106: all six prose parent proposals are rejected
+and replaced by deterministic projections. One automatic failure misreads a
+correctly retained dataset ID. Thus the broader claim of a generally useful,
+cost-superior automatic survival detector is **not established**. These are
+constructed correlated traces, synthetic local prices, and unknown actual
+subscription debit. Claim C48; living draft v0.18.
+Final validation: 348 offline tests pass; the repository validator reports
+PASS and reconciles 126 new calls/108 terminal decisions; the paper builds
+with 34 cited sources. No rerun, purchase, reset or external publication.
+
 The September 21 user-directed pivot prioritizes a new mechanism: **auditing a memory collision before compaction and certifying the cheapest allowed recovery or required retained distinction**. Stop using tighter constants in the same example as the main research advance. The existing mathematics remains a calibration result.
 
 The newest [schema-check transfer test](../research/SCHEMA_CHECKS_UNSEEN_TRACES_2026-09-22.md)
@@ -28,10 +50,8 @@ Final validation: 340 offline tests pass; repository validator PASS reconciles
 72 new requests and 60 terminal decisions; the paper builds with 34 cited
 sources. No rerun, purchase, reset or external publication occurred.
 
-The next discriminating test would hold out schema structures, introduce
-incomplete annotations, and check model-proposed memory under executable late
-obligations. This run does not justify tuning and rerunning its easy evaluation
-set to seek a positive result.
+That negative result motivated the separate new-structure and model-proposal
+test summarized above. Its original 12 evaluation cases remain untouched.
 
 The new [GPT-6 Luna medium evidence](../research/LUNA6_DELAYED_FAILURES_2026-09-22.md)
 contains **141 fresh model calls**: a 117-call fixed pilot and a prospectively
@@ -181,7 +201,7 @@ new generic verification principle.
 
 The decoder-complete phase resolved the rate-two interval to 2e-10. Further decimal tightening is deprioritized. External correctness/priority review remains useful, while the earlier behavioral tasks below remain separately specified follow-ups rather than a request to reuse completed launch allocations.
 
-1. Extend the live two-stage pipeline to an unseen workflow with automatically extracted checks and separately frozen evaluation continuations. Preserve the stronger prompt and direct/recovery/full controls, information deletion, complete outcome accounting and explicit launch limits.
+1. Test external observed workflows with frozen obligations and an independently specified executor. Measure indexed storage and infrastructure alongside extraction, checking, recovery, model calls and terminal success. The completed constructed new-schema test is a calibration, not this naturalistic evaluation.
 2. Obtain external review of the exact finite search/reduction and block-family proof, and deepen the novelty comparison with functional compression/direct-sum results. The targeted literature comparison narrows the contribution but does not settle priority.
 3. Integrate the four [implemented held-out clue renderers](HELDOUT_RENDERERS.md) into a versioned request/runner contract, validate information deletion and controls, and freeze the complete launch before any held-out call. A more naturalistic workflow remains an unperformed extension, and the tiny reserved sample remains debugging evidence. General executable-continuation minimization and native-provider baselines remain unimplemented; the new finite auditor minimizes world subsets and selects among declared traces only.
 4. Consider imperfect clues, unreliable recovery, and multiple obligations only as separately specified extensions. The current exact frontier should remain a calibration reference with its assumptions intact.

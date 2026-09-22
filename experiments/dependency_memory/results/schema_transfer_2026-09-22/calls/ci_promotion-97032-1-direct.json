@@ -1,0 +1,97 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "ci_promotion-97032-1-direct",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0047205",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718871,
+        "usedPercent": 1,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"promote\",\"target_id\":\"3ca34db912aa2060\",\"work\":[]}",
+  "request": {
+    "instruction": "Use only supplied memory, target and late event. Memory may be prose, one original tool result, a list of results, or a JSON table with f=full field paths and r=rows in that field order. Apply the event to the named target, then return one exact terminal decision with sorted work. Do not call tools. Promote only if build.channel=stable, authorization.state=approved, authorization.approved_digest=build.digest, verification.subject=build.digest, verification.unit and integration both pass, and handoff.environment=prod. Otherwise hold with the exact sorted set of channel, approval, approval_scope, ci_scope, unit, integration, environment for each failed condition. Return target_id=build.digest. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "authorization.approved_digest",
+        "value": "3ca34db912aa2060"
+      },
+      "memory": "{\"f\":[\"deployment_slot\",\"build.digest\",\"build.channel\",\"authorization.approved_digest\",\"authorization.state\",\"verification.subject\",\"verification.unit\",\"verification.integration\",\"handoff.environment\"],\"r\":[[\"b5852f78805f1347\",\"f351d36f669b4461\",\"stable\",\"f351d36f669b4461\",\"approved\",\"f351d36f669b4461\",\"pass\",\"pass\",\"prod\"],[\"d0e28fc2fdc951e0\",\"3ca34db912aa2060\",\"stable\",\"05dda87bb5b431aa\",\"approved\",\"3ca34db912aa2060\",\"pass\",\"pass\",\"prod\"]]}",
+      "target": "d0e28fc2fdc951e0"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "b3ae6c432ae375f8b25c87441bcb70f288163ab120983d021f3772143e66129f",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "promote",
+    "target_id": "3ca34db912aa2060",
+    "work": []
+  },
+  "started_at": "2026-09-22T22:51:36.622633+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3041,
+    "outputTokens": 92,
+    "reasoningOutputTokens": 59,
+    "totalTokens": 3133
+  },
+  "usage_events": 1,
+  "wall_seconds": 4.497172299947124,
+  "wire_body_byte_bound": 18235
+}

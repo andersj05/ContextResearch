@@ -340,3 +340,29 @@ local work to zero, so a separate post-run high-resolution development-trace
 calibration supplies only a cost sensitivity. The synthetic local prices and
 unknown subscription debit preclude a fully measured production-total-cost
 claim. Claim C47 records the limit.
+
+## September 22: prospective new-schema transfer and model-proposal check
+
+The user asked to keep pursuing cheap automatic survival checks after the
+annotated-schema tie. Freeze different development and evaluation schema
+structures, an exact terminal grader, and a 126-call/10-planning-credit ceiling
+before implementing the generic detector or seeing evaluation responses.
+Casebook/protocol commit `7067963`; implementation commit `649bbc9`.
+The generic mechanism may infer ID roles only from ordinary schema/result
+signals and must return unknown on ambiguous short strings. Preserve exact
+detected IDs and owner/path associations; do not claim a state or execution
+certificate. Charge both hypothetical prompt methods fully for their shared
+actual parent call. Use the high-resolution local elapsed timer and declared
+synthetic byte/second prices. No evaluation-driven tuning or restart.
+
+All 126 scheduled calls complete. The prespecified automatic-direct comparison
+meets its narrow success criterion: 1/18 failures versus 2/18 for prompting at
+lower total experimental cost, with no more errors than hand-written direct.
+Retain the stronger negative control: indexed recovery has 0/18 failures at
+lower cost and dominates automatic direct under the declared accounting.
+All model-written parent memories are prose and fail the table-only check;
+checked fallback does not improve the error count. One automatic final response
+misidentifies a correctly retained output dataset. Do not present this as a
+general prose checker, an execution guarantee, production cost superiority,
+or publication novelty. Claim C48 and the focused research note preserve the
+specific paired failures and caveats.

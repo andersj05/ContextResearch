@@ -1,6 +1,22 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.17 — September 22, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.18 — September 22, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## New schema structures: narrow success, stronger recovery control
+
+The separate [prospective transfer test](../research/SCHEMA_TRANSFER_PROSPECTIVE_2026-09-22.md)
+froze six constructed retry, CI and data-job evaluation traces with schemas
+different from escrow/package development. It removes custom ID/reference
+annotations and runs 126 fresh Luna medium calls on 18 paired terminal cases.
+Generic exact-ID and owner/path checks fit both byte boundaries. Automatic
+direct fails 1/18 versus 2/18 for stronger prompting and hand-written direct,
+at 0.12645 versus 0.43840 experimental credits for prompting. The
+prespecified **narrow primary criterion is met**. Indexed recovery is cheaper
+and succeeds on 18/18, so automatic direct does not win the full cost frontier.
+All six model-written parent proposals are prose and require fallback; the
+checked-proposal arm fails 2/18. A certified automatic table still leads to one
+wrong target ID at final execution. This small constructed result neither
+establishes general automatic survival detection nor production savings. [C48]
 
 ## New frozen traces: automatic checks tie the controls
 

@@ -1,0 +1,99 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "ci_promotion-97031-0-indexed",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0053505",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 1,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"target_id\":\"fd05a4ea3b2746a9\",\"work\":[\"approval_scope\"]}",
+  "request": {
+    "instruction": "Use only supplied memory, target and late event. Memory may be prose, one original tool result, a list of results, or a JSON table with f=full field paths and r=rows in that field order. Apply the event to the named target, then return one exact terminal decision with sorted work. Do not call tools. Promote only if build.channel=stable, authorization.state=approved, authorization.approved_digest=build.digest, verification.subject=build.digest, verification.unit and integration both pass, and handoff.environment=prod. Otherwise hold with the exact sorted set of channel, approval, approval_scope, ci_scope, unit, integration, environment for each failed condition. Return target_id=build.digest. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "note",
+        "value": "Schedule title updated; gate fields unchanged."
+      },
+      "memory": "{\"authorization\":{\"approved_digest\":\"afed465d050c8164\",\"state\":\"approved\",\"ticket\":\"877302d237e0aa12\"},\"build\":{\"channel\":\"stable\",\"digest\":\"fd05a4ea3b2746a9\"},\"deployment_slot\":\"ed99c84337253490\",\"handoff\":{\"environment\":\"prod\"},\"operator_notes\":\"Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. Worker log archived an earlier draft fdbc0c3fc5dd2ec3; dashboard labels, timing and operator chat are not gate evidence. \",\"verification\":{\"integration\":\"pass\",\"run\":\"b0a0b140b9d45554\",\"subject\":\"fd05a4ea3b2746a9\",\"unit\":\"pass\"}}",
+      "target": "ed99c84337253490"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "12abfe6bcb01b7cb0ae6c7d01408b92edd3ab586aedb5312133fad818e15140a",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "target_id": "fd05a4ea3b2746a9",
+    "work": [
+      "approval_scope"
+    ]
+  },
+  "started_at": "2026-09-22T22:47:36.991498+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3218,
+    "outputTokens": 107,
+    "reasoningOutputTokens": 69,
+    "totalTokens": 3325
+  },
+  "usage_events": 1,
+  "wall_seconds": 5.164262300007977,
+  "wire_body_byte_bound": 18991
+}

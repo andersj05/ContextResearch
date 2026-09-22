@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "ci_promotion-97032-prompt-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0202175",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 1,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Rule: apply late event first; none supplied. Retain only candidates b5852f78805f1347 and d0e28fc2fdc951e0. Promote iff build.channel=stable, authorization.state=approved, authorization.approved_digest=build.digest, verification.subject=build.digest, verification.unit=pass, verification.integration=pass, handoff.environment=prod; otherwise hold with sorted failed names from channel, approval, approval_scope, ci_scope, unit, integration, environment. target_id=build.digest. Candidate b5852f78805f1347: build.digest=f351d36f669b4461; build.channel=stable; authorization.approved_digest=f351d36f669b4461; authorization.state=approved; authorization.ticket=db330a6d3beba3d9; deployment_slot=b5852f78805f1347; verification.subject=f351d36f669b4461; verification.unit=pass; verification.integration=pass; verification.run=b879ce2c63941200; handoff.environment=prod; operator_notes.archived_draft_id=63a2776abb7d42b6. Promote. Candidate d0e28fc2fdc951e0: build.digest=3ca34db912aa2060; build.channel=stable; authorization.approved_digest=05dda87bb5b431aa; authorization.state=approved; authorization.ticket=23cab765bdb49682; deployment_slot=d0e28fc2fdc951e0; verification.subject=3ca34db912aa2060; verification.unit=pass; verification.integration=pass; verification.run=47481e51d1431b8c; handoff.environment=prod; operator_notes.archived_draft_id=bb195814ef0a086f. Hold; failed=[approval_scope].\"}",
+  "request": {
+    "instruction": "Only the memory string survives this boundary. The public decision rule and output schema repeat at execution. Use the allowance for instance facts across all possible later targets. Preserve every exact opaque identifier, status, and the field/record to which each reference belongs. Do not abbreviate values or collapse an approval of one artifact into generic approval. A compact table is allowed: JSON f lists full field paths and r lists rows in that order. Return {\"memory\":\"...\"}. Limit memory to 1050 UTF-8 bytes. Retain only the named candidates. Promote only if build.channel=stable, authorization.state=approved, authorization.approved_digest=build.digest, verification.subject=build.digest, verification.unit and integration both pass, and handoff.environment=prod. Otherwise hold with the exact sorted set of channel, approval, approval_scope, ci_scope, unit, integration, environment for each failed condition. Return target_id=build.digest. Apply the late event first.",
+    "observation": {
+      "candidates": [
+        "b5852f78805f1347",
+        "d0e28fc2fdc951e0"
+      ],
+      "previous_memory": "Rule: apply any late event first; promote iff build.channel=stable, authorization.state=approved, authorization.approved_digest=build.digest, verification.subject=build.digest, verification.unit=pass, verification.integration=pass, handoff.environment=prod; otherwise hold with sorted failed condition names from channel, approval, approval_scope, ci_scope, unit, integration, environment. target_id=build.digest. No separate late-event payload supplied. Rows below are observation.tool_results order. Fields: build.digest, build.channel, authorization.approved_digest, authorization.state, authorization.ticket, deployment_slot, verification.subject, verification.unit, verification.integration, verification.run, handoff.environment, operator_notes.archived_draft_id. r values in field order: [ac079caf54fc9c4d,stable,ac079caf54fc9c4d,approved,b947dd54c723be23,5c94bf273ec9ec02,ac079caf54fc9c4d,pass,fail,2e3e3cf365203d16,prod,dd1d9f85670e66a3]; [f334689a72c3f26f,stable,f334689a72c3f26f,approved,079e8c36298ccbba,9a2cba29f26aeb33,6ed2e6a908278f47,pass,pass,2fd838d624b55277,prod,df72a5c8400ed938]; [f351d36f669b4461,stable,f351d36f669b4461,approved,db330a6d3beba3d9,b5852f78805f1347,f351d36f669b4461,pass,pass,b879ce2c63941200,prod,63a2776abb7d42b6]; [4073a93cf992b124,stable,e08fb033ecd551c9,approved,f98cde3e3b42a41a,a50d685f35973085,4073a93cf992b124,pass,pass,3a6147fb49c08d0a,prod,06da6647066bee14]; [3ca34db912aa2060,stable,05dda87bb5b431aa,approved,23cab765bdb49682,d0e28fc2fdc951e0,3ca34db912aa2060,pass,pass,47481e51d1431b8c,prod,bb195814ef0a086f]; [1da9a368e48223ac,stable,1da9a368e48223ac,approved,25a959811fc53cb3,eb9abb410d915b7a,1da9a368e48223ac,pass,fail,abc1fabfb0dc7c7c,prod,9c3214d80a344403]; [a74857948d408401,stable,a74857948d408401,approved,41e67f92cd3e1e8c,ba2e995ced8e3578,a74857948d408401,pass,pass,9910319d216f6455,prod,5e3bfedc6427e31e]. Ignored operator-notes transcript repeated each listed draft ID 7 times per row; not gate evidence. Failed gates by row: 1 integration; 2 ci_scope; 4 approval_scope; 5 approval_scope; 6 integration. Rows 3 and 7 promote; other rows hold."
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "67341feffbfd5f727eff07528bb08ad52315f712d3efa5df2fecb3969e4e2821",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Rule: apply late event first; none supplied. Retain only candidates b5852f78805f1347 and d0e28fc2fdc951e0. Promote iff build.channel=stable, authorization.state=approved, authorization.approved_digest=build.digest, verification.subject=build.digest, verification.unit=pass, verification.integration=pass, handoff.environment=prod; otherwise hold with sorted failed names from channel, approval, approval_scope, ci_scope, unit, integration, environment. target_id=build.digest. Candidate b5852f78805f1347: build.digest=f351d36f669b4461; build.channel=stable; authorization.approved_digest=f351d36f669b4461; authorization.state=approved; authorization.ticket=db330a6d3beba3d9; deployment_slot=b5852f78805f1347; verification.subject=f351d36f669b4461; verification.unit=pass; verification.integration=pass; verification.run=b879ce2c63941200; handoff.environment=prod; operator_notes.archived_draft_id=63a2776abb7d42b6. Promote. Candidate d0e28fc2fdc951e0: build.digest=3ca34db912aa2060; build.channel=stable; authorization.approved_digest=05dda87bb5b431aa; authorization.state=approved; authorization.ticket=23cab765bdb49682; deployment_slot=d0e28fc2fdc951e0; verification.subject=3ca34db912aa2060; verification.unit=pass; verification.integration=pass; verification.run=47481e51d1431b8c; handoff.environment=prod; operator_notes.archived_draft_id=bb195814ef0a086f. Hold; failed=[approval_scope]."
+  },
+  "started_at": "2026-09-22T22:49:52.040590+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 3617,
+    "outputTokens": 894,
+    "reasoningOutputTokens": 498,
+    "totalTokens": 4511
+  },
+  "usage_events": 1,
+  "wall_seconds": 18.539361499948427,
+  "wire_body_byte_bound": 19554
+}

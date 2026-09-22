@@ -1,0 +1,53 @@
+{
+  "arms": [
+    "prompt",
+    "checked",
+    "automatic",
+    "direct",
+    "indexed",
+    "full"
+  ],
+  "call_cap": 132,
+  "case_ids": [
+    "evaluation-retry_queue-97031",
+    "evaluation-retry_queue-97032",
+    "evaluation-ci_promotion-97031",
+    "evaluation-ci_promotion-97032",
+    "evaluation-data_pipeline-97031",
+    "evaluation-data_pipeline-97032"
+  ],
+  "child_cap": 1050,
+  "effort": "medium",
+  "fingerprints": {
+    "experiments/dependency_memory/schema_transfer/FROZEN_PROTOCOL.md": "ca31b96e5a42345e6a43a049fe0d09ada6020526e8e9cb0fe61280c58a433b8f",
+    "experiments/dependency_memory/schema_transfer/__init__.py": "e772068a527b21c0bbac02a22acb8b61b75651ef85e7a450b2c15c7a56b381bf",
+    "experiments/dependency_memory/schema_transfer/analyze.py": "6e545501e5cb1fdba4a61cb45512bf77a240fae96f650f34d3a14a7eae32ef3e",
+    "experiments/dependency_memory/schema_transfer/casebook.py": "eb8e1192d455fa1954318f7fe3d2e530a8aa4b119a42474c5e777808a84a1fe7",
+    "experiments/dependency_memory/schema_transfer/direct.py": "4ae0f0d154de27ded2c55307b9ec2b5f82c6679be5a2a8fedadf91c6afd8fcf7",
+    "experiments/dependency_memory/schema_transfer/fixtures/development-escrow-52011.json": "0e6afe54ceedfcddb6dbd59769a07a2ae4b83a9eea16d6a6031f5a6a0a43bddd",
+    "experiments/dependency_memory/schema_transfer/fixtures/development-escrow-52012.json": "d9ce19c2cf928e79a65b530289816f30df05eb86c14109dc09f9e2f27f9dab67",
+    "experiments/dependency_memory/schema_transfer/fixtures/development-package-52011.json": "f99e49cd124486ea5ba7472856a819277eb23a7ad3ce3791d1198dbcaa4be649",
+    "experiments/dependency_memory/schema_transfer/fixtures/development-package-52012.json": "33fab2bc6ae36d8c3895a980ab2a477ee73ab6eca0b14724ec6293e5adbeb214",
+    "experiments/dependency_memory/schema_transfer/fixtures/evaluation-ci_promotion-97031.json": "b1580b29be4baeb2c22d573b0aee832765a2e7169821e7c9cb5e211ddfd585e3",
+    "experiments/dependency_memory/schema_transfer/fixtures/evaluation-ci_promotion-97032.json": "a73fafcf0f7ed536dec438eca9184ea222181518dd05f5431f4374c59f545069",
+    "experiments/dependency_memory/schema_transfer/fixtures/evaluation-data_pipeline-97031.json": "5315b73cb95df342ba4a8471a1c76e1e0557393a0c05f43b356755f9e6c053a9",
+    "experiments/dependency_memory/schema_transfer/fixtures/evaluation-data_pipeline-97032.json": "f92aa8f4f4c811caf9d83d4c405e4244a1298935d1e86c72d9b5724069f6b438",
+    "experiments/dependency_memory/schema_transfer/fixtures/evaluation-retry_queue-97031.json": "8717dea41199d0643ab2b2feb085815065acf56ef9157777dfd9162935fdeda8",
+    "experiments/dependency_memory/schema_transfer/fixtures/evaluation-retry_queue-97032.json": "6bf5b35205c9363c6867c020fb09ce8e59eb3ba02cd84e7662c222f45ed02c1e",
+    "experiments/dependency_memory/schema_transfer/fixtures/manifest.json": "13619460779a668b703a0bd22227ad273427a5cc06c24e01bc4124496c2de1b6",
+    "experiments/dependency_memory/schema_transfer/freeze_cases.py": "beeaaf1b1c333e39abe21091be64df4ae11646be364883d90b2cd88e4dde380c",
+    "experiments/dependency_memory/schema_transfer/memory.py": "8434d6c5f38983cf567bd4bbb1b86136565a76dd1a2e581911cb8e2cce3fb42c",
+    "experiments/dependency_memory/schema_transfer/run.py": "dffa69a42cac48393eb625fdcdeab736d74fbeed2f962a118dc735438785cfed",
+    "experiments/dependency_memory/schema_transfer/test_casebook.py": "91235385c27ad9cdcee200543cc028c9b24175c38b91856c175d51cf486f5ecf",
+    "experiments/dependency_memory/schema_transfer/test_memory.py": "0568bd9a10f76209d18acd97e2c58b6c7692f6091b7c38b0aff552f73421d4f8",
+    "experiments/dependency_memory/schema_transfer/test_run.py": "389b65582814d7beee3fd4eeece77dd0f4f34f63b8832f2532df229f5f413683"
+  },
+  "model": "gpt-6-luna",
+  "parent_cap": 3000,
+  "planning_credit_cap": "10",
+  "prior_preflight_sha256": "fd155c20f9b2e69cc442a20eeba241eee1504842ce95dfca50d87dbd2bd15dd5",
+  "prompt_guidance": "Only the memory string survives this boundary. The public decision rule and output schema repeat at execution. Use the allowance for instance facts across all possible later targets. Preserve every exact opaque identifier, status, and the field/record to which each reference belongs. Do not abbreviate values or collapse an approval of one artifact into generic approval. A compact table is allowed: JSON f lists full field paths and r lists rows in that order. Return {\"memory\":\"...\"}. ",
+  "scheduled_calls": 126,
+  "status": "frozen-before-evaluation-answers",
+  "version": "schema_transfer_v1"
+}

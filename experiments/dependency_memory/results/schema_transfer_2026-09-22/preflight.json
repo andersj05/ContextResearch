@@ -1,0 +1,252 @@
+{
+  "account_type": "chatgpt",
+  "cases": [
+    {
+      "authorization_present": false,
+      "case": "final_message",
+      "final_response_count": 1,
+      "fixed_wire_bytes_upper_observation": 9370,
+      "http_attempts": 1,
+      "observed_wire_bytes": 9781,
+      "payload_audit": {
+        "allowed_wrapper_tools": [
+          "exec",
+          "request_user_input",
+          "wait"
+        ],
+        "audit_scope": "synthetic no-auth loopback client serialization",
+        "environment_context_present": false,
+        "external_information_tools": "all attempts forbidden; accepted generations have no tool items",
+        "global_instructions_sha256": "263fbf5f86b6338244e956ebe986e34e3aecafb5c061fe95d140a677b8d60714",
+        "input_message_count": 4,
+        "model": "gpt-6-luna",
+        "nested_tools": "not exposed by this client metadata",
+        "public_text_sha256": "caaec1b93608fcd2ff90b1416a793056b400b825c8fa3bd411041fd155b846fe",
+        "skill_catalog_present": false
+      },
+      "real_model_generations": 0,
+      "terminal_error_codes": [
+        "sessionBudgetExceeded"
+      ],
+      "terminal_statuses": [
+        "failed"
+      ],
+      "usage_records": 1
+    },
+    {
+      "authorization_present": false,
+      "case": "tool_call",
+      "final_response_count": 0,
+      "fixed_wire_bytes_upper_observation": 9370,
+      "http_attempts": 1,
+      "observed_wire_bytes": 9781,
+      "payload_audit": {
+        "allowed_wrapper_tools": [
+          "exec",
+          "request_user_input",
+          "wait"
+        ],
+        "audit_scope": "synthetic no-auth loopback client serialization",
+        "environment_context_present": false,
+        "external_information_tools": "all attempts forbidden; accepted generations have no tool items",
+        "global_instructions_sha256": "263fbf5f86b6338244e956ebe986e34e3aecafb5c061fe95d140a677b8d60714",
+        "input_message_count": 4,
+        "model": "gpt-6-luna",
+        "nested_tools": "not exposed by this client metadata",
+        "public_text_sha256": "caaec1b93608fcd2ff90b1416a793056b400b825c8fa3bd411041fd155b846fe",
+        "skill_catalog_present": false
+      },
+      "real_model_generations": 0,
+      "terminal_error_codes": [
+        "sessionBudgetExceeded"
+      ],
+      "terminal_statuses": [
+        "failed"
+      ],
+      "usage_records": 1
+    },
+    {
+      "authorization_present": false,
+      "case": "http_503",
+      "final_response_count": 0,
+      "fixed_wire_bytes_upper_observation": 9370,
+      "http_attempts": 1,
+      "observed_wire_bytes": 9781,
+      "payload_audit": {
+        "allowed_wrapper_tools": [
+          "exec",
+          "request_user_input",
+          "wait"
+        ],
+        "audit_scope": "synthetic no-auth loopback client serialization",
+        "environment_context_present": false,
+        "external_information_tools": "all attempts forbidden; accepted generations have no tool items",
+        "global_instructions_sha256": "263fbf5f86b6338244e956ebe986e34e3aecafb5c061fe95d140a677b8d60714",
+        "input_message_count": 4,
+        "model": "gpt-6-luna",
+        "nested_tools": "not exposed by this client metadata",
+        "public_text_sha256": "caaec1b93608fcd2ff90b1416a793056b400b825c8fa3bd411041fd155b846fe",
+        "skill_catalog_present": false
+      },
+      "real_model_generations": 0,
+      "terminal_error_codes": [
+        "other"
+      ],
+      "terminal_statuses": [
+        "failed"
+      ],
+      "usage_records": 0
+    },
+    {
+      "authorization_present": false,
+      "case": "truncated_sse",
+      "final_response_count": 0,
+      "fixed_wire_bytes_upper_observation": 9370,
+      "http_attempts": 1,
+      "observed_wire_bytes": 9781,
+      "payload_audit": {
+        "allowed_wrapper_tools": [
+          "exec",
+          "request_user_input",
+          "wait"
+        ],
+        "audit_scope": "synthetic no-auth loopback client serialization",
+        "environment_context_present": false,
+        "external_information_tools": "all attempts forbidden; accepted generations have no tool items",
+        "global_instructions_sha256": "263fbf5f86b6338244e956ebe986e34e3aecafb5c061fe95d140a677b8d60714",
+        "input_message_count": 4,
+        "model": "gpt-6-luna",
+        "nested_tools": "not exposed by this client metadata",
+        "public_text_sha256": "caaec1b93608fcd2ff90b1416a793056b400b825c8fa3bd411041fd155b846fe",
+        "skill_catalog_present": false
+      },
+      "real_model_generations": 0,
+      "terminal_error_codes": [
+        "other"
+      ],
+      "terminal_statuses": [
+        "failed"
+      ],
+      "usage_records": 0
+    }
+  ],
+  "client_sha256": "97d4d67419d0ac2f71342f9a5e850f9468aa622618de8ea823223edb9a91926a",
+  "client_version": "codex-cli 0.155.0-alpha.16",
+  "config_check": {
+    "verified_leaves": 46
+  },
+  "global_instructions_sha256": "263fbf5f86b6338244e956ebe986e34e3aecafb5c061fe95d140a677b8d60714",
+  "isolation_passed": true,
+  "model_catalog_entry": {
+    "additionalSpeedTiers": [
+      "fast"
+    ],
+    "availabilityNux": null,
+    "availableAccessPrograms": {
+      "cyber": [
+        "standard"
+      ]
+    },
+    "defaultReasoningEffort": "medium",
+    "defaultServiceTier": null,
+    "description": "GPT-6 Luna Codex model.",
+    "displayName": "GPT-6-Luna",
+    "hidden": false,
+    "id": "gpt-6-luna",
+    "inputModalities": [
+      "text",
+      "image"
+    ],
+    "isDefault": false,
+    "model": "gpt-6-luna",
+    "modelSpecialty": null,
+    "multiAgentVersion": "v2",
+    "serviceTiers": [
+      {
+        "description": "1.5x speed",
+        "id": "priority",
+        "name": "Fast"
+      }
+    ],
+    "supportedReasoningEfforts": [
+      {
+        "description": "Fast responses with lighter reasoning",
+        "reasoningEffort": "low"
+      },
+      {
+        "description": "Balances speed and reasoning depth for everyday tasks",
+        "reasoningEffort": "medium"
+      },
+      {
+        "description": "Greater reasoning depth for complex problems",
+        "reasoningEffort": "high"
+      },
+      {
+        "description": "Extra high reasoning depth for complex problems",
+        "reasoningEffort": "xhigh"
+      },
+      {
+        "description": "Maximum reasoning depth for the hardest problems",
+        "reasoningEffort": "max"
+      }
+    ],
+    "supportsPersonality": false,
+    "upgrade": null,
+    "upgradeInfo": null
+  },
+  "profile_sha256": "ef7f05375f4761d1132086e3267617f95a90eef7deeeb085b43851e3c81538be",
+  "quota": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476690,
+        "usedPercent": 93,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "real_model_generations": 0,
+  "schema_transfer_loopback": {
+    "authorization_present": false,
+    "case": "final_message",
+    "final_response_count": 1,
+    "fixed_wire_bytes_upper_observation": 9370,
+    "http_attempts": 1,
+    "observed_wire_bytes": 18530,
+    "payload_audit": {
+      "allowed_wrapper_tools": [
+        "exec",
+        "request_user_input",
+        "wait"
+      ],
+      "audit_scope": "synthetic no-auth loopback client serialization",
+      "environment_context_present": false,
+      "external_information_tools": "all attempts forbidden; accepted generations have no tool items",
+      "global_instructions_sha256": "263fbf5f86b6338244e956ebe986e34e3aecafb5c061fe95d140a677b8d60714",
+      "input_message_count": 4,
+      "model": "gpt-6-luna",
+      "nested_tools": "not exposed by this client metadata",
+      "public_text_sha256": "efd36ff93c2225c5b3d2015e60b77e6b9fd74d1ea9c62e950ce09c2b50404f74",
+      "skill_catalog_present": false
+    },
+    "real_model_generations": 0,
+    "terminal_error_codes": [
+      "sessionBudgetExceeded"
+    ],
+    "terminal_statuses": [
+      "failed"
+    ],
+    "usage_records": 1
+  },
+  "version": "luna6_preflight_v1"
+}

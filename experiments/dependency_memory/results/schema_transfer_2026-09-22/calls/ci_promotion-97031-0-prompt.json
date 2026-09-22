@@ -1,0 +1,99 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "ci_promotion-97031-0-prompt",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0091275",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718871,
+        "usedPercent": 1,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"target_id\":\"fd05a4ea3b2746a9\",\"work\":[\"approval_scope\"]}",
+  "request": {
+    "instruction": "Use only supplied memory, target and late event. Memory may be prose, one original tool result, a list of results, or a JSON table with f=full field paths and r=rows in that field order. Apply the event to the named target, then return one exact terminal decision with sorted work. Do not call tools. Promote only if build.channel=stable, authorization.state=approved, authorization.approved_digest=build.digest, verification.subject=build.digest, verification.unit and integration both pass, and handoff.environment=prod. Otherwise hold with the exact sorted set of channel, approval, approval_scope, ci_scope, unit, integration, environment for each failed condition. Return target_id=build.digest. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "note",
+        "value": "Schedule title updated; gate fields unchanged."
+      },
+      "memory": "Late event: none supplied. Candidates (deployment_slot): 490549d84db133a0, ed99c84337253490. f=[build.digest,build.channel,authorization.approved_digest,authorization.state,authorization.ticket,deployment_slot,handoff.environment,verification.subject,verification.unit,verification.integration,verification.run,operator_notes.archived_draft]; r=[[b7bb13742d9bb474,stable,b7bb13742d9bb474,approved,c929fb57115922ac,490549d84db133a0,prod,b7bb13742d9bb474,pass,pass,6132b96a12091854,c48a9df3e0faa4ab],[fd05a4ea3b2746a9,stable,afed465d050c8164,approved,877302d237e0aa12,ed99c84337253490,prod,fd05a4ea3b2746a9,pass,pass,b0a0b140b9d45554,fdbc0c3fc5dd2ec3]]. Order as candidates. Gate: promote only stable, approved, approved_digest=digest, verification.subject=digest, unit/integration pass, environment prod; else hold with sorted failed set among channel,approval,approval_scope,ci_scope,unit,integration,environment. 490549d84db133a0 passes. ed99c84337253490 fails approval_scope only. target_id=build.digest.",
+      "target": "ed99c84337253490"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "b45bc5753f8a4bc550c7e3c3ea1a4d30b170e15cc174f32a335996d9ea47e3c2",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "target_id": "fd05a4ea3b2746a9",
+    "work": [
+      "approval_scope"
+    ]
+  },
+  "started_at": "2026-09-22T22:47:58.946626+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 3201,
+    "outputTokens": 90,
+    "reasoningOutputTokens": 52,
+    "totalTokens": 3291
+  },
+  "usage_events": 1,
+  "wall_seconds": 4.428959499986377,
+  "wire_body_byte_bound": 18626
+}
