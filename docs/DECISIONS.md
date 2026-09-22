@@ -348,6 +348,9 @@ annotated-schema tie. Freeze different development and evaluation schema
 structures, an exact terminal grader, and a 126-call/10-planning-credit ceiling
 before implementing the generic detector or seeing evaluation responses.
 Casebook/protocol commit `7067963`; implementation commit `649bbc9`.
+Evaluation schema definitions were visible in that frozen casebook. Treat the
+split as prospective at the response level and different in structure, not as
+a blind unknown-schema holdout for the implementer.
 The generic mechanism may infer ID roles only from ordinary schema/result
 signals and must return unknown on ambiguous short strings. Preserve exact
 detected IDs and owner/path associations; do not claim a state or execution

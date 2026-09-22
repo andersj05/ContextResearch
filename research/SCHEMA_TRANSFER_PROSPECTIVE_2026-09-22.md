@@ -21,6 +21,10 @@ frozen traces per evaluation family, seven tool results per trace, and three
 late continuations per trace. These are **constructed executable fixtures**, not
 observed incidents or independent natural task samples. Opaque values, cases,
 events, and exact terminal graders were fixed before the implementation.
+The evaluation schema definitions were present in the frozen casebook and
+visible to the implementer. The generic extractor contains no evaluation
+family or field-list special case and was tested only on development fixtures
+before its commit, but this is **not a blinded test of unknown schemas**.
 
 At boundary one, 3,000 UTF-8 memory bytes may survive. Two candidates then
 become visible. Boundary two permits 1,050 bytes. Only afterward does a target
@@ -89,8 +93,9 @@ generally worthwhile memory mechanism. Indexed recovery gets **0 failures at a
 lower experimental total (0.11673546631)** and therefore dominates automatic
 direct in this finite comparison; it also costs less under cache-neutral input
 pricing. Its storage and infrastructure costs remain unmeasured. The evaluation
-is small, correlated, constructed, and conditional on a particular model alias,
-prompt, byte budget, grader, and synthetic local prices. A one-error margin is
+is small, correlated, constructed, visible to the implementer at the schema
+level, and conditional on a particular model alias, prompt, byte budget,
+grader, and synthetic local prices. A one-error margin is
 descriptive, not a population performance estimate or significance result.
 
 ## Failure and certificate diagnosis

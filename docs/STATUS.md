@@ -22,8 +22,10 @@ failures and costs 0.44173514106: all six prose parent proposals are rejected
 and replaced by deterministic projections. One automatic failure misreads a
 correctly retained dataset ID. Thus the broader claim of a generally useful,
 cost-superior automatic survival detector is **not established**. These are
-constructed correlated traces, synthetic local prices, and unknown actual
-subscription debit. Claim C48; living draft v0.18.
+constructed correlated traces; evaluation schema definitions were visible in
+the frozen casebook, so this was not a blind unknown-schema test. Local prices
+are synthetic and actual subscription debit is unknown. Claim C48; living
+draft v0.18.
 Final validation: 348 offline tests pass; the repository validator reports
 PASS and reconciles 126 new calls/108 terminal decisions; the paper builds
 with 34 cited sources. No rerun, purchase, reset or external publication.

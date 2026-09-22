@@ -363,8 +363,10 @@ finite comparison. The checked model-proposal path has 2/18 failures and costs
 and fall back to automatic projection. One automatic final response confuses a
 retained load run ID with the required output dataset. Thus certified retention
 does not ensure correct execution. The evaluation uses newly constructed,
-correlated traces and synthetic local prices; it does not establish novelty,
-production savings, or superiority over cheap indexed recovery. Claim C48.
+correlated traces whose evaluation schemas were visible in the frozen casebook,
+and synthetic local prices. It is not a blinded unknown-schema test and does
+not establish novelty, production savings, or superiority over cheap indexed
+recovery. Claim C48.
 
 ## 9. Limitations and open results
 

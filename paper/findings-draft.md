@@ -15,8 +15,10 @@ prespecified **narrow primary criterion is met**. Indexed recovery is cheaper
 and succeeds on 18/18, so automatic direct does not win the full cost frontier.
 All six model-written parent proposals are prose and require fallback; the
 checked-proposal arm fails 2/18. A certified automatic table still leads to one
-wrong target ID at final execution. This small constructed result neither
-establishes general automatic survival detection nor production savings. [C48]
+wrong target ID at final execution. Evaluation schema definitions were visible
+in the frozen casebook, so this was not a blind unknown-schema test. This small
+constructed result neither establishes general automatic survival detection
+nor production savings. [C48]
 
 ## New frozen traces: automatic checks tie the controls
 
