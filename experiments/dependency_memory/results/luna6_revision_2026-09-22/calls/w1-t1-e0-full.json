@@ -1,0 +1,94 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "w1-t1-e0-full",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.01101",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476690,
+        "usedPercent": 94,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"release\",\"artifact\":\"157c67da\",\"work\":[]}",
+  "request": {
+    "instruction": "Continue the release workflow using only the supplied evidence. Release only when approval equals the current artifact, every required CI test has result pass, and there are no open blockers. CI is bound to the artifact in ci_artifact; all required tests need rerunning when that differs. Optional failing tests do not block. Work names are exactly approval (missing/stale approval), ci:<test> (required test absent/failing/stale), and blocker:<id> (one per open blocker). Work is a set. If work is empty choose release; otherwise hold. Notes, owners, and elapsed discussion do not change gates. Apply the late event before deciding. If necessary facts were forgotten, choose inspect, with the facts you can recover from memory. Return the exact current artifact and all outstanding work. The event applies only to the target. Do not call tools.",
+    "observation": {
+      "late_event": {
+        "kind": "note",
+        "value": "Release page typography corrected; gate fields unchanged."
+      },
+      "memory": "[{\"approval\":\"ed052220\",\"artifact\":\"ed052220\",\"blockers\":[],\"build_log\":[\"Build worker 23 uploaded ed052220; image scanning finished; tracking labels refreshed.\",\"Optional performance job is red on the shared runner; release policy follows required membership.\",\"The release page says validation work completed. Keep exact check scope from the tool fields.\",\"Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.\",\"Artifact labels, dashboard colors, and team ownership were checked for consistency.\",\"A later operator will select services and may update a gate. No deployment has occurred.\"],\"ci\":{\"integ\":\"fail\",\"perf\":\"fail\",\"unit\":\"pass\"},\"ci_artifact\":\"ed052220\",\"owner\":\"team-3\",\"required\":[\"unit\",\"integ\"],\"service\":\"cedar-58d\"},{\"approval\":\"8f79b174\",\"artifact\":\"8f79b174\",\"blockers\":[],\"build_log\":[\"Build worker 26 uploaded 8f79b174; image scanning finished; tracking labels refreshed.\",\"Optional performance job is red on the shared runner; release policy follows required membership.\",\"The release page says validation work completed. Keep exact check scope from the tool fields.\",\"Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.\",\"Artifact labels, dashboard colors, and team ownership were checked for consistency.\",\"A later operator will select services and may update a gate. No deployment has occurred.\"],\"ci\":{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},\"ci_artifact\":\"752b0417\",\"owner\":\"team-6\",\"required\":[\"unit\",\"integ\"],\"service\":\"fjord-170\"},{\"approval\":\"157c67da\",\"artifact\":\"157c67da\",\"blockers\":[],\"build_log\":[\"Build worker 25 uploaded 157c67da; image scanning finished; tracking labels refreshed.\",\"Optional performance job is red on the shared runner; release policy follows required membership.\",\"The release page says validation work completed. Keep exact check scope from the tool fields.\",\"Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.\",\"Artifact labels, dashboard colors, and team ownership were checked for consistency.\",\"A later operator will select services and may update a gate. No deployment has occurred.\"],\"ci\":{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},\"ci_artifact\":\"157c67da\",\"owner\":\"team-5\",\"required\":[\"unit\",\"integ\"],\"service\":\"ember-60a\"},{\"approval\":\"72d7fad3\",\"artifact\":\"72d7fad3\",\"blockers\":[],\"build_log\":[\"Build worker 21 uploaded 72d7fad3; image scanning finished; tracking labels refreshed.\",\"Optional performance job is red on the shared runner; release policy follows required membership.\",\"The release page says validation work completed. Keep exact check scope from the tool fields.\",\"Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.\",\"Artifact labels, dashboard colors, and team ownership were checked for consistency.\",\"A later operator will select services and may update a gate. No deployment has occurred.\"],\"ci\":{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},\"ci_artifact\":\"72d7fad3\",\"owner\":\"team-1\",\"required\":[\"unit\",\"integ\"],\"service\":\"atlas-aad\"},{\"approval\":\"47abba9e\",\"artifact\":\"47abba9e\",\"blockers\":[\"REL-47ab\"],\"build_log\":[\"Build worker 24 uploaded 47abba9e; image scanning finished; tracking labels refreshed.\",\"Optional performance job is red on the shared runner; release policy follows required membership.\",\"The release page says validation work completed. Keep exact check scope from the tool fields.\",\"Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.\",\"Artifact labels, dashboard colors, and team ownership were checked for consistency.\",\"A later operator will select services and may update a gate. No deployment has occurred.\"],\"ci\":{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},\"ci_artifact\":\"47abba9e\",\"owner\":\"team-4\",\"required\":[\"unit\",\"integ\"],\"service\":\"delta-d95\"},{\"approval\":\"29c51de7\",\"artifact\":\"58e8d547\",\"blockers\":[],\"build_log\":[\"Build worker 22 uploaded 58e8d547; image scanning finished; tracking labels refreshed.\",\"Optional performance job is red on the shared runner; release policy follows required membership.\",\"The release page says validation work completed. Keep exact check scope from the tool fields.\",\"Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.\",\"Artifact labels, dashboard colors, and team ownership were checked for consistency.\",\"A later operator will select services and may update a gate. No deployment has occurred.\"],\"ci\":{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},\"ci_artifact\":\"58e8d547\",\"owner\":\"team-2\",\"required\":[\"unit\",\"integ\"],\"service\":\"birch-c53\"}]",
+      "target": "ember-60a"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "release",
+            "hold",
+            "inspect"
+          ],
+          "type": "string"
+        },
+        "artifact": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "artifact",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "e6ba3ef7ac3a591ab9fe3f2732c22ccc35deda0dae347d71d525b172d447dfe8",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "release",
+    "artifact": "157c67da",
+    "work": []
+  },
+  "started_at": "2026-09-22T19:56:05.351460+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 4039,
+    "outputTokens": 73,
+    "reasoningOutputTokens": 46,
+    "totalTokens": 4112
+  },
+  "usage_events": 1,
+  "wall_seconds": 4.159433799970429,
+  "wire_body_byte_bound": 23353
+}

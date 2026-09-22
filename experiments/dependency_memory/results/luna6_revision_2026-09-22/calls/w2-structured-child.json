@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "w2-structured-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.024513",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476690,
+        "usedPercent": 94,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Gate: release iff appr=artifact=ci_artifact, unit+integ pass, B=-; else hold (work: approval if missing/stale, ci:<required test> if absent/fail/stale, blocker:<id> per open blocker). Required unit,integ; optional perf fail nonblocking. ci_artifact!=artifact => rerun unit+integ. B=- explicitly none. Late event first; missing facts=>inspect. Rows svc:artifact/appr/ci_artifact; unit,integ; B.\\ndelta-e58:543e05fe/543e05fe/543e05fe;pass,pass;B=REL-543e open.\\nfjord-f14:44060274/44060274/87eda946;pass,pass stale (ci:unit,ci:integ; rerun both);B=-\"}",
+  "request": {
+    "instruction": "Write a compact structured handoff. Preserve exact artifact identifiers, approval and CI scope, required versus optional tests, explicit absence of blockers, unresolved blockers, and revision-sensitive dependencies. Do not replace scoped evidence with just done/ready. Your entire retained memory string must fit 440 UTF-8 bytes. Only that string survives. The future target and event are not yet revealed; keep enough for every candidate. You may use compact notation and must define it in memory. Release only when approval equals the current artifact, every required CI test has result pass, and there are no open blockers. CI is bound to the artifact in ci_artifact; all required tests need rerunning when that differs. Optional failing tests do not block. Work names are exactly approval (missing/stale approval), ci:<test> (required test absent/failing/stale), and blocker:<id> (one per open blocker). Work is a set. If work is empty choose release; otherwise hold. Notes, owners, and elapsed discussion do not change gates. Apply the late event before deciding. If necessary facts were forgotten, choose inspect, with the facts you can recover from memory.",
+    "observation": {
+      "candidate_services": [
+        "delta-e58",
+        "fjord-f14"
+      ],
+      "previous_memory": "Gate: release iff approval=artifact, all required CI pass on ci_artifact=artifact, B=none. Required tests unit,integ; optional perf fail never blocks. If ci_artifact differs, rerun both required tests. Work is a set: approval (missing/stale), ci:<test> (required absent/failing/stale), blocker:<id> (each open blocker); empty=>release, else hold. Apply late event first. Notation rows service: artifact/appr/ci_artifact; unit,integ results; B (blockers). \u201c-\u201d means explicitly none. No deployment.\natlas-820: 860ad063/860ad063/860ad063; pass,pass; B=- (work {}).\ncedar-7c7: 242f637f/242f637f/242f637f; pass,fail; B=- (ci:integ).\nfjord-f14: 44060274/44060274/87eda946; pass,pass (stale); B=- (ci:unit,ci:integ; rerun both).\ndelta-e58: 543e05fe/543e05fe/543e05fe; pass,pass; B=REL-543e (blocker:REL-543e).\nember-2e3: 6c27d1b3/6c27d1b3/6c27d1b3; pass,pass; B=- (work {}).\nbirch-932: 08b9169a/fd6cf744"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "204a786d994547310728a24b822bcd30894aa4f433894443bc0fc0bf57d4ec8e",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Gate: release iff appr=artifact=ci_artifact, unit+integ pass, B=-; else hold (work: approval if missing/stale, ci:<required test> if absent/fail/stale, blocker:<id> per open blocker). Required unit,integ; optional perf fail nonblocking. ci_artifact!=artifact => rerun unit+integ. B=- explicitly none. Late event first; missing facts=>inspect. Rows svc:artifact/appr/ci_artifact; unit,integ; B.\ndelta-e58:543e05fe/543e05fe/543e05fe;pass,pass;B=REL-543e open.\nfjord-f14:44060274/44060274/87eda946;pass,pass stale (ci:unit,ci:integ; rerun both);B=-"
+  },
+  "started_at": "2026-09-22T19:58:45.366283+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3213,
+    "outputTokens": 1641,
+    "reasoningOutputTokens": 1447,
+    "totalTokens": 4854
+  },
+  "usage_events": 1,
+  "wall_seconds": 33.06150269997306,
+  "wire_body_byte_bound": 18533
+}

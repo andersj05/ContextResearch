@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "w0-prose-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0171925",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476690,
+        "usedPercent": 93,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Await target + late event; apply event to target before deciding. art/appr/ci = artifact/approval/ci_artifact. atlas-99c: c7d544cd/c7d544cd/c7d544cd; required unit,integ pass/pass; no blockers. birch-274: f6cafa82/1120b4ed/f6cafa82; unit,integ pass/pass; no blockers. Work set: approval if missing/stale; ci:<test> for each required absent/failing/stale (if ci!=art, rerun all required); blocker:<id> per open blocker. Ignore optional failures. Empty work=>release; else hold. Missing needed facts=>inspect. Now atlas {}; birch {approval}.\"}",
+  "request": {
+    "instruction": "Write a concise prose handoff of the current task state and important remaining work. Your entire retained memory string must fit 440 UTF-8 bytes. Only that string survives. The future target and event are not yet revealed; keep enough for every candidate. You may use compact notation and must define it in memory. Release only when approval equals the current artifact, every required CI test has result pass, and there are no open blockers. CI is bound to the artifact in ci_artifact; all required tests need rerunning when that differs. Optional failing tests do not block. Work names are exactly approval (missing/stale approval), ci:<test> (required test absent/failing/stale), and blocker:<id> (one per open blocker). Work is a set. If work is empty choose release; otherwise hold. Notes, owners, and elapsed discussion do not change gates. Apply the late event before deciding. If necessary facts were forgotten, choose inspect, with the facts you can recover from memory.",
+    "observation": {
+      "candidate_services": [
+        "atlas-99c",
+        "birch-274"
+      ],
+      "previous_memory": "Rules: apply the late event to the selected candidate before deciding. Work is a set: approval if missing/stale; ci:<test> for each required test absent/failing/stale (rerun all required tests if ci_artifact != artifact); blocker:<id> per open blocker. Ignore optional failures. Empty work => release; else hold. If needed facts missing => inspect. Candidate snapshot (service: artifact/approval; ci_artifact; required unit,integ; blockers): birch-274: f6cafa82/1120b4ed; f6cafa82; pass,pass; none (work {}). ember-ebd: 654ca646/654ca646; 654ca646; pass,pass; none ({}). fjord-a88: 6d500079/6d500079; dd7d8d44; pass,pass but stale (work {ci:unit,ci:integ}). atlas-99c: c7d544cd/c7d544cd; c7d544cd; pass,pass; none ({}). delta-cf0: ad8d7925/ad8d7925; ad8d7925; pass,pass; REL-ad8d (work {blocker:REL-ad8d}). cedar-dde: ce99bc65/ce99bc65; ce99bc65; pass,fail; none (work {ci:integ}). perf is optional a"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "9e830d50b40a0fe79359533ebadc7d92e63a078ad97e7431bee472f34f609087",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Await target + late event; apply event to target before deciding. art/appr/ci = artifact/approval/ci_artifact. atlas-99c: c7d544cd/c7d544cd/c7d544cd; required unit,integ pass/pass; no blockers. birch-274: f6cafa82/1120b4ed/f6cafa82; unit,integ pass/pass; no blockers. Work set: approval if missing/stale; ci:<test> for each required absent/failing/stale (if ci!=art, rerun all required); blocker:<id> per open blocker. Ignore optional failures. Empty work=>release; else hold. Missing needed facts=>inspect. Now atlas {}; birch {approval}."
+  },
+  "started_at": "2026-09-22T19:47:53.879269+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 3152,
+    "outputTokens": 745,
+    "reasoningOutputTokens": 571,
+    "totalTokens": 3897
+  },
+  "usage_events": 1,
+  "wall_seconds": 17.55685980000999,
+  "wire_body_byte_bound": 18330
+}

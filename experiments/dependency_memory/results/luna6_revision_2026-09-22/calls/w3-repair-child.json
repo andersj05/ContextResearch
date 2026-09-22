@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "w3-repair-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0188825",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476690,
+        "usedPercent": 95,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Gate: release iff approval=artifact, every required CI pass for artifact, and no open blockers; else hold. CI binds to ci_artifact; if it differs, rerun all required tests. Optional failures don't block. Work set: approval (missing/stale), ci:<test> (required absent/fail/stale), blocker:<id> (each open blocker). Rows service|artifact|approval|ci_artifact; required unit,integ; CI unit/integ/perf; blockers: atlas-313|d06d406c|d06d406c|d06d406c|pass/pass/fail|none. ember-0c4|1105c344|1105c344|1105c344|pass/pass/fail|none. perf optional. No late event provided.\"}",
+  "request": {
+    "instruction": "Write a compact structured handoff. Preserve exact artifact identifiers, approval and CI scope, required versus optional tests, explicit absence of blockers, unresolved blockers, and revision-sensitive dependencies. Do not replace scoped evidence with just done/ready. Your entire retained memory string must fit 440 UTF-8 bytes. Only that string survives. The future target and event are not yet revealed; keep enough for every candidate. You may use compact notation and must define it in memory. Release only when approval equals the current artifact, every required CI test has result pass, and there are no open blockers. CI is bound to the artifact in ci_artifact; all required tests need rerunning when that differs. Optional failing tests do not block. Work names are exactly approval (missing/stale approval), ci:<test> (required test absent/failing/stale), and blocker:<id> (one per open blocker). Work is a set. If work is empty choose release; otherwise hold. Notes, owners, and elapsed discussion do not change gates. Apply the late event before deciding. If necessary facts were forgotten, choose inspect, with the facts you can recover from memory.",
+    "observation": {
+      "candidate_services": [
+        "atlas-313",
+        "ember-0c4"
+      ],
+      "previous_memory": "{\"format\":\"rows=[service,artifact,approval,ci_artifact,required,ci,blockers]\",\"rows\":[[\"atlas-313\",\"d06d406c\",\"d06d406c\",\"d06d406c\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"birch-124\",\"30e72291\",\"572b8d45\",\"30e72291\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"cedar-97e\",\"94a1e8d5\",\"94a1e8d5\",\"94a1e8d5\",[\"unit\",\"integ\"],{\"integ\":\"fail\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"delta-153\",\"186c733f\",\"186c733f\",\"186c733f\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[\"REL-186c\"]],[\"ember-0c4\",\"1105c344\",\"1105c344\",\"1105c344\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"fjord-324\",\"500c107f\",\"500c107f\",\"9255cbb0\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]]]}"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "cc7593cac45cf9081c0b80efb71dde470bdda5c4ffc0bc186d1c155a5f1ee60b",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Gate: release iff approval=artifact, every required CI pass for artifact, and no open blockers; else hold. CI binds to ci_artifact; if it differs, rerun all required tests. Optional failures don't block. Work set: approval (missing/stale), ci:<test> (required absent/fail/stale), blocker:<id> (each open blocker). Rows service|artifact|approval|ci_artifact; required unit,integ; CI unit/integ/perf; blockers: atlas-313|d06d406c|d06d406c|d06d406c|pass/pass/fail|none. ember-0c4|1105c344|1105c344|1105c344|pass/pass/fail|none. perf optional. No late event provided."
+  },
+  "started_at": "2026-09-22T20:05:11.217605+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 3203,
+    "outputTokens": 870,
+    "reasoningOutputTokens": 687,
+    "totalTokens": 4073
+  },
+  "usage_events": 1,
+  "wall_seconds": 19.0520767000271,
+  "wire_body_byte_bound": 18838
+}

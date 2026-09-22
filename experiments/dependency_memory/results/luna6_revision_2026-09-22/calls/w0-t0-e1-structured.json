@@ -1,0 +1,98 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "w0-t0-e1-structured",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0050155",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476690,
+        "usedPercent": 93,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"artifact\":\"a0110d9d\",\"work\":[\"approval\",\"ci:unit\",\"ci:integ\"]}",
+  "request": {
+    "instruction": "Continue the release workflow using only the supplied evidence. Release only when approval equals the current artifact, every required CI test has result pass, and there are no open blockers. CI is bound to the artifact in ci_artifact; all required tests need rerunning when that differs. Optional failing tests do not block. Work names are exactly approval (missing/stale approval), ci:<test> (required test absent/failing/stale), and blocker:<id> (one per open blocker). Work is a set. If work is empty choose release; otherwise hold. Notes, owners, and elapsed discussion do not change gates. Apply the late event before deciding. If necessary facts were forgotten, choose inspect, with the facts you can recover from memory. Return the exact current artifact and all outstanding work. The event applies only to the target. Do not call tools.",
+    "observation": {
+      "late_event": {
+        "kind": "artifact",
+        "value": "a0110d9d"
+      },
+      "memory": "Release iff A=art, req CI pass on ci_art=art, B=\u2205; mismatch rerun all req. Work={approval if A missing/stale; ci:<test> if req absent/fail/stale; blocker:<id> per open blocker}; empty=>release else hold. Optional failures ignored. Rows S:art/A/ci_art; req unit,integ results; B; W. P=pass,F=fail.\natlas-99c:c7d544cd/c7d544cd/c7d544cd;P,P;B=\u2205;W=\u2205.\nbirch-274:f6cafa82/1120b4ed/f6cafa82;P,P;B=\u2205;W={approval}.\nOptional perf=F (ignored);",
+      "target": "atlas-99c"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "release",
+            "hold",
+            "inspect"
+          ],
+          "type": "string"
+        },
+        "artifact": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "artifact",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "d302397e9cfd39daa919e01060c2f11ab8189bffbc8983b0f923a3b13c7585d0",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "artifact": "a0110d9d",
+    "work": [
+      "approval",
+      "ci:unit",
+      "ci:integ"
+    ]
+  },
+  "started_at": "2026-09-22T19:50:39.336590+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3064,
+    "outputTokens": 111,
+    "reasoningOutputTokens": 71,
+    "totalTokens": 3175
+  },
+  "usage_events": 1,
+  "wall_seconds": 5.125515800027642,
+  "wire_body_byte_bound": 18095
+}

@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "w0-structured-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.025543",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476689,
+        "usedPercent": 93,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Release iff A=art, req CI pass on ci_art=art, B=\u2205; mismatch rerun all req. Work={approval if A missing/stale; ci:<test> if req absent/fail/stale; blocker:<id> per open blocker}; empty=>release else hold. Optional failures ignored. Rows S:art/A/ci_art; req unit,integ results; B; W. P=pass,F=fail.\\natlas-99c:c7d544cd/c7d544cd/c7d544cd;P,P;B=\u2205;W=\u2205.\\nbirch-274:f6cafa82/1120b4ed/f6cafa82;P,P;B=\u2205;W={approval}.\\nOptional perf=F (ignored); no other blockers. Target/event pending; apply then decide.\"}",
+  "request": {
+    "instruction": "Write a compact structured handoff. Preserve exact artifact identifiers, approval and CI scope, required versus optional tests, explicit absence of blockers, unresolved blockers, and revision-sensitive dependencies. Do not replace scoped evidence with just done/ready. Your entire retained memory string must fit 440 UTF-8 bytes. Only that string survives. The future target and event are not yet revealed; keep enough for every candidate. You may use compact notation and must define it in memory. Release only when approval equals the current artifact, every required CI test has result pass, and there are no open blockers. CI is bound to the artifact in ci_artifact; all required tests need rerunning when that differs. Optional failing tests do not block. Work names are exactly approval (missing/stale approval), ci:<test> (required test absent/failing/stale), and blocker:<id> (one per open blocker). Work is a set. If work is empty choose release; otherwise hold. Notes, owners, and elapsed discussion do not change gates. Apply the late event before deciding. If necessary facts were forgotten, choose inspect, with the facts you can recover from memory.",
+    "observation": {
+      "candidate_services": [
+        "atlas-99c",
+        "birch-274"
+      ],
+      "previous_memory": "Policy: release iff approval=artifact, all required CI pass on ci_artifact=artifact, blockers=\u2205. Work is set: approval (missing/stale); ci:<test> (required absent/fail/stale); blocker:<id>. Empty\u2192release, else hold. Optional failures don't block. Notation rows service: artifact/approval/ci_artifact; required unit,integ results; blockers; work. All rows required unit+integ, optional perf=fail (ignore); no deployments.\nbirch-274: f6cafa82/1120b4ed/f6cafa82; P,P; \u2205; {approval} \u2192hold\nember-ebd: 654ca646/654ca646/654ca646; P,P; \u2205; {}; release\nfjord-a88: 6d500079/6d500079/dd7d8d44; P,P (stale: rerun both); \u2205; {ci:unit,ci:integ} \u2192hold\natlas-99c: c7d544cd/c7d544cd/c7d544cd; P,P; \u2205; {}; release\ndelta-cf0: ad8d7925/ad8d7925/ad8d7925; P,P; {REL-ad8d}; {blocker:REL-ad8d} \u2192hold\ncedar-dde: ce99bc65/ce99bc65/ce99bc65; P,F; \u2205; {ci:integ} \u2192hold\nP=pass,F=fail. No other blockers."
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "d4b7d88cc9573316a4aaa757affb31647814bde74c41b2b0e79bd7e343ae30c3",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Release iff A=art, req CI pass on ci_art=art, B=\u2205; mismatch rerun all req. Work={approval if A missing/stale; ci:<test> if req absent/fail/stale; blocker:<id> per open blocker}; empty=>release else hold. Optional failures ignored. Rows S:art/A/ci_art; req unit,integ results; B; W. P=pass,F=fail.\natlas-99c:c7d544cd/c7d544cd/c7d544cd;P,P;B=\u2205;W=\u2205.\nbirch-274:f6cafa82/1120b4ed/f6cafa82;P,P;B=\u2205;W={approval}.\nOptional perf=F (ignored); no other blockers. Target/event pending; apply then decide."
+  },
+  "started_at": "2026-09-22T19:48:11.888217+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3235,
+    "outputTokens": 1719,
+    "reasoningOutputTokens": 1522,
+    "totalTokens": 4954
+  },
+  "usage_events": 1,
+  "wall_seconds": 33.88973759999499,
+  "wire_body_byte_bound": 18566
+}

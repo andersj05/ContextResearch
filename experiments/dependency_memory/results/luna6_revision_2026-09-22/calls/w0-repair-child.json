@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "w0-repair-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.031358",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476689,
+        "usedPercent": 93,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Fields s/a/ap/c/U-I/B; +=pass,-=fail; U/I required; perf optional=fail all; B '-'=none. Rows: atlas-99c/c7d544cd/c7d544cd/c7d544cd/++/-; birch-274/f6cafa82/1120b4ed/f6cafa82/++/-; cedar-dde/ce99bc65/ce99bc65/ce99bc65/-+/-; delta-cf0/ad8d7925/ad8d7925/ad8d7925/++/REL-ad8d; ember-ebd/654ca646/654ca646/654ca646/++/-; fjord-a88/6d500079/6d500079/dd7d8d44/++/-. Release iff ap=a,c=a,U/I=++,B empty; c!=a rerun U/I. Work: approval, ci:<test>, blocker:<id>; empty=release, else hold; missing facts=inspect.\"}",
+  "request": {
+    "instruction": "Write a compact structured handoff. Preserve exact artifact identifiers, approval and CI scope, required versus optional tests, explicit absence of blockers, unresolved blockers, and revision-sensitive dependencies. Do not replace scoped evidence with just done/ready. Your entire retained memory string must fit 440 UTF-8 bytes. Only that string survives. The future target and event are not yet revealed; keep enough for every candidate. You may use compact notation and must define it in memory. Release only when approval equals the current artifact, every required CI test has result pass, and there are no open blockers. CI is bound to the artifact in ci_artifact; all required tests need rerunning when that differs. Optional failing tests do not block. Work names are exactly approval (missing/stale approval), ci:<test> (required test absent/failing/stale), and blocker:<id> (one per open blocker). Work is a set. If work is empty choose release; otherwise hold. Notes, owners, and elapsed discussion do not change gates. Apply the late event before deciding. If necessary facts were forgotten, choose inspect, with the facts you can recover from memory.",
+    "observation": {
+      "candidate_services": [
+        "atlas-99c",
+        "birch-274"
+      ],
+      "previous_memory": "{\"format\":\"rows=[service,artifact,approval,ci_artifact,required,ci,blockers]\",\"rows\":[[\"atlas-99c\",\"c7d544cd\",\"c7d544cd\",\"c7d544cd\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"birch-274\",\"f6cafa82\",\"1120b4ed\",\"f6cafa82\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"cedar-dde\",\"ce99bc65\",\"ce99bc65\",\"ce99bc65\",[\"unit\",\"integ\"],{\"integ\":\"fail\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"delta-cf0\",\"ad8d7925\",\"ad8d7925\",\"ad8d7925\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[\"REL-ad8d\"]],[\"ember-ebd\",\"654ca646\",\"654ca646\",\"654ca646\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"fjord-a88\",\"6d500079\",\"6d500079\",\"dd7d8d44\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]]]}"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "f627b1ca04bde1ab6e284aa232fe3d2fea0865fadf19605aee0680419e6570a2",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Fields s/a/ap/c/U-I/B; +=pass,-=fail; U/I required; perf optional=fail all; B '-'=none. Rows: atlas-99c/c7d544cd/c7d544cd/c7d544cd/++/-; birch-274/f6cafa82/1120b4ed/f6cafa82/++/-; cedar-dde/ce99bc65/ce99bc65/ce99bc65/-+/-; delta-cf0/ad8d7925/ad8d7925/ad8d7925/++/REL-ad8d; ember-ebd/654ca646/654ca646/654ca646/++/-; fjord-a88/6d500079/6d500079/dd7d8d44/++/-. Release iff ap=a,c=a,U/I=++,B empty; c!=a rerun U/I. Work: approval, ci:<test>, blocker:<id>; empty=release, else hold; missing facts=inspect."
+  },
+  "started_at": "2026-09-22T19:48:46.221753+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3196,
+    "outputTokens": 2192,
+    "reasoningOutputTokens": 1960,
+    "totalTokens": 5388
+  },
+  "usage_events": 1,
+  "wall_seconds": 42.58809560001828,
+  "wire_body_byte_bound": 18838
+}

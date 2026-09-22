@@ -1,0 +1,45 @@
+{
+  "scope": "Offline local CPU calibration: seven batches of 250 repetitions, four histories each; no model calls. Indexed includes building the index and serializing four target reads; repair uses an empty proposal and whole replacement. Disk storage, arbitrary text extraction and provider compute are excluded.",
+  "timer": "GetProcessTimes()",
+  "timer_resolution_seconds": 1e-07,
+  "script_sha256": "24852f5250f9971feb53adcdc6e9d62d630d90035fd1683666f99034e40992e2",
+  "study_sha256": "596f082b90b19cd8f5b718514d0df67603f9196017267ec84ced965bb3372b6b",
+  "methods": {
+    "direct": {
+      "cpu_ns_per_four_histories_batches": [
+        250000.0,
+        187500.0,
+        250000.0,
+        187500.0,
+        250000.0,
+        187500.0,
+        187500.0
+      ],
+      "median_cpu_ns_per_four_histories": 187500.0
+    },
+    "repair": {
+      "cpu_ns_per_four_histories_batches": [
+        500000.0,
+        500000.0,
+        625000.0,
+        500000.0,
+        437500.0,
+        437500.0,
+        437500.0
+      ],
+      "median_cpu_ns_per_four_histories": 500000.0
+    },
+    "indexed": {
+      "cpu_ns_per_four_histories_batches": [
+        187500.0,
+        125000.0,
+        187500.0,
+        125000.0,
+        187500.0,
+        187500.0,
+        125000.0
+      ],
+      "median_cpu_ns_per_four_histories": 187500.0
+    }
+  }
+}

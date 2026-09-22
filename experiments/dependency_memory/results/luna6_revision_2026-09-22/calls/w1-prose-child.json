@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "w1-prose-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0367225",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476689,
+        "usedPercent": 94,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Gate: W={approval if appr!=art; ci:t per req absent/fail/stale, all req if ci_art!=art; blocker:id/open}; release iff W empty, else hold. Req=unit+integ; optional failures ignored. Rows art/appr/ci; I/U +=pass,-=fail. cedar-58d ed052220/ed052220/ed052220 I-/U+; ember-60a 157c67da x3 I+/U+. Target/event unknown: apply first; inspect if facts missing. No deployment.\"}",
+  "request": {
+    "instruction": "Write a concise prose handoff of the current task state and important remaining work. Your entire retained memory string must fit 440 UTF-8 bytes. Only that string survives. The future target and event are not yet revealed; keep enough for every candidate. You may use compact notation and must define it in memory. Release only when approval equals the current artifact, every required CI test has result pass, and there are no open blockers. CI is bound to the artifact in ci_artifact; all required tests need rerunning when that differs. Optional failing tests do not block. Work names are exactly approval (missing/stale approval), ci:<test> (required test absent/failing/stale), and blocker:<id> (one per open blocker). Work is a set. If work is empty choose release; otherwise hold. Notes, owners, and elapsed discussion do not change gates. Apply the late event before deciding. If necessary facts were forgotten, choose inspect, with the facts you can recover from memory.",
+    "observation": {
+      "candidate_services": [
+        "cedar-58d",
+        "ember-60a"
+      ],
+      "previous_memory": "Gate: after applying the late event, define W as a set: add `approval` if approval\u2260artifact; add `ci:<test>` for each required test absent/failing, or for every required test if ci_artifact\u2260artifact; add `blocker:<id>` per open blocker. Release iff W empty, else hold. Required tests are unit+integ; optional perf failures never block. Current candidates (service: artifact/approval/ci_artifact; integ,unit; blockers): cedar-58d: ed052220/ed052220/ed052220; fail,pass; none. fjord-170: 8f79b174/8f79b174/752b0417; pass,pass; none. ember-60a: 157c67da/157c67da/157c67da; pass,pass; none. atlas-aad: 72d7fad3/72d7fad3/72d7fad3; pass,pass; none. delta-d95: 47abba9e/47abba9e/47abba9e; pass,pass; REL-47ab. birch-c53: 58e8d547/29c51de7/58e8d547; pass,pass; none. Future target/event unknown; apply event, then compute W. If required facts unavailable, inspect. No deployment."
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "ceff829e6fff7c25d69d160d2b4e1b11cf87c888da4f34baa99c519b7e85c1b6",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Gate: W={approval if appr!=art; ci:t per req absent/fail/stale, all req if ci_art!=art; blocker:id/open}; release iff W empty, else hold. Req=unit+integ; optional failures ignored. Rows art/appr/ci; I/U +=pass,-=fail. cedar-58d ed052220/ed052220/ed052220 I-/U+; ember-60a 157c67da x3 I+/U+. Target/event unknown: apply first; inspect if facts missing. No deployment."
+  },
+  "started_at": "2026-09-22T19:52:37.962821+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 3144,
+    "outputTokens": 2309,
+    "reasoningOutputTokens": 2177,
+    "totalTokens": 5453
+  },
+  "usage_events": 1,
+  "wall_seconds": 44.611120000015944,
+  "wire_body_byte_bound": 18313
+}

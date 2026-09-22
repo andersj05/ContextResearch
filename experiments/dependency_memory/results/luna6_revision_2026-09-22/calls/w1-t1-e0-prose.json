@@ -1,0 +1,94 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "w1-t1-e0-prose",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.007513",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476689,
+        "usedPercent": 94,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"inspect\",\"artifact\":\"157c67da\",\"work\":[]}",
+  "request": {
+    "instruction": "Continue the release workflow using only the supplied evidence. Release only when approval equals the current artifact, every required CI test has result pass, and there are no open blockers. CI is bound to the artifact in ci_artifact; all required tests need rerunning when that differs. Optional failing tests do not block. Work names are exactly approval (missing/stale approval), ci:<test> (required test absent/failing/stale), and blocker:<id> (one per open blocker). Work is a set. If work is empty choose release; otherwise hold. Notes, owners, and elapsed discussion do not change gates. Apply the late event before deciding. If necessary facts were forgotten, choose inspect, with the facts you can recover from memory. Return the exact current artifact and all outstanding work. The event applies only to the target. Do not call tools.",
+    "observation": {
+      "late_event": {
+        "kind": "note",
+        "value": "Release page typography corrected; gate fields unchanged."
+      },
+      "memory": "Gate: W={approval if appr!=art; ci:t per req absent/fail/stale, all req if ci_art!=art; blocker:id/open}; release iff W empty, else hold. Req=unit+integ; optional failures ignored. Rows art/appr/ci; I/U +=pass,-=fail. cedar-58d ed052220/ed052220/ed052220 I-/U+; ember-60a 157c67da x3 I+/U+. Target/event unknown: apply first; inspect if facts missing. No deployment.",
+      "target": "ember-60a"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "release",
+            "hold",
+            "inspect"
+          ],
+          "type": "string"
+        },
+        "artifact": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "artifact",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "05e62f48f99bf832519ab4d79c9fcc9b0dda6942c45f70f54205c914ebda76dc",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "inspect",
+    "artifact": "157c67da",
+    "work": []
+  },
+  "started_at": "2026-09-22T19:56:23.866241+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3008,
+    "outputTokens": 322,
+    "reasoningOutputTokens": 295,
+    "totalTokens": 3330
+  },
+  "usage_events": 1,
+  "wall_seconds": 9.362955500022508,
+  "wire_body_byte_bound": 18044
+}

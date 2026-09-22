@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "w2-repair-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.02602",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476690,
+        "usedPercent": 94,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Rows s|art|ap|ci_art|req|CI|open; u=unit,i=integ,p=perf; req=u,i; p optional. delta-e58|543e05fe|543e05fe|543e05fe|u,i|u=P,i=P,p=F|REL-543e; fjord-f14|44060274|44060274|87eda946|u,i|u=P,i=P,p=F|none. CI bound ci_art; if !=art rerun req. Work: approval=missing/stale; ci:<t>=each req absent/fail/stale; blocker:<id>=each open. Release iff ap=art, req all pass, blockers none; else hold. Late event first; lost facts=inspect. Notes/owners/time irrelevant.\"}",
+  "request": {
+    "instruction": "Write a compact structured handoff. Preserve exact artifact identifiers, approval and CI scope, required versus optional tests, explicit absence of blockers, unresolved blockers, and revision-sensitive dependencies. Do not replace scoped evidence with just done/ready. Your entire retained memory string must fit 440 UTF-8 bytes. Only that string survives. The future target and event are not yet revealed; keep enough for every candidate. You may use compact notation and must define it in memory. Release only when approval equals the current artifact, every required CI test has result pass, and there are no open blockers. CI is bound to the artifact in ci_artifact; all required tests need rerunning when that differs. Optional failing tests do not block. Work names are exactly approval (missing/stale approval), ci:<test> (required test absent/failing/stale), and blocker:<id> (one per open blocker). Work is a set. If work is empty choose release; otherwise hold. Notes, owners, and elapsed discussion do not change gates. Apply the late event before deciding. If necessary facts were forgotten, choose inspect, with the facts you can recover from memory.",
+    "observation": {
+      "candidate_services": [
+        "delta-e58",
+        "fjord-f14"
+      ],
+      "previous_memory": "{\"format\":\"rows=[service,artifact,approval,ci_artifact,required,ci,blockers]\",\"rows\":[[\"atlas-820\",\"860ad063\",\"860ad063\",\"860ad063\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"birch-932\",\"08b9169a\",\"fd6cf744\",\"08b9169a\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"cedar-7c7\",\"242f637f\",\"242f637f\",\"242f637f\",[\"unit\",\"integ\"],{\"integ\":\"fail\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"delta-e58\",\"543e05fe\",\"543e05fe\",\"543e05fe\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[\"REL-543e\"]],[\"ember-2e3\",\"6c27d1b3\",\"6c27d1b3\",\"6c27d1b3\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"fjord-f14\",\"44060274\",\"44060274\",\"87eda946\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]]]}"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "0b662176fa5919b7d1e9c7c79c99b0bbdeaf7490b6cc88ca89a0823f6493d018",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Rows s|art|ap|ci_art|req|CI|open; u=unit,i=integ,p=perf; req=u,i; p optional. delta-e58|543e05fe|543e05fe|543e05fe|u,i|u=P,i=P,p=F|REL-543e; fjord-f14|44060274|44060274|87eda946|u,i|u=P,i=P,p=F|none. CI bound ci_art; if !=art rerun req. Work: approval=missing/stale; ci:<t>=each req absent/fail/stale; blocker:<id>=each open. Release iff ap=art, req all pass, blockers none; else hold. Late event first; lost facts=inspect. Notes/owners/time irrelevant."
+  },
+  "started_at": "2026-09-22T19:59:20.112411+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 3193,
+    "outputTokens": 1443,
+    "reasoningOutputTokens": 1258,
+    "totalTokens": 4636
+  },
+  "usage_events": 1,
+  "wall_seconds": 28.82377469999483,
+  "wire_body_byte_bound": 18838
+}

@@ -1,0 +1,94 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "w0-t1-e1-prose",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0046805",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476690,
+        "usedPercent": 94,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"release\",\"artifact\":\"f6cafa82\",\"work\":[]}",
+  "request": {
+    "instruction": "Continue the release workflow using only the supplied evidence. Release only when approval equals the current artifact, every required CI test has result pass, and there are no open blockers. CI is bound to the artifact in ci_artifact; all required tests need rerunning when that differs. Optional failing tests do not block. Work names are exactly approval (missing/stale approval), ci:<test> (required test absent/failing/stale), and blocker:<id> (one per open blocker). Work is a set. If work is empty choose release; otherwise hold. Notes, owners, and elapsed discussion do not change gates. Apply the late event before deciding. If necessary facts were forgotten, choose inspect, with the facts you can recover from memory. Return the exact current artifact and all outstanding work. The event applies only to the target. Do not call tools.",
+    "observation": {
+      "late_event": {
+        "kind": "approve",
+        "value": "f6cafa82"
+      },
+      "memory": "Await target + late event; apply event to target before deciding. art/appr/ci = artifact/approval/ci_artifact. atlas-99c: c7d544cd/c7d544cd/c7d544cd; required unit,integ pass/pass; no blockers. birch-274: f6cafa82/1120b4ed/f6cafa82; unit,integ pass/pass; no blockers. Work set: approval if missing/stale; ci:<test> for each required absent/failing/stale (if ci!=art, rerun all required); blocker:<id> per open blocker. Ignore optional failu",
+      "target": "birch-274"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "release",
+            "hold",
+            "inspect"
+          ],
+          "type": "string"
+        },
+        "artifact": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "artifact",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "02da841078faf6e4abd0db40eda54ff2e522fffea200e2260fd78e0d6216b78b",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "release",
+    "artifact": "f6cafa82",
+    "work": []
+  },
+  "started_at": "2026-09-22T19:51:19.955931+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3025,
+    "outputTokens": 92,
+    "reasoningOutputTokens": 64,
+    "totalTokens": 3117
+  },
+  "usage_events": 1,
+  "wall_seconds": 4.704036100010853,
+  "wire_body_byte_bound": 18072
+}

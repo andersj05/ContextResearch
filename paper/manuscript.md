@@ -216,6 +216,13 @@ candidate systems contributions, not completed results.
 
 ### 8.3 Historical workflow extraction and conditional resource benefit
 
+Constraint pinning is another close precedent: *Governance Decay* protects
+memory-carried rules, evaluates allowed-action controls, and reports limits under
+forged authority updates [@chen2026governancedecay]. The present release-oriented
+extension keeps the rule public and tests loss of the changing evidence to which
+it applies. This is an experimental distinction, not a claim that pinning or typed
+retention cannot preserve such evidence. See the [scope comparison](../research/LUNA6_SCOPE_PRIOR_ART_2026-09-22.md).
+
 The [new replay](../research/HISTORICAL_WORKFLOW_REPLAY_2026-09-22.md) extracts the
 last two attempts from each of four workers in the completed transfer phase.
 The four final attempts all have `transport_failure` status, but three generated

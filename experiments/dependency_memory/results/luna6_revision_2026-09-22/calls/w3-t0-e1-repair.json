@@ -1,0 +1,96 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "w3-t0-e1-repair",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0044655",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476690,
+        "usedPercent": 95,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"artifact\":\"d06d406c\",\"work\":[\"blocker:REL-50a1\"]}",
+  "request": {
+    "instruction": "Continue the release workflow using only the supplied evidence. Release only when approval equals the current artifact, every required CI test has result pass, and there are no open blockers. CI is bound to the artifact in ci_artifact; all required tests need rerunning when that differs. Optional failing tests do not block. Work names are exactly approval (missing/stale approval), ci:<test> (required test absent/failing/stale), and blocker:<id> (one per open blocker). Work is a set. If work is empty choose release; otherwise hold. Notes, owners, and elapsed discussion do not change gates. Apply the late event before deciding. If necessary facts were forgotten, choose inspect, with the facts you can recover from memory. Return the exact current artifact and all outstanding work. The event applies only to the target. Do not call tools.",
+    "observation": {
+      "late_event": {
+        "kind": "add_blocker",
+        "value": "REL-50a1"
+      },
+      "memory": "{\"format\":\"rows=[service,artifact,approval,ci_artifact,required,ci,blockers]\",\"rows\":[[\"atlas-313\",\"d06d406c\",\"d06d406c\",\"d06d406c\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"ember-0c4\",\"1105c344\",\"1105c344\",\"1105c344\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]]]}",
+      "target": "atlas-313"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "release",
+            "hold",
+            "inspect"
+          ],
+          "type": "string"
+        },
+        "artifact": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "artifact",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "7ad1393bb73592083271decf47144164153ec93c00bfb9c10049c336ecb5dc29",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "artifact": "d06d406c",
+    "work": [
+      "blocker:REL-50a1"
+    ]
+  },
+  "started_at": "2026-09-22T20:06:41.960506+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3014,
+    "outputTokens": 77,
+    "reasoningOutputTokens": 40,
+    "totalTokens": 3091
+  },
+  "usage_events": 1,
+  "wall_seconds": 6.287239300028887,
+  "wire_body_byte_bound": 18109
+}

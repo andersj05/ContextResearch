@@ -249,3 +249,39 @@ prices with dollars. The next evaluation must freeze a different workflow's
 obligations before developing its extractor and compare indexed recovery. No
 new model launch, allocation, purchase, reset or external message occurred.
 Claims C41-C43 and living draft v0.15 record this bounded milestone together.
+
+## September 22: new GPT-6 Luna medium calls
+
+The user explicitly requested new model calls with GPT-6 Luna at medium reasoning.
+Create `task/luna6-delayed-repair` and a separate
+[release-gate pilot](../experiments/dependency_memory/luna6_revision/CONTRACT.md).
+The frozen launch is `136d589`, with 117 scheduled requests inside a separate
+144-request/20-planning-credit allocation. Do not reuse historical launch limits,
+change the requested model, add automatic retries, or route through API keys.
+
+The installed client is `codex-cli 0.155.0-alpha.16`. A no-generation managed-login
+preflight confirms the exact model and medium effort. Unlike the older client,
+this version serializes ordinary top-level wrappers and separate base instructions;
+code-mode-only plus explicit namespace settings remove visible skill tools.
+Authoritative nested-tool metadata is absent despite the resolved setting, so
+the audit does not certify an empty hidden registry. Fresh processes, exact
+public input checks, a one-generation guard, and rejecting any live tool item
+define the accepted-response contract. Four mock failure/success controls pass.
+No credential values or uncontrolled reasoning logs are saved.
+
+Freeze the workflow, information order, grader, memory limits, baselines, and
+cost accounting before answers. Structured and prose Luna summaries face two
+byte limits. Repair and direct serialization share the same compact dependency
+representation; the direct control tests whether the proposal calls are wasted.
+Indexed recovery and full-history access receive separate cost accounting. The
+adapter is manually specified for one executable gate, and tasks are constructed.
+Only score after completing the fixed schedule; a positive result or publication
+novelty is not assumed. Record clipping separately from semantic omission.
+
+Current published Codex Luna rates have no separate cache-write charge. Meter
+input, cache reads, output including reasoning, every memory-writing call, and
+failed decisions. Persist a complete metered answer before any subsequent quota
+gate, correcting the historical answer-loss pattern in the new adapter. Account
+debit and unknown infrastructure costs remain distinct from planning credits.
+The [scope/pinning reading](../research/LUNA6_SCOPE_PRIOR_ART_2026-09-22.md) keeps
+close precedents and the unresolved novelty question explicit.

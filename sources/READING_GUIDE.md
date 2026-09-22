@@ -1,5 +1,12 @@
 # Focused reading guide
 
+The [September 22 scope/pinning comparison](../research/LUNA6_SCOPE_PRIOR_ART_2026-09-22.md)
+revisits *The Compaction Cliff* Sections 3.1/3.3 and adds Shiyang Chen's
+[Governance Decay v1](https://arxiv.org/html/2606.22528v1), abstract, Sections 3–4
+and 7–9. This is a bounded primary reading, not a replication or review upgrade
+of the inherited corpus. The comparison separates retained rules from changing
+release evidence and leaves general repair novelty unestablished.
+
 Start with the [proposal](../research/LIVE_DEPENDENCY_RESEARCH_PROPOSAL_2026-09-16.md). It records the exact local reasoning and the distinctions checked in the September 16 investigation. Then read original sources for the claim you are drafting.
 
 ## Feedback before forgetting

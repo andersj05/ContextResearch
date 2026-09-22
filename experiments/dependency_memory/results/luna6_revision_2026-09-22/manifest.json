@@ -1,0 +1,818 @@
+{
+  "date": "2026-09-22",
+  "fingerprints": {
+    "codex_subscription.py": "1574cc7f8e603769cdcce7b554746e2c2cce784e976dc75e0c3fa7153cab5f1c",
+    "luna6_revision/CONTRACT.md": "7e6180328e0ebeb9f59bf7fbad41ba8f191b3b5767ce2fbf1f61e3b32bba3aa1",
+    "luna6_revision/__init__.py": "3fa7c2b1ebdc5abe76ab377ba2e3e54c1cbfb6eb472006666abe37938be41d1f",
+    "luna6_revision/audit.py": "2a2df63d3fc850c61bc8d818ca7cb62efe294675e67b307a39e239a98dc8e860",
+    "luna6_revision/preflight.py": "58cfdad6f858f17dce4f181e52804c1788d21f3f0c184ec91f4d9b9fe8cdd188",
+    "luna6_revision/profile.py": "e4c49a337da45d76aca8994acb1642af9eff87b733c931e8575147d1f47b4ba7",
+    "luna6_revision/protocol.py": "c6129cdbf96fbe967c46832ccc5ac04eea914fb75c9df8ce921c5cc0f4e4e829",
+    "luna6_revision/run.py": "ec05733ae64386f8b2f7e08f37ccdde55df7c3e8c29a937555fb4cf7900807eb",
+    "luna6_revision/study.py": "596f082b90b19cd8f5b718514d0df67603f9196017267ec84ced965bb3372b6b",
+    "luna6_revision/test_study.py": "d33604f2cbc422244fe95bac6325b8f1a607e4859831713a144b88ac1f5e20f2",
+    "luna6_revision/transport.py": "af9b1cd09a91eeceb5dbeff71be5d366670bba6f988138c105c789f3bbc27924",
+    "luna_appserver.py": "5bbb0234ca9c55442b795327dbd12112149c151163f5b6142e790921c74ea168",
+    "luna_budget.py": "2c9f6e2ce96d642df4ef4a00ee19c89cfeccd89add445e468f981ff74160dfac",
+    "request_contracts.py": "962615ab77e8653ef7c5ae9b5c7fca24e72756648384eef8f4b54d3c463a0392"
+  },
+  "fixtures": [
+    {
+      "futures": [
+        {
+          "event": {
+            "kind": "note",
+            "value": "Release page typography corrected; gate fields unchanged."
+          },
+          "id": "w0-t0-e0",
+          "target": "atlas-99c"
+        },
+        {
+          "event": {
+            "kind": "artifact",
+            "value": "a0110d9d"
+          },
+          "id": "w0-t0-e1",
+          "target": "atlas-99c"
+        },
+        {
+          "event": {
+            "kind": "note",
+            "value": "Release page typography corrected; gate fields unchanged."
+          },
+          "id": "w0-t1-e0",
+          "target": "birch-274"
+        },
+        {
+          "event": {
+            "kind": "approve",
+            "value": "f6cafa82"
+          },
+          "id": "w0-t1-e1",
+          "target": "birch-274"
+        }
+      ],
+      "id": "w0",
+      "pair": [
+        "atlas-99c",
+        "birch-274"
+      ],
+      "records": [
+        {
+          "approval": "1120b4ed",
+          "artifact": "f6cafa82",
+          "blockers": [],
+          "build_log": [
+            "Build worker 22 uploaded f6cafa82; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "pass",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "f6cafa82",
+          "owner": "team-2",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "birch-274"
+        },
+        {
+          "approval": "654ca646",
+          "artifact": "654ca646",
+          "blockers": [],
+          "build_log": [
+            "Build worker 25 uploaded 654ca646; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "pass",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "654ca646",
+          "owner": "team-5",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "ember-ebd"
+        },
+        {
+          "approval": "6d500079",
+          "artifact": "6d500079",
+          "blockers": [],
+          "build_log": [
+            "Build worker 26 uploaded 6d500079; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "pass",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "dd7d8d44",
+          "owner": "team-6",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "fjord-a88"
+        },
+        {
+          "approval": "c7d544cd",
+          "artifact": "c7d544cd",
+          "blockers": [],
+          "build_log": [
+            "Build worker 21 uploaded c7d544cd; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "pass",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "c7d544cd",
+          "owner": "team-1",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "atlas-99c"
+        },
+        {
+          "approval": "ad8d7925",
+          "artifact": "ad8d7925",
+          "blockers": [
+            "REL-ad8d"
+          ],
+          "build_log": [
+            "Build worker 24 uploaded ad8d7925; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "pass",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "ad8d7925",
+          "owner": "team-4",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "delta-cf0"
+        },
+        {
+          "approval": "ce99bc65",
+          "artifact": "ce99bc65",
+          "blockers": [],
+          "build_log": [
+            "Build worker 23 uploaded ce99bc65; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "fail",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "ce99bc65",
+          "owner": "team-3",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "cedar-dde"
+        }
+      ],
+      "seed": 9201
+    },
+    {
+      "futures": [
+        {
+          "event": {
+            "kind": "note",
+            "value": "Release page typography corrected; gate fields unchanged."
+          },
+          "id": "w1-t0-e0",
+          "target": "cedar-58d"
+        },
+        {
+          "event": {
+            "artifact": "ed052220",
+            "kind": "test",
+            "name": "integ",
+            "value": "pass"
+          },
+          "id": "w1-t0-e1",
+          "target": "cedar-58d"
+        },
+        {
+          "event": {
+            "kind": "note",
+            "value": "Release page typography corrected; gate fields unchanged."
+          },
+          "id": "w1-t1-e0",
+          "target": "ember-60a"
+        },
+        {
+          "event": {
+            "kind": "add_blocker",
+            "value": "REL-5c0b"
+          },
+          "id": "w1-t1-e1",
+          "target": "ember-60a"
+        }
+      ],
+      "id": "w1",
+      "pair": [
+        "cedar-58d",
+        "ember-60a"
+      ],
+      "records": [
+        {
+          "approval": "ed052220",
+          "artifact": "ed052220",
+          "blockers": [],
+          "build_log": [
+            "Build worker 23 uploaded ed052220; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "fail",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "ed052220",
+          "owner": "team-3",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "cedar-58d"
+        },
+        {
+          "approval": "8f79b174",
+          "artifact": "8f79b174",
+          "blockers": [],
+          "build_log": [
+            "Build worker 26 uploaded 8f79b174; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "pass",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "752b0417",
+          "owner": "team-6",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "fjord-170"
+        },
+        {
+          "approval": "157c67da",
+          "artifact": "157c67da",
+          "blockers": [],
+          "build_log": [
+            "Build worker 25 uploaded 157c67da; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "pass",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "157c67da",
+          "owner": "team-5",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "ember-60a"
+        },
+        {
+          "approval": "72d7fad3",
+          "artifact": "72d7fad3",
+          "blockers": [],
+          "build_log": [
+            "Build worker 21 uploaded 72d7fad3; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "pass",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "72d7fad3",
+          "owner": "team-1",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "atlas-aad"
+        },
+        {
+          "approval": "47abba9e",
+          "artifact": "47abba9e",
+          "blockers": [
+            "REL-47ab"
+          ],
+          "build_log": [
+            "Build worker 24 uploaded 47abba9e; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "pass",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "47abba9e",
+          "owner": "team-4",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "delta-d95"
+        },
+        {
+          "approval": "29c51de7",
+          "artifact": "58e8d547",
+          "blockers": [],
+          "build_log": [
+            "Build worker 22 uploaded 58e8d547; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "pass",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "58e8d547",
+          "owner": "team-2",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "birch-c53"
+        }
+      ],
+      "seed": 9202
+    },
+    {
+      "futures": [
+        {
+          "event": {
+            "kind": "note",
+            "value": "Release page typography corrected; gate fields unchanged."
+          },
+          "id": "w2-t0-e0",
+          "target": "delta-e58"
+        },
+        {
+          "event": {
+            "kind": "close_blocker",
+            "value": "REL-543e"
+          },
+          "id": "w2-t0-e1",
+          "target": "delta-e58"
+        },
+        {
+          "event": {
+            "kind": "note",
+            "value": "Release page typography corrected; gate fields unchanged."
+          },
+          "id": "w2-t1-e0",
+          "target": "fjord-f14"
+        },
+        {
+          "event": {
+            "kind": "ci_artifact",
+            "value": "44060274"
+          },
+          "id": "w2-t1-e1",
+          "target": "fjord-f14"
+        }
+      ],
+      "id": "w2",
+      "pair": [
+        "delta-e58",
+        "fjord-f14"
+      ],
+      "records": [
+        {
+          "approval": "860ad063",
+          "artifact": "860ad063",
+          "blockers": [],
+          "build_log": [
+            "Build worker 21 uploaded 860ad063; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "pass",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "860ad063",
+          "owner": "team-1",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "atlas-820"
+        },
+        {
+          "approval": "242f637f",
+          "artifact": "242f637f",
+          "blockers": [],
+          "build_log": [
+            "Build worker 23 uploaded 242f637f; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "fail",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "242f637f",
+          "owner": "team-3",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "cedar-7c7"
+        },
+        {
+          "approval": "44060274",
+          "artifact": "44060274",
+          "blockers": [],
+          "build_log": [
+            "Build worker 26 uploaded 44060274; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "pass",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "87eda946",
+          "owner": "team-6",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "fjord-f14"
+        },
+        {
+          "approval": "543e05fe",
+          "artifact": "543e05fe",
+          "blockers": [
+            "REL-543e"
+          ],
+          "build_log": [
+            "Build worker 24 uploaded 543e05fe; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "pass",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "543e05fe",
+          "owner": "team-4",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "delta-e58"
+        },
+        {
+          "approval": "6c27d1b3",
+          "artifact": "6c27d1b3",
+          "blockers": [],
+          "build_log": [
+            "Build worker 25 uploaded 6c27d1b3; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "pass",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "6c27d1b3",
+          "owner": "team-5",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "ember-2e3"
+        },
+        {
+          "approval": "fd6cf744",
+          "artifact": "08b9169a",
+          "blockers": [],
+          "build_log": [
+            "Build worker 22 uploaded 08b9169a; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "pass",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "08b9169a",
+          "owner": "team-2",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "birch-932"
+        }
+      ],
+      "seed": 9203
+    },
+    {
+      "futures": [
+        {
+          "event": {
+            "kind": "note",
+            "value": "Release page typography corrected; gate fields unchanged."
+          },
+          "id": "w3-t0-e0",
+          "target": "atlas-313"
+        },
+        {
+          "event": {
+            "kind": "add_blocker",
+            "value": "REL-50a1"
+          },
+          "id": "w3-t0-e1",
+          "target": "atlas-313"
+        },
+        {
+          "event": {
+            "kind": "note",
+            "value": "Release page typography corrected; gate fields unchanged."
+          },
+          "id": "w3-t1-e0",
+          "target": "ember-0c4"
+        },
+        {
+          "event": {
+            "kind": "require_test",
+            "value": "perf"
+          },
+          "id": "w3-t1-e1",
+          "target": "ember-0c4"
+        }
+      ],
+      "id": "w3",
+      "pair": [
+        "atlas-313",
+        "ember-0c4"
+      ],
+      "records": [
+        {
+          "approval": "500c107f",
+          "artifact": "500c107f",
+          "blockers": [],
+          "build_log": [
+            "Build worker 26 uploaded 500c107f; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "pass",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "9255cbb0",
+          "owner": "team-6",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "fjord-324"
+        },
+        {
+          "approval": "94a1e8d5",
+          "artifact": "94a1e8d5",
+          "blockers": [],
+          "build_log": [
+            "Build worker 23 uploaded 94a1e8d5; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "fail",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "94a1e8d5",
+          "owner": "team-3",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "cedar-97e"
+        },
+        {
+          "approval": "572b8d45",
+          "artifact": "30e72291",
+          "blockers": [],
+          "build_log": [
+            "Build worker 22 uploaded 30e72291; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "pass",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "30e72291",
+          "owner": "team-2",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "birch-124"
+        },
+        {
+          "approval": "1105c344",
+          "artifact": "1105c344",
+          "blockers": [],
+          "build_log": [
+            "Build worker 25 uploaded 1105c344; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "pass",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "1105c344",
+          "owner": "team-5",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "ember-0c4"
+        },
+        {
+          "approval": "186c733f",
+          "artifact": "186c733f",
+          "blockers": [
+            "REL-186c"
+          ],
+          "build_log": [
+            "Build worker 24 uploaded 186c733f; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "pass",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "186c733f",
+          "owner": "team-4",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "delta-153"
+        },
+        {
+          "approval": "d06d406c",
+          "artifact": "d06d406c",
+          "blockers": [],
+          "build_log": [
+            "Build worker 21 uploaded d06d406c; image scanning finished; tracking labels refreshed.",
+            "Optional performance job is red on the shared runner; release policy follows required membership.",
+            "The release page says validation work completed. Keep exact check scope from the tool fields.",
+            "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+            "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+            "A later operator will select services and may update a gate. No deployment has occurred."
+          ],
+          "ci": {
+            "integ": "pass",
+            "perf": "fail",
+            "unit": "pass"
+          },
+          "ci_artifact": "d06d406c",
+          "owner": "team-1",
+          "required": [
+            "unit",
+            "integ"
+          ],
+          "service": "atlas-313"
+        }
+      ],
+      "seed": 9204
+    }
+  ],
+  "max_calls": 144,
+  "max_planning_credits": "20",
+  "model": "gpt-6-luna",
+  "model_revision": "mutable alias; no immutable snapshot exposed",
+  "preflight_sha256": "fd155c20f9b2e69cc442a20eeba241eee1504842ce95dfca50d87dbd2bd15dd5",
+  "reasoning_effort": "medium",
+  "sampling_seed": null,
+  "scheduled_calls": 117,
+  "service_tier": "default",
+  "status": "running",
+  "version": "luna6_revision_launch_v1"
+}

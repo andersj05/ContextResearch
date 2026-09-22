@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "w3-structured-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.03517",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476689,
+        "usedPercent": 95,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Release iff approval=artifact, req pass on ci_artifact=artifact, no blockers; else hold. CI mismatch=>rerun all req; optional fails nonblocking. Work=set: approval=missing/stale; ci:<test>=req absent/fail/stale; blocker:<id>=open; empty=>release. Late event first; missing=>inspect. Rows s=service, a=artifact, p=approval, c=ci_artifact; req U=unit,I=integ; B=[]=explicit none; opt perf=fail.\\natlas-313 d06d406c/d06d406c d06d406c U/I pass/pass B=[]\\nember-0c 1105c344/1105c344 1105c344 U/I pass/pass B=[]\"}",
+  "request": {
+    "instruction": "Write a compact structured handoff. Preserve exact artifact identifiers, approval and CI scope, required versus optional tests, explicit absence of blockers, unresolved blockers, and revision-sensitive dependencies. Do not replace scoped evidence with just done/ready. Your entire retained memory string must fit 440 UTF-8 bytes. Only that string survives. The future target and event are not yet revealed; keep enough for every candidate. You may use compact notation and must define it in memory. Release only when approval equals the current artifact, every required CI test has result pass, and there are no open blockers. CI is bound to the artifact in ci_artifact; all required tests need rerunning when that differs. Optional failing tests do not block. Work names are exactly approval (missing/stale approval), ci:<test> (required test absent/failing/stale), and blocker:<id> (one per open blocker). Work is a set. If work is empty choose release; otherwise hold. Notes, owners, and elapsed discussion do not change gates. Apply the late event before deciding. If necessary facts were forgotten, choose inspect, with the facts you can recover from memory.",
+    "observation": {
+      "candidate_services": [
+        "atlas-313",
+        "ember-0c4"
+      ],
+      "previous_memory": "Gates: release iff approval=artifact, every required CI test passes on artifact, no open blockers. Work=set; names exactly approval, ci:<test>, blocker:<id>. Empty=>release; else hold. CI bound to ci_artifact; if !=artifact rerun ALL required tests (treat stale). Optional failures don't block. Apply late event first; if needed facts missing=>inspect. Notation per row: service artifact/approval ci_artifact; req U=unit,I=integ results U/I; B=blockers ([] means explicitly none). All rows req U,I; optional perf=fail (nonblocking).\nfjord-324 500c107f/500c107f 9255cbb0 U/I=pass/pass B=[]\ncedar-97 94a1e8d5/94a1e8d5 94a1e8d5 U/I=pass/fail B=[]\nbirch-124 30e72291/572b8d45 30e72291 U/I=pass/pass B=[]\nember-0c 1105c344/1105c344 1105c344 U/I=pass/pass B=[]\ndelta-153 186c733f/186c733f 186c733f U/I=pass/pass B=[REL-186c]\natlas-313 d06d406c/d06d406c d06d406c U/I=pass/pass B=[]"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "a04b7d5894117640251d7f117ae2f252bc84776133413308e1d4a57f5c794c3d",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Release iff approval=artifact, req pass on ci_artifact=artifact, no blockers; else hold. CI mismatch=>rerun all req; optional fails nonblocking. Work=set: approval=missing/stale; ci:<test>=req absent/fail/stale; blocker:<id>=open; empty=>release. Late event first; missing=>inspect. Rows s=service, a=artifact, p=approval, c=ci_artifact; req U=unit,I=integ; B=[]=explicit none; opt perf=fail.\natlas-313 d06d406c/d06d406c d06d406c U/I pass/pass B=[]\nember-0c 1105c344/1105c344 1105c344 U/I pass/pass B=[]"
+  },
+  "started_at": "2026-09-22T20:04:28.219399+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 3188,
+    "outputTokens": 2176,
+    "reasoningOutputTokens": 1997,
+    "totalTokens": 5364
+  },
+  "usage_events": 1,
+  "wall_seconds": 42.44677789998241,
+  "wire_body_byte_bound": 18499
+}

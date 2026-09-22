@@ -1,0 +1,69 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "000-smoke",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.00679",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476689,
+        "usedPercent": 93,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"ready\"}",
+  "request": {
+    "instruction": "Return {\"memory\":\"ready\"}.",
+    "observation": {},
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "smoke",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "caaec1b93608fcd2ff90b1416a793056b400b825c8fa3bd411041fd155b846fe",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "ready"
+  },
+  "started_at": "2026-09-22T19:47:18.655271+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 2641,
+    "outputTokens": 15,
+    "reasoningOutputTokens": 0,
+    "totalTokens": 2656
+  },
+  "usage_events": 1,
+  "wall_seconds": 3.304522599966731,
+  "wire_body_byte_bound": 16411
+}

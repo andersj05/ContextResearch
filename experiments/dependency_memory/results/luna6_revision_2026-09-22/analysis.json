@@ -1,0 +1,1634 @@
+{
+  "version": "luna6_revision_analysis_v1",
+  "audit_passed": true,
+  "launch_commit": "136d589",
+  "actual_dispatches": 117,
+  "actual_planning_credits": "1.1282525",
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 158720,
+    "inputTokens": 379539,
+    "outputTokens": 42922,
+    "reasoningOutputTokens": 35102,
+    "totalTokens": 422461
+  },
+  "stage_totals": {
+    "smoke": {
+      "calls": 1,
+      "credits": "0.00679",
+      "input_tokens": 2641,
+      "output_tokens": 15,
+      "reasoning_output_tokens": 0
+    },
+    "child": {
+      "calls": 12,
+      "credits": "0.3468305",
+      "input_tokens": 38154,
+      "output_tokens": 22051,
+      "reasoning_output_tokens": 19755
+    },
+    "parent": {
+      "calls": 8,
+      "credits": "0.1399725",
+      "input_tokens": 31038,
+      "output_tokens": 6603,
+      "reasoning_output_tokens": 4047
+    },
+    "execute": {
+      "calls": 96,
+      "credits": "0.6346595",
+      "input_tokens": 307706,
+      "output_tokens": 14253,
+      "reasoning_output_tokens": 11300
+    }
+  },
+  "additional_extraction_headroom": {
+    "scope": "Post-hoc observed headroom for an additional projection extractor across these four histories, if it preserves the direct method's outcomes; no extractor was run.",
+    "observed_full_minus_direct_credits": "0.0428170",
+    "cache_neutral_full_minus_direct_credits": "0.0387850",
+    "same_observed_success": true
+  },
+  "methods": [
+    {
+      "arm": "prose",
+      "cases": 16,
+      "success": 12,
+      "unsafe_release": 0,
+      "planning_credits": "0.3379850",
+      "cache_neutral_credits": "0.3984650",
+      "model_calls_charged": 24,
+      "wall_seconds": 387.883,
+      "recovered_bytes": 0,
+      "checker_cpu_ns": 0,
+      "checked_source_bytes": 0,
+      "clipped_memories": 4
+    },
+    {
+      "arm": "structured",
+      "cases": 16,
+      "success": 8,
+      "unsafe_release": 1,
+      "planning_credits": "0.2912620",
+      "cache_neutral_credits": "0.3678700",
+      "model_calls_charged": 24,
+      "wall_seconds": 340.125,
+      "recovered_bytes": 0,
+      "checker_cpu_ns": 0,
+      "checked_source_bytes": 0,
+      "clipped_memories": 5
+    },
+    {
+      "arm": "repair",
+      "cases": 16,
+      "success": 16,
+      "unsafe_release": 0,
+      "planning_credits": "0.2653020",
+      "cache_neutral_credits": "0.3361500",
+      "model_calls_charged": 24,
+      "wall_seconds": 298.95,
+      "recovered_bytes": 0,
+      "checker_cpu_ns": 0,
+      "checked_source_bytes": 20138,
+      "clipped_memories": 5
+    },
+    {
+      "arm": "direct",
+      "cases": 16,
+      "success": 16,
+      "unsafe_release": 0,
+      "planning_credits": "0.0865340",
+      "cache_neutral_credits": "0.1389500",
+      "model_calls_charged": 16,
+      "wall_seconds": 93.423,
+      "recovered_bytes": 0,
+      "checker_cpu_ns": 0,
+      "checked_source_bytes": 0,
+      "clipped_memories": 0
+    },
+    {
+      "arm": "indexed",
+      "cases": 16,
+      "success": 16,
+      "unsafe_release": 0,
+      "planning_credits": "0.0830870",
+      "cache_neutral_credits": "0.1395350",
+      "model_calls_charged": 16,
+      "wall_seconds": 73.823,
+      "recovered_bytes": 12404,
+      "checker_cpu_ns": 0,
+      "checked_source_bytes": 0,
+      "clipped_memories": 0
+    },
+    {
+      "arm": "full",
+      "cases": 16,
+      "success": 16,
+      "unsafe_release": 0,
+      "planning_credits": "0.1293510",
+      "cache_neutral_credits": "0.1777350",
+      "model_calls_charged": 16,
+      "wall_seconds": 84.098,
+      "recovered_bytes": 0,
+      "checker_cpu_ns": 0,
+      "checked_source_bytes": 0,
+      "clipped_memories": 0
+    }
+  ],
+  "failures": [
+    {
+      "id": "w1-t0-e0-prose",
+      "arm": "prose",
+      "future": {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w1-t0-e0",
+        "target": "cedar-58d"
+      },
+      "expected": {
+        "action": "hold",
+        "artifact": "ed052220",
+        "work": [
+          "ci:integ"
+        ]
+      },
+      "answer": {
+        "action": "inspect",
+        "artifact": "ed052220",
+        "work": [
+          "ci:integ"
+        ]
+      },
+      "memory": "Gate: W={approval if appr!=art; ci:t per req absent/fail/stale, all req if ci_art!=art; blocker:id/open}; release iff W empty, else hold. Req=unit+integ; optional failures ignored. Rows art/appr/ci; I/U +=pass,-=fail. cedar-58d ed052220/ed052220/ed052220 I-/U+; ember-60a 157c67da x3 I+/U+. Target/event unknown: apply first; inspect if facts missing. No deployment.",
+      "parent_memory": "Gate: after applying the late event, define W as a set: add `approval` if approval\u2260artifact; add `ci:<test>` for each required test absent/failing, or for every required test if ci_artifact\u2260artifact; add `blocker:<id>` per open blocker. Release iff W empty, else hold. Required tests are unit+integ; optional perf failures never block. Current candidates (service: artifact/approval/ci_artifact; integ,unit; blockers): cedar-58d: ed052220/ed052220/ed052220; fail,pass; none. fjord-170: 8f79b174/8f79b174/752b0417; pass,pass; none. ember-60a: 157c67da/157c67da/157c67da; pass,pass; none. atlas-aad: 72d7fad3/72d7fad3/72d7fad3; pass,pass; none. delta-d95: 47abba9e/47abba9e/47abba9e; pass,pass; REL-47ab. birch-c53: 58e8d547/29c51de7/58e8d547; pass,pass; none. Future target/event unknown; apply event, then compute W. If required facts unavailable, inspect. No deployment."
+    },
+    {
+      "id": "w1-t0-e0-structured",
+      "arm": "structured",
+      "future": {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w1-t0-e0",
+        "target": "cedar-58d"
+      },
+      "expected": {
+        "action": "hold",
+        "artifact": "ed052220",
+        "work": [
+          "ci:integ"
+        ]
+      },
+      "answer": {
+        "action": "hold",
+        "artifact": "cedar-58d",
+        "work": [
+          "ci:integ"
+        ]
+      },
+      "memory": "Rules: A=artifact,P=approval,C=ci_artifact; req U=unit,I=integ; opt perf fails for all, nonblocking. B=- explicitly no open blockers. Work={approval if P!=A; ci:<test> for each required absent/fail/stale (if C!=A rerun U,I); blocker:<id> per open blocker}. Late event first; empty work=release, else hold; forgotten facts=inspect. Candidates A/P/C,U/I,B: cedar-58d ed052220/ed052220/ed052220 pass/fail/-; ember-60a 157c67da/157c67da/157c67d",
+      "parent_memory": "Rules: A=artifact,P=approval,C=ci_artifact; required U=unit,I=integ; optional perf fails for all, nonblocking. B=- means explicitly no open blockers. Work set: approval if P!=A; ci:test for each required absent/fail/stale (if C!=A rerun U,I); blocker:<id> per open blocker. Apply late event first; empty work=release, else hold; forgotten facts=inspect. Rows service A/P C U/I B:\ncedar-58d ed052220/ed052220 ed052220 pass/fail -\nfjord-170 8f79b174/8f79b174 752b0417 pass/pass -\nember-60a 157c67da/157c67da 157c67da pass/pass -\natlas-aad 72d7fad3/72d7fad3 72d7fad3 pass/pass -\ndelta-d95 47abba9e/47abba9e 47abba9e pass/pass REL-47ab\nbirch-c53 58e8d547/29c51de7 58e8d547 pass/pass -\nNo deployment. Preserve exact IDs; fjord CI is revision-stale; birch approval mismatches artifact."
+    },
+    {
+      "id": "w1-t0-e1-prose",
+      "arm": "prose",
+      "future": {
+        "event": {
+          "artifact": "ed052220",
+          "kind": "test",
+          "name": "integ",
+          "value": "pass"
+        },
+        "id": "w1-t0-e1",
+        "target": "cedar-58d"
+      },
+      "expected": {
+        "action": "release",
+        "artifact": "ed052220",
+        "work": []
+      },
+      "answer": {
+        "action": "inspect",
+        "artifact": "ed052220",
+        "work": [
+          "ci:unit"
+        ]
+      },
+      "memory": "Gate: W={approval if appr!=art; ci:t per req absent/fail/stale, all req if ci_art!=art; blocker:id/open}; release iff W empty, else hold. Req=unit+integ; optional failures ignored. Rows art/appr/ci; I/U +=pass,-=fail. cedar-58d ed052220/ed052220/ed052220 I-/U+; ember-60a 157c67da x3 I+/U+. Target/event unknown: apply first; inspect if facts missing. No deployment.",
+      "parent_memory": "Gate: after applying the late event, define W as a set: add `approval` if approval\u2260artifact; add `ci:<test>` for each required test absent/failing, or for every required test if ci_artifact\u2260artifact; add `blocker:<id>` per open blocker. Release iff W empty, else hold. Required tests are unit+integ; optional perf failures never block. Current candidates (service: artifact/approval/ci_artifact; integ,unit; blockers): cedar-58d: ed052220/ed052220/ed052220; fail,pass; none. fjord-170: 8f79b174/8f79b174/752b0417; pass,pass; none. ember-60a: 157c67da/157c67da/157c67da; pass,pass; none. atlas-aad: 72d7fad3/72d7fad3/72d7fad3; pass,pass; none. delta-d95: 47abba9e/47abba9e/47abba9e; pass,pass; REL-47ab. birch-c53: 58e8d547/29c51de7/58e8d547; pass,pass; none. Future target/event unknown; apply event, then compute W. If required facts unavailable, inspect. No deployment."
+    },
+    {
+      "id": "w1-t1-e0-structured",
+      "arm": "structured",
+      "future": {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w1-t1-e0",
+        "target": "ember-60a"
+      },
+      "expected": {
+        "action": "release",
+        "artifact": "157c67da",
+        "work": []
+      },
+      "answer": {
+        "action": "hold",
+        "artifact": "157c67da",
+        "work": [
+          "ci:unit",
+          "ci:integ"
+        ]
+      },
+      "memory": "Rules: A=artifact,P=approval,C=ci_artifact; req U=unit,I=integ; opt perf fails for all, nonblocking. B=- explicitly no open blockers. Work={approval if P!=A; ci:<test> for each required absent/fail/stale (if C!=A rerun U,I); blocker:<id> per open blocker}. Late event first; empty work=release, else hold; forgotten facts=inspect. Candidates A/P/C,U/I,B: cedar-58d ed052220/ed052220/ed052220 pass/fail/-; ember-60a 157c67da/157c67da/157c67d",
+      "parent_memory": "Rules: A=artifact,P=approval,C=ci_artifact; required U=unit,I=integ; optional perf fails for all, nonblocking. B=- means explicitly no open blockers. Work set: approval if P!=A; ci:test for each required absent/fail/stale (if C!=A rerun U,I); blocker:<id> per open blocker. Apply late event first; empty work=release, else hold; forgotten facts=inspect. Rows service A/P C U/I B:\ncedar-58d ed052220/ed052220 ed052220 pass/fail -\nfjord-170 8f79b174/8f79b174 752b0417 pass/pass -\nember-60a 157c67da/157c67da 157c67da pass/pass -\natlas-aad 72d7fad3/72d7fad3 72d7fad3 pass/pass -\ndelta-d95 47abba9e/47abba9e 47abba9e pass/pass REL-47ab\nbirch-c53 58e8d547/29c51de7 58e8d547 pass/pass -\nNo deployment. Preserve exact IDs; fjord CI is revision-stale; birch approval mismatches artifact."
+    },
+    {
+      "id": "w1-t1-e0-prose",
+      "arm": "prose",
+      "future": {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w1-t1-e0",
+        "target": "ember-60a"
+      },
+      "expected": {
+        "action": "release",
+        "artifact": "157c67da",
+        "work": []
+      },
+      "answer": {
+        "action": "inspect",
+        "artifact": "157c67da",
+        "work": []
+      },
+      "memory": "Gate: W={approval if appr!=art; ci:t per req absent/fail/stale, all req if ci_art!=art; blocker:id/open}; release iff W empty, else hold. Req=unit+integ; optional failures ignored. Rows art/appr/ci; I/U +=pass,-=fail. cedar-58d ed052220/ed052220/ed052220 I-/U+; ember-60a 157c67da x3 I+/U+. Target/event unknown: apply first; inspect if facts missing. No deployment.",
+      "parent_memory": "Gate: after applying the late event, define W as a set: add `approval` if approval\u2260artifact; add `ci:<test>` for each required test absent/failing, or for every required test if ci_artifact\u2260artifact; add `blocker:<id>` per open blocker. Release iff W empty, else hold. Required tests are unit+integ; optional perf failures never block. Current candidates (service: artifact/approval/ci_artifact; integ,unit; blockers): cedar-58d: ed052220/ed052220/ed052220; fail,pass; none. fjord-170: 8f79b174/8f79b174/752b0417; pass,pass; none. ember-60a: 157c67da/157c67da/157c67da; pass,pass; none. atlas-aad: 72d7fad3/72d7fad3/72d7fad3; pass,pass; none. delta-d95: 47abba9e/47abba9e/47abba9e; pass,pass; REL-47ab. birch-c53: 58e8d547/29c51de7/58e8d547; pass,pass; none. Future target/event unknown; apply event, then compute W. If required facts unavailable, inspect. No deployment."
+    },
+    {
+      "id": "w1-t1-e1-structured",
+      "arm": "structured",
+      "future": {
+        "event": {
+          "kind": "add_blocker",
+          "value": "REL-5c0b"
+        },
+        "id": "w1-t1-e1",
+        "target": "ember-60a"
+      },
+      "expected": {
+        "action": "hold",
+        "artifact": "157c67da",
+        "work": [
+          "blocker:REL-5c0b"
+        ]
+      },
+      "answer": {
+        "action": "inspect",
+        "artifact": "157c67da",
+        "work": [
+          "ci:unit",
+          "ci:integ",
+          "blocker:REL-5c0b"
+        ]
+      },
+      "memory": "Rules: A=artifact,P=approval,C=ci_artifact; req U=unit,I=integ; opt perf fails for all, nonblocking. B=- explicitly no open blockers. Work={approval if P!=A; ci:<test> for each required absent/fail/stale (if C!=A rerun U,I); blocker:<id> per open blocker}. Late event first; empty work=release, else hold; forgotten facts=inspect. Candidates A/P/C,U/I,B: cedar-58d ed052220/ed052220/ed052220 pass/fail/-; ember-60a 157c67da/157c67da/157c67d",
+      "parent_memory": "Rules: A=artifact,P=approval,C=ci_artifact; required U=unit,I=integ; optional perf fails for all, nonblocking. B=- means explicitly no open blockers. Work set: approval if P!=A; ci:test for each required absent/fail/stale (if C!=A rerun U,I); blocker:<id> per open blocker. Apply late event first; empty work=release, else hold; forgotten facts=inspect. Rows service A/P C U/I B:\ncedar-58d ed052220/ed052220 ed052220 pass/fail -\nfjord-170 8f79b174/8f79b174 752b0417 pass/pass -\nember-60a 157c67da/157c67da 157c67da pass/pass -\natlas-aad 72d7fad3/72d7fad3 72d7fad3 pass/pass -\ndelta-d95 47abba9e/47abba9e 47abba9e pass/pass REL-47ab\nbirch-c53 58e8d547/29c51de7 58e8d547 pass/pass -\nNo deployment. Preserve exact IDs; fjord CI is revision-stale; birch approval mismatches artifact."
+    },
+    {
+      "id": "w2-t0-e0-structured",
+      "arm": "structured",
+      "future": {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w2-t0-e0",
+        "target": "delta-e58"
+      },
+      "expected": {
+        "action": "hold",
+        "artifact": "543e05fe",
+        "work": [
+          "blocker:REL-543e"
+        ]
+      },
+      "answer": {
+        "action": "release",
+        "artifact": "543e05fe",
+        "work": []
+      },
+      "memory": "Gate: release iff appr=artifact=ci_artifact, unit+integ pass, B=-; else hold (work: approval if missing/stale, ci:<required test> if absent/fail/stale, blocker:<id> per open blocker). Required unit,integ; optional perf fail nonblocking. ci_artifact!=artifact => rerun unit+integ. B=- explicitly none. Late event first; missing facts=>inspect. Rows svc:artifact/appr/ci_artifact; unit,integ; B.\ndelta-e58:543e05fe/543e05fe/543e05fe;pass,pass",
+      "parent_memory": "Gate: release iff approval=artifact, all required CI pass on ci_artifact=artifact, B=none. Required tests unit,integ; optional perf fail never blocks. If ci_artifact differs, rerun both required tests. Work is a set: approval (missing/stale), ci:<test> (required absent/failing/stale), blocker:<id> (each open blocker); empty=>release, else hold. Apply late event first. Notation rows service: artifact/appr/ci_artifact; unit,integ results; B (blockers). \u201c-\u201d means explicitly none. No deployment.\natlas-820: 860ad063/860ad063/860ad063; pass,pass; B=- (work {}).\ncedar-7c7: 242f637f/242f637f/242f637f; pass,fail; B=- (ci:integ).\nfjord-f14: 44060274/44060274/87eda946; pass,pass (stale); B=- (ci:unit,ci:integ; rerun both).\ndelta-e58: 543e05fe/543e05fe/543e05fe; pass,pass; B=REL-543e (blocker:REL-543e).\nember-2e3: 6c27d1b3/6c27d1b3/6c27d1b3; pass,pass; B=- (work {}).\nbirch-932: 08b9169a/fd6cf744"
+    },
+    {
+      "id": "w2-t1-e0-structured",
+      "arm": "structured",
+      "future": {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w2-t1-e0",
+        "target": "fjord-f14"
+      },
+      "expected": {
+        "action": "hold",
+        "artifact": "44060274",
+        "work": [
+          "ci:integ",
+          "ci:unit"
+        ]
+      },
+      "answer": {
+        "action": "inspect",
+        "artifact": "",
+        "work": []
+      },
+      "memory": "Gate: release iff appr=artifact=ci_artifact, unit+integ pass, B=-; else hold (work: approval if missing/stale, ci:<required test> if absent/fail/stale, blocker:<id> per open blocker). Required unit,integ; optional perf fail nonblocking. ci_artifact!=artifact => rerun unit+integ. B=- explicitly none. Late event first; missing facts=>inspect. Rows svc:artifact/appr/ci_artifact; unit,integ; B.\ndelta-e58:543e05fe/543e05fe/543e05fe;pass,pass",
+      "parent_memory": "Gate: release iff approval=artifact, all required CI pass on ci_artifact=artifact, B=none. Required tests unit,integ; optional perf fail never blocks. If ci_artifact differs, rerun both required tests. Work is a set: approval (missing/stale), ci:<test> (required absent/failing/stale), blocker:<id> (each open blocker); empty=>release, else hold. Apply late event first. Notation rows service: artifact/appr/ci_artifact; unit,integ results; B (blockers). \u201c-\u201d means explicitly none. No deployment.\natlas-820: 860ad063/860ad063/860ad063; pass,pass; B=- (work {}).\ncedar-7c7: 242f637f/242f637f/242f637f; pass,fail; B=- (ci:integ).\nfjord-f14: 44060274/44060274/87eda946; pass,pass (stale); B=- (ci:unit,ci:integ; rerun both).\ndelta-e58: 543e05fe/543e05fe/543e05fe; pass,pass; B=REL-543e (blocker:REL-543e).\nember-2e3: 6c27d1b3/6c27d1b3/6c27d1b3; pass,pass; B=- (work {}).\nbirch-932: 08b9169a/fd6cf744"
+    },
+    {
+      "id": "w2-t1-e0-prose",
+      "arm": "prose",
+      "future": {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w2-t1-e0",
+        "target": "fjord-f14"
+      },
+      "expected": {
+        "action": "hold",
+        "artifact": "44060274",
+        "work": [
+          "ci:integ",
+          "ci:unit"
+        ]
+      },
+      "answer": {
+        "action": "hold",
+        "artifact": "44060274",
+        "work": [
+          "ci:unit",
+          "ci:integration"
+        ]
+      },
+      "memory": "Unknown target/event. id A/P/C: atlas-820 860ad063; cedar-7c7 242f637f; fjord-f14 44060274/44060274/87eda946; delta-e58 543e05fe X=REL-543e; ember-2e3 6c27d1b3; birch-932 08b9169a/fd6cf744/08b9169a. Single hash means A=P=C; U/I pass/pass except cedar pass/fail. A=artifact,P=approval,C=ci_artifact,U/I=required unit/integration,X=blocker. Optional perf fails, nonblocking. Apply late event first. Work: approval if P!=A; ci:<test> for requi",
+      "parent_memory": "Target/event still unknown; choose among: atlas-820 A=860ad063/P=860ad063/C=860ad063 U/I=pass/pass X=none; cedar-7c7 A=P=C=242f637f U/I=pass/fail X=none; fjord-f14 A=P=44060274 C=87eda946 U/I=pass/pass X=none; delta-e58 A=P=C=543e05fe U/I=pass/pass X=REL-543e; ember-2e3 A=P=C=6c27d1b3 U/I=pass/pass X=none; birch-932 A=08b9169a P=fd6cf744 C=08b9169a U/I=pass/pass X=none. Notation: A artifact, P approval, C ci_artifact, U/I required unit/integration, X open blockers. Optional perf fails for all; does not block. No deployment. Apply late event, then calculate work set using exact names: approval if P\u2260current A; ci:<test> for absent/failing/stale required check (if C\u2260A, rerun all required tests); blocker:<id> per open blocker. Empty set\u2192release, else hold. If necessary facts forgotten\u2192inspect."
+    },
+    {
+      "id": "w2-t1-e1-structured",
+      "arm": "structured",
+      "future": {
+        "event": {
+          "kind": "ci_artifact",
+          "value": "44060274"
+        },
+        "id": "w2-t1-e1",
+        "target": "fjord-f14"
+      },
+      "expected": {
+        "action": "release",
+        "artifact": "44060274",
+        "work": []
+      },
+      "answer": {
+        "action": "inspect",
+        "artifact": "",
+        "work": [
+          "approval",
+          "ci:unit",
+          "ci:integ"
+        ]
+      },
+      "memory": "Gate: release iff appr=artifact=ci_artifact, unit+integ pass, B=-; else hold (work: approval if missing/stale, ci:<required test> if absent/fail/stale, blocker:<id> per open blocker). Required unit,integ; optional perf fail nonblocking. ci_artifact!=artifact => rerun unit+integ. B=- explicitly none. Late event first; missing facts=>inspect. Rows svc:artifact/appr/ci_artifact; unit,integ; B.\ndelta-e58:543e05fe/543e05fe/543e05fe;pass,pass",
+      "parent_memory": "Gate: release iff approval=artifact, all required CI pass on ci_artifact=artifact, B=none. Required tests unit,integ; optional perf fail never blocks. If ci_artifact differs, rerun both required tests. Work is a set: approval (missing/stale), ci:<test> (required absent/failing/stale), blocker:<id> (each open blocker); empty=>release, else hold. Apply late event first. Notation rows service: artifact/appr/ci_artifact; unit,integ results; B (blockers). \u201c-\u201d means explicitly none. No deployment.\natlas-820: 860ad063/860ad063/860ad063; pass,pass; B=- (work {}).\ncedar-7c7: 242f637f/242f637f/242f637f; pass,fail; B=- (ci:integ).\nfjord-f14: 44060274/44060274/87eda946; pass,pass (stale); B=- (ci:unit,ci:integ; rerun both).\ndelta-e58: 543e05fe/543e05fe/543e05fe; pass,pass; B=REL-543e (blocker:REL-543e).\nember-2e3: 6c27d1b3/6c27d1b3/6c27d1b3; pass,pass; B=- (work {}).\nbirch-932: 08b9169a/fd6cf744"
+    },
+    {
+      "id": "w3-t1-e0-structured",
+      "arm": "structured",
+      "future": {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w3-t1-e0",
+        "target": "ember-0c4"
+      },
+      "expected": {
+        "action": "release",
+        "artifact": "1105c344",
+        "work": []
+      },
+      "answer": {
+        "action": "inspect",
+        "artifact": "",
+        "work": []
+      },
+      "memory": "Release iff approval=artifact, req pass on ci_artifact=artifact, no blockers; else hold. CI mismatch=>rerun all req; optional fails nonblocking. Work=set: approval=missing/stale; ci:<test>=req absent/fail/stale; blocker:<id>=open; empty=>release. Late event first; missing=>inspect. Rows s=service, a=artifact, p=approval, c=ci_artifact; req U=unit,I=integ; B=[]=explicit none; opt perf=fail.\natlas-313 d06d406c/d06d406c d06d406c U/I pass/p",
+      "parent_memory": "Gates: release iff approval=artifact, every required CI test passes on artifact, no open blockers. Work=set; names exactly approval, ci:<test>, blocker:<id>. Empty=>release; else hold. CI bound to ci_artifact; if !=artifact rerun ALL required tests (treat stale). Optional failures don't block. Apply late event first; if needed facts missing=>inspect. Notation per row: service artifact/approval ci_artifact; req U=unit,I=integ results U/I; B=blockers ([] means explicitly none). All rows req U,I; optional perf=fail (nonblocking).\nfjord-324 500c107f/500c107f 9255cbb0 U/I=pass/pass B=[]\ncedar-97 94a1e8d5/94a1e8d5 94a1e8d5 U/I=pass/fail B=[]\nbirch-124 30e72291/572b8d45 30e72291 U/I=pass/pass B=[]\nember-0c 1105c344/1105c344 1105c344 U/I=pass/pass B=[]\ndelta-153 186c733f/186c733f 186c733f U/I=pass/pass B=[REL-186c]\natlas-313 d06d406c/d06d406c d06d406c U/I=pass/pass B=[]"
+    },
+    {
+      "id": "w3-t1-e1-structured",
+      "arm": "structured",
+      "future": {
+        "event": {
+          "kind": "require_test",
+          "value": "perf"
+        },
+        "id": "w3-t1-e1",
+        "target": "ember-0c4"
+      },
+      "expected": {
+        "action": "hold",
+        "artifact": "1105c344",
+        "work": [
+          "ci:perf"
+        ]
+      },
+      "answer": {
+        "action": "inspect",
+        "artifact": "",
+        "work": []
+      },
+      "memory": "Release iff approval=artifact, req pass on ci_artifact=artifact, no blockers; else hold. CI mismatch=>rerun all req; optional fails nonblocking. Work=set: approval=missing/stale; ci:<test>=req absent/fail/stale; blocker:<id>=open; empty=>release. Late event first; missing=>inspect. Rows s=service, a=artifact, p=approval, c=ci_artifact; req U=unit,I=integ; B=[]=explicit none; opt perf=fail.\natlas-313 d06d406c/d06d406c d06d406c U/I pass/p",
+      "parent_memory": "Gates: release iff approval=artifact, every required CI test passes on artifact, no open blockers. Work=set; names exactly approval, ci:<test>, blocker:<id>. Empty=>release; else hold. CI bound to ci_artifact; if !=artifact rerun ALL required tests (treat stale). Optional failures don't block. Apply late event first; if needed facts missing=>inspect. Notation per row: service artifact/approval ci_artifact; req U=unit,I=integ results U/I; B=blockers ([] means explicitly none). All rows req U,I; optional perf=fail (nonblocking).\nfjord-324 500c107f/500c107f 9255cbb0 U/I=pass/pass B=[]\ncedar-97 94a1e8d5/94a1e8d5 94a1e8d5 U/I=pass/fail B=[]\nbirch-124 30e72291/572b8d45 30e72291 U/I=pass/pass B=[]\nember-0c 1105c344/1105c344 1105c344 U/I=pass/pass B=[]\ndelta-153 186c733f/186c733f 186c733f U/I=pass/pass B=[REL-186c]\natlas-313 d06d406c/d06d406c d06d406c U/I=pass/pass B=[]"
+    }
+  ],
+  "scores": [
+    {
+      "id": "w0-t0-e0-prose",
+      "arm": "prose",
+      "future_id": "w0-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t0-e0-direct",
+      "arm": "direct",
+      "future_id": "w0-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t0-e0-repair",
+      "arm": "repair",
+      "future_id": "w0-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t0-e0-full",
+      "arm": "full",
+      "future_id": "w0-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t0-e0-structured",
+      "arm": "structured",
+      "future_id": "w0-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t0-e0-indexed",
+      "arm": "indexed",
+      "future_id": "w0-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t0-e1-direct",
+      "arm": "direct",
+      "future_id": "w0-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t0-e1-full",
+      "arm": "full",
+      "future_id": "w0-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t0-e1-indexed",
+      "arm": "indexed",
+      "future_id": "w0-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t0-e1-repair",
+      "arm": "repair",
+      "future_id": "w0-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t0-e1-prose",
+      "arm": "prose",
+      "future_id": "w0-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t0-e1-structured",
+      "arm": "structured",
+      "future_id": "w0-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t1-e0-direct",
+      "arm": "direct",
+      "future_id": "w0-t1-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t1-e0-structured",
+      "arm": "structured",
+      "future_id": "w0-t1-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t1-e0-prose",
+      "arm": "prose",
+      "future_id": "w0-t1-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t1-e0-indexed",
+      "arm": "indexed",
+      "future_id": "w0-t1-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t1-e0-full",
+      "arm": "full",
+      "future_id": "w0-t1-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t1-e0-repair",
+      "arm": "repair",
+      "future_id": "w0-t1-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t1-e1-prose",
+      "arm": "prose",
+      "future_id": "w0-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t1-e1-indexed",
+      "arm": "indexed",
+      "future_id": "w0-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t1-e1-repair",
+      "arm": "repair",
+      "future_id": "w0-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t1-e1-structured",
+      "arm": "structured",
+      "future_id": "w0-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t1-e1-direct",
+      "arm": "direct",
+      "future_id": "w0-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w0-t1-e1-full",
+      "arm": "full",
+      "future_id": "w0-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w1-t0-e0-direct",
+      "arm": "direct",
+      "future_id": "w1-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w1-t0-e0-indexed",
+      "arm": "indexed",
+      "future_id": "w1-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w1-t0-e0-prose",
+      "arm": "prose",
+      "future_id": "w1-t0-e0",
+      "success": false,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": false
+    },
+    {
+      "id": "w1-t0-e0-full",
+      "arm": "full",
+      "future_id": "w1-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w1-t0-e0-structured",
+      "arm": "structured",
+      "future_id": "w1-t0-e0",
+      "success": false,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": false,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w1-t0-e0-repair",
+      "arm": "repair",
+      "future_id": "w1-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w1-t0-e1-direct",
+      "arm": "direct",
+      "future_id": "w1-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w1-t0-e1-prose",
+      "arm": "prose",
+      "future_id": "w1-t0-e1",
+      "success": false,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": false,
+      "action_correct": false
+    },
+    {
+      "id": "w1-t0-e1-structured",
+      "arm": "structured",
+      "future_id": "w1-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w1-t0-e1-full",
+      "arm": "full",
+      "future_id": "w1-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w1-t0-e1-indexed",
+      "arm": "indexed",
+      "future_id": "w1-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w1-t0-e1-repair",
+      "arm": "repair",
+      "future_id": "w1-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w1-t1-e0-repair",
+      "arm": "repair",
+      "future_id": "w1-t1-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w1-t1-e0-indexed",
+      "arm": "indexed",
+      "future_id": "w1-t1-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w1-t1-e0-direct",
+      "arm": "direct",
+      "future_id": "w1-t1-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w1-t1-e0-full",
+      "arm": "full",
+      "future_id": "w1-t1-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w1-t1-e0-structured",
+      "arm": "structured",
+      "future_id": "w1-t1-e0",
+      "success": false,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": false,
+      "action_correct": false
+    },
+    {
+      "id": "w1-t1-e0-prose",
+      "arm": "prose",
+      "future_id": "w1-t1-e0",
+      "success": false,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": false
+    },
+    {
+      "id": "w1-t1-e1-indexed",
+      "arm": "indexed",
+      "future_id": "w1-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w1-t1-e1-prose",
+      "arm": "prose",
+      "future_id": "w1-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w1-t1-e1-direct",
+      "arm": "direct",
+      "future_id": "w1-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w1-t1-e1-structured",
+      "arm": "structured",
+      "future_id": "w1-t1-e1",
+      "success": false,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": false,
+      "action_correct": false
+    },
+    {
+      "id": "w1-t1-e1-full",
+      "arm": "full",
+      "future_id": "w1-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w1-t1-e1-repair",
+      "arm": "repair",
+      "future_id": "w1-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t0-e0-indexed",
+      "arm": "indexed",
+      "future_id": "w2-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t0-e0-direct",
+      "arm": "direct",
+      "future_id": "w2-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t0-e0-prose",
+      "arm": "prose",
+      "future_id": "w2-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t0-e0-structured",
+      "arm": "structured",
+      "future_id": "w2-t0-e0",
+      "success": false,
+      "schema_valid": true,
+      "unsafe_release": true,
+      "artifact_correct": true,
+      "work_correct": false,
+      "action_correct": false
+    },
+    {
+      "id": "w2-t0-e0-full",
+      "arm": "full",
+      "future_id": "w2-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t0-e0-repair",
+      "arm": "repair",
+      "future_id": "w2-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t0-e1-full",
+      "arm": "full",
+      "future_id": "w2-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t0-e1-direct",
+      "arm": "direct",
+      "future_id": "w2-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t0-e1-repair",
+      "arm": "repair",
+      "future_id": "w2-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t0-e1-structured",
+      "arm": "structured",
+      "future_id": "w2-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t0-e1-indexed",
+      "arm": "indexed",
+      "future_id": "w2-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t0-e1-prose",
+      "arm": "prose",
+      "future_id": "w2-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t1-e0-structured",
+      "arm": "structured",
+      "future_id": "w2-t1-e0",
+      "success": false,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": false,
+      "work_correct": false,
+      "action_correct": false
+    },
+    {
+      "id": "w2-t1-e0-direct",
+      "arm": "direct",
+      "future_id": "w2-t1-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t1-e0-repair",
+      "arm": "repair",
+      "future_id": "w2-t1-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t1-e0-full",
+      "arm": "full",
+      "future_id": "w2-t1-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t1-e0-indexed",
+      "arm": "indexed",
+      "future_id": "w2-t1-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t1-e0-prose",
+      "arm": "prose",
+      "future_id": "w2-t1-e0",
+      "success": false,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": false,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t1-e1-prose",
+      "arm": "prose",
+      "future_id": "w2-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t1-e1-structured",
+      "arm": "structured",
+      "future_id": "w2-t1-e1",
+      "success": false,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": false,
+      "work_correct": false,
+      "action_correct": false
+    },
+    {
+      "id": "w2-t1-e1-repair",
+      "arm": "repair",
+      "future_id": "w2-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t1-e1-indexed",
+      "arm": "indexed",
+      "future_id": "w2-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t1-e1-full",
+      "arm": "full",
+      "future_id": "w2-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w2-t1-e1-direct",
+      "arm": "direct",
+      "future_id": "w2-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t0-e0-full",
+      "arm": "full",
+      "future_id": "w3-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t0-e0-structured",
+      "arm": "structured",
+      "future_id": "w3-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t0-e0-indexed",
+      "arm": "indexed",
+      "future_id": "w3-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t0-e0-repair",
+      "arm": "repair",
+      "future_id": "w3-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t0-e0-direct",
+      "arm": "direct",
+      "future_id": "w3-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t0-e0-prose",
+      "arm": "prose",
+      "future_id": "w3-t0-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t0-e1-structured",
+      "arm": "structured",
+      "future_id": "w3-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t0-e1-prose",
+      "arm": "prose",
+      "future_id": "w3-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t0-e1-direct",
+      "arm": "direct",
+      "future_id": "w3-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t0-e1-full",
+      "arm": "full",
+      "future_id": "w3-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t0-e1-indexed",
+      "arm": "indexed",
+      "future_id": "w3-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t0-e1-repair",
+      "arm": "repair",
+      "future_id": "w3-t0-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t1-e0-indexed",
+      "arm": "indexed",
+      "future_id": "w3-t1-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t1-e0-repair",
+      "arm": "repair",
+      "future_id": "w3-t1-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t1-e0-direct",
+      "arm": "direct",
+      "future_id": "w3-t1-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t1-e0-full",
+      "arm": "full",
+      "future_id": "w3-t1-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t1-e0-structured",
+      "arm": "structured",
+      "future_id": "w3-t1-e0",
+      "success": false,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": false,
+      "work_correct": true,
+      "action_correct": false
+    },
+    {
+      "id": "w3-t1-e0-prose",
+      "arm": "prose",
+      "future_id": "w3-t1-e0",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t1-e1-prose",
+      "arm": "prose",
+      "future_id": "w3-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t1-e1-structured",
+      "arm": "structured",
+      "future_id": "w3-t1-e1",
+      "success": false,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": false,
+      "work_correct": false,
+      "action_correct": false
+    },
+    {
+      "id": "w3-t1-e1-repair",
+      "arm": "repair",
+      "future_id": "w3-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t1-e1-direct",
+      "arm": "direct",
+      "future_id": "w3-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t1-e1-indexed",
+      "arm": "indexed",
+      "future_id": "w3-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    },
+    {
+      "id": "w3-t1-e1-full",
+      "arm": "full",
+      "future_id": "w3-t1-e1",
+      "success": true,
+      "schema_valid": true,
+      "unsafe_release": false,
+      "artifact_correct": true,
+      "work_correct": true,
+      "action_correct": true
+    }
+  ],
+  "model_credit_frontier": [
+    {
+      "common_cap": "0.0830870",
+      "best_success": 16,
+      "best_methods": [
+        "indexed"
+      ]
+    },
+    {
+      "common_cap": "0.0865340",
+      "best_success": 16,
+      "best_methods": [
+        "direct",
+        "indexed"
+      ]
+    },
+    {
+      "common_cap": "0.1293510",
+      "best_success": 16,
+      "best_methods": [
+        "direct",
+        "indexed",
+        "full"
+      ]
+    },
+    {
+      "common_cap": "0.2653020",
+      "best_success": 16,
+      "best_methods": [
+        "repair",
+        "direct",
+        "indexed",
+        "full"
+      ]
+    },
+    {
+      "common_cap": "0.2912620",
+      "best_success": 16,
+      "best_methods": [
+        "repair",
+        "direct",
+        "indexed",
+        "full"
+      ]
+    },
+    {
+      "common_cap": "0.3379850",
+      "best_success": 16,
+      "best_methods": [
+        "repair",
+        "direct",
+        "indexed",
+        "full"
+      ]
+    }
+  ],
+  "local_cost_calibration": {
+    "scope": "Offline local CPU calibration: seven batches of 250 repetitions, four histories each; no model calls. Indexed includes building the index and serializing four target reads; repair uses an empty proposal and whole replacement. Disk storage, arbitrary text extraction and provider compute are excluded.",
+    "timer": "GetProcessTimes()",
+    "timer_resolution_seconds": 1e-07,
+    "script_sha256": "24852f5250f9971feb53adcdc6e9d62d630d90035fd1683666f99034e40992e2",
+    "study_sha256": "596f082b90b19cd8f5b718514d0df67603f9196017267ec84ced965bb3372b6b",
+    "methods": {
+      "direct": {
+        "cpu_ns_per_four_histories_batches": [
+          250000.0,
+          187500.0,
+          250000.0,
+          187500.0,
+          250000.0,
+          187500.0,
+          187500.0
+        ],
+        "median_cpu_ns_per_four_histories": 187500.0
+      },
+      "repair": {
+        "cpu_ns_per_four_histories_batches": [
+          500000.0,
+          500000.0,
+          625000.0,
+          500000.0,
+          437500.0,
+          437500.0,
+          437500.0
+        ],
+        "median_cpu_ns_per_four_histories": 500000.0
+      },
+      "indexed": {
+        "cpu_ns_per_four_histories_batches": [
+          187500.0,
+          125000.0,
+          187500.0,
+          125000.0,
+          187500.0,
+          187500.0,
+          125000.0
+        ],
+        "median_cpu_ns_per_four_histories": 187500.0
+      }
+    }
+  },
+  "identical_repair_direct_final_inputs": 16,
+  "limitations": [
+    "Four constructed histories; 16 correlated continuations per arm; development only.",
+    "Imposed byte caps and fresh reasoning state; not native provider compaction.",
+    "Hand-written gate adapter; no automatic extraction or generic feedback novelty.",
+    "Credits are token-metered planning equivalents; actual debit and infrastructure conversion unknown.",
+    "Costs start at the handoff; prior workflow execution and adapter development are unmeasured.",
+    "Direct and repaired final prompts are identical; differences there are sampling variation.",
+    "Overlong generated memories are clipped; this may explain errors and must be reported."
+  ]
+}

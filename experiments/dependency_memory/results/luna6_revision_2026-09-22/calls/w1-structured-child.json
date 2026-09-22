@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "w1-structured-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0117055",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790476690,
+        "usedPercent": 94,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Rules: A=artifact,P=approval,C=ci_artifact; req U=unit,I=integ; opt perf fails for all, nonblocking. B=- explicitly no open blockers. Work={approval if P!=A; ci:<test> for each required absent/fail/stale (if C!=A rerun U,I); blocker:<id> per open blocker}. Late event first; empty work=release, else hold; forgotten facts=inspect. Candidates A/P/C,U/I,B: cedar-58d ed052220/ed052220/ed052220 pass/fail/-; ember-60a 157c67da/157c67da/157c67da pass/pass/-. No deployment.\"}",
+  "request": {
+    "instruction": "Write a compact structured handoff. Preserve exact artifact identifiers, approval and CI scope, required versus optional tests, explicit absence of blockers, unresolved blockers, and revision-sensitive dependencies. Do not replace scoped evidence with just done/ready. Your entire retained memory string must fit 440 UTF-8 bytes. Only that string survives. The future target and event are not yet revealed; keep enough for every candidate. You may use compact notation and must define it in memory. Release only when approval equals the current artifact, every required CI test has result pass, and there are no open blockers. CI is bound to the artifact in ci_artifact; all required tests need rerunning when that differs. Optional failing tests do not block. Work names are exactly approval (missing/stale approval), ci:<test> (required test absent/failing/stale), and blocker:<id> (one per open blocker). Work is a set. If work is empty choose release; otherwise hold. Notes, owners, and elapsed discussion do not change gates. Apply the late event before deciding. If necessary facts were forgotten, choose inspect, with the facts you can recover from memory.",
+    "observation": {
+      "candidate_services": [
+        "cedar-58d",
+        "ember-60a"
+      ],
+      "previous_memory": "Rules: A=artifact,P=approval,C=ci_artifact; required U=unit,I=integ; optional perf fails for all, nonblocking. B=- means explicitly no open blockers. Work set: approval if P!=A; ci:test for each required absent/fail/stale (if C!=A rerun U,I); blocker:<id> per open blocker. Apply late event first; empty work=release, else hold; forgotten facts=inspect. Rows service A/P C U/I B:\ncedar-58d ed052220/ed052220 ed052220 pass/fail -\nfjord-170 8f79b174/8f79b174 752b0417 pass/pass -\nember-60a 157c67da/157c67da 157c67da pass/pass -\natlas-aad 72d7fad3/72d7fad3 72d7fad3 pass/pass -\ndelta-d95 47abba9e/47abba9e 47abba9e pass/pass REL-47ab\nbirch-c53 58e8d547/29c51de7 58e8d547 pass/pass -\nNo deployment. Preserve exact IDs; fjord CI is revision-stale; birch approval mismatches artifact."
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "dd89bb2222ad0deed35ffc615829484a5abce3efdc5e4dad0f5ca9b818bb396b",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Rules: A=artifact,P=approval,C=ci_artifact; req U=unit,I=integ; opt perf fails for all, nonblocking. B=- explicitly no open blockers. Work={approval if P!=A; ci:<test> for each required absent/fail/stale (if C!=A rerun U,I); blocker:<id> per open blocker}. Late event first; empty work=release, else hold; forgotten facts=inspect. Candidates A/P/C,U/I,B: cedar-58d ed052220/ed052220/ed052220 pass/fail/-; ember-60a 157c67da/157c67da/157c67da pass/pass/-. No deployment."
+  },
+  "started_at": "2026-09-22T19:53:23.006173+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3155,
+    "outputTokens": 628,
+    "reasoningOutputTokens": 464,
+    "totalTokens": 3783
+  },
+  "usage_events": 1,
+  "wall_seconds": 18.52105430001393,
+  "wire_body_byte_bound": 18406
+}

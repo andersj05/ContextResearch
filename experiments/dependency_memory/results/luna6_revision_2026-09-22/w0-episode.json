@@ -1,0 +1,792 @@
+{
+  "continuations": [
+    {
+      "arm": "prose",
+      "future": {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w0-t0-e0",
+        "target": "atlas-99c"
+      },
+      "id": "w0-t0-e0-prose",
+      "memory_bytes": 440,
+      "recovered_bytes": 0,
+      "truth": {
+        "action": "release",
+        "artifact": "c7d544cd",
+        "work": []
+      }
+    },
+    {
+      "arm": "direct",
+      "future": {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w0-t0-e0",
+        "target": "atlas-99c"
+      },
+      "id": "w0-t0-e0-direct",
+      "memory_bytes": 311,
+      "recovered_bytes": 0,
+      "truth": {
+        "action": "release",
+        "artifact": "c7d544cd",
+        "work": []
+      }
+    },
+    {
+      "arm": "repair",
+      "future": {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w0-t0-e0",
+        "target": "atlas-99c"
+      },
+      "id": "w0-t0-e0-repair",
+      "memory_bytes": 311,
+      "recovered_bytes": 0,
+      "truth": {
+        "action": "release",
+        "artifact": "c7d544cd",
+        "work": []
+      }
+    },
+    {
+      "arm": "full",
+      "future": {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w0-t0-e0",
+        "target": "atlas-99c"
+      },
+      "id": "w0-t0-e0-full",
+      "memory_bytes": 4661,
+      "recovered_bytes": 0,
+      "truth": {
+        "action": "release",
+        "artifact": "c7d544cd",
+        "work": []
+      }
+    },
+    {
+      "arm": "structured",
+      "future": {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w0-t0-e0",
+        "target": "atlas-99c"
+      },
+      "id": "w0-t0-e0-structured",
+      "memory_bytes": 440,
+      "recovered_bytes": 0,
+      "truth": {
+        "action": "release",
+        "artifact": "c7d544cd",
+        "work": []
+      }
+    },
+    {
+      "arm": "indexed",
+      "future": {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w0-t0-e0",
+        "target": "atlas-99c"
+      },
+      "id": "w0-t0-e0-indexed",
+      "memory_bytes": 774,
+      "recovered_bytes": 774,
+      "truth": {
+        "action": "release",
+        "artifact": "c7d544cd",
+        "work": []
+      }
+    },
+    {
+      "arm": "direct",
+      "future": {
+        "event": {
+          "kind": "artifact",
+          "value": "a0110d9d"
+        },
+        "id": "w0-t0-e1",
+        "target": "atlas-99c"
+      },
+      "id": "w0-t0-e1-direct",
+      "memory_bytes": 311,
+      "recovered_bytes": 0,
+      "truth": {
+        "action": "hold",
+        "artifact": "a0110d9d",
+        "work": [
+          "approval",
+          "ci:integ",
+          "ci:unit"
+        ]
+      }
+    },
+    {
+      "arm": "full",
+      "future": {
+        "event": {
+          "kind": "artifact",
+          "value": "a0110d9d"
+        },
+        "id": "w0-t0-e1",
+        "target": "atlas-99c"
+      },
+      "id": "w0-t0-e1-full",
+      "memory_bytes": 4661,
+      "recovered_bytes": 0,
+      "truth": {
+        "action": "hold",
+        "artifact": "a0110d9d",
+        "work": [
+          "approval",
+          "ci:integ",
+          "ci:unit"
+        ]
+      }
+    },
+    {
+      "arm": "indexed",
+      "future": {
+        "event": {
+          "kind": "artifact",
+          "value": "a0110d9d"
+        },
+        "id": "w0-t0-e1",
+        "target": "atlas-99c"
+      },
+      "id": "w0-t0-e1-indexed",
+      "memory_bytes": 774,
+      "recovered_bytes": 774,
+      "truth": {
+        "action": "hold",
+        "artifact": "a0110d9d",
+        "work": [
+          "approval",
+          "ci:integ",
+          "ci:unit"
+        ]
+      }
+    },
+    {
+      "arm": "repair",
+      "future": {
+        "event": {
+          "kind": "artifact",
+          "value": "a0110d9d"
+        },
+        "id": "w0-t0-e1",
+        "target": "atlas-99c"
+      },
+      "id": "w0-t0-e1-repair",
+      "memory_bytes": 311,
+      "recovered_bytes": 0,
+      "truth": {
+        "action": "hold",
+        "artifact": "a0110d9d",
+        "work": [
+          "approval",
+          "ci:integ",
+          "ci:unit"
+        ]
+      }
+    },
+    {
+      "arm": "prose",
+      "future": {
+        "event": {
+          "kind": "artifact",
+          "value": "a0110d9d"
+        },
+        "id": "w0-t0-e1",
+        "target": "atlas-99c"
+      },
+      "id": "w0-t0-e1-prose",
+      "memory_bytes": 440,
+      "recovered_bytes": 0,
+      "truth": {
+        "action": "hold",
+        "artifact": "a0110d9d",
+        "work": [
+          "approval",
+          "ci:integ",
+          "ci:unit"
+        ]
+      }
+    },
+    {
+      "arm": "structured",
+      "future": {
+        "event": {
+          "kind": "artifact",
+          "value": "a0110d9d"
+        },
+        "id": "w0-t0-e1",
+        "target": "atlas-99c"
+      },
+      "id": "w0-t0-e1-structured",
+      "memory_bytes": 440,
+      "recovered_bytes": 0,
+      "truth": {
+        "action": "hold",
+        "artifact": "a0110d9d",
+        "work": [
+          "approval",
+          "ci:integ",
+          "ci:unit"
+        ]
+      }
+    },
+    {
+      "arm": "direct",
+      "future": {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w0-t1-e0",
+        "target": "birch-274"
+      },
+      "id": "w0-t1-e0-direct",
+      "memory_bytes": 311,
+      "recovered_bytes": 0,
+      "truth": {
+        "action": "hold",
+        "artifact": "f6cafa82",
+        "work": [
+          "approval"
+        ]
+      }
+    },
+    {
+      "arm": "structured",
+      "future": {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w0-t1-e0",
+        "target": "birch-274"
+      },
+      "id": "w0-t1-e0-structured",
+      "memory_bytes": 440,
+      "recovered_bytes": 0,
+      "truth": {
+        "action": "hold",
+        "artifact": "f6cafa82",
+        "work": [
+          "approval"
+        ]
+      }
+    },
+    {
+      "arm": "prose",
+      "future": {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w0-t1-e0",
+        "target": "birch-274"
+      },
+      "id": "w0-t1-e0-prose",
+      "memory_bytes": 440,
+      "recovered_bytes": 0,
+      "truth": {
+        "action": "hold",
+        "artifact": "f6cafa82",
+        "work": [
+          "approval"
+        ]
+      }
+    },
+    {
+      "arm": "indexed",
+      "future": {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w0-t1-e0",
+        "target": "birch-274"
+      },
+      "id": "w0-t1-e0-indexed",
+      "memory_bytes": 774,
+      "recovered_bytes": 774,
+      "truth": {
+        "action": "hold",
+        "artifact": "f6cafa82",
+        "work": [
+          "approval"
+        ]
+      }
+    },
+    {
+      "arm": "full",
+      "future": {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w0-t1-e0",
+        "target": "birch-274"
+      },
+      "id": "w0-t1-e0-full",
+      "memory_bytes": 4661,
+      "recovered_bytes": 0,
+      "truth": {
+        "action": "hold",
+        "artifact": "f6cafa82",
+        "work": [
+          "approval"
+        ]
+      }
+    },
+    {
+      "arm": "repair",
+      "future": {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w0-t1-e0",
+        "target": "birch-274"
+      },
+      "id": "w0-t1-e0-repair",
+      "memory_bytes": 311,
+      "recovered_bytes": 0,
+      "truth": {
+        "action": "hold",
+        "artifact": "f6cafa82",
+        "work": [
+          "approval"
+        ]
+      }
+    },
+    {
+      "arm": "prose",
+      "future": {
+        "event": {
+          "kind": "approve",
+          "value": "f6cafa82"
+        },
+        "id": "w0-t1-e1",
+        "target": "birch-274"
+      },
+      "id": "w0-t1-e1-prose",
+      "memory_bytes": 440,
+      "recovered_bytes": 0,
+      "truth": {
+        "action": "release",
+        "artifact": "f6cafa82",
+        "work": []
+      }
+    },
+    {
+      "arm": "indexed",
+      "future": {
+        "event": {
+          "kind": "approve",
+          "value": "f6cafa82"
+        },
+        "id": "w0-t1-e1",
+        "target": "birch-274"
+      },
+      "id": "w0-t1-e1-indexed",
+      "memory_bytes": 774,
+      "recovered_bytes": 774,
+      "truth": {
+        "action": "release",
+        "artifact": "f6cafa82",
+        "work": []
+      }
+    },
+    {
+      "arm": "repair",
+      "future": {
+        "event": {
+          "kind": "approve",
+          "value": "f6cafa82"
+        },
+        "id": "w0-t1-e1",
+        "target": "birch-274"
+      },
+      "id": "w0-t1-e1-repair",
+      "memory_bytes": 311,
+      "recovered_bytes": 0,
+      "truth": {
+        "action": "release",
+        "artifact": "f6cafa82",
+        "work": []
+      }
+    },
+    {
+      "arm": "structured",
+      "future": {
+        "event": {
+          "kind": "approve",
+          "value": "f6cafa82"
+        },
+        "id": "w0-t1-e1",
+        "target": "birch-274"
+      },
+      "id": "w0-t1-e1-structured",
+      "memory_bytes": 440,
+      "recovered_bytes": 0,
+      "truth": {
+        "action": "release",
+        "artifact": "f6cafa82",
+        "work": []
+      }
+    },
+    {
+      "arm": "direct",
+      "future": {
+        "event": {
+          "kind": "approve",
+          "value": "f6cafa82"
+        },
+        "id": "w0-t1-e1",
+        "target": "birch-274"
+      },
+      "id": "w0-t1-e1-direct",
+      "memory_bytes": 311,
+      "recovered_bytes": 0,
+      "truth": {
+        "action": "release",
+        "artifact": "f6cafa82",
+        "work": []
+      }
+    },
+    {
+      "arm": "full",
+      "future": {
+        "event": {
+          "kind": "approve",
+          "value": "f6cafa82"
+        },
+        "id": "w0-t1-e1",
+        "target": "birch-274"
+      },
+      "id": "w0-t1-e1-full",
+      "memory_bytes": 4661,
+      "recovered_bytes": 0,
+      "truth": {
+        "action": "release",
+        "artifact": "f6cafa82",
+        "work": []
+      }
+    }
+  ],
+  "cost_calls": {
+    "direct": [
+      "w0-t0-e0-direct",
+      "w0-t0-e1-direct",
+      "w0-t1-e0-direct",
+      "w0-t1-e1-direct"
+    ],
+    "full": [
+      "w0-t0-e0-full",
+      "w0-t0-e1-full",
+      "w0-t1-e0-full",
+      "w0-t1-e1-full"
+    ],
+    "indexed": [
+      "w0-t0-e0-indexed",
+      "w0-t0-e1-indexed",
+      "w0-t1-e0-indexed",
+      "w0-t1-e1-indexed"
+    ],
+    "prose": [
+      "w0-prose-parent",
+      "w0-prose-child",
+      "w0-t0-e0-prose",
+      "w0-t0-e1-prose",
+      "w0-t1-e0-prose",
+      "w0-t1-e1-prose"
+    ],
+    "repair": [
+      "w0-structured-parent",
+      "w0-repair-child",
+      "w0-t0-e0-repair",
+      "w0-t0-e1-repair",
+      "w0-t1-e0-repair",
+      "w0-t1-e1-repair"
+    ],
+    "structured": [
+      "w0-structured-parent",
+      "w0-structured-child",
+      "w0-t0-e0-structured",
+      "w0-t0-e1-structured",
+      "w0-t1-e0-structured",
+      "w0-t1-e1-structured"
+    ]
+  },
+  "fixture": {
+    "futures": [
+      {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w0-t0-e0",
+        "target": "atlas-99c"
+      },
+      {
+        "event": {
+          "kind": "artifact",
+          "value": "a0110d9d"
+        },
+        "id": "w0-t0-e1",
+        "target": "atlas-99c"
+      },
+      {
+        "event": {
+          "kind": "note",
+          "value": "Release page typography corrected; gate fields unchanged."
+        },
+        "id": "w0-t1-e0",
+        "target": "birch-274"
+      },
+      {
+        "event": {
+          "kind": "approve",
+          "value": "f6cafa82"
+        },
+        "id": "w0-t1-e1",
+        "target": "birch-274"
+      }
+    ],
+    "id": "w0",
+    "pair": [
+      "atlas-99c",
+      "birch-274"
+    ],
+    "records": [
+      {
+        "approval": "1120b4ed",
+        "artifact": "f6cafa82",
+        "blockers": [],
+        "build_log": [
+          "Build worker 22 uploaded f6cafa82; image scanning finished; tracking labels refreshed.",
+          "Optional performance job is red on the shared runner; release policy follows required membership.",
+          "The release page says validation work completed. Keep exact check scope from the tool fields.",
+          "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+          "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+          "A later operator will select services and may update a gate. No deployment has occurred."
+        ],
+        "ci": {
+          "integ": "pass",
+          "perf": "fail",
+          "unit": "pass"
+        },
+        "ci_artifact": "f6cafa82",
+        "owner": "team-2",
+        "required": [
+          "unit",
+          "integ"
+        ],
+        "service": "birch-274"
+      },
+      {
+        "approval": "654ca646",
+        "artifact": "654ca646",
+        "blockers": [],
+        "build_log": [
+          "Build worker 25 uploaded 654ca646; image scanning finished; tracking labels refreshed.",
+          "Optional performance job is red on the shared runner; release policy follows required membership.",
+          "The release page says validation work completed. Keep exact check scope from the tool fields.",
+          "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+          "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+          "A later operator will select services and may update a gate. No deployment has occurred."
+        ],
+        "ci": {
+          "integ": "pass",
+          "perf": "fail",
+          "unit": "pass"
+        },
+        "ci_artifact": "654ca646",
+        "owner": "team-5",
+        "required": [
+          "unit",
+          "integ"
+        ],
+        "service": "ember-ebd"
+      },
+      {
+        "approval": "6d500079",
+        "artifact": "6d500079",
+        "blockers": [],
+        "build_log": [
+          "Build worker 26 uploaded 6d500079; image scanning finished; tracking labels refreshed.",
+          "Optional performance job is red on the shared runner; release policy follows required membership.",
+          "The release page says validation work completed. Keep exact check scope from the tool fields.",
+          "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+          "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+          "A later operator will select services and may update a gate. No deployment has occurred."
+        ],
+        "ci": {
+          "integ": "pass",
+          "perf": "fail",
+          "unit": "pass"
+        },
+        "ci_artifact": "dd7d8d44",
+        "owner": "team-6",
+        "required": [
+          "unit",
+          "integ"
+        ],
+        "service": "fjord-a88"
+      },
+      {
+        "approval": "c7d544cd",
+        "artifact": "c7d544cd",
+        "blockers": [],
+        "build_log": [
+          "Build worker 21 uploaded c7d544cd; image scanning finished; tracking labels refreshed.",
+          "Optional performance job is red on the shared runner; release policy follows required membership.",
+          "The release page says validation work completed. Keep exact check scope from the tool fields.",
+          "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+          "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+          "A later operator will select services and may update a gate. No deployment has occurred."
+        ],
+        "ci": {
+          "integ": "pass",
+          "perf": "fail",
+          "unit": "pass"
+        },
+        "ci_artifact": "c7d544cd",
+        "owner": "team-1",
+        "required": [
+          "unit",
+          "integ"
+        ],
+        "service": "atlas-99c"
+      },
+      {
+        "approval": "ad8d7925",
+        "artifact": "ad8d7925",
+        "blockers": [
+          "REL-ad8d"
+        ],
+        "build_log": [
+          "Build worker 24 uploaded ad8d7925; image scanning finished; tracking labels refreshed.",
+          "Optional performance job is red on the shared runner; release policy follows required membership.",
+          "The release page says validation work completed. Keep exact check scope from the tool fields.",
+          "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+          "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+          "A later operator will select services and may update a gate. No deployment has occurred."
+        ],
+        "ci": {
+          "integ": "pass",
+          "perf": "fail",
+          "unit": "pass"
+        },
+        "ci_artifact": "ad8d7925",
+        "owner": "team-4",
+        "required": [
+          "unit",
+          "integ"
+        ],
+        "service": "delta-cf0"
+      },
+      {
+        "approval": "ce99bc65",
+        "artifact": "ce99bc65",
+        "blockers": [],
+        "build_log": [
+          "Build worker 23 uploaded ce99bc65; image scanning finished; tracking labels refreshed.",
+          "Optional performance job is red on the shared runner; release policy follows required membership.",
+          "The release page says validation work completed. Keep exact check scope from the tool fields.",
+          "Release notes were copyedited; screenshot snapshots and changelog links are filed in the task.",
+          "Artifact labels, dashboard colors, and team ownership were checked for consistency.",
+          "A later operator will select services and may update a gate. No deployment has occurred."
+        ],
+        "ci": {
+          "integ": "fail",
+          "perf": "fail",
+          "unit": "pass"
+        },
+        "ci_artifact": "ce99bc65",
+        "owner": "team-3",
+        "required": [
+          "unit",
+          "integ"
+        ],
+        "service": "cedar-dde"
+      }
+    ],
+    "seed": 9201
+  },
+  "memories": {
+    "direct_child": {
+      "memory": "{\"format\":\"rows=[service,artifact,approval,ci_artifact,required,ci,blockers]\",\"rows\":[[\"atlas-99c\",\"c7d544cd\",\"c7d544cd\",\"c7d544cd\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"birch-274\",\"f6cafa82\",\"1120b4ed\",\"f6cafa82\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]]]}"
+    },
+    "direct_parent": {
+      "memory": "{\"format\":\"rows=[service,artifact,approval,ci_artifact,required,ci,blockers]\",\"rows\":[[\"atlas-99c\",\"c7d544cd\",\"c7d544cd\",\"c7d544cd\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"birch-274\",\"f6cafa82\",\"1120b4ed\",\"f6cafa82\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"cedar-dde\",\"ce99bc65\",\"ce99bc65\",\"ce99bc65\",[\"unit\",\"integ\"],{\"integ\":\"fail\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"delta-cf0\",\"ad8d7925\",\"ad8d7925\",\"ad8d7925\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[\"REL-ad8d\"]],[\"ember-ebd\",\"654ca646\",\"654ca646\",\"654ca646\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"fjord-a88\",\"6d500079\",\"6d500079\",\"dd7d8d44\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]]]}"
+    },
+    "prose_child_proposal": {
+      "admitted_bytes": 440,
+      "clipped": true,
+      "memory": "Await target + late event; apply event to target before deciding. art/appr/ci = artifact/approval/ci_artifact. atlas-99c: c7d544cd/c7d544cd/c7d544cd; required unit,integ pass/pass; no blockers. birch-274: f6cafa82/1120b4ed/f6cafa82; unit,integ pass/pass; no blockers. Work set: approval if missing/stale; ci:<test> for each required absent/failing/stale (if ci!=art, rerun all required); blocker:<id> per open blocker. Ignore optional failu",
+      "proposed_bytes": 539
+    },
+    "prose_parent": {
+      "admitted_bytes": 900,
+      "clipped": true,
+      "memory": "Rules: apply the late event to the selected candidate before deciding. Work is a set: approval if missing/stale; ci:<test> for each required test absent/failing/stale (rerun all required tests if ci_artifact != artifact); blocker:<id> per open blocker. Ignore optional failures. Empty work => release; else hold. If needed facts missing => inspect. Candidate snapshot (service: artifact/approval; ci_artifact; required unit,integ; blockers): birch-274: f6cafa82/1120b4ed; f6cafa82; pass,pass; none (work {}). ember-ebd: 654ca646/654ca646; 654ca646; pass,pass; none ({}). fjord-a88: 6d500079/6d500079; dd7d8d44; pass,pass but stale (work {ci:unit,ci:integ}). atlas-99c: c7d544cd/c7d544cd; c7d544cd; pass,pass; none ({}). delta-cf0: ad8d7925/ad8d7925; ad8d7925; pass,pass; REL-ad8d (work {blocker:REL-ad8d}). cedar-dde: ce99bc65/ce99bc65; ce99bc65; pass,fail; none (work {ci:integ}). perf is optional a",
+      "proposed_bytes": 934
+    },
+    "repair_child": {
+      "check": {
+        "changed": true,
+        "checked_source_bytes": 371,
+        "cpu_ns": 0,
+        "replacement_bytes": 311
+      },
+      "memory": "{\"format\":\"rows=[service,artifact,approval,ci_artifact,required,ci,blockers]\",\"rows\":[[\"atlas-99c\",\"c7d544cd\",\"c7d544cd\",\"c7d544cd\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"birch-274\",\"f6cafa82\",\"1120b4ed\",\"f6cafa82\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]]]}"
+    },
+    "repair_child_proposal": {
+      "admitted_bytes": 440,
+      "clipped": true,
+      "memory": "Fields s/a/ap/c/U-I/B; +=pass,-=fail; U/I required; perf optional=fail all; B '-'=none. Rows: atlas-99c/c7d544cd/c7d544cd/c7d544cd/++/-; birch-274/f6cafa82/1120b4ed/f6cafa82/++/-; cedar-dde/ce99bc65/ce99bc65/ce99bc65/-+/-; delta-cf0/ad8d7925/ad8d7925/ad8d7925/++/REL-ad8d; ember-ebd/654ca646/654ca646/654ca646/++/-; fjord-a88/6d500079/6d500079/dd7d8d44/++/-. Release iff ap=a,c=a,U/I=++,B empty; c!=a rerun U/I. Work: approval, ci:<test>, b",
+      "proposed_bytes": 501
+    },
+    "repair_parent": {
+      "check": {
+        "changed": true,
+        "checked_source_bytes": 4661,
+        "cpu_ns": 0,
+        "replacement_bytes": 769
+      },
+      "memory": "{\"format\":\"rows=[service,artifact,approval,ci_artifact,required,ci,blockers]\",\"rows\":[[\"atlas-99c\",\"c7d544cd\",\"c7d544cd\",\"c7d544cd\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"birch-274\",\"f6cafa82\",\"1120b4ed\",\"f6cafa82\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"cedar-dde\",\"ce99bc65\",\"ce99bc65\",\"ce99bc65\",[\"unit\",\"integ\"],{\"integ\":\"fail\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"delta-cf0\",\"ad8d7925\",\"ad8d7925\",\"ad8d7925\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[\"REL-ad8d\"]],[\"ember-ebd\",\"654ca646\",\"654ca646\",\"654ca646\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]],[\"fjord-a88\",\"6d500079\",\"6d500079\",\"dd7d8d44\",[\"unit\",\"integ\"],{\"integ\":\"pass\",\"perf\":\"fail\",\"unit\":\"pass\"},[]]]}"
+    },
+    "structured_child_proposal": {
+      "admitted_bytes": 440,
+      "clipped": true,
+      "memory": "Release iff A=art, req CI pass on ci_art=art, B=\u2205; mismatch rerun all req. Work={approval if A missing/stale; ci:<test> if req absent/fail/stale; blocker:<id> per open blocker}; empty=>release else hold. Optional failures ignored. Rows S:art/A/ci_art; req unit,integ results; B; W. P=pass,F=fail.\natlas-99c:c7d544cd/c7d544cd/c7d544cd;P,P;B=\u2205;W=\u2205.\nbirch-274:f6cafa82/1120b4ed/f6cafa82;P,P;B=\u2205;W={approval}.\nOptional perf=F (ignored);",
+      "proposed_bytes": 500
+    },
+    "structured_parent": {
+      "admitted_bytes": 895,
+      "clipped": false,
+      "memory": "Policy: release iff approval=artifact, all required CI pass on ci_artifact=artifact, blockers=\u2205. Work is set: approval (missing/stale); ci:<test> (required absent/fail/stale); blocker:<id>. Empty\u2192release, else hold. Optional failures don't block. Notation rows service: artifact/approval/ci_artifact; required unit,integ results; blockers; work. All rows required unit+integ, optional perf=fail (ignore); no deployments.\nbirch-274: f6cafa82/1120b4ed/f6cafa82; P,P; \u2205; {approval} \u2192hold\nember-ebd: 654ca646/654ca646/654ca646; P,P; \u2205; {}; release\nfjord-a88: 6d500079/6d500079/dd7d8d44; P,P (stale: rerun both); \u2205; {ci:unit,ci:integ} \u2192hold\natlas-99c: c7d544cd/c7d544cd/c7d544cd; P,P; \u2205; {}; release\ndelta-cf0: ad8d7925/ad8d7925/ad8d7925; P,P; {REL-ad8d}; {blocker:REL-ad8d} \u2192hold\ncedar-dde: ce99bc65/ce99bc65/ce99bc65; P,F; \u2205; {ci:integ} \u2192hold\nP=pass,F=fail. No other blockers.",
+      "proposed_bytes": 895
+    }
+  }
+}
