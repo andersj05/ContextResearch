@@ -1,0 +1,655 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "data_pipeline-1854593748-structured-parent",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.050433",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 4,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"{\\\"f\\\":[\\\"pipeline_run\\\",\\\"workflow_key\\\",\\\"extract.record_id\\\",\\\"extract.run\\\",\\\"extract.output_dataset\\\",\\\"extract.state\\\",\\\"transform.record_id\\\",\\\"transform.run\\\",\\\"transform.input_dataset\\\",\\\"transform.output_dataset\\\",\\\"transform.state\\\",\\\"load.record_id\\\",\\\"load.run\\\",\\\"load.input_dataset\\\",\\\"load.output_dataset\\\",\\\"load.state\\\",\\\"quality.record_id\\\",\\\"quality.check\\\",\\\"quality.subject_dataset\\\",\\\"quality.state\\\",\\\"consent.record_id\\\",\\\"consent.approval\\\",\\\"consent.approved_output\\\",\\\"consent.state\\\"],\\\"r\\\":[[\\\"038d9d417593710a\\\",\\\"008d35874c424b7e\\\",\\\"2457e2c5db5c199f\\\",\\\"8b68278b93d8bb38\\\",\\\"5afbbd1a07e025d3\\\",\\\"pass\\\",\\\"1e071a7df2699d85\\\",\\\"d70dc811ada23d56\\\",\\\"5afbbd1a07e025d3\\\",\\\"af05f5dbaec743fa\\\",\\\"pass\\\",\\\"3010a48a3fb90ba3\\\",\\\"259fca92f5eaf3ee\\\",\\\"af05f5dbaec743fa\\\",\\\"d5a0a48cb1689f3f\\\",\\\"pass\\\",\\\"08d22a06cdeddb5f\\\",\\\"ab9a7d9d75ca0279\\\",\\\"d5a0a48cb1689f3f\\\",\\\"pass\\\",\\\"64c6b8865d8bf5cb\\\",\\\"bf86a5ca8b6b4e35\\\",\\\"d5a0a48cb1689f3f\\\",\\\"approved\\\"],[\\\"758bb6d8d660cc4b\\\",\\\"96760bd24091ffa2\\\",\\\"3dd535a8f0969c68\\\",\\\"3be9ae9aa4930c37\\\",\\\"bf54a315301552e6\\\",\\\"pass\\\",\\\"d2b748f88f19a750\\\",\\\"6aa0035ab3c66ad3\\\",\\\"bf54a315301552e6\\\",\\\"2b917dfd7e04c8dd\\\",\\\"pass\\\",\\\"a3fcfe9b0fb3b2a6\\\",\\\"b9fcd30c27ecff83\\\",\\\"2b917dfd7e04c8dd\\\",\\\"e705a8b34af8d645\\\",\\\"pass\\\",\\\"3c13bcfbc1fc7769\\\",\\\"1fd5977e636ca28a\\\",\\\"e705a8b34af8d645\\\",\\\"pass\\\",\\\"5be65674cedcdc66\\\",\\\"723a4c0417a7be82\\\",\\\"adf3e5d75d77c774\\\",\\\"approved\\\"],[\\\"2e103a4eb853eba5\\\",\\\"cc418f4447982040\\\",\\\"9f189cf65242d998\\\",\\\"484398461c6706ef\\\",\\\"c8631c7772b79a3e\\\",\\\"pass\\\",\\\"4b547fd83d4557ac\\\",\\\"5993565b8b882041\\\",\\\"c8631c7772b79a3e\\\",\\\"9d1abb3e72eb76dd\\\",\\\"pass\\\",\\\"3b8222fe7cf6e278\\\",\\\"918f681e5bada4fb\\\",\\\"9d1abb3e72eb76dd\\\",\\\"0031f3d6218a45ee\\\",\\\"pass\\\",\\\"6f6aa3d1c10ac0d0\\\",\\\"2ed295c256d5d4a9\\\",\\\"0031f3d6218a45ee\\\",\\\"fail\\\",\\\"8ded862275704a86\\\",\\\"63f1d02b84eb6b10\\\",\\\"0031f3d6218a45ee\\\",\\\"approved\\\"],[\\\"79bae1db394ca502\\\",\\\"f2b2a592096c0cc1\\\",\\\"0845ed06696c5580\\\",\\\"5d1ee125790194ac\\\",\\\"fab7ebe4d26e5061\\\",\\\"pass\\\",\\\"f09252308f739e99\\\",\\\"df88e7b78f95a81b\\\",\\\"b8334246b5270e63\\\",\\\"55be71152c6b7b72\\\",\\\"pass\\\",\\\"b305c0ec7675882d\\\",\\\"fad7b0b18f529dfb\\\",\\\"55be71152c6b7b72\\\",\\\"b0baf257f444b9cf\\\",\\\"pass\\\",\\\"f9de9229f0ab3b52\\\",\\\"eb11db2deba660ad\\\",\\\"b0baf257f444b9cf\\\",\\\"pass\\\",\\\"8d4b4ffdc27da376\\\",\\\"b05b2294ca1e7116\\\",\\\"b0baf257f444b9cf\\\",\\\"approved\\\"],[\\\"1bfa186615c5dca1\\\",\\\"55662f12f61ac060\\\",\\\"f92396436887f994\\\",\\\"0f04e0d28cbc77b0\\\",\\\"1cb52266d4be3bd8\\\",\\\"pass\\\",\\\"0a36b98de62857a9\\\",\\\"9112f52e335730e8\\\",\\\"1cb52266d4be3bd8\\\",\\\"0e7b184d7186955d\\\",\\\"pass\\\",\\\"d80a9f409a3b929c\\\",\\\"83ffc920e93cca58\\\",\\\"0e7b184d7186955d\\\",\\\"f6b861ef0e02efea\\\",\\\"pass\\\",\\\"3b5b258e5adf86d5\\\",\\\"d3f4e214773a37a8\\\",\\\"f6b861ef0e02efea\\\",\\\"pass\\\",\\\"3e4414488be9a758\\\",\\\"10baf7f5fb8f196e\\\",\\\"f6b861ef0e02efea\\\",\\\"approved\\\"],[\\\"b9bf2c42dac6a097\\\",\\\"a114bc177d602973\\\",\\\"8f4f4e2c1c882395\\\",\\\"14fa0db5468a181c\\\",\\\"3de971ccf44a6d2b\\\",\\\"pass\\\",\\\"37d178c08d30848d\\\",\\\"68acf8374b546817\\\",\\\"3de971ccf44a6d2b\\\",\\\"43a4f1ccd047ff49\\\",\\\"pass\\\",\\\"73ba8f783c38080b\\\",\\\"b63997e4c37c9a85\\\",\\\"43a4f1ccd047ff49\\\",\\\"6821bfb8629ea130\\\",\\\"pass\\\",\\\"48849cbedd16203b\\\",\\\"54b3829ba7d5c4c2\\\",\\\"6821bfb8629ea130\\\",\\\"pass\\\",\\\"7372040a03555ed6\\\",\\\"b1ef40cedacacb5f\\\",\\\"0236211b5099a194\\\",\\\"approved\\\"],[\\\"8264643b28a1fdc5\\\",\\\"84dfcbc782564bf5\\\",\\\"f73abde6117753d8\\\",\\\"f9157e82cdb774be\\\",\\\"e8ed08512b78cbdd\\\",\\\"pass\\\",\\\"c8a89f8ccfd51807\\\",\\\"552f102339e68c9f\\\",\\\"d64fba16db202407\\\",\\\"69ddaeaefbfff047\\\",\\\"pass\\\",\\\"898c2ae1e66f2076\\\",\\\"532f9921d4c40761\\\",\\\"69ddaeaefbfff047\\\",\\\"d0880fce156b3c83\\\",\\\"pass\\\",\\\"2ba3effabdeb4e07\\\",\\\"04098a6eaca00eb7\\\",\\\"d0880fce156b3c83\\\",\\\"pass\\\",\\\"16fb27b0b6a676a3\\\",\\\"1a7c887e2ccc7298\\\",\\\"d0880fce156b3c83\\\",\\\"approved\\\"]]}\"}",
+  "request": {
+    "instruction": "Only the memory string survives this boundary. The decision rule repeats at execution. Write a compact JSON table string: f is the ordered list of full field paths, r is a list of value rows for joined workflows. Root fields are unprefixed; component fields use tool.field. Include every exact root and record ID, join key, reference, enum status, and boolean needed for a later target/event. Use no abbreviations, ellipses, or omitted rows. Ignore operator notes. Return {\"memory\":\"...\"}. Memory limit: 7000 UTF-8 bytes. Select the root record whose pipeline_run equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. Publish only if extract, transform, load, quality states pass, transform.input_dataset=extract.output_dataset, load.input_dataset=transform.output_dataset, quality.subject_dataset=load.output_dataset, consent.state=approved, and consent.approved_output=load.output_dataset. Otherwise hold with the exact sorted set of extract, transform, load, quality, link_transform, link_load, quality_scope, approval, approval_scope for failed conditions. Return target_id=load.output_dataset. Apply the late event first.",
+    "observation": {
+      "tool_results": [
+        {
+          "data": {
+            "output_dataset": "5afbbd1a07e025d3",
+            "record_id": "2457e2c5db5c199f",
+            "run": "8b68278b93d8bb38",
+            "state": "pass",
+            "workflow_key": "008d35874c424b7e"
+          },
+          "tool": "extract"
+        },
+        {
+          "data": {
+            "approval": "bf86a5ca8b6b4e35",
+            "approved_output": "d5a0a48cb1689f3f",
+            "record_id": "64c6b8865d8bf5cb",
+            "state": "approved",
+            "workflow_key": "008d35874c424b7e"
+          },
+          "tool": "consent"
+        },
+        {
+          "data": {
+            "input_dataset": "2b917dfd7e04c8dd",
+            "output_dataset": "e705a8b34af8d645",
+            "record_id": "a3fcfe9b0fb3b2a6",
+            "run": "b9fcd30c27ecff83",
+            "state": "pass",
+            "workflow_key": "96760bd24091ffa2"
+          },
+          "tool": "load"
+        },
+        {
+          "data": {
+            "operator_notes": "Worker log mentions obsolete draft ef598fb072fda2f6. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft ef598fb072fda2f6. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft ef598fb072fda2f6. Dashboard labels and timings are not gate evidence. ",
+            "pipeline_run": "b9bf2c42dac6a097",
+            "workflow_key": "a114bc177d602973"
+          },
+          "tool": "root"
+        },
+        {
+          "data": {
+            "input_dataset": "c8631c7772b79a3e",
+            "output_dataset": "9d1abb3e72eb76dd",
+            "record_id": "4b547fd83d4557ac",
+            "run": "5993565b8b882041",
+            "state": "pass",
+            "workflow_key": "cc418f4447982040"
+          },
+          "tool": "transform"
+        },
+        {
+          "data": {
+            "output_dataset": "fab7ebe4d26e5061",
+            "record_id": "0845ed06696c5580",
+            "run": "5d1ee125790194ac",
+            "state": "pass",
+            "workflow_key": "f2b2a592096c0cc1"
+          },
+          "tool": "extract"
+        },
+        {
+          "data": {
+            "input_dataset": "1cb52266d4be3bd8",
+            "output_dataset": "0e7b184d7186955d",
+            "record_id": "0a36b98de62857a9",
+            "run": "9112f52e335730e8",
+            "state": "pass",
+            "workflow_key": "55662f12f61ac060"
+          },
+          "tool": "transform"
+        },
+        {
+          "data": {
+            "input_dataset": "bf54a315301552e6",
+            "output_dataset": "2b917dfd7e04c8dd",
+            "record_id": "d2b748f88f19a750",
+            "run": "6aa0035ab3c66ad3",
+            "state": "pass",
+            "workflow_key": "96760bd24091ffa2"
+          },
+          "tool": "transform"
+        },
+        {
+          "data": {
+            "check": "eb11db2deba660ad",
+            "record_id": "f9de9229f0ab3b52",
+            "state": "pass",
+            "subject_dataset": "b0baf257f444b9cf",
+            "workflow_key": "f2b2a592096c0cc1"
+          },
+          "tool": "quality"
+        },
+        {
+          "data": {
+            "operator_notes": "Worker log mentions obsolete draft ca8a854a841e8704. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft ca8a854a841e8704. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft ca8a854a841e8704. Dashboard labels and timings are not gate evidence. ",
+            "pipeline_run": "758bb6d8d660cc4b",
+            "workflow_key": "96760bd24091ffa2"
+          },
+          "tool": "root"
+        },
+        {
+          "data": {
+            "input_dataset": "3de971ccf44a6d2b",
+            "output_dataset": "43a4f1ccd047ff49",
+            "record_id": "37d178c08d30848d",
+            "run": "68acf8374b546817",
+            "state": "pass",
+            "workflow_key": "a114bc177d602973"
+          },
+          "tool": "transform"
+        },
+        {
+          "data": {
+            "operator_notes": "Worker log mentions obsolete draft 0cc4ee7c2376d994. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 0cc4ee7c2376d994. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 0cc4ee7c2376d994. Dashboard labels and timings are not gate evidence. ",
+            "pipeline_run": "038d9d417593710a",
+            "workflow_key": "008d35874c424b7e"
+          },
+          "tool": "root"
+        },
+        {
+          "data": {
+            "approval": "b1ef40cedacacb5f",
+            "approved_output": "0236211b5099a194",
+            "record_id": "7372040a03555ed6",
+            "state": "approved",
+            "workflow_key": "a114bc177d602973"
+          },
+          "tool": "consent"
+        },
+        {
+          "data": {
+            "check": "d3f4e214773a37a8",
+            "record_id": "3b5b258e5adf86d5",
+            "state": "pass",
+            "subject_dataset": "f6b861ef0e02efea",
+            "workflow_key": "55662f12f61ac060"
+          },
+          "tool": "quality"
+        },
+        {
+          "data": {
+            "output_dataset": "3de971ccf44a6d2b",
+            "record_id": "8f4f4e2c1c882395",
+            "run": "14fa0db5468a181c",
+            "state": "pass",
+            "workflow_key": "a114bc177d602973"
+          },
+          "tool": "extract"
+        },
+        {
+          "data": {
+            "check": "54b3829ba7d5c4c2",
+            "record_id": "48849cbedd16203b",
+            "state": "pass",
+            "subject_dataset": "6821bfb8629ea130",
+            "workflow_key": "a114bc177d602973"
+          },
+          "tool": "quality"
+        },
+        {
+          "data": {
+            "check": "04098a6eaca00eb7",
+            "record_id": "2ba3effabdeb4e07",
+            "state": "pass",
+            "subject_dataset": "d0880fce156b3c83",
+            "workflow_key": "84dfcbc782564bf5"
+          },
+          "tool": "quality"
+        },
+        {
+          "data": {
+            "input_dataset": "b8334246b5270e63",
+            "output_dataset": "55be71152c6b7b72",
+            "record_id": "f09252308f739e99",
+            "run": "df88e7b78f95a81b",
+            "state": "pass",
+            "workflow_key": "f2b2a592096c0cc1"
+          },
+          "tool": "transform"
+        },
+        {
+          "data": {
+            "approval": "63f1d02b84eb6b10",
+            "approved_output": "0031f3d6218a45ee",
+            "record_id": "8ded862275704a86",
+            "state": "approved",
+            "workflow_key": "cc418f4447982040"
+          },
+          "tool": "consent"
+        },
+        {
+          "data": {
+            "check": "2ed295c256d5d4a9",
+            "record_id": "6f6aa3d1c10ac0d0",
+            "state": "fail",
+            "subject_dataset": "0031f3d6218a45ee",
+            "workflow_key": "cc418f4447982040"
+          },
+          "tool": "quality"
+        },
+        {
+          "data": {
+            "input_dataset": "43a4f1ccd047ff49",
+            "output_dataset": "6821bfb8629ea130",
+            "record_id": "73ba8f783c38080b",
+            "run": "b63997e4c37c9a85",
+            "state": "pass",
+            "workflow_key": "a114bc177d602973"
+          },
+          "tool": "load"
+        },
+        {
+          "data": {
+            "check": "ab9a7d9d75ca0279",
+            "record_id": "08d22a06cdeddb5f",
+            "state": "pass",
+            "subject_dataset": "d5a0a48cb1689f3f",
+            "workflow_key": "008d35874c424b7e"
+          },
+          "tool": "quality"
+        },
+        {
+          "data": {
+            "check": "1fd5977e636ca28a",
+            "record_id": "3c13bcfbc1fc7769",
+            "state": "pass",
+            "subject_dataset": "e705a8b34af8d645",
+            "workflow_key": "96760bd24091ffa2"
+          },
+          "tool": "quality"
+        },
+        {
+          "data": {
+            "output_dataset": "e8ed08512b78cbdd",
+            "record_id": "f73abde6117753d8",
+            "run": "f9157e82cdb774be",
+            "state": "pass",
+            "workflow_key": "84dfcbc782564bf5"
+          },
+          "tool": "extract"
+        },
+        {
+          "data": {
+            "input_dataset": "0e7b184d7186955d",
+            "output_dataset": "f6b861ef0e02efea",
+            "record_id": "d80a9f409a3b929c",
+            "run": "83ffc920e93cca58",
+            "state": "pass",
+            "workflow_key": "55662f12f61ac060"
+          },
+          "tool": "load"
+        },
+        {
+          "data": {
+            "operator_notes": "Worker log mentions obsolete draft e8d3d5c85dcdc51b. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft e8d3d5c85dcdc51b. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft e8d3d5c85dcdc51b. Dashboard labels and timings are not gate evidence. ",
+            "pipeline_run": "79bae1db394ca502",
+            "workflow_key": "f2b2a592096c0cc1"
+          },
+          "tool": "root"
+        },
+        {
+          "data": {
+            "approval": "10baf7f5fb8f196e",
+            "approved_output": "f6b861ef0e02efea",
+            "record_id": "3e4414488be9a758",
+            "state": "approved",
+            "workflow_key": "55662f12f61ac060"
+          },
+          "tool": "consent"
+        },
+        {
+          "data": {
+            "input_dataset": "5afbbd1a07e025d3",
+            "output_dataset": "af05f5dbaec743fa",
+            "record_id": "1e071a7df2699d85",
+            "run": "d70dc811ada23d56",
+            "state": "pass",
+            "workflow_key": "008d35874c424b7e"
+          },
+          "tool": "transform"
+        },
+        {
+          "data": {
+            "operator_notes": "Worker log mentions obsolete draft b1c193cf1bd802a3. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft b1c193cf1bd802a3. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft b1c193cf1bd802a3. Dashboard labels and timings are not gate evidence. ",
+            "pipeline_run": "2e103a4eb853eba5",
+            "workflow_key": "cc418f4447982040"
+          },
+          "tool": "root"
+        },
+        {
+          "data": {
+            "output_dataset": "1cb52266d4be3bd8",
+            "record_id": "f92396436887f994",
+            "run": "0f04e0d28cbc77b0",
+            "state": "pass",
+            "workflow_key": "55662f12f61ac060"
+          },
+          "tool": "extract"
+        },
+        {
+          "data": {
+            "input_dataset": "55be71152c6b7b72",
+            "output_dataset": "b0baf257f444b9cf",
+            "record_id": "b305c0ec7675882d",
+            "run": "fad7b0b18f529dfb",
+            "state": "pass",
+            "workflow_key": "f2b2a592096c0cc1"
+          },
+          "tool": "load"
+        },
+        {
+          "data": {
+            "input_dataset": "d64fba16db202407",
+            "output_dataset": "69ddaeaefbfff047",
+            "record_id": "c8a89f8ccfd51807",
+            "run": "552f102339e68c9f",
+            "state": "pass",
+            "workflow_key": "84dfcbc782564bf5"
+          },
+          "tool": "transform"
+        },
+        {
+          "data": {
+            "operator_notes": "Worker log mentions obsolete draft 57fc9c464d4916fb. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 57fc9c464d4916fb. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 57fc9c464d4916fb. Dashboard labels and timings are not gate evidence. ",
+            "pipeline_run": "1bfa186615c5dca1",
+            "workflow_key": "55662f12f61ac060"
+          },
+          "tool": "root"
+        },
+        {
+          "data": {
+            "approval": "1a7c887e2ccc7298",
+            "approved_output": "d0880fce156b3c83",
+            "record_id": "16fb27b0b6a676a3",
+            "state": "approved",
+            "workflow_key": "84dfcbc782564bf5"
+          },
+          "tool": "consent"
+        },
+        {
+          "data": {
+            "operator_notes": "Worker log mentions obsolete draft 96d4fb9505a195ba. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 96d4fb9505a195ba. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 96d4fb9505a195ba. Dashboard labels and timings are not gate evidence. ",
+            "pipeline_run": "8264643b28a1fdc5",
+            "workflow_key": "84dfcbc782564bf5"
+          },
+          "tool": "root"
+        },
+        {
+          "data": {
+            "input_dataset": "9d1abb3e72eb76dd",
+            "output_dataset": "0031f3d6218a45ee",
+            "record_id": "3b8222fe7cf6e278",
+            "run": "918f681e5bada4fb",
+            "state": "pass",
+            "workflow_key": "cc418f4447982040"
+          },
+          "tool": "load"
+        },
+        {
+          "data": {
+            "input_dataset": "69ddaeaefbfff047",
+            "output_dataset": "d0880fce156b3c83",
+            "record_id": "898c2ae1e66f2076",
+            "run": "532f9921d4c40761",
+            "state": "pass",
+            "workflow_key": "84dfcbc782564bf5"
+          },
+          "tool": "load"
+        },
+        {
+          "data": {
+            "output_dataset": "bf54a315301552e6",
+            "record_id": "3dd535a8f0969c68",
+            "run": "3be9ae9aa4930c37",
+            "state": "pass",
+            "workflow_key": "96760bd24091ffa2"
+          },
+          "tool": "extract"
+        },
+        {
+          "data": {
+            "approval": "723a4c0417a7be82",
+            "approved_output": "adf3e5d75d77c774",
+            "record_id": "5be65674cedcdc66",
+            "state": "approved",
+            "workflow_key": "96760bd24091ffa2"
+          },
+          "tool": "consent"
+        },
+        {
+          "data": {
+            "approval": "b05b2294ca1e7116",
+            "approved_output": "b0baf257f444b9cf",
+            "record_id": "8d4b4ffdc27da376",
+            "state": "approved",
+            "workflow_key": "f2b2a592096c0cc1"
+          },
+          "tool": "consent"
+        },
+        {
+          "data": {
+            "input_dataset": "af05f5dbaec743fa",
+            "output_dataset": "d5a0a48cb1689f3f",
+            "record_id": "3010a48a3fb90ba3",
+            "run": "259fca92f5eaf3ee",
+            "state": "pass",
+            "workflow_key": "008d35874c424b7e"
+          },
+          "tool": "load"
+        },
+        {
+          "data": {
+            "output_dataset": "c8631c7772b79a3e",
+            "record_id": "9f189cf65242d998",
+            "run": "484398461c6706ef",
+            "state": "pass",
+            "workflow_key": "cc418f4447982040"
+          },
+          "tool": "extract"
+        }
+      ],
+      "tool_schemas": {
+        "consent": {
+          "properties": {
+            "approval": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "approved_output": {
+              "type": "string"
+            },
+            "record_id": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "approved",
+                "pending"
+              ],
+              "type": "string"
+            },
+            "workflow_key": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "extract": {
+          "properties": {
+            "output_dataset": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "record_id": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "run": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "pass",
+                "fail"
+              ],
+              "type": "string"
+            },
+            "workflow_key": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "load": {
+          "properties": {
+            "input_dataset": {
+              "type": "string"
+            },
+            "output_dataset": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "record_id": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "run": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "pass",
+                "fail"
+              ],
+              "type": "string"
+            },
+            "workflow_key": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "quality": {
+          "properties": {
+            "check": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "record_id": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "pass",
+                "fail"
+              ],
+              "type": "string"
+            },
+            "subject_dataset": {
+              "type": "string"
+            },
+            "workflow_key": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "root": {
+          "properties": {
+            "operator_notes": {
+              "description": "Diagnostic text; old drafts are not gate evidence.",
+              "type": "string"
+            },
+            "pipeline_run": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "workflow_key": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "transform": {
+          "properties": {
+            "input_dataset": {
+              "type": "string"
+            },
+            "output_dataset": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "record_id": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "run": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "pass",
+                "fail"
+              ],
+              "type": "string"
+            },
+            "workflow_key": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        }
+      }
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "parent",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "cdf9cd6e23214a40a8ca82dd03adfb86159fddf3c3ef7985fe55d4688f3d9060",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "{\"f\":[\"pipeline_run\",\"workflow_key\",\"extract.record_id\",\"extract.run\",\"extract.output_dataset\",\"extract.state\",\"transform.record_id\",\"transform.run\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.state\",\"load.record_id\",\"load.run\",\"load.input_dataset\",\"load.output_dataset\",\"load.state\",\"quality.record_id\",\"quality.check\",\"quality.subject_dataset\",\"quality.state\",\"consent.record_id\",\"consent.approval\",\"consent.approved_output\",\"consent.state\"],\"r\":[[\"038d9d417593710a\",\"008d35874c424b7e\",\"2457e2c5db5c199f\",\"8b68278b93d8bb38\",\"5afbbd1a07e025d3\",\"pass\",\"1e071a7df2699d85\",\"d70dc811ada23d56\",\"5afbbd1a07e025d3\",\"af05f5dbaec743fa\",\"pass\",\"3010a48a3fb90ba3\",\"259fca92f5eaf3ee\",\"af05f5dbaec743fa\",\"d5a0a48cb1689f3f\",\"pass\",\"08d22a06cdeddb5f\",\"ab9a7d9d75ca0279\",\"d5a0a48cb1689f3f\",\"pass\",\"64c6b8865d8bf5cb\",\"bf86a5ca8b6b4e35\",\"d5a0a48cb1689f3f\",\"approved\"],[\"758bb6d8d660cc4b\",\"96760bd24091ffa2\",\"3dd535a8f0969c68\",\"3be9ae9aa4930c37\",\"bf54a315301552e6\",\"pass\",\"d2b748f88f19a750\",\"6aa0035ab3c66ad3\",\"bf54a315301552e6\",\"2b917dfd7e04c8dd\",\"pass\",\"a3fcfe9b0fb3b2a6\",\"b9fcd30c27ecff83\",\"2b917dfd7e04c8dd\",\"e705a8b34af8d645\",\"pass\",\"3c13bcfbc1fc7769\",\"1fd5977e636ca28a\",\"e705a8b34af8d645\",\"pass\",\"5be65674cedcdc66\",\"723a4c0417a7be82\",\"adf3e5d75d77c774\",\"approved\"],[\"2e103a4eb853eba5\",\"cc418f4447982040\",\"9f189cf65242d998\",\"484398461c6706ef\",\"c8631c7772b79a3e\",\"pass\",\"4b547fd83d4557ac\",\"5993565b8b882041\",\"c8631c7772b79a3e\",\"9d1abb3e72eb76dd\",\"pass\",\"3b8222fe7cf6e278\",\"918f681e5bada4fb\",\"9d1abb3e72eb76dd\",\"0031f3d6218a45ee\",\"pass\",\"6f6aa3d1c10ac0d0\",\"2ed295c256d5d4a9\",\"0031f3d6218a45ee\",\"fail\",\"8ded862275704a86\",\"63f1d02b84eb6b10\",\"0031f3d6218a45ee\",\"approved\"],[\"79bae1db394ca502\",\"f2b2a592096c0cc1\",\"0845ed06696c5580\",\"5d1ee125790194ac\",\"fab7ebe4d26e5061\",\"pass\",\"f09252308f739e99\",\"df88e7b78f95a81b\",\"b8334246b5270e63\",\"55be71152c6b7b72\",\"pass\",\"b305c0ec7675882d\",\"fad7b0b18f529dfb\",\"55be71152c6b7b72\",\"b0baf257f444b9cf\",\"pass\",\"f9de9229f0ab3b52\",\"eb11db2deba660ad\",\"b0baf257f444b9cf\",\"pass\",\"8d4b4ffdc27da376\",\"b05b2294ca1e7116\",\"b0baf257f444b9cf\",\"approved\"],[\"1bfa186615c5dca1\",\"55662f12f61ac060\",\"f92396436887f994\",\"0f04e0d28cbc77b0\",\"1cb52266d4be3bd8\",\"pass\",\"0a36b98de62857a9\",\"9112f52e335730e8\",\"1cb52266d4be3bd8\",\"0e7b184d7186955d\",\"pass\",\"d80a9f409a3b929c\",\"83ffc920e93cca58\",\"0e7b184d7186955d\",\"f6b861ef0e02efea\",\"pass\",\"3b5b258e5adf86d5\",\"d3f4e214773a37a8\",\"f6b861ef0e02efea\",\"pass\",\"3e4414488be9a758\",\"10baf7f5fb8f196e\",\"f6b861ef0e02efea\",\"approved\"],[\"b9bf2c42dac6a097\",\"a114bc177d602973\",\"8f4f4e2c1c882395\",\"14fa0db5468a181c\",\"3de971ccf44a6d2b\",\"pass\",\"37d178c08d30848d\",\"68acf8374b546817\",\"3de971ccf44a6d2b\",\"43a4f1ccd047ff49\",\"pass\",\"73ba8f783c38080b\",\"b63997e4c37c9a85\",\"43a4f1ccd047ff49\",\"6821bfb8629ea130\",\"pass\",\"48849cbedd16203b\",\"54b3829ba7d5c4c2\",\"6821bfb8629ea130\",\"pass\",\"7372040a03555ed6\",\"b1ef40cedacacb5f\",\"0236211b5099a194\",\"approved\"],[\"8264643b28a1fdc5\",\"84dfcbc782564bf5\",\"f73abde6117753d8\",\"f9157e82cdb774be\",\"e8ed08512b78cbdd\",\"pass\",\"c8a89f8ccfd51807\",\"552f102339e68c9f\",\"d64fba16db202407\",\"69ddaeaefbfff047\",\"pass\",\"898c2ae1e66f2076\",\"532f9921d4c40761\",\"69ddaeaefbfff047\",\"d0880fce156b3c83\",\"pass\",\"2ba3effabdeb4e07\",\"04098a6eaca00eb7\",\"d0880fce156b3c83\",\"pass\",\"16fb27b0b6a676a3\",\"1a7c887e2ccc7298\",\"d0880fce156b3c83\",\"approved\"]]}"
+  },
+  "started_at": "2026-09-23T00:53:26.934002+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 6676,
+    "outputTokens": 3022,
+    "reasoningOutputTokens": 1412,
+    "totalTokens": 9698
+  },
+  "usage_events": 1,
+  "wall_seconds": 57.38116869999794,
+  "wire_body_byte_bound": 30613
+}

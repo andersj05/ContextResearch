@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "data_pipeline-4055490056-structured-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0207755",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 3,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"{\\\"f\\\":[\\\"pipeline_run\\\",\\\"workflow_key\\\",\\\"extract.record_id\\\",\\\"extract.run\\\",\\\"extract.workflow_key\\\",\\\"extract.output_dataset\\\",\\\"extract.state\\\",\\\"transform.record_id\\\",\\\"transform.run\\\",\\\"transform.workflow_key\\\",\\\"transform.input_dataset\\\",\\\"transform.output_dataset\\\",\\\"transform.state\\\",\\\"load.record_id\\\",\\\"load.run\\\",\\\"load.workflow_key\\\",\\\"load.input_dataset\\\",\\\"load.output_dataset\\\",\\\"load.state\\\",\\\"quality.record_id\\\",\\\"quality.check\\\",\\\"quality.workflow_key\\\",\\\"quality.subject_dataset\\\",\\\"quality.state\\\",\\\"consent.record_id\\\",\\\"consent.approval\\\",\\\"consent.workflow_key\\\",\\\"consent.approved_output\\\",\\\"consent.state\\\"],\\\"r\\\":[[\\\"f08e33cc397b9629\\\",\\\"5649d74cfd860421\\\",\\\"8e832b3ffaf1b566\\\",\\\"572a01a8b35fb91a\\\",\\\"5649d74cfd860421\\\",\\\"1da08534c4f1a712\\\",\\\"pass\\\",\\\"6e572e15f8588614\\\",\\\"31869b0be7b77178\\\",\\\"5649d74cfd860421\\\",\\\"1da08534c4f1a712\\\",\\\"1f6f4e1bd2806986\\\",\\\"pass\\\",\\\"c6245edcc981e1cf\\\",\\\"a20f8e4ea2f61989\\\",\\\"5649d74cfd860421\\\",\\\"1f6f4e1bd2806986\\\",\\\"c792ffaae3bbd633\\\",\\\"pass\\\",\\\"7a6ad72924c2d447\\\",\\\"8f8ce8c9cbc2c32c\\\",\\\"5649d74cfd860421\\\",\\\"c792ffaae3bbd633\\\",\\\"pass\\\",\\\"8a97fe293073b6cf\\\",\\\"667bc3a9f745e158\\\",\\\"5649d74cfd860421\\\",\\\"c792ffaae3bbd633\\\",\\\"approved\\\"],[\\\"cec41f59275fe98d\\\",\\\"7d187817368d3e34\\\",\\\"1f2f136c370a634f\\\",\\\"28ec4ec1a7cb33d5\\\",\\\"7d187817368d3e34\\\",\\\"b6be4e11ee810cd6\\\",\\\"pass\\\",\\\"dd3de7ab61a3eaf7\\\",\\\"710685d2c7b91127\\\",\\\"7d187817368d3e34\\\",\\\"b6be4e11ee810cd6\\\",\\\"3093fc4450e6776e\\\",\\\"pass\\\",\\\"34b62db764e591f3\\\",\\\"408ba1d49d75921d\\\",\\\"7d187817368d3e34\\\",\\\"3093fc4450e6776e\\\",\\\"f6ce80b376e5de96\\\",\\\"pass\\\",\\\"b4f6a56b45c1ca64\\\",\\\"10443f573a8d7500\\\",\\\"7d187817368d3e34\\\",\\\"f6ce80b376e5de96\\\",\\\"pass\\\",\\\"9f4ae23ac8ab84f5\\\",\\\"7cf5b9bf2a8fb520\\\",\\\"7d187817368d3e34\\\",\\\"b6ae1878f6d8ac81\\\",\\\"approved\\\"]]}\"}",
+  "request": {
+    "instruction": "Only the memory string survives this boundary. The decision rule repeats at execution. Write a compact JSON table string: f is the ordered list of full field paths, r is a list of value rows for joined workflows. Root fields are unprefixed; component fields use tool.field. Include every exact root and record ID, join key, reference, enum status, and boolean needed for a later target/event. Use no abbreviations, ellipses, or omitted rows. Ignore operator notes. Return {\"memory\":\"...\"}. Retain only the two named candidates in at most 2600 UTF-8 bytes. Select the root record whose pipeline_run equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. Publish only if extract, transform, load, quality states pass, transform.input_dataset=extract.output_dataset, load.input_dataset=transform.output_dataset, quality.subject_dataset=load.output_dataset, consent.state=approved, and consent.approved_output=load.output_dataset. Otherwise hold with the exact sorted set of extract, transform, load, quality, link_transform, link_load, quality_scope, approval, approval_scope for failed conditions. Return target_id=load.output_dataset. Apply the late event first.",
+    "observation": {
+      "candidates": [
+        "f08e33cc397b9629",
+        "cec41f59275fe98d"
+      ],
+      "previous_memory": "{\"f\":[\"pipeline_run\",\"workflow_key\",\"extract.record_id\",\"extract.run\",\"extract.workflow_key\",\"extract.output_dataset\",\"extract.state\",\"transform.record_id\",\"transform.run\",\"transform.workflow_key\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.state\",\"load.record_id\",\"load.run\",\"load.workflow_key\",\"load.input_dataset\",\"load.output_dataset\",\"load.state\",\"quality.record_id\",\"quality.check\",\"quality.workflow_key\",\"quality.subject_dataset\",\"quality.state\",\"consent.record_id\",\"consent.approval\",\"consent.workflow_key\",\"consent.approved_output\",\"consent.state\"],\"r\":[[\"045a5c6216f55150\",\"e48bbf265f614201\",\"3d497c00e1dc6bb5\",\"fd22c191a0e270f0\",\"e48bbf265f614201\",\"6474afc8efab76f2\",\"pass\",\"c8bce502a5a032bd\",\"45252c53519f4377\",\"e48bbf265f614201\",\"6474afc8efab76f2\",\"005c79bf4446d51c\",\"pass\",\"4df83eee463def39\",\"f1da2a7a0185d4e3\",\"e48bbf265f614201\",\"005c79bf4446d51c\",\"e8e06d82f1929dc9\",\"pass\",\"67ed94af81629b7b\",\"97d5b06b362df78d\",\"e48bbf265f614201\",\"e8e06d82f1929dc9\",\"pass\",\"ddcd03d49af453a5\",\"88ae8e1cf0e1545c\",\"e48bbf265f614201\",\"67e92f3d2f486460\",\"approved\"],[\"f3f6e5f82048fd8f\",\"515051e574d67766\",\"8f1464fb5b378b72\",\"55c4dbbb40d0fadb\",\"515051e574d67766\",\"2fbe513b7f7ab516\",\"pass\",\"9c01fe39069907bd\",\"3390a1ce523b0238\",\"515051e574d67766\",\"5f5fe88bf8eb46f6\",\"31635fd775d0a2b4\",\"pass\",\"6f8d37bc1c97e7b0\",\"6b00811a7916f8f7\",\"515051e574d67766\",\"31635fd775d0a2b4\",\"ac6410a769487b64\",\"pass\",\"64bba3a209e0fc8e\",\"f9dae5ad57bf31cf\",\"515051e574d67766\",\"ac6410a769487b64\",\"pass\",\"272efc5bf67ab3ed\",\"17174372695abb8d\",\"515051e574d67766\",\"ac6410a769487b64\",\"approved\"],[\"68206d1eb126b371\",\"a94f469e12007c40\",\"220bacfdaa27f30d\",\"50d63602f5d91844\",\"a94f469e12007c40\",\"fbc571330f099c80\",\"pass\",\"bed70833997d4035\",\"69f42e60ad56e491\",\"a94f469e12007c40\",\"4540a53f34e7d474\",\"d5316e610262be9e\",\"pass\",\"90c0542d1ec79189\",\"b321240a177121f9\",\"a94f469e12007c40\",\"d5316e610262be9e\",\"0c19f52cde9dab01\",\"pass\",\"62551ccc5c938a5d\",\"c9576bea0e1e1346\",\"a94f469e12007c40\",\"0c19f52cde9dab01\",\"pass\",\"44159bacf6e82e69\",\"b4c47b824958b3d9\",\"a94f469e12007c40\",\"0c19f52cde9dab01\",\"approved\"],[\"f08e33cc397b9629\",\"5649d74cfd860421\",\"8e832b3ffaf1b566\",\"572a01a8b35fb91a\",\"5649d74cfd860421\",\"1da08534c4f1a712\",\"pass\",\"6e572e15f8588614\",\"31869b0be7b77178\",\"5649d74cfd860421\",\"1da08534c4f1a712\",\"1f6f4e1bd2806986\",\"pass\",\"c6245edcc981e1cf\",\"a20f8e4ea2f61989\",\"5649d74cfd860421\",\"1f6f4e1bd2806986\",\"c792ffaae3bbd633\",\"pass\",\"7a6ad72924c2d447\",\"8f8ce8c9cbc2c32c\",\"5649d74cfd860421\",\"c792ffaae3bbd633\",\"pass\",\"8a97fe293073b6cf\",\"667bc3a9f745e158\",\"5649d74cfd860421\",\"c792ffaae3bbd633\",\"approved\"],[\"cec41f59275fe98d\",\"7d187817368d3e34\",\"1f2f136c370a634f\",\"28ec4ec1a7cb33d5\",\"7d187817368d3e34\",\"b6be4e11ee810cd6\",\"pass\",\"dd3de7ab61a3eaf7\",\"710685d2c7b91127\",\"7d187817368d3e34\",\"b6be4e11ee810cd6\",\"3093fc4450e6776e\",\"pass\",\"34b62db764e591f3\",\"408ba1d49d75921d\",\"7d187817368d3e34\",\"3093fc4450e6776e\",\"f6ce80b376e5de96\",\"pass\",\"b4f6a56b45c1ca64\",\"10443f573a8d7500\",\"7d187817368d3e34\",\"f6ce80b376e5de96\",\"pass\",\"9f4ae23ac8ab84f5\",\"7cf5b9bf2a8fb520\",\"7d187817368d3e34\",\"b6ae1878f6d8ac81\",\"approved\"],[\"c1f0afdcfe9c3b61\",\"bfa175a3a4d6271f\",\"3fa1fa75b306c79b\",\"2592c2c18735ce07\",\"bfa175a3a4d6271f\",\"1305b6b0543044ac\",\"pass\",\"a5f94a0a875ed5af\",\"45f77d513d51e48c\",\"bfa175a3a4d6271f\",\"1305b6b0543044ac\",\"560d7c09ae5395a6\",\"pass\",\"ce644cc947d321af\",\"f25ceafd80379549\",\"bfa175a3a4d6271f\",\"560d7c09ae5395a6\",\"a207dbe6b7fa189d\",\"pass\",\"8788738315b0530e\",\"94c906524f01a816\",\"bfa175a3a4d6271f\",\"a207dbe6b7fa189d\",\"fail\",\"83376f211c35c0bd\",\"145d2ff122ad375f\",\"bfa175a3a4d6271f\",\"a207dbe6b7fa189d\",\"approved\"],[\"739b63fbfe068e24\",\"55fc75d0f2c615f1\",\"75852882a0ccae38\",\"4edd7efbcc30b1ec\",\"55fc75d0f2c615f1\",\"94b5afb86426efc0\",\"pass\",\"77b04b55b21320ea\",\"7cfbffe93fd13048\",\"55fc75d0f2c615f1\",\"94b5afb86426efc0\",\"37fa45e2f0e58759\",\"pass\",\"f764d3b85aebbf84\",\"fd25c2cf4bdd6db6\",\"55fc75d0f2c615f1\",\"37fa45e2f0e58759\",\"b6f43092c18bd861\",\"pass\",\"e9dda67718af415e\",\"90e9487588164221\",\"55fc75d0f2c615f1\",\"b6f43092c18bd861\",\"pass\",\"4c4e4d36c4ebae58\",\"69ba80bbc430012f\",\"55fc75d0f2c615f1\",\"b6f43092c18bd861\",\"approved\"]]}"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "28675df0fb88009d55da34c4a4fc98127066d3a49883fed300de5ae240fc08ab",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "{\"f\":[\"pipeline_run\",\"workflow_key\",\"extract.record_id\",\"extract.run\",\"extract.workflow_key\",\"extract.output_dataset\",\"extract.state\",\"transform.record_id\",\"transform.run\",\"transform.workflow_key\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.state\",\"load.record_id\",\"load.run\",\"load.workflow_key\",\"load.input_dataset\",\"load.output_dataset\",\"load.state\",\"quality.record_id\",\"quality.check\",\"quality.workflow_key\",\"quality.subject_dataset\",\"quality.state\",\"consent.record_id\",\"consent.approval\",\"consent.workflow_key\",\"consent.approved_output\",\"consent.state\"],\"r\":[[\"f08e33cc397b9629\",\"5649d74cfd860421\",\"8e832b3ffaf1b566\",\"572a01a8b35fb91a\",\"5649d74cfd860421\",\"1da08534c4f1a712\",\"pass\",\"6e572e15f8588614\",\"31869b0be7b77178\",\"5649d74cfd860421\",\"1da08534c4f1a712\",\"1f6f4e1bd2806986\",\"pass\",\"c6245edcc981e1cf\",\"a20f8e4ea2f61989\",\"5649d74cfd860421\",\"1f6f4e1bd2806986\",\"c792ffaae3bbd633\",\"pass\",\"7a6ad72924c2d447\",\"8f8ce8c9cbc2c32c\",\"5649d74cfd860421\",\"c792ffaae3bbd633\",\"pass\",\"8a97fe293073b6cf\",\"667bc3a9f745e158\",\"5649d74cfd860421\",\"c792ffaae3bbd633\",\"approved\"],[\"cec41f59275fe98d\",\"7d187817368d3e34\",\"1f2f136c370a634f\",\"28ec4ec1a7cb33d5\",\"7d187817368d3e34\",\"b6be4e11ee810cd6\",\"pass\",\"dd3de7ab61a3eaf7\",\"710685d2c7b91127\",\"7d187817368d3e34\",\"b6be4e11ee810cd6\",\"3093fc4450e6776e\",\"pass\",\"34b62db764e591f3\",\"408ba1d49d75921d\",\"7d187817368d3e34\",\"3093fc4450e6776e\",\"f6ce80b376e5de96\",\"pass\",\"b4f6a56b45c1ca64\",\"10443f573a8d7500\",\"7d187817368d3e34\",\"f6ce80b376e5de96\",\"pass\",\"9f4ae23ac8ab84f5\",\"7cf5b9bf2a8fb520\",\"7d187817368d3e34\",\"b6ae1878f6d8ac81\",\"approved\"]]}"
+  },
+  "started_at": "2026-09-23T00:32:51.899821+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 4888,
+    "outputTokens": 1007,
+    "reasoningOutputTokens": 342,
+    "totalTokens": 5895
+  },
+  "usage_events": 1,
+  "wall_seconds": 22.2932487000362,
+  "wire_body_byte_bound": 23339
+}

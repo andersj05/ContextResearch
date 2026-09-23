@@ -1,0 +1,97 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "ci_promotion-3868710405-1-full",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.010703",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 3,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"promote\",\"target_id\":\"d36c6488ddb87bfc\",\"work\":[]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target and late event. Memory may be prose, a list of tool results with tool/data wrappers, or a JSON table with f=full field paths and r=rows. Root fields in a table are unprefixed; component fields use tool.field. First apply the event only to the selected workflow. Return one exact decision and sorted work. Do not call tools. Select the root record whose deployment_slot equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. Promote only if build.channel=stable, authorization.state=approved, authorization.approved_digest=build.digest, verification.subject=build.digest, verification.unit and integration both pass, and handoff.environment=prod. Otherwise hold with the exact sorted set of channel, approval, approval_scope, ci_scope, unit, integration, environment for each failed condition. Return target_id=build.digest. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "authorization.approved_digest",
+        "value": "d36c6488ddb87bfc"
+      },
+      "memory": "[{\"data\":{\"deployment_slot\":\"9a502343b381bdd7\",\"operator_notes\":\"Worker log mentions obsolete draft f1f7002349755218. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft f1f7002349755218. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft f1f7002349755218. Dashboard labels and timings are not gate evidence. \",\"workflow_key\":\"2c28ee339fb49c31\"},\"tool\":\"root\"},{\"data\":{\"integration\":\"pass\",\"record_id\":\"b9d2c7880d1d206b\",\"run\":\"026d1d63eba06b40\",\"subject\":\"572c768198de6007\",\"unit\":\"pass\",\"workflow_key\":\"63791e074331414c\"},\"tool\":\"verification\"},{\"data\":{\"approved_digest\":\"992bd16cce12d0f7\",\"record_id\":\"3aa924c2fe45e06b\",\"state\":\"approved\",\"ticket\":\"9401e617c8d614f5\",\"workflow_key\":\"6c3ade4932392b76\"},\"tool\":\"authorization\"},{\"data\":{\"channel\":\"stable\",\"digest\":\"572c768198de6007\",\"record_id\":\"10971b83a6b5082a\",\"workflow_key\":\"63791e074331414c\"},\"tool\":\"build\"},{\"data\":{\"environment\":\"prod\",\"record_id\":\"7a70b63946a622af\",\"workflow_key\":\"84caf93a0e2f06da\"},\"tool\":\"handoff\"},{\"data\":{\"integration\":\"pass\",\"record_id\":\"293dc1d84ceab8f6\",\"run\":\"dae37d7c2f2f0738\",\"subject\":\"d3f3597e367e057f\",\"unit\":\"pass\",\"workflow_key\":\"57780edbbd8f9a35\"},\"tool\":\"verification\"},{\"data\":{\"channel\":\"stable\",\"digest\":\"fcef99e117c2bddd\",\"record_id\":\"ead80cdbe63753a1\",\"workflow_key\":\"57780edbbd8f9a35\"},\"tool\":\"build\"},{\"data\":{\"approved_digest\":\"572c768198de6007\",\"record_id\":\"a9bdc63ed9aae153\",\"state\":\"approved\",\"ticket\":\"24b469f5a87498ad\",\"workflow_key\":\"63791e074331414c\"},\"tool\":\"authorization\"},{\"data\":{\"deployment_slot\":\"cf3b198c43940530\",\"operator_notes\":\"Worker log mentions obsolete draft 21d20b10dfc4f9ea. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 21d20b10dfc4f9ea. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 21d20b10dfc4f9ea. Dashboard labels and timings are not gate evidence. \",\"workflow_key\":\"6c3ade4932392b76\"},\"tool\":\"root\"},{\"data\":{\"environment\":\"prod\",\"record_id\":\"11d88c4b9be225dc\",\"workflow_key\":\"6c3ade4932392b76\"},\"tool\":\"handoff\"},{\"data\":{\"approved_digest\":\"aef2e4a6ca14bb70\",\"record_id\":\"acca59897e680974\",\"state\":\"approved\",\"ticket\":\"cc2231adae0d89d0\",\"workflow_key\":\"84caf93a0e2f06da\"},\"tool\":\"authorization\"},{\"data\":{\"approved_digest\":\"f0efb4a067613527\",\"record_id\":\"d55a6fa26e1f9d9a\",\"state\":\"approved\",\"ticket\":\"4021d454be97b298\",\"workflow_key\":\"1e62c27d184987b2\"},\"tool\":\"authorization\"},{\"data\":{\"channel\":\"stable\",\"digest\":\"992bd16cce12d0f7\",\"record_id\":\"e95035a16172dc26\",\"workflow_key\":\"6c3ade4932392b76\"},\"tool\":\"build\"},{\"data\":{\"deployment_slot\":\"a767efb638aacb3d\",\"operator_notes\":\"Worker log mentions obsolete draft d6bba9246e6f6e76. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft d6bba9246e6f6e76. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft d6bba9246e6f6e76. Dashboard labels and timings are not gate evidence. \",\"workflow_key\":\"84caf93a0e2f06da\"},\"tool\":\"root\"},{\"data\":{\"deployment_slot\":\"10af2ffe885ec422\",\"operator_notes\":\"Worker log mentions obsolete draft 87f964916453e652. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 87f964916453e652. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 87f964916453e652. Dashboard labels and timings are not gate evidence. \",\"workflow_key\":\"63791e074331414c\"},\"tool\":\"root\"},{\"data\":{\"integration\":\"pass\",\"record_id\":\"65c8ec1c906eb2a9\",\"run\":\"cfb5e36f8bfa9d3b\",\"subject\":\"216c0ff37e0e7101\",\"unit\":\"pass\",\"workflow_key\":\"84caf93a0e2f06da\"},\"tool\":\"verification\"},{\"data\":{\"approved_digest\":\"eee9115198b4515b\",\"record_id\":\"21b87ff157d219f7\",\"state\":\"approved\",\"ticket\":\"a8a057e07d1022be\",\"workflow_key\":\"2c28ee339fb49c31\"},\"tool\":\"authorization\"},{\"data\":{\"environment\":\"prod\",\"record_id\":\"6ebb07c5ab7abfe2\",\"workflow_key\":\"476a86b122e36cb7\"},\"tool\":\"handoff\"},{\"data\":{\"channel\":\"stable\",\"digest\":\"eee9115198b4515b\",\"record_id\":\"daff2b0692516f66\",\"workflow_key\":\"2c28ee339fb49c31\"},\"tool\":\"build\"},{\"data\":{\"environment\":\"prod\",\"record_id\":\"c36ac573f17ed59b\",\"workflow_key\":\"57780edbbd8f9a35\"},\"tool\":\"handoff\"},{\"data\":{\"integration\":\"fail\",\"record_id\":\"cb23ff7bcf315339\",\"run\":\"dddeeecd6f3e21f1\",\"subject\":\"eee9115198b4515b\",\"unit\":\"pass\",\"workflow_key\":\"2c28ee339fb49c31\"},\"tool\":\"verification\"},{\"data\":{\"channel\":\"stable\",\"digest\":\"f0efb4a067613527\",\"record_id\":\"90ba6c331dc64c47\",\"workflow_key\":\"1e62c27d184987b2\"},\"tool\":\"build\"},{\"data\":{\"approved_digest\":\"fcef99e117c2bddd\",\"record_id\":\"c8f43295565581dd\",\"state\":\"approved\",\"ticket\":\"e8a45d66e811d39e\",\"workflow_key\":\"57780edbbd8f9a35\"},\"tool\":\"authorization\"},{\"data\":{\"environment\":\"prod\",\"record_id\":\"739acd8e84119cbb\",\"workflow_key\":\"2c28ee339fb49c31\"},\"tool\":\"handoff\"},{\"data\":{\"channel\":\"stable\",\"digest\":\"216c0ff37e0e7101\",\"record_id\":\"565035065e1c8a71\",\"workflow_key\":\"84caf93a0e2f06da\"},\"tool\":\"build\"},{\"data\":{\"integration\":\"fail\",\"record_id\":\"d7bb0dd1bf96620e\",\"run\":\"1f8ba0d1e4efc35c\",\"subject\":\"992bd16cce12d0f7\",\"unit\":\"pass\",\"workflow_key\":\"6c3ade4932392b76\"},\"tool\":\"verification\"},{\"data\":{\"deployment_slot\":\"faf10a152bde583f\",\"operator_notes\":\"Worker log mentions obsolete draft ec8e63d80462650e. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft ec8e63d80462650e. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft ec8e63d80462650e. Dashboard labels and timings are not gate evidence. \",\"workflow_key\":\"476a86b122e36cb7\"},\"tool\":\"root\"},{\"data\":{\"integration\":\"pass\",\"record_id\":\"e3a4c80af3f52d65\",\"run\":\"a503f4ed1659e599\",\"subject\":\"d36c6488ddb87bfc\",\"unit\":\"pass\",\"workflow_key\":\"476a86b122e36cb7\"},\"tool\":\"verification\"},{\"data\":{\"deployment_slot\":\"03cc9bfd26d7afd0\",\"operator_notes\":\"Worker log mentions obsolete draft 2623ca077080e66b. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 2623ca077080e66b. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 2623ca077080e66b. Dashboard labels and timings are not gate evidence. \",\"workflow_key\":\"57780edbbd8f9a35\"},\"tool\":\"root\"},{\"data\":{\"integration\":\"pass\",\"record_id\":\"9ef86be1df2734d1\",\"run\":\"82fb0ce53e41df62\",\"subject\":\"f0efb4a067613527\",\"unit\":\"pass\",\"workflow_key\":\"1e62c27d184987b2\"},\"tool\":\"verification\"},{\"data\":{\"environment\":\"prod\",\"record_id\":\"3e5227f30f095b03\",\"workflow_key\":\"1e62c27d184987b2\"},\"tool\":\"handoff\"},{\"data\":{\"deployment_slot\":\"a0f524b08efdaa82\",\"operator_notes\":\"Worker log mentions obsolete draft a416811cc09c82fe. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft a416811cc09c82fe. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft a416811cc09c82fe. Dashboard labels and timings are not gate evidence. \",\"workflow_key\":\"1e62c27d184987b2\"},\"tool\":\"root\"},{\"data\":{\"channel\":\"stable\",\"digest\":\"d36c6488ddb87bfc\",\"record_id\":\"b08290c914f37f78\",\"workflow_key\":\"476a86b122e36cb7\"},\"tool\":\"build\"},{\"data\":{\"environment\":\"prod\",\"record_id\":\"6151a33cb1972ae9\",\"workflow_key\":\"63791e074331414c\"},\"tool\":\"handoff\"},{\"data\":{\"approved_digest\":\"845e2c9bd4a4b408\",\"record_id\":\"cde4a8ce94e5cbc5\",\"state\":\"approved\",\"ticket\":\"749a0f640cab3a89\",\"workflow_key\":\"476a86b122e36cb7\"},\"tool\":\"authorization\"}]",
+      "target": "faf10a152bde583f"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "42b5de0fd3ca9396caa58e011aeaab0874667bd75c212e3163f0ea953eb65833",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "promote",
+    "target_id": "d36c6488ddb87bfc",
+    "work": []
+  },
+  "started_at": "2026-09-23T00:28:49.767034+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 5389,
+    "outputTokens": 101,
+    "reasoningOutputTokens": 67,
+    "totalTokens": 5490
+  },
+  "usage_events": 1,
+  "wall_seconds": 4.3108959000092,
+  "wire_body_byte_bound": 27784
+}

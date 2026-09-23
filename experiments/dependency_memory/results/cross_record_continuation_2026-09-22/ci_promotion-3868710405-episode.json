@@ -1,0 +1,469 @@
+{
+  "case_id": "ci_promotion-3868710405",
+  "checks": {
+    "automatic_child": {
+      "candidate_bytes_read": 858,
+      "cpu_ns": 387500,
+      "exact_ids": true,
+      "passed": true,
+      "reason": "passed",
+      "relationships": true,
+      "required_id_fields": 11,
+      "source_bytes_read": 4757
+    },
+    "automatic_parent": {
+      "candidate_bytes_read": 2118,
+      "cpu_ns": 864800,
+      "exact_ids": true,
+      "passed": true,
+      "reason": "passed",
+      "relationships": true,
+      "required_id_fields": 11,
+      "source_bytes_read": 12251
+    },
+    "parent_fallback": false,
+    "structured_parent": {
+      "candidate_bytes_read": 2751,
+      "cpu_ns": 610800,
+      "exact_ids": true,
+      "passed": true,
+      "reason": "passed",
+      "relationships": true,
+      "required_id_fields": 11,
+      "source_bytes_read": 12251
+    }
+  },
+  "decisions": [
+    {
+      "arm": "direct",
+      "future_id": "ci_promotion-3868710405-0",
+      "identity": "ci_promotion-3868710405-0-direct",
+      "memory_bytes": 446,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "prompt",
+      "future_id": "ci_promotion-3868710405-0",
+      "identity": "ci_promotion-3868710405-0-prompt",
+      "memory_bytes": 1270,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "structured",
+      "future_id": "ci_promotion-3868710405-0",
+      "identity": "ci_promotion-3868710405-0-structured",
+      "memory_bytes": 1111,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "automatic",
+      "future_id": "ci_promotion-3868710405-0",
+      "identity": "ci_promotion-3868710405-0-automatic",
+      "memory_bytes": 858,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "indexed_raw",
+      "future_id": "ci_promotion-3868710405-0",
+      "identity": "ci_promotion-3868710405-0-indexed_raw",
+      "memory_bytes": 1054,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "checked",
+      "future_id": "ci_promotion-3868710405-0",
+      "identity": "ci_promotion-3868710405-0-checked",
+      "memory_bytes": 0,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "full",
+      "future_id": "ci_promotion-3868710405-0",
+      "identity": "ci_promotion-3868710405-0-full",
+      "memory_bytes": 7372,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "indexed_projected",
+      "future_id": "ci_promotion-3868710405-0",
+      "identity": "ci_promotion-3868710405-0-indexed_projected",
+      "memory_bytes": 606,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "full",
+      "future_id": "ci_promotion-3868710405-1",
+      "identity": "ci_promotion-3868710405-1-full",
+      "memory_bytes": 7372,
+      "transport_failure": false,
+      "truth": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      }
+    },
+    {
+      "arm": "automatic",
+      "future_id": "ci_promotion-3868710405-1",
+      "identity": "ci_promotion-3868710405-1-automatic",
+      "memory_bytes": 858,
+      "transport_failure": false,
+      "truth": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      }
+    },
+    {
+      "arm": "indexed_projected",
+      "future_id": "ci_promotion-3868710405-1",
+      "identity": "ci_promotion-3868710405-1-indexed_projected",
+      "memory_bytes": 606,
+      "transport_failure": false,
+      "truth": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      }
+    },
+    {
+      "arm": "structured",
+      "future_id": "ci_promotion-3868710405-1",
+      "identity": "ci_promotion-3868710405-1-structured",
+      "memory_bytes": 1111,
+      "transport_failure": false,
+      "truth": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      }
+    },
+    {
+      "arm": "indexed_raw",
+      "future_id": "ci_promotion-3868710405-1",
+      "identity": "ci_promotion-3868710405-1-indexed_raw",
+      "memory_bytes": 1054,
+      "transport_failure": false,
+      "truth": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      }
+    },
+    {
+      "arm": "checked",
+      "future_id": "ci_promotion-3868710405-1",
+      "identity": "ci_promotion-3868710405-1-checked",
+      "memory_bytes": 0,
+      "transport_failure": false,
+      "truth": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      }
+    },
+    {
+      "arm": "prompt",
+      "future_id": "ci_promotion-3868710405-1",
+      "identity": "ci_promotion-3868710405-1-prompt",
+      "memory_bytes": 1270,
+      "transport_failure": false,
+      "truth": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      }
+    },
+    {
+      "arm": "direct",
+      "future_id": "ci_promotion-3868710405-1",
+      "identity": "ci_promotion-3868710405-1-direct",
+      "memory_bytes": 446,
+      "transport_failure": false,
+      "truth": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      }
+    },
+    {
+      "arm": "indexed_projected",
+      "future_id": "ci_promotion-3868710405-2",
+      "identity": "ci_promotion-3868710405-2-indexed_projected",
+      "memory_bytes": 606,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "arm": "structured",
+      "future_id": "ci_promotion-3868710405-2",
+      "identity": "ci_promotion-3868710405-2-structured",
+      "memory_bytes": 1111,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "arm": "checked",
+      "future_id": "ci_promotion-3868710405-2",
+      "identity": "ci_promotion-3868710405-2-checked",
+      "memory_bytes": 0,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "arm": "prompt",
+      "future_id": "ci_promotion-3868710405-2",
+      "identity": "ci_promotion-3868710405-2-prompt",
+      "memory_bytes": 1270,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "arm": "automatic",
+      "future_id": "ci_promotion-3868710405-2",
+      "identity": "ci_promotion-3868710405-2-automatic",
+      "memory_bytes": 858,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "arm": "direct",
+      "future_id": "ci_promotion-3868710405-2",
+      "identity": "ci_promotion-3868710405-2-direct",
+      "memory_bytes": 446,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "arm": "indexed_raw",
+      "future_id": "ci_promotion-3868710405-2",
+      "identity": "ci_promotion-3868710405-2-indexed_raw",
+      "memory_bytes": 1054,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "arm": "full",
+      "future_id": "ci_promotion-3868710405-2",
+      "identity": "ci_promotion-3868710405-2-full",
+      "memory_bytes": 7372,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    }
+  ],
+  "family": "ci_promotion",
+  "index": {
+    "03cc9bfd26d7afd0": "[{\"data\":{\"integration\":\"pass\",\"record_id\":\"293dc1d84ceab8f6\",\"run\":\"dae37d7c2f2f0738\",\"subject\":\"d3f3597e367e057f\",\"unit\":\"pass\",\"workflow_key\":\"57780edbbd8f9a35\"},\"tool\":\"verification\"},{\"data\":{\"channel\":\"stable\",\"digest\":\"fcef99e117c2bddd\",\"record_id\":\"ead80cdbe63753a1\",\"workflow_key\":\"57780edbbd8f9a35\"},\"tool\":\"build\"},{\"data\":{\"environment\":\"prod\",\"record_id\":\"c36ac573f17ed59b\",\"workflow_key\":\"57780edbbd8f9a35\"},\"tool\":\"handoff\"},{\"data\":{\"approved_digest\":\"fcef99e117c2bddd\",\"record_id\":\"c8f43295565581dd\",\"state\":\"approved\",\"ticket\":\"e8a45d66e811d39e\",\"workflow_key\":\"57780edbbd8f9a35\"},\"tool\":\"authorization\"},{\"data\":{\"deployment_slot\":\"03cc9bfd26d7afd0\",\"operator_notes\":\"Worker log mentions obsolete draft 2623ca077080e66b. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 2623ca077080e66b. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 2623ca077080e66b. Dashboard labels and timings are not gate evidence. \",\"workflow_key\":\"57780edbbd8f9a35\"},\"tool\":\"root\"}]",
+    "10af2ffe885ec422": "[{\"data\":{\"integration\":\"pass\",\"record_id\":\"b9d2c7880d1d206b\",\"run\":\"026d1d63eba06b40\",\"subject\":\"572c768198de6007\",\"unit\":\"pass\",\"workflow_key\":\"63791e074331414c\"},\"tool\":\"verification\"},{\"data\":{\"channel\":\"stable\",\"digest\":\"572c768198de6007\",\"record_id\":\"10971b83a6b5082a\",\"workflow_key\":\"63791e074331414c\"},\"tool\":\"build\"},{\"data\":{\"approved_digest\":\"572c768198de6007\",\"record_id\":\"a9bdc63ed9aae153\",\"state\":\"approved\",\"ticket\":\"24b469f5a87498ad\",\"workflow_key\":\"63791e074331414c\"},\"tool\":\"authorization\"},{\"data\":{\"deployment_slot\":\"10af2ffe885ec422\",\"operator_notes\":\"Worker log mentions obsolete draft 87f964916453e652. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 87f964916453e652. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 87f964916453e652. Dashboard labels and timings are not gate evidence. \",\"workflow_key\":\"63791e074331414c\"},\"tool\":\"root\"},{\"data\":{\"environment\":\"prod\",\"record_id\":\"6151a33cb1972ae9\",\"workflow_key\":\"63791e074331414c\"},\"tool\":\"handoff\"}]",
+    "9a502343b381bdd7": "[{\"data\":{\"deployment_slot\":\"9a502343b381bdd7\",\"operator_notes\":\"Worker log mentions obsolete draft f1f7002349755218. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft f1f7002349755218. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft f1f7002349755218. Dashboard labels and timings are not gate evidence. \",\"workflow_key\":\"2c28ee339fb49c31\"},\"tool\":\"root\"},{\"data\":{\"approved_digest\":\"eee9115198b4515b\",\"record_id\":\"21b87ff157d219f7\",\"state\":\"approved\",\"ticket\":\"a8a057e07d1022be\",\"workflow_key\":\"2c28ee339fb49c31\"},\"tool\":\"authorization\"},{\"data\":{\"channel\":\"stable\",\"digest\":\"eee9115198b4515b\",\"record_id\":\"daff2b0692516f66\",\"workflow_key\":\"2c28ee339fb49c31\"},\"tool\":\"build\"},{\"data\":{\"integration\":\"fail\",\"record_id\":\"cb23ff7bcf315339\",\"run\":\"dddeeecd6f3e21f1\",\"subject\":\"eee9115198b4515b\",\"unit\":\"pass\",\"workflow_key\":\"2c28ee339fb49c31\"},\"tool\":\"verification\"},{\"data\":{\"environment\":\"prod\",\"record_id\":\"739acd8e84119cbb\",\"workflow_key\":\"2c28ee339fb49c31\"},\"tool\":\"handoff\"}]",
+    "a0f524b08efdaa82": "[{\"data\":{\"approved_digest\":\"f0efb4a067613527\",\"record_id\":\"d55a6fa26e1f9d9a\",\"state\":\"approved\",\"ticket\":\"4021d454be97b298\",\"workflow_key\":\"1e62c27d184987b2\"},\"tool\":\"authorization\"},{\"data\":{\"channel\":\"stable\",\"digest\":\"f0efb4a067613527\",\"record_id\":\"90ba6c331dc64c47\",\"workflow_key\":\"1e62c27d184987b2\"},\"tool\":\"build\"},{\"data\":{\"integration\":\"pass\",\"record_id\":\"9ef86be1df2734d1\",\"run\":\"82fb0ce53e41df62\",\"subject\":\"f0efb4a067613527\",\"unit\":\"pass\",\"workflow_key\":\"1e62c27d184987b2\"},\"tool\":\"verification\"},{\"data\":{\"environment\":\"prod\",\"record_id\":\"3e5227f30f095b03\",\"workflow_key\":\"1e62c27d184987b2\"},\"tool\":\"handoff\"},{\"data\":{\"deployment_slot\":\"a0f524b08efdaa82\",\"operator_notes\":\"Worker log mentions obsolete draft a416811cc09c82fe. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft a416811cc09c82fe. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft a416811cc09c82fe. Dashboard labels and timings are not gate evidence. \",\"workflow_key\":\"1e62c27d184987b2\"},\"tool\":\"root\"}]",
+    "a767efb638aacb3d": "[{\"data\":{\"environment\":\"prod\",\"record_id\":\"7a70b63946a622af\",\"workflow_key\":\"84caf93a0e2f06da\"},\"tool\":\"handoff\"},{\"data\":{\"approved_digest\":\"aef2e4a6ca14bb70\",\"record_id\":\"acca59897e680974\",\"state\":\"approved\",\"ticket\":\"cc2231adae0d89d0\",\"workflow_key\":\"84caf93a0e2f06da\"},\"tool\":\"authorization\"},{\"data\":{\"deployment_slot\":\"a767efb638aacb3d\",\"operator_notes\":\"Worker log mentions obsolete draft d6bba9246e6f6e76. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft d6bba9246e6f6e76. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft d6bba9246e6f6e76. Dashboard labels and timings are not gate evidence. \",\"workflow_key\":\"84caf93a0e2f06da\"},\"tool\":\"root\"},{\"data\":{\"integration\":\"pass\",\"record_id\":\"65c8ec1c906eb2a9\",\"run\":\"cfb5e36f8bfa9d3b\",\"subject\":\"216c0ff37e0e7101\",\"unit\":\"pass\",\"workflow_key\":\"84caf93a0e2f06da\"},\"tool\":\"verification\"},{\"data\":{\"channel\":\"stable\",\"digest\":\"216c0ff37e0e7101\",\"record_id\":\"565035065e1c8a71\",\"workflow_key\":\"84caf93a0e2f06da\"},\"tool\":\"build\"}]",
+    "cf3b198c43940530": "[{\"data\":{\"approved_digest\":\"992bd16cce12d0f7\",\"record_id\":\"3aa924c2fe45e06b\",\"state\":\"approved\",\"ticket\":\"9401e617c8d614f5\",\"workflow_key\":\"6c3ade4932392b76\"},\"tool\":\"authorization\"},{\"data\":{\"deployment_slot\":\"cf3b198c43940530\",\"operator_notes\":\"Worker log mentions obsolete draft 21d20b10dfc4f9ea. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 21d20b10dfc4f9ea. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 21d20b10dfc4f9ea. Dashboard labels and timings are not gate evidence. \",\"workflow_key\":\"6c3ade4932392b76\"},\"tool\":\"root\"},{\"data\":{\"environment\":\"prod\",\"record_id\":\"11d88c4b9be225dc\",\"workflow_key\":\"6c3ade4932392b76\"},\"tool\":\"handoff\"},{\"data\":{\"channel\":\"stable\",\"digest\":\"992bd16cce12d0f7\",\"record_id\":\"e95035a16172dc26\",\"workflow_key\":\"6c3ade4932392b76\"},\"tool\":\"build\"},{\"data\":{\"integration\":\"fail\",\"record_id\":\"d7bb0dd1bf96620e\",\"run\":\"1f8ba0d1e4efc35c\",\"subject\":\"992bd16cce12d0f7\",\"unit\":\"pass\",\"workflow_key\":\"6c3ade4932392b76\"},\"tool\":\"verification\"}]",
+    "faf10a152bde583f": "[{\"data\":{\"environment\":\"prod\",\"record_id\":\"6ebb07c5ab7abfe2\",\"workflow_key\":\"476a86b122e36cb7\"},\"tool\":\"handoff\"},{\"data\":{\"deployment_slot\":\"faf10a152bde583f\",\"operator_notes\":\"Worker log mentions obsolete draft ec8e63d80462650e. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft ec8e63d80462650e. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft ec8e63d80462650e. Dashboard labels and timings are not gate evidence. \",\"workflow_key\":\"476a86b122e36cb7\"},\"tool\":\"root\"},{\"data\":{\"integration\":\"pass\",\"record_id\":\"e3a4c80af3f52d65\",\"run\":\"a503f4ed1659e599\",\"subject\":\"d36c6488ddb87bfc\",\"unit\":\"pass\",\"workflow_key\":\"476a86b122e36cb7\"},\"tool\":\"verification\"},{\"data\":{\"channel\":\"stable\",\"digest\":\"d36c6488ddb87bfc\",\"record_id\":\"b08290c914f37f78\",\"workflow_key\":\"476a86b122e36cb7\"},\"tool\":\"build\"},{\"data\":{\"approved_digest\":\"845e2c9bd4a4b408\",\"record_id\":\"cde4a8ce94e5cbc5\",\"state\":\"approved\",\"ticket\":\"749a0f640cab3a89\",\"workflow_key\":\"476a86b122e36cb7\"},\"tool\":\"authorization\"}]"
+  },
+  "index_bytes": 8331,
+  "infeasible": {
+    "checked": "Parent contains unsupported field"
+  },
+  "local": {
+    "automatic": {
+      "bytes_read": 32603,
+      "bytes_written": 3834,
+      "cpu_ns": 2708200
+    },
+    "checked": {
+      "bytes_read": 28081,
+      "bytes_written": 3862,
+      "cpu_ns": 650400
+    },
+    "direct": {
+      "bytes_read": 11164,
+      "bytes_written": 1487,
+      "cpu_ns": 390100
+    },
+    "full": {
+      "bytes_read": 22116,
+      "bytes_written": 22116,
+      "cpu_ns": 541000
+    },
+    "indexed_projected": {
+      "bytes_read": 19348,
+      "bytes_written": 10149,
+      "cpu_ns": 1533300
+    },
+    "indexed_raw": {
+      "bytes_read": 11947,
+      "bytes_written": 8331,
+      "cpu_ns": 676300
+    },
+    "prompt": {
+      "bytes_read": 19077,
+      "bytes_written": 3818,
+      "cpu_ns": 54900
+    },
+    "structured": {
+      "bytes_read": 19163,
+      "bytes_written": 3862,
+      "cpu_ns": 49500
+    }
+  },
+  "memories": {
+    "automatic": {
+      "child": "{\"f\":[\"authorization.approved_digest\",\"authorization.record_id\",\"authorization.state\",\"authorization.ticket\",\"build.channel\",\"build.digest\",\"build.record_id\",\"deployment_slot\",\"handoff.environment\",\"handoff.record_id\",\"verification.integration\",\"verification.record_id\",\"verification.run\",\"verification.subject\",\"verification.unit\",\"workflow_key\"],\"r\":[[\"f0efb4a067613527\",\"d55a6fa26e1f9d9a\",\"approved\",\"4021d454be97b298\",\"stable\",\"f0efb4a067613527\",\"90ba6c331dc64c47\",\"a0f524b08efdaa82\",\"prod\",\"3e5227f30f095b03\",\"pass\",\"9ef86be1df2734d1\",\"82fb0ce53e41df62\",\"f0efb4a067613527\",\"pass\",\"1e62c27d184987b2\"],[\"845e2c9bd4a4b408\",\"cde4a8ce94e5cbc5\",\"approved\",\"749a0f640cab3a89\",\"stable\",\"d36c6488ddb87bfc\",\"b08290c914f37f78\",\"faf10a152bde583f\",\"prod\",\"6ebb07c5ab7abfe2\",\"pass\",\"e3a4c80af3f52d65\",\"a503f4ed1659e599\",\"d36c6488ddb87bfc\",\"pass\",\"476a86b122e36cb7\"]]}",
+      "parent": "{\"f\":[\"authorization.approved_digest\",\"authorization.record_id\",\"authorization.state\",\"authorization.ticket\",\"build.channel\",\"build.digest\",\"build.record_id\",\"deployment_slot\",\"handoff.environment\",\"handoff.record_id\",\"verification.integration\",\"verification.record_id\",\"verification.run\",\"verification.subject\",\"verification.unit\",\"workflow_key\"],\"r\":[[\"f0efb4a067613527\",\"d55a6fa26e1f9d9a\",\"approved\",\"4021d454be97b298\",\"stable\",\"f0efb4a067613527\",\"90ba6c331dc64c47\",\"a0f524b08efdaa82\",\"prod\",\"3e5227f30f095b03\",\"pass\",\"9ef86be1df2734d1\",\"82fb0ce53e41df62\",\"f0efb4a067613527\",\"pass\",\"1e62c27d184987b2\"],[\"eee9115198b4515b\",\"21b87ff157d219f7\",\"approved\",\"a8a057e07d1022be\",\"stable\",\"eee9115198b4515b\",\"daff2b0692516f66\",\"9a502343b381bdd7\",\"prod\",\"739acd8e84119cbb\",\"fail\",\"cb23ff7bcf315339\",\"dddeeecd6f3e21f1\",\"eee9115198b4515b\",\"pass\",\"2c28ee339fb49c31\"],[\"845e2c9bd4a4b408\",\"cde4a8ce94e5cbc5\",\"approved\",\"749a0f640cab3a89\",\"stable\",\"d36c6488ddb87bfc\",\"b08290c914f37f78\",\"faf10a152bde583f\",\"prod\",\"6ebb07c5ab7abfe2\",\"pass\",\"e3a4c80af3f52d65\",\"a503f4ed1659e599\",\"d36c6488ddb87bfc\",\"pass\",\"476a86b122e36cb7\"],[\"fcef99e117c2bddd\",\"c8f43295565581dd\",\"approved\",\"e8a45d66e811d39e\",\"stable\",\"fcef99e117c2bddd\",\"ead80cdbe63753a1\",\"03cc9bfd26d7afd0\",\"prod\",\"c36ac573f17ed59b\",\"pass\",\"293dc1d84ceab8f6\",\"dae37d7c2f2f0738\",\"d3f3597e367e057f\",\"pass\",\"57780edbbd8f9a35\"],[\"572c768198de6007\",\"a9bdc63ed9aae153\",\"approved\",\"24b469f5a87498ad\",\"stable\",\"572c768198de6007\",\"10971b83a6b5082a\",\"10af2ffe885ec422\",\"prod\",\"6151a33cb1972ae9\",\"pass\",\"b9d2c7880d1d206b\",\"026d1d63eba06b40\",\"572c768198de6007\",\"pass\",\"63791e074331414c\"],[\"992bd16cce12d0f7\",\"3aa924c2fe45e06b\",\"approved\",\"9401e617c8d614f5\",\"stable\",\"992bd16cce12d0f7\",\"e95035a16172dc26\",\"cf3b198c43940530\",\"prod\",\"11d88c4b9be225dc\",\"fail\",\"d7bb0dd1bf96620e\",\"1f8ba0d1e4efc35c\",\"992bd16cce12d0f7\",\"pass\",\"6c3ade4932392b76\"],[\"aef2e4a6ca14bb70\",\"acca59897e680974\",\"approved\",\"cc2231adae0d89d0\",\"stable\",\"216c0ff37e0e7101\",\"565035065e1c8a71\",\"a767efb638aacb3d\",\"prod\",\"7a70b63946a622af\",\"pass\",\"65c8ec1c906eb2a9\",\"cfb5e36f8bfa9d3b\",\"216c0ff37e0e7101\",\"pass\",\"84caf93a0e2f06da\"]]}"
+    },
+    "checked": {
+      "child": "",
+      "child_bounds": {
+        "admitted_bytes": 1111,
+        "clipped": false,
+        "proposed_bytes": 1111
+      },
+      "parent": "{\"f\":[\"deployment_slot\",\"workflow_key\",\"build.record_id\",\"build.workflow_key\",\"build.channel\",\"build.digest\",\"authorization.record_id\",\"authorization.workflow_key\",\"authorization.approved_digest\",\"authorization.state\",\"authorization.ticket\",\"verification.record_id\",\"verification.workflow_key\",\"verification.integration\",\"verification.run\",\"verification.subject\",\"verification.unit\",\"handoff.record_id\",\"handoff.workflow_key\",\"handoff.environment\"],\"r\":[[\"9a502343b381bdd7\",\"2c28ee339fb49c31\",\"daff2b0692516f66\",\"2c28ee339fb49c31\",\"stable\",\"eee9115198b4515b\",\"21b87ff157d219f7\",\"2c28ee339fb49c31\",\"eee9115198b4515b\",\"approved\",\"a8a057e07d1022be\",\"cb23ff7bcf315339\",\"2c28ee339fb49c31\",\"fail\",\"dddeeecd6f3e21f1\",\"eee9115198b4515b\",\"pass\",\"739acd8e84119cbb\",\"2c28ee339fb49c31\",\"prod\"],[\"10af2ffe885ec422\",\"63791e074331414c\",\"10971b83a6b5082a\",\"63791e074331414c\",\"stable\",\"572c768198de6007\",\"a9bdc63ed9aae153\",\"63791e074331414c\",\"572c768198de6007\",\"approved\",\"24b469f5a87498ad\",\"b9d2c7880d1d206b\",\"63791e074331414c\",\"pass\",\"026d1d63eba06b40\",\"572c768198de6007\",\"pass\",\"6151a33cb1972ae9\",\"63791e074331414c\",\"prod\"],[\"cf3b198c43940530\",\"6c3ade4932392b76\",\"e95035a16172dc26\",\"6c3ade4932392b76\",\"stable\",\"992bd16cce12d0f7\",\"3aa924c2fe45e06b\",\"6c3ade4932392b76\",\"992bd16cce12d0f7\",\"approved\",\"9401e617c8d614f5\",\"d7bb0dd1bf96620e\",\"6c3ade4932392b76\",\"fail\",\"1f8ba0d1e4efc35c\",\"992bd16cce12d0f7\",\"pass\",\"11d88c4b9be225dc\",\"6c3ade4932392b76\",\"prod\"],[\"a767efb638aacb3d\",\"84caf93a0e2f06da\",\"565035065e1c8a71\",\"84caf93a0e2f06da\",\"stable\",\"216c0ff37e0e7101\",\"acca59897e680974\",\"84caf93a0e2f06da\",\"aef2e4a6ca14bb70\",\"approved\",\"cc2231adae0d89d0\",\"65c8ec1c906eb2a9\",\"84caf93a0e2f06da\",\"pass\",\"cfb5e36f8bfa9d3b\",\"216c0ff37e0e7101\",\"pass\",\"7a70b63946a622af\",\"84caf93a0e2f06da\",\"prod\"],[\"03cc9bfd26d7afd0\",\"57780edbbd8f9a35\",\"ead80cdbe63753a1\",\"57780edbbd8f9a35\",\"stable\",\"fcef99e117c2bddd\",\"c8f43295565581dd\",\"57780edbbd8f9a35\",\"fcef99e117c2bddd\",\"approved\",\"e8a45d66e811d39e\",\"293dc1d84ceab8f6\",\"57780edbbd8f9a35\",\"pass\",\"dae37d7c2f2f0738\",\"d3f3597e367e057f\",\"pass\",\"c36ac573f17ed59b\",\"57780edbbd8f9a35\",\"prod\"],[\"a0f524b08efdaa82\",\"1e62c27d184987b2\",\"90ba6c331dc64c47\",\"1e62c27d184987b2\",\"stable\",\"f0efb4a067613527\",\"d55a6fa26e1f9d9a\",\"1e62c27d184987b2\",\"f0efb4a067613527\",\"approved\",\"4021d454be97b298\",\"9ef86be1df2734d1\",\"1e62c27d184987b2\",\"pass\",\"82fb0ce53e41df62\",\"f0efb4a067613527\",\"pass\",\"3e5227f30f095b03\",\"1e62c27d184987b2\",\"prod\"],[\"faf10a152bde583f\",\"476a86b122e36cb7\",\"b08290c914f37f78\",\"476a86b122e36cb7\",\"stable\",\"d36c6488ddb87bfc\",\"cde4a8ce94e5cbc5\",\"476a86b122e36cb7\",\"845e2c9bd4a4b408\",\"approved\",\"749a0f640cab3a89\",\"e3a4c80af3f52d65\",\"476a86b122e36cb7\",\"pass\",\"a503f4ed1659e599\",\"d36c6488ddb87bfc\",\"pass\",\"6ebb07c5ab7abfe2\",\"476a86b122e36cb7\",\"prod\"]]}"
+    },
+    "direct": {
+      "child": "{\"f\":[\"deployment_slot\",\"build.digest\",\"build.channel\",\"authorization.approved_digest\",\"authorization.state\",\"verification.subject\",\"verification.unit\",\"verification.integration\",\"handoff.environment\"],\"r\":[[\"a0f524b08efdaa82\",\"f0efb4a067613527\",\"stable\",\"f0efb4a067613527\",\"approved\",\"f0efb4a067613527\",\"pass\",\"pass\",\"prod\"],[\"faf10a152bde583f\",\"d36c6488ddb87bfc\",\"stable\",\"845e2c9bd4a4b408\",\"approved\",\"d36c6488ddb87bfc\",\"pass\",\"pass\",\"prod\"]]}",
+      "parent": "{\"f\":[\"deployment_slot\",\"build.digest\",\"build.channel\",\"authorization.approved_digest\",\"authorization.state\",\"verification.subject\",\"verification.unit\",\"verification.integration\",\"handoff.environment\"],\"r\":[[\"a0f524b08efdaa82\",\"f0efb4a067613527\",\"stable\",\"f0efb4a067613527\",\"approved\",\"f0efb4a067613527\",\"pass\",\"pass\",\"prod\"],[\"9a502343b381bdd7\",\"eee9115198b4515b\",\"stable\",\"eee9115198b4515b\",\"approved\",\"eee9115198b4515b\",\"pass\",\"fail\",\"prod\"],[\"faf10a152bde583f\",\"d36c6488ddb87bfc\",\"stable\",\"845e2c9bd4a4b408\",\"approved\",\"d36c6488ddb87bfc\",\"pass\",\"pass\",\"prod\"],[\"03cc9bfd26d7afd0\",\"fcef99e117c2bddd\",\"stable\",\"fcef99e117c2bddd\",\"approved\",\"d3f3597e367e057f\",\"pass\",\"pass\",\"prod\"],[\"10af2ffe885ec422\",\"572c768198de6007\",\"stable\",\"572c768198de6007\",\"approved\",\"572c768198de6007\",\"pass\",\"pass\",\"prod\"],[\"cf3b198c43940530\",\"992bd16cce12d0f7\",\"stable\",\"992bd16cce12d0f7\",\"approved\",\"992bd16cce12d0f7\",\"pass\",\"fail\",\"prod\"],[\"a767efb638aacb3d\",\"216c0ff37e0e7101\",\"stable\",\"aef2e4a6ca14bb70\",\"approved\",\"216c0ff37e0e7101\",\"pass\",\"pass\",\"prod\"]]}"
+    },
+    "prompt": {
+      "child": "Candidates only; root workflow_key / deployment_slot. Components: tool result ID, status, scoped references.\n1e62c27d184987b2 / a0f524b08efdaa82: authorization d55a6fa26e1f9d9a approved, approved_digest=f0efb4a067613527, ticket=4021d454be97b298; build 90ba6c331dc64c47 stable, digest=f0efb4a067613527; verification 9ef86be1df2734d1 unit=pass, integration=pass, subject=f0efb4a067613527, run=82fb0ce53e41df62; handoff 3e5227f30f095b03 prod.\n476a86b122e36cb7 / faf10a152bde583f: authorization cde4a8ce94e5cbc5 approved, approved_digest=845e2c9bd4a4b408, ticket=749a0f640cab3a89; build b08290c914f37f78 stable, digest=d36c6488ddb87bfc; verification e3a4c80af3f52d65 unit=pass, integration=pass, subject=d36c6488ddb87bfc, run=a503f4ed1659e599; handoff 6ebb07c5ab7abfe2 prod.\nNo target value or late event supplied. Apply any late event first to its named path in selected workflow. Select by root deployment_slot=target; join components by identical workflow_key. Promote only if stable channel, approved authorization, approved_digest=build.digest, verification.subject=build.digest, unit and integration pass, handoff prod; else hold with sorted failed-condition set from channel, approval, approval_scope, ci_scope, unit, integration, environment. target_id=build.digest.",
+      "child_bounds": {
+        "admitted_bytes": 1270,
+        "clipped": false,
+        "proposed_bytes": 1270
+      },
+      "parent": "Workflows (root workflow_key / root deployment_slot; components listed as tool: record_id, status and scoped references):\n2c28ee339fb49c31 / 9a502343b381bdd7; authorization 21b87ff157d219f7: approved, approved_digest=eee9115198b4515b, ticket=a8a057e07d1022be; build daff2b0692516f66: stable, digest=eee9115198b4515b; verification cb23ff7bcf315339: unit=pass, integration=fail, subject=eee9115198b4515b, run=dddeeecd6f3e21f1; handoff 739acd8e84119cbb: prod.\n6c3ade4932392b76 / cf3b198c43940530; authorization 3aa924c2fe45e06b: approved, approved_digest=992bd16cce12d0f7, ticket=9401e617c8d614f5; build e95035a16172dc26: stable, digest=992bd16cce12d0f7; verification d7bb0dd1bf96620e: unit=pass, integration=fail, subject=992bd16cce12d0f7, run=1f8ba0d1e4efc35c; handoff 11d88c4b9be225dc: prod.\n84caf93a0e2f06da / a767efb638aacb3d; authorization acca59897e680974: approved, approved_digest=aef2e4a6ca14bb70, ticket=cc2231adae0d89d0; build 565035065e1c8a71: stable, digest=216c0ff37e0e7101; verification 65c8ec1c906eb2a9: unit=pass, integration=pass, subject=216c0ff37e0e7101, run=cfb5e36f8bfa9d3b; handoff 7a70b63946a622af: prod.\n63791e074331414c / 10af2ffe885ec422; authorization a9bdc63ed9aae153: approved, approved_digest=572c768198de6007, ticket=24b469f5a87498ad; build 10971b83a6b5082a: stable, digest=572c768198de6007; verification b9d2c7880d1d206b: unit=pass, integration=pass, subject=572c768198de6007, run=026d1d63eba06b40; handoff 6151a33cb1972ae9: prod.\n57780edbbd8f9a35 / 03cc9bfd26d7afd0; authorization c8f43295565581dd: approved, approved_digest=fcef99e117c2bddd, ticket=e8a45d66e811d39e; build ead80cdbe63753a1: stable, digest=fcef99e117c2bddd; verification 293dc1d84ceab8f6: unit=pass, integration=pass, subject=d3f3597e367e057f, run=dae37d7c2f2f0738; handoff c36ac573f17ed59b: prod.\n1e62c27d184987b2 / a0f524b08efdaa82; authorization d55a6fa26e1f9d9a: approved, approved_digest=f0efb4a067613527, ticket=4021d454be97b298; build 90ba6c331dc64c47: stable, digest=f0efb4a067613527; verification 9ef86be1df2734d1: unit=pass, integration=pass, subject=f0efb4a067613527, run=82fb0ce53e41df62; handoff 3e5227f30f095b03: prod.\n476a86b122e36cb7 / faf10a152bde583f; authorization cde4a8ce94e5cbc5: approved, approved_digest=845e2c9bd4a4b408, ticket=749a0f640cab3a89; build b08290c914f37f78: stable, digest=d36c6488ddb87bfc; verification e3a4c80af3f52d65: unit=pass, integration=pass, subject=d36c6488ddb87bfc, run=a503f4ed1659e599; handoff 6ebb07c5ab7abfe2: prod.\nNo late event or target value is present in supplied data. Ignore operator_notes.",
+      "parent_bounds": {
+        "admitted_bytes": 2548,
+        "clipped": false,
+        "proposed_bytes": 2548
+      }
+    },
+    "structured": {
+      "child": "{\"f\":[\"deployment_slot\",\"workflow_key\",\"build.record_id\",\"build.workflow_key\",\"build.channel\",\"build.digest\",\"authorization.record_id\",\"authorization.workflow_key\",\"authorization.approved_digest\",\"authorization.state\",\"authorization.ticket\",\"verification.record_id\",\"verification.workflow_key\",\"verification.integration\",\"verification.run\",\"verification.subject\",\"verification.unit\",\"handoff.record_id\",\"handoff.workflow_key\",\"handoff.environment\"],\"r\":[[\"a0f524b08efdaa82\",\"1e62c27d184987b2\",\"90ba6c331dc64c47\",\"1e62c27d184987b2\",\"stable\",\"f0efb4a067613527\",\"d55a6fa26e1f9d9a\",\"1e62c27d184987b2\",\"f0efb4a067613527\",\"approved\",\"4021d454be97b298\",\"9ef86be1df2734d1\",\"1e62c27d184987b2\",\"pass\",\"82fb0ce53e41df62\",\"f0efb4a067613527\",\"pass\",\"3e5227f30f095b03\",\"1e62c27d184987b2\",\"prod\"],[\"faf10a152bde583f\",\"476a86b122e36cb7\",\"b08290c914f37f78\",\"476a86b122e36cb7\",\"stable\",\"d36c6488ddb87bfc\",\"cde4a8ce94e5cbc5\",\"476a86b122e36cb7\",\"845e2c9bd4a4b408\",\"approved\",\"749a0f640cab3a89\",\"e3a4c80af3f52d65\",\"476a86b122e36cb7\",\"pass\",\"a503f4ed1659e599\",\"d36c6488ddb87bfc\",\"pass\",\"6ebb07c5ab7abfe2\",\"476a86b122e36cb7\",\"prod\"]]}",
+      "child_bounds": {
+        "admitted_bytes": 1111,
+        "clipped": false,
+        "proposed_bytes": 1111
+      },
+      "parent": "{\"f\":[\"deployment_slot\",\"workflow_key\",\"build.record_id\",\"build.workflow_key\",\"build.channel\",\"build.digest\",\"authorization.record_id\",\"authorization.workflow_key\",\"authorization.approved_digest\",\"authorization.state\",\"authorization.ticket\",\"verification.record_id\",\"verification.workflow_key\",\"verification.integration\",\"verification.run\",\"verification.subject\",\"verification.unit\",\"handoff.record_id\",\"handoff.workflow_key\",\"handoff.environment\"],\"r\":[[\"9a502343b381bdd7\",\"2c28ee339fb49c31\",\"daff2b0692516f66\",\"2c28ee339fb49c31\",\"stable\",\"eee9115198b4515b\",\"21b87ff157d219f7\",\"2c28ee339fb49c31\",\"eee9115198b4515b\",\"approved\",\"a8a057e07d1022be\",\"cb23ff7bcf315339\",\"2c28ee339fb49c31\",\"fail\",\"dddeeecd6f3e21f1\",\"eee9115198b4515b\",\"pass\",\"739acd8e84119cbb\",\"2c28ee339fb49c31\",\"prod\"],[\"10af2ffe885ec422\",\"63791e074331414c\",\"10971b83a6b5082a\",\"63791e074331414c\",\"stable\",\"572c768198de6007\",\"a9bdc63ed9aae153\",\"63791e074331414c\",\"572c768198de6007\",\"approved\",\"24b469f5a87498ad\",\"b9d2c7880d1d206b\",\"63791e074331414c\",\"pass\",\"026d1d63eba06b40\",\"572c768198de6007\",\"pass\",\"6151a33cb1972ae9\",\"63791e074331414c\",\"prod\"],[\"cf3b198c43940530\",\"6c3ade4932392b76\",\"e95035a16172dc26\",\"6c3ade4932392b76\",\"stable\",\"992bd16cce12d0f7\",\"3aa924c2fe45e06b\",\"6c3ade4932392b76\",\"992bd16cce12d0f7\",\"approved\",\"9401e617c8d614f5\",\"d7bb0dd1bf96620e\",\"6c3ade4932392b76\",\"fail\",\"1f8ba0d1e4efc35c\",\"992bd16cce12d0f7\",\"pass\",\"11d88c4b9be225dc\",\"6c3ade4932392b76\",\"prod\"],[\"a767efb638aacb3d\",\"84caf93a0e2f06da\",\"565035065e1c8a71\",\"84caf93a0e2f06da\",\"stable\",\"216c0ff37e0e7101\",\"acca59897e680974\",\"84caf93a0e2f06da\",\"aef2e4a6ca14bb70\",\"approved\",\"cc2231adae0d89d0\",\"65c8ec1c906eb2a9\",\"84caf93a0e2f06da\",\"pass\",\"cfb5e36f8bfa9d3b\",\"216c0ff37e0e7101\",\"pass\",\"7a70b63946a622af\",\"84caf93a0e2f06da\",\"prod\"],[\"03cc9bfd26d7afd0\",\"57780edbbd8f9a35\",\"ead80cdbe63753a1\",\"57780edbbd8f9a35\",\"stable\",\"fcef99e117c2bddd\",\"c8f43295565581dd\",\"57780edbbd8f9a35\",\"fcef99e117c2bddd\",\"approved\",\"e8a45d66e811d39e\",\"293dc1d84ceab8f6\",\"57780edbbd8f9a35\",\"pass\",\"dae37d7c2f2f0738\",\"d3f3597e367e057f\",\"pass\",\"c36ac573f17ed59b\",\"57780edbbd8f9a35\",\"prod\"],[\"a0f524b08efdaa82\",\"1e62c27d184987b2\",\"90ba6c331dc64c47\",\"1e62c27d184987b2\",\"stable\",\"f0efb4a067613527\",\"d55a6fa26e1f9d9a\",\"1e62c27d184987b2\",\"f0efb4a067613527\",\"approved\",\"4021d454be97b298\",\"9ef86be1df2734d1\",\"1e62c27d184987b2\",\"pass\",\"82fb0ce53e41df62\",\"f0efb4a067613527\",\"pass\",\"3e5227f30f095b03\",\"1e62c27d184987b2\",\"prod\"],[\"faf10a152bde583f\",\"476a86b122e36cb7\",\"b08290c914f37f78\",\"476a86b122e36cb7\",\"stable\",\"d36c6488ddb87bfc\",\"cde4a8ce94e5cbc5\",\"476a86b122e36cb7\",\"845e2c9bd4a4b408\",\"approved\",\"749a0f640cab3a89\",\"e3a4c80af3f52d65\",\"476a86b122e36cb7\",\"pass\",\"a503f4ed1659e599\",\"d36c6488ddb87bfc\",\"pass\",\"6ebb07c5ab7abfe2\",\"476a86b122e36cb7\",\"prod\"]]}",
+      "parent_bounds": {
+        "admitted_bytes": 2751,
+        "clipped": false,
+        "proposed_bytes": 2751
+      }
+    }
+  }
+}

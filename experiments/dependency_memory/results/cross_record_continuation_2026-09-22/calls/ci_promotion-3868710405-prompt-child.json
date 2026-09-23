@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "ci_promotion-3868710405-prompt-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0135255",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 3,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Candidates only; root workflow_key / deployment_slot. Components: tool result ID, status, scoped references.\\n1e62c27d184987b2 / a0f524b08efdaa82: authorization d55a6fa26e1f9d9a approved, approved_digest=f0efb4a067613527, ticket=4021d454be97b298; build 90ba6c331dc64c47 stable, digest=f0efb4a067613527; verification 9ef86be1df2734d1 unit=pass, integration=pass, subject=f0efb4a067613527, run=82fb0ce53e41df62; handoff 3e5227f30f095b03 prod.\\n476a86b122e36cb7 / faf10a152bde583f: authorization cde4a8ce94e5cbc5 approved, approved_digest=845e2c9bd4a4b408, ticket=749a0f640cab3a89; build b08290c914f37f78 stable, digest=d36c6488ddb87bfc; verification e3a4c80af3f52d65 unit=pass, integration=pass, subject=d36c6488ddb87bfc, run=a503f4ed1659e599; handoff 6ebb07c5ab7abfe2 prod.\\nNo target value or late event supplied. Apply any late event first to its named path in selected workflow. Select by root deployment_slot=target; join components by identical workflow_key. Promote only if stable channel, approved authorization, approved_digest=build.digest, verification.subject=build.digest, unit and integration pass, handoff prod; else hold with sorted failed-condition set from channel, approval, approval_scope, ci_scope, unit, integration, environment. target_id=build.digest.\"}",
+  "request": {
+    "instruction": "Only the memory string survives this boundary. The decision rule repeats at execution. Write a compact, data-first prose handoff. Copy every workflow's exact root ID, component ID, status and scoped reference. State which workflow each tool result belongs to; do not collapse an approval or result into a generic 'passed'. Preserve facts for any later target and event. Ignore operator notes. Return {\"memory\":\"...\"}. Retain only the two named candidates in at most 2600 UTF-8 bytes. Select the root record whose deployment_slot equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. Promote only if build.channel=stable, authorization.state=approved, authorization.approved_digest=build.digest, verification.subject=build.digest, verification.unit and integration both pass, and handoff.environment=prod. Otherwise hold with the exact sorted set of channel, approval, approval_scope, ci_scope, unit, integration, environment for each failed condition. Return target_id=build.digest. Apply the late event first.",
+    "observation": {
+      "candidates": [
+        "a0f524b08efdaa82",
+        "faf10a152bde583f"
+      ],
+      "previous_memory": "Workflows (root workflow_key / root deployment_slot; components listed as tool: record_id, status and scoped references):\n2c28ee339fb49c31 / 9a502343b381bdd7; authorization 21b87ff157d219f7: approved, approved_digest=eee9115198b4515b, ticket=a8a057e07d1022be; build daff2b0692516f66: stable, digest=eee9115198b4515b; verification cb23ff7bcf315339: unit=pass, integration=fail, subject=eee9115198b4515b, run=dddeeecd6f3e21f1; handoff 739acd8e84119cbb: prod.\n6c3ade4932392b76 / cf3b198c43940530; authorization 3aa924c2fe45e06b: approved, approved_digest=992bd16cce12d0f7, ticket=9401e617c8d614f5; build e95035a16172dc26: stable, digest=992bd16cce12d0f7; verification d7bb0dd1bf96620e: unit=pass, integration=fail, subject=992bd16cce12d0f7, run=1f8ba0d1e4efc35c; handoff 11d88c4b9be225dc: prod.\n84caf93a0e2f06da / a767efb638aacb3d; authorization acca59897e680974: approved, approved_digest=aef2e4a6ca14bb70, ticket=cc2231adae0d89d0; build 565035065e1c8a71: stable, digest=216c0ff37e0e7101; verification 65c8ec1c906eb2a9: unit=pass, integration=pass, subject=216c0ff37e0e7101, run=cfb5e36f8bfa9d3b; handoff 7a70b63946a622af: prod.\n63791e074331414c / 10af2ffe885ec422; authorization a9bdc63ed9aae153: approved, approved_digest=572c768198de6007, ticket=24b469f5a87498ad; build 10971b83a6b5082a: stable, digest=572c768198de6007; verification b9d2c7880d1d206b: unit=pass, integration=pass, subject=572c768198de6007, run=026d1d63eba06b40; handoff 6151a33cb1972ae9: prod.\n57780edbbd8f9a35 / 03cc9bfd26d7afd0; authorization c8f43295565581dd: approved, approved_digest=fcef99e117c2bddd, ticket=e8a45d66e811d39e; build ead80cdbe63753a1: stable, digest=fcef99e117c2bddd; verification 293dc1d84ceab8f6: unit=pass, integration=pass, subject=d3f3597e367e057f, run=dae37d7c2f2f0738; handoff c36ac573f17ed59b: prod.\n1e62c27d184987b2 / a0f524b08efdaa82; authorization d55a6fa26e1f9d9a: approved, approved_digest=f0efb4a067613527, ticket=4021d454be97b298; build 90ba6c331dc64c47: stable, digest=f0efb4a067613527; verification 9ef86be1df2734d1: unit=pass, integration=pass, subject=f0efb4a067613527, run=82fb0ce53e41df62; handoff 3e5227f30f095b03: prod.\n476a86b122e36cb7 / faf10a152bde583f; authorization cde4a8ce94e5cbc5: approved, approved_digest=845e2c9bd4a4b408, ticket=749a0f640cab3a89; build b08290c914f37f78: stable, digest=d36c6488ddb87bfc; verification e3a4c80af3f52d65: unit=pass, integration=pass, subject=d36c6488ddb87bfc, run=a503f4ed1659e599; handoff 6ebb07c5ab7abfe2: prod.\nNo late event or target value is present in supplied data. Ignore operator_notes."
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "ca3a8c76eea185fb1a00a2a9e5f3c5b1c91b805f281794cfd715db1ff54314a7",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Candidates only; root workflow_key / deployment_slot. Components: tool result ID, status, scoped references.\n1e62c27d184987b2 / a0f524b08efdaa82: authorization d55a6fa26e1f9d9a approved, approved_digest=f0efb4a067613527, ticket=4021d454be97b298; build 90ba6c331dc64c47 stable, digest=f0efb4a067613527; verification 9ef86be1df2734d1 unit=pass, integration=pass, subject=f0efb4a067613527, run=82fb0ce53e41df62; handoff 3e5227f30f095b03 prod.\n476a86b122e36cb7 / faf10a152bde583f: authorization cde4a8ce94e5cbc5 approved, approved_digest=845e2c9bd4a4b408, ticket=749a0f640cab3a89; build b08290c914f37f78 stable, digest=d36c6488ddb87bfc; verification e3a4c80af3f52d65 unit=pass, integration=pass, subject=d36c6488ddb87bfc, run=a503f4ed1659e599; handoff 6ebb07c5ab7abfe2 prod.\nNo target value or late event supplied. Apply any late event first to its named path in selected workflow. Select by root deployment_slot=target; join components by identical workflow_key. Promote only if stable channel, approved authorization, approved_digest=build.digest, verification.subject=build.digest, unit and integration pass, handoff prod; else hold with sorted failed-condition set from channel, approval, approval_scope, ci_scope, unit, integration, environment. target_id=build.digest."
+  },
+  "started_at": "2026-09-23T00:26:52.017258+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3963,
+    "outputTokens": 612,
+    "reasoningOutputTokens": 193,
+    "totalTokens": 4575
+  },
+  "usage_events": 1,
+  "wall_seconds": 14.171922200010158,
+  "wire_body_byte_bound": 20286
+}

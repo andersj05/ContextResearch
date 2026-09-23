@@ -1,0 +1,478 @@
+{
+  "case_id": "data_pipeline-1854593748",
+  "checks": {
+    "automatic_child": {
+      "candidate_bytes_read": 1274,
+      "cpu_ns": 531500,
+      "exact_ids": true,
+      "passed": true,
+      "reason": "passed",
+      "relationships": true,
+      "required_id_fields": 19,
+      "source_bytes_read": 6944
+    },
+    "automatic_parent": {
+      "candidate_bytes_read": 3284,
+      "cpu_ns": 905100,
+      "exact_ids": true,
+      "passed": true,
+      "reason": "passed",
+      "relationships": true,
+      "required_id_fields": 19,
+      "source_bytes_read": 16618
+    },
+    "checked_child_proposal": {
+      "candidate_bytes_read": 1274,
+      "cpu_ns": 718200,
+      "exact_ids": true,
+      "passed": true,
+      "reason": "passed",
+      "relationships": true,
+      "required_id_fields": 19,
+      "source_bytes_read": 6944
+    },
+    "child_fallback": false,
+    "parent_fallback": false,
+    "structured_parent": {
+      "candidate_bytes_read": 3284,
+      "cpu_ns": 791700,
+      "exact_ids": true,
+      "passed": true,
+      "reason": "passed",
+      "relationships": true,
+      "required_id_fields": 19,
+      "source_bytes_read": 16618
+    }
+  },
+  "decisions": [
+    {
+      "arm": "full",
+      "future_id": "data_pipeline-1854593748-0",
+      "identity": "data_pipeline-1854593748-0-full",
+      "memory_bytes": 9486,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "automatic",
+      "future_id": "data_pipeline-1854593748-0",
+      "identity": "data_pipeline-1854593748-0-automatic",
+      "memory_bytes": 1274,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "structured",
+      "future_id": "data_pipeline-1854593748-0",
+      "identity": "data_pipeline-1854593748-0-structured",
+      "memory_bytes": 1274,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "prompt",
+      "future_id": "data_pipeline-1854593748-0",
+      "identity": "data_pipeline-1854593748-0-prompt",
+      "memory_bytes": 1513,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "indexed_raw",
+      "future_id": "data_pipeline-1854593748-0",
+      "identity": "data_pipeline-1854593748-0-indexed_raw",
+      "memory_bytes": 1356,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "checked",
+      "future_id": "data_pipeline-1854593748-0",
+      "identity": "data_pipeline-1854593748-0-checked",
+      "memory_bytes": 1274,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "direct",
+      "future_id": "data_pipeline-1854593748-0",
+      "identity": "data_pipeline-1854593748-0-direct",
+      "memory_bytes": 666,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "indexed_projected",
+      "future_id": "data_pipeline-1854593748-0",
+      "identity": "data_pipeline-1854593748-0-indexed_projected",
+      "memory_bytes": 872,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "checked",
+      "future_id": "data_pipeline-1854593748-1",
+      "identity": "data_pipeline-1854593748-1-checked",
+      "memory_bytes": 1274,
+      "transport_failure": false,
+      "truth": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      }
+    },
+    {
+      "arm": "indexed_projected",
+      "future_id": "data_pipeline-1854593748-1",
+      "identity": "data_pipeline-1854593748-1-indexed_projected",
+      "memory_bytes": 872,
+      "transport_failure": false,
+      "truth": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      }
+    },
+    {
+      "arm": "full",
+      "future_id": "data_pipeline-1854593748-1",
+      "identity": "data_pipeline-1854593748-1-full",
+      "memory_bytes": 9486,
+      "transport_failure": false,
+      "truth": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      }
+    },
+    {
+      "arm": "direct",
+      "future_id": "data_pipeline-1854593748-1",
+      "identity": "data_pipeline-1854593748-1-direct",
+      "memory_bytes": 666,
+      "transport_failure": false,
+      "truth": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      }
+    },
+    {
+      "arm": "prompt",
+      "future_id": "data_pipeline-1854593748-1",
+      "identity": "data_pipeline-1854593748-1-prompt",
+      "memory_bytes": 1513,
+      "transport_failure": false,
+      "truth": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      }
+    },
+    {
+      "arm": "structured",
+      "future_id": "data_pipeline-1854593748-1",
+      "identity": "data_pipeline-1854593748-1-structured",
+      "memory_bytes": 1274,
+      "transport_failure": false,
+      "truth": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      }
+    },
+    {
+      "arm": "automatic",
+      "future_id": "data_pipeline-1854593748-1",
+      "identity": "data_pipeline-1854593748-1-automatic",
+      "memory_bytes": 1274,
+      "transport_failure": false,
+      "truth": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      }
+    },
+    {
+      "arm": "indexed_raw",
+      "future_id": "data_pipeline-1854593748-1",
+      "identity": "data_pipeline-1854593748-1-indexed_raw",
+      "memory_bytes": 1356,
+      "transport_failure": false,
+      "truth": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      }
+    },
+    {
+      "arm": "structured",
+      "future_id": "data_pipeline-1854593748-2",
+      "identity": "data_pipeline-1854593748-2-structured",
+      "memory_bytes": 1274,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "arm": "direct",
+      "future_id": "data_pipeline-1854593748-2",
+      "identity": "data_pipeline-1854593748-2-direct",
+      "memory_bytes": 666,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "arm": "prompt",
+      "future_id": "data_pipeline-1854593748-2",
+      "identity": "data_pipeline-1854593748-2-prompt",
+      "memory_bytes": 1513,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "arm": "checked",
+      "future_id": "data_pipeline-1854593748-2",
+      "identity": "data_pipeline-1854593748-2-checked",
+      "memory_bytes": 1274,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "arm": "automatic",
+      "future_id": "data_pipeline-1854593748-2",
+      "identity": "data_pipeline-1854593748-2-automatic",
+      "memory_bytes": 1274,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "arm": "full",
+      "future_id": "data_pipeline-1854593748-2",
+      "identity": "data_pipeline-1854593748-2-full",
+      "memory_bytes": 9486,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "arm": "indexed_projected",
+      "future_id": "data_pipeline-1854593748-2",
+      "identity": "data_pipeline-1854593748-2-indexed_projected",
+      "memory_bytes": 872,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "arm": "indexed_raw",
+      "future_id": "data_pipeline-1854593748-2",
+      "identity": "data_pipeline-1854593748-2-indexed_raw",
+      "memory_bytes": 1356,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    }
+  ],
+  "family": "data_pipeline",
+  "index": {
+    "038d9d417593710a": "[{\"data\":{\"output_dataset\":\"5afbbd1a07e025d3\",\"record_id\":\"2457e2c5db5c199f\",\"run\":\"8b68278b93d8bb38\",\"state\":\"pass\",\"workflow_key\":\"008d35874c424b7e\"},\"tool\":\"extract\"},{\"data\":{\"approval\":\"bf86a5ca8b6b4e35\",\"approved_output\":\"d5a0a48cb1689f3f\",\"record_id\":\"64c6b8865d8bf5cb\",\"state\":\"approved\",\"workflow_key\":\"008d35874c424b7e\"},\"tool\":\"consent\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft 0cc4ee7c2376d994. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 0cc4ee7c2376d994. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 0cc4ee7c2376d994. Dashboard labels and timings are not gate evidence. \",\"pipeline_run\":\"038d9d417593710a\",\"workflow_key\":\"008d35874c424b7e\"},\"tool\":\"root\"},{\"data\":{\"check\":\"ab9a7d9d75ca0279\",\"record_id\":\"08d22a06cdeddb5f\",\"state\":\"pass\",\"subject_dataset\":\"d5a0a48cb1689f3f\",\"workflow_key\":\"008d35874c424b7e\"},\"tool\":\"quality\"},{\"data\":{\"input_dataset\":\"5afbbd1a07e025d3\",\"output_dataset\":\"af05f5dbaec743fa\",\"record_id\":\"1e071a7df2699d85\",\"run\":\"d70dc811ada23d56\",\"state\":\"pass\",\"workflow_key\":\"008d35874c424b7e\"},\"tool\":\"transform\"},{\"data\":{\"input_dataset\":\"af05f5dbaec743fa\",\"output_dataset\":\"d5a0a48cb1689f3f\",\"record_id\":\"3010a48a3fb90ba3\",\"run\":\"259fca92f5eaf3ee\",\"state\":\"pass\",\"workflow_key\":\"008d35874c424b7e\"},\"tool\":\"load\"}]",
+    "1bfa186615c5dca1": "[{\"data\":{\"input_dataset\":\"1cb52266d4be3bd8\",\"output_dataset\":\"0e7b184d7186955d\",\"record_id\":\"0a36b98de62857a9\",\"run\":\"9112f52e335730e8\",\"state\":\"pass\",\"workflow_key\":\"55662f12f61ac060\"},\"tool\":\"transform\"},{\"data\":{\"check\":\"d3f4e214773a37a8\",\"record_id\":\"3b5b258e5adf86d5\",\"state\":\"pass\",\"subject_dataset\":\"f6b861ef0e02efea\",\"workflow_key\":\"55662f12f61ac060\"},\"tool\":\"quality\"},{\"data\":{\"input_dataset\":\"0e7b184d7186955d\",\"output_dataset\":\"f6b861ef0e02efea\",\"record_id\":\"d80a9f409a3b929c\",\"run\":\"83ffc920e93cca58\",\"state\":\"pass\",\"workflow_key\":\"55662f12f61ac060\"},\"tool\":\"load\"},{\"data\":{\"approval\":\"10baf7f5fb8f196e\",\"approved_output\":\"f6b861ef0e02efea\",\"record_id\":\"3e4414488be9a758\",\"state\":\"approved\",\"workflow_key\":\"55662f12f61ac060\"},\"tool\":\"consent\"},{\"data\":{\"output_dataset\":\"1cb52266d4be3bd8\",\"record_id\":\"f92396436887f994\",\"run\":\"0f04e0d28cbc77b0\",\"state\":\"pass\",\"workflow_key\":\"55662f12f61ac060\"},\"tool\":\"extract\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft 57fc9c464d4916fb. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 57fc9c464d4916fb. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 57fc9c464d4916fb. Dashboard labels and timings are not gate evidence. \",\"pipeline_run\":\"1bfa186615c5dca1\",\"workflow_key\":\"55662f12f61ac060\"},\"tool\":\"root\"}]",
+    "2e103a4eb853eba5": "[{\"data\":{\"input_dataset\":\"c8631c7772b79a3e\",\"output_dataset\":\"9d1abb3e72eb76dd\",\"record_id\":\"4b547fd83d4557ac\",\"run\":\"5993565b8b882041\",\"state\":\"pass\",\"workflow_key\":\"cc418f4447982040\"},\"tool\":\"transform\"},{\"data\":{\"approval\":\"63f1d02b84eb6b10\",\"approved_output\":\"0031f3d6218a45ee\",\"record_id\":\"8ded862275704a86\",\"state\":\"approved\",\"workflow_key\":\"cc418f4447982040\"},\"tool\":\"consent\"},{\"data\":{\"check\":\"2ed295c256d5d4a9\",\"record_id\":\"6f6aa3d1c10ac0d0\",\"state\":\"fail\",\"subject_dataset\":\"0031f3d6218a45ee\",\"workflow_key\":\"cc418f4447982040\"},\"tool\":\"quality\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft b1c193cf1bd802a3. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft b1c193cf1bd802a3. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft b1c193cf1bd802a3. Dashboard labels and timings are not gate evidence. \",\"pipeline_run\":\"2e103a4eb853eba5\",\"workflow_key\":\"cc418f4447982040\"},\"tool\":\"root\"},{\"data\":{\"input_dataset\":\"9d1abb3e72eb76dd\",\"output_dataset\":\"0031f3d6218a45ee\",\"record_id\":\"3b8222fe7cf6e278\",\"run\":\"918f681e5bada4fb\",\"state\":\"pass\",\"workflow_key\":\"cc418f4447982040\"},\"tool\":\"load\"},{\"data\":{\"output_dataset\":\"c8631c7772b79a3e\",\"record_id\":\"9f189cf65242d998\",\"run\":\"484398461c6706ef\",\"state\":\"pass\",\"workflow_key\":\"cc418f4447982040\"},\"tool\":\"extract\"}]",
+    "758bb6d8d660cc4b": "[{\"data\":{\"input_dataset\":\"2b917dfd7e04c8dd\",\"output_dataset\":\"e705a8b34af8d645\",\"record_id\":\"a3fcfe9b0fb3b2a6\",\"run\":\"b9fcd30c27ecff83\",\"state\":\"pass\",\"workflow_key\":\"96760bd24091ffa2\"},\"tool\":\"load\"},{\"data\":{\"input_dataset\":\"bf54a315301552e6\",\"output_dataset\":\"2b917dfd7e04c8dd\",\"record_id\":\"d2b748f88f19a750\",\"run\":\"6aa0035ab3c66ad3\",\"state\":\"pass\",\"workflow_key\":\"96760bd24091ffa2\"},\"tool\":\"transform\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft ca8a854a841e8704. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft ca8a854a841e8704. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft ca8a854a841e8704. Dashboard labels and timings are not gate evidence. \",\"pipeline_run\":\"758bb6d8d660cc4b\",\"workflow_key\":\"96760bd24091ffa2\"},\"tool\":\"root\"},{\"data\":{\"check\":\"1fd5977e636ca28a\",\"record_id\":\"3c13bcfbc1fc7769\",\"state\":\"pass\",\"subject_dataset\":\"e705a8b34af8d645\",\"workflow_key\":\"96760bd24091ffa2\"},\"tool\":\"quality\"},{\"data\":{\"output_dataset\":\"bf54a315301552e6\",\"record_id\":\"3dd535a8f0969c68\",\"run\":\"3be9ae9aa4930c37\",\"state\":\"pass\",\"workflow_key\":\"96760bd24091ffa2\"},\"tool\":\"extract\"},{\"data\":{\"approval\":\"723a4c0417a7be82\",\"approved_output\":\"adf3e5d75d77c774\",\"record_id\":\"5be65674cedcdc66\",\"state\":\"approved\",\"workflow_key\":\"96760bd24091ffa2\"},\"tool\":\"consent\"}]",
+    "79bae1db394ca502": "[{\"data\":{\"output_dataset\":\"fab7ebe4d26e5061\",\"record_id\":\"0845ed06696c5580\",\"run\":\"5d1ee125790194ac\",\"state\":\"pass\",\"workflow_key\":\"f2b2a592096c0cc1\"},\"tool\":\"extract\"},{\"data\":{\"check\":\"eb11db2deba660ad\",\"record_id\":\"f9de9229f0ab3b52\",\"state\":\"pass\",\"subject_dataset\":\"b0baf257f444b9cf\",\"workflow_key\":\"f2b2a592096c0cc1\"},\"tool\":\"quality\"},{\"data\":{\"input_dataset\":\"b8334246b5270e63\",\"output_dataset\":\"55be71152c6b7b72\",\"record_id\":\"f09252308f739e99\",\"run\":\"df88e7b78f95a81b\",\"state\":\"pass\",\"workflow_key\":\"f2b2a592096c0cc1\"},\"tool\":\"transform\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft e8d3d5c85dcdc51b. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft e8d3d5c85dcdc51b. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft e8d3d5c85dcdc51b. Dashboard labels and timings are not gate evidence. \",\"pipeline_run\":\"79bae1db394ca502\",\"workflow_key\":\"f2b2a592096c0cc1\"},\"tool\":\"root\"},{\"data\":{\"input_dataset\":\"55be71152c6b7b72\",\"output_dataset\":\"b0baf257f444b9cf\",\"record_id\":\"b305c0ec7675882d\",\"run\":\"fad7b0b18f529dfb\",\"state\":\"pass\",\"workflow_key\":\"f2b2a592096c0cc1\"},\"tool\":\"load\"},{\"data\":{\"approval\":\"b05b2294ca1e7116\",\"approved_output\":\"b0baf257f444b9cf\",\"record_id\":\"8d4b4ffdc27da376\",\"state\":\"approved\",\"workflow_key\":\"f2b2a592096c0cc1\"},\"tool\":\"consent\"}]",
+    "8264643b28a1fdc5": "[{\"data\":{\"check\":\"04098a6eaca00eb7\",\"record_id\":\"2ba3effabdeb4e07\",\"state\":\"pass\",\"subject_dataset\":\"d0880fce156b3c83\",\"workflow_key\":\"84dfcbc782564bf5\"},\"tool\":\"quality\"},{\"data\":{\"output_dataset\":\"e8ed08512b78cbdd\",\"record_id\":\"f73abde6117753d8\",\"run\":\"f9157e82cdb774be\",\"state\":\"pass\",\"workflow_key\":\"84dfcbc782564bf5\"},\"tool\":\"extract\"},{\"data\":{\"input_dataset\":\"d64fba16db202407\",\"output_dataset\":\"69ddaeaefbfff047\",\"record_id\":\"c8a89f8ccfd51807\",\"run\":\"552f102339e68c9f\",\"state\":\"pass\",\"workflow_key\":\"84dfcbc782564bf5\"},\"tool\":\"transform\"},{\"data\":{\"approval\":\"1a7c887e2ccc7298\",\"approved_output\":\"d0880fce156b3c83\",\"record_id\":\"16fb27b0b6a676a3\",\"state\":\"approved\",\"workflow_key\":\"84dfcbc782564bf5\"},\"tool\":\"consent\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft 96d4fb9505a195ba. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 96d4fb9505a195ba. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 96d4fb9505a195ba. Dashboard labels and timings are not gate evidence. \",\"pipeline_run\":\"8264643b28a1fdc5\",\"workflow_key\":\"84dfcbc782564bf5\"},\"tool\":\"root\"},{\"data\":{\"input_dataset\":\"69ddaeaefbfff047\",\"output_dataset\":\"d0880fce156b3c83\",\"record_id\":\"898c2ae1e66f2076\",\"run\":\"532f9921d4c40761\",\"state\":\"pass\",\"workflow_key\":\"84dfcbc782564bf5\"},\"tool\":\"load\"}]",
+    "b9bf2c42dac6a097": "[{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft ef598fb072fda2f6. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft ef598fb072fda2f6. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft ef598fb072fda2f6. Dashboard labels and timings are not gate evidence. \",\"pipeline_run\":\"b9bf2c42dac6a097\",\"workflow_key\":\"a114bc177d602973\"},\"tool\":\"root\"},{\"data\":{\"input_dataset\":\"3de971ccf44a6d2b\",\"output_dataset\":\"43a4f1ccd047ff49\",\"record_id\":\"37d178c08d30848d\",\"run\":\"68acf8374b546817\",\"state\":\"pass\",\"workflow_key\":\"a114bc177d602973\"},\"tool\":\"transform\"},{\"data\":{\"approval\":\"b1ef40cedacacb5f\",\"approved_output\":\"0236211b5099a194\",\"record_id\":\"7372040a03555ed6\",\"state\":\"approved\",\"workflow_key\":\"a114bc177d602973\"},\"tool\":\"consent\"},{\"data\":{\"output_dataset\":\"3de971ccf44a6d2b\",\"record_id\":\"8f4f4e2c1c882395\",\"run\":\"14fa0db5468a181c\",\"state\":\"pass\",\"workflow_key\":\"a114bc177d602973\"},\"tool\":\"extract\"},{\"data\":{\"check\":\"54b3829ba7d5c4c2\",\"record_id\":\"48849cbedd16203b\",\"state\":\"pass\",\"subject_dataset\":\"6821bfb8629ea130\",\"workflow_key\":\"a114bc177d602973\"},\"tool\":\"quality\"},{\"data\":{\"input_dataset\":\"43a4f1ccd047ff49\",\"output_dataset\":\"6821bfb8629ea130\",\"record_id\":\"73ba8f783c38080b\",\"run\":\"b63997e4c37c9a85\",\"state\":\"pass\",\"workflow_key\":\"a114bc177d602973\"},\"tool\":\"load\"}]"
+  },
+  "index_bytes": 10739,
+  "infeasible": {},
+  "local": {
+    "automatic": {
+      "bytes_read": 45340,
+      "bytes_written": 5832,
+      "cpu_ns": 2717300
+    },
+    "checked": {
+      "bytes_read": 50394,
+      "bytes_written": 5832,
+      "cpu_ns": 1750000
+    },
+    "direct": {
+      "bytes_read": 15017,
+      "bytes_written": 2297,
+      "cpu_ns": 1083200
+    },
+    "full": {
+      "bytes_read": 28458,
+      "bytes_written": 28458,
+      "cpu_ns": 531300
+    },
+    "indexed_projected": {
+      "bytes_read": 25230,
+      "bytes_written": 13355,
+      "cpu_ns": 1803100
+    },
+    "indexed_raw": {
+      "bytes_read": 15456,
+      "bytes_written": 10739,
+      "cpu_ns": 718600
+    },
+    "prompt": {
+      "bytes_read": 23363,
+      "bytes_written": 4405,
+      "cpu_ns": 71100
+    },
+    "structured": {
+      "bytes_read": 23548,
+      "bytes_written": 4558,
+      "cpu_ns": 43400
+    }
+  },
+  "memories": {
+    "automatic": {
+      "child": "{\"f\":[\"consent.approval\",\"consent.approved_output\",\"consent.record_id\",\"consent.state\",\"extract.output_dataset\",\"extract.record_id\",\"extract.run\",\"extract.state\",\"load.input_dataset\",\"load.output_dataset\",\"load.record_id\",\"load.run\",\"load.state\",\"pipeline_run\",\"quality.check\",\"quality.record_id\",\"quality.state\",\"quality.subject_dataset\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.record_id\",\"transform.run\",\"transform.state\",\"workflow_key\"],\"r\":[[\"bf86a5ca8b6b4e35\",\"d5a0a48cb1689f3f\",\"64c6b8865d8bf5cb\",\"approved\",\"5afbbd1a07e025d3\",\"2457e2c5db5c199f\",\"8b68278b93d8bb38\",\"pass\",\"af05f5dbaec743fa\",\"d5a0a48cb1689f3f\",\"3010a48a3fb90ba3\",\"259fca92f5eaf3ee\",\"pass\",\"038d9d417593710a\",\"ab9a7d9d75ca0279\",\"08d22a06cdeddb5f\",\"pass\",\"d5a0a48cb1689f3f\",\"5afbbd1a07e025d3\",\"af05f5dbaec743fa\",\"1e071a7df2699d85\",\"d70dc811ada23d56\",\"pass\",\"008d35874c424b7e\"],[\"723a4c0417a7be82\",\"adf3e5d75d77c774\",\"5be65674cedcdc66\",\"approved\",\"bf54a315301552e6\",\"3dd535a8f0969c68\",\"3be9ae9aa4930c37\",\"pass\",\"2b917dfd7e04c8dd\",\"e705a8b34af8d645\",\"a3fcfe9b0fb3b2a6\",\"b9fcd30c27ecff83\",\"pass\",\"758bb6d8d660cc4b\",\"1fd5977e636ca28a\",\"3c13bcfbc1fc7769\",\"pass\",\"e705a8b34af8d645\",\"bf54a315301552e6\",\"2b917dfd7e04c8dd\",\"d2b748f88f19a750\",\"6aa0035ab3c66ad3\",\"pass\",\"96760bd24091ffa2\"]]}",
+      "parent": "{\"f\":[\"consent.approval\",\"consent.approved_output\",\"consent.record_id\",\"consent.state\",\"extract.output_dataset\",\"extract.record_id\",\"extract.run\",\"extract.state\",\"load.input_dataset\",\"load.output_dataset\",\"load.record_id\",\"load.run\",\"load.state\",\"pipeline_run\",\"quality.check\",\"quality.record_id\",\"quality.state\",\"quality.subject_dataset\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.record_id\",\"transform.run\",\"transform.state\",\"workflow_key\"],\"r\":[[\"bf86a5ca8b6b4e35\",\"d5a0a48cb1689f3f\",\"64c6b8865d8bf5cb\",\"approved\",\"5afbbd1a07e025d3\",\"2457e2c5db5c199f\",\"8b68278b93d8bb38\",\"pass\",\"af05f5dbaec743fa\",\"d5a0a48cb1689f3f\",\"3010a48a3fb90ba3\",\"259fca92f5eaf3ee\",\"pass\",\"038d9d417593710a\",\"ab9a7d9d75ca0279\",\"08d22a06cdeddb5f\",\"pass\",\"d5a0a48cb1689f3f\",\"5afbbd1a07e025d3\",\"af05f5dbaec743fa\",\"1e071a7df2699d85\",\"d70dc811ada23d56\",\"pass\",\"008d35874c424b7e\"],[\"10baf7f5fb8f196e\",\"f6b861ef0e02efea\",\"3e4414488be9a758\",\"approved\",\"1cb52266d4be3bd8\",\"f92396436887f994\",\"0f04e0d28cbc77b0\",\"pass\",\"0e7b184d7186955d\",\"f6b861ef0e02efea\",\"d80a9f409a3b929c\",\"83ffc920e93cca58\",\"pass\",\"1bfa186615c5dca1\",\"d3f4e214773a37a8\",\"3b5b258e5adf86d5\",\"pass\",\"f6b861ef0e02efea\",\"1cb52266d4be3bd8\",\"0e7b184d7186955d\",\"0a36b98de62857a9\",\"9112f52e335730e8\",\"pass\",\"55662f12f61ac060\"],[\"1a7c887e2ccc7298\",\"d0880fce156b3c83\",\"16fb27b0b6a676a3\",\"approved\",\"e8ed08512b78cbdd\",\"f73abde6117753d8\",\"f9157e82cdb774be\",\"pass\",\"69ddaeaefbfff047\",\"d0880fce156b3c83\",\"898c2ae1e66f2076\",\"532f9921d4c40761\",\"pass\",\"8264643b28a1fdc5\",\"04098a6eaca00eb7\",\"2ba3effabdeb4e07\",\"pass\",\"d0880fce156b3c83\",\"d64fba16db202407\",\"69ddaeaefbfff047\",\"c8a89f8ccfd51807\",\"552f102339e68c9f\",\"pass\",\"84dfcbc782564bf5\"],[\"723a4c0417a7be82\",\"adf3e5d75d77c774\",\"5be65674cedcdc66\",\"approved\",\"bf54a315301552e6\",\"3dd535a8f0969c68\",\"3be9ae9aa4930c37\",\"pass\",\"2b917dfd7e04c8dd\",\"e705a8b34af8d645\",\"a3fcfe9b0fb3b2a6\",\"b9fcd30c27ecff83\",\"pass\",\"758bb6d8d660cc4b\",\"1fd5977e636ca28a\",\"3c13bcfbc1fc7769\",\"pass\",\"e705a8b34af8d645\",\"bf54a315301552e6\",\"2b917dfd7e04c8dd\",\"d2b748f88f19a750\",\"6aa0035ab3c66ad3\",\"pass\",\"96760bd24091ffa2\"],[\"b1ef40cedacacb5f\",\"0236211b5099a194\",\"7372040a03555ed6\",\"approved\",\"3de971ccf44a6d2b\",\"8f4f4e2c1c882395\",\"14fa0db5468a181c\",\"pass\",\"43a4f1ccd047ff49\",\"6821bfb8629ea130\",\"73ba8f783c38080b\",\"b63997e4c37c9a85\",\"pass\",\"b9bf2c42dac6a097\",\"54b3829ba7d5c4c2\",\"48849cbedd16203b\",\"pass\",\"6821bfb8629ea130\",\"3de971ccf44a6d2b\",\"43a4f1ccd047ff49\",\"37d178c08d30848d\",\"68acf8374b546817\",\"pass\",\"a114bc177d602973\"],[\"63f1d02b84eb6b10\",\"0031f3d6218a45ee\",\"8ded862275704a86\",\"approved\",\"c8631c7772b79a3e\",\"9f189cf65242d998\",\"484398461c6706ef\",\"pass\",\"9d1abb3e72eb76dd\",\"0031f3d6218a45ee\",\"3b8222fe7cf6e278\",\"918f681e5bada4fb\",\"pass\",\"2e103a4eb853eba5\",\"2ed295c256d5d4a9\",\"6f6aa3d1c10ac0d0\",\"fail\",\"0031f3d6218a45ee\",\"c8631c7772b79a3e\",\"9d1abb3e72eb76dd\",\"4b547fd83d4557ac\",\"5993565b8b882041\",\"pass\",\"cc418f4447982040\"],[\"b05b2294ca1e7116\",\"b0baf257f444b9cf\",\"8d4b4ffdc27da376\",\"approved\",\"fab7ebe4d26e5061\",\"0845ed06696c5580\",\"5d1ee125790194ac\",\"pass\",\"55be71152c6b7b72\",\"b0baf257f444b9cf\",\"b305c0ec7675882d\",\"fad7b0b18f529dfb\",\"pass\",\"79bae1db394ca502\",\"eb11db2deba660ad\",\"f9de9229f0ab3b52\",\"pass\",\"b0baf257f444b9cf\",\"b8334246b5270e63\",\"55be71152c6b7b72\",\"f09252308f739e99\",\"df88e7b78f95a81b\",\"pass\",\"f2b2a592096c0cc1\"]]}"
+    },
+    "checked": {
+      "child": "{\"f\":[\"pipeline_run\",\"workflow_key\",\"extract.record_id\",\"extract.run\",\"extract.output_dataset\",\"extract.state\",\"transform.record_id\",\"transform.run\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.state\",\"load.record_id\",\"load.run\",\"load.input_dataset\",\"load.output_dataset\",\"load.state\",\"quality.record_id\",\"quality.check\",\"quality.subject_dataset\",\"quality.state\",\"consent.record_id\",\"consent.approval\",\"consent.approved_output\",\"consent.state\"],\"r\":[[\"038d9d417593710a\",\"008d35874c424b7e\",\"2457e2c5db5c199f\",\"8b68278b93d8bb38\",\"5afbbd1a07e025d3\",\"pass\",\"1e071a7df2699d85\",\"d70dc811ada23d56\",\"5afbbd1a07e025d3\",\"af05f5dbaec743fa\",\"pass\",\"3010a48a3fb90ba3\",\"259fca92f5eaf3ee\",\"af05f5dbaec743fa\",\"d5a0a48cb1689f3f\",\"pass\",\"08d22a06cdeddb5f\",\"ab9a7d9d75ca0279\",\"d5a0a48cb1689f3f\",\"pass\",\"64c6b8865d8bf5cb\",\"bf86a5ca8b6b4e35\",\"d5a0a48cb1689f3f\",\"approved\"],[\"758bb6d8d660cc4b\",\"96760bd24091ffa2\",\"3dd535a8f0969c68\",\"3be9ae9aa4930c37\",\"bf54a315301552e6\",\"pass\",\"d2b748f88f19a750\",\"6aa0035ab3c66ad3\",\"bf54a315301552e6\",\"2b917dfd7e04c8dd\",\"pass\",\"a3fcfe9b0fb3b2a6\",\"b9fcd30c27ecff83\",\"2b917dfd7e04c8dd\",\"e705a8b34af8d645\",\"pass\",\"3c13bcfbc1fc7769\",\"1fd5977e636ca28a\",\"e705a8b34af8d645\",\"pass\",\"5be65674cedcdc66\",\"723a4c0417a7be82\",\"adf3e5d75d77c774\",\"approved\"]]}",
+      "child_bounds": {
+        "admitted_bytes": 1274,
+        "clipped": false,
+        "proposed_bytes": 1274
+      },
+      "parent": "{\"f\":[\"pipeline_run\",\"workflow_key\",\"extract.record_id\",\"extract.run\",\"extract.output_dataset\",\"extract.state\",\"transform.record_id\",\"transform.run\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.state\",\"load.record_id\",\"load.run\",\"load.input_dataset\",\"load.output_dataset\",\"load.state\",\"quality.record_id\",\"quality.check\",\"quality.subject_dataset\",\"quality.state\",\"consent.record_id\",\"consent.approval\",\"consent.approved_output\",\"consent.state\"],\"r\":[[\"038d9d417593710a\",\"008d35874c424b7e\",\"2457e2c5db5c199f\",\"8b68278b93d8bb38\",\"5afbbd1a07e025d3\",\"pass\",\"1e071a7df2699d85\",\"d70dc811ada23d56\",\"5afbbd1a07e025d3\",\"af05f5dbaec743fa\",\"pass\",\"3010a48a3fb90ba3\",\"259fca92f5eaf3ee\",\"af05f5dbaec743fa\",\"d5a0a48cb1689f3f\",\"pass\",\"08d22a06cdeddb5f\",\"ab9a7d9d75ca0279\",\"d5a0a48cb1689f3f\",\"pass\",\"64c6b8865d8bf5cb\",\"bf86a5ca8b6b4e35\",\"d5a0a48cb1689f3f\",\"approved\"],[\"758bb6d8d660cc4b\",\"96760bd24091ffa2\",\"3dd535a8f0969c68\",\"3be9ae9aa4930c37\",\"bf54a315301552e6\",\"pass\",\"d2b748f88f19a750\",\"6aa0035ab3c66ad3\",\"bf54a315301552e6\",\"2b917dfd7e04c8dd\",\"pass\",\"a3fcfe9b0fb3b2a6\",\"b9fcd30c27ecff83\",\"2b917dfd7e04c8dd\",\"e705a8b34af8d645\",\"pass\",\"3c13bcfbc1fc7769\",\"1fd5977e636ca28a\",\"e705a8b34af8d645\",\"pass\",\"5be65674cedcdc66\",\"723a4c0417a7be82\",\"adf3e5d75d77c774\",\"approved\"],[\"2e103a4eb853eba5\",\"cc418f4447982040\",\"9f189cf65242d998\",\"484398461c6706ef\",\"c8631c7772b79a3e\",\"pass\",\"4b547fd83d4557ac\",\"5993565b8b882041\",\"c8631c7772b79a3e\",\"9d1abb3e72eb76dd\",\"pass\",\"3b8222fe7cf6e278\",\"918f681e5bada4fb\",\"9d1abb3e72eb76dd\",\"0031f3d6218a45ee\",\"pass\",\"6f6aa3d1c10ac0d0\",\"2ed295c256d5d4a9\",\"0031f3d6218a45ee\",\"fail\",\"8ded862275704a86\",\"63f1d02b84eb6b10\",\"0031f3d6218a45ee\",\"approved\"],[\"79bae1db394ca502\",\"f2b2a592096c0cc1\",\"0845ed06696c5580\",\"5d1ee125790194ac\",\"fab7ebe4d26e5061\",\"pass\",\"f09252308f739e99\",\"df88e7b78f95a81b\",\"b8334246b5270e63\",\"55be71152c6b7b72\",\"pass\",\"b305c0ec7675882d\",\"fad7b0b18f529dfb\",\"55be71152c6b7b72\",\"b0baf257f444b9cf\",\"pass\",\"f9de9229f0ab3b52\",\"eb11db2deba660ad\",\"b0baf257f444b9cf\",\"pass\",\"8d4b4ffdc27da376\",\"b05b2294ca1e7116\",\"b0baf257f444b9cf\",\"approved\"],[\"1bfa186615c5dca1\",\"55662f12f61ac060\",\"f92396436887f994\",\"0f04e0d28cbc77b0\",\"1cb52266d4be3bd8\",\"pass\",\"0a36b98de62857a9\",\"9112f52e335730e8\",\"1cb52266d4be3bd8\",\"0e7b184d7186955d\",\"pass\",\"d80a9f409a3b929c\",\"83ffc920e93cca58\",\"0e7b184d7186955d\",\"f6b861ef0e02efea\",\"pass\",\"3b5b258e5adf86d5\",\"d3f4e214773a37a8\",\"f6b861ef0e02efea\",\"pass\",\"3e4414488be9a758\",\"10baf7f5fb8f196e\",\"f6b861ef0e02efea\",\"approved\"],[\"b9bf2c42dac6a097\",\"a114bc177d602973\",\"8f4f4e2c1c882395\",\"14fa0db5468a181c\",\"3de971ccf44a6d2b\",\"pass\",\"37d178c08d30848d\",\"68acf8374b546817\",\"3de971ccf44a6d2b\",\"43a4f1ccd047ff49\",\"pass\",\"73ba8f783c38080b\",\"b63997e4c37c9a85\",\"43a4f1ccd047ff49\",\"6821bfb8629ea130\",\"pass\",\"48849cbedd16203b\",\"54b3829ba7d5c4c2\",\"6821bfb8629ea130\",\"pass\",\"7372040a03555ed6\",\"b1ef40cedacacb5f\",\"0236211b5099a194\",\"approved\"],[\"8264643b28a1fdc5\",\"84dfcbc782564bf5\",\"f73abde6117753d8\",\"f9157e82cdb774be\",\"e8ed08512b78cbdd\",\"pass\",\"c8a89f8ccfd51807\",\"552f102339e68c9f\",\"d64fba16db202407\",\"69ddaeaefbfff047\",\"pass\",\"898c2ae1e66f2076\",\"532f9921d4c40761\",\"69ddaeaefbfff047\",\"d0880fce156b3c83\",\"pass\",\"2ba3effabdeb4e07\",\"04098a6eaca00eb7\",\"d0880fce156b3c83\",\"pass\",\"16fb27b0b6a676a3\",\"1a7c887e2ccc7298\",\"d0880fce156b3c83\",\"approved\"]]}"
+    },
+    "direct": {
+      "child": "{\"f\":[\"pipeline_run\",\"extract.output_dataset\",\"extract.state\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.state\",\"load.input_dataset\",\"load.output_dataset\",\"load.state\",\"quality.subject_dataset\",\"quality.state\",\"consent.approved_output\",\"consent.state\"],\"r\":[[\"038d9d417593710a\",\"5afbbd1a07e025d3\",\"pass\",\"5afbbd1a07e025d3\",\"af05f5dbaec743fa\",\"pass\",\"af05f5dbaec743fa\",\"d5a0a48cb1689f3f\",\"pass\",\"d5a0a48cb1689f3f\",\"pass\",\"d5a0a48cb1689f3f\",\"approved\"],[\"758bb6d8d660cc4b\",\"bf54a315301552e6\",\"pass\",\"bf54a315301552e6\",\"2b917dfd7e04c8dd\",\"pass\",\"2b917dfd7e04c8dd\",\"e705a8b34af8d645\",\"pass\",\"e705a8b34af8d645\",\"pass\",\"adf3e5d75d77c774\",\"approved\"]]}",
+      "parent": "{\"f\":[\"pipeline_run\",\"extract.output_dataset\",\"extract.state\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.state\",\"load.input_dataset\",\"load.output_dataset\",\"load.state\",\"quality.subject_dataset\",\"quality.state\",\"consent.approved_output\",\"consent.state\"],\"r\":[[\"038d9d417593710a\",\"5afbbd1a07e025d3\",\"pass\",\"5afbbd1a07e025d3\",\"af05f5dbaec743fa\",\"pass\",\"af05f5dbaec743fa\",\"d5a0a48cb1689f3f\",\"pass\",\"d5a0a48cb1689f3f\",\"pass\",\"d5a0a48cb1689f3f\",\"approved\"],[\"1bfa186615c5dca1\",\"1cb52266d4be3bd8\",\"pass\",\"1cb52266d4be3bd8\",\"0e7b184d7186955d\",\"pass\",\"0e7b184d7186955d\",\"f6b861ef0e02efea\",\"pass\",\"f6b861ef0e02efea\",\"pass\",\"f6b861ef0e02efea\",\"approved\"],[\"8264643b28a1fdc5\",\"e8ed08512b78cbdd\",\"pass\",\"d64fba16db202407\",\"69ddaeaefbfff047\",\"pass\",\"69ddaeaefbfff047\",\"d0880fce156b3c83\",\"pass\",\"d0880fce156b3c83\",\"pass\",\"d0880fce156b3c83\",\"approved\"],[\"758bb6d8d660cc4b\",\"bf54a315301552e6\",\"pass\",\"bf54a315301552e6\",\"2b917dfd7e04c8dd\",\"pass\",\"2b917dfd7e04c8dd\",\"e705a8b34af8d645\",\"pass\",\"e705a8b34af8d645\",\"pass\",\"adf3e5d75d77c774\",\"approved\"],[\"b9bf2c42dac6a097\",\"3de971ccf44a6d2b\",\"pass\",\"3de971ccf44a6d2b\",\"43a4f1ccd047ff49\",\"pass\",\"43a4f1ccd047ff49\",\"6821bfb8629ea130\",\"pass\",\"6821bfb8629ea130\",\"pass\",\"0236211b5099a194\",\"approved\"],[\"2e103a4eb853eba5\",\"c8631c7772b79a3e\",\"pass\",\"c8631c7772b79a3e\",\"9d1abb3e72eb76dd\",\"pass\",\"9d1abb3e72eb76dd\",\"0031f3d6218a45ee\",\"pass\",\"0031f3d6218a45ee\",\"fail\",\"0031f3d6218a45ee\",\"approved\"],[\"79bae1db394ca502\",\"fab7ebe4d26e5061\",\"pass\",\"b8334246b5270e63\",\"55be71152c6b7b72\",\"pass\",\"55be71152c6b7b72\",\"b0baf257f444b9cf\",\"pass\",\"b0baf257f444b9cf\",\"pass\",\"b0baf257f444b9cf\",\"approved\"]]}"
+    },
+    "prompt": {
+      "child": "Only candidates: 038d9d417593710a and 758bb6d8d660cc4b. Root pipeline_run \u2192 workflow_key; component results below belong only to that workflow. Late event/target not supplied; apply event to selected path before evaluating. Ignore operator_notes and all other workflows.\n038d9d417593710a \u2192 workflow_key 008d35874c424b7e: extract 2457e2c5db5c199f pass out=5afbbd1a07e025d3; transform 1e071a7df2699d85 pass in=5afbbd1a07e025d3 out=af05f5dbaec743fa; load 3010a48a3fb90ba3 pass in=af05f5dbaec743fa out=d5a0a48cb1689f3f; quality 08d22a06cdeddb5f pass subject=d5a0a48cb1689f3; consent 64c6b8865d8bf5cb approved approval=bf86a5ca8b6b4e35 approved_output=d5a0a48cb1689f3f.\n758bb6d8d660cc4b \u2192 workflow_key 96760bd24091ffa2: extract 3dd535a8f0969c68 pass out=bf54a315301552e6; transform d2b748f88f19a750 pass in=bf54a315301552e6 out=2b917dfd7e04c8dd; load a3fcfe9b0fb3b2a6 pass in=2b917dfd7e04c8dd out=e705a8b34af8d645; quality 3c13bcfbc1fc7769 pass subject=e705a8b34af8d645; consent 5be65674cedcdc66 approved approval=723a4c0417a7be82 approved_output=adf3e5d75d77c774.\nFor target pipeline_run, select its root and joined workflow only; apply late event first. Publish only if all four states pass; transform input=extract output; load input=transform output; quality subject=load output; consent approved and approved_output=load output. Else hold with exact sorted failed set among extract, transform, load, quality, link_transform, link_load, quality_scope, approval, approval_scope. target_id=load.output_dataset.",
+      "child_bounds": {
+        "admitted_bytes": 1513,
+        "clipped": false,
+        "proposed_bytes": 1513
+      },
+      "parent": "Target and late event are not specified in the observation. Root pipeline_run \u2192 workflow_key; components listed as tool: record_id, state, scoped refs (all scoped to that workflow). Ignore operator notes.\n038d9d417593710a \u2192 008d35874c424b7e: extract 2457e2c5db5c199f pass out=5afbbd1a07e025d3; transform 1e071a7df2699d85 pass in=5afbbd1a07e025d3 out=af05f5dbaec743fa; load 3010a48a3fb90ba3 pass in=af05f5dbaec743fa out=d5a0a48cb1689f3f; quality 08d22a06cdeddb5f pass subject=d5a0a48cb1689f3; consent 64c6b8865d8bf5cb approved approval=bf86a5ca8b6b4e35 approved_output=d5a0a48cb1689f3.\n758bb6d8d660cc4b \u2192 96760bd24091ffa2: extract 3dd535a8f0969c68 pass out=bf54a315301552e6; transform d2b748f88f19a750 pass in=bf54a315301552e6 out=2b917dfd7e04c8dd; load a3fcfe9b0fb3b2a6 pass in=2b917dfd7e04c8dd out=e705a8b34af8d645; quality 3c13bcfbc1fc7769 pass subject=e705a8b34af8d645; consent 5be65674cedcdc66 approved approval=723a4c0417a7be82 approved_output=adf3e5d75d77c774.\nb9bf2c42dac6a097 \u2192 a114bc177d602973: extract 8f4f4e2c1c882395 pass out=3de971ccf44a6d2b; transform 37d178c08d30848d pass in=3de971ccf44a6d2b out=43a4f1ccd047ff49; load 73ba8f783c38080b pass in=43a4f1ccd047ff49 out=6821bfb8629ea130; quality 48849cbedd16203b pass subject=6821bfb8629ea130; consent 7372040a03555ed6 approved approval=b1ef40cedacacb5f approved_output=0236211b5099a194.\n2e103a4eb853eba5 \u2192 cc418f4447982040: extract 9f189cf65242d998 pass out=c8631c7772b79a3e; transform 4b547fd83d4557ac pass in=c8631c7772b79a3e out=9d1abb3e72eb76dd; load 3b8222fe7cf6e278 pass in=9d1abb3e72eb76dd out=0031f3d6218a45ee; quality 6f6aa3d1c10ac0d0 fail subject=0031f3d6218a45ee; consent 8ded862275704a86 approved approval=63f1d02b84eb6b10 approved_output=0031f3d6218a45ee.\n79bae1db394ca502 \u2192 f2b2a592096c0cc1: extract 0845ed06696c5580 pass out=fab7ebe4d26e5061; transform f09252308f739e99 pass in=b8334246b5270e63 out=55be71152c6b7b72; load b305c0ec7675882d pass in=55be71152c6b7b72 out=b0baf257f444b9cf; quality f9de9229f0ab3b52 pass subject=b0baf257f444b9cf; consent 8d4b4ffdc27da376 approved approval=b05b2294ca1e7116 approved_output=b0baf257f444b9cf.\n1bfa186615c5dca1 \u2192 55662f12f61ac060: extract f92396436887f994 pass out=1cb52266d4be3bd8; transform 0a36b98de62857a9 pass in=1cb52266d4be3bd8 out=0e7b184d7186955d; load d80a9f409a3b929c pass in=0e7b184d7186955d out=f6b861ef0e02efea; quality 3b5b258e5adf86d5 pass subject=f6b861ef0e02efea; consent 3e4414488be9a758 approved approval=10baf7f5fb8f196e approved_output=f6b861ef0e02efea.\n8264643b28a1fdc5 \u2192 84dfcbc782564bf5: extract f73abde6117753d8 pass out=e8ed08512b78cbdd; transform c8a89f8ccfd51807 pass in=d64fba16db202407 out=69ddaeaefbfff047; load 898c2ae1e66f2076 pass in=69ddaeaefbfff047 out=d0880fce156b3c83; quality 2ba3effabdeb4e07 pass subject=d0880fce156b3c83; consent 16fb27b0b6a676a3 approved approval=1a7c887e2ccc7298 approved_output=d0880fce156b3c83.",
+      "parent_bounds": {
+        "admitted_bytes": 2892,
+        "clipped": false,
+        "proposed_bytes": 2892
+      }
+    },
+    "structured": {
+      "child": "{\"f\":[\"pipeline_run\",\"workflow_key\",\"extract.record_id\",\"extract.run\",\"extract.output_dataset\",\"extract.state\",\"transform.record_id\",\"transform.run\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.state\",\"load.record_id\",\"load.run\",\"load.input_dataset\",\"load.output_dataset\",\"load.state\",\"quality.record_id\",\"quality.check\",\"quality.subject_dataset\",\"quality.state\",\"consent.record_id\",\"consent.approval\",\"consent.approved_output\",\"consent.state\"],\"r\":[[\"038d9d417593710a\",\"008d35874c424b7e\",\"2457e2c5db5c199f\",\"8b68278b93d8bb38\",\"5afbbd1a07e025d3\",\"pass\",\"1e071a7df2699d85\",\"d70dc811ada23d56\",\"5afbbd1a07e025d3\",\"af05f5dbaec743fa\",\"pass\",\"3010a48a3fb90ba3\",\"259fca92f5eaf3ee\",\"af05f5dbaec743fa\",\"d5a0a48cb1689f3f\",\"pass\",\"08d22a06cdeddb5f\",\"ab9a7d9d75ca0279\",\"d5a0a48cb1689f3f\",\"pass\",\"64c6b8865d8bf5cb\",\"bf86a5ca8b6b4e35\",\"d5a0a48cb1689f3f\",\"approved\"],[\"758bb6d8d660cc4b\",\"96760bd24091ffa2\",\"3dd535a8f0969c68\",\"3be9ae9aa4930c37\",\"bf54a315301552e6\",\"pass\",\"d2b748f88f19a750\",\"6aa0035ab3c66ad3\",\"bf54a315301552e6\",\"2b917dfd7e04c8dd\",\"pass\",\"a3fcfe9b0fb3b2a6\",\"b9fcd30c27ecff83\",\"2b917dfd7e04c8dd\",\"e705a8b34af8d645\",\"pass\",\"3c13bcfbc1fc7769\",\"1fd5977e636ca28a\",\"e705a8b34af8d645\",\"pass\",\"5be65674cedcdc66\",\"723a4c0417a7be82\",\"adf3e5d75d77c774\",\"approved\"]]}",
+      "child_bounds": {
+        "admitted_bytes": 1274,
+        "clipped": false,
+        "proposed_bytes": 1274
+      },
+      "parent": "{\"f\":[\"pipeline_run\",\"workflow_key\",\"extract.record_id\",\"extract.run\",\"extract.output_dataset\",\"extract.state\",\"transform.record_id\",\"transform.run\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.state\",\"load.record_id\",\"load.run\",\"load.input_dataset\",\"load.output_dataset\",\"load.state\",\"quality.record_id\",\"quality.check\",\"quality.subject_dataset\",\"quality.state\",\"consent.record_id\",\"consent.approval\",\"consent.approved_output\",\"consent.state\"],\"r\":[[\"038d9d417593710a\",\"008d35874c424b7e\",\"2457e2c5db5c199f\",\"8b68278b93d8bb38\",\"5afbbd1a07e025d3\",\"pass\",\"1e071a7df2699d85\",\"d70dc811ada23d56\",\"5afbbd1a07e025d3\",\"af05f5dbaec743fa\",\"pass\",\"3010a48a3fb90ba3\",\"259fca92f5eaf3ee\",\"af05f5dbaec743fa\",\"d5a0a48cb1689f3f\",\"pass\",\"08d22a06cdeddb5f\",\"ab9a7d9d75ca0279\",\"d5a0a48cb1689f3f\",\"pass\",\"64c6b8865d8bf5cb\",\"bf86a5ca8b6b4e35\",\"d5a0a48cb1689f3f\",\"approved\"],[\"758bb6d8d660cc4b\",\"96760bd24091ffa2\",\"3dd535a8f0969c68\",\"3be9ae9aa4930c37\",\"bf54a315301552e6\",\"pass\",\"d2b748f88f19a750\",\"6aa0035ab3c66ad3\",\"bf54a315301552e6\",\"2b917dfd7e04c8dd\",\"pass\",\"a3fcfe9b0fb3b2a6\",\"b9fcd30c27ecff83\",\"2b917dfd7e04c8dd\",\"e705a8b34af8d645\",\"pass\",\"3c13bcfbc1fc7769\",\"1fd5977e636ca28a\",\"e705a8b34af8d645\",\"pass\",\"5be65674cedcdc66\",\"723a4c0417a7be82\",\"adf3e5d75d77c774\",\"approved\"],[\"2e103a4eb853eba5\",\"cc418f4447982040\",\"9f189cf65242d998\",\"484398461c6706ef\",\"c8631c7772b79a3e\",\"pass\",\"4b547fd83d4557ac\",\"5993565b8b882041\",\"c8631c7772b79a3e\",\"9d1abb3e72eb76dd\",\"pass\",\"3b8222fe7cf6e278\",\"918f681e5bada4fb\",\"9d1abb3e72eb76dd\",\"0031f3d6218a45ee\",\"pass\",\"6f6aa3d1c10ac0d0\",\"2ed295c256d5d4a9\",\"0031f3d6218a45ee\",\"fail\",\"8ded862275704a86\",\"63f1d02b84eb6b10\",\"0031f3d6218a45ee\",\"approved\"],[\"79bae1db394ca502\",\"f2b2a592096c0cc1\",\"0845ed06696c5580\",\"5d1ee125790194ac\",\"fab7ebe4d26e5061\",\"pass\",\"f09252308f739e99\",\"df88e7b78f95a81b\",\"b8334246b5270e63\",\"55be71152c6b7b72\",\"pass\",\"b305c0ec7675882d\",\"fad7b0b18f529dfb\",\"55be71152c6b7b72\",\"b0baf257f444b9cf\",\"pass\",\"f9de9229f0ab3b52\",\"eb11db2deba660ad\",\"b0baf257f444b9cf\",\"pass\",\"8d4b4ffdc27da376\",\"b05b2294ca1e7116\",\"b0baf257f444b9cf\",\"approved\"],[\"1bfa186615c5dca1\",\"55662f12f61ac060\",\"f92396436887f994\",\"0f04e0d28cbc77b0\",\"1cb52266d4be3bd8\",\"pass\",\"0a36b98de62857a9\",\"9112f52e335730e8\",\"1cb52266d4be3bd8\",\"0e7b184d7186955d\",\"pass\",\"d80a9f409a3b929c\",\"83ffc920e93cca58\",\"0e7b184d7186955d\",\"f6b861ef0e02efea\",\"pass\",\"3b5b258e5adf86d5\",\"d3f4e214773a37a8\",\"f6b861ef0e02efea\",\"pass\",\"3e4414488be9a758\",\"10baf7f5fb8f196e\",\"f6b861ef0e02efea\",\"approved\"],[\"b9bf2c42dac6a097\",\"a114bc177d602973\",\"8f4f4e2c1c882395\",\"14fa0db5468a181c\",\"3de971ccf44a6d2b\",\"pass\",\"37d178c08d30848d\",\"68acf8374b546817\",\"3de971ccf44a6d2b\",\"43a4f1ccd047ff49\",\"pass\",\"73ba8f783c38080b\",\"b63997e4c37c9a85\",\"43a4f1ccd047ff49\",\"6821bfb8629ea130\",\"pass\",\"48849cbedd16203b\",\"54b3829ba7d5c4c2\",\"6821bfb8629ea130\",\"pass\",\"7372040a03555ed6\",\"b1ef40cedacacb5f\",\"0236211b5099a194\",\"approved\"],[\"8264643b28a1fdc5\",\"84dfcbc782564bf5\",\"f73abde6117753d8\",\"f9157e82cdb774be\",\"e8ed08512b78cbdd\",\"pass\",\"c8a89f8ccfd51807\",\"552f102339e68c9f\",\"d64fba16db202407\",\"69ddaeaefbfff047\",\"pass\",\"898c2ae1e66f2076\",\"532f9921d4c40761\",\"69ddaeaefbfff047\",\"d0880fce156b3c83\",\"pass\",\"2ba3effabdeb4e07\",\"04098a6eaca00eb7\",\"d0880fce156b3c83\",\"pass\",\"16fb27b0b6a676a3\",\"1a7c887e2ccc7298\",\"d0880fce156b3c83\",\"approved\"]]}",
+      "parent_bounds": {
+        "admitted_bytes": 3284,
+        "clipped": false,
+        "proposed_bytes": 3284
+      }
+    }
+  }
+}

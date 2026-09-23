@@ -1,0 +1,7013 @@
+{
+  "version": "cross_record_continuation_analysis_v1",
+  "status": "exploratory_post_stop",
+  "original_primary_criterion": "unassessable_due_to_permanent_transport_failure",
+  "scheduled_identities": 348,
+  "original_attempts": 199,
+  "new_attempts": 149,
+  "permanent_missing_identities": [
+    "ci_promotion-3073140105-2-indexed_projected"
+  ],
+  "fully_measured_paired_futures": 35,
+  "known_settled_model_credits": "3.8247600",
+  "unknown_reservation_credits": "7.65",
+  "actual_usage_on_completed_calls": {
+    "inputTokens": 1339996,
+    "cachedInputTokens": 609280,
+    "outputTokens": 147652,
+    "reasoningOutputTokens": 87195
+  },
+  "arms": {
+    "prompt": {
+      "decisions": 36,
+      "terminal_failures": 3,
+      "model_error_failures": 3,
+      "missing_answers": 0,
+      "known_model_credits": "0.8692970",
+      "model_calls_charged": 60,
+      "unknown_model_calls_charged": 0,
+      "cpu_ns": 617200,
+      "bytes_read": 261998,
+      "bytes_written": 54713,
+      "information": {
+        "sufficient": 0,
+        "insufficient": 0,
+        "unparsed": 36
+      },
+      "known_local_credits": "0.00316717172",
+      "known_total_lower_bound": "0.87246417172",
+      "reservation_upper_bound": "0.87246417172",
+      "local_complete": true
+    },
+    "structured": {
+      "decisions": 36,
+      "terminal_failures": 6,
+      "model_error_failures": 6,
+      "missing_answers": 0,
+      "known_model_credits": "0.9607910",
+      "model_calls_charged": 60,
+      "unknown_model_calls_charged": 0,
+      "cpu_ns": 423900,
+      "bytes_read": 250190,
+      "bytes_written": 49909,
+      "information": {
+        "sufficient": 35,
+        "insufficient": 1,
+        "unparsed": 0
+      },
+      "known_local_credits": "0.00300103239",
+      "known_total_lower_bound": "0.96379203239",
+      "reservation_upper_bound": "0.96379203239",
+      "local_complete": true
+    },
+    "checked": {
+      "decisions": 36,
+      "terminal_failures": 18,
+      "model_error_failures": 18,
+      "missing_answers": 0,
+      "known_model_credits": "1.0240565",
+      "model_calls_charged": 60,
+      "unknown_model_calls_charged": 0,
+      "cpu_ns": 21637000,
+      "bytes_read": 543097,
+      "bytes_written": 71932,
+      "information": {
+        "sufficient": 18,
+        "insufficient": 0,
+        "unparsed": 18
+      },
+      "known_local_credits": "0.0061524537",
+      "known_total_lower_bound": "1.0302089537",
+      "reservation_upper_bound": "1.0302089537",
+      "local_complete": true
+    },
+    "automatic": {
+      "decisions": 36,
+      "terminal_failures": 7,
+      "model_error_failures": 7,
+      "missing_answers": 0,
+      "known_model_credits": "0.3385855",
+      "model_calls_charged": 36,
+      "unknown_model_calls_charged": 0,
+      "cpu_ns": 26761100,
+      "bytes_read": 445480,
+      "bytes_written": 54428,
+      "information": {
+        "sufficient": 36,
+        "insufficient": 0,
+        "unparsed": 0
+      },
+      "known_local_credits": "0.00500175611",
+      "known_total_lower_bound": "0.34358725611",
+      "reservation_upper_bound": "0.34358725611",
+      "local_complete": true
+    },
+    "direct": {
+      "decisions": 36,
+      "terminal_failures": 4,
+      "model_error_failures": 4,
+      "missing_answers": 0,
+      "known_model_credits": "0.1920580",
+      "model_calls_charged": 36,
+      "unknown_model_calls_charged": 0,
+      "cpu_ns": 6675300,
+      "bytes_read": 149084,
+      "bytes_written": 20492,
+      "information": {
+        "sufficient": 36,
+        "insufficient": 0,
+        "unparsed": 0
+      },
+      "known_local_credits": "0.00169642753",
+      "known_total_lower_bound": "0.19375442753",
+      "reservation_upper_bound": "0.19375442753",
+      "local_complete": true
+    },
+    "indexed_raw": {
+      "decisions": 36,
+      "terminal_failures": 1,
+      "model_error_failures": 1,
+      "missing_answers": 0,
+      "known_model_credits": "0.2234505",
+      "model_calls_charged": 36,
+      "unknown_model_calls_charged": 0,
+      "cpu_ns": 9281000,
+      "bytes_read": 158496,
+      "bytes_written": 110452,
+      "information": {
+        "sufficient": 36,
+        "insufficient": 0,
+        "unparsed": 0
+      },
+      "known_local_credits": "0.0026904081",
+      "known_total_lower_bound": "0.2261409081",
+      "reservation_upper_bound": "0.2261409081",
+      "local_complete": true
+    },
+    "indexed_projected": {
+      "decisions": 36,
+      "terminal_failures": 7,
+      "model_error_failures": 6,
+      "missing_answers": 1,
+      "known_model_credits": "0.2780390",
+      "model_calls_charged": 36,
+      "unknown_model_calls_charged": 1,
+      "cpu_ns": 19850500,
+      "bytes_read": 253103,
+      "bytes_written": 134954,
+      "information": {
+        "sufficient": 36,
+        "insufficient": 0,
+        "unparsed": 0
+      },
+      "known_local_credits": "0.00388255505",
+      "known_total_lower_bound": "0.28192155505",
+      "reservation_upper_bound": "7.93192155505",
+      "local_complete": false
+    },
+    "full": {
+      "decisions": 36,
+      "terminal_failures": 6,
+      "model_error_failures": 6,
+      "missing_answers": 0,
+      "known_model_credits": "0.4389800",
+      "model_calls_charged": 36,
+      "unknown_model_calls_charged": 0,
+      "cpu_ns": 7369600,
+      "bytes_read": 293472,
+      "bytes_written": 293472,
+      "information": {
+        "sufficient": 36,
+        "insufficient": 0,
+        "unparsed": 0
+      },
+      "known_local_credits": "0.00587017696",
+      "known_total_lower_bound": "0.44485017696",
+      "reservation_upper_bound": "0.44485017696",
+      "local_complete": true
+    }
+  },
+  "complete_pairs": {
+    "prompt": {
+      "decisions": 35,
+      "failures": 3
+    },
+    "structured": {
+      "decisions": 35,
+      "failures": 6
+    },
+    "checked": {
+      "decisions": 35,
+      "failures": 18
+    },
+    "automatic": {
+      "decisions": 35,
+      "failures": 7
+    },
+    "direct": {
+      "decisions": 35,
+      "failures": 4
+    },
+    "indexed_raw": {
+      "decisions": 35,
+      "failures": 1
+    },
+    "indexed_projected": {
+      "decisions": 35,
+      "failures": 6
+    },
+    "full": {
+      "decisions": 35,
+      "failures": 6
+    }
+  },
+  "families": {
+    "retry_queue": {
+      "prompt": {
+        "decisions": 12,
+        "failures": 2
+      },
+      "structured": {
+        "decisions": 12,
+        "failures": 5
+      },
+      "checked": {
+        "decisions": 12,
+        "failures": 5
+      },
+      "automatic": {
+        "decisions": 12,
+        "failures": 1
+      },
+      "direct": {
+        "decisions": 12,
+        "failures": 4
+      },
+      "indexed_raw": {
+        "decisions": 12,
+        "failures": 1
+      },
+      "indexed_projected": {
+        "decisions": 12,
+        "failures": 2
+      },
+      "full": {
+        "decisions": 12,
+        "failures": 5
+      }
+    },
+    "ci_promotion": {
+      "prompt": {
+        "decisions": 12,
+        "failures": 0
+      },
+      "structured": {
+        "decisions": 12,
+        "failures": 1
+      },
+      "checked": {
+        "decisions": 12,
+        "failures": 6
+      },
+      "automatic": {
+        "decisions": 12,
+        "failures": 2
+      },
+      "direct": {
+        "decisions": 12,
+        "failures": 0
+      },
+      "indexed_raw": {
+        "decisions": 12,
+        "failures": 0
+      },
+      "indexed_projected": {
+        "decisions": 12,
+        "failures": 2
+      },
+      "full": {
+        "decisions": 12,
+        "failures": 1
+      }
+    },
+    "data_pipeline": {
+      "prompt": {
+        "decisions": 12,
+        "failures": 1
+      },
+      "structured": {
+        "decisions": 12,
+        "failures": 0
+      },
+      "checked": {
+        "decisions": 12,
+        "failures": 7
+      },
+      "automatic": {
+        "decisions": 12,
+        "failures": 4
+      },
+      "direct": {
+        "decisions": 12,
+        "failures": 0
+      },
+      "indexed_raw": {
+        "decisions": 12,
+        "failures": 0
+      },
+      "indexed_projected": {
+        "decisions": 12,
+        "failures": 3
+      },
+      "full": {
+        "decisions": 12,
+        "failures": 0
+      }
+    }
+  },
+  "price_assumptions": {
+    "cpu_credit_per_second": "0.0001",
+    "local_read_or_write_credit_per_byte": "1E-8"
+  },
+  "decisions": [
+    {
+      "identity": "retry_queue-215957210-0-prompt",
+      "family": "retry_queue",
+      "arm": "prompt",
+      "future_id": "retry_queue-215957210-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "retry",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-0-structured",
+      "family": "retry_queue",
+      "arm": "structured",
+      "future_id": "retry_queue-215957210-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "insufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "5e61818b12a903c5",
+        "work": [
+          "retry_policy"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-0-checked",
+      "family": "retry_queue",
+      "arm": "checked",
+      "future_id": "retry_queue-215957210-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-0-automatic",
+      "family": "retry_queue",
+      "arm": "automatic",
+      "future_id": "retry_queue-215957210-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-0-direct",
+      "family": "retry_queue",
+      "arm": "direct",
+      "future_id": "retry_queue-215957210-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-0-indexed_raw",
+      "family": "retry_queue",
+      "arm": "indexed_raw",
+      "future_id": "retry_queue-215957210-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-0-indexed_projected",
+      "family": "retry_queue",
+      "arm": "indexed_projected",
+      "future_id": "retry_queue-215957210-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-0-full",
+      "family": "retry_queue",
+      "arm": "full",
+      "future_id": "retry_queue-215957210-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-1-prompt",
+      "family": "retry_queue",
+      "arm": "prompt",
+      "future_id": "retry_queue-215957210-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "close",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-1-structured",
+      "family": "retry_queue",
+      "arm": "structured",
+      "future_id": "retry_queue-215957210-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-1-checked",
+      "family": "retry_queue",
+      "arm": "checked",
+      "future_id": "retry_queue-215957210-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-1-automatic",
+      "family": "retry_queue",
+      "arm": "automatic",
+      "future_id": "retry_queue-215957210-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-1-direct",
+      "family": "retry_queue",
+      "arm": "direct",
+      "future_id": "retry_queue-215957210-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-1-indexed_raw",
+      "family": "retry_queue",
+      "arm": "indexed_raw",
+      "future_id": "retry_queue-215957210-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-1-indexed_projected",
+      "family": "retry_queue",
+      "arm": "indexed_projected",
+      "future_id": "retry_queue-215957210-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-1-full",
+      "family": "retry_queue",
+      "arm": "full",
+      "future_id": "retry_queue-215957210-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-2-prompt",
+      "family": "retry_queue",
+      "arm": "prompt",
+      "future_id": "retry_queue-215957210-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "3ca1d8b01c6be39d",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "3ca1d8b01c6be39d",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-2-structured",
+      "family": "retry_queue",
+      "arm": "structured",
+      "future_id": "retry_queue-215957210-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "3ca1d8b01c6be39d",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "3ca1d8b01c6be39d",
+        "work": [
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-2-checked",
+      "family": "retry_queue",
+      "arm": "checked",
+      "future_id": "retry_queue-215957210-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "3ca1d8b01c6be39d",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "3ca1d8b01c6be39d",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-2-automatic",
+      "family": "retry_queue",
+      "arm": "automatic",
+      "future_id": "retry_queue-215957210-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "3ca1d8b01c6be39d",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "3ca1d8b01c6be39d",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-2-direct",
+      "family": "retry_queue",
+      "arm": "direct",
+      "future_id": "retry_queue-215957210-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "3ca1d8b01c6be39d",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "3ca1d8b01c6be39d",
+        "work": [
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-2-indexed_raw",
+      "family": "retry_queue",
+      "arm": "indexed_raw",
+      "future_id": "retry_queue-215957210-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "3ca1d8b01c6be39d",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "3ca1d8b01c6be39d",
+        "work": [
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-2-indexed_projected",
+      "family": "retry_queue",
+      "arm": "indexed_projected",
+      "future_id": "retry_queue-215957210-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "3ca1d8b01c6be39d",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "3ca1d8b01c6be39d",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-2-full",
+      "family": "retry_queue",
+      "arm": "full",
+      "future_id": "retry_queue-215957210-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "3ca1d8b01c6be39d",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "3ca1d8b01c6be39d",
+        "work": [
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-0-prompt",
+      "family": "retry_queue",
+      "arm": "prompt",
+      "future_id": "retry_queue-4143903526-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "retry",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-0-structured",
+      "family": "retry_queue",
+      "arm": "structured",
+      "future_id": "retry_queue-4143903526-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-0-checked",
+      "family": "retry_queue",
+      "arm": "checked",
+      "future_id": "retry_queue-4143903526-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "unparsed",
+      "expected": {
+        "action": "retry",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "2024ab50565c04f3",
+        "work": [
+          "missing_record"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-0-automatic",
+      "family": "retry_queue",
+      "arm": "automatic",
+      "future_id": "retry_queue-4143903526-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-0-direct",
+      "family": "retry_queue",
+      "arm": "direct",
+      "future_id": "retry_queue-4143903526-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-0-indexed_raw",
+      "family": "retry_queue",
+      "arm": "indexed_raw",
+      "future_id": "retry_queue-4143903526-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-0-indexed_projected",
+      "family": "retry_queue",
+      "arm": "indexed_projected",
+      "future_id": "retry_queue-4143903526-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-0-full",
+      "family": "retry_queue",
+      "arm": "full",
+      "future_id": "retry_queue-4143903526-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-1-prompt",
+      "family": "retry_queue",
+      "arm": "prompt",
+      "future_id": "retry_queue-4143903526-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "close",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-1-structured",
+      "family": "retry_queue",
+      "arm": "structured",
+      "future_id": "retry_queue-4143903526-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-1-checked",
+      "family": "retry_queue",
+      "arm": "checked",
+      "future_id": "retry_queue-4143903526-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "unparsed",
+      "expected": {
+        "action": "close",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "2024ab50565c04f3",
+        "work": [
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-1-automatic",
+      "family": "retry_queue",
+      "arm": "automatic",
+      "future_id": "retry_queue-4143903526-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-1-direct",
+      "family": "retry_queue",
+      "arm": "direct",
+      "future_id": "retry_queue-4143903526-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-1-indexed_raw",
+      "family": "retry_queue",
+      "arm": "indexed_raw",
+      "future_id": "retry_queue-4143903526-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-1-indexed_projected",
+      "family": "retry_queue",
+      "arm": "indexed_projected",
+      "future_id": "retry_queue-4143903526-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-1-full",
+      "family": "retry_queue",
+      "arm": "full",
+      "future_id": "retry_queue-4143903526-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "2024ab50565c04f3",
+        "work": []
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "2024ab50565c04f3",
+        "work": [
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-2-prompt",
+      "family": "retry_queue",
+      "arm": "prompt",
+      "future_id": "retry_queue-4143903526-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "640fdbc8c5434081",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "640fdbc8c5434081",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-2-structured",
+      "family": "retry_queue",
+      "arm": "structured",
+      "future_id": "retry_queue-4143903526-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "640fdbc8c5434081",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "640fdbc8c5434081",
+        "work": [
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-2-checked",
+      "family": "retry_queue",
+      "arm": "checked",
+      "future_id": "retry_queue-4143903526-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "640fdbc8c5434081",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "640fdbc8c5434081",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-2-automatic",
+      "family": "retry_queue",
+      "arm": "automatic",
+      "future_id": "retry_queue-4143903526-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "640fdbc8c5434081",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "640fdbc8c5434081",
+        "work": [
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-2-direct",
+      "family": "retry_queue",
+      "arm": "direct",
+      "future_id": "retry_queue-4143903526-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "640fdbc8c5434081",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "640fdbc8c5434081",
+        "work": [
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-2-indexed_raw",
+      "family": "retry_queue",
+      "arm": "indexed_raw",
+      "future_id": "retry_queue-4143903526-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "640fdbc8c5434081",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "640fdbc8c5434081",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-2-indexed_projected",
+      "family": "retry_queue",
+      "arm": "indexed_projected",
+      "future_id": "retry_queue-4143903526-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "640fdbc8c5434081",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "640fdbc8c5434081",
+        "work": [
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-4143903526-2-full",
+      "family": "retry_queue",
+      "arm": "full",
+      "future_id": "retry_queue-4143903526-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "640fdbc8c5434081",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "640fdbc8c5434081",
+        "work": [
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-0-prompt",
+      "family": "retry_queue",
+      "arm": "prompt",
+      "future_id": "retry_queue-2144838585-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-0-structured",
+      "family": "retry_queue",
+      "arm": "structured",
+      "future_id": "retry_queue-2144838585-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-0-checked",
+      "family": "retry_queue",
+      "arm": "checked",
+      "future_id": "retry_queue-2144838585-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-0-automatic",
+      "family": "retry_queue",
+      "arm": "automatic",
+      "future_id": "retry_queue-2144838585-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-0-direct",
+      "family": "retry_queue",
+      "arm": "direct",
+      "future_id": "retry_queue-2144838585-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-0-indexed_raw",
+      "family": "retry_queue",
+      "arm": "indexed_raw",
+      "future_id": "retry_queue-2144838585-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-0-indexed_projected",
+      "family": "retry_queue",
+      "arm": "indexed_projected",
+      "future_id": "retry_queue-2144838585-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-0-full",
+      "family": "retry_queue",
+      "arm": "full",
+      "future_id": "retry_queue-2144838585-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-1-prompt",
+      "family": "retry_queue",
+      "arm": "prompt",
+      "future_id": "retry_queue-2144838585-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-1-structured",
+      "family": "retry_queue",
+      "arm": "structured",
+      "future_id": "retry_queue-2144838585-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-1-checked",
+      "family": "retry_queue",
+      "arm": "checked",
+      "future_id": "retry_queue-2144838585-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-1-automatic",
+      "family": "retry_queue",
+      "arm": "automatic",
+      "future_id": "retry_queue-2144838585-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-1-direct",
+      "family": "retry_queue",
+      "arm": "direct",
+      "future_id": "retry_queue-2144838585-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-1-indexed_raw",
+      "family": "retry_queue",
+      "arm": "indexed_raw",
+      "future_id": "retry_queue-2144838585-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-1-indexed_projected",
+      "family": "retry_queue",
+      "arm": "indexed_projected",
+      "future_id": "retry_queue-2144838585-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-1-full",
+      "family": "retry_queue",
+      "arm": "full",
+      "future_id": "retry_queue-2144838585-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-2-prompt",
+      "family": "retry_queue",
+      "arm": "prompt",
+      "future_id": "retry_queue-2144838585-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-2-structured",
+      "family": "retry_queue",
+      "arm": "structured",
+      "future_id": "retry_queue-2144838585-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-2-checked",
+      "family": "retry_queue",
+      "arm": "checked",
+      "future_id": "retry_queue-2144838585-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-2-automatic",
+      "family": "retry_queue",
+      "arm": "automatic",
+      "future_id": "retry_queue-2144838585-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-2-direct",
+      "family": "retry_queue",
+      "arm": "direct",
+      "future_id": "retry_queue-2144838585-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-2-indexed_raw",
+      "family": "retry_queue",
+      "arm": "indexed_raw",
+      "future_id": "retry_queue-2144838585-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-2-indexed_projected",
+      "family": "retry_queue",
+      "arm": "indexed_projected",
+      "future_id": "retry_queue-2144838585-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-2144838585-2-full",
+      "family": "retry_queue",
+      "arm": "full",
+      "future_id": "retry_queue-2144838585-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-0-prompt",
+      "family": "retry_queue",
+      "arm": "prompt",
+      "future_id": "retry_queue-1204688962-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "retry",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-0-structured",
+      "family": "retry_queue",
+      "arm": "structured",
+      "future_id": "retry_queue-1204688962-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-0-checked",
+      "family": "retry_queue",
+      "arm": "checked",
+      "future_id": "retry_queue-1204688962-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "unparsed",
+      "expected": {
+        "action": "retry",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "89d8f7333ec4dd59",
+        "work": [
+          "workflow"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-0-automatic",
+      "family": "retry_queue",
+      "arm": "automatic",
+      "future_id": "retry_queue-1204688962-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-0-direct",
+      "family": "retry_queue",
+      "arm": "direct",
+      "future_id": "retry_queue-1204688962-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-0-indexed_raw",
+      "family": "retry_queue",
+      "arm": "indexed_raw",
+      "future_id": "retry_queue-1204688962-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-0-indexed_projected",
+      "family": "retry_queue",
+      "arm": "indexed_projected",
+      "future_id": "retry_queue-1204688962-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-0-full",
+      "family": "retry_queue",
+      "arm": "full",
+      "future_id": "retry_queue-1204688962-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "retry",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      },
+      "response": {
+        "action": "retry",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-1-prompt",
+      "family": "retry_queue",
+      "arm": "prompt",
+      "future_id": "retry_queue-1204688962-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "close",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-1-structured",
+      "family": "retry_queue",
+      "arm": "structured",
+      "future_id": "retry_queue-1204688962-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-1-checked",
+      "family": "retry_queue",
+      "arm": "checked",
+      "future_id": "retry_queue-1204688962-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "unparsed",
+      "expected": {
+        "action": "close",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "89d8f7333ec4dd59",
+        "work": [
+          "record"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-1-automatic",
+      "family": "retry_queue",
+      "arm": "automatic",
+      "future_id": "retry_queue-1204688962-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-1-direct",
+      "family": "retry_queue",
+      "arm": "direct",
+      "future_id": "retry_queue-1204688962-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-1-indexed_raw",
+      "family": "retry_queue",
+      "arm": "indexed_raw",
+      "future_id": "retry_queue-1204688962-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-1-indexed_projected",
+      "family": "retry_queue",
+      "arm": "indexed_projected",
+      "future_id": "retry_queue-1204688962-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-1-full",
+      "family": "retry_queue",
+      "arm": "full",
+      "future_id": "retry_queue-1204688962-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "close",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      },
+      "response": {
+        "action": "close",
+        "target_id": "89d8f7333ec4dd59",
+        "work": []
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-2-prompt",
+      "family": "retry_queue",
+      "arm": "prompt",
+      "future_id": "retry_queue-1204688962-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "d25ca1377ed13262",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "d25ca1377ed13262",
+        "work": [
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-2-structured",
+      "family": "retry_queue",
+      "arm": "structured",
+      "future_id": "retry_queue-1204688962-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "d25ca1377ed13262",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "d25ca1377ed13262",
+        "work": [
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-2-checked",
+      "family": "retry_queue",
+      "arm": "checked",
+      "future_id": "retry_queue-1204688962-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "d25ca1377ed13262",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "d25ca1377ed13262",
+        "work": [
+          "request_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-2-automatic",
+      "family": "retry_queue",
+      "arm": "automatic",
+      "future_id": "retry_queue-1204688962-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "d25ca1377ed13262",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "d25ca1377ed13262",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-2-direct",
+      "family": "retry_queue",
+      "arm": "direct",
+      "future_id": "retry_queue-1204688962-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "d25ca1377ed13262",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "d25ca1377ed13262",
+        "work": [
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-2-indexed_raw",
+      "family": "retry_queue",
+      "arm": "indexed_raw",
+      "future_id": "retry_queue-1204688962-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "d25ca1377ed13262",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "d25ca1377ed13262",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-2-indexed_projected",
+      "family": "retry_queue",
+      "arm": "indexed_projected",
+      "future_id": "retry_queue-1204688962-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "d25ca1377ed13262",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "d25ca1377ed13262",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "retry_queue-1204688962-2-full",
+      "family": "retry_queue",
+      "arm": "full",
+      "future_id": "retry_queue-1204688962-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "d25ca1377ed13262",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "d25ca1377ed13262",
+        "work": [
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-0-prompt",
+      "family": "ci_promotion",
+      "arm": "prompt",
+      "future_id": "ci_promotion-905618456-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "5915fdf79ce1188d",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "5915fdf79ce1188d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-0-structured",
+      "family": "ci_promotion",
+      "arm": "structured",
+      "future_id": "ci_promotion-905618456-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "5915fdf79ce1188d",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "5915fdf79ce1188d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-0-checked",
+      "family": "ci_promotion",
+      "arm": "checked",
+      "future_id": "ci_promotion-905618456-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "5915fdf79ce1188d",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "60e163d15bcf373b",
+        "work": [
+          "approval",
+          "approval_scope",
+          "channel",
+          "ci_scope",
+          "environment",
+          "integration",
+          "unit"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-0-automatic",
+      "family": "ci_promotion",
+      "arm": "automatic",
+      "future_id": "ci_promotion-905618456-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "5915fdf79ce1188d",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "5915fdf79ce1188d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-0-direct",
+      "family": "ci_promotion",
+      "arm": "direct",
+      "future_id": "ci_promotion-905618456-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "5915fdf79ce1188d",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "5915fdf79ce1188d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-0-indexed_raw",
+      "family": "ci_promotion",
+      "arm": "indexed_raw",
+      "future_id": "ci_promotion-905618456-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "5915fdf79ce1188d",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "5915fdf79ce1188d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-0-indexed_projected",
+      "family": "ci_promotion",
+      "arm": "indexed_projected",
+      "future_id": "ci_promotion-905618456-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "5915fdf79ce1188d",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "5915fdf79ce1188d",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-0-full",
+      "family": "ci_promotion",
+      "arm": "full",
+      "future_id": "ci_promotion-905618456-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "5915fdf79ce1188d",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "5915fdf79ce1188d",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-1-prompt",
+      "family": "ci_promotion",
+      "arm": "prompt",
+      "future_id": "ci_promotion-905618456-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "promote",
+        "target_id": "5915fdf79ce1188d",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "5915fdf79ce1188d",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-1-structured",
+      "family": "ci_promotion",
+      "arm": "structured",
+      "future_id": "ci_promotion-905618456-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "5915fdf79ce1188d",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "5915fdf79ce1188d",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-1-checked",
+      "family": "ci_promotion",
+      "arm": "checked",
+      "future_id": "ci_promotion-905618456-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "unparsed",
+      "expected": {
+        "action": "promote",
+        "target_id": "5915fdf79ce1188d",
+        "work": []
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "60e163d15bcf373b",
+        "work": [
+          "approval",
+          "approval_scope",
+          "channel",
+          "ci_scope",
+          "environment",
+          "integration",
+          "unit"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-1-automatic",
+      "family": "ci_promotion",
+      "arm": "automatic",
+      "future_id": "ci_promotion-905618456-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "5915fdf79ce1188d",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "5915fdf79ce1188d",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-1-direct",
+      "family": "ci_promotion",
+      "arm": "direct",
+      "future_id": "ci_promotion-905618456-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "5915fdf79ce1188d",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "5915fdf79ce1188d",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-1-indexed_raw",
+      "family": "ci_promotion",
+      "arm": "indexed_raw",
+      "future_id": "ci_promotion-905618456-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "5915fdf79ce1188d",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "5915fdf79ce1188d",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-1-indexed_projected",
+      "family": "ci_promotion",
+      "arm": "indexed_projected",
+      "future_id": "ci_promotion-905618456-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "5915fdf79ce1188d",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "5915fdf79ce1188d",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-1-full",
+      "family": "ci_promotion",
+      "arm": "full",
+      "future_id": "ci_promotion-905618456-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "5915fdf79ce1188d",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "5915fdf79ce1188d",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-2-prompt",
+      "family": "ci_promotion",
+      "arm": "prompt",
+      "future_id": "ci_promotion-905618456-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "090cc831a1c75234",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "090cc831a1c75234",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-2-structured",
+      "family": "ci_promotion",
+      "arm": "structured",
+      "future_id": "ci_promotion-905618456-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "090cc831a1c75234",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "090cc831a1c75234",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-2-checked",
+      "family": "ci_promotion",
+      "arm": "checked",
+      "future_id": "ci_promotion-905618456-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "090cc831a1c75234",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "090cc831a1c75234",
+        "work": [
+          "approval",
+          "approval_scope",
+          "channel",
+          "ci_scope",
+          "environment",
+          "integration",
+          "unit"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-2-automatic",
+      "family": "ci_promotion",
+      "arm": "automatic",
+      "future_id": "ci_promotion-905618456-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "090cc831a1c75234",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "090cc831a1c75234",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-2-direct",
+      "family": "ci_promotion",
+      "arm": "direct",
+      "future_id": "ci_promotion-905618456-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "090cc831a1c75234",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "090cc831a1c75234",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-2-indexed_raw",
+      "family": "ci_promotion",
+      "arm": "indexed_raw",
+      "future_id": "ci_promotion-905618456-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "090cc831a1c75234",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "090cc831a1c75234",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-2-indexed_projected",
+      "family": "ci_promotion",
+      "arm": "indexed_projected",
+      "future_id": "ci_promotion-905618456-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "090cc831a1c75234",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "090cc831a1c75234",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-905618456-2-full",
+      "family": "ci_promotion",
+      "arm": "full",
+      "future_id": "ci_promotion-905618456-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "090cc831a1c75234",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "090cc831a1c75234",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-0-prompt",
+      "family": "ci_promotion",
+      "arm": "prompt",
+      "future_id": "ci_promotion-849872531-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "fed4461012f2e59b",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "fed4461012f2e59b",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-0-structured",
+      "family": "ci_promotion",
+      "arm": "structured",
+      "future_id": "ci_promotion-849872531-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "fed4461012f2e59b",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "fed4461012f2e59b",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-0-checked",
+      "family": "ci_promotion",
+      "arm": "checked",
+      "future_id": "ci_promotion-849872531-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "fed4461012f2e59b",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "fed4461012f2e59b",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-0-automatic",
+      "family": "ci_promotion",
+      "arm": "automatic",
+      "future_id": "ci_promotion-849872531-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "fed4461012f2e59b",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "fed4461012f2e59b",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-0-direct",
+      "family": "ci_promotion",
+      "arm": "direct",
+      "future_id": "ci_promotion-849872531-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "fed4461012f2e59b",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "fed4461012f2e59b",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-0-indexed_raw",
+      "family": "ci_promotion",
+      "arm": "indexed_raw",
+      "future_id": "ci_promotion-849872531-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "fed4461012f2e59b",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "fed4461012f2e59b",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-0-indexed_projected",
+      "family": "ci_promotion",
+      "arm": "indexed_projected",
+      "future_id": "ci_promotion-849872531-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "fed4461012f2e59b",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "fed4461012f2e59b",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-0-full",
+      "family": "ci_promotion",
+      "arm": "full",
+      "future_id": "ci_promotion-849872531-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "fed4461012f2e59b",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "fed4461012f2e59b",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-1-prompt",
+      "family": "ci_promotion",
+      "arm": "prompt",
+      "future_id": "ci_promotion-849872531-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "promote",
+        "target_id": "fed4461012f2e59b",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "fed4461012f2e59b",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-1-structured",
+      "family": "ci_promotion",
+      "arm": "structured",
+      "future_id": "ci_promotion-849872531-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "fed4461012f2e59b",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "fed4461012f2e59b",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-1-checked",
+      "family": "ci_promotion",
+      "arm": "checked",
+      "future_id": "ci_promotion-849872531-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "fed4461012f2e59b",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "fed4461012f2e59b",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-1-automatic",
+      "family": "ci_promotion",
+      "arm": "automatic",
+      "future_id": "ci_promotion-849872531-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "fed4461012f2e59b",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "fed4461012f2e59b",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-1-direct",
+      "family": "ci_promotion",
+      "arm": "direct",
+      "future_id": "ci_promotion-849872531-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "fed4461012f2e59b",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "fed4461012f2e59b",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-1-indexed_raw",
+      "family": "ci_promotion",
+      "arm": "indexed_raw",
+      "future_id": "ci_promotion-849872531-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "fed4461012f2e59b",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "fed4461012f2e59b",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-1-indexed_projected",
+      "family": "ci_promotion",
+      "arm": "indexed_projected",
+      "future_id": "ci_promotion-849872531-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "fed4461012f2e59b",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "fed4461012f2e59b",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-1-full",
+      "family": "ci_promotion",
+      "arm": "full",
+      "future_id": "ci_promotion-849872531-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "fed4461012f2e59b",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "fed4461012f2e59b",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-2-prompt",
+      "family": "ci_promotion",
+      "arm": "prompt",
+      "future_id": "ci_promotion-849872531-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "319ce1b811f7a20f",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "319ce1b811f7a20f",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-2-structured",
+      "family": "ci_promotion",
+      "arm": "structured",
+      "future_id": "ci_promotion-849872531-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "319ce1b811f7a20f",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "319ce1b811f7a20f",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-2-checked",
+      "family": "ci_promotion",
+      "arm": "checked",
+      "future_id": "ci_promotion-849872531-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "319ce1b811f7a20f",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "319ce1b811f7a20f",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-2-automatic",
+      "family": "ci_promotion",
+      "arm": "automatic",
+      "future_id": "ci_promotion-849872531-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "319ce1b811f7a20f",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "319ce1b811f7a20f",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-2-direct",
+      "family": "ci_promotion",
+      "arm": "direct",
+      "future_id": "ci_promotion-849872531-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "319ce1b811f7a20f",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "319ce1b811f7a20f",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-2-indexed_raw",
+      "family": "ci_promotion",
+      "arm": "indexed_raw",
+      "future_id": "ci_promotion-849872531-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "319ce1b811f7a20f",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "319ce1b811f7a20f",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-2-indexed_projected",
+      "family": "ci_promotion",
+      "arm": "indexed_projected",
+      "future_id": "ci_promotion-849872531-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "319ce1b811f7a20f",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "319ce1b811f7a20f",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-849872531-2-full",
+      "family": "ci_promotion",
+      "arm": "full",
+      "future_id": "ci_promotion-849872531-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "319ce1b811f7a20f",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "319ce1b811f7a20f",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-0-prompt",
+      "family": "ci_promotion",
+      "arm": "prompt",
+      "future_id": "ci_promotion-3073140105-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "6e276bcc32e496d3",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "6e276bcc32e496d3",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-0-structured",
+      "family": "ci_promotion",
+      "arm": "structured",
+      "future_id": "ci_promotion-3073140105-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "6e276bcc32e496d3",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "6e276bcc32e496d3",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-0-checked",
+      "family": "ci_promotion",
+      "arm": "checked",
+      "future_id": "ci_promotion-3073140105-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "6e276bcc32e496d3",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "6e276bcc32e496d3",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-0-automatic",
+      "family": "ci_promotion",
+      "arm": "automatic",
+      "future_id": "ci_promotion-3073140105-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "6e276bcc32e496d3",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "6e276bcc32e496d3",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-0-direct",
+      "family": "ci_promotion",
+      "arm": "direct",
+      "future_id": "ci_promotion-3073140105-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "6e276bcc32e496d3",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "6e276bcc32e496d3",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-0-indexed_raw",
+      "family": "ci_promotion",
+      "arm": "indexed_raw",
+      "future_id": "ci_promotion-3073140105-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "6e276bcc32e496d3",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "6e276bcc32e496d3",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-0-indexed_projected",
+      "family": "ci_promotion",
+      "arm": "indexed_projected",
+      "future_id": "ci_promotion-3073140105-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "6e276bcc32e496d3",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "6e276bcc32e496d3",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-0-full",
+      "family": "ci_promotion",
+      "arm": "full",
+      "future_id": "ci_promotion-3073140105-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "6e276bcc32e496d3",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "6e276bcc32e496d3",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-1-prompt",
+      "family": "ci_promotion",
+      "arm": "prompt",
+      "future_id": "ci_promotion-3073140105-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "promote",
+        "target_id": "6e276bcc32e496d3",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "6e276bcc32e496d3",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-1-structured",
+      "family": "ci_promotion",
+      "arm": "structured",
+      "future_id": "ci_promotion-3073140105-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "6e276bcc32e496d3",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "6e276bcc32e496d3",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-1-checked",
+      "family": "ci_promotion",
+      "arm": "checked",
+      "future_id": "ci_promotion-3073140105-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "6e276bcc32e496d3",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "6e276bcc32e496d3",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-1-automatic",
+      "family": "ci_promotion",
+      "arm": "automatic",
+      "future_id": "ci_promotion-3073140105-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "6e276bcc32e496d3",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "6e276bcc32e496d3",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-1-direct",
+      "family": "ci_promotion",
+      "arm": "direct",
+      "future_id": "ci_promotion-3073140105-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "6e276bcc32e496d3",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "6e276bcc32e496d3",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-1-indexed_raw",
+      "family": "ci_promotion",
+      "arm": "indexed_raw",
+      "future_id": "ci_promotion-3073140105-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "6e276bcc32e496d3",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "6e276bcc32e496d3",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-1-indexed_projected",
+      "family": "ci_promotion",
+      "arm": "indexed_projected",
+      "future_id": "ci_promotion-3073140105-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "6e276bcc32e496d3",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "6e276bcc32e496d3",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-1-full",
+      "family": "ci_promotion",
+      "arm": "full",
+      "future_id": "ci_promotion-3073140105-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "6e276bcc32e496d3",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "6e276bcc32e496d3",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-2-prompt",
+      "family": "ci_promotion",
+      "arm": "prompt",
+      "future_id": "ci_promotion-3073140105-2",
+      "fully_measured_pair": false,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "91e28852753a5270",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "91e28852753a5270",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-2-structured",
+      "family": "ci_promotion",
+      "arm": "structured",
+      "future_id": "ci_promotion-3073140105-2",
+      "fully_measured_pair": false,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "91e28852753a5270",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "91e28852753a5270",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-2-checked",
+      "family": "ci_promotion",
+      "arm": "checked",
+      "future_id": "ci_promotion-3073140105-2",
+      "fully_measured_pair": false,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "91e28852753a5270",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "91e28852753a5270",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-2-automatic",
+      "family": "ci_promotion",
+      "arm": "automatic",
+      "future_id": "ci_promotion-3073140105-2",
+      "fully_measured_pair": false,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "91e28852753a5270",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "91e28852753a5270",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-2-direct",
+      "family": "ci_promotion",
+      "arm": "direct",
+      "future_id": "ci_promotion-3073140105-2",
+      "fully_measured_pair": false,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "91e28852753a5270",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "91e28852753a5270",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-2-indexed_raw",
+      "family": "ci_promotion",
+      "arm": "indexed_raw",
+      "future_id": "ci_promotion-3073140105-2",
+      "fully_measured_pair": false,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "91e28852753a5270",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "91e28852753a5270",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3073140105-2-indexed_projected",
+      "family": "ci_promotion",
+      "arm": "indexed_projected",
+      "future_id": "ci_promotion-3073140105-2",
+      "fully_measured_pair": false,
+      "status": "transport_failure",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "91e28852753a5270",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": null
+    },
+    {
+      "identity": "ci_promotion-3073140105-2-full",
+      "family": "ci_promotion",
+      "arm": "full",
+      "future_id": "ci_promotion-3073140105-2",
+      "fully_measured_pair": false,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "91e28852753a5270",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "91e28852753a5270",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-0-prompt",
+      "family": "ci_promotion",
+      "arm": "prompt",
+      "future_id": "ci_promotion-3868710405-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-0-structured",
+      "family": "ci_promotion",
+      "arm": "structured",
+      "future_id": "ci_promotion-3868710405-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-0-checked",
+      "family": "ci_promotion",
+      "arm": "checked",
+      "future_id": "ci_promotion-3868710405-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "",
+        "work": [
+          "approval",
+          "approval_scope",
+          "channel",
+          "ci_scope",
+          "environment",
+          "integration",
+          "unit"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-0-automatic",
+      "family": "ci_promotion",
+      "arm": "automatic",
+      "future_id": "ci_promotion-3868710405-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-0-direct",
+      "family": "ci_promotion",
+      "arm": "direct",
+      "future_id": "ci_promotion-3868710405-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-0-indexed_raw",
+      "family": "ci_promotion",
+      "arm": "indexed_raw",
+      "future_id": "ci_promotion-3868710405-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-0-indexed_projected",
+      "family": "ci_promotion",
+      "arm": "indexed_projected",
+      "future_id": "ci_promotion-3868710405-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-0-full",
+      "family": "ci_promotion",
+      "arm": "full",
+      "future_id": "ci_promotion-3868710405-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "d36c6488ddb87bfc",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-1-prompt",
+      "family": "ci_promotion",
+      "arm": "prompt",
+      "future_id": "ci_promotion-3868710405-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-1-structured",
+      "family": "ci_promotion",
+      "arm": "structured",
+      "future_id": "ci_promotion-3868710405-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87fbc",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-1-checked",
+      "family": "ci_promotion",
+      "arm": "checked",
+      "future_id": "ci_promotion-3868710405-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "unparsed",
+      "expected": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "",
+        "work": [
+          "approval",
+          "approval_scope",
+          "channel",
+          "ci_scope",
+          "environment",
+          "integration",
+          "unit"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-1-automatic",
+      "family": "ci_promotion",
+      "arm": "automatic",
+      "future_id": "ci_promotion-3868710405-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-1-direct",
+      "family": "ci_promotion",
+      "arm": "direct",
+      "future_id": "ci_promotion-3868710405-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-1-indexed_raw",
+      "family": "ci_promotion",
+      "arm": "indexed_raw",
+      "future_id": "ci_promotion-3868710405-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-1-indexed_projected",
+      "family": "ci_promotion",
+      "arm": "indexed_projected",
+      "future_id": "ci_promotion-3868710405-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-1-full",
+      "family": "ci_promotion",
+      "arm": "full",
+      "future_id": "ci_promotion-3868710405-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      },
+      "response": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-2-prompt",
+      "family": "ci_promotion",
+      "arm": "prompt",
+      "future_id": "ci_promotion-3868710405-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-2-structured",
+      "family": "ci_promotion",
+      "arm": "structured",
+      "future_id": "ci_promotion-3868710405-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-2-checked",
+      "family": "ci_promotion",
+      "arm": "checked",
+      "future_id": "ci_promotion-3868710405-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval",
+          "approval_scope",
+          "channel",
+          "ci_scope",
+          "environment",
+          "integration",
+          "unit"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-2-automatic",
+      "family": "ci_promotion",
+      "arm": "automatic",
+      "future_id": "ci_promotion-3868710405-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-2-direct",
+      "family": "ci_promotion",
+      "arm": "direct",
+      "future_id": "ci_promotion-3868710405-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-2-indexed_raw",
+      "family": "ci_promotion",
+      "arm": "indexed_raw",
+      "future_id": "ci_promotion-3868710405-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-2-indexed_projected",
+      "family": "ci_promotion",
+      "arm": "indexed_projected",
+      "future_id": "ci_promotion-3868710405-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-2-full",
+      "family": "ci_promotion",
+      "arm": "full",
+      "future_id": "ci_promotion-3868710405-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "5765fa033df90787",
+        "work": [
+          "approval_scope",
+          "ci_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-0-prompt",
+      "family": "data_pipeline",
+      "arm": "prompt",
+      "future_id": "data_pipeline-4055490056-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "f6ce80b376e5de96",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "f6ce80b376e5de96",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-0-structured",
+      "family": "data_pipeline",
+      "arm": "structured",
+      "future_id": "data_pipeline-4055490056-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "f6ce80b376e5de96",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "f6ce80b376e5de96",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-0-checked",
+      "family": "data_pipeline",
+      "arm": "checked",
+      "future_id": "data_pipeline-4055490056-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "f6ce80b376e5de96",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "",
+        "work": [
+          "approval",
+          "approval_scope",
+          "extract",
+          "link_load",
+          "link_transform",
+          "load",
+          "quality",
+          "quality_scope",
+          "transform"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-0-automatic",
+      "family": "data_pipeline",
+      "arm": "automatic",
+      "future_id": "data_pipeline-4055490056-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "f6ce80b376e5de96",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "34b62db764e591f3",
+        "work": [
+          "approval_scope",
+          "link_load",
+          "link_transform",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-0-direct",
+      "family": "data_pipeline",
+      "arm": "direct",
+      "future_id": "data_pipeline-4055490056-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "f6ce80b376e5de96",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "f6ce80b376e5de96",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-0-indexed_raw",
+      "family": "data_pipeline",
+      "arm": "indexed_raw",
+      "future_id": "data_pipeline-4055490056-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "f6ce80b376e5de96",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "f6ce80b376e5de96",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-0-indexed_projected",
+      "family": "data_pipeline",
+      "arm": "indexed_projected",
+      "future_id": "data_pipeline-4055490056-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "f6ce80b376e5de96",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "f6ce80b376e5de96",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-0-full",
+      "family": "data_pipeline",
+      "arm": "full",
+      "future_id": "data_pipeline-4055490056-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "f6ce80b376e5de96",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "f6ce80b376e5de96",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-1-prompt",
+      "family": "data_pipeline",
+      "arm": "prompt",
+      "future_id": "data_pipeline-4055490056-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "publish",
+        "target_id": "f6ce80b376e5de96",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "f6ce80b376e5de96",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-1-structured",
+      "family": "data_pipeline",
+      "arm": "structured",
+      "future_id": "data_pipeline-4055490056-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "f6ce80b376e5de96",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "f6ce80b376e5de96",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-1-checked",
+      "family": "data_pipeline",
+      "arm": "checked",
+      "future_id": "data_pipeline-4055490056-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "unparsed",
+      "expected": {
+        "action": "publish",
+        "target_id": "f6ce80b376e5de96",
+        "work": []
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "",
+        "work": [
+          "approval",
+          "approval_scope",
+          "extract",
+          "link_load",
+          "link_transform",
+          "load",
+          "quality",
+          "quality_scope",
+          "transform"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-1-automatic",
+      "family": "data_pipeline",
+      "arm": "automatic",
+      "future_id": "data_pipeline-4055490056-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "f6ce80b376e5de96",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "f6ce80b376e5de96",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-1-direct",
+      "family": "data_pipeline",
+      "arm": "direct",
+      "future_id": "data_pipeline-4055490056-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "f6ce80b376e5de96",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "f6ce80b376e5de96",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-1-indexed_raw",
+      "family": "data_pipeline",
+      "arm": "indexed_raw",
+      "future_id": "data_pipeline-4055490056-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "f6ce80b376e5de96",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "f6ce80b376e5de96",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-1-indexed_projected",
+      "family": "data_pipeline",
+      "arm": "indexed_projected",
+      "future_id": "data_pipeline-4055490056-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "f6ce80b376e5de96",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "f6ce80b376e5de96",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-1-full",
+      "family": "data_pipeline",
+      "arm": "full",
+      "future_id": "data_pipeline-4055490056-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "f6ce80b376e5de96",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "f6ce80b376e5de96",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-2-prompt",
+      "family": "data_pipeline",
+      "arm": "prompt",
+      "future_id": "data_pipeline-4055490056-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "3c80500f93ebaef1",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "3c80500f93ebaef1",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-2-structured",
+      "family": "data_pipeline",
+      "arm": "structured",
+      "future_id": "data_pipeline-4055490056-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "3c80500f93ebaef1",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "3c80500f93ebaef1",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-2-checked",
+      "family": "data_pipeline",
+      "arm": "checked",
+      "future_id": "data_pipeline-4055490056-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "3c80500f93ebaef1",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "3c80500f93ebaef1",
+        "work": [
+          "approval",
+          "approval_scope",
+          "extract",
+          "link_load",
+          "link_transform",
+          "load",
+          "quality",
+          "quality_scope",
+          "transform"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-2-automatic",
+      "family": "data_pipeline",
+      "arm": "automatic",
+      "future_id": "data_pipeline-4055490056-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "3c80500f93ebaef1",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "3c80500f93ebaef1",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-2-direct",
+      "family": "data_pipeline",
+      "arm": "direct",
+      "future_id": "data_pipeline-4055490056-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "3c80500f93ebaef1",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "3c80500f93ebaef1",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-2-indexed_raw",
+      "family": "data_pipeline",
+      "arm": "indexed_raw",
+      "future_id": "data_pipeline-4055490056-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "3c80500f93ebaef1",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "3c80500f93ebaef1",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-2-indexed_projected",
+      "family": "data_pipeline",
+      "arm": "indexed_projected",
+      "future_id": "data_pipeline-4055490056-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "3c80500f93ebaef1",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "3c80500f93ebaef1",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-4055490056-2-full",
+      "family": "data_pipeline",
+      "arm": "full",
+      "future_id": "data_pipeline-4055490056-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "3c80500f93ebaef1",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "3c80500f93ebaef1",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-0-prompt",
+      "family": "data_pipeline",
+      "arm": "prompt",
+      "future_id": "data_pipeline-2023252911-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "8ee79e03017ff64c",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "8ee79e03017ff64c",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-0-structured",
+      "family": "data_pipeline",
+      "arm": "structured",
+      "future_id": "data_pipeline-2023252911-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "8ee79e03017ff64c",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "8ee79e03017ff64c",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-0-checked",
+      "family": "data_pipeline",
+      "arm": "checked",
+      "future_id": "data_pipeline-2023252911-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "8ee79e03017ff64c",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "",
+        "work": [
+          "approval",
+          "approval_scope",
+          "extract",
+          "link_load",
+          "link_transform",
+          "load",
+          "quality",
+          "quality_scope",
+          "transform"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-0-automatic",
+      "family": "data_pipeline",
+      "arm": "automatic",
+      "future_id": "data_pipeline-2023252911-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "8ee79e03017ff64c",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "8ee79e03017ff64c",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-0-direct",
+      "family": "data_pipeline",
+      "arm": "direct",
+      "future_id": "data_pipeline-2023252911-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "8ee79e03017ff64c",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "8ee79e03017ff64c",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-0-indexed_raw",
+      "family": "data_pipeline",
+      "arm": "indexed_raw",
+      "future_id": "data_pipeline-2023252911-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "8ee79e03017ff64c",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "8ee79e03017ff64c",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-0-indexed_projected",
+      "family": "data_pipeline",
+      "arm": "indexed_projected",
+      "future_id": "data_pipeline-2023252911-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "8ee79e03017ff64c",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "8ee79e03017ff64c",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-0-full",
+      "family": "data_pipeline",
+      "arm": "full",
+      "future_id": "data_pipeline-2023252911-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "8ee79e03017ff64c",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "8ee79e03017ff64c",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-1-prompt",
+      "family": "data_pipeline",
+      "arm": "prompt",
+      "future_id": "data_pipeline-2023252911-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "publish",
+        "target_id": "8ee79e03017ff64c",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "8ee79e03017ff64c",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-1-structured",
+      "family": "data_pipeline",
+      "arm": "structured",
+      "future_id": "data_pipeline-2023252911-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "8ee79e03017ff64c",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "8ee79e03017ff64c",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-1-checked",
+      "family": "data_pipeline",
+      "arm": "checked",
+      "future_id": "data_pipeline-2023252911-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "unparsed",
+      "expected": {
+        "action": "publish",
+        "target_id": "8ee79e03017ff64c",
+        "work": []
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "",
+        "work": [
+          "approval",
+          "approval_scope",
+          "extract",
+          "link_load",
+          "link_transform",
+          "load",
+          "quality",
+          "quality_scope",
+          "transform"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-1-automatic",
+      "family": "data_pipeline",
+      "arm": "automatic",
+      "future_id": "data_pipeline-2023252911-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "8ee79e03017ff64c",
+        "work": []
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "8ee79e03017ff64c",
+        "work": [
+          "link_load",
+          "link_transform",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-1-direct",
+      "family": "data_pipeline",
+      "arm": "direct",
+      "future_id": "data_pipeline-2023252911-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "8ee79e03017ff64c",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "8ee79e03017ff64c",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-1-indexed_raw",
+      "family": "data_pipeline",
+      "arm": "indexed_raw",
+      "future_id": "data_pipeline-2023252911-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "8ee79e03017ff64c",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "8ee79e03017ff64c",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-1-indexed_projected",
+      "family": "data_pipeline",
+      "arm": "indexed_projected",
+      "future_id": "data_pipeline-2023252911-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "8ee79e03017ff64c",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "8ee79e03017ff64c",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-1-full",
+      "family": "data_pipeline",
+      "arm": "full",
+      "future_id": "data_pipeline-2023252911-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "8ee79e03017ff64c",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "8ee79e03017ff64c",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-2-prompt",
+      "family": "data_pipeline",
+      "arm": "prompt",
+      "future_id": "data_pipeline-2023252911-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "a93ada170b25e87e",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "a93ada170b25e87e",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-2-structured",
+      "family": "data_pipeline",
+      "arm": "structured",
+      "future_id": "data_pipeline-2023252911-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "a93ada170b25e87e",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "a93ada170b25e87e",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-2-checked",
+      "family": "data_pipeline",
+      "arm": "checked",
+      "future_id": "data_pipeline-2023252911-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "a93ada170b25e87e",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "a93ada170b25e87e",
+        "work": [
+          "approval",
+          "approval_scope",
+          "extract",
+          "link_load",
+          "link_transform",
+          "load",
+          "quality",
+          "quality_scope",
+          "transform"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-2-automatic",
+      "family": "data_pipeline",
+      "arm": "automatic",
+      "future_id": "data_pipeline-2023252911-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "a93ada170b25e87e",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "a93ada170b25e87e",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-2-direct",
+      "family": "data_pipeline",
+      "arm": "direct",
+      "future_id": "data_pipeline-2023252911-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "a93ada170b25e87e",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "a93ada170b25e87e",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-2-indexed_raw",
+      "family": "data_pipeline",
+      "arm": "indexed_raw",
+      "future_id": "data_pipeline-2023252911-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "a93ada170b25e87e",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "a93ada170b25e87e",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-2-indexed_projected",
+      "family": "data_pipeline",
+      "arm": "indexed_projected",
+      "future_id": "data_pipeline-2023252911-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "a93ada170b25e87e",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "a93ada170b25e87e",
+        "work": [
+          "approval_scope",
+          "link_load",
+          "link_transform",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-2023252911-2-full",
+      "family": "data_pipeline",
+      "arm": "full",
+      "future_id": "data_pipeline-2023252911-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "a93ada170b25e87e",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "a93ada170b25e87e",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-0-prompt",
+      "family": "data_pipeline",
+      "arm": "prompt",
+      "future_id": "data_pipeline-3054704387-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-0-structured",
+      "family": "data_pipeline",
+      "arm": "structured",
+      "future_id": "data_pipeline-3054704387-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-0-checked",
+      "family": "data_pipeline",
+      "arm": "checked",
+      "future_id": "data_pipeline-3054704387-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-0-automatic",
+      "family": "data_pipeline",
+      "arm": "automatic",
+      "future_id": "data_pipeline-3054704387-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-0-direct",
+      "family": "data_pipeline",
+      "arm": "direct",
+      "future_id": "data_pipeline-3054704387-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-0-indexed_raw",
+      "family": "data_pipeline",
+      "arm": "indexed_raw",
+      "future_id": "data_pipeline-3054704387-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-0-indexed_projected",
+      "family": "data_pipeline",
+      "arm": "indexed_projected",
+      "future_id": "data_pipeline-3054704387-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-0-full",
+      "family": "data_pipeline",
+      "arm": "full",
+      "future_id": "data_pipeline-3054704387-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-1-prompt",
+      "family": "data_pipeline",
+      "arm": "prompt",
+      "future_id": "data_pipeline-3054704387-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-1-structured",
+      "family": "data_pipeline",
+      "arm": "structured",
+      "future_id": "data_pipeline-3054704387-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-1-checked",
+      "family": "data_pipeline",
+      "arm": "checked",
+      "future_id": "data_pipeline-3054704387-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-1-automatic",
+      "family": "data_pipeline",
+      "arm": "automatic",
+      "future_id": "data_pipeline-3054704387-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-1-direct",
+      "family": "data_pipeline",
+      "arm": "direct",
+      "future_id": "data_pipeline-3054704387-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-1-indexed_raw",
+      "family": "data_pipeline",
+      "arm": "indexed_raw",
+      "future_id": "data_pipeline-3054704387-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-1-indexed_projected",
+      "family": "data_pipeline",
+      "arm": "indexed_projected",
+      "future_id": "data_pipeline-3054704387-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-1-full",
+      "family": "data_pipeline",
+      "arm": "full",
+      "future_id": "data_pipeline-3054704387-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-2-prompt",
+      "family": "data_pipeline",
+      "arm": "prompt",
+      "future_id": "data_pipeline-3054704387-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "link_transform",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-2-structured",
+      "family": "data_pipeline",
+      "arm": "structured",
+      "future_id": "data_pipeline-3054704387-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-2-checked",
+      "family": "data_pipeline",
+      "arm": "checked",
+      "future_id": "data_pipeline-3054704387-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "link_load",
+          "link_transform",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-2-automatic",
+      "family": "data_pipeline",
+      "arm": "automatic",
+      "future_id": "data_pipeline-3054704387-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-2-direct",
+      "family": "data_pipeline",
+      "arm": "direct",
+      "future_id": "data_pipeline-3054704387-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-2-indexed_raw",
+      "family": "data_pipeline",
+      "arm": "indexed_raw",
+      "future_id": "data_pipeline-3054704387-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-2-indexed_projected",
+      "family": "data_pipeline",
+      "arm": "indexed_projected",
+      "future_id": "data_pipeline-3054704387-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "link_load",
+          "link_transform",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-3054704387-2-full",
+      "family": "data_pipeline",
+      "arm": "full",
+      "future_id": "data_pipeline-3054704387-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-0-prompt",
+      "family": "data_pipeline",
+      "arm": "prompt",
+      "future_id": "data_pipeline-1854593748-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-0-structured",
+      "family": "data_pipeline",
+      "arm": "structured",
+      "future_id": "data_pipeline-1854593748-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-0-checked",
+      "family": "data_pipeline",
+      "arm": "checked",
+      "future_id": "data_pipeline-1854593748-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-0-automatic",
+      "family": "data_pipeline",
+      "arm": "automatic",
+      "future_id": "data_pipeline-1854593748-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-0-direct",
+      "family": "data_pipeline",
+      "arm": "direct",
+      "future_id": "data_pipeline-1854593748-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-0-indexed_raw",
+      "family": "data_pipeline",
+      "arm": "indexed_raw",
+      "future_id": "data_pipeline-1854593748-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-0-indexed_projected",
+      "family": "data_pipeline",
+      "arm": "indexed_projected",
+      "future_id": "data_pipeline-1854593748-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "a3fcfe9b0fb3b2a6",
+        "work": [
+          "approval_scope",
+          "link_load",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-0-full",
+      "family": "data_pipeline",
+      "arm": "full",
+      "future_id": "data_pipeline-1854593748-0",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-1-prompt",
+      "family": "data_pipeline",
+      "arm": "prompt",
+      "future_id": "data_pipeline-1854593748-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-1-structured",
+      "family": "data_pipeline",
+      "arm": "structured",
+      "future_id": "data_pipeline-1854593748-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-1-checked",
+      "family": "data_pipeline",
+      "arm": "checked",
+      "future_id": "data_pipeline-1854593748-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-1-automatic",
+      "family": "data_pipeline",
+      "arm": "automatic",
+      "future_id": "data_pipeline-1854593748-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-1-direct",
+      "family": "data_pipeline",
+      "arm": "direct",
+      "future_id": "data_pipeline-1854593748-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-1-indexed_raw",
+      "family": "data_pipeline",
+      "arm": "indexed_raw",
+      "future_id": "data_pipeline-1854593748-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-1-indexed_projected",
+      "family": "data_pipeline",
+      "arm": "indexed_projected",
+      "future_id": "data_pipeline-1854593748-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-1-full",
+      "family": "data_pipeline",
+      "arm": "full",
+      "future_id": "data_pipeline-1854593748-1",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      },
+      "response": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-2-prompt",
+      "family": "data_pipeline",
+      "arm": "prompt",
+      "future_id": "data_pipeline-1854593748-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "unparsed",
+      "expected": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-2-structured",
+      "family": "data_pipeline",
+      "arm": "structured",
+      "future_id": "data_pipeline-1854593748-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-2-checked",
+      "family": "data_pipeline",
+      "arm": "checked",
+      "future_id": "data_pipeline-1854593748-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-2-automatic",
+      "family": "data_pipeline",
+      "arm": "automatic",
+      "future_id": "data_pipeline-1854593748-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": false,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "link_transform",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-2-direct",
+      "family": "data_pipeline",
+      "arm": "direct",
+      "future_id": "data_pipeline-1854593748-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-2-indexed_raw",
+      "family": "data_pipeline",
+      "arm": "indexed_raw",
+      "future_id": "data_pipeline-1854593748-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-2-indexed_projected",
+      "family": "data_pipeline",
+      "arm": "indexed_projected",
+      "future_id": "data_pipeline-1854593748-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "identity": "data_pipeline-1854593748-2-full",
+      "family": "data_pipeline",
+      "arm": "full",
+      "future_id": "data_pipeline-1854593748-2",
+      "fully_measured_pair": true,
+      "status": "completed",
+      "correct": true,
+      "information": "sufficient",
+      "expected": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      },
+      "response": {
+        "action": "hold",
+        "target_id": "6b757e55abe0ee00",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    }
+  ]
+}

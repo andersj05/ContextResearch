@@ -1,0 +1,99 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "data_pipeline-2023252911-0-prompt",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0066805",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 4,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"target_id\":\"8ee79e03017ff64c\",\"work\":[\"approval_scope\"]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target and late event. Memory may be prose, a list of tool results with tool/data wrappers, or a JSON table with f=full field paths and r=rows. Root fields in a table are unprefixed; component fields use tool.field. First apply the event only to the selected workflow. Return one exact decision and sorted work. Do not call tools. Select the root record whose pipeline_run equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. Publish only if extract, transform, load, quality states pass, transform.input_dataset=extract.output_dataset, load.input_dataset=transform.output_dataset, quality.subject_dataset=load.output_dataset, consent.state=approved, and consent.approved_output=load.output_dataset. Otherwise hold with the exact sorted set of extract, transform, load, quality, link_transform, link_load, quality_scope, approval, approval_scope for failed conditions. Return target_id=load.output_dataset. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "note",
+        "value": "Schedule title updated; gate fields unchanged."
+      },
+      "memory": "No target value or late event is supplied; apply event first if later provided, then select exact pipeline_run. Candidate workflow tool results only:\nroot/pipeline_run 95e5d86b85d25c88; workflow_key c138f535a1d69dab. extract 85f40b58937646b5/pass, run ac761cdf3f875672, output_dataset e97ba46002a843c0. transform 303e62fdc47e2c78/pass, run d6e4c23e2d6d9e00, input_dataset e97ba46002a843c0, output_dataset 3a91b4b0e0abd6a3. load 9db2240f672a9f5d/pass, run 380cc7494dba95cb, input_dataset 3a91b4b0e0abd6a3, output_dataset d3d4f20d4bad7e7c. quality ef46c48a7ee98f73/pass, check 75c6012af5641e3d, subject_dataset d3d4f20d4bad7e7c. consent 853e443f524ff8c6/approved, approval 128bfd2ea5cd5985, approved_output d3d4f20d4bad7e7c.\nroot/pipeline_run d695e3bda044fb6a; workflow_key dd3cbf0218b1cfe2. extract 99a65a69b7955772/pass, run 2e33dc17cd84b2d5, output_dataset b9c9bef56d6f003d. transform 9b416ed9a6ab0689/pass, run d672f07edf525ddd, input_dataset b9c9bef56d6f003d, output_dataset 774189d609b276ad. load 040b691992362def/pass, run be405498cd321065, input_dataset 774189d609b276ad, output_dataset 8ee79e03017ff64c. quality a771ee4b3e835bfa/pass, check b39ecc71960b289f, subject_dataset 8ee79e03017ff64c. consent 3b302a64eccb9267/approved, approval f430ca6c9a208e03, approved_output b422e2ddd2757a19.",
+      "target": "d695e3bda044fb6a"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "f4175159d751a980aacec32d95563114e434eecc9e294e31cb359e614409ed1d",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "target_id": "8ee79e03017ff64c",
+    "work": [
+      "approval_scope"
+    ]
+  },
+  "started_at": "2026-09-23T00:40:34.535509+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3510,
+    "outputTokens": 155,
+    "reasoningOutputTokens": 119,
+    "totalTokens": 3665
+  },
+  "usage_events": 1,
+  "wall_seconds": 5.590224599989597,
+  "wire_body_byte_bound": 19400
+}

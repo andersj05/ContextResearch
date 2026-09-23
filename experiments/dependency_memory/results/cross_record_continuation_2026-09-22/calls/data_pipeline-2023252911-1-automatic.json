@@ -1,0 +1,101 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "data_pipeline-2023252911-1-automatic",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.03873",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 4,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"target_id\":\"8ee79e03017ff64c\",\"work\":[\"link_load\",\"link_transform\",\"quality_scope\"]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target and late event. Memory may be prose, a list of tool results with tool/data wrappers, or a JSON table with f=full field paths and r=rows. Root fields in a table are unprefixed; component fields use tool.field. First apply the event only to the selected workflow. Return one exact decision and sorted work. Do not call tools. Select the root record whose pipeline_run equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. Publish only if extract, transform, load, quality states pass, transform.input_dataset=extract.output_dataset, load.input_dataset=transform.output_dataset, quality.subject_dataset=load.output_dataset, consent.state=approved, and consent.approved_output=load.output_dataset. Otherwise hold with the exact sorted set of extract, transform, load, quality, link_transform, link_load, quality_scope, approval, approval_scope for failed conditions. Return target_id=load.output_dataset. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "consent.approved_output",
+        "value": "8ee79e03017ff64c"
+      },
+      "memory": "{\"f\":[\"consent.approval\",\"consent.approved_output\",\"consent.record_id\",\"consent.state\",\"extract.output_dataset\",\"extract.record_id\",\"extract.run\",\"extract.state\",\"load.input_dataset\",\"load.output_dataset\",\"load.record_id\",\"load.run\",\"load.state\",\"pipeline_run\",\"quality.check\",\"quality.record_id\",\"quality.state\",\"quality.subject_dataset\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.record_id\",\"transform.run\",\"transform.state\",\"workflow_key\"],\"r\":[[\"128bfd2ea5cd5985\",\"d3d4f20d4bad7e7c\",\"853e443f524ff8c6\",\"approved\",\"e97ba46002a843c0\",\"85f40b58937646b5\",\"ac761cdf3f875672\",\"pass\",\"3a91b4b0e0abd6a3\",\"d3d4f20d4bad7e7c\",\"9db2240f672a9f5d\",\"380cc7494dba95cb\",\"pass\",\"95e5d86b85d25c88\",\"75c6012af5641e3d\",\"ef46c48a7ee98f73\",\"pass\",\"d3d4f20d4bad7e7c\",\"e97ba46002a843c0\",\"3a91b4b0e0abd6a3\",\"303e62fdc47e2c78\",\"d6e4c23e2d6d9e00\",\"pass\",\"c138f535a1d69dab\"],[\"f430ca6c9a208e03\",\"b422e2ddd2757a19\",\"3b302a64eccb9267\",\"approved\",\"b9c9bef56d6f003d\",\"99a65a69b7955772\",\"2e33dc17cd84b2d5\",\"pass\",\"774189d609b276ad\",\"8ee79e03017ff64c\",\"040b691992362def\",\"be405498cd321065\",\"pass\",\"d695e3bda044fb6a\",\"b39ecc71960b289f\",\"a771ee4b3e835bfa\",\"pass\",\"8ee79e03017ff64c\",\"b9c9bef56d6f003d\",\"774189d609b276ad\",\"9b416ed9a6ab0689\",\"d672f07edf525ddd\",\"pass\",\"dd3cbf0218b1cfe2\"]]}",
+      "target": "d695e3bda044fb6a"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "80009cb0d4c6df927380f0eaeae06892bcf3c9d9a8744be9cca20fe4f6f37775",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "target_id": "8ee79e03017ff64c",
+    "work": [
+      "link_load",
+      "link_transform",
+      "quality_scope"
+    ]
+  },
+  "started_at": "2026-09-23T00:41:32.826226+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 3522,
+    "outputTokens": 2394,
+    "reasoningOutputTokens": 2352,
+    "totalTokens": 5916
+  },
+  "usage_events": 1,
+  "wall_seconds": 47.1571219000034,
+  "wire_body_byte_bound": 19808
+}

@@ -1,0 +1,478 @@
+{
+  "case_id": "data_pipeline-3054704387",
+  "checks": {
+    "automatic_child": {
+      "candidate_bytes_read": 1274,
+      "cpu_ns": 342600,
+      "exact_ids": true,
+      "passed": true,
+      "reason": "passed",
+      "relationships": true,
+      "required_id_fields": 19,
+      "source_bytes_read": 6944
+    },
+    "automatic_parent": {
+      "candidate_bytes_read": 3284,
+      "cpu_ns": 823700,
+      "exact_ids": true,
+      "passed": true,
+      "reason": "passed",
+      "relationships": true,
+      "required_id_fields": 19,
+      "source_bytes_read": 16618
+    },
+    "checked_child_proposal": {
+      "candidate_bytes_read": 1274,
+      "cpu_ns": 792900,
+      "exact_ids": false,
+      "passed": false,
+      "reason": "identifier_or_relationship_loss",
+      "relationships": false,
+      "required_id_fields": 19,
+      "source_bytes_read": 6944
+    },
+    "child_fallback": true,
+    "parent_fallback": true,
+    "structured_parent": {
+      "candidate_bytes_read": 4073,
+      "cpu_ns": 681000,
+      "exact_ids": false,
+      "passed": false,
+      "reason": "unstructured_or_ambiguous_memory",
+      "relationships": false,
+      "required_id_fields": 19,
+      "source_bytes_read": 16618
+    }
+  },
+  "decisions": [
+    {
+      "arm": "prompt",
+      "future_id": "data_pipeline-3054704387-0",
+      "identity": "data_pipeline-3054704387-0-prompt",
+      "memory_bytes": 2163,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "direct",
+      "future_id": "data_pipeline-3054704387-0",
+      "identity": "data_pipeline-3054704387-0-direct",
+      "memory_bytes": 666,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "full",
+      "future_id": "data_pipeline-3054704387-0",
+      "identity": "data_pipeline-3054704387-0-full",
+      "memory_bytes": 9486,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "automatic",
+      "future_id": "data_pipeline-3054704387-0",
+      "identity": "data_pipeline-3054704387-0-automatic",
+      "memory_bytes": 1274,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "structured",
+      "future_id": "data_pipeline-3054704387-0",
+      "identity": "data_pipeline-3054704387-0-structured",
+      "memory_bytes": 1578,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "indexed_raw",
+      "future_id": "data_pipeline-3054704387-0",
+      "identity": "data_pipeline-3054704387-0-indexed_raw",
+      "memory_bytes": 1356,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "indexed_projected",
+      "future_id": "data_pipeline-3054704387-0",
+      "identity": "data_pipeline-3054704387-0-indexed_projected",
+      "memory_bytes": 872,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "checked",
+      "future_id": "data_pipeline-3054704387-0",
+      "identity": "data_pipeline-3054704387-0-checked",
+      "memory_bytes": 1274,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "b84cce57ae04f63d",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "arm": "indexed_raw",
+      "future_id": "data_pipeline-3054704387-1",
+      "identity": "data_pipeline-3054704387-1-indexed_raw",
+      "memory_bytes": 1356,
+      "transport_failure": false,
+      "truth": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      }
+    },
+    {
+      "arm": "direct",
+      "future_id": "data_pipeline-3054704387-1",
+      "identity": "data_pipeline-3054704387-1-direct",
+      "memory_bytes": 666,
+      "transport_failure": false,
+      "truth": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      }
+    },
+    {
+      "arm": "structured",
+      "future_id": "data_pipeline-3054704387-1",
+      "identity": "data_pipeline-3054704387-1-structured",
+      "memory_bytes": 1578,
+      "transport_failure": false,
+      "truth": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      }
+    },
+    {
+      "arm": "checked",
+      "future_id": "data_pipeline-3054704387-1",
+      "identity": "data_pipeline-3054704387-1-checked",
+      "memory_bytes": 1274,
+      "transport_failure": false,
+      "truth": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      }
+    },
+    {
+      "arm": "indexed_projected",
+      "future_id": "data_pipeline-3054704387-1",
+      "identity": "data_pipeline-3054704387-1-indexed_projected",
+      "memory_bytes": 872,
+      "transport_failure": false,
+      "truth": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      }
+    },
+    {
+      "arm": "full",
+      "future_id": "data_pipeline-3054704387-1",
+      "identity": "data_pipeline-3054704387-1-full",
+      "memory_bytes": 9486,
+      "transport_failure": false,
+      "truth": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      }
+    },
+    {
+      "arm": "prompt",
+      "future_id": "data_pipeline-3054704387-1",
+      "identity": "data_pipeline-3054704387-1-prompt",
+      "memory_bytes": 2163,
+      "transport_failure": false,
+      "truth": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      }
+    },
+    {
+      "arm": "automatic",
+      "future_id": "data_pipeline-3054704387-1",
+      "identity": "data_pipeline-3054704387-1-automatic",
+      "memory_bytes": 1274,
+      "transport_failure": false,
+      "truth": {
+        "action": "publish",
+        "target_id": "b84cce57ae04f63d",
+        "work": []
+      }
+    },
+    {
+      "arm": "checked",
+      "future_id": "data_pipeline-3054704387-2",
+      "identity": "data_pipeline-3054704387-2-checked",
+      "memory_bytes": 1274,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "arm": "direct",
+      "future_id": "data_pipeline-3054704387-2",
+      "identity": "data_pipeline-3054704387-2-direct",
+      "memory_bytes": 666,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "arm": "indexed_projected",
+      "future_id": "data_pipeline-3054704387-2",
+      "identity": "data_pipeline-3054704387-2-indexed_projected",
+      "memory_bytes": 872,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "arm": "automatic",
+      "future_id": "data_pipeline-3054704387-2",
+      "identity": "data_pipeline-3054704387-2-automatic",
+      "memory_bytes": 1274,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "arm": "indexed_raw",
+      "future_id": "data_pipeline-3054704387-2",
+      "identity": "data_pipeline-3054704387-2-indexed_raw",
+      "memory_bytes": 1356,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "arm": "prompt",
+      "future_id": "data_pipeline-3054704387-2",
+      "identity": "data_pipeline-3054704387-2-prompt",
+      "memory_bytes": 2163,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "arm": "full",
+      "future_id": "data_pipeline-3054704387-2",
+      "identity": "data_pipeline-3054704387-2-full",
+      "memory_bytes": 9486,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    },
+    {
+      "arm": "structured",
+      "future_id": "data_pipeline-3054704387-2",
+      "identity": "data_pipeline-3054704387-2-structured",
+      "memory_bytes": 1578,
+      "transport_failure": false,
+      "truth": {
+        "action": "hold",
+        "target_id": "f68dc13b33b4868b",
+        "work": [
+          "approval_scope",
+          "quality_scope"
+        ]
+      }
+    }
+  ],
+  "family": "data_pipeline",
+  "index": {
+    "3aecac1fb729433b": "[{\"data\":{\"approval\":\"eab2f7f3aa99fa5b\",\"approved_output\":\"2762102d522cd9e2\",\"record_id\":\"e627b3844be2f6be\",\"state\":\"approved\",\"workflow_key\":\"af7fa4db5b577efa\"},\"tool\":\"consent\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft 04039c02984c4ace. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 04039c02984c4ace. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 04039c02984c4ace. Dashboard labels and timings are not gate evidence. \",\"pipeline_run\":\"3aecac1fb729433b\",\"workflow_key\":\"af7fa4db5b577efa\"},\"tool\":\"root\"},{\"data\":{\"output_dataset\":\"f6dd48915bcf4fc0\",\"record_id\":\"be3589119776a9ad\",\"run\":\"c1e96c4805734827\",\"state\":\"pass\",\"workflow_key\":\"af7fa4db5b577efa\"},\"tool\":\"extract\"},{\"data\":{\"input_dataset\":\"ab132510b0854a71\",\"output_dataset\":\"e708cf3ae18ba05d\",\"record_id\":\"cbf583456363bf9b\",\"run\":\"4eb05a50529bfad0\",\"state\":\"pass\",\"workflow_key\":\"af7fa4db5b577efa\"},\"tool\":\"transform\"},{\"data\":{\"check\":\"205c3bc2d45eb073\",\"record_id\":\"febfeff66da9551a\",\"state\":\"pass\",\"subject_dataset\":\"2762102d522cd9e2\",\"workflow_key\":\"af7fa4db5b577efa\"},\"tool\":\"quality\"},{\"data\":{\"input_dataset\":\"e708cf3ae18ba05d\",\"output_dataset\":\"2762102d522cd9e2\",\"record_id\":\"eb367cc8918c5fb4\",\"run\":\"e25d436fcb6b6b73\",\"state\":\"pass\",\"workflow_key\":\"af7fa4db5b577efa\"},\"tool\":\"load\"}]",
+    "46a6cea0a8875143": "[{\"data\":{\"input_dataset\":\"8bf76c38ccdf4b34\",\"output_dataset\":\"a0e73b48b9c24645\",\"record_id\":\"62d56b64523d4f3c\",\"run\":\"ff998ded798d26dc\",\"state\":\"pass\",\"workflow_key\":\"a6f157d3d6fd0da2\"},\"tool\":\"load\"},{\"data\":{\"output_dataset\":\"288dc9da21b65f42\",\"record_id\":\"56ba58595aeba5e9\",\"run\":\"941076825b5b0454\",\"state\":\"pass\",\"workflow_key\":\"a6f157d3d6fd0da2\"},\"tool\":\"extract\"},{\"data\":{\"input_dataset\":\"288dc9da21b65f42\",\"output_dataset\":\"8bf76c38ccdf4b34\",\"record_id\":\"9895c39403a9eb6a\",\"run\":\"a35080d423156407\",\"state\":\"pass\",\"workflow_key\":\"a6f157d3d6fd0da2\"},\"tool\":\"transform\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft 96fe49796552f0df. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 96fe49796552f0df. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 96fe49796552f0df. Dashboard labels and timings are not gate evidence. \",\"pipeline_run\":\"46a6cea0a8875143\",\"workflow_key\":\"a6f157d3d6fd0da2\"},\"tool\":\"root\"},{\"data\":{\"check\":\"82b47cfd0425f6ad\",\"record_id\":\"90d33b23e542386f\",\"state\":\"pass\",\"subject_dataset\":\"a0e73b48b9c24645\",\"workflow_key\":\"a6f157d3d6fd0da2\"},\"tool\":\"quality\"},{\"data\":{\"approval\":\"423540e3f54bdcfe\",\"approved_output\":\"a0e73b48b9c24645\",\"record_id\":\"568fd0ee685cdedc\",\"state\":\"approved\",\"workflow_key\":\"a6f157d3d6fd0da2\"},\"tool\":\"consent\"}]",
+    "5351d2aab74a987b": "[{\"data\":{\"check\":\"792083d5fa4cc91a\",\"record_id\":\"ee642a6e455a387a\",\"state\":\"pass\",\"subject_dataset\":\"9522de97c9430e3a\",\"workflow_key\":\"747942407d2a476e\"},\"tool\":\"quality\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft 84af897d284e30ef. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 84af897d284e30ef. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 84af897d284e30ef. Dashboard labels and timings are not gate evidence. \",\"pipeline_run\":\"5351d2aab74a987b\",\"workflow_key\":\"747942407d2a476e\"},\"tool\":\"root\"},{\"data\":{\"input_dataset\":\"901ffa8e0a61ad1a\",\"output_dataset\":\"9522de97c9430e3a\",\"record_id\":\"23d0746471669c7f\",\"run\":\"cba139156d8adcde\",\"state\":\"pass\",\"workflow_key\":\"747942407d2a476e\"},\"tool\":\"load\"},{\"data\":{\"input_dataset\":\"66447ff92f5b12e5\",\"output_dataset\":\"901ffa8e0a61ad1a\",\"record_id\":\"91f7b58f39b33863\",\"run\":\"6be2ac4ac9b638f8\",\"state\":\"pass\",\"workflow_key\":\"747942407d2a476e\"},\"tool\":\"transform\"},{\"data\":{\"output_dataset\":\"66447ff92f5b12e5\",\"record_id\":\"684ae771be220ea4\",\"run\":\"e71936f589c2526e\",\"state\":\"pass\",\"workflow_key\":\"747942407d2a476e\"},\"tool\":\"extract\"},{\"data\":{\"approval\":\"5189445b70b52b8c\",\"approved_output\":\"9522de97c9430e3a\",\"record_id\":\"cc2aa64ffe6e7a1e\",\"state\":\"approved\",\"workflow_key\":\"747942407d2a476e\"},\"tool\":\"consent\"}]",
+    "75f412f87a25111f": "[{\"data\":{\"input_dataset\":\"102843f650e56c9e\",\"output_dataset\":\"b84cce57ae04f63d\",\"record_id\":\"e6c0da2777ba8f5f\",\"run\":\"70cd237cfba1a2db\",\"state\":\"pass\",\"workflow_key\":\"24f7e0e31523bd4e\"},\"tool\":\"load\"},{\"data\":{\"input_dataset\":\"751340d438fa2e4f\",\"output_dataset\":\"102843f650e56c9e\",\"record_id\":\"596afd2581c3823b\",\"run\":\"87f8b0244a9bdc25\",\"state\":\"pass\",\"workflow_key\":\"24f7e0e31523bd4e\"},\"tool\":\"transform\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft 8c9185322cea51b3. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 8c9185322cea51b3. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 8c9185322cea51b3. Dashboard labels and timings are not gate evidence. \",\"pipeline_run\":\"75f412f87a25111f\",\"workflow_key\":\"24f7e0e31523bd4e\"},\"tool\":\"root\"},{\"data\":{\"approval\":\"bb26b3ee7f80c3c2\",\"approved_output\":\"252fc63a91104876\",\"record_id\":\"0cca298b9dab6491\",\"state\":\"approved\",\"workflow_key\":\"24f7e0e31523bd4e\"},\"tool\":\"consent\"},{\"data\":{\"output_dataset\":\"751340d438fa2e4f\",\"record_id\":\"a5f89be958bc92f1\",\"run\":\"8909f8b17544a8c5\",\"state\":\"pass\",\"workflow_key\":\"24f7e0e31523bd4e\"},\"tool\":\"extract\"},{\"data\":{\"check\":\"f2f3922b7d316485\",\"record_id\":\"ffdfd3878617358b\",\"state\":\"pass\",\"subject_dataset\":\"b84cce57ae04f63d\",\"workflow_key\":\"24f7e0e31523bd4e\"},\"tool\":\"quality\"}]",
+    "a1fd8feff0161a65": "[{\"data\":{\"check\":\"3313494c3b843e0d\",\"record_id\":\"3cbdc33e54c64609\",\"state\":\"pass\",\"subject_dataset\":\"d9532ba6cb3f8633\",\"workflow_key\":\"ace187980c0c5704\"},\"tool\":\"quality\"},{\"data\":{\"approval\":\"e1dbd78d47def00e\",\"approved_output\":\"49b8512a15da6a33\",\"record_id\":\"cd2ca2afcd383015\",\"state\":\"approved\",\"workflow_key\":\"ace187980c0c5704\"},\"tool\":\"consent\"},{\"data\":{\"input_dataset\":\"0e54b0f94227547b\",\"output_dataset\":\"94efebb7475298b3\",\"record_id\":\"180eec9c024e189a\",\"run\":\"f35361f349ca69af\",\"state\":\"pass\",\"workflow_key\":\"ace187980c0c5704\"},\"tool\":\"transform\"},{\"data\":{\"input_dataset\":\"94efebb7475298b3\",\"output_dataset\":\"d9532ba6cb3f8633\",\"record_id\":\"7a11d1a73581bc40\",\"run\":\"e9997fe7937e6a44\",\"state\":\"pass\",\"workflow_key\":\"ace187980c0c5704\"},\"tool\":\"load\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft d840eff8d6e79651. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft d840eff8d6e79651. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft d840eff8d6e79651. Dashboard labels and timings are not gate evidence. \",\"pipeline_run\":\"a1fd8feff0161a65\",\"workflow_key\":\"ace187980c0c5704\"},\"tool\":\"root\"},{\"data\":{\"output_dataset\":\"0e54b0f94227547b\",\"record_id\":\"05742c8564f5f292\",\"run\":\"e6a76cc151aca347\",\"state\":\"pass\",\"workflow_key\":\"ace187980c0c5704\"},\"tool\":\"extract\"}]",
+    "d3723c8c9ff88fb4": "[{\"data\":{\"approval\":\"1f75a55d9c621ea5\",\"approved_output\":\"1e170226bbb43e7b\",\"record_id\":\"7df96c372ed96d59\",\"state\":\"approved\",\"workflow_key\":\"1bf2bc9d2a69d01e\"},\"tool\":\"consent\"},{\"data\":{\"output_dataset\":\"51f84898598bbe07\",\"record_id\":\"b854d7e3221c5a60\",\"run\":\"3402a57cff2df423\",\"state\":\"pass\",\"workflow_key\":\"1bf2bc9d2a69d01e\"},\"tool\":\"extract\"},{\"data\":{\"check\":\"c958ea30863a4ed0\",\"record_id\":\"078a87edeadb29c3\",\"state\":\"pass\",\"subject_dataset\":\"1e170226bbb43e7b\",\"workflow_key\":\"1bf2bc9d2a69d01e\"},\"tool\":\"quality\"},{\"data\":{\"input_dataset\":\"19ad2be28a5e055d\",\"output_dataset\":\"152c136e02a65175\",\"record_id\":\"634e83444934c31e\",\"run\":\"61f34f84246f1f81\",\"state\":\"pass\",\"workflow_key\":\"1bf2bc9d2a69d01e\"},\"tool\":\"transform\"},{\"data\":{\"input_dataset\":\"152c136e02a65175\",\"output_dataset\":\"1e170226bbb43e7b\",\"record_id\":\"9437df3a909406bc\",\"run\":\"c0ab86385319f017\",\"state\":\"pass\",\"workflow_key\":\"1bf2bc9d2a69d01e\"},\"tool\":\"load\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft f4194b2a46ab2249. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft f4194b2a46ab2249. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft f4194b2a46ab2249. Dashboard labels and timings are not gate evidence. \",\"pipeline_run\":\"d3723c8c9ff88fb4\",\"workflow_key\":\"1bf2bc9d2a69d01e\"},\"tool\":\"root\"}]",
+    "e196e79cb0329ac4": "[{\"data\":{\"check\":\"e13f224e5d53c14c\",\"record_id\":\"5fe7fa682305dafe\",\"state\":\"fail\",\"subject_dataset\":\"0ad7230646b1d9ef\",\"workflow_key\":\"6970bedead35b218\"},\"tool\":\"quality\"},{\"data\":{\"output_dataset\":\"e78efbffa7d14d9c\",\"record_id\":\"e9009aa5e4f880e3\",\"run\":\"856ec08964c0e2be\",\"state\":\"pass\",\"workflow_key\":\"6970bedead35b218\"},\"tool\":\"extract\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft ac9256f780e5c776. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft ac9256f780e5c776. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft ac9256f780e5c776. Dashboard labels and timings are not gate evidence. \",\"pipeline_run\":\"e196e79cb0329ac4\",\"workflow_key\":\"6970bedead35b218\"},\"tool\":\"root\"},{\"data\":{\"approval\":\"5c94b9e506f08a0b\",\"approved_output\":\"0ad7230646b1d9ef\",\"record_id\":\"1f49c9f311fe4d5a\",\"state\":\"approved\",\"workflow_key\":\"6970bedead35b218\"},\"tool\":\"consent\"},{\"data\":{\"input_dataset\":\"58ee4b0bbb1fa240\",\"output_dataset\":\"0ad7230646b1d9ef\",\"record_id\":\"42fce0facdbf9c45\",\"run\":\"df4352f7c8c6872d\",\"state\":\"pass\",\"workflow_key\":\"6970bedead35b218\"},\"tool\":\"load\"},{\"data\":{\"input_dataset\":\"e78efbffa7d14d9c\",\"output_dataset\":\"58ee4b0bbb1fa240\",\"record_id\":\"cdc4fa346ee4bcc2\",\"run\":\"c588ed1e5cfd867b\",\"state\":\"pass\",\"workflow_key\":\"6970bedead35b218\"},\"tool\":\"transform\"}]"
+  },
+  "index_bytes": 10739,
+  "infeasible": {},
+  "local": {
+    "automatic": {
+      "bytes_read": 45340,
+      "bytes_written": 5832,
+      "cpu_ns": 2069200
+    },
+    "checked": {
+      "bytes_read": 93975,
+      "bytes_written": 13727,
+      "cpu_ns": 3837300
+    },
+    "direct": {
+      "bytes_read": 15017,
+      "bytes_written": 2297,
+      "cpu_ns": 540800
+    },
+    "full": {
+      "bytes_read": 28458,
+      "bytes_written": 28458,
+      "cpu_ns": 653300
+    },
+    "indexed_projected": {
+      "bytes_read": 25230,
+      "bytes_written": 13355,
+      "cpu_ns": 1537200
+    },
+    "indexed_raw": {
+      "bytes_read": 15456,
+      "bytes_written": 10739,
+      "cpu_ns": 672200
+    },
+    "prompt": {
+      "bytes_read": 27408,
+      "bytes_written": 5785,
+      "cpu_ns": 27800
+    },
+    "structured": {
+      "bytes_read": 26422,
+      "bytes_written": 5651,
+      "cpu_ns": 27200
+    }
+  },
+  "memories": {
+    "automatic": {
+      "child": "{\"f\":[\"consent.approval\",\"consent.approved_output\",\"consent.record_id\",\"consent.state\",\"extract.output_dataset\",\"extract.record_id\",\"extract.run\",\"extract.state\",\"load.input_dataset\",\"load.output_dataset\",\"load.record_id\",\"load.run\",\"load.state\",\"pipeline_run\",\"quality.check\",\"quality.record_id\",\"quality.state\",\"quality.subject_dataset\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.record_id\",\"transform.run\",\"transform.state\",\"workflow_key\"],\"r\":[[\"423540e3f54bdcfe\",\"a0e73b48b9c24645\",\"568fd0ee685cdedc\",\"approved\",\"288dc9da21b65f42\",\"56ba58595aeba5e9\",\"941076825b5b0454\",\"pass\",\"8bf76c38ccdf4b34\",\"a0e73b48b9c24645\",\"62d56b64523d4f3c\",\"ff998ded798d26dc\",\"pass\",\"46a6cea0a8875143\",\"82b47cfd0425f6ad\",\"90d33b23e542386f\",\"pass\",\"a0e73b48b9c24645\",\"288dc9da21b65f42\",\"8bf76c38ccdf4b34\",\"9895c39403a9eb6a\",\"a35080d423156407\",\"pass\",\"a6f157d3d6fd0da2\"],[\"bb26b3ee7f80c3c2\",\"252fc63a91104876\",\"0cca298b9dab6491\",\"approved\",\"751340d438fa2e4f\",\"a5f89be958bc92f1\",\"8909f8b17544a8c5\",\"pass\",\"102843f650e56c9e\",\"b84cce57ae04f63d\",\"e6c0da2777ba8f5f\",\"70cd237cfba1a2db\",\"pass\",\"75f412f87a25111f\",\"f2f3922b7d316485\",\"ffdfd3878617358b\",\"pass\",\"b84cce57ae04f63d\",\"751340d438fa2e4f\",\"102843f650e56c9e\",\"596afd2581c3823b\",\"87f8b0244a9bdc25\",\"pass\",\"24f7e0e31523bd4e\"]]}",
+      "parent": "{\"f\":[\"consent.approval\",\"consent.approved_output\",\"consent.record_id\",\"consent.state\",\"extract.output_dataset\",\"extract.record_id\",\"extract.run\",\"extract.state\",\"load.input_dataset\",\"load.output_dataset\",\"load.record_id\",\"load.run\",\"load.state\",\"pipeline_run\",\"quality.check\",\"quality.record_id\",\"quality.state\",\"quality.subject_dataset\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.record_id\",\"transform.run\",\"transform.state\",\"workflow_key\"],\"r\":[[\"1f75a55d9c621ea5\",\"1e170226bbb43e7b\",\"7df96c372ed96d59\",\"approved\",\"51f84898598bbe07\",\"b854d7e3221c5a60\",\"3402a57cff2df423\",\"pass\",\"152c136e02a65175\",\"1e170226bbb43e7b\",\"9437df3a909406bc\",\"c0ab86385319f017\",\"pass\",\"d3723c8c9ff88fb4\",\"c958ea30863a4ed0\",\"078a87edeadb29c3\",\"pass\",\"1e170226bbb43e7b\",\"19ad2be28a5e055d\",\"152c136e02a65175\",\"634e83444934c31e\",\"61f34f84246f1f81\",\"pass\",\"1bf2bc9d2a69d01e\"],[\"bb26b3ee7f80c3c2\",\"252fc63a91104876\",\"0cca298b9dab6491\",\"approved\",\"751340d438fa2e4f\",\"a5f89be958bc92f1\",\"8909f8b17544a8c5\",\"pass\",\"102843f650e56c9e\",\"b84cce57ae04f63d\",\"e6c0da2777ba8f5f\",\"70cd237cfba1a2db\",\"pass\",\"75f412f87a25111f\",\"f2f3922b7d316485\",\"ffdfd3878617358b\",\"pass\",\"b84cce57ae04f63d\",\"751340d438fa2e4f\",\"102843f650e56c9e\",\"596afd2581c3823b\",\"87f8b0244a9bdc25\",\"pass\",\"24f7e0e31523bd4e\"],[\"5c94b9e506f08a0b\",\"0ad7230646b1d9ef\",\"1f49c9f311fe4d5a\",\"approved\",\"e78efbffa7d14d9c\",\"e9009aa5e4f880e3\",\"856ec08964c0e2be\",\"pass\",\"58ee4b0bbb1fa240\",\"0ad7230646b1d9ef\",\"42fce0facdbf9c45\",\"df4352f7c8c6872d\",\"pass\",\"e196e79cb0329ac4\",\"e13f224e5d53c14c\",\"5fe7fa682305dafe\",\"fail\",\"0ad7230646b1d9ef\",\"e78efbffa7d14d9c\",\"58ee4b0bbb1fa240\",\"cdc4fa346ee4bcc2\",\"c588ed1e5cfd867b\",\"pass\",\"6970bedead35b218\"],[\"5189445b70b52b8c\",\"9522de97c9430e3a\",\"cc2aa64ffe6e7a1e\",\"approved\",\"66447ff92f5b12e5\",\"684ae771be220ea4\",\"e71936f589c2526e\",\"pass\",\"901ffa8e0a61ad1a\",\"9522de97c9430e3a\",\"23d0746471669c7f\",\"cba139156d8adcde\",\"pass\",\"5351d2aab74a987b\",\"792083d5fa4cc91a\",\"ee642a6e455a387a\",\"pass\",\"9522de97c9430e3a\",\"66447ff92f5b12e5\",\"901ffa8e0a61ad1a\",\"91f7b58f39b33863\",\"6be2ac4ac9b638f8\",\"pass\",\"747942407d2a476e\"],[\"423540e3f54bdcfe\",\"a0e73b48b9c24645\",\"568fd0ee685cdedc\",\"approved\",\"288dc9da21b65f42\",\"56ba58595aeba5e9\",\"941076825b5b0454\",\"pass\",\"8bf76c38ccdf4b34\",\"a0e73b48b9c24645\",\"62d56b64523d4f3c\",\"ff998ded798d26dc\",\"pass\",\"46a6cea0a8875143\",\"82b47cfd0425f6ad\",\"90d33b23e542386f\",\"pass\",\"a0e73b48b9c24645\",\"288dc9da21b65f42\",\"8bf76c38ccdf4b34\",\"9895c39403a9eb6a\",\"a35080d423156407\",\"pass\",\"a6f157d3d6fd0da2\"],[\"e1dbd78d47def00e\",\"49b8512a15da6a33\",\"cd2ca2afcd383015\",\"approved\",\"0e54b0f94227547b\",\"05742c8564f5f292\",\"e6a76cc151aca347\",\"pass\",\"94efebb7475298b3\",\"d9532ba6cb3f8633\",\"7a11d1a73581bc40\",\"e9997fe7937e6a44\",\"pass\",\"a1fd8feff0161a65\",\"3313494c3b843e0d\",\"3cbdc33e54c64609\",\"pass\",\"d9532ba6cb3f8633\",\"0e54b0f94227547b\",\"94efebb7475298b3\",\"180eec9c024e189a\",\"f35361f349ca69af\",\"pass\",\"ace187980c0c5704\"],[\"eab2f7f3aa99fa5b\",\"2762102d522cd9e2\",\"e627b3844be2f6be\",\"approved\",\"f6dd48915bcf4fc0\",\"be3589119776a9ad\",\"c1e96c4805734827\",\"pass\",\"e708cf3ae18ba05d\",\"2762102d522cd9e2\",\"eb367cc8918c5fb4\",\"e25d436fcb6b6b73\",\"pass\",\"3aecac1fb729433b\",\"205c3bc2d45eb073\",\"febfeff66da9551a\",\"pass\",\"2762102d522cd9e2\",\"ab132510b0854a71\",\"e708cf3ae18ba05d\",\"cbf583456363bf9b\",\"4eb05a50529bfad0\",\"pass\",\"af7fa4db5b577efa\"]]}"
+    },
+    "checked": {
+      "child": "{\"f\":[\"consent.approval\",\"consent.approved_output\",\"consent.record_id\",\"consent.state\",\"extract.output_dataset\",\"extract.record_id\",\"extract.run\",\"extract.state\",\"load.input_dataset\",\"load.output_dataset\",\"load.record_id\",\"load.run\",\"load.state\",\"pipeline_run\",\"quality.check\",\"quality.record_id\",\"quality.state\",\"quality.subject_dataset\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.record_id\",\"transform.run\",\"transform.state\",\"workflow_key\"],\"r\":[[\"423540e3f54bdcfe\",\"a0e73b48b9c24645\",\"568fd0ee685cdedc\",\"approved\",\"288dc9da21b65f42\",\"56ba58595aeba5e9\",\"941076825b5b0454\",\"pass\",\"8bf76c38ccdf4b34\",\"a0e73b48b9c24645\",\"62d56b64523d4f3c\",\"ff998ded798d26dc\",\"pass\",\"46a6cea0a8875143\",\"82b47cfd0425f6ad\",\"90d33b23e542386f\",\"pass\",\"a0e73b48b9c24645\",\"288dc9da21b65f42\",\"8bf76c38ccdf4b34\",\"9895c39403a9eb6a\",\"a35080d423156407\",\"pass\",\"a6f157d3d6fd0da2\"],[\"bb26b3ee7f80c3c2\",\"252fc63a91104876\",\"0cca298b9dab6491\",\"approved\",\"751340d438fa2e4f\",\"a5f89be958bc92f1\",\"8909f8b17544a8c5\",\"pass\",\"102843f650e56c9e\",\"b84cce57ae04f63d\",\"e6c0da2777ba8f5f\",\"70cd237cfba1a2db\",\"pass\",\"75f412f87a25111f\",\"f2f3922b7d316485\",\"ffdfd3878617358b\",\"pass\",\"b84cce57ae04f63d\",\"751340d438fa2e4f\",\"102843f650e56c9e\",\"596afd2581c3823b\",\"87f8b0244a9bdc25\",\"pass\",\"24f7e0e31523bd4e\"]]}",
+      "child_bounds": {
+        "admitted_bytes": 1274,
+        "clipped": false,
+        "proposed_bytes": 1274
+      },
+      "parent": "{\"f\":[\"consent.approval\",\"consent.approved_output\",\"consent.record_id\",\"consent.state\",\"extract.output_dataset\",\"extract.record_id\",\"extract.run\",\"extract.state\",\"load.input_dataset\",\"load.output_dataset\",\"load.record_id\",\"load.run\",\"load.state\",\"pipeline_run\",\"quality.check\",\"quality.record_id\",\"quality.state\",\"quality.subject_dataset\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.record_id\",\"transform.run\",\"transform.state\",\"workflow_key\"],\"r\":[[\"1f75a55d9c621ea5\",\"1e170226bbb43e7b\",\"7df96c372ed96d59\",\"approved\",\"51f84898598bbe07\",\"b854d7e3221c5a60\",\"3402a57cff2df423\",\"pass\",\"152c136e02a65175\",\"1e170226bbb43e7b\",\"9437df3a909406bc\",\"c0ab86385319f017\",\"pass\",\"d3723c8c9ff88fb4\",\"c958ea30863a4ed0\",\"078a87edeadb29c3\",\"pass\",\"1e170226bbb43e7b\",\"19ad2be28a5e055d\",\"152c136e02a65175\",\"634e83444934c31e\",\"61f34f84246f1f81\",\"pass\",\"1bf2bc9d2a69d01e\"],[\"bb26b3ee7f80c3c2\",\"252fc63a91104876\",\"0cca298b9dab6491\",\"approved\",\"751340d438fa2e4f\",\"a5f89be958bc92f1\",\"8909f8b17544a8c5\",\"pass\",\"102843f650e56c9e\",\"b84cce57ae04f63d\",\"e6c0da2777ba8f5f\",\"70cd237cfba1a2db\",\"pass\",\"75f412f87a25111f\",\"f2f3922b7d316485\",\"ffdfd3878617358b\",\"pass\",\"b84cce57ae04f63d\",\"751340d438fa2e4f\",\"102843f650e56c9e\",\"596afd2581c3823b\",\"87f8b0244a9bdc25\",\"pass\",\"24f7e0e31523bd4e\"],[\"5c94b9e506f08a0b\",\"0ad7230646b1d9ef\",\"1f49c9f311fe4d5a\",\"approved\",\"e78efbffa7d14d9c\",\"e9009aa5e4f880e3\",\"856ec08964c0e2be\",\"pass\",\"58ee4b0bbb1fa240\",\"0ad7230646b1d9ef\",\"42fce0facdbf9c45\",\"df4352f7c8c6872d\",\"pass\",\"e196e79cb0329ac4\",\"e13f224e5d53c14c\",\"5fe7fa682305dafe\",\"fail\",\"0ad7230646b1d9ef\",\"e78efbffa7d14d9c\",\"58ee4b0bbb1fa240\",\"cdc4fa346ee4bcc2\",\"c588ed1e5cfd867b\",\"pass\",\"6970bedead35b218\"],[\"5189445b70b52b8c\",\"9522de97c9430e3a\",\"cc2aa64ffe6e7a1e\",\"approved\",\"66447ff92f5b12e5\",\"684ae771be220ea4\",\"e71936f589c2526e\",\"pass\",\"901ffa8e0a61ad1a\",\"9522de97c9430e3a\",\"23d0746471669c7f\",\"cba139156d8adcde\",\"pass\",\"5351d2aab74a987b\",\"792083d5fa4cc91a\",\"ee642a6e455a387a\",\"pass\",\"9522de97c9430e3a\",\"66447ff92f5b12e5\",\"901ffa8e0a61ad1a\",\"91f7b58f39b33863\",\"6be2ac4ac9b638f8\",\"pass\",\"747942407d2a476e\"],[\"423540e3f54bdcfe\",\"a0e73b48b9c24645\",\"568fd0ee685cdedc\",\"approved\",\"288dc9da21b65f42\",\"56ba58595aeba5e9\",\"941076825b5b0454\",\"pass\",\"8bf76c38ccdf4b34\",\"a0e73b48b9c24645\",\"62d56b64523d4f3c\",\"ff998ded798d26dc\",\"pass\",\"46a6cea0a8875143\",\"82b47cfd0425f6ad\",\"90d33b23e542386f\",\"pass\",\"a0e73b48b9c24645\",\"288dc9da21b65f42\",\"8bf76c38ccdf4b34\",\"9895c39403a9eb6a\",\"a35080d423156407\",\"pass\",\"a6f157d3d6fd0da2\"],[\"e1dbd78d47def00e\",\"49b8512a15da6a33\",\"cd2ca2afcd383015\",\"approved\",\"0e54b0f94227547b\",\"05742c8564f5f292\",\"e6a76cc151aca347\",\"pass\",\"94efebb7475298b3\",\"d9532ba6cb3f8633\",\"7a11d1a73581bc40\",\"e9997fe7937e6a44\",\"pass\",\"a1fd8feff0161a65\",\"3313494c3b843e0d\",\"3cbdc33e54c64609\",\"pass\",\"d9532ba6cb3f8633\",\"0e54b0f94227547b\",\"94efebb7475298b3\",\"180eec9c024e189a\",\"f35361f349ca69af\",\"pass\",\"ace187980c0c5704\"],[\"eab2f7f3aa99fa5b\",\"2762102d522cd9e2\",\"e627b3844be2f6be\",\"approved\",\"f6dd48915bcf4fc0\",\"be3589119776a9ad\",\"c1e96c4805734827\",\"pass\",\"e708cf3ae18ba05d\",\"2762102d522cd9e2\",\"eb367cc8918c5fb4\",\"e25d436fcb6b6b73\",\"pass\",\"3aecac1fb729433b\",\"205c3bc2d45eb073\",\"febfeff66da9551a\",\"pass\",\"2762102d522cd9e2\",\"ab132510b0854a71\",\"e708cf3ae18ba05d\",\"cbf583456363bf9b\",\"4eb05a50529bfad0\",\"pass\",\"af7fa4db5b577efa\"]]}"
+    },
+    "direct": {
+      "child": "{\"f\":[\"pipeline_run\",\"extract.output_dataset\",\"extract.state\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.state\",\"load.input_dataset\",\"load.output_dataset\",\"load.state\",\"quality.subject_dataset\",\"quality.state\",\"consent.approved_output\",\"consent.state\"],\"r\":[[\"46a6cea0a8875143\",\"288dc9da21b65f42\",\"pass\",\"288dc9da21b65f42\",\"8bf76c38ccdf4b34\",\"pass\",\"8bf76c38ccdf4b34\",\"a0e73b48b9c24645\",\"pass\",\"a0e73b48b9c24645\",\"pass\",\"a0e73b48b9c24645\",\"approved\"],[\"75f412f87a25111f\",\"751340d438fa2e4f\",\"pass\",\"751340d438fa2e4f\",\"102843f650e56c9e\",\"pass\",\"102843f650e56c9e\",\"b84cce57ae04f63d\",\"pass\",\"b84cce57ae04f63d\",\"pass\",\"252fc63a91104876\",\"approved\"]]}",
+      "parent": "{\"f\":[\"pipeline_run\",\"extract.output_dataset\",\"extract.state\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.state\",\"load.input_dataset\",\"load.output_dataset\",\"load.state\",\"quality.subject_dataset\",\"quality.state\",\"consent.approved_output\",\"consent.state\"],\"r\":[[\"d3723c8c9ff88fb4\",\"51f84898598bbe07\",\"pass\",\"19ad2be28a5e055d\",\"152c136e02a65175\",\"pass\",\"152c136e02a65175\",\"1e170226bbb43e7b\",\"pass\",\"1e170226bbb43e7b\",\"pass\",\"1e170226bbb43e7b\",\"approved\"],[\"75f412f87a25111f\",\"751340d438fa2e4f\",\"pass\",\"751340d438fa2e4f\",\"102843f650e56c9e\",\"pass\",\"102843f650e56c9e\",\"b84cce57ae04f63d\",\"pass\",\"b84cce57ae04f63d\",\"pass\",\"252fc63a91104876\",\"approved\"],[\"e196e79cb0329ac4\",\"e78efbffa7d14d9c\",\"pass\",\"e78efbffa7d14d9c\",\"58ee4b0bbb1fa240\",\"pass\",\"58ee4b0bbb1fa240\",\"0ad7230646b1d9ef\",\"pass\",\"0ad7230646b1d9ef\",\"fail\",\"0ad7230646b1d9ef\",\"approved\"],[\"5351d2aab74a987b\",\"66447ff92f5b12e5\",\"pass\",\"66447ff92f5b12e5\",\"901ffa8e0a61ad1a\",\"pass\",\"901ffa8e0a61ad1a\",\"9522de97c9430e3a\",\"pass\",\"9522de97c9430e3a\",\"pass\",\"9522de97c9430e3a\",\"approved\"],[\"46a6cea0a8875143\",\"288dc9da21b65f42\",\"pass\",\"288dc9da21b65f42\",\"8bf76c38ccdf4b34\",\"pass\",\"8bf76c38ccdf4b34\",\"a0e73b48b9c24645\",\"pass\",\"a0e73b48b9c24645\",\"pass\",\"a0e73b48b9c24645\",\"approved\"],[\"a1fd8feff0161a65\",\"0e54b0f94227547b\",\"pass\",\"0e54b0f94227547b\",\"94efebb7475298b3\",\"pass\",\"94efebb7475298b3\",\"d9532ba6cb3f8633\",\"pass\",\"d9532ba6cb3f8633\",\"pass\",\"49b8512a15da6a33\",\"approved\"],[\"3aecac1fb729433b\",\"f6dd48915bcf4fc0\",\"pass\",\"ab132510b0854a71\",\"e708cf3ae18ba05d\",\"pass\",\"e708cf3ae18ba05d\",\"2762102d522cd9e2\",\"pass\",\"2762102d522cd9e2\",\"pass\",\"2762102d522cd9e2\",\"approved\"]]}"
+    },
+    "prompt": {
+      "child": "Execution rule: select root where pipeline_run=target; join tool results by identical workflow_key. Apply late event first to its named path in selected workflow. Ignore operator_notes and other workflows. Publish iff extract, transform, load, quality states=pass; transform.input_dataset=extract.output_dataset; load.input_dataset=transform.output_dataset; quality.subject_dataset=load.output_dataset; consent.state=approved; consent.approved_output=load.output_dataset. Otherwise hold with exact sorted failed-condition set from extract, transform, load, quality, link_transform, link_load, quality_scope, approval, approval_scope. target_id=load.output_dataset. No target or late event specified; retain these candidates only.\n\nWorkflow root pipeline_run=46a6cea0a8875143; workflow_key=a6f157d3d6fd0da2. Extract tool result (workflow_key a6f157d3d6fd0da2): record_id=56ba58595aeba5e9, state=pass, output_dataset=941076825b5b0454, run=288dc9da21b65f42. Transform: record_id=9895c39403a9eb6a, state=pass, input_dataset=288dc9da21b65f42, output_dataset=8bf76c38ccdf4b34, run=a35080d423156407. Load: record_id=62d56b64523d4f3c, state=pass, input_dataset=8bf76c38ccdf4b34, output_dataset=a0e73b48b9c24645, run=ff998ded798d26dc. Quality: record_id=90d33b23e542386f, state=pass, subject_dataset=a0e73b48b9c24645, check=82b47cfd0425f6ad. Consent: record_id=568fd0ee685cdedc, state=approved, approved_output=a0e73b48b9c24645, approval=423540e3f54bdcfe.\n\nWorkflow root pipeline_run=75f412f87a25111f; workflow_key=24f7e0e31523bd4e. Extract tool result (workflow_key 24f7e0e31523bd4e): record_id=a5f89be958bc92f1, state=pass, output_dataset=751340d438fa2e4f, run=8909f8b17544a8c5. Transform: record_id=596afd2581c3823b, state=pass, input_dataset=751340d438fa2e4f, output_dataset=102843f650e56c9e, run=87f8b0244a9bdc25. Load: record_id=e6c0da2777ba8f5f, state=pass, input_dataset=102843f650e56c9e, output_dataset=b84cce57ae04f63d, run=70cd237cfba1a2db. Quality: record_id=ffdfd3878617358b, state=pass, subject_dataset=b84cce57ae04f63d, check=f2f3922b7d316485. Consent: record_id=0cca298b9dab6491, state=approved, approved_output=252fc63a91104876, approval=bb26b3ee7f80c3c2.",
+      "child_bounds": {
+        "admitted_bytes": 2163,
+        "clipped": false,
+        "proposed_bytes": 2163
+      },
+      "parent": "Decision rule for execution: select root where pipeline_run equals target; join components by identical workflow_key. Apply late event first to named path in selected workflow. Ignore operator_notes and all other workflows. Publish iff extract/transform/load/quality states pass; transform.input_dataset=extract.output_dataset; load.input_dataset=transform.output_dataset; quality.subject_dataset=load.output_dataset; consent.state=approved; consent.approved_output=load.output_dataset. Else hold, exact sorted failed-condition set from extract, transform, load, quality, link_transform, link_load, quality_scope, approval, approval_scope. target_id=load.output_dataset. No target or late event is specified in this observation; retain records below.\n\nRecords: root ID=pipeline_run; component IDs=record_id; all scoped refs are exact values. Each workflow: [root ID; workflow_key; extract ID/state/output/run; transform ID/state/input/output/run; load ID/state/input/output/run; quality ID/state/subject/check; consent ID/state/approved_output/approval].\n\n[3aecac1fb729433b; af7fa4db5b577efa; be3589119776a9ad5/pass/f6dd48915bcf4fc0/c1e96c4805734827; cbf583456363bf9b/pass/ab132510b0854a71/e708cf3ae18ba05d/4eb05a50529bfad0; eb367cc8918c5fb4/pass/e708cf3ae18ba05d/2762102d522cd9e2/e25d436fcb6b6b73; febfeff66da9551a/pass/2762102d522cd9e2/205c3bc2d45eb073; e627b3844be2f6be/approved/2762102d522cd9e2/eab2f7f3b5? correction: approval=eab2f7f3aa99fa5b].\n\n[75f412f87a25111f; 24f7e0e31523bd4e; a5f89be958bc92f1/pass/751340d438fa2e4f/8909f8b17544a8c5; 596afd2581c3823b/pass/751340d438fa2e4f/102843f650e56c9e/87f8b0244a9bdc25; e6c0da2777ba8f5f/pass/102843f650e56c9e/b84cce57ae04f63d/70cd237cfba1a2db; ffdfd3878617358b/pass/b84cce57ae04f63d/f2f3922b7d316485; 0cca298b9dab6491/approved/252fc63a91104876/bb26b3ee7f80c3c2].\n\n[e196e79cb0329ac4; 6970bedead35b218; e9009aa5e4f880e3/pass/e78efbffa7d14d9c/856ec08964c0e2be; cdc4fa346ee4bcc2/pass/e78efbffa7d14d9c/58ee4b0bbb1fa240/c588ed1e5cfd867b; 42fce0facdbf9c45/pass/58ee4b0bbb1fa240/0ad7230646b1d9ef/df4352f7c8c6872d; 5fe7fa682305dafe/fail/0ad7230646b1d9ef/e13f224e5d53c14c; 1f49c9f311fe4d5a/approved/0ad7230646b1d9ef/5c94b9e506f08a0b].\n\n[d3723c8c9ff88fb4; 1bf2bc9d2a69d01e; b854d7e3221c5a60/pass/51f84898598bbe07/3402a57cff2df423; 634e83444934c31e/pass/19ad2be28a5e055d/152c136e02a65175/61f34f84246f1f81; 9437df3a909406bc/pass/152c136e02a65175/1e170226bbb43e7b/c0ab86385319f017; 078a87edeadb29c3/pass/1e170226bbb43e7b/c958ea30863a4ed0; 7df96c372ed96d59/approved/1e170226bbb43e7b/1f75a55d9c621ea5].\n\n[5351d2aab74a987b; 747942407d2a476e; 684ae771be220ea4/pass/66447ff92f5b12e5/e71936f589c2526e; 91f7b58f39b33863/pass/66447ff92f5b12e5/901ffa8e0a61ad1a/6be2ac4ac9b638f8; 23d0746471669c7f/pass/901ffa8e0a61ad1a/9522de97c9430e3a/cba139156d8adcde; ee642a6e455a387a/pass/9522de97c9430e3a/792083d5fa4cc91a; cc2aa64ffe6e7a1e/approved/9522de97c9430e3a/5189445b70b52b8c].\n\n[46a6cea0a8875143; a6f157d3d6fd0da2; 56ba58595aeba5e9/pass/288dc9da21b65f42/941076825b5b0454; 9895c39403a9eb6a/pass/288dc9da21b65f42/8bf76c38ccdf4b34/a35080d423156407; 62d56b64523d4f3c/pass/8bf76c38ccdf4b34/a0e73b48b9c24645/ff998ded798d26dc; 90d33b23e542386f/pass/a0e73b48b9c24645/82b47cfd0425f6ad; 568fd0ee685cdedc/approved/a0e73b48b9c24645/423540e3f54bdcfe].\n\n[a1fd8feff0161a65; ace187980c0c5704; 05742c8564f5f292/pass/0e54b0f94227547b/e6a76cc151aca347; 180eec9c024e189a/pass/0e54b0f94227547b/94efebb7475298b3/f35361f349ca69af; 7a11d1a73581bc40/pass/94efebb7475298b3/d9532ba6cb3f8633/e9997fe7937e6a44; 3cbdc33e54c64609/pass/d9532ba6cb3f8633/3313494c3b843e0d; cd2ca2afcd383015/approved/49b8512a15da6a33/e1dbd78d47def00e].",
+      "parent_bounds": {
+        "admitted_bytes": 3622,
+        "clipped": false,
+        "proposed_bytes": 3622
+      }
+    },
+    "structured": {
+      "child": "{\"f\":[\"pipeline_run\",\"workflow_key\",\"extract.record_id\",\"extract.workflow_key\",\"extract.run\",\"extract.output_dataset\",\"extract.state\",\"transform.record_id\",\"transform.workflow_key\",\"transform.run\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.state\",\"load.record_id\",\"load.workflow_key\",\"load.run\",\"load.input_dataset\",\"load.output_dataset\",\"load.state\",\"quality.record_id\",\"quality.workflow_key\",\"quality.check\",\"quality.subject_dataset\",\"quality.state\",\"consent.record_id\",\"consent.workflow_key\",\"consent.approval\",\"consent.approved_output\",\"consent.state\"],\"r\":[[\"75f412f87a25111f\",\"24f7e0e31523bd4e\",\"a5f89be958bc92f1\",\"24f7e0e31523bd4e\",\"8909f8b17544a8c5\",\"751340d438fa2e4f\",\"pass\",\"596afd2581c3823b\",\"24f7e0e31523bd4e\",\"87f8b0244a9bdc25\",\"751340d438fa2e4f\",\"102843f650e56c9e\",\"pass\",\"e6c0da2777ba8f5f\",\"24f7e0e31523bd4e\",\"70cd237cfba1a2db\",\"102843f650e56c9e\",\"b84cce57ae04f63d\",\"pass\",\"ffdfd3878617358b\",\"24f7e0e31523bd4e\",\"f2f3922b7d316485\",\"b84cce57ae04f63d\",\"pass\",\"0cca298b9dab6491\",\"24f7e0e31523bd4e\",\"bb26b3ee7f80c3c2\",\"252fc63a91104876\",\"approved\"],[\"46a6cea0a8875143\",\"a6f157d3d6fd0da2\",\"56ba58595aeba5e9\",\"a6f157d3d6fd0da2\",\"941076825b5b0454\",\"288dc9da21b65f42\",\"pass\",\"9895c39403a9eb6a\",\"a6f157d3d6fd0da2\",\"a35080d423156407\",\"288dc9da21b65f42\",\"8bf76c38ccdf4b34\",\"pass\",\"62d56b64523d4f3c\",\"a6f157d3d6fd0da2\",\"ff998ded798d26dc\",\"8bf76c38ccdf4b34\",\"a0e73b48b9c24645\",\"pass\",\"90d33b23e542386f\",\"a6f157d3d6fd0da2\",\"82b47cfd0425f6ad\",\"a0e73b48b9c24645\",\"pass\",\"568fd0ee685cdedc\",\"a6f157d3d6fd0da2\",\"423540e3f54bdcfe\",\"a0e73b48b9c24645\",\"approved\"]]}",
+      "child_bounds": {
+        "admitted_bytes": 1578,
+        "clipped": false,
+        "proposed_bytes": 1578
+      },
+      "parent": "{\"f\":[\"root.pipeline_run\",\"root.workflow_key\",\"extract.record_id\",\"extract.workflow_key\",\"extract.run\",\"extract.output_dataset\",\"extract.state\",\"transform.record_id\",\"transform.workflow_key\",\"transform.run\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.state\",\"load.record_id\",\"load.workflow_key\",\"load.run\",\"load.input_dataset\",\"load.output_dataset\",\"load.state\",\"quality.record_id\",\"quality.workflow_key\",\"quality.check\",\"quality.subject_dataset\",\"quality.state\",\"consent.record_id\",\"consent.workflow_key\",\"consent.approval\",\"consent.approved_output\",\"consent.state\"],\"r\":[[\"3aecac1fb729433b\",\"af7fa4db5b577efa\",\"be3589119776a9ad\",\"af7fa4db5b577efa\",\"c1e96c4805734827\",\"f6dd48915bcf4fc0\",\"pass\",\"cbf583456363bf9b\",\"af7fa4db5b577efa\",\"4eb05a50529bfad0\",\"ab132510b0854a71\",\"e708cf3ae18ba05d\",\"pass\",\"eb367cc8918c5fb4\",\"af7fa4db5b577efa\",\"e25d436fcb6b6b73\",\"e708cf3ae18ba05d\",\"2762102d522cd9e2\",\"pass\",\"febfeff66da9551a\",\"af7fa4db5b577efa\",\"205c3bc2d45eb073\",\"2762102d522cd9e2\",\"pass\",\"e627b3844be2f6be\",\"af7fa4db5b577efa\",\"eab2f7f3aa99fa5b\",\"2762102d522cd9e2\",\"approved\"],[\"75f412f87a25111f\",\"24f7e0e31523bd4e\",\"a5f89be958bc92f1\",\"24f7e0e31523bd4e\",\"8909f8b17544a8c5\",\"751340d438fa2e4f\",\"pass\",\"596afd2581c3823b\",\"24f7e0e31523bd4e\",\"87f8b0244a9bdc25\",\"751340d438fa2e4f\",\"102843f650e56c9e\",\"pass\",\"e6c0da2777ba8f5f\",\"24f7e0e31523bd4e\",\"70cd237cfba1a2db\",\"102843f650e56c9e\",\"b84cce57ae04f63d\",\"pass\",\"ffdfd3878617358b\",\"24f7e0e31523bd4e\",\"f2f3922b7d316485\",\"b84cce57ae04f63d\",\"pass\",\"0cca298b9dab6491\",\"24f7e0e31523bd4e\",\"bb26b3ee7f80c3c2\",\"252fc63a91104876\",\"approved\"],[\"e196e79cb0329ac4\",\"6970bedead35b218\",\"e9009aa5e4f880e3\",\"6970bedead35b218\",\"856ec08964c0e2be\",\"e78efbffa7d14d9c\",\"pass\",\"cdc4fa346ee4bcc2\",\"6970bedead35b218\",\"c588ed1e5cfd867b\",\"e78efbffa7d14d9c\",\"58ee4b0bbb1fa240\",\"pass\",\"42fce0facdbf9c45\",\"6970bedead35b218\",\"df4352f7c8c6872d\",\"58ee4b0bbb1fa240\",\"0ad7230646b1d9ef\",\"pass\",\"5fe7fa682305dafe\",\"6970bedead35b218\",\"e13f224e5d53c14c\",\"0ad7230646b1d9ef\",\"fail\",\"1f49c9f311fe4d5a\",\"6970bedead35b218\",\"5c94b9e506f08a0b\",\"0ad7230646b1d9ef\",\"approved\"],[\"5351d2aab74a987b\",\"747942407d2a476e\",\"684ae771be220ea4\",\"747942407d2a476e\",\"e71936f589c2526e\",\"66447ff92f5b12e5\",\"pass\",\"91f7b58f39b33863\",\"747942407d2a476e\",\"6be2ac4ac9b638f8\",\"66447ff92f5b12e5\",\"901ffa8e0a61ad1a\",\"pass\",\"23d0746471669c7f\",\"747942407d2a476e\",\"cba139156d8adcde\",\"901ffa8e0a61ad1a\",\"9522de97c9430e3a\",\"pass\",\"ee642a6e455a387a\",\"747942407d2a476e\",\"792083d5fa4cc91a\",\"9522de97c9430e3a\",\"pass\",\"cc2aa64ffe6e7a1e\",\"747942407d2a476e\",\"5189445b70b52b8c\",\"9522de97c9430e3a\",\"approved\"],[\"a1fd8feff0161a65\",\"ace187980c0c5704\",\"05742c8564f5f292\",\"ace187980c0c5704\",\"e6a76cc151aca347\",\"0e54b0f94227547b\",\"pass\",\"180eec9c024e189a\",\"ace187980c0c5704\",\"f35361f349ca69af\",\"0e54b0f94227547b\",\"94efebb7475298b3\",\"pass\",\"7a11d1a73581bc40\",\"ace187980c0c5704\",\"e9997fe7937e6a44\",\"94efebb7475298b3\",\"d9532ba6cb3f8633\",\"pass\",\"3cbdc33e54c64609\",\"ace187980c0c5704\",\"3313494c3b843e0d\",\"d9532ba6cb3f8633\",\"pass\",\"cd2ca2afcd383015\",\"ace187980c0c5704\",\"e1dbd78d47def00e\",\"49b8512a15da6a33\",\"approved\"],[\"d3723c8c9ff88fb4\",\"1bf2bc9d2a69d01e\",\"b854d7e3221c5a60\",\"1bf2bc9d2a69d01e\",\"3402a57cff2df423\",\"51f84898598bbe07\",\"pass\",\"634e83444934c31e\",\"1bf2bc9d2a69d01e\",\"61f34f84246f1f81\",\"19ad2be28a5e055d\",\"152c136e02a65175\",\"pass\",\"9437df3a909406bc\",\"1bf2bc9d2a69d01e\",\"c0ab86385319f017\",\"152c136e02a65175\",\"1e170226bbb43e7b\",\"pass\",\"078a87edeadb29c3\",\"1bf2bc9d2a69d01e\",\"c958ea30863a4ed0\",\"1e170226bbb43e7b\",\"pass\",\"7df96c372ed96d59\",\"1bf2bc9d2a69d01e\",\"1f75a55d9c621ea5\",\"1e170226bbb43e7b\",\"approved\"],[\"46a6cea0a8875143\",\"a6f157d3d6fd0da2\",\"56ba58595aeba5e9\",\"a6f157d3d6fd0da2\",\"941076825b5b0454\",\"288dc9da21b65f42\",\"pass\",\"9895c39403a9eb6a\",\"a6f157d3d6fd0da2\",\"a35080d423156407\",\"288dc9da21b65f42\",\"8bf76c38ccdf4b34\",\"pass\",\"62d56b64523d4f3c\",\"a6f157d3d6fd0da2\",\"ff998ded798d26dc\",\"8bf76c38ccdf4b34\",\"a0e73b48b9c24645\",\"pass\",\"90d33b23e542386f\",\"a6f157d3d6fd0da2\",\"82b47cfd0425f6ad\",\"a0e73b48b9c24645\",\"pass\",\"568fd0ee685cdedc\",\"a6f157d3d6fd0da2\",\"423540e3f54bdcfe\",\"a0e73b48b9c24645\",\"approved\"]]}",
+      "parent_bounds": {
+        "admitted_bytes": 4073,
+        "clipped": false,
+        "proposed_bytes": 4073
+      }
+    }
+  }
+}
