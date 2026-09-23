@@ -1,6 +1,26 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.18 — September 22, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.19 — September 22, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## Cross-record dependencies: retention succeeds, decisions fail
+
+The latest [cross-record test](../research/CROSS_RECORD_RECOVERY_2026-09-22.md)
+splits each constructed workflow's evidence across shuffled tool results and
+charges a raw and projected full-workflow index. The 348-call original protocol
+stopped on a provider error after 199 dispatches. A separate frozen extension
+sent only the 149 never-attempted calls; the combined ledger has 347 answers
+and one permanent gap. The original 36-pair primary criterion is unassessable.
+On 35 fully answered paired futures, automatic direct tables make 7 exact
+terminal errors, versus 3 for strong prose prompting, 4 for hand-written
+direct and 1 for raw indexed recovery. Automatic is cheaper than prompting
+under the declared synthetic experimental price, but direct and raw recovery
+are both cheaper and more accurate. Its tables contain sufficient facts for
+all 36 futures under deterministic reconstruction. The failures arise in
+final-model interpretation, including one simulated unsafe `publish`.
+The checked-proposal arm also has a specific parent-check/child-decoder
+mismatch that empties six child memories. This constructed post-stop result
+does not establish cheap automatic checks as a terminal-performance or
+total-cost contribution. [C49]
 
 ## New schema structures: narrow success, stronger recovery control
 

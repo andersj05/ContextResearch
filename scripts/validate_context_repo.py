@@ -663,6 +663,23 @@ def main() -> int:
                 row["decisions"] for row in evidence["arms"].values())
         except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
             errors.append(f"Schema-transfer study validation failed: {error}")
+    cross_record_directory = ROOT / "experiments/dependency_memory/results/cross_record_continuation_2026-09-22"
+    if (cross_record_directory / "completion.json").is_file():
+        try:
+            from experiments.dependency_memory.cross_record_continuation.analyze import analyze as analyze_cross_record
+            evidence = analyze_cross_record(cross_record_directory)
+            saved = json.loads((cross_record_directory / "analysis.json").read_text(encoding="utf-8"))
+            if saved != evidence:
+                raise ValueError("Cross-record saved analysis differs from the two call ledgers")
+            if evidence["original_primary_criterion"] != "unassessable_due_to_permanent_transport_failure":
+                raise ValueError("Interrupted primary criterion was silently restored")
+            counts["cross_record_scheduled_requests"] = evidence["scheduled_identities"]
+            counts["cross_record_metered_responses"] = (evidence["scheduled_identities"] -
+                len(evidence["permanent_missing_identities"]))
+            counts["cross_record_complete_paired_futures"] = evidence["fully_measured_paired_futures"]
+            counts["cross_record_known_planning_credits"] = evidence["known_settled_model_credits"]
+        except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
+            errors.append(f"Cross-record study validation failed: {error}")
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"

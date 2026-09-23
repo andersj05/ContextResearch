@@ -1,6 +1,6 @@
 # Repeated Context Compression with Delayed Task Dependencies
 
-Working draft — September 22, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an asymptotic threshold and a tightly certified rate-two error, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, and a separate 126-call prospective test on constructed new schema structures. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
+Working draft — September 22, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an asymptotic threshold and a tightly certified rate-two error, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, and a cross-record stress test with one permanent transport gap and a separately frozen continuation. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
 
 ## Abstract
 
@@ -367,6 +367,53 @@ correlated traces whose evaluation schemas were visible in the frozen casebook,
 and synthetic local prices. It is not a blinded unknown-schema test and does
 not establish novelty, production savings, or superiority over cheap indexed
 recovery. Claim C48.
+
+### 8.6 Cross-record stress test and permanent transport gap
+
+The [cross-record protocol](../experiments/dependency_memory/cross_record/FROZEN_PROTOCOL.md)
+adapts the same constructed obligation grammars but splits each workflow into
+a root and separate component tool results, shuffled among seven workflows.
+The generic extractor joins by exact opaque workflow keys and checks retained
+ID bytes and their root/component/field-path associations. Development cases
+and protocol were committed before implementation; twelve retry, CI and
+data-job evaluation cases were derived from the implementation commit before
+model answers. These are new values and arrangements within known domain
+grammars, not independently observed workflows or blinded unknown-schema
+transfer. Two memory limits of 7,000 and 2,600 bytes precede a late target
+and event. Eight arms include strong prose, unvalidated structured prompting,
+checked proposals, automatic and hand-written direct records, raw and
+projected full-workflow indexed recovery, and full history.
+
+The original 348-call schedule stopped after 199 dispatches on one provider
+generation error in the indexed projected arm. Its answer and usage are
+unknown. A [separately frozen continuation](../experiments/dependency_memory/cross_record_continuation/FROZEN_PROTOCOL.md)
+sent only 149 never-dispatched identities. The combined saved ledger contains
+347 metered answers and one permanent gap, with 3.8247600 known token-derived
+planning credits. The **original 36-pair primary criterion is unassessable**.
+On the 35 fully answered paired futures, automatic direct has 7 exact
+failures, strong prose 3, unvalidated structured prompting 6, hand-written
+direct 4, and raw indexed full-workflow recovery 1. Automatic's synthetic
+experimental total for all its completed calls is 0.34358725611 credits,
+versus 0.87246417172 for prose, 0.19375442753 for direct and 0.2261409081
+for raw index. It is cheaper than prompting but more expensive and less
+accurate than two strong controls. The projected index has six model errors
+on the 35 answered paired cases plus the permanent transport gap; its total
+cost is not precisely known. These post-stop comparisons are exploratory and
+do not establish the candidate contribution. Claim C49.
+
+All twelve automatic parent/child certificates pass, with no infeasible
+projection or memory clipping. Deterministic reconstruction from automatic
+and direct tables supplies the correct frozen terminal outcome on all 36
+futures, so their observed errors are in final-model interpretation of
+sufficient facts. One automatic data-job final says `publish` where an
+approval-scope mismatch requires `hold`; no real action was taken. The
+checked proposal arm's 18/36 errors are additionally confounded by a
+parent-check/child-decoder mismatch: six parent proposals include redundant
+per-component join keys, pass the narrow ID check, and are rejected by the
+child schema reader, leaving empty child memory. This is a concrete software
+defect, not evidence against a corrected checker. Local cost conversion is
+synthetic, direct authoring and provider infrastructure are unmeasured, and
+actual subscription debit is unknown. See the [focused diagnosis](../research/CROSS_RECORD_RECOVERY_2026-09-22.md).
 
 ## 9. Limitations and open results
 

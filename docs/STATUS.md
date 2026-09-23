@@ -6,7 +6,38 @@ Updated: September 22, 2026. This document is the current handoff; older scope d
 
 Develop a mathematically precise and implementable study of repeated agent compaction when relevance is revealed over time. The target is a restricted compatibility result plus controlled evidence of whether the mechanism matters in tool-agent tasks.
 
-The newest [prospective schema-transfer study](../research/SCHEMA_TRANSFER_PROSPECTIVE_2026-09-22.md)
+The latest [cross-record stress test](../research/CROSS_RECORD_RECOVERY_2026-09-22.md)
+froze twelve constructed retry, CI and data-job traces with related evidence
+split across 35–42 shuffled tool results per trace. Its protocol and
+development cases preceded implementation, and evaluation seeds were derived
+from the implementation commit. The original 348-call run stopped after 199
+dispatches on one provider generation error. A **separately frozen**
+continuation sent only the 149 never-dispatched identities. The combined
+ledger has 347 metered answers, one permanently missing CI projected-index
+answer, no repeated request, and 3.8247600 known token-derived planning
+credits. The original 36-pair primary criterion is **unassessable**.
+
+On the 35 fully answered pairs, automatic direct records have 7 exact
+terminal failures versus 3 for strong prose prompting, 6 for unvalidated
+structured prompting, 4 for hand-written direct and 1 for raw full-workflow
+indexed recovery. Automatic costs less than prompting under the synthetic
+experimental price but is both more expensive and less accurate than direct
+and raw indexed recovery. Its compact tables are deterministically sufficient
+for all 36 futures; the seven mistakes arise in final-model interpretation,
+including one simulated `publish` where the rule requires `hold`. The checked
+proposal arm also has a documented parent-check/child-decoder mismatch that
+empties six child memories. This **does not establish** cheap automatic
+survival checks as a terminal-performance or total-cost contribution.
+External observed traces, a corrected checker and a separately evaluated
+execution guard remain open. Costs use synthetic local prices; one model
+call has unknown usage and actual subscription debit is unknown. Claim C49.
+Final validation for this milestone: 361 offline tests pass; the repository
+auditor reports PASS and reconciles all 348 scheduled identities, 347 metered
+responses, 35 complete paired futures, and 3.8247600 known planning credits;
+the paper builds with 34 cited sources. No request was retried and no external
+publication occurred.
+
+The previous [prospective schema-transfer study](../research/SCHEMA_TRANSFER_PROSPECTIVE_2026-09-22.md)
 froze six constructed evaluation traces with **new schema structures** for
 retry queues, CI promotion and multi-stage data jobs. Casebook/protocol commit
 `7067963` preceded generic-extractor implementation commit `649bbc9`, which
@@ -26,7 +57,7 @@ constructed correlated traces; evaluation schema definitions were visible in
 the frozen casebook, so this was not a blind unknown-schema test. Local prices
 are synthetic and actual subscription debit is unknown. Claim C48; living
 draft v0.18.
-Final validation: 348 offline tests pass; the repository validator reports
+Validation at that earlier milestone: 348 offline tests pass; the repository validator reports
 PASS and reconciles 126 new calls/108 terminal decisions; the paper builds
 with 34 cited sources. No rerun, purchase, reset or external publication.
 

@@ -369,3 +369,54 @@ misidentifies a correctly retained output dataset. Do not present this as a
 general prose checker, an execution guarantee, production cost superiority,
 or publication novelty. Claim C48 and the focused research note preserve the
 specific paired failures and caveats.
+
+## September 22: cross-record dependency and projected recovery test
+
+The preceding indexed control recovered one complete nested workflow record
+after the target was disclosed. To test the same obligation when its evidence
+is split across results, freeze seven interleaved workflows per trace with a
+root and one separate result per component, joined by an exact opaque
+`workflow_key`. Keep the earlier escrow/package families for development and
+retry, CI-promotion and data-pipeline families for twelve evaluation traces.
+This is a constructed stress test using known domain grammars, not external
+held-out traces. The user authorized newly frozen traces and a larger bounded
+model allocation.
+
+Freeze the protocol and development cases at `17d56a6`; freeze the generic
+join/check, direct baseline, eight-arm runner and analyzer at `b7f7740`.
+Derive four evaluation seeds per family from the full implementation commit,
+then freeze the twelve fixture hashes at `dbaa6fd` before any model response.
+The primary comparison requires automatic retention to improve on both strong
+prose and unvalidated structured prompting at no greater experimental cost,
+match or beat hand-written direct records, and remain nondominated by an
+indexed control that retrieves and projects every related result. The fixed
+348-call schedule has a 356-dispatch and 50-planning-credit ceiling. Charge
+index construction, storage, recovery, projection, every writer and final call,
+local work, reads and writes under the declared synthetic prices. Use an
+independent executor diagnosis for structured retained memories. Do not change
+the schedule, prompts, caps, code or cost weights after the implementation
+freeze.
+
+The original process stopped after 199 dispatches: 198 completed and one
+CI projected-index final call with a provider generation error and unknown
+usage. Preserve it as a permanent missing answer, and leave the original
+36-pair primary criterion unassessable. Freeze a separate plan at `f448e2c`
+for only the 149 never-dispatched identities, hashing all original evidence
+files. Freeze its no-retry controller and analyzer at `258803e`. This is an
+exploratory post-stop extension, not a quiet resumption of the original
+preregistration. It completes all 149 new calls without another provider
+error; the combined ledger has 347 metered answers and one permanent gap.
+
+On the 35 fully answered pairs, automatic direct has 7 exact failures versus
+3 for strong prose, 6 for structured prompting, 4 for hand-written direct,
+and 1 for indexed raw full-workflow recovery. It costs less than prompting
+but is dominated by direct and indexed raw under the declared synthetic
+total-cost model. All 36 automatic tables are sufficient when a deterministic
+reconstructor applies the frozen terminal rule, so the seven errors are final
+model interpretation errors, including one simulated unsafe publish. Do not
+claim the candidate contribution or a matched-budget gain. The checked arm's
+18 errors include six traces where its parent ID check accepts legitimate
+repeated component join-key columns but its child decoder rejects them and
+deletes memory. Record this as a concrete implementation mismatch requiring
+a new, prospectively frozen version; do not rescore the current evaluation.
+The focused note and claim C49 retain the costs and remaining limitations.
