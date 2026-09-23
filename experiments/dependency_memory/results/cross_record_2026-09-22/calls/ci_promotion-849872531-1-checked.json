@@ -1,0 +1,97 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "ci_promotion-849872531-1-checked",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0052705",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 3,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"promote\",\"target_id\":\"fed4461012f2e59b\",\"work\":[]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target and late event. Memory may be prose, a list of tool results with tool/data wrappers, or a JSON table with f=full field paths and r=rows. Root fields in a table are unprefixed; component fields use tool.field. First apply the event only to the selected workflow. Return one exact decision and sorted work. Do not call tools. Select the root record whose deployment_slot equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. Promote only if build.channel=stable, authorization.state=approved, authorization.approved_digest=build.digest, verification.subject=build.digest, verification.unit and integration both pass, and handoff.environment=prod. Otherwise hold with the exact sorted set of channel, approval, approval_scope, ci_scope, unit, integration, environment for each failed condition. Return target_id=build.digest. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "authorization.approved_digest",
+        "value": "fed4461012f2e59b"
+      },
+      "memory": "{\"f\":[\"workflow_key\",\"deployment_slot\",\"authorization.record_id\",\"authorization.approved_digest\",\"authorization.state\",\"authorization.ticket\",\"build.record_id\",\"build.channel\",\"build.digest\",\"verification.record_id\",\"verification.integration\",\"verification.run\",\"verification.subject\",\"verification.unit\",\"handoff.record_id\",\"handoff.environment\"],\"r\":[[\"574083b93dfdb24e\",\"8cd51a15ac1789d6\",\"c06e83ebc999bf01\",\"3fda9f94c27cfaf0\",\"approved\",\"c179405d3112b64a\",\"cfa06c55195b070f\",\"stable\",\"3fda9f94c27cfaf0\",\"f352bf68d5abfcde\",\"pass\",\"cd13500298c45551\",\"3fda9f94c27cfaf0\",\"pass\",\"2e6dda4157e55243\",\"prod\"],[\"40782a30542eb41c\",\"71f34c3923cfffdd\",\"e4c79a43404ba08b\",\"9eb8868f6f4e960a\",\"approved\",\"094c8e626ae77e3b\",\"05495b4eec44bf36\",\"stable\",\"fed4461012f2e59b\",\"534ec994df41bb05\",\"pass\",\"bcced401545af3f7\",\"fed4461012f2e59b\",\"pass\",\"9ec9fda1044453f0\",\"prod\"]]}",
+      "target": "71f34c3923cfffdd"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "fd357d7db27c47bea72a924f231d2a492f09123186dad723120c41d8be796ce6",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "promote",
+    "target_id": "fed4461012f2e59b",
+    "work": []
+  },
+  "started_at": "2026-09-23T00:09:13.006495+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3286,
+    "outputTokens": 87,
+    "reasoningOutputTokens": 53,
+    "totalTokens": 3373
+  },
+  "usage_events": 1,
+  "wall_seconds": 6.887068600044586,
+  "wire_body_byte_bound": 19176
+}

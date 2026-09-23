@@ -1,0 +1,100 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry_queue-2144838585-2-automatic",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.007198",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 3,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"target_id\":\"fc664c947981e7d8\",\"work\":[\"billing_scope\",\"result_scope\"]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target and late event. Memory may be prose, a list of tool results with tool/data wrappers, or a JSON table with f=full field paths and r=rows. Root fields in a table are unprefixed; component fields use tool.field. First apply the event only to the selected workflow. Return one exact decision and sorted work. Do not call tools. Select the root record whose request_token equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. For the selected request: if dispatch.state is not_sent, action=submit and work=[]; otherwise require result.attempt_uuid and billing.for_attempt to match dispatch.attempt_uuid. If a scope mismatches, hold with result_scope or billing_scope. Otherwise close if result.state is passed and billing.state is settled; retry if result.state is failed and retry_policy.retry_allowed is true; otherwise hold with result, billing or retry_policy for the applicable failed conditions. Return target_id=request_token. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "dispatch.attempt_uuid",
+        "value": "ed1847b2162b7a41"
+      },
+      "memory": "{\"f\":[\"billing.charge_token\",\"billing.for_attempt\",\"billing.record_id\",\"billing.state\",\"dispatch.attempt_uuid\",\"dispatch.idempotency_key\",\"dispatch.record_id\",\"dispatch.state\",\"request_token\",\"result.attempt_uuid\",\"result.record_id\",\"result.state\",\"retry_policy.prior_attempt\",\"retry_policy.record_id\",\"retry_policy.retry_allowed\",\"workflow_key\"],\"r\":[[\"7f63ac5066a48326\",\"b6ce1b9691f129b0\",\"7db0c41b165afced\",\"settled\",\"b6ce1b9691f129b0\",\"fecd2eb839c7d091\",\"867e9ca691819124\",\"sent\",\"fc664c947981e7d8\",\"b6ce1b9691f129b0\",\"7d99d0abe6a73f71\",\"passed\",\"139269bb263e3ef0\",\"13e68cd9303fdb5a\",false,\"433456db4d6003e3\"],[\"5d3b6f34cc4e1d86\",\"332f21f06bef90d0\",\"45977daf99f17b5b\",\"settled\",\"332f21f06bef90d0\",\"1155e1b66e587856\",\"5659f9d5e03f6b58\",\"sent\",\"3c5fcd13c9c0abd1\",\"332f21f06bef90d0\",\"ec3161c93496854b\",\"failed\",\"2b5ce45ead0b260f\",\"5f7620ace2cc0b83\",true,\"75a1719927c1aef3\"]]}",
+      "target": "fc664c947981e7d8"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "e3e5c1d694b04a0075a6e7f05bae2930a08509505a9fc4cf09c95a8c5107bffb",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "target_id": "fc664c947981e7d8",
+    "work": [
+      "billing_scope",
+      "result_scope"
+    ]
+  },
+  "started_at": "2026-09-22T23:55:24.052561+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3352,
+    "outputTokens": 228,
+    "reasoningOutputTokens": 189,
+    "totalTokens": 3580
+  },
+  "usage_events": 1,
+  "wall_seconds": 8.311727500054985,
+  "wire_body_byte_bound": 19280
+}

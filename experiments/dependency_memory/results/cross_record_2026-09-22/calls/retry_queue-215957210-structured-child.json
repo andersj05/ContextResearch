@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry_queue-215957210-structured-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0165805",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 2,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"{\\\"f\\\":[\\\"request_token\\\",\\\"workflow_key\\\",\\\"dispatch.record_id\\\",\\\"dispatch.attempt_uuid\\\",\\\"dispatch.idempotency_key\\\",\\\"dispatch.state\\\",\\\"result.record_id\\\",\\\"result.attempt_uuid\\\",\\\"result.state\\\",\\\"billing.record_id\\\",\\\"billing.charge_token\\\",\\\"billing.for_attempt\\\",\\\"billing.state\\\",\\\"retry_policy.record_id\\\",\\\"retry_policy.prior_attempt\\\",\\\"retry_policy.retry_allowed\\\"],\\\"r\\\":[[\\\"5e61818b12a903c5\\\",\\\"ca00eaf43da098d7\\\",\\\"f5ae7b7531ff5003\\\",\\\"bf3d79a2ccaabcd7\\\",\\\"340fde49d1fa99bb\\\",\\\"sent\\\",\\\"f1295549e62d49e1\\\",\\\"bf3d79a2ccaabcd7\\\",\\\"failed\\\",\\\"70c6ade6a23050ab\\\",\\\"fe647725e6996958\\\",\\\"bf3d79a2ccaabcd7\\\",\\\"settled\\\",\\\"dd2e2fab83e79724\\\",\\\"6d5a03930eb8ea51\\\",false],[\\\"3ca1d8b01c6be39d\\\",\\\"696eeafcf714117f\\\",\\\"3877fe3321b3be11\\\",\\\"0df1c4ad67a11796\\\",\\\"3b4d654a162dfb3e\\\",\\\"sent\\\",\\\"b0858556f9e8c4a4\\\",\\\"0df1c4ad67a11796\\\",\\\"passed\\\",\\\"ee324fcc4aced293\\\",\\\"a0846e13306ae9d1\\\",\\\"0df1c4ad67a11796\\\",\\\"settled\\\",\\\"9326cc6877dc29bb\\\",\\\"cf462842d468b785\\\",false]]}\"}",
+  "request": {
+    "instruction": "Only the memory string survives this boundary. The decision rule repeats at execution. Write a compact JSON table string: f is the ordered list of full field paths, r is a list of value rows for joined workflows. Root fields are unprefixed; component fields use tool.field. Include every exact root and record ID, join key, reference, enum status, and boolean needed for a later target/event. Use no abbreviations, ellipses, or omitted rows. Ignore operator notes. Return {\"memory\":\"...\"}. Retain only the two named candidates in at most 2600 UTF-8 bytes. Select the root record whose request_token equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. For the selected request: if dispatch.state is not_sent, action=submit and work=[]; otherwise require result.attempt_uuid and billing.for_attempt to match dispatch.attempt_uuid. If a scope mismatches, hold with result_scope or billing_scope. Otherwise close if result.state is passed and billing.state is settled; retry if result.state is failed and retry_policy.retry_allowed is true; otherwise hold with result, billing or retry_policy for the applicable failed conditions. Return target_id=request_token. Apply the late event first.",
+    "observation": {
+      "candidates": [
+        "3ca1d8b01c6be39d",
+        "5e61818b12a903c5"
+      ],
+      "previous_memory": "{\"f\":[\"request_token\",\"workflow_key\",\"dispatch.record_id\",\"dispatch.attempt_uuid\",\"dispatch.idempotency_key\",\"dispatch.state\",\"result.record_id\",\"result.attempt_uuid\",\"result.state\",\"billing.record_id\",\"billing.charge_token\",\"billing.for_attempt\",\"billing.state\",\"retry_policy.record_id\",\"retry_policy.prior_attempt\",\"retry_policy.retry_allowed\"],\"r\":[[\"5e61818b12a903c5\",\"ca00eaf43da098d7\",\"f5ae7b7531ff5003\",\"bf3d79a2ccaabcd7\",\"340fde49d1fa99bb\",\"sent\",\"f1295549e62d49e1\",\"bf3d79a2ccaabcd7\",\"failed\",\"70c6ade6a23050ab\",\"fe647725e6996958\",\"bf3d79a2ccaabcd7\",\"settled\",\"dd2e2fab83e79724\",\"6d5a03930eb8ea51\",false],[\"c5d2383ffe7f0cb6\",\"e86ef4b12bca1361\",\"7b3ae93d81276fbc\",\"3c60a2e81d88c195\",\"4462432a002fe590\",\"sent\",\"9d1f014d31e09f2f\",\"3c60a2e81d88c195\",\"passed\",\"7051b731fe9b8ec9\",\"8814cb3afe3e0725\",\"5a6529c43b2f8894\",\"settled\",\"9b681372e40256bc\",\"16a2853ac486b8b1\",false],[\"cf6a28d0354fee8b\",\"68ebe3911d5a25a5\",\"e344d7956b669799\",\"0d1e93084d29a2d2\",\"246a4980d72c89be\",\"sent\",\"ee72941f608731cf\",\"0d1e93084d29a2d2\",\"passed\",\"000276cb315a4e48\",\"7d40063793bc14c4\",\"0d1e93084d29a2d2\",\"settled\",\"5bb05df20a820d88\",\"0d9828fb44edea4f\",false],[\"00d61c9a24a7e969\",\"75199e04a5dac34e\",\"e4826354840b0805\",\"a9bc9923d145edeb\",\"f2b229217ed13e6d\",\"not_sent\",\"443ad49394415404\",\"a9bc9923d145edeb\",\"passed\",\"0fa4b411d958c42e\",\"4e2239c2f53888e2\",\"a9bc9923d145edeb\",\"settled\",\"dd2e2fab83e79724\",\"6d5a03930eb8ea51\",false],[\"cd1765dcca7c0ae7\",\"a9432ccb5622060d\",\"b3ab0fcc51076fec\",\"30cdc83b3cb4cef1\",\"9e1717f22e973a24\",\"sent\",\"ec629cec1688315f\",\"30cdc83b3cb4cef1\",\"failed\",\"9ddf31c09fdc45ce\",\"2e0ce146075a359e\",\"30cdc83b3cb4cef1\",\"settled\",\"8f6f31e61acef1ff\",\"6d59ccb8c48ec5e6\",true],[\"3ca1d8b01c6be39d\",\"696eeafcf714117f\",\"3877fe3321b3be11\",\"0df1c4ad67a11796\",\"3b4d654a162dfb3e\",\"sent\",\"b0858556f9e8c4a4\",\"0df1c4ad67a11796\",\"passed\",\"ee324fcc4aced293\",\"a0846e13306ae9d1\",\"0df1c4ad67a11796\",\"settled\",\"9326cc6877dc29bb\",\"cf462842d468b785\",false],[\"960dbda5c32e25b9\",\"93b0e9e4fdaa289f\",\"b85d29b4c295d3bc\",\"bd27386123e034eb\",\"3fc980578ef1d3ab\",\"sent\",\"0fd5dc0d8e0c640b\",\"bd27386123e034eb\",\"passed\",\"7b97a7ffffd02ce4\",\"8d87f62227009663\",\"80ec5d2bf88c065f\",\"settled\",\"56bd0a50021f8cb3\",\"ab1466bfd1f1c2de\",false]]}"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "2eee554fa8a67c3fb82339ec2dd664291c959f8e21ba2ff8d6a1eee9380eaa19",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "{\"f\":[\"request_token\",\"workflow_key\",\"dispatch.record_id\",\"dispatch.attempt_uuid\",\"dispatch.idempotency_key\",\"dispatch.state\",\"result.record_id\",\"result.attempt_uuid\",\"result.state\",\"billing.record_id\",\"billing.charge_token\",\"billing.for_attempt\",\"billing.state\",\"retry_policy.record_id\",\"retry_policy.prior_attempt\",\"retry_policy.retry_allowed\"],\"r\":[[\"5e61818b12a903c5\",\"ca00eaf43da098d7\",\"f5ae7b7531ff5003\",\"bf3d79a2ccaabcd7\",\"340fde49d1fa99bb\",\"sent\",\"f1295549e62d49e1\",\"bf3d79a2ccaabcd7\",\"failed\",\"70c6ade6a23050ab\",\"fe647725e6996958\",\"bf3d79a2ccaabcd7\",\"settled\",\"dd2e2fab83e79724\",\"6d5a03930eb8ea51\",false],[\"3ca1d8b01c6be39d\",\"696eeafcf714117f\",\"3877fe3321b3be11\",\"0df1c4ad67a11796\",\"3b4d654a162dfb3e\",\"sent\",\"b0858556f9e8c4a4\",\"0df1c4ad67a11796\",\"passed\",\"ee324fcc4aced293\",\"a0846e13306ae9d1\",\"0df1c4ad67a11796\",\"settled\",\"9326cc6877dc29bb\",\"cf462842d468b785\",false]]}"
+  },
+  "started_at": "2026-09-22T23:43:29.475201+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3980,
+    "outputTokens": 853,
+    "reasoningOutputTokens": 492,
+    "totalTokens": 4833
+  },
+  "usage_events": 1,
+  "wall_seconds": 18.237843799986877,
+  "wire_body_byte_bound": 20828
+}

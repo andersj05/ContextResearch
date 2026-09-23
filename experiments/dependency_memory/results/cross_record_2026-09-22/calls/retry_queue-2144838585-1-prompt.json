@@ -1,0 +1,97 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry_queue-2144838585-1-prompt",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.005718",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 3,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"close\",\"target_id\":\"3c5fcd13c9c0abd1\",\"work\":[]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target and late event. Memory may be prose, a list of tool results with tool/data wrappers, or a JSON table with f=full field paths and r=rows. Root fields in a table are unprefixed; component fields use tool.field. First apply the event only to the selected workflow. Return one exact decision and sorted work. Do not call tools. Select the root record whose request_token equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. For the selected request: if dispatch.state is not_sent, action=submit and work=[]; otherwise require result.attempt_uuid and billing.for_attempt to match dispatch.attempt_uuid. If a scope mismatches, hold with result_scope or billing_scope. Otherwise close if result.state is passed and billing.state is settled; retry if result.state is failed and retry_policy.retry_allowed is true; otherwise hold with result, billing or retry_policy for the applicable failed conditions. Return target_id=request_token. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "result.state",
+        "value": "passed"
+      },
+      "memory": "No target value or late event supplied. Retain only these candidates; each component belongs to the root\u2019s workflow. Root workflow 433456db4d6003e3: request_token=fc664c947981e7d8. Dispatch 867e9ca691819124: sent, attempt_uuid=b6ce1b9691f129b0, workflow_key=fecd2eb839c7d091. Result 7d99d0abe6a73f71: passed, attempt_uuid=b6ce1b9691f129b0. Retry_policy 13e68cd9303fdb5a: retry_allowed=false, prior=139269bb263e3ef0. Billing 7db0c41b165afced: settled, for_attempt=b6ce1b9691f129b0, charge=7f63ac5066a48326. Root workflow 75a1719927c1aef3: request_token=3c5fcd13c9c0abd1. Dispatch 5659f9d5e03f6b58: sent, attempt_uuid=332f21f06bef90d0, workflow_key=1155e1b66e587856. Result ec3161c93496854b: failed, attempt_uuid=332f21f06bef90d0. Retry_policy 5f7620ace2cc0b83: retry_allowed=true, prior=2b5ce45ead0b260f. Billing 45977daf99f17b5b: settled, for_attempt=332f21f06bef90d0, charge=5d3b6f34cc4e1d86.",
+      "target": "3c5fcd13c9c0abd1"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "ac506b852f5d9accc7b9f26b80a9636ab40b69d0de48c2e905105352145f1ffa",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "close",
+    "target_id": "3c5fcd13c9c0abd1",
+    "work": []
+  },
+  "started_at": "2026-09-22T23:54:57.241769+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3345,
+    "outputTokens": 111,
+    "reasoningOutputTokens": 75,
+    "totalTokens": 3456
+  },
+  "usage_events": 1,
+  "wall_seconds": 4.36075069999788,
+  "wire_body_byte_bound": 18996
+}

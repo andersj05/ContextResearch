@@ -1,0 +1,99 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry_queue-2144838585-2-direct",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.005143",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 3,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"target_id\":\"fc664c947981e7d8\",\"work\":[\"result_scope\"]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target and late event. Memory may be prose, a list of tool results with tool/data wrappers, or a JSON table with f=full field paths and r=rows. Root fields in a table are unprefixed; component fields use tool.field. First apply the event only to the selected workflow. Return one exact decision and sorted work. Do not call tools. Select the root record whose request_token equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. For the selected request: if dispatch.state is not_sent, action=submit and work=[]; otherwise require result.attempt_uuid and billing.for_attempt to match dispatch.attempt_uuid. If a scope mismatches, hold with result_scope or billing_scope. Otherwise close if result.state is passed and billing.state is settled; retry if result.state is failed and retry_policy.retry_allowed is true; otherwise hold with result, billing or retry_policy for the applicable failed conditions. Return target_id=request_token. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "dispatch.attempt_uuid",
+        "value": "ed1847b2162b7a41"
+      },
+      "memory": "{\"f\":[\"request_token\",\"dispatch.attempt_uuid\",\"dispatch.state\",\"result.attempt_uuid\",\"result.state\",\"billing.for_attempt\",\"billing.state\",\"retry_policy.retry_allowed\"],\"r\":[[\"fc664c947981e7d8\",\"b6ce1b9691f129b0\",\"sent\",\"b6ce1b9691f129b0\",\"passed\",\"b6ce1b9691f129b0\",\"settled\",false],[\"3c5fcd13c9c0abd1\",\"332f21f06bef90d0\",\"sent\",\"332f21f06bef90d0\",\"failed\",\"332f21f06bef90d0\",\"settled\",true]]}",
+      "target": "fc664c947981e7d8"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "404b14ed280937c59e2e5104a9cfd8aecee6ea14c7bba3c1f96d9c9a2f129ec5",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "target_id": "fc664c947981e7d8",
+    "work": [
+      "result_scope"
+    ]
+  },
+  "started_at": "2026-09-22T23:55:38.474558+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3145,
+    "outputTokens": 105,
+    "reasoningOutputTokens": 69,
+    "totalTokens": 3250
+  },
+  "usage_events": 1,
+  "wall_seconds": 4.405015699972864,
+  "wire_body_byte_bound": 18653
+}

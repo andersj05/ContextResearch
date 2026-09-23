@@ -1,0 +1,97 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "ci_promotion-905618456-1-indexed_projected",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.004923",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718871,
+        "usedPercent": 3,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"promote\",\"target_id\":\"5915fdf79ce1188d\",\"work\":[]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target and late event. Memory may be prose, a list of tool results with tool/data wrappers, or a JSON table with f=full field paths and r=rows. Root fields in a table are unprefixed; component fields use tool.field. First apply the event only to the selected workflow. Return one exact decision and sorted work. Do not call tools. Select the root record whose deployment_slot equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. Promote only if build.channel=stable, authorization.state=approved, authorization.approved_digest=build.digest, verification.subject=build.digest, verification.unit and integration both pass, and handoff.environment=prod. Otherwise hold with the exact sorted set of channel, approval, approval_scope, ci_scope, unit, integration, environment for each failed condition. Return target_id=build.digest. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "authorization.approved_digest",
+        "value": "5915fdf79ce1188d"
+      },
+      "memory": "{\"f\":[\"authorization.approved_digest\",\"authorization.record_id\",\"authorization.state\",\"authorization.ticket\",\"build.channel\",\"build.digest\",\"build.record_id\",\"deployment_slot\",\"handoff.environment\",\"handoff.record_id\",\"verification.integration\",\"verification.record_id\",\"verification.run\",\"verification.subject\",\"verification.unit\",\"workflow_key\"],\"r\":[[\"a9f58b2ffc8c7c44\",\"3c87edb8307e8aea\",\"approved\",\"a9fc17527a9c90ca\",\"stable\",\"5915fdf79ce1188d\",\"f2cfa7c3cf07501e\",\"60e163d15bcf373b\",\"prod\",\"c731db2aa2647853\",\"pass\",\"6e98453bebf1eea5\",\"20a1f9db198c38a1\",\"5915fdf79ce1188d\",\"pass\",\"122af41d6154582d\"]]}",
+      "target": "60e163d15bcf373b"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "d1c5214ccd66021df7845218a538de66252ba4808636fc1b726974cfe0b35315",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "promote",
+    "target_id": "5915fdf79ce1188d",
+    "work": []
+  },
+  "started_at": "2026-09-23T00:04:38.835964+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3167,
+    "outputTokens": 83,
+    "reasoningOutputTokens": 49,
+    "totalTokens": 3250
+  },
+  "usage_events": 1,
+  "wall_seconds": 5.16954919998534,
+  "wire_body_byte_bound": 18828
+}

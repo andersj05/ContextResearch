@@ -1,0 +1,100 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "ci_promotion-849872531-2-prompt",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0064705",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 3,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"target_id\":\"319ce1b811f7a20f\",\"work\":[\"approval_scope\",\"ci_scope\"]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target and late event. Memory may be prose, a list of tool results with tool/data wrappers, or a JSON table with f=full field paths and r=rows. Root fields in a table are unprefixed; component fields use tool.field. First apply the event only to the selected workflow. Return one exact decision and sorted work. Do not call tools. Select the root record whose deployment_slot equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. Promote only if build.channel=stable, authorization.state=approved, authorization.approved_digest=build.digest, verification.subject=build.digest, verification.unit and integration both pass, and handoff.environment=prod. Otherwise hold with the exact sorted set of channel, approval, approval_scope, ci_scope, unit, integration, environment for each failed condition. Return target_id=build.digest. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "build.digest",
+        "value": "319ce1b811f7a20f"
+      },
+      "memory": "No late event supplied yet; apply any later event to its named path in the selected workflow before evaluation. Retain only candidates 8cd51a15ac1789d6 and 71f34c3923cfffdd. Root selection: exact root deployment_slot=target; join components only by identical workflow_key (wk). Ignore operator_notes and all other workflows. Evaluate: promote only if build.channel=stable, authorization.state=approved, authorization.approved_digest=build.digest, verification.subject=build.digest, verification.unit=pass, verification.integration=pass, handoff.environment=prod; otherwise hold and report exact sorted failed-condition set from channel, approval, approval_scope, ci_scope, unit, integration, environment. target_id=build.digest.\nCandidate 8cd51a15ac1789d6: root wk/root ID 574083b93dfdb24e, deployment_slot=8cd51a15ac1789d6. Joined wk=574083b93dfdb24e: build ID cfa06c55195b070f, channel=stable, digest=3fda9f94c27cfaf0; authorization ID c06e83ebc999bf01, state=approved, approved_digest=3fda9f94c27cfaf0; verification ID f352bf68d5abfcde, subject=3fda9f94c27cfaf0, unit=pass, integration=pass; handoff ID 2e6dda4157e55243, environment=prod. No event: promote; target_id=3fda9f94c27cfaf0.\nCandidate 71f34c3923cfffdd: root wk/root ID 40782a30542eb41c, deployment_slot=71f34c3923cfffdd. Joined wk=40782a30542eb41c: build ID 05495b4eec44bf36, channel=stable, digest=fed4461012f2e59b; authorization ID e4c79a43404ba08b, state=approved, approved_digest=9eb8868f6f4e960a; verification ID 534ec994df41bb05, subject=fed4461012f2e59b, unit=pass, integration=pass; handoff ID 9ec9fda1044453f0, environment=prod. No event: hold, failed set [approval_scope]; target_id=fed4461012f2e59b.",
+      "target": "8cd51a15ac1789d6"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "64e4211604bcb50f0f7eb2161fe1cf0b3d5a1b0619850b8f9947e2da38e7462b",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "target_id": "319ce1b811f7a20f",
+    "work": [
+      "approval_scope",
+      "ci_scope"
+    ]
+  },
+  "started_at": "2026-09-23T00:09:45.799458+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3496,
+    "outputTokens": 141,
+    "reasoningOutputTokens": 101,
+    "totalTokens": 3637
+  },
+  "usage_events": 1,
+  "wall_seconds": 5.362052300013602,
+  "wire_body_byte_bound": 19679
+}

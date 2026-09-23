@@ -1,0 +1,7 @@
+{
+  "calls": 199,
+  "error": "Provider generation error",
+  "error_type": "RuntimeError",
+  "planning_credits_settled": "1.9150415",
+  "status": "stopped"
+}

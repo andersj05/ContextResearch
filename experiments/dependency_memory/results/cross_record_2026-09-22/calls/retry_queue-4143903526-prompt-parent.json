@@ -1,0 +1,510 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry_queue-4143903526-prompt-parent",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.029233",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 2,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"No target or late event is specified in the supplied input. Root records (request_token; workflow_key): 7505b04a71ad1e32; ce7626cd2d1394ad. 2024ab50565c04f3; 75aa566671f2d9b2. deacafaa916f93c3; 3fba9a6743c8f744. a6ee2ecb720a84fa; e4d04135eb244d04. 640fdbc8c5434081; 58fe7897e0157b65. 2ebd3d8fbbf3b5d1; 877c5409652dc76d. a9e998c3a70637b0; 38f1d5cdba6367eb. Ignore operator notes. Joined workflow components, with record IDs and scoped values: ce7626cd2d1394ad \u2014 dispatch 7ebb99e7d26bb96f sent attempt 61817b1276ce2ab3; result 40b228a1f103eb8d failed attempt 61817b1276ce2ab3; billing 8add0ee1384e4c43 settled for_attempt 61817b1276ce2ab3; retry_policy a27c8cfa0444afb4 retry_allowed true. 75aa566671f2d9b2 \u2014 dispatch 6b434152c6acb43f sent attempt 85213e07e446998c; result 0a6c58a28180df37 failed attempt 85213e07e446998c; billing d765786f9053094b settled for_attempt 85213e07e446998c; retry_policy d8900aeb25bd6edb retry_allowed true. 3fba9a6743c8f744 \u2014 dispatch b57e6c5d90d86f66 sent attempt 6fee6cd49e0b5103; result fe503693df7d3773 passed attempt 6fee6cd49e0b5103; billing d913735d7b68d236 settled for_attempt 372e04aaaf4cddee; retry_policy e0721d5bbe4c7e58 retry_allowed false. e4d04135eb244d04 \u2014 dispatch 88096c8d67620615 not_sent attempt c0c3057580f5f382; result 45dfe65ffeb3236d passed attempt c0c3057580f5f382; billing 334b32b922d7aa1a settled for_attempt c0c3057580f5f382; retry_policy 8beeb9a84577957a retry_allowed false. 58fe7897e0157b65 \u2014 dispatch f686534f32f9afcc sent attempt 6fa4a1572a2ad3d0; result 595380827133992d passed attempt 6fa4a1572a2ad3d0; billing 41499d739e9649bd settled for_attempt 6fa4a1572a2ad3d0; retry_policy 2a62cf0ca14307fc retry_allowed false. 877c5409652dc76d \u2014 dispatch d7a2710395bd7bf3 sent attempt 8754529402960709; result a875297440adc7dd passed attempt 8754529402960709; billing a2cb9d101131b68f settled for_attempt 8754529402960709; retry_policy a7d68d6af99aa375 retry_allowed false. 38f1d5cdba6367eb \u2014 dispatch be02821921b1e06b sent attempt a63c77e240292b48; result 38202dc1db386348 passed attempt a63c77e240292b48; billing d779dc1779c9f144 settled for_attempt 2173048d2c09aa00; retry_policy edf44175478348dc retry_allowed false. For later selection use exact root request_token, apply any supplied late event first, then joined components only. Current decision implications: ce7626... retry; 75aa... retry; 3fba... hold billing_scope; e4... submit, work=[]; 58fe... close; 877c... close; 38f1... hold billing_scope.\"}",
+  "request": {
+    "instruction": "Only the memory string survives this boundary. The decision rule repeats at execution. Write a compact, data-first prose handoff. Copy every workflow's exact root ID, component ID, status and scoped reference. State which workflow each tool result belongs to; do not collapse an approval or result into a generic 'passed'. Preserve facts for any later target and event. Ignore operator notes. Return {\"memory\":\"...\"}. Memory limit: 7000 UTF-8 bytes. Select the root record whose request_token equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. For the selected request: if dispatch.state is not_sent, action=submit and work=[]; otherwise require result.attempt_uuid and billing.for_attempt to match dispatch.attempt_uuid. If a scope mismatches, hold with result_scope or billing_scope. Otherwise close if result.state is passed and billing.state is settled; retry if result.state is failed and retry_policy.retry_allowed is true; otherwise hold with result, billing or retry_policy for the applicable failed conditions. Return target_id=request_token. Apply the late event first.",
+    "observation": {
+      "tool_results": [
+        {
+          "data": {
+            "attempt_uuid": "61817b1276ce2ab3",
+            "record_id": "40b228a1f103eb8d",
+            "state": "failed",
+            "workflow_key": "ce7626cd2d1394ad"
+          },
+          "tool": "result"
+        },
+        {
+          "data": {
+            "operator_notes": "Worker log mentions obsolete draft edb9228390e953df. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft edb9228390e953df. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft edb9228390e953df. Dashboard labels and timings are not gate evidence. ",
+            "request_token": "deacafaa916f93c3",
+            "workflow_key": "3fba9a6743c8f744"
+          },
+          "tool": "root"
+        },
+        {
+          "data": {
+            "prior_attempt": "b3853823fc6ed491",
+            "record_id": "8beeb9a84577957a",
+            "retry_allowed": false,
+            "workflow_key": "e4d04135eb244d04"
+          },
+          "tool": "retry_policy"
+        },
+        {
+          "data": {
+            "attempt_uuid": "6fee6cd49e0b5103",
+            "idempotency_key": "5fb10574a5853c7d",
+            "record_id": "b57e6c5d90d86f66",
+            "state": "sent",
+            "workflow_key": "3fba9a6743c8f744"
+          },
+          "tool": "dispatch"
+        },
+        {
+          "data": {
+            "prior_attempt": "2ffa28a08d106a4f",
+            "record_id": "e0721d5bbe4c7e58",
+            "retry_allowed": false,
+            "workflow_key": "3fba9a6743c8f744"
+          },
+          "tool": "retry_policy"
+        },
+        {
+          "data": {
+            "operator_notes": "Worker log mentions obsolete draft 81d5bf57e7cce384. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 81d5bf57e7cce384. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 81d5bf57e7cce384. Dashboard labels and timings are not gate evidence. ",
+            "request_token": "2024ab50565c04f3",
+            "workflow_key": "75aa566671f2d9b2"
+          },
+          "tool": "root"
+        },
+        {
+          "data": {
+            "charge_token": "d7657e114bc1f584",
+            "for_attempt": "85213e07e446998c",
+            "record_id": "d765786f9053094b",
+            "state": "settled",
+            "workflow_key": "75aa566671f2d9b2"
+          },
+          "tool": "billing"
+        },
+        {
+          "data": {
+            "attempt_uuid": "6fee6cd49e0b5103",
+            "record_id": "fe503693df7d3773",
+            "state": "passed",
+            "workflow_key": "3fba9a6743c8f744"
+          },
+          "tool": "result"
+        },
+        {
+          "data": {
+            "charge_token": "4f9cc9406538735a",
+            "for_attempt": "c0c3057580f5f382",
+            "record_id": "334b32b922d7aa1a",
+            "state": "settled",
+            "workflow_key": "e4d04135eb244d04"
+          },
+          "tool": "billing"
+        },
+        {
+          "data": {
+            "attempt_uuid": "61817b1276ce2ab3",
+            "idempotency_key": "ae716a9e8ade8042",
+            "record_id": "7ebb99e7d26bb96f",
+            "state": "sent",
+            "workflow_key": "ce7626cd2d1394ad"
+          },
+          "tool": "dispatch"
+        },
+        {
+          "data": {
+            "attempt_uuid": "6fa4a1572a2ad3d0",
+            "record_id": "595380827133992d",
+            "state": "passed",
+            "workflow_key": "58fe7897e0157b65"
+          },
+          "tool": "result"
+        },
+        {
+          "data": {
+            "prior_attempt": "37ece0fea009d269",
+            "record_id": "a7d68d6af99aa375",
+            "retry_allowed": false,
+            "workflow_key": "877c5409652dc76d"
+          },
+          "tool": "retry_policy"
+        },
+        {
+          "data": {
+            "attempt_uuid": "8754529402960709",
+            "record_id": "a875297440adc7dd",
+            "state": "passed",
+            "workflow_key": "877c5409652dc76d"
+          },
+          "tool": "result"
+        },
+        {
+          "data": {
+            "operator_notes": "Worker log mentions obsolete draft c46fd1d03af4dcf6. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft c46fd1d03af4dcf6. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft c46fd1d03af4dcf6. Dashboard labels and timings are not gate evidence. ",
+            "request_token": "a6ee2ecb720a84fa",
+            "workflow_key": "e4d04135eb244d04"
+          },
+          "tool": "root"
+        },
+        {
+          "data": {
+            "attempt_uuid": "a63c77e240292b48",
+            "record_id": "38202dc1db386348",
+            "state": "passed",
+            "workflow_key": "38f1d5cdba6367eb"
+          },
+          "tool": "result"
+        },
+        {
+          "data": {
+            "attempt_uuid": "6fa4a1572a2ad3d0",
+            "idempotency_key": "ac55a175f830c665",
+            "record_id": "f686534f32f9afcc",
+            "state": "sent",
+            "workflow_key": "58fe7897e0157b65"
+          },
+          "tool": "dispatch"
+        },
+        {
+          "data": {
+            "attempt_uuid": "85213e07e446998c",
+            "idempotency_key": "aa467825c2828d2b",
+            "record_id": "6b434152c6acb43f",
+            "state": "sent",
+            "workflow_key": "75aa566671f2d9b2"
+          },
+          "tool": "dispatch"
+        },
+        {
+          "data": {
+            "operator_notes": "Worker log mentions obsolete draft 05b7ce201dbb6890. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 05b7ce201dbb6890. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 05b7ce201dbb6890. Dashboard labels and timings are not gate evidence. ",
+            "request_token": "2ebd3d8fbbf3b5d1",
+            "workflow_key": "877c5409652dc76d"
+          },
+          "tool": "root"
+        },
+        {
+          "data": {
+            "operator_notes": "Worker log mentions obsolete draft b227cabca5709c99. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft b227cabca5709c99. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft b227cabca5709c99. Dashboard labels and timings are not gate evidence. ",
+            "request_token": "a9e998c3a70637b0",
+            "workflow_key": "38f1d5cdba6367eb"
+          },
+          "tool": "root"
+        },
+        {
+          "data": {
+            "operator_notes": "Worker log mentions obsolete draft 686d395f658ba2ec. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 686d395f658ba2ec. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 686d395f658ba2ec. Dashboard labels and timings are not gate evidence. ",
+            "request_token": "7505b04a71ad1e32",
+            "workflow_key": "ce7626cd2d1394ad"
+          },
+          "tool": "root"
+        },
+        {
+          "data": {
+            "charge_token": "634aaf302c8dce8f",
+            "for_attempt": "372e04aaaf4cddee",
+            "record_id": "d913735d7b68d236",
+            "state": "settled",
+            "workflow_key": "3fba9a6743c8f744"
+          },
+          "tool": "billing"
+        },
+        {
+          "data": {
+            "attempt_uuid": "c0c3057580f5f382",
+            "record_id": "45dfe65ffeb3236d",
+            "state": "passed",
+            "workflow_key": "e4d04135eb244d04"
+          },
+          "tool": "result"
+        },
+        {
+          "data": {
+            "prior_attempt": "21c32ff22d4182d2",
+            "record_id": "2a62cf0ca14307fc",
+            "retry_allowed": false,
+            "workflow_key": "58fe7897e0157b65"
+          },
+          "tool": "retry_policy"
+        },
+        {
+          "data": {
+            "charge_token": "4aa69a9e34766f98",
+            "for_attempt": "2173048d2c09aa00",
+            "record_id": "d779dc1779c9f144",
+            "state": "settled",
+            "workflow_key": "38f1d5cdba6367eb"
+          },
+          "tool": "billing"
+        },
+        {
+          "data": {
+            "prior_attempt": "0dfe40031f334bf8",
+            "record_id": "d8900aeb25bd6edb",
+            "retry_allowed": true,
+            "workflow_key": "75aa566671f2d9b2"
+          },
+          "tool": "retry_policy"
+        },
+        {
+          "data": {
+            "charge_token": "b24338a10a31316c",
+            "for_attempt": "61817b1276ce2ab3",
+            "record_id": "8add0ee1384e4c43",
+            "state": "settled",
+            "workflow_key": "ce7626cd2d1394ad"
+          },
+          "tool": "billing"
+        },
+        {
+          "data": {
+            "prior_attempt": "030e997dac1f52fe",
+            "record_id": "a27c8cfa0444afb4",
+            "retry_allowed": true,
+            "workflow_key": "ce7626cd2d1394ad"
+          },
+          "tool": "retry_policy"
+        },
+        {
+          "data": {
+            "attempt_uuid": "8754529402960709",
+            "idempotency_key": "81abd6dd2381b95b",
+            "record_id": "d7a2710395bd7bf3",
+            "state": "sent",
+            "workflow_key": "877c5409652dc76d"
+          },
+          "tool": "dispatch"
+        },
+        {
+          "data": {
+            "attempt_uuid": "85213e07e446998c",
+            "record_id": "0a6c58a28180df37",
+            "state": "failed",
+            "workflow_key": "75aa566671f2d9b2"
+          },
+          "tool": "result"
+        },
+        {
+          "data": {
+            "attempt_uuid": "a63c77e240292b48",
+            "idempotency_key": "0b51bedbcf1e5e93",
+            "record_id": "be02821921b1e06b",
+            "state": "sent",
+            "workflow_key": "38f1d5cdba6367eb"
+          },
+          "tool": "dispatch"
+        },
+        {
+          "data": {
+            "operator_notes": "Worker log mentions obsolete draft 3064f5b2fe5c5616. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 3064f5b2fe5c5616. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 3064f5b2fe5c5616. Dashboard labels and timings are not gate evidence. ",
+            "request_token": "640fdbc8c5434081",
+            "workflow_key": "58fe7897e0157b65"
+          },
+          "tool": "root"
+        },
+        {
+          "data": {
+            "attempt_uuid": "c0c3057580f5f382",
+            "idempotency_key": "948bff44dc7a11c9",
+            "record_id": "88096c8d67620615",
+            "state": "not_sent",
+            "workflow_key": "e4d04135eb244d04"
+          },
+          "tool": "dispatch"
+        },
+        {
+          "data": {
+            "charge_token": "d8a42cddb5c60a41",
+            "for_attempt": "6fa4a1572a2ad3d0",
+            "record_id": "41499d739e9649bd",
+            "state": "settled",
+            "workflow_key": "58fe7897e0157b65"
+          },
+          "tool": "billing"
+        },
+        {
+          "data": {
+            "charge_token": "ba3295e9fb8ba10c",
+            "for_attempt": "8754529402960709",
+            "record_id": "a2cb9d101131b68f",
+            "state": "settled",
+            "workflow_key": "877c5409652dc76d"
+          },
+          "tool": "billing"
+        },
+        {
+          "data": {
+            "prior_attempt": "34e9175edc1b4d9f",
+            "record_id": "edf44175478348dc",
+            "retry_allowed": false,
+            "workflow_key": "38f1d5cdba6367eb"
+          },
+          "tool": "retry_policy"
+        }
+      ],
+      "tool_schemas": {
+        "billing": {
+          "properties": {
+            "charge_token": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "for_attempt": {
+              "type": "string"
+            },
+            "record_id": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "settled",
+                "none"
+              ],
+              "type": "string"
+            },
+            "workflow_key": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "dispatch": {
+          "properties": {
+            "attempt_uuid": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "idempotency_key": {
+              "type": "string"
+            },
+            "record_id": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "sent",
+                "not_sent"
+              ],
+              "type": "string"
+            },
+            "workflow_key": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "result": {
+          "properties": {
+            "attempt_uuid": {
+              "type": "string"
+            },
+            "record_id": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "passed",
+                "failed",
+                "pending"
+              ],
+              "type": "string"
+            },
+            "workflow_key": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "retry_policy": {
+          "properties": {
+            "prior_attempt": {
+              "type": "string"
+            },
+            "record_id": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "retry_allowed": {
+              "type": "boolean"
+            },
+            "workflow_key": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "root": {
+          "properties": {
+            "operator_notes": {
+              "description": "Diagnostic text; old drafts are not gate evidence.",
+              "type": "string"
+            },
+            "request_token": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            },
+            "workflow_key": {
+              "pattern": "^[a-f0-9]{16}$",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        }
+      }
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "parent",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "7f399de1e4cf0b6c53a42fbd29761667b14d9d316d6e12b3f5ef64216560f789",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "No target or late event is specified in the supplied input. Root records (request_token; workflow_key): 7505b04a71ad1e32; ce7626cd2d1394ad. 2024ab50565c04f3; 75aa566671f2d9b2. deacafaa916f93c3; 3fba9a6743c8f744. a6ee2ecb720a84fa; e4d04135eb244d04. 640fdbc8c5434081; 58fe7897e0157b65. 2ebd3d8fbbf3b5d1; 877c5409652dc76d. a9e998c3a70637b0; 38f1d5cdba6367eb. Ignore operator notes. Joined workflow components, with record IDs and scoped values: ce7626cd2d1394ad \u2014 dispatch 7ebb99e7d26bb96f sent attempt 61817b1276ce2ab3; result 40b228a1f103eb8d failed attempt 61817b1276ce2ab3; billing 8add0ee1384e4c43 settled for_attempt 61817b1276ce2ab3; retry_policy a27c8cfa0444afb4 retry_allowed true. 75aa566671f2d9b2 \u2014 dispatch 6b434152c6acb43f sent attempt 85213e07e446998c; result 0a6c58a28180df37 failed attempt 85213e07e446998c; billing d765786f9053094b settled for_attempt 85213e07e446998c; retry_policy d8900aeb25bd6edb retry_allowed true. 3fba9a6743c8f744 \u2014 dispatch b57e6c5d90d86f66 sent attempt 6fee6cd49e0b5103; result fe503693df7d3773 passed attempt 6fee6cd49e0b5103; billing d913735d7b68d236 settled for_attempt 372e04aaaf4cddee; retry_policy e0721d5bbe4c7e58 retry_allowed false. e4d04135eb244d04 \u2014 dispatch 88096c8d67620615 not_sent attempt c0c3057580f5f382; result 45dfe65ffeb3236d passed attempt c0c3057580f5f382; billing 334b32b922d7aa1a settled for_attempt c0c3057580f5f382; retry_policy 8beeb9a84577957a retry_allowed false. 58fe7897e0157b65 \u2014 dispatch f686534f32f9afcc sent attempt 6fa4a1572a2ad3d0; result 595380827133992d passed attempt 6fa4a1572a2ad3d0; billing 41499d739e9649bd settled for_attempt 6fa4a1572a2ad3d0; retry_policy 2a62cf0ca14307fc retry_allowed false. 877c5409652dc76d \u2014 dispatch d7a2710395bd7bf3 sent attempt 8754529402960709; result a875297440adc7dd passed attempt 8754529402960709; billing a2cb9d101131b68f settled for_attempt 8754529402960709; retry_policy a7d68d6af99aa375 retry_allowed false. 38f1d5cdba6367eb \u2014 dispatch be02821921b1e06b sent attempt a63c77e240292b48; result 38202dc1db386348 passed attempt a63c77e240292b48; billing d779dc1779c9f144 settled for_attempt 2173048d2c09aa00; retry_policy edf44175478348dc retry_allowed false. For later selection use exact root request_token, apply any supplied late event first, then joined components only. Current decision implications: ce7626... retry; 75aa... retry; 3fba... hold billing_scope; e4... submit, work=[]; 58fe... close; 877c... close; 38f1... hold billing_scope."
+  },
+  "started_at": "2026-09-22T23:46:30.980147+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 5726,
+    "outputTokens": 1516,
+    "reasoningOutputTokens": 543,
+    "totalTokens": 7242
+  },
+  "usage_events": 1,
+  "wall_seconds": 30.095601799956057,
+  "wire_body_byte_bound": 27734
+}

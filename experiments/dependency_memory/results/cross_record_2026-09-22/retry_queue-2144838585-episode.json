@@ -1,0 +1,438 @@
+{
+  "case_id": "retry_queue-2144838585",
+  "checks": {
+    "automatic_child": {
+      "candidate_bytes_read": 876,
+      "cpu_ns": 267500,
+      "exact_ids": true,
+      "passed": true,
+      "reason": "passed",
+      "relationships": true,
+      "required_id_fields": 12,
+      "source_bytes_read": 4799
+    },
+    "automatic_parent": {
+      "candidate_bytes_read": 2189,
+      "cpu_ns": 788500,
+      "exact_ids": true,
+      "passed": true,
+      "reason": "passed",
+      "relationships": true,
+      "required_id_fields": 12,
+      "source_bytes_read": 12657
+    },
+    "checked_child_proposal": {
+      "candidate_bytes_read": 875,
+      "cpu_ns": 968600,
+      "exact_ids": false,
+      "passed": false,
+      "reason": "unstructured_or_ambiguous_memory",
+      "relationships": false,
+      "required_id_fields": 12,
+      "source_bytes_read": 4799
+    },
+    "child_fallback": true,
+    "parent_fallback": false,
+    "structured_parent": {
+      "candidate_bytes_read": 2189,
+      "cpu_ns": 878300,
+      "exact_ids": true,
+      "passed": true,
+      "reason": "passed",
+      "relationships": true,
+      "required_id_fields": 12,
+      "source_bytes_read": 12657
+    }
+  },
+  "decisions": [
+    {
+      "arm": "prompt",
+      "future_id": "retry_queue-2144838585-0",
+      "identity": "retry_queue-2144838585-0-prompt",
+      "memory_bytes": 895,
+      "truth": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "arm": "indexed_raw",
+      "future_id": "retry_queue-2144838585-0",
+      "identity": "retry_queue-2144838585-0-indexed_raw",
+      "memory_bytes": 1085,
+      "truth": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "arm": "full",
+      "future_id": "retry_queue-2144838585-0",
+      "identity": "retry_queue-2144838585-0-full",
+      "memory_bytes": 7598,
+      "truth": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "arm": "structured",
+      "future_id": "retry_queue-2144838585-0",
+      "identity": "retry_queue-2144838585-0-structured",
+      "memory_bytes": 876,
+      "truth": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "arm": "indexed_projected",
+      "future_id": "retry_queue-2144838585-0",
+      "identity": "retry_queue-2144838585-0-indexed_projected",
+      "memory_bytes": 614,
+      "truth": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "arm": "automatic",
+      "future_id": "retry_queue-2144838585-0",
+      "identity": "retry_queue-2144838585-0-automatic",
+      "memory_bytes": 876,
+      "truth": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "arm": "checked",
+      "future_id": "retry_queue-2144838585-0",
+      "identity": "retry_queue-2144838585-0-checked",
+      "memory_bytes": 876,
+      "truth": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "arm": "direct",
+      "future_id": "retry_queue-2144838585-0",
+      "identity": "retry_queue-2144838585-0-direct",
+      "memory_bytes": 393,
+      "truth": {
+        "action": "retry",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "arm": "full",
+      "future_id": "retry_queue-2144838585-1",
+      "identity": "retry_queue-2144838585-1-full",
+      "memory_bytes": 7598,
+      "truth": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "arm": "direct",
+      "future_id": "retry_queue-2144838585-1",
+      "identity": "retry_queue-2144838585-1-direct",
+      "memory_bytes": 393,
+      "truth": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "arm": "indexed_raw",
+      "future_id": "retry_queue-2144838585-1",
+      "identity": "retry_queue-2144838585-1-indexed_raw",
+      "memory_bytes": 1085,
+      "truth": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "arm": "indexed_projected",
+      "future_id": "retry_queue-2144838585-1",
+      "identity": "retry_queue-2144838585-1-indexed_projected",
+      "memory_bytes": 614,
+      "truth": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "arm": "checked",
+      "future_id": "retry_queue-2144838585-1",
+      "identity": "retry_queue-2144838585-1-checked",
+      "memory_bytes": 876,
+      "truth": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "arm": "prompt",
+      "future_id": "retry_queue-2144838585-1",
+      "identity": "retry_queue-2144838585-1-prompt",
+      "memory_bytes": 895,
+      "truth": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "arm": "automatic",
+      "future_id": "retry_queue-2144838585-1",
+      "identity": "retry_queue-2144838585-1-automatic",
+      "memory_bytes": 876,
+      "truth": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "arm": "structured",
+      "future_id": "retry_queue-2144838585-1",
+      "identity": "retry_queue-2144838585-1-structured",
+      "memory_bytes": 876,
+      "truth": {
+        "action": "close",
+        "target_id": "3c5fcd13c9c0abd1",
+        "work": []
+      }
+    },
+    {
+      "arm": "indexed_raw",
+      "future_id": "retry_queue-2144838585-2",
+      "identity": "retry_queue-2144838585-2-indexed_raw",
+      "memory_bytes": 1086,
+      "truth": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "arm": "indexed_projected",
+      "future_id": "retry_queue-2144838585-2",
+      "identity": "retry_queue-2144838585-2-indexed_projected",
+      "memory_bytes": 615,
+      "truth": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "arm": "automatic",
+      "future_id": "retry_queue-2144838585-2",
+      "identity": "retry_queue-2144838585-2-automatic",
+      "memory_bytes": 876,
+      "truth": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "arm": "checked",
+      "future_id": "retry_queue-2144838585-2",
+      "identity": "retry_queue-2144838585-2-checked",
+      "memory_bytes": 876,
+      "truth": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "arm": "direct",
+      "future_id": "retry_queue-2144838585-2",
+      "identity": "retry_queue-2144838585-2-direct",
+      "memory_bytes": 393,
+      "truth": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "arm": "structured",
+      "future_id": "retry_queue-2144838585-2",
+      "identity": "retry_queue-2144838585-2-structured",
+      "memory_bytes": 876,
+      "truth": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "arm": "full",
+      "future_id": "retry_queue-2144838585-2",
+      "identity": "retry_queue-2144838585-2-full",
+      "memory_bytes": 7598,
+      "truth": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    },
+    {
+      "arm": "prompt",
+      "future_id": "retry_queue-2144838585-2",
+      "identity": "retry_queue-2144838585-2-prompt",
+      "memory_bytes": 895,
+      "truth": {
+        "action": "hold",
+        "target_id": "fc664c947981e7d8",
+        "work": [
+          "billing_scope",
+          "result_scope"
+        ]
+      }
+    }
+  ],
+  "family": "retry_queue",
+  "index": {
+    "3c5fcd13c9c0abd1": "[{\"data\":{\"prior_attempt\":\"2b5ce45ead0b260f\",\"record_id\":\"5f7620ace2cc0b83\",\"retry_allowed\":true,\"workflow_key\":\"75a1719927c1aef3\"},\"tool\":\"retry_policy\"},{\"data\":{\"charge_token\":\"5d3b6f34cc4e1d86\",\"for_attempt\":\"332f21f06bef90d0\",\"record_id\":\"45977daf99f17b5b\",\"state\":\"settled\",\"workflow_key\":\"75a1719927c1aef3\"},\"tool\":\"billing\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft 8656b5af9572794e. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 8656b5af9572794e. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 8656b5af9572794e. Dashboard labels and timings are not gate evidence. \",\"request_token\":\"3c5fcd13c9c0abd1\",\"workflow_key\":\"75a1719927c1aef3\"},\"tool\":\"root\"},{\"data\":{\"attempt_uuid\":\"332f21f06bef90d0\",\"idempotency_key\":\"1155e1b66e587856\",\"record_id\":\"5659f9d5e03f6b58\",\"state\":\"sent\",\"workflow_key\":\"75a1719927c1aef3\"},\"tool\":\"dispatch\"},{\"data\":{\"attempt_uuid\":\"332f21f06bef90d0\",\"record_id\":\"ec3161c93496854b\",\"state\":\"failed\",\"workflow_key\":\"75a1719927c1aef3\"},\"tool\":\"result\"}]",
+    "4a000b1e8132bfe2": "[{\"data\":{\"charge_token\":\"4c8b8ebea43410cd\",\"for_attempt\":\"ab1a572bf4c18e43\",\"record_id\":\"b3b05b475216e63c\",\"state\":\"settled\",\"workflow_key\":\"d50a7aa3a7023463\"},\"tool\":\"billing\"},{\"data\":{\"attempt_uuid\":\"ab1a572bf4c18e43\",\"record_id\":\"b2666d9dcc17421b\",\"state\":\"passed\",\"workflow_key\":\"d50a7aa3a7023463\"},\"tool\":\"result\"},{\"data\":{\"prior_attempt\":\"f80aade00651b3ec\",\"record_id\":\"1a601740ffb1327b\",\"retry_allowed\":false,\"workflow_key\":\"d50a7aa3a7023463\"},\"tool\":\"retry_policy\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft b3b7211968fb0dd5. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft b3b7211968fb0dd5. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft b3b7211968fb0dd5. Dashboard labels and timings are not gate evidence. \",\"request_token\":\"4a000b1e8132bfe2\",\"workflow_key\":\"d50a7aa3a7023463\"},\"tool\":\"root\"},{\"data\":{\"attempt_uuid\":\"ab1a572bf4c18e43\",\"idempotency_key\":\"8297fe635b8a38a0\",\"record_id\":\"6cf6c1475af45849\",\"state\":\"sent\",\"workflow_key\":\"d50a7aa3a7023463\"},\"tool\":\"dispatch\"}]",
+    "5a060964637086b0": "[{\"data\":{\"charge_token\":\"0f9126edb3d42dde\",\"for_attempt\":\"501bb3a1e18a3b63\",\"record_id\":\"87f972d23bba363a\",\"state\":\"settled\",\"workflow_key\":\"91caeedcf48227a8\"},\"tool\":\"billing\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft 2cf359c00020eca2. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 2cf359c00020eca2. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 2cf359c00020eca2. Dashboard labels and timings are not gate evidence. \",\"request_token\":\"5a060964637086b0\",\"workflow_key\":\"91caeedcf48227a8\"},\"tool\":\"root\"},{\"data\":{\"attempt_uuid\":\"1264c843325c819f\",\"record_id\":\"372d6121d3716351\",\"state\":\"passed\",\"workflow_key\":\"91caeedcf48227a8\"},\"tool\":\"result\"},{\"data\":{\"attempt_uuid\":\"1264c843325c819f\",\"idempotency_key\":\"1c8203436e14acf3\",\"record_id\":\"1a9b87be1372cceb\",\"state\":\"sent\",\"workflow_key\":\"91caeedcf48227a8\"},\"tool\":\"dispatch\"},{\"data\":{\"prior_attempt\":\"2223f5abe8085425\",\"record_id\":\"7caedea9b6128713\",\"retry_allowed\":false,\"workflow_key\":\"91caeedcf48227a8\"},\"tool\":\"retry_policy\"}]",
+    "dc0301393c80b859": "[{\"data\":{\"attempt_uuid\":\"b1a7c2d1db993af1\",\"record_id\":\"baf19e4115f347cd\",\"state\":\"passed\",\"workflow_key\":\"2713f21af0f0c621\"},\"tool\":\"result\"},{\"data\":{\"attempt_uuid\":\"b1a7c2d1db993af1\",\"idempotency_key\":\"2af3a5d81b442fd3\",\"record_id\":\"753266fa8c07eb0c\",\"state\":\"sent\",\"workflow_key\":\"2713f21af0f0c621\"},\"tool\":\"dispatch\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft 4b49393d7c1a361e. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 4b49393d7c1a361e. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 4b49393d7c1a361e. Dashboard labels and timings are not gate evidence. \",\"request_token\":\"dc0301393c80b859\",\"workflow_key\":\"2713f21af0f0c621\"},\"tool\":\"root\"},{\"data\":{\"prior_attempt\":\"890ee4e63d6f1992\",\"record_id\":\"e3fbb00712604bb2\",\"retry_allowed\":false,\"workflow_key\":\"2713f21af0f0c621\"},\"tool\":\"retry_policy\"},{\"data\":{\"charge_token\":\"80579304042e2014\",\"for_attempt\":\"6746406e2f6f69df\",\"record_id\":\"6c02cb86a9a856cb\",\"state\":\"settled\",\"workflow_key\":\"2713f21af0f0c621\"},\"tool\":\"billing\"}]",
+    "dea057a073b25900": "[{\"data\":{\"attempt_uuid\":\"1f7f2faf1dbef5f7\",\"idempotency_key\":\"9ca8937d30a7bf99\",\"record_id\":\"2916503c9f3549e9\",\"state\":\"sent\",\"workflow_key\":\"a70ccb6fd1320f31\"},\"tool\":\"dispatch\"},{\"data\":{\"prior_attempt\":\"10ab7e634afbea2c\",\"record_id\":\"aaeb33fa4699e3c5\",\"retry_allowed\":true,\"workflow_key\":\"a70ccb6fd1320f31\"},\"tool\":\"retry_policy\"},{\"data\":{\"attempt_uuid\":\"1f7f2faf1dbef5f7\",\"record_id\":\"5d826046859455c4\",\"state\":\"failed\",\"workflow_key\":\"a70ccb6fd1320f31\"},\"tool\":\"result\"},{\"data\":{\"charge_token\":\"a195dd428343189f\",\"for_attempt\":\"1f7f2faf1dbef5f7\",\"record_id\":\"00c247de3a94b37f\",\"state\":\"settled\",\"workflow_key\":\"a70ccb6fd1320f31\"},\"tool\":\"billing\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft c447fc7fe7633255. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft c447fc7fe7633255. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft c447fc7fe7633255. Dashboard labels and timings are not gate evidence. \",\"request_token\":\"dea057a073b25900\",\"workflow_key\":\"a70ccb6fd1320f31\"},\"tool\":\"root\"}]",
+    "f9ed9bfaf67d0565": "[{\"data\":{\"attempt_uuid\":\"4b35cfe1bcc04b07\",\"idempotency_key\":\"39cb9eb7c4ed9654\",\"record_id\":\"3d83325e6181730b\",\"state\":\"not_sent\",\"workflow_key\":\"3ca17e4562ecd62c\"},\"tool\":\"dispatch\"},{\"data\":{\"attempt_uuid\":\"4b35cfe1bcc04b07\",\"record_id\":\"52647b0faf8a04cc\",\"state\":\"passed\",\"workflow_key\":\"3ca17e4562ecd62c\"},\"tool\":\"result\"},{\"data\":{\"prior_attempt\":\"59ca1aac64c45829\",\"record_id\":\"95c324705671f340\",\"retry_allowed\":false,\"workflow_key\":\"3ca17e4562ecd62c\"},\"tool\":\"retry_policy\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft 4a62c14158ea196d. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 4a62c14158ea196d. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 4a62c14158ea196d. Dashboard labels and timings are not gate evidence. \",\"request_token\":\"f9ed9bfaf67d0565\",\"workflow_key\":\"3ca17e4562ecd62c\"},\"tool\":\"root\"},{\"data\":{\"charge_token\":\"868eb1477011b6d8\",\"for_attempt\":\"4b35cfe1bcc04b07\",\"record_id\":\"f26aade62c7de04e\",\"state\":\"settled\",\"workflow_key\":\"3ca17e4562ecd62c\"},\"tool\":\"billing\"}]",
+    "fc664c947981e7d8": "[{\"data\":{\"prior_attempt\":\"139269bb263e3ef0\",\"record_id\":\"13e68cd9303fdb5a\",\"retry_allowed\":false,\"workflow_key\":\"433456db4d6003e3\"},\"tool\":\"retry_policy\"},{\"data\":{\"charge_token\":\"7f63ac5066a48326\",\"for_attempt\":\"b6ce1b9691f129b0\",\"record_id\":\"7db0c41b165afced\",\"state\":\"settled\",\"workflow_key\":\"433456db4d6003e3\"},\"tool\":\"billing\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft 2f3f480a27fbc5bf. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 2f3f480a27fbc5bf. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 2f3f480a27fbc5bf. Dashboard labels and timings are not gate evidence. \",\"request_token\":\"fc664c947981e7d8\",\"workflow_key\":\"433456db4d6003e3\"},\"tool\":\"root\"},{\"data\":{\"attempt_uuid\":\"b6ce1b9691f129b0\",\"idempotency_key\":\"fecd2eb839c7d091\",\"record_id\":\"867e9ca691819124\",\"state\":\"sent\",\"workflow_key\":\"433456db4d6003e3\"},\"tool\":\"dispatch\"},{\"data\":{\"attempt_uuid\":\"b6ce1b9691f129b0\",\"record_id\":\"7d99d0abe6a73f71\",\"state\":\"passed\",\"workflow_key\":\"433456db4d6003e3\"},\"tool\":\"result\"}]"
+  },
+  "index_bytes": 8543,
+  "infeasible": {},
+  "local": {
+    "automatic": {
+      "bytes_read": 33427,
+      "bytes_written": 3941,
+      "cpu_ns": 1855100
+    },
+    "checked": {
+      "bytes_read": 37721,
+      "bytes_written": 4816,
+      "cpu_ns": 2394900
+    },
+    "direct": {
+      "bytes_read": 11090,
+      "bytes_written": 1339,
+      "cpu_ns": 446900
+    },
+    "full": {
+      "bytes_read": 22794,
+      "bytes_written": 22794,
+      "cpu_ns": 510900
+    },
+    "indexed_projected": {
+      "bytes_read": 19578,
+      "bytes_written": 10386,
+      "cpu_ns": 2044200
+    },
+    "indexed_raw": {
+      "bytes_read": 12221,
+      "bytes_written": 8543,
+      "cpu_ns": 1145300
+    },
+    "prompt": {
+      "bytes_read": 18677,
+      "bytes_written": 3907,
+      "cpu_ns": 52800
+    },
+    "structured": {
+      "bytes_read": 17201,
+      "bytes_written": 3065,
+      "cpu_ns": 29900
+    }
+  },
+  "memories": {
+    "automatic": {
+      "child": "{\"f\":[\"billing.charge_token\",\"billing.for_attempt\",\"billing.record_id\",\"billing.state\",\"dispatch.attempt_uuid\",\"dispatch.idempotency_key\",\"dispatch.record_id\",\"dispatch.state\",\"request_token\",\"result.attempt_uuid\",\"result.record_id\",\"result.state\",\"retry_policy.prior_attempt\",\"retry_policy.record_id\",\"retry_policy.retry_allowed\",\"workflow_key\"],\"r\":[[\"7f63ac5066a48326\",\"b6ce1b9691f129b0\",\"7db0c41b165afced\",\"settled\",\"b6ce1b9691f129b0\",\"fecd2eb839c7d091\",\"867e9ca691819124\",\"sent\",\"fc664c947981e7d8\",\"b6ce1b9691f129b0\",\"7d99d0abe6a73f71\",\"passed\",\"139269bb263e3ef0\",\"13e68cd9303fdb5a\",false,\"433456db4d6003e3\"],[\"5d3b6f34cc4e1d86\",\"332f21f06bef90d0\",\"45977daf99f17b5b\",\"settled\",\"332f21f06bef90d0\",\"1155e1b66e587856\",\"5659f9d5e03f6b58\",\"sent\",\"3c5fcd13c9c0abd1\",\"332f21f06bef90d0\",\"ec3161c93496854b\",\"failed\",\"2b5ce45ead0b260f\",\"5f7620ace2cc0b83\",true,\"75a1719927c1aef3\"]]}",
+      "parent": "{\"f\":[\"billing.charge_token\",\"billing.for_attempt\",\"billing.record_id\",\"billing.state\",\"dispatch.attempt_uuid\",\"dispatch.idempotency_key\",\"dispatch.record_id\",\"dispatch.state\",\"request_token\",\"result.attempt_uuid\",\"result.record_id\",\"result.state\",\"retry_policy.prior_attempt\",\"retry_policy.record_id\",\"retry_policy.retry_allowed\",\"workflow_key\"],\"r\":[[\"80579304042e2014\",\"6746406e2f6f69df\",\"6c02cb86a9a856cb\",\"settled\",\"b1a7c2d1db993af1\",\"2af3a5d81b442fd3\",\"753266fa8c07eb0c\",\"sent\",\"dc0301393c80b859\",\"b1a7c2d1db993af1\",\"baf19e4115f347cd\",\"passed\",\"890ee4e63d6f1992\",\"e3fbb00712604bb2\",false,\"2713f21af0f0c621\"],[\"868eb1477011b6d8\",\"4b35cfe1bcc04b07\",\"f26aade62c7de04e\",\"settled\",\"4b35cfe1bcc04b07\",\"39cb9eb7c4ed9654\",\"3d83325e6181730b\",\"not_sent\",\"f9ed9bfaf67d0565\",\"4b35cfe1bcc04b07\",\"52647b0faf8a04cc\",\"passed\",\"59ca1aac64c45829\",\"95c324705671f340\",false,\"3ca17e4562ecd62c\"],[\"7f63ac5066a48326\",\"b6ce1b9691f129b0\",\"7db0c41b165afced\",\"settled\",\"b6ce1b9691f129b0\",\"fecd2eb839c7d091\",\"867e9ca691819124\",\"sent\",\"fc664c947981e7d8\",\"b6ce1b9691f129b0\",\"7d99d0abe6a73f71\",\"passed\",\"139269bb263e3ef0\",\"13e68cd9303fdb5a\",false,\"433456db4d6003e3\"],[\"5d3b6f34cc4e1d86\",\"332f21f06bef90d0\",\"45977daf99f17b5b\",\"settled\",\"332f21f06bef90d0\",\"1155e1b66e587856\",\"5659f9d5e03f6b58\",\"sent\",\"3c5fcd13c9c0abd1\",\"332f21f06bef90d0\",\"ec3161c93496854b\",\"failed\",\"2b5ce45ead0b260f\",\"5f7620ace2cc0b83\",true,\"75a1719927c1aef3\"],[\"0f9126edb3d42dde\",\"501bb3a1e18a3b63\",\"87f972d23bba363a\",\"settled\",\"1264c843325c819f\",\"1c8203436e14acf3\",\"1a9b87be1372cceb\",\"sent\",\"5a060964637086b0\",\"1264c843325c819f\",\"372d6121d3716351\",\"passed\",\"2223f5abe8085425\",\"7caedea9b6128713\",false,\"91caeedcf48227a8\"],[\"a195dd428343189f\",\"1f7f2faf1dbef5f7\",\"00c247de3a94b37f\",\"settled\",\"1f7f2faf1dbef5f7\",\"9ca8937d30a7bf99\",\"2916503c9f3549e9\",\"sent\",\"dea057a073b25900\",\"1f7f2faf1dbef5f7\",\"5d826046859455c4\",\"failed\",\"10ab7e634afbea2c\",\"aaeb33fa4699e3c5\",true,\"a70ccb6fd1320f31\"],[\"4c8b8ebea43410cd\",\"ab1a572bf4c18e43\",\"b3b05b475216e63c\",\"settled\",\"ab1a572bf4c18e43\",\"8297fe635b8a38a0\",\"6cf6c1475af45849\",\"sent\",\"4a000b1e8132bfe2\",\"ab1a572bf4c18e43\",\"b2666d9dcc17421b\",\"passed\",\"f80aade00651b3ec\",\"1a601740ffb1327b\",false,\"d50a7aa3a7023463\"]]}"
+    },
+    "checked": {
+      "child": "{\"f\":[\"request_token\",\"workflow_key\",\"result.record_id\",\"result.attempt_uuid\",\"result.state\",\"dispatch.record_id\",\"dispatch.attempt_uuid\",\"dispatch.idempotency_key\",\"dispatch.state\",\"billing.record_id\",\"billing.for_attempt\",\"billing.charge_token\",\"billing.state\",\"retry_policy.record_id\",\"retry_policy.prior_attempt\",\"retry_policy.retry_allowed\"],\"r\":[[\"fc664c947981e7d8\",\"433456db4d6003e3\",\"7d99d0abe6a73f71\",\"b6ce1b9691f129b0\",\"passed\",\"867e9ca691819124\",\"b6ce1b9691f129b0\",\"fecd2eb839c7d091\",\"sent\",\"7db0c41b165afced\",\"b6ce1b9691f129b0\",\"7f63ac5066a48326\",\"settled\",\"13e68cd9303fdb5a\",\"139269bb263e3ef0\",false],[\"3c5fcd13c9c0abd1\",\"75a1719927c1aef3\",\"ec3161c93496854b\",\"332f21f06bef90d0\",\"failed\",\"5659f9d5e03f6b58\",\"332f21f06bef90d0\",\"1155e1b66e587856\",\"sent\",\"45977daf99f17b5b\",\"332f21f06bef90d0\",\"5d3b6f34cc4e1d86\",\"settled\",\"5f7620ace2cc0b83\",\"2b5ce45ead0b260f\",true]]}",
+      "child_bounds": {
+        "admitted_bytes": 875,
+        "clipped": false,
+        "proposed_bytes": 875
+      },
+      "parent": "{\"f\":[\"request_token\",\"workflow_key\",\"result.record_id\",\"result.attempt_uuid\",\"result.state\",\"dispatch.record_id\",\"dispatch.attempt_uuid\",\"dispatch.idempotency_key\",\"dispatch.state\",\"billing.record_id\",\"billing.for_attempt\",\"billing.charge_token\",\"billing.state\",\"retry_policy.record_id\",\"retry_policy.prior_attempt\",\"retry_policy.retry_allowed\"],\"r\":[[\"dc0301393c80b859\",\"2713f21af0f0c621\",\"baf19e4115f347cd\",\"b1a7c2d1db993af1\",\"passed\",\"753266fa8c07eb0c\",\"b1a7c2d1db993af1\",\"2af3a5d81b442fd3\",\"sent\",\"6c02cb86a9a856cb\",\"6746406e2f6f69df\",\"80579304042e2014\",\"settled\",\"e3fbb00712604bb2\",\"890ee4e63d6f1992\",false],[\"fc664c947981e7d8\",\"433456db4d6003e3\",\"7d99d0abe6a73f71\",\"b6ce1b9691f129b0\",\"passed\",\"867e9ca691819124\",\"b6ce1b9691f129b0\",\"fecd2eb839c7d091\",\"sent\",\"7db0c41b165afced\",\"b6ce1b9691f129b0\",\"7f63ac5066a48326\",\"settled\",\"13e68cd9303fdb5a\",\"139269bb263e3ef0\",false],[\"5a060964637086b0\",\"91caeedcf48227a8\",\"372d6121d3716351\",\"1264c843325c819f\",\"passed\",\"1a9b87be1372cceb\",\"1264c843325c819f\",\"1c8203436e14acf3\",\"sent\",\"87f972d23bba363a\",\"501bb3a1e18a3b63\",\"0f9126edb3d42dde\",\"settled\",\"7caedea9b6128713\",\"2223f5abe8085425\",false],[\"4a000b1e8132bfe2\",\"d50a7aa3a7023463\",\"b2666d9dcc17421b\",\"ab1a572bf4c18e43\",\"passed\",\"6cf6c1475af45849\",\"ab1a572bf4c18e43\",\"8297fe635b8a38a0\",\"sent\",\"b3b05b475216e63c\",\"ab1a572bf4c18e43\",\"4c8b8ebea43410cd\",\"settled\",\"1a601740ffb1327b\",\"f80aade00651b3ec\",false],[\"f9ed9bfaf67d0565\",\"3ca17e4562ecd62c\",\"52647b0faf8a04cc\",\"4b35cfe1bcc04b07\",\"passed\",\"3d83325e6181730b\",\"4b35cfe1bcc04b07\",\"39cb9eb7c4ed9654\",\"not_sent\",\"f26aade62c7de04e\",\"4b35cfe1bcc04b07\",\"868eb1477011b6d8\",\"settled\",\"95c324705671f340\",\"59ca1aac64c45829\",false],[\"3c5fcd13c9c0abd1\",\"75a1719927c1aef3\",\"ec3161c93496854b\",\"332f21f06bef90d0\",\"failed\",\"5659f9d5e03f6b58\",\"332f21f06bef90d0\",\"1155e1b66e587856\",\"sent\",\"45977daf99f17b5b\",\"332f21f06bef90d0\",\"5d3b6f34cc4e1d86\",\"settled\",\"5f7620ace2cc0b83\",\"2b5ce45ead0b260f\",true],[\"dea057a073b25900\",\"a70ccb6fd1320f31\",\"5d826046859455c4\",\"1f7f2faf1dbef5f7\",\"failed\",\"2916503c9f3549e9\",\"1f7f2faf1dbef5f7\",\"9ca8937d30a7bf99\",\"sent\",\"00c247de3a94b37f\",\"1f7f2faf1dbef5f7\",\"a195dd428343189f\",\"settled\",\"aaeb33fa4699e3c5\",\"10ab7e634afbea2c\",true]]}"
+    },
+    "direct": {
+      "child": "{\"f\":[\"request_token\",\"dispatch.attempt_uuid\",\"dispatch.state\",\"result.attempt_uuid\",\"result.state\",\"billing.for_attempt\",\"billing.state\",\"retry_policy.retry_allowed\"],\"r\":[[\"fc664c947981e7d8\",\"b6ce1b9691f129b0\",\"sent\",\"b6ce1b9691f129b0\",\"passed\",\"b6ce1b9691f129b0\",\"settled\",false],[\"3c5fcd13c9c0abd1\",\"332f21f06bef90d0\",\"sent\",\"332f21f06bef90d0\",\"failed\",\"332f21f06bef90d0\",\"settled\",true]]}",
+      "parent": "{\"f\":[\"request_token\",\"dispatch.attempt_uuid\",\"dispatch.state\",\"result.attempt_uuid\",\"result.state\",\"billing.for_attempt\",\"billing.state\",\"retry_policy.retry_allowed\"],\"r\":[[\"dc0301393c80b859\",\"b1a7c2d1db993af1\",\"sent\",\"b1a7c2d1db993af1\",\"passed\",\"6746406e2f6f69df\",\"settled\",false],[\"f9ed9bfaf67d0565\",\"4b35cfe1bcc04b07\",\"not_sent\",\"4b35cfe1bcc04b07\",\"passed\",\"4b35cfe1bcc04b07\",\"settled\",false],[\"fc664c947981e7d8\",\"b6ce1b9691f129b0\",\"sent\",\"b6ce1b9691f129b0\",\"passed\",\"b6ce1b9691f129b0\",\"settled\",false],[\"3c5fcd13c9c0abd1\",\"332f21f06bef90d0\",\"sent\",\"332f21f06bef90d0\",\"failed\",\"332f21f06bef90d0\",\"settled\",true],[\"5a060964637086b0\",\"1264c843325c819f\",\"sent\",\"1264c843325c819f\",\"passed\",\"501bb3a1e18a3b63\",\"settled\",false],[\"dea057a073b25900\",\"1f7f2faf1dbef5f7\",\"sent\",\"1f7f2faf1dbef5f7\",\"failed\",\"1f7f2faf1dbef5f7\",\"settled\",true],[\"4a000b1e8132bfe2\",\"ab1a572bf4c18e43\",\"sent\",\"ab1a572bf4c18e43\",\"passed\",\"ab1a572bf4c18e43\",\"settled\",false]]}"
+    },
+    "prompt": {
+      "child": "No target value or late event supplied. Retain only these candidates; each component belongs to the root\u2019s workflow. Root workflow 433456db4d6003e3: request_token=fc664c947981e7d8. Dispatch 867e9ca691819124: sent, attempt_uuid=b6ce1b9691f129b0, workflow_key=fecd2eb839c7d091. Result 7d99d0abe6a73f71: passed, attempt_uuid=b6ce1b9691f129b0. Retry_policy 13e68cd9303fdb5a: retry_allowed=false, prior=139269bb263e3ef0. Billing 7db0c41b165afced: settled, for_attempt=b6ce1b9691f129b0, charge=7f63ac5066a48326. Root workflow 75a1719927c1aef3: request_token=3c5fcd13c9c0abd1. Dispatch 5659f9d5e03f6b58: sent, attempt_uuid=332f21f06bef90d0, workflow_key=1155e1b66e587856. Result ec3161c93496854b: failed, attempt_uuid=332f21f06bef90d0. Retry_policy 5f7620ace2cc0b83: retry_allowed=true, prior=2b5ce45ead0b260f. Billing 45977daf99f17b5b: settled, for_attempt=332f21f06bef90d0, charge=5d3b6f34cc4e1d86.",
+      "child_bounds": {
+        "admitted_bytes": 895,
+        "clipped": false,
+        "proposed_bytes": 895
+      },
+      "parent": "No target value or late event was supplied. Preserve all records; root shown as request_token (workflow_key). Components shown as tool:record_id/status and scoped fields. 2713f21af0f0c621 root dc0301393c80b859; dispatch 753266fa8c07eb0c/sent attempt=b1a7c2d1db993af1 key=2af3a5d81b442fd3; result baf19e4115f347cd/passed attempt=b1a7c2d1db993af1; retry_policy e3fbb00712604bb2/retry_allowed=false prior=890ee4e63d6f1992; billing 6c02cb86a9a856cb/settled for_attempt=6746406e2f6f69df charge=80579304042e2014. 3ca17e4562ecd62c root f9ed9bfaf67d0565; dispatch 3d83325e6181730b/not_sent attempt=4b35cfe1bcc04b07 key=39cb9eb7c4ed9654; result 52647b0faf8a04cc/passed attempt=4b35cfe1bcc04b07; retry_policy 95c324705671f340/retry_allowed=false prior=59ca1aac64c45829; billing f26aade62c7de04e/settled for_attempt=4b35cfe1bcc04b07 charge=868eb1477011b6d8. 433456db4d6003e3 root fc664c947981e7d8; dispatch 867e9ca691819124/sent attempt=b6ce1b9691f129b0 key=fecd2eb839c7d091; result 7d99d0abe6a73f71/passed attempt=b6ce1b9691f129b0; retry_policy 13e68cd9303fdb5a/retry_allowed=false prior=139269bb263e3ef0; billing 7db0c41b165afced/settled for_attempt=b6ce1b9691f129b0 charge=7f63ac5066a48326. d50a7aa3a7023463 root 4a000b1e8132bfe2; dispatch 6cf6c1475af45849/sent attempt=ab1a572bf4c18e43 key=8297fe635b8a38a0; result b2666d9dcc17421b/passed attempt=ab1a572bf4c18e43; retry_policy 1a601740ffb1327b/retry_allowed=false prior=f80aade00651b3ec; billing b3b05b475216e63c/settled for_attempt=ab1a572bf4c18e43 charge=4c8b8ebea43410cd. 91caeedcf48227a8 root 5a060964637086b0; dispatch 1a9b87be1372cceb/sent attempt=1264c843325c819f key=1c8203436e14acf3; result 372d6121d3716351/passed attempt=1264c843325c819f; retry_policy 7caedea9b6128713/retry_allowed=false prior=2223f5abe8085425; billing 87f972d23bba363a/settled for_attempt=501bb3a1e18a3b63 charge=0f9126edb3d42dde. 75a1719927c1aef3 root 3c5fcd13c9c0abd1; dispatch 5659f9d5e03f6b58/sent attempt=332f21f06bef90d0 key=1155e1b66e587856; result ec3161c93496854b/failed attempt=332f21f06bef90d0; retry_policy 5f7620ace2cc0b83/retry_allowed=true prior=2b5ce45ead0b260f; billing 45977daf99f17b5b/settled for_attempt=332f21f06bef90d0 charge=5d3b6f34cc4e1d86. a70ccb6fd1320f31 has no root record in supplied data; dispatch 2916503c9f3549e9/sent attempt=1f7f2faf1dbef5f7 key=9ca8937d30a7bf99; result 5d826046859455c4/failed attempt=1f7f2faf1dbef5f7; retry_policy aaeb33fa4699e3c5/retry_allowed=true prior=10ab7e634afbea2c; billing 00c247de3a94b37f/settled for_attempt=1f7f2faf1dbef5f7 charge=a195dd428343189f. Decision rule: select root by target request_token, join only identical workflow_key, apply any late event first. If dispatch not_sent: submit, work=[]. Else require result.attempt_uuid and billing.for_attempt equal dispatch.attempt_uuid; mismatch holds result_scope or billing_scope. Then close only passed+settled; retry only failed+retry_allowed; otherwise hold for applicable result/billing/retry_policy condition. Return target_id=request_token. Ignore operator notes.",
+      "parent_bounds": {
+        "admitted_bytes": 3012,
+        "clipped": false,
+        "proposed_bytes": 3012
+      }
+    },
+    "structured": {
+      "child": "{\"f\":[\"request_token\",\"workflow_key\",\"result.record_id\",\"result.attempt_uuid\",\"result.state\",\"dispatch.record_id\",\"dispatch.attempt_uuid\",\"dispatch.idempotency_key\",\"dispatch.state\",\"billing.record_id\",\"billing.for_attempt\",\"billing.charge_token\",\"billing.state\",\"retry_policy.record_id\",\"retry_policy.prior_attempt\",\"retry_policy.retry_allowed\"],\"r\":[[\"fc664c947981e7d8\",\"433456db4d6003e3\",\"7d99d0abe6a73f71\",\"b6ce1b9691f129b0\",\"passed\",\"867e9ca691819124\",\"b6ce1b9691f129b0\",\"fecd2eb839c7d091\",\"sent\",\"7db0c41b165afced\",\"b6ce1b9691f129b0\",\"7f63ac5066a48326\",\"settled\",\"13e68cd9303fdb5a\",\"139269bb263e3ef0\",false],[\"3c5fcd13c9c0abd1\",\"75a1719927c1aef3\",\"ec3161c93496854b\",\"332f21f06bef90d0\",\"failed\",\"5659f9d5e03f6b58\",\"332f21f06bef90d0\",\"1155e1b66e587856\",\"sent\",\"45977daf99f17b5b\",\"332f21f06bef90d0\",\"5d3b6f34cc4e1d86\",\"settled\",\"5f7620ace2cc0b83\",\"2b5ce45ead0b260f\",true]]}",
+      "child_bounds": {
+        "admitted_bytes": 876,
+        "clipped": false,
+        "proposed_bytes": 876
+      },
+      "parent": "{\"f\":[\"request_token\",\"workflow_key\",\"result.record_id\",\"result.attempt_uuid\",\"result.state\",\"dispatch.record_id\",\"dispatch.attempt_uuid\",\"dispatch.idempotency_key\",\"dispatch.state\",\"billing.record_id\",\"billing.for_attempt\",\"billing.charge_token\",\"billing.state\",\"retry_policy.record_id\",\"retry_policy.prior_attempt\",\"retry_policy.retry_allowed\"],\"r\":[[\"dc0301393c80b859\",\"2713f21af0f0c621\",\"baf19e4115f347cd\",\"b1a7c2d1db993af1\",\"passed\",\"753266fa8c07eb0c\",\"b1a7c2d1db993af1\",\"2af3a5d81b442fd3\",\"sent\",\"6c02cb86a9a856cb\",\"6746406e2f6f69df\",\"80579304042e2014\",\"settled\",\"e3fbb00712604bb2\",\"890ee4e63d6f1992\",false],[\"fc664c947981e7d8\",\"433456db4d6003e3\",\"7d99d0abe6a73f71\",\"b6ce1b9691f129b0\",\"passed\",\"867e9ca691819124\",\"b6ce1b9691f129b0\",\"fecd2eb839c7d091\",\"sent\",\"7db0c41b165afced\",\"b6ce1b9691f129b0\",\"7f63ac5066a48326\",\"settled\",\"13e68cd9303fdb5a\",\"139269bb263e3ef0\",false],[\"5a060964637086b0\",\"91caeedcf48227a8\",\"372d6121d3716351\",\"1264c843325c819f\",\"passed\",\"1a9b87be1372cceb\",\"1264c843325c819f\",\"1c8203436e14acf3\",\"sent\",\"87f972d23bba363a\",\"501bb3a1e18a3b63\",\"0f9126edb3d42dde\",\"settled\",\"7caedea9b6128713\",\"2223f5abe8085425\",false],[\"4a000b1e8132bfe2\",\"d50a7aa3a7023463\",\"b2666d9dcc17421b\",\"ab1a572bf4c18e43\",\"passed\",\"6cf6c1475af45849\",\"ab1a572bf4c18e43\",\"8297fe635b8a38a0\",\"sent\",\"b3b05b475216e63c\",\"ab1a572bf4c18e43\",\"4c8b8ebea43410cd\",\"settled\",\"1a601740ffb1327b\",\"f80aade00651b3ec\",false],[\"f9ed9bfaf67d0565\",\"3ca17e4562ecd62c\",\"52647b0faf8a04cc\",\"4b35cfe1bcc04b07\",\"passed\",\"3d83325e6181730b\",\"4b35cfe1bcc04b07\",\"39cb9eb7c4ed9654\",\"not_sent\",\"f26aade62c7de04e\",\"4b35cfe1bcc04b07\",\"868eb1477011b6d8\",\"settled\",\"95c324705671f340\",\"59ca1aac64c45829\",false],[\"3c5fcd13c9c0abd1\",\"75a1719927c1aef3\",\"ec3161c93496854b\",\"332f21f06bef90d0\",\"failed\",\"5659f9d5e03f6b58\",\"332f21f06bef90d0\",\"1155e1b66e587856\",\"sent\",\"45977daf99f17b5b\",\"332f21f06bef90d0\",\"5d3b6f34cc4e1d86\",\"settled\",\"5f7620ace2cc0b83\",\"2b5ce45ead0b260f\",true],[\"dea057a073b25900\",\"a70ccb6fd1320f31\",\"5d826046859455c4\",\"1f7f2faf1dbef5f7\",\"failed\",\"2916503c9f3549e9\",\"1f7f2faf1dbef5f7\",\"9ca8937d30a7bf99\",\"sent\",\"00c247de3a94b37f\",\"1f7f2faf1dbef5f7\",\"a195dd428343189f\",\"settled\",\"aaeb33fa4699e3c5\",\"10ab7e634afbea2c\",true]]}",
+      "parent_bounds": {
+        "admitted_bytes": 2189,
+        "clipped": false,
+        "proposed_bytes": 2189
+      }
+    }
+  }
+}

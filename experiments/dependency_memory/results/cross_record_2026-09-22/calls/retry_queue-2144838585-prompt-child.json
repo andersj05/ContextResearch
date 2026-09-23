@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry_queue-2144838585-prompt-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0153905",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 3,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"No target value or late event supplied. Retain only these candidates; each component belongs to the root\u2019s workflow. Root workflow 433456db4d6003e3: request_token=fc664c947981e7d8. Dispatch 867e9ca691819124: sent, attempt_uuid=b6ce1b9691f129b0, workflow_key=fecd2eb839c7d091. Result 7d99d0abe6a73f71: passed, attempt_uuid=b6ce1b9691f129b0. Retry_policy 13e68cd9303fdb5a: retry_allowed=false, prior=139269bb263e3ef0. Billing 7db0c41b165afced: settled, for_attempt=b6ce1b9691f129b0, charge=7f63ac5066a48326. Root workflow 75a1719927c1aef3: request_token=3c5fcd13c9c0abd1. Dispatch 5659f9d5e03f6b58: sent, attempt_uuid=332f21f06bef90d0, workflow_key=1155e1b66e587856. Result ec3161c93496854b: failed, attempt_uuid=332f21f06bef90d0. Retry_policy 5f7620ace2cc0b83: retry_allowed=true, prior=2b5ce45ead0b260f. Billing 45977daf99f17b5b: settled, for_attempt=332f21f06bef90d0, charge=5d3b6f34cc4e1d86.\"}",
+  "request": {
+    "instruction": "Only the memory string survives this boundary. The decision rule repeats at execution. Write a compact, data-first prose handoff. Copy every workflow's exact root ID, component ID, status and scoped reference. State which workflow each tool result belongs to; do not collapse an approval or result into a generic 'passed'. Preserve facts for any later target and event. Ignore operator notes. Return {\"memory\":\"...\"}. Retain only the two named candidates in at most 2600 UTF-8 bytes. Select the root record whose request_token equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. For the selected request: if dispatch.state is not_sent, action=submit and work=[]; otherwise require result.attempt_uuid and billing.for_attempt to match dispatch.attempt_uuid. If a scope mismatches, hold with result_scope or billing_scope. Otherwise close if result.state is passed and billing.state is settled; retry if result.state is failed and retry_policy.retry_allowed is true; otherwise hold with result, billing or retry_policy for the applicable failed conditions. Return target_id=request_token. Apply the late event first.",
+    "observation": {
+      "candidates": [
+        "fc664c947981e7d8",
+        "3c5fcd13c9c0abd1"
+      ],
+      "previous_memory": "No target value or late event was supplied. Preserve all records; root shown as request_token (workflow_key). Components shown as tool:record_id/status and scoped fields. 2713f21af0f0c621 root dc0301393c80b859; dispatch 753266fa8c07eb0c/sent attempt=b1a7c2d1db993af1 key=2af3a5d81b442fd3; result baf19e4115f347cd/passed attempt=b1a7c2d1db993af1; retry_policy e3fbb00712604bb2/retry_allowed=false prior=890ee4e63d6f1992; billing 6c02cb86a9a856cb/settled for_attempt=6746406e2f6f69df charge=80579304042e2014. 3ca17e4562ecd62c root f9ed9bfaf67d0565; dispatch 3d83325e6181730b/not_sent attempt=4b35cfe1bcc04b07 key=39cb9eb7c4ed9654; result 52647b0faf8a04cc/passed attempt=4b35cfe1bcc04b07; retry_policy 95c324705671f340/retry_allowed=false prior=59ca1aac64c45829; billing f26aade62c7de04e/settled for_attempt=4b35cfe1bcc04b07 charge=868eb1477011b6d8. 433456db4d6003e3 root fc664c947981e7d8; dispatch 867e9ca691819124/sent attempt=b6ce1b9691f129b0 key=fecd2eb839c7d091; result 7d99d0abe6a73f71/passed attempt=b6ce1b9691f129b0; retry_policy 13e68cd9303fdb5a/retry_allowed=false prior=139269bb263e3ef0; billing 7db0c41b165afced/settled for_attempt=b6ce1b9691f129b0 charge=7f63ac5066a48326. d50a7aa3a7023463 root 4a000b1e8132bfe2; dispatch 6cf6c1475af45849/sent attempt=ab1a572bf4c18e43 key=8297fe635b8a38a0; result b2666d9dcc17421b/passed attempt=ab1a572bf4c18e43; retry_policy 1a601740ffb1327b/retry_allowed=false prior=f80aade00651b3ec; billing b3b05b475216e63c/settled for_attempt=ab1a572bf4c18e43 charge=4c8b8ebea43410cd. 91caeedcf48227a8 root 5a060964637086b0; dispatch 1a9b87be1372cceb/sent attempt=1264c843325c819f key=1c8203436e14acf3; result 372d6121d3716351/passed attempt=1264c843325c819f; retry_policy 7caedea9b6128713/retry_allowed=false prior=2223f5abe8085425; billing 87f972d23bba363a/settled for_attempt=501bb3a1e18a3b63 charge=0f9126edb3d42dde. 75a1719927c1aef3 root 3c5fcd13c9c0abd1; dispatch 5659f9d5e03f6b58/sent attempt=332f21f06bef90d0 key=1155e1b66e587856; result ec3161c93496854b/failed attempt=332f21f06bef90d0; retry_policy 5f7620ace2cc0b83/retry_allowed=true prior=2b5ce45ead0b260f; billing 45977daf99f17b5b/settled for_attempt=332f21f06bef90d0 charge=5d3b6f34cc4e1d86. a70ccb6fd1320f31 has no root record in supplied data; dispatch 2916503c9f3549e9/sent attempt=1f7f2faf1dbef5f7 key=9ca8937d30a7bf99; result 5d826046859455c4/failed attempt=1f7f2faf1dbef5f7; retry_policy aaeb33fa4699e3c5/retry_allowed=true prior=10ab7e634afbea2c; billing 00c247de3a94b37f/settled for_attempt=1f7f2faf1dbef5f7 charge=a195dd428343189f. Decision rule: select root by target request_token, join only identical workflow_key, apply any late event first. If dispatch not_sent: submit, work=[]. Else require result.attempt_uuid and billing.for_attempt equal dispatch.attempt_uuid; mismatch holds result_scope or billing_scope. Then close only passed+settled; retry only failed+retry_allowed; otherwise hold for applicable result/billing/retry_policy condition. Return target_id=request_token. Ignore operator notes."
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "dd0824337150e59caa9620e5b85ac8805fa19352a9e7749ea54841f227917e28",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "No target value or late event supplied. Retain only these candidates; each component belongs to the root\u2019s workflow. Root workflow 433456db4d6003e3: request_token=fc664c947981e7d8. Dispatch 867e9ca691819124: sent, attempt_uuid=b6ce1b9691f129b0, workflow_key=fecd2eb839c7d091. Result 7d99d0abe6a73f71: passed, attempt_uuid=b6ce1b9691f129b0. Retry_policy 13e68cd9303fdb5a: retry_allowed=false, prior=139269bb263e3ef0. Billing 7db0c41b165afced: settled, for_attempt=b6ce1b9691f129b0, charge=7f63ac5066a48326. Root workflow 75a1719927c1aef3: request_token=3c5fcd13c9c0abd1. Dispatch 5659f9d5e03f6b58: sent, attempt_uuid=332f21f06bef90d0, workflow_key=1155e1b66e587856. Result ec3161c93496854b: failed, attempt_uuid=332f21f06bef90d0. Retry_policy 5f7620ace2cc0b83: retry_allowed=true, prior=2b5ce45ead0b260f. Billing 45977daf99f17b5b: settled, for_attempt=332f21f06bef90d0, charge=5d3b6f34cc4e1d86."
+  },
+  "started_at": "2026-09-22T23:52:38.914917+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 4119,
+    "outputTokens": 730,
+    "reasoningOutputTokens": 356,
+    "totalTokens": 4849
+  },
+  "usage_events": 1,
+  "wall_seconds": 15.768342600029428,
+  "wire_body_byte_bound": 20840
+}

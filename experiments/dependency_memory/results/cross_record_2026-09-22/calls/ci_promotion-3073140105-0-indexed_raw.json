@@ -1,0 +1,99 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "ci_promotion-3073140105-0-indexed_raw",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0057155",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 3,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"target_id\":\"6e276bcc32e496d3\",\"work\":[\"approval_scope\"]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target and late event. Memory may be prose, a list of tool results with tool/data wrappers, or a JSON table with f=full field paths and r=rows. Root fields in a table are unprefixed; component fields use tool.field. First apply the event only to the selected workflow. Return one exact decision and sorted work. Do not call tools. Select the root record whose deployment_slot equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. Promote only if build.channel=stable, authorization.state=approved, authorization.approved_digest=build.digest, verification.subject=build.digest, verification.unit and integration both pass, and handoff.environment=prod. Otherwise hold with the exact sorted set of channel, approval, approval_scope, ci_scope, unit, integration, environment for each failed condition. Return target_id=build.digest. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "note",
+        "value": "Schedule title updated; gate fields unchanged."
+      },
+      "memory": "[{\"data\":{\"deployment_slot\":\"0d14357fa3843c5c\",\"operator_notes\":\"Worker log mentions obsolete draft 2b5262427dea8939. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 2b5262427dea8939. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 2b5262427dea8939. Dashboard labels and timings are not gate evidence. \",\"workflow_key\":\"b0f0e4f55a6f9a0a\"},\"tool\":\"root\"},{\"data\":{\"channel\":\"stable\",\"digest\":\"6e276bcc32e496d3\",\"record_id\":\"cc0ea9cc25e44167\",\"workflow_key\":\"b0f0e4f55a6f9a0a\"},\"tool\":\"build\"},{\"data\":{\"approved_digest\":\"b8da4030440aa12d\",\"record_id\":\"8c1fbb3d2e2176c2\",\"state\":\"approved\",\"ticket\":\"57049cb0c3a78edf\",\"workflow_key\":\"b0f0e4f55a6f9a0a\"},\"tool\":\"authorization\"},{\"data\":{\"integration\":\"pass\",\"record_id\":\"740c94cfca1b4350\",\"run\":\"d8b4b21d94026bd6\",\"subject\":\"6e276bcc32e496d3\",\"unit\":\"pass\",\"workflow_key\":\"b0f0e4f55a6f9a0a\"},\"tool\":\"verification\"},{\"data\":{\"environment\":\"prod\",\"record_id\":\"f9909ab47f84e759\",\"workflow_key\":\"b0f0e4f55a6f9a0a\"},\"tool\":\"handoff\"}]",
+      "target": "0d14357fa3843c5c"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "1644b2816a3bc0897ae971722db23389eb9d1c34d11a2b7577825ecc46397f25",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "target_id": "6e276bcc32e496d3",
+    "work": [
+      "approval_scope"
+    ]
+  },
+  "started_at": "2026-09-23T00:12:51.786483+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3344,
+    "outputTokens": 111,
+    "reasoningOutputTokens": 75,
+    "totalTokens": 3455
+  },
+  "usage_events": 1,
+  "wall_seconds": 5.48097420000704,
+  "wire_body_byte_bound": 19419
+}

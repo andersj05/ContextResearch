@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "ci_promotion-3073140105-structured-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0209325",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 3,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"{\\\"f\\\":[\\\"deployment_slot\\\",\\\"workflow_key\\\",\\\"build.record_id\\\",\\\"build.workflow_key\\\",\\\"build.channel\\\",\\\"build.digest\\\",\\\"authorization.record_id\\\",\\\"authorization.workflow_key\\\",\\\"authorization.approved_digest\\\",\\\"authorization.state\\\",\\\"authorization.ticket\\\",\\\"verification.record_id\\\",\\\"verification.workflow_key\\\",\\\"verification.integration\\\",\\\"verification.run\\\",\\\"verification.subject\\\",\\\"verification.unit\\\",\\\"handoff.record_id\\\",\\\"handoff.workflow_key\\\",\\\"handoff.environment\\\"],\\\"r\\\":[[\\\"0d14357fa3843c5c\\\",\\\"b0f0e4f55a6f9a0a\\\",\\\"cc0ea9cc25e44167\\\",\\\"b0f0e4f55a6f9a0a\\\",\\\"stable\\\",\\\"6e276bcc32e496d3\\\",\\\"8c1fbb3d2e2176c2\\\",\\\"b0f0e4f55a6f9a0a\\\",\\\"b8da4030440aa12d\\\",\\\"approved\\\",\\\"57049cb0c3a78edf\\\",\\\"740c94cfca1b4350\\\",\\\"b0f0e4f55a6f9a0a\\\",\\\"pass\\\",\\\"d8b4b21d94026bd6\\\",\\\"6e276bcc32e496d3\\\",\\\"pass\\\",\\\"c8569b26da00a3e1\\\",\\\"b0f0e4f55a6f9a0a\\\",\\\"prod\\\"],[\\\"3cc89af3f2288301\\\",\\\"01e852d367701c48\\\",\\\"c5fec0ed8237c57a\\\",\\\"01e852d367701c48\\\",\\\"stable\\\",\\\"6f4754acfb876a90\\\",\\\"e1bb424f7b1d6a6f\\\",\\\"01e852d367701c48\\\",\\\"6f4754acfb876a90\\\",\\\"approved\\\",\\\"ecb18c94b7bc3d3e\\\",\\\"59ea193e904a344c\\\",\\\"01e852d367701c48\\\",\\\"pass\\\",\\\"59c23d27b2046ebc\\\",\\\"6f4754acfb876a90\\\",\\\"pass\\\",\\\"c8569b26da00a3e1\\\",\\\"01e852d367701c48\\\",\\\"prod\\\"]]}\"}",
+  "request": {
+    "instruction": "Only the memory string survives this boundary. The decision rule repeats at execution. Write a compact JSON table string: f is the ordered list of full field paths, r is a list of value rows for joined workflows. Root fields are unprefixed; component fields use tool.field. Include every exact root and record ID, join key, reference, enum status, and boolean needed for a later target/event. Use no abbreviations, ellipses, or omitted rows. Ignore operator notes. Return {\"memory\":\"...\"}. Retain only the two named candidates in at most 2600 UTF-8 bytes. Select the root record whose deployment_slot equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. Promote only if build.channel=stable, authorization.state=approved, authorization.approved_digest=build.digest, verification.subject=build.digest, verification.unit and integration both pass, and handoff.environment=prod. Otherwise hold with the exact sorted set of channel, approval, approval_scope, ci_scope, unit, integration, environment for each failed condition. Return target_id=build.digest. Apply the late event first.",
+    "observation": {
+      "candidates": [
+        "3cc89af3f2288301",
+        "0d14357fa3843c5c"
+      ],
+      "previous_memory": "{\"f\":[\"deployment_slot\",\"workflow_key\",\"build.record_id\",\"build.workflow_key\",\"build.channel\",\"build.digest\",\"authorization.record_id\",\"authorization.workflow_key\",\"authorization.approved_digest\",\"authorization.state\",\"authorization.ticket\",\"verification.record_id\",\"verification.workflow_key\",\"verification.integration\",\"verification.run\",\"verification.subject\",\"verification.unit\",\"handoff.record_id\",\"handoff.workflow_key\",\"handoff.environment\"],\"r\":[[\"0d14357fa3843c5c\",\"b0f0e4f55a6f9a0a\",\"cc0ea9cc25e44167\",\"b0f0e4f55a6f9a0a\",\"stable\",\"6e276bcc32e496d3\",\"8c1fbb3d2e2176c2\",\"b0f0e4f55a6f9a0a\",\"b8da4030440aa12d\",\"approved\",\"57049cb0c3a78edf\",\"740c94cfca1b4350\",\"b0f0e4f55a6f9a0a\",\"pass\",\"d8b4b21d94026bd6\",\"6e276bcc32e496d3\",\"pass\",\"c8569b26da00a3e1\",\"b0f0e4f55a6f9a0a\",\"prod\"],[\"900d3aa560ae902b\",\"92d4c961897cb45e\",\"38deeb9e64e43c7d\",\"92d4c961897cb45e\",\"stable\",\"6d6005919225c666\",\"7b03345f07ffca6d\",\"92d4c961897cb45e\",\"6d6005919225c666\",\"approved\",\"40a5f34a64b11f34\",\"9f8ef9e2b891f818\",\"92d4c961897cb45e\",\"pass\",\"a5a6b38c6d48e80a\",\"6d6005919225c666\",\"pass\",\"e43c8785d5b2b133\",\"92d4c961897cb45e\",\"prod\"],[\"447db4836fa8ac4a\",\"2fbdcdb291fafe46\",\"ea5c575a86c267e6\",\"2fbdcdb291fafe46\",\"stable\",\"9fd7a907d4d12dfc\",\"1f7eff0e789127ee\",\"2fbdcdb291fafe46\",\"9fd7a907d4d12dfc\",\"approved\",\"2a6f3ad840fdf7d4\",\"ce58eb4dd1835fd5\",\"2fbdcdb291fafe46\",\"pass\",\"02e094cd91bbb63f\",\"8789d28b27f3c329\",\"pass\",\"18a8294edd80f801\",\"2fbdcdb291fafe46\",\"prod\"],[\"54eb905a591361cc\",\"608b4810692350bd\",\"fae96601eb4ff6bf\",\"608b4810692350bd\",\"stable\",\"22ac41909ab66231\",\"8dfda168cd61267f\",\"608b4810692350bd\",\"9e2fe4dc80e51d3f\",\"approved\",\"4042d26962d080f3\",\"3e6e90671a71cfb5\",\"608b4810692350bd\",\"pass\",\"65217999691481ee\",\"22ac41909ab66231\",\"pass\",\"9f0a69cff488242b\",\"608b4810692350bd\",\"prod\"],[\"6f58fceb6cd8d83d\",\"1c09d0bf0ce43a45\",\"3d72b426f7566bb9\",\"1c09d0bf0ce43a45\",\"stable\",\"22b69993f036d9c6\",\"bea43232a10f4a9b\",\"1c09d0bf0ce43a45\",\"22b69993f036d9c6\",\"approved\",\"0b63ac5784b9d75c\",\"f55608e6628216c1\",\"1c09d0bf0ce43a45\",\"fail\",\"d6e216b5fb36d381\",\"22b69993f036d9c6\",\"pass\",\"90af741fd1aafeb5\",\"1c09d0bf0ce43a45\",\"prod\"],[\"87a04dd3b264d517\",\"0ce194550494199a\",\"d87ac5d47bf404b8\",\"0ce194550494199a\",\"stable\",\"0ac38ce87b31a57b\",\"7fafd3a4d00d7e02\",\"0ce194550494199a\",\"0ac38ce87b31a57b\",\"approved\",\"e8087b1ee863d6c9\",\"57950d52a170835a\",\"0ce194550494199a\",\"fail\",\"b3ce888c4f0dc7b5\",\"0ac38ce87b31a57b\",\"pass\",\"050feacd06c851ee\",\"0ce194550494199a\",\"prod\"],[\"3cc89af3f2288301\",\"01e852d367701c48\",\"c5fec0ed8237c57a\",\"01e852d367701c48\",\"stable\",\"6f4754acfb876a90\",\"e1bb424f7b1d6a6f\",\"01e852d367701c48\",\"6f4754acfb876a90\",\"approved\",\"ecb18c94b7bc3d3e\",\"59ea193e904a344c\",\"01e852d367701c48\",\"pass\",\"59c23d27b2046ebc\",\"6f4754acfb876a90\",\"pass\",\"c8569b26da00a3e1\",\"01e852d367701c48\",\"prod\"]]}"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "bc5c2a67dd09dbc42f30cfb67f653193375e841138f8f7342ff63c5ba7b9d551",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "{\"f\":[\"deployment_slot\",\"workflow_key\",\"build.record_id\",\"build.workflow_key\",\"build.channel\",\"build.digest\",\"authorization.record_id\",\"authorization.workflow_key\",\"authorization.approved_digest\",\"authorization.state\",\"authorization.ticket\",\"verification.record_id\",\"verification.workflow_key\",\"verification.integration\",\"verification.run\",\"verification.subject\",\"verification.unit\",\"handoff.record_id\",\"handoff.workflow_key\",\"handoff.environment\"],\"r\":[[\"0d14357fa3843c5c\",\"b0f0e4f55a6f9a0a\",\"cc0ea9cc25e44167\",\"b0f0e4f55a6f9a0a\",\"stable\",\"6e276bcc32e496d3\",\"8c1fbb3d2e2176c2\",\"b0f0e4f55a6f9a0a\",\"b8da4030440aa12d\",\"approved\",\"57049cb0c3a78edf\",\"740c94cfca1b4350\",\"b0f0e4f55a6f9a0a\",\"pass\",\"d8b4b21d94026bd6\",\"6e276bcc32e496d3\",\"pass\",\"c8569b26da00a3e1\",\"b0f0e4f55a6f9a0a\",\"prod\"],[\"3cc89af3f2288301\",\"01e852d367701c48\",\"c5fec0ed8237c57a\",\"01e852d367701c48\",\"stable\",\"6f4754acfb876a90\",\"e1bb424f7b1d6a6f\",\"01e852d367701c48\",\"6f4754acfb876a90\",\"approved\",\"ecb18c94b7bc3d3e\",\"59ea193e904a344c\",\"01e852d367701c48\",\"pass\",\"59c23d27b2046ebc\",\"6f4754acfb876a90\",\"pass\",\"c8569b26da00a3e1\",\"01e852d367701c48\",\"prod\"]]}"
+  },
+  "started_at": "2026-09-23T00:11:44.040298+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 4208,
+    "outputTokens": 833,
+    "reasoningOutputTokens": 365,
+    "totalTokens": 5041
+  },
+  "usage_events": 1,
+  "wall_seconds": 17.77481329999864,
+  "wire_body_byte_bound": 21517
+}

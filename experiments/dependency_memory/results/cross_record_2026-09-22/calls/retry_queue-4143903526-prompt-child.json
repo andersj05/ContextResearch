@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry_queue-4143903526-prompt-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.015558",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 3,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Target and late event unspecified; do not infer. Retain candidates only; root mapping (request_token \u2192 workflow_key): 2024ab50565c04f3 \u2192 75aa566671f2d9b2; 640fdbc8c5434081 \u2192 58fe7897e0157b65. Workflow 75aa566671f2d9b2: dispatch 6b434152c6acb43f sent, attempt 85213e07e446998c; result 0a6c58a28180df37 failed, attempt 85213e07e446998c; billing d765786f9053094b settled, for_attempt 85213e07e446998c; retry_policy d8900aeb25bd6edb retry_allowed=true. Workflow 58fe7897e0157b65: dispatch f686534f32f9afcc sent, attempt 6fa4a1572a2ad3d0; result 595380827133992d passed, attempt 6fa4a1572a2ad3d0; billing 41499d739e9649bd settled, for_attempt 6fa4a1572a2ad3d0; retry_policy 2a62cf0ca14307fc retry_allowed=false. Apply any supplied late event to selected workflow path first. Select root by exact target=request_token; join by identical workflow_key. not_sent \u2192 submit, work=[]; otherwise require result.attempt_uuid and billing.for_attempt match dispatch.attempt_uuid; mismatch \u2192 hold (result_scope/billing_scope). Matching scopes: passed+settled \u2192 close; failed+retry_allowed \u2192 retry; otherwise hold for applicable result, billing, or retry_policy condition. Current implications: 2024\u2026 retry; 640\u2026 close.\"}",
+  "request": {
+    "instruction": "Only the memory string survives this boundary. The decision rule repeats at execution. Write a compact, data-first prose handoff. Copy every workflow's exact root ID, component ID, status and scoped reference. State which workflow each tool result belongs to; do not collapse an approval or result into a generic 'passed'. Preserve facts for any later target and event. Ignore operator notes. Return {\"memory\":\"...\"}. Retain only the two named candidates in at most 2600 UTF-8 bytes. Select the root record whose request_token equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. For the selected request: if dispatch.state is not_sent, action=submit and work=[]; otherwise require result.attempt_uuid and billing.for_attempt to match dispatch.attempt_uuid. If a scope mismatches, hold with result_scope or billing_scope. Otherwise close if result.state is passed and billing.state is settled; retry if result.state is failed and retry_policy.retry_allowed is true; otherwise hold with result, billing or retry_policy for the applicable failed conditions. Return target_id=request_token. Apply the late event first.",
+    "observation": {
+      "candidates": [
+        "640fdbc8c5434081",
+        "2024ab50565c04f3"
+      ],
+      "previous_memory": "No target or late event is specified in the supplied input. Root records (request_token; workflow_key): 7505b04a71ad1e32; ce7626cd2d1394ad. 2024ab50565c04f3; 75aa566671f2d9b2. deacafaa916f93c3; 3fba9a6743c8f744. a6ee2ecb720a84fa; e4d04135eb244d04. 640fdbc8c5434081; 58fe7897e0157b65. 2ebd3d8fbbf3b5d1; 877c5409652dc76d. a9e998c3a70637b0; 38f1d5cdba6367eb. Ignore operator notes. Joined workflow components, with record IDs and scoped values: ce7626cd2d1394ad \u2014 dispatch 7ebb99e7d26bb96f sent attempt 61817b1276ce2ab3; result 40b228a1f103eb8d failed attempt 61817b1276ce2ab3; billing 8add0ee1384e4c43 settled for_attempt 61817b1276ce2ab3; retry_policy a27c8cfa0444afb4 retry_allowed true. 75aa566671f2d9b2 \u2014 dispatch 6b434152c6acb43f sent attempt 85213e07e446998c; result 0a6c58a28180df37 failed attempt 85213e07e446998c; billing d765786f9053094b settled for_attempt 85213e07e446998c; retry_policy d8900aeb25bd6edb retry_allowed true. 3fba9a6743c8f744 \u2014 dispatch b57e6c5d90d86f66 sent attempt 6fee6cd49e0b5103; result fe503693df7d3773 passed attempt 6fee6cd49e0b5103; billing d913735d7b68d236 settled for_attempt 372e04aaaf4cddee; retry_policy e0721d5bbe4c7e58 retry_allowed false. e4d04135eb244d04 \u2014 dispatch 88096c8d67620615 not_sent attempt c0c3057580f5f382; result 45dfe65ffeb3236d passed attempt c0c3057580f5f382; billing 334b32b922d7aa1a settled for_attempt c0c3057580f5f382; retry_policy 8beeb9a84577957a retry_allowed false. 58fe7897e0157b65 \u2014 dispatch f686534f32f9afcc sent attempt 6fa4a1572a2ad3d0; result 595380827133992d passed attempt 6fa4a1572a2ad3d0; billing 41499d739e9649bd settled for_attempt 6fa4a1572a2ad3d0; retry_policy 2a62cf0ca14307fc retry_allowed false. 877c5409652dc76d \u2014 dispatch d7a2710395bd7bf3 sent attempt 8754529402960709; result a875297440adc7dd passed attempt 8754529402960709; billing a2cb9d101131b68f settled for_attempt 8754529402960709; retry_policy a7d68d6af99aa375 retry_allowed false. 38f1d5cdba6367eb \u2014 dispatch be02821921b1e06b sent attempt a63c77e240292b48; result 38202dc1db386348 passed attempt a63c77e240292b48; billing d779dc1779c9f144 settled for_attempt 2173048d2c09aa00; retry_policy edf44175478348dc retry_allowed false. For later selection use exact root request_token, apply any supplied late event first, then joined components only. Current decision implications: ce7626... retry; 75aa... retry; 3fba... hold billing_scope; e4... submit, work=[]; 58fe... close; 877c... close; 38f1... hold billing_scope."
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "fe72a29ff1190822f169da79614302e7e31d9cc760b8f4256996a46eb6b8e997",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Target and late event unspecified; do not infer. Retain candidates only; root mapping (request_token \u2192 workflow_key): 2024ab50565c04f3 \u2192 75aa566671f2d9b2; 640fdbc8c5434081 \u2192 58fe7897e0157b65. Workflow 75aa566671f2d9b2: dispatch 6b434152c6acb43f sent, attempt 85213e07e446998c; result 0a6c58a28180df37 failed, attempt 85213e07e446998c; billing d765786f9053094b settled, for_attempt 85213e07e446998c; retry_policy d8900aeb25bd6edb retry_allowed=true. Workflow 58fe7897e0157b65: dispatch f686534f32f9afcc sent, attempt 6fa4a1572a2ad3d0; result 595380827133992d passed, attempt 6fa4a1572a2ad3d0; billing 41499d739e9649bd settled, for_attempt 6fa4a1572a2ad3d0; retry_policy 2a62cf0ca14307fc retry_allowed=false. Apply any supplied late event to selected workflow path first. Select root by exact target=request_token; join by identical workflow_key. not_sent \u2192 submit, work=[]; otherwise require result.attempt_uuid and billing.for_attempt match dispatch.attempt_uuid; mismatch \u2192 hold (result_scope/billing_scope). Matching scopes: passed+settled \u2192 close; failed+retry_allowed \u2192 retry; otherwise hold for applicable result, billing, or retry_policy condition. Current implications: 2024\u2026 retry; 640\u2026 close."
+  },
+  "started_at": "2026-09-22T23:47:49.654569+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3901,
+    "outputTokens": 787,
+    "reasoningOutputTokens": 390,
+    "totalTokens": 4688
+  },
+  "usage_events": 1,
+  "wall_seconds": 17.04659719998017,
+  "wire_body_byte_bound": 20330
+}

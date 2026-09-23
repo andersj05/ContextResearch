@@ -1,0 +1,97 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry_queue-215957210-0-full",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0136105",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 2,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"retry\",\"target_id\":\"5e61818b12a903c5\",\"work\":[]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target and late event. Memory may be prose, a list of tool results with tool/data wrappers, or a JSON table with f=full field paths and r=rows. Root fields in a table are unprefixed; component fields use tool.field. First apply the event only to the selected workflow. Return one exact decision and sorted work. Do not call tools. Select the root record whose request_token equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. For the selected request: if dispatch.state is not_sent, action=submit and work=[]; otherwise require result.attempt_uuid and billing.for_attempt to match dispatch.attempt_uuid. If a scope mismatches, hold with result_scope or billing_scope. Otherwise close if result.state is passed and billing.state is settled; retry if result.state is failed and retry_policy.retry_allowed is true; otherwise hold with result, billing or retry_policy for the applicable failed conditions. Return target_id=request_token. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "note",
+        "value": "Schedule title updated; gate fields unchanged."
+      },
+      "memory": "[{\"data\":{\"charge_token\":\"fe647725e6996958\",\"for_attempt\":\"bf3d79a2ccaabcd7\",\"record_id\":\"70c6ade6a23050ab\",\"state\":\"settled\",\"workflow_key\":\"ca00eaf43da098d7\"},\"tool\":\"billing\"},{\"data\":{\"attempt_uuid\":\"a9bc9923d145edeb\",\"record_id\":\"443ad49394415404\",\"state\":\"passed\",\"workflow_key\":\"75199e04a5dac34e\"},\"tool\":\"result\"},{\"data\":{\"attempt_uuid\":\"0d1e93084d29a2d2\",\"idempotency_key\":\"246a4980d72c89be\",\"record_id\":\"e344d7956b669799\",\"state\":\"sent\",\"workflow_key\":\"68ebe3911d5a25a5\"},\"tool\":\"dispatch\"},{\"data\":{\"attempt_uuid\":\"bd27386123e034eb\",\"idempotency_key\":\"3fc980578ef1d3ab\",\"record_id\":\"b85d29b4c295d3bc\",\"state\":\"sent\",\"workflow_key\":\"93b0e9e4fdaa289f\"},\"tool\":\"dispatch\"},{\"data\":{\"attempt_uuid\":\"bf3d79a2ccaabcd7\",\"record_id\":\"f1295549e62d49e1\",\"state\":\"failed\",\"workflow_key\":\"ca00eaf43da098d7\"},\"tool\":\"result\"},{\"data\":{\"attempt_uuid\":\"bd27386123e034eb\",\"record_id\":\"0fd5dc0d8e0c640b\",\"state\":\"passed\",\"workflow_key\":\"93b0e9e4fdaa289f\"},\"tool\":\"result\"},{\"data\":{\"attempt_uuid\":\"3c60a2e81d88c195\",\"record_id\":\"9d1f014d31e09f2f\",\"state\":\"passed\",\"workflow_key\":\"e86ef4b12bca1361\"},\"tool\":\"result\"},{\"data\":{\"attempt_uuid\":\"bf3d79a2ccaabcd7\",\"idempotency_key\":\"340fde49d1fa99bb\",\"record_id\":\"f5ae7b7531ff5003\",\"state\":\"sent\",\"workflow_key\":\"ca00eaf43da098d7\"},\"tool\":\"dispatch\"},{\"data\":{\"prior_attempt\":\"6d5a03930eb8ea51\",\"record_id\":\"dd2e2fab83e79724\",\"retry_allowed\":false,\"workflow_key\":\"75199e04a5dac34e\"},\"tool\":\"retry_policy\"},{\"data\":{\"charge_token\":\"a0846e13306ae9d1\",\"for_attempt\":\"0df1c4ad67a11796\",\"record_id\":\"ee324fcc4aced293\",\"state\":\"settled\",\"workflow_key\":\"696eeafcf714117f\"},\"tool\":\"billing\"},{\"data\":{\"charge_token\":\"4e2239c2f53888e2\",\"for_attempt\":\"a9bc9923d145edeb\",\"record_id\":\"0fa4b411d958c42e\",\"state\":\"settled\",\"workflow_key\":\"75199e04a5dac34e\"},\"tool\":\"billing\"},{\"data\":{\"attempt_uuid\":\"30cdc83b3cb4cef1\",\"record_id\":\"ec629cec1688315f\",\"state\":\"failed\",\"workflow_key\":\"a9432ccb5622060d\"},\"tool\":\"result\"},{\"data\":{\"prior_attempt\":\"0d9828fb44edea4f\",\"record_id\":\"5bb05df20a820d88\",\"retry_allowed\":false,\"workflow_key\":\"68ebe3911d5a25a5\"},\"tool\":\"retry_policy\"},{\"data\":{\"charge_token\":\"2e0ce146075a359e\",\"for_attempt\":\"30cdc83b3cb4cef1\",\"record_id\":\"9ddf31c09fdc45ce\",\"state\":\"settled\",\"workflow_key\":\"a9432ccb5622060d\"},\"tool\":\"billing\"},{\"data\":{\"attempt_uuid\":\"0df1c4ad67a11796\",\"record_id\":\"b0858556f9e8c4a4\",\"state\":\"passed\",\"workflow_key\":\"696eeafcf714117f\"},\"tool\":\"result\"},{\"data\":{\"prior_attempt\":\"85a322f5780a05d1\",\"record_id\":\"7aa3e6fa9e7a25cd\",\"retry_allowed\":true,\"workflow_key\":\"ca00eaf43da098d7\"},\"tool\":\"retry_policy\"},{\"data\":{\"prior_attempt\":\"ab1466bfd1f1c2de\",\"record_id\":\"56bd0a50021f8cb3\",\"retry_allowed\":false,\"workflow_key\":\"93b0e9e4fdaa289f\"},\"tool\":\"retry_policy\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft dfb764351d4bd40d. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft dfb764351d4bd40d. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft dfb764351d4bd40d. Dashboard labels and timings are not gate evidence. \",\"request_token\":\"5e61818b12a903c5\",\"workflow_key\":\"ca00eaf43da098d7\"},\"tool\":\"root\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft 59073c8d39a35b2d. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 59073c8d39a35b2d. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 59073c8d39a35b2d. Dashboard labels and timings are not gate evidence. \",\"request_token\":\"c5d2383ffe7f0cb6\",\"workflow_key\":\"e86ef4b12bca1361\"},\"tool\":\"root\"},{\"data\":{\"prior_attempt\":\"6d59ccb8c48ec5e6\",\"record_id\":\"8f6f31e61acef1ff\",\"retry_allowed\":true,\"workflow_key\":\"a9432ccb5622060d\"},\"tool\":\"retry_policy\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft 18d897e7a914a6b8. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 18d897e7a914a6b8. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 18d897e7a914a6b8. Dashboard labels and timings are not gate evidence. \",\"request_token\":\"cf6a28d0354fee8b\",\"workflow_key\":\"68ebe3911d5a25a5\"},\"tool\":\"root\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft e37971f2aa9536f6. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft e37971f2aa9536f6. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft e37971f2aa9536f6. Dashboard labels and timings are not gate evidence. \",\"request_token\":\"00d61c9a24a7e969\",\"workflow_key\":\"75199e04a5dac34e\"},\"tool\":\"root\"},{\"data\":{\"attempt_uuid\":\"3c60a2e81d88c195\",\"idempotency_key\":\"4462432a002fe590\",\"record_id\":\"7b3ae93d81276fbc\",\"state\":\"sent\",\"workflow_key\":\"e86ef4b12bca1361\"},\"tool\":\"dispatch\"},{\"data\":{\"prior_attempt\":\"cf462842d468b785\",\"record_id\":\"9326cc6877dc29bb\",\"retry_allowed\":false,\"workflow_key\":\"696eeafcf714117f\"},\"tool\":\"retry_policy\"},{\"data\":{\"charge_token\":\"8d87f62227009663\",\"for_attempt\":\"80ec5d2bf88c065f\",\"record_id\":\"7b97a7ffffd02ce4\",\"state\":\"settled\",\"workflow_key\":\"93b0e9e4fdaa289f\"},\"tool\":\"billing\"},{\"data\":{\"charge_token\":\"7d40063793bc14c4\",\"for_attempt\":\"0d1e93084d29a2d2\",\"record_id\":\"000276cb315a4e48\",\"state\":\"settled\",\"workflow_key\":\"68ebe3911d5a25a5\"},\"tool\":\"billing\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft 993ff312579faa84. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 993ff312579faa84. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 993ff312579faa84. Dashboard labels and timings are not gate evidence. \",\"request_token\":\"cd1765dcca7c0ae7\",\"workflow_key\":\"a9432ccb5622060d\"},\"tool\":\"root\"},{\"data\":{\"prior_attempt\":\"16a2853ac486b8b1\",\"record_id\":\"9b681372e40256bc\",\"retry_allowed\":false,\"workflow_key\":\"e86ef4b12bca1361\"},\"tool\":\"retry_policy\"},{\"data\":{\"charge_token\":\"8814cb3afe3e0725\",\"for_attempt\":\"5a6529c43b2f8894\",\"record_id\":\"7051b731fe9b8ec9\",\"state\":\"settled\",\"workflow_key\":\"e86ef4b12bca1361\"},\"tool\":\"billing\"},{\"data\":{\"attempt_uuid\":\"0d1e93084d29a2d2\",\"record_id\":\"ee72941f608731cf\",\"state\":\"passed\",\"workflow_key\":\"68ebe3911d5a25a5\"},\"tool\":\"result\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft 67cc677d70e67e28. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 67cc677d70e67e28. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 67cc677d70e67e28. Dashboard labels and timings are not gate evidence. \",\"request_token\":\"3ca1d8b01c6be39d\",\"workflow_key\":\"696eeafcf714117f\"},\"tool\":\"root\"},{\"data\":{\"attempt_uuid\":\"a9bc9923d145edeb\",\"idempotency_key\":\"f2b229217ed13e6d\",\"record_id\":\"e4826354840b0805\",\"state\":\"not_sent\",\"workflow_key\":\"75199e04a5dac34e\"},\"tool\":\"dispatch\"},{\"data\":{\"attempt_uuid\":\"0df1c4ad67a11796\",\"idempotency_key\":\"3b4d654a162dfb3e\",\"record_id\":\"3877fe3321b3be11\",\"state\":\"sent\",\"workflow_key\":\"696eeafcf714117f\"},\"tool\":\"dispatch\"},{\"data\":{\"attempt_uuid\":\"30cdc83b3cb4cef1\",\"idempotency_key\":\"9e1717f22e973a24\",\"record_id\":\"b3ab0fcc51076fec\",\"state\":\"sent\",\"workflow_key\":\"a9432ccb5622060d\"},\"tool\":\"dispatch\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft d7782605eb135b8e. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft d7782605eb135b8e. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft d7782605eb135b8e. Dashboard labels and timings are not gate evidence. \",\"request_token\":\"960dbda5c32e25b9\",\"workflow_key\":\"93b0e9e4fdaa289f\"},\"tool\":\"root\"}]",
+      "target": "5e61818b12a903c5"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "5056d0cf24858293cc7fe6b6fbaf360bf612699fbdcdedfcb82b173d8cd3e74e",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "retry",
+    "target_id": "5e61818b12a903c5",
+    "work": []
+  },
+  "started_at": "2026-09-22T23:44:06.601982+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 5552,
+    "outputTokens": 301,
+    "reasoningOutputTokens": 267,
+    "totalTokens": 5853
+  },
+  "usage_events": 1,
+  "wall_seconds": 8.380994800012559,
+  "wire_body_byte_bound": 28079
+}

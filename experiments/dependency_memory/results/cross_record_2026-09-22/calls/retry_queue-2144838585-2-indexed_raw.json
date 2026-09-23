@@ -1,0 +1,100 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry_queue-2144838585-2-indexed_raw",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0062205",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 3,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"hold\",\"target_id\":\"fc664c947981e7d8\",\"work\":[\"billing_scope\",\"result_scope\"]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target and late event. Memory may be prose, a list of tool results with tool/data wrappers, or a JSON table with f=full field paths and r=rows. Root fields in a table are unprefixed; component fields use tool.field. First apply the event only to the selected workflow. Return one exact decision and sorted work. Do not call tools. Select the root record whose request_token equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. For the selected request: if dispatch.state is not_sent, action=submit and work=[]; otherwise require result.attempt_uuid and billing.for_attempt to match dispatch.attempt_uuid. If a scope mismatches, hold with result_scope or billing_scope. Otherwise close if result.state is passed and billing.state is settled; retry if result.state is failed and retry_policy.retry_allowed is true; otherwise hold with result, billing or retry_policy for the applicable failed conditions. Return target_id=request_token. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "dispatch.attempt_uuid",
+        "value": "ed1847b2162b7a41"
+      },
+      "memory": "[{\"data\":{\"prior_attempt\":\"139269bb263e3ef0\",\"record_id\":\"13e68cd9303fdb5a\",\"retry_allowed\":false,\"workflow_key\":\"433456db4d6003e3\"},\"tool\":\"retry_policy\"},{\"data\":{\"charge_token\":\"7f63ac5066a48326\",\"for_attempt\":\"b6ce1b9691f129b0\",\"record_id\":\"7db0c41b165afced\",\"state\":\"settled\",\"workflow_key\":\"433456db4d6003e3\"},\"tool\":\"billing\"},{\"data\":{\"operator_notes\":\"Worker log mentions obsolete draft 2f3f480a27fbc5bf. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 2f3f480a27fbc5bf. Dashboard labels and timings are not gate evidence. Worker log mentions obsolete draft 2f3f480a27fbc5bf. Dashboard labels and timings are not gate evidence. \",\"request_token\":\"fc664c947981e7d8\",\"workflow_key\":\"433456db4d6003e3\"},\"tool\":\"root\"},{\"data\":{\"attempt_uuid\":\"b6ce1b9691f129b0\",\"idempotency_key\":\"fecd2eb839c7d091\",\"record_id\":\"867e9ca691819124\",\"state\":\"sent\",\"workflow_key\":\"433456db4d6003e3\"},\"tool\":\"dispatch\"},{\"data\":{\"attempt_uuid\":\"b6ce1b9691f129b0\",\"record_id\":\"7d99d0abe6a73f71\",\"state\":\"passed\",\"workflow_key\":\"433456db4d6003e3\"},\"tool\":\"result\"}]",
+      "target": "fc664c947981e7d8"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "ef28742967ebd814801bb0882863c13eddf697ff974150dc9dde13a2c449e00b",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "hold",
+    "target_id": "fc664c947981e7d8",
+    "work": [
+      "billing_scope",
+      "result_scope"
+    ]
+  },
+  "started_at": "2026-09-22T23:55:12.141669+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3366,
+    "outputTokens": 147,
+    "reasoningOutputTokens": 108,
+    "totalTokens": 3513
+  },
+  "usage_events": 1,
+  "wall_seconds": 5.966662699996959,
+  "wire_body_byte_bound": 19538
+}

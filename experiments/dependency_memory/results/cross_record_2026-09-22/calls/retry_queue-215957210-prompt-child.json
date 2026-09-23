@@ -1,0 +1,75 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry_queue-215957210-prompt-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0131855",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 2,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Candidates only; target and late event not supplied, so selected workflow is undetermined. 3ca1d8b01c6be39d: workflow_key/root 696eeafcf714117f, request_token 3ca1d8b01c6be39d; dispatch 3877fe3321b3be11 sent attempt_uuid=0df1c4ad67a11796; result b0858556f9e8c4a4 passed attempt_uuid=0df1c4ad67a11796; billing ee324fcc4aced293 settled for_attempt=0df1c4ad67a11796; retry_policy 9326cc6877dc29bb retry_allowed=false prior_attempt=cf462842d468b785. 5e61818b12a903c5: workflow_key/root ca00eaf43da098d7, request_token 5e61818b12a903c5; dispatch f5ae7b7531ff5003 sent attempt_uuid=bf3d79a2ccaabcd7; result f1295549e62d49e1 failed attempt_uuid=bf3d79a2ccaabcd7; billing 70c6ade6a23050ab settled for_attempt=bf3d79a2ccaabcd7; retry_policy 7aa3e6fa9e7a25cd retry_allowed=true prior_attempt=85a322f5780a05d1. On execution, apply late event to selected workflow first. Select root by request_token=target_id, join components by workflow_key. If dispatch not_sent: submit, work=[]. Else require result.attempt_uuid and billing.for_attempt to match dispatch.attempt_uuid; mismatch holds with result_scope or billing_scope. Then passed+settled closes; failed+retry_allowed retries; otherwise hold for applicable result, billing, or retry_policy condition. Ignore operator_notes and all other workflows.\"}",
+  "request": {
+    "instruction": "Only the memory string survives this boundary. The decision rule repeats at execution. Write a compact, data-first prose handoff. Copy every workflow's exact root ID, component ID, status and scoped reference. State which workflow each tool result belongs to; do not collapse an approval or result into a generic 'passed'. Preserve facts for any later target and event. Ignore operator notes. Return {\"memory\":\"...\"}. Retain only the two named candidates in at most 2600 UTF-8 bytes. Select the root record whose request_token equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. For the selected request: if dispatch.state is not_sent, action=submit and work=[]; otherwise require result.attempt_uuid and billing.for_attempt to match dispatch.attempt_uuid. If a scope mismatches, hold with result_scope or billing_scope. Otherwise close if result.state is passed and billing.state is settled; retry if result.state is failed and retry_policy.retry_allowed is true; otherwise hold with result, billing or retry_policy for the applicable failed conditions. Return target_id=request_token. Apply the late event first.",
+    "observation": {
+      "candidates": [
+        "3ca1d8b01c6be39d",
+        "5e61818b12a903c5"
+      ],
+      "previous_memory": "Input contains no target value or late event; do not infer either. Root records (workflow_key/request_token): ca00eaf43da098d7/5e61818b12a903c5; e86ef4b12bca1361/c5d2383ffe7f0cb6; 68ebe3911d5a25a5/cf6a28d0354fee8b; 75199e04a5dac34e/00d61c9a24a7e969; a9432ccb5622060d/cd1765dcca7c0ae7; 696eeafcf714117f/3ca1d8b01c6be39d; 93b0e9e4fdaa289f/960dbda5c32e25b9. Ignore operator_notes. Per-workflow tool results (record_id; state; scoped fields): ca00eaf43da098d7 dispatch f5ae7b7531ff5003 sent, attempt_uuid=bf3d79a2ccaabcd7; result f1295549e62d49e1 failed, attempt_uuid=bf3d79a2ccaabcd7; billing 70c6ade6a23050ab settled, for_attempt=bf3d79a2ccaabcd7; retry_policy 7aa3e6fa9e7a25cd retry_allowed=true, prior_attempt=85a322f5780a05d1. e86ef4b12bca1361 dispatch 7b3ae93d81276fbc sent, attempt_uuid=3c60a2e81d88c195; result 9d1f014d31e09f2f passed, attempt_uuid=3c60a2e81d88c195; billing 7051b731fe9b8ec9 settled, for_attempt=5a6529c43b2f8894; retry_policy 9b681372e40256bc retry_allowed=false, prior_attempt=16a2853ac486b8b1. 68ebe3911d5a25a5 dispatch e344d7956b669799 sent, attempt_uuid=0d1e93084d29a2d2; result ee72941f608731cf passed, attempt_uuid=0d1e93084d29a2d2; billing 000276cb315a4e48 settled, for_attempt=0d1e93084d29a2d2; retry_policy 5bb05df20a820d88 retry_allowed=false, prior_attempt=0d9828fb44edea4f. 75199e04a5dac34e dispatch e4826354840b0805 not_sent, attempt_uuid=a9bc9923d145edeb; result 443ad49394415404 passed, attempt_uuid=a9bc9923d145edeb; billing 0fa4b411d958c42e settled, for_attempt=a9bc9923d145edeb; retry_policy dd2e2fab83e79724 retry_allowed=false, prior_attempt=6d5a03930eb8ea51. a9432ccb5622060d dispatch b3ab0fcc51076fec sent, attempt_uuid=30cdc83b3cb4cef1; result ec629cec1688315f failed, attempt_uuid=30cdc83b3cb4cef1; billing 9ddf31c09fdc45ce settled, for_attempt=30cdc83b3cb4cef1; retry_policy 8f6f31e61acef1ff retry_allowed=true, prior_attempt=6d59ccb8c48ec5e6. 696eeafcf714117f dispatch 3877fe3321b3be11 sent, attempt_uuid=0df1c4ad67a11796; result b0858556f9e8c4a4 passed, attempt_uuid=0df1c4ad67a11796; billing ee324fcc4aced293 settled, for_attempt=0df1c4ad67a11796; retry_policy 9326cc6877dc29bb retry_allowed=false, prior_attempt=cf462842d468b785. 93b0e9e4fdaa289f dispatch b85d29b4c295d3bc sent, attempt_uuid=bd27386123e034eb; result 0fd5dc0d8e0c640b passed, attempt_uuid=bd27386123e034eb; billing 7b97a7ffffd02ce4 settled, for_attempt=80ec5d2bf88c065f; retry_policy 56bd0a50021f8cb3 retry_allowed=false, prior_attempt=ab1466bfd1f1c2de. Apply any later event to selected workflow before decision. If selected dispatch not_sent: submit, work=[]. Otherwise result and billing scopes must match dispatch attempt_uuid; mismatch holds as result_scope or billing_scope. Then passed+settled closes; failed+retry_allowed retries; otherwise hold for applicable result, billing, or retry_policy condition."
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "922d3a32c836f979a4cdb49fddbff1ae15cdb4f2efc19548f8aae356661f181b",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Candidates only; target and late event not supplied, so selected workflow is undetermined. 3ca1d8b01c6be39d: workflow_key/root 696eeafcf714117f, request_token 3ca1d8b01c6be39d; dispatch 3877fe3321b3be11 sent attempt_uuid=0df1c4ad67a11796; result b0858556f9e8c4a4 passed attempt_uuid=0df1c4ad67a11796; billing ee324fcc4aced293 settled for_attempt=0df1c4ad67a11796; retry_policy 9326cc6877dc29bb retry_allowed=false prior_attempt=cf462842d468b785. 5e61818b12a903c5: workflow_key/root ca00eaf43da098d7, request_token 5e61818b12a903c5; dispatch f5ae7b7531ff5003 sent attempt_uuid=bf3d79a2ccaabcd7; result f1295549e62d49e1 failed attempt_uuid=bf3d79a2ccaabcd7; billing 70c6ade6a23050ab settled for_attempt=bf3d79a2ccaabcd7; retry_policy 7aa3e6fa9e7a25cd retry_allowed=true prior_attempt=85a322f5780a05d1. On execution, apply late event to selected workflow first. Select root by request_token=target_id, join components by workflow_key. If dispatch not_sent: submit, work=[]. Else require result.attempt_uuid and billing.for_attempt to match dispatch.attempt_uuid; mismatch holds with result_scope or billing_scope. Then passed+settled closes; failed+retry_allowed retries; otherwise hold for applicable result, billing, or retry_policy condition. Ignore operator_notes and all other workflows."
+  },
+  "started_at": "2026-09-22T23:43:16.008652+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 4022,
+    "outputTokens": 573,
+    "reasoningOutputTokens": 155,
+    "totalTokens": 4595
+  },
+  "usage_events": 1,
+  "wall_seconds": 13.028610399982426,
+  "wire_body_byte_bound": 20657
+}

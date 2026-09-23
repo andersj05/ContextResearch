@@ -1,0 +1,97 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "retry_queue-4143903526-0-prompt",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0086605",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1790718870,
+        "usedPercent": 3,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"action\":\"retry\",\"target_id\":\"2024ab50565c04f3\",\"work\":[]}",
+  "request": {
+    "instruction": "Use only the supplied memory, target and late event. Memory may be prose, a list of tool results with tool/data wrappers, or a JSON table with f=full field paths and r=rows. Root fields in a table are unprefixed; component fields use tool.field. First apply the event only to the selected workflow. Return one exact decision and sorted work. Do not call tools. Select the root record whose request_token equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. For the selected request: if dispatch.state is not_sent, action=submit and work=[]; otherwise require result.attempt_uuid and billing.for_attempt to match dispatch.attempt_uuid. If a scope mismatches, hold with result_scope or billing_scope. Otherwise close if result.state is passed and billing.state is settled; retry if result.state is failed and retry_policy.retry_allowed is true; otherwise hold with result, billing or retry_policy for the applicable failed conditions. Return target_id=request_token. Apply the late event first.",
+    "observation": {
+      "late_event": {
+        "path": "note",
+        "value": "Schedule title updated; gate fields unchanged."
+      },
+      "memory": "Target and late event unspecified; do not infer. Retain candidates only; root mapping (request_token \u2192 workflow_key): 2024ab50565c04f3 \u2192 75aa566671f2d9b2; 640fdbc8c5434081 \u2192 58fe7897e0157b65. Workflow 75aa566671f2d9b2: dispatch 6b434152c6acb43f sent, attempt 85213e07e446998c; result 0a6c58a28180df37 failed, attempt 85213e07e446998c; billing d765786f9053094b settled, for_attempt 85213e07e446998c; retry_policy d8900aeb25bd6edb retry_allowed=true. Workflow 58fe7897e0157b65: dispatch f686534f32f9afcc sent, attempt 6fa4a1572a2ad3d0; result 595380827133992d passed, attempt 6fa4a1572a2ad3d0; billing 41499d739e9649bd settled, for_attempt 6fa4a1572a2ad3d0; retry_policy 2a62cf0ca14307fc retry_allowed=false. Apply any supplied late event to selected workflow path first. Select root by exact target=request_token; join by identical workflow_key. not_sent \u2192 submit, work=[]; otherwise require result.attempt_uuid and billing.for_attempt match dispatch.attempt_uuid; mismatch \u2192 hold (result_scope/billing_scope). Matching scopes: passed+settled \u2192 close; failed+retry_allowed \u2192 retry; otherwise hold for applicable result, billing, or retry_policy condition. Current implications: 2024\u2026 retry; 640\u2026 close.",
+      "target": "2024ab50565c04f3"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "submit",
+            "hold",
+            "publish",
+            "retry",
+            "close",
+            "promote"
+          ],
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "work": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "target_id",
+        "work"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "luna6_delayed_revision_v1"
+  },
+  "request_sha256": "644b00ef0cbb2e5d84d3e7568e24a6cf2d7cdb47f36c85e44b1471395ff707b9",
+  "reservation_credits": "7.65",
+  "response": {
+    "action": "retry",
+    "target_id": "2024ab50565c04f3",
+    "work": []
+  },
+  "started_at": "2026-09-22T23:49:21.264587+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3392,
+    "outputTokens": 337,
+    "reasoningOutputTokens": 304,
+    "totalTokens": 3729
+  },
+  "usage_events": 1,
+  "wall_seconds": 8.652538300026208,
+  "wire_body_byte_bound": 19384
+}
