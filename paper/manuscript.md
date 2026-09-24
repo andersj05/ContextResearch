@@ -1,6 +1,6 @@
 # Repeated Context Compression with Delayed Task Dependencies
 
-Working draft — September 22, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an asymptotic threshold and a tightly certified rate-two error, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, and a cross-record stress test with one permanent transport gap and a separately frozen continuation. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
+Working draft — September 24, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an asymptotic threshold and a tightly certified rate-two error, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, a cross-record stress test with one permanent transport gap and a separately frozen continuation, and a post-hoc offline decoder-compatibility correction. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
 
 ## Abstract
 
@@ -414,6 +414,28 @@ child schema reader, leaving empty child memory. This is a concrete software
 defect, not evidence against a corrected checker. Local cost conversion is
 synthetic, direct authoring and provider infrastructure are unmeasured, and
 actual subscription debit is unknown. See the [focused diagnosis](../research/CROSS_RECORD_RECOVERY_2026-09-22.md).
+
+### 8.7 Decoder-compatible parent check: offline correction
+
+The frozen checked arm tested exact detected identifiers and their owner/path
+associations, but it did not require that the later decoder accept every
+retained field. A separate [versioned check](../research/DECODER_COMPATIBILITY_REPLAY_2026-09-24.md)
+now verifies the parent table's supported joined-schema paths, scalar types
+and enums, exact root-owner selection, and child capacity for every possible
+two-candidate pair before source deletion. An incompatible model proposal
+falls back to the deterministic source projection; the child check cannot
+introduce paths absent from the bounded parent. The v1 requests, responses,
+implementation and terminal outcomes remain unchanged.
+
+In a post-hoc replay of the twelve saved structured parent proposals, nine
+pass the old ID check and three pass the new compatibility check. The six
+newly rejected old-pass proposals have unsupported paths. After fallback,
+all twelve admitted parents support all 252 possible two-owner child
+handoffs. This is a deterministic software diagnostic on inspected
+constructed data, not a new model or terminal-performance result. The
+certificate still accepts a schema-valid but wrong state value; final-model
+interpretation errors and action safety require separate evaluation.
+Claim C50.
 
 ## 9. Limitations and open results
 

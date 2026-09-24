@@ -420,3 +420,29 @@ repeated component join-key columns but its child decoder rejects them and
 deletes memory. Record this as a concrete implementation mismatch requiring
 a new, prospectively frozen version; do not rescore the current evaluation.
 The focused note and claim C49 retain the costs and remaining limitations.
+
+## September 24: compose parent certificates with the child decoder
+
+The latest cross-record result exposed a software mismatch, not evidence that
+the proposed checking mechanism works or fails in general. Preserve the v1
+implementation and all frozen model evidence. Add a separate v2 compatibility
+check that rejects unsupported parent columns, validates public schema
+types/enums, selects by the root owner field, and proves all possible
+two-candidate child tables fit before source deletion. If a model proposal
+fails, project from still-available source evidence and certify that fallback;
+otherwise declare infeasible. Do not silently turn this post-hoc fix into a
+rescore of the original checked arm.
+
+The saved-parent replay checks twelve proposals. Nine pass the old ID check;
+three pass v2. Six old-pass parents are newly rejected for unsupported fields.
+All twelve admitted parents support 252/252 possible two-owner child handoffs
+after fallback. This tests decoder reachability, not terminal success or
+cost superiority. A schema-valid but wrong state still passes the certificate.
+Claim C50 and the [focused note](../research/DECODER_COMPATIBILITY_REPLAY_2026-09-24.md)
+record the scope.
+
+Prioritize a frozen externally observed executable workflow for the next
+empirical study. Keep direct checked receipts and raw indexed recovery as
+strong controls, and specify any terminal action guard separately. Do not
+spend new model calls repeating the known constructed grammars as if they
+were independent evidence. No new model allocation is made by this decision.

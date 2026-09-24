@@ -1,10 +1,27 @@
 # Current research status
 
-Updated: September 22, 2026. This document is the current handoff; older scope documents are historical.
+Updated: September 24, 2026. This document is the current handoff; older scope documents are historical.
 
 ## Objective
 
 Develop a mathematically precise and implementable study of repeated agent compaction when relevance is revealed over time. The target is a restricted compatibility result plus controlled evidence of whether the mechanism matters in tool-agent tasks.
+
+The September 24 [decoder-compatibility correction](../research/DECODER_COMPATIBILITY_REPLAY_2026-09-24.md)
+addresses a concrete checked-arm handoff defect without changing the frozen
+cross-record study. Its versioned parent certificate requires supported field
+paths and types, exact ID/owner associations, unique root-ID selection and a
+child that fits for every possible two-candidate pair. In a post-hoc replay
+of twelve saved parent proposals, the old ID check passes nine and the new
+handoff check passes three; six proposals that the old check accepted are
+rejected for unsupported paths. Fallback before deletion makes all twelve
+admitted parents decoder-compatible on all 252 possible owner pairs. This is
+an offline software result, not a rescore of old terminal decisions or a
+new model-performance comparison. State semantics and final action safety
+remain uncertified. Claim C50. The next decisive evidence needs a frozen
+externally observed executable workflow and a separately specified action
+guard, with strong direct and indexed controls.
+Milestone validation: 368 offline tests pass; the repository validator reports
+PASS, and the paper builds with 34 cited sources. No new model call was made.
 
 The latest [cross-record stress test](../research/CROSS_RECORD_RECOVERY_2026-09-22.md)
 froze twelve constructed retry, CI and data-job traces with related evidence
@@ -28,8 +45,8 @@ including one simulated `publish` where the rule requires `hold`. The checked
 proposal arm also has a documented parent-check/child-decoder mismatch that
 empties six child memories. This **does not establish** cheap automatic
 survival checks as a terminal-performance or total-cost contribution.
-External observed traces, a corrected checker and a separately evaluated
-execution guard remain open. Costs use synthetic local prices; one model
+External observed traces, prospective evaluation of the corrected checker,
+and a separately evaluated execution guard remain open. Costs use synthetic local prices; one model
 call has unknown usage and actual subscription debit is unknown. Claim C49.
 Final validation for this milestone: 361 offline tests pass; the repository
 auditor reports PASS and reconciles all 348 scheduled identities, 347 metered
@@ -206,12 +223,15 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 
 ## Next bounded tasks
 
-The constructed execution adapter, historical evidence replay, and first live
-release-gate pilot are complete. The new evidence narrows the next task: infer
-an inexpensive identity/role/dependency contract from an unseen executable
-workflow, rather than supplying the projection manually. Freeze that workflow's
-grader and information order before tuning extraction. The release examples
-have now been inspected and are not a held-out set.
+The constructed execution adapter, historical evidence replay, first live
+release-gate pilot, and offline decoder-compatibility correction are complete.
+The next empirical task is to infer an inexpensive identity/role/dependency
+contract from an externally observed executable workflow, rather than
+supplying the projection manually. Freeze that workflow's grader, delayed
+obligations and information order before tuning extraction. The release and
+cross-record examples have been inspected and are not a held-out set. Keep
+the execution guard as a separate intervention with its own public rule and
+cost; the new checker establishes handoff compatibility, not safe actions.
 
 Announce public side information to every compactor and enforce exact identifier
 preservation. Retain data-first prompting, direct checked rows, indexed recovery

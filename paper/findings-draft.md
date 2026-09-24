@@ -1,6 +1,20 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.19 — September 22, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.20 — September 24, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## Decoder-compatible handoffs after the cross-record failure
+
+A [versioned offline correction](../research/DECODER_COMPATIBILITY_REPLAY_2026-09-24.md)
+now checks whether a parent table can actually be selected and decoded at the
+second boundary. On the twelve saved cross-record parent proposals, the old
+ID check passes nine and the new compatibility check passes three. Six
+proposals accepted by the old check have unsupported columns. Conservative
+fallback before source deletion produces twelve compatible parents, and all
+252 possible two-owner child handoffs pass deterministic checks. This neither
+changes the frozen study's terminal scores nor prevents a model from
+misreading a schema-valid state. An externally observed executable workflow,
+strong indexed/direct controls, and a separately evaluated terminal guard
+are the next empirical test. [C50]
 
 ## Cross-record dependencies: retention succeeds, decisions fail
 
