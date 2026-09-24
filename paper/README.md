@@ -22,6 +22,13 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.20 records the [decoder-compatible handoff correction and branch
+audit](../research/DECODER_COMPATIBILITY_REPLAY_2026-09-24.md), claim C50. The
+parent certificate now exercises the actual child check on every owner pair;
+the saved 12-parent/252-pair replay is unchanged. Wrong or missing non-ID state
+can still pass. This is an offline software correction following the v0.19
+cross-record negative result, not new model evidence or a semantic guarantee.
+
 Living draft v0.18 adds the [prospective schema-transfer test](../research/SCHEMA_TRANSFER_PROSPECTIVE_2026-09-22.md), claim C48. It tests different constructed schema structures, whose definitions were visible in the frozen casebook, and makes 126 fresh Luna medium calls. Automatic direct meets the prespecified 1-versus-2 failure and lower-cost comparison with prompting, but indexed recovery is cheaper and succeeds on all 18 cases. Model-proposal checking mainly invokes fallback, and certified retention still permits final-model mistakes. The broader cost-superior mechanism remains unestablished.
 
 Living draft v0.17 adds the [annotated-schema follow-up](../research/SCHEMA_CHECKS_UNSEEN_TRACES_2026-09-22.md), claim C47. Six new constructed evaluation traces and 72 Luna medium calls yield 12/12 for prompting, automatic checks, direct records, indexed recovery and full history. Automatic records cost less than prompting and tie direct outcomes, but the prespecified fewer-failure criterion fails; direct and indexed controls are cheaper. Evaluation holds out values within known annotated schemas, not new schema structures or production incidents. The local CPU sensitivity was calibrated after the run because the live timer resolved short operations as zero.

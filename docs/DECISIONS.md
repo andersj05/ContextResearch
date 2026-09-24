@@ -446,3 +446,17 @@ empirical study. Keep direct checked receipts and raw indexed recovery as
 strong controls, and specify any terminal action guard separately. Do not
 spend new model calls repeating the known constructed grammars as if they
 were independent evidence. No new model allocation is made by this decision.
+
+## September 24: audit the certificate's implication, not just saved examples
+
+An added long-prose source field with a short proposed replacement exposes a
+parent-pass/child-fail counterexample at branch commit `9442d73`. Require the
+actual child check for every possible owner pair before accepting a parent;
+table selection and byte capacity alone do not establish compatibility.
+Reject malformed proposals before admission and preserve the frozen v1 evidence.
+The regenerated saved-parent replay is unchanged and is now checked by the
+repository validator as well as unit tests. A missing-state negative control
+passes both certificates, so compatibility must not be described as semantic
+sufficiency. These fixes are software correctness work, not a new empirical
+milestone or a reason to repeat model calls on inspected cases. The next
+empirical gate remains an externally observed workflow with a frozen executor.

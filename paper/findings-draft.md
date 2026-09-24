@@ -10,9 +10,12 @@ second boundary. On the twelve saved cross-record parent proposals, the old
 ID check passes nine and the new compatibility check passes three. Six
 proposals accepted by the old check have unsupported columns. Conservative
 fallback before source deletion produces twelve compatible parents, and all
-252 possible two-owner child handoffs pass deterministic checks. This neither
-changes the frozen study's terminal scores nor prevents a model from
-misreading a schema-valid state. An externally observed executable workflow,
+252 possible two-owner child handoffs pass deterministic checks. A subsequent
+branch audit found and fixed a parent-pass/child-fail counterexample beyond
+these saved inputs; admission now runs the actual child checker for every pair.
+The saved results are unchanged. The certificate permits wrong or missing
+non-ID state, so it does not establish semantic sufficiency or improve the
+frozen study's terminal scores. An externally observed executable workflow,
 strong indexed/direct controls, and a separately evaluated terminal guard
 are the next empirical test. [C50]
 

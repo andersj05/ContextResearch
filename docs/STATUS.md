@@ -20,8 +20,16 @@ new model-performance comparison. State semantics and final action safety
 remain uncertified. Claim C50. The next decisive evidence needs a frozen
 externally observed executable workflow and a separately specified action
 guard, with strong direct and indexed controls.
-Milestone validation: 368 offline tests pass; the repository validator reports
-PASS, and the paper builds with 34 cited sources. No new model call was made.
+The branch audit found another composition counterexample: a schema-valid
+short prose field could pass the parent check but make the child's ID coverage
+unknown. The parent now exercises the actual child check for every owner pair,
+with strict JSON handling and regression controls. The saved replay is unchanged;
+the repository validator now recomputes it explicitly. A missing-state control
+also confirms that this certificate does not guarantee retention of every
+decision-relevant field. See the [audit](../research/DECODER_COMPATIBILITY_REPLAY_2026-09-24.md#branch-audit-counterexample-and-correction).
+Audit validation: all 377 offline tests pass; the repository validator reports
+PASS and explicitly reconciles the 12 admitted parents and 252 handoffs. The
+paper builds with 34 cited sources. No new model call was made.
 
 The latest [cross-record stress test](../research/CROSS_RECORD_RECOVERY_2026-09-22.md)
 froze twelve constructed retry, CI and data-job traces with related evidence

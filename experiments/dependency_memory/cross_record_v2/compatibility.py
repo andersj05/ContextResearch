@@ -9,14 +9,42 @@ from __future__ import annotations
 
 from itertools import combinations
 import json
+from math import isfinite
 from time import perf_counter_ns
 
 from experiments.dependency_memory.cross_record import memory as frozen
 from experiments.dependency_memory.schema_transfer import memory as table
 
 
+def _memory_bytes(memory):
+    if not isinstance(memory, str):
+        raise ValueError("Memory must be a UTF-8 string")
+    return len(memory.encode("utf-8"))
+
+
 def _parse(memory):
-    data = json.loads(memory)
+    _memory_bytes(memory)
+
+    def unique(pairs):
+        result = {}
+        for key, value in pairs:
+            if key in result:
+                raise ValueError("Duplicate JSON member")
+            result[key] = value
+        return result
+
+    def finite_number(text):
+        value = float(text)
+        if not isfinite(value):
+            raise ValueError("Nonfinite number")
+        return value
+
+    def invalid_constant(_):
+        raise ValueError("Nonfinite JSON constant")
+
+    data = json.loads(memory, object_pairs_hook=unique, parse_float=finite_number,
+                      parse_constant=invalid_constant)
+    # Use the frozen decoder only after excluding ambiguous/non-JSON encodings.
     rows = table.decode(memory)
     return data["f"], rows
 
@@ -36,6 +64,8 @@ def _schema_values_valid(fields, rows, schema):
                           type(value) in (int, float))
             if not valid_type or ("enum" in spec and value not in spec["enum"]):
                 return False, "schema_type_or_enum"
+            if isinstance(value, str):
+                value.encode("utf-8")
     return True, "passed"
 
 
@@ -64,22 +94,25 @@ def certify_parent(candidate, tool_schemas, tool_results, *, parent_cap=7000,
     """Require v1 ID coverage plus paths and capacity usable by the child.
 
     The two-candidate count is public at the parent boundary. Every possible
-    pair of source owners must fit the later child cap, before their identities
-    are disclosed. No future event or private grader is inspected here.
+    pair of source owners must fit the later child cap and pass the actual child
+    check, before their identities are disclosed. No future event or private
+    grader is inspected here.
     """
     start = perf_counter_ns()
     verdict = {"passed": False, "reason": "unknown", "owner_path": None,
                "max_child_bytes": None, "identifier_check": None,
-               "parent_bytes": len(candidate.encode("utf-8")), "cpu_ns": 0}
+               "parent_bytes": None, "cpu_ns": 0}
     try:
+        verdict["parent_bytes"] = _memory_bytes(candidate)
+        if verdict["parent_bytes"] > parent_cap:
+            verdict["reason"] = "parent_capacity"
+            return verdict
         schema, source_rows = frozen.join(tool_schemas, tool_results)
         _, _, owner = table.selected(schema, source_rows)
         verdict["owner_path"] = owner
         fields, rows = _parse(candidate)
         valid_shape, shape_reason = _schema_values_valid(fields, rows, schema)
-        if verdict["parent_bytes"] > parent_cap:
-            verdict["reason"] = "parent_capacity"
-        elif not valid_shape:
+        if not valid_shape:
             verdict["reason"] = ("unsupported_parent_path" if shape_reason == "unsupported_path"
                                  else shape_reason)
         else:
@@ -93,16 +126,25 @@ def certify_parent(candidate, tool_schemas, tool_results, *, parent_cap=7000,
                     verdict["reason"] = "too_few_owners"
                 else:
                     largest = 0
+                    compatible = True
                     for pair in combinations(owners, 2):
                         # Use an unbounded selector to measure the actual child.
-                        largest = max(largest, len(select_by_owner(
-                            candidate, owner, pair, cap=2**63).encode("utf-8")))
+                        child = select_by_owner(candidate, owner, pair, cap=2**63)
+                        largest = max(largest, _memory_bytes(child))
+                        # Serialization alone is insufficient: the child's ID
+                        # detector can classify the retained values differently
+                        # from the original source. Exercise that exact contract.
+                        if not certify_child(child, candidate, pair, owner, tool_schemas,
+                                             child_cap=child_cap)["passed"]:
+                            compatible = False
                     verdict["max_child_bytes"] = largest
-                    verdict["reason"] = "child_capacity" if largest > child_cap else "passed"
-                    verdict["passed"] = largest <= child_cap
-    except (ValueError, KeyError, TypeError, json.JSONDecodeError):
+                    verdict["reason"] = ("child_capacity" if largest > child_cap else
+                                         "child_incompatible" if not compatible else "passed")
+                    verdict["passed"] = verdict["reason"] == "passed"
+    except (ValueError, KeyError, TypeError, RecursionError):
         verdict["reason"] = "unstructured_or_ambiguous_parent"
-    verdict["cpu_ns"] = perf_counter_ns() - start
+    finally:
+        verdict["cpu_ns"] = perf_counter_ns() - start
     return verdict
 
 
@@ -112,22 +154,24 @@ def certify_child(candidate, parent, candidates, owner_path, tool_schemas, *,
     start = perf_counter_ns()
     verdict = {"passed": False, "reason": "unknown", "cpu_ns": 0}
     try:
+        if _memory_bytes(candidate) > child_cap:
+            verdict["reason"] = "child_capacity"
+            return verdict
         expected = select_by_owner(parent, owner_path, candidates, cap=child_cap)
         parent_schema = table.retained_schema(frozen.joined_schema(tool_schemas), parent)
         fields, rows = _parse(candidate)
         valid_shape, shape_reason = _schema_values_valid(fields, rows, parent_schema)
-        if len(candidate.encode("utf-8")) > child_cap:
-            verdict["reason"] = "child_capacity"
-        elif not valid_shape:
+        if not valid_shape:
             verdict["reason"] = ("unsupported_child_path" if shape_reason == "unsupported_path"
                                  else shape_reason)
         else:
             id_check = table.check(candidate, parent_schema, table.decode(expected))
             verdict["reason"] = "passed" if id_check["passed"] else "identifier_or_relationship_loss"
             verdict["passed"] = id_check["passed"]
-    except (ValueError, KeyError, TypeError, json.JSONDecodeError):
+    except (ValueError, KeyError, TypeError, RecursionError):
         verdict["reason"] = "unstructured_or_ambiguous_child"
-    verdict["cpu_ns"] = perf_counter_ns() - start
+    finally:
+        verdict["cpu_ns"] = perf_counter_ns() - start
     return verdict
 
 

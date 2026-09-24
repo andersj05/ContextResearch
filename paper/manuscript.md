@@ -421,8 +421,11 @@ The frozen checked arm tested exact detected identifiers and their owner/path
 associations, but it did not require that the later decoder accept every
 retained field. A separate [versioned check](../research/DECODER_COMPATIBILITY_REPLAY_2026-09-24.md)
 now verifies the parent table's supported joined-schema paths, scalar types
-and enums, exact root-owner selection, and child capacity for every possible
-two-candidate pair before source deletion. An incompatible model proposal
+and enums, exact root-owner selection, and both child capacity and acceptance
+by the actual child checker for every possible two-candidate pair before source
+deletion. A branch-audit counterexample showed that selection and serialization
+alone do not imply child acceptance when ID coverage depends on retained values.
+An incompatible model proposal
 falls back to the deterministic source projection; the child check cannot
 introduce paths absent from the bounded parent. The v1 requests, responses,
 implementation and terminal outcomes remain unchanged.
@@ -433,8 +436,9 @@ newly rejected old-pass proposals have unsupported paths. After fallback,
 all twelve admitted parents support all 252 possible two-owner child
 handoffs. This is a deterministic software diagnostic on inspected
 constructed data, not a new model or terminal-performance result. The
-certificate still accepts a schema-valid but wrong state value; final-model
-interpretation errors and action safety require separate evaluation.
+certificate still accepts a schema-valid but wrong state value, or omission of
+a non-ID state field; semantic sufficiency, final-model interpretation errors
+and action safety require separate evaluation.
 Claim C50.
 
 ## 9. Limitations and open results

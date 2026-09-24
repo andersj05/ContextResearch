@@ -82,6 +82,15 @@ def replay(evidence=EVIDENCE, continuation=CONTINUATION):
                 "reasons": dict(sorted(reasons.items()))}}
 
 
+def validate_saved(output=OUTPUT):
+    """Recompute the committed diagnostic; missing or stale evidence must fail."""
+    recorded = load(output)
+    expected = replay()
+    if recorded != expected:
+        raise ValueError("Decoder-compatibility saved replay differs from source evidence")
+    return expected
+
+
 if __name__ == "__main__":
     result = replay()
     OUTPUT.write_bytes((json.dumps(result, indent=2) + "\n").encode("utf-8"))

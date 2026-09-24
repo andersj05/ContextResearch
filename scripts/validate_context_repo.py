@@ -680,6 +680,13 @@ def main() -> int:
             counts["cross_record_known_planning_credits"] = evidence["known_settled_model_credits"]
         except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
             errors.append(f"Cross-record study validation failed: {error}")
+    try:
+        from experiments.dependency_memory.cross_record_v2.replay import validate_saved as validate_parent_replay
+        replay = validate_parent_replay()
+        counts["decoder_compatible_replay_parents"] = replay["counts"]["decoder_compatible_admitted_parents"]
+        counts["decoder_compatible_replay_owner_pairs"] = replay["counts"]["all_owner_pairs_checked"]
+    except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
+        errors.append(f"Decoder-compatibility replay validation failed: {error}")
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"
