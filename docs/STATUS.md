@@ -6,6 +6,15 @@ Updated: September 29, 2026. This document is the current handoff; older scope d
 
 Develop a mathematically precise and implementable study of repeated agent compaction when relevance is revealed over time. The target is a restricted compatibility result plus controlled evidence of whether the mechanism matters in tool-agent tasks.
 
+The next [executed-workflow comparison](../experiments/dependency_memory/workflow_executed/CONTRACT.md)
+is prepared as a separate 108-call Luna 6 medium allocation following the user's
+instruction to continue experiments. Twelve scripted scenarios have 48 actual
+subprocess observations, including failure/recovery and narrow final queries.
+Offline reproduction checks saved source/runtime bytes against all 48 exit codes
+and artifact outputs. These belong to one constructed fixture family and do not
+fill the untouched real-workflow slots. No new model result is claimed here
+until the frozen schedule completes and saved evidence is analyzed.
+
 The separately frozen September 29 [live development comparison](../research/WORKFLOW_LUNA6_COMPARISON_2026-09-29.md)
 completed all **36 GPT-6 Luna medium calls** after launch freeze `ef31373`, with
 no retry or transport failure. Checked memory, direct records, indexed recovery

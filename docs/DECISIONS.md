@@ -512,3 +512,23 @@ correct successful receipt. Preserve all answers and make no retries. Claim
 C51, the manuscript and living draft record these bounded development findings;
 untouched real workflows, independent external grader review and production
 total cost remain open.
+
+## September 29: execute controlled workflows with narrow query scopes
+
+The user authorized further experiments after the development comparison.
+Use a separate 108-request, 20-planning-credit allocation with Luna 6 medium,
+the same byte limits, five arms and no-retry subscription transport. The previous
+pilot asked for every check, limiting the indexed arm's usefulness. Prespecify
+twelve scenarios with narrower queries, source changes, failures and recovery;
+execute real local commands and retain source/runtime/artifact bytes. Do not
+fabricate new return codes or hashes from the old capture, and do not present
+the new authored fixture family as untouched real-world evidence.
+
+The shared child writer receives an explicit scope explanation. Checked/direct
+filter only by the announced check names while retaining all possible source
+snapshots, using bounded parent plus new observations. Index retrieval preserves
+every requested run, including failed reruns. Preserve the original pilot code
+and every old result; freeze the new runner, capture, analysis and full schedule
+before live dispatch. An accuracy tie at higher cost does not justify additional
+candidate complexity. This run measures reporting decisions, not autonomous
+task execution, native compaction or general program correctness.

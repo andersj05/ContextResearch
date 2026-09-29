@@ -1,0 +1,2026 @@
+{
+  "cases": [
+    {
+      "between": [],
+      "id": "unchanged",
+      "initial": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "paper"
+          ],
+          "artifacts": {
+            "build/paper/manuscript.md": "4efc14724595f0fdf5b6846d9be57e7b7cfbb44fc45b9450df787f61eb8583ce",
+            "build/paper/preview.html": "f46ef2a26bd79e20d2cc2d140396d9b37d5120d62a66ec42e7e3029a8b63a85a"
+          },
+          "check": "paper",
+          "returncode": 0,
+          "run_id": "031953f1ae994f939bb6e7956bb6d1f7c63e3fb8d8113e9bc8819873869bbc32",
+          "snapshot": "192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666",
+          "stderr": "",
+          "stdout": "Built Markdown and HTML from current source\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "repository"
+          ],
+          "artifacts": {},
+          "check": "repository",
+          "returncode": 0,
+          "run_id": "1fc83942dc7223ab344b5a94ba0e64aa2a3b03ae2bc803a59ccaf1ca3f27e77c",
+          "snapshot": "192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666",
+          "stderr": "",
+          "stdout": "Required files: calc.py, test_calc.py, README.md, readiness.marker\r\nRepository check passed\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 0,
+          "run_id": "90c02b6aabe1200bd2da8b8a70f43410766ff187c4e2206f0369b29cd29bcbf3",
+          "snapshot": "192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.001s\r\n\r\nOK\r\n",
+          "stdout": ""
+        }
+      ],
+      "origin": "constructed_scenario_with_observed_subprocesses",
+      "scope": [
+        "paper",
+        "repository",
+        "tests"
+      ],
+      "task": {
+        "artifacts": {
+          "build/paper/manuscript.md": "4efc14724595f0fdf5b6846d9be57e7b7cfbb44fc45b9450df787f61eb8583ce",
+          "build/paper/preview.html": "f46ef2a26bd79e20d2cc2d140396d9b37d5120d62a66ec42e7e3029a8b63a85a"
+        },
+        "required_checks": [
+          "paper",
+          "repository",
+          "tests"
+        ],
+        "snapshot": "192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666"
+      }
+    },
+    {
+      "between": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 1,
+          "run_id": "60e8c1f47b26ed85a26505d47ba37cea5058ee8f762b2c413bb29a4c0548c6e9",
+          "snapshot": "21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... \r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=-11) ... FAIL\r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=0) ... FAIL\r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=7) ... FAIL\r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=123) ... FAIL\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=-11)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-ygvbmom2\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 4070 != 4069\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=0)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-ygvbmom2\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 4081 != 4080\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=7)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-ygvbmom2\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 4088 != 4087\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=123)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-ygvbmom2\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 4204 != 4203\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.003s\r\n\r\nFAILED (failures=4)\r\n",
+          "stdout": ""
+        }
+      ],
+      "id": "tests_later_failure",
+      "initial": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "paper"
+          ],
+          "artifacts": {
+            "build/paper/manuscript.md": "1269d61d477328a15aae4c1073703829ea402c1ef0ca914e08e3aa82f1ddc0cf",
+            "build/paper/preview.html": "fbe1a392ca1c6dbba1da57d86838af7da5b95b8cb06ca69fc679f234ac8a1282"
+          },
+          "check": "paper",
+          "returncode": 0,
+          "run_id": "5362b70ffab442374b2660dec11779acffdc34b47c406e4a6cf47e3e3271978d",
+          "snapshot": "21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917",
+          "stderr": "",
+          "stdout": "Built Markdown and HTML from current source\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "repository"
+          ],
+          "artifacts": {},
+          "check": "repository",
+          "returncode": 0,
+          "run_id": "a607ea75b1a3cf840d2d89c43a3b2919db01b3fd99eb5542781cc307a5b4b467",
+          "snapshot": "21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917",
+          "stderr": "",
+          "stdout": "Required files: calc.py, test_calc.py, README.md, readiness.marker\r\nRepository check passed\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 0,
+          "run_id": "bb005f1213652d694f0dd027c6d699b4904b110171438a2da246bd1fcdfc8efe",
+          "snapshot": "21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.001s\r\n\r\nOK\r\n",
+          "stdout": ""
+        }
+      ],
+      "origin": "constructed_scenario_with_observed_subprocesses",
+      "scope": [
+        "tests"
+      ],
+      "task": {
+        "artifacts": {
+          "build/paper/manuscript.md": "1269d61d477328a15aae4c1073703829ea402c1ef0ca914e08e3aa82f1ddc0cf",
+          "build/paper/preview.html": "fbe1a392ca1c6dbba1da57d86838af7da5b95b8cb06ca69fc679f234ac8a1282"
+        },
+        "required_checks": [
+          "tests"
+        ],
+        "snapshot": "21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917"
+      }
+    },
+    {
+      "between": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 0,
+          "run_id": "df566ae62dfaf4a5bcb0f5090abda21ab476bbfbf1ce01bb20094572eaaca73d",
+          "snapshot": "ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.001s\r\n\r\nOK\r\n",
+          "stdout": ""
+        }
+      ],
+      "id": "tests_recovery",
+      "initial": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "paper"
+          ],
+          "artifacts": {
+            "build/paper/manuscript.md": "082d164486e1fba7d92f6fc548c678fc9e0b98ca2ed4bd85c7a0ca8a4a13a3a6",
+            "build/paper/preview.html": "584cf8164521ef30ec783eb68383f02567ab90442d55ceedd90b6db1f5b7b929"
+          },
+          "check": "paper",
+          "returncode": 0,
+          "run_id": "ad9469c43ff1aa700405c1c0215de754da8113f1fdcc9dd597b296e611f6565f",
+          "snapshot": "ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f",
+          "stderr": "",
+          "stdout": "Built Markdown and HTML from current source\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "repository"
+          ],
+          "artifacts": {},
+          "check": "repository",
+          "returncode": 0,
+          "run_id": "e1498173b95730d6df7a5627b1b298e8c19bda80fdd5dd95ceed739292e14aef",
+          "snapshot": "ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f",
+          "stderr": "",
+          "stdout": "Required files: calc.py, test_calc.py, README.md, readiness.marker\r\nRepository check passed\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 1,
+          "run_id": "33fdc96e1cc058f1b1d72132a4021cf4c3179661c7505a4c8b0180e0bd3e990f",
+          "snapshot": "ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... \r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=-11) ... FAIL\r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=0) ... FAIL\r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=7) ... FAIL\r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=123) ... FAIL\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=-11)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-d5qtidtt\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 2647 != 2646\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=0)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-d5qtidtt\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 2658 != 2657\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=7)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-d5qtidtt\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 2665 != 2664\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=123)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-d5qtidtt\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 2781 != 2780\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.003s\r\n\r\nFAILED (failures=4)\r\n",
+          "stdout": ""
+        }
+      ],
+      "origin": "constructed_scenario_with_observed_subprocesses",
+      "scope": [
+        "tests"
+      ],
+      "task": {
+        "artifacts": {
+          "build/paper/manuscript.md": "082d164486e1fba7d92f6fc548c678fc9e0b98ca2ed4bd85c7a0ca8a4a13a3a6",
+          "build/paper/preview.html": "584cf8164521ef30ec783eb68383f02567ab90442d55ceedd90b6db1f5b7b929"
+        },
+        "required_checks": [
+          "tests"
+        ],
+        "snapshot": "ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f"
+      }
+    },
+    {
+      "between": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "repository"
+          ],
+          "artifacts": {},
+          "check": "repository",
+          "returncode": 1,
+          "run_id": "d0869fa95317c5ca09da1cc694683e520df93472a98e39d9804858de9a5f051c",
+          "snapshot": "392e226cb37de81010781b322478bcb2e5565aac300860ea53741095261709fe",
+          "stderr": "",
+          "stdout": "Required files: calc.py, test_calc.py, README.md, readiness.marker\r\nMissing: readiness.marker\r\n"
+        }
+      ],
+      "id": "repository_later_failure",
+      "initial": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "paper"
+          ],
+          "artifacts": {
+            "build/paper/manuscript.md": "d628695f355440b37c60457aa5bb107de71878f7b334ce2111a20f06003496e0",
+            "build/paper/preview.html": "78978b8ec3ff9a6ed9c77071b25fa5b3e4fb3d220834c7d2fbb1e79c1e99570f"
+          },
+          "check": "paper",
+          "returncode": 0,
+          "run_id": "85cab452915d587a9c535a55af2d0e90b72c07d49dae278b7909ba46575951f8",
+          "snapshot": "392e226cb37de81010781b322478bcb2e5565aac300860ea53741095261709fe",
+          "stderr": "",
+          "stdout": "Built Markdown and HTML from current source\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "repository"
+          ],
+          "artifacts": {},
+          "check": "repository",
+          "returncode": 0,
+          "run_id": "1472b4c2384777e0d42f6ea95114a0e0a02756794c201755b20820f0519359c6",
+          "snapshot": "392e226cb37de81010781b322478bcb2e5565aac300860ea53741095261709fe",
+          "stderr": "",
+          "stdout": "Required files: calc.py, test_calc.py, README.md, readiness.marker\r\nRepository check passed\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 0,
+          "run_id": "5d3701dc8da9b6c31238cbca75e37cfe2d7e1f9f59f095120c4628ff149f5f95",
+          "snapshot": "392e226cb37de81010781b322478bcb2e5565aac300860ea53741095261709fe",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.001s\r\n\r\nOK\r\n",
+          "stdout": ""
+        }
+      ],
+      "origin": "constructed_scenario_with_observed_subprocesses",
+      "scope": [
+        "repository"
+      ],
+      "task": {
+        "artifacts": {
+          "build/paper/manuscript.md": "d628695f355440b37c60457aa5bb107de71878f7b334ce2111a20f06003496e0",
+          "build/paper/preview.html": "78978b8ec3ff9a6ed9c77071b25fa5b3e4fb3d220834c7d2fbb1e79c1e99570f"
+        },
+        "required_checks": [
+          "repository"
+        ],
+        "snapshot": "392e226cb37de81010781b322478bcb2e5565aac300860ea53741095261709fe"
+      }
+    },
+    {
+      "between": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "repository"
+          ],
+          "artifacts": {},
+          "check": "repository",
+          "returncode": 0,
+          "run_id": "64792a5b7757e623216993de072016a60d490d1518d3c17a3cd520f71667c168",
+          "snapshot": "2acc4a7e1cb500ec5c12a95fe9f18dd87b59c83aac1fdf6ace0a50b19f559bd0",
+          "stderr": "",
+          "stdout": "Required files: calc.py, test_calc.py, README.md, readiness.marker\r\nRepository check passed\r\n"
+        }
+      ],
+      "id": "repository_recovery",
+      "initial": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "paper"
+          ],
+          "artifacts": {
+            "build/paper/manuscript.md": "309a05ccefe4a534f942d2e701876f6f9687d7a0f5f2734606c9fe7b410ca28c",
+            "build/paper/preview.html": "ca37ee224b276dd9a2f52e3f92cbc1ea5e90267dc328b3f56ff47220f6f9d14c"
+          },
+          "check": "paper",
+          "returncode": 0,
+          "run_id": "2f858fab77e36374d21ff912a51de2fa6a413faf23947972cb9f1a5ae962c3e8",
+          "snapshot": "2acc4a7e1cb500ec5c12a95fe9f18dd87b59c83aac1fdf6ace0a50b19f559bd0",
+          "stderr": "",
+          "stdout": "Built Markdown and HTML from current source\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "repository"
+          ],
+          "artifacts": {},
+          "check": "repository",
+          "returncode": 1,
+          "run_id": "ec68882062d1c00dfa098f7a0eb375f8616b212bb141fe901085becc8bd78b68",
+          "snapshot": "2acc4a7e1cb500ec5c12a95fe9f18dd87b59c83aac1fdf6ace0a50b19f559bd0",
+          "stderr": "",
+          "stdout": "Required files: calc.py, test_calc.py, README.md, readiness.marker\r\nMissing: readiness.marker\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 0,
+          "run_id": "be38aa247915ef75f3ba52ed23e2832e882e1b66f3fccac2d19a80e0eb94e473",
+          "snapshot": "2acc4a7e1cb500ec5c12a95fe9f18dd87b59c83aac1fdf6ace0a50b19f559bd0",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.001s\r\n\r\nOK\r\n",
+          "stdout": ""
+        }
+      ],
+      "origin": "constructed_scenario_with_observed_subprocesses",
+      "scope": [
+        "repository"
+      ],
+      "task": {
+        "artifacts": {
+          "build/paper/manuscript.md": "309a05ccefe4a534f942d2e701876f6f9687d7a0f5f2734606c9fe7b410ca28c",
+          "build/paper/preview.html": "ca37ee224b276dd9a2f52e3f92cbc1ea5e90267dc328b3f56ff47220f6f9d14c"
+        },
+        "required_checks": [
+          "repository"
+        ],
+        "snapshot": "2acc4a7e1cb500ec5c12a95fe9f18dd87b59c83aac1fdf6ace0a50b19f559bd0"
+      }
+    },
+    {
+      "between": [],
+      "id": "artifact_replaced",
+      "initial": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "paper"
+          ],
+          "artifacts": {
+            "build/paper/manuscript.md": "92662d297d557941da4289fe6fbe69385570e18a9be3c2e9b82589ba3a89ef0f",
+            "build/paper/preview.html": "3c5723d3f870295647cc97425a5e853a2eac6d919fe2af7fb947b252dc27b1bd"
+          },
+          "check": "paper",
+          "returncode": 0,
+          "run_id": "d55ad7ef193ae828a5437dc6d10f0849d77ad977bbd6787655f54c5d93d2c145",
+          "snapshot": "c24f56079ef2d8b135d6a9f4d8816caf007dafd0dac21086a7cedacf64bd2197",
+          "stderr": "",
+          "stdout": "Built Markdown and HTML from current source\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "repository"
+          ],
+          "artifacts": {},
+          "check": "repository",
+          "returncode": 0,
+          "run_id": "3e94cf339337d2cf5c5bd42babb104ef5f3bfc8a77abea17fb88cfbd04cadfbe",
+          "snapshot": "c24f56079ef2d8b135d6a9f4d8816caf007dafd0dac21086a7cedacf64bd2197",
+          "stderr": "",
+          "stdout": "Required files: calc.py, test_calc.py, README.md, readiness.marker\r\nRepository check passed\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 0,
+          "run_id": "b6a1b134216c910bec7debf9b724cf4a955314e72ba9c96312e2e6b2c55600e9",
+          "snapshot": "c24f56079ef2d8b135d6a9f4d8816caf007dafd0dac21086a7cedacf64bd2197",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.001s\r\n\r\nOK\r\n",
+          "stdout": ""
+        }
+      ],
+      "origin": "constructed_scenario_with_observed_subprocesses",
+      "scope": [
+        "paper"
+      ],
+      "task": {
+        "artifacts": {
+          "build/paper/manuscript.md": "92662d297d557941da4289fe6fbe69385570e18a9be3c2e9b82589ba3a89ef0f",
+          "build/paper/preview.html": "7036bc7e48e3e95d3ea2854eb67f2989f3ffd485ae0879d75a46738555432b84"
+        },
+        "required_checks": [
+          "paper"
+        ],
+        "snapshot": "c24f56079ef2d8b135d6a9f4d8816caf007dafd0dac21086a7cedacf64bd2197"
+      }
+    },
+    {
+      "between": [],
+      "id": "artifact_missing",
+      "initial": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "paper"
+          ],
+          "artifacts": {
+            "build/paper/manuscript.md": "0f0edd86bbbece92ce967871f842c36bb844152ff9c37fc1ff4eeddea3df3857",
+            "build/paper/preview.html": "a4a9446797148210ec15860590bc66e58dfe3c94796db7ee6923544d2ed446af"
+          },
+          "check": "paper",
+          "returncode": 0,
+          "run_id": "bc46267ad677e591c81bd89f488f79da5c567cdf691cb9250b3760586360d8eb",
+          "snapshot": "f95e0f47e140e77a5a4eb633ee4ac4040d7765e903da6addf857c50a768545bf",
+          "stderr": "",
+          "stdout": "Built Markdown and HTML from current source\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "repository"
+          ],
+          "artifacts": {},
+          "check": "repository",
+          "returncode": 0,
+          "run_id": "843a6d791659c6189398ef84d3bf97d8b637950614bf00fa191b9d152fc4b779",
+          "snapshot": "f95e0f47e140e77a5a4eb633ee4ac4040d7765e903da6addf857c50a768545bf",
+          "stderr": "",
+          "stdout": "Required files: calc.py, test_calc.py, README.md, readiness.marker\r\nRepository check passed\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 0,
+          "run_id": "b6dfab465c5a584816b30f87510713bca10a1ffceb33a7953ec50a4eee3b2735",
+          "snapshot": "f95e0f47e140e77a5a4eb633ee4ac4040d7765e903da6addf857c50a768545bf",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.001s\r\n\r\nOK\r\n",
+          "stdout": ""
+        }
+      ],
+      "origin": "constructed_scenario_with_observed_subprocesses",
+      "scope": [
+        "paper"
+      ],
+      "task": {
+        "artifacts": {
+          "build/paper/manuscript.md": "0f0edd86bbbece92ce967871f842c36bb844152ff9c37fc1ff4eeddea3df3857"
+        },
+        "required_checks": [
+          "paper"
+        ],
+        "snapshot": "f95e0f47e140e77a5a4eb633ee4ac4040d7765e903da6addf857c50a768545bf"
+      }
+    },
+    {
+      "between": [],
+      "id": "new_source_unchecked",
+      "initial": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "paper"
+          ],
+          "artifacts": {
+            "build/paper/manuscript.md": "0e874581cf9c1556aacf27bff78b5055effc819b4aa68b1b932f62047b7f9f81",
+            "build/paper/preview.html": "8042df549f93e7876b066caef1d532be6ccce386a1654107a254f1341dd4e542"
+          },
+          "check": "paper",
+          "returncode": 0,
+          "run_id": "684580cf15e3d5aab54aa7208b34cb8dd9e473a74f307408ac5657fe599ffbb9",
+          "snapshot": "bb060ee7f24a7c44af924ee2eea0580b3669233d8d61314ec3fcc0d4d7dc2200",
+          "stderr": "",
+          "stdout": "Built Markdown and HTML from current source\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "repository"
+          ],
+          "artifacts": {},
+          "check": "repository",
+          "returncode": 0,
+          "run_id": "e445ab66efaddd3d18d97f1972a33b43e24210294a37f7fea7edbea9a446b0f7",
+          "snapshot": "bb060ee7f24a7c44af924ee2eea0580b3669233d8d61314ec3fcc0d4d7dc2200",
+          "stderr": "",
+          "stdout": "Required files: calc.py, test_calc.py, README.md, readiness.marker\r\nRepository check passed\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 0,
+          "run_id": "dbdbbc898205150c276cd9f5450fad88f61014f83a3377d600043057d24ca01f",
+          "snapshot": "bb060ee7f24a7c44af924ee2eea0580b3669233d8d61314ec3fcc0d4d7dc2200",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.001s\r\n\r\nOK\r\n",
+          "stdout": ""
+        }
+      ],
+      "origin": "constructed_scenario_with_observed_subprocesses",
+      "scope": [
+        "repository",
+        "tests"
+      ],
+      "task": {
+        "artifacts": {
+          "build/paper/manuscript.md": "0e874581cf9c1556aacf27bff78b5055effc819b4aa68b1b932f62047b7f9f81",
+          "build/paper/preview.html": "8042df549f93e7876b066caef1d532be6ccce386a1654107a254f1341dd4e542"
+        },
+        "required_checks": [
+          "tests"
+        ],
+        "snapshot": "21aa1b5fb98485233ec3d2a9c3906ef4ab93c41b81d1af2eba5b69ecb8529275"
+      }
+    },
+    {
+      "between": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 0,
+          "run_id": "85476d625151c74068d73d53b07d62e98eb9d1fa058f5fd99391d03310307b91",
+          "snapshot": "00381718c6b9d53b2cbe567a8934b28f1c8cb9c53f3f692b89c4fc8a8ab2430a",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.001s\r\n\r\nOK\r\n",
+          "stdout": ""
+        }
+      ],
+      "id": "partial_revision",
+      "initial": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "paper"
+          ],
+          "artifacts": {
+            "build/paper/manuscript.md": "d4cabe57b07c7a4fab6883be2ba0cf6bfd735b22532b42d06f206a2e5941d0b1",
+            "build/paper/preview.html": "59d1253635e94fa3262bbe288a671e04bbba9fd3f170760cab46673bd8fbd9dd"
+          },
+          "check": "paper",
+          "returncode": 0,
+          "run_id": "29bee5d18c502cfea9c19bf7c45287a74ced49a64cbf1973ad6829e8ca0e14fd",
+          "snapshot": "0d0fcf52c8e6b44ac8f868456782186338cf262e8e04dad86bbbcc9d0e4c1f0f",
+          "stderr": "",
+          "stdout": "Built Markdown and HTML from current source\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "repository"
+          ],
+          "artifacts": {},
+          "check": "repository",
+          "returncode": 0,
+          "run_id": "ee9bd42abf1d43945c7c852251d5f6b3f173e32782fd9e2e85027082f911f925",
+          "snapshot": "0d0fcf52c8e6b44ac8f868456782186338cf262e8e04dad86bbbcc9d0e4c1f0f",
+          "stderr": "",
+          "stdout": "Required files: calc.py, test_calc.py, README.md, readiness.marker\r\nRepository check passed\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 0,
+          "run_id": "96bbcf09086a02a8c512d859abab6fb7e426996e2f2570833d5824e2903b86f7",
+          "snapshot": "0d0fcf52c8e6b44ac8f868456782186338cf262e8e04dad86bbbcc9d0e4c1f0f",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.001s\r\n\r\nOK\r\n",
+          "stdout": ""
+        }
+      ],
+      "origin": "constructed_scenario_with_observed_subprocesses",
+      "scope": [
+        "repository",
+        "tests"
+      ],
+      "task": {
+        "artifacts": {
+          "build/paper/manuscript.md": "d4cabe57b07c7a4fab6883be2ba0cf6bfd735b22532b42d06f206a2e5941d0b1",
+          "build/paper/preview.html": "59d1253635e94fa3262bbe288a671e04bbba9fd3f170760cab46673bd8fbd9dd"
+        },
+        "required_checks": [
+          "repository",
+          "tests"
+        ],
+        "snapshot": "00381718c6b9d53b2cbe567a8934b28f1c8cb9c53f3f692b89c4fc8a8ab2430a"
+      }
+    },
+    {
+      "between": [],
+      "id": "older_source_selected",
+      "initial": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "paper"
+          ],
+          "artifacts": {
+            "build/paper/manuscript.md": "f74104282ae4b70e633bd7af8311e2c2689dfd2a58d9018dd6a0363ef32141b4",
+            "build/paper/preview.html": "7ba9c66f11faa0e4bc0f33d1e086b2720ded434ed2330e589ed02d6d9997a94d"
+          },
+          "check": "paper",
+          "returncode": 0,
+          "run_id": "7a8245e139312d1ec42e77caf12b118175d81300963cf0e19f7a22b8df3135c2",
+          "snapshot": "f1089d70b76dbfb0b3433a18723fe108d7f63b661ef52659527668d0e47459c2",
+          "stderr": "",
+          "stdout": "Built Markdown and HTML from current source\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "repository"
+          ],
+          "artifacts": {},
+          "check": "repository",
+          "returncode": 0,
+          "run_id": "5c1acf6df0378028eb04d2f17951c5a8d9cf290eeceafe2652c6ea047541e79f",
+          "snapshot": "f1089d70b76dbfb0b3433a18723fe108d7f63b661ef52659527668d0e47459c2",
+          "stderr": "",
+          "stdout": "Required files: calc.py, test_calc.py, README.md, readiness.marker\r\nRepository check passed\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 0,
+          "run_id": "2ed5fa8e10e93e628b470999467513e5b27dd57900b6a86b47a54a9b1bd2e407",
+          "snapshot": "f1089d70b76dbfb0b3433a18723fe108d7f63b661ef52659527668d0e47459c2",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.001s\r\n\r\nOK\r\n",
+          "stdout": ""
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "paper"
+          ],
+          "artifacts": {
+            "build/paper/manuscript.md": "4ed73cb2590e3d3171c06336988283965ec45597edc7f4209c9b1b888777a567",
+            "build/paper/preview.html": "08256bdaaedc64dd854cf801b14421f6b3229033b3fce4d27222b894497b77f5"
+          },
+          "check": "paper",
+          "returncode": 0,
+          "run_id": "4a4e560338b0920eaeb43e71111544d38322e49188f34f13f8229e76f4afc026",
+          "snapshot": "654a64f0a37b9aa4a116fa43b085fbde975bfc56664a86708a1b940b18e6659a",
+          "stderr": "",
+          "stdout": "Built Markdown and HTML from current source\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "repository"
+          ],
+          "artifacts": {},
+          "check": "repository",
+          "returncode": 0,
+          "run_id": "c2287b01663ff9bc6c2fced218580d7d40b17c0162c92f4d8f40d4903f72dff9",
+          "snapshot": "654a64f0a37b9aa4a116fa43b085fbde975bfc56664a86708a1b940b18e6659a",
+          "stderr": "",
+          "stdout": "Required files: calc.py, test_calc.py, README.md, readiness.marker\r\nRepository check passed\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 0,
+          "run_id": "c55cfca87f870ba9cb068bfe643b2250ce907f36a943b254c3febb0a0e616585",
+          "snapshot": "654a64f0a37b9aa4a116fa43b085fbde975bfc56664a86708a1b940b18e6659a",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.001s\r\n\r\nOK\r\n",
+          "stdout": ""
+        }
+      ],
+      "origin": "constructed_scenario_with_observed_subprocesses",
+      "scope": [
+        "paper",
+        "tests"
+      ],
+      "task": {
+        "artifacts": {
+          "build/paper/manuscript.md": "f74104282ae4b70e633bd7af8311e2c2689dfd2a58d9018dd6a0363ef32141b4",
+          "build/paper/preview.html": "7ba9c66f11faa0e4bc0f33d1e086b2720ded434ed2330e589ed02d6d9997a94d"
+        },
+        "required_checks": [
+          "paper"
+        ],
+        "snapshot": "f1089d70b76dbfb0b3433a18723fe108d7f63b661ef52659527668d0e47459c2"
+      }
+    },
+    {
+      "between": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 1,
+          "run_id": "548b9f053d5dc3825fd0c035a7bb4e6d40f7d71b976dea3f0285da81b7685dfa",
+          "snapshot": "d6ded7c0812f6b0817445b6a1b42aab6ab7541bf755b0bdb8d5d6eb30a3feb5b",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... \r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=-11) ... FAIL\r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=0) ... FAIL\r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=7) ... FAIL\r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=123) ... FAIL\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=-11)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-g6cwih0y\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 6145 != 6144\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=0)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-g6cwih0y\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 6156 != 6155\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=7)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-g6cwih0y\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 6163 != 6162\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=123)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-g6cwih0y\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 6279 != 6278\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.004s\r\n\r\nFAILED (failures=4)\r\n",
+          "stdout": ""
+        }
+      ],
+      "id": "irrelevant_failure",
+      "initial": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "paper"
+          ],
+          "artifacts": {
+            "build/paper/manuscript.md": "5ac58c83fd8ec52e6cf0a958922892d5196b3c0ee092a8895212acacad04535e",
+            "build/paper/preview.html": "78b9cb8ccb28af9fab134f607b7476fae2864f5907c5f31a9a841f01c76cd239"
+          },
+          "check": "paper",
+          "returncode": 0,
+          "run_id": "5fd7b3cf4bbebad0f6d9cd552e37245da911d7d7f9b0cee668c7e462d40baa16",
+          "snapshot": "d6ded7c0812f6b0817445b6a1b42aab6ab7541bf755b0bdb8d5d6eb30a3feb5b",
+          "stderr": "",
+          "stdout": "Built Markdown and HTML from current source\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "repository"
+          ],
+          "artifacts": {},
+          "check": "repository",
+          "returncode": 0,
+          "run_id": "a89ec672c90b67be39f34693ad1eba4effc810f89d6027fcf909b0a83da8924f",
+          "snapshot": "d6ded7c0812f6b0817445b6a1b42aab6ab7541bf755b0bdb8d5d6eb30a3feb5b",
+          "stderr": "",
+          "stdout": "Required files: calc.py, test_calc.py, README.md, readiness.marker\r\nRepository check passed\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 0,
+          "run_id": "d33363a3a475a3653a51d5dd4da9a95759edb348fdf8bd94e19353484b5f655a",
+          "snapshot": "d6ded7c0812f6b0817445b6a1b42aab6ab7541bf755b0bdb8d5d6eb30a3feb5b",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.001s\r\n\r\nOK\r\n",
+          "stdout": ""
+        }
+      ],
+      "origin": "constructed_scenario_with_observed_subprocesses",
+      "scope": [
+        "paper",
+        "tests"
+      ],
+      "task": {
+        "artifacts": {
+          "build/paper/manuscript.md": "5ac58c83fd8ec52e6cf0a958922892d5196b3c0ee092a8895212acacad04535e",
+          "build/paper/preview.html": "78b9cb8ccb28af9fab134f607b7476fae2864f5907c5f31a9a841f01c76cd239"
+        },
+        "required_checks": [
+          "paper"
+        ],
+        "snapshot": "d6ded7c0812f6b0817445b6a1b42aab6ab7541bf755b0bdb8d5d6eb30a3feb5b"
+      }
+    },
+    {
+      "between": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 1,
+          "run_id": "282bf42c122ece74c7862e908ba0898533685a88e18636e16daed4ebd9dcceaa",
+          "snapshot": "f587026d2d104ddfd36e80c90c2a9d32587a7c60843fe9d1b7c8f6d3f0a014a4",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... \r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=-11) ... FAIL\r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=0) ... FAIL\r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=7) ... FAIL\r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=123) ... FAIL\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=-11)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-qt7wzcyu\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 5744 != 5743\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=0)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-qt7wzcyu\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 5755 != 5754\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=7)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-qt7wzcyu\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 5762 != 5761\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=123)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-qt7wzcyu\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 5878 != 5877\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.003s\r\n\r\nFAILED (failures=4)\r\n",
+          "stdout": ""
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 0,
+          "run_id": "50ce861e29054a7139fb72df0183cb1cd45ba0955ad3aac3a3df8916158cf065",
+          "snapshot": "f587026d2d104ddfd36e80c90c2a9d32587a7c60843fe9d1b7c8f6d3f0a014a4",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.001s\r\n\r\nOK\r\n",
+          "stdout": ""
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 1,
+          "run_id": "254f7607e58c7f52ff6d87cf304b650c1fa43b99b95ebc4f8df6a22a79795cd7",
+          "snapshot": "f587026d2d104ddfd36e80c90c2a9d32587a7c60843fe9d1b7c8f6d3f0a014a4",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... \r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=-11) ... FAIL\r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=0) ... FAIL\r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=7) ... FAIL\r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=123) ... FAIL\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=-11)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-qt7wzcyu\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 5745 != 5743\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=0)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-qt7wzcyu\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 5756 != 5754\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=7)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-qt7wzcyu\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 5763 != 5761\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=123)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-qt7wzcyu\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 5879 != 5877\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.003s\r\n\r\nFAILED (failures=4)\r\n",
+          "stdout": ""
+        }
+      ],
+      "id": "fail_recover_fail",
+      "initial": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "paper"
+          ],
+          "artifacts": {
+            "build/paper/manuscript.md": "703c02c3e86c79fe61848173b303c89e947aea12541d060cadc16fff9c9ff5f4",
+            "build/paper/preview.html": "9697c7a42ff54cf6458cc3be9330a7018ba24787dfe6e1889edaf90f1ae6d183"
+          },
+          "check": "paper",
+          "returncode": 0,
+          "run_id": "dd9258d9e78940ca6dad53ec9ada8780412d69389c44716c93e21679f0a5bfdc",
+          "snapshot": "f587026d2d104ddfd36e80c90c2a9d32587a7c60843fe9d1b7c8f6d3f0a014a4",
+          "stderr": "",
+          "stdout": "Built Markdown and HTML from current source\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "repository"
+          ],
+          "artifacts": {},
+          "check": "repository",
+          "returncode": 0,
+          "run_id": "c9b74f9dccefca73acfdb08c8f99c834ed1a4729656c29c067f088848ab38003",
+          "snapshot": "f587026d2d104ddfd36e80c90c2a9d32587a7c60843fe9d1b7c8f6d3f0a014a4",
+          "stderr": "",
+          "stdout": "Required files: calc.py, test_calc.py, README.md, readiness.marker\r\nRepository check passed\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 0,
+          "run_id": "ca4030df0f7fd78df7c7e05a79742d3217bf7f2e8549ea3e0cf8dd3229bd4f0c",
+          "snapshot": "f587026d2d104ddfd36e80c90c2a9d32587a7c60843fe9d1b7c8f6d3f0a014a4",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.001s\r\n\r\nOK\r\n",
+          "stdout": ""
+        }
+      ],
+      "origin": "constructed_scenario_with_observed_subprocesses",
+      "scope": [
+        "tests"
+      ],
+      "task": {
+        "artifacts": {
+          "build/paper/manuscript.md": "703c02c3e86c79fe61848173b303c89e947aea12541d060cadc16fff9c9ff5f4",
+          "build/paper/preview.html": "9697c7a42ff54cf6458cc3be9330a7018ba24787dfe6e1889edaf90f1ae6d183"
+        },
+        "required_checks": [
+          "tests"
+        ],
+        "snapshot": "f587026d2d104ddfd36e80c90c2a9d32587a7c60843fe9d1b7c8f6d3f0a014a4"
+      }
+    }
+  ],
+  "provenance": [
+    {
+      "actions": [
+        {
+          "operation": "runtime_state",
+          "state": "12318bf78664c6b7a82fa52cc93a05ab7cab2c088b011b869cd18c31bbd3bd02"
+        }
+      ],
+      "final_artifacts": {
+        "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario unchanged.\r\n\r\nObserved add_offset(7): 1987\r\n",
+        "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario unchanged.\r\n\r\nObserved add_offset(7): 1987\r\n</pre></body></html>"
+      },
+      "id": "unchanged",
+      "runs": [
+        {
+          "artifacts": {
+            "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario unchanged.\r\n\r\nObserved add_offset(7): 1987\r\n",
+            "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario unchanged.\r\n\r\nObserved add_offset(7): 1987\r\n</pre></body></html>"
+          },
+          "collector_cpu_ns": 0,
+          "run_id": "031953f1ae994f939bb6e7956bb6d1f7c63e3fb8d8113e9bc8819873869bbc32",
+          "runtime_state": "12318bf78664c6b7a82fa52cc93a05ab7cab2c088b011b869cd18c31bbd3bd02",
+          "source": "192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666",
+          "started": "2026-09-29T17:26:47.461265+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "30d542ccd016cca4f4de9a9b81d0d84d2bff05cc9498a2ce6ad5346169a987f5",
+          "wall_ns": 114063700
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 0,
+          "run_id": "1fc83942dc7223ab344b5a94ba0e64aa2a3b03ae2bc803a59ccaf1ca3f27e77c",
+          "runtime_state": "12318bf78664c6b7a82fa52cc93a05ab7cab2c088b011b869cd18c31bbd3bd02",
+          "source": "192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666",
+          "started": "2026-09-29T17:26:47.597537+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "1f3fdcdfb4730555fade7133e389ab688a5c86b8db1dda12ba0b147b2c2d998a",
+          "wall_ns": 116038300
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 0,
+          "run_id": "90c02b6aabe1200bd2da8b8a70f43410766ff187c4e2206f0369b29cd29bcbf3",
+          "runtime_state": "12318bf78664c6b7a82fa52cc93a05ab7cab2c088b011b869cd18c31bbd3bd02",
+          "source": "192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666",
+          "started": "2026-09-29T17:26:47.715243+00:00",
+          "stderr_sha256": "adc85a3e43e94304c698bd5629d4c6d7cbf10f48e3418c23b14a52117b1be2da",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_ns": 240150900
+        }
+      ],
+      "runtime_states": {
+        "12318bf78664c6b7a82fa52cc93a05ab7cab2c088b011b869cd18c31bbd3bd02": {
+          "readiness.marker": true,
+          "runtime.json": "{\"expected_offset\": 1980}"
+        }
+      },
+      "source_files": {
+        "192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666": {
+          "README.md": "# Arithmetic example\n\nScenario unchanged.\n",
+          "calc.py": "def add_offset(value):\n    return value + 1980\n",
+          "checks.py": "import html\nfrom pathlib import Path\nimport sys\nfrom calc import add_offset\n\nif sys.argv[1] == \"repository\":\n    paths = (\"calc.py\", \"test_calc.py\", \"README.md\", \"readiness.marker\")\n    missing = [p for p in paths if not Path(p).is_file()]\n    print(\"Required files:\", \", \".join(paths))\n    if missing:\n        print(\"Missing:\", \", \".join(missing))\n        raise SystemExit(1)\n    assert \"Arithmetic example\" in Path(\"README.md\").read_text()\n    print(\"Repository check passed\")\nelif sys.argv[1] == \"paper\":\n    source = Path(\"README.md\").read_text() + \"\\nObserved add_offset(7): \" + str(add_offset(7)) + \"\\n\"\n    folder = Path(\"build/paper\")\n    folder.mkdir(parents=True, exist_ok=True)\n    (folder / \"manuscript.md\").write_text(source, encoding=\"utf-8\")\n    (folder / \"preview.html\").write_text(\"<!doctype html><html><body><pre>\" + html.escape(source) + \"</pre></body></html>\", encoding=\"utf-8\")\n    print(\"Built Markdown and HTML from current source\")\nelse:\n    raise SystemExit(2)\n",
+          "test_calc.py": "import json\nfrom pathlib import Path\nimport unittest\nfrom calc import add_offset\n\nclass ArithmeticTests(unittest.TestCase):\n    def test_observed_contract(self):\n        state = json.loads(Path(\"runtime.json\").read_text())\n        for value in (-11, 0, 7, 123):\n            with self.subTest(value=value):\n                self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\n\nif __name__ == \"__main__\":\n    unittest.main(verbosity=2)\n"
+        }
+      }
+    },
+    {
+      "actions": [
+        {
+          "operation": "runtime_state",
+          "state": "8005e23a2951d5224f9ae9be0643b3116b8c65446881de2436a373f055f40ba2"
+        },
+        {
+          "operation": "runtime_state",
+          "state": "c97ca8d251eab6b9cbd7a247972d613a52ae1ffb9b47edaa5959f22cb67c73f0"
+        }
+      ],
+      "final_artifacts": {
+        "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario tests_later_failure.\r\n\r\nObserved add_offset(7): 4087\r\n",
+        "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario tests_later_failure.\r\n\r\nObserved add_offset(7): 4087\r\n</pre></body></html>"
+      },
+      "id": "tests_later_failure",
+      "runs": [
+        {
+          "artifacts": {
+            "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario tests_later_failure.\r\n\r\nObserved add_offset(7): 4087\r\n",
+            "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario tests_later_failure.\r\n\r\nObserved add_offset(7): 4087\r\n</pre></body></html>"
+          },
+          "collector_cpu_ns": 0,
+          "run_id": "5362b70ffab442374b2660dec11779acffdc34b47c406e4a6cf47e3e3271978d",
+          "runtime_state": "8005e23a2951d5224f9ae9be0643b3116b8c65446881de2436a373f055f40ba2",
+          "source": "21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917",
+          "started": "2026-09-29T17:26:48.001843+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "30d542ccd016cca4f4de9a9b81d0d84d2bff05cc9498a2ce6ad5346169a987f5",
+          "wall_ns": 101409500
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 0,
+          "run_id": "a607ea75b1a3cf840d2d89c43a3b2919db01b3fd99eb5542781cc307a5b4b467",
+          "runtime_state": "8005e23a2951d5224f9ae9be0643b3116b8c65446881de2436a373f055f40ba2",
+          "source": "21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917",
+          "started": "2026-09-29T17:26:48.129900+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "1f3fdcdfb4730555fade7133e389ab688a5c86b8db1dda12ba0b147b2c2d998a",
+          "wall_ns": 120175900
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 0,
+          "run_id": "bb005f1213652d694f0dd027c6d699b4904b110171438a2da246bd1fcdfc8efe",
+          "runtime_state": "8005e23a2951d5224f9ae9be0643b3116b8c65446881de2436a373f055f40ba2",
+          "source": "21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917",
+          "started": "2026-09-29T17:26:48.251407+00:00",
+          "stderr_sha256": "adc85a3e43e94304c698bd5629d4c6d7cbf10f48e3418c23b14a52117b1be2da",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_ns": 268937000
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "60e8c1f47b26ed85a26505d47ba37cea5058ee8f762b2c413bb29a4c0548c6e9",
+          "runtime_state": "c97ca8d251eab6b9cbd7a247972d613a52ae1ffb9b47edaa5959f22cb67c73f0",
+          "source": "21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917",
+          "started": "2026-09-29T17:26:48.535266+00:00",
+          "stderr_sha256": "f25bdfb181bf1be0cec467a8c85525c1e2a176c311c99182de36021af8662445",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_ns": 280758300
+        }
+      ],
+      "runtime_states": {
+        "8005e23a2951d5224f9ae9be0643b3116b8c65446881de2436a373f055f40ba2": {
+          "readiness.marker": true,
+          "runtime.json": "{\"expected_offset\": 4080}"
+        },
+        "c97ca8d251eab6b9cbd7a247972d613a52ae1ffb9b47edaa5959f22cb67c73f0": {
+          "readiness.marker": true,
+          "runtime.json": "{\"expected_offset\": 4081}"
+        }
+      },
+      "source_files": {
+        "21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917": {
+          "README.md": "# Arithmetic example\n\nScenario tests_later_failure.\n",
+          "calc.py": "def add_offset(value):\n    return value + 4080\n",
+          "checks.py": "import html\nfrom pathlib import Path\nimport sys\nfrom calc import add_offset\n\nif sys.argv[1] == \"repository\":\n    paths = (\"calc.py\", \"test_calc.py\", \"README.md\", \"readiness.marker\")\n    missing = [p for p in paths if not Path(p).is_file()]\n    print(\"Required files:\", \", \".join(paths))\n    if missing:\n        print(\"Missing:\", \", \".join(missing))\n        raise SystemExit(1)\n    assert \"Arithmetic example\" in Path(\"README.md\").read_text()\n    print(\"Repository check passed\")\nelif sys.argv[1] == \"paper\":\n    source = Path(\"README.md\").read_text() + \"\\nObserved add_offset(7): \" + str(add_offset(7)) + \"\\n\"\n    folder = Path(\"build/paper\")\n    folder.mkdir(parents=True, exist_ok=True)\n    (folder / \"manuscript.md\").write_text(source, encoding=\"utf-8\")\n    (folder / \"preview.html\").write_text(\"<!doctype html><html><body><pre>\" + html.escape(source) + \"</pre></body></html>\", encoding=\"utf-8\")\n    print(\"Built Markdown and HTML from current source\")\nelse:\n    raise SystemExit(2)\n",
+          "test_calc.py": "import json\nfrom pathlib import Path\nimport unittest\nfrom calc import add_offset\n\nclass ArithmeticTests(unittest.TestCase):\n    def test_observed_contract(self):\n        state = json.loads(Path(\"runtime.json\").read_text())\n        for value in (-11, 0, 7, 123):\n            with self.subTest(value=value):\n                self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\n\nif __name__ == \"__main__\":\n    unittest.main(verbosity=2)\n"
+        }
+      }
+    },
+    {
+      "actions": [
+        {
+          "operation": "runtime_state",
+          "state": "0892acf44334fdad08c4d089d1820127559a1c8a0cb88353e3de3920ea53856f"
+        },
+        {
+          "operation": "runtime_state",
+          "state": "839139a32bc6e995005fc1dd11dd77adb38e908a38562e10de6dbee658ea262b"
+        }
+      ],
+      "final_artifacts": {
+        "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario tests_recovery.\r\n\r\nObserved add_offset(7): 2664\r\n",
+        "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario tests_recovery.\r\n\r\nObserved add_offset(7): 2664\r\n</pre></body></html>"
+      },
+      "id": "tests_recovery",
+      "runs": [
+        {
+          "artifacts": {
+            "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario tests_recovery.\r\n\r\nObserved add_offset(7): 2664\r\n",
+            "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario tests_recovery.\r\n\r\nObserved add_offset(7): 2664\r\n</pre></body></html>"
+          },
+          "collector_cpu_ns": 0,
+          "run_id": "ad9469c43ff1aa700405c1c0215de754da8113f1fdcc9dd597b296e611f6565f",
+          "runtime_state": "0892acf44334fdad08c4d089d1820127559a1c8a0cb88353e3de3920ea53856f",
+          "source": "ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f",
+          "started": "2026-09-29T17:26:48.862688+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "30d542ccd016cca4f4de9a9b81d0d84d2bff05cc9498a2ce6ad5346169a987f5",
+          "wall_ns": 108349800
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "e1498173b95730d6df7a5627b1b298e8c19bda80fdd5dd95ceed739292e14aef",
+          "runtime_state": "0892acf44334fdad08c4d089d1820127559a1c8a0cb88353e3de3920ea53856f",
+          "source": "ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f",
+          "started": "2026-09-29T17:26:49.001160+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "1f3fdcdfb4730555fade7133e389ab688a5c86b8db1dda12ba0b147b2c2d998a",
+          "wall_ns": 113335600
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "33fdc96e1cc058f1b1d72132a4021cf4c3179661c7505a4c8b0180e0bd3e990f",
+          "runtime_state": "0892acf44334fdad08c4d089d1820127559a1c8a0cb88353e3de3920ea53856f",
+          "source": "ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f",
+          "started": "2026-09-29T17:26:49.115855+00:00",
+          "stderr_sha256": "b9d5213e05010ee4e6c107271d11062c948774fff0b55071217dede6913013ca",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_ns": 274713200
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "df566ae62dfaf4a5bcb0f5090abda21ab476bbfbf1ce01bb20094572eaaca73d",
+          "runtime_state": "839139a32bc6e995005fc1dd11dd77adb38e908a38562e10de6dbee658ea262b",
+          "source": "ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f",
+          "started": "2026-09-29T17:26:49.409392+00:00",
+          "stderr_sha256": "adc85a3e43e94304c698bd5629d4c6d7cbf10f48e3418c23b14a52117b1be2da",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_ns": 282611800
+        }
+      ],
+      "runtime_states": {
+        "0892acf44334fdad08c4d089d1820127559a1c8a0cb88353e3de3920ea53856f": {
+          "readiness.marker": true,
+          "runtime.json": "{\"expected_offset\": 2658}"
+        },
+        "839139a32bc6e995005fc1dd11dd77adb38e908a38562e10de6dbee658ea262b": {
+          "readiness.marker": true,
+          "runtime.json": "{\"expected_offset\": 2657}"
+        }
+      },
+      "source_files": {
+        "ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f": {
+          "README.md": "# Arithmetic example\n\nScenario tests_recovery.\n",
+          "calc.py": "def add_offset(value):\n    return value + 2657\n",
+          "checks.py": "import html\nfrom pathlib import Path\nimport sys\nfrom calc import add_offset\n\nif sys.argv[1] == \"repository\":\n    paths = (\"calc.py\", \"test_calc.py\", \"README.md\", \"readiness.marker\")\n    missing = [p for p in paths if not Path(p).is_file()]\n    print(\"Required files:\", \", \".join(paths))\n    if missing:\n        print(\"Missing:\", \", \".join(missing))\n        raise SystemExit(1)\n    assert \"Arithmetic example\" in Path(\"README.md\").read_text()\n    print(\"Repository check passed\")\nelif sys.argv[1] == \"paper\":\n    source = Path(\"README.md\").read_text() + \"\\nObserved add_offset(7): \" + str(add_offset(7)) + \"\\n\"\n    folder = Path(\"build/paper\")\n    folder.mkdir(parents=True, exist_ok=True)\n    (folder / \"manuscript.md\").write_text(source, encoding=\"utf-8\")\n    (folder / \"preview.html\").write_text(\"<!doctype html><html><body><pre>\" + html.escape(source) + \"</pre></body></html>\", encoding=\"utf-8\")\n    print(\"Built Markdown and HTML from current source\")\nelse:\n    raise SystemExit(2)\n",
+          "test_calc.py": "import json\nfrom pathlib import Path\nimport unittest\nfrom calc import add_offset\n\nclass ArithmeticTests(unittest.TestCase):\n    def test_observed_contract(self):\n        state = json.loads(Path(\"runtime.json\").read_text())\n        for value in (-11, 0, 7, 123):\n            with self.subTest(value=value):\n                self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\n\nif __name__ == \"__main__\":\n    unittest.main(verbosity=2)\n"
+        }
+      }
+    },
+    {
+      "actions": [
+        {
+          "operation": "runtime_state",
+          "state": "d99c964e03baad617a0e91c90f31b719a271678121a7f2f8f353e2528af1cd85"
+        },
+        {
+          "operation": "runtime_state",
+          "state": "d54f0f51ae3d56fe31ec674fbb2fbd9ac35393f2e236beaddd1f7210bc2292e6"
+        }
+      ],
+      "final_artifacts": {
+        "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario repository_later_failure.\r\n\r\nObserved add_offset(7): 3058\r\n",
+        "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario repository_later_failure.\r\n\r\nObserved add_offset(7): 3058\r\n</pre></body></html>"
+      },
+      "id": "repository_later_failure",
+      "runs": [
+        {
+          "artifacts": {
+            "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario repository_later_failure.\r\n\r\nObserved add_offset(7): 3058\r\n",
+            "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario repository_later_failure.\r\n\r\nObserved add_offset(7): 3058\r\n</pre></body></html>"
+          },
+          "collector_cpu_ns": 15625000,
+          "run_id": "85cab452915d587a9c535a55af2d0e90b72c07d49dae278b7909ba46575951f8",
+          "runtime_state": "d99c964e03baad617a0e91c90f31b719a271678121a7f2f8f353e2528af1cd85",
+          "source": "392e226cb37de81010781b322478bcb2e5565aac300860ea53741095261709fe",
+          "started": "2026-09-29T17:26:49.732886+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "30d542ccd016cca4f4de9a9b81d0d84d2bff05cc9498a2ce6ad5346169a987f5",
+          "wall_ns": 111700800
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "1472b4c2384777e0d42f6ea95114a0e0a02756794c201755b20820f0519359c6",
+          "runtime_state": "d99c964e03baad617a0e91c90f31b719a271678121a7f2f8f353e2528af1cd85",
+          "source": "392e226cb37de81010781b322478bcb2e5565aac300860ea53741095261709fe",
+          "started": "2026-09-29T17:26:49.873520+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "1f3fdcdfb4730555fade7133e389ab688a5c86b8db1dda12ba0b147b2c2d998a",
+          "wall_ns": 110227200
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 0,
+          "run_id": "5d3701dc8da9b6c31238cbca75e37cfe2d7e1f9f59f095120c4628ff149f5f95",
+          "runtime_state": "d99c964e03baad617a0e91c90f31b719a271678121a7f2f8f353e2528af1cd85",
+          "source": "392e226cb37de81010781b322478bcb2e5565aac300860ea53741095261709fe",
+          "started": "2026-09-29T17:26:49.985113+00:00",
+          "stderr_sha256": "adc85a3e43e94304c698bd5629d4c6d7cbf10f48e3418c23b14a52117b1be2da",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_ns": 276993800
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "d0869fa95317c5ca09da1cc694683e520df93472a98e39d9804858de9a5f051c",
+          "runtime_state": "d54f0f51ae3d56fe31ec674fbb2fbd9ac35393f2e236beaddd1f7210bc2292e6",
+          "source": "392e226cb37de81010781b322478bcb2e5565aac300860ea53741095261709fe",
+          "started": "2026-09-29T17:26:50.268004+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "66e6fc399c399dc21e555ecd94f86cb63fa27e6b3e62f9bf47e42957408dd66f",
+          "wall_ns": 98658300
+        }
+      ],
+      "runtime_states": {
+        "d54f0f51ae3d56fe31ec674fbb2fbd9ac35393f2e236beaddd1f7210bc2292e6": {
+          "readiness.marker": false,
+          "runtime.json": "{\"expected_offset\": 3051}"
+        },
+        "d99c964e03baad617a0e91c90f31b719a271678121a7f2f8f353e2528af1cd85": {
+          "readiness.marker": true,
+          "runtime.json": "{\"expected_offset\": 3051}"
+        }
+      },
+      "source_files": {
+        "392e226cb37de81010781b322478bcb2e5565aac300860ea53741095261709fe": {
+          "README.md": "# Arithmetic example\n\nScenario repository_later_failure.\n",
+          "calc.py": "def add_offset(value):\n    return value + 3051\n",
+          "checks.py": "import html\nfrom pathlib import Path\nimport sys\nfrom calc import add_offset\n\nif sys.argv[1] == \"repository\":\n    paths = (\"calc.py\", \"test_calc.py\", \"README.md\", \"readiness.marker\")\n    missing = [p for p in paths if not Path(p).is_file()]\n    print(\"Required files:\", \", \".join(paths))\n    if missing:\n        print(\"Missing:\", \", \".join(missing))\n        raise SystemExit(1)\n    assert \"Arithmetic example\" in Path(\"README.md\").read_text()\n    print(\"Repository check passed\")\nelif sys.argv[1] == \"paper\":\n    source = Path(\"README.md\").read_text() + \"\\nObserved add_offset(7): \" + str(add_offset(7)) + \"\\n\"\n    folder = Path(\"build/paper\")\n    folder.mkdir(parents=True, exist_ok=True)\n    (folder / \"manuscript.md\").write_text(source, encoding=\"utf-8\")\n    (folder / \"preview.html\").write_text(\"<!doctype html><html><body><pre>\" + html.escape(source) + \"</pre></body></html>\", encoding=\"utf-8\")\n    print(\"Built Markdown and HTML from current source\")\nelse:\n    raise SystemExit(2)\n",
+          "test_calc.py": "import json\nfrom pathlib import Path\nimport unittest\nfrom calc import add_offset\n\nclass ArithmeticTests(unittest.TestCase):\n    def test_observed_contract(self):\n        state = json.loads(Path(\"runtime.json\").read_text())\n        for value in (-11, 0, 7, 123):\n            with self.subTest(value=value):\n                self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\n\nif __name__ == \"__main__\":\n    unittest.main(verbosity=2)\n"
+        }
+      }
+    },
+    {
+      "actions": [
+        {
+          "operation": "runtime_state",
+          "state": "34e6b32b0b89298168e0c98a316213ae000e15b22145c64d12454ff09a9ba2ca"
+        },
+        {
+          "operation": "runtime_state",
+          "state": "5e460c78205177f4336ba260ae148606a47e10db0431cc3188799bf3aed84787"
+        }
+      ],
+      "final_artifacts": {
+        "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario repository_recovery.\r\n\r\nObserved add_offset(7): 618\r\n",
+        "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario repository_recovery.\r\n\r\nObserved add_offset(7): 618\r\n</pre></body></html>"
+      },
+      "id": "repository_recovery",
+      "runs": [
+        {
+          "artifacts": {
+            "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario repository_recovery.\r\n\r\nObserved add_offset(7): 618\r\n",
+            "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario repository_recovery.\r\n\r\nObserved add_offset(7): 618\r\n</pre></body></html>"
+          },
+          "collector_cpu_ns": 15625000,
+          "run_id": "2f858fab77e36374d21ff912a51de2fa6a413faf23947972cb9f1a5ae962c3e8",
+          "runtime_state": "34e6b32b0b89298168e0c98a316213ae000e15b22145c64d12454ff09a9ba2ca",
+          "source": "2acc4a7e1cb500ec5c12a95fe9f18dd87b59c83aac1fdf6ace0a50b19f559bd0",
+          "started": "2026-09-29T17:26:50.414913+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "30d542ccd016cca4f4de9a9b81d0d84d2bff05cc9498a2ce6ad5346169a987f5",
+          "wall_ns": 104328300
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "ec68882062d1c00dfa098f7a0eb375f8616b212bb141fe901085becc8bd78b68",
+          "runtime_state": "34e6b32b0b89298168e0c98a316213ae000e15b22145c64d12454ff09a9ba2ca",
+          "source": "2acc4a7e1cb500ec5c12a95fe9f18dd87b59c83aac1fdf6ace0a50b19f559bd0",
+          "started": "2026-09-29T17:26:50.546030+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "66e6fc399c399dc21e555ecd94f86cb63fa27e6b3e62f9bf47e42957408dd66f",
+          "wall_ns": 100761200
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "be38aa247915ef75f3ba52ed23e2832e882e1b66f3fccac2d19a80e0eb94e473",
+          "runtime_state": "34e6b32b0b89298168e0c98a316213ae000e15b22145c64d12454ff09a9ba2ca",
+          "source": "2acc4a7e1cb500ec5c12a95fe9f18dd87b59c83aac1fdf6ace0a50b19f559bd0",
+          "started": "2026-09-29T17:26:50.648333+00:00",
+          "stderr_sha256": "adc85a3e43e94304c698bd5629d4c6d7cbf10f48e3418c23b14a52117b1be2da",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_ns": 238271000
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 0,
+          "run_id": "64792a5b7757e623216993de072016a60d490d1518d3c17a3cd520f71667c168",
+          "runtime_state": "5e460c78205177f4336ba260ae148606a47e10db0431cc3188799bf3aed84787",
+          "source": "2acc4a7e1cb500ec5c12a95fe9f18dd87b59c83aac1fdf6ace0a50b19f559bd0",
+          "started": "2026-09-29T17:26:50.892384+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "1f3fdcdfb4730555fade7133e389ab688a5c86b8db1dda12ba0b147b2c2d998a",
+          "wall_ns": 103050500
+        }
+      ],
+      "runtime_states": {
+        "34e6b32b0b89298168e0c98a316213ae000e15b22145c64d12454ff09a9ba2ca": {
+          "readiness.marker": false,
+          "runtime.json": "{\"expected_offset\": 611}"
+        },
+        "5e460c78205177f4336ba260ae148606a47e10db0431cc3188799bf3aed84787": {
+          "readiness.marker": true,
+          "runtime.json": "{\"expected_offset\": 611}"
+        }
+      },
+      "source_files": {
+        "2acc4a7e1cb500ec5c12a95fe9f18dd87b59c83aac1fdf6ace0a50b19f559bd0": {
+          "README.md": "# Arithmetic example\n\nScenario repository_recovery.\n",
+          "calc.py": "def add_offset(value):\n    return value + 611\n",
+          "checks.py": "import html\nfrom pathlib import Path\nimport sys\nfrom calc import add_offset\n\nif sys.argv[1] == \"repository\":\n    paths = (\"calc.py\", \"test_calc.py\", \"README.md\", \"readiness.marker\")\n    missing = [p for p in paths if not Path(p).is_file()]\n    print(\"Required files:\", \", \".join(paths))\n    if missing:\n        print(\"Missing:\", \", \".join(missing))\n        raise SystemExit(1)\n    assert \"Arithmetic example\" in Path(\"README.md\").read_text()\n    print(\"Repository check passed\")\nelif sys.argv[1] == \"paper\":\n    source = Path(\"README.md\").read_text() + \"\\nObserved add_offset(7): \" + str(add_offset(7)) + \"\\n\"\n    folder = Path(\"build/paper\")\n    folder.mkdir(parents=True, exist_ok=True)\n    (folder / \"manuscript.md\").write_text(source, encoding=\"utf-8\")\n    (folder / \"preview.html\").write_text(\"<!doctype html><html><body><pre>\" + html.escape(source) + \"</pre></body></html>\", encoding=\"utf-8\")\n    print(\"Built Markdown and HTML from current source\")\nelse:\n    raise SystemExit(2)\n",
+          "test_calc.py": "import json\nfrom pathlib import Path\nimport unittest\nfrom calc import add_offset\n\nclass ArithmeticTests(unittest.TestCase):\n    def test_observed_contract(self):\n        state = json.loads(Path(\"runtime.json\").read_text())\n        for value in (-11, 0, 7, 123):\n            with self.subTest(value=value):\n                self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\n\nif __name__ == \"__main__\":\n    unittest.main(verbosity=2)\n"
+        }
+      }
+    },
+    {
+      "actions": [
+        {
+          "operation": "runtime_state",
+          "state": "95681e1a681fa188c1c59a51a5e7dffabb6fffe12781d8820366e32fad4924e9"
+        },
+        {
+          "operation": "post_boundary_artifact_replacement",
+          "path": "build/paper/preview.html"
+        }
+      ],
+      "final_artifacts": {
+        "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario artifact_replaced.\r\n\r\nObserved add_offset(7): 4014\r\n",
+        "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario artifact_replaced.\r\n\r\nObserved add_offset(7): 4014\r\n</pre></body></html>\r\n<!-- replaced after handoff -->\r\n"
+      },
+      "id": "artifact_replaced",
+      "runs": [
+        {
+          "artifacts": {
+            "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario artifact_replaced.\r\n\r\nObserved add_offset(7): 4014\r\n",
+            "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario artifact_replaced.\r\n\r\nObserved add_offset(7): 4014\r\n</pre></body></html>"
+          },
+          "collector_cpu_ns": 15625000,
+          "run_id": "d55ad7ef193ae828a5437dc6d10f0849d77ad977bbd6787655f54c5d93d2c145",
+          "runtime_state": "95681e1a681fa188c1c59a51a5e7dffabb6fffe12781d8820366e32fad4924e9",
+          "source": "c24f56079ef2d8b135d6a9f4d8816caf007dafd0dac21086a7cedacf64bd2197",
+          "started": "2026-09-29T17:26:51.041725+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "30d542ccd016cca4f4de9a9b81d0d84d2bff05cc9498a2ce6ad5346169a987f5",
+          "wall_ns": 100844800
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "3e94cf339337d2cf5c5bd42babb104ef5f3bfc8a77abea17fb88cfbd04cadfbe",
+          "runtime_state": "95681e1a681fa188c1c59a51a5e7dffabb6fffe12781d8820366e32fad4924e9",
+          "source": "c24f56079ef2d8b135d6a9f4d8816caf007dafd0dac21086a7cedacf64bd2197",
+          "started": "2026-09-29T17:26:51.165158+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "1f3fdcdfb4730555fade7133e389ab688a5c86b8db1dda12ba0b147b2c2d998a",
+          "wall_ns": 98706300
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 0,
+          "run_id": "b6a1b134216c910bec7debf9b724cf4a955314e72ba9c96312e2e6b2c55600e9",
+          "runtime_state": "95681e1a681fa188c1c59a51a5e7dffabb6fffe12781d8820366e32fad4924e9",
+          "source": "c24f56079ef2d8b135d6a9f4d8816caf007dafd0dac21086a7cedacf64bd2197",
+          "started": "2026-09-29T17:26:51.264967+00:00",
+          "stderr_sha256": "adc85a3e43e94304c698bd5629d4c6d7cbf10f48e3418c23b14a52117b1be2da",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_ns": 255779400
+        }
+      ],
+      "runtime_states": {
+        "95681e1a681fa188c1c59a51a5e7dffabb6fffe12781d8820366e32fad4924e9": {
+          "readiness.marker": true,
+          "runtime.json": "{\"expected_offset\": 4007}"
+        }
+      },
+      "source_files": {
+        "c24f56079ef2d8b135d6a9f4d8816caf007dafd0dac21086a7cedacf64bd2197": {
+          "README.md": "# Arithmetic example\n\nScenario artifact_replaced.\n",
+          "calc.py": "def add_offset(value):\n    return value + 4007\n",
+          "checks.py": "import html\nfrom pathlib import Path\nimport sys\nfrom calc import add_offset\n\nif sys.argv[1] == \"repository\":\n    paths = (\"calc.py\", \"test_calc.py\", \"README.md\", \"readiness.marker\")\n    missing = [p for p in paths if not Path(p).is_file()]\n    print(\"Required files:\", \", \".join(paths))\n    if missing:\n        print(\"Missing:\", \", \".join(missing))\n        raise SystemExit(1)\n    assert \"Arithmetic example\" in Path(\"README.md\").read_text()\n    print(\"Repository check passed\")\nelif sys.argv[1] == \"paper\":\n    source = Path(\"README.md\").read_text() + \"\\nObserved add_offset(7): \" + str(add_offset(7)) + \"\\n\"\n    folder = Path(\"build/paper\")\n    folder.mkdir(parents=True, exist_ok=True)\n    (folder / \"manuscript.md\").write_text(source, encoding=\"utf-8\")\n    (folder / \"preview.html\").write_text(\"<!doctype html><html><body><pre>\" + html.escape(source) + \"</pre></body></html>\", encoding=\"utf-8\")\n    print(\"Built Markdown and HTML from current source\")\nelse:\n    raise SystemExit(2)\n",
+          "test_calc.py": "import json\nfrom pathlib import Path\nimport unittest\nfrom calc import add_offset\n\nclass ArithmeticTests(unittest.TestCase):\n    def test_observed_contract(self):\n        state = json.loads(Path(\"runtime.json\").read_text())\n        for value in (-11, 0, 7, 123):\n            with self.subTest(value=value):\n                self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\n\nif __name__ == \"__main__\":\n    unittest.main(verbosity=2)\n"
+        }
+      }
+    },
+    {
+      "actions": [
+        {
+          "operation": "runtime_state",
+          "state": "d5c8969404956d5ffb23e2127b97e77d2188586758506d83942e95a2bb2d00cc"
+        },
+        {
+          "operation": "post_boundary_artifact_removal",
+          "path": "build/paper/preview.html"
+        }
+      ],
+      "final_artifacts": {
+        "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario artifact_missing.\r\n\r\nObserved add_offset(7): 3495\r\n"
+      },
+      "id": "artifact_missing",
+      "runs": [
+        {
+          "artifacts": {
+            "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario artifact_missing.\r\n\r\nObserved add_offset(7): 3495\r\n",
+            "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario artifact_missing.\r\n\r\nObserved add_offset(7): 3495\r\n</pre></body></html>"
+          },
+          "collector_cpu_ns": 15625000,
+          "run_id": "bc46267ad677e591c81bd89f488f79da5c567cdf691cb9250b3760586360d8eb",
+          "runtime_state": "d5c8969404956d5ffb23e2127b97e77d2188586758506d83942e95a2bb2d00cc",
+          "source": "f95e0f47e140e77a5a4eb633ee4ac4040d7765e903da6addf857c50a768545bf",
+          "started": "2026-09-29T17:26:51.589704+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "30d542ccd016cca4f4de9a9b81d0d84d2bff05cc9498a2ce6ad5346169a987f5",
+          "wall_ns": 107046900
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "843a6d791659c6189398ef84d3bf97d8b637950614bf00fa191b9d152fc4b779",
+          "runtime_state": "d5c8969404956d5ffb23e2127b97e77d2188586758506d83942e95a2bb2d00cc",
+          "source": "f95e0f47e140e77a5a4eb633ee4ac4040d7765e903da6addf857c50a768545bf",
+          "started": "2026-09-29T17:26:51.721479+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "1f3fdcdfb4730555fade7133e389ab688a5c86b8db1dda12ba0b147b2c2d998a",
+          "wall_ns": 108236200
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "b6dfab465c5a584816b30f87510713bca10a1ffceb33a7953ec50a4eee3b2735",
+          "runtime_state": "d5c8969404956d5ffb23e2127b97e77d2188586758506d83942e95a2bb2d00cc",
+          "source": "f95e0f47e140e77a5a4eb633ee4ac4040d7765e903da6addf857c50a768545bf",
+          "started": "2026-09-29T17:26:51.831486+00:00",
+          "stderr_sha256": "adc85a3e43e94304c698bd5629d4c6d7cbf10f48e3418c23b14a52117b1be2da",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_ns": 253038100
+        }
+      ],
+      "runtime_states": {
+        "d5c8969404956d5ffb23e2127b97e77d2188586758506d83942e95a2bb2d00cc": {
+          "readiness.marker": true,
+          "runtime.json": "{\"expected_offset\": 3488}"
+        }
+      },
+      "source_files": {
+        "f95e0f47e140e77a5a4eb633ee4ac4040d7765e903da6addf857c50a768545bf": {
+          "README.md": "# Arithmetic example\n\nScenario artifact_missing.\n",
+          "calc.py": "def add_offset(value):\n    return value + 3488\n",
+          "checks.py": "import html\nfrom pathlib import Path\nimport sys\nfrom calc import add_offset\n\nif sys.argv[1] == \"repository\":\n    paths = (\"calc.py\", \"test_calc.py\", \"README.md\", \"readiness.marker\")\n    missing = [p for p in paths if not Path(p).is_file()]\n    print(\"Required files:\", \", \".join(paths))\n    if missing:\n        print(\"Missing:\", \", \".join(missing))\n        raise SystemExit(1)\n    assert \"Arithmetic example\" in Path(\"README.md\").read_text()\n    print(\"Repository check passed\")\nelif sys.argv[1] == \"paper\":\n    source = Path(\"README.md\").read_text() + \"\\nObserved add_offset(7): \" + str(add_offset(7)) + \"\\n\"\n    folder = Path(\"build/paper\")\n    folder.mkdir(parents=True, exist_ok=True)\n    (folder / \"manuscript.md\").write_text(source, encoding=\"utf-8\")\n    (folder / \"preview.html\").write_text(\"<!doctype html><html><body><pre>\" + html.escape(source) + \"</pre></body></html>\", encoding=\"utf-8\")\n    print(\"Built Markdown and HTML from current source\")\nelse:\n    raise SystemExit(2)\n",
+          "test_calc.py": "import json\nfrom pathlib import Path\nimport unittest\nfrom calc import add_offset\n\nclass ArithmeticTests(unittest.TestCase):\n    def test_observed_contract(self):\n        state = json.loads(Path(\"runtime.json\").read_text())\n        for value in (-11, 0, 7, 123):\n            with self.subTest(value=value):\n                self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\n\nif __name__ == \"__main__\":\n    unittest.main(verbosity=2)\n"
+        }
+      }
+    },
+    {
+      "actions": [
+        {
+          "operation": "runtime_state",
+          "state": "725da809c9154a09fc708f7af84c831d4bd56b4c74853c0bc190a330e3f65800"
+        },
+        {
+          "operation": "post_boundary_source_change"
+        }
+      ],
+      "final_artifacts": {
+        "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario new_source_unchecked.\r\n\r\nObserved add_offset(7): 4055\r\n",
+        "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario new_source_unchecked.\r\n\r\nObserved add_offset(7): 4055\r\n</pre></body></html>"
+      },
+      "id": "new_source_unchecked",
+      "runs": [
+        {
+          "artifacts": {
+            "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario new_source_unchecked.\r\n\r\nObserved add_offset(7): 4055\r\n",
+            "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario new_source_unchecked.\r\n\r\nObserved add_offset(7): 4055\r\n</pre></body></html>"
+          },
+          "collector_cpu_ns": 15625000,
+          "run_id": "684580cf15e3d5aab54aa7208b34cb8dd9e473a74f307408ac5657fe599ffbb9",
+          "runtime_state": "725da809c9154a09fc708f7af84c831d4bd56b4c74853c0bc190a330e3f65800",
+          "source": "bb060ee7f24a7c44af924ee2eea0580b3669233d8d61314ec3fcc0d4d7dc2200",
+          "started": "2026-09-29T17:26:52.133429+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "30d542ccd016cca4f4de9a9b81d0d84d2bff05cc9498a2ce6ad5346169a987f5",
+          "wall_ns": 118347700
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "e445ab66efaddd3d18d97f1972a33b43e24210294a37f7fea7edbea9a446b0f7",
+          "runtime_state": "725da809c9154a09fc708f7af84c831d4bd56b4c74853c0bc190a330e3f65800",
+          "source": "bb060ee7f24a7c44af924ee2eea0580b3669233d8d61314ec3fcc0d4d7dc2200",
+          "started": "2026-09-29T17:26:52.279238+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "1f3fdcdfb4730555fade7133e389ab688a5c86b8db1dda12ba0b147b2c2d998a",
+          "wall_ns": 109235400
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 0,
+          "run_id": "dbdbbc898205150c276cd9f5450fad88f61014f83a3377d600043057d24ca01f",
+          "runtime_state": "725da809c9154a09fc708f7af84c831d4bd56b4c74853c0bc190a330e3f65800",
+          "source": "bb060ee7f24a7c44af924ee2eea0580b3669233d8d61314ec3fcc0d4d7dc2200",
+          "started": "2026-09-29T17:26:52.389930+00:00",
+          "stderr_sha256": "adc85a3e43e94304c698bd5629d4c6d7cbf10f48e3418c23b14a52117b1be2da",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_ns": 291623700
+        }
+      ],
+      "runtime_states": {
+        "725da809c9154a09fc708f7af84c831d4bd56b4c74853c0bc190a330e3f65800": {
+          "readiness.marker": true,
+          "runtime.json": "{\"expected_offset\": 4048}"
+        }
+      },
+      "source_files": {
+        "21aa1b5fb98485233ec3d2a9c3906ef4ab93c41b81d1af2eba5b69ecb8529275": {
+          "README.md": "# Arithmetic example\n\nScenario new_source_unchecked.\n",
+          "calc.py": "def add_offset(value):\n    return value + 4079\n",
+          "checks.py": "import html\nfrom pathlib import Path\nimport sys\nfrom calc import add_offset\n\nif sys.argv[1] == \"repository\":\n    paths = (\"calc.py\", \"test_calc.py\", \"README.md\", \"readiness.marker\")\n    missing = [p for p in paths if not Path(p).is_file()]\n    print(\"Required files:\", \", \".join(paths))\n    if missing:\n        print(\"Missing:\", \", \".join(missing))\n        raise SystemExit(1)\n    assert \"Arithmetic example\" in Path(\"README.md\").read_text()\n    print(\"Repository check passed\")\nelif sys.argv[1] == \"paper\":\n    source = Path(\"README.md\").read_text() + \"\\nObserved add_offset(7): \" + str(add_offset(7)) + \"\\n\"\n    folder = Path(\"build/paper\")\n    folder.mkdir(parents=True, exist_ok=True)\n    (folder / \"manuscript.md\").write_text(source, encoding=\"utf-8\")\n    (folder / \"preview.html\").write_text(\"<!doctype html><html><body><pre>\" + html.escape(source) + \"</pre></body></html>\", encoding=\"utf-8\")\n    print(\"Built Markdown and HTML from current source\")\nelse:\n    raise SystemExit(2)\n",
+          "test_calc.py": "import json\nfrom pathlib import Path\nimport unittest\nfrom calc import add_offset\n\nclass ArithmeticTests(unittest.TestCase):\n    def test_observed_contract(self):\n        state = json.loads(Path(\"runtime.json\").read_text())\n        for value in (-11, 0, 7, 123):\n            with self.subTest(value=value):\n                self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\n\nif __name__ == \"__main__\":\n    unittest.main(verbosity=2)\n"
+        },
+        "bb060ee7f24a7c44af924ee2eea0580b3669233d8d61314ec3fcc0d4d7dc2200": {
+          "README.md": "# Arithmetic example\n\nScenario new_source_unchecked.\n",
+          "calc.py": "def add_offset(value):\n    return value + 4048\n",
+          "checks.py": "import html\nfrom pathlib import Path\nimport sys\nfrom calc import add_offset\n\nif sys.argv[1] == \"repository\":\n    paths = (\"calc.py\", \"test_calc.py\", \"README.md\", \"readiness.marker\")\n    missing = [p for p in paths if not Path(p).is_file()]\n    print(\"Required files:\", \", \".join(paths))\n    if missing:\n        print(\"Missing:\", \", \".join(missing))\n        raise SystemExit(1)\n    assert \"Arithmetic example\" in Path(\"README.md\").read_text()\n    print(\"Repository check passed\")\nelif sys.argv[1] == \"paper\":\n    source = Path(\"README.md\").read_text() + \"\\nObserved add_offset(7): \" + str(add_offset(7)) + \"\\n\"\n    folder = Path(\"build/paper\")\n    folder.mkdir(parents=True, exist_ok=True)\n    (folder / \"manuscript.md\").write_text(source, encoding=\"utf-8\")\n    (folder / \"preview.html\").write_text(\"<!doctype html><html><body><pre>\" + html.escape(source) + \"</pre></body></html>\", encoding=\"utf-8\")\n    print(\"Built Markdown and HTML from current source\")\nelse:\n    raise SystemExit(2)\n",
+          "test_calc.py": "import json\nfrom pathlib import Path\nimport unittest\nfrom calc import add_offset\n\nclass ArithmeticTests(unittest.TestCase):\n    def test_observed_contract(self):\n        state = json.loads(Path(\"runtime.json\").read_text())\n        for value in (-11, 0, 7, 123):\n            with self.subTest(value=value):\n                self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\n\nif __name__ == \"__main__\":\n    unittest.main(verbosity=2)\n"
+        }
+      }
+    },
+    {
+      "actions": [
+        {
+          "operation": "runtime_state",
+          "state": "60a72bec5a3f9acd6cd5bc446d4dea6da2f73588ce327e0a89befc3644454ced"
+        },
+        {
+          "operation": "runtime_state",
+          "state": "1056eb6ff37619858ab8d579fde65c9378967f3bc8b9334f39b6b4a77085552f"
+        }
+      ],
+      "final_artifacts": {
+        "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario partial_revision.\r\n\r\nObserved add_offset(7): 4074\r\n",
+        "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario partial_revision.\r\n\r\nObserved add_offset(7): 4074\r\n</pre></body></html>"
+      },
+      "id": "partial_revision",
+      "runs": [
+        {
+          "artifacts": {
+            "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario partial_revision.\r\n\r\nObserved add_offset(7): 4074\r\n",
+            "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario partial_revision.\r\n\r\nObserved add_offset(7): 4074\r\n</pre></body></html>"
+          },
+          "collector_cpu_ns": 15625000,
+          "run_id": "29bee5d18c502cfea9c19bf7c45287a74ced49a64cbf1973ad6829e8ca0e14fd",
+          "runtime_state": "60a72bec5a3f9acd6cd5bc446d4dea6da2f73588ce327e0a89befc3644454ced",
+          "source": "0d0fcf52c8e6b44ac8f868456782186338cf262e8e04dad86bbbcc9d0e4c1f0f",
+          "started": "2026-09-29T17:26:52.752662+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "30d542ccd016cca4f4de9a9b81d0d84d2bff05cc9498a2ce6ad5346169a987f5",
+          "wall_ns": 108246900
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "ee9bd42abf1d43945c7c852251d5f6b3f173e32782fd9e2e85027082f911f925",
+          "runtime_state": "60a72bec5a3f9acd6cd5bc446d4dea6da2f73588ce327e0a89befc3644454ced",
+          "source": "0d0fcf52c8e6b44ac8f868456782186338cf262e8e04dad86bbbcc9d0e4c1f0f",
+          "started": "2026-09-29T17:26:52.887539+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "1f3fdcdfb4730555fade7133e389ab688a5c86b8db1dda12ba0b147b2c2d998a",
+          "wall_ns": 105214100
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "96bbcf09086a02a8c512d859abab6fb7e426996e2f2570833d5824e2903b86f7",
+          "runtime_state": "60a72bec5a3f9acd6cd5bc446d4dea6da2f73588ce327e0a89befc3644454ced",
+          "source": "0d0fcf52c8e6b44ac8f868456782186338cf262e8e04dad86bbbcc9d0e4c1f0f",
+          "started": "2026-09-29T17:26:52.993876+00:00",
+          "stderr_sha256": "adc85a3e43e94304c698bd5629d4c6d7cbf10f48e3418c23b14a52117b1be2da",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_ns": 264567800
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 0,
+          "run_id": "85476d625151c74068d73d53b07d62e98eb9d1fa058f5fd99391d03310307b91",
+          "runtime_state": "1056eb6ff37619858ab8d579fde65c9378967f3bc8b9334f39b6b4a77085552f",
+          "source": "00381718c6b9d53b2cbe567a8934b28f1c8cb9c53f3f692b89c4fc8a8ab2430a",
+          "started": "2026-09-29T17:26:53.283686+00:00",
+          "stderr_sha256": "adc85a3e43e94304c698bd5629d4c6d7cbf10f48e3418c23b14a52117b1be2da",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_ns": 253271500
+        }
+      ],
+      "runtime_states": {
+        "1056eb6ff37619858ab8d579fde65c9378967f3bc8b9334f39b6b4a77085552f": {
+          "readiness.marker": true,
+          "runtime.json": "{\"expected_offset\": 4090}"
+        },
+        "60a72bec5a3f9acd6cd5bc446d4dea6da2f73588ce327e0a89befc3644454ced": {
+          "readiness.marker": true,
+          "runtime.json": "{\"expected_offset\": 4067}"
+        }
+      },
+      "source_files": {
+        "00381718c6b9d53b2cbe567a8934b28f1c8cb9c53f3f692b89c4fc8a8ab2430a": {
+          "README.md": "# Arithmetic example\n\nScenario partial_revision.\n",
+          "calc.py": "def add_offset(value):\n    return value + 4090\n",
+          "checks.py": "import html\nfrom pathlib import Path\nimport sys\nfrom calc import add_offset\n\nif sys.argv[1] == \"repository\":\n    paths = (\"calc.py\", \"test_calc.py\", \"README.md\", \"readiness.marker\")\n    missing = [p for p in paths if not Path(p).is_file()]\n    print(\"Required files:\", \", \".join(paths))\n    if missing:\n        print(\"Missing:\", \", \".join(missing))\n        raise SystemExit(1)\n    assert \"Arithmetic example\" in Path(\"README.md\").read_text()\n    print(\"Repository check passed\")\nelif sys.argv[1] == \"paper\":\n    source = Path(\"README.md\").read_text() + \"\\nObserved add_offset(7): \" + str(add_offset(7)) + \"\\n\"\n    folder = Path(\"build/paper\")\n    folder.mkdir(parents=True, exist_ok=True)\n    (folder / \"manuscript.md\").write_text(source, encoding=\"utf-8\")\n    (folder / \"preview.html\").write_text(\"<!doctype html><html><body><pre>\" + html.escape(source) + \"</pre></body></html>\", encoding=\"utf-8\")\n    print(\"Built Markdown and HTML from current source\")\nelse:\n    raise SystemExit(2)\n",
+          "test_calc.py": "import json\nfrom pathlib import Path\nimport unittest\nfrom calc import add_offset\n\nclass ArithmeticTests(unittest.TestCase):\n    def test_observed_contract(self):\n        state = json.loads(Path(\"runtime.json\").read_text())\n        for value in (-11, 0, 7, 123):\n            with self.subTest(value=value):\n                self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\n\nif __name__ == \"__main__\":\n    unittest.main(verbosity=2)\n"
+        },
+        "0d0fcf52c8e6b44ac8f868456782186338cf262e8e04dad86bbbcc9d0e4c1f0f": {
+          "README.md": "# Arithmetic example\n\nScenario partial_revision.\n",
+          "calc.py": "def add_offset(value):\n    return value + 4067\n",
+          "checks.py": "import html\nfrom pathlib import Path\nimport sys\nfrom calc import add_offset\n\nif sys.argv[1] == \"repository\":\n    paths = (\"calc.py\", \"test_calc.py\", \"README.md\", \"readiness.marker\")\n    missing = [p for p in paths if not Path(p).is_file()]\n    print(\"Required files:\", \", \".join(paths))\n    if missing:\n        print(\"Missing:\", \", \".join(missing))\n        raise SystemExit(1)\n    assert \"Arithmetic example\" in Path(\"README.md\").read_text()\n    print(\"Repository check passed\")\nelif sys.argv[1] == \"paper\":\n    source = Path(\"README.md\").read_text() + \"\\nObserved add_offset(7): \" + str(add_offset(7)) + \"\\n\"\n    folder = Path(\"build/paper\")\n    folder.mkdir(parents=True, exist_ok=True)\n    (folder / \"manuscript.md\").write_text(source, encoding=\"utf-8\")\n    (folder / \"preview.html\").write_text(\"<!doctype html><html><body><pre>\" + html.escape(source) + \"</pre></body></html>\", encoding=\"utf-8\")\n    print(\"Built Markdown and HTML from current source\")\nelse:\n    raise SystemExit(2)\n",
+          "test_calc.py": "import json\nfrom pathlib import Path\nimport unittest\nfrom calc import add_offset\n\nclass ArithmeticTests(unittest.TestCase):\n    def test_observed_contract(self):\n        state = json.loads(Path(\"runtime.json\").read_text())\n        for value in (-11, 0, 7, 123):\n            with self.subTest(value=value):\n                self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\n\nif __name__ == \"__main__\":\n    unittest.main(verbosity=2)\n"
+        }
+      }
+    },
+    {
+      "actions": [
+        {
+          "operation": "runtime_state",
+          "state": "b1540446f5d51713c8e25358cb9bb6c4615077de0dc0e06f3480754cfc1b43cd"
+        },
+        {
+          "operation": "runtime_state",
+          "state": "17166612af020b6d890d4d5a18fc9db717b2838c642729f47bd9ace0006afb13"
+        },
+        {
+          "operation": "post_boundary_restore_old_source_and_artifacts"
+        }
+      ],
+      "final_artifacts": {
+        "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario older_source_selected.\r\n\r\nObserved add_offset(7): 6873\r\n",
+        "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario older_source_selected.\r\n\r\nObserved add_offset(7): 6873\r\n</pre></body></html>"
+      },
+      "id": "older_source_selected",
+      "runs": [
+        {
+          "artifacts": {
+            "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario older_source_selected.\r\n\r\nObserved add_offset(7): 6873\r\n",
+            "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario older_source_selected.\r\n\r\nObserved add_offset(7): 6873\r\n</pre></body></html>"
+          },
+          "collector_cpu_ns": 15625000,
+          "run_id": "7a8245e139312d1ec42e77caf12b118175d81300963cf0e19f7a22b8df3135c2",
+          "runtime_state": "b1540446f5d51713c8e25358cb9bb6c4615077de0dc0e06f3480754cfc1b43cd",
+          "source": "f1089d70b76dbfb0b3433a18723fe108d7f63b661ef52659527668d0e47459c2",
+          "started": "2026-09-29T17:26:53.581256+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "30d542ccd016cca4f4de9a9b81d0d84d2bff05cc9498a2ce6ad5346169a987f5",
+          "wall_ns": 108618700
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 0,
+          "run_id": "5c1acf6df0378028eb04d2f17951c5a8d9cf290eeceafe2652c6ea047541e79f",
+          "runtime_state": "b1540446f5d51713c8e25358cb9bb6c4615077de0dc0e06f3480754cfc1b43cd",
+          "source": "f1089d70b76dbfb0b3433a18723fe108d7f63b661ef52659527668d0e47459c2",
+          "started": "2026-09-29T17:26:53.715655+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "1f3fdcdfb4730555fade7133e389ab688a5c86b8db1dda12ba0b147b2c2d998a",
+          "wall_ns": 105321700
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "2ed5fa8e10e93e628b470999467513e5b27dd57900b6a86b47a54a9b1bd2e407",
+          "runtime_state": "b1540446f5d51713c8e25358cb9bb6c4615077de0dc0e06f3480754cfc1b43cd",
+          "source": "f1089d70b76dbfb0b3433a18723fe108d7f63b661ef52659527668d0e47459c2",
+          "started": "2026-09-29T17:26:53.822333+00:00",
+          "stderr_sha256": "adc85a3e43e94304c698bd5629d4c6d7cbf10f48e3418c23b14a52117b1be2da",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_ns": 242407100
+        },
+        {
+          "artifacts": {
+            "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario older_source_selected.\r\n\r\nObserved add_offset(7): 6890\r\n",
+            "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario older_source_selected.\r\n\r\nObserved add_offset(7): 6890\r\n</pre></body></html>"
+          },
+          "collector_cpu_ns": 0,
+          "run_id": "4a4e560338b0920eaeb43e71111544d38322e49188f34f13f8229e76f4afc026",
+          "runtime_state": "17166612af020b6d890d4d5a18fc9db717b2838c642729f47bd9ace0006afb13",
+          "source": "654a64f0a37b9aa4a116fa43b085fbde975bfc56664a86708a1b940b18e6659a",
+          "started": "2026-09-29T17:26:54.095725+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "30d542ccd016cca4f4de9a9b81d0d84d2bff05cc9498a2ce6ad5346169a987f5",
+          "wall_ns": 104321300
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "c2287b01663ff9bc6c2fced218580d7d40b17c0162c92f4d8f40d4903f72dff9",
+          "runtime_state": "17166612af020b6d890d4d5a18fc9db717b2838c642729f47bd9ace0006afb13",
+          "source": "654a64f0a37b9aa4a116fa43b085fbde975bfc56664a86708a1b940b18e6659a",
+          "started": "2026-09-29T17:26:54.225635+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "1f3fdcdfb4730555fade7133e389ab688a5c86b8db1dda12ba0b147b2c2d998a",
+          "wall_ns": 99084800
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "c55cfca87f870ba9cb068bfe643b2250ce907f36a943b254c3febb0a0e616585",
+          "runtime_state": "17166612af020b6d890d4d5a18fc9db717b2838c642729f47bd9ace0006afb13",
+          "source": "654a64f0a37b9aa4a116fa43b085fbde975bfc56664a86708a1b940b18e6659a",
+          "started": "2026-09-29T17:26:54.325840+00:00",
+          "stderr_sha256": "adc85a3e43e94304c698bd5629d4c6d7cbf10f48e3418c23b14a52117b1be2da",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_ns": 253769400
+        }
+      ],
+      "runtime_states": {
+        "17166612af020b6d890d4d5a18fc9db717b2838c642729f47bd9ace0006afb13": {
+          "readiness.marker": true,
+          "runtime.json": "{\"expected_offset\": 6883}"
+        },
+        "b1540446f5d51713c8e25358cb9bb6c4615077de0dc0e06f3480754cfc1b43cd": {
+          "readiness.marker": true,
+          "runtime.json": "{\"expected_offset\": 6866}"
+        }
+      },
+      "source_files": {
+        "654a64f0a37b9aa4a116fa43b085fbde975bfc56664a86708a1b940b18e6659a": {
+          "README.md": "# Arithmetic example\n\nScenario older_source_selected.\n",
+          "calc.py": "def add_offset(value):\n    return value + 6883\n",
+          "checks.py": "import html\nfrom pathlib import Path\nimport sys\nfrom calc import add_offset\n\nif sys.argv[1] == \"repository\":\n    paths = (\"calc.py\", \"test_calc.py\", \"README.md\", \"readiness.marker\")\n    missing = [p for p in paths if not Path(p).is_file()]\n    print(\"Required files:\", \", \".join(paths))\n    if missing:\n        print(\"Missing:\", \", \".join(missing))\n        raise SystemExit(1)\n    assert \"Arithmetic example\" in Path(\"README.md\").read_text()\n    print(\"Repository check passed\")\nelif sys.argv[1] == \"paper\":\n    source = Path(\"README.md\").read_text() + \"\\nObserved add_offset(7): \" + str(add_offset(7)) + \"\\n\"\n    folder = Path(\"build/paper\")\n    folder.mkdir(parents=True, exist_ok=True)\n    (folder / \"manuscript.md\").write_text(source, encoding=\"utf-8\")\n    (folder / \"preview.html\").write_text(\"<!doctype html><html><body><pre>\" + html.escape(source) + \"</pre></body></html>\", encoding=\"utf-8\")\n    print(\"Built Markdown and HTML from current source\")\nelse:\n    raise SystemExit(2)\n",
+          "test_calc.py": "import json\nfrom pathlib import Path\nimport unittest\nfrom calc import add_offset\n\nclass ArithmeticTests(unittest.TestCase):\n    def test_observed_contract(self):\n        state = json.loads(Path(\"runtime.json\").read_text())\n        for value in (-11, 0, 7, 123):\n            with self.subTest(value=value):\n                self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\n\nif __name__ == \"__main__\":\n    unittest.main(verbosity=2)\n"
+        },
+        "f1089d70b76dbfb0b3433a18723fe108d7f63b661ef52659527668d0e47459c2": {
+          "README.md": "# Arithmetic example\n\nScenario older_source_selected.\n",
+          "calc.py": "def add_offset(value):\n    return value + 6866\n",
+          "checks.py": "import html\nfrom pathlib import Path\nimport sys\nfrom calc import add_offset\n\nif sys.argv[1] == \"repository\":\n    paths = (\"calc.py\", \"test_calc.py\", \"README.md\", \"readiness.marker\")\n    missing = [p for p in paths if not Path(p).is_file()]\n    print(\"Required files:\", \", \".join(paths))\n    if missing:\n        print(\"Missing:\", \", \".join(missing))\n        raise SystemExit(1)\n    assert \"Arithmetic example\" in Path(\"README.md\").read_text()\n    print(\"Repository check passed\")\nelif sys.argv[1] == \"paper\":\n    source = Path(\"README.md\").read_text() + \"\\nObserved add_offset(7): \" + str(add_offset(7)) + \"\\n\"\n    folder = Path(\"build/paper\")\n    folder.mkdir(parents=True, exist_ok=True)\n    (folder / \"manuscript.md\").write_text(source, encoding=\"utf-8\")\n    (folder / \"preview.html\").write_text(\"<!doctype html><html><body><pre>\" + html.escape(source) + \"</pre></body></html>\", encoding=\"utf-8\")\n    print(\"Built Markdown and HTML from current source\")\nelse:\n    raise SystemExit(2)\n",
+          "test_calc.py": "import json\nfrom pathlib import Path\nimport unittest\nfrom calc import add_offset\n\nclass ArithmeticTests(unittest.TestCase):\n    def test_observed_contract(self):\n        state = json.loads(Path(\"runtime.json\").read_text())\n        for value in (-11, 0, 7, 123):\n            with self.subTest(value=value):\n                self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\n\nif __name__ == \"__main__\":\n    unittest.main(verbosity=2)\n"
+        }
+      }
+    },
+    {
+      "actions": [
+        {
+          "operation": "runtime_state",
+          "state": "589b9447bf90b601d4d09f2c2fbde59928ba8515caabcad64bf728f1b8045be3"
+        },
+        {
+          "operation": "runtime_state",
+          "state": "57fd07ba2e3961bd5049fbfa5c07a06fd90c3d7c6684e86780c1cd089a8e8dc6"
+        }
+      ],
+      "final_artifacts": {
+        "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario irrelevant_failure.\r\n\r\nObserved add_offset(7): 6162\r\n",
+        "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario irrelevant_failure.\r\n\r\nObserved add_offset(7): 6162\r\n</pre></body></html>"
+      },
+      "id": "irrelevant_failure",
+      "runs": [
+        {
+          "artifacts": {
+            "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario irrelevant_failure.\r\n\r\nObserved add_offset(7): 6162\r\n",
+            "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario irrelevant_failure.\r\n\r\nObserved add_offset(7): 6162\r\n</pre></body></html>"
+          },
+          "collector_cpu_ns": 15625000,
+          "run_id": "5fd7b3cf4bbebad0f6d9cd552e37245da911d7d7f9b0cee668c7e462d40baa16",
+          "runtime_state": "589b9447bf90b601d4d09f2c2fbde59928ba8515caabcad64bf728f1b8045be3",
+          "source": "d6ded7c0812f6b0817445b6a1b42aab6ab7541bf755b0bdb8d5d6eb30a3feb5b",
+          "started": "2026-09-29T17:26:54.635191+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "30d542ccd016cca4f4de9a9b81d0d84d2bff05cc9498a2ce6ad5346169a987f5",
+          "wall_ns": 106179100
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 0,
+          "run_id": "a89ec672c90b67be39f34693ad1eba4effc810f89d6027fcf909b0a83da8924f",
+          "runtime_state": "589b9447bf90b601d4d09f2c2fbde59928ba8515caabcad64bf728f1b8045be3",
+          "source": "d6ded7c0812f6b0817445b6a1b42aab6ab7541bf755b0bdb8d5d6eb30a3feb5b",
+          "started": "2026-09-29T17:26:54.766948+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "1f3fdcdfb4730555fade7133e389ab688a5c86b8db1dda12ba0b147b2c2d998a",
+          "wall_ns": 97863100
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "d33363a3a475a3653a51d5dd4da9a95759edb348fdf8bd94e19353484b5f655a",
+          "runtime_state": "589b9447bf90b601d4d09f2c2fbde59928ba8515caabcad64bf728f1b8045be3",
+          "source": "d6ded7c0812f6b0817445b6a1b42aab6ab7541bf755b0bdb8d5d6eb30a3feb5b",
+          "started": "2026-09-29T17:26:54.865957+00:00",
+          "stderr_sha256": "adc85a3e43e94304c698bd5629d4c6d7cbf10f48e3418c23b14a52117b1be2da",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_ns": 252796000
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "548b9f053d5dc3825fd0c035a7bb4e6d40f7d71b976dea3f0285da81b7685dfa",
+          "runtime_state": "57fd07ba2e3961bd5049fbfa5c07a06fd90c3d7c6684e86780c1cd089a8e8dc6",
+          "source": "d6ded7c0812f6b0817445b6a1b42aab6ab7541bf755b0bdb8d5d6eb30a3feb5b",
+          "started": "2026-09-29T17:26:55.132818+00:00",
+          "stderr_sha256": "91a1da0f8a864ab82c5150e3eb9185229618adf37c05a760e6152f17e5eedfe8",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_ns": 265848500
+        }
+      ],
+      "runtime_states": {
+        "57fd07ba2e3961bd5049fbfa5c07a06fd90c3d7c6684e86780c1cd089a8e8dc6": {
+          "readiness.marker": true,
+          "runtime.json": "{\"expected_offset\": 6156}"
+        },
+        "589b9447bf90b601d4d09f2c2fbde59928ba8515caabcad64bf728f1b8045be3": {
+          "readiness.marker": true,
+          "runtime.json": "{\"expected_offset\": 6155}"
+        }
+      },
+      "source_files": {
+        "d6ded7c0812f6b0817445b6a1b42aab6ab7541bf755b0bdb8d5d6eb30a3feb5b": {
+          "README.md": "# Arithmetic example\n\nScenario irrelevant_failure.\n",
+          "calc.py": "def add_offset(value):\n    return value + 6155\n",
+          "checks.py": "import html\nfrom pathlib import Path\nimport sys\nfrom calc import add_offset\n\nif sys.argv[1] == \"repository\":\n    paths = (\"calc.py\", \"test_calc.py\", \"README.md\", \"readiness.marker\")\n    missing = [p for p in paths if not Path(p).is_file()]\n    print(\"Required files:\", \", \".join(paths))\n    if missing:\n        print(\"Missing:\", \", \".join(missing))\n        raise SystemExit(1)\n    assert \"Arithmetic example\" in Path(\"README.md\").read_text()\n    print(\"Repository check passed\")\nelif sys.argv[1] == \"paper\":\n    source = Path(\"README.md\").read_text() + \"\\nObserved add_offset(7): \" + str(add_offset(7)) + \"\\n\"\n    folder = Path(\"build/paper\")\n    folder.mkdir(parents=True, exist_ok=True)\n    (folder / \"manuscript.md\").write_text(source, encoding=\"utf-8\")\n    (folder / \"preview.html\").write_text(\"<!doctype html><html><body><pre>\" + html.escape(source) + \"</pre></body></html>\", encoding=\"utf-8\")\n    print(\"Built Markdown and HTML from current source\")\nelse:\n    raise SystemExit(2)\n",
+          "test_calc.py": "import json\nfrom pathlib import Path\nimport unittest\nfrom calc import add_offset\n\nclass ArithmeticTests(unittest.TestCase):\n    def test_observed_contract(self):\n        state = json.loads(Path(\"runtime.json\").read_text())\n        for value in (-11, 0, 7, 123):\n            with self.subTest(value=value):\n                self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\n\nif __name__ == \"__main__\":\n    unittest.main(verbosity=2)\n"
+        }
+      }
+    },
+    {
+      "actions": [
+        {
+          "operation": "runtime_state",
+          "state": "8c56d7a17b1aeb676529bd106a65d3c8203f8a533849c93a7b5e04b75092668e"
+        },
+        {
+          "operation": "runtime_state",
+          "state": "212b50851adbc80a1c04a47e38274d7d196886b1511452678bdd327b09566e14"
+        },
+        {
+          "operation": "runtime_state",
+          "state": "8c56d7a17b1aeb676529bd106a65d3c8203f8a533849c93a7b5e04b75092668e"
+        },
+        {
+          "operation": "runtime_state",
+          "state": "603b8ced4942a925ecc9a911c38bedda3cefb6c7c8ed1962b41e3929e6d0c404"
+        }
+      ],
+      "final_artifacts": {
+        "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario fail_recover_fail.\r\n\r\nObserved add_offset(7): 5761\r\n",
+        "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario fail_recover_fail.\r\n\r\nObserved add_offset(7): 5761\r\n</pre></body></html>"
+      },
+      "id": "fail_recover_fail",
+      "runs": [
+        {
+          "artifacts": {
+            "build/paper/manuscript.md": "# Arithmetic example\r\n\r\nScenario fail_recover_fail.\r\n\r\nObserved add_offset(7): 5761\r\n",
+            "build/paper/preview.html": "<!doctype html><html><body><pre># Arithmetic example\r\n\r\nScenario fail_recover_fail.\r\n\r\nObserved add_offset(7): 5761\r\n</pre></body></html>"
+          },
+          "collector_cpu_ns": 0,
+          "run_id": "dd9258d9e78940ca6dad53ec9ada8780412d69389c44716c93e21679f0a5bfdc",
+          "runtime_state": "8c56d7a17b1aeb676529bd106a65d3c8203f8a533849c93a7b5e04b75092668e",
+          "source": "f587026d2d104ddfd36e80c90c2a9d32587a7c60843fe9d1b7c8f6d3f0a014a4",
+          "started": "2026-09-29T17:26:55.454787+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "30d542ccd016cca4f4de9a9b81d0d84d2bff05cc9498a2ce6ad5346169a987f5",
+          "wall_ns": 104268200
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "c9b74f9dccefca73acfdb08c8f99c834ed1a4729656c29c067f088848ab38003",
+          "runtime_state": "8c56d7a17b1aeb676529bd106a65d3c8203f8a533849c93a7b5e04b75092668e",
+          "source": "f587026d2d104ddfd36e80c90c2a9d32587a7c60843fe9d1b7c8f6d3f0a014a4",
+          "started": "2026-09-29T17:26:55.582937+00:00",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "1f3fdcdfb4730555fade7133e389ab688a5c86b8db1dda12ba0b147b2c2d998a",
+          "wall_ns": 103685400
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 31250000,
+          "run_id": "ca4030df0f7fd78df7c7e05a79742d3217bf7f2e8549ea3e0cf8dd3229bd4f0c",
+          "runtime_state": "8c56d7a17b1aeb676529bd106a65d3c8203f8a533849c93a7b5e04b75092668e",
+          "source": "f587026d2d104ddfd36e80c90c2a9d32587a7c60843fe9d1b7c8f6d3f0a014a4",
+          "started": "2026-09-29T17:26:55.687768+00:00",
+          "stderr_sha256": "adc85a3e43e94304c698bd5629d4c6d7cbf10f48e3418c23b14a52117b1be2da",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_ns": 265878300
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 0,
+          "run_id": "282bf42c122ece74c7862e908ba0898533685a88e18636e16daed4ebd9dcceaa",
+          "runtime_state": "212b50851adbc80a1c04a47e38274d7d196886b1511452678bdd327b09566e14",
+          "source": "f587026d2d104ddfd36e80c90c2a9d32587a7c60843fe9d1b7c8f6d3f0a014a4",
+          "started": "2026-09-29T17:26:55.969370+00:00",
+          "stderr_sha256": "e92cf3f7432d0742c58bee762dc9a46026c2577ad3122ae8ee7cebc15bc463c7",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_ns": 256399000
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "50ce861e29054a7139fb72df0183cb1cd45ba0955ad3aac3a3df8916158cf065",
+          "runtime_state": "8c56d7a17b1aeb676529bd106a65d3c8203f8a533849c93a7b5e04b75092668e",
+          "source": "f587026d2d104ddfd36e80c90c2a9d32587a7c60843fe9d1b7c8f6d3f0a014a4",
+          "started": "2026-09-29T17:26:56.230486+00:00",
+          "stderr_sha256": "adc85a3e43e94304c698bd5629d4c6d7cbf10f48e3418c23b14a52117b1be2da",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_ns": 273191200
+        },
+        {
+          "artifacts": {},
+          "collector_cpu_ns": 15625000,
+          "run_id": "254f7607e58c7f52ff6d87cf304b650c1fa43b99b95ebc4f8df6a22a79795cd7",
+          "runtime_state": "603b8ced4942a925ecc9a911c38bedda3cefb6c7c8ed1962b41e3929e6d0c404",
+          "source": "f587026d2d104ddfd36e80c90c2a9d32587a7c60843fe9d1b7c8f6d3f0a014a4",
+          "started": "2026-09-29T17:26:56.519883+00:00",
+          "stderr_sha256": "a1d5e3fdfb54f0f27f1a49d88b43932ca1a499e94f04c21bb42ee8cbe5618e0b",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_ns": 263722700
+        }
+      ],
+      "runtime_states": {
+        "212b50851adbc80a1c04a47e38274d7d196886b1511452678bdd327b09566e14": {
+          "readiness.marker": true,
+          "runtime.json": "{\"expected_offset\": 5755}"
+        },
+        "603b8ced4942a925ecc9a911c38bedda3cefb6c7c8ed1962b41e3929e6d0c404": {
+          "readiness.marker": true,
+          "runtime.json": "{\"expected_offset\": 5756}"
+        },
+        "8c56d7a17b1aeb676529bd106a65d3c8203f8a533849c93a7b5e04b75092668e": {
+          "readiness.marker": true,
+          "runtime.json": "{\"expected_offset\": 5754}"
+        }
+      },
+      "source_files": {
+        "f587026d2d104ddfd36e80c90c2a9d32587a7c60843fe9d1b7c8f6d3f0a014a4": {
+          "README.md": "# Arithmetic example\n\nScenario fail_recover_fail.\n",
+          "calc.py": "def add_offset(value):\n    return value + 5754\n",
+          "checks.py": "import html\nfrom pathlib import Path\nimport sys\nfrom calc import add_offset\n\nif sys.argv[1] == \"repository\":\n    paths = (\"calc.py\", \"test_calc.py\", \"README.md\", \"readiness.marker\")\n    missing = [p for p in paths if not Path(p).is_file()]\n    print(\"Required files:\", \", \".join(paths))\n    if missing:\n        print(\"Missing:\", \", \".join(missing))\n        raise SystemExit(1)\n    assert \"Arithmetic example\" in Path(\"README.md\").read_text()\n    print(\"Repository check passed\")\nelif sys.argv[1] == \"paper\":\n    source = Path(\"README.md\").read_text() + \"\\nObserved add_offset(7): \" + str(add_offset(7)) + \"\\n\"\n    folder = Path(\"build/paper\")\n    folder.mkdir(parents=True, exist_ok=True)\n    (folder / \"manuscript.md\").write_text(source, encoding=\"utf-8\")\n    (folder / \"preview.html\").write_text(\"<!doctype html><html><body><pre>\" + html.escape(source) + \"</pre></body></html>\", encoding=\"utf-8\")\n    print(\"Built Markdown and HTML from current source\")\nelse:\n    raise SystemExit(2)\n",
+          "test_calc.py": "import json\nfrom pathlib import Path\nimport unittest\nfrom calc import add_offset\n\nclass ArithmeticTests(unittest.TestCase):\n    def test_observed_contract(self):\n        state = json.loads(Path(\"runtime.json\").read_text())\n        for value in (-11, 0, 7, 123):\n            with self.subTest(value=value):\n                self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\n\nif __name__ == \"__main__\":\n    unittest.main(verbosity=2)\n"
+        }
+      }
+    }
+  ],
+  "python_sha256": "fda7026477256845afab371e354c4d512896665f1761939cb5887d0a9dec257a",
+  "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "schema": "executed_workflow_capture_v1",
+  "seed": 2026092902
+}
