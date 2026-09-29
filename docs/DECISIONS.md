@@ -532,3 +532,13 @@ and every old result; freeze the new runner, capture, analysis and full schedule
 before live dispatch. An accuracy tie at higher cost does not justify additional
 candidate complexity. This run measures reporting decisions, not autonomous
 task execution, native compaction or general program correctness.
+
+The original launch at `d7cb8e8` stopped on request 17 after four minutes without
+a response or usage event. Preserve the exact 17-attempt prefix, all sixteen
+answers and the failed identity `tests_later_failure-prose-final`. Freeze a
+separate extension for the 91 identities never dispatched; do not repeat the
+gap or revise cases/prompts based on scores. The combined ceiling remains 20
+planning credits, including the permanent 7.65 uncertainty reservation. A fresh
+four-case no-generation preflight passes. Any new transport failure stops the
+extension. Complete-pair analysis, if available, is explicitly post-stop and
+descriptive; it cannot restore the original complete 12-case comparison.

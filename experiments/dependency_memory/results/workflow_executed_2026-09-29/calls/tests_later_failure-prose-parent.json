@@ -1,0 +1,119 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "tests_later_failure-prose-parent",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.01474",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1791048507,
+        "usedPercent": 33,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Observed required-check runs on snapshot `21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917`:\\n- paper: successful (exit 0), run `5362b70ffab442374b2660dec11779acffdc34b47c406e4a6cf47e3e3271978d`; produced `build/paper/manuscript.md` hash `1269d61d477328a15aae4c1073703829ea402c1ef0ca914e08e3aa82f1ddc0cf` and `build/paper/preview.html` hash `fbe1a392ca1c6dbba1da57d86838af7da5b95b8cb06ca69fc679f234ac8a1282`.\\n- repository: successful (exit 0), run `a607ea75b1a3cf840d2d89c43a3b2919db01b3fd99eb5542781cc307a5b4b467`.\\n- tests: successful (exit 0), run `bb005f1213652d694f0dd027c6d699b4904b110171438a2da246bd1fcdfc8efe`.\\nOnly these runs observed; no later runs or failures observed. Artifact hashes are bound to this paper run; no final inventory hashes observed.\"}",
+  "request": {
+    "instruction": "Report whether the required checks have current successful evidence. For each required check use its latest observed run on the final source snapshot; a later failure supersedes an earlier success. A receipt is valid only if its bound artifact hashes match the final inventory. Return strict JSON with exactly ready (boolean), needs_work (sorted check names), and evidence (mapping each currently successful required check to its exact run_id). Include no extra fields. A missing, failed or stale check belongs in needs_work, not evidence. Do not invent evidence or shorten identifiers.\nPreserve the facts needed by the public rule after another memory reduction and a later source or artifact change. Prioritize exact snapshot/run identifiers, check names, chronological supersession, failures and artifact bindings. Public rules will be repeated; do not spend memory copying them. Use concise prose. Return only memory within the stated UTF-8 byte cap. At the second boundary use only admitted parent memory and new public observations.\nReturn an object with one string field memory. Its decoded UTF-8 bytes must be <= 4096.",
+    "observation": {
+      "tool_observations": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "paper"
+          ],
+          "artifacts": {
+            "build/paper/manuscript.md": "1269d61d477328a15aae4c1073703829ea402c1ef0ca914e08e3aa82f1ddc0cf",
+            "build/paper/preview.html": "fbe1a392ca1c6dbba1da57d86838af7da5b95b8cb06ca69fc679f234ac8a1282"
+          },
+          "check": "paper",
+          "returncode": 0,
+          "run_id": "5362b70ffab442374b2660dec11779acffdc34b47c406e4a6cf47e3e3271978d",
+          "snapshot": "21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917",
+          "stderr": "",
+          "stdout": "Built Markdown and HTML from current source\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "repository"
+          ],
+          "artifacts": {},
+          "check": "repository",
+          "returncode": 0,
+          "run_id": "a607ea75b1a3cf840d2d89c43a3b2919db01b3fd99eb5542781cc307a5b4b467",
+          "snapshot": "21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917",
+          "stderr": "",
+          "stdout": "Required files: calc.py, test_calc.py, README.md, readiness.marker\r\nRepository check passed\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 0,
+          "run_id": "bb005f1213652d694f0dd027c6d699b4904b110171438a2da246bd1fcdfc8efe",
+          "snapshot": "21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.001s\r\n\r\nOK\r\n",
+          "stdout": ""
+        }
+      ]
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "parent",
+    "version": "workflow_observed_luna6_dev_v1"
+  },
+  "request_sha256": "51f3cab7a0f15129808957b397950e29781ef65b6a6640ef46f5b93fbbee814e",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Observed required-check runs on snapshot `21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917`:\n- paper: successful (exit 0), run `5362b70ffab442374b2660dec11779acffdc34b47c406e4a6cf47e3e3271978d`; produced `build/paper/manuscript.md` hash `1269d61d477328a15aae4c1073703829ea402c1ef0ca914e08e3aa82f1ddc0cf` and `build/paper/preview.html` hash `fbe1a392ca1c6dbba1da57d86838af7da5b95b8cb06ca69fc679f234ac8a1282`.\n- repository: successful (exit 0), run `a607ea75b1a3cf840d2d89c43a3b2919db01b3fd99eb5542781cc307a5b4b467`.\n- tests: successful (exit 0), run `bb005f1213652d694f0dd027c6d699b4904b110171438a2da246bd1fcdfc8efe`.\nOnly these runs observed; no later runs or failures observed. Artifact hashes are bound to this paper run; no final inventory hashes observed."
+  },
+  "started_at": "2026-09-29T17:35:07.980095+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 3416,
+    "outputTokens": 496,
+    "reasoningOutputTokens": 157,
+    "totalTokens": 3912
+  },
+  "usage_events": 1,
+  "wall_seconds": 19.95228720002342,
+  "wire_body_byte_bound": 22997
+}

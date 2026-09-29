@@ -1,0 +1,109 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "error": "appserver_timeout",
+  "error_type": "TransportError",
+  "identity": "tests_later_failure-prose-final",
+  "model": "gpt-6-luna",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1791048507,
+        "usedPercent": 33,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "request": {
+    "instruction": "Report whether the required checks have current successful evidence. For each required check use its latest observed run on the final source snapshot; a later failure supersedes an earlier success. A receipt is valid only if its bound artifact hashes match the final inventory. Return strict JSON with exactly ready (boolean), needs_work (sorted check names), and evidence (mapping each currently successful required check to its exact run_id). Include no extra fields. A missing, failed or stale check belongs in needs_work, not evidence. Do not invent evidence or shorten identifiers.\nApply the public rule to the supplied memory or authorized recovered observations and the final public snapshot, required checks and artifact inventory. Return only the specified JSON object. If evidence is insufficient, include that check in needs_work. Do not consult any filesystem, prior conversation or undeclared tool.\nSerialization: include all three evidence keys paper, repository, tests; use null for absent evidence.",
+    "observation": {
+      "final_public_state": {
+        "artifacts": {
+          "build/paper/manuscript.md": "1269d61d477328a15aae4c1073703829ea402c1ef0ca914e08e3aa82f1ddc0cf",
+          "build/paper/preview.html": "fbe1a392ca1c6dbba1da57d86838af7da5b95b8cb06ca69fc679f234ac8a1282"
+        },
+        "required_checks": [
+          "tests"
+        ],
+        "snapshot": "21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917"
+      },
+      "memory": "Snapshot 21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917; announced scope includes tests. Tests: run bb005f1213652d694f0dd027c6d699b4904b110171438a2da246bd1fcdfc8efe succeeded, then later run 60e8c1f47b26ed85a26505d47ba37cea5058ee8f762b2c413bb29a4c0548c6e9 failed (exit 1); failure supersedes success. Preserve both runs chronologically. Other observed checks: paper success run 5362b70ffab442374b2660dec11779acffdc34b47c406e4a6cf47e3e3271978d; artifacts manuscript.md hash 1269d61d477328a15aae4c1073703829ea402c1ef0ca914e08e3aa82f1ddc0cf, preview.html hash fbe1a392ca1c6dbba1da57d86838af7da5b95b8cb06ca69fc679f234ac8a1282. Repository success run a607ea75b1a3cf840d2d89c43a3b2919db01b3fd99eb5542781cc307a5b4b467. No final inventory bindings known."
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence": {
+          "additionalProperties": false,
+          "properties": {
+            "paper": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "repository": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "tests": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "paper",
+            "repository",
+            "tests"
+          ],
+          "type": "object"
+        },
+        "needs_work": {
+          "items": {
+            "enum": [
+              "paper",
+              "repository",
+              "tests"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "ready": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "ready",
+        "needs_work",
+        "evidence"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "workflow_observed_luna6_dev_v1"
+  },
+  "request_sha256": "b4ba00ea23eb087679f334a858824583e997665a9101cbfbdeaecf68f2b3415e",
+  "reservation_credits": "7.65",
+  "started_at": "2026-09-29T17:36:16.670152+00:00",
+  "status": "transport_failure",
+  "wall_seconds": 241.2940721999621,
+  "wire_body_byte_bound": 23313
+}

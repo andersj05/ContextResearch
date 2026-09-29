@@ -1,0 +1,131 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "tests_later_failure-full-final",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0127225",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1791048507,
+        "usedPercent": 33,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"ready\":false,\"needs_work\":[\"tests\"],\"evidence\":{\"paper\":null,\"repository\":null,\"tests\":null}}",
+  "request": {
+    "instruction": "Report whether the required checks have current successful evidence. For each required check use its latest observed run on the final source snapshot; a later failure supersedes an earlier success. A receipt is valid only if its bound artifact hashes match the final inventory. Return strict JSON with exactly ready (boolean), needs_work (sorted check names), and evidence (mapping each currently successful required check to its exact run_id). Include no extra fields. A missing, failed or stale check belongs in needs_work, not evidence. Do not invent evidence or shorten identifiers.\nApply the public rule to the supplied memory or authorized recovered observations and the final public snapshot, required checks and artifact inventory. Return only the specified JSON object. If evidence is insufficient, include that check in needs_work. Do not consult any filesystem, prior conversation or undeclared tool.\nSerialization: include all three evidence keys paper, repository, tests; use null for absent evidence.",
+    "observation": {
+      "final_public_state": {
+        "artifacts": {
+          "build/paper/manuscript.md": "1269d61d477328a15aae4c1073703829ea402c1ef0ca914e08e3aa82f1ddc0cf",
+          "build/paper/preview.html": "fbe1a392ca1c6dbba1da57d86838af7da5b95b8cb06ca69fc679f234ac8a1282"
+        },
+        "required_checks": [
+          "tests"
+        ],
+        "snapshot": "21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917"
+      },
+      "memory": "[{\"argv\":[\"python\",\"-B\",\"checks.py\",\"paper\"],\"artifacts\":{\"build/paper/manuscript.md\":\"1269d61d477328a15aae4c1073703829ea402c1ef0ca914e08e3aa82f1ddc0cf\",\"build/paper/preview.html\":\"fbe1a392ca1c6dbba1da57d86838af7da5b95b8cb06ca69fc679f234ac8a1282\"},\"check\":\"paper\",\"returncode\":0,\"run_id\":\"5362b70ffab442374b2660dec11779acffdc34b47c406e4a6cf47e3e3271978d\",\"snapshot\":\"21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917\",\"stderr\":\"\",\"stdout\":\"Built Markdown and HTML from current source\\r\\n\"},{\"argv\":[\"python\",\"-B\",\"checks.py\",\"repository\"],\"artifacts\":{},\"check\":\"repository\",\"returncode\":0,\"run_id\":\"a607ea75b1a3cf840d2d89c43a3b2919db01b3fd99eb5542781cc307a5b4b467\",\"snapshot\":\"21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917\",\"stderr\":\"\",\"stdout\":\"Required files: calc.py, test_calc.py, README.md, readiness.marker\\r\\nRepository check passed\\r\\n\"},{\"argv\":[\"python\",\"-B\",\"test_calc.py\"],\"artifacts\":{},\"check\":\"tests\",\"returncode\":0,\"run_id\":\"bb005f1213652d694f0dd027c6d699b4904b110171438a2da246bd1fcdfc8efe\",\"snapshot\":\"21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917\",\"stderr\":\"test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... ok\\r\\n\\r\\n----------------------------------------------------------------------\\r\\nRan 1 test in 0.001s\\r\\n\\r\\nOK\\r\\n\",\"stdout\":\"\"},{\"argv\":[\"python\",\"-B\",\"test_calc.py\"],\"artifacts\":{},\"check\":\"tests\",\"returncode\":1,\"run_id\":\"60e8c1f47b26ed85a26505d47ba37cea5058ee8f762b2c413bb29a4c0548c6e9\",\"snapshot\":\"21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917\",\"stderr\":\"test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... \\r\\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=-11) ... FAIL\\r\\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=0) ... FAIL\\r\\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=7) ... FAIL\\r\\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=123) ... FAIL\\r\\n\\r\\n======================================================================\\r\\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=-11)\\r\\n----------------------------------------------------------------------\\r\\nTraceback (most recent call last):\\r\\n  File \\\"C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Temp\\\\executed-workflow-ygvbmom2\\\\test_calc.py\\\", line 11, in test_observed_contract\\r\\n    self.assertEqual(value + state[\\\"expected_offset\\\"], add_offset(value))\\r\\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\r\\nAssertionError: 4070 != 4069\\r\\n\\r\\n======================================================================\\r\\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=0)\\r\\n----------------------------------------------------------------------\\r\\nTraceback (most recent call last):\\r\\n  File \\\"C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Temp\\\\executed-workflow-ygvbmom2\\\\test_calc.py\\\", line 11, in test_observed_contract\\r\\n    self.assertEqual(value + state[\\\"expected_offset\\\"], add_offset(value))\\r\\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\r\\nAssertionError: 4081 != 4080\\r\\n\\r\\n======================================================================\\r\\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=7)\\r\\n----------------------------------------------------------------------\\r\\nTraceback (most recent call last):\\r\\n  File \\\"C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Temp\\\\executed-workflow-ygvbmom2\\\\test_calc.py\\\", line 11, in test_observed_contract\\r\\n    self.assertEqual(value + state[\\\"expected_offset\\\"], add_offset(value))\\r\\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\r\\nAssertionError: 4088 != 4087\\r\\n\\r\\n======================================================================\\r\\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=123)\\r\\n----------------------------------------------------------------------\\r\\nTraceback (most recent call last):\\r\\n  File \\\"C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Temp\\\\executed-workflow-ygvbmom2\\\\test_calc.py\\\", line 11, in test_observed_contract\\r\\n    self.assertEqual(value + state[\\\"expected_offset\\\"], add_offset(value))\\r\\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\r\\nAssertionError: 4204 != 4203\\r\\n\\r\\n----------------------------------------------------------------------\\r\\nRan 1 test in 0.003s\\r\\n\\r\\nFAILED (failures=4)\\r\\n\",\"stdout\":\"\"}]"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence": {
+          "additionalProperties": false,
+          "properties": {
+            "paper": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "repository": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "tests": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "paper",
+            "repository",
+            "tests"
+          ],
+          "type": "object"
+        },
+        "needs_work": {
+          "items": {
+            "enum": [
+              "paper",
+              "repository",
+              "tests"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "ready": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "ready",
+        "needs_work",
+        "evidence"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "workflow_observed_luna6_dev_v1"
+  },
+  "request_sha256": "9a8bcb826d09a5c3114829e11b2c11e35910d0f9a6dc2be2891ad073622e2945",
+  "reservation_credits": "7.65",
+  "response": {
+    "evidence": {
+      "paper": null,
+      "repository": null,
+      "tests": null
+    },
+    "needs_work": [
+      "tests"
+    ],
+    "ready": false
+  },
+  "started_at": "2026-09-29T17:36:00.291256+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 4604,
+    "outputTokens": 97,
+    "reasoningOutputTokens": 59,
+    "totalTokens": 4701
+  },
+  "usage_events": 1,
+  "wall_seconds": 5.364441199984867,
+  "wire_body_byte_bound": 28177
+}

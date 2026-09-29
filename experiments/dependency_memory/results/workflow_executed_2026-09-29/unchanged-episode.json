@@ -1,0 +1,186 @@
+{
+  "call_ids": {
+    "checked": [
+      "unchanged-checked-parent",
+      "unchanged-checked-child",
+      "unchanged-checked-final"
+    ],
+    "direct": [
+      "unchanged-direct-final"
+    ],
+    "full": [
+      "unchanged-full-final"
+    ],
+    "indexed": [
+      "unchanged-indexed-final"
+    ],
+    "prose": [
+      "unchanged-prose-parent",
+      "unchanged-prose-child",
+      "unchanged-prose-final"
+    ]
+  },
+  "finals": {
+    "checked": {
+      "identity": "unchanged-checked-final",
+      "memory_bytes": 800
+    },
+    "direct": {
+      "identity": "unchanged-direct-final",
+      "memory_bytes": 800
+    },
+    "full": {
+      "identity": "unchanged-full-final",
+      "memory_bytes": 1340
+    },
+    "indexed": {
+      "identity": "unchanged-indexed-final",
+      "memory_bytes": 1340
+    },
+    "prose": {
+      "identity": "unchanged-prose-final",
+      "memory_bytes": 695
+    }
+  },
+  "id": "unchanged",
+  "index_storage": {
+    "byte_nanoseconds": 71818987487500,
+    "bytes": 1375,
+    "scope": "measured retention during interleaved development schedule"
+  },
+  "local_events": {
+    "checked": [
+      {
+        "cpu_ns": 0,
+        "name": "parent_check_and_fallback",
+        "read_bytes": 2212,
+        "wall_ns": 203400,
+        "write_bytes": 962
+      },
+      {
+        "cpu_ns": 0,
+        "name": "child_check_and_fallback",
+        "read_bytes": 1672,
+        "wall_ns": 138300,
+        "write_bytes": 962
+      }
+    ],
+    "direct": [
+      {
+        "cpu_ns": 0,
+        "name": "parent_projection",
+        "read_bytes": 1340,
+        "wall_ns": 95900,
+        "write_bytes": 858
+      },
+      {
+        "cpu_ns": 0,
+        "name": "child_projection",
+        "read_bytes": 800,
+        "wall_ns": 44400,
+        "write_bytes": 858
+      }
+    ],
+    "full": [
+      {
+        "cpu_ns": 0,
+        "name": "read_full_history",
+        "read_bytes": 1340,
+        "wall_ns": 28300,
+        "write_bytes": 1468
+      }
+    ],
+    "indexed": [
+      {
+        "cpu_ns": 0,
+        "name": "build_raw_index",
+        "read_bytes": 1340,
+        "wall_ns": 30300,
+        "write_bytes": 1375
+      },
+      {
+        "cpu_ns": 0,
+        "name": "index_new_observations",
+        "read_bytes": 2,
+        "wall_ns": 1800,
+        "write_bytes": 1375
+      },
+      {
+        "cpu_ns": 0,
+        "name": "retrieve_all_requested_records",
+        "read_bytes": 1375,
+        "wall_ns": 27500,
+        "write_bytes": 1468
+      }
+    ],
+    "prose": [
+      {
+        "cpu_ns": 0,
+        "name": "parent_admission",
+        "read_bytes": 639,
+        "wall_ns": 18200,
+        "write_bytes": 689
+      },
+      {
+        "cpu_ns": 0,
+        "name": "child_admission",
+        "read_bytes": 708,
+        "wall_ns": 14000,
+        "write_bytes": 758
+      }
+    ]
+  },
+  "memories": {
+    "checked_child": {
+      "audit": {
+        "accepted": true,
+        "certificate_passed": true,
+        "fallback": false,
+        "proposal_bytes": 800,
+        "reason": "accepted"
+      },
+      "memory": "[{\"check\":\"paper\",\"snapshot\":\"192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666\",\"run_id\":\"031953f1ae994f939bb6e7956bb6d1f7c63e3fb8d8113e9bc8819873869bbc32\",\"returncode\":0,\"artifacts\":{\"build/paper/manuscript.md\":\"4efc14724595f0fdf5b6846d9be57e7b7cfbb44fc45b9450df787f61eb8583ce\",\"build/paper/preview.html\":\"f46ef2a26bd79e20d2cc2d140396d9b37d5120d62a66ec42e7e3029a8b63a85a\"}},{\"check\":\"repository\",\"snapshot\":\"192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666\",\"run_id\":\"1fc83942dc7223ab344b5a94ba0e64aa2a3b03ae2bc803a59ccaf1ca3f27e77c\",\"returncode\":0,\"artifacts\":{}},{\"check\":\"tests\",\"snapshot\":\"192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666\",\"run_id\":\"90c02b6aabe1200bd2da8b8a70f43410766ff187c4e2206f0369b29cd29bcbf3\",\"returncode\":0,\"artifacts\":{}}]"
+    },
+    "checked_parent": {
+      "audit": {
+        "accepted": true,
+        "certificate_passed": true,
+        "fallback": false,
+        "proposal_bytes": 800,
+        "reason": "accepted"
+      },
+      "memory": "[{\"check\":\"paper\",\"snapshot\":\"192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666\",\"run_id\":\"031953f1ae994f939bb6e7956bb6d1f7c63e3fb8d8113e9bc8819873869bbc32\",\"returncode\":0,\"artifacts\":{\"build/paper/manuscript.md\":\"4efc14724595f0fdf5b6846d9be57e7b7cfbb44fc45b9450df787f61eb8583ce\",\"build/paper/preview.html\":\"f46ef2a26bd79e20d2cc2d140396d9b37d5120d62a66ec42e7e3029a8b63a85a\"}},{\"check\":\"repository\",\"snapshot\":\"192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666\",\"run_id\":\"1fc83942dc7223ab344b5a94ba0e64aa2a3b03ae2bc803a59ccaf1ca3f27e77c\",\"returncode\":0,\"artifacts\":{}},{\"check\":\"tests\",\"snapshot\":\"192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666\",\"run_id\":\"90c02b6aabe1200bd2da8b8a70f43410766ff187c4e2206f0369b29cd29bcbf3\",\"returncode\":0,\"artifacts\":{}}]"
+    },
+    "direct_child": {
+      "audit": {
+        "infeasible": false,
+        "proposal_bytes": 800
+      },
+      "memory": "[{\"artifacts\":{\"build/paper/manuscript.md\":\"4efc14724595f0fdf5b6846d9be57e7b7cfbb44fc45b9450df787f61eb8583ce\",\"build/paper/preview.html\":\"f46ef2a26bd79e20d2cc2d140396d9b37d5120d62a66ec42e7e3029a8b63a85a\"},\"check\":\"paper\",\"returncode\":0,\"run_id\":\"031953f1ae994f939bb6e7956bb6d1f7c63e3fb8d8113e9bc8819873869bbc32\",\"snapshot\":\"192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666\"},{\"artifacts\":{},\"check\":\"repository\",\"returncode\":0,\"run_id\":\"1fc83942dc7223ab344b5a94ba0e64aa2a3b03ae2bc803a59ccaf1ca3f27e77c\",\"snapshot\":\"192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666\"},{\"artifacts\":{},\"check\":\"tests\",\"returncode\":0,\"run_id\":\"90c02b6aabe1200bd2da8b8a70f43410766ff187c4e2206f0369b29cd29bcbf3\",\"snapshot\":\"192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666\"}]"
+    },
+    "direct_parent": {
+      "audit": {
+        "infeasible": false,
+        "proposal_bytes": 800
+      },
+      "memory": "[{\"artifacts\":{\"build/paper/manuscript.md\":\"4efc14724595f0fdf5b6846d9be57e7b7cfbb44fc45b9450df787f61eb8583ce\",\"build/paper/preview.html\":\"f46ef2a26bd79e20d2cc2d140396d9b37d5120d62a66ec42e7e3029a8b63a85a\"},\"check\":\"paper\",\"returncode\":0,\"run_id\":\"031953f1ae994f939bb6e7956bb6d1f7c63e3fb8d8113e9bc8819873869bbc32\",\"snapshot\":\"192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666\"},{\"artifacts\":{},\"check\":\"repository\",\"returncode\":0,\"run_id\":\"1fc83942dc7223ab344b5a94ba0e64aa2a3b03ae2bc803a59ccaf1ca3f27e77c\",\"snapshot\":\"192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666\"},{\"artifacts\":{},\"check\":\"tests\",\"returncode\":0,\"run_id\":\"90c02b6aabe1200bd2da8b8a70f43410766ff187c4e2206f0369b29cd29bcbf3\",\"snapshot\":\"192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666\"}]"
+    },
+    "prose_child": {
+      "audit": {
+        "accepted": true,
+        "proposal_bytes": 695,
+        "reason": "accepted"
+      },
+      "memory": "Final observed source snapshot: 192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666. Latest observed runs on it (no later supersession/failure reported): paper success run_id 031953f1ae994f939bb6e7956bb6d1f7c63e3fb8d8113e9bc8819873869bbc32; artifact bindings: build/paper/manuscript.md=4efc14724595f0fdf5b6846d9be57e7b7cfbb44fc45b9450df787f61eb8583ce; build/paper/preview.html=f46ef2a26bd79e20d2cc2d140396d9b37d5120d62a66ec42e7e3029a8b63a85a. repository success run_id 1fc83942dc7223ab344b5a94ba0e64aa2a3b03ae2bc803a59ccaf1ca3f27e77c; no artifacts. tests success run_id 90c02b6aabe1200bd2da8b8a70f43410766ff187c4e2206f0369b29cd29bcbf3; no artifacts. Scope: paper, repository, tests."
+    },
+    "prose_parent": {
+      "audit": {
+        "accepted": true,
+        "proposal_bytes": 626,
+        "reason": "accepted"
+      },
+      "memory": "Final observed snapshot: 192f303787a1cb290c8598ea47bd8167718d6a7a2b710219ac5eebbda2614666. Successful runs on it: paper 031953f1ae994f939bb6e7956bb6d1f7c63e3fb8d8113e9bc8819873869bbc32; binds build/paper/manuscript.md=4efc14724595f0fdf5b6846d9be57e7b7cfbb44fc45b9450df787f61eb8583ce and build/paper/preview.html=f46ef2a26bd79e20d2cc2d140396d9b37d5120d62a66ec42e7e3029a8b63a85a. repository 1fc83942dc7223ab344b5a94ba0e64aa2a3b03ae2bc803a59ccaf1ca3f27e77c, success, no artifacts. tests 90c02b6aabe1200bd2da8b8a70f43410766ff187c4e2206f0369b29cd29bcbf3, success, no artifacts. Only observed runs; no supersession/failure reported."
+    }
+  },
+  "origin": "constructed_scenario_with_observed_subprocesses"
+}

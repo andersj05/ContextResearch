@@ -1,0 +1,119 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "tests_later_failure-checked-parent",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.011483",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1791048507,
+        "usedPercent": 33,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"[{\\\"check\\\":\\\"paper\\\",\\\"snapshot\\\":\\\"21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917\\\",\\\"run_id\\\":\\\"5362b70ffab442374b2660dec11779acffdc34b47c406e4a6cf47e3e3271978d\\\",\\\"returncode\\\":0,\\\"artifacts\\\":{\\\"build/paper/manuscript.md\\\":\\\"1269d61d477328a15aae4c1073703829ea402c1ef0ca914e08e3aa82f1ddc0cf\\\",\\\"build/paper/preview.html\\\":\\\"fbe1a392ca1c6dbba1da57d86838af7da5b95b8cb06ca69fc679f234ac8a1282\\\"}},{\\\"check\\\":\\\"repository\\\",\\\"snapshot\\\":\\\"21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917\\\",\\\"run_id\\\":\\\"a607ea75b1a3cf840d2d89c43a3b2919db01b3fd99eb5542781cc307a5b4b467\\\",\\\"returncode\\\":0,\\\"artifacts\\\":{}},{\\\"check\\\":\\\"tests\\\",\\\"snapshot\\\":\\\"21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917\\\",\\\"run_id\\\":\\\"bb005f1213652d694f0dd027c6d699b4904b110171438a2da246bd1fcdfc8efe\\\",\\\"returncode\\\":0,\\\"artifacts\\\":{}}]\"}",
+  "request": {
+    "instruction": "Report whether the required checks have current successful evidence. For each required check use its latest observed run on the final source snapshot; a later failure supersedes an earlier success. A receipt is valid only if its bound artifact hashes match the final inventory. Return strict JSON with exactly ready (boolean), needs_work (sorted check names), and evidence (mapping each currently successful required check to its exact run_id). Include no extra fields. A missing, failed or stale check belongs in needs_work, not evidence. Do not invent evidence or shorten identifiers.\nEncode a compact JSON receipt table using only available observations. Preserve check, snapshot, run_id, returncode and artifact bindings for the latest run of every possible required check on each snapshot still in scope. Retain failures, exact identifiers and the fact that later runs supersede earlier ones. Do not encode only successful checks. Return only memory within the stated UTF-8 byte cap. At the second boundary use only admitted parent memory and new public observations.\nUse a JSON list of receipt objects with exactly the fields check, snapshot, run_id, returncode, artifacts. Return an object with one string field memory. Its decoded UTF-8 bytes must be <= 4096.",
+    "observation": {
+      "tool_observations": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "paper"
+          ],
+          "artifacts": {
+            "build/paper/manuscript.md": "1269d61d477328a15aae4c1073703829ea402c1ef0ca914e08e3aa82f1ddc0cf",
+            "build/paper/preview.html": "fbe1a392ca1c6dbba1da57d86838af7da5b95b8cb06ca69fc679f234ac8a1282"
+          },
+          "check": "paper",
+          "returncode": 0,
+          "run_id": "5362b70ffab442374b2660dec11779acffdc34b47c406e4a6cf47e3e3271978d",
+          "snapshot": "21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917",
+          "stderr": "",
+          "stdout": "Built Markdown and HTML from current source\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "repository"
+          ],
+          "artifacts": {},
+          "check": "repository",
+          "returncode": 0,
+          "run_id": "a607ea75b1a3cf840d2d89c43a3b2919db01b3fd99eb5542781cc307a5b4b467",
+          "snapshot": "21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917",
+          "stderr": "",
+          "stdout": "Required files: calc.py, test_calc.py, README.md, readiness.marker\r\nRepository check passed\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 0,
+          "run_id": "bb005f1213652d694f0dd027c6d699b4904b110171438a2da246bd1fcdfc8efe",
+          "snapshot": "21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.001s\r\n\r\nOK\r\n",
+          "stdout": ""
+        }
+      ]
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "parent",
+    "version": "workflow_observed_luna6_dev_v1"
+  },
+  "request_sha256": "c8704b326c0f87a4dc8d410a15b0f6e7aa02ba103fe3f2c1ff7c03a929b7c160",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "[{\"check\":\"paper\",\"snapshot\":\"21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917\",\"run_id\":\"5362b70ffab442374b2660dec11779acffdc34b47c406e4a6cf47e3e3271978d\",\"returncode\":0,\"artifacts\":{\"build/paper/manuscript.md\":\"1269d61d477328a15aae4c1073703829ea402c1ef0ca914e08e3aa82f1ddc0cf\",\"build/paper/preview.html\":\"fbe1a392ca1c6dbba1da57d86838af7da5b95b8cb06ca69fc679f234ac8a1282\"}},{\"check\":\"repository\",\"snapshot\":\"21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917\",\"run_id\":\"a607ea75b1a3cf840d2d89c43a3b2919db01b3fd99eb5542781cc307a5b4b467\",\"returncode\":0,\"artifacts\":{}},{\"check\":\"tests\",\"snapshot\":\"21ccb6db01ba6014fb5bae7d7807ff650c488dbe23a2620a9569a4f1c84c4917\",\"run_id\":\"bb005f1213652d694f0dd027c6d699b4904b110171438a2da246bd1fcdfc8efe\",\"returncode\":0,\"artifacts\":{}}]"
+  },
+  "started_at": "2026-09-29T17:34:50.383136+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3446,
+    "outputTokens": 552,
+    "reasoningOutputTokens": 158,
+    "totalTokens": 3998
+  },
+  "usage_events": 1,
+  "wall_seconds": 17.099855600041337,
+  "wire_body_byte_bound": 23138
+}

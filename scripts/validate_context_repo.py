@@ -709,6 +709,19 @@ def main() -> int:
             counts["workflow_live_planning_credits"] = evidence.get("known_planning_credits")
         except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
             errors.append(f"Observed-workflow live comparison validation failed: {error}")
+    executed_workflow_directory = ROOT / "experiments/dependency_memory/results/workflow_executed_2026-09-29"
+    if (executed_workflow_directory / "completion.json").is_file():
+        try:
+            from experiments.dependency_memory.workflow_executed.analyze import analyze as analyze_executed_workflow
+            evidence = analyze_executed_workflow(executed_workflow_directory)
+            saved = json.loads((executed_workflow_directory / "analysis.json").read_text(encoding="utf-8"))
+            if evidence != saved:
+                raise ValueError("Executed-workflow saved analysis differs from request/answer replay")
+            counts["executed_workflow_status"] = evidence["status"]
+            counts["executed_workflow_model_requests"] = evidence.get("actual_model_calls")
+            counts["executed_workflow_planning_credits"] = evidence.get("known_planning_credits")
+        except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
+            errors.append(f"Executed-workflow live comparison validation failed: {error}")
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"

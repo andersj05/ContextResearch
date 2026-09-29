@@ -13,7 +13,13 @@ subprocess observations, including failure/recovery and narrow final queries.
 Offline reproduction checks saved source/runtime bytes against all 48 exit codes
 and artifact outputs. These belong to one constructed fixture family and do not
 fill the untouched real-workflow slots. No new model result is claimed here
-until the frozen schedule completes and saved evidence is analyzed.
+until the frozen schedule completes and saved evidence is analyzed. That launch
+stopped at call 17 on `appserver_timeout`: 16 metered answers, 0.1742595 known
+credits and one permanent missing prose-final answer. A separately frozen
+[continuation](../experiments/dependency_memory/workflow_executed_continuation/CONTRACT.md)
+dispatches only the 91 never-attempted identities, retaining the failed call's
+7.65-credit reservation inside the original 20-credit ceiling. The original
+complete 12-case criterion remains unassessable regardless of the extension.
 
 The separately frozen September 29 [live development comparison](../research/WORKFLOW_LUNA6_COMPARISON_2026-09-29.md)
 completed all **36 GPT-6 Luna medium calls** after launch freeze `ef31373`, with
