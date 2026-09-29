@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "split": "development",
+  "origin": "observed_local_commands",
+  "captured_utc": "2026-09-29T16:03:18.245469+00:00",
+  "python": "3.14.2",
+  "source": {
+    "commit": "40cec057988c071863f5ff2bf0a32d798a258f83",
+    "tree": "09cada8a37340510b558263d367b89c8cd2620b8"
+  },
+  "records": [
+    {
+      "check": "tests",
+      "argv": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "experiments/dependency_memory",
+        "-v"
+      ],
+      "returncode": 0,
+      "elapsed_ns": 65613239900,
+      "snapshot": "09cada8a37340510b558263d367b89c8cd2620b8",
+      "stdout": {
+        "path": "tests.stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "stderr": {
+        "path": "tests.stderr.txt",
+        "sha256": "3b977ef7c9a4d0adf0ac97e7701ef74fdb0d167ff856a9f7ed3dbc384f51c6f2",
+        "bytes": 62755
+      },
+      "artifacts": {},
+      "run_id": "d7798fd5ba2103614912db346409ed7983487946ccf2d05918ed430a5de634d6"
+    },
+    {
+      "check": "repository",
+      "argv": [
+        "python",
+        "scripts/validate_context_repo.py"
+      ],
+      "returncode": 0,
+      "elapsed_ns": 95571087200,
+      "snapshot": "09cada8a37340510b558263d367b89c8cd2620b8",
+      "stdout": {
+        "path": "repository.stdout.txt",
+        "sha256": "36f13cfcb32a05927971f533fd7a51098dd9b868a3b7b986c7bec0c84af4ae87",
+        "bytes": 3510
+      },
+      "stderr": {
+        "path": "repository.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "artifacts": {},
+      "run_id": "9898533afb7afeeff47ea3bb12fc9ddbebe02a716a34f6e1f29a88bab30e4eaf"
+    },
+    {
+      "check": "paper",
+      "argv": [
+        "python",
+        "scripts/build_paper.py"
+      ],
+      "returncode": 0,
+      "elapsed_ns": 137895600,
+      "snapshot": "09cada8a37340510b558263d367b89c8cd2620b8",
+      "stdout": {
+        "path": "paper.stdout.txt",
+        "sha256": "fe7a0cafb1d861d8b462900ed235ac45281bdcb741ef116adf8d4dfd6b233b5a",
+        "bytes": 112
+      },
+      "stderr": {
+        "path": "paper.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "artifacts": {
+        "build/paper/manuscript.md": "f23dd9a06fe4850527784b3d4d48436311bedf10cd9d0e170ce65b70afd8d431",
+        "build/paper/preview.html": "33f6a7e4ca4f1eb6e90fb80cbfa85fefcbf93edcf86b5c784b31896e8f747eed"
+      },
+      "run_id": "e11ae1aaaac2035dd833b1642049be0a4c10cbdcf9b866242b956099d0da0caa"
+    }
+  ],
+  "limitations": [
+    "Known repository and already inspected workflow.",
+    "Only command execution is observed; imposed memory boundaries and future changes are replay interventions.",
+    "Not externally sourced, held out, or a model-performance observation."
+  ]
+}

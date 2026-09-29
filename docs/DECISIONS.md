@@ -460,3 +460,27 @@ passes both certificates, so compatibility must not be described as semantic
 sufficiency. These fixes are software correctness work, not a new empirical
 milestone or a reason to repeat model calls on inspected cases. The next
 empirical gate remains an externally observed workflow with a frozen executor.
+
+## September 29: freeze a concrete evaluation packet before another model study
+
+The user requested the evaluation packet proposed after reviewing the negative
+cross-record comparison. Use the repository's actual validation/build workflow
+as a development capture and a narrow executable reporting task. Freeze the
+terminal rule, five comparisons, two byte caps, exact prompts, practical go/no-go
+margins and proposed 144-call / USD 20 ceiling in the
+[packet](../experiments/dependency_memory/workflow_eval/PROTOCOL.md).
+
+The grader must read complete raw receipt metadata independently of the memory
+method and reject stale revisions, superseded successes and mismatched build
+artifacts. Preserve an easy case where direct records fit comfortably. Do not
+tune caps to manufacture a candidate advantage. The observed clean source is
+`40cec05`; the three validation commands passed. Their saved stdout/stderr and
+capture driver are controlled evidence, not an uncontrolled session transcript.
+
+This single known local capture is development evidence only. Test mutations
+are synthetic controls. Twelve uncollected episodes are not a held-out dataset,
+and the design freeze is not a live-launch contract. No model calls or spending
+are authorized by this packet. Collect/split actual change tasks, implement and
+freeze the arms and isolation/cost contract, and obtain independent grader
+review before launch. Keep execution guards separate from memory effects. No
+new paper claim, novelty claim or provider behavior claim is added.

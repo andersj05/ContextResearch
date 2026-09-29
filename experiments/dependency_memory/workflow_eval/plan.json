@@ -1,0 +1,31 @@
+{
+  "packet_version": 1,
+  "date": "2026-09-29",
+  "status": "offline_packet_only",
+  "arms": ["checked", "direct", "indexed", "prose", "full"],
+  "parent_cap_utf8_bytes": 4096,
+  "child_cap_utf8_bytes": 1536,
+  "proposed_development_episodes": 4,
+  "proposed_evaluation_episodes": 12,
+  "writer_calls_per_episode": 4,
+  "final_calls_per_episode": 5,
+  "proposed_max_dispatches": 144,
+  "proposed_max_provider_charge_usd": 20,
+  "authorized_dispatches": 0,
+  "authorized_provider_charge_usd": 0,
+  "order_seed": 20260929,
+  "development_captures": ["development/capture.json"],
+  "evaluation_captures": [],
+  "launch_gates": {
+    "remaining_observed_development_episodes": null,
+    "private_evaluation_intake_and_split": null,
+    "independent_grader_review": null,
+    "five_arm_runner_and_staged_views": null,
+    "provider_model_revision_and_parameters": null,
+    "context_and_filesystem_isolation": null,
+    "exact_price_table_and_cost_instrumentation": null,
+    "token_limits_and_worst_case_reservations": null,
+    "evaluation_hashes_and_request_schedule": null,
+    "bounded_live_launch_authorization": null
+  }
+}

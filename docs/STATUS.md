@@ -1,10 +1,34 @@
 # Current research status
 
-Updated: September 24, 2026. This document is the current handoff; older scope documents are historical.
+Updated: September 29, 2026. This document is the current handoff; older scope documents are historical.
 
 ## Objective
 
 Develop a mathematically precise and implementable study of repeated agent compaction when relevance is revealed over time. The target is a restricted compatibility result plus controlled evidence of whether the mechanism matters in tool-agent tasks.
+
+The September 29 [observed-workflow evaluation packet](../experiments/dependency_memory/workflow_eval/PROTOCOL.md)
+freezes an offline reporting contract, independent terminal grader, exact prompts,
+integrity preflight and one development capture of this repository's real
+test/validate/build commands at clean commit `40cec05`. All three commands
+succeeded. The capture is local, familiar development evidence; imposed memory
+boundaries and mutated controls are constructed, not external held-out incidents.
+The direct-record feasibility diagnostic fits the proposed 4,096/1,536-byte caps.
+This is an easy control to retain, not evidence for the candidate method.
+
+The proposed study compares checked proposals, direct records, raw indexed
+recovery, strong prose and full history on four development and twelve evaluation
+episodes, with a 144-dispatch / USD 20 proposed ceiling. No new model call or
+spending allocation is made. The packet includes no live runner and its preflight
+explicitly reports launch not ready. Remaining work is observed trace intake and
+private split, independent grader review, five-arm implementation, provider and
+isolation contract, cost instrumentation, complete request freeze and a bounded
+launch authorization. The grader checks revision validity, later failures and
+artifact hashes independently of the memory method. An action guard stays a
+separate intervention. Existing scientific claims and model results are unchanged.
+
+Packet validation: all 391 offline tests pass (including 14 new grader/integrity
+checks), the repository validator reports PASS, and the paper builds with 34
+cited sources. The locked local capture remains the original 377-test run.
 
 The September 24 [decoder-compatibility correction](../research/DECODER_COMPATIBILITY_REPLAY_2026-09-24.md)
 addresses a concrete checked-arm handoff defect without changing the frozen
@@ -230,6 +254,11 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 - The internal training objective, prompt, or algorithm of a proprietary compaction service.
 
 ## Next bounded tasks
+
+Start with the [September 29 packet](../experiments/dependency_memory/workflow_eval/README.md)
+and its explicit remaining launch gates. One actual local development capture is
+available; the remaining development and all evaluation episodes are uncollected.
+The protocol/grader freeze is not an evaluation-data freeze or a live launch.
 
 The constructed execution adapter, historical evidence replay, first live
 release-gate pilot, and offline decoder-compatibility correction are complete.

@@ -687,6 +687,15 @@ def main() -> int:
         counts["decoder_compatible_replay_owner_pairs"] = replay["counts"]["all_owner_pairs_checked"]
     except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
         errors.append(f"Decoder-compatibility replay validation failed: {error}")
+    try:
+        from experiments.dependency_memory.workflow_eval.packet import preflight as workflow_packet_preflight
+        packet = workflow_packet_preflight()
+        counts["observed_workflow_packet_files"] = packet["locked_files"]
+        counts["observed_workflow_development_episodes"] = packet["observed_development_episodes"]
+        counts["observed_workflow_evaluation_episodes"] = packet["held_out_evaluation_episodes"]
+        counts["observed_workflow_launch_ready"] = packet["launch_ready"]
+    except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
+        errors.append(f"Observed workflow evaluation packet validation failed: {error}")
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"
