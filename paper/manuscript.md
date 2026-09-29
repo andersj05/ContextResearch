@@ -471,6 +471,33 @@ development conditions from one observed local workflow; they neither fill the
 twelve untouched evaluation slots nor assess the packet's held-out go criterion.
 Claim C51.
 
+### 8.9 Executed workflows: interrupted follow-up
+
+A separate twelve-scenario casebook executes 48 actual local commands, including
+seven failed runs, rather than mutating prior receipt metadata. The source/runtime
+bytes and artifact contents are retained, and offline reproduction verifies every
+exit code and build output. Eleven final queries select fewer than all three checks.
+These are scripted scenarios in one fixture family, not untouched real incidents.
+
+The 108-call Luna 6 medium schedule was frozen at `d7cb8e8` and stopped at request
+17 on an app-server timeout. A separate extension frozen at `e32b576` dispatched
+only never-attempted identities and stopped at its ninth call on a provider
+generation error. The combined ledger has 26 attempts, 24 metered answers, two
+permanent gaps and 82 never-dispatched identities. Neither failure was retried.
+Known cost is 0.2567650 planning credits; retaining 15.30 credits in unknown-usage
+reservations prevents another 7.65-credit reservation under the 20-credit ceiling.
+Those reservations are not observed spending. Actual account debit is unknown.
+
+Of twelve observed final answers, eleven are exact and none is false-ready.
+The direct-record response in the repaired-test case unnecessarily requests a
+rerun despite a sufficient 203-byte retained successful receipt. An independent
+application of the public rule to that memory yields the correct ready answer.
+This is a final-model interpretation failure after successful retention. Only
+the unchanged case has all five answers, so neither a method ranking nor the
+intended twelve-case outcome can be established. The [partial audit](../research/EXECUTED_WORKFLOW_COMPARISON_2026-09-29.md)
+reconstructs every attempted input and preserves all missing dispositions.
+Claim C52.
+
 ## 9. Limitations and open results
 
 The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. No learned dependency classifier or open-ended native-agent benchmark has been evaluated here. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, useful finite-length joint codes, a wider rate-distortion characterization, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.

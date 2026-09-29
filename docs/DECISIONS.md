@@ -542,3 +542,13 @@ planning credits, including the permanent 7.65 uncertainty reservation. A fresh
 four-case no-generation preflight passes. Any new transport failure stops the
 extension. Complete-pair analysis, if available, is explicitly post-stop and
 descriptive; it cannot restore the original complete 12-case comparison.
+
+The suffix at `e32b576` itself stops on its ninth attempt, after eight answers,
+with a provider generation error on `tests_recovery-full-final`. Keep both failed
+identities permanently missing and retain both 7.65-credit uncertainty reservations.
+Combined known cost is 0.2567650; another reservation cannot fit the original
+20-credit ceiling. No further automatic extension is launched. Record all 26
+attempts, 24 answers and 82 never-dispatched requests rather than declaring the
+study complete. The post-stop audit finds one direct-record final-model error
+despite a sufficient 203-byte retained receipt; only one case is fully paired.
+This supports failure diagnosis, not a method ranking or a completed primary test.

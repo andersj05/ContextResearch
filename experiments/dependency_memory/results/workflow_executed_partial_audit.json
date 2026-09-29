@@ -1,0 +1,698 @@
+{
+  "arms": {
+    "checked": {
+      "answered": 2,
+      "correct": 2,
+      "false_ready": 0,
+      "known_credits": "0.0914500",
+      "malformed": 0,
+      "not_dispatched": 10,
+      "outcomes": [
+        {
+          "case": "unchanged",
+          "exact": true,
+          "expected": {
+            "evidence": {
+              "paper": "031953f1ae994f939bb6e7956bb6d1f7c63e3fb8d8113e9bc8819873869bbc32",
+              "repository": "1fc83942dc7223ab344b5a94ba0e64aa2a3b03ae2bc803a59ccaf1ca3f27e77c",
+              "tests": "90c02b6aabe1200bd2da8b8a70f43410766ff187c4e2206f0369b29cd29bcbf3"
+            },
+            "needs_work": [],
+            "ready": true
+          },
+          "false_ready": false,
+          "malformed": false,
+          "reason": "match",
+          "response": {
+            "evidence": {
+              "paper": "031953f1ae994f939bb6e7956bb6d1f7c63e3fb8d8113e9bc8819873869bbc32",
+              "repository": "1fc83942dc7223ab344b5a94ba0e64aa2a3b03ae2bc803a59ccaf1ca3f27e77c",
+              "tests": "90c02b6aabe1200bd2da8b8a70f43410766ff187c4e2206f0369b29cd29bcbf3"
+            },
+            "needs_work": [],
+            "ready": true
+          },
+          "retained_table_sufficient": true,
+          "status": "observed"
+        },
+        {
+          "case": "tests_later_failure",
+          "exact": true,
+          "expected": {
+            "evidence": {},
+            "needs_work": [
+              "tests"
+            ],
+            "ready": false
+          },
+          "false_ready": false,
+          "malformed": false,
+          "reason": "match",
+          "response": {
+            "evidence": {},
+            "needs_work": [
+              "tests"
+            ],
+            "ready": false
+          },
+          "retained_table_sufficient": true,
+          "status": "observed"
+        },
+        {
+          "case": "tests_recovery",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "repository_later_failure",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "repository_recovery",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "artifact_replaced",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "artifact_missing",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "new_source_unchecked",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "partial_revision",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "older_source_selected",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "irrelevant_failure",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "fail_recover_fail",
+          "status": "not_dispatched"
+        }
+      ],
+      "reserved_upper_credits_for_attempts": "0.0914500",
+      "scheduled_cases": 12,
+      "scheduled_success_bounds": [
+        2,
+        12
+      ],
+      "transport_missing": 0,
+      "unknown_reservations": "0"
+    },
+    "direct": {
+      "answered": 3,
+      "correct": 2,
+      "false_ready": 0,
+      "known_credits": "0.0256385",
+      "malformed": 0,
+      "not_dispatched": 9,
+      "outcomes": [
+        {
+          "case": "unchanged",
+          "exact": true,
+          "expected": {
+            "evidence": {
+              "paper": "031953f1ae994f939bb6e7956bb6d1f7c63e3fb8d8113e9bc8819873869bbc32",
+              "repository": "1fc83942dc7223ab344b5a94ba0e64aa2a3b03ae2bc803a59ccaf1ca3f27e77c",
+              "tests": "90c02b6aabe1200bd2da8b8a70f43410766ff187c4e2206f0369b29cd29bcbf3"
+            },
+            "needs_work": [],
+            "ready": true
+          },
+          "false_ready": false,
+          "malformed": false,
+          "reason": "match",
+          "response": {
+            "evidence": {
+              "paper": "031953f1ae994f939bb6e7956bb6d1f7c63e3fb8d8113e9bc8819873869bbc32",
+              "repository": "1fc83942dc7223ab344b5a94ba0e64aa2a3b03ae2bc803a59ccaf1ca3f27e77c",
+              "tests": "90c02b6aabe1200bd2da8b8a70f43410766ff187c4e2206f0369b29cd29bcbf3"
+            },
+            "needs_work": [],
+            "ready": true
+          },
+          "retained_table_sufficient": true,
+          "status": "observed"
+        },
+        {
+          "case": "tests_later_failure",
+          "exact": true,
+          "expected": {
+            "evidence": {},
+            "needs_work": [
+              "tests"
+            ],
+            "ready": false
+          },
+          "false_ready": false,
+          "malformed": false,
+          "reason": "match",
+          "response": {
+            "evidence": {},
+            "needs_work": [
+              "tests"
+            ],
+            "ready": false
+          },
+          "retained_table_sufficient": true,
+          "status": "observed"
+        },
+        {
+          "case": "tests_recovery",
+          "exact": false,
+          "expected": {
+            "evidence": {
+              "tests": "df566ae62dfaf4a5bcb0f5090abda21ab476bbfbf1ce01bb20094572eaaca73d"
+            },
+            "needs_work": [],
+            "ready": true
+          },
+          "false_ready": false,
+          "malformed": false,
+          "reason": "terminal_mismatch",
+          "response": {
+            "evidence": {},
+            "needs_work": [
+              "tests"
+            ],
+            "ready": false
+          },
+          "retained_table_sufficient": true,
+          "status": "observed"
+        },
+        {
+          "case": "repository_later_failure",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "repository_recovery",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "artifact_replaced",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "artifact_missing",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "new_source_unchecked",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "partial_revision",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "older_source_selected",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "irrelevant_failure",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "fail_recover_fail",
+          "status": "not_dispatched"
+        }
+      ],
+      "reserved_upper_credits_for_attempts": "0.0256385",
+      "scheduled_cases": 12,
+      "scheduled_success_bounds": [
+        2,
+        11
+      ],
+      "transport_missing": 0,
+      "unknown_reservations": "0"
+    },
+    "full": {
+      "answered": 2,
+      "correct": 2,
+      "false_ready": 0,
+      "known_credits": "0.0251400",
+      "malformed": 0,
+      "not_dispatched": 9,
+      "outcomes": [
+        {
+          "case": "unchanged",
+          "exact": true,
+          "expected": {
+            "evidence": {
+              "paper": "031953f1ae994f939bb6e7956bb6d1f7c63e3fb8d8113e9bc8819873869bbc32",
+              "repository": "1fc83942dc7223ab344b5a94ba0e64aa2a3b03ae2bc803a59ccaf1ca3f27e77c",
+              "tests": "90c02b6aabe1200bd2da8b8a70f43410766ff187c4e2206f0369b29cd29bcbf3"
+            },
+            "needs_work": [],
+            "ready": true
+          },
+          "false_ready": false,
+          "malformed": false,
+          "reason": "match",
+          "response": {
+            "evidence": {
+              "paper": "031953f1ae994f939bb6e7956bb6d1f7c63e3fb8d8113e9bc8819873869bbc32",
+              "repository": "1fc83942dc7223ab344b5a94ba0e64aa2a3b03ae2bc803a59ccaf1ca3f27e77c",
+              "tests": "90c02b6aabe1200bd2da8b8a70f43410766ff187c4e2206f0369b29cd29bcbf3"
+            },
+            "needs_work": [],
+            "ready": true
+          },
+          "retained_table_sufficient": true,
+          "status": "observed"
+        },
+        {
+          "case": "tests_later_failure",
+          "exact": true,
+          "expected": {
+            "evidence": {},
+            "needs_work": [
+              "tests"
+            ],
+            "ready": false
+          },
+          "false_ready": false,
+          "malformed": false,
+          "reason": "match",
+          "response": {
+            "evidence": {},
+            "needs_work": [
+              "tests"
+            ],
+            "ready": false
+          },
+          "retained_table_sufficient": true,
+          "status": "observed"
+        },
+        {
+          "case": "tests_recovery",
+          "error": "Provider generation error",
+          "status": "missing_transport"
+        },
+        {
+          "case": "repository_later_failure",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "repository_recovery",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "artifact_replaced",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "artifact_missing",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "new_source_unchecked",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "partial_revision",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "older_source_selected",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "irrelevant_failure",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "fail_recover_fail",
+          "status": "not_dispatched"
+        }
+      ],
+      "reserved_upper_credits_for_attempts": "7.6751400",
+      "scheduled_cases": 12,
+      "scheduled_success_bounds": [
+        2,
+        12
+      ],
+      "transport_missing": 1,
+      "unknown_reservations": "7.65"
+    },
+    "indexed": {
+      "answered": 3,
+      "correct": 3,
+      "false_ready": 0,
+      "known_credits": "0.0250190",
+      "malformed": 0,
+      "not_dispatched": 9,
+      "outcomes": [
+        {
+          "case": "unchanged",
+          "exact": true,
+          "expected": {
+            "evidence": {
+              "paper": "031953f1ae994f939bb6e7956bb6d1f7c63e3fb8d8113e9bc8819873869bbc32",
+              "repository": "1fc83942dc7223ab344b5a94ba0e64aa2a3b03ae2bc803a59ccaf1ca3f27e77c",
+              "tests": "90c02b6aabe1200bd2da8b8a70f43410766ff187c4e2206f0369b29cd29bcbf3"
+            },
+            "needs_work": [],
+            "ready": true
+          },
+          "false_ready": false,
+          "malformed": false,
+          "reason": "match",
+          "response": {
+            "evidence": {
+              "paper": "031953f1ae994f939bb6e7956bb6d1f7c63e3fb8d8113e9bc8819873869bbc32",
+              "repository": "1fc83942dc7223ab344b5a94ba0e64aa2a3b03ae2bc803a59ccaf1ca3f27e77c",
+              "tests": "90c02b6aabe1200bd2da8b8a70f43410766ff187c4e2206f0369b29cd29bcbf3"
+            },
+            "needs_work": [],
+            "ready": true
+          },
+          "retained_table_sufficient": true,
+          "status": "observed"
+        },
+        {
+          "case": "tests_later_failure",
+          "exact": true,
+          "expected": {
+            "evidence": {},
+            "needs_work": [
+              "tests"
+            ],
+            "ready": false
+          },
+          "false_ready": false,
+          "malformed": false,
+          "reason": "match",
+          "response": {
+            "evidence": {},
+            "needs_work": [
+              "tests"
+            ],
+            "ready": false
+          },
+          "retained_table_sufficient": true,
+          "status": "observed"
+        },
+        {
+          "case": "tests_recovery",
+          "exact": true,
+          "expected": {
+            "evidence": {
+              "tests": "df566ae62dfaf4a5bcb0f5090abda21ab476bbfbf1ce01bb20094572eaaca73d"
+            },
+            "needs_work": [],
+            "ready": true
+          },
+          "false_ready": false,
+          "malformed": false,
+          "reason": "match",
+          "response": {
+            "evidence": {
+              "tests": "df566ae62dfaf4a5bcb0f5090abda21ab476bbfbf1ce01bb20094572eaaca73d"
+            },
+            "needs_work": [],
+            "ready": true
+          },
+          "retained_table_sufficient": true,
+          "status": "observed"
+        },
+        {
+          "case": "repository_later_failure",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "repository_recovery",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "artifact_replaced",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "artifact_missing",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "new_source_unchecked",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "partial_revision",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "older_source_selected",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "irrelevant_failure",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "fail_recover_fail",
+          "status": "not_dispatched"
+        }
+      ],
+      "reserved_upper_credits_for_attempts": "0.0250190",
+      "scheduled_cases": 12,
+      "scheduled_success_bounds": [
+        3,
+        12
+      ],
+      "transport_missing": 0,
+      "unknown_reservations": "0"
+    },
+    "prose": {
+      "answered": 2,
+      "correct": 2,
+      "false_ready": 0,
+      "known_credits": "0.0895175",
+      "malformed": 0,
+      "not_dispatched": 9,
+      "outcomes": [
+        {
+          "case": "unchanged",
+          "exact": true,
+          "expected": {
+            "evidence": {
+              "paper": "031953f1ae994f939bb6e7956bb6d1f7c63e3fb8d8113e9bc8819873869bbc32",
+              "repository": "1fc83942dc7223ab344b5a94ba0e64aa2a3b03ae2bc803a59ccaf1ca3f27e77c",
+              "tests": "90c02b6aabe1200bd2da8b8a70f43410766ff187c4e2206f0369b29cd29bcbf3"
+            },
+            "needs_work": [],
+            "ready": true
+          },
+          "false_ready": false,
+          "malformed": false,
+          "reason": "match",
+          "response": {
+            "evidence": {
+              "paper": "031953f1ae994f939bb6e7956bb6d1f7c63e3fb8d8113e9bc8819873869bbc32",
+              "repository": "1fc83942dc7223ab344b5a94ba0e64aa2a3b03ae2bc803a59ccaf1ca3f27e77c",
+              "tests": "90c02b6aabe1200bd2da8b8a70f43410766ff187c4e2206f0369b29cd29bcbf3"
+            },
+            "needs_work": [],
+            "ready": true
+          },
+          "retained_table_sufficient": null,
+          "status": "observed"
+        },
+        {
+          "case": "tests_later_failure",
+          "error": "appserver_timeout",
+          "status": "missing_transport"
+        },
+        {
+          "case": "tests_recovery",
+          "exact": true,
+          "expected": {
+            "evidence": {
+              "tests": "df566ae62dfaf4a5bcb0f5090abda21ab476bbfbf1ce01bb20094572eaaca73d"
+            },
+            "needs_work": [],
+            "ready": true
+          },
+          "false_ready": false,
+          "malformed": false,
+          "reason": "match",
+          "response": {
+            "evidence": {
+              "tests": "df566ae62dfaf4a5bcb0f5090abda21ab476bbfbf1ce01bb20094572eaaca73d"
+            },
+            "needs_work": [],
+            "ready": true
+          },
+          "retained_table_sufficient": null,
+          "status": "observed"
+        },
+        {
+          "case": "repository_later_failure",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "repository_recovery",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "artifact_replaced",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "artifact_missing",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "new_source_unchecked",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "partial_revision",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "older_source_selected",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "irrelevant_failure",
+          "status": "not_dispatched"
+        },
+        {
+          "case": "fail_recover_fail",
+          "status": "not_dispatched"
+        }
+      ],
+      "reserved_upper_credits_for_attempts": "7.7395175",
+      "scheduled_cases": 12,
+      "scheduled_success_bounds": [
+        2,
+        12
+      ],
+      "transport_missing": 1,
+      "unknown_reservations": "7.65"
+    }
+  },
+  "audit_sha256": "8a61cc7ce4026729ed6face66ce9c80d6602a61f4513ed609cb7356e4b250035",
+  "ceiling_credits": "20",
+  "complete_paired_cases": [
+    "unchanged"
+  ],
+  "dispatches": 26,
+  "known_planning_credits": "0.2567650",
+  "limits": [
+    "Only one fully answered paired case; do not rank methods from this partial run.",
+    "No reliable latency, complete cost or narrow-retrieval comparison; two calls have unknown usage.",
+    "Provider error details do not establish a root cause. Native-compaction and real-world held-out claims remain unsupported."
+  ],
+  "metered_answers": 24,
+  "never_dispatched": [
+    "tests_recovery-checked-final",
+    "repository_later_failure-prose-parent",
+    "repository_later_failure-checked-parent",
+    "repository_later_failure-prose-child",
+    "repository_later_failure-checked-child",
+    "repository_later_failure-prose-final",
+    "repository_later_failure-full-final",
+    "repository_later_failure-direct-final",
+    "repository_later_failure-indexed-final",
+    "repository_later_failure-checked-final",
+    "repository_recovery-checked-parent",
+    "repository_recovery-prose-parent",
+    "repository_recovery-checked-child",
+    "repository_recovery-prose-child",
+    "repository_recovery-indexed-final",
+    "repository_recovery-full-final",
+    "repository_recovery-prose-final",
+    "repository_recovery-checked-final",
+    "repository_recovery-direct-final",
+    "artifact_replaced-checked-parent",
+    "artifact_replaced-prose-parent",
+    "artifact_replaced-checked-child",
+    "artifact_replaced-prose-child",
+    "artifact_replaced-prose-final",
+    "artifact_replaced-full-final",
+    "artifact_replaced-indexed-final",
+    "artifact_replaced-direct-final",
+    "artifact_replaced-checked-final",
+    "artifact_missing-checked-parent",
+    "artifact_missing-prose-parent",
+    "artifact_missing-prose-child",
+    "artifact_missing-checked-child",
+    "artifact_missing-prose-final",
+    "artifact_missing-indexed-final",
+    "artifact_missing-direct-final",
+    "artifact_missing-full-final",
+    "artifact_missing-checked-final",
+    "new_source_unchecked-checked-parent",
+    "new_source_unchecked-prose-parent",
+    "new_source_unchecked-checked-child",
+    "new_source_unchecked-prose-child",
+    "new_source_unchecked-checked-final",
+    "new_source_unchecked-prose-final",
+    "new_source_unchecked-indexed-final",
+    "new_source_unchecked-full-final",
+    "new_source_unchecked-direct-final",
+    "partial_revision-checked-parent",
+    "partial_revision-prose-parent",
+    "partial_revision-checked-child",
+    "partial_revision-prose-child",
+    "partial_revision-full-final",
+    "partial_revision-prose-final",
+    "partial_revision-direct-final",
+    "partial_revision-indexed-final",
+    "partial_revision-checked-final",
+    "older_source_selected-prose-parent",
+    "older_source_selected-checked-parent",
+    "older_source_selected-checked-child",
+    "older_source_selected-prose-child",
+    "older_source_selected-checked-final",
+    "older_source_selected-indexed-final",
+    "older_source_selected-direct-final",
+    "older_source_selected-prose-final",
+    "older_source_selected-full-final",
+    "irrelevant_failure-checked-parent",
+    "irrelevant_failure-prose-parent",
+    "irrelevant_failure-prose-child",
+    "irrelevant_failure-checked-child",
+    "irrelevant_failure-full-final",
+    "irrelevant_failure-prose-final",
+    "irrelevant_failure-direct-final",
+    "irrelevant_failure-indexed-final",
+    "irrelevant_failure-checked-final",
+    "fail_recover_fail-checked-parent",
+    "fail_recover_fail-prose-parent",
+    "fail_recover_fail-checked-child",
+    "fail_recover_fail-prose-child",
+    "fail_recover_fail-indexed-final",
+    "fail_recover_fail-direct-final",
+    "fail_recover_fail-full-final",
+    "fail_recover_fail-prose-final",
+    "fail_recover_fail-checked-final"
+  ],
+  "next_dispatch_reservation_fits": false,
+  "original_primary_criterion": "unassessable",
+  "request_replay": "All 26 attempted inputs reconstructed from frozen source and prior saved responses; no regeneration.",
+  "reserved_upper_credits": "15.5567650",
+  "scheduled_calls": 108,
+  "status": "incomplete_after_two_transport_failures",
+  "transport_failures": {
+    "tests_later_failure-prose-final": "appserver_timeout",
+    "tests_recovery-full-final": "Provider generation error"
+  },
+  "unknown_reservation_credits": "15.30",
+  "usage_for_metered_calls": {
+    "cachedInputTokens": 26880,
+    "inputTokens": 88078,
+    "outputTokens": 7764,
+    "reasoningOutputTokens": 3035
+  }
+}

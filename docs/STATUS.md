@@ -6,20 +6,25 @@ Updated: September 29, 2026. This document is the current handoff; older scope d
 
 Develop a mathematically precise and implementable study of repeated agent compaction when relevance is revealed over time. The target is a restricted compatibility result plus controlled evidence of whether the mechanism matters in tool-agent tasks.
 
-The next [executed-workflow comparison](../experiments/dependency_memory/workflow_executed/CONTRACT.md)
-is prepared as a separate 108-call Luna 6 medium allocation following the user's
-instruction to continue experiments. Twelve scripted scenarios have 48 actual
-subprocess observations, including failure/recovery and narrow final queries.
-Offline reproduction checks saved source/runtime bytes against all 48 exit codes
-and artifact outputs. These belong to one constructed fixture family and do not
-fill the untouched real-workflow slots. No new model result is claimed here
-until the frozen schedule completes and saved evidence is analyzed. That launch
-stopped at call 17 on `appserver_timeout`: 16 metered answers, 0.1742595 known
-credits and one permanent missing prose-final answer. A separately frozen
-[continuation](../experiments/dependency_memory/workflow_executed_continuation/CONTRACT.md)
-dispatches only the 91 never-attempted identities, retaining the failed call's
-7.65-credit reservation inside the original 20-credit ceiling. The original
-complete 12-case criterion remains unassessable regardless of the extension.
+The [executed-workflow follow-up](../research/EXECUTED_WORKFLOW_COMPARISON_2026-09-29.md)
+is incomplete after two transport failures. The first frozen launch stops at
+request 17; a separately frozen never-dispatched suffix stops at its ninth
+request. Combined: **26 dispatches, 24 metered answers, two permanent missing
+answers and 82 never-dispatched identities**. Known cost is 0.2567650 planning
+credits; unknown-usage reservations total 15.30. Another 7.65 reservation does
+not fit the unchanged 20-credit ceiling. Neither failed identity was retried.
+Only one case is fully paired; the original twelve-case criterion is unassessable.
+
+Of twelve observed final decisions, eleven are correct and none is false-ready.
+Direct records unnecessarily request a test rerun despite a sufficient 203-byte
+successful receipt. This is a final-model interpretation error, not evidence loss
+or a reliable method ranking. Claim C52; living draft v0.22. The partial audit
+reconstructs every attempted request and retains every missing disposition.
+All 410 offline tests pass, including reproduction of all 48 actual subprocess
+outcomes from twelve scripted scenarios. These are one authored fixture family,
+not untouched real-world episodes. No live comparison or cost advantage is claimed.
+Final validation: the repository validator reports PASS, including both stopped
+launches and the 26-attempt audit; the paper builds with 37 cited sources.
 
 The separately frozen September 29 [live development comparison](../research/WORKFLOW_LUNA6_COMPARISON_2026-09-29.md)
 completed all **36 GPT-6 Luna medium calls** after launch freeze `ef31373`, with

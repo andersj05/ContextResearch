@@ -1,6 +1,24 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.21 — September 29, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.22 — September 29, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## Executed workflows: interrupted comparison and an interpretation error
+
+A [separate follow-up](../research/EXECUTED_WORKFLOW_COMPARISON_2026-09-29.md)
+captures 48 actual subprocess outcomes across twelve scripted local scenarios,
+including narrower queries, failures and recovery. Its 108-call Luna 6 schedule
+stops on request 17; a frozen extension of only never-dispatched identities stops
+on its ninth request. Combined evidence has 24 metered answers, two permanent
+transport gaps and 82 never-dispatched requests. The known cost is 0.2567650
+planning credits; two unknown-usage reservations prevent another dispatch under
+the unchanged ceiling. The original twelve-case comparison is unassessable.
+
+Eleven of twelve observed final answers are correct. Direct records fail once by
+requesting a test rerun despite a sufficient 203-byte successful receipt. No
+false-ready response occurs. This demonstrates a final-model interpretation
+failure after successful retention, but only one case is fully paired: it does
+not rank methods or establish a cost benefit. The scenarios are authored controls
+with observed executions, not untouched real-world evidence. [C52]
 
 ## Observed handoff development comparison: direct records remain strongest
 

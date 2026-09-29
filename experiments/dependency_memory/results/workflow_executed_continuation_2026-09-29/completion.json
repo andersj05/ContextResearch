@@ -1,0 +1,8 @@
+{
+  "error": "Provider generation error",
+  "error_type": "RuntimeError",
+  "new_calls": 9,
+  "new_known_credits": "0.0825055",
+  "original_unknown_reservation": "7.65",
+  "status": "stopped"
+}

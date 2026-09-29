@@ -22,6 +22,13 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.22 records the [interrupted executed-workflow follow-up](../research/EXECUTED_WORKFLOW_COMPARISON_2026-09-29.md),
+claim C52. Two separately frozen launches produce 24 metered answers and two
+transport gaps; 82 identities remain undispatched. One direct-record final
+answer misuses sufficient retained evidence. Only one case is fully paired, so
+the intended twelve-case comparison remains unassessable. The new corpus has
+48 actual command runs in twelve scripted scenarios from one fixture family.
+
 Living draft v0.21 adds the [September 29 development comparison](../research/WORKFLOW_LUNA6_COMPARISON_2026-09-29.md),
 claim C51. All 36 Luna 6 medium calls complete. Checked/direct/indexed/full score
 4/4 and prose 3/4; direct records use the fewest model credits in both cache views.

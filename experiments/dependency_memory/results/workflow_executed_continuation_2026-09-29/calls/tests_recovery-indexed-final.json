@@ -1,0 +1,129 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "tests_recovery-indexed-final",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0098455",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1791048511,
+        "usedPercent": 34,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"ready\":true,\"needs_work\":[],\"evidence\":{\"paper\":null,\"repository\":null,\"tests\":\"df566ae62dfaf4a5bcb0f5090abda21ab476bbfbf1ce01bb20094572eaaca73d\"}}",
+  "request": {
+    "instruction": "Report whether the required checks have current successful evidence. For each required check use its latest observed run on the final source snapshot; a later failure supersedes an earlier success. A receipt is valid only if its bound artifact hashes match the final inventory. Return strict JSON with exactly ready (boolean), needs_work (sorted check names), and evidence (mapping each currently successful required check to its exact run_id). Include no extra fields. A missing, failed or stale check belongs in needs_work, not evidence. Do not invent evidence or shorten identifiers.\nApply the public rule to the supplied memory or authorized recovered observations and the final public snapshot, required checks and artifact inventory. Return only the specified JSON object. If evidence is insufficient, include that check in needs_work. Do not consult any filesystem, prior conversation or undeclared tool.\nSerialization: include all three evidence keys paper, repository, tests; use null for absent evidence.",
+    "observation": {
+      "final_public_state": {
+        "artifacts": {
+          "build/paper/manuscript.md": "082d164486e1fba7d92f6fc548c678fc9e0b98ca2ed4bd85c7a0ca8a4a13a3a6",
+          "build/paper/preview.html": "584cf8164521ef30ec783eb68383f02567ab90442d55ceedd90b6db1f5b7b929"
+        },
+        "required_checks": [
+          "tests"
+        ],
+        "snapshot": "ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f"
+      },
+      "memory": "[{\"argv\":[\"python\",\"-B\",\"test_calc.py\"],\"artifacts\":{},\"check\":\"tests\",\"returncode\":1,\"run_id\":\"33fdc96e1cc058f1b1d72132a4021cf4c3179661c7505a4c8b0180e0bd3e990f\",\"snapshot\":\"ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f\",\"stderr\":\"test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... \\r\\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=-11) ... FAIL\\r\\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=0) ... FAIL\\r\\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=7) ... FAIL\\r\\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=123) ... FAIL\\r\\n\\r\\n======================================================================\\r\\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=-11)\\r\\n----------------------------------------------------------------------\\r\\nTraceback (most recent call last):\\r\\n  File \\\"C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Temp\\\\executed-workflow-d5qtidtt\\\\test_calc.py\\\", line 11, in test_observed_contract\\r\\n    self.assertEqual(value + state[\\\"expected_offset\\\"], add_offset(value))\\r\\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\r\\nAssertionError: 2647 != 2646\\r\\n\\r\\n======================================================================\\r\\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=0)\\r\\n----------------------------------------------------------------------\\r\\nTraceback (most recent call last):\\r\\n  File \\\"C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Temp\\\\executed-workflow-d5qtidtt\\\\test_calc.py\\\", line 11, in test_observed_contract\\r\\n    self.assertEqual(value + state[\\\"expected_offset\\\"], add_offset(value))\\r\\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\r\\nAssertionError: 2658 != 2657\\r\\n\\r\\n======================================================================\\r\\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=7)\\r\\n----------------------------------------------------------------------\\r\\nTraceback (most recent call last):\\r\\n  File \\\"C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Temp\\\\executed-workflow-d5qtidtt\\\\test_calc.py\\\", line 11, in test_observed_contract\\r\\n    self.assertEqual(value + state[\\\"expected_offset\\\"], add_offset(value))\\r\\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\r\\nAssertionError: 2665 != 2664\\r\\n\\r\\n======================================================================\\r\\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=123)\\r\\n----------------------------------------------------------------------\\r\\nTraceback (most recent call last):\\r\\n  File \\\"C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Temp\\\\executed-workflow-d5qtidtt\\\\test_calc.py\\\", line 11, in test_observed_contract\\r\\n    self.assertEqual(value + state[\\\"expected_offset\\\"], add_offset(value))\\r\\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\r\\nAssertionError: 2781 != 2780\\r\\n\\r\\n----------------------------------------------------------------------\\r\\nRan 1 test in 0.003s\\r\\n\\r\\nFAILED (failures=4)\\r\\n\",\"stdout\":\"\"},{\"argv\":[\"python\",\"-B\",\"test_calc.py\"],\"artifacts\":{},\"check\":\"tests\",\"returncode\":0,\"run_id\":\"df566ae62dfaf4a5bcb0f5090abda21ab476bbfbf1ce01bb20094572eaaca73d\",\"snapshot\":\"ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f\",\"stderr\":\"test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... ok\\r\\n\\r\\n----------------------------------------------------------------------\\r\\nRan 1 test in 0.001s\\r\\n\\r\\nOK\\r\\n\",\"stdout\":\"\"}]"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence": {
+          "additionalProperties": false,
+          "properties": {
+            "paper": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "repository": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "tests": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "paper",
+            "repository",
+            "tests"
+          ],
+          "type": "object"
+        },
+        "needs_work": {
+          "items": {
+            "enum": [
+              "paper",
+              "repository",
+              "tests"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "ready": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "ready",
+        "needs_work",
+        "evidence"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "workflow_observed_luna6_dev_v1"
+  },
+  "request_sha256": "daa559451547c5ce6c0865d05ff9a6f1d073f02f4c8b3401155055ae9cd1c746",
+  "reservation_credits": "7.65",
+  "response": {
+    "evidence": {
+      "paper": null,
+      "repository": null,
+      "tests": "df566ae62dfaf4a5bcb0f5090abda21ab476bbfbf1ce01bb20094572eaaca73d"
+    },
+    "needs_work": [],
+    "ready": true
+  },
+  "started_at": "2026-09-29T17:53:58.146186+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 4246,
+    "outputTokens": 261,
+    "reasoningOutputTokens": 192,
+    "totalTokens": 4507
+  },
+  "usage_events": 1,
+  "wall_seconds": 14.619154400017578,
+  "wire_body_byte_bound": 27051
+}

@@ -1,0 +1,119 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "tests_recovery-prose-parent",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0165375",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1791048507,
+        "usedPercent": 34,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Required checks observed on source snapshot ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f:\\n- paper: successful run ad9469c43ff1aa700405c1c0215de754da8113f1fdcc9dd597b296e611f6565f (returncode 0). Receipt artifacts: build/paper/manuscript.md = 082d164486e1fba7d92f6fc548c678fc9e0b98ca2ed4bd85c7a0ca8a4a13a3a6; build/paper/preview.html = 584cf8164521ef30ec783eb68383f02567ab90442d55ceedd90b6db1f5b7b929.\\n- repository: successful run e1498173b95730d6df7a5627b1b298e8c19bda80fdd5dd95ceed739292e14aef (returncode 0).\\n- tests: failed run 33fdc96e1cc058f1b1d72132a4021cf4c3179661c7505a4c8b0180e0bd3e990f (returncode 1), four assertion failures for values -11, 0, 7, 123; expected actual output differs by 1.\\nThese are the only observed runs; no later run supersedes them. For subsequent source/artifact changes, require evidence for the final source snapshot and verify paper receipt hashes against final inventory.\"}",
+  "request": {
+    "instruction": "Report whether the required checks have current successful evidence. For each required check use its latest observed run on the final source snapshot; a later failure supersedes an earlier success. A receipt is valid only if its bound artifact hashes match the final inventory. Return strict JSON with exactly ready (boolean), needs_work (sorted check names), and evidence (mapping each currently successful required check to its exact run_id). Include no extra fields. A missing, failed or stale check belongs in needs_work, not evidence. Do not invent evidence or shorten identifiers.\nPreserve the facts needed by the public rule after another memory reduction and a later source or artifact change. Prioritize exact snapshot/run identifiers, check names, chronological supersession, failures and artifact bindings. Public rules will be repeated; do not spend memory copying them. Use concise prose. Return only memory within the stated UTF-8 byte cap. At the second boundary use only admitted parent memory and new public observations.\nReturn an object with one string field memory. Its decoded UTF-8 bytes must be <= 4096.",
+    "observation": {
+      "tool_observations": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "paper"
+          ],
+          "artifacts": {
+            "build/paper/manuscript.md": "082d164486e1fba7d92f6fc548c678fc9e0b98ca2ed4bd85c7a0ca8a4a13a3a6",
+            "build/paper/preview.html": "584cf8164521ef30ec783eb68383f02567ab90442d55ceedd90b6db1f5b7b929"
+          },
+          "check": "paper",
+          "returncode": 0,
+          "run_id": "ad9469c43ff1aa700405c1c0215de754da8113f1fdcc9dd597b296e611f6565f",
+          "snapshot": "ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f",
+          "stderr": "",
+          "stdout": "Built Markdown and HTML from current source\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "checks.py",
+            "repository"
+          ],
+          "artifacts": {},
+          "check": "repository",
+          "returncode": 0,
+          "run_id": "e1498173b95730d6df7a5627b1b298e8c19bda80fdd5dd95ceed739292e14aef",
+          "snapshot": "ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f",
+          "stderr": "",
+          "stdout": "Required files: calc.py, test_calc.py, README.md, readiness.marker\r\nRepository check passed\r\n"
+        },
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 1,
+          "run_id": "33fdc96e1cc058f1b1d72132a4021cf4c3179661c7505a4c8b0180e0bd3e990f",
+          "snapshot": "ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... \r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=-11) ... FAIL\r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=0) ... FAIL\r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=7) ... FAIL\r\n  test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=123) ... FAIL\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=-11)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-d5qtidtt\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 2647 != 2646\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=0)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-d5qtidtt\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 2658 != 2657\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=7)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-d5qtidtt\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 2665 != 2664\r\n\r\n======================================================================\r\nFAIL: test_observed_contract (__main__.ArithmeticTests.test_observed_contract) (value=123)\r\n----------------------------------------------------------------------\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\jense\\AppData\\Local\\Temp\\executed-workflow-d5qtidtt\\test_calc.py\", line 11, in test_observed_contract\r\n    self.assertEqual(value + state[\"expected_offset\"], add_offset(value))\r\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: 2781 != 2780\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.003s\r\n\r\nFAILED (failures=4)\r\n",
+          "stdout": ""
+        }
+      ]
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "parent",
+    "version": "workflow_observed_luna6_dev_v1"
+  },
+  "request_sha256": "a1178223f125a118d3fe4564cac823e2f4617cf658c3024633e2a77e72c1410d",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Required checks observed on source snapshot ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f:\n- paper: successful run ad9469c43ff1aa700405c1c0215de754da8113f1fdcc9dd597b296e611f6565f (returncode 0). Receipt artifacts: build/paper/manuscript.md = 082d164486e1fba7d92f6fc548c678fc9e0b98ca2ed4bd85c7a0ca8a4a13a3a6; build/paper/preview.html = 584cf8164521ef30ec783eb68383f02567ab90442d55ceedd90b6db1f5b7b929.\n- repository: successful run e1498173b95730d6df7a5627b1b298e8c19bda80fdd5dd95ceed739292e14aef (returncode 0).\n- tests: failed run 33fdc96e1cc058f1b1d72132a4021cf4c3179661c7505a4c8b0180e0bd3e990f (returncode 1), four assertion failures for values -11, 0, 7, 123; expected actual output differs by 1.\nThese are the only observed runs; no later run supersedes them. For subsequent source/artifact changes, require evidence for the final source snapshot and verify paper receipt hashes against final inventory."
+  },
+  "started_at": "2026-09-29T17:52:46.837160+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 4070,
+    "outputTokens": 509,
+    "reasoningOutputTokens": 135,
+    "totalTokens": 4579
+  },
+  "usage_events": 1,
+  "wall_seconds": 21.209423000051174,
+  "wire_body_byte_bound": 25980
+}

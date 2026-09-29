@@ -718,10 +718,38 @@ def main() -> int:
             if evidence != saved:
                 raise ValueError("Executed-workflow saved analysis differs from request/answer replay")
             counts["executed_workflow_status"] = evidence["status"]
-            counts["executed_workflow_model_requests"] = evidence.get("actual_model_calls")
-            counts["executed_workflow_planning_credits"] = evidence.get("known_planning_credits")
+            counts["executed_workflow_model_requests"] = evidence.get("actual_model_calls", evidence.get("completion", {}).get("calls"))
+            counts["executed_workflow_planning_credits"] = evidence.get("known_planning_credits", evidence.get("completion", {}).get("planning_credits_settled"))
         except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
             errors.append(f"Executed-workflow live comparison validation failed: {error}")
+    executed_continuation_directory = ROOT / "experiments/dependency_memory/results/workflow_executed_continuation_2026-09-29"
+    if (executed_continuation_directory / "completion.json").is_file():
+        try:
+            from experiments.dependency_memory.workflow_executed_continuation.analyze import analyze as analyze_executed_continuation
+            evidence = analyze_executed_continuation(executed_continuation_directory)
+            saved = json.loads((executed_continuation_directory / "analysis.json").read_text(encoding="utf-8"))
+            if evidence != saved:
+                raise ValueError("Executed-workflow continuation analysis differs from request/answer replay")
+            counts["executed_continuation_status"] = evidence["status"]
+            counts["executed_combined_dispatches"] = evidence.get("total_dispatches")
+            counts["executed_combined_metered_answers"] = evidence.get("metered_answers")
+            counts["executed_combined_known_credits"] = evidence.get("known_planning_credits")
+        except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
+            errors.append(f"Executed-workflow continuation validation failed: {error}")
+    executed_partial_audit = ROOT / "experiments/dependency_memory/results/workflow_executed_partial_audit.json"
+    if executed_partial_audit.is_file():
+        try:
+            from experiments.dependency_memory.workflow_executed_posthoc.audit import analyze as audit_executed_prefixes
+            evidence = audit_executed_prefixes()
+            saved = json.loads(executed_partial_audit.read_text(encoding="utf-8"))
+            if evidence != saved:
+                raise ValueError("Partial executed-workflow audit differs from saved request replay")
+            counts["executed_partial_dispatches"] = evidence["dispatches"]
+            counts["executed_partial_metered_answers"] = evidence["metered_answers"]
+            counts["executed_partial_known_credits"] = evidence["known_planning_credits"]
+            counts["executed_partial_unknown_reservations"] = evidence["unknown_reservation_credits"]
+        except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
+            errors.append(f"Executed-workflow partial audit validation failed: {error}")
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"

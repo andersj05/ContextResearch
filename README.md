@@ -4,6 +4,13 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
+**September 29 executed-workflow follow-up:** the [108-call plan](research/EXECUTED_WORKFLOW_COMPARISON_2026-09-29.md)
+stopped after 26 dispatches across two frozen launches: 24 metered answers, two
+transport failures and 82 never-dispatched identities. One direct-record final
+answer is wrong despite sufficient retained evidence. Only one case is fully
+paired, so there is no method ranking. The twelve scripted scenarios include
+48 actual command executions and remain separate from untouched real workflows.
+
 **September 29 live development comparison:** [36 Luna 6 medium calls](research/WORKFLOW_LUNA6_COMPARISON_2026-09-29.md)
 complete for 1.0105070 token-derived planning credits. Checked memory, direct
 records, indexed recovery and full history each score 4/4; strong prose scores
@@ -80,6 +87,10 @@ Agents should first read [AGENTS.md](AGENTS.md). Historical notes are evidence a
 ## Reproduce the completed work
 
 Python 3.11 or newer runs the complete current test suite, including the subscription adapter's offline TOML configuration checks. The mathematical diagnostics themselves remain compatible with Python 3.10. The offline commands below need no packages, model API, network, credentials, or GPU.
+
+The executed-workflow artifact-reproduction checks use the recorded Windows
+environment and its native line endings; byte-identical build output on other
+operating systems is not established.
 
 ```powershell
 python -m unittest discover -s experiments/dependency_memory -v

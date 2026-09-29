@@ -1,0 +1,90 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "tests_recovery-checked-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.011295",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1791048511,
+        "usedPercent": 34,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"[{\\\"check\\\":\\\"tests\\\",\\\"snapshot\\\":\\\"ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f\\\",\\\"run_id\\\":\\\"df566ae62dfaf4a5bcb0f5090abda21ab476bbfbf1ce01bb20094572eaaca73d\\\",\\\"returncode\\\":0,\\\"artifacts\\\":{}}]\"}",
+  "request": {
+    "instruction": "Report whether the required checks have current successful evidence. For each required check use its latest observed run on the final source snapshot; a later failure supersedes an earlier success. A receipt is valid only if its bound artifact hashes match the final inventory. Return strict JSON with exactly ready (boolean), needs_work (sorted check names), and evidence (mapping each currently successful required check to its exact run_id). Include no extra fields. A missing, failed or stale check belongs in needs_work, not evidence. Do not invent evidence or shorten identifiers.\nEncode a compact JSON receipt table using only available observations. Preserve check, snapshot, run_id, returncode and artifact bindings for the latest run of every possible required check on each snapshot still in scope. Retain failures, exact identifiers and the fact that later runs supersede earlier ones. Do not encode only successful checks. Return only memory within the stated UTF-8 byte cap. At the second boundary use only admitted parent memory and new public observations.\nUse a JSON list of receipt objects with exactly the fields check, snapshot, run_id, returncode, artifacts. Return an object with one string field memory. Its decoded UTF-8 bytes must be <= 1536.\nThe announced scope lists possible final check names. Keep only those checks, preserving their latest receipts on every available source snapshot. The final source snapshot and a subset of scope will be disclosed later.",
+    "observation": {
+      "new_observations": [
+        {
+          "argv": [
+            "python",
+            "-B",
+            "test_calc.py"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 0,
+          "run_id": "df566ae62dfaf4a5bcb0f5090abda21ab476bbfbf1ce01bb20094572eaaca73d",
+          "snapshot": "ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f",
+          "stderr": "test_observed_contract (__main__.ArithmeticTests.test_observed_contract) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.001s\r\n\r\nOK\r\n",
+          "stdout": ""
+        }
+      ],
+      "previous_memory": "[{\"check\":\"paper\",\"snapshot\":\"ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f\",\"run_id\":\"ad9469c43ff1aa700405c1c0215de754da8113f1fdcc9dd597b296e611f6565f\",\"returncode\":0,\"artifacts\":{\"build/paper/manuscript.md\":\"082d164486e1fba7d92f6fc548c678fc9e0b98ca2ed4bd85c7a0ca8a4a13a3a6\",\"build/paper/preview.html\":\"584cf8164521ef30ec783eb68383f02567ab90442d55ceedd90b6db1f5b7b929\"}},{\"check\":\"repository\",\"snapshot\":\"ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f\",\"run_id\":\"e1498173b95730d6df7a5627b1b298e8c19bda80fdd5dd95ceed739292e14aef\",\"returncode\":0,\"artifacts\":{}},{\"check\":\"tests\",\"snapshot\":\"ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f\",\"run_id\":\"33fdc96e1cc058f1b1d72132a4021cf4c3179661c7505a4c8b0180e0bd3e990f\",\"returncode\":1,\"artifacts\":{}}]",
+      "scope": [
+        "tests"
+      ]
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "workflow_observed_luna6_dev_v1"
+  },
+  "request_sha256": "c36dc0b74a1baf78b424205e10bc637b5439f5b2c5beadd0c484ab38104ddfdd",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "[{\"check\":\"tests\",\"snapshot\":\"ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f\",\"run_id\":\"df566ae62dfaf4a5bcb0f5090abda21ab476bbfbf1ce01bb20094572eaaca73d\",\"returncode\":0,\"artifacts\":{}}]"
+  },
+  "started_at": "2026-09-29T17:53:08.548236+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 3543,
+    "outputTokens": 195,
+    "reasoningOutputTokens": 81,
+    "totalTokens": 3738
+  },
+  "usage_events": 1,
+  "wall_seconds": 11.939320000004955,
+  "wire_body_byte_bound": 23411
+}
