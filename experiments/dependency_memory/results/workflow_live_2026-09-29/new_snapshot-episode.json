@@ -1,0 +1,179 @@
+{
+  "call_ids": {
+    "checked": [
+      "new_snapshot-checked-parent",
+      "new_snapshot-checked-child",
+      "new_snapshot-checked-final"
+    ],
+    "direct": [
+      "new_snapshot-direct-final"
+    ],
+    "full": [
+      "new_snapshot-full-final"
+    ],
+    "indexed": [
+      "new_snapshot-indexed-final"
+    ],
+    "prose": [
+      "new_snapshot-prose-parent",
+      "new_snapshot-prose-child",
+      "new_snapshot-prose-final"
+    ]
+  },
+  "finals": {
+    "checked": {
+      "identity": "new_snapshot-checked-final",
+      "memory_bytes": 728
+    },
+    "direct": {
+      "identity": "new_snapshot-direct-final",
+      "memory_bytes": 728
+    },
+    "full": {
+      "identity": "new_snapshot-full-final",
+      "memory_bytes": 68474
+    },
+    "indexed": {
+      "identity": "new_snapshot-indexed-final",
+      "memory_bytes": 68474
+    },
+    "prose": {
+      "identity": "new_snapshot-prose-final",
+      "memory_bytes": 605
+    }
+  },
+  "id": "new_snapshot",
+  "index_storage": {
+    "byte_nanoseconds": 4662069710888100,
+    "bytes": 68509,
+    "scope": "measured retention during interleaved development schedule"
+  },
+  "local_events": {
+    "checked": [
+      {
+        "cpu_ns": 0,
+        "name": "parent_check_and_fallback",
+        "read_bytes": 69274,
+        "wall_ns": 123900,
+        "write_bytes": 890
+      },
+      {
+        "cpu_ns": 0,
+        "name": "child_check_and_fallback",
+        "read_bytes": 1527,
+        "wall_ns": 212900,
+        "write_bytes": 909
+      }
+    ],
+    "direct": [
+      {
+        "cpu_ns": 0,
+        "name": "parent_projection",
+        "read_bytes": 68474,
+        "wall_ns": 117700,
+        "write_bytes": 786
+      },
+      {
+        "cpu_ns": 0,
+        "name": "child_projection",
+        "read_bytes": 728,
+        "wall_ns": 79600,
+        "write_bytes": 786
+      }
+    ],
+    "full": [
+      {
+        "cpu_ns": 0,
+        "name": "read_full_history",
+        "read_bytes": 68474,
+        "wall_ns": 229100,
+        "write_bytes": 69876
+      }
+    ],
+    "indexed": [
+      {
+        "cpu_ns": 0,
+        "name": "build_raw_index",
+        "read_bytes": 68474,
+        "wall_ns": 44300,
+        "write_bytes": 68509
+      },
+      {
+        "cpu_ns": 0,
+        "name": "index_new_observations",
+        "read_bytes": 2,
+        "wall_ns": 2400,
+        "write_bytes": 68509
+      },
+      {
+        "cpu_ns": 15625000,
+        "name": "retrieve_all_requested_records",
+        "read_bytes": 68509,
+        "wall_ns": 423600,
+        "write_bytes": 69876
+      }
+    ],
+    "prose": [
+      {
+        "cpu_ns": 0,
+        "name": "parent_admission",
+        "read_bytes": 658,
+        "wall_ns": 12500,
+        "write_bytes": 708
+      },
+      {
+        "cpu_ns": 0,
+        "name": "child_admission",
+        "read_bytes": 618,
+        "wall_ns": 14300,
+        "write_bytes": 668
+      }
+    ]
+  },
+  "memories": {
+    "checked_child": {
+      "audit": {
+        "accepted": true,
+        "certificate_passed": false,
+        "fallback": true,
+        "infeasible": false,
+        "proposal_bytes": 727,
+        "reason": "accepted"
+      },
+      "memory": "[{\"artifacts\":{},\"check\":\"tests\",\"returncode\":0,\"run_id\":\"d7798fd5ba2103614912db346409ed7983487946ccf2d05918ed430a5de634d6\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\"},{\"artifacts\":{},\"check\":\"repository\",\"returncode\":0,\"run_id\":\"9898533afb7afeeff47ea3bb12fc9ddbebe02a716a34f6e1f29a88bab30e4eaf\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\"},{\"artifacts\":{\"build/paper/manuscript.md\":\"f23dd9a06fe4850527784b3d4d48436311bedf10cd9d0e170ce65b70afd8d431\",\"build/paper/preview.html\":\"33f6a7e4ca4f1eb6e90fb80cbfa85fefcbf93edcf86b5c784b31896e8f747eed\"},\"check\":\"paper\",\"returncode\":0,\"run_id\":\"e11ae1aaaac2035dd833b1642049be0a4c10cbdcf9b866242b956099d0da0caa\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\"}]"
+    },
+    "checked_parent": {
+      "audit": {
+        "accepted": true,
+        "certificate_passed": true,
+        "fallback": false,
+        "proposal_bytes": 728,
+        "reason": "accepted"
+      },
+      "memory": "[{\"check\":\"tests\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\",\"run_id\":\"d7798fd5ba2103614912db346409ed7983487946ccf2d05918ed430a5de634d6\",\"returncode\":0,\"artifacts\":{}},{\"check\":\"repository\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\",\"run_id\":\"9898533afb7afeeff47ea3bb12fc9ddbebe02a716a34f6e1f29a88bab30e4eaf\",\"returncode\":0,\"artifacts\":{}},{\"check\":\"paper\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\",\"run_id\":\"e11ae1aaaac2035dd833b1642049be0a4c10cbdcf9b866242b956099d0da0caa\",\"returncode\":0,\"artifacts\":{\"build/paper/manuscript.md\":\"f23dd9a06fe4850527784b3d4d48436311bedf10cd9d0e170ce65b70afd8d431\",\"build/paper/preview.html\":\"33f6a7e4ca4f1eb6e90fb80cbfa85fefcbf93edcf86b5c784b31896e8f747eed\"}}]"
+    },
+    "direct_child": {
+      "memory": "[{\"artifacts\":{},\"check\":\"tests\",\"returncode\":0,\"run_id\":\"d7798fd5ba2103614912db346409ed7983487946ccf2d05918ed430a5de634d6\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\"},{\"artifacts\":{},\"check\":\"repository\",\"returncode\":0,\"run_id\":\"9898533afb7afeeff47ea3bb12fc9ddbebe02a716a34f6e1f29a88bab30e4eaf\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\"},{\"artifacts\":{\"build/paper/manuscript.md\":\"f23dd9a06fe4850527784b3d4d48436311bedf10cd9d0e170ce65b70afd8d431\",\"build/paper/preview.html\":\"33f6a7e4ca4f1eb6e90fb80cbfa85fefcbf93edcf86b5c784b31896e8f747eed\"},\"check\":\"paper\",\"returncode\":0,\"run_id\":\"e11ae1aaaac2035dd833b1642049be0a4c10cbdcf9b866242b956099d0da0caa\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\"}]"
+    },
+    "direct_parent": {
+      "memory": "[{\"artifacts\":{},\"check\":\"tests\",\"returncode\":0,\"run_id\":\"d7798fd5ba2103614912db346409ed7983487946ccf2d05918ed430a5de634d6\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\"},{\"artifacts\":{},\"check\":\"repository\",\"returncode\":0,\"run_id\":\"9898533afb7afeeff47ea3bb12fc9ddbebe02a716a34f6e1f29a88bab30e4eaf\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\"},{\"artifacts\":{\"build/paper/manuscript.md\":\"f23dd9a06fe4850527784b3d4d48436311bedf10cd9d0e170ce65b70afd8d431\",\"build/paper/preview.html\":\"33f6a7e4ca4f1eb6e90fb80cbfa85fefcbf93edcf86b5c784b31896e8f747eed\"},\"check\":\"paper\",\"returncode\":0,\"run_id\":\"e11ae1aaaac2035dd833b1642049be0a4c10cbdcf9b866242b956099d0da0caa\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\"}]"
+    },
+    "prose_child": {
+      "audit": {
+        "accepted": true,
+        "proposal_bytes": 605,
+        "reason": "accepted"
+      },
+      "memory": "Final snapshot: 09cada8a37340510b558263d367b89c8cd2620b8. Required checks: tests PASS run_id d7798fd5ba2103614912db346409ed7983487946ccf2d05918ed430a5de634d6; repository PASS run_id 9898533afb7afeeff47ea3bb12fc9ddbebe02a716a34f6e1f29a88bab30e4eaf; paper PASS run_id e11ae1aaaac2035dd833b1642049be0a4c10cbdcf9b866242b956099d0da0caa. Paper receipt binds build/paper/manuscript.md hash f23dd9a06fe4850527784b3d4d48436311bedf10cd9d0e170ce65b70afd8d431 and build/paper/preview.html hash 33f6a7e4ca4f1eb6e90fb80cbfa85fefcbf93edcf86b5c784b31896e8f747eed. All successful on final snapshot; no later observed runs."
+    },
+    "prose_parent": {
+      "audit": {
+        "accepted": true,
+        "proposal_bytes": 645,
+        "reason": "accepted"
+      },
+      "memory": "At final snapshot 09cada8a37340510b558263d367b89c8cd2620b8, required checks observed: tests PASS run_id d7798fd5ba2103614912db346409ed7983487946ccf2d05918ed430a5de634d6; repository PASS run_id 9898533afb7afeeff47ea3bb12fc9ddbebe02a716a34f6e1f29a88bab30e4eaf; paper PASS run_id e11ae1aaaac2035dd833b1642049be0a4c10cbdcf9b866242b956099d0da0caa. Paper receipt artifacts bound to build/paper/manuscript.md hash f23dd9a06fe4850527784b3d4d48436311bedf10cd9d0e170ce65b70afd8d431 and build/paper/preview.html hash 33f6a7e4ca4f1eb6e90fb80cbfa85fefcbf93edcf86b5c784b31896e8f747eed. All three currently successful for this snapshot; no later observed runs."
+    }
+  },
+  "origin": "constructed_control"
+}

@@ -4,12 +4,20 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
+**September 29 live development comparison:** [36 Luna 6 medium calls](research/WORKFLOW_LUNA6_COMPARISON_2026-09-29.md)
+complete for 1.0105070 token-derived planning credits. Checked memory, direct
+records, indexed recovery and full history each score 4/4; strong prose scores
+3/4. Direct records use the fewest model credits in both cache views. The four
+cases share one observed local capture and three constructed continuations;
+they do not complete the held-out study or establish production savings.
+
 **September 29 evaluation packet:** the [observed-workflow packet](experiments/dependency_memory/workflow_eval/README.md)
 adds a frozen offline design, independent receipt grader and one real local
 test/validate/build development capture. It compares five proposed methods under
 two memory limits, with an explicit proposed run budget and go/no-go criteria.
-The packet is checkable offline; held-out intake, arm implementation and a live
-launch remain unfinished. No new model result or spending allocation is implied.
+The packet remains checkable offline. Its held-out intake and evaluation remain
+unfinished; the separately frozen development launch above preserves the
+original packet's evidence and zero-call historical state.
 
 **September 24 handoff correction:** A [versioned decoder-compatible parent check](research/DECODER_COMPATIBILITY_REPLAY_2026-09-24.md)
 closes the specific checked-arm parent/child mismatch found in the cross-record

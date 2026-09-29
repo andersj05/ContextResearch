@@ -1,0 +1,77 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "unchanged-prose-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0091205",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1791048507,
+        "usedPercent": 30,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"Final source snapshot: 09cada8a37340510b558263d367b89c8cd2620b8. Latest observed runs on it: tests PASS run_id=d7798fd5ba2103614912db346409ed7983487946ccf2d05918ed430a5de634d6; repository PASS run_id=9898533afb7afeeff47ea3bb12fc9ddbebe02a716a34f6e1f29a88bab30e4eaf; paper PASS run_id=e11ae1aaaac2035dd833b1642049be0a4c10cbdcf9b866242b956099d0da0caa. Paper receipt binds build/paper/manuscript.md=f23dd9a06fe4850527784b3d4d48436311bedf10cd9d0e170ce65b70afd8d431 and build/paper/preview.html=33f6a7e4ca4f1eb6e90fb80cbfa85fefcbf93edcf86b5c784b31896e8f747eed. These are the only evidenced artifact hashes; validate against final inventory. No later runs/observations supplied.\"}",
+  "request": {
+    "instruction": "Report whether the required checks have current successful evidence. For each required check use its latest observed run on the final source snapshot; a later failure supersedes an earlier success. A receipt is valid only if its bound artifact hashes match the final inventory. Return strict JSON with exactly ready (boolean), needs_work (sorted check names), and evidence (mapping each currently successful required check to its exact run_id). Include no extra fields. A missing, failed or stale check belongs in needs_work, not evidence. Do not invent evidence or shorten identifiers.\nPreserve the facts needed by the public rule after another memory reduction and a later source or artifact change. Prioritize exact snapshot/run identifiers, check names, chronological supersession, failures and artifact bindings. Public rules will be repeated; do not spend memory copying them. Use concise prose. Return only memory within the stated UTF-8 byte cap. At the second boundary use only admitted parent memory and new public observations.\nReturn an object with one string field memory. Its decoded UTF-8 bytes must be <= 1536.",
+    "observation": {
+      "new_observations": [],
+      "previous_memory": "Observed final source snapshot 09cada8a37340510b558263d367b89c8cd2620b8. Required checks observed: tests PASS run_id d7798fd5ba2103614912db346409ed7983487946ccf2d05918ed430a5de634d6; repository PASS run_id 9898533afb7afeeff47ea3bb12fc9ddbebe02a716a34f6e1f29a88bab30e4eaf; paper PASS run_id e11ae1aaaac2035dd833b1642049be0a4c10cbdcf9b866242b956099d0da0caa. Paper run artifacts: build/paper/manuscript.md=f23dd9a06fe4850527784b3d4d48436311bedf10cd9d0e170ce65b70afd8d431; build/paper/preview.html=33f6a7e4ca4f1eb6e90fb80cbfa85fefcbf93edcf86b5c784b31896e8f747eed. Only these artifact hashes are evidenced; compare against final inventory.",
+      "scope": [
+        "paper",
+        "repository",
+        "tests"
+      ]
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "workflow_observed_luna6_dev_v1"
+  },
+  "request_sha256": "9eb92dbd95a16a9a49e795b7c8973809b5f088785e8325487c6ab383e25e057d",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "Final source snapshot: 09cada8a37340510b558263d367b89c8cd2620b8. Latest observed runs on it: tests PASS run_id=d7798fd5ba2103614912db346409ed7983487946ccf2d05918ed430a5de634d6; repository PASS run_id=9898533afb7afeeff47ea3bb12fc9ddbebe02a716a34f6e1f29a88bab30e4eaf; paper PASS run_id=e11ae1aaaac2035dd833b1642049be0a4c10cbdcf9b866242b956099d0da0caa. Paper receipt binds build/paper/manuscript.md=f23dd9a06fe4850527784b3d4d48436311bedf10cd9d0e170ce65b70afd8d431 and build/paper/preview.html=33f6a7e4ca4f1eb6e90fb80cbfa85fefcbf93edcf86b5c784b31896e8f747eed. These are the only evidenced artifact hashes; validate against final inventory. No later runs/observations supplied."
+  },
+  "started_at": "2026-09-29T17:01:30.310989+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 1792,
+    "inputTokens": 3186,
+    "outputTokens": 415,
+    "reasoningOutputTokens": 130,
+    "totalTokens": 3601
+  },
+  "usage_events": 1,
+  "wall_seconds": 11.100253299984615,
+  "wire_body_byte_bound": 22237
+}

@@ -1,6 +1,25 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.20 — September 24, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.21 — September 29, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## Observed handoff development comparison: direct records remain strongest
+
+A separately frozen [36-call Luna 6 medium comparison](../research/WORKFLOW_LUNA6_COMPARISON_2026-09-29.md)
+uses one actual local validation/build capture and three constructed continuations.
+Checked memory, direct records, indexed raw recovery and full history each score
+4/4; strong prose scores 3/4. All writers are charged. Direct records use 0.0325430
+model planning credits versus 0.2940470 checked, 0.1968765 indexed, 0.2858350 prose
+and 0.2012055 full history; cache-neutral costs preserve direct's advantage.
+The entire launch uses 1.0105070 planning credits, with no retries or transport
+failures. These are model-cost observations, not fully priced production savings.
+
+The prose failure unnecessarily marks a repository check as needing work even
+though the exact successful receipt remains in its unclipped 814-byte child.
+Two checked children omit a JSON closing bracket; fallback preserves the correct
+records from their bounded parents. The checker therefore handles a concrete
+format failure, but offers no observed success advantage over direct records.
+The four conditions are correlated development controls, not four untouched
+workflows. The twelve-episode held-out study remains unperformed. [C51]
 
 ## Decoder-compatible handoffs after the cross-record failure
 

@@ -484,3 +484,31 @@ are authorized by this packet. Collect/split actual change tasks, implement and
 freeze the arms and isolation/cost contract, and obtain independent grader
 review before launch. Keep execution guards separate from memory effects. No
 new paper claim, novelty claim or provider behavior claim is added.
+
+## September 29: run a separate Luna 6 development comparison
+
+The user explicitly authorized live tests with Luna 6. Preserve the offline
+packet and its pending real-workflow intake. Freeze a separate 36-call comparison
+on the one observed local capture plus three labeled synthetic continuations.
+Do not substitute those controls for the uncollected held-out episodes. Use
+the existing subscription, exact `gpt-6-luna` alias and medium reasoning; no API
+key, purchase or reset. The USD 20 proposal is not converted into credits: this
+development launch uses a separate 20-planning-credit ceiling, reserving 7.65
+before each single in-flight call. The current user instruction authorizes it.
+
+The installed client changed serialization, so the old audit rejected the
+payload before generation. Add a separate audited profile for CLI
+0.158.0-alpha.2.1, preserving all historical code. Pin its full visible
+wrapper/clock registry and messages, check four no-auth transport controls at
+the largest public request, and freeze implementation and schedule at `ef31373`.
+No changes to frozen code, prompts or conditions followed the first model call.
+
+All 36 calls complete for 1.0105070 token-derived planning credits. Four methods
+score 4/4 and prose scores 3/4; direct records are cheapest in both cache views.
+Retain that unfavorable comparison for the candidate method. Checked fallback
+repairs two syntactically invalid child memories but adds no success over direct
+records. Prose unnecessarily requests repository work despite retaining the
+correct successful receipt. Preserve all answers and make no retries. Claim
+C51, the manuscript and living draft record these bounded development findings;
+untouched real workflows, independent external grader review and production
+total cost remain open.

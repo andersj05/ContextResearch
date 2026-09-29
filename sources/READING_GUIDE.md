@@ -159,3 +159,21 @@ These are internal primary artifacts, not newly reviewed academic publications.
 No bibliography metadata or inherited review label is upgraded. Their real
 transport observations support counterfactual handoff tests, not an attribution
 of those failures to compaction or a measurement of deployed memory savings.
+
+## September 29 Luna 6 development transport refresh
+
+Read the official [app-server documentation](https://learn.chatgpt.com/docs/app-server)
+on model listing, thread/turn calls, usage and reroute events; the
+[Luna 6 model page](https://developers.openai.com/api/docs/models/gpt-6-luna)
+on identifier, reasoning options and context/output limits; and
+[Codex pricing](https://learn.chatgpt.com/docs/pricing) on Standard token-credit
+rates. These living pages were opened September 29, 2026. Focused bibliography
+keys are `openai-codex-appserver2026`, `openai-gpt6-luna2026` and
+`openai-codex-pricing2026`. No academic corpus review status changes.
+
+The [separate development launch](../experiments/dependency_memory/workflow_eval_live/CONTRACT.md)
+uses the local client/catalog and a no-auth loopback audit to check actual
+serialization. Current CLI 0.158.0-alpha.2.1 moves base instructions into a
+developer message and tools into an additional-tools item. This is a checked
+client observation, not an inference about provider internals. Published token
+rates support planning-credit accounting, not a claim of measured account debit.

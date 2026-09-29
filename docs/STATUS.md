@@ -6,7 +6,32 @@ Updated: September 29, 2026. This document is the current handoff; older scope d
 
 Develop a mathematically precise and implementable study of repeated agent compaction when relevance is revealed over time. The target is a restricted compatibility result plus controlled evidence of whether the mechanism matters in tool-agent tasks.
 
-The September 29 [observed-workflow evaluation packet](../experiments/dependency_memory/workflow_eval/PROTOCOL.md)
+The separately frozen September 29 [live development comparison](../research/WORKFLOW_LUNA6_COMPARISON_2026-09-29.md)
+completed all **36 GPT-6 Luna medium calls** after launch freeze `ef31373`, with
+no retry or transport failure. Checked memory, direct records, indexed recovery
+and full history score 4/4; strong prose scores 3/4. Direct records use 0.0325430
+model planning credits versus 0.2940470 checked, 0.1968765 indexed, 0.2858350 prose
+and 0.2012055 full history. Cache-neutral accounting preserves direct's lead.
+Total: 1.0105070 planning credits, 375,780 input tokens (23,808 cached) and 9,970
+output tokens (3,027 reasoning). Actual account debit is unknown; API spending
+is zero. Claim C51; living draft v0.21.
+
+These are four correlated conditions from one observed local workflow, including
+three constructed controls. The 814-byte prose child retains the repository
+success it later omits from its final evidence map. Two checked child proposals
+are missing a closing JSON bracket and fall back using only bounded parent
+evidence. No false-ready decision occurs. The analyzer reconstructs all public
+requests and reconciles saved answers, byte accounting and usage. Local CPU and
+index storage are measured separately; no fully priced total-cost advantage,
+native-compaction gain or held-out primary result is established. The twelve
+untouched real change-task episodes remain uncollected.
+
+Live-comparison validation: all **400 offline tests pass**. The repository
+validator reports PASS and reconstructs all 36 saved model calls; the paper
+build succeeds with 37 cited sources. Historical captures and study artifacts
+retain their original bytes and counts.
+
+The earlier September 29 [observed-workflow evaluation packet](../experiments/dependency_memory/workflow_eval/PROTOCOL.md)
 freezes an offline reporting contract, independent terminal grader, exact prompts,
 integrity preflight and one development capture of this repository's real
 test/validate/build commands at clean commit `40cec05`. All three commands
@@ -15,16 +40,18 @@ boundaries and mutated controls are constructed, not external held-out incidents
 The direct-record feasibility diagnostic fits the proposed 4,096/1,536-byte caps.
 This is an easy control to retain, not evidence for the candidate method.
 
-The proposed study compares checked proposals, direct records, raw indexed
+The original proposed study compares checked proposals, direct records, raw indexed
 recovery, strong prose and full history on four development and twelve evaluation
-episodes, with a 144-dispatch / USD 20 proposed ceiling. No new model call or
-spending allocation is made. The packet includes no live runner and its preflight
-explicitly reports launch not ready. Remaining work is observed trace intake and
-private split, independent grader review, five-arm implementation, provider and
-isolation contract, cost instrumentation, complete request freeze and a bounded
-launch authorization. The grader checks revision validity, later failures and
+episodes, with a 144-dispatch / USD 20 proposed ceiling. At that packet freeze,
+no model call or spending allocation was made. Its immutable preflight still
+reports launch not ready. The separate development launch above supplies a
+five-arm implementation, provider/isolation contract and cost instrumentation;
+the full study still needs observed trace intake and a private split, independent
+grader review, its own complete request freeze and bounded launch allocation.
+The grader checks revision validity, later failures and
 artifact hashes independently of the memory method. An action guard stays a
-separate intervention. Existing scientific claims and model results are unchanged.
+separate intervention. The original packet and all earlier model results remain
+unchanged.
 
 Packet validation: all 391 offline tests pass (including 14 new grader/integrity
 checks), the repository validator reports PASS, and the paper builds with 34
@@ -259,6 +286,10 @@ Start with the [September 29 packet](../experiments/dependency_memory/workflow_e
 and its explicit remaining launch gates. One actual local development capture is
 available; the remaining development and all evaluation episodes are uncollected.
 The protocol/grader freeze is not an evaluation-data freeze or a live launch.
+The subsequent 36-call development comparison supplies an audited runner and
+current transport, but its three constructed mutations do not fill the missing
+real-workflow slots. Keep the successful, cheap direct-record baseline central
+when collecting actual change tasks; do not tune the existing cases for a win.
 
 The constructed execution adapter, historical evidence replay, first live
 release-gate pilot, and offline decoder-compatibility correction are complete.

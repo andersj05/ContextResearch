@@ -22,6 +22,13 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.21 adds the [September 29 development comparison](../research/WORKFLOW_LUNA6_COMPARISON_2026-09-29.md),
+claim C51. All 36 Luna 6 medium calls complete. Checked/direct/indexed/full score
+4/4 and prose 3/4; direct records use the fewest model credits in both cache views.
+The four cases reuse one observed local workflow and three constructed controls,
+not untouched real tasks. Local resource measurements are separate from model
+credits. The packet's held-out primary criterion remains unassessed.
+
 Living draft v0.20 records the [decoder-compatible handoff correction and branch
 audit](../research/DECODER_COMPATIBILITY_REPLAY_2026-09-24.md), claim C50. The
 parent certificate now exercises the actual child check on every owner pair;

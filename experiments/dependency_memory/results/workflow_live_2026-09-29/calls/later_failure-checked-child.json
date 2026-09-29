@@ -1,0 +1,96 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "later_failure-checked-child",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.013995",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1791048507,
+        "usedPercent": 30,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"memory\":\"[{\\\"check\\\":\\\"tests\\\",\\\"snapshot\\\":\\\"09cada8a37340510b558263d367b89c8cd2620b8\\\",\\\"run_id\\\":\\\"1902d93dbc75c971e7b815d9a6c6e9eb3c5b56fe913ee25c6b8ae6696d64c78f\\\",\\\"returncode\\\":1,\\\"artifacts\\\":{}},{\\\"check\\\":\\\"repository\\\",\\\"snapshot\\\":\\\"09cada8a37340510b558263d367b89c8cd2620b8\\\",\\\"run_id\\\":\\\"9898533afb7afeeff47ea3bb12fc9ddbebe02a716a34f6e1f29a88bab30e4eaf\\\",\\\"returncode\\\":0,\\\"artifacts\\\":{}},{\\\"check\\\":\\\"paper\\\",\\\"snapshot\\\":\\\"09cada8a37340510b558263d367b89c8cd2620b8\\\",\\\"run_id\\\":\\\"e11ae1aaaac2035dd833b1642049be0a4c10cbdcf9b866242b956099d0da0caa\\\",\\\"returncode\\\":0,\\\"artifacts\\\":{\\\"build/paper/manuscript.md\\\":\\\"f23dd9a06fe4850527784b3d4d48436311bedf10cd9d0e170ce65b70afd8d431\\\",\\\"build/paper/preview.html\\\":\\\"33f6a7e4ca4f1eb6e90fb80cbfa85fefcbf93edcf86b5c784b31896e8f747eed\\\"}}]\"}",
+  "request": {
+    "instruction": "Report whether the required checks have current successful evidence. For each required check use its latest observed run on the final source snapshot; a later failure supersedes an earlier success. A receipt is valid only if its bound artifact hashes match the final inventory. Return strict JSON with exactly ready (boolean), needs_work (sorted check names), and evidence (mapping each currently successful required check to its exact run_id). Include no extra fields. A missing, failed or stale check belongs in needs_work, not evidence. Do not invent evidence or shorten identifiers.\nEncode a compact JSON receipt table using only available observations. Preserve check, snapshot, run_id, returncode and artifact bindings for the latest run of every possible required check on each snapshot still in scope. Retain failures, exact identifiers and the fact that later runs supersede earlier ones. Do not encode only successful checks. Return only memory within the stated UTF-8 byte cap. At the second boundary use only admitted parent memory and new public observations.\nUse a JSON list of receipt objects with exactly the fields check, snapshot, run_id, returncode, artifacts. Return an object with one string field memory. Its decoded UTF-8 bytes must be <= 1536.",
+    "observation": {
+      "new_observations": [
+        {
+          "argv": [
+            "python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "experiments/dependency_memory",
+            "-v"
+          ],
+          "artifacts": {},
+          "check": "tests",
+          "returncode": 1,
+          "run_id": "1902d93dbc75c971e7b815d9a6c6e9eb3c5b56fe913ee25c6b8ae6696d64c78f",
+          "snapshot": "09cada8a37340510b558263d367b89c8cd2620b8",
+          "stderr": "Constructed control: a later test attempt failed.\n",
+          "stdout": ""
+        }
+      ],
+      "previous_memory": "[{\"check\":\"tests\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\",\"run_id\":\"d7798fd5ba2103614912db346409ed7983487946ccf2d05918ed430a5de634d6\",\"returncode\":0,\"artifacts\":{}},{\"check\":\"repository\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\",\"run_id\":\"9898533afb7afeeff47ea3bb12fc9ddbebe02a716a34f6e1f29a88bab30e4eaf\",\"returncode\":0,\"artifacts\":{}},{\"check\":\"paper\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\",\"run_id\":\"e11ae1aaaac2035dd833b1642049be0a4c10cbdcf9b866242b956099d0da0caa\",\"returncode\":0,\"artifacts\":{\"build/paper/manuscript.md\":\"f23dd9a06fe4850527784b3d4d48436311bedf10cd9d0e170ce65b70afd8d431\",\"build/paper/preview.html\":\"33f6a7e4ca4f1eb6e90fb80cbfa85fefcbf93edcf86b5c784b31896e8f747eed\"}}]",
+      "scope": [
+        "paper",
+        "repository",
+        "tests"
+      ]
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "memory": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "memory"
+      ],
+      "type": "object"
+    },
+    "stage": "child",
+    "version": "workflow_observed_luna6_dev_v1"
+  },
+  "request_sha256": "63a12ace65a18059445b60836f08005fc608c299782790d1221951b4166d6b35",
+  "reservation_credits": "7.65",
+  "response": {
+    "memory": "[{\"check\":\"tests\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\",\"run_id\":\"1902d93dbc75c971e7b815d9a6c6e9eb3c5b56fe913ee25c6b8ae6696d64c78f\",\"returncode\":1,\"artifacts\":{}},{\"check\":\"repository\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\",\"run_id\":\"9898533afb7afeeff47ea3bb12fc9ddbebe02a716a34f6e1f29a88bab30e4eaf\",\"returncode\":0,\"artifacts\":{}},{\"check\":\"paper\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\",\"run_id\":\"e11ae1aaaac2035dd833b1642049be0a4c10cbdcf9b866242b956099d0da0caa\",\"returncode\":0,\"artifacts\":{\"build/paper/manuscript.md\":\"f23dd9a06fe4850527784b3d4d48436311bedf10cd9d0e170ce65b70afd8d431\",\"build/paper/preview.html\":\"33f6a7e4ca4f1eb6e90fb80cbfa85fefcbf93edcf86b5c784b31896e8f747eed\"}}]"
+  },
+  "started_at": "2026-09-29T17:04:13.369720+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 3413,
+    "outputTokens": 437,
+    "reasoningOutputTokens": 84,
+    "totalTokens": 3850
+  },
+  "usage_events": 1,
+  "wall_seconds": 14.969294200011063,
+  "wire_body_byte_bound": 23020
+}

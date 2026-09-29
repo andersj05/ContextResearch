@@ -1,6 +1,6 @@
 # Repeated Context Compression with Delayed Task Dependencies
 
-Working draft — September 24, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an asymptotic threshold and a tightly certified rate-two error, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, a cross-record stress test with one permanent transport gap and a separately frozen continuation, and a post-hoc offline decoder-compatibility correction. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
+Working draft — September 29, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an asymptotic threshold and a tightly certified rate-two error, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, a cross-record stress test with one permanent transport gap and a separately frozen continuation, and a post-hoc offline decoder-compatibility correction. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
 
 ## Abstract
 
@@ -440,6 +440,36 @@ certificate still accepts a schema-valid but wrong state value, or omission of
 a non-ID state field; semantic sufficiency, final-model interpretation errors
 and action safety require separate evaluation.
 Claim C50.
+
+### 8.8 Observed repository handoff: live development comparison
+
+Following the offline evaluation packet, a separate contract and 36-call schedule
+were frozen at `ef31373`. One observed local test/validate/build capture supplies
+an unchanged handoff and three explicitly constructed continuations: a new source
+snapshot, a later failed test and a replaced HTML artifact. All model requests
+use `gpt-6-luna` medium through a freshly audited client; the mutable model alias
+is not an immutable snapshot. Current model limits, protocol and token-credit
+rates are dated official-source checks, while serialization is verified locally
+[@openai-gpt6-luna2026; @openai-codex-appserver2026; @openai-codex-pricing2026].
+
+Checked proposals, direct records, indexed raw recovery and full history score
+4/4 exact decisions; strong prose scores 3/4. No false-ready decision occurs.
+Charging both writers, model planning credits are respectively 0.2940470,
+0.0325430, 0.1968765, 0.2012055 and 0.2858350. Direct records remain cheapest
+without cache discounts. The entire schedule completes for 1.0105070 planning
+credits with no retry or transport failure. Local CPU, byte traffic and index
+storage duration are separate measurements; actual account debit, human effort
+and fully monetized infrastructure cost remain unknown.
+
+The prose failure omits a repository success from its final evidence despite
+retaining that exact receipt in an unclipped 814-byte child. Two checked children
+produce receipt-list JSON missing its closing bracket and fall back to records
+derived from the bounded parent, without recovering deleted source. The
+[saved-evidence analysis](../research/WORKFLOW_LUNA6_COMPARISON_2026-09-29.md)
+reconstructs every public request before grading. These are four correlated
+development conditions from one observed local workflow; they neither fill the
+twelve untouched evaluation slots nor assess the packet's held-out go criterion.
+Claim C51.
 
 ## 9. Limitations and open results
 

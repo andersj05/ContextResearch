@@ -1,0 +1,135 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "new_snapshot-direct-final",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.0042415",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1791048507,
+        "usedPercent": 30,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"ready\":false,\"needs_work\":[\"paper\",\"repository\",\"tests\"],\"evidence\":{\"paper\":null,\"repository\":null,\"tests\":null}}",
+  "request": {
+    "instruction": "Report whether the required checks have current successful evidence. For each required check use its latest observed run on the final source snapshot; a later failure supersedes an earlier success. A receipt is valid only if its bound artifact hashes match the final inventory. Return strict JSON with exactly ready (boolean), needs_work (sorted check names), and evidence (mapping each currently successful required check to its exact run_id). Include no extra fields. A missing, failed or stale check belongs in needs_work, not evidence. Do not invent evidence or shorten identifiers.\nApply the public rule to the supplied memory or authorized recovered observations and the final public snapshot, required checks and artifact inventory. Return only the specified JSON object. If evidence is insufficient, include that check in needs_work. Do not consult any filesystem, prior conversation or undeclared tool.\nSerialization: include all three evidence keys paper, repository, tests; use null for absent evidence.",
+    "observation": {
+      "final_public_state": {
+        "artifacts": {
+          "build/paper/manuscript.md": "f23dd9a06fe4850527784b3d4d48436311bedf10cd9d0e170ce65b70afd8d431",
+          "build/paper/preview.html": "33f6a7e4ca4f1eb6e90fb80cbfa85fefcbf93edcf86b5c784b31896e8f747eed"
+        },
+        "required_checks": [
+          "paper",
+          "repository",
+          "tests"
+        ],
+        "snapshot": "0c2dcd30bfac3df9febe0f2eaed9cedfda1e4fc62e5ef7df2a93200101aca6ce"
+      },
+      "memory": "[{\"artifacts\":{},\"check\":\"tests\",\"returncode\":0,\"run_id\":\"d7798fd5ba2103614912db346409ed7983487946ccf2d05918ed430a5de634d6\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\"},{\"artifacts\":{},\"check\":\"repository\",\"returncode\":0,\"run_id\":\"9898533afb7afeeff47ea3bb12fc9ddbebe02a716a34f6e1f29a88bab30e4eaf\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\"},{\"artifacts\":{\"build/paper/manuscript.md\":\"f23dd9a06fe4850527784b3d4d48436311bedf10cd9d0e170ce65b70afd8d431\",\"build/paper/preview.html\":\"33f6a7e4ca4f1eb6e90fb80cbfa85fefcbf93edcf86b5c784b31896e8f747eed\"},\"check\":\"paper\",\"returncode\":0,\"run_id\":\"e11ae1aaaac2035dd833b1642049be0a4c10cbdcf9b866242b956099d0da0caa\",\"snapshot\":\"09cada8a37340510b558263d367b89c8cd2620b8\"}]"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence": {
+          "additionalProperties": false,
+          "properties": {
+            "paper": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "repository": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "tests": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "paper",
+            "repository",
+            "tests"
+          ],
+          "type": "object"
+        },
+        "needs_work": {
+          "items": {
+            "enum": [
+              "paper",
+              "repository",
+              "tests"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "ready": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "ready",
+        "needs_work",
+        "evidence"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "workflow_observed_luna6_dev_v1"
+  },
+  "request_sha256": "5caafa3cafe1837802822caf75542e1766f0a0e974ccabdff3dc8b8db1c21b5d",
+  "reservation_credits": "7.65",
+  "response": {
+    "evidence": {
+      "paper": null,
+      "repository": null,
+      "tests": null
+    },
+    "needs_work": [
+      "paper",
+      "repository",
+      "tests"
+    ],
+    "ready": false
+  },
+  "started_at": "2026-09-29T17:03:17.930170+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 2816,
+    "inputTokens": 3511,
+    "outputTokens": 144,
+    "reasoningOutputTokens": 102,
+    "totalTokens": 3655
+  },
+  "usage_events": 1,
+  "wall_seconds": 6.575265999999829,
+  "wire_body_byte_bound": 23470
+}
