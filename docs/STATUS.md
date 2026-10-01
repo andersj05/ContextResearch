@@ -20,6 +20,16 @@ remain pending. This is one inspected program, not new natural
 prospective tasks. The [source review](../research/SCOPE_INFERENCE_DESIGN_2026-10-01.md)
 identifies dependency traces and scoped reuse as established prior mechanisms.
 
+The specifically approved first launch at `2de4672` stopped before generation:
+its reservation directory was missing. Zero dispatches, metered answers or
+unknown reservations were recorded. All original bytes remain preserved.
+The [separate replacement runner](../experiments/dependency_memory/scope_inference_v2/PROTOCOL.md)
+creates the directory, uses new identities and keeps every scientific input,
+public request and score unchanged. Three cold-directory mocked tests and a
+fresh four-case zero-generation CLI/configuration audit pass. Its eight-call /
+20-planning-credit allocation is prepared for committed attestation; it has
+not yet generated a model outcome.
+
 The [separate fixed-schema control](../research/SCOPE_CODEBOOK_CONTROL_2026-10-01.md)
 uses the existing dictionary codec: all 24 constructed late queries succeed
 with 949–1,009 child bytes, versus 12/24 for the plain authored JSON projection.

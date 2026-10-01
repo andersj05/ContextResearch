@@ -674,3 +674,20 @@ Luna research. Proceed with this frozen allocation; larger future studies still
 need their own scientific design and cost accounting, without redundant approval
 requests for already authorized model calls. All 464 offline tests, repository
 validation and paper assembly pass at the serialization-control milestone.
+
+## October 1: preserve the abandoned launch and correct reservation setup
+
+The approved original launch at `2de4672` stopped with `FileNotFoundError`
+before any `turn/start`: it did not create the directory used by durable
+reservations. Zero calls were dispatched or metered and no unknown reservation
+was left. Preserve its complete original sources and launch/stop/analysis bytes.
+This is a local runner defect, not a provider or research-treatment outcome.
+
+Implement a separate version 2 that creates the directory before invoking the
+unchanged frozen client. Mocked tests reproduce the failure and assert that a
+durable 7.65 reservation precedes the fake generating RPC. A fresh CLI audit
+passes all four zero-generation cases. Freeze eight new local identities and
+the byte-identical public requests before generation, retaining the original
+criterion and a fresh 20-planning-credit cap. User authorization covers this
+correction; do not repeat an approval question. Never resume either launched
+version or extend spent historical allocations.

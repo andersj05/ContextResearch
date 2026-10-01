@@ -5,6 +5,11 @@ The [protocol](PROTOCOL.md) was committed at `3abb7f7` before implementation.
 The [design/source review](../../../research/SCOPE_INFERENCE_DESIGN_2026-10-01.md)
 records the question, strong controls and close incremental-build precedents.
 
+The approved original launch at `2de4672` stopped before any generation because
+its reservation directory was absent. The [separate replacement](../scope_inference_v2/README.md)
+corrects that setup, with byte-identical scientific requests and new local
+identities. Original frozen sources and saved zero-dispatch evidence are intact.
+
 The learner sees two actual pure historical classifier functions and a restricted
 JSON projection DSL. It sees no observations, handwritten projection, test catalog,
 labels or counterexamples. Two prompt variants have four paired replicates each.

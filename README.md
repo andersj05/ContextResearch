@@ -9,7 +9,9 @@ answers all 24 constructed late queries under unchanged byte caps, as do cached
 public-program outcomes; ordinary authored JSON answers 12/24. This narrows the
 remaining question to complete automatic scope inference and changing query
 demands. The [eight-call source-only study](experiments/dependency_memory/scope_inference/PROTOCOL.md)
-is frozen and specifically approved, with dispatch still pending at this milestone.
+was specifically approved, then stopped before dispatch due to a missing
+reservation directory. The [separate corrected launch](experiments/dependency_memory/scope_inference_v2/README.md)
+preserves all scientific inputs and has new local identities.
 No model result or new natural task is added.
 
 **October 1 method audit:** the [local derivation and finite comparisons](research/WORKFLOW_METHOD_AUDIT_2026-10-01.md)
