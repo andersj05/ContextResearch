@@ -773,6 +773,17 @@ def main() -> int:
             counts["evidence_use_correct_proposals_uncheckable"] = evidence["summary"]["correct_proposals_uncheckable"]
         except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
             errors.append(f"Evidence-use retrospective validation failed: {error}")
+    intake_ledger = ROOT / "experiments/dependency_memory/workflow_intake/ledger.json"
+    if intake_ledger.is_file():
+        try:
+            from experiments.dependency_memory.workflow_intake.packet import validate_registered
+            intake = validate_registered()
+            counts["single_repository_development_episodes"] = intake["observed_development_episodes"]
+            counts["single_repository_observed_commands"] = intake["observed_commands"]
+            counts["single_repository_prospective_episodes"] = intake["prospective_evaluation_episodes"]
+            counts["single_repository_private_held_out_episodes"] = intake["private_held_out_episodes"]
+        except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
+            errors.append(f"Single-repository workflow intake validation failed: {error}")
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"

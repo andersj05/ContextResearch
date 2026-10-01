@@ -69,3 +69,18 @@ precedents [@basu2022hypergraph]. The pairwise/triple example is elementary.
 Natural-task extraction, exact channel equality, scaling and comparison with a
 simple critical-field baseline are open; the implementation is not evidence of
 a new general semantic theory or measured model improvement.
+
+## Retained-evidence use, October 1
+
+The [bounded primary-source comparison](../research/EVIDENCE_USE_AUDIT_2026-10-01.md#focused-primary-source-comparison)
+adds TierMem v1's provenance-linked summaries, selective raw-log escalation and
+omission-versus-reasoning diagnostics [@tiermem2026]. Those mechanisms precede
+any generic claim about evidence sufficiency or recovery. Its query-phase cost
+scope does not supply a complete lifecycle-cost comparison for our intervention.
+
+Mem2ActBench evaluates memory-dependent tool parameters using synthesized evolving
+memory chains; its main evaluation supplies the ground-truth tool [@mem2act2026].
+It is a useful memory-use precedent, distinct from untouched repository task
+intake or repeated irreversible handoffs. Our hand-written interpreter of known
+public rules is a diagnostic control. No new verification-method priority,
+unfamiliar-workflow compiler or prospective task improvement is established.

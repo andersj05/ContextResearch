@@ -1,6 +1,32 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.22 — September 29, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.23 — October 1, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## Retaining evidence does not ensure its correct use
+
+The [October 1 offline investigation](../research/EVIDENCE_USE_AUDIT_2026-10-01.md)
+audits all 319 observed final answers in three recent inspected studies, including
+53 errors. In 31 errors a hand-written public-rule interpreter recovers the correct
+answer from the retained memory. One additional prose answer overlooks a retained
+success. Another typed memory is already wrong; seventeen are empty and three
+cannot be checked by this parser. These are correlated development observations,
+not an estimate of error prevalence in independent tasks.
+
+A guard that sees only the admitted final request and proposal contradicts 32
+wrong proposals, but also leaves 39 correct proposals uncheckable. Its hypothetical
+readout agrees with full-ledger grading in 258/259 parseable cases. Vetoes and
+readouts do not count as executed repairs. The controls show that omission of a
+later failure can leave exactly the same admitted inputs as a complete successful
+history; consistency cannot certify coverage or authenticate a receipt. Claims
+C53–C54. Known-rule interpretation is a diagnostic control with prior verification
+and memory-use precedents [@tiermem2026; @mem2act2026], not a new general method.
+
+The [next intake](../experiments/dependency_memory/workflow_intake/README.md)
+uses this repository for actual development tasks, prospective observations and
+separate evaluator manifests. This current task is inspected development evidence.
+Future tasks require a method/grader freeze and explicit serialized actor access;
+folder names do not make them blind. No new model call or private held-out result
+has been added.
 
 ## Executed workflows: interrupted comparison and an interpretation error
 

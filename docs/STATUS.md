@@ -1,10 +1,31 @@
 # Current research status
 
-Updated: September 29, 2026. This document is the current handoff; older scope documents are historical.
+Updated: October 1, 2026. This document is the current handoff; older scope documents are historical.
 
 ## Objective
 
 Develop a mathematically precise and implementable study of repeated agent compaction when relevance is revealed over time. The target is a restricted compatibility result plus controlled evidence of whether the mechanism matters in tool-agent tasks.
+
+The [October 1 evidence-use investigation](../research/EVIDENCE_USE_AUDIT_2026-10-01.md)
+is complete offline: **368 scheduled finals, 319 observed answers, 53 errors,
+three permanent transport gaps and 46 never-dispatched finals** across three
+already inspected studies. Thirty-one errors have a correct retained-rule readout;
+one prose error retains its obligation, one typed memory is already wrong,
+seventeen have empty memory and three representations remain uncheckable.
+The actor-only typed guard contradicts 32 wrong proposals and leaves 39 correct
+proposals uncheckable. Its 258/259 correct hypothetical readouts are retrospective
+diagnostics, not measured repairs. Completeness and authenticity cannot be
+certified from the retained evidence alone. Claims C53–C54; living draft v0.23.
+
+The user chose **this repository as the sole working repository**. The
+[workflow intake](../experiments/dependency_memory/workflow_intake/README.md)
+separates method code, chronological development observations, future prospective
+tasks, evaluator manifests and serialized actor views. Checkpoint A of this actual
+research task is recorded at `eeec334`: all 430 tests, repository validation and
+paper assembly pass. Checkpoint B and episode registration are in progress.
+No new model call or provider allocation has been made. Prospective evaluation
+and the old twelve private held-out episodes remain unperformed. Folders provide
+organization; a launch must enforce the declared actor access contract.
 
 The [executed-workflow follow-up](../research/EXECUTED_WORKFLOW_COMPARISON_2026-09-29.md)
 is incomplete after two transport failures. The first frozen launch stops at
@@ -302,20 +323,19 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 
 ## Next bounded tasks
 
-Start with the [September 29 packet](../experiments/dependency_memory/workflow_eval/README.md)
-and its explicit remaining launch gates. One actual local development capture is
-available; the remaining development and all evaluation episodes are uncollected.
-The protocol/grader freeze is not an evaluation-data freeze or a live launch.
-The subsequent 36-call development comparison supplies an audited runner and
-current transport, but its three constructed mutations do not fill the missing
-real-workflow slots. Keep the successful, cheap direct-record baseline central
-when collecting actual change tasks; do not tune the existing cases for a win.
+Continue the [single-repository intake](../experiments/dependency_memory/workflow_intake/README.md).
+Register this inspected development task, finish independent grader review and
+freeze a new prospective observed comparison before eligible new tasks arrive.
+Keep twelve whole future tasks as the collection target, preserving chronology,
+inspection and exclusions. The old [September 29 packet](../experiments/dependency_memory/workflow_eval/README.md)
+and its private held-out criterion remain unchanged and unassessed. Constructed
+mutations do not fill missing task slots. Keep the cheap direct-record and indexed
+controls central; do not tune the current cases for a win.
 
 The constructed execution adapter, historical evidence replay, first live
 release-gate pilot, and offline decoder-compatibility correction are complete.
 The next empirical task is to infer an inexpensive identity/role/dependency
-contract from an externally observed executable workflow, rather than
-supplying the projection manually. Freeze that workflow's grader, delayed
+contract from an actual subsequent workflow in this repository. Freeze its grader, delayed
 obligations and information order before tuning extraction. The release and
 cross-record examples have been inspected and are not a held-out set. Keep
 the execution guard as a separate intervention with its own public rule and

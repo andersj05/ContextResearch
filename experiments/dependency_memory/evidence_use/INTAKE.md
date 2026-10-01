@@ -12,6 +12,8 @@ implementation/documentation work, not a fabricated incident. No failure quota
 is required. Source commits, command order, return codes, raw output hashes and
 artifact bindings accompany every receipt. Source snapshots must remain fixed
 during each command. Preserve failed and incomplete checkpoints.
+Only the two collector windows enter the receipt-reporting task; earlier and
+interim uncaptured development commands are excluded and do not count as runs.
 
 The collector has exactly three allowlisted offline commands. It refuses dirty
 sources and existing destinations and writes new raw observations only beneath
@@ -31,23 +33,31 @@ held-out slot. Its data and source commits are available to the implementer.
 Byte-limited handoffs remain an imposed intervention; no model intervention has
 yet run on this episode. Correct ordinary checks are allowed to be easy controls.
 
-## Held-out collection requirements
+## Single-repository collection and evidence labels
 
-For the proposed evaluation, keep the existing
-[source intake and split rules](../workflow_eval/PROTOCOL.md#source-intake-and-split):
-four actual development and twelve actual evaluation change tasks, consecutive
-eligible intake, whole-task splits, failed/short/easy tasks retained, exclusions
-recorded before method outputs, and two declared handoff checkpoints per task.
-The remaining tasks must come from an actual recorded task stream. Authored
-fixture scenarios, reductions of old mistakes and repeated variants of this
-task do not create new independent episodes.
+The user selected **ContextResearch as the sole working repository**. Use the
+[segmented intake](../workflow_intake/README.md) for development observations,
+future prospective tasks, evaluator manifests and actor input construction.
+The original [source intake and split rules](../workflow_eval/PROTOCOL.md#source-intake-and-split)
+remain a frozen historical proposal; do not relabel its uncollected private
+episodes as acquired. The new stream retains consecutive eligible whole tasks,
+failed/short/easy tasks, exclusions recorded before method outputs, and two
+chronological checkpoints. Authored fixture scenarios, reductions of old mistakes
+and repeated variants of one task do not create independent episodes.
 
-An evaluator who does not tune the actor must own the raw evaluation traces,
-grader manifests and access log outside the actor/implementer workspace. A hash
-or a directory named `private` does not provide isolation. Record the actual
-inspection history. No such private source stream is available in the current
-repository, so its held-out count remains zero. Acquire the stream before
-constructing a full launch; do not substitute synthetic tasks to fill the quota.
+A future comparison from this repository can be prospective observed evaluation
+when the method, grader and selection rule are frozen before new tasks arrive
+and scores are not used for tuning. Report one repository/workload family and
+the actual inspection history. It is not independent blind evaluation merely
+because files sit in different folders. Blind evaluation needs actual role and
+access separation; the old private held-out count remains zero. Target twelve
+future whole tasks without manufacturing work to fill the quota.
+
+Actor calls receive only explicit serialized views with fresh contexts and no
+repository, filesystem, Git or evaluator access. The current view functions
+check disclosure order and UTF-8 memory limits; they are not process sandboxes
+or a verified provider launch. The complete runner/access contract remains a
+separate launch gate.
 
 ## Prospective question and screening decision
 

@@ -4,6 +4,15 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
+**October 1 evidence-use investigation:** a [post-hoc offline audit](research/EVIDENCE_USE_AUDIT_2026-10-01.md)
+reconciles 319 observed final answers and 53 errors. A hand-written check of
+retained public-rule evidence contradicts 32 wrong proposals, while leaving 39
+correct proposals uncheckable. No repaired-task or new model gain is measured.
+The [new intake segments](experiments/dependency_memory/workflow_intake/README.md)
+keep actual research workflows, evaluator labels and actor inputs in this one
+repository. This task is inspected development evidence; future prospective
+tasks and the old private held-out study remain unperformed.
+
 **September 29 executed-workflow follow-up:** the [108-call plan](research/EXECUTED_WORKFLOW_COMPARISON_2026-09-29.md)
 stopped after 26 dispatches across two frozen launches: 24 metered answers, two
 transport failures and 82 never-dispatched identities. One direct-record final
@@ -31,7 +40,7 @@ closes the specific checked-arm parent/child mismatch found in the cross-record
 study. Offline replay of its saved parents rejects six proposals the old ID
 check accepted, then verifies all 252 possible two-owner child handoffs after
 fallback. This does not change the original terminal results. The next
-empirical milestone is an externally observed executable workflow with a
+empirical milestone is an actual subsequent executable workflow with a
 frozen grader and equally informed direct/indexed controls.
 
 **Latest September 22 test:** [cross-record dependency stress test](research/CROSS_RECORD_RECOVERY_2026-09-22.md) freezes twelve constructed retry, CI and data-job traces with evidence split across shuffled tool results. The original 348-call schedule stopped on one provider error; a separately frozen extension dispatched only the 149 never-attempted calls. On 35 fully answered paired cases, automatic direct records fail 7 times versus 3 for strong prose prompting, 4 for hand-written direct records and 1 for raw full-workflow indexed recovery. Automatic records retain enough facts for all 36 futures, but final-model decisions still fail. The original primary criterion is unassessable, and the exploratory paired comparison does **not** establish the candidate contribution. The checked proposal arm has a recorded parent-check/child-decoder defect. These are constructed traces with known domain grammars, not production workflows.

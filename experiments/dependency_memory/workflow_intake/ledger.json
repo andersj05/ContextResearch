@@ -1,0 +1,21 @@
+{
+  "version": "single_repository_intake_v1",
+  "date": "2026-10-01",
+  "repository": "ContextResearch",
+  "selection": "Actual user-requested research work in this repository; one whole task per episode, with chronological checkpoints.",
+  "model_calls": 0,
+  "private_held_out_episodes": 0,
+  "episodes": [
+    {
+      "sequence": 1,
+      "id": "E0001",
+      "task": "evidence-use-investigation",
+      "split": "development",
+      "status": "awaiting_second_checkpoint",
+      "inspection": "author_and_implementer_observed",
+      "capture_window": "Only the two declared collector windows at clean source commits; earlier and interim uncaptured development commands are excluded from this reporting contract.",
+      "exclusion_reason": null,
+      "sha256": {}
+    }
+  ]
+}

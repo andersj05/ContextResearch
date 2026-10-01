@@ -552,3 +552,39 @@ attempts, 24 answers and 82 never-dispatched requests rather than declaring the
 study complete. The post-stop audit finds one direct-record final-model error
 despite a sufficient 203-byte retained receipt; only one case is fully paired.
 This supports failure diagnosis, not a method ranking or a completed primary test.
+
+## October 1: audit retained evidence before adding another model study
+
+The user authorized the next research phase. Freeze a retrospective protocol
+and 470-file historical source lock at `24da0e1`, then implement an actor-only
+public-rule guard and separate evaluator replay at `eeec334`. Include every
+scheduled final from the three selected recent studies; preserve all original
+outcomes, missing dispositions and costs. This is post-hoc development analysis,
+not preregistration. Separate retained-rule readouts, contradictions, abstentions
+and actual repaired tasks. No provider call or new allocation is made.
+
+The guard contradicts 32 wrong proposals but leaves 39 correct proposals
+uncheckable. One retained state is already wrong. Do not turn 258/259 hypothetical
+readout agreements into a measured gain, or claim that typed consistency certifies
+source completeness. The same-input/different-history control and forged-receipt
+control stay explicit. Known-rule compilation is manual; TierMem and Mem2ActBench
+further narrow any generic verification or memory-use novelty claim.
+
+## October 1: keep actual workflow research in one repository
+
+The user selected ContextResearch as the sole working repository. Segment method
+code, actual development observations, future prospective tasks, evaluator
+manifests and actor serialization in a new `workflow_intake` package. Preserve
+the original frozen packet. Capture the actual current task at two clean committed
+source checkpoints, with command outputs, run identities and artifact hashes.
+One task remains one development episode regardless of reruns, scopes or branches.
+Generated previews remain ignored; only controlled command evidence is committed.
+
+Future same-repository tasks can support prospective observed evaluation after
+method/grader freeze and consecutive whole-task intake. Record inspection and
+report one workload family. Folder names and hashes do not make an implementer's
+observed task blind. Enforce actor access through serialized fresh contexts and
+the launch runner, with archives declared as separate arms. Target twelve actual
+future tasks without manufacturing changes to fill slots. The old private held-out
+count stays zero. Complete grader review, cost accounting, model/revision/access
+contract and a bounded allocation before any new live result.

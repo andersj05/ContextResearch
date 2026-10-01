@@ -1,5 +1,13 @@
 # Focused reading guide
 
+The [October 1 retained-evidence comparison](../research/EVIDENCE_USE_AUDIT_2026-10-01.md#focused-primary-source-comparison)
+adds TierMem v1 (Sections 2.1–2.2, 3.1–3.2, 4.1.2 and 5.6) and the published
+Mem2ActBench paper (abstract, Section 3.3 and Sections 4.1–4.2). These are bounded
+primary readings for provenance routing, omission/reasoning diagnostics, cost
+scope and memory-dependent tool parameters. Neither source was replicated or
+fully reviewed; inherited corpus review statuses remain unchanged. Citation keys
+and exact metadata are in the focused bibliography.
+
 The [September 22 scope/pinning comparison](../research/LUNA6_SCOPE_PRIOR_ART_2026-09-22.md)
 revisits *The Compaction Cliff* Sections 3.1/3.3 and adds Shiyang Chen's
 [Governance Decay v1](https://arxiv.org/html/2606.22528v1), abstract, Sections 3–4

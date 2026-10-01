@@ -22,6 +22,14 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.23 records the [October 1 retained-evidence audit](../research/EVIDENCE_USE_AUDIT_2026-10-01.md),
+claims C53–C54. It reconciles 319 observed final answers across three inspected
+studies. A pure public-rule check contradicts 32 wrong proposals but cannot check
+39 correct proposals. An elementary same-input/different-history example prevents
+interpreting consistency as source completeness. There are zero new model calls
+and no measured repairs. Actual task intake is segmented within ContextResearch;
+future prospective evaluation and independent blind evaluation remain distinct.
+
 Living draft v0.22 records the [interrupted executed-workflow follow-up](../research/EXECUTED_WORKFLOW_COMPARISON_2026-09-29.md),
 claim C52. Two separately frozen launches produce 24 metered answers and two
 transport gaps; 82 identities remain undispatched. One direct-record final

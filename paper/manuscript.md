@@ -1,6 +1,6 @@
 # Repeated Context Compression with Delayed Task Dependencies
 
-Working draft — September 29, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an asymptotic threshold and a tightly certified rate-two error, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, a cross-record stress test with one permanent transport gap and a separately frozen continuation, and a post-hoc offline decoder-compatibility correction. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
+Working draft — October 1, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an asymptotic threshold and a tightly certified rate-two error, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, a cross-record stress test with one permanent transport gap and a separately frozen continuation, a post-hoc offline decoder-compatibility correction, two workflow development comparisons, and a retrospective retained-evidence audit. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
 
 ## Abstract
 
@@ -497,6 +497,57 @@ the unchanged case has all five answers, so neither a method ranking nor the
 intended twelve-case outcome can be established. The [partial audit](../research/EXECUTED_WORKFLOW_COMPARISON_2026-09-29.md)
 reconstructs every attempted input and preserves all missing dispositions.
 Claim C52.
+
+### 8.10 Retained evidence and final decisions: retrospective audit
+
+A [separately frozen offline investigation](../research/EVIDENCE_USE_AUDIT_2026-10-01.md)
+replays every scheduled final identity in the cross-record continuation and both
+September 29 workflow studies. These studies were selected by recency and terminal
+relevance after outcomes had been inspected. A 470-file source lock preserves the
+historical inputs. Of 368 scheduled finals, 319 are observed, three are permanent
+transport gaps and 46 were never dispatched. No new model call is made.
+
+The 319 answers contain 53 errors. Thirty-one proposals differ from a correct
+readout obtained by applying the public rule to their typed admitted memory.
+One prose error overlooks a retained success, confirmed by bounded human reading.
+One typed memory's readout disagrees with the source, seventeen are empty and
+three representations remain semantically uncheckable by the new parser.
+Uncheckable does not establish information loss.
+
+The pure actor-side guard accepts only the saved final request and proposal. It
+neither imports a grader nor reads files or archives. Its hand-written receipt,
+retry, CI and data-job interpreters produce 227 consistent, 32 contradicted and
+60 uncheckable verdicts. The 32 contradictions are wrong model proposals, but
+one interpreter readout is itself wrong because retained state is already wrong.
+Of the uncheckable proposals, 39 are correct and 21 wrong. Releasing only consistent
+proposals would therefore withhold 92, including 39 correct answers. Separately
+grading the 259 available readouts gives 258 correct; neither a veto nor this
+hypothetical replacement measures a repaired or executed task. Claim C53.
+
+Coverage is not inferred from consistency. An elementary control gives two full
+histories the same public snapshot and final inventory. One contains a successful
+receipt; the other adds a later failed run. Retaining only the success produces
+identical admitted memory, task and proposal, while the full-ledger grader requires
+different answers. A deterministic checker restricted to those inputs cannot
+distinguish the histories. The implementation returns consistent and explicitly
+does not certify completeness; a well-formed forged receipt also passes. This is
+a checked information-channel example, not a new general impossibility theorem.
+Claim C54.
+
+Local measurement records 50 batches of 319 checks, CPU and elapsed time, and
+1,741,509 compact input bytes plus 65,282 output bytes per batch. It excludes
+evidence loading, evaluator grading, I/O and human rule compilation; production
+total cost is unpriced. Independent formulations compare 1,234 finite cases to
+the unchanged graders. They are implementation checks, not independent task trials.
+
+Provenance-linked summary routing and escalation are prior methods in TierMem
+[@tiermem2026]; memory-dependent tool-parameter evaluation is covered by
+Mem2ActBench [@mem2act2026]. The known-rule readout is a diagnostic control.
+Automatic unfamiliar-workflow contract extraction and prospective utility remain
+unperformed. Actual task intake is [segmented within this repository](../experiments/dependency_memory/workflow_intake/README.md);
+the current inspected task is development evidence. A future prospective observed
+comparison must freeze the method and grader before new tasks arrive and enforce
+serialized actor access. Folder separation alone does not provide blind evaluation.
 
 ## 9. Limitations and open results
 

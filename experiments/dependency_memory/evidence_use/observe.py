@@ -91,7 +91,8 @@ def capture(destination, episode, checkpoint):
     return manifest
 
 
-def verify(directory):
+def verify(directory, *, artifacts_required=True):
+    """Portable receipts omit generated previews; verify those at registration."""
     directory = Path(directory)
     manifest = json.loads((directory / "capture.json").read_text(encoding="utf-8"))
     if (manifest.get("version") != "evidence_use_observed_checkpoint_v1" or manifest.get("status") != "complete"
@@ -115,9 +116,10 @@ def verify(directory):
         if check == "paper" and row["returncode"] == 0:
             if set(row["artifacts"]) != set(ARTIFACTS):
                 raise ValueError("Incomplete observed artifact bindings")
-            for name, expected in row["artifacts"].items():
-                if hashlib.sha256((directory / "artifacts" / Path(name).name).read_bytes()).hexdigest() != expected:
-                    raise ValueError("Observed artifact bytes changed")
+            if artifacts_required:
+                for name, expected in row["artifacts"].items():
+                    if hashlib.sha256((directory / "artifacts" / Path(name).name).read_bytes()).hexdigest() != expected:
+                        raise ValueError("Observed artifact bytes changed")
     return manifest
 
 
