@@ -1,0 +1,15 @@
+{
+  "scope": "in-process final check only; excludes evidence loading, evaluator grading, model calls, I/O and human rule compilation",
+  "python": "3.14.2",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "repeats": 50,
+  "checks_per_repeat": 319,
+  "cpu_ns": 2375000000,
+  "wall_ns": 2503454000,
+  "serialized_input_bytes_per_repeat": 1741509,
+  "serialized_output_bytes_per_repeat": 65282,
+  "byte_definition": "compact JSON of the whole final request/proposal and result; includes already public instructions, excludes evaluator evidence",
+  "price": null,
+  "total_cost_claim": false,
+  "analysis_sha256": "4f58b8bebde18f0aa06c670b9730e07068842c3983dabde1fd40afb26181c85e"
+}

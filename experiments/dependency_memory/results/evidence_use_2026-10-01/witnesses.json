@@ -1,0 +1,356 @@
+{
+  "version": "evidence_use_witnesses_v1",
+  "limits": "These are reductions, not new task samples or unseen cases. Public instructions/state remain present and are not omitted from accounting.",
+  "witnesses": [
+    {
+      "identity": "data_pipeline-1854593748-0-automatic",
+      "kind": "proposed_publish_despite_stale_approval",
+      "source_study": "cross_record",
+      "origin": "post_hoc_reduction_of_inspected_historical_evidence",
+      "original_memory_sha256": "3f547ff025c5102212d2a2f06644538b1c97085609a685941bfd11469e9abdb0",
+      "original_memory_bytes": 1274,
+      "reduced_memory_bytes": 473,
+      "actor_request": {
+        "instruction": "Use only the supplied memory, target and late event. Memory may be prose, a list of tool results with tool/data wrappers, or a JSON table with f=full field paths and r=rows. Root fields in a table are unprefixed; component fields use tool.field. First apply the event only to the selected workflow. Return one exact decision and sorted work. Do not call tools. Select the root record whose pipeline_run equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. Publish only if extract, transform, load, quality states pass, transform.input_dataset=extract.output_dataset, load.input_dataset=transform.output_dataset, quality.subject_dataset=load.output_dataset, consent.state=approved, and consent.approved_output=load.output_dataset. Otherwise hold with the exact sorted set of extract, transform, load, quality, link_transform, link_load, quality_scope, approval, approval_scope for failed conditions. Return target_id=load.output_dataset. Apply the late event first.",
+        "observation": {
+          "late_event": {
+            "path": "note",
+            "value": "Schedule title updated; gate fields unchanged."
+          },
+          "memory": "{\"f\":[\"pipeline_run\",\"extract.output_dataset\",\"extract.state\",\"transform.input_dataset\",\"transform.output_dataset\",\"transform.state\",\"load.input_dataset\",\"load.output_dataset\",\"load.state\",\"quality.subject_dataset\",\"quality.state\",\"consent.approved_output\",\"consent.state\"],\"r\":[[\"758bb6d8d660cc4b\",\"bf54a315301552e6\",\"pass\",\"bf54a315301552e6\",\"2b917dfd7e04c8dd\",\"pass\",\"2b917dfd7e04c8dd\",\"e705a8b34af8d645\",\"pass\",\"e705a8b34af8d645\",\"pass\",\"adf3e5d75d77c774\",\"approved\"]]}",
+          "target": "758bb6d8d660cc4b"
+        },
+        "response_schema": {
+          "additionalProperties": false,
+          "properties": {
+            "action": {
+              "enum": [
+                "submit",
+                "hold",
+                "publish",
+                "retry",
+                "close",
+                "promote"
+              ],
+              "type": "string"
+            },
+            "target_id": {
+              "type": "string"
+            },
+            "work": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "action",
+            "target_id",
+            "work"
+          ],
+          "type": "object"
+        },
+        "stage": "execute",
+        "version": "luna6_delayed_revision_v1"
+      },
+      "proposal": {
+        "action": "publish",
+        "target_id": "e705a8b34af8d645",
+        "work": []
+      },
+      "guard": {
+        "status": "contradicted",
+        "reason": "contradicts_retained_evidence",
+        "derived_answer": {
+          "action": "hold",
+          "target_id": "e705a8b34af8d645",
+          "work": [
+            "approval_scope"
+          ]
+        },
+        "changed_fields": [
+          "action",
+          "work"
+        ],
+        "source_complete_certified": false
+      },
+      "evaluator_only_expected": {
+        "action": "hold",
+        "target_id": "e705a8b34af8d645",
+        "work": [
+          "approval_scope"
+        ]
+      }
+    },
+    {
+      "identity": "ci_promotion-3868710405-1-structured",
+      "kind": "exact_identifier_transcription_error",
+      "source_study": "cross_record",
+      "origin": "post_hoc_reduction_of_inspected_historical_evidence",
+      "original_memory_sha256": "806ffd2ab1bef01d3d3ee2e19c72c92d633f3dd36ac1dfebe60548ce5a49b876",
+      "original_memory_bytes": 1111,
+      "reduced_memory_bytes": 327,
+      "actor_request": {
+        "instruction": "Use only the supplied memory, target and late event. Memory may be prose, a list of tool results with tool/data wrappers, or a JSON table with f=full field paths and r=rows. Root fields in a table are unprefixed; component fields use tool.field. First apply the event only to the selected workflow. Return one exact decision and sorted work. Do not call tools. Select the root record whose deployment_slot equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. Promote only if build.channel=stable, authorization.state=approved, authorization.approved_digest=build.digest, verification.subject=build.digest, verification.unit and integration both pass, and handoff.environment=prod. Otherwise hold with the exact sorted set of channel, approval, approval_scope, ci_scope, unit, integration, environment for each failed condition. Return target_id=build.digest. Apply the late event first.",
+        "observation": {
+          "late_event": {
+            "path": "authorization.approved_digest",
+            "value": "d36c6488ddb87bfc"
+          },
+          "memory": "{\"f\":[\"deployment_slot\",\"build.digest\",\"build.channel\",\"authorization.approved_digest\",\"authorization.state\",\"verification.subject\",\"verification.unit\",\"verification.integration\",\"handoff.environment\"],\"r\":[[\"faf10a152bde583f\",\"d36c6488ddb87bfc\",\"stable\",\"845e2c9bd4a4b408\",\"approved\",\"d36c6488ddb87bfc\",\"pass\",\"pass\",\"prod\"]]}",
+          "target": "faf10a152bde583f"
+        },
+        "response_schema": {
+          "additionalProperties": false,
+          "properties": {
+            "action": {
+              "enum": [
+                "submit",
+                "hold",
+                "publish",
+                "retry",
+                "close",
+                "promote"
+              ],
+              "type": "string"
+            },
+            "target_id": {
+              "type": "string"
+            },
+            "work": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "action",
+            "target_id",
+            "work"
+          ],
+          "type": "object"
+        },
+        "stage": "execute",
+        "version": "luna6_delayed_revision_v1"
+      },
+      "proposal": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87fbc",
+        "work": []
+      },
+      "guard": {
+        "status": "contradicted",
+        "reason": "contradicts_retained_evidence",
+        "derived_answer": {
+          "action": "promote",
+          "target_id": "d36c6488ddb87bfc",
+          "work": []
+        },
+        "changed_fields": [
+          "target_id"
+        ],
+        "source_complete_certified": false
+      },
+      "evaluator_only_expected": {
+        "action": "promote",
+        "target_id": "d36c6488ddb87bfc",
+        "work": []
+      }
+    },
+    {
+      "identity": "tests_recovery-direct-final",
+      "kind": "unnecessary_rerun_despite_success_receipt",
+      "source_study": "workflow_executed",
+      "origin": "post_hoc_reduction_of_inspected_historical_evidence",
+      "original_memory_sha256": "33928dad33b1a6f3e0447a373812e10af319e2675adb56f7c08e8a72fb75ed33",
+      "original_memory_bytes": 203,
+      "reduced_memory_bytes": 203,
+      "actor_request": {
+        "instruction": "Report whether the required checks have current successful evidence. For each required check use its latest observed run on the final source snapshot; a later failure supersedes an earlier success. A receipt is valid only if its bound artifact hashes match the final inventory. Return strict JSON with exactly ready (boolean), needs_work (sorted check names), and evidence (mapping each currently successful required check to its exact run_id). Include no extra fields. A missing, failed or stale check belongs in needs_work, not evidence. Do not invent evidence or shorten identifiers.\nApply the public rule to the supplied memory or authorized recovered observations and the final public snapshot, required checks and artifact inventory. Return only the specified JSON object. If evidence is insufficient, include that check in needs_work. Do not consult any filesystem, prior conversation or undeclared tool.\nSerialization: include all three evidence keys paper, repository, tests; use null for absent evidence.",
+        "observation": {
+          "final_public_state": {
+            "artifacts": {
+              "build/paper/manuscript.md": "082d164486e1fba7d92f6fc548c678fc9e0b98ca2ed4bd85c7a0ca8a4a13a3a6",
+              "build/paper/preview.html": "584cf8164521ef30ec783eb68383f02567ab90442d55ceedd90b6db1f5b7b929"
+            },
+            "required_checks": [
+              "tests"
+            ],
+            "snapshot": "ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f"
+          },
+          "memory": "[{\"artifacts\":{},\"check\":\"tests\",\"returncode\":0,\"run_id\":\"df566ae62dfaf4a5bcb0f5090abda21ab476bbfbf1ce01bb20094572eaaca73d\",\"snapshot\":\"ca701b1bc4d2c8f63f743b69e8a4cdad1328651bbfa2fa51d25a1a26522c985f\"}]"
+        },
+        "response_schema": {
+          "additionalProperties": false,
+          "properties": {
+            "evidence": {
+              "additionalProperties": false,
+              "properties": {
+                "paper": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "repository": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "tests": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "paper",
+                "repository",
+                "tests"
+              ],
+              "type": "object"
+            },
+            "needs_work": {
+              "items": {
+                "enum": [
+                  "paper",
+                  "repository",
+                  "tests"
+                ],
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "ready": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "ready",
+            "needs_work",
+            "evidence"
+          ],
+          "type": "object"
+        },
+        "stage": "execute",
+        "version": "workflow_observed_luna6_dev_v1"
+      },
+      "proposal": {
+        "evidence": {},
+        "needs_work": [
+          "tests"
+        ],
+        "ready": false
+      },
+      "guard": {
+        "status": "contradicted",
+        "reason": "contradicts_retained_evidence",
+        "derived_answer": {
+          "ready": true,
+          "needs_work": [],
+          "evidence": {
+            "tests": "df566ae62dfaf4a5bcb0f5090abda21ab476bbfbf1ce01bb20094572eaaca73d"
+          }
+        },
+        "changed_fields": [
+          "evidence",
+          "needs_work",
+          "ready"
+        ],
+        "source_complete_certified": false
+      },
+      "evaluator_only_expected": {
+        "ready": true,
+        "needs_work": [],
+        "evidence": {
+          "tests": "df566ae62dfaf4a5bcb0f5090abda21ab476bbfbf1ce01bb20094572eaaca73d"
+        }
+      }
+    },
+    {
+      "identity": "retry_queue-215957210-0-structured",
+      "kind": "wrong_state_already_in_parent_memory",
+      "source_study": "cross_record",
+      "origin": "post_hoc_reduction_of_inspected_historical_evidence",
+      "original_memory_sha256": "015ea30b76efe1786725c3750d4b1051d80b62c041ec432f7cd81adb8227bac4",
+      "original_memory_bytes": 877,
+      "reduced_memory_bytes": 284,
+      "actor_request": {
+        "instruction": "Use only the supplied memory, target and late event. Memory may be prose, a list of tool results with tool/data wrappers, or a JSON table with f=full field paths and r=rows. Root fields in a table are unprefixed; component fields use tool.field. First apply the event only to the selected workflow. Return one exact decision and sorted work. Do not call tools. Select the root record whose request_token equals target; join component records by the identical workflow_key. A component path such as approval.state means the state field of the approval tool result in that joined workflow. Apply the late event to the named path of the selected workflow first. Ignore operator_notes and other workflows. For the selected request: if dispatch.state is not_sent, action=submit and work=[]; otherwise require result.attempt_uuid and billing.for_attempt to match dispatch.attempt_uuid. If a scope mismatches, hold with result_scope or billing_scope. Otherwise close if result.state is passed and billing.state is settled; retry if result.state is failed and retry_policy.retry_allowed is true; otherwise hold with result, billing or retry_policy for the applicable failed conditions. Return target_id=request_token. Apply the late event first.",
+        "observation": {
+          "late_event": {
+            "path": "note",
+            "value": "Schedule title updated; gate fields unchanged."
+          },
+          "memory": "{\"f\":[\"request_token\",\"dispatch.attempt_uuid\",\"dispatch.state\",\"result.attempt_uuid\",\"result.state\",\"billing.for_attempt\",\"billing.state\",\"retry_policy.retry_allowed\"],\"r\":[[\"5e61818b12a903c5\",\"bf3d79a2ccaabcd7\",\"sent\",\"bf3d79a2ccaabcd7\",\"failed\",\"bf3d79a2ccaabcd7\",\"settled\",false]]}",
+          "target": "5e61818b12a903c5"
+        },
+        "response_schema": {
+          "additionalProperties": false,
+          "properties": {
+            "action": {
+              "enum": [
+                "submit",
+                "hold",
+                "publish",
+                "retry",
+                "close",
+                "promote"
+              ],
+              "type": "string"
+            },
+            "target_id": {
+              "type": "string"
+            },
+            "work": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "action",
+            "target_id",
+            "work"
+          ],
+          "type": "object"
+        },
+        "stage": "execute",
+        "version": "luna6_delayed_revision_v1"
+      },
+      "proposal": {
+        "action": "hold",
+        "target_id": "5e61818b12a903c5",
+        "work": [
+          "retry_policy"
+        ]
+      },
+      "guard": {
+        "status": "contradicted",
+        "reason": "contradicts_retained_evidence",
+        "derived_answer": {
+          "action": "hold",
+          "target_id": "5e61818b12a903c5",
+          "work": [
+            "result",
+            "retry_policy"
+          ]
+        },
+        "changed_fields": [
+          "work"
+        ],
+        "source_complete_certified": false
+      },
+      "evaluator_only_expected": {
+        "action": "retry",
+        "target_id": "5e61818b12a903c5",
+        "work": []
+      }
+    }
+  ]
+}

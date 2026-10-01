@@ -750,6 +750,29 @@ def main() -> int:
             counts["executed_partial_unknown_reservations"] = evidence["unknown_reservation_credits"]
         except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
             errors.append(f"Executed-workflow partial audit validation failed: {error}")
+    evidence_use_directory = ROOT / "experiments/dependency_memory/results/evidence_use_2026-10-01"
+    if (evidence_use_directory / "analysis.json").is_file():
+        try:
+            from experiments.dependency_memory.evidence_use import replay as evidence_use_replay
+            evidence = evidence_use_replay.analyze()
+            saved = json.loads((evidence_use_directory / "analysis.json").read_text(encoding="utf-8"))
+            if evidence != saved or evidence_use_replay.report(evidence) != (evidence_use_directory / "report.md").read_text(encoding="utf-8"):
+                raise ValueError("Evidence-use audit/report differs from pinned historical replay")
+            inputs, _ = evidence_use_replay.observations()
+            if evidence_use_replay.witnesses(inputs) != json.loads((evidence_use_directory / "witnesses.json").read_text(encoding="utf-8")):
+                raise ValueError("Reduced evidence-use witnesses changed")
+            measured = json.loads((evidence_use_directory / "measurement.json").read_text(encoding="utf-8"))
+            if (measured["analysis_sha256"] != hashlib.sha256((evidence_use_directory / "analysis.json").read_bytes()).hexdigest()
+                    or measured["checks_per_repeat"] != evidence["summary"]["observed_finals"]
+                    or type(measured["repeats"]) is not int or measured["repeats"] < 1
+                    or any(type(measured[k]) is not int or measured[k] < 0 for k in ("cpu_ns", "wall_ns", "serialized_input_bytes_per_repeat", "serialized_output_bytes_per_repeat"))
+                    or measured["price"] is not None or measured["total_cost_claim"] is not False):
+                raise ValueError("Evidence-use measurement scope or provenance changed")
+            counts["evidence_use_observed_finals"] = evidence["summary"]["observed_finals"]
+            counts["evidence_use_wrong_proposals_contradicted"] = evidence["summary"]["wrong_proposals_contradicted"]
+            counts["evidence_use_correct_proposals_uncheckable"] = evidence["summary"]["correct_proposals_uncheckable"]
+        except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
+            errors.append(f"Evidence-use retrospective validation failed: {error}")
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"
