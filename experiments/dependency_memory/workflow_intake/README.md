@@ -57,3 +57,10 @@ It is not a model launcher. The old packet's private twelve-episode criterion
 remains unassessed. A new same-repository protocol, complete intake, independent
 grader review, priced resource table and bounded allocation precede any claim
 of terminal improvement or total-cost benefit.
+
+The [subsequent method audit and runtime](../workflow_prospective/README.md)
+freeze a four-arm design and a timing screen. E0001's actual query needs no
+parent information because B refreshes all checks. The next variable-sequence
+collector must preserve actual command timing and partial refreshes; the current
+development-only three-command collector is not a universal prospective intake
+format. No new episode is registered by that method audit.

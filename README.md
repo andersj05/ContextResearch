@@ -4,6 +4,13 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
+**October 1 method audit:** the [local derivation and finite comparisons](research/WORKFLOW_METHOD_AUDIT_2026-10-01.md)
+show that exact checked tables with fallback add no receipt state over direct
+projection in this known format. E0001's actual query is answerable from B alone.
+The [new frozen offline runtime](experiments/dependency_memory/workflow_prospective/README.md)
+uses four proposed model arms and screens actual parent dependence before a
+future study. No provider generation or prospective outcome is added.
+
 **October 1 evidence-use investigation:** a [post-hoc offline audit](research/EVIDENCE_USE_AUDIT_2026-10-01.md)
 reconciles 319 observed final answers and 53 errors. A hand-written check of
 retained public-rule evidence contradicts 32 wrong proposals, while leaving 39

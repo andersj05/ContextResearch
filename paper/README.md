@@ -22,6 +22,13 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.24 adds the [local method audit and timing screen](../research/WORKFLOW_METHOD_AUDIT_2026-10-01.md),
+claims C56–C57. Exact checked tables with fallback have the same receipt state
+as direct retention; original model answers need not be equal. E0001 is B-only
+for its actual query. A sixteen-file method freeze and four-arm fixture/replay
+runtime support future work, with zero new provider generations or prospective
+outcomes. External human review remains pending.
+
 Living draft v0.23 records the [October 1 retained-evidence audit](../research/EVIDENCE_USE_AUDIT_2026-10-01.md),
 claims C53–C54. It reconciles 319 observed final answers across three inspected
 studies. A pure public-rule check contradicts 32 wrong proposals but cannot check

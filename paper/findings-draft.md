@@ -1,6 +1,27 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.23 — October 1, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.24 — October 1, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## Check whether the task needs earlier memory
+
+The [next local audit](../research/WORKFLOW_METHOD_AUDIT_2026-10-01.md) narrows
+the comparison. In the known exact-table grammar, checked writers with fallback
+retain the same latest receipts as direct projection at both boundaries, even
+with binding caps. A separate specification agrees with the grader on 158,340
+constructed queries; 5,652 proposals and 52,780 bounded chains have zero state
+disagreements. Claim C56. Original JSON presentation can still affect model
+answers; this is no empirical accuracy or production-cost theorem.
+
+The first actual task also needs no parent memory for its primary query: B
+reruns every required check. It gives the same answer and run IDs as the full
+history, and direct memory fits both caps. Claim C57. Keep this easy control
+and screen future actual tasks without manufacturing delayed obligations.
+
+The [frozen four-arm runtime](../experiments/dependency_memory/workflow_prospective/README.md)
+implements direct, indexed, prose and full views with a common final check.
+Checked memory is an offline canonical shadow. A six-slot scripted control
+checks interfaces, not model performance. Prospective intake, external review
+and the provider/budget contract remain unfinished.
 
 ## Retaining evidence does not ensure its correct use
 

@@ -6,6 +6,29 @@ Updated: October 1, 2026. This document is the current handoff; older scope docu
 
 Develop a mathematically precise and implementable study of repeated agent compaction when relevance is revealed over time. The target is a restricted compatibility result plus controlled evidence of whether the mechanism matters in tool-agent tasks.
 
+The [subsequent October 1 method audit](../research/WORKFLOW_METHOD_AUDIT_2026-10-01.md)
+compares a separate reverse-scan specification with the unchanged grader on
+**158,340 constructed queries**, old checked-writer proposals on 5,652 cases,
+and bounded checked/direct chains on 52,780 cases, with zero disagreements.
+In the exact-table grammar, checked retention with fallback has the same receipt
+state as direct projection. Original presentation and stochastic model behavior
+can still differ. Claim C56; living draft v0.24; external human review pending.
+
+E0001's actual final query is answerable from B alone with the same run IDs.
+Both memory caps are nonbinding. Its full logical request is 163,432 bytes,
+beyond the old 100,000-byte public-request cap. The new predeclared logical cap
+is 262,144; memory caps remain 4,096/1,536. Actual provider wire/token limits
+remain unverified. Claim C57.
+
+The [new method v1](../experiments/dependency_memory/workflow_prospective/README.md)
+freezes sixteen source/protocol/dependency files and implements four arms:
+direct, indexed, prose and full, all with the same final consistency check.
+Checked memory is an offline canonical shadow. Six proposed completions per
+task replace nine; there is no live allocation. All **448 tests** pass, including
+fourteen new tests. Repository validation reports PASS with 57 claims and
+46 bibliography entries; the paper builds with 39 cited sources. The scripted
+runner completes its six interface slots with zero provider generations.
+
 The [October 1 evidence-use investigation](../research/EVIDENCE_USE_AUDIT_2026-10-01.md)
 is complete offline: **368 scheduled finals, 319 observed answers, 53 errors,
 three permanent transport gaps and 46 never-dispatched finals** across three
@@ -31,7 +54,7 @@ development task, not six independent episodes. Claim C55. Its receipts bind the
 pinned sources; later registration/writing revisions do not become part of the
 captured task automatically.
 
-Final registration validation reports PASS with one inspected development episode,
+The preceding registration milestone reports PASS with one inspected development episode,
 six commands and zero prospective/private evaluation episodes. All historical
 source hashes remain intact. The updated paper builds with 39 cited sources;
 the repository validator checks 55 registered claims and 46 bibliography entries.
@@ -336,14 +359,22 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 
 ## Next bounded tasks
 
-Continue the [single-repository intake](../experiments/dependency_memory/workflow_intake/README.md).
-Register this inspected development task, finish independent grader review and
-freeze a new prospective observed comparison before eligible new tasks arrive.
+Continue the [single-repository intake](../experiments/dependency_memory/workflow_intake/README.md)
+with the [frozen method](../experiments/dependency_memory/workflow_prospective/README.md).
+Implement selective actual-command capture/registration for variable sequences.
+The current development collector runs every check at B and can remove parent
+dependence. Preserve natural full refreshes as easy controls. Finish external
+review and the provider/price/budget contract before dispatch.
 Keep twelve whole future tasks as the collection target, preserving chronology,
 inspection and exclusions. The old [September 29 packet](../experiments/dependency_memory/workflow_eval/README.md)
 and its private held-out criterion remain unchanged and unassessed. Constructed
 mutations do not fill missing task slots. Keep the cheap direct-record and indexed
 controls central; do not tune the current cases for a win.
+
+Screen every actual query for B-only sufficiency and direct cap feasibility.
+If all twelve are B-only and fit, stop the proposed two-boundary study for this
+workload. Keep every task in the denominator; do not select a favorable subset
+or shrink caps. This current method-development task remains development.
 
 The constructed execution adapter, historical evidence replay, first live
 release-gate pilot, and offline decoder-compatibility correction are complete.

@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-01",
+  "development_screen": {
+    "actual_primary_answer": {
+      "evidence": {
+        "paper": "af1638647f9355bfbd746bd53ae12ad3ad370df9690a7127be6e2dccc8653d36",
+        "repository": "83bdc2dff0bd5018404ad1068198a679c42fcd4ac4d77a180589c8e1dbc219d2",
+        "tests": "bf499b78f8c4b3cfea462820b288fe1da03734f77c21bbc1e48e1170d38999f7"
+      },
+      "needs_work": [],
+      "ready": true
+    },
+    "between_only_answer": {
+      "evidence": {
+        "paper": "af1638647f9355bfbd746bd53ae12ad3ad370df9690a7127be6e2dccc8653d36",
+        "repository": "83bdc2dff0bd5018404ad1068198a679c42fcd4ac4d77a180589c8e1dbc219d2",
+        "tests": "bf499b78f8c4b3cfea462820b288fe1da03734f77c21bbc1e48e1170d38999f7"
+      },
+      "needs_work": [],
+      "ready": true
+    },
+    "direct_child_bytes": 1455,
+    "direct_child_fits": true,
+    "direct_parent_bytes": 728,
+    "direct_parent_fits": true,
+    "direct_retained_readout": {
+      "evidence": {
+        "paper": "af1638647f9355bfbd746bd53ae12ad3ad370df9690a7127be6e2dccc8653d36",
+        "repository": "83bdc2dff0bd5018404ad1068198a679c42fcd4ac4d77a180589c8e1dbc219d2",
+        "tests": "bf499b78f8c4b3cfea462820b288fe1da03734f77c21bbc1e48e1170d38999f7"
+      },
+      "needs_work": [],
+      "ready": true
+    },
+    "episode": "E0001",
+    "evidence_class": "inspected_development",
+    "fixture_completions": 6,
+    "fixture_guard_verdicts": {
+      "direct": "consistent",
+      "full": "consistent",
+      "indexed": "consistent",
+      "prose": "consistent"
+    },
+    "limits": [
+      "One inspected actual task; no prospective or model outcome.",
+      "Full B refresh removes parent dependence for the actual query, not every possible constructed query.",
+      "The fixture prose slot returns a JSON table; this validates interfaces, not prose-model performance."
+    ],
+    "logical_full_request_bytes": 163432,
+    "parent_needed_for_actual_query": false,
+    "previous_100000_byte_envelope_would_fit": false,
+    "provider_generations": 0,
+    "source_commits": [
+      "eeec3340fad02dc6220a8ee39c0d633840452720",
+      "f9a951186d4177e881d8bad3c5e7db526765eee8"
+    ]
+  },
+  "external_grader_review": "pending",
+  "finite": {
+    "constructed_histories": 1885,
+    "disagreements": 0,
+    "evidence": "finite constructed checks, not independent tasks; local audit, external review pending",
+    "grader_query_comparisons": 158340,
+    "projection_query_comparisons": 158340,
+    "two_boundary_state_comparisons": 52780,
+    "writer_proposal_comparisons": 5652
+  },
+  "live_launch_ready": false,
+  "prospective_evaluation_episodes": 0,
+  "provider_generations": 0,
+  "source_sha256": {
+    "experiments/dependency_memory/evidence_use/guard.py": "7182e74b9c5fac712ca766ccd40e933abef0abf4df0ca22ff0a2b167911443f7",
+    "experiments/dependency_memory/workflow_eval/grader.py": "b6f79ead530039e41b7caac533e869ae377a8548eebebb1d582550b6c5671d93",
+    "experiments/dependency_memory/workflow_eval/packet.py": "0fecd95e85020cda3c7b0783a406605010f1820fb1948a0b40fd55ab67368cdf",
+    "experiments/dependency_memory/workflow_eval/prompts.json": "9ec7172c49136bd9f757fc70b7792b26a4285224d745645820ab2746c9e70369",
+    "experiments/dependency_memory/workflow_eval_live/protocol.py": "0bdd7a34215dc4bb93e0bfa34ac9d4e04f52af744d1114b19901838333c797d4",
+    "experiments/dependency_memory/workflow_eval_live/study.py": "acb127ddb547a1b563d7fd752763088ff764abf8714e35f912b75e3fce36f068",
+    "experiments/dependency_memory/workflow_intake/views.py": "60ce8155016a818d04df9e0fb3d678c420c0457b3ea324a7299e8daac6411e76",
+    "experiments/dependency_memory/workflow_prospective/PROTOCOL.md": "cfa91a129c30206f864eae237ae9f25ef3f25e839a9106ad6bf9e49bac5cfa85",
+    "experiments/dependency_memory/workflow_prospective/__init__.py": "6dd64fddc6edc276ed17ab2fcaa0481f5ad633ced381d3cca87b1d6abd5a2211",
+    "experiments/dependency_memory/workflow_prospective/actor.py": "695711f7b2da06f3cc42c0517170c090bc8c653cfc8196dbcab01801c2c46bc4",
+    "experiments/dependency_memory/workflow_prospective/audit.py": "83b8f42477dfcee23c137f18210f500872e8820b82cd530ffa81a917e49b7483",
+    "experiments/dependency_memory/workflow_prospective/freeze.py": "d9a9453ccf7c3dc3cd3d5a480615efc3b4302779759ff5b13e846665dc0350b0",
+    "experiments/dependency_memory/workflow_prospective/oracle.py": "5741774afe8f5bc8a691f56ec32b673e1f3ee57a5dcbda6e0c07c927579675d9",
+    "experiments/dependency_memory/workflow_prospective/runtime.py": "b79a7331960a32ff006dbb6a87b4c29b9e26cdd61231f5a1f06b2fef92a9dcb9",
+    "experiments/dependency_memory/workflow_prospective/simulate.py": "8ccf020991bfe95158d3d8a69eaa160dc7d0ec21c012590655a2945c180dde5f",
+    "experiments/dependency_memory/workflow_prospective/test_method.py": "f10b34321e9341e1c2ee42c7fa0678039183266849b82f38117340ee05fd331c"
+  },
+  "version": "workflow_method_audit_v1"
+}

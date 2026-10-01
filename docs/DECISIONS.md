@@ -597,3 +597,34 @@ in 728 parent bytes and 1,455 child bytes, within the unchanged caps. Keep this
 easy control and the zero prospective-evaluation count. Registration/writing
 changes after B do not alter the pinned task or become automatically validated
 by its receipts. Claim C55 records intake and feasibility, not model utility.
+
+## October 1: audit exact-table redundancy and actual timing
+
+Commit the local design at `66cebac` before implementation. A separate reverse-scan
+specification agrees with the unchanged grader on 158,340 constructed queries;
+5,652 writer proposals and 52,780 checked/direct chains have equal receipt state.
+Derive the exact-format map equality, without extending it to unknown roles,
+other codecs, original stochastic accuracy or unconditional production cost.
+External human review remains pending despite independent software formulation.
+
+The new canonical checked shadow is offline, not a paid arm. Freeze direct,
+indexed, prose and full views with a common final check and six proposed slots
+per task. E0001's actual query is answerable from B alone; keep this easy control.
+Capture natural variable command sequences and screen every actual future query.
+If all twelve are B-only and fit, stop this workload's two-boundary study without
+cherry-picking tasks or shrinking caps. The current task remains development.
+
+Under exact-snapshot matching, an A ledger without the final requested tree
+cannot affect the answer even when B omits checks. Selective capture cannot
+solve this structural limitation by itself. A naturally relevant same-snapshot
+history or cross-snapshot obligation is needed; a reporting-rule change would
+require another method version.
+
+Its full logical request is 163,432 bytes, beyond the old 100,000-byte logical
+cap. Use a predeclared 262,144-byte cap, keeping memory limits unchanged and
+all logs intact. The design's transport-envelope phrase denotes logical public
+serialization; actual provider wire/token limits need a separate fresh audit.
+Freeze sixteen source/protocol/dependency files. Scripted completion and
+hash-bound replay are interface controls, not model/prose performance. No new
+provider allocation or generation is made; prospective intake and live gates
+remain unfinished.

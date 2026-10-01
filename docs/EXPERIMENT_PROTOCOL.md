@@ -1,5 +1,12 @@
 # Experiment protocol draft
 
+October 1 method milestone: the [local method audit](../research/WORKFLOW_METHOD_AUDIT_2026-10-01.md)
+finds checked/direct state redundancy in the known exact-table format and no
+parent dependence for E0001's actual query. The separately frozen [method v1](../experiments/dependency_memory/workflow_prospective/PROTOCOL.md)
+uses four proposed model arms and a timing/feasibility screen. Old packets remain
+immutable. Zero provider calls or prospective outcomes are added; variable-command
+capture, external review and the provider/budget contract remain gates.
+
 Latest September 22 schema-check milestone: the
 [frozen 72-call contract](../experiments/dependency_memory/schema_checks/FROZEN_PROTOCOL.md)
 tests newly constructed retry, CI handoff, and data-job traces under two byte

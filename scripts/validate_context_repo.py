@@ -784,6 +784,22 @@ def main() -> int:
             counts["single_repository_private_held_out_episodes"] = intake["private_held_out_episodes"]
         except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
             errors.append(f"Single-repository workflow intake validation failed: {error}")
+    workflow_method_directory = ROOT / "experiments/dependency_memory/results/workflow_method_2026-10-01"
+    if (workflow_method_directory / "analysis.json").is_file():
+        try:
+            from experiments.dependency_memory.workflow_prospective import audit as workflow_method_audit
+            from experiments.dependency_memory.workflow_prospective.freeze import validate_lock as validate_workflow_method_lock
+            counts["workflow_method_locked_files"] = validate_workflow_method_lock()
+            method = workflow_method_audit.analyze()
+            saved = json.loads((workflow_method_directory / "analysis.json").read_text(encoding="utf-8"))
+            if saved != method or (workflow_method_directory / "report.md").read_text(encoding="utf-8") != workflow_method_audit.report(method):
+                raise ValueError("Workflow method audit differs from independent replay")
+            counts["workflow_method_grader_query_comparisons"] = method["finite"]["grader_query_comparisons"]
+            counts["workflow_method_checked_chain_comparisons"] = method["finite"]["two_boundary_state_comparisons"]
+            counts["workflow_method_development_parent_needed"] = method["development_screen"]["parent_needed_for_actual_query"]
+            counts["workflow_method_provider_generations"] = method["provider_generations"]
+        except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
+            errors.append(f"Workflow method audit/freeze validation failed: {error}")
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"

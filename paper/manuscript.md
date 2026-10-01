@@ -559,6 +559,49 @@ are hash-pinned, while generated artifact copies remain ignored locally after
 verification. The final reporting task binds B's source and inventory, not later
 writing/registration changes. Claim C55.
 
+### 8.11 Exact-table redundancy and actual parent dependence
+
+A [separate local audit](../research/WORKFLOW_METHOD_AUDIT_2026-10-01.md) defines
+P(L) as the last receipt for each (snapshot, check) in the chronological ledger.
+The original checker accepts only a table equal to that entire projected set,
+otherwise falling back to direct serialization. In the fixed JSON-list grammar,
+field names, check names, artifact paths and hexadecimal identities are ASCII;
+permutations preserve length and whitespace/escaping cannot shorten compact
+direct encoding. Integer fields reject float encodings. No valid exact table
+fits when direct encoding fails; both policies then admit empty memory.
+
+Equal bounded parent maps plus the same later observations and announced scope
+give equal child receipt maps. This elementary deduction is not an optimum over
+other codecs or all functionally sufficient states. A separate reverse-scan
+software specification agrees with the unchanged grader on 158,340 constructed
+queries. The audit also checks 158,340 direct projections, 5,652 writer proposals
+and 52,780 two-boundary states with zero disagreements. These are finite checks,
+not independent trials. Claim C56; external human review is pending.
+
+Original JSON order/whitespace can affect stochastic model or cache behavior.
+Semantic equality does not prove empirical accuracy or production-cost equality.
+The new canonical shadow emits the same bytes as direct memory. Conditional on
+equal downstream operations/prices and nonnegative writer costs, its two added
+writer calls supply no benefit. Unknown extraction, different codecs and
+unavailable fallbacks are different problems.
+
+For E0001, B's receipts give the same exact answer and supporting run IDs as the
+full ledger for the actual B-tree query. Direct state fits both caps. It is an
+easy control without an actual parent-memory requirement; earlier-tree query
+variants remain constructed. In fact, A has no receipt for the requested B tree:
+under exact-snapshot matching, removing such A receipts cannot affect the answer
+even if B leaves checks missing. Selective capture alone cannot overcome this
+task-contract limitation. Its full logical request is 163,432 bytes, exceeding
+the old local 100,000-byte cap. The new logical cap is 262,144; memory limits
+are unchanged and actual provider wire/token limits remain unverified. Claim C57.
+
+The new method supplies four arms, two prose writers and four final slots per
+task, with the same retained-evidence check. Scripted completion/replay validates
+interfaces only. Screen every future actual query for B-only sufficiency and
+direct cap feasibility. If all twelve are B-only and fit, stop the proposed
+two-boundary study for this workload, retaining all tasks in the denominator.
+No retrospective cap reduction or prospective model gain is inferred.
+
 ## 9. Limitations and open results
 
 The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. No learned dependency classifier or open-ended native-agent benchmark has been evaluated here. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, useful finite-length joint codes, a wider rate-distortion characterization, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.

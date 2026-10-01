@@ -84,3 +84,11 @@ It is a useful memory-use precedent, distinct from untouched repository task
 intake or repeated irreversible handoffs. Our hand-written interpreter of known
 public rules is a diagnostic control. No new verification-method priority,
 unfamiliar-workflow compiler or prospective task improvement is established.
+
+The [subsequent exact-table audit](../research/WORKFLOW_METHOD_AUDIT_2026-10-01.md)
+derives checked/direct state equality only for the supplied receipt roles and
+fixed JSON grammar. This is an elementary projection argument, not a new
+functional-compression or verification algorithm. Its actual development query
+is answerable from the late checkpoint alone, so that task provides no evidence
+for a delayed-dependency capacity mechanism. Future comparisons must measure
+actual parent dependence alongside costs and final evidence use.

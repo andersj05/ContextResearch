@@ -2,6 +2,9 @@
 
 This segment is reserved for actual consecutive eligible ContextResearch tasks
 after a complete method/grader freeze. No episodes have been registered here.
+The [method v1](../../workflow_prospective/README.md) supplies the pure runtime,
+local grader audit and timing screen; external human review and a variable-command
+registration format remain incomplete.
 The target is twelve whole tasks, not twelve variants of one authored scenario.
 
 Before the first task, freeze the eligibility/cutoff rule and record the task

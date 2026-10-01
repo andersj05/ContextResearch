@@ -68,11 +68,16 @@ candidate implementation. Count correct answers lost to abstention as well as
 wrong actions blocked. A coverage/provenance token would be extra admitted state
 with a byte count and checked lineage, not a free evaluator attestation.
 
-Keep the existing five arms, byte caps and public information order. Add the
-same separately charged final check to every arm in a new versioned protocol.
+The [local method audit](../../../research/WORKFLOW_METHOD_AUDIT_2026-10-01.md)
+shows that exact checked tables with fallback preserve the same receipt state
+as direct projection in this known family. The new [method v1](../workflow_prospective/README.md)
+keeps direct, indexed, prose and full history as its four proposed model arms;
+checked tables are an offline canonical shadow. The old five-arm studies and
+their results remain unchanged. Keep the byte caps and public information order.
+Add the same separately charged final check to every arm.
 The final check may use only its own admitted evidence. A repair call needs a
 frozen prompt, budget and accounting; an archive read is an explicit access arm.
-Apply the existing practical screen against both direct and indexed controls:
+Any later unfamiliar-workflow candidate needs a new version. Apply the practical screen against both direct and indexed controls:
 no extra false-ready answers, and either at least two more successes at no
 greater fully priced cost, or equal success with at least 20% lower fully priced
 cost, under both cache views. This is a small-study decision, not significance.
