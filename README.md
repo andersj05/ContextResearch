@@ -12,6 +12,9 @@ The [new intake segments](experiments/dependency_memory/workflow_intake/README.m
 keep actual research workflows, evaluator labels and actor inputs in this one
 repository. This task is inspected development evidence; future prospective
 tasks and the old private held-out study remain unperformed.
+The first registered task has two pinned checkpoints and six successful actual
+command runs. Direct receipts fit both memory limits. All 434 tests pass at the
+second checkpoint; repository validation and paper assembly also pass.
 
 **September 29 executed-workflow follow-up:** the [108-call plan](research/EXECUTED_WORKFLOW_COMPARISON_2026-09-29.md)
 stopped after 26 dispatches across two frozen launches: 24 metered answers, two

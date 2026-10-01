@@ -22,7 +22,20 @@ The user chose **this repository as the sole working repository**. The
 separates method code, chronological development observations, future prospective
 tasks, evaluator manifests and serialized actor views. Checkpoint A of this actual
 research task is recorded at `eeec334`: all 430 tests, repository validation and
-paper assembly pass. Checkpoint B and episode registration are in progress.
+paper assembly pass. Checkpoint B is `f9a9511`: all **434 tests**, repository
+validation and paper assembly pass. The [registered episode](../experiments/dependency_memory/workflow_intake/development/E0001/README.md)
+contains six actual successful command runs across those two source snapshots.
+Direct receipts use 728 parent bytes and 1,455 child bytes, fitting the unchanged
+4,096/1,536-byte limits while retaining both snapshots. This is one easy inspected
+development task, not six independent episodes. Claim C55. Its receipts bind the
+pinned sources; later registration/writing revisions do not become part of the
+captured task automatically.
+
+Final registration validation reports PASS with one inspected development episode,
+six commands and zero prospective/private evaluation episodes. All historical
+source hashes remain intact. The updated paper builds with 39 cited sources;
+the repository validator checks 55 registered claims and 46 bibliography entries.
+
 No new model call or provider allocation has been made. Prospective evaluation
 and the old twelve private held-out episodes remain unperformed. Folders provide
 organization; a launch must enforce the declared actor access contract.

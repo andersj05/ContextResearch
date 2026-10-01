@@ -134,6 +134,16 @@ prospective observed comparison after method/grader freeze. Folder separation
 does not make them independent blind tasks. The twelve private evaluation
 episodes in the old packet remain uncollected.
 
+The [first registered episode](../experiments/dependency_memory/workflow_intake/development/E0001/README.md)
+is complete at implementation source `eeec334` and later source `f9a9511`.
+It contains six actual allowlisted runs, all exit zero, and fourteen pinned raw
+manifest/output files. Only those collector windows enter the reporting contract;
+uncaptured interim commands are excluded. The separately reconstructed evaluator
+answer is ready for B's tree and artifact inventory. Direct receipt serialization
+uses 728 parent bytes and 1,455 child bytes, below the unchanged 4,096/1,536 caps.
+Both observed snapshots remain represented. This is an easy feasibility control,
+not a capacity obstruction, model outcome or candidate advantage. [C55]
+
 Freeze a prospective comparison after intake and independent grader review.
 Compare raw answers, consistency vetoes/abstentions and any actual repair as
 separate outcomes. Preserve direct, indexed, prose and full-history controls,
@@ -151,7 +161,11 @@ and 736 predicate combinations: 1,234 finite checks, not task samples.
 At implementation checkpoint A (`eeec334`), all 430 repository tests pass. Four
 additional intake tests check early/late disclosure, exclusion of evaluator
 labels, UTF-8 byte caps and isolation of returned data from source objects.
-Checkpoint B will validate these changes at its own pinned source revision.
+Checkpoint B (`f9a9511`) passes all 434 tests, repository validation and paper
+assembly with 39 cited sources. Both complete checkpoints are registered as one
+development episode; the packet verifies all raw file hashes and reconstructs
+the evaluator manifest. The original two generated artifact copies per checkpoint
+were checked locally before registration and remain ignored rather than committed.
 The repository validator reconstructs the new analysis and reduced witnesses
 and preserves every historical source hash. Paper assembly is checked separately
 with the updated claim register.

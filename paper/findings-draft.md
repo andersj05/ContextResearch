@@ -28,6 +28,12 @@ Future tasks require a method/grader freeze and explicit serialized actor access
 folder names do not make them blind. No new model call or private held-out result
 has been added.
 
+The first new [registered development task](../experiments/dependency_memory/workflow_intake/development/E0001/README.md)
+contains six actual successful checks at two pinned source revisions. Direct
+receipt memory uses 728 parent bytes and 1,455 child bytes and fits both existing
+caps, preserving both snapshots. This is one easy control, not a measured model
+improvement. Claim C55. All 434 tests pass at the second source checkpoint.
+
 ## Executed workflows: interrupted comparison and an interpretation error
 
 A [separate follow-up](../research/EXECUTED_WORKFLOW_COMPARISON_2026-09-29.md)

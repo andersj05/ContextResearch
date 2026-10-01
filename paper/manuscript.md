@@ -549,6 +549,16 @@ the current inspected task is development evidence. A future prospective observe
 comparison must freeze the method and grader before new tasks arrive and enforce
 serialized actor access. Folder separation alone does not provide blind evaluation.
 
+The first newly registered development episode captures this actual research
+task at source commits `eeec334` and `f9a9511`, with three offline commands per
+checkpoint and six zero exit codes. The direct-receipt parent takes 728 UTF-8
+bytes and the child retaining both snapshots takes 1,455, fitting the unchanged
+4,096/1,536-byte caps. This preserves an easy feasible control; no capacity
+obstruction or new model outcome is inferred. Fourteen raw manifest/output files
+are hash-pinned, while generated artifact copies remain ignored locally after
+verification. The final reporting task binds B's source and inventory, not later
+writing/registration changes. Claim C55.
+
 ## 9. Limitations and open results
 
 The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. No learned dependency classifier or open-ended native-agent benchmark has been evaluated here. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, useful finite-length joint codes, a wider rate-distortion characterization, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.

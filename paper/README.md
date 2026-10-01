@@ -29,6 +29,9 @@ studies. A pure public-rule check contradicts 32 wrong proposals but cannot chec
 interpreting consistency as source completeness. There are zero new model calls
 and no measured repairs. Actual task intake is segmented within ContextResearch;
 future prospective evaluation and independent blind evaluation remain distinct.
+Claim C55 records the first same-repository development episode: six successful
+actual commands at two source checkpoints and a direct-receipt serialization
+that fits both byte caps. No new model result is attributed to that intake.
 
 Living draft v0.22 records the [interrupted executed-workflow follow-up](../research/EXECUTED_WORKFLOW_COMPARISON_2026-09-29.md),
 claim C52. Two separately frozen launches produce 24 metered answers and two

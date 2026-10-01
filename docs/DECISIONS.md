@@ -588,3 +588,12 @@ the launch runner, with archives declared as separate arms. Target twelve actual
 future tasks without manufacturing changes to fill slots. The old private held-out
 count stays zero. Complete grader review, cost accounting, model/revision/access
 contract and a bounded allocation before any new live result.
+
+Register the completed development episode E0001 with checkpoints `eeec334` and
+`f9a9511`: six allowlisted runs, all exit zero. Fourteen raw manifest/output files
+are pinned; artifact copies are checked locally but excluded from Git. The full
+suite at B has 434 passing tests. Direct receipts retain both source snapshots
+in 728 parent bytes and 1,455 child bytes, within the unchanged caps. Keep this
+easy control and the zero prospective-evaluation count. Registration/writing
+changes after B do not alter the pinned task or become automatically validated
+by its receipts. Claim C55 records intake and feasibility, not model utility.

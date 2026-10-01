@@ -11,11 +11,36 @@
       "id": "E0001",
       "task": "evidence-use-investigation",
       "split": "development",
-      "status": "awaiting_second_checkpoint",
+      "status": "complete",
       "inspection": "author_and_implementer_observed",
       "capture_window": "Only the two declared collector windows at clean source commits; earlier and interim uncaptured development commands are excluded from this reporting contract.",
       "exclusion_reason": null,
-      "sha256": {}
+      "sha256": {
+        "A/capture.json": "40da18c7c7d9ad21a87a9c16056716cbe644c81c9ca7a5c4cd28b929250ebc2b",
+        "A/tests.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "A/tests.stderr.txt": "f264e7120d404a4bf925e00662c2a4c014faa8bff990a4f2002e77c6cf72aacc",
+        "A/repository.stdout.txt": "16536dff36c7852bb50e38f6b806547204b6e9d8647724938ecf3d7a9556fd8a",
+        "A/repository.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "A/paper.stdout.txt": "3459627c05c2f0b481879714dc54609ba45bc9eb5af47ed455dc7ec5e7bfde63",
+        "A/paper.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "B/capture.json": "bec6b0350aee5485225f0c7e27b9d38d72b4f4b8bc2aa1ceff72095e71ab3dbb",
+        "B/tests.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "B/tests.stderr.txt": "cb4eaf5b813d67a01652b7f0cbdb1fc5a51580f5cbbcb65373c240863b44738d",
+        "B/repository.stdout.txt": "33df16a3dacdad7647224781c9121866f93d48b5440a8fcee4842c4b20eaddd1",
+        "B/repository.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "B/paper.stdout.txt": "9561e1fc95cf285d4e806174c4b5066fbefa4fd4ffc95ccb6ed7b8b89c7b6023",
+        "B/paper.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "source_commits": [
+        "eeec3340fad02dc6220a8ee39c0d633840452720",
+        "f9a951186d4177e881d8bad3c5e7db526765eee8"
+      ],
+      "source_trees": [
+        "e318b11176b81d32db180f69b7921825b8d547a2",
+        "65b0db9808898a965f010191c3213906269f7778"
+      ],
+      "artifact_copies_verified_at_registration": true,
+      "observed_commands": 6
     }
   ]
 }

@@ -42,6 +42,12 @@ Generated artifact bytes remain in ignored local capture storage, while their
 receipt hashes and controlled command output are committed. This respects the
 repository rule excluding generated previews from Git.
 
+[Episode E0001](development/E0001/README.md) is registered: six actual successful
+commands at source commits `eeec334` and `f9a9511`. Direct receipt memory is 728
+parent bytes and 1,455 child bytes, fitting the existing 4,096/1,536 caps. This
+episode remains development evidence and an easy direct-record control. There
+are zero prospective evaluation episodes and zero new model calls.
+
 ```powershell
 python -m experiments.dependency_memory.workflow_intake.packet
 ```
