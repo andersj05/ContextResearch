@@ -20,6 +20,16 @@ remain pending. This is one inspected program, not new natural
 prospective tasks. The [source review](../research/SCOPE_INFERENCE_DESIGN_2026-10-01.md)
 identifies dependency traces and scoped reuse as established prior mechanisms.
 
+The [separate fixed-schema control](../research/SCOPE_CODEBOOK_CONTROL_2026-10-01.md)
+uses the existing dictionary codec: all 24 constructed late queries succeed
+with 949–1,009 child bytes, versus 12/24 for the plain authored JSON projection.
+Cached outcomes also achieve 24/24. All 14,505 catalog comparisons agree with
+the original program. Claim C58; living draft v0.25. The original prepared learner sources remain
+frozen. The user specifically approved the live dispatch after automatic review
+initially rejected it. At this offline milestone no request was dispatched or
+reserved. All 464 offline tests pass; repository validation reports 58 claims
+and 47 bibliography entries, and paper assembly checks 40 cited sources.
+
 The [subsequent October 1 method audit](../research/WORKFLOW_METHOD_AUDIT_2026-10-01.md)
 compares a separate reverse-scan specification with the unchanged grader on
 **158,340 constructed queries**, old checked-writer proposals on 5,652 cases,

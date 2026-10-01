@@ -1,6 +1,22 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.24 — October 1, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.25 — October 1, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## Separate field selection from serialization cost
+
+The [new offline control](../research/SCOPE_CODEBOOK_CONTROL_2026-10-01.md)
+reuses the existing public dictionary schema on eight inspected historical
+attempts. Under the unchanged 4,096/1,536-byte caps, ordinary authored JSON
+answers 12/24 constructed late queries; the same fields with the fixed schema
+answer 24/24, as do cached public-program outcomes. All 14,505 constructed
+catalog rows agree with the original classifier. Claim C58. A failure of this
+JSON encoding is not an information-theoretic memory obstruction.
+
+The separately [frozen source-only learner](../experiments/dependency_memory/scope_inference/PROTOCOL.md)
+tests inferred contract completeness on one known program. Its eight model
+calls have specific user approval and remain undispatched at this offline
+milestone. Neither this offline result nor the planned calls establish
+natural-workflow prevalence, dictionary-coding novelty or production savings.
 
 ## Check whether the task needs earlier memory
 

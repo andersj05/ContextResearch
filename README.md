@@ -4,6 +4,14 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
+**October 1 serialization control:** the [existing public schema](research/SCOPE_CODEBOOK_CONTROL_2026-10-01.md)
+answers all 24 constructed late queries under unchanged byte caps, as do cached
+public-program outcomes; ordinary authored JSON answers 12/24. This narrows the
+remaining question to complete automatic scope inference and changing query
+demands. The [eight-call source-only study](experiments/dependency_memory/scope_inference/PROTOCOL.md)
+is frozen and specifically approved, with dispatch still pending at this milestone.
+No model result or new natural task is added.
+
 **October 1 method audit:** the [local derivation and finite comparisons](research/WORKFLOW_METHOD_AUDIT_2026-10-01.md)
 show that exact checked tables with fallback add no receipt state over direct
 projection in this known format. E0001's actual query is answerable from B alone.

@@ -800,6 +800,20 @@ def main() -> int:
             counts["workflow_method_provider_generations"] = method["provider_generations"]
         except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
             errors.append(f"Workflow method audit/freeze validation failed: {error}")
+    scope_control_path = ROOT / "experiments/dependency_memory/results/scope_codebook_control_2026-10-01.json"
+    if scope_control_path.is_file():
+        try:
+            from experiments.dependency_memory.scope_codebook_control import analysis as scope_control_analysis
+            from experiments.dependency_memory.scope_inference.run import stable as scope_stable
+            regenerated = scope_control_analysis()
+            saved = json.loads(scope_control_path.read_text(encoding="utf-8"))
+            if scope_stable(saved) != scope_stable(regenerated):
+                raise ValueError("Fixed-schema control differs from original-program replay")
+            counts["scope_codebook_catalog_cases"] = regenerated["catalog_cases"]
+            counts["scope_codebook_correct_delayed_queries"] = regenerated["correct"]
+            counts["scope_codebook_new_model_calls"] = regenerated["new_model_calls"]
+        except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
+            errors.append(f"Scope codebook control failed: {error}")
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"

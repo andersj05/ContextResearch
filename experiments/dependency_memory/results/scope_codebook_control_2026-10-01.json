@@ -1,0 +1,340 @@
+{
+  "cached_results": {
+    "children": [
+      {
+        "infeasible": false,
+        "proposal_bytes": 766,
+        "workers": [
+          0,
+          1
+        ]
+      },
+      {
+        "infeasible": false,
+        "proposal_bytes": 779,
+        "workers": [
+          0,
+          2
+        ]
+      },
+      {
+        "infeasible": false,
+        "proposal_bytes": 770,
+        "workers": [
+          0,
+          3
+        ]
+      },
+      {
+        "infeasible": false,
+        "proposal_bytes": 770,
+        "workers": [
+          1,
+          2
+        ]
+      },
+      {
+        "infeasible": false,
+        "proposal_bytes": 761,
+        "workers": [
+          1,
+          3
+        ]
+      },
+      {
+        "infeasible": false,
+        "proposal_bytes": 774,
+        "workers": [
+          2,
+          3
+        ]
+      }
+    ],
+    "correct": 24,
+    "final_queries": 24,
+    "limits": "Constructed timing on eight inspected historical records; scripted final program.",
+    "operations": [
+      {
+        "name": "parent_transform",
+        "read_bytes": 53736,
+        "write_bytes": 1539
+      },
+      {
+        "name": "child_select",
+        "read_bytes": 1539,
+        "write_bytes": 766
+      },
+      {
+        "name": "child_select",
+        "read_bytes": 1539,
+        "write_bytes": 779
+      },
+      {
+        "name": "child_select",
+        "read_bytes": 1539,
+        "write_bytes": 770
+      },
+      {
+        "name": "child_select",
+        "read_bytes": 1539,
+        "write_bytes": 770
+      },
+      {
+        "name": "child_select",
+        "read_bytes": 1539,
+        "write_bytes": 761
+      },
+      {
+        "name": "child_select",
+        "read_bytes": 1539,
+        "write_bytes": 774
+      }
+    ],
+    "parent": {
+      "infeasible": false,
+      "proposal_bytes": 1539
+    }
+  },
+  "catalog_cases": 14505,
+  "catalog_disagreements": 0,
+  "children": [
+    {
+      "infeasible": false,
+      "proposal_bytes": 996,
+      "workers": [
+        0,
+        1
+      ]
+    },
+    {
+      "infeasible": false,
+      "proposal_bytes": 1009,
+      "workers": [
+        0,
+        2
+      ]
+    },
+    {
+      "infeasible": false,
+      "proposal_bytes": 958,
+      "workers": [
+        0,
+        3
+      ]
+    },
+    {
+      "infeasible": false,
+      "proposal_bytes": 1000,
+      "workers": [
+        1,
+        2
+      ]
+    },
+    {
+      "infeasible": false,
+      "proposal_bytes": 949,
+      "workers": [
+        1,
+        3
+      ]
+    },
+    {
+      "infeasible": false,
+      "proposal_bytes": 962,
+      "workers": [
+        2,
+        3
+      ]
+    }
+  ],
+  "correct": 24,
+  "date": "2026-10-01",
+  "evidence_class": "separate pre-generation offline control; constructed timing on eight inspected records",
+  "final_queries": 24,
+  "frozen_launch_manifest_sha256": "534daa21dae2831234e12c0f9b2431d12d51bfe70ff604ed3bcc4ba4654d5055",
+  "hand_json": {
+    "children": [
+      {
+        "infeasible": true,
+        "proposal_bytes": 1586,
+        "workers": [
+          0,
+          1
+        ]
+      },
+      {
+        "infeasible": true,
+        "proposal_bytes": 1599,
+        "workers": [
+          0,
+          2
+        ]
+      },
+      {
+        "infeasible": false,
+        "proposal_bytes": 1441,
+        "workers": [
+          0,
+          3
+        ]
+      },
+      {
+        "infeasible": true,
+        "proposal_bytes": 1590,
+        "workers": [
+          1,
+          2
+        ]
+      },
+      {
+        "infeasible": false,
+        "proposal_bytes": 1432,
+        "workers": [
+          1,
+          3
+        ]
+      },
+      {
+        "infeasible": false,
+        "proposal_bytes": 1445,
+        "workers": [
+          2,
+          3
+        ]
+      }
+    ],
+    "correct": 12,
+    "final_queries": 24,
+    "limits": "Constructed timing on eight inspected historical records; scripted final program.",
+    "operations": [
+      {
+        "name": "parent_transform",
+        "read_bytes": 53736,
+        "write_bytes": 3030
+      },
+      {
+        "name": "child_select",
+        "read_bytes": 3030,
+        "write_bytes": 1586
+      },
+      {
+        "name": "child_select",
+        "read_bytes": 3030,
+        "write_bytes": 1599
+      },
+      {
+        "name": "child_select",
+        "read_bytes": 3030,
+        "write_bytes": 1441
+      },
+      {
+        "name": "final_public_program",
+        "read_bytes": 215,
+        "write_bytes": 29
+      },
+      {
+        "name": "final_public_program",
+        "read_bytes": 255,
+        "write_bytes": 31
+      },
+      {
+        "name": "final_public_program",
+        "read_bytes": 216,
+        "write_bytes": 30
+      },
+      {
+        "name": "final_public_program",
+        "read_bytes": 101,
+        "write_bytes": 26
+      },
+      {
+        "name": "child_select",
+        "read_bytes": 3030,
+        "write_bytes": 1590
+      },
+      {
+        "name": "child_select",
+        "read_bytes": 3030,
+        "write_bytes": 1432
+      },
+      {
+        "name": "final_public_program",
+        "read_bytes": 214,
+        "write_bytes": 28
+      },
+      {
+        "name": "final_public_program",
+        "read_bytes": 255,
+        "write_bytes": 31
+      },
+      {
+        "name": "final_public_program",
+        "read_bytes": 216,
+        "write_bytes": 30
+      },
+      {
+        "name": "final_public_program",
+        "read_bytes": 101,
+        "write_bytes": 26
+      },
+      {
+        "name": "child_select",
+        "read_bytes": 3030,
+        "write_bytes": 1445
+      },
+      {
+        "name": "final_public_program",
+        "read_bytes": 216,
+        "write_bytes": 30
+      },
+      {
+        "name": "final_public_program",
+        "read_bytes": 254,
+        "write_bytes": 30
+      },
+      {
+        "name": "final_public_program",
+        "read_bytes": 216,
+        "write_bytes": 30
+      },
+      {
+        "name": "final_public_program",
+        "read_bytes": 101,
+        "write_bytes": 26
+      }
+    ],
+    "parent": {
+      "infeasible": false,
+      "proposal_bytes": 3030
+    }
+  },
+  "historical_record_sha256": [
+    "c613a996c5610e1c3785805cb03cdb92f33cbf931c176f7099f28748373078ed",
+    "ea1ee1fc8868585ce111301f812b0f98348c624cef4b8a4b2328cf551169af0b",
+    "e0ba06d803c29234dc4ba9cf61d2b99a32558dfe1e392793eb20831db6ca60e6",
+    "b309d04afa805f48ac881b1d72073a8470406c9ae1e8aae1e9c440621e43ea7e",
+    "3c015c4d0a62d67afd6aa27df80751342b2e85204f7e97283fc0155a7336ba2f",
+    "a3a6bce4230057720ef149573acf37b70c01cb7a2dcbace5894080ed0a0a7e5b",
+    "5183bf59562673f0b7f8061b052c06aec89df8364cd780e4f499ca186f7e7f20",
+    "b97a443e53eec645255053594c879ef5a76f9bf1217425667a6c11c5640b4565"
+  ],
+  "limits": "No information-theoretic obstruction inferred from one JSON encoding. Fixed public codebook is not new. No model gain, natural-task prevalence or production savings.",
+  "measurement": {
+    "cpu_ns": 265625000,
+    "priced_total_cost": null,
+    "wall_ns": 260772800
+  },
+  "new_model_calls": 0,
+  "parent": {
+    "infeasible": false,
+    "proposal_bytes": 1957
+  },
+  "schema_instance_dependent": false,
+  "schema_source": "Existing public evidence.SCHEMA/encode_fields/decode_fields; unchanged since the earlier replay.",
+  "source_sha256": {
+    "experiments/dependency_memory/scope_codebook_control.py": "964c4e3e6aa8d8b82a1a1f5e89134466d8bcc5b0baf380126460384e1bd7e0be",
+    "experiments/dependency_memory/test_scope_codebook_control.py": "36052ac415530cfb44017174f0e8d2e98f995cecec7046fc45fcd6fb1a48f7c2",
+    "experiments/dependency_memory/workflow_replay/evidence.py": "c6b875ab31737130886e63fe641fa00860f52a284fb0da76b6742b43d439d487"
+  },
+  "version": "scope_schema_serialization_control_v1"
+}

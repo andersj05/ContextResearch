@@ -22,6 +22,13 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.25 adds the [public-schema serialization control](../research/SCOPE_CODEBOOK_CONTROL_2026-10-01.md),
+claim C58. The existing fixed-schema codec and cached public outcomes each
+answer all 24 constructed late queries, versus 12/24 for ordinary authored JSON,
+under unchanged byte caps. The learner launch remains frozen and undispatched.
+This is inspected offline development evidence, with no new compression or
+caching novelty, model outcome or production-saving claim.
+
 Living draft v0.24 adds the [local method audit and timing screen](../research/WORKFLOW_METHOD_AUDIT_2026-10-01.md),
 claims C56–C57. Exact checked tables with fallback have the same receipt state
 as direct retention; original model answers need not be equal. E0001 is B-only

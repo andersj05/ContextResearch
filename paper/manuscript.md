@@ -602,6 +602,26 @@ direct cap feasibility. If all twelve are B-only and fit, stop the proposed
 two-boundary study for this workload, retaining all tasks in the denominator.
 No retrospective cap reduction or prospective model gain is inferred.
 
+### 8.12 Public-schema encoding and the cached-outcome control
+
+A [separate source-driven control](../research/SCOPE_CODEBOOK_CONTROL_2026-10-01.md)
+uses the existing public fixed-schema codec on eight inspected historical attempt
+records. Across six constructed worker-pair scopes and 24 later exact-record
+queries, authored JSON retains 3,030 parent bytes but fails three child caps,
+scoring 12/24. The same authored fields in the existing schema use 1,957 parent
+bytes and 949–1,009 child bytes, scoring 24/24. Cached public-program outputs also
+score 24/24 with 1,539 parent bytes and 761–779 child bytes. Caps stay 4,096/1,536.
+All 14,505 constructed catalog rows agree with the original classifier after the
+packed projection. Claim C58; no new dictionary-coding novelty is implied.
+
+A single JSON serialization's infeasibility does not prove a capacity obstruction.
+The known program also permits the strong functional-retention control of caching
+its outcomes before the record query arrives. Dependency traces and result reuse
+are established mechanisms [@buildsystems2018]. The separately frozen source-only
+Luna inference study has no outcomes yet; specific dispatch approval is pending.
+This offline control supplies no natural-task prevalence, model gain or fully
+priced production comparison.
+
 ## 9. Limitations and open results
 
 The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. No learned dependency classifier or open-ended native-agent benchmark has been evaluated here. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, useful finite-length joint codes, a wider rate-distortion characterization, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.

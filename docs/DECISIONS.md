@@ -651,3 +651,26 @@ and a committed request/source freeze. Alias revision and sampling seed are
 unavailable; actual account debit remains unknown. New local tests and four
 zero-generation transport controls precede dispatch. External review and the
 prospective workflow launch gates remain unperformed.
+
+## October 1: keep the established codec and cached-outcome controls strong
+
+After freezing the source-only learner at `313a877`, add a separate offline
+control using the unchanged public `workflow_replay.evidence` schema. Do not
+edit frozen learner sources, requests, capacities or historical data. The
+same authored fields now fit every worker-pair child and answer all 24 late
+queries, as do cached public outcomes. Ordinary JSON answers 12/24. All
+14,505 constructed catalog comparisons agree with the original classifier.
+Record C58 as an encoding control, not a fundamental capacity obstruction,
+new compression mechanism, model gain or natural-task prevalence result.
+
+Automatic approval review rejected the live dispatch twice; neither command
+executed and zero identities were dispatched or reserved. Request specific
+human approval with payload, destination and bounded quota use. Leave the
+frozen eight-call allocation untouched while independent offline work continues.
+
+The user then specifically approved the eight-call payload, destination and
+20-planning-credit ceiling, and reiterated broader authorization for sensible
+Luna research. Proceed with this frozen allocation; larger future studies still
+need their own scientific design and cost accounting, without redundant approval
+requests for already authorized model calls. All 464 offline tests, repository
+validation and paper assembly pass at the serialization-control milestone.
