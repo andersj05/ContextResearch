@@ -1,0 +1,104 @@
+{
+  "dispatched": true,
+  "effective_config": {
+    "verified_leaves": 46
+  },
+  "effort": "medium",
+  "harness_termination": "sessionBudgetExceeded",
+  "identity": "scope-v2-r1-concise",
+  "model": "gpt-6-luna",
+  "planning_credits": "0.02848",
+  "quota_before": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1791048507,
+        "usedPercent": 44,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "raw_answer": "{\"nonempty_paths\":[\"provider_metadata\"],\"presence_paths\":[\"provider_metadata.usage\",\"provider_metadata.turn_id\"],\"value_paths\":[\"status\",\"provider_metadata.dispatched\",\"provider_metadata.attempt_ticket\",\"provider_metadata.credit_accounting.ticket\",\"provider_metadata.credit_accounting.status\",\"provider_metadata.credit_accounting.conservative_credit_equivalent_exact\",\"error_type\"]}",
+  "request": {
+    "instruction": "Infer a compact exact retention contract for the supplied public decision program on arbitrary JSON dictionaries. Preserve its output and unknown/error behavior. Use only the supplied program and projection language.",
+    "observation": {
+      "projection_language": "Return exactly value_paths, presence_paths, nonempty_paths arrays. Paths are dotted JSON object keys. value_paths preserves literal subtrees; $ preserves the entire input. presence_paths replaces a present key by true, and omits absent keys. nonempty_paths preserves nonempty dictionaries with the public _scope_nonempty marker when projection otherwise empties them. Any encountered nondictionary intermediate is preserved unchanged. Full-value retention overrides presence abstraction. Missing paths stay missing. No clipping or semantic fallback.",
+      "public_program": "from decimal import Decimal, InvalidOperation\nRESERVATION = Decimal('10.4025')\ndef require(condition, message):\n    if not condition:\n        raise ValueError(message)\n\ndef exact(value, label):\n    require(type(value) is str, 'Missing exact decimal: ' + label)\n    try:\n        result = Decimal(value)\n    except InvalidOperation as error:\n        raise ValueError('Invalid exact decimal: ' + label) from error\n    require(result.is_finite() and result >= 0, 'Negative or nonfinite amount: ' + label)\n    return result\n\ndef classify_attempt(attempt):\n    \"\"\"Classify only persisted dispatch/accounting evidence, never answer quality.\n\n    A dispatch flag is set immediately before turn/start. A retained reservation\n    counts conservatively as a dispatched attempt even if server acceptance is\n    unknown. Missing metadata alone cannot establish that no request was sent.\n    \"\"\"\n    status, meta = (attempt.get('status'), attempt.get('provider_metadata'))\n    require(type(meta) is dict, 'Ambiguous dispatch: missing provider metadata')\n    require(status in ('completed', 'policy_failure', 'transport_failure'), 'Ambiguous dispatch: unfinished or unknown attempt status')\n    dispatched = meta.get('dispatched')\n    if dispatched is True:\n        require(type(meta.get('attempt_ticket')) is int and meta['attempt_ticket'] > 0, 'Ambiguous dispatch: missing reservation ticket')\n        account = meta.get('credit_accounting')\n        require(type(account) is dict and account.get('ticket') == meta['attempt_ticket'], 'Ambiguous dispatch: missing or inconsistent accounting')\n        if account.get('status') == 'settled':\n            spent = exact(account.get('conservative_credit_equivalent_exact'), 'settled attempt')\n            require(spent <= RESERVATION, 'Settled usage exceeds reserved envelope')\n            return ('dispatched', spent, Decimal(0))\n        require(account.get('status') == 'reservation_retained' and status == 'transport_failure', 'Ambiguous dispatch: missing settlement or retained reservation')\n        return ('dispatched_uncertain', Decimal(0), RESERVATION)\n    require(status == 'transport_failure', 'Non-dispatched attempt cannot contain a model outcome')\n    if dispatched is False:\n        require(not any((name in meta for name in ('attempt_ticket', 'credit_accounting', 'usage', 'turn_id'))), 'Contradictory preflight dispatch or usage evidence')\n        return ('preflight_only', Decimal(0), Decimal(0))\n    require(not meta and attempt.get('error_type') == 'StudyStopped', 'Ambiguous dispatch: absent flag is not proof of no generation')\n    return ('preflight_only', Decimal(0), Decimal(0))"
+    },
+    "response_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "nonempty_paths": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "presence_paths": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "value_paths": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "value_paths",
+        "presence_paths",
+        "nonempty_paths"
+      ],
+      "type": "object"
+    },
+    "stage": "execute",
+    "version": "source_only_scope_luna_v1"
+  },
+  "request_sha256": "8fbb08de20674267a014a4c6fa1a5062ec1665f4b05f0645582ec13f9c79dac1",
+  "reservation_credits": "7.65",
+  "response": {
+    "nonempty_paths": [
+      "provider_metadata"
+    ],
+    "presence_paths": [
+      "provider_metadata.usage",
+      "provider_metadata.turn_id"
+    ],
+    "value_paths": [
+      "status",
+      "provider_metadata.dispatched",
+      "provider_metadata.attempt_ticket",
+      "provider_metadata.credit_accounting.ticket",
+      "provider_metadata.credit_accounting.status",
+      "provider_metadata.credit_accounting.conservative_credit_equivalent_exact",
+      "error_type"
+    ]
+  },
+  "started_at": "2026-10-01T23:22:03.849726+00:00",
+  "status": "completed",
+  "tool_items": 0,
+  "usage": {
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 0,
+    "inputTokens": 3537,
+    "outputTokens": 1571,
+    "reasoningOutputTokens": 1490,
+    "totalTokens": 5108
+  },
+  "usage_events": 1,
+  "wall_seconds": 32.06811480000033,
+  "wire_body_byte_bound": 24353
+}

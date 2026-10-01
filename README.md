@@ -4,6 +4,11 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
+**October 1 finite coding advance:** a [fixed three-block code](research/JOINT_THREE_BLOCK_WITNESS_2026-10-01.md)
+reduces exact average bit error from 27.7995% to 27.4855% using the same six-bit
+parent and one-bit child. All 147,456 outcomes are checked; this is an achievable
+construction, with finite optimality and publication priority still open.
+
 **October 1 serialization control:** the [existing public schema](research/SCOPE_CODEBOOK_CONTROL_2026-10-01.md)
 answers all 24 constructed late queries under unchanged byte caps, as do cached
 public-program outcomes; ordinary authored JSON answers 12/24. This narrows the
@@ -12,7 +17,8 @@ demands. The [eight-call source-only study](experiments/dependency_memory/scope_
 was specifically approved, then stopped before dispatch due to a missing
 reservation directory. The [separate corrected launch](experiments/dependency_memory/scope_inference_v2/README.md)
 preserves all scientific inputs and has new local identities.
-No model result or new natural task is added.
+Its first two metered contracts pass the catalog; a third dispatch times out.
+The primary criterion remains unassessable. No new natural task is added.
 
 **October 1 method audit:** the [local derivation and finite comparisons](research/WORKFLOW_METHOD_AUDIT_2026-10-01.md)
 show that exact checked tables with fallback add no receipt state over direct

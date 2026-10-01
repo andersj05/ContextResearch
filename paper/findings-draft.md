@@ -1,6 +1,16 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.25 — October 1, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.26 — October 1, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## A tighter explicit finite coding bound
+
+The [three-block construction](../research/JOINT_THREE_BLOCK_WITNESS_2026-10-01.md)
+uses six parent bits and one later child bit. All 147,456 possible delayed-query
+outcomes give 40,529 errors, versus 40,992 for the existing pair-plus-one
+concatenation. Average bit error falls from 27.7995% to 27.4855%. Claim C59.
+The complete codebook and parent table are saved, with independent route checks.
+This is an achievable upper bound, not a finite optimum, LLM performance result
+or certified publication novelty. The known asymptotic frontier remains stronger.
 
 ## Separate field selection from serialization cost
 

@@ -22,6 +22,12 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.26 adds the [three-block explicit code](../research/JOINT_THREE_BLOCK_WITNESS_2026-10-01.md),
+claim C59. Six parent bits and one child bit achieve 40,529 errors on 147,456
+outcomes, improving the existing 40,992-error concatenation. Independent route
+grading and six new tests check the saved witness. This is a finite upper bound;
+optimality, priority and model/task performance are not established.
+
 Living draft v0.25 adds the [public-schema serialization control](../research/SCOPE_CODEBOOK_CONTROL_2026-10-01.md),
 claim C58. The existing fixed-schema codec and cached public outcomes each
 answer all 24 constructed late queries, versus 12/24 for ordinary authored JSON,

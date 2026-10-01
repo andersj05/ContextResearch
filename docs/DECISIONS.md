@@ -691,3 +691,26 @@ the byte-identical public requests before generation, retaining the original
 criterion and a fresh 20-planning-credit cap. User authorization covers this
 correction; do not repeat an approval question. Never resume either launched
 version or extend spent historical allocations.
+
+## October 1: improve the finite construction without claiming optimality
+
+Add a separate three-block package; preserve all prior mathematical source and
+certificate bytes. Search 64 unsigned decision triples from 4,096 candidates
+with deterministic greedy addition and at most eight best swaps. Retain the
+entire discovery trace, both starts and the timing-label correction rerun.
+The new book has 40,529 errors on 147,456 outcomes; the old pair-plus-one book
+has 40,992 and no improving single swap under this search. Six independent tests
+verify nearest assignments, direct outcomes, baseline books, symmetries, hard
+state limits and timing. Register C59 as a checked achievable upper bound.
+The greedy start reaches its swap cap, so do not claim a local optimum, exhaustive
+codebook search, finite optimum, practical memory cost or publication novelty.
+Keep the existing decoder-complete asymptotic converse and interval unchanged.
+
+The replacement Luna launch at `ea5c450` returns two catalog-complete contracts,
+then times out on its third dispatch after 240 seconds. Keep that identity
+permanently missing and its 7.65 unknown reservation. Known usage costs 0.062325
+planning credits. Any separate continuation may cover only the five never-
+dispatched identities, with original prompts/criterion and the combined eight-
+dispatch/20-credit ceiling. It cannot make the eight-metered-answer criterion
+assessable or erase the original gap. No repeated approval is needed for this
+already authorized bounded work.

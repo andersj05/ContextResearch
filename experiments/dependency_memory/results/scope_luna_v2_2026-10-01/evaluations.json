@@ -1,0 +1,462 @@
+{
+  "scope-v2-r1-closure": {
+    "catalog": {
+      "cases": 14505,
+      "cpu_ns": 953125000,
+      "disagreements": 0,
+      "false_preflight_only": 0,
+      "wall_ns": 958464800,
+      "witnesses": []
+    },
+    "contract": {
+      "nonempty_paths": [
+        "provider_metadata"
+      ],
+      "presence_paths": [
+        "provider_metadata.usage",
+        "provider_metadata.turn_id"
+      ],
+      "value_paths": [
+        "status",
+        "error_type",
+        "provider_metadata.dispatched",
+        "provider_metadata.attempt_ticket",
+        "provider_metadata.credit_accounting.ticket",
+        "provider_metadata.credit_accounting.status",
+        "provider_metadata.credit_accounting.conservative_credit_equivalent_exact"
+      ]
+    },
+    "history": {
+      "cases": 8,
+      "cpu_ns": 0,
+      "disagreements": 0,
+      "false_preflight_only": 0,
+      "wall_ns": 1269600,
+      "witnesses": []
+    },
+    "staged": {
+      "children": [
+        {
+          "infeasible": true,
+          "proposal_bytes": 1586,
+          "workers": [
+            0,
+            1
+          ]
+        },
+        {
+          "infeasible": true,
+          "proposal_bytes": 1599,
+          "workers": [
+            0,
+            2
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 1441,
+          "workers": [
+            0,
+            3
+          ]
+        },
+        {
+          "infeasible": true,
+          "proposal_bytes": 1590,
+          "workers": [
+            1,
+            2
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 1432,
+          "workers": [
+            1,
+            3
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 1445,
+          "workers": [
+            2,
+            3
+          ]
+        }
+      ],
+      "correct": 12,
+      "final_queries": 24,
+      "limits": "Constructed timing on eight inspected historical records; scripted final program.",
+      "operations": [
+        {
+          "cpu_ns": 0,
+          "name": "parent_transform",
+          "read_bytes": 53736,
+          "wall_ns": 2194000,
+          "write_bytes": 3030
+        },
+        {
+          "cpu_ns": 0,
+          "name": "child_select",
+          "read_bytes": 3030,
+          "wall_ns": 76000,
+          "write_bytes": 1586
+        },
+        {
+          "cpu_ns": 0,
+          "name": "child_select",
+          "read_bytes": 3030,
+          "wall_ns": 71600,
+          "write_bytes": 1599
+        },
+        {
+          "cpu_ns": 15625000,
+          "name": "child_select",
+          "read_bytes": 3030,
+          "wall_ns": 74800,
+          "write_bytes": 1441
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 215,
+          "wall_ns": 16800,
+          "write_bytes": 29
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 255,
+          "wall_ns": 15600,
+          "write_bytes": 31
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 216,
+          "wall_ns": 13900,
+          "write_bytes": 30
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 101,
+          "wall_ns": 13800,
+          "write_bytes": 26
+        },
+        {
+          "cpu_ns": 0,
+          "name": "child_select",
+          "read_bytes": 3030,
+          "wall_ns": 74300,
+          "write_bytes": 1590
+        },
+        {
+          "cpu_ns": 0,
+          "name": "child_select",
+          "read_bytes": 3030,
+          "wall_ns": 68800,
+          "write_bytes": 1432
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 214,
+          "wall_ns": 15400,
+          "write_bytes": 28
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 255,
+          "wall_ns": 15500,
+          "write_bytes": 31
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 216,
+          "wall_ns": 13700,
+          "write_bytes": 30
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 101,
+          "wall_ns": 12000,
+          "write_bytes": 26
+        },
+        {
+          "cpu_ns": 0,
+          "name": "child_select",
+          "read_bytes": 3030,
+          "wall_ns": 65700,
+          "write_bytes": 1445
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 216,
+          "wall_ns": 14300,
+          "write_bytes": 30
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 254,
+          "wall_ns": 15000,
+          "write_bytes": 30
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 216,
+          "wall_ns": 13400,
+          "write_bytes": 30
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 101,
+          "wall_ns": 11400,
+          "write_bytes": 26
+        }
+      ],
+      "parent": {
+        "infeasible": false,
+        "proposal_bytes": 3030
+      }
+    }
+  },
+  "scope-v2-r1-concise": {
+    "catalog": {
+      "cases": 14505,
+      "cpu_ns": 937500000,
+      "disagreements": 0,
+      "false_preflight_only": 0,
+      "wall_ns": 936361200,
+      "witnesses": []
+    },
+    "contract": {
+      "nonempty_paths": [
+        "provider_metadata"
+      ],
+      "presence_paths": [
+        "provider_metadata.usage",
+        "provider_metadata.turn_id"
+      ],
+      "value_paths": [
+        "status",
+        "provider_metadata.dispatched",
+        "provider_metadata.attempt_ticket",
+        "provider_metadata.credit_accounting.ticket",
+        "provider_metadata.credit_accounting.status",
+        "provider_metadata.credit_accounting.conservative_credit_equivalent_exact",
+        "error_type"
+      ]
+    },
+    "history": {
+      "cases": 8,
+      "cpu_ns": 0,
+      "disagreements": 0,
+      "false_preflight_only": 0,
+      "wall_ns": 1389400,
+      "witnesses": []
+    },
+    "staged": {
+      "children": [
+        {
+          "infeasible": true,
+          "proposal_bytes": 1586,
+          "workers": [
+            0,
+            1
+          ]
+        },
+        {
+          "infeasible": true,
+          "proposal_bytes": 1599,
+          "workers": [
+            0,
+            2
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 1441,
+          "workers": [
+            0,
+            3
+          ]
+        },
+        {
+          "infeasible": true,
+          "proposal_bytes": 1590,
+          "workers": [
+            1,
+            2
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 1432,
+          "workers": [
+            1,
+            3
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 1445,
+          "workers": [
+            2,
+            3
+          ]
+        }
+      ],
+      "correct": 12,
+      "final_queries": 24,
+      "limits": "Constructed timing on eight inspected historical records; scripted final program.",
+      "operations": [
+        {
+          "cpu_ns": 0,
+          "name": "parent_transform",
+          "read_bytes": 53736,
+          "wall_ns": 1763600,
+          "write_bytes": 3030
+        },
+        {
+          "cpu_ns": 0,
+          "name": "child_select",
+          "read_bytes": 3030,
+          "wall_ns": 78600,
+          "write_bytes": 1586
+        },
+        {
+          "cpu_ns": 0,
+          "name": "child_select",
+          "read_bytes": 3030,
+          "wall_ns": 70500,
+          "write_bytes": 1599
+        },
+        {
+          "cpu_ns": 0,
+          "name": "child_select",
+          "read_bytes": 3030,
+          "wall_ns": 79300,
+          "write_bytes": 1441
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 215,
+          "wall_ns": 18900,
+          "write_bytes": 29
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 255,
+          "wall_ns": 16200,
+          "write_bytes": 31
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 216,
+          "wall_ns": 13900,
+          "write_bytes": 30
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 101,
+          "wall_ns": 14100,
+          "write_bytes": 26
+        },
+        {
+          "cpu_ns": 0,
+          "name": "child_select",
+          "read_bytes": 3030,
+          "wall_ns": 83200,
+          "write_bytes": 1590
+        },
+        {
+          "cpu_ns": 0,
+          "name": "child_select",
+          "read_bytes": 3030,
+          "wall_ns": 123600,
+          "write_bytes": 1432
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 214,
+          "wall_ns": 34000,
+          "write_bytes": 28
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 255,
+          "wall_ns": 23400,
+          "write_bytes": 31
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 216,
+          "wall_ns": 19800,
+          "write_bytes": 30
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 101,
+          "wall_ns": 19300,
+          "write_bytes": 26
+        },
+        {
+          "cpu_ns": 0,
+          "name": "child_select",
+          "read_bytes": 3030,
+          "wall_ns": 96600,
+          "write_bytes": 1445
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 216,
+          "wall_ns": 24400,
+          "write_bytes": 30
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 254,
+          "wall_ns": 19800,
+          "write_bytes": 30
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 216,
+          "wall_ns": 18100,
+          "write_bytes": 30
+        },
+        {
+          "cpu_ns": 0,
+          "name": "final_public_program",
+          "read_bytes": 101,
+          "wall_ns": 16300,
+          "write_bytes": 26
+        }
+      ],
+      "parent": {
+        "infeasible": false,
+        "proposal_bytes": 3030
+      }
+    }
+  }
+}

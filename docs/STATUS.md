@@ -4,6 +4,17 @@ Updated: October 1, 2026. This document is the current handoff; older scope docu
 
 ## Objective
 
+The [new three-block finite witness](../research/JOINT_THREE_BLOCK_WITNESS_2026-10-01.md)
+achieves 40,529 errors on all 147,456 delayed-query outcomes with six parent bits
+and one child bit, improving the old concatenation's 40,992. Claim C59; living
+draft v0.26. The codebook, all 4,096 parent assignments and discovery provenance
+are saved. Independent route checks and six new tests pass. This is an achievable
+upper bound, not the finite optimum, publication priority or model performance.
+
+At this milestone all 473 offline tests pass. Repository validation checks
+59 claims, 47 bibliography entries, the complete three-block witness and the
+two saved scope-inference answers; paper assembly checks 40 cited sources.
+
 Develop a mathematically precise and implementable study of repeated agent compaction when relevance is revealed over time. The target is a restricted compatibility result plus controlled evidence of whether the mechanism matters in tool-agent tasks.
 
 The user authorized continuing research and online Luna calls. A new
@@ -27,8 +38,12 @@ The [separate replacement runner](../experiments/dependency_memory/scope_inferen
 creates the directory, uses new identities and keeps every scientific input,
 public request and score unchanged. Three cold-directory mocked tests and a
 fresh four-case zero-generation CLI/configuration audit pass. Its eight-call /
-20-planning-credit allocation is prepared for committed attestation; it has
-not yet generated a model outcome.
+20-planning-credit allocation was frozen at `ea5c450`. Three requests were
+dispatched: two metered answers and one permanent 240-second transport timeout.
+Both answers have zero disagreements on the 14,505-row catalog and answer 12/24
+constructed late queries using ordinary JSON. Known cost is 0.062325 planning
+credits, with 7.65 retained for unknown usage. Five identities remain never
+dispatched; no retry occurred. The eight-answer primary criterion is unassessable.
 
 The [separate fixed-schema control](../research/SCOPE_CODEBOOK_CONTROL_2026-10-01.md)
 uses the existing dictionary codec: all 24 constructed late queries succeed

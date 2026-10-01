@@ -19,6 +19,7 @@ sys.dont_write_bytecode = True
 from build_paper import citation_keys, read_bibliography
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
 
 
 def rows(path: str) -> list[dict[str, str]]:
@@ -478,6 +479,14 @@ def main() -> int:
     if joint_report.read_text(encoding="utf-8") != joint_block_coding.report(expected_joint):
         errors.append("Joint-block report is stale; regenerate it")
     counts["joint_block_witness_outcomes_checked"] = expected_joint["finite_witness"]["outcomes"]
+    from experiments.dependency_memory.joint_coding_finite3 import witness as finite_three
+    expected_three = json.loads(json.dumps(finite_three.certificate()))
+    three_path = ROOT / "experiments/dependency_memory/results/joint_three_block_certificate_2026-10-01.json"
+    if json.loads(three_path.read_text(encoding="utf-8")) != expected_three:
+        errors.append("Three-block finite witness is stale or its source/discovery binding changed")
+    counts["joint_three_block_outcomes_checked"] = expected_three["witness"]["outcomes"]
+    counts["joint_three_block_errors"] = expected_three["witness"]["errors"]
+    counts["joint_three_block_concatenation_errors"] = expected_three["concatenation_control"]["errors"]
     from joint_coding import decoder_frontier
     expected_frontier = decoder_frontier.certificate()
     frontier_path = ROOT / "experiments/dependency_memory/results/decoder_frontier_certificate.json"
@@ -814,6 +823,24 @@ def main() -> int:
             counts["scope_codebook_new_model_calls"] = regenerated["new_model_calls"]
         except (OSError, ValueError, TypeError, KeyError, AssertionError) as error:
             errors.append(f"Scope codebook control failed: {error}")
+    scope_v2_path = ROOT / "experiments/dependency_memory/results/scope_luna_v2_2026-10-01"
+    if (scope_v2_path / "manifest.json").is_file():
+        try:
+            from experiments.dependency_memory.scope_inference_v2 import run as scope_v2
+            scope_v2.verify(_strict_json((scope_v2_path / "manifest.json").read_text(encoding="utf-8")))
+            counts["scope_luna_v2_locked_files"] = len(scope_v2.fingerprints())
+            if (scope_v2_path / "analysis.json").is_file():
+                saved = _strict_json((scope_v2_path / "analysis.json").read_text(encoding="utf-8"))
+                replay, _ = scope_v2.analyze()
+                if saved != replay or (scope_v2_path / "report.md").read_text(encoding="utf-8") != scope_v2.report(replay):
+                    errors.append("Saved source-only scope model analysis differs from independent replay")
+                counts["scope_luna_v2_dispatches"] = replay["provider_dispatches"]
+                counts["scope_luna_v2_metered_answers"] = replay["metered_answers"]
+                counts["scope_luna_v2_known_planning_credits"] = replay["known_planning_credits"]
+                counts["scope_luna_v2_primary_criterion_met"] = replay["primary_criterion_met"]
+        except (OSError, ValueError, TypeError, KeyError) as error:
+            errors.append("Source-only scope launch/replay validation failed: " + str(error))
+
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"
