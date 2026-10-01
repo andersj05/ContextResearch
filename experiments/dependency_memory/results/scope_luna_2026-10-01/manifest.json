@@ -1,0 +1,411 @@
+{
+  "actual_account_debit": null,
+  "api_dollar_spend": 0,
+  "catalog": {
+    "distinct_records": 14490,
+    "records": 14505,
+    "sha256": "65efb8ef76818ff3818db545f5220504d337cc83de801fffa2411c12c876f66b"
+  },
+  "date": "2026-10-01",
+  "effort": "medium",
+  "evidence_class": "one inspected public program; eight correlated source-only calls; constructed catalog/timing",
+  "external_human_review": "pending",
+  "historical_source_hashes": {
+    "experiments/dependency_memory/results/transfer_continuation_plan.json": "32312a03ee43f66870a7893abaee2518c1653d403a2fcdd2d69e89f168a93d41",
+    "experiments/dependency_memory/results/transfer_luna_2026-09-19_authorized/worker-0/requests.json": "45fa109db723d148998ae66182c3d3d7450e363de92191ac54692508683ac0bb",
+    "experiments/dependency_memory/results/transfer_luna_2026-09-19_authorized/worker-1/requests.json": "64e7d18b166cd831502c41a613de4b40191bb59140d45e4d225ab71888bc9600",
+    "experiments/dependency_memory/results/transfer_luna_2026-09-19_authorized/worker-2/requests.json": "e82a34b826069007e75933a1ff7876a44832eecb3fc424e6164b3fe77a1d30d2",
+    "experiments/dependency_memory/results/transfer_luna_2026-09-19_authorized/worker-3/requests.json": "30685f0b0c4770c8f289da77b595801279566d5e5b27fee10a01dddde4d8b10c",
+    "scripts/prepare_transfer_continuation.py": "345c3f52e52d8e210394d236dd5c4d2671fd476fc50cca8fddec22095a91fc92"
+  },
+  "immutable_model_revision": null,
+  "max_calls": 8,
+  "model": "gpt-6-luna",
+  "per_call_reservation": "7.65",
+  "planning_credit_cap": "20",
+  "priced_total_cost": null,
+  "program_sha256": "90c6dd646a666b602c885619f331645e2484f261242b78370d5512a3b980e04e",
+  "requests": [
+    {
+      "identity": "scope-r1-concise",
+      "replicate": 1,
+      "request": {
+        "instruction": "Infer a compact exact retention contract for the supplied public decision program on arbitrary JSON dictionaries. Preserve its output and unknown/error behavior. Use only the supplied program and projection language.",
+        "observation": {
+          "projection_language": "Return exactly value_paths, presence_paths, nonempty_paths arrays. Paths are dotted JSON object keys. value_paths preserves literal subtrees; $ preserves the entire input. presence_paths replaces a present key by true, and omits absent keys. nonempty_paths preserves nonempty dictionaries with the public _scope_nonempty marker when projection otherwise empties them. Any encountered nondictionary intermediate is preserved unchanged. Full-value retention overrides presence abstraction. Missing paths stay missing. No clipping or semantic fallback.",
+          "public_program": "from decimal import Decimal, InvalidOperation\nRESERVATION = Decimal('10.4025')\ndef require(condition, message):\n    if not condition:\n        raise ValueError(message)\n\ndef exact(value, label):\n    require(type(value) is str, 'Missing exact decimal: ' + label)\n    try:\n        result = Decimal(value)\n    except InvalidOperation as error:\n        raise ValueError('Invalid exact decimal: ' + label) from error\n    require(result.is_finite() and result >= 0, 'Negative or nonfinite amount: ' + label)\n    return result\n\ndef classify_attempt(attempt):\n    \"\"\"Classify only persisted dispatch/accounting evidence, never answer quality.\n\n    A dispatch flag is set immediately before turn/start. A retained reservation\n    counts conservatively as a dispatched attempt even if server acceptance is\n    unknown. Missing metadata alone cannot establish that no request was sent.\n    \"\"\"\n    status, meta = (attempt.get('status'), attempt.get('provider_metadata'))\n    require(type(meta) is dict, 'Ambiguous dispatch: missing provider metadata')\n    require(status in ('completed', 'policy_failure', 'transport_failure'), 'Ambiguous dispatch: unfinished or unknown attempt status')\n    dispatched = meta.get('dispatched')\n    if dispatched is True:\n        require(type(meta.get('attempt_ticket')) is int and meta['attempt_ticket'] > 0, 'Ambiguous dispatch: missing reservation ticket')\n        account = meta.get('credit_accounting')\n        require(type(account) is dict and account.get('ticket') == meta['attempt_ticket'], 'Ambiguous dispatch: missing or inconsistent accounting')\n        if account.get('status') == 'settled':\n            spent = exact(account.get('conservative_credit_equivalent_exact'), 'settled attempt')\n            require(spent <= RESERVATION, 'Settled usage exceeds reserved envelope')\n            return ('dispatched', spent, Decimal(0))\n        require(account.get('status') == 'reservation_retained' and status == 'transport_failure', 'Ambiguous dispatch: missing settlement or retained reservation')\n        return ('dispatched_uncertain', Decimal(0), RESERVATION)\n    require(status == 'transport_failure', 'Non-dispatched attempt cannot contain a model outcome')\n    if dispatched is False:\n        require(not any((name in meta for name in ('attempt_ticket', 'credit_accounting', 'usage', 'turn_id'))), 'Contradictory preflight dispatch or usage evidence')\n        return ('preflight_only', Decimal(0), Decimal(0))\n    require(not meta and attempt.get('error_type') == 'StudyStopped', 'Ambiguous dispatch: absent flag is not proof of no generation')\n    return ('preflight_only', Decimal(0), Decimal(0))"
+        },
+        "response_schema": {
+          "additionalProperties": false,
+          "properties": {
+            "nonempty_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "presence_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "value_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "value_paths",
+            "presence_paths",
+            "nonempty_paths"
+          ],
+          "type": "object"
+        },
+        "stage": "execute",
+        "version": "source_only_scope_luna_v1"
+      },
+      "request_sha256": "8fbb08de20674267a014a4c6fa1a5062ec1665f4b05f0645582ec13f9c79dac1",
+      "variant": "concise"
+    },
+    {
+      "identity": "scope-r1-closure",
+      "replicate": 1,
+      "request": {
+        "instruction": "Infer a compact exact retention contract for the supplied public decision program on arbitrary JSON dictionaries. Preserve its output and unknown/error behavior. Use only the supplied program and projection language. Check key membership and absence, malformed-container types, and empty/nonempty containers, including unknown keys. A positive-field list alone may not preserve those branches.",
+        "observation": {
+          "projection_language": "Return exactly value_paths, presence_paths, nonempty_paths arrays. Paths are dotted JSON object keys. value_paths preserves literal subtrees; $ preserves the entire input. presence_paths replaces a present key by true, and omits absent keys. nonempty_paths preserves nonempty dictionaries with the public _scope_nonempty marker when projection otherwise empties them. Any encountered nondictionary intermediate is preserved unchanged. Full-value retention overrides presence abstraction. Missing paths stay missing. No clipping or semantic fallback.",
+          "public_program": "from decimal import Decimal, InvalidOperation\nRESERVATION = Decimal('10.4025')\ndef require(condition, message):\n    if not condition:\n        raise ValueError(message)\n\ndef exact(value, label):\n    require(type(value) is str, 'Missing exact decimal: ' + label)\n    try:\n        result = Decimal(value)\n    except InvalidOperation as error:\n        raise ValueError('Invalid exact decimal: ' + label) from error\n    require(result.is_finite() and result >= 0, 'Negative or nonfinite amount: ' + label)\n    return result\n\ndef classify_attempt(attempt):\n    \"\"\"Classify only persisted dispatch/accounting evidence, never answer quality.\n\n    A dispatch flag is set immediately before turn/start. A retained reservation\n    counts conservatively as a dispatched attempt even if server acceptance is\n    unknown. Missing metadata alone cannot establish that no request was sent.\n    \"\"\"\n    status, meta = (attempt.get('status'), attempt.get('provider_metadata'))\n    require(type(meta) is dict, 'Ambiguous dispatch: missing provider metadata')\n    require(status in ('completed', 'policy_failure', 'transport_failure'), 'Ambiguous dispatch: unfinished or unknown attempt status')\n    dispatched = meta.get('dispatched')\n    if dispatched is True:\n        require(type(meta.get('attempt_ticket')) is int and meta['attempt_ticket'] > 0, 'Ambiguous dispatch: missing reservation ticket')\n        account = meta.get('credit_accounting')\n        require(type(account) is dict and account.get('ticket') == meta['attempt_ticket'], 'Ambiguous dispatch: missing or inconsistent accounting')\n        if account.get('status') == 'settled':\n            spent = exact(account.get('conservative_credit_equivalent_exact'), 'settled attempt')\n            require(spent <= RESERVATION, 'Settled usage exceeds reserved envelope')\n            return ('dispatched', spent, Decimal(0))\n        require(account.get('status') == 'reservation_retained' and status == 'transport_failure', 'Ambiguous dispatch: missing settlement or retained reservation')\n        return ('dispatched_uncertain', Decimal(0), RESERVATION)\n    require(status == 'transport_failure', 'Non-dispatched attempt cannot contain a model outcome')\n    if dispatched is False:\n        require(not any((name in meta for name in ('attempt_ticket', 'credit_accounting', 'usage', 'turn_id'))), 'Contradictory preflight dispatch or usage evidence')\n        return ('preflight_only', Decimal(0), Decimal(0))\n    require(not meta and attempt.get('error_type') == 'StudyStopped', 'Ambiguous dispatch: absent flag is not proof of no generation')\n    return ('preflight_only', Decimal(0), Decimal(0))"
+        },
+        "response_schema": {
+          "additionalProperties": false,
+          "properties": {
+            "nonempty_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "presence_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "value_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "value_paths",
+            "presence_paths",
+            "nonempty_paths"
+          ],
+          "type": "object"
+        },
+        "stage": "execute",
+        "version": "source_only_scope_luna_v1"
+      },
+      "request_sha256": "a9aa3942d85fa490d3450f38d8d588ba4440ed77a35bbd105f4d00a1112e6284",
+      "variant": "closure"
+    },
+    {
+      "identity": "scope-r2-concise",
+      "replicate": 2,
+      "request": {
+        "instruction": "Infer a compact exact retention contract for the supplied public decision program on arbitrary JSON dictionaries. Preserve its output and unknown/error behavior. Use only the supplied program and projection language.",
+        "observation": {
+          "projection_language": "Return exactly value_paths, presence_paths, nonempty_paths arrays. Paths are dotted JSON object keys. value_paths preserves literal subtrees; $ preserves the entire input. presence_paths replaces a present key by true, and omits absent keys. nonempty_paths preserves nonempty dictionaries with the public _scope_nonempty marker when projection otherwise empties them. Any encountered nondictionary intermediate is preserved unchanged. Full-value retention overrides presence abstraction. Missing paths stay missing. No clipping or semantic fallback.",
+          "public_program": "from decimal import Decimal, InvalidOperation\nRESERVATION = Decimal('10.4025')\ndef require(condition, message):\n    if not condition:\n        raise ValueError(message)\n\ndef exact(value, label):\n    require(type(value) is str, 'Missing exact decimal: ' + label)\n    try:\n        result = Decimal(value)\n    except InvalidOperation as error:\n        raise ValueError('Invalid exact decimal: ' + label) from error\n    require(result.is_finite() and result >= 0, 'Negative or nonfinite amount: ' + label)\n    return result\n\ndef classify_attempt(attempt):\n    \"\"\"Classify only persisted dispatch/accounting evidence, never answer quality.\n\n    A dispatch flag is set immediately before turn/start. A retained reservation\n    counts conservatively as a dispatched attempt even if server acceptance is\n    unknown. Missing metadata alone cannot establish that no request was sent.\n    \"\"\"\n    status, meta = (attempt.get('status'), attempt.get('provider_metadata'))\n    require(type(meta) is dict, 'Ambiguous dispatch: missing provider metadata')\n    require(status in ('completed', 'policy_failure', 'transport_failure'), 'Ambiguous dispatch: unfinished or unknown attempt status')\n    dispatched = meta.get('dispatched')\n    if dispatched is True:\n        require(type(meta.get('attempt_ticket')) is int and meta['attempt_ticket'] > 0, 'Ambiguous dispatch: missing reservation ticket')\n        account = meta.get('credit_accounting')\n        require(type(account) is dict and account.get('ticket') == meta['attempt_ticket'], 'Ambiguous dispatch: missing or inconsistent accounting')\n        if account.get('status') == 'settled':\n            spent = exact(account.get('conservative_credit_equivalent_exact'), 'settled attempt')\n            require(spent <= RESERVATION, 'Settled usage exceeds reserved envelope')\n            return ('dispatched', spent, Decimal(0))\n        require(account.get('status') == 'reservation_retained' and status == 'transport_failure', 'Ambiguous dispatch: missing settlement or retained reservation')\n        return ('dispatched_uncertain', Decimal(0), RESERVATION)\n    require(status == 'transport_failure', 'Non-dispatched attempt cannot contain a model outcome')\n    if dispatched is False:\n        require(not any((name in meta for name in ('attempt_ticket', 'credit_accounting', 'usage', 'turn_id'))), 'Contradictory preflight dispatch or usage evidence')\n        return ('preflight_only', Decimal(0), Decimal(0))\n    require(not meta and attempt.get('error_type') == 'StudyStopped', 'Ambiguous dispatch: absent flag is not proof of no generation')\n    return ('preflight_only', Decimal(0), Decimal(0))"
+        },
+        "response_schema": {
+          "additionalProperties": false,
+          "properties": {
+            "nonempty_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "presence_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "value_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "value_paths",
+            "presence_paths",
+            "nonempty_paths"
+          ],
+          "type": "object"
+        },
+        "stage": "execute",
+        "version": "source_only_scope_luna_v1"
+      },
+      "request_sha256": "8fbb08de20674267a014a4c6fa1a5062ec1665f4b05f0645582ec13f9c79dac1",
+      "variant": "concise"
+    },
+    {
+      "identity": "scope-r2-closure",
+      "replicate": 2,
+      "request": {
+        "instruction": "Infer a compact exact retention contract for the supplied public decision program on arbitrary JSON dictionaries. Preserve its output and unknown/error behavior. Use only the supplied program and projection language. Check key membership and absence, malformed-container types, and empty/nonempty containers, including unknown keys. A positive-field list alone may not preserve those branches.",
+        "observation": {
+          "projection_language": "Return exactly value_paths, presence_paths, nonempty_paths arrays. Paths are dotted JSON object keys. value_paths preserves literal subtrees; $ preserves the entire input. presence_paths replaces a present key by true, and omits absent keys. nonempty_paths preserves nonempty dictionaries with the public _scope_nonempty marker when projection otherwise empties them. Any encountered nondictionary intermediate is preserved unchanged. Full-value retention overrides presence abstraction. Missing paths stay missing. No clipping or semantic fallback.",
+          "public_program": "from decimal import Decimal, InvalidOperation\nRESERVATION = Decimal('10.4025')\ndef require(condition, message):\n    if not condition:\n        raise ValueError(message)\n\ndef exact(value, label):\n    require(type(value) is str, 'Missing exact decimal: ' + label)\n    try:\n        result = Decimal(value)\n    except InvalidOperation as error:\n        raise ValueError('Invalid exact decimal: ' + label) from error\n    require(result.is_finite() and result >= 0, 'Negative or nonfinite amount: ' + label)\n    return result\n\ndef classify_attempt(attempt):\n    \"\"\"Classify only persisted dispatch/accounting evidence, never answer quality.\n\n    A dispatch flag is set immediately before turn/start. A retained reservation\n    counts conservatively as a dispatched attempt even if server acceptance is\n    unknown. Missing metadata alone cannot establish that no request was sent.\n    \"\"\"\n    status, meta = (attempt.get('status'), attempt.get('provider_metadata'))\n    require(type(meta) is dict, 'Ambiguous dispatch: missing provider metadata')\n    require(status in ('completed', 'policy_failure', 'transport_failure'), 'Ambiguous dispatch: unfinished or unknown attempt status')\n    dispatched = meta.get('dispatched')\n    if dispatched is True:\n        require(type(meta.get('attempt_ticket')) is int and meta['attempt_ticket'] > 0, 'Ambiguous dispatch: missing reservation ticket')\n        account = meta.get('credit_accounting')\n        require(type(account) is dict and account.get('ticket') == meta['attempt_ticket'], 'Ambiguous dispatch: missing or inconsistent accounting')\n        if account.get('status') == 'settled':\n            spent = exact(account.get('conservative_credit_equivalent_exact'), 'settled attempt')\n            require(spent <= RESERVATION, 'Settled usage exceeds reserved envelope')\n            return ('dispatched', spent, Decimal(0))\n        require(account.get('status') == 'reservation_retained' and status == 'transport_failure', 'Ambiguous dispatch: missing settlement or retained reservation')\n        return ('dispatched_uncertain', Decimal(0), RESERVATION)\n    require(status == 'transport_failure', 'Non-dispatched attempt cannot contain a model outcome')\n    if dispatched is False:\n        require(not any((name in meta for name in ('attempt_ticket', 'credit_accounting', 'usage', 'turn_id'))), 'Contradictory preflight dispatch or usage evidence')\n        return ('preflight_only', Decimal(0), Decimal(0))\n    require(not meta and attempt.get('error_type') == 'StudyStopped', 'Ambiguous dispatch: absent flag is not proof of no generation')\n    return ('preflight_only', Decimal(0), Decimal(0))"
+        },
+        "response_schema": {
+          "additionalProperties": false,
+          "properties": {
+            "nonempty_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "presence_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "value_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "value_paths",
+            "presence_paths",
+            "nonempty_paths"
+          ],
+          "type": "object"
+        },
+        "stage": "execute",
+        "version": "source_only_scope_luna_v1"
+      },
+      "request_sha256": "a9aa3942d85fa490d3450f38d8d588ba4440ed77a35bbd105f4d00a1112e6284",
+      "variant": "closure"
+    },
+    {
+      "identity": "scope-r3-closure",
+      "replicate": 3,
+      "request": {
+        "instruction": "Infer a compact exact retention contract for the supplied public decision program on arbitrary JSON dictionaries. Preserve its output and unknown/error behavior. Use only the supplied program and projection language. Check key membership and absence, malformed-container types, and empty/nonempty containers, including unknown keys. A positive-field list alone may not preserve those branches.",
+        "observation": {
+          "projection_language": "Return exactly value_paths, presence_paths, nonempty_paths arrays. Paths are dotted JSON object keys. value_paths preserves literal subtrees; $ preserves the entire input. presence_paths replaces a present key by true, and omits absent keys. nonempty_paths preserves nonempty dictionaries with the public _scope_nonempty marker when projection otherwise empties them. Any encountered nondictionary intermediate is preserved unchanged. Full-value retention overrides presence abstraction. Missing paths stay missing. No clipping or semantic fallback.",
+          "public_program": "from decimal import Decimal, InvalidOperation\nRESERVATION = Decimal('10.4025')\ndef require(condition, message):\n    if not condition:\n        raise ValueError(message)\n\ndef exact(value, label):\n    require(type(value) is str, 'Missing exact decimal: ' + label)\n    try:\n        result = Decimal(value)\n    except InvalidOperation as error:\n        raise ValueError('Invalid exact decimal: ' + label) from error\n    require(result.is_finite() and result >= 0, 'Negative or nonfinite amount: ' + label)\n    return result\n\ndef classify_attempt(attempt):\n    \"\"\"Classify only persisted dispatch/accounting evidence, never answer quality.\n\n    A dispatch flag is set immediately before turn/start. A retained reservation\n    counts conservatively as a dispatched attempt even if server acceptance is\n    unknown. Missing metadata alone cannot establish that no request was sent.\n    \"\"\"\n    status, meta = (attempt.get('status'), attempt.get('provider_metadata'))\n    require(type(meta) is dict, 'Ambiguous dispatch: missing provider metadata')\n    require(status in ('completed', 'policy_failure', 'transport_failure'), 'Ambiguous dispatch: unfinished or unknown attempt status')\n    dispatched = meta.get('dispatched')\n    if dispatched is True:\n        require(type(meta.get('attempt_ticket')) is int and meta['attempt_ticket'] > 0, 'Ambiguous dispatch: missing reservation ticket')\n        account = meta.get('credit_accounting')\n        require(type(account) is dict and account.get('ticket') == meta['attempt_ticket'], 'Ambiguous dispatch: missing or inconsistent accounting')\n        if account.get('status') == 'settled':\n            spent = exact(account.get('conservative_credit_equivalent_exact'), 'settled attempt')\n            require(spent <= RESERVATION, 'Settled usage exceeds reserved envelope')\n            return ('dispatched', spent, Decimal(0))\n        require(account.get('status') == 'reservation_retained' and status == 'transport_failure', 'Ambiguous dispatch: missing settlement or retained reservation')\n        return ('dispatched_uncertain', Decimal(0), RESERVATION)\n    require(status == 'transport_failure', 'Non-dispatched attempt cannot contain a model outcome')\n    if dispatched is False:\n        require(not any((name in meta for name in ('attempt_ticket', 'credit_accounting', 'usage', 'turn_id'))), 'Contradictory preflight dispatch or usage evidence')\n        return ('preflight_only', Decimal(0), Decimal(0))\n    require(not meta and attempt.get('error_type') == 'StudyStopped', 'Ambiguous dispatch: absent flag is not proof of no generation')\n    return ('preflight_only', Decimal(0), Decimal(0))"
+        },
+        "response_schema": {
+          "additionalProperties": false,
+          "properties": {
+            "nonempty_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "presence_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "value_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "value_paths",
+            "presence_paths",
+            "nonempty_paths"
+          ],
+          "type": "object"
+        },
+        "stage": "execute",
+        "version": "source_only_scope_luna_v1"
+      },
+      "request_sha256": "a9aa3942d85fa490d3450f38d8d588ba4440ed77a35bbd105f4d00a1112e6284",
+      "variant": "closure"
+    },
+    {
+      "identity": "scope-r3-concise",
+      "replicate": 3,
+      "request": {
+        "instruction": "Infer a compact exact retention contract for the supplied public decision program on arbitrary JSON dictionaries. Preserve its output and unknown/error behavior. Use only the supplied program and projection language.",
+        "observation": {
+          "projection_language": "Return exactly value_paths, presence_paths, nonempty_paths arrays. Paths are dotted JSON object keys. value_paths preserves literal subtrees; $ preserves the entire input. presence_paths replaces a present key by true, and omits absent keys. nonempty_paths preserves nonempty dictionaries with the public _scope_nonempty marker when projection otherwise empties them. Any encountered nondictionary intermediate is preserved unchanged. Full-value retention overrides presence abstraction. Missing paths stay missing. No clipping or semantic fallback.",
+          "public_program": "from decimal import Decimal, InvalidOperation\nRESERVATION = Decimal('10.4025')\ndef require(condition, message):\n    if not condition:\n        raise ValueError(message)\n\ndef exact(value, label):\n    require(type(value) is str, 'Missing exact decimal: ' + label)\n    try:\n        result = Decimal(value)\n    except InvalidOperation as error:\n        raise ValueError('Invalid exact decimal: ' + label) from error\n    require(result.is_finite() and result >= 0, 'Negative or nonfinite amount: ' + label)\n    return result\n\ndef classify_attempt(attempt):\n    \"\"\"Classify only persisted dispatch/accounting evidence, never answer quality.\n\n    A dispatch flag is set immediately before turn/start. A retained reservation\n    counts conservatively as a dispatched attempt even if server acceptance is\n    unknown. Missing metadata alone cannot establish that no request was sent.\n    \"\"\"\n    status, meta = (attempt.get('status'), attempt.get('provider_metadata'))\n    require(type(meta) is dict, 'Ambiguous dispatch: missing provider metadata')\n    require(status in ('completed', 'policy_failure', 'transport_failure'), 'Ambiguous dispatch: unfinished or unknown attempt status')\n    dispatched = meta.get('dispatched')\n    if dispatched is True:\n        require(type(meta.get('attempt_ticket')) is int and meta['attempt_ticket'] > 0, 'Ambiguous dispatch: missing reservation ticket')\n        account = meta.get('credit_accounting')\n        require(type(account) is dict and account.get('ticket') == meta['attempt_ticket'], 'Ambiguous dispatch: missing or inconsistent accounting')\n        if account.get('status') == 'settled':\n            spent = exact(account.get('conservative_credit_equivalent_exact'), 'settled attempt')\n            require(spent <= RESERVATION, 'Settled usage exceeds reserved envelope')\n            return ('dispatched', spent, Decimal(0))\n        require(account.get('status') == 'reservation_retained' and status == 'transport_failure', 'Ambiguous dispatch: missing settlement or retained reservation')\n        return ('dispatched_uncertain', Decimal(0), RESERVATION)\n    require(status == 'transport_failure', 'Non-dispatched attempt cannot contain a model outcome')\n    if dispatched is False:\n        require(not any((name in meta for name in ('attempt_ticket', 'credit_accounting', 'usage', 'turn_id'))), 'Contradictory preflight dispatch or usage evidence')\n        return ('preflight_only', Decimal(0), Decimal(0))\n    require(not meta and attempt.get('error_type') == 'StudyStopped', 'Ambiguous dispatch: absent flag is not proof of no generation')\n    return ('preflight_only', Decimal(0), Decimal(0))"
+        },
+        "response_schema": {
+          "additionalProperties": false,
+          "properties": {
+            "nonempty_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "presence_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "value_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "value_paths",
+            "presence_paths",
+            "nonempty_paths"
+          ],
+          "type": "object"
+        },
+        "stage": "execute",
+        "version": "source_only_scope_luna_v1"
+      },
+      "request_sha256": "8fbb08de20674267a014a4c6fa1a5062ec1665f4b05f0645582ec13f9c79dac1",
+      "variant": "concise"
+    },
+    {
+      "identity": "scope-r4-closure",
+      "replicate": 4,
+      "request": {
+        "instruction": "Infer a compact exact retention contract for the supplied public decision program on arbitrary JSON dictionaries. Preserve its output and unknown/error behavior. Use only the supplied program and projection language. Check key membership and absence, malformed-container types, and empty/nonempty containers, including unknown keys. A positive-field list alone may not preserve those branches.",
+        "observation": {
+          "projection_language": "Return exactly value_paths, presence_paths, nonempty_paths arrays. Paths are dotted JSON object keys. value_paths preserves literal subtrees; $ preserves the entire input. presence_paths replaces a present key by true, and omits absent keys. nonempty_paths preserves nonempty dictionaries with the public _scope_nonempty marker when projection otherwise empties them. Any encountered nondictionary intermediate is preserved unchanged. Full-value retention overrides presence abstraction. Missing paths stay missing. No clipping or semantic fallback.",
+          "public_program": "from decimal import Decimal, InvalidOperation\nRESERVATION = Decimal('10.4025')\ndef require(condition, message):\n    if not condition:\n        raise ValueError(message)\n\ndef exact(value, label):\n    require(type(value) is str, 'Missing exact decimal: ' + label)\n    try:\n        result = Decimal(value)\n    except InvalidOperation as error:\n        raise ValueError('Invalid exact decimal: ' + label) from error\n    require(result.is_finite() and result >= 0, 'Negative or nonfinite amount: ' + label)\n    return result\n\ndef classify_attempt(attempt):\n    \"\"\"Classify only persisted dispatch/accounting evidence, never answer quality.\n\n    A dispatch flag is set immediately before turn/start. A retained reservation\n    counts conservatively as a dispatched attempt even if server acceptance is\n    unknown. Missing metadata alone cannot establish that no request was sent.\n    \"\"\"\n    status, meta = (attempt.get('status'), attempt.get('provider_metadata'))\n    require(type(meta) is dict, 'Ambiguous dispatch: missing provider metadata')\n    require(status in ('completed', 'policy_failure', 'transport_failure'), 'Ambiguous dispatch: unfinished or unknown attempt status')\n    dispatched = meta.get('dispatched')\n    if dispatched is True:\n        require(type(meta.get('attempt_ticket')) is int and meta['attempt_ticket'] > 0, 'Ambiguous dispatch: missing reservation ticket')\n        account = meta.get('credit_accounting')\n        require(type(account) is dict and account.get('ticket') == meta['attempt_ticket'], 'Ambiguous dispatch: missing or inconsistent accounting')\n        if account.get('status') == 'settled':\n            spent = exact(account.get('conservative_credit_equivalent_exact'), 'settled attempt')\n            require(spent <= RESERVATION, 'Settled usage exceeds reserved envelope')\n            return ('dispatched', spent, Decimal(0))\n        require(account.get('status') == 'reservation_retained' and status == 'transport_failure', 'Ambiguous dispatch: missing settlement or retained reservation')\n        return ('dispatched_uncertain', Decimal(0), RESERVATION)\n    require(status == 'transport_failure', 'Non-dispatched attempt cannot contain a model outcome')\n    if dispatched is False:\n        require(not any((name in meta for name in ('attempt_ticket', 'credit_accounting', 'usage', 'turn_id'))), 'Contradictory preflight dispatch or usage evidence')\n        return ('preflight_only', Decimal(0), Decimal(0))\n    require(not meta and attempt.get('error_type') == 'StudyStopped', 'Ambiguous dispatch: absent flag is not proof of no generation')\n    return ('preflight_only', Decimal(0), Decimal(0))"
+        },
+        "response_schema": {
+          "additionalProperties": false,
+          "properties": {
+            "nonempty_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "presence_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "value_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "value_paths",
+            "presence_paths",
+            "nonempty_paths"
+          ],
+          "type": "object"
+        },
+        "stage": "execute",
+        "version": "source_only_scope_luna_v1"
+      },
+      "request_sha256": "a9aa3942d85fa490d3450f38d8d588ba4440ed77a35bbd105f4d00a1112e6284",
+      "variant": "closure"
+    },
+    {
+      "identity": "scope-r4-concise",
+      "replicate": 4,
+      "request": {
+        "instruction": "Infer a compact exact retention contract for the supplied public decision program on arbitrary JSON dictionaries. Preserve its output and unknown/error behavior. Use only the supplied program and projection language.",
+        "observation": {
+          "projection_language": "Return exactly value_paths, presence_paths, nonempty_paths arrays. Paths are dotted JSON object keys. value_paths preserves literal subtrees; $ preserves the entire input. presence_paths replaces a present key by true, and omits absent keys. nonempty_paths preserves nonempty dictionaries with the public _scope_nonempty marker when projection otherwise empties them. Any encountered nondictionary intermediate is preserved unchanged. Full-value retention overrides presence abstraction. Missing paths stay missing. No clipping or semantic fallback.",
+          "public_program": "from decimal import Decimal, InvalidOperation\nRESERVATION = Decimal('10.4025')\ndef require(condition, message):\n    if not condition:\n        raise ValueError(message)\n\ndef exact(value, label):\n    require(type(value) is str, 'Missing exact decimal: ' + label)\n    try:\n        result = Decimal(value)\n    except InvalidOperation as error:\n        raise ValueError('Invalid exact decimal: ' + label) from error\n    require(result.is_finite() and result >= 0, 'Negative or nonfinite amount: ' + label)\n    return result\n\ndef classify_attempt(attempt):\n    \"\"\"Classify only persisted dispatch/accounting evidence, never answer quality.\n\n    A dispatch flag is set immediately before turn/start. A retained reservation\n    counts conservatively as a dispatched attempt even if server acceptance is\n    unknown. Missing metadata alone cannot establish that no request was sent.\n    \"\"\"\n    status, meta = (attempt.get('status'), attempt.get('provider_metadata'))\n    require(type(meta) is dict, 'Ambiguous dispatch: missing provider metadata')\n    require(status in ('completed', 'policy_failure', 'transport_failure'), 'Ambiguous dispatch: unfinished or unknown attempt status')\n    dispatched = meta.get('dispatched')\n    if dispatched is True:\n        require(type(meta.get('attempt_ticket')) is int and meta['attempt_ticket'] > 0, 'Ambiguous dispatch: missing reservation ticket')\n        account = meta.get('credit_accounting')\n        require(type(account) is dict and account.get('ticket') == meta['attempt_ticket'], 'Ambiguous dispatch: missing or inconsistent accounting')\n        if account.get('status') == 'settled':\n            spent = exact(account.get('conservative_credit_equivalent_exact'), 'settled attempt')\n            require(spent <= RESERVATION, 'Settled usage exceeds reserved envelope')\n            return ('dispatched', spent, Decimal(0))\n        require(account.get('status') == 'reservation_retained' and status == 'transport_failure', 'Ambiguous dispatch: missing settlement or retained reservation')\n        return ('dispatched_uncertain', Decimal(0), RESERVATION)\n    require(status == 'transport_failure', 'Non-dispatched attempt cannot contain a model outcome')\n    if dispatched is False:\n        require(not any((name in meta for name in ('attempt_ticket', 'credit_accounting', 'usage', 'turn_id'))), 'Contradictory preflight dispatch or usage evidence')\n        return ('preflight_only', Decimal(0), Decimal(0))\n    require(not meta and attempt.get('error_type') == 'StudyStopped', 'Ambiguous dispatch: absent flag is not proof of no generation')\n    return ('preflight_only', Decimal(0), Decimal(0))"
+        },
+        "response_schema": {
+          "additionalProperties": false,
+          "properties": {
+            "nonempty_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "presence_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "value_paths": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "value_paths",
+            "presence_paths",
+            "nonempty_paths"
+          ],
+          "type": "object"
+        },
+        "stage": "execute",
+        "version": "source_only_scope_luna_v1"
+      },
+      "request_sha256": "8fbb08de20674267a014a4c6fa1a5062ec1665f4b05f0645582ec13f9c79dac1",
+      "variant": "concise"
+    }
+  ],
+  "sampling_seed": null,
+  "schedule_seed": 2026100102,
+  "service_tier": "default",
+  "source_sha256": {
+    "experiments/dependency_memory/codex_subscription.py": "1574cc7f8e603769cdcce7b554746e2c2cce784e976dc75e0c3fa7153cab5f1c",
+    "experiments/dependency_memory/luna_appserver.py": "5bbb0234ca9c55442b795327dbd12112149c151163f5b6142e790921c74ea168",
+    "experiments/dependency_memory/luna_budget.py": "2c9f6e2ce96d642df4ef4a00ee19c89cfeccd89add445e468f981ff74160dfac",
+    "experiments/dependency_memory/request_contracts.py": "962615ab77e8653ef7c5ae9b5c7fca24e72756648384eef8f4b54d3c463a0392",
+    "experiments/dependency_memory/results/transfer_continuation_plan.json": "32312a03ee43f66870a7893abaee2518c1653d403a2fcdd2d69e89f168a93d41",
+    "experiments/dependency_memory/results/transfer_luna_2026-09-19_authorized/worker-0/requests.json": "45fa109db723d148998ae66182c3d3d7450e363de92191ac54692508683ac0bb",
+    "experiments/dependency_memory/results/transfer_luna_2026-09-19_authorized/worker-1/requests.json": "64e7d18b166cd831502c41a613de4b40191bb59140d45e4d225ab71888bc9600",
+    "experiments/dependency_memory/results/transfer_luna_2026-09-19_authorized/worker-2/requests.json": "e82a34b826069007e75933a1ff7876a44832eecb3fc424e6164b3fe77a1d30d2",
+    "experiments/dependency_memory/results/transfer_luna_2026-09-19_authorized/worker-3/requests.json": "30685f0b0c4770c8f289da77b595801279566d5e5b27fee10a01dddde4d8b10c",
+    "experiments/dependency_memory/scope_inference/PROTOCOL.md": "a38814fcc3d08bca101da48edaf579a5ecb8153eda4c1b97f3908e76aab16523",
+    "experiments/dependency_memory/scope_inference/__init__.py": "d0338dc198bb3c8adda29e1856d0c8295bd709e25f2b2535831ca6a58de90721",
+    "experiments/dependency_memory/scope_inference/audit.py": "30a1d076bccf567e91913753e1d11911438dcc2dc9fa61ea61942daf8fc809ba",
+    "experiments/dependency_memory/scope_inference/codec.py": "9e1b714d299c4c4f2ae08dc65fc6de247a77587cd5f25a762355ec91d95338ed",
+    "experiments/dependency_memory/scope_inference/preflight.py": "727f2775a3dca1c2f962b5748056f9d61b9e1da6f9c7d05e7159a16b87c9a928",
+    "experiments/dependency_memory/scope_inference/profile.py": "c363cd38be82805f56bafe7cdfc4daf8a3f8e994eb1a9fb5c500801c6ebf211b",
+    "experiments/dependency_memory/scope_inference/protocol.py": "6a5977db70d1b1dc6dd73c28ec81862285561764818c872aa21eb3b1db7d6f03",
+    "experiments/dependency_memory/scope_inference/run.py": "82561c0c8aa3cad296cc0c8964569b6199aacfda87b4ab83ae5af1eb7866f5e6",
+    "experiments/dependency_memory/scope_inference/study.py": "0723d7040831478ba159a38b2109f22ca30cb7803c0692400e29cfedf41dd8aa",
+    "experiments/dependency_memory/scope_inference/test_scope.py": "520657a6f8e41f9fcdd03dac3ba93b2cf1e718e129a4c600aadd54f66118e06c",
+    "experiments/dependency_memory/scope_inference/transport.py": "a47f10f9e20dff3d14fe6f02ac129d8cef07ca2c1ee5cdd8c7ab79ccd176aea3",
+    "experiments/dependency_memory/workflow_eval_live/profile.py": "049e58d7cb9ed00df86105045e4e3590456da24b51cec61088fe429f3f30ec6d",
+    "experiments/dependency_memory/workflow_replay/evidence.py": "c6b875ab31737130886e63fe641fa00860f52a284fb0da76b6742b43d439d487",
+    "scripts/prepare_transfer_continuation.py": "345c3f52e52d8e210394d236dd5c4d2671fd476fc50cca8fddec22095a91fc92"
+  },
+  "version": "scope_luna_launch_v1"
+}

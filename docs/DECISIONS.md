@@ -628,3 +628,26 @@ Freeze sixteen source/protocol/dependency files. Scripted completion and
 hash-bound replay are interface controls, not model/prose performance. No new
 provider allocation or generation is made; prospective intake and live gates
 remain unfinished.
+
+## October 1: test inferred scope instead of another known-table checker
+
+The user's continuing goal authorizes online Luna calls. Commit the separate
+eight-call / 20-planning-credit development protocol at `3abb7f7` before code
+or model outcomes. Do not reopen historical allocations or fill the natural-task
+cohort with manufactured tasks. The learner gets original public classifier
+code and a restricted projection DSL; records, authored projection, catalog
+and grader outcomes are excluded. No generated code is executed.
+
+Compare a concise prompt with explicit closure guidance on membership, absence,
+container type and nonemptiness. Keep all four zero-model controls, especially
+cached public-program results, which may eliminate any proposed cost advantage.
+Constructed catalog/timing checks and eight correlated calls on one program
+cannot establish natural-workflow prevalence, universal correctness or novelty.
+The build-system source comparison attributes dependency traces and reuse.
+
+Use a fresh audited CLI 0.159.2 with exact `gpt-6-luna`, medium/default settings,
+existing ChatGPT sign-in, no model fallback or retries, durable 7.65 reservations,
+and a committed request/source freeze. Alias revision and sampling seed are
+unavailable; actual account debit remains unknown. New local tests and four
+zero-generation transport controls precede dispatch. External review and the
+prospective workflow launch gates remain unperformed.

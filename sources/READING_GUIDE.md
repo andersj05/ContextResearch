@@ -185,3 +185,18 @@ serialization. Current CLI 0.158.0-alpha.2.1 moves base instructions into a
 developer message and tools into an additional-tools item. This is a checked
 client observation, not an inference about provider internals. Published token
 rates support planning-credit accounting, not a claim of measured account debit.
+
+## October 1 source-only scope-inference design
+
+Read Mokhov, Mitchell and Peyton Jones's [ICFP 2018 final manuscript](https://www.microsoft.com/en-us/research/wp-content/uploads/2018/03/build-systems-final.pdf),
+Sections 2.2 and 4.2.2–4.2.4, for dynamic dependencies, verifying traces and
+constructive reuse [@buildsystems2018]. Review is bounded; full proofs, replication
+and the 2020 revision remain unreviewed. See the [design note](../research/SCOPE_INFERENCE_DESIGN_2026-10-01.md).
+
+Reopened the official [Luna model page](https://developers.openai.com/api/docs/models/gpt-6-luna),
+[app-server documentation](https://learn.chatgpt.com/docs/app-server) and
+[Codex pricing](https://learn.chatgpt.com/docs/pricing) on October 1. Standard Luna
+rates remain 2.5/0.25/12.5 credits per million input/cached/output tokens; the page
+distinguishes credit rates from included-usage consumption. The fresh local CLI
+0.159.2 loopback audit is a separate client observation. No server-internal
+isolation or attributable account debit is inferred.

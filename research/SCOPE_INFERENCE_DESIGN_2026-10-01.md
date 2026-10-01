@@ -70,3 +70,18 @@ The criterion is declared in the protocol before generation. A failure, tie or
 an advantage erased by the zero-model controls is a valid result. General
 semantic compilation, native compaction, independent natural-task prevalence,
 server revision and production total-cost improvement remain open.
+
+Before generation, the offline staged controls already show an important limit:
+the handwritten JSON projection succeeds on 12/24 queries because three child
+serializations exceed 1,536 bytes, while cached public-program results fit all
+boundaries and succeed on 24/24. Conservative whole-root and raw-record memory
+exceed the parent cap. These are constructed encoding comparisons on inspected
+records. They do not establish an information-theoretic obstruction; the existing
+fixed-schema codec is another relevant zero-model serialization control.
+
+Prelaunch validation: all 461 offline tests pass, repository validation reports
+PASS with 47 bibliography entries and 57 claims, and paper assembly resolves 39
+cited sources. Four local mock transport cases pass on CLI 0.159.2, with no real
+model generation. The prepared allocation pins 23 source/protocol/dependency
+files and eight request identities. Provider outcomes and independent human
+review remain pending at this design milestone.

@@ -1,0 +1,257 @@
+{
+  "account_type": "chatgpt",
+  "audited_at_utc": "2026-10-01T22:34:52.747410+00:00",
+  "cases": [
+    {
+      "authorization_present": false,
+      "case": "final_message",
+      "final_response_count": 1,
+      "fixed_wire_bytes_upper_observation": 12958,
+      "http_attempts": 1,
+      "observed_wire_bytes": 17488,
+      "payload_audit": {
+        "all_tool_attempts_forbidden": true,
+        "audit_scope": "synthetic unauthenticated loopback; server internals unverified",
+        "bootstrap_tool_specification": null,
+        "declared_registry": {
+          "clock": [
+            "curr_time",
+            "sleep"
+          ],
+          "functions": [
+            "exec",
+            "request_user_input",
+            "request_user_input_async",
+            "wait"
+          ]
+        },
+        "global_instructions_sha256": "263fbf5f86b6338244e956ebe986e34e3aecafb5c061fe95d140a677b8d60714",
+        "input_message_count": 5,
+        "model": "gpt-6-luna",
+        "prior_history": false,
+        "public_text_sha256": "a9aa3942d85fa490d3450f38d8d588ba4440ed77a35bbd105f4d00a1112e6284",
+        "visible_tool_spec_sha256": "3b6005047e9aebf2d4dd955caf1839501f044ce8382c1403bb6615f918461b93",
+        "workspace_roots": []
+      },
+      "real_model_generations": 0,
+      "terminal_error_codes": [
+        "sessionBudgetExceeded"
+      ],
+      "terminal_statuses": [
+        "failed"
+      ],
+      "usage_records": 1
+    },
+    {
+      "authorization_present": false,
+      "case": "tool_call",
+      "final_response_count": 0,
+      "fixed_wire_bytes_upper_observation": 12958,
+      "http_attempts": 1,
+      "observed_wire_bytes": 17488,
+      "payload_audit": {
+        "all_tool_attempts_forbidden": true,
+        "audit_scope": "synthetic unauthenticated loopback; server internals unverified",
+        "bootstrap_tool_specification": null,
+        "declared_registry": {
+          "clock": [
+            "curr_time",
+            "sleep"
+          ],
+          "functions": [
+            "exec",
+            "request_user_input",
+            "request_user_input_async",
+            "wait"
+          ]
+        },
+        "global_instructions_sha256": "263fbf5f86b6338244e956ebe986e34e3aecafb5c061fe95d140a677b8d60714",
+        "input_message_count": 5,
+        "model": "gpt-6-luna",
+        "prior_history": false,
+        "public_text_sha256": "a9aa3942d85fa490d3450f38d8d588ba4440ed77a35bbd105f4d00a1112e6284",
+        "visible_tool_spec_sha256": "3b6005047e9aebf2d4dd955caf1839501f044ce8382c1403bb6615f918461b93",
+        "workspace_roots": []
+      },
+      "real_model_generations": 0,
+      "terminal_error_codes": [
+        "sessionBudgetExceeded"
+      ],
+      "terminal_statuses": [
+        "failed"
+      ],
+      "usage_records": 1
+    },
+    {
+      "authorization_present": false,
+      "case": "http_503",
+      "final_response_count": 0,
+      "fixed_wire_bytes_upper_observation": 12958,
+      "http_attempts": 1,
+      "observed_wire_bytes": 17488,
+      "payload_audit": {
+        "all_tool_attempts_forbidden": true,
+        "audit_scope": "synthetic unauthenticated loopback; server internals unverified",
+        "bootstrap_tool_specification": null,
+        "declared_registry": {
+          "clock": [
+            "curr_time",
+            "sleep"
+          ],
+          "functions": [
+            "exec",
+            "request_user_input",
+            "request_user_input_async",
+            "wait"
+          ]
+        },
+        "global_instructions_sha256": "263fbf5f86b6338244e956ebe986e34e3aecafb5c061fe95d140a677b8d60714",
+        "input_message_count": 5,
+        "model": "gpt-6-luna",
+        "prior_history": false,
+        "public_text_sha256": "a9aa3942d85fa490d3450f38d8d588ba4440ed77a35bbd105f4d00a1112e6284",
+        "visible_tool_spec_sha256": "3b6005047e9aebf2d4dd955caf1839501f044ce8382c1403bb6615f918461b93",
+        "workspace_roots": []
+      },
+      "real_model_generations": 0,
+      "terminal_error_codes": [
+        {
+          "httpConnectionFailed": {
+            "httpStatusCode": 503
+          }
+        }
+      ],
+      "terminal_statuses": [
+        "failed"
+      ],
+      "usage_records": 0
+    },
+    {
+      "authorization_present": false,
+      "case": "truncated_sse",
+      "final_response_count": 0,
+      "fixed_wire_bytes_upper_observation": 12958,
+      "http_attempts": 1,
+      "observed_wire_bytes": 17488,
+      "payload_audit": {
+        "all_tool_attempts_forbidden": true,
+        "audit_scope": "synthetic unauthenticated loopback; server internals unverified",
+        "bootstrap_tool_specification": null,
+        "declared_registry": {
+          "clock": [
+            "curr_time",
+            "sleep"
+          ],
+          "functions": [
+            "exec",
+            "request_user_input",
+            "request_user_input_async",
+            "wait"
+          ]
+        },
+        "global_instructions_sha256": "263fbf5f86b6338244e956ebe986e34e3aecafb5c061fe95d140a677b8d60714",
+        "input_message_count": 5,
+        "model": "gpt-6-luna",
+        "prior_history": false,
+        "public_text_sha256": "a9aa3942d85fa490d3450f38d8d588ba4440ed77a35bbd105f4d00a1112e6284",
+        "visible_tool_spec_sha256": "3b6005047e9aebf2d4dd955caf1839501f044ce8382c1403bb6615f918461b93",
+        "workspace_roots": []
+      },
+      "real_model_generations": 0,
+      "terminal_error_codes": [
+        "other"
+      ],
+      "terminal_statuses": [
+        "failed"
+      ],
+      "usage_records": 0
+    }
+  ],
+  "client_sha256": "34549ded6e2aee87c911c62d025e52e26c488683d0f489cd68f756baef1a6df6",
+  "client_version": "codex-cli 0.159.2",
+  "config_check": {
+    "verified_leaves": 46
+  },
+  "global_instructions_sha256": "263fbf5f86b6338244e956ebe986e34e3aecafb5c061fe95d140a677b8d60714",
+  "isolation_passed": true,
+  "model_catalog_entry": {
+    "additionalSpeedTiers": [
+      "fast"
+    ],
+    "availabilityNux": null,
+    "availableAccessPrograms": {
+      "cyber": [
+        "standard"
+      ]
+    },
+    "defaultReasoningEffort": "medium",
+    "defaultServiceTier": null,
+    "description": "Fast and affordable model for easier tasks.",
+    "displayName": "GPT-6-Luna",
+    "hidden": false,
+    "id": "gpt-6-luna",
+    "inputModalities": [
+      "text",
+      "image"
+    ],
+    "isDefault": false,
+    "model": "gpt-6-luna",
+    "modelSpecialty": null,
+    "multiAgentVersion": "v2",
+    "serviceTiers": [
+      {
+        "description": "1.5x speed",
+        "id": "priority",
+        "name": "Fast"
+      }
+    ],
+    "supportedReasoningEfforts": [
+      {
+        "description": "Fast responses with lighter reasoning",
+        "reasoningEffort": "low"
+      },
+      {
+        "description": "Balances speed and reasoning depth for everyday tasks",
+        "reasoningEffort": "medium"
+      },
+      {
+        "description": "Greater reasoning depth for complex problems",
+        "reasoningEffort": "high"
+      },
+      {
+        "description": "Extra high reasoning depth for complex problems",
+        "reasoningEffort": "xhigh"
+      },
+      {
+        "description": "Maximum reasoning depth for the hardest problems",
+        "reasoningEffort": "max"
+      }
+    ],
+    "supportsPersonality": false,
+    "upgrade": null,
+    "upgradeInfo": null
+  },
+  "profile_sha256": "ef7f05375f4761d1132086e3267617f95a90eef7deeeb085b43851e3c81538be",
+  "quota": {
+    "codex": {
+      "credits": {
+        "balance": "1768.1421080000",
+        "hasCredits": true,
+        "unlimited": false
+      },
+      "individualLimit": null,
+      "ordinaryUsageAllowed": true,
+      "primary": {
+        "resetsAt": 1791048507,
+        "usedPercent": 43,
+        "windowDurationMins": 10080
+      },
+      "rateLimitReachedType": null,
+      "secondary": null,
+      "spendControlReached": false
+    }
+  },
+  "quota_mode": "included",
+  "real_model_generations": 0,
+  "version": "scope_luna6_preflight_v1"
+}

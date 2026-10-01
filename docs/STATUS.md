@@ -6,6 +6,20 @@ Updated: October 1, 2026. This document is the current handoff; older scope docu
 
 Develop a mathematically precise and implementable study of repeated agent compaction when relevance is revealed over time. The target is a restricted compatibility result plus controlled evidence of whether the mechanism matters in tool-agent tasks.
 
+The user authorized continuing research and online Luna calls. A new
+[source-only contract-inference study](../experiments/dependency_memory/scope_inference/PROTOCOL.md)
+was predeclared at `3abb7f7`: eight calls, two prompt variants, 20 planning-credit
+ceiling, no historical allocation reopened. It tests automatic retention scope
+from the actual historical decision code against handwritten, AST, raw and cached
+outcome controls. Its catalog has 14,505 constructed rows; thirteen new local
+tests pass. Fresh CLI 0.159.2 loopback/configuration checks pass with zero real
+generations. All 461 offline tests, repository validation and paper assembly pass.
+The prepared launch pins 23 source/protocol/dependency files and all eight public
+request identities; its committed attestation precedes generation. Model outcomes
+remain pending. This is one inspected program, not new natural
+prospective tasks. The [source review](../research/SCOPE_INFERENCE_DESIGN_2026-10-01.md)
+identifies dependency traces and scoped reuse as established prior mechanisms.
+
 The [subsequent October 1 method audit](../research/WORKFLOW_METHOD_AUDIT_2026-10-01.md)
 compares a separate reverse-scan specification with the unchanged grader on
 **158,340 constructed queries**, old checked-writer proposals on 5,652 cases,

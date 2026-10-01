@@ -92,3 +92,8 @@ functional-compression or verification algorithm. Its actual development query
 is answerable from the late checkpoint alone, so that task provides no evidence
 for a delayed-dependency capacity mechanism. Future comparisons must measure
 actual parent dependence alongside costs and final evidence use.
+
+Dependency-hash checking and cached result reuse also have direct build-system
+precedents [@buildsystems2018]. The [source-only inference design](../research/SCOPE_INFERENCE_DESIGN_2026-10-01.md)
+tests obtaining a complete retention contract automatically; scope-bound evidence
+or caching alone is not a novel mechanism.
