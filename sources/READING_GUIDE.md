@@ -1,5 +1,12 @@
 # Focused reading guide
 
+The [October 2 full-curve proof](../research/UNRESTRICTED_RATE_CURVE_2026-10-02.md#6-literature-discovery-and-limits)
+rereads the existing Polyanskiy/Wu primary Chapter 24, Theorems 24.1-24.3 and
+selected proof passages, printed pp. 246-249, and Chapter 25 Section 25.2/support
+remarks, pp. 258-259. This is a bounded coding/duality rereading, not a full
+source review or priority conclusion. Existing key `polyanskiywu2016coding`;
+no new bibliographic metadata or provider claims.
+
 The [October 1 parent-rate spectrum](../research/PARENT_RATE_SPECTRUM_2026-10-01.md#4-discovery-prior-work-and-validation-scope)
 rereads Polyanskiy and Wu's original MIT 6.441 Chapter 25, Section 25.2,
 Theorem 25.2 and support-condition remarks, pp. 258–259. This bounded rereading

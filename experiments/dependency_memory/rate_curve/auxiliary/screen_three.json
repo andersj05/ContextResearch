@@ -1,0 +1,27 @@
+{
+  "evidence_class": "post-hoc floating screen; no proof",
+  "intervals": [
+    [
+      "0",
+      "4/25",
+      "3/8 balanced mass"
+    ],
+    [
+      "4/25",
+      "1/4",
+      "1/4 balanced mass"
+    ],
+    [
+      "1/4",
+      "1",
+      "zero balanced mass"
+    ]
+  ],
+  "checks": 4995,
+  "minimum": {
+    "t": 0.999,
+    "family": 1,
+    "gap": 1.4441255825909521e-06
+  },
+  "negative": []
+}

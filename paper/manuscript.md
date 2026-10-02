@@ -1,10 +1,10 @@
 # Repeated Context Compression with Delayed Task Dependencies
 
-Working draft — October 1, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an asymptotic threshold and a tightly certified rate-two error, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, a cross-record stress test with one permanent transport gap and a separately frozen continuation, a post-hoc offline decoder-compatibility correction, two workflow development comparisons, and a retrospective retained-evidence audit. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
+Working draft — October 2, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an exact parametric unrestricted asymptotic curve and a tightly certified rate-two error, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, a cross-record stress test with one permanent transport gap and a separately frozen continuation, a post-hoc offline decoder-compatibility correction, two workflow development comparisons, and a retrospective retained-evidence audit. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
 
 ## Abstract
 
-Long-running language-model agents must preserve information whose relevance may only become clear later. We study a finite model that separates memory capacity from the timing of task information. In a four-bit example, exhaustive computation gives optimal two-bit-then-one-bit chain error 9/32, while the isolated later bottleneck achieves 1/4. Three initial bits are necessary and sufficient to attain that later optimum. A locally audited independent-block extension gives a uniform positive error gap. Joint coding achieves two-block error 283/1024. An exhaustive decoder certificate places the limiting error at two bits per block between 0.2618989799 and 0.2618989801; approaching the child optimum requires about 2.5488 bits per block, compared with three for exact finite attainment. Separately, an exact atomic-record reference shows that cheap recovery can dominate early inspection, and that improved retention need not lower completion cost. Initial Luna diagnostics motivated a fixed 1,536-request study of record retention under known future refresh rules. Of 1,533 valid responses, 1,422 attain the exact reference. In the 128 primary matched comparisons, prospective guidance yields 118 optimal selections versus 114 with generic guidance; mean normalized regret benefit is 0.02090, with descriptive 95% block-bootstrap interval [-0.02031, 0.06055]. This does not establish an improvement. The study measures isolated retention potential with an optimal later selector, not native compaction or full-agent performance. Mathematical novelty remains unresolved.
+Long-running language-model agents must preserve information whose relevance may only become clear later. We study a finite model that separates memory capacity from the timing of task information. In a four-bit example, exhaustive computation gives optimal two-bit-then-one-bit chain error 9/32, while the isolated later bottleneck achieves 1/4. Three initial bits are necessary and sufficient to attain that later optimum. A locally audited independent-block extension gives a uniform positive error gap. Joint coding achieves two-block error 283/1024. Complementary completion and exact polynomial comparisons characterize the unrestricted asymptotic curve at every parent rate in this model. An exhaustive decoder certificate places the limiting error at two bits per block between 0.2618989799 and 0.2618989801; approaching the child optimum requires about 2.5488 bits per block, compared with three for exact finite attainment. Separately, an exact atomic-record reference shows that cheap recovery can dominate early inspection, and that improved retention need not lower completion cost. Initial Luna diagnostics motivated a fixed 1,536-request study of record retention under known future refresh rules. Of 1,533 valid responses, 1,422 attain the exact reference. In the 128 primary matched comparisons, prospective guidance yields 118 optimal selections versus 114 with generic guidance; mean normalized regret benefit is 0.02090, with descriptive 95% block-bootstrap interval [-0.02031, 0.06055]. This does not establish an improvement. The study measures isolated retention potential with an optimal later selector, not native compaction or full-agent performance. Mathematical novelty remains unresolved.
 
 ## 1. Introduction
 
@@ -87,6 +87,17 @@ For each block, a final decoder consists of four unordered pairs of three-bit pr
 A common dual inequality I(X;A) + s E L_g >= C is certified over every table using integer arithmetic and outward rational logarithm bounds. Source independence and data processing give sum_r I(X^(r);A_r) <= H(M) <= 2k, hence D_k(2k) >= (C-2)/(12s), allowing different tables and information allocations across blocks. The matching rational channel has distortion below 0.2618989801 and information below 1.999999994 bits. Standard fixed-length coding preserves the delayed one-bit child contract [@polyanskiywu2016coding].
 
 The [certificate](../experiments/dependency_memory/results/decoder_frontier_certificate.json) is fully regenerated by the offline validator. Separate checks verify decoder losses, the group action, a Burnside orbit count, rational dual rounding, and actual channel information. The candidate contribution is this particular sharply quantified composition penalty; the coding, strategy, and duality methods are established. External proof review and priority assessment remain open. [C34]
+
+An [October 2 continuum comparison](../research/UNRESTRICTED_RATE_CURVE_2026-10-02.md)
+now extends the unsigned scalar optimization to the full unrestricted
+asymptotic curve D_infinity(r)=lim_k D_k(floor(k*r)) for every r>=0. A
+balanced-source completion reduces to six complementary families; 48 exact
+polynomial inequalities cover every positive slope. A common supporting
+inequality permits arbitrary joint encoders and heterogeneous block tables.
+The optimal Gibbs channel parametrizes the intermediate curve, with error
+1/2 at zero rate and 1/4 at/above h_star. Mixing with a source-independent
+channel creates strict rate slack before fixed-length coding within floor(k*r)
+bits. This supplies no finite optimal code or efficient encoder. [C67]
 
 An [October 1 explicit three-block construction](../research/JOINT_THREE_BLOCK_WITNESS_2026-10-01.md)
 uses six parent bits and one child bit under the same timing. Its fixed 64-word
@@ -792,9 +803,10 @@ the test channel, not extra memory available at final decoding. [C65]
 Supporting objectives and treatment of zero-support outputs use established
 rate-distortion reasoning [@polyanskiywu2016coding]. The unsigned reduction is
 valid at every positive slope; unrestricted decoder optimality is checked only
-at the eight new slopes and the earlier C34 slope. The unrestricted curve
-between them, efficient finite codes, external proof and source priority remain
-open. Post-hoc mathematical exploration is separate from the exact certificate.
+at the eight new slopes and the earlier C34 slope by C65 alone. Section 8.17
+supplies the later all-positive-slope comparison. Efficient finite codes,
+external proof and source priority remain open. Post-hoc mathematical
+exploration is separate from the exact certificate.
 No model call, natural task, token saving or production benefit is added. [C65]
 
 ### 8.16 Complementary final decoders suffice under the balanced source
@@ -825,12 +837,48 @@ two-source law has unrestricted zero error versus complementary minimum 1/6;
 a separate instance example loses correctness despite equal mean loss. The
 theorem gives average preservation under its hypotheses, not individual or
 worst-case semantic safety, an efficient practical design method, a new general
-derandomization principle or a model/natural-workflow result. The full curve
-comparison, external proof and publication priority remain open. [C66]
+derandomization principle or a model/natural-workflow result. Section 8.17
+uses this reduction for the full curve comparison. External proof and
+publication priority remain open. [C66]
+
+### 8.17 The unrestricted curve at every parent rate
+
+The [continuum certificate](../research/UNRESTRICTED_RATE_CURVE_2026-10-02.md)
+proves that the unsigned family attains the minimum of I+s E L for every s>0
+over all legal final decoders. C66 reduces to 256 complementary tables in six
+symmetry families. For each of the other five, a nearest-word marginal is only
+a dual witness; every output column, including inactive words, is retained.
+Three fixed unsigned distributions on covering rational t intervals let the
+comparison be cleared into 48 integer polynomial inequalities. After exact
+division by positive (1-t) factors, all 19,474 interval-transformed coefficients
+are nonnegative with positive endpoint coefficients. This proves continuum
+dominance; a floating grid is not its evidence. The five other complementary
+families are strictly separated; noncomplementary equality cases are not
+classified. [C67]
+
+C65's unique quadratic scalar optimizer and Gibbs channel consequently
+parametrize the unrestricted D_infinity(r) for all 0<r<h_star. The channel's
+actual mutual information and distortion vary continuously from (0,1/2) to
+(h_star,1/4), covering every intermediate rate. The support transition
+enclosures [0.620690001029,0.620690001030] bits/block and
+[0.312681553947,0.312681553948] error now describe this unrestricted curve.
+The endpoints are D_infinity(0)=1/2 and D_infinity(r)=1/4 for r>=h_star. [C67]
+
+For r=I>0, mix the channel with a source-independent one to obtain I<r and
+arbitrarily close distortion. Coding at an intermediate rate fits the rounded
+codebook inside floor(k*r) bits for sufficiently large k. Applying a common
+supporting bound to all block tables gives the matching converse; no uniform
+information allocation is assumed. This handles the exact h_star endpoint
+without extra o(k) bits. The decision-word alphabet is an offline codebook
+device; the final decoder still receives one child bit after the parent is
+discarded. Fixed-length coding and supporting optimization are established
+[@polyanskiywu2016coding; @dupuis2004strategies]. The local addition is this
+particular complete model curve. Exact finite optima, efficient encoders,
+external proof/priority and natural-workflow gains remain open. [C67]
 
 ## 9. Limitations and open results
 
-The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. Source-only model inference has been evaluated only on one inspected classifier; the static control covers three inspected programs and one constructed family without universal certification; an open-ended native-agent benchmark remains unperformed. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, useful finite-length joint codes, a wider rate-distortion characterization, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.
+The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. Source-only model inference has been evaluated only on one inspected classifier; the static control covers three inspected programs and one constructed family without universal certification; an open-ended native-agent benchmark remains unperformed. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, useful finite-length joint codes, rate-distortion characterizations beyond the stated uniform four-bit model, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.
 
 ## 10. Reproducibility
 

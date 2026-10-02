@@ -4,6 +4,15 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
+**October 2 full asymptotic curve:** [the unrestricted rate theorem](research/UNRESTRICTED_RATE_CURVE_2026-10-02.md)
+extends the unsigned scalar formula to every parent rate in the uniform four-bit
+model with a one-bit child before the final query. Forty-eight exact polynomial
+comparisons certify decoder dominance over the whole parameter interval. The
+limiting error runs from 1/2 at zero rate to 1/4 at about 2.548795 bits per block;
+the support transition is near 0.620690 bits per block. Finite optimal codes,
+external correctness and publication priority remain open. No model or natural
+workflow result is added; earlier milestone scopes below remain dated history.
+
 **October 2 decoder reduction:** [complementary completion](research/COMPLEMENTARY_COMPLETION_2026-10-02.md)
 proves that complementary final endpoints suffice for every block count and
 parent capacity under the balanced-source, average-error contract. The old

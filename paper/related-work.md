@@ -2,6 +2,14 @@
 
 These are distinctions to verify and explain, not declarations of novelty. The detailed review is in the September 16 proposal and survey. The focused bibliography records verified titles and authors; outstanding final publication metadata are identified in its notes.
 
+The [October 2 unrestricted curve](../research/UNRESTRICTED_RATE_CURVE_2026-10-02.md)
+uses established fixed-length coding and supporting optimization
+[@polyanskiywu2016coding], with the existing strategy-alphabet comparison
+[@dupuis2004strategies]. Its local candidate contribution is the complete
+decoder comparison and particular delayed-query curve. Neither rate-distortion
+duality nor polynomial positivity is claimed new; proof and priority review
+remain open. The reading guide records the bounded primary rereading.
+
 The [September 22 feedback comparison](../research/FEEDBACK_PRIOR_ART_2026-09-22.md)
 adds explicit cumulative-constraint and refinement precedents. Our new execution
 adapter is a finite calibration; feedback alone, persistence of old failures and

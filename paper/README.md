@@ -22,6 +22,13 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.34 adds the [full unrestricted asymptotic curve](../research/UNRESTRICTED_RATE_CURVE_2026-10-02.md),
+claim C67. Forty-eight exact polynomial inequalities extend the unsigned
+scalar optimization to every positive slope, with strict coding slack inside
+floor(k*r) parent bits. The earlier curve-open milestones below retain their
+dated scope. Finite optimal codes, external correctness/priority and natural
+workflow applicability remain open; no new model outcomes are added.
+
 Living draft v0.33 adds the [completion theorem](../research/COMPLEMENTARY_COMPLETION_2026-10-02.md),
 claim C66. Complementary decoders suffice for every k/B under balanced source
 and independent queries, preserving the encoder/capacity and child timing.

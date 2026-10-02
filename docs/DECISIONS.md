@@ -965,3 +965,46 @@ The next full-curve attempt compares the other five complementary families
 with the unsigned family using exact polynomial inequalities. Fixed-q float
 screens are mathematical discovery only; a failed witness is not a better
 decoder. Do not claim a full curve until the entire parameter interval is proved.
+
+## October 2, 2026 — certify the unrestricted asymptotic curve (C67)
+
+Use C66's proved complementary completion to reduce supporting optimization to
+six families, then compare every word of the other five families against the
+unsigned free-objective witness. Do not assume nearest-word marginals are
+optimal or discard words outside their support. Three fixed rational unsigned
+distributions and seams 4/25,1/4 suffice. The failed earlier two-witness float
+screen is preserved; it is not a counterexample to unsigned optimality.
+
+Clear the dual products into exact integer polynomials. All 240 column/interval
+cases reduce to 48 distinct comparisons. Remove exact positive (1-t) factors,
+then certify all 19,474 transformed coefficients and positive endpoint values
+on the three covering intervals. The final Horner/Pascal transform differs
+from the preserved factorial-convolution probe. Counts/digests are diagnostics;
+the full regenerated arithmetic and model reduction supply the proof.
+
+The unsigned family attains every positive-slope supporting minimum. Only the
+five other complementary families are proved strictly separated; do not claim
+that all noncomplementary equality cases have been classified. Apply a common
+bound to arbitrary joint encoders and heterogeneous tables. C65's quadratic
+scalar root now parametrizes the complete unrestricted asymptotic curve.
+
+Prove coding at exact rates by mixing with a source-independent channel to
+make I<r, then using an intermediate coding rate whose rounded codebook fits
+floor(k*r) bits. This also gives the h_star endpoint without extra o(k) bits.
+Keep the finite 3k-bit exact-attainment threshold and unchanged three-block
+interval distinct from the asymptotic theorem. No efficient encoder is implied.
+
+Reread the existing Polyanskiy/Wu primary Chapters 24 (Theorems 24.1-24.3) and
+25 (Section 25.2/support remarks), with scope in the new note and reading guide.
+These coding/duality methods, strategies, averaging and polynomial positivity
+are established. The particular model curve is a local candidate contribution;
+external correctness and publication priority remain open. Eight independent
+focused tests and all 525 repository tests pass. Validation reports PASS with
+67 claims and 48 bibliography entries; paper assembly checks 41 cited sources.
+All 23 source/provenance bindings and 48 exact inequalities regenerate.
+
+Keep all historical provider/source/certificate bytes unchanged. There are zero
+new model calls or prospective natural episodes. Work remains in segmented
+folders of this repository. Next steps are external proof/priority review and
+finite encoders approaching the curve, not extra calls on the inspected source
+classifier.

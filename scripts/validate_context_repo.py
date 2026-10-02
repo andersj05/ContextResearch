@@ -922,6 +922,17 @@ def main() -> int:
     counts["decoder_completion_unrestricted_optimum_reduction"] = regenerated_completion["unrestricted_optimum_equals_complementary_optimum"]
     counts["decoder_completion_new_model_calls"] = regenerated_completion["new_model_calls"]
 
+    from experiments.dependency_memory.rate_curve import certificate as rate_curve
+    regenerated_curve = rate_curve.certificate()
+    if json.loads(rate_curve.OUTPUT.read_text(encoding="utf-8")) != regenerated_curve:
+        errors.append("Unrestricted rate-curve polynomial cover or source bindings changed")
+    counts["rate_curve_comparison_polynomials"] = regenerated_curve["distinct_comparison_polynomials"]
+    counts["rate_curve_column_interval_cases"] = regenerated_curve["column_interval_cases"]
+    counts["rate_curve_integer_coefficients"] = regenerated_curve["transformed_integer_coefficients_checked"]
+    counts["rate_curve_all_positive_slopes"] = regenerated_curve["strict_other_family_dominance"]
+    counts["rate_curve_complete_unrestricted_curve"] = regenerated_curve["full_unrestricted_asymptotic_curve_characterized"]
+    counts["rate_curve_new_model_calls"] = regenerated_curve["new_model_calls"]
+
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"

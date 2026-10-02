@@ -4,6 +4,21 @@ Updated: October 2, 2026. This document is the current handoff; older scope docu
 
 ## Objective
 
+The [unrestricted asymptotic curve](../research/UNRESTRICTED_RATE_CURVE_2026-10-02.md)
+is now characterized for every parent rate in the uniform four-bit delayed-query
+model. C66 reduces to six complementary families; 48 exact polynomial
+comparisons with 19,474 integer coefficients prove unsigned dominance for every
+positive slope. C65's scalar root and transition therefore describe the full
+curve. Claim C67; living draft v0.34. Parent capacity remains floor(k*r) bits,
+with arbitrary joint encoders and heterogeneous public tables. Strict channel
+mixing supplies coding slack; no extra o(k) bits are assumed. The existing
+finite witnesses, model outcomes and natural-task count are unchanged.
+All **525 offline tests pass**. Repository validation reports PASS with 67
+claims and 48 bibliography entries; paper assembly checks all 41 cited sources.
+All 23 proof/provenance bindings and 48 inequalities regenerate. External
+correctness, priority and efficient finite codes remain open.
+Earlier C65/C66 statements that left the curve open record their dated scope.
+
 The [completion theorem](../research/COMPLEMENTARY_COMPLETION_2026-10-02.md)
 shows D_k(B) equals its complementary-decoder restriction for every k/B under
 the balanced-source, source-independent-query, average-Hamming-loss contract.
@@ -520,19 +535,19 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 ## Not yet established
 
 - Novelty and external validation of the locally audited scaling argument, or a practically large composition penalty.
-- A closed-form error formula or full rate-distortion curve for arbitrary jointly encoded blocks. The limiting rate-two error is now certified within (0.2618989799, 0.2618989801); the exact two-block optimum and efficient finite codes remain open.
+- Exact finite joint-code optima and efficient encoders. C67 now gives an exact parametric unrestricted asymptotic curve for the uniform four-bit model; broader source/query laws remain outside that theorem.
 - Natural-language compiler performance, learned retirement accuracy, or unrestricted closed-loop LLM-agent results. Live model work now also covers an imposed two-stage memory-writing pipeline; open-ended native-agent performance remains unestablished.
 - Cost or quality gains over native provider compaction.
 - The internal training objective, prompt, or algorithm of a proprietary compaction service.
 
 ## Next bounded tasks
 
-For the asymptotic spectrum, use the proved balanced-source
-complementary-completion reduction, then prove or refute unsigned dominance
-between the checked slopes. The completion theorem supplies a whole-code information
-argument; a floating rate grid still cannot prove full-curve dominance. Preserve
-all existing certificates and the distinction between restricted/all-decoder
-results. Efficient finite encoders remain another substantive open direction.
+The all-positive-slope comparison is proved in C67. Prepare external proof
+and priority review of the completion lemma, exact polynomial cover and
+fixed-floor coding argument. Preserve the old supporting certificates and
+their dated scope. Efficient finite encoders approaching the now-characterized
+curve, and extensions to changed source/query laws, remain substantive research
+directions; no production applicability follows from this model theorem.
 
 For the finite problem, tighten the 457-outcome all-decoder interval, examine
 the 3,790 near mixed cases not excluded by C62/C63, or construct longer finite

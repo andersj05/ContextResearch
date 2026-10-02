@@ -1,6 +1,21 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.33 — October 2, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.34 — October 2, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## The full asymptotic bit-model curve is now characterized
+
+The [new unrestricted theorem](../research/UNRESTRICTED_RATE_CURVE_2026-10-02.md)
+closes the gap between the eight earlier support points. Forty-eight exact
+polynomial comparisons prove that the unsigned decoder attains every
+positive-slope minimum. Its scalar quadratic therefore parametrizes limiting
+error at every parent rate under the same uniform four-bit source and one-bit
+child. Claim C67. The curve goes from 1/2 at zero rate to 1/4 at about 2.548795
+bits per block; the support transition occurs near 0.620690 bits per block.
+Channel mixing provides strict coding slack inside floor(k*r) bits. Arbitrary
+joint encoding and heterogeneous tables are included. This is an exact
+parametric asymptotic model result, with finite optimal/efficient codes,
+external correctness and priority still open. No new model or natural-task
+outcomes are added.
 
 ## Complementary decoders suffice under the balanced source
 
@@ -8,7 +23,7 @@ The [new completion argument](../research/COMPLEMENTARY_COMPLETION_2026-10-02.md
 works for every block count and parent capacity, with the old encoder unchanged.
 Public child-label swaps preserve one-bit memory and timing. Claim C66. It gives
 a short alternative proof of the existing unrestricted three-block lower bound
-and reduces the remaining supporting comparison to six families. A biased source
+and reduces the supporting comparison to six families. A biased source
 has unrestricted zero error versus complementary minimum 1/6, and some individual
 sources are harmed: this is a population-average theorem with explicit source
 and query assumptions. Whole-code completion/reassignment improves the preserved
@@ -24,9 +39,10 @@ widths are below 2e-11. Claim C65. About 0.973 parent bits per block give 29.695
 limiting error, while 2.541 bits give 25.009%. These are bit-model calculations,
 not token or workflow measurements. A separate unsigned-family proof reduces
 every positive-slope objective to one mass and identifies a unique support
-transition near 0.620690001029 information bits per block. The unrestricted
-curve between checked slopes, finite encoders and publication priority remain
-open. No model call or natural task is added.
+transition near 0.620690001029 information bits per block. C65 alone leaves
+the unrestricted curve between slopes unproved; C67 supplies that comparison.
+Finite encoders and publication priority remain open. No model call or natural
+task is added.
 
 ## A stronger source-analysis control removes the need for more calls on this classifier
 

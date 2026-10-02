@@ -1,0 +1,626 @@
+[
+  {
+    "family": 1,
+    "interval": [
+      "0",
+      "4/25"
+    ],
+    "column": 0,
+    "degree": 606,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "0788bf4ea0060100a33c9679282f4f3d1e43ae8a9a0b1f2db869393fad821115"
+  },
+  {
+    "family": 1,
+    "interval": [
+      "0",
+      "4/25"
+    ],
+    "column": 1,
+    "degree": 606,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "b250e20c9e0c3fe2ef197adf77e204dfd24eb4c12cc56bace2203e7e53aa4a25"
+  },
+  {
+    "family": 1,
+    "interval": [
+      "0",
+      "4/25"
+    ],
+    "column": 2,
+    "degree": 606,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "2a55a573ebf7a4bf9443fb762615042672262f8f8d231a0ec83d4eac74970498"
+  },
+  {
+    "family": 1,
+    "interval": [
+      "0",
+      "4/25"
+    ],
+    "column": 3,
+    "degree": 606,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "6f54ff3fa0c5709df068c470cf2c11127461bee0669a2c68686b8c0340bb251f"
+  },
+  {
+    "family": 1,
+    "interval": [
+      "0",
+      "4/25"
+    ],
+    "column": 4,
+    "degree": 606,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "3bffe4d97bc4be6ed1f98a36169cd7991554b80a02339c48a0ed1a7981006677"
+  },
+  {
+    "family": 1,
+    "interval": [
+      "0",
+      "4/25"
+    ],
+    "column": 5,
+    "degree": 606,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "e2cadc4519c43f33e23530f7d8cf6ae42bde8dd797af09c0fc1dccec34621c61"
+  },
+  {
+    "family": 1,
+    "interval": [
+      "4/25",
+      "1/4"
+    ],
+    "column": 0,
+    "degree": 606,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "b4ed2ebf157a0bdf2088f510a74caf54f91dc5e743e2b907f0b28a24bb6fda5d"
+  },
+  {
+    "family": 1,
+    "interval": [
+      "4/25",
+      "1/4"
+    ],
+    "column": 1,
+    "degree": 606,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "4829476ae08331ab0b3e647b5a81e7c7123466582286ca2cee491a4b726c1c65"
+  },
+  {
+    "family": 1,
+    "interval": [
+      "4/25",
+      "1/4"
+    ],
+    "column": 2,
+    "degree": 606,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "85549e223c9f536ed8781d8861cde0009892f51290829058e3c454c48407191e"
+  },
+  {
+    "family": 1,
+    "interval": [
+      "4/25",
+      "1/4"
+    ],
+    "column": 3,
+    "degree": 606,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "f1c9f76aa671a82f1245b9d6b269bcbf751724c0afed007d3fc069dccb9f9fce"
+  },
+  {
+    "family": 1,
+    "interval": [
+      "4/25",
+      "1/4"
+    ],
+    "column": 4,
+    "degree": 606,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "91b1c5c67c953804ac357f4ae0149956f2b73b13298e446e10a252e9e1d4c782"
+  },
+  {
+    "family": 1,
+    "interval": [
+      "4/25",
+      "1/4"
+    ],
+    "column": 5,
+    "degree": 604,
+    "roots_at_one": 4,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "d4dbf115e3d85f30fb792deeec10f98abb46f5bedc58132d38e46a58f974024c"
+  },
+  {
+    "family": 1,
+    "interval": [
+      "1/4",
+      "1"
+    ],
+    "column": 0,
+    "degree": 594,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "f55823d820b138967eb51a93dc605164b6b9481cbe07c51b2ca70063eee5d4f1"
+  },
+  {
+    "family": 1,
+    "interval": [
+      "1/4",
+      "1"
+    ],
+    "column": 1,
+    "degree": 594,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "a62a8e076cc9a0dae29e4a18177113a45bb066a28c3309ffac808d3dce49945b"
+  },
+  {
+    "family": 1,
+    "interval": [
+      "1/4",
+      "1"
+    ],
+    "column": 2,
+    "degree": 606,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "db2ee99e36febf727811bd887c74d83c25e9e56fa182c6e4954eca83734dd42c"
+  },
+  {
+    "family": 1,
+    "interval": [
+      "1/4",
+      "1"
+    ],
+    "column": 3,
+    "degree": 606,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "7fcca2ae7612c3eebfda6f1c5a3514258ab9874d3a31fdbe2e95de5d8ac1a322"
+  },
+  {
+    "family": 1,
+    "interval": [
+      "1/4",
+      "1"
+    ],
+    "column": 4,
+    "degree": 606,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "247cdb442382028fc8da0260955f05dc368deea2b630cbb03ea154775b62f02a"
+  },
+  {
+    "family": 1,
+    "interval": [
+      "1/4",
+      "1"
+    ],
+    "column": 5,
+    "degree": 606,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "d8992612d6e96cbdca1369b20f23f989ee45572f16c328792b36ea96638d489f"
+  },
+  {
+    "family": 2,
+    "interval": [
+      "0",
+      "4/25"
+    ],
+    "column": 0,
+    "degree": 190,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "6a41847eda0f34a45c4ccca3a3e079dc156d2a74c4733f68eed2ccbd47781a60"
+  },
+  {
+    "family": 2,
+    "interval": [
+      "0",
+      "4/25"
+    ],
+    "column": 1,
+    "degree": 190,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "ba5ab0761c13abe115838596a238ef3a4b4db5670dd85ea58ba2b24871a8c3fd"
+  },
+  {
+    "family": 2,
+    "interval": [
+      "4/25",
+      "1/4"
+    ],
+    "column": 0,
+    "degree": 190,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "17682c2583802e4f31a592098a3f177b4b8fe225d5409ed00115c0483868bb97"
+  },
+  {
+    "family": 2,
+    "interval": [
+      "4/25",
+      "1/4"
+    ],
+    "column": 1,
+    "degree": 190,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "b9de0081a39127e07edc51871679db1dcad1b4b1b435b502bd43b191a433d9f8"
+  },
+  {
+    "family": 2,
+    "interval": [
+      "1/4",
+      "1"
+    ],
+    "column": 0,
+    "degree": 178,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "f497766844f447637fc2e90a9485cceb735e2d46422d7d3f5c6805c81dcfacb2"
+  },
+  {
+    "family": 2,
+    "interval": [
+      "1/4",
+      "1"
+    ],
+    "column": 1,
+    "degree": 190,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "87a70ec21359ac2925e23e6020bf19be66c8f009101f6fed6403ee1dc24915a9"
+  },
+  {
+    "family": 3,
+    "interval": [
+      "0",
+      "4/25"
+    ],
+    "column": 0,
+    "degree": 382,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "2784ad15acf791a1ac1a0e562ac00d96bcff38b47aaa7491062f783a9ae2df63"
+  },
+  {
+    "family": 3,
+    "interval": [
+      "0",
+      "4/25"
+    ],
+    "column": 1,
+    "degree": 382,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "e77b2f36db1009946dade5b9aa36b1251606b66db36e526dd4fb16706e30eabb"
+  },
+  {
+    "family": 3,
+    "interval": [
+      "0",
+      "4/25"
+    ],
+    "column": 2,
+    "degree": 382,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "6dfe4ca63af9633f1f138aa97e1a496cf661d3dea4ddceb3a4b830ac23ba1a3e"
+  },
+  {
+    "family": 3,
+    "interval": [
+      "0",
+      "4/25"
+    ],
+    "column": 3,
+    "degree": 382,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "811c94e90186f54ec1316fd1969c41316d7094daa63d5c71bf8c832539f10dec"
+  },
+  {
+    "family": 3,
+    "interval": [
+      "4/25",
+      "1/4"
+    ],
+    "column": 0,
+    "degree": 382,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "1140567377ec565e8b1921528d4ce1d4f0d5e4225015e38db3ffed16273183f3"
+  },
+  {
+    "family": 3,
+    "interval": [
+      "4/25",
+      "1/4"
+    ],
+    "column": 1,
+    "degree": 382,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "a2c9022cfa454ba76c8bafffe26c6ee3ce749bed60d66effbae625a348584161"
+  },
+  {
+    "family": 3,
+    "interval": [
+      "4/25",
+      "1/4"
+    ],
+    "column": 2,
+    "degree": 382,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "5efbac4602c377953531becaf775debe8bbc5469d88749e609cad744fe37d232"
+  },
+  {
+    "family": 3,
+    "interval": [
+      "4/25",
+      "1/4"
+    ],
+    "column": 3,
+    "degree": 382,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "8d77e1c0662f04cc1df18f37609ba688637b06a6de3afc8fe5b28c609f119c8c"
+  },
+  {
+    "family": 3,
+    "interval": [
+      "1/4",
+      "1"
+    ],
+    "column": 0,
+    "degree": 370,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "226614ff817e02bd68e0e36fa0b33e56cbb7cece667b8470b5ce927d6087b670"
+  },
+  {
+    "family": 3,
+    "interval": [
+      "1/4",
+      "1"
+    ],
+    "column": 1,
+    "degree": 382,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "d1ef74d5c7d662c8550f326245626dc2e14dc76ec149b43a46989100ff1ebb55"
+  },
+  {
+    "family": 3,
+    "interval": [
+      "1/4",
+      "1"
+    ],
+    "column": 2,
+    "degree": 382,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "34fe2a4a1a122aff71ed2a2848c797eeb41a39a394c92c92426b95b536f34a81"
+  },
+  {
+    "family": 3,
+    "interval": [
+      "1/4",
+      "1"
+    ],
+    "column": 3,
+    "degree": 382,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "f7bd0f1283168ccbd6d05aaf45dd65d46d5efbad0731ec846c22e931a35c8b4a"
+  },
+  {
+    "family": 4,
+    "interval": [
+      "0",
+      "4/25"
+    ],
+    "column": 0,
+    "degree": 286,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "efaccc522649dab6a4627dc5e9fdedb57f3c5dd4e4cab356b87b72f738741a83"
+  },
+  {
+    "family": 4,
+    "interval": [
+      "0",
+      "4/25"
+    ],
+    "column": 1,
+    "degree": 286,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "535165ed83b655f9559eb35074cdcede3ac68ae65387628c90c404902b30e215"
+  },
+  {
+    "family": 4,
+    "interval": [
+      "0",
+      "4/25"
+    ],
+    "column": 2,
+    "degree": 286,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "df81f2d581c7eae41dfab578ccccea987916ec90b533caa673d076730d99663f"
+  },
+  {
+    "family": 4,
+    "interval": [
+      "4/25",
+      "1/4"
+    ],
+    "column": 0,
+    "degree": 286,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "7729525ba15a7d9fbbc33d94237f844e56c120b7fe23e6021cbc24ae56c0e4d9"
+  },
+  {
+    "family": 4,
+    "interval": [
+      "4/25",
+      "1/4"
+    ],
+    "column": 1,
+    "degree": 286,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "b67d45291080650dcc403796b72dca3e4da6691625581effc6c3149d5ded9573"
+  },
+  {
+    "family": 4,
+    "interval": [
+      "4/25",
+      "1/4"
+    ],
+    "column": 2,
+    "degree": 286,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "c04c8668b1f9eae61869ea7bcc2ead85780c511b24a0d4c8f54c61c8b86791c6"
+  },
+  {
+    "family": 4,
+    "interval": [
+      "1/4",
+      "1"
+    ],
+    "column": 0,
+    "degree": 274,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "425c47f4af1fb074db1fe6a1c03539e3cac9f714a50b249b773185012f66f39c"
+  },
+  {
+    "family": 4,
+    "interval": [
+      "1/4",
+      "1"
+    ],
+    "column": 1,
+    "degree": 286,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "00a7333e83ff1b1e3a91328429fd760c7b9eca4fa879d1e57a62fd81836ce00c"
+  },
+  {
+    "family": 4,
+    "interval": [
+      "1/4",
+      "1"
+    ],
+    "column": 2,
+    "degree": 286,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "106fb1cd2c912a55e8d019a8ac0eb35309b1074ca39918f7ec2dd4a0523b25b3"
+  },
+  {
+    "family": 5,
+    "interval": [
+      "0",
+      "4/25"
+    ],
+    "column": 0,
+    "degree": 94,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "21ddb2b348eb3bf75848608ef8b3ce07e53f185b0e5efb26ec18af26d4587c57"
+  },
+  {
+    "family": 5,
+    "interval": [
+      "4/25",
+      "1/4"
+    ],
+    "column": 0,
+    "degree": 94,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "f3db7bb5d25bc8134a2dcf10cf00b5a7cecbae0a39062bc47f3653f91d49cae1"
+  },
+  {
+    "family": 5,
+    "interval": [
+      "1/4",
+      "1"
+    ],
+    "column": 0,
+    "degree": 94,
+    "roots_at_one": 2,
+    "negative_coefficients": 0,
+    "first_negative": [],
+    "polynomial_sha256": "76d2e580927f167abc938d4d618f3d7be636932319d739ccd4fcdea40da16fa3"
+  }
+]
