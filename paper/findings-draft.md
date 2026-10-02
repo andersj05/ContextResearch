@@ -1,6 +1,34 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.38 — October 2, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.39 — October 2, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## Coordinating equally good answers uses less memory
+
+For a weight-two four-bit source, zero and one are equally good constant
+answers when the queried coordinate arrives later. Choosing each tie alone
+is wasteful: coordinated pair choices keep the same error and lower output
+entropy. The [new result](../research/COORDINATED_TIE_CODE_2026-10-02.md)
+proves a restricted pair minimum with source counts [121,85,25,25]/256 and
+uses public weighted covers for larger groups. Error stays 5/16 on those
+groups; full majority signatures give 1/4 on the others. [C72]
+
+At 12,288 blocks, the implemented eight-block family has error at most
+27.080384%, below both C71 codes' base-error lower bounds. Its actual limit
+is 26.929308%; a separate polynomial growing-group family tends to
+26.782918%, still above the optimal 26.189898%. Both fit the same two parent
+bits per block, including a fallback flag, and one child bit before J.
+Public data increase from ten bytes to 1,288 for the fixed-eight design;
+program/framing and the growing table are separate. [C72]
+
+The entropy-limit proof applies published weighted greedy-cover theory
+[@cardinal2008entropy] to the compatible-answer source; generic entropy
+quantization remains established [@chou1989entropy]. Forty finite bounds
+retain selected smaller-length losses. Literal quantizers execute 153,792
+queries and complete small arithmetic populations 915,840; large constructed
+inputs execute 1,008 diagnostics. Large population risks are bounded
+analytically, not measured by those spots. This is a toy-model advance;
+external correctness/priority, efficient codes reaching C67 and natural-agent/
+model/token/cost benefit remain open. Zero new model calls or episodes. [C72]
 
 ## A computable code improves the larger finite control
 

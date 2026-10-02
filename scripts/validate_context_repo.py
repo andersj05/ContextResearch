@@ -983,6 +983,23 @@ def main() -> int:
     counts["entropy_coding_new_model_calls"] = regenerated_entropy["new_model_calls"]
     counts["entropy_coding_new_natural_episodes"] = regenerated_entropy["new_natural_episodes"]
 
+    from experiments.dependency_memory.tie_coding import certificate as tie_coding
+    regenerated_ties = tie_coding.certificate()
+    if json.loads(tie_coding.OUTPUT.read_text(encoding="utf-8")) != regenerated_ties:
+        errors.append("Coordinated tie code, cover/entropy deductions or tail bounds changed")
+    counts["tie_coding_finite_margin_designs"] = len(regenerated_ties["finite_bounds"])
+    counts["tie_coding_literal_quantizer_queries"] = regenerated_ties["literal_quantizer_physical_final_queries"]
+    counts["tie_coding_small_arithmetic_queries"] = regenerated_ties["small_arithmetic_physical_final_queries"]
+    counts["tie_coding_large_diagnostic_queries"] = regenerated_ties["large_diagnostic_physical_final_queries"]
+    counts["tie_coding_fixed_eight_limit"] = regenerated_ties["fixed_group_limits"][-1]["actual_fixed_group_code_limit"]
+    counts["tie_coding_growing_family_limit"] = regenerated_ties["growing_family"]["actual_growing_group_code_limit"]
+    counts["tie_coding_public_fixed_payload_bytes"] = regenerated_ties["fixed_eight_packed_public_payload_bytes"]
+    counts["tie_coding_charged_flag_bits"] = regenerated_ties["charged_parent_flag_bits"]
+    counts["tie_coding_source_bindings"] = len(regenerated_ties["source_sha256"])
+    counts["tie_coding_large_population_enumerated"] = regenerated_ties["large_source_populations_enumerated"]
+    counts["tie_coding_new_model_calls"] = regenerated_ties["new_model_calls"]
+    counts["tie_coding_new_natural_episodes"] = regenerated_ties["new_natural_episodes"]
+
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"

@@ -4,7 +4,20 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
-**October 2 implemented hard-cap entropy code:** [the construction and proof](research/HARD_CAP_ENTROPY_CODE_2026-10-02.md)
+**October 2 coordinated tied-answer code:** [the construction and proof](research/COORDINATED_TIE_CODE_2026-10-02.md)
+coordinate equally good constant responses across blocks. Their error stays
+5/16 while entropy falls; two-block compatible entropy is exactly minimized
+by counts [121,85,25,25]/256. A fixed eight-block arithmetic code has error
+at most 27.080384% at k=12,288, below both C71 codes' base-error lower bounds,
+with the same 2k-bit parent including its flag and one-bit child before J.
+Its limit is 26.929308%; a separate implemented polynomial growing-group
+family tends to 26.782918%, still above C67. Public fixed-eight data increase
+to 1,288 packed bytes versus C71's 10. Forty finite bounds preserve smaller
+failures; published greedy cover and generic entropy coding remain precedents.
+Claim C72; external review and natural-agent benefit open. Zero new model
+calls or prospective natural episodes.
+
+**Earlier October 2 implemented hard-cap entropy code:** [the construction and proof](research/HARD_CAP_ENTROPY_CODE_2026-10-02.md)
 give a polynomial algorithm with exactly 2k parent bits, including its fallback
 flag, and one child bit before the final query. At k=12,288 a retained public
 schedule has error at most 27.198892%, below the earlier repeated six-block

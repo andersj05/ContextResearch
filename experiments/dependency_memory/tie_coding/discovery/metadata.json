@@ -1,0 +1,27 @@
+{
+  "bound_probe": "Forty public margin designs at eight lengths, each with five exact-root Chernoff exponents. Floating displays are discovery only; script imports evolving production modules, not a frozen historical runtime.",
+  "date": "2026-10-02",
+  "file_sha256": {
+    "bound_probe.json": "e1c08d7e97d8385eee4d33158bfbe9e9e80180a085bc8d4111be08342ef551b3",
+    "bound_probe.py": "dd91368b439945ea4cdd97afd4274cc3f1238d8c9eee1ac0eac5a86ef7d0cc0a",
+    "greedy_probe.json": "3e38a43abadf1b0add468f151fe0828e6e6441a33147637f4b2c3512809856ea",
+    "greedy_probe.py": "499a3ee67f8fccaa44d5405468ddb5bd9ecf018f980216c6f4af7a6a84af9bdc",
+    "initial_pair_probe.py": "139fa5d0e55778b9ea5e19fc9a579b750285c358f0078290bbd52fb7a0d26e89",
+    "pair_probe.json.gz": "11e310f73c631c4ebf30fd658b4b54e062bd622e6b8bb8369c7043c565169a55",
+    "pair_probe.py": "fca2bc22c59d50890178de150adf6c21a94cbaa947608992ba392c63eeb2afac"
+  },
+  "generic_methods_established": true,
+  "greedy_probe": "Six group sizes; exact weighted type counts, floating entropy and limiting-risk direction only.",
+  "initial_search": "Actual script bytes retained; 156 full/dithered starts had no point of entropy <=4, so selection raised ValueError and wrote no JSON. Original console output was not saved as a file.",
+  "new_model_calls": 0,
+  "new_natural_episodes": 0,
+  "pair_probe_compression": "gzip preserves the complete original JSON bytes after decompression; deterministic mtime=0, no transport timing claim.",
+  "raw_pair_probe_sha256": "7d179aeb0bc38182aeb883abe119ee1a07570198a8b97675af95ee39cad984f8",
+  "revised_search": "486 bounded floating Lloyd-style runs, 239 distinct maps, selects a constant-pair tie choice. Other maps and trajectories retained, no global-optimality claim.",
+  "scope": "Inspected post-hoc offline search, not independent model trials or a preregistered performance study.",
+  "upstream": {
+    "commit": "0f37310",
+    "path": "experiments/dependency_memory/results/entropy_coding_2026-10-02.json",
+    "sha256": "0534e2c27e7781dd4ebc8324c3bee121aae1316321875de2e6090b484458baf5"
+  }
+}

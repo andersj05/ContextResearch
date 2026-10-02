@@ -4,6 +4,43 @@ Updated: October 2, 2026. This document is the current handoff; older scope docu
 
 ## Objective
 
+The [coordinated tied-answer code](../research/COORDINATED_TIE_CODE_2026-10-02.md)
+now improves the implemented scalar family under the same uniform source/
+query law. Equal-loss constant choices coordinated across blocks have lower
+output entropy while retaining error 5/16. Compatible pair entropy is exactly
+minimized by counts [121,85,25,25]/256. Weighted greedy cover, an established
+method, yields entropy per block tending to 5/8 through the note's analytic
+reduction and published approximation bound. Claim C72; living draft v0.39.
+
+The fixed-eight arithmetic code has error at most 27080383700567/10^14 at
+k=12,288, below both named C71 codes' base-error lower bounds and C69. It
+uses exactly 2k parent bits including the fallback flag, and one child bit
+before J. Its actual limit is [0.269293075342,0.269293075343]. A separate
+implemented growing-group schedule g(n)=max(1,floor(bit_length(n)/4)),
+k=n*g(n), has polynomial design/actor bit complexity and actual limiting
+error [0.267829178707,0.267829178708], still above C67. No efficient approach
+to C67, portable speed, generic method novelty or practical-agent gain follows.
+
+Fixed-eight priority/count/oracle payload is 1,288 packed public bytes versus
+C71's 10; public n/g/a, program/runtime, framing and growing-family tables are
+separate. Forty inspected margin designs at eight lengths use five rational
+root-enclosed Chernoff exponents each. The selected four smaller designs
+provably lose to stronger named controls; conservative selection is not an
+actual-risk optimum or a complete allocation search. Every greedy choice
+at g=1/2/3/4/6/8 independently recounts. Literal small quantizers execute
+153,792 queries; thirteen complete small arithmetic populations execute
+915,840; fifteen large constructed inputs execute 1,008 diagnostics. Larger
+uniform-source populations are not enumerated; proofs and outward bounds
+justify population statements. Seventeen bindings preserve C71/C67/C69.
+All **566 offline tests pass**, including the nine new scientific checks.
+Repository validation reports PASS with 72 claims, 53 bibliography entries
+and 171 PDF hashes; paper assembly checks all 46 cited sources. All 17 new
+source/provenance bindings regenerate.
+Zero model calls and prospective natural episodes. External correctness/
+priority, broader laws and natural-agent/model/token/cost benefit remain open.
+
+**Earlier October 2 hard-cap scalar milestone (C71):**
+
 The [implemented hard-cap entropy code](../research/HARD_CAP_ENTROPY_CODE_2026-10-02.md)
 now improves the named repeated six-block control at larger checked lengths.
 Under the original uniform iid source and independent uniform R/O/J law, it
@@ -649,7 +686,7 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 ## Not yet established
 
 - Novelty and external validation of the locally audited scaling argument, or a practically large composition penalty.
-- Exact finite joint-code optima and efficient encoders approaching the full curve. C68/C69/C71 supply implemented codes, C71 has a polynomial hard-cap family with checked overflow bounds, and C69 tightens the three-block bracket; C67 characterizes the uniform-source curve and C70 extends it to two-class source-independent query priors. Biased sources, adaptive queries and more general within-class laws remain outside these results.
+- Exact finite joint-code optima and efficient encoders approaching the full curve. C68/C69/C71/C72 supply implemented codes, C72 improves C71 using coordinated ties and has a polynomial growing-group family still above C67, and C69 tightens the three-block bracket; C67 characterizes the uniform-source curve and C70 extends it to two-class source-independent query priors. Biased sources, adaptive queries and more general within-class laws remain outside these results.
 - Natural-language compiler performance, learned retirement accuracy, or unrestricted closed-loop LLM-agent results. Live model work now also covers an imposed two-stage memory-writing pipeline; open-ended native-agent performance remains unestablished.
 - Cost or quality gains over native provider compaction.
 - The internal training objective, prompt, or algorithm of a proprietary compaction service.
@@ -663,6 +700,14 @@ their dated scope. Efficient finite encoders approaching the now-characterized
 curve, and extensions beyond C70's two-class source-independent priors, remain
 substantive research directions; no production applicability follows from these
 model deductions.
+
+C72 supplies stronger fixed/growing-group compatible-answer codes. Improve
+toward C67 beyond source-wise nearest constants, or sharpen finite bounds
+without adding a source/parent reread or free instance selector. Preserve
+the pair optimum's restricted scope, selected small-length losses and the
+increase to 1,288 public bytes; polynomial complexity is not practical speed.
+The 5/8 entropy limit uses established weighted greedy cover and a local
+information/rank/prefix deduction. External review of that composition is open.
 
 C71 supplies a polynomial hard-cap scalar family with a proved limiting risk
 and conservative finite bounds. Improve it toward C67 using stronger public

@@ -1,5 +1,12 @@
 # Focused reading guide
 
+The [October 2 coordinated-tie note](../research/COORDINATED_TIE_CODE_2026-10-02.md#6-what-was-executed-prior-work-and-remaining-scope)
+adds Cardinal/Fiorini/Joret's author manuscript, Introduction/Section 2,
+Theorem 1 with weighted extension and Lemma 2's statement, printed pp. 1–5
+(cardinal2008entropy), read October 2. Joret's publication list corroborates
+Algorithmica 51(1):49–60, 2008. Bounded reading only; no full review, replication
+or inherited review-status upgrade.
+
 The [October 2 hard-cap note](../research/HARD_CAP_ENTROPY_CODE_2026-10-02.md#6-discovery-primary-source-comparison-and-limits)
 adds Chou, Lookabaugh and Gray (1989), original Introduction/Section II,
 printed pp. 31–33 (`chou1989entropy`), read October 2. Gray's author publication

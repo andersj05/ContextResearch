@@ -1,6 +1,6 @@
 # Repeated Context Compression with Delayed Task Dependencies
 
-Working draft — October 2, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an exact parametric unrestricted asymptotic curve and a tightly certified rate-two error, a two-class query-prior and timing extension, an implemented polynomial hard-cap entropy code with finite bounds, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, a cross-record stress test with one permanent transport gap and a separately frozen continuation, a post-hoc offline decoder-compatibility correction, two workflow development comparisons, and a retrospective retained-evidence audit. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
+Working draft — October 2, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an exact parametric unrestricted asymptotic curve and a tightly certified rate-two error, a two-class query-prior and timing extension, implemented polynomial hard-cap entropy codes with coordinated tied answers and finite bounds, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, a cross-record stress test with one permanent transport gap and a separately frozen continuation, a post-hoc offline decoder-compatibility correction, two workflow development comparisons, and a retrospective retained-evidence audit. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
 
 ## Abstract
 
@@ -137,6 +137,15 @@ default schedule's actual risk tends to about 27.075301%, still above C67.
 The encoder/updater have polynomial bit complexity and ten packed public
 response/probability bytes. Section 8.21 distinguishes analytic population
 bounds, full small-population grading and constructed large diagnostics. [C71]
+
+A [coordinated-tie extension](../research/COORDINATED_TIE_CODE_2026-10-02.md)
+keeps constant-response error fixed while lowering output entropy. Compatible
+pair entropy is minimized by [121,85,25,25]/256. A fixed-eight code has risk
+at most 27.080384% at k=12,288, below both C71 codes' lower bounds at the same
+cap; public data increase to 1,288 bytes. Its limit is 26.929308%, and a
+separate implemented polynomial growing-group family tends to 26.782918%.
+Section 8.22 states the published cover input, local deductions, finite bounds
+and execution scopes. Both limits remain above C67. [C72]
 
 An [October 1 explicit three-block construction](../research/JOINT_THREE_BLOCK_WITNESS_2026-10-01.md)
 uses six parent bits and one child bit under the same timing. Its fixed 64-word
@@ -1144,6 +1153,97 @@ This adds a specific implementable model construction and checked hard-cap
 bounds. External correctness/priority, efficient codes reaching C67, broader
 source/query laws and natural-agent/model/token/cost benefit remain open.
 Zero new model calls or prospective natural episodes. [C71]
+
+### 8.22 Coordinating tied responses and a polynomial growing-group family
+
+In the uniform four-bit source, zero/one constant responses both minimize
+loss at source weight two. Below/above two the response is forced to zero/
+one, with source-class sizes 5,6,5. Coordinating ties across a public g-block
+group leaves every source's permitted constant loss unchanged and gives
+mean queried-bit error 5/16. It can reduce response entropy. A ternary
+status pattern with f forced positions has mass 5^f*6^(g-f); a binary
+completion must match its forced signs. Public greedy cover selects the
+largest remaining compatible mass, ties by smallest word. [C72]
+
+At g=2, mandatory masses are at least 25 per word and a word covers at most
+121 sources. The sorted vector [121,85,25,25] dominates every feasible mass
+vector and is attained by priority (0,3,1,2). Schur concavity gives an
+exact minimum compatible-output entropy, about 1.694635 bits per pair,
+versus 1.792076 for two separate constant quantizers. This covers arbitrary
+compatible assignments, not just the 24 checked priority orders. It does
+not optimize other reproduction choices or the global rate-distortion curve.
+For g=8, independent recounting checks all 256 greedy choices across 6,561
+weighted source categories; output entropy per block is about 0.770971. [C72]
+
+Let T be the ternary status and E its tie mask. Any compatible completion Y
+determines T together with E, so H(Y)>=H(T)-H(E)=5g/8. Conversely, over a
+uniform random public ordering of completions, the first compatible rank
+has mean (2^g+1)/(2^(g-K)+1)<=2^K when K positions are forced. Jensen gives
+average E log2 rank<=E K=5g/8. Some fixed ordering satisfies this bound.
+An explicit self-delimiting rank code adds at most 2log2(g+1)+1 expected
+bits, giving H_opt<=5g/8+2log2(g+1)+1. Published weighted greedy cover adds
+at most log2(e) [@cardinal2008entropy], hence H_G/g->5/8. The information/
+rank/prefix deduction is local; the greedy guarantee is established. [C72]
+
+For k=ng, the first a groups use full majority signatures, with entropy
+g*h_8 and error 1/4, while the others use the compatible cover, entropy H_G
+and error 5/16. All design/count choices precede X; R/O remain late. Exact
+arithmetic intervals and odd grid points again use 2k-1 payload bits plus
+one charged regular/fallback flag. Fallback is M=0/all-zero responses.
+The updater reconstructs a selected response from M,R,O/public n/g/a/tables
+and emits one bit before J; the final actor sees only Z,R,O,J. No source,
+interval, output list, histogram, old parent, archive, environment or provider
+session survives as an auxiliary channel. Stage workspace is temporary. [C72]
+
+For fixed g, increasing-precision outward entropy bounds choose the largest
+public a with mean-information upper bound <=2ng-c*ceil(sqrt(n*bit_length(n))).
+If a=0 cannot meet slack, it is used anyway with the same valid cap. The
+constraint holds eventually, rounding vanishes and overflow probability
+vanishes by concentration of independent bounded information summands.
+With h_8=4-(10/16)log2 5, actual fixed-group error tends to
+
+\[
+D_g=\frac5{16}-\frac{2g-H_G}{16(gh_8-H_G)}.
+\]
+
+Fixed g=8 gives [0.269293075342,0.269293075343]. A separate family sets
+g(n)=max(1,floor(bit_length(n)/4)), k=n*g(n), c=4g(n). Then 16^g<=2n for
+n>=8, making the public weighted builder/tables, entropy planner and actors
+polynomial in input length. Variance is <=(13/4)ng^2; margin
+4g*ceil(sqrt(n*bit_length(n))) makes overflow vanish while its rate cost
+vanishes. Thus the implemented deterministic growing family has actual limit
+
+\[
+D_{\rm grow}=\frac5{16}-\frac{2-5/8}{16(h_8-5/8)}
+\in[0.267829178707,0.267829178708].
+\]
+
+This is a proved family limit along k(n), still above C67, not an efficient
+near-C67 guarantee or a portable performance measurement. Unbounded g
+without the public growth schedule would have exponential design size. [C72]
+
+Forty inspected finite margin designs at eight lengths use five exponents
+t=1/s, s=8/16/32/64/128. Markov on self-information bounds the bad-length
+event by 2^(-t(2k-1)) M_H^(ag) M_G^(n-a). Integer root enclosures evaluate
+the moments and threshold outward. Actual risk is between
+D_0=5/16-a/(16n) and min(1/2,D_0+Pr(bad length)). At k=12,288, a=1025,
+c=4 gives risk <=27080383700567/10^14. At k=1536/3072/6144/12288 the selected
+bounds lie below both C71 codes' base-error lower bounds, proving actual
+improvement, and below C69. The selected four smaller designs provably
+lose to stronger named controls. Selection minimizes a conservative bound
+rather than actual risk or every possible allocation. [C72]
+
+The fixed-eight cover/oracle payload is 1,288 packed public bytes versus
+C71's 10; public n/g/a, program/runtime/framing and growing-family tables
+are separate from instance bits. Literal small quantizers execute 153,792
+final queries; thirteen complete small arithmetic populations execute 915,840;
+fifteen constructed fixed/growing inputs execute 1,008 diagnostic queries.
+Large uniform populations are not physically enumerated or scored exactly.
+Seventeen source/provenance bindings regenerate, preserving C71/C67/C69.
+Generic entropy quantization [@chou1989entropy], greedy cover, prefix/arithmetic
+coding and time sharing are prior work. External correctness/priority, other
+laws, global quantizer/finite optima and natural-agent/model/token/cost benefit
+remain open; no new model call or natural episode is added. [C72]
 
 ## 9. Limitations and open results
 

@@ -1177,3 +1177,49 @@ Repository validation reports PASS with 71 claims, 52 bibliography entries
 and 171 PDF hashes; paper assembly checks all 45 cited sources. All 15 new
 bindings regenerate. Zero new model calls or natural episodes; provider
 allocations stay closed.
+
+## October 2, 2026: coordinate equal-loss answers with established weighted covers
+
+Keep uniform iid source and independent uniform R/O/J. Treat source weight
+two as a choice between equal-loss constant responses; coordinating it across
+groups reduces entropy without source-wise error increase. Prove the pair
+minimum from mandatory 25/maximal 121 masses and majorization, attained by
+[121,85,25,25]/256. Scope it to compatible constants, not a global quantizer.
+Apply Cardinal/Fiorini/Joret's published weighted greedy-cover guarantee,
+plus the local information/rank/prefix argument, to deduce entropy/block->5/8.
+Read Introduction/Section 2/Theorem 1 with weighted extension and Lemma 2's
+statement in bounded author-manuscript scope pp. 1–5; author metadata list
+corroborates Algorithmica 51(1):49–60, 2008. Add cardinal2008entropy without an
+invented DOI or inherited full-review upgrade. Generic methods remain prior art.
+
+Implement exact mixed arithmetic subdivision, odd grid and one charged flag
+inside 2k parent bits. Only M then one-bit Z survive; source, intervals, output
+lists and provider/archive/environment channels do not. Fixed-eight data
+increase to 1288 packed public bytes versus C71 ten. Public n/g/a, program/
+runtime/framing and growing tables remain separate; no memory-footprint,
+token/cost, portable speed or native-agent benefit claim follows.
+
+Fixed-eight actual limit is [0.269293075342,0.269293075343]. A separate public
+g=max(1,floor(bit_length(n)/4)), k=n*g, multiplier 4*g schedule gives a
+polynomial builder/actor family and limit [0.267829178707,0.267829178708],
+still above C67. Arbitrary g without the schedule is exponential; finite
+diagnostics do not execute every n or demonstrate efficient convergence.
+Forty inspected margin designs use five integer-root-enclosed Chernoff
+exponents. Selected larger bounds beat both C71 codes' base-error lower
+bounds; selected four smaller designs lose to stronger named controls.
+Selection minimizes a conservative bound, not actual risk or every allocation.
+
+Independently recount all weighted greedy choices at six group sizes.
+Literal small quantizers execute 153792 queries, thirteen complete small
+arithmetic populations execute 915840, and fifteen constructed large inputs
+execute 1008 diagnostics. Keep those scopes distinct from whole-population
+analytic bounds. Seventeen bindings preserve C71/C67/C69. Retain failed
+first search, 486 revised maps, six probes and forty finite designs; gzip
+preserves actual pair JSON bytes, scratch imports are not a frozen runtime.
+Claim C72; draft v0.39. All 566 offline tests pass, including nine new
+scientific checks. Repository validation reports PASS with 72 claims, 53
+bibliography entries and 171 PDF hashes; paper assembly checks 46 cited
+sources. All 17 code/provenance bindings regenerate.
+Zero new model calls or natural episodes; provider allocations stay closed.
+External correctness/priority, efficient near-C67 codes, broader laws and
+natural-agent/model/token/credit/production benefit remain open.

@@ -22,7 +22,19 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
-Living draft v0.38 adds the [implemented hard-cap entropy code](../research/HARD_CAP_ENTROPY_CODE_2026-10-02.md),
+Living draft v0.39 adds [coordinated tied-answer coding](../research/COORDINATED_TIE_CODE_2026-10-02.md),
+claim C72. Joint equal-loss constant choices reduce entropy; the compatible
+pair minimum has counts [121,85,25,25]/256. A fixed-eight code has error at
+most 27.080384% at k=12,288, below both C71 codes' lower bounds at the same
+2k/one-bit cap. Its actual limit is 26.929308%; a separate implemented
+polynomial growing family tends to 26.782918%, still above C67. Public data
+increase to 1,288 packed bytes versus C71's 10. Published minimum-entropy
+greedy cover underpins the local entropy-limit deduction. Forty finite bounds,
+small physical populations and large diagnostics have separate scopes.
+Selected smaller designs lose. External correctness/priority, efficient
+near-C67 codes and practical-agent benefit remain open; zero new model calls.
+
+Earlier living draft v0.38 adds the [implemented hard-cap entropy code](../research/HARD_CAP_ENTROPY_CODE_2026-10-02.md),
 claim C71. A polynomial arithmetic-grid family charges its fallback flag
 inside 2k parent bits and retains one child bit before J. Its default risk
 tends to 27.075301%, still above C67. At k=12,288 the retained rational control

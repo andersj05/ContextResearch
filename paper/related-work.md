@@ -2,6 +2,11 @@
 
 These are distinctions to verify and explain, not declarations of novelty. The detailed review is in the September 16 proposal and survey. The focused bibliography records verified titles and authors; outstanding final publication metadata are identified in its notes.
 
+The [coordinated-tie construction](../research/COORDINATED_TIE_CODE_2026-10-02.md)
+uses established minimum-entropy weighted set cover [@cardinal2008entropy].
+Its scoped compatible-answer reduction and code bounds are local deductions;
+greedy approximation and general entropy quantization are prior work.
+
 The [October 2 hard-cap code](../research/HARD_CAP_ENTROPY_CODE_2026-10-02.md)
 instantiates established entropy-constrained quantization and time sharing
 [@chou1989entropy]. Its specific charged-cap construction and finite bounds
