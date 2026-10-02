@@ -1008,3 +1008,36 @@ new model calls or prospective natural episodes. Work remains in segmented
 folders of this repository. Next steps are external proof/priority review and
 finite encoders approaching the curve, not extra calls on the inspected source
 classifier.
+
+## October 2, 2026 — implement a compact finite trellis code (C68)
+
+Follow C67's full curve with a finite encoder under the same parent/child timing.
+Use fixed three-phase labels on a 16-state tail-biting quaternary trellis, storing
+exactly two bits per source block. The boundary is the last two stored symbols,
+with no extra retained state. Exact reverse Viterbi minimizes fixed-table loss;
+its 1024*k branch relaxations are operation counts, not portable timing claims.
+Public labels contain 96 packed bytes, excluding program/runtime/JSON size.
+
+Preserve the failed initial extension: identity plus seeds 1..32 of C59's book
+all lose to the four-block pair-product control, best 879,487 versus 869,376.
+Four fixed phase/index sweeps consider all 15 alternative labels per entry.
+After 93 accepted changes, 867,837 errors remain on 3,145,728 outcomes. Retain
+all 768 coordinate visits/11,520 scores, both native sources, compiler flags,
+Windows C-clock observation and upstream hashes. Search is adaptive post-hoc
+mathematics, not independent trials or a local/global optimum certificate.
+
+Independently enumerate nearest finite messages, then grade every actor route
+at k=1..4. The selected labels lose at k=1,2,3; preserve that negative transfer.
+Ordinary concatenation of separately closed four-block groups gives the same
+error for every k=4*n without extra group state. At common k=12*n, C59
+three-block products are better, so the best known asymptotic upper bound is
+unchanged. That product proof does not
+imply quality for one longer cycle or approach C67's asymptotic frontier.
+
+Implement the code, proof and independent scientific tests in a new segmented
+folder within this repository. Preserve C59/C67 source/results and all model
+launch bytes; add zero model requests and zero prospective natural episodes.
+Read QTIP v4 Sections 2.3/3.1/3.2 and Marcellin/Fischer's university abstract
+record. General TCQ/Viterbi, bit-window decoding, table tuning, product coding
+and tail-biting are established; finite optimality, external proof/priority
+and natural-agent usefulness remain open. Add C68 and living draft v0.35.

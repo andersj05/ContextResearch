@@ -1,5 +1,11 @@
 # Focused reading guide
 
+The [October 2 finite trellis note](../research/FINITE_TRELLIS_CODE_2026-10-02.md#5-primary-source-comparison-and-remaining-work)
+adds QTIP pinned v4 Sections 2.3, 3.1 and 3.2 (`qtip2024`) and Marcellin/Fischer's
+author university abstract/metadata record (`marcellinfischer1990tcq`). These
+bounded readings establish coding precedents, not full-paper review or
+replication; inherited archive review labels are unchanged.
+
 The [October 2 full-curve proof](../research/UNRESTRICTED_RATE_CURVE_2026-10-02.md#6-literature-discovery-and-limits)
 rereads the existing Polyanskiy/Wu primary Chapter 24, Theorems 24.1-24.3 and
 selected proof passages, printed pp. 246-249, and Chapter 25 Section 25.2/support

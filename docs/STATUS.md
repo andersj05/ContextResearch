@@ -4,6 +4,27 @@ Updated: October 2, 2026. This document is the current handoff; older scope docu
 
 ## Objective
 
+The [finite trellis construction](../research/FINITE_TRELLIS_CODE_2026-10-02.md)
+now implements a fixed code at exactly two parent bits per block, followed by
+one child bit before J. At four blocks it has **867,837 / 3,145,728 errors**,
+below the pair-product control's 869,376. An exact 16-state encoder minimizes
+loss within the fixed tables with 1024*k branch relaxations and no extra
+cyclic-boundary bits. Independent four-block groups attain the same distortion
+for every k=4*n; one long cycle has no such quality claim and smaller cycles
+lose to their existing controls. Claim C68; living draft v0.35. All 33 initial
+permutation attempts failed; four label sweeps then accepted 93 improvements.
+The full-population result independently regenerates. Label payload is 96
+public bytes, distinct from instance bits and program/runtime size. Finite
+optimality, codes approaching C67's curve and external correctness/priority
+remain open. Zero new model calls or prospective natural episodes.
+At common lengths k=12*n, the existing three-block product has lower error;
+this does not improve the best known repeated-code asymptotic upper bound.
+All **533 offline tests pass**, including eight new scientific tests. Repository
+validation reports PASS with 68 claims and 50 bibliography entries; paper
+assembly checks 43 cited sources. All 15 witness/provenance bindings regenerate.
+
+**Earlier October 2 curve milestone (C67):**
+
 The [unrestricted asymptotic curve](../research/UNRESTRICTED_RATE_CURVE_2026-10-02.md)
 is now characterized for every parent rate in the uniform four-bit delayed-query
 model. C66 reduces to six complementary families; 48 exact polynomial
@@ -535,7 +556,7 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 ## Not yet established
 
 - Novelty and external validation of the locally audited scaling argument, or a practically large composition penalty.
-- Exact finite joint-code optima and efficient encoders. C67 now gives an exact parametric unrestricted asymptotic curve for the uniform four-bit model; broader source/query laws remain outside that theorem.
+- Exact finite joint-code optima and efficient encoders approaching the full curve. C68 supplies one implemented finite trellis code; C67 characterizes the unrestricted asymptotic curve for the uniform four-bit model. Broader source/query laws remain outside those results.
 - Natural-language compiler performance, learned retirement accuracy, or unrestricted closed-loop LLM-agent results. Live model work now also covers an imposed two-stage memory-writing pipeline; open-ended native-agent performance remains unestablished.
 - Cost or quality gains over native provider compaction.
 - The internal training objective, prompt, or algorithm of a proprietary compaction service.
@@ -548,6 +569,12 @@ fixed-floor coding argument. Preserve the old supporting certificates and
 their dated scope. Efficient finite encoders approaching the now-characterized
 curve, and extensions to changed source/query laws, remain substantive research
 directions; no production applicability follows from this model theorem.
+
+C68 supplies a compact code that improves the named four-block controls,
+while the same tables lose at smaller cycles. Test a separately preserved
+longer-block construction or different public labels against equally charged
+controls; preserve the failed transfer and bounded search, with no generic
+trellis/Viterbi novelty claim. The one-long-cycle asymptotic quality is open.
 
 For the finite problem, tighten the 457-outcome all-decoder interval, examine
 the 3,790 near mixed cases not excluded by C62/C63, or construct longer finite

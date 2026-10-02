@@ -22,6 +22,16 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.35 adds the [finite trellis code](../research/FINITE_TRELLIS_CODE_2026-10-02.md),
+claim C68. At four blocks, an eight-bit parent and one-bit child give 867,837
+errors on 3,145,728 outcomes, below the pair-product control's 869,376. Exact
+16-state Viterbi uses 1024*k branch relaxations; independent four-block groups
+preserve that error for k=4*n with two parent bits per block. At k=12*n the
+existing three-block product remains better. Smaller cycles
+lose to the existing controls. Finite optimality and codes approaching the
+curve remain open; generic trellis coding is established and no new model or
+natural-task result is added. Two bounded primary sources delimit the method.
+
 Living draft v0.34 adds the [full unrestricted asymptotic curve](../research/UNRESTRICTED_RATE_CURVE_2026-10-02.md),
 claim C67. Forty-eight exact polynomial inequalities extend the unsigned
 scalar optimization to every positive slope, with strict coding slack inside

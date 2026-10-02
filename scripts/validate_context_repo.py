@@ -933,6 +933,15 @@ def main() -> int:
     counts["rate_curve_complete_unrestricted_curve"] = regenerated_curve["full_unrestricted_asymptotic_curve_characterized"]
     counts["rate_curve_new_model_calls"] = regenerated_curve["new_model_calls"]
 
+    from experiments.dependency_memory.trellis_coding import certificate as trellis_coding
+    regenerated_trellis = trellis_coding.certificate()
+    if json.loads(trellis_coding.OUTPUT.read_text(encoding="utf-8")) != regenerated_trellis:
+        errors.append("Finite trellis witness, product controls or source bindings changed")
+    counts["trellis_coding_four_block_errors"] = regenerated_trellis["finite_results"][-1]["errors"]
+    counts["trellis_coding_actor_routes"] = regenerated_trellis["actor_query_routes_executed"]
+    counts["trellis_coding_packed_public_labels"] = regenerated_trellis["packed_public_label_bytes"]
+    counts["trellis_coding_new_model_calls"] = regenerated_trellis["new_model_calls"]
+
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"

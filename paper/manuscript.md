@@ -99,6 +99,16 @@ The optimal Gibbs channel parametrizes the intermediate curve, with error
 channel creates strict rate slack before fixed-length coding within floor(k*r)
 bits. This supplies no finite optimal code or efficient encoder. [C67]
 
+A [separate finite construction](../research/FINITE_TRELLIS_CODE_2026-10-02.md)
+uses a fixed 16-state trellis with two parent bits per block and one child bit
+before J. At four blocks it has 867,837 errors on 3,145,728 outcomes, below the
+pair-product control's 869,376. An exact encoder uses 1024*k branch relaxations
+within the fixed labels; independent four-block groups preserve the same
+distortion for k=4*n; at k=12*n the existing three-block product still has
+lower error. Smaller cycles with these labels lose to existing
+controls. This implements one finite code; optimality and quality approaching
+the full curve remain open. Section 8.18 gives the contract and checks. [C68]
+
 An [October 1 explicit three-block construction](../research/JOINT_THREE_BLOCK_WITNESS_2026-10-01.md)
 uses six parent bits and one child bit under the same timing. Its fixed 64-word
 codebook makes 40,529 errors among all 147,456 source/block/omission/query
@@ -875,6 +885,38 @@ discarded. Fixed-length coding and supporting optimization are established
 [@polyanskiywu2016coding; @dupuis2004strategies]. The local addition is this
 particular complete model curve. Exact finite optima, efficient encoders,
 external proof/priority and natural-workflow gains remain open. [C67]
+
+### 8.18 A compact implemented finite code
+
+The [four-block trellis witness](../research/FINITE_TRELLIS_CODE_2026-10-02.md)
+stores k quaternary symbols in exactly 2*k parent bits. A response at block R
+uses only its own and two preceding cyclic symbols through three fixed public
+64-entry tables. The updater returns the omission bit of that response word;
+the final actor returns the child bit without parent/source access. The cyclic
+boundary is already the last two parent symbols. Public labels occupy 96
+packed bytes, excluding program/runtime size and charged instance memory. [C68]
+
+An exact reverse Viterbi recurrence searches the 16 cyclic boundary states,
+with 1024*k branch relaxations at k>=2. At k=4, all 65,536 source assignments
+and 3,145,728 delayed routes independently give 867,837 errors, or
+289279/1048576, below pair-product 869,376, three-plus-one 869,648 and independent
+blocks 884,736. The population assignments use exhaustive nearest-message
+enumeration, independently of the Viterbi recurrence. Tests compare Viterbi
+against every message for all k<=3 sources and declared k=4/6 examples. [C68]
+
+Repeating independently closed four-block groups gives the same distortion at
+every k=4*n by product additivity, with 2*k parent bits and one final child bit.
+At common k=12*n, the existing three-block product instead gives lower error
+40529/147456; the best known asymptotic upper bound is unchanged.
+One long cyclic trellis is different; its smaller k=1,2,3 tables have
+58/192,1802/6144,41649/147456 error and lose to existing controls. The certificate
+executes 3,299,520 routes including those failures. Bounded post-hoc search
+preserves 33 failed initial permutations and four label sweeps with 93 accepted
+changes. Neither local/global optimality nor longer-cycle quality is proved.
+Generic trellis coding, Viterbi and tail-biting are established precedents
+[@marcellinfischer1990tcq; @qtip2024]. This adds a particular finite upper bound
+and codec for delayed queries, with no model/natural-task or production gain.
+External correctness and publication priority remain open. [C68]
 
 ## 9. Limitations and open results
 

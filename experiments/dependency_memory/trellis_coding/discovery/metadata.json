@@ -1,0 +1,86 @@
+{
+  "compiler": {
+    "flags": [
+      "-O3",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Werror"
+    ],
+    "target": "x86_64-pc-windows-msvc",
+    "version": "clang 19.1.0"
+  },
+  "date": "2026-10-02",
+  "evidence_class": "post-hoc bounded mathematical discovery",
+  "file_sha256": {
+    "base.h": "8df650e47edf217651b08ef62f8567fa1e2f3aeb890eb12363e359027dbd914c",
+    "initial.jsonl": "28844e37963f29a9fa95e0e799c7e55f7450418e7a0662350df0981f1a696449",
+    "optimization.jsonl": "eeb622fc6084189325a06fd16944ddde535f1a3b738a4e7e175202bff5509a67",
+    "optimize.c": "68b6c0b0e2ad21d3e2fc6a6d99744b9b245d6bf81ed0eafdfd810535dc836456",
+    "probe.c": "e4a04cd833af9559134ec46550c7eba95160f9e578819a95b65239686df15463",
+    "seed.h": "b40a3dfbd6ca64c10805c1ccadb7e27217e98b90832f1f7fde8830e48005d5b1"
+  },
+  "initial": {
+    "beat_control": false,
+    "best_errors": 879487,
+    "best_seed": 11,
+    "control_errors": 869376,
+    "identity_errors": 884313,
+    "prng": "xorshift32 shifts 13,17,5; modulo Fisher-Yates; seed0 identity",
+    "seed_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ]
+  },
+  "limits": "Adaptive inspected source-population optimization, not held-out performance or independent trials. No exhaustive table/code search, local/global optimum, LLM gain, natural episode or publication priority.",
+  "new_model_calls": 0,
+  "optimization": {
+    "accepted_changes": 93,
+    "alternative_label_evaluations": 11520,
+    "clock_seconds_observed": "13.251000",
+    "coordinate_visits": 768,
+    "errors": 867837,
+    "local_optimum_certified": false,
+    "objective": "all 65536 uniform four-block sources; 48 delayed routes per source",
+    "passes": 4,
+    "process_wall_seconds": null,
+    "sweep_order": "phase0..2 then index0..63; strict improvements only; smallest improving tied label",
+    "timing_scope": "Windows C clock observation; no process CPU or portable speed claim"
+  },
+  "upstream": {
+    "path": "experiments/dependency_memory/joint_coding_finite3/discovery.json",
+    "selection": "runs.greedy.codeword_ids, preserved without alteration",
+    "sha256": "8be1ed7b8af6e1a73a5100e2e6be5dd2bd2a33c3bc2ebf12e560d20def1aebf2"
+  }
+}

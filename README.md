@@ -4,6 +4,16 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
+**October 2 finite encoder:** [a fixed trellis construction](research/FINITE_TRELLIS_CODE_2026-10-02.md)
+achieves 867,837 errors on all 3,145,728 four-block outcomes, versus the
+pair-product control's 869,376, with the same eight-bit parent and one-bit child.
+An exact 16-state encoder uses 1024*k branch relaxations; independent four-block
+groups preserve this error for k=4*n at two parent bits per block. Labels occupy
+96 packed public data bytes. At common lengths k=12*n, the existing three-block
+product remains better. Smaller cycles perform worse, and optimality,
+quality near the asymptotic curve and publication priority remain open. No
+model call or natural workflow is added; generic trellis coding is established.
+
 **October 2 full asymptotic curve:** [the unrestricted rate theorem](research/UNRESTRICTED_RATE_CURVE_2026-10-02.md)
 extends the unsigned scalar formula to every parent rate in the uniform four-bit
 model with a one-bit child before the final query. Forty-eight exact polynomial

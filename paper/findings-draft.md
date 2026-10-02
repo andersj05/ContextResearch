@@ -1,6 +1,23 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.34 — October 2, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.35 — October 2, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## A finite encoder now improves the four-block controls
+
+The [fixed trellis code](../research/FINITE_TRELLIS_CODE_2026-10-02.md) achieves
+867,837 errors on all 3,145,728 four-block outcomes, versus 869,376 for two
+independent pairs. The parent still has eight bits and the child one bit formed
+before the late coordinate. Exact reverse Viterbi uses 16 states and 1024*k
+branch relaxations; the fixed response labels occupy 96 packed public bytes.
+Independent four-block groups preserve the error 289279/1048576 for every
+k=4*n at two parent bits per block. At common k=12*n, the existing three-block
+product has lower error, leaving the best known asymptotic upper bound unchanged.
+This gives a particular implemented finite
+construction, while finite optimality and codes approaching C67's curve remain
+open. Claim C68. The same long-cycle tables perform worse at k=1,2,3, and all
+33 initial permutation attempts failed. Generic trellis/Viterbi and product
+coding are established methods. No model call or prospective natural task is
+added; external correctness and publication priority remain open.
 
 ## The full asymptotic bit-model curve is now characterized
 
@@ -13,7 +30,7 @@ child. Claim C67. The curve goes from 1/2 at zero rate to 1/4 at about 2.548795
 bits per block; the support transition occurs near 0.620690 bits per block.
 Channel mixing provides strict coding slack inside floor(k*r) bits. Arbitrary
 joint encoding and heterogeneous tables are included. This is an exact
-parametric asymptotic model result, with finite optimal/efficient codes,
+parametric asymptotic model result, with finite optimal codes and efficient codes approaching the curve,
 external correctness and priority still open. No new model or natural-task
 outcomes are added.
 

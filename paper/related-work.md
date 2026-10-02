@@ -2,6 +2,13 @@
 
 These are distinctions to verify and explain, not declarations of novelty. The detailed review is in the September 16 proposal and survey. The focused bibliography records verified titles and authors; outstanding final publication metadata are identified in its notes.
 
+The [October 2 finite code](../research/FINITE_TRELLIS_CODE_2026-10-02.md)
+applies established trellis/Viterbi, bit-window and cyclic-boundary methods
+[@marcellinfischer1990tcq; @qtip2024]. Its local evidence is a fixed witness for
+the delayed-query loss with a one-bit child before J. General method novelty,
+Gaussian weight-quantization performance and hardware speed are not claimed.
+The source note and reading guide record the bounded primary reading scopes.
+
 The [October 2 unrestricted curve](../research/UNRESTRICTED_RATE_CURVE_2026-10-02.md)
 uses established fixed-length coding and supporting optimization
 [@polyanskiywu2016coding], with the existing strategy-alphabet comparison
