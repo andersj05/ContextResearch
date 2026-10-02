@@ -2,6 +2,12 @@
 
 Updated: October 2, 2026. This document is the current handoff; older scope documents are historical.
 
+**End of day:** Experimentation stopped on October 2 at the user's request.
+The [closeout handoff](END_OF_DAY_2026-10-02.md) inventories the saved
+results and checks at scientific checkpoint bb71f37 (C75, draft v0.42).
+The next extensions below remain unperformed; no further experiment
+was launched during closeout.
+
 ## Objective
 
 The [exact-priced group construction](../research/EXACT_PRICED_GROUP_CODE_2026-10-02.md)

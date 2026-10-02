@@ -1365,3 +1365,20 @@ files retain their actual bytes. Zero model calls or natural episodes; do not re
 closed classifier allocations or populate untouched tasks from research
 commands. External review/priority, useful near-C67 codes, broader laws
 and practical-agent benefit remain open.
+
+## October 2: stop experimentation and preserve the final checkpoint
+
+At the user's request, stop experimentation for today at bb71f37, claim C75,
+living draft v0.42. Save the [closeout handoff](END_OF_DAY_2026-10-02.md)
+and [verification record](../experiments/dependency_memory/results/closeout_2026-10-02.json).
+Preserve the completed 597-test and PASS repository-validation evidence.
+Fresh closeout checks verify all 16 C73, 29 C74 and 71 C75 source bindings,
+discovery files and exact gzip restoration of original records. Rebuild
+the 48-source paper preview. Full scientific checks were completed before
+these documentation-only changes; do not imply they were repeated here.
+
+Keep all failed starts, protocols, raw evidence, public tables and timing
+limitations. Launch no new full-population extension, runtime measurement,
+model call or natural episode. The proposed next steps remain unperformed.
+Practical benefit and external review remain open; this is a daily
+checkpoint, not completion of the research objective.
