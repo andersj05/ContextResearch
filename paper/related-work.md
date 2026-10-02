@@ -2,6 +2,15 @@
 
 These are distinctions to verify and explain, not declarations of novelty. The detailed review is in the September 16 proposal and survey. The focused bibliography records verified titles and authors; outstanding final publication metadata are identified in its notes.
 
+The [deterministic near-limit code](../research/DETERMINISTIC_NEAR_LIMIT_CODE_2026-10-02.md)
+applies established greedy coverage [@nemhauser1978greedy] and excess-distortion
+source coding [@polyanskiywu2016coding]. Greedy coding under error-control
+families is also explicit prior work [@smieja2015entropy], relevant to the
+coordinated-tie approach. Formal polynomial convergence with logarithmic
+groups is not generic algorithmic novelty or useful finite convergence.
+The local contribution remains the specific delayed-query curve and scoped
+consequences; bounded reading and external priority limits stay explicit.
+
 The [coordinated-tie construction](../research/COORDINATED_TIE_CODE_2026-10-02.md)
 uses established minimum-entropy weighted set cover [@cardinal2008entropy].
 Its scoped compatible-answer reduction and code bounds are local deductions;

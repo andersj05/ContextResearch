@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-02",
+  "discovery_status": "Post-hoc local mathematical probes, not prespecified independent trials.",
+  "historical_scripts": "Original scratch output path/import assumptions preserved; use the supported certificate for reproduction.",
+  "new_model_calls": 0,
+  "new_natural_episodes": 0,
+  "original_console_timing_not_saved": true,
+  "sequence": [
+    "Eight-response alphabet, all 75 thresholds at g=1/2/3.",
+    "Full sixteen-response alphabet, all 75 thresholds at g=1/2/3; same selected threshold-only errors.",
+    "Add the existing optimal scalar product as a public control, chosen on full uniform-source risk; it wins at g=1 and ties at g=2."
+  ],
+  "sha256": {
+    "all_probe.json": "0e64eca0aadbf1f4229d57cab00c578a7127592c4c82418a6a17e6808b8a5889",
+    "all_probe.py": "045b7c3bd16db51533cae8321ab9817b214b29263329eff365a0a228646fafdc",
+    "eight_probe.json": "7f2c625725e10c9f97f773ab8f4477d2a449c7988afd4e18318637f49ee962ea",
+    "eight_probe.py": "d020c8a31aeee7caee9e3ca5e56bfc641038a617f432d1d5d0d346ba2b84d3cd"
+  },
+  "upstream": [
+    {
+      "path": "experiments/dependency_memory/results/tie_coding_2026-10-02.json",
+      "sha256": "3134e7a4155342de4cc93eab282cc19de8e903d3b68306b63c48440a9e51dc59",
+      "worktree_at_commit": "d3fb3fb"
+    },
+    {
+      "path": "experiments/dependency_memory/results/rate_curve_2026-10-02.json",
+      "sha256": "06624233335d8ee64422d43a1050d3f0385b79eec63ad442efbb3c045e2ba014",
+      "worktree_at_commit": "d3fb3fb"
+    }
+  ]
+}

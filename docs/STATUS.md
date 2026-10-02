@@ -4,6 +4,44 @@ Updated: October 2, 2026. This document is the current handoff; older scope docu
 
 ## Objective
 
+The [deterministic distortion-cover family](../research/DETERMINISTIC_NEAR_LIMIT_CODE_2026-10-02.md)
+now has actual limiting error C67 D_infinity(2), within the unchanged
+(0.2618989799,0.2618989801) enclosure. Every public design and actor is
+polynomial in the full source length k, at exactly 2k parent bits and one
+child bit before J. Claim C73; living draft v0.40. This resolves formal
+constructive convergence at rate two; useful finite convergence remains open.
+
+The public builder greedily covers each integer group-loss threshold, grades
+exact uniform-source nearest assignments and compares the old scalar product.
+All design selection precedes X. A public g=max(1,bit_length(k)//10) schedule,
+fixed 2g-bit labels and two-bit scalar tail fit every integer length.
+The coverage recurrence plus established excess-distortion coding proves
+the actual limit; generic coverage/logarithmic blocking/coding are prior work.
+
+The selected g=1/2/3 errors are 9/32,9/32,2543/9216; the scalar product wins
+at one and ties at two. The three-block code loses to refined three/six-block
+controls. Public response payloads are 2/16/96 packed bytes, with parameters,
+program/runtime/framing and builder workspace separate. Three first occurs
+at k=536870912. Fifty-four conservative analytic bounds retain weak values:
+g=10^10 gives error <=0.265608205363, with first default k=2^(99999999999).
+Those enormous books are unbuilt; polynomial complexity does not imply
+portable speed, practical lengths or an observed finite gain.
+
+Independent direct-query matrices check 16843008 source/candidate distances
+and 768 final-builder choices. Six full small actor populations execute
+454848 final queries; forty constructed product/tail inputs execute 3552
+diagnostics. All 4096 tiny cover systems calibrate 307200 comparisons.
+Both original alphabet probes retain 150 inspected thresholds/1616 choices.
+Sixteen bindings preserve C72/C67/C34 and their original source chains.
+All **575 offline tests pass**, including nine new scientific checks.
+Repository validation reports PASS with 73 claims, 55 bibliography entries
+and 171 PDF hashes; paper assembly checks all 48 cited sources.
+Zero new model calls and natural episodes. External correctness/priority,
+useful finite near-limit coding, broader laws and natural-agent/model/token/
+cost benefit remain open. Research commands do not fill natural episode slots.
+
+**Earlier October 2 coordinated-tie milestone (C72):**
+
 The [coordinated tied-answer code](../research/COORDINATED_TIE_CODE_2026-10-02.md)
 now improves the implemented scalar family under the same uniform source/
 query law. Equal-loss constant choices coordinated across blocks have lower
@@ -686,12 +724,23 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 ## Not yet established
 
 - Novelty and external validation of the locally audited scaling argument, or a practically large composition penalty.
-- Exact finite joint-code optima and efficient encoders approaching the full curve. C68/C69/C71/C72 supply implemented codes, C72 improves C71 using coordinated ties and has a polynomial growing-group family still above C67, and C69 tightens the three-block bracket; C67 characterizes the uniform-source curve and C70 extends it to two-class source-independent query priors. Biased sources, adaptive queries and more general within-class laws remain outside these results.
+- Exact finite joint-code optima and codes with useful finite convergence near the full curve. C73 supplies a deterministic polynomial family reaching the C67 rate-two limit, with slow group growth, losing small controls and enormous conservative convergence bounds; C72 retains a stronger useful finite bound, and C69 tightens the three-block bracket. C67 characterizes the uniform-source curve and C70 extends it to two-class source-independent query priors. Biased sources, adaptive queries and more general within-class laws remain outside these results.
 - Natural-language compiler performance, learned retirement accuracy, or unrestricted closed-loop LLM-agent results. Live model work now also covers an imposed two-stage memory-writing pipeline; open-ended native-agent performance remains unestablished.
 - Cost or quality gains over native provider compaction.
 - The internal training objective, prompt, or algorithm of a proprietary compaction service.
 
 ## Next bounded tasks
+
+C73 resolves formal deterministic polynomial convergence at rate two.
+The next useful coding result needs a declared finite input/public-table/
+runtime envelope and a whole-population risk guarantee near C67, compared
+with C72 and the stronger C69 control at common lengths. Sharpen the
+conservative coverage/concentration bound or design a faster finite code;
+do not treat polynomial complexity, a better limit or source spot checks
+as practical performance. Preserve C73's losing small codes and enormous
+schedule onsets. External review of the constructive proof and its direct
+coding/coverage precedents is still open.
+
 
 The all-positive-slope comparison is proved in C67. Prepare external proof
 and priority review of the completion lemma, exact polynomial cover and

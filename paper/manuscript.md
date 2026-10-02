@@ -1,10 +1,10 @@
 # Repeated Context Compression with Delayed Task Dependencies
 
-Working draft — October 2, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an exact parametric unrestricted asymptotic curve and a tightly certified rate-two error, a two-class query-prior and timing extension, implemented polynomial hard-cap entropy codes with coordinated tied answers and finite bounds, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, a cross-record stress test with one permanent transport gap and a separately frozen continuation, a post-hoc offline decoder-compatibility correction, two workflow development comparisons, and a retrospective retained-evidence audit. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
+Working draft — October 2, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an exact parametric unrestricted asymptotic curve and a tightly certified rate-two error, a two-class query-prior and timing extension, implemented polynomial hard-cap entropy codes with coordinated tied answers and finite bounds, a deterministic polynomial family reaching the rate-two limit with slow finite convergence, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, a cross-record stress test with one permanent transport gap and a separately frozen continuation, a post-hoc offline decoder-compatibility correction, two workflow development comparisons, and a retrospective retained-evidence audit. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
 
 ## Abstract
 
-Long-running language-model agents must preserve information whose relevance may only become clear later. We study a finite model that separates memory capacity from the timing of task information. In a four-bit example, exhaustive computation gives optimal two-bit-then-one-bit chain error 9/32, while the isolated later bottleneck achieves 1/4. Three initial bits are necessary and sufficient to attain that later optimum. A locally audited independent-block extension gives a uniform positive error gap. Joint coding achieves two-block error 283/1024. Complementary completion and exact polynomial comparisons characterize the unrestricted asymptotic curve at every parent rate in this model. An exhaustive decoder certificate places the limiting error at two bits per block between 0.2618989799 and 0.2618989801; approaching the child optimum requires about 2.5488 bits per block, compared with three for exact finite attainment. Separately, an exact atomic-record reference shows that cheap recovery can dominate early inspection, and that improved retention need not lower completion cost. Initial Luna diagnostics motivated a fixed 1,536-request study of record retention under known future refresh rules. Of 1,533 valid responses, 1,422 attain the exact reference. In the 128 primary matched comparisons, prospective guidance yields 118 optimal selections versus 114 with generic guidance; mean normalized regret benefit is 0.02090, with descriptive 95% block-bootstrap interval [-0.02031, 0.06055]. This does not establish an improvement. The study measures isolated retention potential with an optimal later selector, not native compaction or full-agent performance. Mathematical novelty remains unresolved.
+Long-running language-model agents must preserve information whose relevance may only become clear later. We study a finite model that separates memory capacity from the timing of task information. In a four-bit example, exhaustive computation gives optimal two-bit-then-one-bit chain error 9/32, while the isolated later bottleneck achieves 1/4. Three initial bits are necessary and sufficient to attain that later optimum. A locally audited independent-block extension gives a uniform positive error gap. Joint coding achieves two-block error 283/1024. Complementary completion and exact polynomial comparisons characterize the unrestricted asymptotic curve at every parent rate in this model. An exhaustive decoder certificate places the limiting error at two bits per block between 0.2618989799 and 0.2618989801; approaching the child optimum requires about 2.5488 bits per block, compared with three for exact finite attainment. A deterministic polynomial code family converges to the rate-two optimum, while small-code losses and conservative input-size bounds leave useful finite convergence open. Separately, an exact atomic-record reference shows that cheap recovery can dominate early inspection, and that improved retention need not lower completion cost. Initial Luna diagnostics motivated a fixed 1,536-request study of record retention under known future refresh rules. Of 1,533 valid responses, 1,422 attain the exact reference. In the 128 primary matched comparisons, prospective guidance yields 118 optimal selections versus 114 with generic guidance; mean normalized regret benefit is 0.02090, with descriptive 95% block-bootstrap interval [-0.02031, 0.06055]. This does not establish an improvement. The study measures isolated retention potential with an optimal later selector, not native compaction or full-agent performance. Mathematical novelty remains unresolved.
 
 ## 1. Introduction
 
@@ -1245,9 +1245,81 @@ coding and time sharing are prior work. External correctness/priority, other
 laws, global quantizer/finite optima and natural-agent/model/token/cost benefit
 remain open; no new model call or natural episode is added. [C72]
 
+### 8.23 Deterministic polynomial convergence and its finite cost
+
+The [public distortion-cover construction](../research/DETERMINISTIC_NEAR_LIMIT_CODE_2026-10-02.md)
+supplies an implemented deterministic family whose actual error tends to
+C67 D_infinity(2), at exactly 2k parent bits and one child bit before J.
+The uniform iid source and independent uniform R/O/J contract remains.
+This is a constructive consequence of the characterized curve, applying
+established coverage and finite-alphabet source coding
+[@nemhauser1978greedy; @polyanskiywu2016coding]. Error-control families and
+greedy lossy coding have direct precedents [@smieja2015entropy]. [C73]
+
+For g blocks, all 16^g response words are candidates. For each integer
+S=0,...,12g, greedily select words covering the most remaining sources with
+loss <=S, ties by smallest packed word. The all-zero word occupies the
+first label; at most 4^g words are retained. Reassign every source to its
+nearest selected word and grade exact population risk. Choose the best
+public threshold and compare the scalar (0,1,14,15) product, which wins
+ties. Every selection precedes X; there is no free instance chooser. [C73]
+
+A competitor with ell words covering all but eta source mass implies
+greedy residual u_m<=eta+(1-1/ell)^m<=eta+exp(-m/ell): among its ell sets,
+one covers at least (u_t-eta)/ell of the remaining mass. Strict-slack
+excess-distortion coding gives ell<=ceil(2^(g*sigma)), sigma<2, with eta->0
+at any target above D_infinity(2). Use m=4^g-1. Then m/ell->infinity;
+nearest reassignment and population selection cannot worsen the target
+plus residual bound. C67's converse supplies the other inequality, proving
+E_g->D_infinity(2). The recurrence is elementary established coverage,
+not a new approximation theorem or finite book optimality. [C73]
+
+At length k, full groups use 2g-bit indices and each tail block uses the
+two-bit scalar control. All segments fit exactly 2k bits. The updater
+extracts the queried group's response coordinate and emits bit O; final
+prediction is Z using only Z/R/O/J. Public k/g/books precede X, and source,
+old parent, scratch/output lists/histograms/archive/environment/provider
+channels do not survive their boundary. Temporary computation is allowed
+within a stage; trusted actors are not untrusted-process isolation. [C73]
+
+For r=k%g, actual uniform-source code error is
+
+\[
+D_{\rm code}(k,g)=((k-r)E_g+r(9/32))/k.
+\]
+
+Set g=max(1,floor(bit_length(k)/10)). Exact public bit-set construction is
+bounded by poly(g)*1024^g; for g>=2, 1024^g<=2k. Public design and actors,
+including operations on the 2k-bit parent, therefore have polynomial bit
+complexity. Since g->infinity and r<g=o(k), the implemented family reaches
+C67's unchanged rate-two limit at all integer lengths. Formal polynomial
+convergence is supplied, with no linear-time or portable-speed claim. [C73]
+
+Finite evidence limits that result. The scalar product wins at g=1 and
+ties at g=2, giving 9/32. At g=3, the selected error is 2543/9216, above
+the refined three-block and C69 six-block controls. Public word payloads
+are 2/16/96 packed bytes; public parameters, program/runtime/framing and
+design workspace remain separate. Default g=3 first occurs at k=2^29,
+or 536,870,912 blocks. Fifty-four conservative rational mixture/Chebyshev/
+coverage bounds retain weak results. At g=10^10, the best checked bound
+is <=0.265608205363, with first default k=2^(99999999999); enormous groups
+are not built or physically scored. Those bounds neither estimate exact
+large risk nor show necessary blocklengths or practical performance. [C73]
+
+Independent routed matrices check 16,843,008 distances and all 768 final
+builder choices. Six complete small populations execute 454,848 queries;
+forty constructed product/tail inputs execute 3,552 diagnostics. All 4,096
+tiny cover systems calibrate 307,200 comparisons. Original eight/full
+response probes preserve 150 inspected thresholds and 1,616 checked
+choices. Sixteen bindings preserve C72/C67/C34. The full proof's bounded
+primary-source scope and unperformed large constructions remain explicit.
+External correctness/priority, useful finite near-limit codes, broader
+laws and natural-agent/model/token/cost benefit remain open. Zero new
+model calls or natural episodes are added. [C73]
+
 ## 9. Limitations and open results
 
-The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. Source-only model inference has been evaluated only on one inspected classifier; the static control covers three inspected programs and one constructed family without universal certification; an open-ended native-agent benchmark remains unperformed. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, exact finite optima and efficient codes approaching the characterized curves, rate-distortion characterizations beyond the uniform four-bit source and stated two-class source-independent query priors, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.
+The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. Source-only model inference has been evaluated only on one inspected classifier; the static control covers three inspected programs and one constructed family without universal certification; an open-ended native-agent benchmark remains unperformed. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, exact finite optima and codes with useful finite convergence near the characterized curves, rate-distortion characterizations beyond the uniform four-bit source and stated two-class source-independent query priors, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.
 
 ## 10. Reproducibility
 

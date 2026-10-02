@@ -22,7 +22,19 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
-Living draft v0.39 adds [coordinated tied-answer coding](../research/COORDINATED_TIE_CODE_2026-10-02.md),
+Living draft v0.40 adds the [deterministic distortion-cover family](../research/DETERMINISTIC_NEAR_LIMIT_CODE_2026-10-02.md),
+claim C73. A public polynomial builder and actors attain C67's actual limiting
+error at every integer input length, with exactly 2k parent bits/one child bit.
+This is an application of established greedy coverage and source coding.
+Formal convergence is supplied; useful finite convergence stays open:
+the small three-block code loses and checked conservative bounds use enormous
+groups. Fifty-four analytic bounds, 454848 full small actor queries, 3552
+constructed diagnostics and 16 bindings keep their scopes explicit.
+All 575 tests, repository validation and 48-source paper assembly pass.
+External correctness/priority and natural-agent/model/cost benefit remain
+open; zero new model calls or natural episodes.
+
+Earlier living draft v0.39 adds [coordinated tied-answer coding](../research/COORDINATED_TIE_CODE_2026-10-02.md),
 claim C72. Joint equal-loss constant choices reduce entropy; the compatible
 pair minimum has counts [121,85,25,25]/256. A fixed-eight code has error at
 most 27.080384% at k=12,288, below both C71 codes' lower bounds at the same

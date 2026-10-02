@@ -1,6 +1,34 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.39 — October 2, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.40 — October 2, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## A computable family reaches the optimal limit, slowly
+
+The [deterministic public code](../research/DETERMINISTIC_NEAR_LIMIT_CODE_2026-10-02.md)
+now converges to C67's 26.189898% optimum under the same two parent bits per
+block and one child bit before J. Its builder and actors have polynomial
+bit complexity in the full input length. Greedy distortion covers, exact
+population selection before X and fixed group labels make the coding
+existence constructive. Generic coverage and source coding are established
+[@nemhauser1978greedy; @polyanskiywu2016coding]; greedy lossy coding also has
+direct precedents [@smieja2015entropy]. [C73]
+
+Useful finite convergence remains open. The small three-block code has
+27.593316% error, above C69's 27.472579%. Under the polynomial schedule,
+three-block groups first occur at 536,870,912 blocks. One conservative bound
+below 26.560821% uses a group of ten billion blocks, first allowed at
+k=2^(99,999,999,999). Those large books were not built. Public response
+payload is 2/16/96 packed bytes for the supplied g=1/2/3 codes; public
+parameters, program/runtime/framing and construction workspace are separate.
+This resolves formal convergence while preserving the need for useful
+algorithms and external proof/priority review. [C73]
+
+Independent routed matrices check all 16,843,008 small distances and 768
+final-builder choices. Complete small actors execute 454,848 final queries;
+constructed product/tail inputs execute 3,552 diagnostics. Fifty-four
+conservative bounds retain weak results; two original probes preserve
+150 inspected thresholds. Sixteen bindings preserve upstream evidence.
+Zero new model calls or natural episodes; no agent/token/cost gain. [C73]
 
 ## Coordinating equally good answers uses less memory
 

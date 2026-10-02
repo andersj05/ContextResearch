@@ -1223,3 +1223,47 @@ sources. All 17 code/provenance bindings regenerate.
 Zero new model calls or natural episodes; provider allocations stay closed.
 External correctness/priority, efficient near-C67 codes, broader laws and
 natural-agent/model/token/credit/production benefit remain open.
+
+## October 2: supply deterministic formal convergence and expose its finite cost
+
+Continue from C72 commit d3fb3fb with a constructive rate-two question.
+Implement public greedy covers at every integer loss threshold over all
+sixteen response words per block. Reassign sources to nearest words, grade
+exact uniform-source risk and compare the existing scalar-product control
+before X. Do not give individual sources a free codebook selector. Full-group
+2g-bit labels and scalar-tail two-bit labels fit exactly 2k; only M and then
+one-bit Z cross the boundaries.
+
+Prove the actual group limit using the ordinary greedy partial-cover
+recurrence and strict-slack excess-distortion coding. Set public
+g=max(1,bit_length(k)//10): bit-set design costs poly(g)*1024^g, bounded by
+O(k*poly(log k)) at g>=2; actors and workspace are polynomial. This resolves
+formal deterministic convergence to C67 at every integer length, not useful
+finite convergence. Keep the conservative quantitative mixture/Chebyshev/
+coverage bound and all 54 inspected g/h cases. Large g=10^10 has bound
+<=0.265608205363 and first default k=2^(99999999999); no such book is built.
+Do not interpret polynomial complexity as practical speed or input sizes.
+
+The scalar product wins at g=1 and ties at g=2; three gives 2543/9216 and
+loses to both stronger finite three/six-block controls. Preserve eight/full
+alphabet probes and all 150 inspected thresholds/1616 choices. Independently
+check 16843008 routed distances and 768 final-builder choices, 454848 complete
+small actor queries, 3552 constructed product/tail diagnostics and 307200
+cover-recurrence comparisons on all 4096 tiny systems. Sixteen bindings
+preserve upstream C72/C67/C34; large proximity populations remain unexecuted.
+
+Read selected original Nemhauser/Wolsey/Fisher Section 4 passages with the
+greedy definition, Proposition 4.1/proof and Theorem 4.2 statement, printed
+pp. 276–281, plus verified publisher metadata. Reread existing Polyanskiy/Wu
+Chapter 24 Theorem 24.4/short proof and selected memoryless argument pp. 251–252.
+Read Śmieja/Tabor publisher-indexed Introduction/Section 3.1; direct retrieval
+failed, and the full Section 3.2 proof is unreviewed. Add two verified focused
+bibliography entries without upgrading inherited archive status. Generic
+greedy coverage, logarithmic blocking and source coding remain established.
+
+Claim C73; living draft v0.40. All 575 offline tests, repository validation
+with 73 claims/55 bibliography entries/171 PDF hashes and 48-source paper
+assembly pass. Zero new model calls or natural episodes. External correctness/
+priority, useful finite near-limit codes, broader laws and agent/model/token/
+cost benefit remain open. Do not populate untouched task slots from research
+commands or repeat closed classifier cases.

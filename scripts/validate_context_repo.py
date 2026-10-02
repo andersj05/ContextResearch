@@ -1000,6 +1000,21 @@ def main() -> int:
     counts["tie_coding_new_model_calls"] = regenerated_ties["new_model_calls"]
     counts["tie_coding_new_natural_episodes"] = regenerated_ties["new_natural_episodes"]
 
+    from experiments.dependency_memory.greedy_coding import certificate as greedy_coding
+    regenerated_greedy = greedy_coding.certificate()
+    if json.loads(greedy_coding.OUTPUT.read_text(encoding="utf-8")) != regenerated_greedy:
+        errors.append("Deterministic distortion-cover code or convergence ingredients changed")
+    counts["greedy_coding_small_distances"] = sum(r["all_source_candidate_distances_checked"] for r in regenerated_greedy["finite_design_checks"])
+    counts["greedy_coding_small_greedy_choices"] = sum(r["greedy_choices"] for r in regenerated_greedy["finite_design_checks"])
+    counts["greedy_coding_small_actor_queries"] = regenerated_greedy["small_physical_final_queries"]
+    counts["greedy_coding_constructed_queries"] = regenerated_greedy["constructed_diagnostic_queries"]
+    counts["greedy_coding_analytic_proximity_bounds"] = len(regenerated_greedy["analytic_proximity_bounds"])
+    counts["greedy_coding_proved_actual_limit"] = regenerated_greedy["family"]["proved_actual_limit"]
+    counts["greedy_coding_source_bindings"] = len(regenerated_greedy["source_sha256"])
+    counts["greedy_coding_large_books_built"] = regenerated_greedy["large_codebooks_built"]
+    counts["greedy_coding_new_model_calls"] = regenerated_greedy["new_model_calls"]
+    counts["greedy_coding_new_natural_episodes"] = regenerated_greedy["new_natural_episodes"]
+
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"

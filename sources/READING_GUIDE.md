@@ -1,5 +1,18 @@
 # Focused reading guide
 
+The [October 2 deterministic-code note](../research/DETERMINISTIC_NEAR_LIMIT_CODE_2026-10-02.md#7-what-was-executed-and-what-stays-open)
+adds bounded readings of Nemhauser/Wolsey/Fisher's original Section 4 greedy
+definition, Proposition 4.1/proof and Theorem 4.2 statement, selected printed
+pp. 276–281 (nemhauser1978greedy), plus verified publisher metadata.
+It rereads existing Polyanskiy/Wu Chapter 24 Theorem 24.4/short proof and
+selected following memoryless argument, printed pp. 251–252.
+Śmieja/Tabor's publisher-indexed Introduction/Section 3.1
+(smieja2015entropy) supplies a direct greedy-lossy-coding precedent.
+Direct HTML/PDF retrieval failed; indexed primary text was read, with
+Section 3.2's full proof unreviewed. No full-source review/replication or
+inherited archive-label upgrade follows; generic methods are prior work.
+
+
 The [October 2 coordinated-tie note](../research/COORDINATED_TIE_CODE_2026-10-02.md#6-what-was-executed-prior-work-and-remaining-scope)
 adds Cardinal/Fiorini/Joret's author manuscript, Introduction/Section 2,
 Theorem 1 with weighted extension and Lemma 2's statement, printed pp. 1–5

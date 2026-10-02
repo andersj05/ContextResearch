@@ -4,7 +4,19 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
-**October 2 coordinated tied-answer code:** [the construction and proof](research/COORDINATED_TIE_CODE_2026-10-02.md)
+**October 2 deterministic code reaches the limiting optimum:** [the construction and proof](research/DETERMINISTIC_NEAR_LIMIT_CODE_2026-10-02.md)
+give an implemented polynomial public builder and actors at exactly 2k parent
+bits and one child bit before J. The actual family tends to C67's unchanged
+26.189898% optimum at every integer input length. This is a constructive
+application of established greedy coverage/source coding, not a new generic
+algorithm. Useful finite convergence stays open: the small three-block code
+loses to C69, and one conservative bound below 26.560821% uses group size 10^10,
+which first occurs at k=2^(99,999,999,999) under the public schedule.
+Large codebooks were not built. Claim C73; 16 bindings, 454848 complete small
+actor queries and retained negative controls. Zero new model calls or natural
+episodes; external review/priority and practical-agent benefits remain open.
+
+**Earlier October 2 coordinated tied-answer code:** [the construction and proof](research/COORDINATED_TIE_CODE_2026-10-02.md)
 coordinate equally good constant responses across blocks. Their error stays
 5/16 while entropy falls; two-block compatible entropy is exactly minimized
 by counts [121,85,25,25]/256. A fixed eight-block arithmetic code has error
