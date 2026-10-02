@@ -2,6 +2,14 @@
 
 These are distinctions to verify and explain, not declarations of novelty. The detailed review is in the September 16 proposal and survey. The focused bibliography records verified titles and authors; outstanding final publication metadata are identified in its notes.
 
+The [loss-weighted finite note](../research/LOSS_WEIGHTED_OVERFLOW_2026-10-02.md)
+applies established Chernoff reasoning and ECVQ [@chou1989entropy].
+Its scoped contribution is a stronger finite certificate and checked public
+allocation for the existing delayed-query actors. All 384 failed quantizer
+starts remain preserved. Section III pp. 33–35 was read as a bounded primary
+comparison; no generic algorithm novelty, full review or global optimality
+is claimed.
+
 The [deterministic near-limit code](../research/DETERMINISTIC_NEAR_LIMIT_CODE_2026-10-02.md)
 applies established greedy coverage [@nemhauser1978greedy] and excess-distortion
 source coding [@polyanskiywu2016coding]. Greedy coding under error-control

@@ -1,5 +1,13 @@
 # Focused reading guide
 
+The [October 2 loss-weighted note](../research/LOSS_WEIGHTED_OVERFLOW_2026-10-02.md#5-preserved-failed-quantizer-search-and-prior-work)
+extends the existing Chou/Lookabaugh/Gray (1989) bounded reading to Section III,
+printed pp. 33–35, including the three alternating minimizations and Figure 3
+(chou1989entropy), read October 2. Earlier Introduction/Section II metadata
+remain unchanged. Established ECVQ motivates the preserved negative search;
+this is not a full-paper review, replication or inherited archive-status
+upgrade. No new bibliography entry is added.
+
 The [October 2 deterministic-code note](../research/DETERMINISTIC_NEAR_LIMIT_CODE_2026-10-02.md#7-what-was-executed-and-what-stays-open)
 adds bounded readings of Nemhauser/Wolsey/Fisher's original Section 4 greedy
 definition, Proposition 4.1/proof and Theorem 4.2 statement, selected printed

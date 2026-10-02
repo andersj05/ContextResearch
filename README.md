@@ -4,7 +4,19 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
-**October 2 deterministic code reaches the limiting optimum:** [the construction and proof](research/DETERMINISTIC_NEAR_LIMIT_CODE_2026-10-02.md)
+**October 2 stronger finite overflow certificates:** [the loss-weighted construction](research/LOSS_WEIGHTED_OVERFLOW_2026-10-02.md)
+uses the unchanged C72 actors with a new public allocation. Error is at most
+27.450867% at 768 blocks, below C69's exact 27.472579%, and at most 27.064671%
+at 12,288 blocks. Parent capacity stays exactly 2k bits including the flag,
+then one child bit before J. The same 1,288 public table bytes suffice.
+Exact convex search minimizes five outward bounds over every integer
+allocation; actual-risk optimality is open. Three smaller checked lengths
+still lose to C69. All 384 unsuccessful ECVQ/fixed-response starts survive
+with exact population-map grading. Claim C74; zero new model calls or natural
+episodes. All 583 offline tests, repository validation and paper assembly
+pass. Useful near-C67 coding and practical-agent benefit remain open.
+
+**Earlier October 2 deterministic code reaches the limiting optimum:** [the construction and proof](research/DETERMINISTIC_NEAR_LIMIT_CODE_2026-10-02.md)
 give an implemented polynomial public builder and actors at exactly 2k parent
 bits and one child bit before J. The actual family tends to C67's unchanged
 26.189898% optimum at every integer input length. This is a constructive

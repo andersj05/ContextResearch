@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-02",
+  "status": "Offline post-hoc mathematical design, not independent LLM trials.",
+  "question": "Can a small entropy-priced group quantizer improve the charged hard-cap finite code?",
+  "initial_groups": [3],
+  "candidate_alphabets": [8, 16],
+  "slopes": [0.3, 0.35, 0.4, 0.45, 0.5, 0.6, 0.75, 1.0],
+  "starts_per_slope": 8,
+  "maximum_updates_per_start": 60,
+  "conditional_extension": "If three blocks do not give the finite target, examine four blocks with the eight-response alphabet; preserve all earlier failures.",
+  "target_comparison_lengths": [384, 768, 1536, 3072, 6144, 12288],
+  "declared_public_table_envelope_bytes": 262144,
+  "runtime_scope": "Local measured construction/actor timings; no portable runtime or production claim.",
+  "controls": ["C72 fixed eight, with the same strengthened tail calculation if needed", "C69 repeated six", "C71 scalar"],
+  "contract": "Uniform iid four-bit blocks; parent before R/O in exactly 2*k bits including fallback flag; child one bit before J; all public designs precede X; final only Z/R/O/J.",
+  "forbidden_after_boundary": ["source", "parent after child", "scratch", "instance histogram", "instance codebook chooser", "archive", "environment", "provider history"],
+  "numeric_proof": "Floats select exploratory candidates only; selected maps/counts/errors independently grade exactly and entropy/tail bounds round outward.",
+  "new_model_calls": 0,
+  "new_natural_episodes": 0
+}

@@ -1267,3 +1267,46 @@ assembly pass. Zero new model calls or natural episodes. External correctness/
 priority, useful finite near-limit codes, broader laws and agent/model/token/
 cost benefit remain open. Do not populate untouched task slots from research
 commands or repeat closed classifier cases.
+
+## October 2: weight finite overflow by loss and optimize public allocation
+
+Continue from C73 commit 2080019 under the existing uniform bit contract.
+Preserve all 192 fixed-response and 192 centroid-updating starts; none beats
+the stronger C72 entropy/distortion chord. Keep original gzip-restored JSON
+bytes, native code, both protocols and upstream warm-start/result hashes.
+Independently grade 11403264 source assignments and 14706 rate-two
+interpolations. Established ECVQ Section III pp. 33–35 is read as a bounded
+primary comparison; no generic quantizer novelty or global optimum follows.
+
+Use nonnegative conditional fallback excess in the exponential-moment bound.
+Exact forced-status cell sums and outward roots strengthen finite guarantees.
+The public allocation objective is discrete convex under checked sufficient
+conditions. Minimize each of five outward bounds over every integer a with
+exact neighbor-sign checks, then choose the best clipped bound. This
+optimizes the certificate, not actual error or every exponent. Retain forty
+complete allocation minima and forty old margin-grid comparisons.
+
+At k=768, a=59 has error <=8578395865937/31250000000000, below exact C69.
+At k=12288, a=1030 has error <=270646703203513/10^15. Seven k>=192 selected
+codes have upper bounds below the named previously selected C72 codes'
+base errors; no comparison against every old C72 allocation follows.
+Three smaller lengths still provably lose to C69, and k=96's allocation
+is unchanged. Original arithmetic actors and 1288 public table bytes stay
+inside the declared 262144-byte envelope; only a changes before X.
+Exactly 2k flagged parent bits and one child before J remain charged.
+
+Thirteen complete small populations execute 915840 final queries; nine
+constructed larger inputs execute 540 diagnostics. Preserve separate local
+wall/process timing samples: cold public planning at k=12288 takes 31.651
+seconds wall; warm encodes take 0.022–0.044 seconds on three inputs.
+Single samples do not establish portable speed or population latency.
+Twenty-nine bindings preserve prior sources/results. New selector's actual
+limiting risk is unproved; C72/C73 original family limits remain intact.
+
+Claim C74; living draft v0.41. All 583 tests pass, including eight new
+scientific checks; repository validation reports PASS with 74 claims,
+55 bibliography entries, 171 PDF hashes and 195 immutable import hashes.
+Paper assembly checks all 48 cited sources.
+Zero new model calls or natural episodes; closed provider allocations and
+untouched task slots remain unchanged. External correctness/priority,
+useful near-C67 codes, broader laws and agent/model/token/cost benefit open.

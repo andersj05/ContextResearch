@@ -22,7 +22,21 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
-Living draft v0.40 adds the [deterministic distortion-cover family](../research/DETERMINISTIC_NEAR_LIMIT_CODE_2026-10-02.md),
+Living draft v0.41 adds [loss-weighted overflow and public allocations](../research/LOSS_WEIGHTED_OVERFLOW_2026-10-02.md),
+claim C74. The same actors/tables have error <=27.450867% at k=768 and
+<=27.064671% at k=12288, below repeated C69. Seven checked codes improve
+the named prior C72 codes using upper/lower comparisons; three smaller
+codes still lose to C69. Exact convex search minimizes five outward
+bounds over all integer allocations, not actual code risk. All 384
+unsuccessful quantizer starts and 29 bindings remain preserved. Public
+table bytes stay 1288; local timing and analytic population guarantees
+have distinct scopes. All 583 tests pass, repository validation reports PASS with 74 claims/
+55 bibliography entries/171 PDF hashes/195 immutable imports, and paper
+assembly checks all 48 cited sources. New selector
+limit, external correctness/priority, near-C67 codes and agent benefit
+remain open; zero new model calls or natural episodes.
+
+Earlier living draft v0.40 adds the [deterministic distortion-cover family](../research/DETERMINISTIC_NEAR_LIMIT_CODE_2026-10-02.md),
 claim C73. A public polynomial builder and actors attain C67's actual limiting
 error at every integer input length, with exactly 2k parent bits/one child bit.
 This is an application of established greedy coverage and source coding.

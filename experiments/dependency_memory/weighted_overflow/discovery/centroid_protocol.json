@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-02",
+  "type": "Offline post-hoc mathematical design extension; no independent model trials",
+  "trigger": "All 192 fixed-response starts failed to improve the fixed-eight C72 limiting risk",
+  "groups": [3, 4],
+  "slopes": [0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.6, 0.75, 1.0, 1.5],
+  "starts_per_slope": 8,
+  "maximum_updates_per_start": 80,
+  "centroid_rule": "For each cell, coordinate and omission, choose one iff twice the sum of source ones outside that omission exceeds three times cell mass; zero on ties",
+  "seeds": ["C69 three-block book; its product with the scalar book for four blocks", "constant words, public integer priority", "random 32", "random 64", "random 128", "random 256", "random 512", "random 1024"],
+  "rng": "xorshift32; state 0x9e3779b9 + seed*7919; distinct initial words",
+  "duplicate_centroids": "Merge into smallest surviving index; empty cells stay inactive",
+  "scientific_contract": "Original protocol.json remains unchanged; whole-population exact map/loss/count checks follow float discovery",
+  "public_table_limit_bytes": 262144,
+  "new_model_calls": 0,
+  "new_natural_episodes": 0
+}

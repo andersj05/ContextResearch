@@ -4,6 +4,48 @@ Updated: October 2, 2026. This document is the current handoff; older scope docu
 
 ## Objective
 
+The [loss-weighted overflow construction](../research/LOSS_WEIGHTED_OVERFLOW_2026-10-02.md)
+improves the named prior C72 finite allocations using the same arithmetic
+actors and public tables. Claim C74; living draft v0.41. At k=768 error is
+at most 8578395865937/31250000000000, below C69's exact 2304567/8388608.
+At k=12288 it is at most 270646703203513/10^15. Seven checked k>=192 codes
+have upper bounds below the named prior C72 codes' base-error lower bounds.
+The k=96 allocation is unchanged. Three smaller selected codes still
+provably lose to C69; no superiority over every old allocation is claimed.
+
+The bound weights length overflow by conditional excess loss. Exact cell
+weights and outward integer roots give a discrete convex function in the
+public oracle count. Every integer count is considered through exact
+binary search for five fixed exponents; this optimizes a certificate,
+not actual risk, every exponent or global finite codebooks. Forty complete
+allocation minima and forty old-margin calculations retain all comparisons.
+Parent capacity remains exactly 2k bits including one flag, then one
+child bit before J, final only Z/R/O/J. Fixed-eight public payload remains
+1288 packed bytes inside the declared 262144-byte envelope; public
+parameters/program/runtime/framing/workspace are separate.
+
+All 384 fixed-response/centroid starts fail the stronger C72 entropy/
+distortion chord comparison. Original compressed JSON and native programs
+are preserved. Independently grade 11403264 source assignments and 14706
+rate-two interpolation pairs with outward logs; discovery maps are unused
+by actors. Thirteen complete small actor populations execute 915840 final
+queries; nine larger constructed inputs execute 540 diagnostics. Twenty-nine
+bindings preserve C69/C71/C72/C73. Single local timing samples separate cold
+planning (31.651 seconds at k=12288) from warm actors; no portable-speed claim.
+Existing Chou/Lookabaugh/Gray Section III pp. 33–35 was read as a bounded
+ECVQ comparison, not generic method novelty or full-source review.
+
+All **583 offline tests pass**, including eight new scientific checks.
+Repository validation reports PASS with 74 claims, 55 bibliography entries,
+171 PDF hashes and 195 immutable import hashes; paper assembly checks
+all 48 cited sources. Zero new model calls or natural
+episodes. The new finite selector's actual limiting risk is unproved;
+C72/C73's original family limits and evidence remain unchanged. External
+correctness/priority, useful finite coding near C67, broader laws and
+natural-agent/model/token/cost benefit remain open.
+
+**Earlier October 2 deterministic-code milestone (C73):**
+
 The [deterministic distortion-cover family](../research/DETERMINISTIC_NEAR_LIMIT_CODE_2026-10-02.md)
 now has actual limiting error C67 D_infinity(2), within the unchanged
 (0.2618989799,0.2618989801) enclosure. Every public design and actor is
@@ -730,6 +772,16 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 - The internal training objective, prompt, or algorithm of a proprietary compaction service.
 
 ## Next bounded tasks
+
+C74 supplies a declared finite envelope, a sharper loss-weighted certificate
+and new public allocations. Its k=768/12288 bounds are 27.450867%/27.064671%;
+all 384 smaller group-quantizer starts lose the stronger entropy/distortion
+comparison. The next code should improve its finite error materially toward
+C67 under the same table/runtime envelope, or provide a stronger finite
+converse explaining the remaining cost. The public planner's local 31.651
+seconds at k=12288 also leaves room for faster certified arithmetic. Preserve
+the three smaller-length losses and all negative search maps. Do not repeat
+closed model allocations or fill natural slots with research commands.
 
 C73 resolves formal deterministic polynomial convergence at rate two.
 The next useful coding result needs a declared finite input/public-table/

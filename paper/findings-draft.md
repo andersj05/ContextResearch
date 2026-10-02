@@ -1,6 +1,36 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.40 — October 2, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.41 — October 2, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## Finite overflow costs less when weighted by the loss it adds
+
+The [new finite certificate](../research/LOSS_WEIGHTED_OVERFLOW_2026-10-02.md)
+uses the same C72 arithmetic actors and 1,288 public table bytes with a
+new public oracle count. Error is at most 27.450867% at 768 blocks,
+below the six-block control's exact 27.472579%, and at most 27.064671%
+at 12,288 blocks. Seven new checked codes have upper bounds below the
+named prior C72 codes' base-error lower bounds. Three smaller codes
+still provably lose to C69; the 96-block allocation is unchanged. [C74]
+
+Weighting overflow by its excess error gives a stronger certificate
+than bounding its probability alone. Exact cell sums and outward roots
+produce a discrete convex objective in the public allocation. The selector
+minimizes each of five bounds over every integer count, preserving forty
+minima and forty old margin-grid comparisons. This is certificate
+optimization, with actual-risk/global optimality and the new selector's
+limiting risk open. Only the flagged 2k-bit parent and then one-bit child
+cross boundaries; no source/histogram/archive reread is supplied. [C74]
+
+All 384 inspected fixed-response/centroid starts failed the stronger
+C72 entropy/distortion comparison. They retain original bytes and exact
+grading of 11,403,264 source assignments and 14,706 interpolations.
+ECVQ is established [@chou1989entropy], with bounded Section III primary
+reading added. Complete small actors execute 915,840 queries; larger
+constructed inputs execute 540 diagnostics. Local cold planning at
+12,288 blocks took 31.651 seconds, while three warm encodes took
+0.022–0.044 seconds. These are single local samples. Twenty-nine bindings,
+zero model calls or natural episodes and unproved practical-agent benefits
+keep the finite bit-model scope explicit. [C74]
 
 ## A computable family reaches the optimal limit, slowly
 

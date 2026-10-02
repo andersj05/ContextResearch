@@ -1,0 +1,72 @@
+{
+  "allocation_extension": "After the weighted-margin probe, exact discrete convex search replaces the restricted margin grid; it is a public bound optimum only, not an actual-risk optimum.",
+  "centroid_clock": "Recorded C runtime clock is platform dependent and is not a portable scientific runtime result.",
+  "compile_command": "clang -O3 -std=c99 probe.c -o probe.exe; same flags for centroid.c",
+  "compiler_version": "clang version 19.1.0",
+  "console_provenance": "Original terminal outputs are in the chat; separate complete original console files were not saved.",
+  "date": "2026-10-02",
+  "exploratory_assignment_objectives": "Float loss + slope*entropy. Exact integer maps/loss/counts independently checked later.",
+  "file_sha256": {
+    "analyse.py": "f673f5ede39e3216dfc4fb4aaaf15a018ecdb4c8c887383c5406273e8881f183",
+    "base.h": "72380869eeca3ed9e0a4f113f9c34bf59d30fabd5d8bf5af4e1b7b28937c70bd",
+    "centroid.c": "42e7350ae19276957816e0db6bf33602ef454ae72bf2cd0f7b0171fdfa987ef9",
+    "centroid_four.json.gz": "573108cb7c5c320ce2db1a064e09bca88ffd940c7794ada6feebe848d3843d9d",
+    "centroid_protocol.json": "cbb8dea104f6a4b0e02289ca3fe267998f6ed52cc8894585eb5d7f39c657ea30",
+    "centroid_three.json.gz": "d323bfe388b246790d491e6d2153f84e2994839bb5cba1de6aef2a43dc5cdd5a",
+    "four_eight.json.gz": "5eb7425e947a52fe623c1dfade7caf0e4b05f4afec197debcac99ff6c65b1e83",
+    "pairs.py": "82c16d9777a49e013990f0c73b75eba6f77483180dc600ce004c429868aaa84e",
+    "prepare.py": "679a20eb18a8507f73232acb01ea5a870e4f2f27ef9bf85a28ea92951170e20c",
+    "probe.c": "016d5925a4e3303465d5919f2dca36a9fe2c541d6179942698062e68e2e05da2",
+    "protocol.json": "a94e26e1232e5347f3f17495e6393cc4b8de66ad3ddca7b5bcad6bb9f2c35466",
+    "three_all.json.gz": "d2d829252742e3d1d5f960d04736c4b212b40fd7a16dd10a8ca7432638e76335",
+    "three_eight.json.gz": "5c9f033f565573e0f81653c078adbf1da981dacbea82893676e706e93447c71e",
+    "weighted_probe.json": "e812fbf4aaf1a1e595fd640e7361305ea592039fcfb05f8c729f871810dd784c",
+    "weighted_probe.py": "d0c2961864afacb26a617ba50ef48634154152997160ec35b1633ba817688573"
+  },
+  "new_model_calls": 0,
+  "new_natural_episodes": 0,
+  "raw_records": {
+    "centroid_four.json": {
+      "bytes": 31975652,
+      "g": 4,
+      "sha256": "2673bc132361311cbe7914197f15d406163b38f9188f37b4adf5d8cecd253389",
+      "stable_starts": 96,
+      "starts": 96
+    },
+    "centroid_three.json": {
+      "bytes": 1668018,
+      "g": 3,
+      "sha256": "bb3efa8eb48d633aaa39bcbdb34bebd97b6e6bc747804b9b469957a1170fc9b2",
+      "stable_starts": 96,
+      "starts": 96
+    },
+    "four_eight.json": {
+      "bytes": 22664272,
+      "g": 4,
+      "sha256": "43805f2b4106474386124d308f952aec01d4039d6b688dc6a4b19176532183dc",
+      "stable_starts": 64,
+      "starts": 64
+    },
+    "three_all.json": {
+      "bytes": 1164928,
+      "g": 3,
+      "sha256": "832334f543ec3aab6b5a80001f6b364d2514b612fd30b05dde0c0f5fa8ee743a",
+      "stable_starts": 64,
+      "starts": 64
+    },
+    "three_eight.json": {
+      "bytes": 1122097,
+      "g": 3,
+      "sha256": "0d6546b3ef860ff17246bf61aa687ae80e9dc12609a4198607112fc5f8befac3",
+      "stable_starts": 64,
+      "starts": 64
+    }
+  },
+  "status": "Post-hoc offline mathematical discovery, not independent trials",
+  "upstream_sha256": {
+    "experiments/dependency_memory/conditional_coding/codec.py": "d7d1817b5c183fdc116fcb4160d7099f76b49da07727bc75a5978354e3feaa41",
+    "experiments/dependency_memory/results/conditional_six_block_2026-10-02.json": "19e83d9b81fb8f0f8475ab6541087465dd9eb7a237fb07f1cbe777ddecd3be51",
+    "experiments/dependency_memory/results/greedy_coding_2026-10-02.json": "7309fff6234015dd152c93445e6d0ff03c178ba8fec7152ab1eb27001c8272ee",
+    "experiments/dependency_memory/results/tie_coding_2026-10-02.json": "3134e7a4155342de4cc93eab282cc19de8e903d3b68306b63c48440a9e51dc59"
+  }
+}

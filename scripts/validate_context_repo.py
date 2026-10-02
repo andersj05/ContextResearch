@@ -1015,6 +1015,26 @@ def main() -> int:
     counts["greedy_coding_new_model_calls"] = regenerated_greedy["new_model_calls"]
     counts["greedy_coding_new_natural_episodes"] = regenerated_greedy["new_natural_episodes"]
 
+    from experiments.dependency_memory.weighted_overflow import certificate as weighted_overflow
+    regenerated_weighted = weighted_overflow.certificate()
+    if json.loads(weighted_overflow.OUTPUT.read_text(encoding="utf-8")) != regenerated_weighted:
+        errors.append("Loss-weighted overflow, finite allocations or retained quantizer controls changed")
+    counts["weighted_overflow_discovery_starts"] = regenerated_weighted["discovery"]["starts_independently_graded"]
+    counts["weighted_overflow_source_assignments"] = regenerated_weighted["discovery"]["uniform_group_sources_graded"]
+    counts["weighted_overflow_interpolation_pairs"] = regenerated_weighted["discovery"]["interpolation_pairs_lower_bounded"]
+    counts["weighted_overflow_old_margin_plans"] = len(regenerated_weighted["forty_old_margin_plans_with_new_bounds"])
+    counts["weighted_overflow_full_allocation_minima"] = len(regenerated_weighted["forty_full_allocation_bound_minima"])
+    counts["weighted_overflow_small_actor_queries"] = regenerated_weighted["small_physical_final_queries"]
+    counts["weighted_overflow_large_diagnostic_queries"] = regenerated_weighted["large_diagnostic_queries"]
+    counts["weighted_overflow_at_768"] = regenerated_weighted["selected_finite_codes"][3]["error_upper"]
+    counts["weighted_overflow_at_12288"] = regenerated_weighted["selected_finite_codes"][-1]["error_upper"]
+    counts["weighted_overflow_public_payload_bytes"] = regenerated_weighted["deployed_fixed_eight_table_bytes"]
+    counts["weighted_overflow_source_bindings"] = len(regenerated_weighted["source_sha256"])
+    counts["weighted_overflow_local_actor_samples"] = len(regenerated_weighted["local_timing_samples"]["constructed_actors"])
+    counts["weighted_overflow_large_population_enumerated"] = regenerated_weighted["large_uniform_source_populations_enumerated"]
+    counts["weighted_overflow_new_model_calls"] = regenerated_weighted["new_model_calls"]
+    counts["weighted_overflow_new_natural_episodes"] = regenerated_weighted["new_natural_episodes"]
+
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"

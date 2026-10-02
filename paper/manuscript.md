@@ -1,6 +1,6 @@
 # Repeated Context Compression with Delayed Task Dependencies
 
-Working draft — October 2, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an exact parametric unrestricted asymptotic curve and a tightly certified rate-two error, a two-class query-prior and timing extension, implemented polynomial hard-cap entropy codes with coordinated tied answers and finite bounds, a deterministic polynomial family reaching the rate-two limit with slow finite convergence, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, a cross-record stress test with one permanent transport gap and a separately frozen continuation, a post-hoc offline decoder-compatibility correction, two workflow development comparisons, and a retrospective retained-evidence audit. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
+Working draft — October 2, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an exact parametric unrestricted asymptotic curve and a tightly certified rate-two error, a two-class query-prior and timing extension, implemented polynomial hard-cap entropy codes with coordinated tied answers and finite bounds, a deterministic polynomial family reaching the rate-two limit with slow finite convergence, loss-weighted finite overflow bounds and public allocation search, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, a cross-record stress test with one permanent transport gap and a separately frozen continuation, a post-hoc offline decoder-compatibility correction, two workflow development comparisons, and a retrospective retained-evidence audit. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
 
 ## Abstract
 
@@ -1316,6 +1316,66 @@ primary-source scope and unperformed large constructions remain explicit.
 External correctness/priority, useful finite near-limit codes, broader
 laws and natural-agent/model/token/cost benefit remain open. Zero new
 model calls or natural episodes are added. [C73]
+
+### 8.24 Loss-weighted overflow and finite allocations
+
+The [loss-weighted certificate](../research/LOSS_WEIGHTED_OVERFLOW_2026-10-02.md)
+improves finite behavior by changing the public allocation while reusing
+the original C72 actors and 1,288 packed table bytes. At k=768, error is at
+most 8578395865937/31250000000000, below C69's exact 2304567/8388608; at
+k=12288 it is at most 270646703203513/10^15. Seven new checked k>=192 codes
+have upper bounds below the named previously selected C72 codes' base
+errors. The three smaller checked codes still lose to C69, and the
+k=96 allocation is unchanged. These are actual comparisons with named
+controls, without a claim of superiority over every old allocation. [C74]
+
+For independent source segments, I_i=-log2 p_i and delta_i is the
+nonnegative conditional loss saved over a fixed public fallback. Actual
+fallback is contained in B={sum I_i>2k-1}; the original midpoint spacing
+and charged flag remain. Exponential moments give
+E[sum_i(g_i/k)delta_i 1_B] <=
+2^(-t(2k-1))*sum_i(g_i/k)W_i*product_{j!=i}M_j,
+where M_i=E[p_i^(-t)] and W_i=E[delta_i p_i^(-t)].
+This is established Chernoff reasoning with a loss weight; C71 already
+used weighted scalar binomial tails. Exact coordinated-cell excess sums
+and outward integer roots extend the calculation here. [C74]
+
+For each of five t=1/s, s=8/16/32/64/128, the outward error objective is
+5/16-a/(16n)+A*B^a*(u+a*v). All supported group sizes independently
+satisfy B>1,u>=0,v>=0, so forward differences increase. Exact binary search
+finds the smallest unrounded bound minimum over every integer a=0,...,n;
+the public selector chooses among the five clipped minima. Forty minima
+and forty original margin-grid calculations are retained. This optimizes
+the declared certificates, not actual risk, every exponent or finite
+codebook. Its actual asymptotic limit is unproved. The unchanged C72/C73
+family limits retain their original public schedules. [C74]
+
+All 384 inspected fixed-response/centroid starts fail the stronger C72
+entropy/distortion comparison. Original compressed JSON, protocols and
+native programs remain; 11,403,264 source assignments and 14,706 rate-two
+interpolations receive exact/outward grading. Every non-oracle point lies
+above the C72 fixed-eight/oracle chord. The discovered maps are unused by
+actors. ECVQ is established [@chou1989entropy]; bounded Section III primary
+reading supplies the alternating assignment/probability/centroid comparison.
+No global quantizer optimum or negative result for larger groups follows. [C74]
+
+Parent capacity stays exactly 2k bits including the flag, then one child
+bit before J; final input remains Z/R/O/J. Public n/g/a precede X, while
+source, parent after child, workspace, histograms, archive, environment and
+provider history do not cross boundaries. A declared 262144-byte public
+envelope contains the same 1288-byte table payload; public parameters,
+program/runtime/framing and workspace remain separate. Thirteen complete
+small populations execute 915840 final queries; nine larger constructed
+inputs execute 540 diagnostics. Larger population risks are conservative
+analytic bounds, not source enumeration or exact average errors. [C74]
+
+Twenty-nine source bindings preserve prior evidence. Single Python Windows
+timing samples distinguish cold public planning (31.651 seconds at k=12288)
+from warm encodes (0.022–0.044 seconds on three constructed inputs).
+They do not establish population latency or portable speed. External
+correctness/priority, useful coding near C67 and practical-agent/model/token/
+provider-cost benefits remain open. Zero new model calls or natural episodes.
+[C74]
 
 ## 9. Limitations and open results
 

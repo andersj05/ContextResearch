@@ -1,0 +1,221 @@
+{
+  "constructed_actors": [
+    {
+      "a": 28,
+      "constructed_input_sha256": "a1a4f5721c1c4610af7f71078f3a68c330536d679803b0e0507ee8dc10c5dfca",
+      "encode": {
+        "process_cpu_ns": 0,
+        "wall_ns": 470600
+      },
+      "fallback": false,
+      "family": "zeros",
+      "k": 384,
+      "parent_bit_length": 768,
+      "predict": {
+        "process_cpu_ns": 0,
+        "wall_ns": 4500
+      },
+      "update_last_block": {
+        "process_cpu_ns": 0,
+        "wall_ns": 204700
+      }
+    },
+    {
+      "a": 28,
+      "constructed_input_sha256": "8f0604eaf7b1cdd19281b6d079ebed28b9ce04559228b6c7d0217eb1b27855d1",
+      "encode": {
+        "process_cpu_ns": 0,
+        "wall_ns": 563800
+      },
+      "fallback": false,
+      "family": "cycle",
+      "k": 384,
+      "parent_bit_length": 768,
+      "predict": {
+        "process_cpu_ns": 0,
+        "wall_ns": 3000
+      },
+      "update_last_block": {
+        "process_cpu_ns": 0,
+        "wall_ns": 665400
+      }
+    },
+    {
+      "a": 28,
+      "constructed_input_sha256": "29459b9a0d39eda97d36014a4c0d76f3fb7fcffcb73a5ab45d36add99efa7ae7",
+      "encode": {
+        "process_cpu_ns": 0,
+        "wall_ns": 670500
+      },
+      "fallback": true,
+      "family": "balanced",
+      "k": 384,
+      "parent_bit_length": 0,
+      "predict": {
+        "process_cpu_ns": 0,
+        "wall_ns": 2500
+      },
+      "update_last_block": {
+        "process_cpu_ns": 0,
+        "wall_ns": 6200
+      }
+    },
+    {
+      "a": 59,
+      "constructed_input_sha256": "ef115a0e0c15cdc41958ca46b5b14b456115f4baec5e3ca68599d2a8f435e3b8",
+      "encode": {
+        "process_cpu_ns": 0,
+        "wall_ns": 902700
+      },
+      "fallback": false,
+      "family": "zeros",
+      "k": 768,
+      "parent_bit_length": 1536,
+      "predict": {
+        "process_cpu_ns": 0,
+        "wall_ns": 3100
+      },
+      "update_last_block": {
+        "process_cpu_ns": 0,
+        "wall_ns": 547200
+      }
+    },
+    {
+      "a": 59,
+      "constructed_input_sha256": "7f5da38c28418a24e894bfec49f879351f68779c05212d2af8d5d22900ea96c9",
+      "encode": {
+        "process_cpu_ns": 0,
+        "wall_ns": 1457100
+      },
+      "fallback": false,
+      "family": "cycle",
+      "k": 768,
+      "parent_bit_length": 1536,
+      "predict": {
+        "process_cpu_ns": 0,
+        "wall_ns": 2800
+      },
+      "update_last_block": {
+        "process_cpu_ns": 0,
+        "wall_ns": 2051300
+      }
+    },
+    {
+      "a": 59,
+      "constructed_input_sha256": "506556fa77bbc1291afffa9bb6fbb03af0630664f166c8140072313440be2f1a",
+      "encode": {
+        "process_cpu_ns": 0,
+        "wall_ns": 1009200
+      },
+      "fallback": true,
+      "family": "balanced",
+      "k": 768,
+      "parent_bit_length": 0,
+      "predict": {
+        "process_cpu_ns": 0,
+        "wall_ns": 1800
+      },
+      "update_last_block": {
+        "process_cpu_ns": 0,
+        "wall_ns": 4400
+      }
+    },
+    {
+      "a": 1030,
+      "constructed_input_sha256": "f3cc103136423a57975750907ebc1d367e2985ac6338976d4d5a439f50323f4a",
+      "encode": {
+        "process_cpu_ns": 15625000,
+        "wall_ns": 22044000
+      },
+      "fallback": false,
+      "family": "zeros",
+      "k": 12288,
+      "parent_bit_length": 24576,
+      "predict": {
+        "process_cpu_ns": 0,
+        "wall_ns": 5300
+      },
+      "update_last_block": {
+        "process_cpu_ns": 78125000,
+        "wall_ns": 70337600
+      }
+    },
+    {
+      "a": 1030,
+      "constructed_input_sha256": "69244510eaf0612d98d9597e578b81081f36eda7114651eb9df9b912dbbc161f",
+      "encode": {
+        "process_cpu_ns": 46875000,
+        "wall_ns": 43336800
+      },
+      "fallback": false,
+      "family": "cycle",
+      "k": 12288,
+      "parent_bit_length": 24576,
+      "predict": {
+        "process_cpu_ns": 0,
+        "wall_ns": 6000
+      },
+      "update_last_block": {
+        "process_cpu_ns": 312500000,
+        "wall_ns": 319693800
+      }
+    },
+    {
+      "a": 1030,
+      "constructed_input_sha256": "06f4a8b0eed80ab7a747a55c62991be9b365c57e3eaf4d3d6474ad7cf0994b99",
+      "encode": {
+        "process_cpu_ns": 46875000,
+        "wall_ns": 35199100
+      },
+      "fallback": true,
+      "family": "balanced",
+      "k": 12288,
+      "parent_bit_length": 0,
+      "predict": {
+        "process_cpu_ns": 0,
+        "wall_ns": 3300
+      },
+      "update_last_block": {
+        "process_cpu_ns": 0,
+        "wall_ns": 12700
+      }
+    }
+  ],
+  "date": "2026-10-02",
+  "planning": [
+    {
+      "a": 28,
+      "degree": 8,
+      "k": 384,
+      "process_cpu_ns": 281250000,
+      "wall_ns": 293428100
+    },
+    {
+      "a": 59,
+      "degree": 8,
+      "k": 768,
+      "process_cpu_ns": 390625000,
+      "wall_ns": 392382300
+    },
+    {
+      "a": 1030,
+      "degree": 16,
+      "k": 12288,
+      "process_cpu_ns": 30984375000,
+      "wall_ns": 31650738000
+    }
+  ],
+  "platform": "Windows-11-10.0.26200-SP0",
+  "public_plan_cache": "All relevant public-only caches cleared before each length; plans then shared by that length actors",
+  "python_version": "3.14.2",
+  "repeats_per_input": 1,
+  "scope": "Single local samples of cold public planning and warm actors, not population latency, portable speed, LLM/model calls or token/credit accounting.",
+  "source_sha256": {
+    "experiments/dependency_memory/tie_coding/bounds.py": "62c433e04d28066a403dd4236b856e00e5823180b8f94377f5777a1e5350cc9c",
+    "experiments/dependency_memory/tie_coding/codec.py": "9b0d290a98360fc9d90da16f5177d9c4a4b3d2d1a49ecdc3d4e8c396f70b1c52",
+    "experiments/dependency_memory/tie_coding/design.py": "c6670465897fdc71e32f7ac4fad5b36c6dbcd27628a6e6c7c4f91a1d7060cdea",
+    "experiments/dependency_memory/weighted_overflow/benchmark.py": "df94f49227af2a3a727dc46b0ffe441dbcd87664951e8046df82d84932c69f0f",
+    "experiments/dependency_memory/weighted_overflow/bounds.py": "cc9e54814729dd73ac974b04b8a644b421580c5006a0674440672b424b603f1f",
+    "experiments/dependency_memory/weighted_overflow/codec.py": "e03c301a01dcc6e572b9921673154af3dc6bb002f901162804ec4088523b3ec3"
+  }
+}
