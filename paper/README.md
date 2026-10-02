@@ -22,6 +22,12 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.27 adds the [restricted three-block converse](../research/JOINT_THREE_BLOCK_COVER_2026-10-01.md),
+claim C60. An elementary cover argument and exact finite ingredients give
+40,072/147,456 as a lower bound for late-coordinate-independent prediction,
+leaving a 457-outcome gap to the witness. Arbitrary joint encoders in that family
+are covered; general endpoint decoders, finite optimality and novelty are not.
+
 Living draft v0.26 adds the [three-block explicit code](../research/JOINT_THREE_BLOCK_WITNESS_2026-10-01.md),
 claim C59. Six parent bits and one child bit achieve 40,529 errors on 147,456
 outcomes, improving the existing 40,992-error concatenation. Independent route

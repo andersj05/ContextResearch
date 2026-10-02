@@ -8,6 +8,9 @@ Research on memory, compaction, and context management for long-running language
 reduces exact average bit error from 27.7995% to 27.4855% using the same six-bit
 parent and one-bit child. All 147,456 outcomes are checked; this is an achievable
 construction, with finite optimality and publication priority still open.
+The [separate restricted converse](research/JOINT_THREE_BLOCK_COVER_2026-10-01.md)
+narrows that decoder family's optimum to [27.1756%, 27.4855%]. Other final
+decoders remain outside this new bound; the unrestricted frontier is unchanged.
 
 **October 1 serialization control:** the [existing public schema](research/SCOPE_CODEBOOK_CONTROL_2026-10-01.md)
 answers all 24 constructed late queries under unchanged byte caps, as do cached

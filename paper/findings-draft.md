@@ -1,6 +1,16 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.26 — October 1, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.27 — October 1, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## A finite lower bound for the construction's decoder family
+
+A [separate cover proof](../research/JOINT_THREE_BLOCK_COVER_2026-10-01.md)
+puts the restricted three-block optimum between 27.1756% and 27.4855% with six
+parent bits and one child bit. Claim C60. The decoder's prediction must be
+independent of the late coordinate J. Four tests check the finite ingredients,
+including all 16,777,216 source/column pairs, and reject other endpoint decoders
+from the bound API. This narrows a finite restricted problem; it does not tighten
+the unrestricted frontier or prove optimality or publication novelty.
 
 ## A tighter explicit finite coding bound
 

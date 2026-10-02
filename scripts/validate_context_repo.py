@@ -487,6 +487,14 @@ def main() -> int:
     counts["joint_three_block_outcomes_checked"] = expected_three["witness"]["outcomes"]
     counts["joint_three_block_errors"] = expected_three["witness"]["errors"]
     counts["joint_three_block_concatenation_errors"] = expected_three["concatenation_control"]["errors"]
+    from experiments.dependency_memory.joint_coding_cover import bounds as three_cover
+    expected_cover = json.loads(json.dumps(three_cover.certificate()))
+    cover_path = ROOT / "experiments/dependency_memory/results/joint_three_block_cover_2026-10-01.json"
+    if json.loads(cover_path.read_text(encoding="utf-8")) != expected_cover:
+        errors.append("Restricted three-block cover ingredients or their source binding changed")
+    counts["joint_three_block_restricted_lower_errors"] = expected_cover["lower_errors"]
+    counts["joint_three_block_cover_columns"] = len(expected_cover["all_4096_column_rewards"])
+    counts["joint_three_block_cover_includes_all_decoders"] = expected_cover["covers_arbitrary_final_decoders"]
     from joint_coding import decoder_frontier
     expected_frontier = decoder_frontier.certificate()
     frontier_path = ROOT / "experiments/dependency_memory/results/decoder_frontier_certificate.json"
@@ -840,6 +848,25 @@ def main() -> int:
                 counts["scope_luna_v2_primary_criterion_met"] = replay["primary_criterion_met"]
         except (OSError, ValueError, TypeError, KeyError) as error:
             errors.append("Source-only scope launch/replay validation failed: " + str(error))
+
+    scope_suffix_path = ROOT / "experiments/dependency_memory/results/scope_luna_suffix_2026-10-01"
+    if (scope_suffix_path / "manifest.json").is_file():
+        try:
+            from experiments.dependency_memory.scope_inference_suffix import run as scope_suffix
+            scope_suffix.verify(_strict_json((scope_suffix_path / "manifest.json").read_text(encoding="utf-8")))
+            counts["scope_luna_suffix_locked_files"] = len(scope_suffix.fingerprints())
+            if (scope_suffix_path / "analysis.json").is_file():
+                saved = _strict_json((scope_suffix_path / "analysis.json").read_text(encoding="utf-8"))
+                replay, _ = scope_suffix.analyze()
+                if saved != replay or (scope_suffix_path / "report.md").read_text(encoding="utf-8") != scope_suffix.report(replay):
+                    errors.append("Saved never-dispatched scope suffix differs from independent replay")
+                counts["scope_luna_combined_dispatches"] = replay["combined_dispatches"]
+                counts["scope_luna_combined_metered_answers"] = replay["combined_metered_answers"]
+                counts["scope_luna_combined_known_planning_credits"] = replay["combined_known_planning_credits"]
+                counts["scope_luna_combined_unknown_reservations"] = replay["combined_unknown_reservations"]
+                counts["scope_luna_combined_primary_criterion_met"] = replay["primary_criterion_met"]
+        except (OSError, ValueError, TypeError, KeyError) as error:
+            errors.append("Source-only scope suffix validation failed: " + str(error))
 
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()

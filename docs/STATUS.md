@@ -4,6 +4,15 @@ Updated: October 1, 2026. This document is the current handoff; older scope docu
 
 ## Objective
 
+The [restricted three-block cover proof](../research/JOINT_THREE_BLOCK_COVER_2026-10-01.md)
+gives lower bound 40,072/147,456 when final prediction is independent of late
+coordinate J. With the new witness, this family's optimum is in
+[27.1756%, 27.4855%], width about 0.310 percentage points. Claim C60; living
+draft v0.27. Four tests independently check all 16,777,216 source/column pairs,
+the constant fibers and decoder rejection. Arbitrary joint encoders within this
+family are covered; the unrestricted decoder frontier remains unchanged.
+External proof and priority review remain open.
+
 The [new three-block finite witness](../research/JOINT_THREE_BLOCK_WITNESS_2026-10-01.md)
 achieves 40,529 errors on all 147,456 delayed-query outcomes with six parent bits
 and one child bit, improving the old concatenation's 40,992. Claim C59; living

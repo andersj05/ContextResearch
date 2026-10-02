@@ -99,6 +99,18 @@ upper bound on D_3(6), not the optimum or a model/task-success result. The fixed
 public codebook is not charged as instance memory. Existing coding machinery,
 the asymptotic frontier and open external priority review remain unchanged. [C59]
 
+For the family whose final prediction is independent of the late coordinate J,
+a [separate finite cover argument](../research/JOINT_THREE_BLOCK_COVER_2026-10-01.md)
+gives 40,072/147,456 = 5,009/18,432 as a lower bound. Together with C59,
+the restricted optimum lies in [27.1756%, 27.4855%], width about 0.310 percentage
+points. Every decision column has positive cover reward at most 25; missing
+constant centers add disjoint 125-source penalties. Independent enumeration
+checks all 16,777,216 source/column combinations. The bound covers arbitrary
+joint encoders within this decoder family; coordinate-dependent endpoints remain
+outside it. The unrestricted all-decoder frontier is unchanged. The elementary
+cover method and publication novelty are not claimed new. External proof review
+remains open. [C60]
+
 ## 5. Sparse dependencies and future queries
 
 If exactly k of n named fields are active and each stores an arbitrary b-bit value, exact memory needs at least log_2 binomial(n, k) + kb bits when every configuration can be distinguished by future queries and no external channel supplies missing information. This is an elementary counting bound. It applies to identifiable active fields, not automatically to the much smaller set that happens to be queried in hindsight.

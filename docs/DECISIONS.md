@@ -723,3 +723,16 @@ Fresh zero-generation CLI checks pass. All 480 tests, repository validation and
 paper assembly pass before committing the suffix source/request/evidence freeze.
 The original eight-metered-answer criterion remains unassessable regardless of
 suffix completion.
+
+## October 1: narrow the finite gap with an explicitly restricted converse
+
+For final predictions independent of late coordinate J, reduce each parent state
+to a triple of branch-decision words. An elementary positive-cover inequality,
+maximum column reward 25 and disjoint missing-constant fibers yield at least
+40,072 errors on 147,456 outcomes for any codebook of at most 64 states.
+Combine with the 40,529-error witness; register C60. Four tests independently
+check every source/column pair, one-block profiles, center fibers and rejection
+of coordinate-dependent endpoint decoders. Keep the unrestricted frontier,
+external correctness review and unresolved publication priority explicit.
+Do not market the elementary cover technique or restricted interval as a new
+general method, unrestricted finite optimum, token result or model benefit.
