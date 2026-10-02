@@ -45,6 +45,14 @@ constructed late queries using ordinary JSON. Known cost is 0.062325 planning
 credits, with 7.65 retained for unknown usage. Five identities remain never
 dispatched; no retry occurred. The eight-answer primary criterion is unassessable.
 
+The [separate five-identity suffix](../experiments/dependency_memory/scope_inference_suffix/PROTOCOL.md)
+is prepared with the original requests/order and the combined eight-dispatch /
+20-credit ceiling. It starts at three attempts and 7.712325 committed credits,
+including the permanent gap. Three additional budget/identity tests and fresh
+zero-generation transport checks pass. All 480 offline tests pass before this
+suffix launch; repository validation and paper assembly also pass. It cannot
+restore assessability of the original primary criterion.
+
 The [separate fixed-schema control](../research/SCOPE_CODEBOOK_CONTROL_2026-10-01.md)
 uses the existing dictionary codec: all 24 constructed late queries succeed
 with 949–1,009 child bytes, versus 12/24 for the plain authored JSON projection.

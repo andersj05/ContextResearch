@@ -714,3 +714,12 @@ dispatched identities, with original prompts/criterion and the combined eight-
 dispatch/20-credit ceiling. It cannot make the eight-metered-answer criterion
 assessable or erase the original gap. No repeated approval is needed for this
 already authorized bounded work.
+
+Prepare the separate five-identity suffix without altering any original request,
+order or capacity. Seed the unchanged client with three prior attempts and
+7.712325 committed planning credits. Three tests check never-dispatched selection,
+mutation rejection and a second unknown-reservation stop before server creation.
+Fresh zero-generation CLI checks pass. All 480 tests, repository validation and
+paper assembly pass before committing the suffix source/request/evidence freeze.
+The original eight-metered-answer criterion remains unassessable regardless of
+suffix completion.
