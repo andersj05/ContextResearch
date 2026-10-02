@@ -4,7 +4,19 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
-**October 2 stronger finite code:** the [conditional six-block construction](research/CONDITIONAL_SIX_BLOCK_CODE_2026-10-02.md)
+**October 2 query-prior and timing extension:** [the new deductions and controls](research/QUERY_PRIOR_TIMING_2026-10-02.md)
+separate known query probabilities, unknown-prior minimax and an actual class
+cue before compression. Known 25%/75% queries have optimal limiting error near
+25.718661%; unknown-prior minimax retains the uniform 26.189898% limit. An
+early realized class cue reaches 25% using 3n bits inside the same 4n cap.
+A deterministic opposite-orientation pair preserves the finite 27.472579%
+error for every source-independent class prior without extra instance state.
+Unequal allocation beats it at skewed known priors. Five exact asymptotic
+witnesses and 52 exact finite segments are checked; these are scoped C33/C67
+consequences and fixed-book controls, with external review and efficient
+near-curve codes open. Claim C70; zero new model calls or natural episodes.
+
+**Earlier October 2 stronger finite code:** the [conditional six-block construction](research/CONDITIONAL_SIX_BLOCK_CODE_2026-10-02.md)
 has 331,857,648 errors on 1,207,959,552 outcomes, versus 331,890,688 for two
 refined three-block components, at the same 12-bit parent and one-bit child.
 An independent complete component replacement screen finds no improvement,

@@ -22,7 +22,18 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
-Living draft v0.36 adds the [conditional six-block construction](../research/CONDITIONAL_SIX_BLOCK_CODE_2026-10-02.md),
+Living draft v0.37 adds the [query-prior and timing deductions](../research/QUERY_PRIOR_TIMING_2026-10-02.md),
+claim C70. Known class probabilities permit unequal allocation; five exact
+witnesses include 25.718661% limiting error at p=1/4. Unknown-prior minimax
+retains C67's rate-two limit, while an early actual class cue reaches 1/4
+using 3n bits inside the same 4n cap. An opposite-orientation finite pair has
+the same error for every source-independent p without extra instance state;
+simple unequal allocation beats it at skewed known priors. Exact finite
+sensitivity has 52 affine segments. These are scoped consequences and
+controls, with external correctness/priority, other laws and efficient
+near-limit finite codes open. Zero model calls or natural-task outcomes.
+
+Earlier living draft v0.36 adds the [conditional six-block construction](../research/CONDITIONAL_SIX_BLOCK_CODE_2026-10-02.md),
 claim C69. A refined component has 40,514/147,456 errors and no improving one-word
 replacement, yet its two-copy product has an improving single joint word.
 Eight conditional changes give 331,857,648/1,207,959,552 errors, below the stronger

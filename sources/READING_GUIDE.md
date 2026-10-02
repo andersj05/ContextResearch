@@ -1,5 +1,12 @@
 # Focused reading guide
 
+The [October 2 query-prior/timing note](../research/QUERY_PRIOR_TIMING_2026-10-02.md#6-discovery-prior-work-and-validation)
+rereads existing Polyanskiy/Wu Chapter 25 Section 25.2, Theorem 25.2 and support
+remarks, printed pp. 258–259 (`polyanskiywu2016coding`). This bounded primary
+rereading supports established optimization; the coding foundation remains
+C67's bounded Chapter 24 reading. No new metadata, full-review upgrade,
+replication or generic allocation/symmetry/side-information novelty is claimed.
+
 The [October 2 conditional-code note](../research/CONDITIONAL_SIX_BLOCK_CODE_2026-10-02.md#5-product-extension-search-failures-and-established-precedents)
 adds Jégou, Douze and Schmid's author manuscript inria-00514462v1,
 Sections II-A/B, printed pp. 2–4 (`jegou2011product`). Read October 2, 2026;

@@ -1,6 +1,6 @@
 # Repeated Context Compression with Delayed Task Dependencies
 
-Working draft — October 2, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an exact parametric unrestricted asymptotic curve and a tightly certified rate-two error, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, a cross-record stress test with one permanent transport gap and a separately frozen continuation, a post-hoc offline decoder-compatibility correction, two workflow development comparisons, and a retrospective retained-evidence audit. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
+Working draft — October 2, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an exact parametric unrestricted asymptotic curve and a tightly certified rate-two error, a two-class query-prior and timing extension, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, a cross-record stress test with one permanent transport gap and a separately frozen continuation, a post-hoc offline decoder-compatibility correction, two workflow development comparisons, and a retrospective retained-evidence audit. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
 
 ## Abstract
 
@@ -119,6 +119,15 @@ new error at k=6*n and improve both three-block products at common k=12*n.
 Combining the refined component with C63 tightens the unrestricted three-block
 bracket to [40,072,40,514]/147,456, width 442 errors. Section 8.19 specifies the
 weighted grading and the small gain's scope; no optimality is claimed. [C69]
+
+A [two-class extension](../research/QUERY_PRIOR_TIMING_2026-10-02.md) now
+distinguishes known priors, unknown-prior minimax and early actual class cues.
+At the same two parent bits per block, known p gives limiting error
+min pD(r_L)+(1-p)D(r_R), r_L+r_R<=4; five exact witnesses include 25.718661%
+at p=1/4. Unknown-prior minimax retains D(2). An early actual class attains
+1/4 using 3n bits inside the 4n cap. A finite opposite-orientation pair is
+robust to every source-independent p, but unequal allocation beats it for
+skewed known priors. Section 8.20 states the conditions and limits. [C70]
 
 An [October 1 explicit three-block construction](../research/JOINT_THREE_BLOCK_WITNESS_2026-10-01.md)
 uses six parent bits and one child bit under the same timing. Its fixed 64-word
@@ -972,9 +981,79 @@ quantization are established [@jegou2011product]. The addition is the specific
 finite construction and scoped counterexample, with optimality, external
 correctness/priority and natural-agent/model/cost benefit open. [C69]
 
+### 8.20 Query-prior allocation, minimax robustness and an early class cue
+
+The [changed-law note](../research/QUERY_PRIOR_TIMING_2026-10-02.md) keeps
+uniform iid four-bit sources and uniform omission/remaining-coordinate queries,
+but divides k=2n blocks into two public equal classes. A source-independent
+fixed p chooses the class, followed by a uniform block within it. Parent cap
+is 4n bits and child cap one bit before J. Knowing p before X, designing a
+parent without p, and receiving the actual sampled class T before M are three
+separate access conditions. In the first two the realized R/O remain late;
+source/parent/archive/session/environment rereads remain excluded. [C70]
+
+If p is known, the limiting optimum is
+
+\[
+W(p)=\min_{r_L,r_R\ge0,\ r_L+r_R\le4}
+       [pD(r_L)+(1-p)D(r_R)],
+\]
+
+where D is C67's full unrestricted curve. To obtain the converse, sum block
+informations I(X_i;A_i)<=I(X_i;M); independence bounds their sum by H(M)<=4n.
+The all-slope decoder inequality and Jensen within each class give the
+formula, including joint encoders and heterogeneous tables. Separate class
+coding with strict channel-mixing slack fits both rounded codebook indices
+and fallbacks inside 4n; no extra o(k) bits or per-instance allocation marker
+are assumed. W is symmetric and concave in p, equals D(2) at p=1/2 and is
+strictly smaller elsewhere. This is a local consequence of C67 using
+established supporting/coding reasoning [@polyanskiywu2016coding]. [C70]
+
+Five rational slope/channel witnesses give exact outward intervals at
+p=1/10,1/4,1/3,2/5,1/2. At p=1/4 the enclosure is
+[0.257186606420,0.257186606421]. Dual residuals cover every response column,
+C67 supplies all-slope decoder dominance, and the two channels have total
+information upper bound strictly below 4. Floating discovery does not enter
+the numeric proof. A failed initial common-parameter bracket and its
+explicitly recomputed record remain preserved. Other p have the analytic
+variational characterization; no additional numeric computations or efficient
+finite codes near the limit are claimed. [C70]
+
+For unknown-prior minimax U_n, uniform p=1/2 gives D_{2n}(4n)<=U_n, and
+separate identical rate-two class codes give U_n<=D_n(2n). Thus lim U_n=D(2),
+even if p may be disclosed after M; no finite equality is asserted. If actual
+T arrives before M instead, encode only its n blocks' majority signatures.
+This uses 3n bits within 4n and gives exactly 1/4 error. T has zero source
+information and is recoverable from R, but moving it earlier changes the
+encoder's permitted dependence. Late uniform T has limiting excess error
+in (0.0118989799,0.0118989801). This timing deduction does not confuse query
+statistics with the realized relevance cue. [C70]
+
+At finite length, frozen C69 half-error counts show that its uniform encoder
+beats the refined product only for p>59911/152862. Known-prior reencoding of
+the same book yields 52 exact affine segments on [0,1], covering 16,777,216
+source pairs through a weighted minimum-of-three-lines calculation. Pairing
+two C69 components in opposite public orientations instead gives each class
+error 2304567/8388608 for every fixed source-independent p. It uses 24 bits
+for twelve blocks, one child bit and no orientation instance state; the
+120-byte public label payload is shared. Independent pairs extend to k=12h.
+These larger-source counts follow from C69 and independence; 589,824 physical
+source-free final queries check all local messages/orientations/routes, not
+the entire twelve-block source population. [C70]
+
+Named unequal controls use one parent bit per block in one class and three
+in the other, reaching p/16+1/4 or 5/16-p/16. The balanced pair beats those
+and the refined product exactly for
+207415/524288<p<316873/524288. At p=1/4 the simple unequal control gives
+17/64 and beats the balanced pair. These three controls are not all finite
+allocations or optima. Generic symmetrization, allocation, product coding and
+early side information are established; external correctness/priority,
+adaptive/within-class query laws and natural-agent/model/cost benefit remain
+open. No new model call or prospective natural episode is added. [C70]
+
 ## 9. Limitations and open results
 
-The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. Source-only model inference has been evaluated only on one inspected classifier; the static control covers three inspected programs and one constructed family without universal certification; an open-ended native-agent benchmark remains unperformed. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, useful finite-length joint codes, rate-distortion characterizations beyond the stated uniform four-bit model, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.
+The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. Source-only model inference has been evaluated only on one inspected classifier; the static control covers three inspected programs and one constructed family without universal certification; an open-ended native-agent benchmark remains unperformed. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, useful finite-length joint codes, rate-distortion characterizations beyond the uniform four-bit source and stated two-class source-independent query priors, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.
 
 ## 10. Reproducibility
 

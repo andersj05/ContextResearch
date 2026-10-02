@@ -1087,3 +1087,52 @@ tests. Validation reports PASS with 69 claims/51 bibliography entries/171 PDF
 hashes; paper assembly checks 44 cited sources. All 24 bindings regenerate. Zero new model calls or
 prospective natural episodes; all frozen model launches and permanent gaps stay
 unchanged. Further calls on the inspected classifier remain uninformative.
+
+## October 2, 2026 — query-prior robustness, allocation and early class timing (C70)
+
+Extend the uniform-source model to two equal public query classes with a fixed
+source-independent prior p. Keep within-class R, omission O and late J laws,
+the 2k-bit parent/one-bit child cap, public-label accounting and no-reread
+contract. Separate known p before X, unknown-prior parent design and actual
+realized class T before M. Do not infer source-adaptive or instance-dependent
+prior guarantees from this fixed-p analysis. The early cue carries no source
+information but changes permitted encoder dependence.
+
+The local C67 consequence gives known-prior optimum min pD(r_L)+(1-p)D(r_R)
+under r_L+r_R<=4, with joint/heterogeneous converse and strict rounded-capacity
+coding achievability. Five rational supporting/slack witnesses include
+[0.257186606420,0.257186606421] at p=1/4. Uniform p is a consistency check
+inside the old C34/C67 interval. Unknown-prior minimax is squeezed between
+D_{2n}(4n) and D_n(2n), hence tends to D(2); do not assert finite equality.
+An early actual class cue uses 3n signatures inside 4n and attains 1/4; late
+uniform limiting excess is (0.0118989799,0.0118989801). These are scoped local
+deductions, not new general allocation or side-information theorems.
+
+Preserve the negative finite sensitivity result: C69's frozen encoder loses
+its product advantage below p=59911/152862. Fixed-book known-prior nearest
+assignment has 52 exact affine segments covering all 16,777,216 source pairs
+by 1728 weighted terms. An opposite-orientation pair preserves
+2304567/8388608 for every fixed source-independent p at k=12h, 2k parent bits
+and one child bit without orientation instance state. Its 120-byte label
+payload is shared; no twelve-block full-source enumeration is claimed.
+All local messages/orientations/routes give 589,824 physical final checks.
+Use stronger 1/3 allocations as named controls: at p=1/4 they achieve 17/64
+and beat the balanced pair. Named controls are not all finite optima.
+
+Retain the failed initial common-q bracket, corrected script and explicit
+provenance of the recomputed original JSON. Initial output was overwritten,
+so do not call that record an original raw artifact or recover its timing.
+Only exact admission/outward logs support bounds. All five first rounded
+rational candidates pass within the ten-attempt ceiling. Sixteen bindings
+include original C67/C69 outputs and source checks; historical artifacts,
+provider allocations and the natural-task ledger remain immutable.
+
+Existing Polyanskiy/Wu Chapter 25 Section 25.2/support remarks were reread
+within bounded scope; no new bibliography metadata or inherited review status
+upgrade. Claim C70 and living draft v0.37. All 549 offline tests pass,
+including the eight new scientific checks; repository validation reports PASS
+with 70 claims, 51 bibliography entries and 171 PDF hashes. Paper assembly
+checks all 44 cited sources. Zero model calls or natural
+episodes. External correctness/priority, efficient finite codes approaching
+the characterized limits, biased/adaptive laws and natural-agent benefit stay
+open. Generic allocation/symmetry/product coding novelty is not claimed.

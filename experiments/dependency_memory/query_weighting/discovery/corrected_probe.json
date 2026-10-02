@@ -1,0 +1,129 @@
+{
+  "evidence_class": "post-hoc probes; floats are not proof",
+  "finite_rows": [
+    {
+      "p": "0",
+      "reencoded_six_error": "20257/73728",
+      "fixed_balanced_pair_error": "2304567/8388608",
+      "three_named_controls_error": "1/4"
+    },
+    {
+      "p": "1/10",
+      "reencoded_six_error": "13828837/50331648",
+      "fixed_balanced_pair_error": "2304567/8388608",
+      "three_named_controls_error": "41/160"
+    },
+    {
+      "p": "1/4",
+      "reencoded_six_error": "41486711/150994944",
+      "fixed_balanced_pair_error": "2304567/8388608",
+      "three_named_controls_error": "17/64"
+    },
+    {
+      "p": "1/3",
+      "reencoded_six_error": "248917261/905969664",
+      "fixed_balanced_pair_error": "2304567/8388608",
+      "three_named_controls_error": "13/48"
+    },
+    {
+      "p": "2/5",
+      "reencoded_six_error": "414851539/1509949440",
+      "fixed_balanced_pair_error": "2304567/8388608",
+      "three_named_controls_error": "20257/73728"
+    },
+    {
+      "p": "1/2",
+      "reencoded_six_error": "2304567/8388608",
+      "fixed_balanced_pair_error": "2304567/8388608",
+      "three_named_controls_error": "20257/73728"
+    },
+    {
+      "p": "3/5",
+      "reencoded_six_error": "92169853/335544320",
+      "fixed_balanced_pair_error": "2304567/8388608",
+      "three_named_controls_error": "20257/73728"
+    },
+    {
+      "p": "2/3",
+      "reencoded_six_error": "497666429/1811939328",
+      "fixed_balanced_pair_error": "2304567/8388608",
+      "three_named_controls_error": "13/48"
+    },
+    {
+      "p": "3/4",
+      "reencoded_six_error": "331697867/1207959552",
+      "fixed_balanced_pair_error": "2304567/8388608",
+      "three_named_controls_error": "17/64"
+    },
+    {
+      "p": "9/10",
+      "reencoded_six_error": "1656908567/6039797760",
+      "fixed_balanced_pair_error": "2304567/8388608",
+      "three_named_controls_error": "41/160"
+    },
+    {
+      "p": "1",
+      "reencoded_six_error": "20195/73728",
+      "fixed_balanced_pair_error": "2304567/8388608",
+      "three_named_controls_error": "1/4"
+    }
+  ],
+  "float_witnesses": [
+    {
+      "p": "1/10",
+      "m": 1,
+      "n": 9,
+      "q": 0.18769044038585758,
+      "left_rate": 1.4512050593254164,
+      "right_rate": 2.548794940674584,
+      "left_error": 0.2787584076573927,
+      "right_error": 0.2500000000000773,
+      "weighted_error": 0.2528758407658088
+    },
+    {
+      "p": "1/4",
+      "m": 1,
+      "n": 3,
+      "q": 0.1872059046276986,
+      "left_rate": 1.455014020526832,
+      "right_rate": 2.5449859794731684,
+      "left_error": 0.27862699726378093,
+      "right_error": 0.2500398094725958,
+      "weighted_error": 0.2571866064203921
+    },
+    {
+      "p": "1/3",
+      "m": 1,
+      "n": 2,
+      "q": 0.17941718015189195,
+      "left_rate": 1.5162759011219173,
+      "right_rate": 2.4837240988780835,
+      "left_error": 0.2765412291352856,
+      "right_error": 0.2509546753203041,
+      "weighted_error": 0.2594835265919646
+    },
+    {
+      "p": "2/5",
+      "m": 2,
+      "n": 3,
+      "q": 0.40083604363970016,
+      "left_rate": 1.6634374458406078,
+      "right_rate": 2.336562554159393,
+      "left_error": 0.2717430285006949,
+      "right_error": 0.25377596333768093,
+      "weighted_error": 0.26096278940288653
+    },
+    {
+      "p": "1/2",
+      "m": 1,
+      "n": 1,
+      "q": 0.11632878313649028,
+      "left_rate": 2.0,
+      "right_rate": 2.0,
+      "left_error": 0.26189897990844613,
+      "right_error": 0.26189897990844613,
+      "weighted_error": 0.26189897990844613
+    }
+  ],
+  "right_cost_histogram_types": 108
+}

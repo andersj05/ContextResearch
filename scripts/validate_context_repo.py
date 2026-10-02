@@ -954,6 +954,20 @@ def main() -> int:
     counts["conditional_coding_public_payload_bytes"] = regenerated_conditional["public_label_payload_bytes"]
     counts["conditional_coding_new_model_calls"] = regenerated_conditional["new_model_calls"]
 
+    from experiments.dependency_memory.query_weighting import certificate as query_weighting
+    regenerated_weighting = query_weighting.certificate()
+    if json.loads(query_weighting.OUTPUT.read_text(encoding="utf-8")) != regenerated_weighting:
+        errors.append("Query-prior curve, allocation/timing controls or provenance changed")
+    counts["query_prior_finite_segments"] = len(regenerated_weighting["finite_known_prior_curve"]["segments"])
+    counts["query_prior_asymptotic_points"] = len(regenerated_weighting["known_prior_asymptotic_characterization"]["exact_numeric_support_points"])
+    counts["query_prior_physical_final_queries"] = regenerated_weighting["routing_checks"]["source_free_final_query_checks"]
+    counts["query_prior_extra_orientation_bits"] = regenerated_weighting["opposite_orientation_pair"]["balanced_pair_extra_orientation_instance_bits"]
+    counts["query_prior_public_payload_bytes"] = regenerated_weighting["opposite_orientation_pair"]["public_label_payload_bytes"]
+    counts["query_prior_early_class_error"] = regenerated_weighting["early_realized_class"]["error"]
+    counts["query_prior_source_bindings"] = len(regenerated_weighting["source_sha256"])
+    counts["query_prior_new_model_calls"] = regenerated_weighting["new_model_calls"]
+    counts["query_prior_new_natural_episodes"] = regenerated_weighting["new_natural_episodes"]
+
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"

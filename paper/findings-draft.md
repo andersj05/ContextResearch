@@ -1,6 +1,37 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.36 — October 2, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.37 — October 2, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## Query probabilities and early query information have different effects
+
+The [new extension](../research/QUERY_PRIOR_TIMING_2026-10-02.md) divides uniform
+four-bit blocks into two equal public classes. If the fixed source-independent
+query prior p is known before compression, optimal limiting error is
+min pD(r_L)+(1-p)D(r_R) over r_L+r_R<=4, with D from C67. At p=1/4 the
+exact enclosure is [0.257186606420,0.257186606421], below the uniform
+26.189898% limit. Five rational witnesses have strict combined coding slack
+inside the same two parent bits per block and one child bit before J. No
+efficient finite encoder near these limits is supplied. [C70]
+
+If p is unknown to parent design, worst-case error instead tends to D(2).
+A finite opposite-orientation pair preserves C69's 27.472579% for every fixed
+source-independent p using 24 parent bits for twelve blocks, no orientation
+state and the same 120 public label bytes. Known-prior unequal allocation is
+a stronger control away from balanced queries: at p=1/4 a simple 1/3-bit
+allocation gives 26.5625% and beats that pair. Fifty-two exact segments cover
+known-prior reencoding of the fixed six-block book; this is not finite optimality.
+The original frozen encoder can lose its product advantage under skew. [C70]
+
+If the actual class T arrives before the parent, three-bit signatures for
+its n blocks achieve 25% using 3n bits inside the common 4n cap. T is
+independent of the source and R/O/J remain late. This early cue differs from
+knowing query probabilities: its timing changes which source values need
+retention. The late uniform limit has an additional 1.189898 percentage points
+of error. These are local C33/C67 consequences and checked controls, with
+generic allocation/symmetry/side-information novelty, external proof/priority,
+adaptive/biased laws and natural-agent benefit open. Zero model calls or new
+natural episodes; 589,824 final routing checks are not twelve-block source
+enumeration. Earlier milestones below retain their dated scope. [C70]
 
 ## A stronger product control still leaves a small joint gain
 

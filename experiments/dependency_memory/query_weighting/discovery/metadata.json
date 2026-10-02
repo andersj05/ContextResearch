@@ -1,0 +1,76 @@
+{
+  "corrected_probe": {
+    "float_bisection_steps": 60,
+    "outer_q_interval": [
+      "0.00001",
+      "0.9"
+    ],
+    "role": "choose candidate rational q only; no float participates in the proof",
+    "weights": [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  "date": "2026-10-02",
+  "evidence_class": "post-hoc finite sensitivity and floating rational-witness discovery; exact admission is separate",
+  "file_sha256": {
+    "corrected_probe.json": "516c92a8fc3445dce1b534fc733f353dc577783688291a41e6b0facfeb193836",
+    "initial_recomputed_probe.json": "b70bf71525e78dcb3a073a9a2f3d9df0b4e8434fd4c5a8f138d656fdcc3f4a30",
+    "prepare_witnesses.py": "990054c6bc8df992731cb229d522e5eff440ced7ee1184e598e74fe258b5e168",
+    "probe.py": "96fb4aef3b291e737988d1ea16af7243f87c46512ed7ea57abc94c1718de05b8",
+    "probe_v2.py": "a7fbd2970495b3a3a314435124d10f9fa4ec91be0d89d1a0669d3221dcc439d4"
+  },
+  "initial_probe": {
+    "cause": "q is a common parameter, not a per-class t; upper endpoint was too small when m=2,n=3",
+    "invalid_combined_information_observed": "4.687711329867541",
+    "invalid_p": "2/5",
+    "outer_q_interval": [
+      "0.00001",
+      "0.299"
+    ],
+    "record_provenance": "Initial JSON was overwritten by corrected script before export; original deterministic probe was rerun offline for this explicitly recomputed record. First stdout had the same failed result. No original timing is recovered.",
+    "used_as_certificate": false
+  },
+  "limits": "Adaptive inspected finite law and bounded numerical discovery, not independent trials, LLM outcomes, a general allocation/symmetrization novelty claim or priority verdict. Original C67/C69 and provider results remain immutable.",
+  "new_model_calls": 0,
+  "new_natural_episodes": 0,
+  "python_version_observed": "3.14.2",
+  "rational_admission": {
+    "all_first_attempts_accepted": true,
+    "attempt_record": "../witnesses.json",
+    "rule": "ceil(decimal string of floating q * scale)+1, then at most10 successive numerators; exact strict combined information<4 and upper-lower<2e-11 required",
+    "scale": 1000000000000
+  },
+  "timing": {
+    "claim": "none",
+    "process_wall_seconds": null
+  },
+  "upstream": {
+    "experiments/dependency_memory/results/conditional_six_block_2026-10-02.json": {
+      "commit": "8e09d1d",
+      "sha256": "19e83d9b81fb8f0f8475ab6541087465dd9eb7a237fb07f1cbe777ddecd3be51"
+    },
+    "experiments/dependency_memory/results/rate_curve_2026-10-02.json": {
+      "commit": "b11d580",
+      "sha256": "06624233335d8ee64422d43a1050d3f0385b79eec63ad442efbb3c045e2ba014"
+    }
+  }
+}

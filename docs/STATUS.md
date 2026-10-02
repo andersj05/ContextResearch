@@ -4,6 +4,40 @@ Updated: October 2, 2026. This document is the current handoff; older scope docu
 
 ## Objective
 
+The [query-prior and timing extension](../research/QUERY_PRIOR_TIMING_2026-10-02.md)
+now separates three information conditions. For two equal classes of uniform
+four-bit blocks, known source-independent class prior p has optimal limiting
+error min pD(r_L)+(1-p)D(r_R), with r_L+r_R<=4 and D from C67. At p=1/4,
+five rational supporting/slack witnesses enclose error near 25.718661%; the
+unknown-prior minimax limit stays in the old 26.189898% interval. An actual
+class cue before M reaches 25% using 3n parent bits inside the same 4n cap.
+The cue is source-independent; its timing, rather than its source information,
+changes the allowed encoder. Claim C70; living draft v0.37. These are local
+analytic deductions, with arbitrary joint encoders/heterogeneous tables in
+the converse and exact-capacity coding existence, not an efficient near-limit
+finite encoder or a general allocation/side-information novelty claim.
+
+C69's original encoder loses its product gain below prior 59911/152862.
+A deterministic opposite-orientation pair instead preserves
+2304567/8388608 error for all fixed source-independent p at k=12h, 2k parent
+bits and one child bit, with zero orientation instance bits and the shared
+120-byte public label payload. Known-prior reencoding of the fixed book has
+52 exact affine segments covering 16,777,216 source pairs. The simple 1/3
+allocation reaches 17/64 at p=1/4 and beats the balanced pair; three named
+controls are not all finite optima. The new checker executes 589,824 final
+routing queries and independently checks rational channel entropy, weighted
+nearest-message ties, every seam, memory/timing and the failed float bracket.
+Its larger-product counts are derived, not twelve-block source enumeration.
+All **549 offline tests pass**, including the eight new scientific checks.
+Repository validation reports PASS with 70 claims, 51 bibliography entries and
+171 PDF hashes; paper assembly checks all 44 cited sources.
+All 16 source/provenance bindings regenerate. Zero new model calls and zero
+prospective natural episodes. Original C33/C67/C69 and provider evidence stay
+unchanged. Biased sources, adaptive/within-class query laws, external proof/
+priority review and natural-agent/model/cost benefit remain open.
+
+**Earlier October 2 conditional finite-code milestone (C69):**
+
 The [conditional six-block code](../research/CONDITIONAL_SIX_BLOCK_CODE_2026-10-02.md)
 now beats the stronger product of two refined three-block components at the
 same 12-bit parent and one-bit child: **331,857,648 versus 331,890,688 errors**
@@ -584,7 +618,7 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 ## Not yet established
 
 - Novelty and external validation of the locally audited scaling argument, or a practically large composition penalty.
-- Exact finite joint-code optima and efficient encoders approaching the full curve. C68/C69 supply implemented finite codes and C69 tightens the three-block bracket; C67 characterizes the unrestricted asymptotic curve for the uniform four-bit model. Broader source/query laws remain outside those results.
+- Exact finite joint-code optima and efficient encoders approaching the full curve. C68/C69 supply implemented finite codes and C69 tightens the three-block bracket; C67 characterizes the uniform-source curve and C70 extends it to two-class source-independent query priors. Biased sources, adaptive queries and more general within-class laws remain outside these results.
 - Natural-language compiler performance, learned retirement accuracy, or unrestricted closed-loop LLM-agent results. Live model work now also covers an imposed two-stage memory-writing pipeline; open-ended native-agent performance remains unestablished.
 - Cost or quality gains over native provider compaction.
 - The internal training objective, prompt, or algorithm of a proprietary compaction service.
@@ -595,8 +629,18 @@ The all-positive-slope comparison is proved in C67. Prepare external proof
 and priority review of the completion lemma, exact polynomial cover and
 fixed-floor coding argument. Preserve the old supporting certificates and
 their dated scope. Efficient finite encoders approaching the now-characterized
-curve, and extensions to changed source/query laws, remain substantive research
-directions; no production applicability follows from this model theorem.
+curve, and extensions beyond C70's two-class source-independent priors, remain
+substantive research directions; no production applicability follows from these
+model deductions.
+
+C70 now distinguishes known priors, unknown-prior minimax and early actual
+class cues. Develop finite codes for the certified unequal allocations, or
+extend the converse to nonuniform within-class queries and correlated/adaptive
+queries with their information access stated first. Preserve the simple 1/3
+controls and the balanced pair: a skewed known prior is an easy allocation
+case, whereas an early actual class cue is a different timing treatment.
+Source-independent fixed p cannot justify source-adaptive or per-instance
+selection. Efficient codes approaching either limiting curve remain open.
 
 C69 supplies a six-block improvement against refined three-block products,
 with a complete component single-word locality check and a checked failure of
