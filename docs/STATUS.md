@@ -4,6 +4,25 @@ Updated: October 1, 2026. This document is the current handoff; older scope docu
 
 ## Objective
 
+The [stronger static scope control](../research/STATIC_SCOPE_CONTROL_2026-10-01.md)
+recovers a complete dispatch contract on the finite catalog from source alone.
+Three inspected repository programs and one constructed late-key family agree
+on 51,566 input/query rows. The quota program retains its whole input, so that
+agreement is not successful narrowing. Under the common codec and unchanged
+4,096/1,536 caps, static and authored dispatch contracts each answer 24/24 at
+1,958 parent and 950–1,009 child bytes. Seven saved model contracts replay as
+five 24/24 and two oversized 0/24; cached outcomes remain smaller at 24/24.
+Claim C64; living draft v0.31. No new model calls or natural tasks. The original
+eight-answer criterion stays unassessable, and its timeout remains missing.
+The heuristic is not a universal Python proof or minimal-scope result.
+
+All **503 offline tests pass**, including eleven new independent tests.
+Repository validation reports PASS with 64 claims and 48 bibliography entries;
+paper assembly checks all 41 cited sources. The source-bound audit regenerates
+with matching evidence. A bounded primary reading of Horwitz, Reps and Binkley
+(1990) adds established slicing/call-context prior work; general extraction
+novelty and production benefit remain unestablished.
+
 The [all-decoder three-block converse](../research/ALL_DECODER_THREE_BLOCK_COVER_2026-10-01.md)
 now encloses unrestricted D_3(6) in **[27.1756%, 27.4855%]**, including
 noncomplementary and repeated endpoints with tied ideal predictions. An
@@ -484,8 +503,11 @@ information order and be graded on every delayed-query route. Preserve the
 earlier witnesses and asymptotic certificate; do not present a heuristic search
 or cover relaxation as an exact finite optimum.
 
-For model work, separate source inference from codec choice and include a
-zero-model source-analysis control on new program families. The completed
+For model work, use the stronger source-analysis control and the same codec
+on a separately frozen new program/workflow cohort. Retain easy and unsupported
+cases; do not tune the cohort or shrink caps to manufacture a model advantage.
+Do not spend another inference batch on the same inspected classifier: the
+static and cached controls already answer all its imposed queries. The completed
 source-only study's eight dispatches are closed, and its missing answer stays
 missing. A changing query-program family would test the limits of cached public
 outcomes, with equally informed controls and a separately frozen access, grader

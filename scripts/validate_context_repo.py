@@ -890,6 +890,16 @@ def main() -> int:
                 counts["scope_luna_combined_primary_criterion_met"] = replay["primary_criterion_met"]
         except (OSError, ValueError, TypeError, KeyError) as error:
             errors.append("Source-only scope suffix validation failed: " + str(error))
+    from experiments.dependency_memory.scope_static import run as static_scope
+    static_path = ROOT / "experiments/dependency_memory/results/scope_static_2026-10-01.json"
+    regenerated_static = static_scope.analysis()
+    if static_scope.stable(json.loads(static_path.read_text(encoding="utf-8"))) != static_scope.stable(regenerated_static):
+        errors.append("Static source-scope control, common-codec replay or source binding changed")
+    counts["static_scope_catalog_cases"] = regenerated_static["catalog_cases"]
+    counts["static_scope_catalog_disagreements"] = regenerated_static["catalog_disagreements"]
+    counts["static_scope_correct_delayed_queries"] = regenerated_static["dispatch_controls"]["static"]["correct"]
+    counts["static_scope_new_model_calls"] = regenerated_static["new_model_calls"]
+    counts["static_scope_saved_model_contracts_replayed"] = len(regenerated_static["historical_model_contracts_replayed"])
 
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()

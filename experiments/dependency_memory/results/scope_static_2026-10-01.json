@@ -1,0 +1,1309 @@
+{
+  "catalog_cases": 51566,
+  "catalog_disagreements": 0,
+  "child_cap_bytes": 1536,
+  "current_provider_price_claim": false,
+  "date": "2026-10-01",
+  "dispatch_controls": {
+    "authored": {
+      "children": [
+        {
+          "infeasible": false,
+          "proposal_bytes": 996,
+          "workers": [
+            0,
+            1
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 1009,
+          "workers": [
+            0,
+            2
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 959,
+          "workers": [
+            0,
+            3
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 1000,
+          "workers": [
+            1,
+            2
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 950,
+          "workers": [
+            1,
+            3
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 963,
+          "workers": [
+            2,
+            3
+          ]
+        }
+      ],
+      "correct": 24,
+      "cpu_ns": 0,
+      "final_queries": 24,
+      "limits": "Constructed timing on eight inspected historical records; schema/public program uncharged as instance memory, separately reported. Source disappears after parent, parent after child. Scripted final decoder.",
+      "parent": {
+        "infeasible": false,
+        "proposal_bytes": 1958
+      },
+      "parent_proposal_write_bytes": 1958,
+      "parent_read_bytes": 53736,
+      "public_schema_bytes": 240,
+      "public_schema_sha256": "f735673f3b829349969f4d5f08e67044042b59fe878a2f8087d908f9ae33441b",
+      "wall_ns": 3317400
+    },
+    "cached": {
+      "children": [
+        {
+          "infeasible": false,
+          "proposal_bytes": 766,
+          "workers": [
+            0,
+            1
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 779,
+          "workers": [
+            0,
+            2
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 770,
+          "workers": [
+            0,
+            3
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 770,
+          "workers": [
+            1,
+            2
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 761,
+          "workers": [
+            1,
+            3
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 774,
+          "workers": [
+            2,
+            3
+          ]
+        }
+      ],
+      "correct": 24,
+      "cpu_ns": 0,
+      "final_queries": 24,
+      "limits": "Constructed timing on eight inspected historical records; schema/public program uncharged as instance memory, separately reported. Source disappears after parent, parent after child. Scripted final decoder.",
+      "parent": {
+        "infeasible": false,
+        "proposal_bytes": 1539
+      },
+      "parent_proposal_write_bytes": 1539,
+      "parent_read_bytes": 53736,
+      "public_schema_bytes": 4,
+      "public_schema_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "wall_ns": 935100
+    },
+    "raw": {
+      "children": [
+        {
+          "infeasible": false,
+          "proposal_bytes": 2,
+          "workers": [
+            0,
+            1
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 2,
+          "workers": [
+            0,
+            2
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 2,
+          "workers": [
+            0,
+            3
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 2,
+          "workers": [
+            1,
+            2
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 2,
+          "workers": [
+            1,
+            3
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 2,
+          "workers": [
+            2,
+            3
+          ]
+        }
+      ],
+      "correct": 0,
+      "cpu_ns": 0,
+      "final_queries": 24,
+      "limits": "Constructed timing on eight inspected historical records; schema/public program uncharged as instance memory, separately reported. Source disappears after parent, parent after child. Scripted final decoder.",
+      "parent": {
+        "infeasible": true,
+        "proposal_bytes": 55031
+      },
+      "parent_proposal_write_bytes": 55031,
+      "parent_read_bytes": 53736,
+      "public_schema_bytes": 4,
+      "public_schema_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "wall_ns": 1971700
+    },
+    "static": {
+      "children": [
+        {
+          "infeasible": false,
+          "proposal_bytes": 996,
+          "workers": [
+            0,
+            1
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 1009,
+          "workers": [
+            0,
+            2
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 959,
+          "workers": [
+            0,
+            3
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 1000,
+          "workers": [
+            1,
+            2
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 950,
+          "workers": [
+            1,
+            3
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 963,
+          "workers": [
+            2,
+            3
+          ]
+        }
+      ],
+      "correct": 24,
+      "cpu_ns": 15625000,
+      "final_queries": 24,
+      "limits": "Constructed timing on eight inspected historical records; schema/public program uncharged as instance memory, separately reported. Source disappears after parent, parent after child. Scripted final decoder.",
+      "parent": {
+        "infeasible": false,
+        "proposal_bytes": 1958
+      },
+      "parent_proposal_write_bytes": 1958,
+      "parent_read_bytes": 53736,
+      "public_schema_bytes": 263,
+      "public_schema_sha256": "231994fbdb042120e8691f8064363ed6b9ce6e3036fead7e30654190c3b3bb5f",
+      "wall_ns": 3204000
+    },
+    "whole_root_ast": {
+      "children": [
+        {
+          "infeasible": false,
+          "proposal_bytes": 2,
+          "workers": [
+            0,
+            1
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 2,
+          "workers": [
+            0,
+            2
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 2,
+          "workers": [
+            0,
+            3
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 2,
+          "workers": [
+            1,
+            2
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 2,
+          "workers": [
+            1,
+            3
+          ]
+        },
+        {
+          "infeasible": false,
+          "proposal_bytes": 2,
+          "workers": [
+            2,
+            3
+          ]
+        }
+      ],
+      "correct": 0,
+      "cpu_ns": 0,
+      "final_queries": 24,
+      "limits": "Constructed timing on eight inspected historical records; schema/public program uncharged as instance memory, separately reported. Source disappears after parent, parent after child. Scripted final decoder.",
+      "parent": {
+        "infeasible": true,
+        "proposal_bytes": 23489
+      },
+      "parent_proposal_write_bytes": 23489,
+      "parent_read_bytes": 53736,
+      "public_schema_bytes": 58,
+      "public_schema_sha256": "6287a9d6251c30836af2ac7e134980a48d0c877916a78a3171949418012a7470",
+      "wall_ns": 2628300
+    }
+  },
+  "evidence_class": "post-hoc offline inspected/constructed development; finite source-analysis and serialization controls",
+  "historical_model_contracts_replayed": [
+    {
+      "catalog": {
+        "cases": 14505,
+        "cpu_ns": 2437500000,
+        "disagreements": 0,
+        "distinct_input_queries": 14490,
+        "expected_output_sha256": "069b639f1d625a2813c7e08599c41c875419ef634a04dec42f4b152de80db1c8",
+        "false_preflight_only": 0,
+        "input_query_sha256": "f9f84ee78fd5f97df5f2fa9e3c2ce5f7027437ffb6ce44659a6fbb76cc78aebc",
+        "observed_output_sha256": "069b639f1d625a2813c7e08599c41c875419ef634a04dec42f4b152de80db1c8",
+        "packed_input_bytes_sum": 886285,
+        "projected_json_bytes_sum": 2473047,
+        "raw_input_bytes_sum": 2487312,
+        "wall_ns": 2501478500,
+        "witnesses": []
+      },
+      "contract": {
+        "nonempty_paths": [
+          "provider_metadata"
+        ],
+        "presence_paths": [
+          "provider_metadata.usage",
+          "provider_metadata.turn_id"
+        ],
+        "value_paths": [
+          "status",
+          "provider_metadata.dispatched",
+          "provider_metadata.attempt_ticket",
+          "provider_metadata.credit_accounting.ticket",
+          "provider_metadata.credit_accounting.status",
+          "provider_metadata.credit_accounting.conservative_credit_equivalent_exact",
+          "error_type"
+        ]
+      },
+      "identity": "scope-v2-r1-concise",
+      "source_analysis": "experiments/dependency_memory/results/scope_luna_v2_2026-10-01/analysis.json",
+      "staged": {
+        "children": [
+          {
+            "infeasible": false,
+            "proposal_bytes": 996,
+            "workers": [
+              0,
+              1
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 1009,
+            "workers": [
+              0,
+              2
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 959,
+            "workers": [
+              0,
+              3
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 1000,
+            "workers": [
+              1,
+              2
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 950,
+            "workers": [
+              1,
+              3
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 963,
+            "workers": [
+              2,
+              3
+            ]
+          }
+        ],
+        "correct": 24,
+        "cpu_ns": 0,
+        "final_queries": 24,
+        "limits": "Constructed timing on eight inspected historical records; schema/public program uncharged as instance memory, separately reported. Source disappears after parent, parent after child. Scripted final decoder.",
+        "parent": {
+          "infeasible": false,
+          "proposal_bytes": 1958
+        },
+        "parent_proposal_write_bytes": 1958,
+        "parent_read_bytes": 53736,
+        "public_schema_bytes": 240,
+        "public_schema_sha256": "f735673f3b829349969f4d5f08e67044042b59fe878a2f8087d908f9ae33441b",
+        "wall_ns": 2620200
+      }
+    },
+    {
+      "catalog": {
+        "cases": 14505,
+        "cpu_ns": 2468750000,
+        "disagreements": 0,
+        "distinct_input_queries": 14490,
+        "expected_output_sha256": "069b639f1d625a2813c7e08599c41c875419ef634a04dec42f4b152de80db1c8",
+        "false_preflight_only": 0,
+        "input_query_sha256": "f9f84ee78fd5f97df5f2fa9e3c2ce5f7027437ffb6ce44659a6fbb76cc78aebc",
+        "observed_output_sha256": "069b639f1d625a2813c7e08599c41c875419ef634a04dec42f4b152de80db1c8",
+        "packed_input_bytes_sum": 886285,
+        "projected_json_bytes_sum": 2473047,
+        "raw_input_bytes_sum": 2487312,
+        "wall_ns": 2524635400,
+        "witnesses": []
+      },
+      "contract": {
+        "nonempty_paths": [
+          "provider_metadata"
+        ],
+        "presence_paths": [
+          "provider_metadata.usage",
+          "provider_metadata.turn_id"
+        ],
+        "value_paths": [
+          "status",
+          "error_type",
+          "provider_metadata.dispatched",
+          "provider_metadata.attempt_ticket",
+          "provider_metadata.credit_accounting.ticket",
+          "provider_metadata.credit_accounting.status",
+          "provider_metadata.credit_accounting.conservative_credit_equivalent_exact"
+        ]
+      },
+      "identity": "scope-v2-r1-closure",
+      "source_analysis": "experiments/dependency_memory/results/scope_luna_v2_2026-10-01/analysis.json",
+      "staged": {
+        "children": [
+          {
+            "infeasible": false,
+            "proposal_bytes": 996,
+            "workers": [
+              0,
+              1
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 1009,
+            "workers": [
+              0,
+              2
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 959,
+            "workers": [
+              0,
+              3
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 1000,
+            "workers": [
+              1,
+              2
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 950,
+            "workers": [
+              1,
+              3
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 963,
+            "workers": [
+              2,
+              3
+            ]
+          }
+        ],
+        "correct": 24,
+        "cpu_ns": 15625000,
+        "final_queries": 24,
+        "limits": "Constructed timing on eight inspected historical records; schema/public program uncharged as instance memory, separately reported. Source disappears after parent, parent after child. Scripted final decoder.",
+        "parent": {
+          "infeasible": false,
+          "proposal_bytes": 1958
+        },
+        "parent_proposal_write_bytes": 1958,
+        "parent_read_bytes": 53736,
+        "public_schema_bytes": 240,
+        "public_schema_sha256": "f735673f3b829349969f4d5f08e67044042b59fe878a2f8087d908f9ae33441b",
+        "wall_ns": 3664600
+      }
+    },
+    {
+      "catalog": {
+        "cases": 14505,
+        "cpu_ns": 2203125000,
+        "disagreements": 0,
+        "distinct_input_queries": 14490,
+        "expected_output_sha256": "069b639f1d625a2813c7e08599c41c875419ef634a04dec42f4b152de80db1c8",
+        "false_preflight_only": 0,
+        "input_query_sha256": "f9f84ee78fd5f97df5f2fa9e3c2ce5f7027437ffb6ce44659a6fbb76cc78aebc",
+        "observed_output_sha256": "069b639f1d625a2813c7e08599c41c875419ef634a04dec42f4b152de80db1c8",
+        "packed_input_bytes_sum": 1354285,
+        "projected_json_bytes_sum": 2473047,
+        "raw_input_bytes_sum": 2487312,
+        "wall_ns": 2217625600,
+        "witnesses": []
+      },
+      "contract": {
+        "nonempty_paths": [
+          "provider_metadata"
+        ],
+        "presence_paths": [
+          "provider_metadata.usage",
+          "provider_metadata.turn_id"
+        ],
+        "value_paths": [
+          "status",
+          "error_type",
+          "provider_metadata.dispatched",
+          "provider_metadata.attempt_ticket",
+          "provider_metadata.credit_accounting"
+        ]
+      },
+      "identity": "scope-v2-r2-closure",
+      "source_analysis": "experiments/dependency_memory/results/scope_luna_suffix_2026-10-01/analysis.json",
+      "staged": {
+        "children": [
+          {
+            "infeasible": false,
+            "proposal_bytes": 2,
+            "workers": [
+              0,
+              1
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 2,
+            "workers": [
+              0,
+              2
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 2,
+            "workers": [
+              0,
+              3
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 2,
+            "workers": [
+              1,
+              2
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 2,
+            "workers": [
+              1,
+              3
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 2,
+            "workers": [
+              2,
+              3
+            ]
+          }
+        ],
+        "correct": 0,
+        "cpu_ns": 0,
+        "final_queries": 24,
+        "limits": "Constructed timing on eight inspected historical records; schema/public program uncharged as instance memory, separately reported. Source disappears after parent, parent after child. Scripted final decoder.",
+        "parent": {
+          "infeasible": true,
+          "proposal_bytes": 14758
+        },
+        "parent_proposal_write_bytes": 14758,
+        "parent_read_bytes": 53736,
+        "public_schema_bytes": 171,
+        "public_schema_sha256": "caa0dde161581dcbd9a28b7bf6b6a58cf58be53c17a8705436b1e969ed1c2c62",
+        "wall_ns": 2420100
+      }
+    },
+    {
+      "catalog": {
+        "cases": 14505,
+        "cpu_ns": 2109375000,
+        "disagreements": 0,
+        "distinct_input_queries": 14490,
+        "expected_output_sha256": "069b639f1d625a2813c7e08599c41c875419ef634a04dec42f4b152de80db1c8",
+        "false_preflight_only": 0,
+        "input_query_sha256": "f9f84ee78fd5f97df5f2fa9e3c2ce5f7027437ffb6ce44659a6fbb76cc78aebc",
+        "observed_output_sha256": "069b639f1d625a2813c7e08599c41c875419ef634a04dec42f4b152de80db1c8",
+        "packed_input_bytes_sum": 1354285,
+        "projected_json_bytes_sum": 2473047,
+        "raw_input_bytes_sum": 2487312,
+        "wall_ns": 2147050900,
+        "witnesses": []
+      },
+      "contract": {
+        "nonempty_paths": [
+          "provider_metadata"
+        ],
+        "presence_paths": [
+          "provider_metadata.usage",
+          "provider_metadata.turn_id"
+        ],
+        "value_paths": [
+          "status",
+          "provider_metadata.dispatched",
+          "provider_metadata.attempt_ticket",
+          "provider_metadata.credit_accounting",
+          "error_type"
+        ]
+      },
+      "identity": "scope-v2-r3-closure",
+      "source_analysis": "experiments/dependency_memory/results/scope_luna_suffix_2026-10-01/analysis.json",
+      "staged": {
+        "children": [
+          {
+            "infeasible": false,
+            "proposal_bytes": 2,
+            "workers": [
+              0,
+              1
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 2,
+            "workers": [
+              0,
+              2
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 2,
+            "workers": [
+              0,
+              3
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 2,
+            "workers": [
+              1,
+              2
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 2,
+            "workers": [
+              1,
+              3
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 2,
+            "workers": [
+              2,
+              3
+            ]
+          }
+        ],
+        "correct": 0,
+        "cpu_ns": 15625000,
+        "final_queries": 24,
+        "limits": "Constructed timing on eight inspected historical records; schema/public program uncharged as instance memory, separately reported. Source disappears after parent, parent after child. Scripted final decoder.",
+        "parent": {
+          "infeasible": true,
+          "proposal_bytes": 14758
+        },
+        "parent_proposal_write_bytes": 14758,
+        "parent_read_bytes": 53736,
+        "public_schema_bytes": 171,
+        "public_schema_sha256": "caa0dde161581dcbd9a28b7bf6b6a58cf58be53c17a8705436b1e969ed1c2c62",
+        "wall_ns": 3272900
+      }
+    },
+    {
+      "catalog": {
+        "cases": 14505,
+        "cpu_ns": 2375000000,
+        "disagreements": 0,
+        "distinct_input_queries": 14490,
+        "expected_output_sha256": "069b639f1d625a2813c7e08599c41c875419ef634a04dec42f4b152de80db1c8",
+        "false_preflight_only": 0,
+        "input_query_sha256": "f9f84ee78fd5f97df5f2fa9e3c2ce5f7027437ffb6ce44659a6fbb76cc78aebc",
+        "observed_output_sha256": "069b639f1d625a2813c7e08599c41c875419ef634a04dec42f4b152de80db1c8",
+        "packed_input_bytes_sum": 886285,
+        "projected_json_bytes_sum": 2473047,
+        "raw_input_bytes_sum": 2487312,
+        "wall_ns": 2470034300,
+        "witnesses": []
+      },
+      "contract": {
+        "nonempty_paths": [
+          "provider_metadata"
+        ],
+        "presence_paths": [
+          "provider_metadata.usage",
+          "provider_metadata.turn_id"
+        ],
+        "value_paths": [
+          "status",
+          "provider_metadata.dispatched",
+          "provider_metadata.attempt_ticket",
+          "provider_metadata.credit_accounting.ticket",
+          "provider_metadata.credit_accounting.status",
+          "provider_metadata.credit_accounting.conservative_credit_equivalent_exact",
+          "error_type"
+        ]
+      },
+      "identity": "scope-v2-r3-concise",
+      "source_analysis": "experiments/dependency_memory/results/scope_luna_suffix_2026-10-01/analysis.json",
+      "staged": {
+        "children": [
+          {
+            "infeasible": false,
+            "proposal_bytes": 996,
+            "workers": [
+              0,
+              1
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 1009,
+            "workers": [
+              0,
+              2
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 959,
+            "workers": [
+              0,
+              3
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 1000,
+            "workers": [
+              1,
+              2
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 950,
+            "workers": [
+              1,
+              3
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 963,
+            "workers": [
+              2,
+              3
+            ]
+          }
+        ],
+        "correct": 24,
+        "cpu_ns": 0,
+        "final_queries": 24,
+        "limits": "Constructed timing on eight inspected historical records; schema/public program uncharged as instance memory, separately reported. Source disappears after parent, parent after child. Scripted final decoder.",
+        "parent": {
+          "infeasible": false,
+          "proposal_bytes": 1958
+        },
+        "parent_proposal_write_bytes": 1958,
+        "parent_read_bytes": 53736,
+        "public_schema_bytes": 240,
+        "public_schema_sha256": "f735673f3b829349969f4d5f08e67044042b59fe878a2f8087d908f9ae33441b",
+        "wall_ns": 2927600
+      }
+    },
+    {
+      "catalog": {
+        "cases": 14505,
+        "cpu_ns": 2421875000,
+        "disagreements": 0,
+        "distinct_input_queries": 14490,
+        "expected_output_sha256": "069b639f1d625a2813c7e08599c41c875419ef634a04dec42f4b152de80db1c8",
+        "false_preflight_only": 0,
+        "input_query_sha256": "f9f84ee78fd5f97df5f2fa9e3c2ce5f7027437ffb6ce44659a6fbb76cc78aebc",
+        "observed_output_sha256": "069b639f1d625a2813c7e08599c41c875419ef634a04dec42f4b152de80db1c8",
+        "packed_input_bytes_sum": 1353745,
+        "projected_json_bytes_sum": 2473047,
+        "raw_input_bytes_sum": 2487312,
+        "wall_ns": 2472362300,
+        "witnesses": []
+      },
+      "contract": {
+        "nonempty_paths": [
+          "provider_metadata"
+        ],
+        "presence_paths": [
+          "provider_metadata.credit_accounting",
+          "provider_metadata.usage",
+          "provider_metadata.turn_id"
+        ],
+        "value_paths": [
+          "status",
+          "error_type",
+          "provider_metadata.dispatched",
+          "provider_metadata.attempt_ticket",
+          "provider_metadata.credit_accounting.ticket",
+          "provider_metadata.credit_accounting.status",
+          "provider_metadata.credit_accounting.conservative_credit_equivalent_exact"
+        ]
+      },
+      "identity": "scope-v2-r4-closure",
+      "source_analysis": "experiments/dependency_memory/results/scope_luna_suffix_2026-10-01/analysis.json",
+      "staged": {
+        "children": [
+          {
+            "infeasible": false,
+            "proposal_bytes": 1208,
+            "workers": [
+              0,
+              1
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 1221,
+            "workers": [
+              0,
+              2
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 1118,
+            "workers": [
+              0,
+              3
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 1212,
+            "workers": [
+              1,
+              2
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 1109,
+            "workers": [
+              1,
+              3
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 1122,
+            "workers": [
+              2,
+              3
+            ]
+          }
+        ],
+        "correct": 24,
+        "cpu_ns": 15625000,
+        "final_queries": 24,
+        "limits": "Constructed timing on eight inspected historical records; schema/public program uncharged as instance memory, separately reported. Source disappears after parent, parent after child. Scripted final decoder.",
+        "parent": {
+          "infeasible": false,
+          "proposal_bytes": 2329
+        },
+        "parent_proposal_write_bytes": 2329,
+        "parent_read_bytes": 53736,
+        "public_schema_bytes": 171,
+        "public_schema_sha256": "caa0dde161581dcbd9a28b7bf6b6a58cf58be53c17a8705436b1e969ed1c2c62",
+        "wall_ns": 3541600
+      }
+    },
+    {
+      "catalog": {
+        "cases": 14505,
+        "cpu_ns": 2328125000,
+        "disagreements": 0,
+        "distinct_input_queries": 14490,
+        "expected_output_sha256": "069b639f1d625a2813c7e08599c41c875419ef634a04dec42f4b152de80db1c8",
+        "false_preflight_only": 0,
+        "input_query_sha256": "f9f84ee78fd5f97df5f2fa9e3c2ce5f7027437ffb6ce44659a6fbb76cc78aebc",
+        "observed_output_sha256": "069b639f1d625a2813c7e08599c41c875419ef634a04dec42f4b152de80db1c8",
+        "packed_input_bytes_sum": 886285,
+        "projected_json_bytes_sum": 2473047,
+        "raw_input_bytes_sum": 2487312,
+        "wall_ns": 2352459700,
+        "witnesses": []
+      },
+      "contract": {
+        "nonempty_paths": [
+          "provider_metadata"
+        ],
+        "presence_paths": [
+          "provider_metadata.usage",
+          "provider_metadata.turn_id"
+        ],
+        "value_paths": [
+          "status",
+          "provider_metadata.dispatched",
+          "provider_metadata.attempt_ticket",
+          "provider_metadata.credit_accounting.ticket",
+          "provider_metadata.credit_accounting.status",
+          "provider_metadata.credit_accounting.conservative_credit_equivalent_exact",
+          "error_type"
+        ]
+      },
+      "identity": "scope-v2-r4-concise",
+      "source_analysis": "experiments/dependency_memory/results/scope_luna_suffix_2026-10-01/analysis.json",
+      "staged": {
+        "children": [
+          {
+            "infeasible": false,
+            "proposal_bytes": 996,
+            "workers": [
+              0,
+              1
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 1009,
+            "workers": [
+              0,
+              2
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 959,
+            "workers": [
+              0,
+              3
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 1000,
+            "workers": [
+              1,
+              2
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 950,
+            "workers": [
+              1,
+              3
+            ]
+          },
+          {
+            "infeasible": false,
+            "proposal_bytes": 963,
+            "workers": [
+              2,
+              3
+            ]
+          }
+        ],
+        "correct": 24,
+        "cpu_ns": 0,
+        "final_queries": 24,
+        "limits": "Constructed timing on eight inspected historical records; schema/public program uncharged as instance memory, separately reported. Source disappears after parent, parent after child. Scripted final decoder.",
+        "parent": {
+          "infeasible": false,
+          "proposal_bytes": 1958
+        },
+        "parent_proposal_write_bytes": 1958,
+        "parent_read_bytes": 53736,
+        "public_schema_bytes": 240,
+        "public_schema_sha256": "f735673f3b829349969f4d5f08e67044042b59fe878a2f8087d908f9ae33441b",
+        "wall_ns": 3903500
+      }
+    }
+  ],
+  "historical_record_sha256": [
+    "c613a996c5610e1c3785805cb03cdb92f33cbf931c176f7099f28748373078ed",
+    "ea1ee1fc8868585ce111301f812b0f98348c624cef4b8a4b2328cf551169af0b",
+    "e0ba06d803c29234dc4ba9cf61d2b99a32558dfe1e392793eb20831db6ca60e6",
+    "b309d04afa805f48ac881b1d72073a8470406c9ae1e8aae1e9c440621e43ea7e",
+    "3c015c4d0a62d67afd6aa27df80751342b2e85204f7e97283fc0155a7336ba2f",
+    "a3a6bce4230057720ef149573acf37b70c01cb7a2dcbace5894080ed0a0a7e5b",
+    "5183bf59562673f0b7f8061b052c06aec89df8364cd780e4f499ca186f7e7f20",
+    "b97a443e53eec645255053594c879ef5a76f9bf1217425667a6c11c5640b4565"
+  ],
+  "limits": "Three inspected repository programs and one constructed late-key family; correlated finite catalog rows are not trials. Inference is a heuristic, not universal semantic proof or minimal scope. Same existing codec for every projected arm. Model replay is scripted post-hoc, not new LLM results; original incomplete primary criterion unchanged. No general slicing/coding novelty, natural-task prevalence, production performance or fully priced cost claim.",
+  "new_model_calls": 0,
+  "parent_cap_bytes": 4096,
+  "permanent_missing_model_answers": 1,
+  "priced_total_cost": null,
+  "programs": [
+    {
+      "catalog": {
+        "cases": 14505,
+        "cpu_ns": 2640625000,
+        "disagreements": 0,
+        "distinct_input_queries": 14490,
+        "expected_output_sha256": "069b639f1d625a2813c7e08599c41c875419ef634a04dec42f4b152de80db1c8",
+        "false_preflight_only": 0,
+        "input_query_sha256": "f9f84ee78fd5f97df5f2fa9e3c2ce5f7027437ffb6ce44659a6fbb76cc78aebc",
+        "observed_output_sha256": "069b639f1d625a2813c7e08599c41c875419ef634a04dec42f4b152de80db1c8",
+        "packed_input_bytes_sum": 886285,
+        "projected_json_bytes_sum": 2473047,
+        "raw_input_bytes_sum": 2487312,
+        "wall_ns": 2655875300,
+        "witnesses": []
+      },
+      "entry": "classify_attempt",
+      "evidence_class": "inspected historical program",
+      "extraction": {
+        "cpu_ns": 0,
+        "read_bytes": 2632,
+        "wall_ns": 2563900,
+        "write_bytes": 604
+      },
+      "inferred": {
+        "contract": {
+          "nonempty_paths": [
+            "provider_metadata",
+            "provider_metadata.credit_accounting"
+          ],
+          "presence_paths": [
+            "provider_metadata.turn_id",
+            "provider_metadata.usage"
+          ],
+          "value_paths": [
+            "error_type",
+            "provider_metadata.attempt_ticket",
+            "provider_metadata.credit_accounting.conservative_credit_equivalent_exact",
+            "provider_metadata.credit_accounting.status",
+            "provider_metadata.credit_accounting.ticket",
+            "provider_metadata.dispatched",
+            "status"
+          ]
+        },
+        "issues": [],
+        "limits": "AST-only heuristic; finite checks are separate. No universal Python soundness, minimal scope or slicing novelty claim.",
+        "whole_input_fallback": false
+      },
+      "name": "dispatch",
+      "parameter": "attempt",
+      "public_schema": {
+        "error_type": null,
+        "provider_metadata": {
+          "_scope_nonempty": null,
+          "attempt_ticket": null,
+          "credit_accounting": {
+            "_scope_nonempty": null,
+            "conservative_credit_equivalent_exact": null,
+            "status": null,
+            "ticket": null
+          },
+          "dispatched": null,
+          "turn_id": null,
+          "usage": null
+        },
+        "status": null
+      },
+      "public_schema_bytes": 263,
+      "public_source_sha256": "90c6dd646a666b602c885619f331645e2484f261242b78370d5512a3b980e04e",
+      "source_path": "scripts/prepare_transfer_continuation.py"
+    },
+    {
+      "catalog": {
+        "cases": 20769,
+        "cpu_ns": 2312500000,
+        "disagreements": 0,
+        "distinct_input_queries": 20769,
+        "expected_output_sha256": "1693a22619e03f8ed1096a58a7815233ba9f30b3dacd9927e1eef375c5803754",
+        "false_preflight_only": 0,
+        "input_query_sha256": "58621b409e01f731521795681110a462ff0cca54fca8480b9de405f6a8d8a16e",
+        "observed_output_sha256": "1693a22619e03f8ed1096a58a7815233ba9f30b3dacd9927e1eef375c5803754",
+        "packed_input_bytes_sum": 408164,
+        "projected_json_bytes_sum": 2158950,
+        "raw_input_bytes_sum": 3527525,
+        "wall_ns": 2334367900,
+        "witnesses": []
+      },
+      "entry": "usage_estimates",
+      "evidence_class": "inspected repository arithmetic validator; its historical rates are not current provider claims",
+      "extraction": {
+        "cpu_ns": 0,
+        "read_bytes": 2872,
+        "wall_ns": 2515000,
+        "write_bytes": 352
+      },
+      "inferred": {
+        "contract": {
+          "nonempty_paths": [],
+          "presence_paths": [],
+          "value_paths": [
+            "cacheWriteInputTokens",
+            "cachedInputTokens",
+            "inputTokens",
+            "outputTokens",
+            "reasoningOutputTokens",
+            "totalTokens"
+          ]
+        },
+        "issues": [],
+        "limits": "AST-only heuristic; finite checks are separate. No universal Python soundness, minimal scope or slicing novelty claim.",
+        "whole_input_fallback": false
+      },
+      "name": "tokens",
+      "parameter": "usage",
+      "public_schema": {
+        "cacheWriteInputTokens": null,
+        "cachedInputTokens": null,
+        "inputTokens": null,
+        "outputTokens": null,
+        "reasoningOutputTokens": null,
+        "totalTokens": null
+      },
+      "public_schema_bytes": 142,
+      "public_source_sha256": "fe4c36f3f13f2f3de157835363c57a78c40b0cedfcb2a6a31b72632551380871",
+      "source_path": "experiments/dependency_memory/luna_budget.py"
+    },
+    {
+      "catalog": {
+        "cases": 16207,
+        "cpu_ns": 1234375000,
+        "disagreements": 0,
+        "distinct_input_queries": 16207,
+        "expected_output_sha256": "d30e9155c419f6a69d3ec94ed021c53c0b97a97603773f1771e7ba445a250b58",
+        "false_preflight_only": 0,
+        "input_query_sha256": "6dd505c3b2cec7d780d847bce2d269746e003491c152c7c432303baa3cf42f84",
+        "observed_output_sha256": "d30e9155c419f6a69d3ec94ed021c53c0b97a97603773f1771e7ba445a250b58",
+        "packed_input_bytes_sum": 3088888,
+        "projected_json_bytes_sum": 3088888,
+        "raw_input_bytes_sum": 3088888,
+        "wall_ns": 1241675900,
+        "witnesses": []
+      },
+      "entry": "quota_allows_generation",
+      "evidence_class": "inspected repository normalized-quota validator; no live account observation",
+      "extraction": {
+        "cpu_ns": 0,
+        "read_bytes": 983,
+        "wall_ns": 1152100,
+        "write_bytes": 291
+      },
+      "inferred": {
+        "contract": {
+          "nonempty_paths": [],
+          "presence_paths": [],
+          "value_paths": [
+            "$"
+          ]
+        },
+        "issues": [
+          {
+            "line": 6,
+            "reason": "nonliteral loop iteration"
+          }
+        ],
+        "limits": "AST-only heuristic; finite checks are separate. No universal Python soundness, minimal scope or slicing novelty claim.",
+        "whole_input_fallback": true
+      },
+      "name": "quota",
+      "parameter": "snapshot",
+      "public_schema": null,
+      "public_schema_bytes": 4,
+      "public_source_sha256": "3c8a866b4d12e234d072ecb09bfffa63be689bca56041da4597c581d3f03bd69",
+      "source_path": "scripts/audit_transfer_run.py"
+    },
+    {
+      "catalog": {
+        "cases": 85,
+        "cpu_ns": 0,
+        "disagreements": 0,
+        "distinct_input_queries": 85,
+        "expected_output_sha256": "180f320e8c842590ea6e775d46c1d6d127b40cff5a27ea2b974141f3458800bf",
+        "false_preflight_only": 0,
+        "input_query_sha256": "bc562ca9365e93a07b77cf57d4f09325718f6294839f189e3fe11312b66e29f4",
+        "observed_output_sha256": "180f320e8c842590ea6e775d46c1d6d127b40cff5a27ea2b974141f3458800bf",
+        "packed_input_bytes_sum": 3724,
+        "projected_json_bytes_sum": 4141,
+        "raw_input_bytes_sum": 7501,
+        "wall_ns": 6322700,
+        "witnesses": []
+      },
+      "entry": "lookup",
+      "evidence_class": "constructed late-key family, not another actual repository program or natural task",
+      "extraction": {
+        "cpu_ns": 0,
+        "read_bytes": 90,
+        "wall_ns": 433400,
+        "write_bytes": 325
+      },
+      "inferred": {
+        "contract": {
+          "nonempty_paths": [],
+          "presence_paths": [],
+          "value_paths": [
+            "values"
+          ]
+        },
+        "issues": [
+          {
+            "line": 3,
+            "reason": "dynamic or unrepresentable key: retain its whole base"
+          }
+        ],
+        "limits": "AST-only heuristic; finite checks are separate. No universal Python soundness, minimal scope or slicing novelty claim.",
+        "whole_input_fallback": false
+      },
+      "name": "late_key",
+      "parameter": "record",
+      "public_schema": {
+        "values": null
+      },
+      "public_schema_bytes": 15,
+      "public_source_sha256": "638641284e556c191a533d6a5c4e26a04598cc59670041cf2aaf8bfae2f633e5",
+      "source_path": null
+    }
+  ],
+  "prospective_natural_episodes_added": 0,
+  "source_sha256": {
+    "experiments/dependency_memory/luna_budget.py": "2c9f6e2ce96d642df4ef4a00ee19c89cfeccd89add445e468f981ff74160dfac",
+    "experiments/dependency_memory/results/scope_luna_suffix_2026-10-01/analysis.json": "66721322badc7342dd62fc5934b9ffdfbb558212657608c6cfdce35146c576c9",
+    "experiments/dependency_memory/results/scope_luna_v2_2026-10-01/analysis.json": "d94f9e902ff7f566569b03abe7f4f44fa5f4c193fc0cf09a8d144e1eed25aca3",
+    "experiments/dependency_memory/scope_inference/codec.py": "9e1b714d299c4c4f2ae08dc65fc6de247a77587cd5f25a762355ec91d95338ed",
+    "experiments/dependency_memory/scope_inference/study.py": "0723d7040831478ba159a38b2109f22ca30cb7803c0692400e29cfedf41dd8aa",
+    "experiments/dependency_memory/scope_static/PROTOCOL.md": "4a711cb36a329ba2aab66a4c1e248cde9db44286078f667fba25929265cc7e19",
+    "experiments/dependency_memory/scope_static/__init__.py": "df402be7c0a58916a40db2fa2f028bff1ae2defaa6a377bd03303abaac87940f",
+    "experiments/dependency_memory/scope_static/cases.py": "ecb92fb902a267a09e46f02317c3a8d0648e83286cef4250f692a79c5d62b192",
+    "experiments/dependency_memory/scope_static/infer.py": "2b90c41c14e654af146e691634e7210bc0268518e77364561562826dec7febc1",
+    "experiments/dependency_memory/scope_static/packing.py": "5cb9c26e6d3620588c0db23fd69c81484d73823cbd1abd733ce93667665e23d4",
+    "experiments/dependency_memory/scope_static/run.py": "d0b5240d80affdc20fe806c50cafab3258e4c715276ccf1b0c5f39f20d4b0445",
+    "experiments/dependency_memory/scope_static/targets.py": "27a7b9d385b757b65750f3d3eca01e9ad594fb62a4c3fc99d17d15bae9d0f33c",
+    "experiments/dependency_memory/scope_static/test_static.py": "18fb9c856ba8827299695d5ff7bb6cff5ea19b6d8fa4b2a95ad9d2d7a988dc0d",
+    "experiments/dependency_memory/workflow_replay/evidence.py": "c6b875ab31737130886e63fe641fa00860f52a284fb0da76b6742b43d439d487",
+    "scripts/audit_transfer_run.py": "4caa95b0bf2f7c6f50e7808fda88420d1f876453369e13518b7334ba81fb93d0",
+    "scripts/prepare_transfer_continuation.py": "345c3f52e52d8e210394d236dd5c4d2671fd476fc50cca8fddec22095a91fc92"
+  },
+  "version": "source_static_uniform_codec_control_v1"
+}

@@ -1,6 +1,18 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.30 — October 1, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.31 — October 1, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## A stronger source-analysis control removes the need for more calls on this classifier
+
+The [new AST control](../research/STATIC_SCOPE_CONTROL_2026-10-01.md) recovers a
+finite-catalog-complete dispatch contract from source alone. With one common
+codec, it and the authored contract answer 24/24 under unchanged byte caps;
+five saved model contracts also reach 24/24, while two remain oversized.
+Cached outcomes still use less memory. Claim C64. Three inspected repository
+programs and a constructed late-key family agree on 51,566 finite rows, but
+quota uses whole-input fallback. These are development checks, not a universal
+Python proof or independent workflows. No model call or natural task is added;
+the original missing answer and unassessable criterion remain unchanged.
 
 ## The finite bound now allows every final decoder
 

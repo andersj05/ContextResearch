@@ -4,6 +4,15 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
+**October 1 stronger scope control:** [AST access-use analysis](research/STATIC_SCOPE_CONTROL_2026-10-01.md)
+agrees with three inspected repository programs and one constructed late-key
+family on 51,566 finite input/query rows. With one shared codec, it answers
+24/24 imposed dispatch queries at 1,958 parent and 950–1,009 child bytes,
+matching the authored contract and five fitting saved model contracts.
+Quota uses whole-input fallback; two model contracts remain oversized.
+This is a stronger zero-model control, not universal semantic proof or a new
+natural task. The original model criterion and permanent gap stay unchanged.
+
 **October 1 finite coding advance:** a [fixed three-block code](research/JOINT_THREE_BLOCK_WITNESS_2026-10-01.md)
 reduces exact average bit error from 27.7995% to 27.4855% using the same six-bit
 parent and one-bit child. All 147,456 outcomes are checked; this is an achievable

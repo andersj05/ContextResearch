@@ -22,6 +22,13 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.31 adds the [static source-analysis control](../research/STATIC_SCOPE_CONTROL_2026-10-01.md),
+claim C64. With the codec held fixed, static and authored dispatch contracts
+score 24/24, as do five of the seven saved model contracts; two remain oversized.
+Three inspected programs and one constructed late-key family agree on 51,566
+finite rows, including whole-input quota fallback. Eleven tests pass. This adds
+no model call or natural task, universal Python proof or slicing novelty claim.
+
 Living draft v0.30 adds the [all-decoder three-block converse](../research/ALL_DECODER_THREE_BLOCK_COVER_2026-10-01.md),
 claim C63. The unrestricted D_3(6) is enclosed in [27.1756%, 27.4855%], including
 noncomplementary and repeated prediction endpoints. An oracle gate and 46,492

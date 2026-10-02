@@ -818,3 +818,51 @@ PASS with 63 claims and 47 bibliography entries, and paper assembly checks
 40 cited sources. The final cover and auxiliary audit are regenerated with
 matching source hashes. Preserve the raw exploratory bytes and the earlier
 certificates; controlled build/test logs and previews stay ignored.
+
+## October 1, 2026 — strengthen source-analysis controls before more model inference
+
+Add a separate scope_static package; preserve the frozen learner, v2, suffix
+and all original outcomes. The old literal-root AST control overretains whole
+subtrees and cannot establish a need for model extraction. A source-only access-use
+heuristic now propagates aliases, constant keys and literal helper contexts,
+with separate value, membership and type/truth retention. Unsupported operations
+retain their whole base or input and stay in the comparison. No universal Python
+soundness, minimal-scope or slicing novelty claim is made.
+
+Three inspected repository programs plus one constructed late-key family agree
+on 51,566 finite input/query rows, including malformed types and errors. Quota
+retains the whole input; its agreement is not a narrowing achievement. Hold the
+codec algorithm fixed across projected dispatch arms, generating public schemas
+from source-derived contracts alone. Static and authored contracts each answer
+24/24 at 1,958 parent and 950–1,009 child bytes under unchanged caps. Cached
+outcomes remain smaller. Uniform-codec replay of seven saved model contracts
+gives five 24/24 and two oversized 0/24. This is scripted post-hoc replay, not new
+LLM final decisions; the old permanent eighth-answer gap remains missing.
+
+The analyzer receives no records, authored contract, labels or observed model
+response. The evaluator separately runs trusted selected repository functions.
+Public schema bytes, local timings and read/write bytes are explicit but are not
+converted into a production-cost advantage. Historical token arithmetic is
+pinned program behavior, not a current provider price claim. No model calls or
+natural tasks are added.
+
+Register C64 and living draft v0.31. Add a bounded reading of the original
+abstract/Introduction of Horwitz, Reps and Binkley (1990), pp. 26–27, with verified
+three-author metadata and DOI. Full algorithm/proofs and replication remain
+unreviewed; the attempted scanned Weiser paper was not read or upgraded. Eleven
+independent tests use actual program execution, generated field renamings,
+branch joins, malformed aliases, presence/truth overlap, missing-key exceptions,
+unsupported cases, codec roundtrips and irreversible-memory identities.
+
+Stop spending inference calls on the same inspected classifier. The next cohort
+must be separately frozen, include easy/unsupported cases and strong static,
+direct and cached controls, and preserve the original byte caps and complete cost
+scope. Continue actual variable-command intake in this repository without
+manufacturing natural episodes from constructed inputs. Broader extraction,
+external review, priority and practical advantage remain open.
+
+All 503 offline tests pass at this milestone, including the eleven new tests.
+Repository validation reports PASS with 64 claims and 48 bibliography entries;
+paper assembly checks all 41 cited sources. The saved audit regenerates with
+matching source/evidence bindings. Historical model requests, outcomes and the
+permanent missing answer remain unchanged. Build and test logs stay ignored.

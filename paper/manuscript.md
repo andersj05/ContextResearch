@@ -724,9 +724,47 @@ timing supports a development diagnostic of sufficiency and representation size,
 not independent-workflow generalization, prompt superiority, a novel extraction
 algorithm or production savings. Claim C61.
 
+### 8.14 A stronger static control with the codec held fixed
+
+The [separate offline control](../research/STATIC_SCOPE_CONTROL_2026-10-01.md)
+analyzes public source, entry and formal names without record values, the
+authored contract, evaluator labels or model responses. It tracks aliases,
+constant keys, membership, type/truth uses and literal helper contexts.
+Unsupported operations retain their whole base or input. Dependency analysis
+through calls is established program-slicing prior work [@horwitz1990slicing];
+this limited heuristic claims neither that algorithm nor general slicing novelty.
+
+Three inspected repository programs and one constructed late-key family give
+zero original/projected disagreements on 51,566 finite input/query rows:
+14,505 dispatch, 20,769 token-validator, 16,207 quota-validator and 85 late-key
+cases. The quota program uses whole-input fallback; its agreement is not a
+narrowing success. Errors and malformed types stay in the comparison. Historical
+token arithmetic is pinned program behavior, not current provider pricing.
+Finite agreement does not certify arbitrary Python programs or inputs. [C64]
+
+Every projected dispatch arm uses the same existing fixed-schema codec algorithm
+with a public schema derived solely from its contract. Static and authored
+contracts each use 1,958 parent and 950–1,009 child bytes and answer all 24 imposed
+late queries under unchanged 4,096/1,536 caps. Public schema sizes, 263 and 240
+bytes respectively, are reported separately from instance memory. Cached known
+program outcomes use 1,539 parent and 761–779 child bytes and also answer 24/24.
+Whole-root and raw contracts exceed the parent cap and answer 0/24. [C64]
+
+Uniform-codec replay of seven already observed model contracts gives five
+24/24, four with 1,958-byte parents and one with a 2,329-byte parent; the two
+whole-accounting contracts propose 14,758 bytes and still score 0/24. This is
+scripted post-hoc replay, not new LLM final decisions or an independent study.
+The old eight-answer primary criterion and permanent gap remain unchanged.
+No observed contract beats the static control here. Eleven tests check generated
+program variations, malformed types, exceptions, overlap of membership/truth
+requirements, conservative fallbacks, codec roundtrips and irreversible memory.
+The result removes a reason to spend more calls on this inspected classifier;
+broader automatic extraction, natural-workflow benefit and fully priced lifecycle
+cost remain open. No new model call or natural task is added. [C64]
+
 ## 9. Limitations and open results
 
-The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. Source-only retention-contract inference has been evaluated only on one inspected classifier; an open-ended native-agent benchmark remains unperformed. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, useful finite-length joint codes, a wider rate-distortion characterization, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.
+The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. Source-only model inference has been evaluated only on one inspected classifier; the static control covers three inspected programs and one constructed family without universal certification; an open-ended native-agent benchmark remains unperformed. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, useful finite-length joint codes, a wider rate-distortion characterization, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.
 
 ## 10. Reproducibility
 

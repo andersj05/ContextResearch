@@ -1,5 +1,11 @@
 # Focused reading guide
 
+The [October 1 static scope control](../research/STATIC_SCOPE_CONTROL_2026-10-01.md#4-primary-source-comparison-and-limits)
+adds Horwitz, Reps and Binkley (1990), original abstract and opening Introduction
+pp. 26–27. The bounded primary reading establishes dependency/call-context
+analysis as prior work; the full algorithm and proofs remain unreviewed.
+Citation key `horwitz1990slicing`. No inherited corpus label is upgraded.
+
 The [October 1 retained-evidence comparison](../research/EVIDENCE_USE_AUDIT_2026-10-01.md#focused-primary-source-comparison)
 adds TierMem v1 (Sections 2.1–2.2, 3.1–3.2, 4.1.2 and 5.6) and the published
 Mem2ActBench paper (abstract, Section 3.3 and Sections 4.1–4.2). These are bounded

@@ -17,6 +17,7 @@ useful extraction and cost-effective application remain unperformed.
 
 | Work | Connection | Distinction to maintain |
 |---|---|---|
+| Interprocedural slicing [@horwitz1990slicing] | Established dependency analysis across helper calls | Our limited access-use heuristic is a zero-model baseline, with finite catalog agreement rather than a universal Python soundness proof. |
 | Nagle et al. [@nagle2024] | Black-box prompt rate–distortion and query visibility | Our updater cannot reread the original source after the first bottleneck. |
 | Equitz and Cover [@equitz1991] | Compatibility of successively refined descriptions | Their classical coding result is not automatically the theorem for this finite shrinking-memory query protocol. |
 | Kaspi and Merhav [@kaspi2013] | Causal coding with side information | Timing and encoder/decoder access must match before importing a bound. |
