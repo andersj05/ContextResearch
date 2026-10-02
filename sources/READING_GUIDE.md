@@ -1,5 +1,11 @@
 # Focused reading guide
 
+The [October 2 hard-cap note](../research/HARD_CAP_ENTROPY_CODE_2026-10-02.md#6-discovery-primary-source-comparison-and-limits)
+adds Chou, Lookabaugh and Gray (1989), original Introduction/Section II,
+printed pp. 31–33 (`chou1989entropy`), read October 2. Gray's author publication
+list, entry 68, corroborates metadata. Bounded reading only; no full review,
+replication or inherited review-status upgrade.
+
 The [October 2 query-prior/timing note](../research/QUERY_PRIOR_TIMING_2026-10-02.md#6-discovery-prior-work-and-validation)
 rereads existing Polyanskiy/Wu Chapter 25 Section 25.2, Theorem 25.2 and support
 remarks, printed pp. 258–259 (`polyanskiywu2016coding`). This bounded primary

@@ -1,6 +1,6 @@
 # Repeated Context Compression with Delayed Task Dependencies
 
-Working draft — October 2, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an exact parametric unrestricted asymptotic curve and a tightly certified rate-two error, a two-class query-prior and timing extension, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, a cross-record stress test with one permanent transport gap and a separately frozen continuation, a post-hoc offline decoder-compatibility correction, two workflow development comparisons, and a retrospective retained-evidence audit. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
+Working draft — October 2, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an exact parametric unrestricted asymptotic curve and a tightly certified rate-two error, a two-class query-prior and timing extension, an implemented polynomial hard-cap entropy code with finite bounds, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, a cross-record stress test with one permanent transport gap and a separately frozen continuation, a post-hoc offline decoder-compatibility correction, two workflow development comparisons, and a retrospective retained-evidence audit. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
 
 ## Abstract
 
@@ -128,6 +128,15 @@ at p=1/4. Unknown-prior minimax retains D(2). An early actual class attains
 1/4 using 3n bits inside the 4n cap. A finite opposite-orientation pair is
 robust to every source-independent p, but unequal allocation beats it for
 skewed known priors. Section 8.20 states the conditions and limits. [C70]
+
+An [implemented arithmetic-grid family](../research/HARD_CAP_ENTROPY_CODE_2026-10-02.md)
+now improves the repeated C69 upper bound at larger checked lengths using
+exactly 2k parent bits, including a fallback flag, and one child bit before J.
+At k=12,288 a retained rational schedule has risk at most 27.198892%. The
+default schedule's actual risk tends to about 27.075301%, still above C67.
+The encoder/updater have polynomial bit complexity and ten packed public
+response/probability bytes. Section 8.21 distinguishes analytic population
+bounds, full small-population grading and constructed large diagnostics. [C71]
 
 An [October 1 explicit three-block construction](../research/JOINT_THREE_BLOCK_WITNESS_2026-10-01.md)
 uses six parent bits and one child bit under the same timing. Its fixed 64-word
@@ -1051,9 +1060,94 @@ early side information are established; external correctness/priority,
 adaptive/within-class query laws and natural-agent/model/cost benefit remain
 open. No new model call or prospective natural episode is added. [C70]
 
+### 8.21 An implemented hard-cap entropy code with overflow bounds
+
+The [construction](../research/HARD_CAP_ENTROPY_CODE_2026-10-02.md) returns to
+the original uniform iid four-bit source and independent uniform R/O/J law.
+Choose a public count a before X. The first a blocks use the eight majority
+response signatures 0,3,5,6,9,10,12,15, with source counts 5,1,1,1,1,1,1,5.
+The other blocks use constants 0,15 with counts 11,5 and ties at weight two
+assigned zero. Their queried-bit risks are 1/4 and 5/16. Only response bit O
+becomes the one-bit child before J; four counterfactual answers do not become
+four retained bits. Final prediction is Z, with access only to Z,R,O,J. [C71]
+
+Exact arithmetic subdivision gives each response sequence an interval of
+length P, its product probability under the fixed public counts. Use odd grid
+numerators over 2^(2k), spaced 2^(-(2k-1)). The least contained point has an
+index requiring 2k-1 bits; a regular flag takes the remaining bit. If none is
+contained, M=0 denotes the all-zero fallback response. Thus 2^(2k-1)+1 usable
+messages fit inside the 2k-bit cap. The updater reconstructs the selected
+prefix from M and public tables, without source or interval access, and emits
+one bit. Fixed response/count payload is ten packed bytes, with k/a, framing,
+program and runtime separate. O(k) arithmetic steps on O(k)-bit integers give
+polynomial bit complexity, not a linear bit-operation or portable speed claim.
+Temporary computation is discarded at each boundary; no provider/session,
+archive, source, old parent or diagnostic list is an extra channel. [C71]
+
+Let U~Bin(a,3/8) count balanced majority outputs and V~Bin(k-a,5/16) count
+upper constant outputs. They are independent. Any interval at least one grid
+spacing contains a point, so failure is contained in
+
+\[
+\mathcal B=\{5^{a-U+V}11^{k-a-V}<2^{2k+1}\}.
+\]
+
+All-zero replacement has nonnegative per-source excess over the chosen
+quantizer, averaged across O/J. Conditional on U=u,V=v, its mean excess is
+(18a-8u+36v)/(60k), as calibrated independently over the sixteen source words.
+Actual failure may also depend on response order/values; using all of B gives
+the safe whole-population bound
+
+\[
+\frac5{16}-\frac{a}{16k}\ \le D_{k,a}\ \le
+\frac5{16}-\frac{a}{16k}+\mathbb E\!\left[
+ \frac{18a-8U+36V}{60k}\mathbf1_{\mathcal B}
+\right].
+\]
+
+Exact binomial tail masses and first moments evaluate this bound along a
+monotone integer frontier. A separate direct-power check verifies every
+frontier boundary; small cases also use literal two-dimensional sums. The
+bound covers all sources/queries under the stated law without physically
+enumerating the larger populations. It is not their exact average risk. [C71]
+
+Put h_2=4-(11 log2 11+5 log2 5)/16 and h_8=4-10 log2 5/16. For
+ell=ceil(log2(k+1)), m=ceil(sqrt(k*ell)), the default public schedule selects
+the largest a with 5^[5(k+a)]*11^[11(k-a)]>=2^[32k+16m]. This exact integer
+test is the mean-information constraint a*h_8+(k-a)*h_2<=2k-m.
+Maximality gives a/k -> (2-h_2)/(h_8-h_2). Each information summand has
+range below three bits, so Var(S)<=9k/4 and Chebyshev bounds Pr(B) by
+9k/[4(m-1)^2] for m>1. This vanishes, squeezing the actual code's risk to
+
+\[
+D_{\rm scalar}=\frac5{16}-\frac{2-h_2}{16(h_8-h_2)}
+ \in[0.270753014417,0.270753014418].
+\]
+
+This is the implemented schedule's suboptimal limit, above C67 and below
+the named repeated C69 code's 2304567/8388608. The retained rational schedule
+a=max(0,floor(2k/3)-ceil(2sqrt(k))) tends instead to 13/48, but has the
+stronger checked finite bound at three lengths. At k=12,288 its risk is at
+most 271988910418071/10^15, about 27.198892% rounded upward; the default bound
+is 136022316101341/(5*10^14). Both use exactly 2k parent bits. Sixteen bounds
+at eight multiples of six prove both schedules lose to C69 at k=96/192/384/768
+and improve on it at k=1536/3072/6144/12288. These are inspected bounds rather
+than trials or an optimal public-schedule search. [C71]
+
+Complete k=1,2,3 populations for every a execute 608,640 final queries;
+twelve constructed large inputs at k=1536/12288 execute another 864 at six
+declared positions. The latter are diagnostics, not source-population grading.
+Fifteen source/provenance bindings regenerate, preserving original C67/C69
+evidence. Generic entropy-constrained quantization and time sharing have
+classical precedent [@chou1989entropy]; arithmetic coding is established.
+This adds a specific implementable model construction and checked hard-cap
+bounds. External correctness/priority, efficient codes reaching C67, broader
+source/query laws and natural-agent/model/token/cost benefit remain open.
+Zero new model calls or prospective natural episodes. [C71]
+
 ## 9. Limitations and open results
 
-The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. Source-only model inference has been evaluated only on one inspected classifier; the static control covers three inspected programs and one constructed family without universal certification; an open-ended native-agent benchmark remains unperformed. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, useful finite-length joint codes, rate-distortion characterizations beyond the uniform four-bit source and stated two-class source-independent query priors, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.
+The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. Source-only model inference has been evaluated only on one inspected classifier; the static control covers three inspected programs and one constructed family without universal certification; an open-ended native-agent benchmark remains unperformed. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, exact finite optima and efficient codes approaching the characterized curves, rate-distortion characterizations beyond the uniform four-bit source and stated two-class source-independent query priors, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.
 
 ## 10. Reproducibility
 

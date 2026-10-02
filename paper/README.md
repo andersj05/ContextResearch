@@ -22,7 +22,18 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
-Living draft v0.37 adds the [query-prior and timing deductions](../research/QUERY_PRIOR_TIMING_2026-10-02.md),
+Living draft v0.38 adds the [implemented hard-cap entropy code](../research/HARD_CAP_ENTROPY_CODE_2026-10-02.md),
+claim C71. A polynomial arithmetic-grid family charges its fallback flag
+inside 2k parent bits and retains one child bit before J. Its default risk
+tends to 27.075301%, still above C67. At k=12,288 the retained rational control
+has a conservative 27.198892% error upper bound, below the repeated C69 code.
+Sixteen exact bounds preserve smaller-length losses and the stronger finite
+control. Full small populations and constructed large diagnostics have distinct
+execution scopes; larger risks are bounded analytically. Generic entropy
+quantization/time sharing are established, with external review, near-optimal
+codes and natural-agent/model/cost benefit open. Zero new model calls or episodes.
+
+Earlier living draft v0.37 adds the [query-prior and timing deductions](../research/QUERY_PRIOR_TIMING_2026-10-02.md),
 claim C70. Known class probabilities permit unequal allocation; five exact
 witnesses include 25.718661% limiting error at p=1/4. Unknown-prior minimax
 retains C67's rate-two limit, while an early actual class cue reaches 1/4

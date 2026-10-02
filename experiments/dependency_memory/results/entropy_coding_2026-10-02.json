@@ -1,0 +1,1112 @@
+{
+  "asymptotic": {
+    "error_limit_formula": "5/16 - (2-h2)/(16*(h8-h2)), h2=4-(11*log2(11)+5*log2(5))/16, h8=4-(10/16)*log2(5)",
+    "exact_2k_parent_capacity_including_flag": true,
+    "implemented_entropy_schedule_error_limit_enclosure": [
+      "0.270753014417",
+      "0.270753014418"
+    ],
+    "new_limit_above_unchanged_C67_rate_two_interval": true,
+    "no_exponential_public_codebook_stored": true,
+    "oracle_entropy_enclosure": [
+      "2.548794940695",
+      "2.548794940696"
+    ],
+    "oracle_fraction_boundary_enclosure": [
+      "0.667951769316",
+      "0.667951769317"
+    ],
+    "rational_schedule_error_limit": "13/48",
+    "scalar_fraction_limit_not_global_rate_distortion_optimum": true,
+    "two_word_entropy_enclosure": [
+      "0.896038232534",
+      "0.896038232535"
+    ],
+    "vanishing_overflow_proof": "Public slack m=ceil(sqrt(k*ceil(log2(k+1)))); mean self-information <=2k-m; independent bounded terms have variance <=9k/4; Chebyshev at 2k-1 makes the length-event probability vanish."
+  },
+  "complexity": "Encoder/selected-prefix updater have O(k) steps on O(k)-bit integers, hence polynomial bit complexity; public entropy planning uses binary search and exact O(k)-bit integer powers. No portable runtime or optimality claim.",
+  "date": "2026-10-02",
+  "discovery": {
+    "float_displays_used_in_numeric_proof": false,
+    "new_model_calls": 0,
+    "preserved_probe_lengths_per_schedule": 8,
+    "prototype_control_retained": true,
+    "source_snapshots": "Prototype files preserve actual bytes; revised scratch script imports evolving production code, not a frozen historical runtime."
+  },
+  "finite_bounds": [
+    {
+      "all_frontier_boundaries_independently_checked": 49,
+      "bad_mass_numerator_sha256": "1e43c1a4d7fe876b938d37d236aa908f2a68b353515174212725d88d6f8b5493",
+      "base_error_lower_for_this_fixed_code": "9/32",
+      "binomial_cells_represented": 2401,
+      "charged_flag_bits": 1,
+      "child_bits": 1,
+      "coded_error_enclosure": [
+        "0.281250000000",
+        "0.281603348573"
+      ],
+      "coded_error_upper_rounded_outward": "140801674286003/500000000000000",
+      "conditional_excess_upper_enclosure": [
+        "0.000353348572005",
+        "0.000353348572006"
+      ],
+      "cutoffs_sha256": "e8a980ce271ada91ad4d6cf723728146e6ee89cb1c9e2592a2096db72ef6701c",
+      "error_upper_calculation_enclosure": [
+        "0.281603348572005",
+        "0.281603348572006"
+      ],
+      "excess_numerator_sha256": "5e1bb41285c2800045e1cfc90d54b2a62b003ccbebfd0452add9d9d63b3044df",
+      "failure_probability_upper_enclosure": [
+        "0.001511360597174",
+        "0.001511360597175"
+      ],
+      "full_source_population_size_power_two": 384,
+      "k": 96,
+      "oracle_blocks": 48,
+      "parent_bits": 192,
+      "payload_grid_bits": 191,
+      "proves_improvement_over_repeated_C69": false,
+      "proves_loss_to_repeated_C69": true,
+      "raw_upper_denominator_sha256": "a2d0f2ddde325d9019ab3eb869e99ed6797a310d7902a9bf07dbe62afeb6d914",
+      "raw_upper_numerator_sha256": "5533ddb0dccf514ea2f4bb96205ebdafca1ab642f8a2ea3867984681e848c919",
+      "schedule": "entropy",
+      "scope": "Exact count-statistic upper bound for all sources and queries under the declared law; finite average is not evaluated exactly, and the large source population is not physically enumerated.",
+      "total_binomial_mass_power_two": 336
+    },
+    {
+      "all_frontier_boundaries_independently_checked": 53,
+      "bad_mass_numerator_sha256": "95c42e42ad00d2991749055a2e49f99bb05d316c7d556760ab7b20245827fb55",
+      "base_error_lower_for_this_fixed_code": "109/384",
+      "binomial_cells_represented": 2385,
+      "charged_flag_bits": 1,
+      "child_bits": 1,
+      "coded_error_enclosure": [
+        "0.283854166666",
+        "0.283870713233"
+      ],
+      "coded_error_upper_rounded_outward": "283870713232477/1000000000000000",
+      "conditional_excess_upper_enclosure": [
+        "0.000016546565809",
+        "0.000016546565810"
+      ],
+      "cutoffs_sha256": "412b9cdb603abfb08af885988ab48210163ad1fec07c52b6a3ae0850217e714e",
+      "error_upper_calculation_enclosure": [
+        "0.283870713232476",
+        "0.283870713232477"
+      ],
+      "excess_numerator_sha256": "69a8ab5b8a5514028149172ebbb20e68cd0158bf1f6d86a3c7b9bdbc0bcfac34",
+      "failure_probability_upper_enclosure": [
+        "0.000068762419262",
+        "0.000068762419263"
+      ],
+      "full_source_population_size_power_two": 384,
+      "k": 96,
+      "oracle_blocks": 44,
+      "parent_bits": 192,
+      "payload_grid_bits": 191,
+      "proves_improvement_over_repeated_C69": false,
+      "proves_loss_to_repeated_C69": true,
+      "raw_upper_denominator_sha256": "f1413dd3d06b922fd0407d4ea0b9878519f5e0052fee5c557d8d43aabd945a2d",
+      "raw_upper_numerator_sha256": "914734d03b326fb6a9e554ce3e906916cd87e7ba0f569fe0c22d84512cd240f8",
+      "schedule": "rational",
+      "scope": "Exact count-statistic upper bound for all sources and queries under the declared law; finite average is not evaluated exactly, and the large source population is not physically enumerated.",
+      "total_binomial_mass_power_two": 340
+    },
+    {
+      "all_frontier_boundaries_independently_checked": 89,
+      "bad_mass_numerator_sha256": "91259c2218f41d966847543296c2bf4523b68baa30de8ff1e2e179546ccd4bbb",
+      "base_error_lower_for_this_fixed_code": "107/384",
+      "binomial_cells_represented": 9345,
+      "charged_flag_bits": 1,
+      "child_bits": 1,
+      "coded_error_enclosure": [
+        "0.278645833333",
+        "0.278867101169"
+      ],
+      "coded_error_upper_rounded_outward": "278867101168407/1000000000000000",
+      "conditional_excess_upper_enclosure": [
+        "0.000221267835073",
+        "0.000221267835074"
+      ],
+      "cutoffs_sha256": "2cbe1037367a3485a8635ba12bf1f11e0a9f3206eed85d905c18cd45c9904e28",
+      "error_upper_calculation_enclosure": [
+        "0.278867101168406",
+        "0.278867101168407"
+      ],
+      "excess_numerator_sha256": "bd11df64db9d380dfec058af234d55c354f2707c44318e6f6dcf658041e92e9e",
+      "failure_probability_upper_enclosure": [
+        "0.000964632816064",
+        "0.000964632816065"
+      ],
+      "full_source_population_size_power_two": 768,
+      "k": 192,
+      "oracle_blocks": 104,
+      "parent_bits": 384,
+      "payload_grid_bits": 383,
+      "proves_improvement_over_repeated_C69": false,
+      "proves_loss_to_repeated_C69": true,
+      "raw_upper_denominator_sha256": "fb3c0209ff5e1c984a007ef7b43e2bfc8e51fcddc65a9de30523a2554e83ddc8",
+      "raw_upper_numerator_sha256": "1ade3a23c3d9275ae9ffdf766cf6640fa3ba0f464f54f7030a64feb448df684f",
+      "schedule": "entropy",
+      "scope": "Exact count-statistic upper bound for all sources and queries under the declared law; finite average is not evaluated exactly, and the large source population is not physically enumerated.",
+      "total_binomial_mass_power_two": 664
+    },
+    {
+      "all_frontier_boundaries_independently_checked": 93,
+      "bad_mass_numerator_sha256": "0dab6d7044faa54c5ff30cf69d2d082afa6d3e002f4fb182be036675e1dbc580",
+      "base_error_lower_for_this_fixed_code": "215/768",
+      "binomial_cells_represented": 9393,
+      "charged_flag_bits": 1,
+      "child_bits": 1,
+      "coded_error_enclosure": [
+        "0.279947916666",
+        "0.279976782631"
+      ],
+      "coded_error_upper_rounded_outward": "279976782630447/1000000000000000",
+      "conditional_excess_upper_enclosure": [
+        "0.000028865963779",
+        "0.000028865963780"
+      ],
+      "cutoffs_sha256": "6b47765e7a7e1a75160a16e0dbdd89806ed3e71d40d697c4e253cc434c88028e",
+      "error_upper_calculation_enclosure": [
+        "0.279976782630446",
+        "0.279976782630447"
+      ],
+      "excess_numerator_sha256": "9be27f3ad7d1003db4ea3182bcdf8c2a17ed2126a4ce492d44b8733854510d0d",
+      "failure_probability_upper_enclosure": [
+        "0.000124943666742",
+        "0.000124943666743"
+      ],
+      "full_source_population_size_power_two": 768,
+      "k": 192,
+      "oracle_blocks": 100,
+      "parent_bits": 384,
+      "payload_grid_bits": 383,
+      "proves_improvement_over_repeated_C69": false,
+      "proves_loss_to_repeated_C69": true,
+      "raw_upper_denominator_sha256": "1df417d2614cdae7da53f6ce60aaf0f7944d9c49b351d243b81d2d64ba3a5298",
+      "raw_upper_numerator_sha256": "6c22c22dbb5b44365c08245aa0fc84d8a8ea71742638cb354ec796351433672b",
+      "schedule": "rational",
+      "scope": "Exact count-statistic upper bound for all sources and queries under the declared law; finite average is not evaluated exactly, and the large source population is not physically enumerated.",
+      "total_binomial_mass_power_two": 668
+    },
+    {
+      "all_frontier_boundaries_independently_checked": 165,
+      "bad_mass_numerator_sha256": "f98a58c0063ff3fe43f06a8b3d5786ece2f751a4f5a824a63935b11ae39b71a4",
+      "base_error_lower_for_this_fixed_code": "425/1536",
+      "binomial_cells_represented": 36465,
+      "charged_flag_bits": 1,
+      "child_bits": 1,
+      "coded_error_enclosure": [
+        "0.276692708333",
+        "0.276821214734"
+      ],
+      "coded_error_upper_rounded_outward": "276821214733467/1000000000000000",
+      "conditional_excess_upper_enclosure": [
+        "0.000128506400133",
+        "0.000128506400134"
+      ],
+      "cutoffs_sha256": "be105c65fa00a6e06bfe83a0e94eea96dd4887d35268c8b4c1a55215f2ac5f7f",
+      "error_upper_calculation_enclosure": [
+        "0.276821214733466",
+        "0.276821214733467"
+      ],
+      "excess_numerator_sha256": "0e5751ac60d834ac02e291f0fb3f8af695a5c599735cbf7772b89ef5f028cf9d",
+      "failure_probability_upper_enclosure": [
+        "0.000564392970128",
+        "0.000564392970129"
+      ],
+      "full_source_population_size_power_two": 1536,
+      "k": 384,
+      "oracle_blocks": 220,
+      "parent_bits": 768,
+      "payload_grid_bits": 767,
+      "proves_improvement_over_repeated_C69": false,
+      "proves_loss_to_repeated_C69": true,
+      "raw_upper_denominator_sha256": "8d08c6fdcfe606c124e1b9638de32149a0ad7b0787a9e575d4330a23cef2850d",
+      "raw_upper_numerator_sha256": "4d92a9195282f62163a8b128641277c1b4692b26cd0f8950b20c58127c463769",
+      "schedule": "entropy",
+      "scope": "Exact count-statistic upper bound for all sources and queries under the declared law; finite average is not evaluated exactly, and the large source population is not physically enumerated.",
+      "total_binomial_mass_power_two": 1316
+    },
+    {
+      "all_frontier_boundaries_independently_checked": 169,
+      "bad_mass_numerator_sha256": "4666896e4efef46ce35d57777097160f3ccf7e49e3b2b1592d1c9a3b575b2da2",
+      "base_error_lower_for_this_fixed_code": "71/256",
+      "binomial_cells_represented": 36673,
+      "charged_flag_bits": 1,
+      "child_bits": 1,
+      "coded_error_enclosure": [
+        "0.277343750000",
+        "0.277375032262"
+      ],
+      "coded_error_upper_rounded_outward": "277375032261043/1000000000000000",
+      "conditional_excess_upper_enclosure": [
+        "0.000031282261042",
+        "0.000031282261043"
+      ],
+      "cutoffs_sha256": "b9a0b43733a1dcfea8c89a637bc3d1467bcdba4b69aacffd50300422d12be3cc",
+      "error_upper_calculation_enclosure": [
+        "0.277375032261042",
+        "0.277375032261043"
+      ],
+      "excess_numerator_sha256": "92781f8e4b498511d6853160a6fc8addf0abe63f0630d53b6da05dbcf9850d72",
+      "failure_probability_upper_enclosure": [
+        "0.000137175864279",
+        "0.000137175864280"
+      ],
+      "full_source_population_size_power_two": 1536,
+      "k": 384,
+      "oracle_blocks": 216,
+      "parent_bits": 768,
+      "payload_grid_bits": 767,
+      "proves_improvement_over_repeated_C69": false,
+      "proves_loss_to_repeated_C69": true,
+      "raw_upper_denominator_sha256": "3c9b6fd44c53d91abccbafe16fc3cda6d30604d3e9f475b0f677e285fd2d8fae",
+      "raw_upper_numerator_sha256": "db14cc9d646c385dac1f5aea00299f3ae0b42d3124fc5852c3f09bb197ad0f0b",
+      "schedule": "rational",
+      "scope": "Exact count-statistic upper bound for all sources and queries under the declared law; finite average is not evaluated exactly, and the large source population is not physically enumerated.",
+      "total_binomial_mass_power_two": 1320
+    },
+    {
+      "all_frontier_boundaries_independently_checked": 310,
+      "bad_mass_numerator_sha256": "593ed8b8af6554d1400c57270fba84a96f40a57e7797850ac2f279abaf988e96",
+      "base_error_lower_for_this_fixed_code": "1127/4096",
+      "binomial_cells_represented": 142600,
+      "charged_flag_bits": 1,
+      "child_bits": 1,
+      "coded_error_enclosure": [
+        "0.275146484375",
+        "0.275226935919"
+      ],
+      "coded_error_upper_rounded_outward": "11009077436747/40000000000000",
+      "conditional_excess_upper_enclosure": [
+        "0.000080451543674",
+        "0.000080451543675"
+      ],
+      "cutoffs_sha256": "0dad738c328cdb011f02c638f02ed3c1a42e1e6de296be821dcad36df55a124d",
+      "error_upper_calculation_enclosure": [
+        "0.275226935918674",
+        "0.275226935918675"
+      ],
+      "excess_numerator_sha256": "062041864ca5de92c3499cdc2b8800e134db72440a19aefd3309b6896cc84fa4",
+      "failure_probability_upper_enclosure": [
+        "0.000354752636457",
+        "0.000354752636458"
+      ],
+      "full_source_population_size_power_two": 3072,
+      "k": 768,
+      "oracle_blocks": 459,
+      "parent_bits": 1536,
+      "payload_grid_bits": 1535,
+      "proves_improvement_over_repeated_C69": false,
+      "proves_loss_to_repeated_C69": true,
+      "raw_upper_denominator_sha256": "c4788758dd80b18d7d939ddf57d9307342e530e3b8306d15c362df5cffbd44ef",
+      "raw_upper_numerator_sha256": "bb19615736fc4ffacbb0b5a8ba5611adbeb6acc6b0c2286076c53b415ec15527",
+      "schedule": "entropy",
+      "scope": "Exact count-statistic upper bound for all sources and queries under the declared law; finite average is not evaluated exactly, and the large source population is not physically enumerated.",
+      "total_binomial_mass_power_two": 2613
+    },
+    {
+      "all_frontier_boundaries_independently_checked": 313,
+      "bad_mass_numerator_sha256": "2132f1003fb8901dcda1dbf98ff708ce4a76e1cdafab4585c50f2324d22ea1e2",
+      "base_error_lower_for_this_fixed_code": "141/512",
+      "binomial_cells_represented": 143041,
+      "charged_flag_bits": 1,
+      "child_bits": 1,
+      "coded_error_enclosure": [
+        "0.275390625000",
+        "0.275429556595"
+      ],
+      "coded_error_upper_rounded_outward": "275429556594579/1000000000000000",
+      "conditional_excess_upper_enclosure": [
+        "0.000038931594578",
+        "0.000038931594579"
+      ],
+      "cutoffs_sha256": "79ba8b17f6a67fdf9fd77db7831a3f06e425513424554ba109bb03af99798ef4",
+      "error_upper_calculation_enclosure": [
+        "0.275429556594578",
+        "0.275429556594579"
+      ],
+      "excess_numerator_sha256": "9b2a649d89463229701ebf7354145ca6b319f03677bb20d6ff1dbe6fd4a64d1a",
+      "failure_probability_upper_enclosure": [
+        "0.000171675730762",
+        "0.000171675730763"
+      ],
+      "full_source_population_size_power_two": 3072,
+      "k": 768,
+      "oracle_blocks": 456,
+      "parent_bits": 1536,
+      "payload_grid_bits": 1535,
+      "proves_improvement_over_repeated_C69": false,
+      "proves_loss_to_repeated_C69": true,
+      "raw_upper_denominator_sha256": "8e27fbedcb9f4aa50aac46e133fbd1ba8e2880d7a58569f39636911f25f52703",
+      "raw_upper_numerator_sha256": "872bb6c1834e648673b88b3c9157e8cbb4d8eed32de39e4f34229db275d23c5f",
+      "schedule": "rational",
+      "scope": "Exact count-statistic upper bound for all sources and queries under the declared law; finite average is not evaluated exactly, and the large source population is not physically enumerated.",
+      "total_binomial_mass_power_two": 2616
+    },
+    {
+      "all_frontier_boundaries_independently_checked": 590,
+      "bad_mass_numerator_sha256": "a12291b32485b42fabb87e1b0430a13a690d31473ebe663bf6d8be583cde5e0d",
+      "base_error_lower_for_this_fixed_code": "6733/24576",
+      "binomial_cells_represented": 559320,
+      "charged_flag_bits": 1,
+      "child_bits": 1,
+      "coded_error_enclosure": [
+        "0.273966471354",
+        "0.274021698983"
+      ],
+      "coded_error_upper_rounded_outward": "274021698982967/1000000000000000",
+      "conditional_excess_upper_enclosure": [
+        "0.000055227628799",
+        "0.000055227628800"
+      ],
+      "cutoffs_sha256": "49f47ed9826ebbc0b39f059ea8f03bf2088d8952bcc8ab320f2a733507682a4f",
+      "error_upper_calculation_enclosure": [
+        "0.274021698982966",
+        "0.274021698982967"
+      ],
+      "excess_numerator_sha256": "173ad7d5ca0d878aa38f3def9e7dd6d67a3963a8590c338a672f0a76f191c787",
+      "failure_probability_upper_enclosure": [
+        "0.000243163907014",
+        "0.000243163907015"
+      ],
+      "full_source_population_size_power_two": 6144,
+      "k": 1536,
+      "oracle_blocks": 947,
+      "parent_bits": 3072,
+      "payload_grid_bits": 3071,
+      "proves_improvement_over_repeated_C69": true,
+      "proves_loss_to_repeated_C69": false,
+      "raw_upper_denominator_sha256": "301c3d8bba93772664fbf24f1259a513e9536889d6f23ec5a687d75f1bb0fa66",
+      "raw_upper_numerator_sha256": "bb8bcde6f63ad3a80040ff0708856382238f6db5acc190b58f21cbe406707640",
+      "schedule": "entropy",
+      "scope": "Exact count-statistic upper bound for all sources and queries under the declared law; finite average is not evaluated exactly, and the large source population is not physically enumerated.",
+      "total_binomial_mass_power_two": 5197
+    },
+    {
+      "all_frontier_boundaries_independently_checked": 592,
+      "bad_mass_numerator_sha256": "14fea2ac445bd4559f68329657400b394bd1f08ad19f88d08c5228f52185e701",
+      "base_error_lower_for_this_fixed_code": "2245/8192",
+      "binomial_cells_represented": 560032,
+      "charged_flag_bits": 1,
+      "child_bits": 1,
+      "coded_error_enclosure": [
+        "0.274047851562",
+        "0.274087068355"
+      ],
+      "coded_error_upper_rounded_outward": "274087068354557/1000000000000000",
+      "conditional_excess_upper_enclosure": [
+        "0.000039216792056",
+        "0.000039216792057"
+      ],
+      "cutoffs_sha256": "eca2d9801f0a3b9683064ce35f44b3f441dbd907f9dc425a3751630c3cbfa1fe",
+      "error_upper_calculation_enclosure": [
+        "0.274087068354556",
+        "0.274087068354557"
+      ],
+      "excess_numerator_sha256": "1046c719890667cb9e1e0aebff44d870d7b3f4317e1f6b04d5efa7ae1d5a9c69",
+      "failure_probability_upper_enclosure": [
+        "0.000172696158981",
+        "0.000172696158982"
+      ],
+      "full_source_population_size_power_two": 6144,
+      "k": 1536,
+      "oracle_blocks": 945,
+      "parent_bits": 3072,
+      "payload_grid_bits": 3071,
+      "proves_improvement_over_repeated_C69": true,
+      "proves_loss_to_repeated_C69": false,
+      "raw_upper_denominator_sha256": "de916c5a8b0edb04fd977a3422915e6a04a3bacade9a9c1e198502e4e4af7173",
+      "raw_upper_numerator_sha256": "9d2863bd113acffc9ed50e8d2d2fa35535ef6a3df7f5d19676aa2e85e06b95ed",
+      "schedule": "rational",
+      "scope": "Exact count-statistic upper bound for all sources and queries under the declared law; finite average is not evaluated exactly, and the large source population is not physically enumerated.",
+      "total_binomial_mass_power_two": 5199
+    },
+    {
+      "all_frontier_boundaries_independently_checked": 1138,
+      "bad_mass_numerator_sha256": "af710e4f85a629b79dfc572e9e60ef797483f94ac70c9b13f21f74a205faa9ba",
+      "base_error_lower_for_this_fixed_code": "4475/16384",
+      "binomial_cells_represented": 2203168,
+      "charged_flag_bits": 1,
+      "child_bits": 1,
+      "coded_error_enclosure": [
+        "0.273132324218",
+        "0.273163543701"
+      ],
+      "coded_error_upper_rounded_outward": "10926541748033/40000000000000",
+      "conditional_excess_upper_enclosure": [
+        "0.000031219482074",
+        "0.000031219482075"
+      ],
+      "cutoffs_sha256": "7afe056e9e24962b2fdb937119626cc1a631cbd85ad908eb03a595010b51f8ee",
+      "error_upper_calculation_enclosure": [
+        "0.273163543700824",
+        "0.273163543700825"
+      ],
+      "excess_numerator_sha256": "a88a89f9a4e933110768e553a69875ccb12e3bbbfb7a6dd99c7a3adbe95cbb0d",
+      "failure_probability_upper_enclosure": [
+        "0.000137217913835",
+        "0.000137217913836"
+      ],
+      "full_source_population_size_power_two": 12288,
+      "k": 3072,
+      "oracle_blocks": 1935,
+      "parent_bits": 6144,
+      "payload_grid_bits": 6143,
+      "proves_improvement_over_repeated_C69": true,
+      "proves_loss_to_repeated_C69": false,
+      "raw_upper_denominator_sha256": "aa8c109f66c53f1402cf1379c2ef4cb6e116921dc7ece731b311712ab4e30751",
+      "raw_upper_numerator_sha256": "2da33e2d74c4d9771789b72ba8a19099f31684981a601c4883fd0e3636fa82d0",
+      "schedule": "entropy",
+      "scope": "Exact count-statistic upper bound for all sources and queries under the declared law; finite average is not evaluated exactly, and the large source population is not physically enumerated.",
+      "total_binomial_mass_power_two": 10353
+    },
+    {
+      "all_frontier_boundaries_independently_checked": 1136,
+      "bad_mass_numerator_sha256": "9416a61fb33f89833d7be8dd8083e927704943a4946db8affcab5f6e99413d58",
+      "base_error_lower_for_this_fixed_code": "13423/49152",
+      "binomial_cells_represented": 2201568,
+      "charged_flag_bits": 1,
+      "child_bits": 1,
+      "coded_error_enclosure": [
+        "0.273091634114",
+        "0.273131523313"
+      ],
+      "coded_error_upper_rounded_outward": "273131523312371/1000000000000000",
+      "conditional_excess_upper_enclosure": [
+        "0.000039889197786",
+        "0.000039889197787"
+      ],
+      "cutoffs_sha256": "a31bd0086ccd6a6e1c019ddf89c71997f25010dda86edd9cd41c664d686f4db1",
+      "error_upper_calculation_enclosure": [
+        "0.273131523312370",
+        "0.273131523312371"
+      ],
+      "excess_numerator_sha256": "383ee6f23e0716ec3702ae67e5bf0e30dd5a055df66d6b0aa5f669400f0d8863",
+      "failure_probability_upper_enclosure": [
+        "0.000175309555946",
+        "0.000175309555947"
+      ],
+      "full_source_population_size_power_two": 12288,
+      "k": 3072,
+      "oracle_blocks": 1937,
+      "parent_bits": 6144,
+      "payload_grid_bits": 6143,
+      "proves_improvement_over_repeated_C69": true,
+      "proves_loss_to_repeated_C69": false,
+      "raw_upper_denominator_sha256": "4611d16a15b3d27785efbfb26bc90b90a63db2dcf5fa83c2e400854fc83ffba6",
+      "raw_upper_numerator_sha256": "7cf534c878df6e5fc2514bb84d6f4128f3608cab5049320f521200764d5678c8",
+      "schedule": "rational",
+      "scope": "Exact count-statistic upper bound for all sources and queries under the declared law; finite average is not evaluated exactly, and the large source population is not physically enumerated.",
+      "total_binomial_mass_power_two": 10351
+    },
+    {
+      "all_frontier_boundaries_independently_checked": 2213,
+      "bad_mass_numerator_sha256": "be2b6f0957771779223ad6615497ab53a22e60989600a56252b6b94153864dad",
+      "base_error_lower_for_this_fixed_code": "6697/24576",
+      "binomial_cells_represented": 8703729,
+      "charged_flag_bits": 1,
+      "child_bits": 1,
+      "coded_error_enclosure": [
+        "0.272501627604",
+        "0.272520029390"
+      ],
+      "coded_error_upper_rounded_outward": "272520029389997/1000000000000000",
+      "conditional_excess_upper_enclosure": [
+        "0.000018401785829",
+        "0.000018401785830"
+      ],
+      "cutoffs_sha256": "d84153687eee0094a8b9c0e91451f96b261f1de7fa5c271e3d8a7726519feea5",
+      "error_upper_calculation_enclosure": [
+        "0.272520029389996",
+        "0.272520029389997"
+      ],
+      "excess_numerator_sha256": "5028269fd5daba2f9b7b5c022cced7737b35043b30a5d463f31f76b4b513a121",
+      "failure_probability_upper_enclosure": [
+        "0.000080768465409",
+        "0.000080768465410"
+      ],
+      "full_source_population_size_power_two": 24576,
+      "k": 6144,
+      "oracle_blocks": 3932,
+      "parent_bits": 12288,
+      "payload_grid_bits": 12287,
+      "proves_improvement_over_repeated_C69": true,
+      "proves_loss_to_repeated_C69": false,
+      "raw_upper_denominator_sha256": "6bce1731cc2949218daa3c196d9d5eeba0deea637a37a82b47d01b93bf057f0b",
+      "raw_upper_numerator_sha256": "b6d394c665302b1a060f30b716b32b785b37ea49304da43637a73aa3e2d2e9db",
+      "schedule": "entropy",
+      "scope": "Exact count-statistic upper bound for all sources and queries under the declared law; finite average is not evaluated exactly, and the large source population is not physically enumerated.",
+      "total_binomial_mass_power_two": 20644
+    },
+    {
+      "all_frontier_boundaries_independently_checked": 2206,
+      "bad_mass_numerator_sha256": "ffeb1870ea3088ec56e59dc94e6d9d663a1b1b3772107d9a079ddf143cc39fb8",
+      "base_error_lower_for_this_fixed_code": "8927/32768",
+      "binomial_cells_represented": 8691640,
+      "charged_flag_bits": 1,
+      "child_bits": 1,
+      "coded_error_enclosure": [
+        "0.272430419921",
+        "0.272464393688"
+      ],
+      "coded_error_upper_rounded_outward": "10898575747487/40000000000000",
+      "conditional_excess_upper_enclosure": [
+        "0.000033973765299",
+        "0.000033973765300"
+      ],
+      "cutoffs_sha256": "b0a671e55d7517d088eabba0b8229f04e0a8f2986cc606f3c8cddba52295f7fc",
+      "error_upper_calculation_enclosure": [
+        "0.272464393687174",
+        "0.272464393687175"
+      ],
+      "excess_numerator_sha256": "56b79b1e9daab85c862fb6c0bbc8cf14f472f3d3011b094a061db0537de2119c",
+      "failure_probability_upper_enclosure": [
+        "0.000149087257196",
+        "0.000149087257197"
+      ],
+      "full_source_population_size_power_two": 24576,
+      "k": 6144,
+      "oracle_blocks": 3939,
+      "parent_bits": 12288,
+      "payload_grid_bits": 12287,
+      "proves_improvement_over_repeated_C69": true,
+      "proves_loss_to_repeated_C69": false,
+      "raw_upper_denominator_sha256": "347de74e0712dc90be40ab9b96e5b1e3ccee5a656daa733675302292608bde8d",
+      "raw_upper_numerator_sha256": "f7cc94730eaa578775806ffab76f1e86532eac94ac32deb59ac7637cbb51ff4b",
+      "schedule": "rational",
+      "scope": "Exact count-statistic upper bound for all sources and queries under the declared law; finite average is not evaluated exactly, and the large source population is not physically enumerated.",
+      "total_binomial_mass_power_two": 20637
+    },
+    {
+      "all_frontier_boundaries_independently_checked": 4333,
+      "bad_mass_numerator_sha256": "0e3fdb3e62588246ef98c861f5fd3d468222b577eaa26140bba54952d3ad716c",
+      "base_error_lower_for_this_fixed_code": "4457/16384",
+      "binomial_cells_represented": 34477681,
+      "charged_flag_bits": 1,
+      "child_bits": 1,
+      "coded_error_enclosure": [
+        "0.272033691406",
+        "0.272044632203"
+      ],
+      "coded_error_upper_rounded_outward": "136022316101341/500000000000000",
+      "conditional_excess_upper_enclosure": [
+        "0.000010940796431",
+        "0.000010940796432"
+      ],
+      "cutoffs_sha256": "e3c8ae1c7a83bffcba20160b3761b8d48db5aac21d61a588f8ca01c48c30a9d4",
+      "error_upper_calculation_enclosure": [
+        "0.272044632202681",
+        "0.272044632202682"
+      ],
+      "excess_numerator_sha256": "42b442738039e47cb212c0650a0e2b53359bc378687ad770f18b0bdd5031ed98",
+      "failure_probability_upper_enclosure": [
+        "0.000047955409058",
+        "0.000047955409059"
+      ],
+      "full_source_population_size_power_two": 49152,
+      "k": 12288,
+      "oracle_blocks": 7956,
+      "parent_bits": 24576,
+      "payload_grid_bits": 24575,
+      "proves_improvement_over_repeated_C69": true,
+      "proves_loss_to_repeated_C69": false,
+      "raw_upper_denominator_sha256": "0206e794cfef974fda59d5030cc70a427d15e3e4da65590420127bef12f4f23c",
+      "raw_upper_numerator_sha256": "9324f4025eebb49162b75a1db7f391619499f9d16d7df49036d011f88febf7a4",
+      "schedule": "entropy",
+      "scope": "Exact count-statistic upper bound for all sources and queries under the declared law; finite average is not evaluated exactly, and the large source population is not physically enumerated.",
+      "total_binomial_mass_power_two": 41196
+    },
+    {
+      "all_frontier_boundaries_independently_checked": 4319,
+      "bad_mass_numerator_sha256": "4ec194b29d32d8bb27e4d68b1abf4392ebacefb8da9f5ac2e83c96c508c67ce1",
+      "base_error_lower_for_this_fixed_code": "26735/98304",
+      "binomial_cells_represented": 34426749,
+      "charged_flag_bits": 1,
+      "child_bits": 1,
+      "coded_error_enclosure": [
+        "0.271962483723",
+        "0.271988910419"
+      ],
+      "coded_error_upper_rounded_outward": "271988910418071/1000000000000000",
+      "conditional_excess_upper_enclosure": [
+        "0.000026426694111",
+        "0.000026426694112"
+      ],
+      "cutoffs_sha256": "5441ec44b166894c098c7d4acc590b20a407ff1ef85ce5f6765b998cf080f7d8",
+      "error_upper_calculation_enclosure": [
+        "0.271988910418070",
+        "0.271988910418071"
+      ],
+      "excess_numerator_sha256": "cee69b09e44b427236a49e7b4ceb9167009fe1f7c856a62940d7c5d2d1da03ec",
+      "failure_probability_upper_enclosure": [
+        "0.000115805811505",
+        "0.000115805811506"
+      ],
+      "full_source_population_size_power_two": 49152,
+      "k": 12288,
+      "oracle_blocks": 7970,
+      "parent_bits": 24576,
+      "payload_grid_bits": 24575,
+      "proves_improvement_over_repeated_C69": true,
+      "proves_loss_to_repeated_C69": false,
+      "raw_upper_denominator_sha256": "c91562b135aaccccaa76efca1d762290824f7a2dd591392abe32eec24a0243f5",
+      "raw_upper_numerator_sha256": "3909c47dedbeae2443600005a81d110cf00da868e51e6a94e75b71c9d355c3cb",
+      "schedule": "rational",
+      "scope": "Exact count-statistic upper bound for all sources and queries under the declared law; finite average is not evaluated exactly, and the large source population is not physically enumerated.",
+      "total_binomial_mass_power_two": 41182
+    }
+  ],
+  "finite_bounds_are_not_exact_large_code_risks": true,
+  "flag_bits_charged_inside_parent": 1,
+  "information_contract": {
+    "R_O_J": "independent uniform block/omission/remaining coordinate",
+    "archives_sessions_source_parent_rereads": false,
+    "child_before_J": true,
+    "child_bits": 1,
+    "final_inputs": [
+      "Z",
+      "R",
+      "O",
+      "J"
+    ],
+    "instance_intervals_output_lists_statistics_or_source_reaching_updater": false,
+    "parent_before_R_O": true,
+    "parent_bits": "2*k including one fallback flag",
+    "public_before_X": [
+      "k",
+      "a or its public schedule",
+      "response words",
+      "fixed probability counts"
+    ],
+    "source": "uniform iid four-bit blocks",
+    "temporary_computation": "Exact integer workspace is permitted inside an encoder/updater; only M or Z crosses its boundary.",
+    "updater_inputs": [
+      "M",
+      "R",
+      "O",
+      "public k/a/tables"
+    ]
+  },
+  "large_constructed_diagnostics": [
+    {
+      "constructed_source_family": 0,
+      "k": 1536,
+      "length_guaranteed": true,
+      "oracle_blocks": 947,
+      "parent_bit_length": 3072,
+      "parent_sha256": "55fde15f5a7e4003e0897966c5df060c9af34d7a73d9f82d7391715d9a7356ec",
+      "physical_final_queries": 72,
+      "public_query_positions": [
+        0,
+        384,
+        768,
+        946,
+        947,
+        1535
+      ],
+      "regular": true,
+      "schedule": "entropy"
+    },
+    {
+      "constructed_source_family": 1,
+      "k": 1536,
+      "length_guaranteed": true,
+      "oracle_blocks": 947,
+      "parent_bit_length": 3072,
+      "parent_sha256": "3fe828297464f48cf6306f896897d855b194b619e44705d1f0a045327dc7895d",
+      "physical_final_queries": 72,
+      "public_query_positions": [
+        0,
+        384,
+        768,
+        946,
+        947,
+        1535
+      ],
+      "regular": true,
+      "schedule": "entropy"
+    },
+    {
+      "constructed_source_family": 2,
+      "k": 1536,
+      "length_guaranteed": false,
+      "oracle_blocks": 947,
+      "parent_bit_length": 0,
+      "parent_sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "physical_final_queries": 72,
+      "public_query_positions": [
+        0,
+        384,
+        768,
+        946,
+        947,
+        1535
+      ],
+      "regular": false,
+      "schedule": "entropy"
+    },
+    {
+      "constructed_source_family": 0,
+      "k": 1536,
+      "length_guaranteed": true,
+      "oracle_blocks": 945,
+      "parent_bit_length": 3072,
+      "parent_sha256": "55fde15f5a7e4003e0897966c5df060c9af34d7a73d9f82d7391715d9a7356ec",
+      "physical_final_queries": 72,
+      "public_query_positions": [
+        0,
+        384,
+        768,
+        944,
+        945,
+        1535
+      ],
+      "regular": true,
+      "schedule": "rational"
+    },
+    {
+      "constructed_source_family": 1,
+      "k": 1536,
+      "length_guaranteed": true,
+      "oracle_blocks": 945,
+      "parent_bit_length": 3072,
+      "parent_sha256": "fc863d9eb60b34d0d8edbf71d173e4d70060b383082fc6260ae6c4c7d36ee86d",
+      "physical_final_queries": 72,
+      "public_query_positions": [
+        0,
+        384,
+        768,
+        944,
+        945,
+        1535
+      ],
+      "regular": true,
+      "schedule": "rational"
+    },
+    {
+      "constructed_source_family": 2,
+      "k": 1536,
+      "length_guaranteed": false,
+      "oracle_blocks": 945,
+      "parent_bit_length": 0,
+      "parent_sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "physical_final_queries": 72,
+      "public_query_positions": [
+        0,
+        384,
+        768,
+        944,
+        945,
+        1535
+      ],
+      "regular": false,
+      "schedule": "rational"
+    },
+    {
+      "constructed_source_family": 0,
+      "k": 12288,
+      "length_guaranteed": true,
+      "oracle_blocks": 7956,
+      "parent_bit_length": 24576,
+      "parent_sha256": "a0c3fd05ebae22b05e893eb1fdde7e4e7fbe8e2597db0a1620d1c5e0fea09ce6",
+      "physical_final_queries": 72,
+      "public_query_positions": [
+        0,
+        3072,
+        6144,
+        7955,
+        7956,
+        12287
+      ],
+      "regular": true,
+      "schedule": "entropy"
+    },
+    {
+      "constructed_source_family": 1,
+      "k": 12288,
+      "length_guaranteed": true,
+      "oracle_blocks": 7956,
+      "parent_bit_length": 24576,
+      "parent_sha256": "75557a389084d45a7e26283618a0aa784d9b49ae11cf0b14eef80a2c187a42f0",
+      "physical_final_queries": 72,
+      "public_query_positions": [
+        0,
+        3072,
+        6144,
+        7955,
+        7956,
+        12287
+      ],
+      "regular": true,
+      "schedule": "entropy"
+    },
+    {
+      "constructed_source_family": 2,
+      "k": 12288,
+      "length_guaranteed": false,
+      "oracle_blocks": 7956,
+      "parent_bit_length": 0,
+      "parent_sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "physical_final_queries": 72,
+      "public_query_positions": [
+        0,
+        3072,
+        6144,
+        7955,
+        7956,
+        12287
+      ],
+      "regular": false,
+      "schedule": "entropy"
+    },
+    {
+      "constructed_source_family": 0,
+      "k": 12288,
+      "length_guaranteed": true,
+      "oracle_blocks": 7970,
+      "parent_bit_length": 24576,
+      "parent_sha256": "a0c3fd05ebae22b05e893eb1fdde7e4e7fbe8e2597db0a1620d1c5e0fea09ce6",
+      "physical_final_queries": 72,
+      "public_query_positions": [
+        0,
+        3072,
+        6144,
+        7969,
+        7970,
+        12287
+      ],
+      "regular": true,
+      "schedule": "rational"
+    },
+    {
+      "constructed_source_family": 1,
+      "k": 12288,
+      "length_guaranteed": true,
+      "oracle_blocks": 7970,
+      "parent_bit_length": 24576,
+      "parent_sha256": "17935f8e7aedc78ec24e06e09fa1fd75241c40817e05840291d5fcfed443437e",
+      "physical_final_queries": 72,
+      "public_query_positions": [
+        0,
+        3072,
+        6144,
+        7969,
+        7970,
+        12287
+      ],
+      "regular": true,
+      "schedule": "rational"
+    },
+    {
+      "constructed_source_family": 2,
+      "k": 12288,
+      "length_guaranteed": false,
+      "oracle_blocks": 7970,
+      "parent_bit_length": 0,
+      "parent_sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "physical_final_queries": 72,
+      "public_query_positions": [
+        0,
+        3072,
+        6144,
+        7969,
+        7970,
+        12287
+      ],
+      "regular": false,
+      "schedule": "rational"
+    }
+  ],
+  "large_diagnostic_physical_final_queries": 864,
+  "large_uniform_source_populations_enumerated": false,
+  "limits": "Specific uniform-source/query law and two fixed scalar quantizers. A hard cap is implemented, not merely an average code length. Exact conditional overflow sums supply conservative finite upper bounds; small populations execute every query, large diagnostics are constructed spots. Four checked smaller lengths provably lose to C69; the rational control beats the entropy schedule at some larger lengths. The implemented entropy schedule limit remains above C67, so no efficient near-optimal guarantee. Generic entropy-constrained quantization, arithmetic intervals, time sharing and concentration are established; external proof/priority, other laws and natural-agent/token/cost benefit remain open. Old results and provider allocations unchanged.",
+  "new_model_calls": 0,
+  "new_natural_episodes": 0,
+  "public_label_probability_payload_bytes": 10,
+  "quantizers": [
+    {
+      "conditional_excess_branch_loss": {
+        "0": "0",
+        "15": "36/5"
+      },
+      "counts_out_of_sixteen": [
+        11,
+        5
+      ],
+      "error": "5/16",
+      "errors": 60,
+      "kind": 0,
+      "outcomes": 192,
+      "words": [
+        0,
+        15
+      ]
+    },
+    {
+      "conditional_excess_branch_loss": {
+        "balanced": "2",
+        "common": "18/5"
+      },
+      "counts_out_of_sixteen": [
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        5
+      ],
+      "error": "1/4",
+      "errors": 48,
+      "kind": 1,
+      "outcomes": 192,
+      "words": [
+        0,
+        3,
+        5,
+        6,
+        9,
+        10,
+        12,
+        15
+      ]
+    }
+  ],
+  "regular_grid_points": "2**(2*k-1)",
+  "repeated_C69_control_error": "2304567/8388608",
+  "small_full_population_actor_checks": [
+    {
+      "encoder_fallback_sources": 0,
+      "errors": 60,
+      "exact_error": "5/16",
+      "k": 1,
+      "length_bad_sources": 5,
+      "oracle_blocks": 0,
+      "outcomes": 192,
+      "physical_final_queries": 192,
+      "source_assignments": 16,
+      "used_parent_messages": 2
+    },
+    {
+      "encoder_fallback_sources": 6,
+      "errors": 60,
+      "exact_error": "5/16",
+      "k": 1,
+      "length_bad_sources": 16,
+      "oracle_blocks": 1,
+      "outcomes": 192,
+      "physical_final_queries": 192,
+      "source_assignments": 16,
+      "used_parent_messages": 3
+    },
+    {
+      "encoder_fallback_sources": 0,
+      "errors": 1920,
+      "exact_error": "5/16",
+      "k": 2,
+      "length_bad_sources": 25,
+      "oracle_blocks": 0,
+      "outcomes": 6144,
+      "physical_final_queries": 6144,
+      "source_assignments": 256,
+      "used_parent_messages": 4
+    },
+    {
+      "encoder_fallback_sources": 88,
+      "errors": 2250,
+      "exact_error": "375/1024",
+      "k": 2,
+      "length_bad_sources": 146,
+      "oracle_blocks": 1,
+      "outcomes": 6144,
+      "physical_final_queries": 6144,
+      "source_assignments": 256,
+      "used_parent_messages": 7
+    },
+    {
+      "encoder_fallback_sources": 156,
+      "errors": 2446,
+      "exact_error": "1223/3072",
+      "k": 2,
+      "length_bad_sources": 256,
+      "oracle_blocks": 2,
+      "outcomes": 6144,
+      "physical_final_queries": 6144,
+      "source_assignments": 256,
+      "used_parent_messages": 9
+    },
+    {
+      "encoder_fallback_sources": 0,
+      "errors": 46080,
+      "exact_error": "5/16",
+      "k": 3,
+      "length_bad_sources": 125,
+      "oracle_blocks": 0,
+      "outcomes": 147456,
+      "physical_final_queries": 147456,
+      "source_assignments": 4096,
+      "used_parent_messages": 8
+    },
+    {
+      "encoder_fallback_sources": 480,
+      "errors": 48504,
+      "exact_error": "2021/6144",
+      "k": 3,
+      "length_bad_sources": 1786,
+      "oracle_blocks": 1,
+      "outcomes": 147456,
+      "physical_final_queries": 147456,
+      "source_assignments": 4096,
+      "used_parent_messages": 21
+    },
+    {
+      "encoder_fallback_sources": 1636,
+      "errors": 51704,
+      "exact_error": "6463/18432",
+      "k": 3,
+      "length_bad_sources": 2996,
+      "oracle_blocks": 2,
+      "outcomes": 147456,
+      "physical_final_queries": 147456,
+      "source_assignments": 4096,
+      "used_parent_messages": 29
+    },
+    {
+      "encoder_fallback_sources": 2576,
+      "errors": 58176,
+      "exact_error": "101/256",
+      "k": 3,
+      "length_bad_sources": 4096,
+      "oracle_blocks": 3,
+      "outcomes": 147456,
+      "physical_final_queries": 147456,
+      "source_assignments": 4096,
+      "used_parent_messages": 33
+    }
+  ],
+  "small_physical_final_queries": 608640,
+  "small_source_assignments": 17184,
+  "source_sha256": {
+    "experiments/dependency_memory/entropy_coding/certificate.py": "48073272652d000c1d124415e53b7ccfcc1dab2d1f9dc6a297d1de05afdeab4f",
+    "experiments/dependency_memory/entropy_coding/codec.py": "41ac95d524493d0757b2e7748e3e78cf5eee3b08b7d266c7afbdea5b3cd10caf",
+    "experiments/dependency_memory/entropy_coding/discovery/comparison.json": "ff07940789bf085870bf754796dc2887d3f750ce35d45f5b97b7adbb955ef8bd",
+    "experiments/dependency_memory/entropy_coding/discovery/entropy_probe.json": "76bb808cf2f7f957c34b9032f465d6c3800debcc76a957f7e4b1039857d690bf",
+    "experiments/dependency_memory/entropy_coding/discovery/entropy_probe.py": "6bb05a33d9d0424d0f05316edfa875bbdd8bcefc1ce763f73a7d19bdf0dfa725",
+    "experiments/dependency_memory/entropy_coding/discovery/metadata.json": "462404705263560cdd4c54b5453a692fc3b3d24cd57c8f3b815955aee1b286ca",
+    "experiments/dependency_memory/entropy_coding/discovery/prototype_codec.py": "87857dc7b565657b59cdf7e81f271441e86828230a2181a7d872c356c9f0546d",
+    "experiments/dependency_memory/entropy_coding/discovery/prototype_finite.py": "ace8df1e99e533aa26e3da0fbac25cb9bb6a80fbae45b8197498db2c873ddc08",
+    "experiments/dependency_memory/entropy_coding/discovery/prototype_probe.json": "278988744cf08b0849dfdedf9868ca30fc9d319deab1cc57b501ec31f6222e1f",
+    "experiments/dependency_memory/entropy_coding/discovery/prototype_probe.py": "6bb05a33d9d0424d0f05316edfa875bbdd8bcefc1ce763f73a7d19bdf0dfa725",
+    "experiments/dependency_memory/entropy_coding/finite.py": "ace8df1e99e533aa26e3da0fbac25cb9bb6a80fbae45b8197498db2c873ddc08",
+    "experiments/dependency_memory/entropy_coding/test_entropy.py": "023a525a704bc77f86eafcde4db1d0d4ae5a298490e0002c82e356ffe1d92a11",
+    "experiments/dependency_memory/joint_coding/decoder_frontier.py": "00dc245ec73ee952272203cb20f1599462be2c828e0fcc02cc7e91f31ccbe5bc",
+    "experiments/dependency_memory/results/conditional_six_block_2026-10-02.json": "19e83d9b81fb8f0f8475ab6541087465dd9eb7a237fb07f1cbe777ddecd3be51",
+    "experiments/dependency_memory/results/rate_curve_2026-10-02.json": "06624233335d8ee64422d43a1050d3f0385b79eec63ad442efbb3c045e2ba014"
+  },
+  "valid_fallback_messages": 1,
+  "version": "hard_cap_entropy_parent_v1"
+}

@@ -4,6 +4,37 @@ Updated: October 2, 2026. This document is the current handoff; older scope docu
 
 ## Objective
 
+The [implemented hard-cap entropy code](../research/HARD_CAP_ENTROPY_CODE_2026-10-02.md)
+now improves the named repeated six-block control at larger checked lengths.
+Under the original uniform iid source and independent uniform R/O/J law, it
+uses exactly 2k parent bits including one fallback flag, followed by one child
+bit before J. At k=12,288 the retained rational schedule has error at most
+271988910418071/10^15, or 27.198892% rounded upward, versus C69's 27.472579%.
+The default schedule's actual code risk tends to an outward enclosure
+[0.270753014417,0.270753014418]. It remains above C67's unchanged optimum.
+Claim C71; living draft v0.38. This supplies an implemented polynomial-time
+family and conservative whole-population finite bounds, not an efficient
+near-optimal code or an exact large-population average.
+
+Fixed scalar output probabilities drive exact arithmetic intervals. Odd grid
+points and the charged flag fit the common cap; only M and then Z cross their
+boundaries. Public response/probability payload is 10 packed bytes, with k/a,
+program/runtime and framing separate. Sixteen exact bounds cover two public
+schedules at eight lengths. Both codes provably lose at the four smaller
+lengths and improve on C69 at the other four; the rational control beats the
+default finite bound at three lengths and stays retained. Every count frontier
+is independently checked using integer powers. All k<=3 sources/every public
+a execute 608,640 final queries; twelve constructed large inputs execute 864
+additional diagnostics. The large source populations are not enumerated.
+All 15 code/provenance bindings regenerate, including checks of original
+C67/C69 bindings. All **557 offline tests pass**, including the eight new
+scientific checks. Repository validation reports PASS with 71 claims, 52
+bibliography entries and 171 PDF hashes; paper assembly checks 45 cited
+sources. Zero model calls and prospective natural episodes. Generic entropy coding/time sharing are established; other laws,
+external correctness/priority and model/token/cost benefit remain open.
+
+**Earlier October 2 query-prior/timing milestone (C70):**
+
 The [query-prior and timing extension](../research/QUERY_PRIOR_TIMING_2026-10-02.md)
 now separates three information conditions. For two equal classes of uniform
 four-bit blocks, known source-independent class prior p has optimal limiting
@@ -618,7 +649,7 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 ## Not yet established
 
 - Novelty and external validation of the locally audited scaling argument, or a practically large composition penalty.
-- Exact finite joint-code optima and efficient encoders approaching the full curve. C68/C69 supply implemented finite codes and C69 tightens the three-block bracket; C67 characterizes the uniform-source curve and C70 extends it to two-class source-independent query priors. Biased sources, adaptive queries and more general within-class laws remain outside these results.
+- Exact finite joint-code optima and efficient encoders approaching the full curve. C68/C69/C71 supply implemented codes, C71 has a polynomial hard-cap family with checked overflow bounds, and C69 tightens the three-block bracket; C67 characterizes the uniform-source curve and C70 extends it to two-class source-independent query priors. Biased sources, adaptive queries and more general within-class laws remain outside these results.
 - Natural-language compiler performance, learned retirement accuracy, or unrestricted closed-loop LLM-agent results. Live model work now also covers an imposed two-stage memory-writing pipeline; open-ended native-agent performance remains unestablished.
 - Cost or quality gains over native provider compaction.
 - The internal training objective, prompt, or algorithm of a proprietary compaction service.
@@ -632,6 +663,15 @@ their dated scope. Efficient finite encoders approaching the now-characterized
 curve, and extensions beyond C70's two-class source-independent priors, remain
 substantive research directions; no production applicability follows from these
 model deductions.
+
+C71 supplies a polynomial hard-cap scalar family with a proved limiting risk
+and conservative finite bounds. Improve it toward C67 using stronger public
+quantizers or finite constructions, while charging overflow and every instance
+selector. Keep the rational schedule as a finite control and the smaller-length
+failures in the record. An improved limit alone does not establish better
+finite performance, and spot diagnostics cannot justify a population average.
+Require a whole-population proof or complete weighted grading, with the actual
+execution scope stated; generic entropy coding and time sharing are precedents.
 
 C70 now distinguishes known priors, unknown-prior minimax and early actual
 class cues. Develop finite codes for the certified unequal allocations, or
@@ -653,7 +693,8 @@ product, coordinate-search or trellis novelty follows.
 For the finite problem, tighten the 442-outcome all-decoder interval, examine
 the 3,790 near mixed cases not excluded by C62/C63, or construct longer finite
 codes under the same capacity and timing. Any improved construction must keep the same
-information order and be graded on every delayed-query route. Preserve the
+information order and have complete whole-population justification across
+every delayed-query route, with physical execution scope stated. Preserve the
 earlier witnesses and asymptotic certificate; do not present a heuristic search
 or cover relaxation as an exact finite optimum.
 

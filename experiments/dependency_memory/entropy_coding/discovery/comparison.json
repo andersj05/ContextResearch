@@ -1,0 +1,26 @@
+{
+  "record_kind": "recomputed inspected scalar/joint output-entropy comparison; floats select direction only",
+  "rows": [
+    {
+      "quantizer": "two_word",
+      "entropy_per_block_float": "0.8960382325345574",
+      "oracle_fraction_boundary_float": "0.6679517693163151",
+      "entropy_time_share_limit_float": "0.2707530144177303",
+      "frequency_types": 2
+    },
+    {
+      "quantizer": "refined_three",
+      "entropy_per_block_float": "1.9562709953169903",
+      "oracle_fraction_boundary_float": "0.07380124469920392",
+      "entropy_time_share_limit_float": "0.27292633366460445",
+      "frequency_types": 15
+    },
+    {
+      "quantizer": "conditional_six",
+      "entropy_per_block_float": "1.9562942308420102",
+      "oracle_fraction_boundary_float": "0.07376492286195677",
+      "entropy_time_share_limit_float": "0.27290189844662993",
+      "frequency_types": 218
+    }
+  ]
+}

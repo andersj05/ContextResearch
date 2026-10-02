@@ -1136,3 +1136,44 @@ checks all 44 cited sources. Zero model calls or natural
 episodes. External correctness/priority, efficient finite codes approaching
 the characterized limits, biased/adaptive laws and natural-agent benefit stay
 open. Generic allocation/symmetry/product coding novelty is not claimed.
+
+## October 2, 2026: implement a charged-cap entropy code and retain finite controls
+
+Keep the original uniform iid four-bit source and independent uniform R/O/J
+law for C71. Public scalar quantizers and counts are fixed before X. Compress
+their outputs with exact arithmetic intervals and an odd grid, charging one
+regular/fallback flag inside 2k parent bits. Only M and then one-bit Z cross
+boundaries; temporary interval/source computations do not reach later actors.
+The ten packed public response/probability bytes are separate from public k/a,
+program/runtime/framing and instance bits. Polynomial bit complexity is proved,
+without a portable runtime, linear bit-operation or practical-agent claim.
+
+Use the nonnegative all-zero fallback excess and the entire bad-length event
+to bound risk; never assume actual grid failure is independent of values or
+sequence order. Exact binomial tails/first moments and direct-power frontier
+checks justify whole-population upper bounds. These are conservative larger
+risks, not exact average errors or physical enumeration of all source points.
+Every small population/query for k<=3/all a is checked, with 608640 final
+queries; twelve large constructed inputs supply only 864 diagnostic queries.
+
+The default maximal-entropy-slack schedule has actual limiting error enclosed
+by [0.270753014417,0.270753014418], below named C69 but still above C67. Retain
+the original rational schedule: at k=12288 it gives the stronger finite upper
+271988910418071/10^15 and beats the default finite bound at three lengths.
+Both codes provably lose at the four checked smaller lengths. Preserve all
+prototype/control outputs and honest post-hoc provenance; revised scratch
+imports evolving code and is not a fully frozen historical runtime. Fifteen
+bindings include original C67/C69 outputs and checks of their immutable sources.
+
+Read Chou/Lookabaugh/Gray Introduction/Section II, pp.31–33, and Gray's author
+metadata entry68 in bounded scope. Add verified `chou1989entropy` metadata;
+do not invent a DOI or upgrade inherited full-review statuses. Entropy coding,
+time sharing, quantization and concentration remain established foundations.
+This phase adds the specific implemented code, overflow bounds and analytic
+family limit; external proof/priority, efficient codes approaching C67 and
+natural-agent/model/token/cost benefit remain open. Claim C71; draft v0.38.
+All 557 offline tests pass, including the eight new scientific checks.
+Repository validation reports PASS with 71 claims, 52 bibliography entries
+and 171 PDF hashes; paper assembly checks all 45 cited sources. All 15 new
+bindings regenerate. Zero new model calls or natural episodes; provider
+allocations stay closed.

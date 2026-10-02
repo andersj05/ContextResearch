@@ -1,6 +1,36 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.37 — October 2, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.38 — October 2, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## A computable code improves the larger finite control
+
+The [hard-cap arithmetic code](../research/HARD_CAP_ENTROPY_CODE_2026-10-02.md)
+uses exactly two parent bits per four-bit source block, including its fallback
+flag, and one child bit before the final coordinate query. It compresses a
+public mixture of two constant responses and full majority signatures. A fixed
+arithmetic midpoint stores the quantizer outputs when they fit; failure emits
+zero. No source, old parent or auxiliary output list reaches the final actor.
+The tables use 10 packed public bytes; public descriptors and program/framing
+are separate from instance bits. Encoder/updater bit complexity is polynomial.
+[C71]
+
+At 12,288 blocks a retained simple schedule has error at most 27.198892%, below
+C69's repeated six-block 27.472579%. The new default has a weaker bound there,
+27.204464%, but its actual limiting risk is about 27.075301%. This remains
+above the optimal 26.189898% limit. Both schedules provably lose at the four
+checked smaller lengths; the simple control gives stronger finite bounds at
+three larger lengths. Sixteen exact overflow/excess-loss bounds establish
+these comparisons without enumerating the huge source populations. [C71]
+
+All small sources and every public allocation at k<=3 execute 608,640 final
+queries. Twelve constructed large inputs execute 864 additional diagnostics;
+those spots do not measure a population risk. Exact integer frontier checks
+and a whole-population proof supply the larger bounds, which are conservative
+rather than exact average errors. Entropy-constrained quantization and time
+sharing have classical precedent [@chou1989entropy]. This implements a specific
+toy-model construction; near-optimal efficient codes, external correctness/
+priority and natural-agent/model/token/cost benefit remain open. Zero new model
+calls or prospective natural episodes. [C71]
 
 ## Query probabilities and early query information have different effects
 

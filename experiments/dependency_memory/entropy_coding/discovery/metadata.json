@@ -1,0 +1,37 @@
+{
+  "all_checked_lengths": [
+    96,
+    192,
+    384,
+    768,
+    1536,
+    3072,
+    6144,
+    12288
+  ],
+  "date": "2026-10-02",
+  "evidence_class": "post-hoc offline construction and exact-bound probe; not independent trials",
+  "file_sha256": {
+    "comparison.json": "ff07940789bf085870bf754796dc2887d3f750ce35d45f5b97b7adbb955ef8bd",
+    "entropy_probe.json": "76bb808cf2f7f957c34b9032f465d6c3800debcc76a957f7e4b1039857d690bf",
+    "entropy_probe.py": "6bb05a33d9d0424d0f05316edfa875bbdd8bcefc1ce763f73a7d19bdf0dfa725",
+    "prototype_codec.py": "87857dc7b565657b59cdf7e81f271441e86828230a2181a7d872c356c9f0546d",
+    "prototype_finite.py": "ace8df1e99e533aa26e3da0fbac25cb9bb6a80fbae45b8197498db2c873ddc08",
+    "prototype_probe.json": "278988744cf08b0849dfdedf9868ca30fc9d319deab1cc57b501ec31f6222e1f",
+    "prototype_probe.py": "6bb05a33d9d0424d0f05316edfa875bbdd8bcefc1ce763f73a7d19bdf0dfa725"
+  },
+  "finite_control": "Prototype remains an explicit rational_count control; it has better checked finite bounds at several large lengths although its limiting error is slightly higher.",
+  "floats_used_in_proof": false,
+  "limits": "Scalar two/eight-word family only; smaller lengths lose to C69 and the rational control wins at some larger lengths. Generic quantization, entropy coding, time sharing and arithmetic intervals are established. No optimal finite code, near-C67 guarantee, natural benefit or publication-priority conclusion.",
+  "new_model_calls": 0,
+  "new_natural_episodes": 0,
+  "portable_timing_claim": false,
+  "prototype": "Actual codec/finite source bytes copied before revising the public count; rational 2/3 count with ceil(2*sqrt(k)) fewer oracle blocks.",
+  "revision": "Entropy count uses an exact integer entropy inequality and ceil(sqrt(k*ceil(log2(k+1)))) slack. Scratch probe imports evolving production code; current exact checker regenerates values. No fully frozen historical runtime is asserted.",
+  "upstream": {
+    "experiments/dependency_memory/results/conditional_six_block_2026-10-02.json": {
+      "commit": "8e09d1d",
+      "sha256": "19e83d9b81fb8f0f8475ab6541087465dd9eb7a237fb07f1cbe777ddecd3be51"
+    }
+  }
+}

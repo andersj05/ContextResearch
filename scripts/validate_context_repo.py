@@ -968,6 +968,21 @@ def main() -> int:
     counts["query_prior_new_model_calls"] = regenerated_weighting["new_model_calls"]
     counts["query_prior_new_natural_episodes"] = regenerated_weighting["new_natural_episodes"]
 
+    from experiments.dependency_memory.entropy_coding import certificate as entropy_coding
+    regenerated_entropy = entropy_coding.certificate()
+    if json.loads(entropy_coding.OUTPUT.read_text(encoding="utf-8")) != regenerated_entropy:
+        errors.append("Hard-cap entropy code, conditional overflow bounds or provenance changed")
+    counts["entropy_coding_finite_bounds"] = len(regenerated_entropy["finite_bounds"])
+    counts["entropy_coding_small_actor_queries"] = regenerated_entropy["small_physical_final_queries"]
+    counts["entropy_coding_large_diagnostic_queries"] = regenerated_entropy["large_diagnostic_physical_final_queries"]
+    counts["entropy_coding_public_payload_bytes"] = regenerated_entropy["public_label_probability_payload_bytes"]
+    counts["entropy_coding_charged_flag_bits"] = regenerated_entropy["flag_bits_charged_inside_parent"]
+    counts["entropy_coding_source_bindings"] = len(regenerated_entropy["source_sha256"])
+    counts["entropy_coding_limit_enclosure"] = regenerated_entropy["asymptotic"]["implemented_entropy_schedule_error_limit_enclosure"]
+    counts["entropy_coding_large_population_enumerated"] = regenerated_entropy["large_uniform_source_populations_enumerated"]
+    counts["entropy_coding_new_model_calls"] = regenerated_entropy["new_model_calls"]
+    counts["entropy_coding_new_natural_episodes"] = regenerated_entropy["new_natural_episodes"]
+
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"

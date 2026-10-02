@@ -1,0 +1,90 @@
+[
+  {
+    "k": 96,
+    "oracle_blocks": 48,
+    "two_word_blocks": 48,
+    "binomial_cells_represented": 2401,
+    "frontier_steps": 49,
+    "base_error": "0.28125",
+    "failure_event_upper_probability": "0.0015113605971745023",
+    "conditional_excess_upper": "0.00035334857200530653",
+    "error_upper": "0.2816033485720053"
+  },
+  {
+    "k": 192,
+    "oracle_blocks": 104,
+    "two_word_blocks": 88,
+    "binomial_cells_represented": 9345,
+    "frontier_steps": 89,
+    "base_error": "0.2786458333333333",
+    "failure_event_upper_probability": "0.0009646328160644803",
+    "conditional_excess_upper": "0.00022126783507319612",
+    "error_upper": "0.2788671011684065"
+  },
+  {
+    "k": 384,
+    "oracle_blocks": 220,
+    "two_word_blocks": 164,
+    "binomial_cells_represented": 36465,
+    "frontier_steps": 165,
+    "base_error": "0.2766927083333333",
+    "failure_event_upper_probability": "0.0005643929701288151",
+    "conditional_excess_upper": "0.00012850640013315832",
+    "error_upper": "0.2768212147334665"
+  },
+  {
+    "k": 768,
+    "oracle_blocks": 459,
+    "two_word_blocks": 309,
+    "binomial_cells_represented": 142600,
+    "frontier_steps": 310,
+    "base_error": "0.275146484375",
+    "failure_event_upper_probability": "0.0003547526364574373",
+    "conditional_excess_upper": "8.04515436740381e-05",
+    "error_upper": "0.27522693591867403"
+  },
+  {
+    "k": 1536,
+    "oracle_blocks": 947,
+    "two_word_blocks": 589,
+    "binomial_cells_represented": 559320,
+    "frontier_steps": 590,
+    "base_error": "0.2739664713541667",
+    "failure_event_upper_probability": "0.00024316390701422283",
+    "conditional_excess_upper": "5.5227628799407005e-05",
+    "error_upper": "0.2740216989829661"
+  },
+  {
+    "k": 3072,
+    "oracle_blocks": 1935,
+    "two_word_blocks": 1137,
+    "binomial_cells_represented": 2203168,
+    "frontier_steps": 1138,
+    "base_error": "0.27313232421875",
+    "failure_event_upper_probability": "0.0001372179138352119",
+    "conditional_excess_upper": "3.121948207423758e-05",
+    "error_upper": "0.27316354370082424"
+  },
+  {
+    "k": 6144,
+    "oracle_blocks": 3932,
+    "two_word_blocks": 2212,
+    "binomial_cells_represented": 8703729,
+    "frontier_steps": 2213,
+    "base_error": "0.2725016276041667",
+    "failure_event_upper_probability": "8.07684654091707e-05",
+    "conditional_excess_upper": "1.840178582971546e-05",
+    "error_upper": "0.27252002938999637"
+  },
+  {
+    "k": 12288,
+    "oracle_blocks": 7956,
+    "two_word_blocks": 4332,
+    "binomial_cells_represented": 34477681,
+    "frontier_steps": 4333,
+    "base_error": "0.27203369140625",
+    "failure_event_upper_probability": "4.795540905862826e-05",
+    "conditional_excess_upper": "1.0940796431762725e-05",
+    "error_upper": "0.27204463220268177"
+  }
+]

@@ -2,6 +2,11 @@
 
 These are distinctions to verify and explain, not declarations of novelty. The detailed review is in the September 16 proposal and survey. The focused bibliography records verified titles and authors; outstanding final publication metadata are identified in its notes.
 
+The [October 2 hard-cap code](../research/HARD_CAP_ENTROPY_CODE_2026-10-02.md)
+instantiates established entropy-constrained quantization and time sharing
+[@chou1989entropy]. Its specific charged-cap construction and finite bounds
+are local deductions; the reading guide records the bounded primary scope.
+
 The [October 2 finite code](../research/FINITE_TRELLIS_CODE_2026-10-02.md)
 applies established trellis/Viterbi, bit-window and cyclic-boundary methods
 [@marcellinfischer1990tcq; @qtip2024]. Its local evidence is a fixed witness for
