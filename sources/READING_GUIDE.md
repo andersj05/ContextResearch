@@ -1,5 +1,12 @@
 # Focused reading guide
 
+The [October 2 exact-priced note](../research/EXACT_PRICED_GROUP_CODE_2026-10-02.md)
+reuses the existing bounded Chou/Lookabaugh/Gray Section III reading for
+ECVQ. No additional source was read or review status upgraded in C75.
+Its new proof/finite records concern one delayed-query construction and
+its tradeoffs, not priority for ECVQ, tensor minimization or arithmetic
+coding. Focused bibliography metadata remain unchanged.
+
 The [October 2 loss-weighted note](../research/LOSS_WEIGHTED_OVERFLOW_2026-10-02.md#5-preserved-failed-quantizer-search-and-prior-work)
 extends the existing Chou/Lookabaugh/Gray (1989) bounded reading to Section III,
 printed pp. 33–35, including the three alternating minimizations and Figure 3

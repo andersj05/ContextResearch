@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-02",
+  "status": "Post-hoc amendment made after all eight group-five target bounds failed and before any group-six launch",
+  "original_protocol_preserved": "protocol.json",
+  "reason": "Full-population Lloyd updates on group six would repeat hundreds of billions of comparisons; use a fixed public training sample for design and a full exact population pass once per final descriptor",
+  "group": 6,
+  "price": [2, 5],
+  "initializations": ["C69 component product, 4096 initial words", "random 16384 words"],
+  "training_sources": 131072,
+  "sample_law": "Uniform without replacement, xorshift32 seed 0x243f6a88, sorted unique 24-bit source words; same fixed sample for both starts",
+  "maximum_updates": 60,
+  "proposal_weights": "Training cell counts multiplied by 128 to sum to 16^6; remain public proposal weights, not asserted true population counts",
+  "complete_population_grading": "Exact integer price rule on all 16777216 sources; store actual population CDF counts and complete map",
+  "native_array_workspace": "Persistent cost/mapping arrays plus transient training/source uniqueness buffers remain below 256 MiB; allocator/library/stack/RSS overhead separate",
+  "native_original_workspace_field": "The original native field is a base-array estimate; it omits the transient uniqueness bitmap. Independent metadata adds that bitmap conservatively.",
+  "training_metrics": "Exploratory, not true population entropy/error or independent held-out model trials",
+  "information_contract": "Original public-table, parent/child and forbidden-channel contract unchanged",
+  "new_model_calls": 0,
+  "new_natural_episodes": 0
+}

@@ -1,0 +1,38 @@
+g=5 price=2/5 seed=0 iteration=0 active-loss=18235904 H=7.56344779
+g=5 price=2/5 seed=0 exact final words=256 loss=18235904 H=7.54360861 changes=0
+g=5 price=2/5 seed=1 iteration=0 active-loss=19091150 H=8.26426796
+g=5 price=2/5 seed=1 iteration=5 active-loss=17941691 H=7.79885355
+g=5 price=2/5 seed=1 iteration=10 active-loss=17946208 H=7.77243433
+g=5 price=2/5 seed=1 iteration=15 active-loss=17946178 H=7.77206955
+g=5 price=2/5 seed=1 exact final words=822 loss=17946192 H=7.77203126 changes=0
+g=5 price=2/5 seed=2 iteration=0 active-loss=18338644 H=9.53231809
+g=5 price=2/5 seed=2 iteration=5 active-loss=17402542 H=9.02783288
+g=5 price=2/5 seed=2 iteration=10 active-loss=17401351 H=9.02103868
+g=5 price=2/5 seed=2 iteration=15 active-loss=17400653 H=9.01975577
+g=5 price=2/5 seed=2 exact final words=2344 loss=17400705 H=9.01958358 changes=0
+g=5 price=2/5 seed=3 iteration=0 active-loss=17954047 H=10.11253888
+g=5 price=2/5 seed=3 iteration=5 active-loss=17172573 H=9.57216422
+g=5 price=2/5 seed=3 iteration=10 active-loss=17171188 H=9.56101855
+g=5 price=2/5 seed=3 iteration=15 active-loss=17171163 H=9.55851097
+g=5 price=2/5 seed=3 iteration=20 active-loss=17170934 H=9.55870075
+g=5 price=2/5 seed=3 exact final words=3809 loss=17170911 H=9.55873589 changes=0
+g=5 price=1/2 seed=0 iteration=0 active-loss=18235904 H=7.56344779
+g=5 price=1/2 seed=0 exact final words=256 loss=18235904 H=7.54360861 changes=0
+g=5 price=1/2 seed=1 iteration=0 active-loss=19091150 H=8.26426796
+g=5 price=1/2 seed=1 iteration=5 active-loss=18418739 H=6.67627426
+g=5 price=1/2 seed=1 iteration=10 active-loss=18457225 H=6.57979806
+g=5 price=1/2 seed=1 iteration=15 active-loss=18458842 H=6.57567068
+g=5 price=1/2 seed=1 iteration=20 active-loss=18459297 H=6.57448745
+g=5 price=1/2 seed=1 exact final words=575 loss=18459300 H=6.57446794 changes=0
+g=5 price=1/2 seed=2 iteration=0 active-loss=18338644 H=9.53231809
+g=5 price=1/2 seed=2 iteration=5 active-loss=17981247 H=7.69166870
+g=5 price=1/2 seed=2 iteration=10 active-loss=18056726 H=7.49662523
+g=5 price=1/2 seed=2 iteration=15 active-loss=18073024 H=7.45853604
+g=5 price=1/2 seed=2 exact final words=1434 loss=18073130 H=7.45827282 changes=0
+g=5 price=1/2 seed=3 iteration=0 active-loss=17954047 H=10.11253888
+g=5 price=1/2 seed=3 iteration=5 active-loss=17957903 H=7.70007527
+g=5 price=1/2 seed=3 iteration=10 active-loss=18072982 H=7.42304392
+g=5 price=1/2 seed=3 iteration=15 active-loss=18094436 H=7.37114535
+g=5 price=1/2 seed=3 iteration=20 active-loss=18097172 H=7.36454577
+g=5 price=1/2 seed=3 iteration=25 active-loss=18097368 H=7.36413218
+g=5 price=1/2 seed=3 exact final words=2165 loss=18097368 H=7.36413214 changes=0

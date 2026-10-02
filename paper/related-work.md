@@ -2,6 +2,14 @@
 
 These are distinctions to verify and explain, not declarations of novelty. The detailed review is in the September 16 proposal and survey. The focused bibliography records verified titles and authors; outstanding final publication metadata are identified in its notes.
 
+The [exact-priced group note](../research/EXACT_PRICED_GROUP_CODE_2026-10-02.md)
+instantiates the same established ECVQ precedent [@chou1989entropy].
+Its contribution is a specific independently checked finite construction
+with a small gain and larger public storage/runtime. Exact price rewriting,
+tensor minimization, entropy-slack mixing and arithmetic coding are
+elementary or established methods. Existing bounded Section III reading
+is reused; no new source, review upgrade or generic novelty claim.
+
 The [loss-weighted finite note](../research/LOSS_WEIGHTED_OVERFLOW_2026-10-02.md)
 applies established Chernoff reasoning and ECVQ [@chou1989entropy].
 Its scoped contribution is a stronger finite certificate and checked public

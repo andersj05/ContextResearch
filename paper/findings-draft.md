@@ -1,6 +1,30 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.41 — October 2, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.42 — October 2, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## A larger public quantizer gives a small finite improvement
+
+The [six-block price code](../research/EXACT_PRICED_GROUP_CODE_2026-10-02.md)
+has error at most 27.047565% at 12288 blocks. Its upper bound is below
+the named C74 code's base lower bound; the same comparison holds at 6144.
+All six inspected bounds tighten, but the 384-block code still loses to
+exact C69. The parent remains 2k bits including flag and scalar tail,
+then one child bit before J. [C75]
+
+The improvement trades resources: 66513 packed actor bytes, or 94754
+including finite-planning weights, versus 1288 before. Local large
+encodes take 11–19 seconds. Byte packing does not bound JSON/Python RAM
+or establish token/provider-cost savings. Eight unsuccessful five-block
+starts and the first failed six-block start remain in the record. All
+41943040 source assignments across ten starts match an independent
+complete tensor minimum calculation and literal loss/CDF grading. [C75]
+
+A separate public entropy-slack schedule has actual limit
+[0.269017091392,0.269017091393], better than fixed C72 but worse than
+growing C72. The finite five-degree selector's actual limit is unproved.
+Generic ECVQ/tensor/arithmetic methods are established or elementary.
+External correctness/priority, useful near-C67 finite coding and natural
+agent benefit remain open. Zero new model calls or natural episodes. [C75]
 
 ## Finite overflow costs less when weighted by the loss it adds
 

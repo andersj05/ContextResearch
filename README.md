@@ -4,7 +4,18 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
-**October 2 stronger finite overflow certificates:** [the loss-weighted construction](research/LOSS_WEIGHTED_OVERFLOW_2026-10-02.md)
+**October 2 exact-priced finite code:** [the larger-group construction](research/EXACT_PRICED_GROUP_CODE_2026-10-02.md)
+lowers the 12288-block error bound to 27.047565%, with the same 2k-bit
+parent and one-bit child. Its upper bound is below the named C74 code's
+base lower bound. The gain is small: about 0.017105 percentage points
+between upper bounds, with 94754 packed public bytes including planning
+weights versus 1288 before. Local large encodes take 11–19 seconds.
+All ten starts and 41943040 complete source assignments retain independent
+minimum checks. A separate actual-limit family reaches 26.901709%;
+C72 growing remains better. Claim C75; no model calls or natural episodes.
+Near-C67 coding, external review and practical-agent benefit remain open.
+
+**Earlier October 2 stronger finite overflow certificates:** [the loss-weighted construction](research/LOSS_WEIGHTED_OVERFLOW_2026-10-02.md)
 uses the unchanged C72 actors with a new public allocation. Error is at most
 27.450867% at 768 blocks, below C69's exact 27.472579%, and at most 27.064671%
 at 12,288 blocks. Parent capacity stays exactly 2k bits including the flag,

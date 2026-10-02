@@ -1035,6 +1035,27 @@ def main() -> int:
     counts["weighted_overflow_new_model_calls"] = regenerated_weighted["new_model_calls"]
     counts["weighted_overflow_new_natural_episodes"] = regenerated_weighted["new_natural_episodes"]
 
+    from experiments.dependency_memory.priced_coding import certificate as priced_coding
+    regenerated_priced = priced_coding.certificate()
+    if json.loads(priced_coding.OUTPUT.read_text(encoding="utf-8")) != regenerated_priced:
+        errors.append("Exact-priced code, complete minimum records or resource accounting changed")
+    counts["priced_coding_starts"] = regenerated_priced["discovery"]["starts"]
+    counts["priced_coding_full_source_assignments"] = regenerated_priced["discovery"]["complete_uniform_source_assignments"]
+    counts["priced_coding_independent_minimum_mismatches"] = regenerated_priced["discovery"]["independent_full_minimum_mismatches"]
+    counts["priced_coding_native_price_comparisons"] = regenerated_priced["discovery"]["recorded_native_price_comparisons"]
+    counts["priced_coding_tensor_comparisons"] = regenerated_priced["discovery"]["independent_tensor_comparisons"]
+    counts["priced_coding_allocation_minima"] = len(regenerated_priced["fixed_selected_book_all_five_degree_plans"])+sum(len(r["plans"]) for r in regenerated_priced["all_ten_target_finite_comparisons"])
+    counts["priced_coding_at_12288"] = regenerated_priced["selected_finite_codes"][-1]["error_upper"]
+    counts["priced_coding_actual_named_C74_improvements"] = sum(r["upper_below_named_C74_base"] for r in regenerated_priced["selected_finite_codes"])
+    counts["priced_coding_actor_payload_bytes"] = regenerated_priced["public_packed_payload_bytes"]
+    counts["priced_coding_inclusive_payload_bytes"] = regenerated_priced["public_planner_inclusive_packed_bytes"]
+    counts["priced_coding_separate_actual_limit"] = regenerated_priced["separate_slack_family_actual_limit"]
+    counts["priced_coding_small_actor_queries"] = regenerated_priced["small_physical_final_queries"]
+    counts["priced_coding_constructed_queries"] = regenerated_priced["large_physical_final_queries"]
+    counts["priced_coding_source_bindings"] = len(regenerated_priced["source_sha256"])
+    counts["priced_coding_new_model_calls"] = regenerated_priced["new_model_calls"]
+    counts["priced_coding_new_natural_episodes"] = regenerated_priced["new_natural_episodes"]
+
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"

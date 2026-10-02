@@ -4,6 +4,49 @@ Updated: October 2, 2026. This document is the current handoff; older scope docu
 
 ## Objective
 
+The [exact-priced group construction](../research/EXACT_PRICED_GROUP_CODE_2026-10-02.md)
+improves all six corresponding C74 upper bounds. Claim C75; living draft
+v0.42. At k=12288 error is <=54095129871619/200000000000000
+(27.047565%); at k=6144 and 12288 the new upper bound lies below
+the named C74 code's base lower bound, proving actual improvement over
+those particular codes. Four smaller comparisons establish only tighter
+certificates. The 384-block code still provably loses to exact C69.
+All parent fields, including flag and two-bit scalar tail, fit exactly
+2k bits; one child bit precedes J and final inputs are only Z/R/O/J.
+
+The gain trades public data and runtime: the selected six-block book has
+7288 words, 66513 packed actor bytes, or 94754 including finite-planning
+weights. The inclusive pack fits the existing 262144-byte envelope;
+parameters/program/framing/JSON/Python caches/RAM/workspace are separate.
+Loaded-table local cold planning took 11.897 seconds wall at k=12288;
+three local encodes took 10.609–18.625 seconds. These single samples
+overlapped certificate grading and are not controlled speed comparisons.
+
+All eight five-block starts and the first six-block start fail the
+12288-block target. Two six-block books were designed on one fixed
+131072-source pseudorandom sample; actual CDF/loss/minimum grading uses
+the complete population. All ten starts retain original bytes and exact
+independent tensor minima: 41943040 source assignments, zero mismatches.
+Proposal counts differ from true CDF counts at six; their roles stay
+separate. Eighty convex allocation-bound minima are checked, not global
+books or actual-risk optima. Nineteen full small actor populations execute
+934848 final queries; nine large constructed inputs execute 540.
+
+A separately implemented entropy-slack family has actual limit
+[0.269017091392,0.269017091393], better than fixed C72 and worse than
+growing C72. The finite selector's actual limit is unproved. Generic ECVQ,
+tensor minimization, arithmetic coding and concentration are established
+or elementary; existing bounded Chou reading is reused without an upgrade.
+All 597 offline tests pass, including fourteen new scientific checks.
+Repository validation reports PASS with 75 claims, 55 bibliography
+entries, 171 PDF hashes and 195 immutable imports; paper assembly checks
+all 48 cited sources. Seventy-one bindings preserve
+original code/results. Zero model calls or natural episodes.
+External correctness/priority, useful near-C67 finite coding, broader laws
+and practical-agent/model/token/cost benefit remain open.
+
+**Earlier October 2 loss-weighted finite milestone (C74):**
+
 The [loss-weighted overflow construction](../research/LOSS_WEIGHTED_OVERFLOW_2026-10-02.md)
 improves the named prior C72 finite allocations using the same arithmetic
 actors and public tables. Claim C74; living draft v0.41. At k=768 error is
@@ -773,15 +816,15 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 
 ## Next bounded tasks
 
-C74 supplies a declared finite envelope, a sharper loss-weighted certificate
-and new public allocations. Its k=768/12288 bounds are 27.450867%/27.064671%;
-all 384 smaller group-quantizer starts lose the stronger entropy/distortion
-comparison. The next code should improve its finite error materially toward
-C67 under the same table/runtime envelope, or provide a stronger finite
-converse explaining the remaining cost. The public planner's local 31.651
-seconds at k=12288 also leaves room for faster certified arithmetic. Preserve
-the three smaller-length losses and all negative search maps. Do not repeat
-closed model allocations or fill natural slots with research commands.
+C75 supplies a small finite gain, with a substantial public-data/runtime
+tradeoff. Next freeze a separate full-population six-block design protocol
+using the independently checked tensor transform, within the same packed
+table and native-array envelopes. Compare actual population proposals
+with the sampled C75 descriptor, retain every start and all strong C69/
+C74 controls, and improve actor runtime as a separately measured change.
+The extension has not been performed. A stronger finite converse remains
+useful if gains stall. Do not repeat closed classifier/model allocations
+or fill prospective workflow slots with research commands.
 
 C73 resolves formal deterministic polynomial convergence at rate two.
 The next useful coding result needs a declared finite input/public-table/

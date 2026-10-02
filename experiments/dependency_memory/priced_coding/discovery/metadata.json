@@ -1,0 +1,113 @@
+{
+  "command_logs": "Original redirected terminal logs preserved; exploratory C clocks are platform dependent. Two Python import preflights failed before scientific checker dispatch; corrected PYTHONPATH and complete checker runs succeeded.",
+  "compile_flags": [
+    "-O3",
+    "-std=c99"
+  ],
+  "compiler_version": "clang version 19.1.0",
+  "date": "2026-10-02",
+  "file_sha256": {
+    "analyse.py": "7157cf6ac6197bb208597c315d5832785e7ceb7c2e5bbd8b88c25ca963c0449e",
+    "base.h": "72380869eeca3ed9e0a4f113f9c34bf59d30fabd5d8bf5af4e1b7b28937c70bd",
+    "calibrate.c": "cf69266ecbfe814a4ee29bb83a9bf782cacba83a01eae7f38dd15dc08dd975e6",
+    "calibrate.json.gz": "1f0f03751420a8ecc980c568f97ac77be387ed614d764771e45e8e1352d9698e",
+    "calibrate.py": "aa141c241e3333397cfcb721ed32f1fafbfebcee11c7b396918588e208c13a2b",
+    "calibrate_transform.py": "efeb82f0f3c2c40cdfe939d7b21ebd053b7f17223910842236df5d009334f0ad",
+    "check_transform.py": "0926ea402cb1e94dbe8a26c87073e058a1afdd07a24b06ba1543dfdd8f48e8e7",
+    "five.json.gz": "4612d91b2dbc03ebe64403a56bfdb20755675c898062b918b0c0ea16c8289229",
+    "five_analysis.json": "3781e0e3d3249090f951a6ea495fb6a3abfeb261927940267a3bb56b2cf7c2a9",
+    "five_analysis_console.log": "7ff300f7103ba01c31a5484d98983a0f9b44e6929ca08f377fe62e75aed54594",
+    "five_console.log": "fd5499a1d59615e3a26591145eed7f3a107ecdf400f2d831c2a2a450268597ec",
+    "five_row0.txt": "567a468a76c66a8da69dc33212495417b3acc81fa195a3c509e9004ad4320750",
+    "five_row0_transform.json": "4481ab097cd54b1b98ef882bc28f9fce061d3159388a8567a6be0fef2dbad056",
+    "five_row1.txt": "0f7e805b5b1b908ef31dedd1c70e48018416d11a62bcd7eb1771741398dc254b",
+    "five_row1_transform.json": "c8526dba77bddf921395e4a056f16044ea53c09e289c9640776a145fa92f3267",
+    "five_row2.txt": "3c79d1d790563e3af5ac01850b24b48ea86591c5371067ea90ab46c7286a2d5b",
+    "five_row2_transform.json": "a9305171129f7ae9f15dd60b0cffef55a464923e406ff4cbb29dd94e6de9b0c1",
+    "five_row3.txt": "7365c6ccb55eaa5d989936cb69c28b35bb2a65912c0c341821e77809166e36ee",
+    "five_row3_transform.json": "cea34e51bffa40ac497eb3772a9f5909d47f5175ab6bf9f1b23aa37e6cc6c9d5",
+    "five_row4.txt": "e0201c7da2cf6b2e64d29901f719b7ebc85e4a3a85a227f0e82397ad351bb12f",
+    "five_row4_transform.json": "c735d18b1cc6dc8add09f622c0ace4152e6728e81974a9c92c72e8cf3ecfd379",
+    "five_row5.txt": "d02c99afbc975e16eec3dd79d05fbae1c1c405353a4486ba541b3b1ed17db7ed",
+    "five_row5_transform.json": "e87586370287e4814b6eee66f733c132c4403e0c89e5ab2c8fbcef3c09bddf15",
+    "five_row6.txt": "e0a9c219af326adc61300bb750a00ef8748181d695644dbae7c4d81e8b2ff8a8",
+    "five_row6_transform.json": "d8fec36d599edbe8be1736da00920dda6dea9908e89f02448d50c12af6429521",
+    "five_row7.txt": "f63decaabec4ad25d6b19a2f3298f8152604322a1b10f5504e7fd2582fcb0ebf",
+    "five_row7_transform.json": "c4ed0ec7fdb7708ab37a1012b9ba8fad8382c84d868de5e12bcb669ce9ab773b",
+    "five_transform.json": "e05849daeaee3bdf73ba575d502ed01241ef2db7d0c9955303c6589769f7c344",
+    "five_transform_console.log": "6b2d32d220e3a2debfaf599b3b1395538f616183f8e68c82eef5f8b2b7fed75f",
+    "initial_bounds.py": "a92aa67881c89af7aa961da91db86b9f6273bd166b584bcf142fdfd7eab6511a",
+    "make_sampled.py": "3cbc6445a77614ca4803092e3bffa02ba87253b338b18c35f0fd68c13b929ce8",
+    "priced.c": "490f42af58c863bbb2ec3df01fe16947690ae3054c3c653c9ab212bb32d69c48",
+    "protocol.json": "e2684becff3a67c906a3d59fab9a0f9d4387bded967f5e5ba1e3d6905392e15f",
+    "recheck_five.py": "0a8cbf0731c1fa3378790b9cfd920e4a77b355108c96ca4b54329df80902dce1",
+    "sampled_extension.json": "91517fcaf3d590994d63c63ff505bc89b2acfa65735dba66d0464b8cc4aef90c",
+    "sampled_priced.c": "1bea643a79893d95ec265eabb48aa097c0f1d332738a875f661bd4c687b628e7",
+    "six.json.gz": "16d9281cea06762e647b60ee64d44a368f62f72e8fd1a29271c1be41e803821c",
+    "six_analysis.json": "d93b77ecc35cbb42b771c1e7cc98801b907bd9614b06809c2d7606a52a46f6f8",
+    "six_analysis_console.log": "edad2c5bc1f3629c12a6cb3ae11ab4f2f3deb170044fea39cec7eeb5a592c219",
+    "six_console.log": "dc273af132dbdb1487a16606837a42df54c6e341b02afc1c890e1d90248babeb",
+    "six_row0.txt": "4538b7761cdae9d6c5da78528106a4874b001388e310c2af0e5233faab409a1b",
+    "six_row0_transform.json": "200e562f0846f90417801a5149768dbe4bb64bcce71c86a07d6355683ba37b3f",
+    "six_row1.txt": "c8206cbbd68be130927e0d5b6eb12f033868c7fd75b08409b5a034bee0273bb3",
+    "six_row1_transform.json": "3e0be0744c44854b87c84fce16989504f90875f9e29c8e39ed93520f99a48c0c",
+    "six_transform.json": "74a5bbd2d43493d6f1ebb0183759700b93f27755210295e4ba9cf172fd05e9c0",
+    "six_transform_console.log": "5c02534a86e99e74bdb3f0e4f11e7449bb1bcecd2aea83bcf382647fc42b27cb",
+    "transform.c": "3d4dbbeed91106f26919f4e3beb60be050196eb6cb76df282e8ad2d5dabdf59a",
+    "transform_calibration.json": "4eb615e40d2e3865de08c5ebac4d5781436a5f283292604aa11b2c9a4757c9e2",
+    "transform_calibration_console.log": "9b84fb1ad80b39cae6130ba6e55ae9e8c79695bf156bf24ed9270f1b93ad218d"
+  },
+  "historical_analysis": "five_analysis.json used initial_bounds.py before exact product cancellation. Forty original large allocations/numeric bounds reproduced by recheck_five.py. Current bounds also use unreduced integer signs during binary comparisons; algebraic value unchanged.",
+  "model_calls": 0,
+  "native_platform": "Windows x86_64, unsigned __int128 via Clang",
+  "native_workspace_scope": "Original base estimate omits the transient source uniqueness bitmap. Independent conservative count adds N bytes, possible renumber array, and sampled-run buffers. Bounds cover arrays, not allocator/library/stack/RSS. Python grading memory and actor caches are separately unbounded here.",
+  "natural_episodes": 0,
+  "raw_records": {
+    "calibrate.json": {
+      "bytes": 1295502,
+      "compressed_bytes": 4461,
+      "sha256": "b913178c83894998f7f2cdd6ee8f69c3c2a55fe646f9d5098309ef92f107dbed"
+    },
+    "five.json": {
+      "bytes": 33837446,
+      "compressed_bytes": 1396734,
+      "conservative_array_bytes_including_transient_buffers": 42041344,
+      "g": 5,
+      "original_native_base_array_estimate_bytes": 40960000,
+      "sha256": "1239cdec5d26fefc0fb43de83119b4120517e93347a845680cf8b22aeeb314fa",
+      "sources_per_start": 1048576,
+      "starts": 8
+    },
+    "six.json": {
+      "bytes": 161330919,
+      "compressed_bytes": 7925082,
+      "conservative_array_bytes_including_transient_buffers": 221446144,
+      "g": 6,
+      "original_native_base_array_estimate_bytes": 203816960,
+      "sha256": "46bd1257477e7fe940982403661bfe4c1f1662fe426763a83d91525b28351c5b",
+      "sources_per_start": 16777216,
+      "starts": 2
+    }
+  },
+  "sample_scope": "Protocol called the sample uniform without replacement. Actual fixed-seed xorshift construction is a deterministic pseudorandom design sample, not independent uniform/held-out trials. Training trajectory and change counts have sample scope. Final CDF/loss/minimum checks have full population scope.",
+  "status": "Completed post-hoc mathematical discovery, not independent model trials",
+  "tensor_checker": "Independent literal-query min-plus tensor transform, certified 32-bit log floors, exact crossproducts for scores within one unit. Complete original labels compared, smallest-book-index ties. Tiny complete rational/literal controls stored.",
+  "tensor_workspace_scope": "Native tensor record counts six N-byte units plus counts. Add 393216 bytes of fixed public log/weight arrays, scalar matrix/stack and library/allocator/RSS separately. Within original 256 MiB array envelope for g<=6.",
+  "terminal_independent_tensor_exit_codes": {
+    "five": 0,
+    "four_small_controls": 0,
+    "six": 0
+  },
+  "terminal_search_exit_codes": {
+    "five": 0,
+    "six": 0
+  },
+  "upstream_sha256": {
+    "experiments/dependency_memory/conditional_coding/codec.py": "d7d1817b5c183fdc116fcb4160d7099f76b49da07727bc75a5978354e3feaa41",
+    "experiments/dependency_memory/results/conditional_six_block_2026-10-02.json": "19e83d9b81fb8f0f8475ab6541087465dd9eb7a237fb07f1cbe777ddecd3be51",
+    "experiments/dependency_memory/results/rate_curve_2026-10-02.json": "06624233335d8ee64422d43a1050d3f0385b79eec63ad442efbb3c045e2ba014",
+    "experiments/dependency_memory/results/tie_coding_2026-10-02.json": "3134e7a4155342de4cc93eab282cc19de8e903d3b68306b63c48440a9e51dc59",
+    "experiments/dependency_memory/results/weighted_overflow_2026-10-02.json": "77ea717891570f69243395519f3a787de709a214e870ecd7db93d7a6537a8d51",
+    "experiments/dependency_memory/weighted_overflow/discovery/base.h": "72380869eeca3ed9e0a4f113f9c34bf59d30fabd5d8bf5af4e1b7b28937c70bd"
+  }
+}

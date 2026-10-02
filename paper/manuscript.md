@@ -1,6 +1,6 @@
 # Repeated Context Compression with Delayed Task Dependencies
 
-Working draft — October 2, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an exact parametric unrestricted asymptotic curve and a tightly certified rate-two error, a two-class query-prior and timing extension, implemented polynomial hard-cap entropy codes with coordinated tied answers and finite bounds, a deterministic polynomial family reaching the rate-two limit with slow finite convergence, loss-weighted finite overflow bounds and public allocation search, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, a cross-record stress test with one permanent transport gap and a separately frozen continuation, a post-hoc offline decoder-compatibility correction, two workflow development comparisons, and a retrospective retained-evidence audit. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
+Working draft — October 2, 2026. Authorship and venue are not set. For a short overview, read the [living findings draft](findings-draft.md). This manuscript reports an exact finite-chain optimum, scaling bounds, a joint-coding extension with an exact parametric unrestricted asymptotic curve and a tightly certified rate-two error, a two-class query-prior and timing extension, implemented polynomial hard-cap entropy codes with coordinated tied answers and finite bounds, a deterministic polynomial family reaching the rate-two limit with slow finite convergence, loss-weighted finite overflow bounds and public allocation search, exact-priced larger-group codes with explicit resource tradeoffs, an exact restricted recovery reference, two small Luna development tranches, a completed 1,536-request matched retention study, an exploratory historical workflow replay, 141 GPT-6 Luna medium calls in a controlled memory-writing study, a 72-call annotated-schema transfer test, a 126-call prospective new-schema test, a cross-record stress test with one permanent transport gap and a separately frozen continuation, a post-hoc offline decoder-compatibility correction, two workflow development comparisons, and a retrospective retained-evidence audit. External mathematical review, novelty assessment, realistic production-workflow evaluation and production benefit remain open.
 
 ## Abstract
 
@@ -1376,6 +1376,68 @@ They do not establish population latency or portable speed. External
 correctness/priority, useful coding near C67 and practical-agent/model/token/
 provider-cost benefits remain open. Zero new model calls or natural episodes.
 [C74]
+
+### 8.25 Exact-priced larger groups and their resource tradeoff
+
+The [new public six-block book](../research/EXACT_PRICED_GROUP_CODE_2026-10-02.md)
+has 7288 response words. At k=12288 the implemented flagged arithmetic
+code has error <=54095129871619/200000000000000, approximately 27.047565%.
+This is below the named C74 code's base lower bound 3325/12288; the
+corresponding comparison also holds at k=6144. These establish actual
+improvement over those particular codes. All six checked upper bounds
+tighten, while the 384-block base still loses to exact C69. Larger
+population risks are analytic guarantees, not exact actor averages. [C75]
+
+For price a/b, response index minimizes 2^(b L)/q_i^a with smallest-index
+ties and public positive proposal q_i. A largest-proposal fallback cannot
+have lower group loss than the chosen output. Actual population cell
+counts, distinct from sampled proposal weights, supply the arithmetic CDF.
+Exact full-population quantizer loss is 111976409/402653184; outward
+entropy per block is [1.737988868032,1.737988868033]. Those scores alone
+are not the hard-cap guarantee. Fixed nonnegative cell loss excesses
+extend Section 8.24's weighted bound; exact forward-difference signs
+minimize eighty declared convex allocation expressions. [C75]
+
+Eight five-block starts and the first of two sampled-design six-block
+starts fail the target. All 41943040 complete source assignments across
+ten starts match a separate literal-query tensor minimum computation,
+with original descriptor/label hashes. Certified public log floors and
+exact near-score products avoid floating minimum decisions. The
+1294947-case original comparator calibration, four full tiny rational
+controls and 650 implemented Python probes have distinct scopes.
+These are post-hoc finite calculations, not independent trials. [C75]
+
+The parent remains exactly 2k bits including flag and a two-bit scalar
+tail, and the child remains one bit before J. Public tables/price/CDF/
+allocation precede X; final inputs are only Z/R/O/J. No source/old-parent/
+workspace/histogram/archive/environment/provider-history or source-dependent
+cache is available across a boundary. Actors and public planners receive
+frozen selected data, not complete discovery maps. Trusted functions
+do not supply untrusted-process isolation. [C75]
+
+The finite five-degree selector's actual limit is unproved. A separately
+implemented entropy-slack schedule has actual limit
+[0.269017091392,0.269017091393] by bounded information, vanishing
+per-block margin and concentration. It improves fixed C72 and loses to
+growing C72; C67/C73 remain unchanged. ECVQ is established
+[@chou1989entropy], and tensor minimization, public mixing and arithmetic
+coding are elementary or established methods, not generic novelty. [C75]
+
+Packed public bytes rise to 66513 for actors and 94754 including finite
+planning weights, within the 262144-byte payload envelope. Parameters,
+program/framing, JSON/Python cache RAM and temporary workspace are separate.
+Native search conservative array bounds fit 256 MiB; other runtime
+overhead and Python RAM are unmeasured. Nineteen complete small actor
+populations execute 934848 final queries; nine large constructed inputs
+execute 540 diagnostics. Seventy-one bindings preserve provenance. [C75]
+
+Single local samples at k=12288 record 11.897 seconds of loaded-table cold
+planning and 10.609–18.625-second encodes. Certificate grading overlapped
+part of measurement; no controlled speed comparison or population latency
+is established. The small finite gain has a substantial resource tradeoff.
+External correctness/priority, useful near-C67 codes, broader laws and
+natural-agent/model/token/provider-cost benefit remain open. Zero model
+calls and natural episodes. [C75]
 
 ## 9. Limitations and open results
 

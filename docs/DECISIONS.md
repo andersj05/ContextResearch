@@ -1310,3 +1310,58 @@ Paper assembly checks all 48 cited sources.
 Zero new model calls or natural episodes; closed provider allocations and
 untouched task slots remain unchanged. External correctness/priority,
 useful near-C67 codes, broader laws and agent/model/token/cost benefit open.
+
+## October 2: exact-price larger groups and preserve the resource tradeoff
+
+Continue from C74 commit e109803. Freeze eight g=5 full-population starts
+before execution; all eight fail the 12288-block C74 certificate target.
+Preserve a separate post-hoc amendment before either g=6 launch: design
+on one fixed 131072-source pseudorandom sample, then exact-grade both
+final books on all 16777216 sources. Keep proposal weights separate
+from actual CDF counts. The first six-block start fails; the second
+7288-word descriptor gives the selected finite and separate limit families.
+
+At k=12288, a=560/s=16 error is <=54095129871619/200000000000000,
+below C74's named base lower bound. The same strict comparison holds
+at k=6144; four other lengths establish only tighter certificates.
+The smallest still loses to exact C69. Retain all fifty target and
+thirty selected-book allocation minima, with exact integer neighbor signs.
+Parent stays 2k flagged bits plus charged tail inside that cap, then
+one child before J and final only Z/R/O/J. No forbidden information channel
+or full source map is available to actors/public planners.
+
+Count the larger public payload honestly: 66513 packed actor bytes,
+94754 including cell loss weights for finite planning, within 262144.
+Parameters/program/framing/JSON/cache RAM and stage workspace are separate.
+Local single-sample encodes at 12288 take 10.609–18.625 seconds; planner
+takes 11.897 wall seconds. Concurrent grading and uncontrolled hardware/
+scheduling prohibit causal speed comparisons. The cheap C74 code remains
+an important engineering control.
+
+Complete independent tensor minima match all 41943040 saved source
+assignments, with 1132736192 transform comparisons and zero mismatches.
+Literal losses/CDF, all public log floors, 1294947 native comparator
+cases, four full tiny controls and 650 Python probes have separate scopes.
+Nineteen complete small actor populations execute 934848 final queries;
+nine constructed large inputs execute 540. Preserve actual raw bytes,
+both protocols, sample IDs, original programs/logs and 71 bindings.
+
+The finite selector's actual limit remains unproved. A separately
+implemented entropy-slack family has actual limit
+[0.269017091392,0.269017091393], better than fixed C72 but worse than
+growing C72. Old C67/C69/C71/C72/C73/C74 evidence and schedules stay intact.
+Existing bounded Chou reading is reused without a status upgrade;
+generic ECVQ/tensor/arithmetic/concentration novelty is not claimed.
+
+Next freeze a full-population six-block design extension using the verified
+tensor transform and separately measure actor improvements under the same
+envelopes. This extension is unperformed. Claim C75; living draft v0.42.
+All 597 offline tests pass (1118.063 seconds), including fourteen new
+scientific checks. Repository validation reports PASS with 75 claims,
+55 bibliography entries, 171 PDF hashes and 195 immutable import hashes;
+paper assembly checks 48 cited sources. All 71 bindings match. Earlier
+claim/decision prefixes, bibliography and all other original tracked
+files retain their actual bytes. Zero model calls or natural episodes; do not repeat
+closed classifier allocations or populate untouched tasks from research
+commands. External review/priority, useful near-C67 codes, broader laws
+and practical-agent benefit remain open.

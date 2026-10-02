@@ -22,3 +22,5 @@ credentials.json
 *.toc
 *.synctex.gz
 ~$*
+# Controlled, offline finite-search console evidence
+!experiments/dependency_memory/priced_coding/discovery/*_console.log

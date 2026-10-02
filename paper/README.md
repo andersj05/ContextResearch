@@ -22,7 +22,21 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
-Living draft v0.41 adds [loss-weighted overflow and public allocations](../research/LOSS_WEIGHTED_OVERFLOW_2026-10-02.md),
+Living draft v0.42 adds the [exact-priced group code](../research/EXACT_PRICED_GROUP_CODE_2026-10-02.md),
+claim C75. At k=12288 error is <=27.047565%; two larger codes have upper
+bounds below the named C74 base lower bounds. All six inspected bounds
+tighten, with the smallest still losing to C69. Public actor/planner-inclusive
+bytes are 66513/94754 versus 1288 before; local large encodes take seconds.
+Ten complete independent minima cover 41943040 source assignments; all
+nine failed target starts survive. A separate actual-limit family reaches
+26.901709%, still worse than growing C72. Eighty exact bound minima,
+934848 full small/540 constructed queries and 71 bindings retain their
+scopes. All 597 tests, 75-claim repository validation and 48-source
+paper assembly pass. External correctness/priority,
+near-C67 codes and practical-agent benefit remain open. No new model
+calls or natural episodes.
+
+Earlier living draft v0.41 adds [loss-weighted overflow and public allocations](../research/LOSS_WEIGHTED_OVERFLOW_2026-10-02.md),
 claim C74. The same actors/tables have error <=27.450867% at k=768 and
 <=27.064671% at k=12288, below repeated C69. Seven checked codes improve
 the named prior C72 codes using upper/lower comparisons; three smaller

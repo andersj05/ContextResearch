@@ -1,0 +1,48 @@
+g=5 dimension=1/5 reachable=1984 comparisons=4096
+g=5 dimension=2/5 reachable=10240 comparisons=35840
+g=5 dimension=3/5 reachable=16384 comparisons=199680
+g=5 dimension=4/5 reachable=131072 comparisons=461824
+g=5 dimension=5/5 reachable=1048576 comparisons=2558976
+{'g': 5, 'source_population': 1048576, 'book_words': 256, 'tensor_comparisons': 2558976, 'near_score_exact_comparisons': 0, 'mismatches': 0, 'exact_loss_sum': 18235904, 'reachable_states': [1984, 10240, 16384, 131072, 1048576], 'temporary_array_bytes': 6292480, 'c_clock_elapsed_seconds': 0.134, 'c_clock_scope': 'Platform-dependent runtime clock, one checker sample', 'descriptor_sha256': '567a468a76c66a8da69dc33212495417b3acc81fa195a3c509e9004ad4320750', 'expected_labels_sha256': '8ddf94d1b66c327f37a5ad18a12ca9c7ac2002a77a8248480b92af81f6d8a7d6'}
+g=5 dimension=1/5 reachable=11488 comparisons=13152
+g=5 dimension=2/5 reachable=118272 comparisons=196960
+g=5 dimension=3/5 reachable=544768 comparisons=2089312
+g=5 dimension=4/5 reachable=983040 comparisons=10805600
+g=5 dimension=5/5 reachable=1048576 comparisons=26534240
+{'g': 5, 'source_population': 1048576, 'book_words': 822, 'tensor_comparisons': 26534240, 'near_score_exact_comparisons': 207, 'mismatches': 0, 'exact_loss_sum': 17946192, 'reachable_states': [11488, 118272, 544768, 983040, 1048576], 'temporary_array_bytes': 6294744, 'c_clock_elapsed_seconds': 0.22, 'c_clock_scope': 'Platform-dependent runtime clock, one checker sample', 'descriptor_sha256': '0f7e805b5b1b908ef31dedd1c70e48018416d11a62bcd7eb1771741398dc254b', 'expected_labels_sha256': '38bee443a595464e8f0f9987bfbe36fdc647131afc357974810cc1a5750731a9'}
+g=5 dimension=1/5 reachable=29856 comparisons=37504
+g=5 dimension=2/5 reachable=205568 comparisons=515200
+g=5 dimension=3/5 reachable=724992 comparisons=3804288
+g=5 dimension=4/5 reachable=1048576 comparisons=15404160
+g=5 dimension=5/5 reachable=1048576 comparisons=32181376
+{'g': 5, 'source_population': 1048576, 'book_words': 2344, 'tensor_comparisons': 32181376, 'near_score_exact_comparisons': 176, 'mismatches': 0, 'exact_loss_sum': 17400705, 'reachable_states': [29856, 205568, 724992, 1048576, 1048576], 'temporary_array_bytes': 6300832, 'c_clock_elapsed_seconds': 0.256, 'c_clock_scope': 'Platform-dependent runtime clock, one checker sample', 'descriptor_sha256': '3c79d1d790563e3af5ac01850b24b48ea86591c5371067ea90ab46c7286a2d5b', 'expected_labels_sha256': 'af99b9670bbfb3032e5d82d0b65fb90ff19fced83b5f701ca9974337b553cc38'}
+g=5 dimension=1/5 reachable=44928 comparisons=60944
+g=5 dimension=2/5 reachable=250880 comparisons=779792
+g=5 dimension=3/5 reachable=757760 comparisons=4793872
+g=5 dimension=4/5 reachable=1048576 comparisons=16918032
+g=5 dimension=5/5 reachable=1048576 comparisons=33695248
+{'g': 5, 'source_population': 1048576, 'book_words': 3809, 'tensor_comparisons': 33695248, 'near_score_exact_comparisons': 58, 'mismatches': 0, 'exact_loss_sum': 17170911, 'reachable_states': [44928, 250880, 757760, 1048576, 1048576], 'temporary_array_bytes': 6306692, 'c_clock_elapsed_seconds': 0.246, 'c_clock_scope': 'Platform-dependent runtime clock, one checker sample', 'descriptor_sha256': '7365c6ccb55eaa5d989936cb69c28b35bb2a65912c0c341821e77809166e36ee', 'expected_labels_sha256': '589f1745cc4ae4e845b6005e4c899dd67c254ef454cb528f03964300671a32ba'}
+g=5 dimension=1/5 reachable=1984 comparisons=4096
+g=5 dimension=2/5 reachable=10240 comparisons=35840
+g=5 dimension=3/5 reachable=16384 comparisons=199680
+g=5 dimension=4/5 reachable=131072 comparisons=461824
+g=5 dimension=5/5 reachable=1048576 comparisons=2558976
+{'g': 5, 'source_population': 1048576, 'book_words': 256, 'tensor_comparisons': 2558976, 'near_score_exact_comparisons': 0, 'mismatches': 0, 'exact_loss_sum': 18235904, 'reachable_states': [1984, 10240, 16384, 131072, 1048576], 'temporary_array_bytes': 6292480, 'c_clock_elapsed_seconds': 0.133, 'c_clock_scope': 'Platform-dependent runtime clock, one checker sample', 'descriptor_sha256': 'e0201c7da2cf6b2e64d29901f719b7ebc85e4a3a85a227f0e82397ad351bb12f', 'expected_labels_sha256': '8ddf94d1b66c327f37a5ad18a12ca9c7ac2002a77a8248480b92af81f6d8a7d6'}
+g=5 dimension=1/5 reachable=8288 comparisons=9200
+g=5 dimension=2/5 reachable=87552 comparisons=141808
+g=5 dimension=3/5 reachable=389120 comparisons=1542640
+g=5 dimension=4/5 reachable=983040 comparisons=7768560
+g=5 dimension=5/5 reachable=1048576 comparisons=23497200
+{'g': 5, 'source_population': 1048576, 'book_words': 575, 'tensor_comparisons': 23497200, 'near_score_exact_comparisons': 174, 'mismatches': 0, 'exact_loss_sum': 18459300, 'reachable_states': [8288, 87552, 389120, 983040, 1048576], 'temporary_array_bytes': 6293756, 'c_clock_elapsed_seconds': 0.213, 'c_clock_scope': 'Platform-dependent runtime clock, one checker sample', 'descriptor_sha256': 'd02c99afbc975e16eec3dd79d05fbae1c1c405353a4486ba541b3b1ed17db7ed', 'expected_labels_sha256': '5650359d161d72de3e6a44a6dc413f7bca504b3a11bccdb11cda579fc5eb1a27'}
+g=5 dimension=1/5 reachable=19424 comparisons=22944
+g=5 dimension=2/5 reachable=139776 comparisons=333728
+g=5 dimension=3/5 reachable=520192 comparisons=2570144
+g=5 dimension=4/5 reachable=1048576 comparisons=10893216
+g=5 dimension=5/5 reachable=1048576 comparisons=27670432
+{'g': 5, 'source_population': 1048576, 'book_words': 1434, 'tensor_comparisons': 27670432, 'near_score_exact_comparisons': 962, 'mismatches': 0, 'exact_loss_sum': 18073130, 'reachable_states': [19424, 139776, 520192, 1048576, 1048576], 'temporary_array_bytes': 6297192, 'c_clock_elapsed_seconds': 0.253, 'c_clock_scope': 'Platform-dependent runtime clock, one checker sample', 'descriptor_sha256': 'e0a9c219af326adc61300bb750a00ef8748181d695644dbae7c4d81e8b2ff8a8', 'expected_labels_sha256': '8b627db9f101ed5b11c2977c5163950b48162a2d7b43820bdc8e01cbcf5f9158'}
+g=5 dimension=1/5 reachable=28928 comparisons=34640
+g=5 dimension=2/5 reachable=172288 comparisons=497488
+g=5 dimension=3/5 reachable=598016 comparisons=3254096
+g=5 dimension=4/5 reachable=1048576 comparisons=12822352
+g=5 dimension=5/5 reachable=1048576 comparisons=29599568
+{'g': 5, 'source_population': 1048576, 'book_words': 2165, 'tensor_comparisons': 29599568, 'near_score_exact_comparisons': 2520, 'mismatches': 0, 'exact_loss_sum': 18097368, 'reachable_states': [28928, 172288, 598016, 1048576, 1048576], 'temporary_array_bytes': 6300116, 'c_clock_elapsed_seconds': 0.255, 'c_clock_scope': 'Platform-dependent runtime clock, one checker sample', 'descriptor_sha256': 'f63decaabec4ad25d6b19a2f3298f8152604322a1b10f5504e7fd2582fcb0ebf', 'expected_labels_sha256': '58e17a2afb8de78cb170e3e0424abbb3733d817bdea339f643e2507c2ae3338f'}

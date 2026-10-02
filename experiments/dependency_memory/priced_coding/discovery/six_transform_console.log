@@ -1,0 +1,14 @@
+g=6 dimension=1/6 reachable=36160 comparisons=61808
+g=6 dimension=2/6 reachable=260864 comparisons=640368
+g=6 dimension=3/6 reachable=1257472 comparisons=4814192
+g=6 dimension=4/6 reachable=7274496 comparisons=24933744
+g=6 dimension=5/6 reachable=15728640 comparisons=141325680
+g=6 dimension=6/6 reachable=16777216 comparisons=392983920
+{'g': 6, 'source_population': 16777216, 'book_words': 3863, 'tensor_comparisons': 392983920, 'near_score_exact_comparisons': 517, 'mismatches': 0, 'exact_loss_sum': 332118950, 'reachable_states': [36160, 260864, 1257472, 7274496, 15728640, 16777216], 'temporary_array_bytes': 100678748, 'c_clock_elapsed_seconds': 4.779, 'c_clock_scope': 'Platform-dependent runtime clock, one checker sample', 'descriptor_sha256': '4538b7761cdae9d6c5da78528106a4874b001388e310c2af0e5233faab409a1b', 'expected_labels_sha256': 'eef3c1a600e07813212f77995d6fb165befc256575a0f1e16b73ac217712f8c9'}
+g=6 dimension=1/6 reachable=102352 comparisons=116608
+g=6 dimension=2/6 reachable=947712 comparisons=1754240
+g=6 dimension=3/6 reachable=4542464 comparisons=16917632
+g=6 dimension=4/6 reachable=12713984 comparisons=89597056
+g=6 dimension=5/6 reachable=16777216 comparisons=293020800
+g=6 dimension=6/6 reachable=16777216 comparisons=561456256
+{'g': 6, 'source_population': 16777216, 'book_words': 7288, 'tensor_comparisons': 561456256, 'near_score_exact_comparisons': 30031, 'mismatches': 0, 'exact_loss_sum': 335929227, 'reachable_states': [102352, 947712, 4542464, 12713984, 16777216, 16777216], 'temporary_array_bytes': 100692448, 'c_clock_elapsed_seconds': 5.659, 'c_clock_scope': 'Platform-dependent runtime clock, one checker sample', 'descriptor_sha256': 'c8206cbbd68be130927e0d5b6eb12f033868c7fd75b08409b5a034bee0273bb3', 'expected_labels_sha256': 'c2c85266ff40fefb8ddcc5ad433ea5311560255a45d03ce5b1ccc5b00dc7bd12'}
