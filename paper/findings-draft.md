@@ -1,6 +1,19 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.32 — October 1, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.33 — October 2, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## Complementary decoders suffice under the balanced source
+
+The [new completion argument](../research/COMPLEMENTARY_COMPLETION_2026-10-02.md)
+works for every block count and parent capacity, with the old encoder unchanged.
+Public child-label swaps preserve one-bit memory and timing. Claim C66. It gives
+a short alternative proof of the existing unrestricted three-block lower bound
+and reduces the remaining supporting comparison to six families. A biased source
+has unrestricted zero error versus complementary minimum 1/6, and some individual
+sources are harmed: this is a population-average theorem with explicit source
+and query assumptions. Whole-code completion/reassignment improves the preserved
+auxiliary books to 40,738 errors, still above the unchanged 40,529 witness.
+The numerical frontier, model outcomes and natural-task count stay unchanged.
 
 ## The theoretical penalty now has a wider certified spectrum
 

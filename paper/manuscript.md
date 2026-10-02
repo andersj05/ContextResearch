@@ -797,6 +797,37 @@ between them, efficient finite codes, external proof and source priority remain
 open. Post-hoc mathematical exploration is separate from the exact certificate.
 No model call, natural task, token saving or production benefit is added. [C65]
 
+### 8.16 Complementary final decoders suffice under the balanced source
+
+The [completion theorem](../research/COMPLEMENTARY_COMPLETION_2026-10-02.md)
+shows D_k(B)=D_k^complementary(B) for every k/B in the stated balanced-source,
+source-independent-query, average-Hamming-loss model. Hold an arbitrary joint
+encoder and updater fixed. Preserve endpoint bits where the two predictions
+disagree; on each agreeing coordinate, fill the zero endpoint by an independent
+fair design bit and the one endpoint by its complement. Both old constant-bit
+error and averaged new error are 1/2. Some fixed public completion is therefore
+no worse. Sorting endpoint labels only XORs a fixed public R/O bit into the
+child; parent capacity and the late-J information boundary stay unchanged. [C66]
+
+A constructive completion chooses modal population values of X_j XOR old_child
+on the formerly constant coordinates. These are offline design statistics,
+not post-compaction source access. The output-word relabeling is bijective,
+so I(X;A) also stays unchanged. Every positive-slope supporting optimization
+can thus be restricted to the six complementary symmetry families. The C62
+converse supplies an alternative proof of the unchanged unrestricted 40,072/
+147,456 lower bound; C63 remains an independent larger certificate. [C66]
+
+The finite checks cover 9,216 branch/policy cases and execute 3,686,400 whole-code
+query routes, including eight preserved auxiliary books and identity on C59.
+Completion plus separate nearest-parent reassignment reduces the auxiliary
+minimum to 40,738 errors, still above the existing 40,529 witness. A biased
+two-source law has unrestricted zero error versus complementary minimum 1/6;
+a separate instance example loses correctness despite equal mean loss. The
+theorem gives average preservation under its hypotheses, not individual or
+worst-case semantic safety, an efficient practical design method, a new general
+derandomization principle or a model/natural-workflow result. The full curve
+comparison, external proof and publication priority remain open. [C66]
+
 ## 9. Limitations and open results
 
 The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. Source-only model inference has been evaluated only on one inspected classifier; the static control covers three inspected programs and one constructed family without universal certification; an open-ended native-agent benchmark remains unperformed. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, useful finite-length joint codes, a wider rate-distortion characterization, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.

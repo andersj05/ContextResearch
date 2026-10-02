@@ -4,6 +4,14 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
+**October 2 decoder reduction:** [complementary completion](research/COMPLEMENTARY_COMPLETION_2026-10-02.md)
+proves that complementary final endpoints suffice for every block count and
+parent capacity under the balanced-source, average-error contract. The old
+encoder stays fixed, and child labels only receive public swaps. The remaining
+all-rate comparison has six families. A biased-source counterexample and
+individual harms delimit the result; the existing numerical frontier is unchanged.
+No model call or natural workflow is added.
+
 **October 1 parent-rate spectrum:** [new exact support certificates](research/PARENT_RATE_SPECTRUM_2026-10-01.md)
 enclose limiting error at eight rational parent rates, each checking every
 allowed decoder. A separate analytic reduction gives a unique two-word/eight-word

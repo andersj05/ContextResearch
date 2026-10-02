@@ -921,3 +921,47 @@ the averaging argument with the old encoder/updater held fixed, public tables
 selected before source, and no extra information after replacement; retain
 source-balance and query-timing qualifications. This may simplify the remaining
 all-rate comparison without requiring another model batch.
+
+## October 2, 2026 — prove balanced-source complementary completion
+
+Promote the exploratory completion idea to a separate analytic claim C66 and
+decoder_completion package. Hold the old encoder/updater fixed while averaging
+fair public fills on agreeing endpoint coordinates. Those old predictions have
+error 1/2 under balanced source and independent queries. Some fixed completion
+is no worse; canonical ordering only XORs a public R/O label into the one-bit
+child. Choose the completion before source, never from the observed instance.
+
+The constructive adapter chooses modal population X_j XOR old_child values.
+Its finite design enumerates 1..3 blocks and up to 64 states; the theorem covers
+every k/capacity. Do not turn design statistics into actor observations or claim
+efficient practical computation. Parent mapping/capacity stay unchanged. Any
+later nearest-parent reassignment is a separate legal construction.
+
+The average-error theorem reduces all positive-slope supporting optimization
+to complementary tables, preserving I(X;A) by a fixed output-word permutation.
+Use the existing six complementary symmetry families for the remaining curve
+problem. C62 now yields an alternative unrestricted three-block lower bound
+by this new deduction; preserve C62's original restricted artifact and C63's
+independent all-decoder certificate rather than rewriting their historical scope.
+
+Check all 36 pairs/256 Boolean branch updaters: 9,216 cases, 35,840 oriented
+completion scores and zero averaging disagreements. Execute 3,686,400 whole-code
+routes across eight preserved books and identity on C59. Minimum completed/
+reencoded error is 40,738, above the unchanged best 40,529; no frontier gain.
+These inspected mathematical examples include symmetry-related cases and are
+not independent trials. Keep all original source/book/result bytes untouched.
+
+Record the biased-source counterexample X in {0000,0011}: two-state parent,
+one-bit child, unrestricted error zero versus complementary minimum 1/6.
+Also record an individual source whose loss increases despite equal mean loss.
+Source/query hypotheses, average versus worst-case metrics and offline design
+must remain explicit. This is elementary averaging, not a new general method,
+model benefit, natural workflow or production-cost result. Eight independent
+tests pass; all 517 repository tests pass. Validation reports PASS with 66
+claims and 48 bibliography entries, and paper assembly checks all 41 cited
+sources. External correctness and publication priority remain open.
+
+The next full-curve attempt compares the other five complementary families
+with the unsigned family using exact polynomial inequalities. Fixed-q float
+screens are mathematical discovery only; a failed witness is not a better
+decoder. Do not claim a full curve until the entire parameter interval is proved.

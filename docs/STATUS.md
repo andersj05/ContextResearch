@@ -1,8 +1,24 @@
 # Current research status
 
-Updated: October 1, 2026. This document is the current handoff; older scope documents are historical.
+Updated: October 2, 2026. This document is the current handoff; older scope documents are historical.
 
 ## Objective
+
+The [completion theorem](../research/COMPLEMENTARY_COMPLETION_2026-10-02.md)
+shows D_k(B) equals its complementary-decoder restriction for every k/B under
+the balanced-source, source-independent-query, average-Hamming-loss contract.
+Encoder/capacity stay fixed; canonical child labels change only by public XORs.
+The supporting comparison now needs six complementary families. C62 supplies
+an alternative proof of the unchanged unrestricted 40,072-error lower bound;
+C63 remains an independent larger certificate. Claim C66; living draft v0.33.
+All 9,216 branch-policy cases agree, and 3,686,400 whole-code query routes are
+executed. Eight preserved books improve after completion/reassignment, with
+minimum 40,738 still above the unchanged 40,529 witness. A biased source has
+zero unrestricted error versus complementary minimum 1/6; per-instance harms
+also occur. No numerical-frontier, model or natural-task gain is claimed.
+All **517 offline tests pass**. Repository validation reports PASS with 66
+claims and 48 bibliography entries; paper assembly checks all 41 cited sources.
+External correctness and priority review remain open.
 
 The [parent-rate spectrum](../research/PARENT_RATE_SPECTRUM_2026-10-01.md)
 adds eight rational-rate asymptotic intervals, all narrower than 2e-11, with
@@ -511,10 +527,10 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 
 ## Next bounded tasks
 
-For the asymptotic spectrum, investigate the proposed balanced-source
+For the asymptotic spectrum, use the proved balanced-source
 complementary-completion reduction, then prove or refute unsigned dominance
-between the checked slopes. The completion idea needs a whole-code information
-argument; branch checks or a floating rate grid are not that proof. Preserve
+between the checked slopes. The completion theorem supplies a whole-code information
+argument; a floating rate grid still cannot prove full-curve dominance. Preserve
 all existing certificates and the distinction between restricted/all-decoder
 results. Efficient finite encoders remain another substantive open direction.
 

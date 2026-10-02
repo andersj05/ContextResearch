@@ -22,6 +22,13 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.33 adds the [completion theorem](../research/COMPLEMENTARY_COMPLETION_2026-10-02.md),
+claim C66. Complementary decoders suffice for every k/B under balanced source
+and independent queries, preserving the encoder/capacity and child timing.
+The remaining supporting comparison has six families. A biased-source example
+and individual harms delimit this average-error result. Numerical bounds and
+the best finite witness are unchanged; no model or natural-task gain is added.
+
 Living draft v0.32 adds the [parent-rate spectrum](../research/PARENT_RATE_SPECTRUM_2026-10-01.md),
 claim C65. Eight all-decoder rational-rate asymptotic intervals are narrower
 than 2e-11. A scalar unsigned-family reduction has a unique two-word/eight-word

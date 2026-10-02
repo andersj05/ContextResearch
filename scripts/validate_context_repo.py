@@ -911,6 +911,17 @@ def main() -> int:
     counts["rate_spectrum_complete_unrestricted_curve_claimed"] = regenerated_spectrum["complete_all_rate_unrestricted_curve_claimed"]
     counts["rate_spectrum_new_model_calls"] = regenerated_spectrum["new_model_calls"]
 
+    from experiments.dependency_memory.decoder_completion import certificate as decoder_completion
+    regenerated_completion = decoder_completion.certificate()
+    if json.loads(decoder_completion.OUTPUT.read_text(encoding="utf-8")) != regenerated_completion:
+        errors.append("Complementary completion, whole-code scores or source bindings changed")
+    counts["decoder_completion_branch_cases"] = regenerated_completion["branch_checks"]["branch_policy_cases"]
+    counts["decoder_completion_whole_code_routes"] = regenerated_completion["whole_code_routes_executed"]
+    counts["decoder_completion_comp_orbits"] = regenerated_completion["complementary_orbits_per_block"]
+    counts["decoder_completion_biased_error"] = regenerated_completion["biased_counterexample"]["minimum_complementary_error"]
+    counts["decoder_completion_unrestricted_optimum_reduction"] = regenerated_completion["unrestricted_optimum_equals_complementary_optimum"]
+    counts["decoder_completion_new_model_calls"] = regenerated_completion["new_model_calls"]
+
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"
