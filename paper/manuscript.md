@@ -111,6 +111,20 @@ outside it. The unrestricted all-decoder frontier is unchanged. The elementary
 cover method and publication novelty are not claimed new. External proof review
 remains open. [C60]
 
+The [complementary-decoder extension](../research/COMPLEMENTARY_DECODER_COVER_2026-10-01.md)
+proves the same 40,072-error lower bound when every omission's two three-bit
+prediction words are complementary, including coordinate-dependent endpoints.
+Four pairs per omission give 256 tables per block; six symmetry orbits and
+56 mixed cases cover all three-block combinations, including heterogeneous
+tables. A per-source cover inequality adds a missing-ideal penalty on zero-target
+sources. Summed column savings and those penalties are bounded by the largest
+64 exact column weights. All 229,376 selected column instances are checked;
+an independent implementation enumerates direct source triples for equal-score
+multiset classes. Forty-six mixed cases cannot improve on C59 and ten remain
+possible. Noncomplementary endpoints and the unrestricted finite optimum are
+still open; the all-decoder asymptotic frontier is unchanged. External correctness
+and priority review remain open, with no new general cover technique claimed. [C62]
+
 ## 5. Sparse dependencies and future queries
 
 If exactly k of n named fields are active and each stores an arbitrary b-bit value, exact memory needs at least log_2 binomial(n, k) + kb bits when every configuration can be distinguished by future queries and no external channel supplies missing information. This is an elementary counting bound. It applies to identifiable active fields, not automatically to the much smaller set that happens to be queried in hindsight.

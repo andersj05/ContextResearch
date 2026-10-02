@@ -22,6 +22,12 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.29 adds the [complementary-decoder converse](../research/COMPLEMENTARY_DECODER_COVER_2026-10-01.md),
+claim C62. The same finite bracket now includes all 256 complementary tables
+per block, possibly depending on the late coordinate. Six symmetry orbits and
+56 mixed cases have checked cover weights; five independent tests pass.
+Noncomplementary decoders and the unrestricted finite optimum remain open.
+
 Living draft v0.28 adds the [source-only scope-inference findings](../research/SCOPE_INFERENCE_FINDINGS_2026-10-01.md),
 claim C61. All eight permitted identities were dispatched: seven catalog-complete
 contracts and one permanent timeout. Five contracts score 12/24 imposed late

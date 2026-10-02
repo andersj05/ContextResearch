@@ -4,6 +4,20 @@ Updated: October 1, 2026. This document is the current handoff; older scope docu
 
 ## Objective
 
+The [complementary-decoder finite converse](../research/COMPLEMENTARY_DECODER_COVER_2026-10-01.md)
+extends the same [27.1756%, 27.4855%] bracket to all 256 complementary decoder
+tables per block, including dependence on late coordinate J and different tables
+across blocks. Six symmetry orbits and 56 mixed cases cover these possibilities;
+all 229,376 decision-column instances are checked. Five independent tests pass,
+including a separate symmetry implementation and direct source sums grouped only
+by equal score multisets. Forty-six mixed cases cannot improve the incumbent;
+ten remain possible. Claim C62; living draft v0.29. Noncomplementary endpoints,
+the unrestricted finite optimum and external proof/priority review remain open.
+
+All 485 offline tests pass at this milestone. Repository validation reports
+PASS with 62 claims and 47 bibliography entries, including the new decoder
+coverage and preserved model-run evidence. Paper assembly checks 40 cited sources.
+
 The [completed source-only dispatch](../research/SCOPE_INFERENCE_FINDINGS_2026-10-01.md)
 has eight attempts, seven metered answers and one permanent transport gap;
 no identities remain unattempted. All seven contracts agree with the classifier
@@ -17,7 +31,7 @@ Claim C61; living draft v0.28. Actual debit and fully priced cost remain unknown
 
 The latest full offline run passed all 480 tests; the four focused cover tests
 also pass after the final source-binding change. Independent saved-contract
-replay passes. Repository validation and paper assembly check the new claims,
+replay passes. At the C61 milestone, repository validation and paper assembly checked the claims,
 immutable evidence and bibliography: PASS with 61 claims, 47 bibliography entries
 and 40 cited sources. Prospective/private episodes remain zero.
 
@@ -444,6 +458,21 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 - The internal training objective, prompt, or algorithm of a proprietary compaction service.
 
 ## Next bounded tasks
+
+For the finite problem, examine the ten complementary mixed cases not eliminated
+by C62 and extend the cover to noncomplementary decoder pairs, where tied ideal
+words need separate handling. Any improved construction must keep the same
+information order and be graded on every delayed-query route. Preserve the
+earlier witnesses and asymptotic certificate; do not present a heuristic search
+or cover relaxation as an exact finite optimum.
+
+For model work, separate source inference from codec choice and include a
+zero-model source-analysis control on new program families. The completed
+source-only study's eight dispatches are closed, and its missing answer stays
+missing. A changing query-program family would test the limits of cached public
+outcomes, with equally informed controls and a separately frozen access, grader
+and cost contract. One inspected classifier is insufficient to rank prompts or
+claim automatic unfamiliar-workflow performance.
 
 Continue the [single-repository intake](../experiments/dependency_memory/workflow_intake/README.md)
 with the [frozen method](../experiments/dependency_memory/workflow_prospective/README.md).

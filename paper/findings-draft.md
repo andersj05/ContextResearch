@@ -1,6 +1,18 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.28 — October 1, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.29 — October 1, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## Include more final decoders in the finite bound
+
+The [complementary-decoder proof](../research/COMPLEMENTARY_DECODER_COVER_2026-10-01.md)
+extends the 27.1756%–27.4855% bracket to all 256 complementary decoder tables
+per block, with possibly different tables across blocks and predictions that
+depend on the late coordinate. Claim C62. Six symmetry orbits and 56 mixed cases
+have exact cover witnesses; all 229,376 column instances are checked. Five tests
+use direct routes, another symmetry construction and direct source sums rather
+than the generator's convolution. Forty-six cases cannot improve the incumbent;
+ten remain possible. Noncomplementary endpoints, the unrestricted finite optimum
+and external proof/priority review remain open.
 
 ## Complete scope can still exceed the memory budget
 

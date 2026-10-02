@@ -754,3 +754,24 @@ answers and remains unassessable; do not impute the timeout or rank prompts.
 Future work must separate source analysis, codec choice and changing query
 programs, with strong zero-model controls and a separate protocol. Preserve
 all original source/request/evaluator bytes and keep prospective episodes at zero.
+
+## October 1: extend the finite converse by retaining the column distribution
+
+Use a separate package and preserve C59/C60 artifacts. Complementary endpoints
+may depend on the late coordinate, but their odd-length predictions have unique
+ideal child bits. All 256 per-block tables partition into six symmetry orbits;
+56 mixed orbit cases cover heterogeneous three-block tables. A per-source cover
+inequality plus zero-target missing-center counts reduces every 64-word book to
+the largest 64 exact column weights. Selected integer targets give a common
+40,072-error lower bound. Register C62; noncomplementary decoders remain outside it.
+
+Record the post-hoc 1,306 binary target choices and 144 quarter-unit probes as
+mathematical discovery, not a preregistered experiment or optimality proof.
+All selected arrays use only target zero or one. Five independent tests verify
+direct routes, another symmetry partition, all selected column histograms by
+direct source sums and the pointwise inequality. Equal score-multiset caching
+is declared; do not assert individually executed counts for the full Cartesian
+source/column space. Forty-six orbit cases exceed the unchanged incumbent and
+ten remain possible. External correctness/priority review stays open; no model
+call, token result, unrestricted frontier improvement or general-technique
+novelty follows from this extension.

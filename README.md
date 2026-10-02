@@ -9,8 +9,11 @@ reduces exact average bit error from 27.7995% to 27.4855% using the same six-bit
 parent and one-bit child. All 147,456 outcomes are checked; this is an achievable
 construction, with finite optimality and publication priority still open.
 The [separate restricted converse](research/JOINT_THREE_BLOCK_COVER_2026-10-01.md)
-narrows that decoder family's optimum to [27.1756%, 27.4855%]. Other final
-decoders remain outside this new bound; the unrestricted frontier is unchanged.
+narrows that decoder family's optimum to [27.1756%, 27.4855%]. The
+[complementary-decoder extension](research/COMPLEMENTARY_DECODER_COVER_2026-10-01.md)
+proves the same bracket for all 256 complementary decoder tables per block,
+including coordinate-dependent predictions. Noncomplementary decoders and the
+unrestricted finite optimum remain open; the asymptotic frontier is unchanged.
 
 **October 1 serialization control:** the [existing public schema](research/SCOPE_CODEBOOK_CONTROL_2026-10-01.md)
 answers all 24 constructed late queries under unchanged byte caps, as do cached

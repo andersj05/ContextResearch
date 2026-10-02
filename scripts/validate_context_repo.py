@@ -495,6 +495,16 @@ def main() -> int:
     counts["joint_three_block_restricted_lower_errors"] = expected_cover["lower_errors"]
     counts["joint_three_block_cover_columns"] = len(expected_cover["all_4096_column_rewards"])
     counts["joint_three_block_cover_includes_all_decoders"] = expected_cover["covers_arbitrary_final_decoders"]
+    from experiments.dependency_memory.joint_coding_complement import cover as complementary_cover
+    expected_complement = json.loads(json.dumps(complementary_cover.certificate()))
+    complement_path = ROOT / "experiments/dependency_memory/results/joint_three_block_complement_2026-10-01.json"
+    if json.loads(complement_path.read_text(encoding="utf-8")) != expected_complement:
+        errors.append("Complementary decoder cover witnesses or source binding changed")
+    counts["joint_three_block_complementary_lower_errors"] = expected_complement["lower_errors"]
+    counts["joint_three_block_complementary_tables_per_block"] = expected_complement["decoder_tables_per_block"]
+    counts["joint_three_block_complementary_orbit_cases"] = expected_complement["mixed_orbit_cases"]
+    counts["joint_three_block_complementary_columns"] = expected_complement["decision_columns_checked"]
+    counts["joint_three_block_complementary_includes_all_decoders"] = expected_complement["covers_arbitrary_final_decoders"]
     from joint_coding import decoder_frontier
     expected_frontier = decoder_frontier.certificate()
     frontier_path = ROOT / "experiments/dependency_memory/results/decoder_frontier_certificate.json"
