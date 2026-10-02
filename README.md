@@ -8,12 +8,14 @@ Research on memory, compaction, and context management for long-running language
 reduces exact average bit error from 27.7995% to 27.4855% using the same six-bit
 parent and one-bit child. All 147,456 outcomes are checked; this is an achievable
 construction, with finite optimality and publication priority still open.
-The [separate restricted converse](research/JOINT_THREE_BLOCK_COVER_2026-10-01.md)
-narrows that decoder family's optimum to [27.1756%, 27.4855%]. The
-[complementary-decoder extension](research/COMPLEMENTARY_DECODER_COVER_2026-10-01.md)
-proves the same bracket for all 256 complementary decoder tables per block,
-including coordinate-dependent predictions. Noncomplementary decoders and the
-unrestricted finite optimum remain open; the asymptotic frontier is unchanged.
+The [all-decoder finite converse](research/ALL_DECODER_THREE_BLOCK_COVER_2026-10-01.md)
+now encloses the unrestricted three-block optimum in [27.1756%, 27.4855%],
+including noncomplementary and repeated endpoints. An oracle gate and 46,492
+near mixed orbit cases cover every final decoder; exact finite optimality and
+external proof/priority review remain open. This extends the earlier
+[restricted](research/JOINT_THREE_BLOCK_COVER_2026-10-01.md) and
+[complementary](research/COMPLEMENTARY_DECODER_COVER_2026-10-01.md) converses.
+The asymptotic frontier is unchanged.
 
 **October 1 serialization control:** the [existing public schema](research/SCOPE_CODEBOOK_CONTROL_2026-10-01.md)
 answers all 24 constructed late queries under unchanged byte caps, as do cached

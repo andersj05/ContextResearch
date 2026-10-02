@@ -1,8 +1,22 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.29 — October 1, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.30 — October 1, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
 
-## Include more final decoders in the finite bound
+## The finite bound now allows every final decoder
+
+The [all-decoder proof](../research/ALL_DECODER_THREE_BLOCK_COVER_2026-10-01.md)
+encloses the unrestricted three-block optimum D_3(6) in
+**[27.1756%, 27.4855%]**, with six parent bits and one child bit. Claim C63.
+It includes noncomplementary and repeated endpoints and permits tied ideal
+predictions. An oracle-defect gate and 46,492 near mixed orbit cases cover all
+allowed final decoders; 46,436 new exact target witnesses supplement the 56
+complementary cases. Seven independent tests check the proof ingredients and
+preserved auxiliary evidence. The existing 40,529-error construction remains
+the upper endpoint. Exact finite optimality, external correctness and source
+priority remain open. This is a three-block bit-error result; the asymptotic
+frontier and evidence for natural agent workflows are unchanged.
+
+## Earlier extension to complementary decoders
 
 The [complementary-decoder proof](../research/COMPLEMENTARY_DECODER_COVER_2026-10-01.md)
 extends the 27.1756%–27.4855% bracket to all 256 complementary decoder tables
@@ -11,8 +25,9 @@ depend on the late coordinate. Claim C62. Six symmetry orbits and 56 mixed cases
 have exact cover witnesses; all 229,376 column instances are checked. Five tests
 use direct routes, another symmetry construction and direct source sums rather
 than the generator's convolution. Forty-six cases cannot improve the incumbent;
-ten remain possible. Noncomplementary endpoints, the unrestricted finite optimum
-and external proof/priority review remain open.
+ten remain possible. Noncomplementary endpoints are outside C62's proof;
+the all-decoder extension above leaves exact finite optimality and external
+proof/priority review open.
 
 ## Complete scope can still exceed the memory budget
 

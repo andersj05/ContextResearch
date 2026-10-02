@@ -121,9 +121,40 @@ sources. Summed column savings and those penalties are bounded by the largest
 64 exact column weights. All 229,376 selected column instances are checked;
 an independent implementation enumerates direct source triples for equal-score
 multiset classes. Forty-six mixed cases cannot improve on C59 and ten remain
-possible. Noncomplementary endpoints and the unrestricted finite optimum are
-still open; the all-decoder asymptotic frontier is unchanged. External correctness
-and priority review remain open, with no new general cover technique claimed. [C62]
+possible. Noncomplementary endpoints are outside this proof, and exact finite
+optimality remains open. The all-decoder asymptotic frontier is unchanged.
+External correctness and priority review remain open, with no new general
+cover technique claimed. [C62]
+
+The [all-decoder finite extension](../research/ALL_DECODER_THREE_BLOCK_COVER_2026-10-01.md)
+now establishes the same bracket for the unrestricted three-block optimum:
+
+```text
+5009/18432 <= D_3(6) <= 40529/147456.
+```
+
+At each omission the summed oracle loss is 12 for complementary endpoints,
+16 for distinct noncomplementary endpoints and 24 for repeated endpoints.
+Assigning branch defects 0, 1 and 3 gives a three-block oracle floor of
+(144 + 4 total_defect) times 256. Total defect at least four yields 40,960
+errors, above the incumbent. The remaining tables reduce to 46,492 mixed
+orbit cases; 56 reuse C62 and 46,436 have new exact witnesses. This covers
+all 36^12 ordered decoder triples through symmetries and the oracle gate,
+allowing arbitrary joint encoders and heterogeneous tables. [C63]
+
+For tied ideal actions, the zero-target correction is a union bound on ideal
+incidences. Q counts zero-target sources once; each q_c counts its incidence
+with a particular ideal cost column, so Q need not equal sum_c q_c. With
+R_c the positive target saving, every 64-word book has source-summed loss at
+least sum U + sum T + Q - Top_64(R_c + q_c). Equal entire source-loss functions
+may be identified; equal histograms alone do not suffice. Selected nonnegative
+quarter-unit targets certify at least 40,072 errors in every remaining case.
+Integer histograms compute 178,240,944 cost-column instances; independent tests
+check routes, polynomial counts, binary coefficients, fractional source sums
+and overlapping ideal words. The interval is approximately
+[27.1756%, 27.4855%], width 0.310 percentage points. Exact finite optimality,
+external proof review and priority remain open. No asymptotic update, general
+cover novelty, new model result or token/production saving follows. [C63]
 
 ## 5. Sparse dependencies and future queries
 

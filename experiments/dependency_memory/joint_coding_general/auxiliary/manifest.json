@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-01",
+  "evidence_class": "bounded post-hoc mathematical discovery; not required by the standalone cover proof",
+  "limits": "Actual executed source and outputs preserved byte-for-byte. Native results are upper-bound candidates only; no exhaustive codebook search. Numerical outputs select arbitrary rational dual witnesses only. No model request, practical cost, novelty or priority claim.",
+  "native_search": {
+    "binary_sha256": "9456aa299202055a6593b4c617ae7e2e1a8c5808cfdf0fd3f1f18a099ae0b53a",
+    "cases": 8,
+    "compiler_flags": [
+      "-O3"
+    ],
+    "compiler_version": "clang version 19.1.0",
+    "greedy_additions": 64,
+    "max_swaps": 2,
+    "minimum_recorded_errors": 41088
+  },
+  "new_model_calls": 0,
+  "numerical_dual": {
+    "proof_requires_numerical_search": false,
+    "runtime": "bundled Python/NumPy",
+    "selected_points": 12
+  },
+  "source_sha256": {
+    "dual_input.json": "9012a84d195dced40e319b1b69fb543bb30c6b7d154f77dbe60378a6f9344ab2",
+    "dual_search.json": "83252cdc33dfca2baf3157c019f56ecf15edf7c9160fddc73676e60b6e3cf54c",
+    "dual_search.py": "7d53849c5e9e59cc0d6377ffb8862a5436e03b81dba77c1c2cdbb0bd9fa6fb4a",
+    "search.c": "803d955fa7f4de43aa99a4a29f2bc19a90da198de7b775e606af06cd2f0094d0",
+    "search_144121.json": "31db3219ab9c1dbfd9ed148f50aea8c56f8db04dcd03a32df369dcc517774b40",
+    "search_144526.json": "61b9989d32f97cfff77247c610e941a6d138912830c2cb8e99688e0b5eb9e401",
+    "search_146713.json": "76f1c6dc1d69a139536f99a0cd5e3719359bdc9c305d6e2997d30189ccb224b0",
+    "search_147118.json": "6d4f9beac5a59e942b9830b40ebac64131dfc372ca7cd7235299d5f4c85b94c1",
+    "search_149225.json": "7e2be9ca0e19326e48e1c41350a15a4ec0003f2f84836352ee815aebecfb7025",
+    "search_149227.json": "78ccedcd7ec162d393acbde4c9389f7543c1ee03e2a5b552bbe2fab30aafa23b",
+    "search_149240.json": "c6f8e21b73831e14840b65d91c60e39fcbf6d04e00d5d330923c8c3946867506",
+    "search_149312.json": "cf2ed59f1078971fe4bd77c37723c1735b8bf62f1c3fab6726793db9176f4df2"
+  },
+  "version": "general_decoder_auxiliary_exploration_v1"
+}

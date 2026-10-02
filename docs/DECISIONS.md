@@ -775,3 +775,46 @@ source/column space. Forty-six orbit cases exceed the unchanged incumbent and
 ten remain possible. External correctness/priority review stays open; no model
 call, token result, unrestricted frontier improvement or general-technique
 novelty follows from this extension.
+
+## October 1, 2026 — extend the finite converse to every decoder
+
+Use a separate joint_coding_general package and preserve C59/C60/C62 bytes.
+Noncomplementary pairs can tie for the best child prediction, so replace the
+unique-ideal correction with an incidence union bound. Q counts zero-target
+sources once; q_c counts ideal incidences and may overlap. Identify only equal
+entire source-loss functions, not equal histograms. This reduces repeated-action
+columns without introducing an instance-dependent public table or restricting
+the arbitrary joint parent/updater.
+
+An independently checked branch census assigns defects 0, 1 and 3 to
+complementary, distinct noncomplementary and repeated pairs. Total defect at
+least four has oracle loss at least 40,960. The existing 4,751 symmetry orbits
+reduce the remaining triples to 46,492 mixed cases: reuse 56 complementary
+witnesses and save 46,436 new exact targets. Bounded post-hoc selection tries
+59,029 synchronized binary candidates, 4,924 mixed refinements and 2,815
+quarter-unit candidates. The target grid is not a model experiment, target
+optimum or codebook-optimality claim.
+
+All selected inequalities reach 40,072, giving the unrestricted three-block
+D_3(6) bracket [40,072, 40,529] / 147,456. Integer histograms compute
+178,240,944 cost-column instances with declared profile multiplicities.
+Seven tests separately verify routes, polynomial counts, binary saving
+coefficients, fractional source sums, zero-target overlaps and source bindings.
+Fractional source sums cache 432 equal score-multiset triples explicitly.
+Eight auxiliary native books and twelve rational dual points are preserved and
+independently rechecked; none of the books improves the unchanged upper witness.
+The final cover proof requires neither numerical search nor native compilation.
+
+Register C63 and living draft v0.30. Exact finite optimality, scalable encoders,
+external correctness and source priority remain open. Keep the asymptotic
+frontier and all model-run evidence unchanged; no natural task, model call,
+general cover novelty or token/production saving is added. The next finite
+step is to tighten the 457-outcome interval or supply longer checked codes.
+The empirical next step remains source-analysis controls on new program families
+and actual variable-command workflow intake in this same repository.
+
+All 492 offline tests pass at this milestone; repository validation reports
+PASS with 63 claims and 47 bibliography entries, and paper assembly checks
+40 cited sources. The final cover and auxiliary audit are regenerated with
+matching source hashes. Preserve the raw exploratory bytes and the earlier
+certificates; controlled build/test logs and previews stay ignored.

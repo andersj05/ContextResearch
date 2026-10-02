@@ -505,6 +505,19 @@ def main() -> int:
     counts["joint_three_block_complementary_orbit_cases"] = expected_complement["mixed_orbit_cases"]
     counts["joint_three_block_complementary_columns"] = expected_complement["decision_columns_checked"]
     counts["joint_three_block_complementary_includes_all_decoders"] = expected_complement["covers_arbitrary_final_decoders"]
+    from experiments.dependency_memory.joint_coding_general import audit as general_auxiliary, cover as general_cover
+    expected_general = json.loads(json.dumps(general_cover.certificate()))
+    general_path = ROOT / "experiments/dependency_memory/results/joint_three_block_general_2026-10-01.json"
+    if json.loads(general_path.read_text(encoding="utf-8")) != expected_general:
+        errors.append("All-decoder finite cover witnesses or source binding changed")
+    counts["joint_three_block_all_decoder_lower_errors"] = expected_general["lower_errors"]
+    counts["joint_three_block_all_decoder_near_cases"] = expected_general["near_orbit_cases"]
+    counts["joint_three_block_all_decoder_columns"] = expected_general["distinct_cost_column_instances"]
+    counts["joint_three_block_all_decoder_coverage"] = expected_general["covers_arbitrary_final_decoders"]
+    expected_auxiliary = general_auxiliary.certificate()
+    if json.loads(general_auxiliary.OUTPUT.read_text(encoding="utf-8")) != expected_auxiliary:
+        errors.append("All-decoder auxiliary exploration bytes or independent grading changed")
+    counts["joint_three_block_auxiliary_native_outcomes"] = expected_auxiliary["native_outcomes_checked"]
     from joint_coding import decoder_frontier
     expected_frontier = decoder_frontier.certificate()
     frontier_path = ROOT / "experiments/dependency_memory/results/decoder_frontier_certificate.json"

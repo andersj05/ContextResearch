@@ -4,6 +4,24 @@ Updated: October 1, 2026. This document is the current handoff; older scope docu
 
 ## Objective
 
+The [all-decoder three-block converse](../research/ALL_DECODER_THREE_BLOCK_COVER_2026-10-01.md)
+now encloses unrestricted D_3(6) in **[27.1756%, 27.4855%]**, including
+noncomplementary and repeated endpoints with tied ideal predictions. An
+oracle-defect gate and 46,492 near mixed orbit cases cover every final decoder.
+The 46,436 new exact witnesses compute 178,240,944 cost-column instances;
+56 complementary cases reuse C62. Arbitrary joint encoders and heterogeneous
+tables are allowed within the stated information contract. Claim C63; living
+draft v0.30. Exact finite optimality, external correctness and priority review
+remain open; the asymptotic frontier is unchanged. No new model call or natural
+workflow episode is added.
+
+Seven new tests pass and cover independent routes, the branch polynomial, binary
+coefficients, fractional source sums and overlapping ideal words, with the
+auxiliary native books and rational dual points checked separately. All **492
+offline tests pass**. Repository validation reports PASS with 63 claims and
+47 bibliography entries; paper assembly checks all 40 cited sources. The
+source-bound certificate is regenerated and no historical evidence is changed.
+
 The [complementary-decoder finite converse](../research/COMPLEMENTARY_DECODER_COVER_2026-10-01.md)
 extends the same [27.1756%, 27.4855%] bracket to all 256 complementary decoder
 tables per block, including dependence on late coordinate J and different tables
@@ -11,8 +29,8 @@ across blocks. Six symmetry orbits and 56 mixed cases cover these possibilities;
 all 229,376 decision-column instances are checked. Five independent tests pass,
 including a separate symmetry implementation and direct source sums grouped only
 by equal score multisets. Forty-six mixed cases cannot improve the incumbent;
-ten remain possible. Claim C62; living draft v0.29. Noncomplementary endpoints,
-the unrestricted finite optimum and external proof/priority review remain open.
+ten remain possible. Claim C62; living draft v0.29. Noncomplementary endpoints
+are outside that earlier proof; the new C63 result above includes them.
 
 All 485 offline tests pass at this milestone. Repository validation reports
 PASS with 62 claims and 47 bibliography entries, including the new decoder
@@ -459,9 +477,9 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 
 ## Next bounded tasks
 
-For the finite problem, examine the ten complementary mixed cases not eliminated
-by C62 and extend the cover to noncomplementary decoder pairs, where tied ideal
-words need separate handling. Any improved construction must keep the same
+For the finite problem, tighten the 457-outcome all-decoder interval, examine
+the 3,790 near mixed cases not excluded by C62/C63, or construct longer finite
+codes under the same capacity and timing. Any improved construction must keep the same
 information order and be graded on every delayed-query route. Preserve the
 earlier witnesses and asymptotic certificate; do not present a heuristic search
 or cover relaxation as an exact finite optimum.

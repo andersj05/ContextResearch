@@ -22,11 +22,19 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.30 adds the [all-decoder three-block converse](../research/ALL_DECODER_THREE_BLOCK_COVER_2026-10-01.md),
+claim C63. The unrestricted D_3(6) is enclosed in [27.1756%, 27.4855%], including
+noncomplementary and repeated prediction endpoints. An oracle gate and 46,492
+near orbit cases cover all final decoders; seven independent tests check exact
+witnesses, tied ideals and preserved auxiliary evidence. Exact finite optimum,
+external proof/priority review and natural-agent performance remain open.
+
 Living draft v0.29 adds the [complementary-decoder converse](../research/COMPLEMENTARY_DECODER_COVER_2026-10-01.md),
 claim C62. The same finite bracket now includes all 256 complementary tables
 per block, possibly depending on the late coordinate. Six symmetry orbits and
 56 mixed cases have checked cover weights; five independent tests pass.
-Noncomplementary decoders and the unrestricted finite optimum remain open.
+Noncomplementary decoders were outside C62; C63 above extends the converse.
+The exact finite optimum remains open.
 
 Living draft v0.28 adds the [source-only scope-inference findings](../research/SCOPE_INFERENCE_FINDINGS_2026-10-01.md),
 claim C61. All eight permitted identities were dispatched: seven catalog-complete

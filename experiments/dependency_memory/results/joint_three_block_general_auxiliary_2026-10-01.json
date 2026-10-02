@@ -1,0 +1,248 @@
+{
+  "date": "2026-10-01",
+  "limits": "Auxiliary post-hoc discovery only. Final cover proof uses no numerical optimizer or native code. Exact grading of these eight books does not certify a heuristic optimum or model gain.",
+  "minimum_native_errors": 41088,
+  "native_books": [
+    {
+      "decoder_indices": [
+        335923,
+        335923,
+        144121
+      ],
+      "errors": 41589,
+      "outcomes": 147456,
+      "parent_assignment_sha256": "c2e9a2bc06ca40d853b2e3c79e30ddd2e6769a538a7cb815e3b614516d3e0d97",
+      "parent_states": 64,
+      "strict_improvement_over_incumbent": false
+    },
+    {
+      "decoder_indices": [
+        335923,
+        335923,
+        144526
+      ],
+      "errors": 41589,
+      "outcomes": 147456,
+      "parent_assignment_sha256": "3742369a4a4ccbd6e04948ee557022478dd337070a5b8067a7f490244ed7d7f6",
+      "parent_states": 64,
+      "strict_improvement_over_incumbent": false
+    },
+    {
+      "decoder_indices": [
+        335923,
+        335923,
+        146713
+      ],
+      "errors": 41678,
+      "outcomes": 147456,
+      "parent_assignment_sha256": "325b3246bb465e2734776e9045ccca4e6765b753cc01647a813832214d131304",
+      "parent_states": 64,
+      "strict_improvement_over_incumbent": false
+    },
+    {
+      "decoder_indices": [
+        335923,
+        335923,
+        147118
+      ],
+      "errors": 41678,
+      "outcomes": 147456,
+      "parent_assignment_sha256": "b9dcf498cd8f97ae3ff143b9c7cae66935a9774b24ad059f09f7f82c52c5b62a",
+      "parent_states": 64,
+      "strict_improvement_over_incumbent": false
+    },
+    {
+      "decoder_indices": [
+        335923,
+        335923,
+        149225
+      ],
+      "errors": 41168,
+      "outcomes": 147456,
+      "parent_assignment_sha256": "ac463d1440fc1cc2b2423d8e8ad4d99cb3b92b17c647c5fcf5d80037baf1d769",
+      "parent_states": 64,
+      "strict_improvement_over_incumbent": false
+    },
+    {
+      "decoder_indices": [
+        335923,
+        335923,
+        149227
+      ],
+      "errors": 41088,
+      "outcomes": 147456,
+      "parent_assignment_sha256": "1192c93fa7f99a4fa72de3262ddeb39f24136d9e2ad4611c6ed3f3dcedbd1692",
+      "parent_states": 64,
+      "strict_improvement_over_incumbent": false
+    },
+    {
+      "decoder_indices": [
+        335923,
+        335923,
+        149240
+      ],
+      "errors": 41168,
+      "outcomes": 147456,
+      "parent_assignment_sha256": "ac463d1440fc1cc2b2423d8e8ad4d99cb3b92b17c647c5fcf5d80037baf1d769",
+      "parent_states": 64,
+      "strict_improvement_over_incumbent": false
+    },
+    {
+      "decoder_indices": [
+        335923,
+        335923,
+        149312
+      ],
+      "errors": 41088,
+      "outcomes": 147456,
+      "parent_assignment_sha256": "011d2b535ac91e84a51241e574a853bfffc8ee9e7951442c527842c350370b1c",
+      "parent_states": 64,
+      "strict_improvement_over_incumbent": false
+    }
+  ],
+  "native_outcomes_checked": 1179648,
+  "new_model_calls": 0,
+  "rational_dual_records": [
+    {
+      "combined_lower_errors": 39957,
+      "cover_lower_errors": 39888,
+      "decoder_indices": [
+        335923,
+        335923,
+        144121
+      ],
+      "dual_lower_errors": 39957
+    },
+    {
+      "combined_lower_errors": 39957,
+      "cover_lower_errors": 39888,
+      "decoder_indices": [
+        335923,
+        335923,
+        144526
+      ],
+      "dual_lower_errors": 39957
+    },
+    {
+      "combined_lower_errors": 39986,
+      "cover_lower_errors": 39968,
+      "decoder_indices": [
+        335923,
+        335923,
+        146713
+      ],
+      "dual_lower_errors": 39986
+    },
+    {
+      "combined_lower_errors": 39986,
+      "cover_lower_errors": 39968,
+      "decoder_indices": [
+        335923,
+        335923,
+        147118
+      ],
+      "dual_lower_errors": 39986
+    },
+    {
+      "combined_lower_errors": 40048,
+      "cover_lower_errors": 40048,
+      "decoder_indices": [
+        335923,
+        335923,
+        149227
+      ],
+      "dual_lower_errors": 39694
+    },
+    {
+      "combined_lower_errors": 40048,
+      "cover_lower_errors": 40048,
+      "decoder_indices": [
+        335923,
+        335923,
+        149312
+      ],
+      "dual_lower_errors": 39694
+    },
+    {
+      "combined_lower_errors": 40369,
+      "cover_lower_errors": 39936,
+      "decoder_indices": [
+        335923,
+        335923,
+        146706
+      ],
+      "dual_lower_errors": 40369
+    },
+    {
+      "combined_lower_errors": 40369,
+      "cover_lower_errors": 39936,
+      "decoder_indices": [
+        335923,
+        335923,
+        146714
+      ],
+      "dual_lower_errors": 40369
+    },
+    {
+      "combined_lower_errors": 40369,
+      "cover_lower_errors": 39936,
+      "decoder_indices": [
+        335923,
+        335923,
+        147113
+      ],
+      "dual_lower_errors": 40369
+    },
+    {
+      "combined_lower_errors": 40369,
+      "cover_lower_errors": 39936,
+      "decoder_indices": [
+        335923,
+        335923,
+        147119
+      ],
+      "dual_lower_errors": 40369
+    },
+    {
+      "combined_lower_errors": 40004,
+      "cover_lower_errors": 39936,
+      "decoder_indices": [
+        335923,
+        335923,
+        149225
+      ],
+      "dual_lower_errors": 40004
+    },
+    {
+      "combined_lower_errors": 40004,
+      "cover_lower_errors": 39936,
+      "decoder_indices": [
+        335923,
+        335923,
+        149240
+      ],
+      "dual_lower_errors": 40004
+    }
+  ],
+  "source_sha256": {
+    "experiments/dependency_memory/joint_coding/decoder_frontier.py": "00dc245ec73ee952272203cb20f1599462be2c828e0fcc02cc7e91f31ccbe5bc",
+    "experiments/dependency_memory/joint_coding_general/audit.py": "06692876470f679515b58777addbf7181aa3feaf301994351c4d767a56008d75",
+    "experiments/dependency_memory/joint_coding_general/auxiliary/dual_input.json": "9012a84d195dced40e319b1b69fb543bb30c6b7d154f77dbe60378a6f9344ab2",
+    "experiments/dependency_memory/joint_coding_general/auxiliary/dual_search.json": "83252cdc33dfca2baf3157c019f56ecf15edf7c9160fddc73676e60b6e3cf54c",
+    "experiments/dependency_memory/joint_coding_general/auxiliary/dual_search.py": "7d53849c5e9e59cc0d6377ffb8862a5436e03b81dba77c1c2cdbb0bd9fa6fb4a",
+    "experiments/dependency_memory/joint_coding_general/auxiliary/manifest.json": "3ee409f4d1da2bad357e898d2c37baa31b718f622d110674c7ecd1ea43f4bcc0",
+    "experiments/dependency_memory/joint_coding_general/auxiliary/search.c": "803d955fa7f4de43aa99a4a29f2bc19a90da198de7b775e606af06cd2f0094d0",
+    "experiments/dependency_memory/joint_coding_general/auxiliary/search_144121.json": "31db3219ab9c1dbfd9ed148f50aea8c56f8db04dcd03a32df369dcc517774b40",
+    "experiments/dependency_memory/joint_coding_general/auxiliary/search_144526.json": "61b9989d32f97cfff77247c610e941a6d138912830c2cb8e99688e0b5eb9e401",
+    "experiments/dependency_memory/joint_coding_general/auxiliary/search_146713.json": "76f1c6dc1d69a139536f99a0cd5e3719359bdc9c305d6e2997d30189ccb224b0",
+    "experiments/dependency_memory/joint_coding_general/auxiliary/search_147118.json": "6d4f9beac5a59e942b9830b40ebac64131dfc372ca7cd7235299d5f4c85b94c1",
+    "experiments/dependency_memory/joint_coding_general/auxiliary/search_149225.json": "7e2be9ca0e19326e48e1c41350a15a4ec0003f2f84836352ee815aebecfb7025",
+    "experiments/dependency_memory/joint_coding_general/auxiliary/search_149227.json": "78ccedcd7ec162d393acbde4c9389f7543c1ee03e2a5b552bbe2fab30aafa23b",
+    "experiments/dependency_memory/joint_coding_general/auxiliary/search_149240.json": "c6f8e21b73831e14840b65d91c60e39fcbf6d04e00d5d330923c8c3946867506",
+    "experiments/dependency_memory/joint_coding_general/auxiliary/search_149312.json": "cf2ed59f1078971fe4bd77c37723c1735b8bf62f1c3fab6726793db9176f4df2",
+    "experiments/dependency_memory/joint_coding_general/cover.py": "c2aadfc4fcc255331e7998d2ba564f2100030c445cd33bad7e1667c22012f260",
+    "experiments/dependency_memory/joint_coding_general/discover.py": "15e2397a4dc2eac2e96ad0a4a9f206a6d49767d7deae7edcfb4f5f95ea311e27",
+    "experiments/dependency_memory/joint_coding_general/test_cover.py": "c2eb72d9756346d3c9d6cd898a0ff4be2b6444820c6781a16abaae088a0ad153"
+  },
+  "version": "general_decoder_auxiliary_audit_v1"
+}
