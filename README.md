@@ -20,8 +20,11 @@ demands. The [eight-call source-only study](experiments/dependency_memory/scope_
 was specifically approved, then stopped before dispatch due to a missing
 reservation directory. The [separate corrected launch](experiments/dependency_memory/scope_inference_v2/README.md)
 preserves all scientific inputs and has new local identities.
-Its first two metered contracts pass the catalog; a third dispatch times out.
-The primary criterion remains unassessable. No new natural task is added.
+The [completed dispatch findings](research/SCOPE_INFERENCE_FINDINGS_2026-10-01.md)
+combine that launch with its separately frozen unattempted suffix: eight
+dispatches, seven catalog-complete contracts and one permanent timeout. Two
+contracts exceed the parent cap; five answer 12/24 late queries. The primary
+criterion remains unassessable. No new natural task is added.
 
 **October 1 method audit:** the [local derivation and finite comparisons](research/WORKFLOW_METHOD_AUDIT_2026-10-01.md)
 show that exact checked tables with fallback add no receipt state over direct

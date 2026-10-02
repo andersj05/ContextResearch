@@ -736,3 +736,21 @@ of coordinate-dependent endpoint decoders. Keep the unrestricted frontier,
 external correctness review and unresolved publication priority explicit.
 Do not market the elementary cover technique or restricted interval as a new
 general method, unrestricted finite optimum, token result or model benefit.
+
+## October 1: report the source-only observations without replacing the timeout
+
+The five-identity suffix finishes with five metered answers. Combine its counts
+with the immutable replacement launch: eight dispatches, seven metered answers,
+one permanent missing answer and zero remaining unattempted identities. Known
+cost is 0.2232910 planning credits; retain the 7.65 unknown reservation under the
+same combined 20-credit cap. Do not treat committed allocation as measured debit.
+
+Register C61: every observed contract agrees on the finite catalog, but two
+closure responses retain the whole accounting object and exceed the parent cap;
+five narrower contracts fit the parent and answer 12/24 imposed late queries.
+The fixed-schema and cached-outcome controls each answer 24/24. Sufficiency is
+distinct from byte feasibility. The primary criterion requires eight metered
+answers and remains unassessable; do not impute the timeout or rank prompts.
+Future work must separate source analysis, codec choice and changing query
+programs, with strong zero-model controls and a separate protocol. Preserve
+all original source/request/evaluator bytes and keep prospective episodes at zero.

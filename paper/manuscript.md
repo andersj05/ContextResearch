@@ -641,13 +641,47 @@ A single JSON serialization's infeasibility does not prove a capacity obstructio
 The known program also permits the strong functional-retention control of caching
 its outcomes before the record query arrives. Dependency traces and result reuse
 are established mechanisms [@buildsystems2018]. The separately frozen source-only
-Luna inference study has no outcomes yet; specific dispatch approval is pending.
-This offline control supplies no natural-task prevalence, model gain or fully
-priced production comparison.
+Luna inference results are recorded below. This offline control supplies no
+natural-task prevalence, model gain or fully priced production comparison.
+
+### 8.13 Source-only contract sufficiency versus byte feasibility
+
+The [frozen source-only study](../research/SCOPE_INFERENCE_FINDINGS_2026-10-01.md)
+shows the original decision program, constants and retention DSL to Luna while
+excluding historical records, the authored projection, catalog and labels.
+Four paired replicates compare concise and closure instructions. The approved
+first implementation stops locally before any dispatch; its separately frozen
+replacement returns two answers, then times out on the third request. A further
+frozen suffix dispatches only the five unattempted identities with identical
+public requests and the original combined eight-call/20-credit ceiling. The
+timed-out identity stays permanently missing and is never retried.
+
+Combined, eight dispatches produce seven metered answers, one permanent transport
+gap and no unattempted identities. All seven contracts have zero disagreements
+and zero false preflight-only cases on 14,505 constructed catalog rows, including
+14,490 distinct inputs; all also agree on eight inspected historical records.
+This is finite-catalog completeness, not universal semantic certification. Five
+contracts select narrow accounting fields, matching the authored 3,030-byte
+parent on those observations and scoring 12/24 imposed late queries. Two closure
+contracts retain the full accounting object: their 15,459-byte parent exceeds
+the 4,096-byte cap, yielding 0/24. Final replay is scripted classifier execution,
+not additional LLM final decisions. The schema and cached-result controls from
+Section 8.12 each score 24/24 under the same caps.
+
+Concise has three observed complete contracts and one missing answer; closure
+has four observed complete contracts. The three fully observed pairs all agree
+on catalog completeness. The original eight-metered-answer primary criterion
+remains unassessable. Known cost is 0.2232910 planning credits, or 0.2399950 in
+the cache-neutral view. The timeout retains 7.65 unknown-usage reserved credits;
+7.8732910 is committed allocation, not measured spending. Actual debit and fully
+priced lifecycle cost remain unknown. One inspected program with constructed
+timing supports a development diagnostic of sufficiency and representation size,
+not independent-workflow generalization, prompt superiority, a novel extraction
+algorithm or production savings. Claim C61.
 
 ## 9. Limitations and open results
 
-The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. No learned dependency classifier or open-ended native-agent benchmark has been evaluated here. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, useful finite-length joint codes, a wider rate-distortion characterization, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.
+The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. Source-only retention-contract inference has been evaluated only on one inspected classifier; an open-ended native-agent benchmark remains unperformed. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, useful finite-length joint codes, a wider rate-distortion characterization, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.
 
 ## 10. Reproducibility
 

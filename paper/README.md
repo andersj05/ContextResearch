@@ -22,6 +22,13 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.28 adds the [source-only scope-inference findings](../research/SCOPE_INFERENCE_FINDINGS_2026-10-01.md),
+claim C61. All eight permitted identities were dispatched: seven catalog-complete
+contracts and one permanent timeout. Five contracts score 12/24 imposed late
+queries; two exceed the parent cap and score 0/24. Strong zero-model controls
+score 24/24. The original primary criterion remains unassessable; no natural-task
+or production advantage is established.
+
 Living draft v0.27 adds the [restricted three-block converse](../research/JOINT_THREE_BLOCK_COVER_2026-10-01.md),
 claim C60. An elementary cover argument and exact finite ingredients give
 40,072/147,456 as a lower bound for late-coordinate-independent prediction,
@@ -37,7 +44,8 @@ optimality, priority and model/task performance are not established.
 Living draft v0.25 adds the [public-schema serialization control](../research/SCOPE_CODEBOOK_CONTROL_2026-10-01.md),
 claim C58. The existing fixed-schema codec and cached public outcomes each
 answer all 24 constructed late queries, versus 12/24 for ordinary authored JSON,
-under unchanged byte caps. The learner launch remains frozen and undispatched.
+under unchanged byte caps. At that offline milestone the learner launch was
+frozen and undispatched; the subsequent results are recorded in v0.28.
 This is inspected offline development evidence, with no new compression or
 caching novelty, model outcome or production-saving claim.
 

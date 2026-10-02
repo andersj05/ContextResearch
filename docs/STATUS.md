@@ -4,6 +4,23 @@ Updated: October 1, 2026. This document is the current handoff; older scope docu
 
 ## Objective
 
+The [completed source-only dispatch](../research/SCOPE_INFERENCE_FINDINGS_2026-10-01.md)
+has eight attempts, seven metered answers and one permanent transport gap;
+no identities remain unattempted. All seven contracts agree with the classifier
+on the 14,505-row constructed catalog. Five narrower contracts answer 12/24
+imposed late queries; two closure contracts retain a whole accounting object,
+exceed the parent cap and answer 0/24. Fixed-schema and cached-outcome controls
+answer 24/24. The original eight-answer primary comparison is unassessable.
+Known cost is 0.2232910 planning credits; the 7.65 unknown reservation remains,
+for 7.8732910 committed allocation under the original 20-credit ceiling.
+Claim C61; living draft v0.28. Actual debit and fully priced cost remain unknown.
+
+The latest full offline run passed all 480 tests; the four focused cover tests
+also pass after the final source-binding change. Independent saved-contract
+replay passes. Repository validation and paper assembly check the new claims,
+immutable evidence and bibliography: PASS with 61 claims, 47 bibliography entries
+and 40 cited sources. Prospective/private episodes remain zero.
+
 The [restricted three-block cover proof](../research/JOINT_THREE_BLOCK_COVER_2026-10-01.md)
 gives lower bound 40,072/147,456 when final prediction is independent of late
 coordinate J. With the new witness, this family's optimum is in
@@ -20,7 +37,7 @@ draft v0.26. The codebook, all 4,096 parent assignments and discovery provenance
 are saved. Independent route checks and six new tests pass. This is an achievable
 upper bound, not the finite optimum, publication priority or model performance.
 
-At this milestone all 473 offline tests pass. Repository validation checks
+At the earlier witness milestone all 473 offline tests passed. Validation checked
 59 claims, 47 bibliography entries, the complete three-block witness and the
 two saved scope-inference answers; paper assembly checks 40 cited sources.
 
@@ -33,10 +50,11 @@ ceiling, no historical allocation reopened. It tests automatic retention scope
 from the actual historical decision code against handwritten, AST, raw and cached
 outcome controls. Its catalog has 14,505 constructed rows; thirteen new local
 tests pass. Fresh CLI 0.159.2 loopback/configuration checks pass with zero real
-generations. All 461 offline tests, repository validation and paper assembly pass.
+generations. At that prelaunch milestone all 461 offline tests, repository
+validation and paper assembly passed.
 The prepared launch pins 23 source/protocol/dependency files and all eight public
-request identities; its committed attestation precedes generation. Model outcomes
-remain pending. This is one inspected program, not new natural
+request identities; its committed attestation precedes generation. The later
+results are recorded above. This is one inspected program, not new natural
 prospective tasks. The [source review](../research/SCOPE_INFERENCE_DESIGN_2026-10-01.md)
 identifies dependency traces and scoped reuse as established prior mechanisms.
 
@@ -51,16 +69,18 @@ fresh four-case zero-generation CLI/configuration audit pass. Its eight-call /
 dispatched: two metered answers and one permanent 240-second transport timeout.
 Both answers have zero disagreements on the 14,505-row catalog and answer 12/24
 constructed late queries using ordinary JSON. Known cost is 0.062325 planning
-credits, with 7.65 retained for unknown usage. Five identities remain never
-dispatched; no retry occurred. The eight-answer primary criterion is unassessable.
+credits, with 7.65 retained for unknown usage. At this launch's stop, five identities
+were never dispatched; no retry occurred. Its immutable analysis preserves that
+state. The eight-answer primary criterion is unassessable.
 
 The [separate five-identity suffix](../experiments/dependency_memory/scope_inference_suffix/PROTOCOL.md)
-is prepared with the original requests/order and the combined eight-dispatch /
+was frozen at `cdc3518` with the original requests/order and the combined eight-dispatch /
 20-credit ceiling. It starts at three attempts and 7.712325 committed credits,
 including the permanent gap. Three additional budget/identity tests and fresh
-zero-generation transport checks pass. All 480 offline tests pass before this
-suffix launch; repository validation and paper assembly also pass. It cannot
-restore assessability of the original primary criterion.
+zero-generation transport checks pass. All 480 offline tests passed before this
+suffix launch; repository validation and paper assembly also passed. It completed
+all five dispatches and metered answers for 0.1609660 known planning credits.
+The combined results are above; the original primary criterion stays unassessable.
 
 The [separate fixed-schema control](../research/SCOPE_CODEBOOK_CONTROL_2026-10-01.md)
 uses the existing dictionary codec: all 24 constructed late queries succeed
@@ -125,7 +145,7 @@ six commands and zero prospective/private evaluation episodes. All historical
 source hashes remain intact. The updated paper builds with 39 cited sources;
 the repository validator checks 55 registered claims and 46 bibliography entries.
 
-No new model call or provider allocation has been made. Prospective evaluation
+The workflow-intake registration itself made no model call or provider allocation. Prospective evaluation
 and the old twelve private held-out episodes remain unperformed. Folders provide
 organization; a launch must enforce the declared actor access contract.
 

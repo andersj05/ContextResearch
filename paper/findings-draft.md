@@ -1,6 +1,18 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.27 — October 1, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.28 — October 1, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## Complete scope can still exceed the memory budget
+
+The [source-only inference launch and separate unattempted suffix](../research/SCOPE_INFERENCE_FINDINGS_2026-10-01.md)
+finish all eight allowed dispatches: seven metered answers and one permanent
+timeout. All seven contracts preserve classifier answers on 14,505 constructed
+catalog rows. Five narrow contracts score 12/24 imposed late queries; two closure
+contracts retain the entire accounting object, exceed the parent cap and score
+0/24. Existing fixed-schema and cached-outcome controls score 24/24. Claim C61.
+The frozen eight-answer criterion remains unassessable; no prompt ranking or
+natural-task advantage follows. Known cost is 0.2232910 planning credits, with
+7.65 retained for unknown usage. Actual debit and fully priced cost remain unknown.
 
 ## A finite lower bound for the construction's decoder family
 
@@ -33,9 +45,9 @@ catalog rows agree with the original classifier. Claim C58. A failure of this
 JSON encoding is not an information-theoretic memory obstruction.
 
 The separately [frozen source-only learner](../experiments/dependency_memory/scope_inference/PROTOCOL.md)
-tests inferred contract completeness on one known program. Its eight model
-calls have specific user approval and remain undispatched at this offline
-milestone. Neither this offline result nor the planned calls establish
+tests inferred contract completeness on one known program. Its prelaunch freeze
+and offline control are preserved; the later live findings are recorded above.
+Neither this offline result nor the source-only calls establish
 natural-workflow prevalence, dictionary-coding novelty or production savings.
 
 ## Check whether the task needs earlier memory
@@ -82,8 +94,8 @@ The [next intake](../experiments/dependency_memory/workflow_intake/README.md)
 uses this repository for actual development tasks, prospective observations and
 separate evaluator manifests. This current task is inspected development evidence.
 Future tasks require a method/grader freeze and explicit serialized actor access;
-folder names do not make them blind. No new model call or private held-out result
-has been added.
+folder names do not make them blind. That intake adds no model call or private
+held-out result.
 
 The first new [registered development task](../experiments/dependency_memory/workflow_intake/development/E0001/README.md)
 contains six actual successful checks at two pinned source revisions. Direct
