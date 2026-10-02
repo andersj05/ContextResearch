@@ -1,6 +1,19 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.31 — October 1, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.32 — October 1, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## The theoretical penalty now has a wider certified spectrum
+
+The [new parent-rate result](../research/PARENT_RATE_SPECTRUM_2026-10-01.md)
+encloses limiting error at eight rational early-memory rates while the child
+remains one bit. Each slope covers every allowed final decoder; all interval
+widths are below 2e-11. Claim C65. About 0.973 parent bits per block give 29.695%
+limiting error, while 2.541 bits give 25.009%. These are bit-model calculations,
+not token or workflow measurements. A separate unsigned-family proof reduces
+every positive-slope objective to one mass and identifies a unique support
+transition near 0.620690001029 information bits per block. The unrestricted
+curve between checked slopes, finite encoders and publication priority remain
+open. No model call or natural task is added.
 
 ## A stronger source-analysis control removes the need for more calls on this classifier
 

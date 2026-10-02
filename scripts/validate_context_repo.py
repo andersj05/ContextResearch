@@ -901,6 +901,16 @@ def main() -> int:
     counts["static_scope_new_model_calls"] = regenerated_static["new_model_calls"]
     counts["static_scope_saved_model_contracts_replayed"] = len(regenerated_static["historical_model_contracts_replayed"])
 
+    from experiments.dependency_memory.rate_spectrum import certificate as rate_spectrum
+    regenerated_spectrum = rate_spectrum.certificate()
+    if json.loads(rate_spectrum.OUTPUT.read_text(encoding="utf-8")) != regenerated_spectrum:
+        errors.append("Parent-rate spectrum, support-transition algebra or source bindings changed")
+    counts["rate_spectrum_support_points"] = regenerated_spectrum["support_points"]
+    counts["rate_spectrum_tables_per_point"] = regenerated_spectrum["decoder_tables_per_point"]
+    counts["rate_spectrum_orbit_point_checks"] = regenerated_spectrum["orbit_point_checks"]
+    counts["rate_spectrum_complete_unrestricted_curve_claimed"] = regenerated_spectrum["complete_all_rate_unrestricted_curve_claimed"]
+    counts["rate_spectrum_new_model_calls"] = regenerated_spectrum["new_model_calls"]
+
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"

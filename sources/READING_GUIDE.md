@@ -1,5 +1,11 @@
 # Focused reading guide
 
+The [October 1 parent-rate spectrum](../research/PARENT_RATE_SPECTRUM_2026-10-01.md#4-discovery-prior-work-and-validation-scope)
+rereads Polyanskiy and Wu's original MIT 6.441 Chapter 25, Section 25.2,
+Theorem 25.2 and support-condition remarks, pp. 258–259. This bounded rereading
+supports established dual/support reasoning; it is not a new full review,
+replication or novelty conclusion. Existing key `polyanskiywu2016coding`.
+
 The [October 1 static scope control](../research/STATIC_SCOPE_CONTROL_2026-10-01.md#4-primary-source-comparison-and-limits)
 adds Horwitz, Reps and Binkley (1990), original abstract and opening Introduction
 pp. 26–27. The bounded primary reading establishes dependency/call-context

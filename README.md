@@ -4,6 +4,14 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
+**October 1 parent-rate spectrum:** [new exact support certificates](research/PARENT_RATE_SPECTRUM_2026-10-01.md)
+enclose limiting error at eight rational parent rates, each checking every
+allowed decoder. A separate analytic reduction gives a unique two-word/eight-word
+support transition for the unsigned decoder near 0.620690001029 information bits
+per block. The final memory is still one bit. The unrestricted curve between
+checked slopes, efficient finite codes and publication priority remain open.
+This is a mathematical result, with zero new model calls or natural tasks.
+
 **October 1 stronger scope control:** [AST access-use analysis](research/STATIC_SCOPE_CONTROL_2026-10-01.md)
 agrees with three inspected repository programs and one constructed late-key
 family on 51,566 finite input/query rows. With one shared codec, it answers

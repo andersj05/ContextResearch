@@ -4,6 +4,21 @@ Updated: October 1, 2026. This document is the current handoff; older scope docu
 
 ## Objective
 
+The [parent-rate spectrum](../research/PARENT_RATE_SPECTRUM_2026-10-01.md)
+adds eight rational-rate asymptotic intervals, all narrower than 2e-11, with
+38,008 orbit/point checks covering all 1,679,616 final tables at each slope.
+Repeated and noncomplementary endpoints, arbitrary joint encoders and
+heterogeneous block tables are included. A separate all-positive-slope scalar
+reduction for the fixed unsigned decoder has a unique two-word/eight-word
+support transition at about 0.620690001029 information bits per block.
+Claim C65; living draft v0.32. This does not prove the unrestricted curve at
+untested rates, provide finite codes or add model/natural-workflow outcomes.
+External correctness and priority review remain open. All **509 offline tests
+pass**. Repository validation reports PASS with 65 claims and 48 bibliography
+entries; paper assembly checks all 41 cited sources. The nine source/provenance
+bindings and all eight exact certificates regenerate without changing earlier
+provider or mathematical evidence.
+
 The [stronger static scope control](../research/STATIC_SCOPE_CONTROL_2026-10-01.md)
 recovers a complete dispatch contract on the finite catalog from source alone.
 Three inspected repository programs and one constructed late-key family agree
@@ -495,6 +510,13 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 - The internal training objective, prompt, or algorithm of a proprietary compaction service.
 
 ## Next bounded tasks
+
+For the asymptotic spectrum, investigate the proposed balanced-source
+complementary-completion reduction, then prove or refute unsigned dominance
+between the checked slopes. The completion idea needs a whole-code information
+argument; branch checks or a floating rate grid are not that proof. Preserve
+all existing certificates and the distinction between restricted/all-decoder
+results. Efficient finite encoders remain another substantive open direction.
 
 For the finite problem, tighten the 457-outcome all-decoder interval, examine
 the 3,790 near mixed cases not excluded by C62/C63, or construct longer finite

@@ -22,6 +22,13 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.32 adds the [parent-rate spectrum](../research/PARENT_RATE_SPECTRUM_2026-10-01.md),
+claim C65. Eight all-decoder rational-rate asymptotic intervals are narrower
+than 2e-11. A scalar unsigned-family reduction has a unique two-word/eight-word
+support transition near 0.620690001029 information bits per block. This leaves
+the unrestricted curve at untested rates and efficient finite codes open.
+No model call, natural episode or production benefit is added.
+
 Living draft v0.31 adds the [static source-analysis control](../research/STATIC_SCOPE_CONTROL_2026-10-01.md),
 claim C64. With the codec held fixed, static and authored dispatch contracts
 score 24/24, as do five of the seven saved model contracts; two remain oversized.

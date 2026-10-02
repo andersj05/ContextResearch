@@ -866,3 +866,58 @@ Repository validation reports PASS with 64 claims and 48 bibliography entries;
 paper assembly checks all 41 cited sources. The saved audit regenerates with
 matching source/evidence bindings. Historical model requests, outcomes and the
 permanent missing answer remain unchanged. Build and test logs stay ignored.
+
+## October 1, 2026 — broaden the parent-rate theory after strengthening controls
+
+The C64 static control removes a need for more inference calls on the same
+classifier. Actual prospective intake still requires distinct incoming tasks;
+continuing the present research creates no new natural episode. Use the interval
+to address the documented wider rate-distortion question without spending model
+credits or narrowing the information contract.
+
+Preserve C34 and C59–C64 source/result/provider bytes. Add a separate rate_spectrum
+package. Six bounded floating probes are post-hoc mathematical discovery; save
+their original script and summaries. Derive unsigned source/reproduction kernel
+classes directly, dominate odd words by an explicit positive mixture, and reduce
+all positive-slope unsigned supporting optimization to one balanced mass.
+An exact polynomial transformation proves a unique support transition near
+0.620690001029 information bits per block. Reproduction support size is not
+parent alphabet size or an additional final-decoder channel.
+
+The final all-decoder certificate uses no optimizer or exploratory floating
+weights. Eight rational t values each cover 4,751 orbits/all 1,679,616 tables;
+nonunsigned q uses the existing nearest-word marginal as a witness only.
+Strict other-table objective separation holds at every selected slope. Exact
+Gibbs channels plus positive rate slack give asymptotic upper bounds; a common
+supporting inequality gives lower bounds for every k and arbitrary joint,
+heterogeneous chains. All eight intervals are narrower than 2e-11. Do not infer
+an unrestricted full curve or finite optimum between the checked slopes.
+
+Register C65 and living draft v0.32. Reread MIT 6.441 Chapter 25 Section 25.2,
+Theorem 25.2 and its support remarks, pp. 258–259. Keep established duality,
+symmetrization and support optimization identifiable as prior machinery;
+publication priority and external proof review remain open. Six independent
+tests cover routes, polynomial coefficients, positive factors, root/optimizer
+brackets, Gibbs marginals and independently evaluated channel inequalities.
+The coefficient test caught a middle factor coefficient of 34; correct it to
+42 before committing. Regenerated route-based interval endpoints are unchanged.
+
+Next mathematics: prove or refute all-decoder dominance between the checked
+slopes, or construct efficient finite codes. Empirical work still needs a new
+frozen cohort with strong static/direct/cached controls and actual command
+timing. No token, total-cost, natural-task or model gain is inferred here.
+
+All 509 offline tests pass, including the six new independent tests. Repository
+validation reports PASS with 65 claims and 48 bibliography entries; paper
+assembly checks all 41 cited sources. All nine source/provenance bindings and
+eight exact supporting certificates regenerate. The corrected factor leaves
+the independently route-based interval endpoints unchanged. Build logs stay
+ignored and historical model/source/result bytes remain preserved.
+
+The next proposed theorem is a balanced-source complementary-completion
+reduction. Separate exploratory branch checks and a floating between-point
+screen are not a whole-code proof and are not registered as C65 results. Check
+the averaging argument with the old encoder/updater held fixed, public tables
+selected before source, and no extra information after replacement; retain
+source-balance and query-timing qualifications. This may simplify the remaining
+all-rate comparison without requiring another model batch.

@@ -762,6 +762,41 @@ The result removes a reason to spend more calls on this inspected classifier;
 broader automatic extraction, natural-workflow benefit and fully priced lifecycle
 cost remain open. No new model call or natural task is added. [C64]
 
+### 8.15 A parent-rate spectrum and a restricted support transition
+
+The [separate exact spectrum](../research/PARENT_RATE_SPECTRUM_2026-10-01.md)
+extends the C34 rate-two calculation to eight rational parent rates, preserving
+the source/query law, one-bit child and all information boundaries. Every slope
+checks all 4,751 orbits covering all 1,679,616 final tables, including repeated
+and noncomplementary endpoints. Common supporting inequalities allow arbitrary
+joint encoding and heterogeneous block tables. Rational Gibbs witnesses have
+strict information slack; fixed-length coding supplies asymptotic upper bounds.
+Each interval is narrower than 2e-11, with the lower bound valid for every k.
+These are mathematical enclosures rather than confidence intervals. [C65]
+
+For example, rate 0.9726441913 bits per block has limiting error in
+[0.2969469397286971, 0.2969469397292819]; rate 2.5406225816 has limiting error
+in [0.2500924641065645, 0.2500924641067975]. Rates are the reported rationals,
+not claims at nearby round budgets. The old rate-two and finite three-block
+results remain unchanged. [C65]
+
+For the fixed unsigned decoder, symmetrization leaves three reproduction
+classes. An explicit positive-kernel mixture dominates the odd-weight class
+for every 0<t<1. The supporting optimization reduces to one balanced mass p,
+with a unique transition from two constant words to those words plus six
+balanced words. A polynomial transformation proves uniqueness and outward
+arithmetic places the transition information in
+[0.620690001029, 0.620690001030] bits per block. Support size is a property of
+the test channel, not extra memory available at final decoding. [C65]
+
+Supporting objectives and treatment of zero-support outputs use established
+rate-distortion reasoning [@polyanskiywu2016coding]. The unsigned reduction is
+valid at every positive slope; unrestricted decoder optimality is checked only
+at the eight new slopes and the earlier C34 slope. The unrestricted curve
+between them, efficient finite codes, external proof and source priority remain
+open. Post-hoc mathematical exploration is separate from the exact certificate.
+No model call, natural task, token saving or production benefit is added. [C65]
+
 ## 9. Limitations and open results
 
 The bit-model source values are independent; real tasks have semantic structure, correlated observations, and adaptive actions. The record diagnostics are constructed examples, not independent task samples. The recovery reference assumes reliable access, opaque record selection, a known routing distribution, and a public revision schedule. It excludes archive storage costs and does not optimize natural-language summaries. Source-only model inference has been evaluated only on one inspected classifier; the static control covers three inspected programs and one constructed family without universal certification; an open-ended native-agent benchmark remains unperformed. The one-block exact optimum is a local exhaustive computational result; external review and novelty assessment of the mathematical results, useful finite-length joint codes, a wider rate-distortion characterization, and the prevalence of the mechanism in real agents remain open. A novelty claim also requires deeper reductions to functional compression and causal coding [@kaspi2013; @functionalcoloring2010; @causalrefinement2019]. The [external review packet](../research/EXTERNAL_REVIEW_PACKET_2026-09-19.md) distinguishes asymptotic graph-coloring results and source-aware refinement encoders from this source-inaccessible updater; no theorem-transfer or priority conclusion is established.
