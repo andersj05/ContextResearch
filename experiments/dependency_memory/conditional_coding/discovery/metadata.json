@@ -1,0 +1,86 @@
+{
+  "compiler": {
+    "flags": [
+      "-O3",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Werror"
+    ],
+    "target": "x86_64-pc-windows-msvc",
+    "version": "clang 19.1.0"
+  },
+  "conditional_refinement": {
+    "accepted": 8,
+    "candidate_replacements_per_screen": 16777216,
+    "cap": 8,
+    "clock_seconds_observed": "38.710000",
+    "errors": 331857648,
+    "raw_score_scope": "best replacement and gain per slot on each of eight screens; rejected candidate scores not individually stored or independently reproduced",
+    "zero_final_screen": false
+  },
+  "date": "2026-10-02",
+  "evidence_class": "adaptive post-hoc finite population discovery",
+  "file_sha256": {
+    "base.h": "bdae6fd39130d8725dbae4e5c8e20c1bd8fabcae8c0dc9da52aa52aed295410d",
+    "control.c": "924e9893adba577a09dcd593d8a95190b634ab0bc372ef8e205c6f9cc3800fcc",
+    "control.jsonl": "85ff87cbb97ea4a4217f21c35e310468e9863190fe756097fd2d6a156e4d5935",
+    "couple.c": "b3735e6c38f38497222e5648a384eed36393e1ce87f9abcf4de70b8c0dd3a9ae",
+    "couple.jsonl": "c69ab8f3493eb2c6a64e49e28b635ae6d9832fb6df935521ca3a2fff39aa5abf",
+    "discovery.jsonl": "c9d79df7054e021af702d8cdf1e269d3e40ba044c6d5defeb0345c52fc20aafe",
+    "iterate.c": "626072230598b9b6d926f0d5e8dc39da6259044eb02b11d7cf7d19d5ada6244e",
+    "iterate.jsonl": "775b5ae07b66e2f13470aaf700095febb1c0440b3b4aa279c27e6b785d82344f",
+    "prepare.py": "005e5c0c3df8c459e6b6af1bad2a7933fdd1dbb437e6164ccdce73d4f562e90f",
+    "prepare_refined.py": "c46e9932b510feca45684abe4d0035e24b8a6eb01de2e75045372a155736eb96",
+    "refine.c": "9c388372d62d9ca175ec400e40ce3360ce0e7de7e288c649943ddbc62108d563",
+    "refine.jsonl": "41ac7dfe6210db6414570f0d4e4d2776c204c2bc8f7e25bfe38e26c7777fc6bd",
+    "refined.h": "c718218a11907a01fb3233d4ff3939c07f3f91d051f378ac500adca01f91cbb9",
+    "search.c": "6f6c6d56e002ad6c6f62a601b89446cb670c10d50dd727465708ce574a6e7f08",
+    "swap.c": "7bd68093916c13de3b2989634099e86987224cb486aa54578f80765c48e8ffc9",
+    "swap.jsonl": "e772ed27b6e25d14e2d70548aac9052a2958a035d292fe8dd69c5dcdfa27bf25",
+    "warm.c": "340f60a677e3c09fdf6282720ae2487849574f5527b894979ff82df68f6a5740",
+    "warm.jsonl": "778a0bcc631e563a719a3d1194320c4b3b3435d823069365b2efc6de03df7513"
+  },
+  "initial_modal_search": {
+    "beat_original_product": false,
+    "clock_seconds_observed": "7.222000",
+    "plain_three_block_scored_steps": 9,
+    "prng": "xorshift32 shifts13,17,5; seeds1..3 test random_next()%8==0 to flip one of12 label bits; seed0 original product",
+    "scored_steps_per_start": 9,
+    "seed_ids": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "updates_per_start": 8
+  },
+  "limits": "Adaptive full-population tuning, not held-out trials. Three-block single-word locality is within fixed unsigned response triples only; six-block final locality/global optimality not established. No natural workflow, provider call, cost gain or publication priority.",
+  "new_model_calls": 0,
+  "original_conditional_screen": {
+    "beat_refined_product": false,
+    "candidate_replacements": 16777216,
+    "clock_seconds_observed": "0.341000",
+    "gain": 5202
+  },
+  "process_wall_seconds": null,
+  "refined_conditional_screen": {
+    "candidate_replacements": 16777216,
+    "clock_seconds_observed": "0.353000",
+    "gain": 4101
+  },
+  "three_block_refinement": {
+    "accepted": 4,
+    "candidate_replacements_per_screen": 262144,
+    "cap": 16,
+    "errors": 40514,
+    "zero_final_single_word_screen": true
+  },
+  "timing_scope": "Recorded Windows C clock readings; process wall times unavailable. control/refine invoke original screen, whose inner clock0.372000/0.343000 excludes subsequent refinement. No CPU, portable latency or wall-time claim.",
+  "upstream": {
+    "commit": "4c843bc53da5e49620d726e8b8859ec96065a6c7",
+    "path": "experiments/dependency_memory/joint_coding_finite3/discovery.json",
+    "selection": "runs.greedy.codeword_ids in original slot order; original data unchanged",
+    "sha256": "8be1ed7b8af6e1a73a5100e2e6be5dd2bd2a33c3bc2ebf12e560d20def1aebf2"
+  }
+}

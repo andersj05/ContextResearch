@@ -22,6 +22,17 @@ Generated files are under ignored `build/paper/`. No external typesetting softwa
 
 ## Current draft and update discipline
 
+Living draft v0.36 adds the [conditional six-block construction](../research/CONDITIONAL_SIX_BLOCK_CODE_2026-10-02.md),
+claim C69. A refined component has 40,514/147,456 errors and no improving one-word
+replacement, yet its two-copy product has an improving single joint word.
+Eight conditional changes give 331,857,648/1,207,959,552 errors, below the stronger
+product 331,890,688 at the same12-bit parent and one-bit child. Independent
+six-block products preserve the error at 6n and win at common12n; public label
+payload is 120 bytes. The gain is small, the three-block bracket width is 442,
+and final six-block locality/optimality and external correctness/priority remain
+open. Grouped weighted grading and full component replacement checks are
+independent of native discovery. Zero model calls or natural-task outcomes.
+
 Living draft v0.35 adds the [finite trellis code](../research/FINITE_TRELLIS_CODE_2026-10-02.md),
 claim C68. At four blocks, an eight-bit parent and one-bit child give 867,837
 errors on 3,145,728 outcomes, below the pair-product control's 869,376. Exact

@@ -1,5 +1,10 @@
 # Focused reading guide
 
+The [October 2 conditional-code note](../research/CONDITIONAL_SIX_BLOCK_CODE_2026-10-02.md#5-product-extension-search-failures-and-established-precedents)
+adds Jégou, Douze and Schmid's author manuscript inria-00514462v1,
+Sections II-A/B, printed pp. 2–4 (`jegou2011product`). Read October 2, 2026;
+bounded reading only, with no replication or inherited full-review upgrade.
+
 The [October 2 finite trellis note](../research/FINITE_TRELLIS_CODE_2026-10-02.md#5-primary-source-comparison-and-remaining-work)
 adds QTIP pinned v4 Sections 2.3, 3.1 and 3.2 (`qtip2024`) and Marcellin/Fischer's
 author university abstract/metadata record (`marcellinfischer1990tcq`). These

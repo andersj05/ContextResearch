@@ -1041,3 +1041,49 @@ Read QTIP v4 Sections 2.3/3.1/3.2 and Marcellin/Fischer's university abstract
 record. General TCQ/Viterbi, bit-window decoding, table tuning, product coding
 and tail-biting are established; finite optimality, external proof/priority
 and natural-agent usefulness remain open. Add C68 and living draft v0.35.
+
+## October 2, 2026 — stronger six-block control and product-locality counterexample (C69)
+
+Follow C68 with a longer construction that must beat refined three-block
+products at common lengths. Preserve the failed original modal product/three
+seeded starts, weak original single-change gain and stationary modal continuation.
+Refine C59's component with four accepted gains 8,2,2,3, then independently
+screen all 262,144 single-word replacements: none improve40,514/147,456 error.
+Combine it with C63's unchanged lower bound to tighten the unrestricted bracket
+to [40,072,40,514], width 442. Leave original source/certificate bytes unchanged.
+
+The refined two-copy product still has an improving single joint word. Keep
+the same12-bit parent M=a+64*b and one-bit child before J. Changing one left
+triple while preserving its right triple improves331,890,688 to 331,886,587.
+Eight conditional changes reduce error to 331,857,648/1,207,959,552. This is a
+scoped failure of single-word product locality, not a general new quantization
+theorem or statement about globally optimal components. The small gain is
+0.002735 percentage points over the refined product. Search stops at cap 8
+with a positive last gain; final six-block locality/optimality is unproved.
+
+Implement exact nested minima, the public updater and one-bit-only final actor
+in a separate folder of this repository. Public labels contain120 payload
+bytes,24 more than the base product; count 8 is a protocol constant and framing,
+program/JSON/runtime size are separate. Instance caps remain12 and 1 bits.
+Repeat independent six-block groups at 2*k parent bits, deriving the same error
+for 6n and a win over both three-block products at common12n. C67's optimal
+asymptotic curve is unchanged, and no approach-to-curve guarantee follows.
+
+Use independent bit losses and direct addition/removal sums for component
+locality. For six blocks partition left sources by relative group minima;
+right high digits are then identical within each group. Execute weighted
+source-inaccessible actor queries:11,783,592 physical calls cover 1,207,959,552
+outcomes over 16,777,216 sources. Do not claim every outcome ran individually.
+Independently rescore all accepted losses/gains; native rejected conditional
+candidate maxima remain observations, not an independent complete replay.
+Preserve controlled raw mathematical JSONL, actual native source/header bytes,
+compiler flags, upstream commit/hash and qualified Windows C-clock observations.
+
+Read Jégou/Douze/Schmid's author manuscript Sections II-A/B. Generic nearest
+assignment, local tuning and product quantization are established. External
+correctness/priority and natural-agent usefulness remain open. Claim C69 and
+living draft v0.36; all 541 offline tests pass, including eight new scientific
+tests. Validation reports PASS with 69 claims/51 bibliography entries/171 PDF
+hashes; paper assembly checks 44 cited sources. All 24 bindings regenerate. Zero new model calls or
+prospective natural episodes; all frozen model launches and permanent gaps stay
+unchanged. Further calls on the inspected classifier remain uninformative.

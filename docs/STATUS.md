@@ -4,6 +4,34 @@ Updated: October 2, 2026. This document is the current handoff; older scope docu
 
 ## Objective
 
+The [conditional six-block code](../research/CONDITIONAL_SIX_BLOCK_CODE_2026-10-02.md)
+now beats the stronger product of two refined three-block components at the
+same 12-bit parent and one-bit child: **331,857,648 versus 331,890,688 errors**
+on 1,207,959,552 outcomes. This is 27.472579% error, a 0.002735-percentage-point
+gain. The component has 40,514/147,456 errors and no improving single response
+triple among all 262,144 replacements, but its product has an improving single
+six-block word. The unrestricted three-block interval is now [40,072,40,514]
+errors, width 442. Old C59/C63 evidence is preserved. Claim C69; living draft v0.36.
+Independent six-block groups preserve error at k=6*n with 2*k parent bits and
+beat the refined three-block product at common k=12*n. Public label payload
+is 120 bytes, with fixed public count 8; program/JSON/framing and instance bits
+are separate. Six-block locality/global optimality, codes approaching C67's
+curve and external correctness/priority remain open.
+
+The independent grouped checker covers all 16,777,216 source pairs and performs
+11,783,592 physical actor queries representing all 1,207,959,552 weighted
+outcomes; the component separately executes 147,456 routes. All 24 bindings and
+every accepted search gain regenerate; rejected conditional scores are not
+all independently recomputed. Four initial modal starts and a weaker joint
+change fail their controls and stay in the record. The final eight-change
+search stops at its cap with positive last gain, not a locality certificate.
+All **541 offline tests pass**, including eight new scientific tests. Repository
+validation reports PASS with 69 claims, 51 bibliography entries and 171 PDF hashes;
+paper assembly checks 44 cited sources. All 24 witness/provenance bindings
+regenerate. Zero new model calls and zero prospective natural episodes.
+
+**Earlier October 2 finite trellis milestone (C68):**
+
 The [finite trellis construction](../research/FINITE_TRELLIS_CODE_2026-10-02.md)
 now implements a fixed code at exactly two parent bits per block, followed by
 one child bit before J. At four blocks it has **867,837 / 3,145,728 errors**,
@@ -556,7 +584,7 @@ Total usage was **4,768,512 input tokens** (including 2,412,032 cached) and **63
 ## Not yet established
 
 - Novelty and external validation of the locally audited scaling argument, or a practically large composition penalty.
-- Exact finite joint-code optima and efficient encoders approaching the full curve. C68 supplies one implemented finite trellis code; C67 characterizes the unrestricted asymptotic curve for the uniform four-bit model. Broader source/query laws remain outside those results.
+- Exact finite joint-code optima and efficient encoders approaching the full curve. C68/C69 supply implemented finite codes and C69 tightens the three-block bracket; C67 characterizes the unrestricted asymptotic curve for the uniform four-bit model. Broader source/query laws remain outside those results.
 - Natural-language compiler performance, learned retirement accuracy, or unrestricted closed-loop LLM-agent results. Live model work now also covers an imposed two-stage memory-writing pipeline; open-ended native-agent performance remains unestablished.
 - Cost or quality gains over native provider compaction.
 - The internal training objective, prompt, or algorithm of a proprietary compaction service.
@@ -570,13 +598,15 @@ their dated scope. Efficient finite encoders approaching the now-characterized
 curve, and extensions to changed source/query laws, remain substantive research
 directions; no production applicability follows from this model theorem.
 
-C68 supplies a compact code that improves the named four-block controls,
-while the same tables lose at smaller cycles. Test a separately preserved
-longer-block construction or different public labels against equally charged
-controls; preserve the failed transfer and bounded search, with no generic
-trellis/Viterbi novelty claim. The one-long-cycle asymptotic quality is open.
+C69 supplies a six-block improvement against refined three-block products,
+with a complete component single-word locality check and a checked failure of
+product locality. The gain is small; its final six-block locality and distance
+from C67's curve remain open. Any next construction needs this stronger control,
+the same timing/capacity, explicit public storage and complete finite coverage.
+C68's smaller-cycle failures remain preserved; no generic conditional-codebook,
+product, coordinate-search or trellis novelty follows.
 
-For the finite problem, tighten the 457-outcome all-decoder interval, examine
+For the finite problem, tighten the 442-outcome all-decoder interval, examine
 the 3,790 near mixed cases not excluded by C62/C63, or construct longer finite
 codes under the same capacity and timing. Any improved construction must keep the same
 information order and be graded on every delayed-query route. Preserve the

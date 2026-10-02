@@ -109,6 +109,17 @@ lower error. Smaller cycles with these labels lose to existing
 controls. This implements one finite code; optimality and quality approaching
 the full curve remain open. Section 8.18 gives the contract and checks. [C68]
 
+A [later conditional six-block construction](../research/CONDITIONAL_SIX_BLOCK_CODE_2026-10-02.md)
+gives 331,857,648 errors on 1,207,959,552 outcomes at 12 parent bits and one child
+bit. It improves on two refined three-block components'331,890,688, whose
+individual codebook has 40,514 errors on 147,456 outcomes. An exhaustive component
+single-word replacement screen finds no positive gain, yet its product admits
+an improving single joint word. Independent six-block groups preserve the
+new error at k=6*n and improve both three-block products at common k=12*n.
+Combining the refined component with C63 tightens the unrestricted three-block
+bracket to [40,072,40,514]/147,456, width 442 errors. Section 8.19 specifies the
+weighted grading and the small gain's scope; no optimality is claimed. [C69]
+
 An [October 1 explicit three-block construction](../research/JOINT_THREE_BLOCK_WITNESS_2026-10-01.md)
 uses six parent bits and one child bit under the same timing. Its fixed 64-word
 codebook makes 40,529 errors among all 147,456 source/block/omission/query
@@ -148,7 +159,7 @@ External correctness and priority review remain open, with no new general
 cover technique claimed. [C62]
 
 The [all-decoder finite extension](../research/ALL_DECODER_THREE_BLOCK_COVER_2026-10-01.md)
-now establishes the same bracket for the unrestricted three-block optimum:
+established the following dated bracket with C59 for the unrestricted three-block optimum:
 
 ```text
 5009/18432 <= D_3(6) <= 40529/147456.
@@ -886,7 +897,7 @@ discarded. Fixed-length coding and supporting optimization are established
 particular complete model curve. Exact finite optima, efficient encoders,
 external proof/priority and natural-workflow gains remain open. [C67]
 
-### 8.18 A compact implemented finite code
+### 8.18 A compact implemented finite code (C68 checkpoint)
 
 The [four-block trellis witness](../research/FINITE_TRELLIS_CODE_2026-10-02.md)
 stores k quaternary symbols in exactly 2*k parent bits. A response at block R
@@ -907,7 +918,8 @@ against every message for all k<=3 sources and declared k=4/6 examples. [C68]
 Repeating independently closed four-block groups gives the same distortion at
 every k=4*n by product additivity, with 2*k parent bits and one final child bit.
 At common k=12*n, the existing three-block product instead gives lower error
-40529/147456; the best known asymptotic upper bound is unchanged.
+40529/147456. This C68 checkpoint did not improve the best known repeated-code
+upper bound; the later C69 construction does.
 One long cyclic trellis is different; its smaller k=1,2,3 tables have
 58/192,1802/6144,41649/147456 error and lose to existing controls. The certificate
 executes 3,299,520 routes including those failures. Bounded post-hoc search
@@ -917,6 +929,48 @@ Generic trellis coding, Viterbi and tail-biting are established precedents
 [@marcellinfischer1990tcq; @qtip2024]. This adds a particular finite upper bound
 and codec for delayed queries, with no model/natural-task or production gain.
 External correctness and publication priority remain open. [C68]
+
+### 8.19 Stronger finite controls and failure of product locality
+
+Four further response-triple replacements refine C59's component to 40,514
+errors. Independently accumulated addition/removal losses check all 64*4,096
+single-word replacements and find zero positive gains in the fixed unsigned
+family. C63's unchanged all-decoder lower bound therefore gives the current
+unrestricted interval [40,072,40,514]/147,456. This is a 442-error bracket,
+not an exact finite optimum or locality under other decoder changes. [C69]
+
+Write a twelve-bit parent as M=a+64*b. Its right response triple is B[b]; its
+left triple is B[a], except for fixed public conditional entries. Changing only
+M=3330's left triple to 963 reduces the two-copy product from 331,890,688 to
+331,886,587 errors. Exactly one six-block response word changes. A component
+locally optimal for single-triple replacements thus need not have a product
+locally optimal for single six-block word replacements in this loss. This
+does not concern globally optimal component books. Eight conditional changes
+give 331,857,648/1,207,959,552=2,304,567/8,388,608 error, approximately27.472579%.
+The gain over the refined product is only 0.002735 percentage points. [C69]
+
+An exact encoder minimizes left loss within each right group and then chooses
+the best high digit, ties by smallest integer M. The updater selects the R
+response word's O bit before J; the final actor returns Z without parent/source
+access. Public label payload is 120 bytes:96 for the base and 24 for overrides,
+with public count 8. Program/JSON/framing and runtime memory are separate; the
+instance cap remains12 bits, followed by one bit. Sixteen relative-left-minimum
+groups preserve right choices and tie order. Weighted actor grading covers all
+16,777,216 source pairs and 1,207,959,552 outcomes using11,783,592 physical actor
+queries, agreeing with independently summed distances and the native search.
+The component separately executes all 147,456 routes. [C69]
+
+Independent six-block segments give the same distortion for every k=6*n at
+2*k parent bits and one child bit. At common k=12*n this beats the refined
+three-block product. It improves these explicit repeated-code upper bounds,
+while C67's optimal curve is unchanged. Four initial modal starts and a weaker
+joint change fail their controls; all remain preserved. Eight conditional
+changes stop at a positive-gain cap, with final six-block locality unproved.
+All accepted errors/gains independently rescore; rejected conditional scores
+are not all reproduced. Nearest assignment, local codebook tuning and product
+quantization are established [@jegou2011product]. The addition is the specific
+finite construction and scoped counterexample, with optimality, external
+correctness/priority and natural-agent/model/cost benefit open. [C69]
 
 ## 9. Limitations and open results
 

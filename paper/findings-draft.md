@@ -1,6 +1,27 @@
 # Before an agent forgets: inspect, retain, or recover?
 
-Living findings draft v0.35 — October 2, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+Living findings draft v0.36 — October 2, 2026. This is a short research summary, not a submission-ready paper. The [manuscript](manuscript.md) is the main paper entry point; the [claim register](claims.csv) links substantive statements to their evidence.
+
+## A stronger product control still leaves a small joint gain
+
+The [new six-block construction](../research/CONDITIONAL_SIX_BLOCK_CODE_2026-10-02.md)
+reduces error from 27.475315% for two refined three-block components to 27.472579%
+at the same 12 parent bits and one child bit. The component has 40,514 errors
+on 147,456 outcomes and no improving single-word replacement among all 262,144
+candidates. Its product nevertheless has an improving single six-block word;
+eight changes avoid 33,040 errors on 1,207,959,552 outcomes. This is a small
+finite gain and a scoped counterexample, not a general quantization novelty.
+Claim C69; the current unrestricted three-block bracket has width 442 errors.
+
+The independent checker uses 16 groups of left sources and weighted actor
+queries to cover all 16,777,216 six-block sources. It physically executes
+11,783,592 actor queries representing 1,207,959,552 outcomes. Public labels occupy
+120 payload bytes; instance memory is separately 12 bits. Independent six-block
+segments preserve the result at k=6*n and beat the refined three-block product
+at common k=12*n. Final six-block locality/optimality, external correctness,
+priority and useful natural-agent gains remain open. No new model call or
+prospective natural episode is added. Earlier milestones below retain their
+dated scope, including C68's weaker repeated-code comparison.
 
 ## A finite encoder now improves the four-block controls
 

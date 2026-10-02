@@ -4,7 +4,19 @@ Research on memory, compaction, and context management for long-running language
 
 **Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
 
-**October 2 finite encoder:** [a fixed trellis construction](research/FINITE_TRELLIS_CODE_2026-10-02.md)
+**October 2 stronger finite code:** the [conditional six-block construction](research/CONDITIONAL_SIX_BLOCK_CODE_2026-10-02.md)
+has 331,857,648 errors on 1,207,959,552 outcomes, versus 331,890,688 for two
+refined three-block components, at the same 12-bit parent and one-bit child.
+An independent complete component replacement screen finds no improvement,
+yet its product has an improving single joint word. Eight changes give
+27.472579% error; independent six-block segments preserve it at k=6*n and beat
+the stronger three-block control at k=12*n. Labels use 120 public payload bytes.
+The three-block unrestricted bracket tightens to [40,072,40,514]/147,456.
+This is a small finite gain and a scoped counterexample, with optimality,
+external correctness/priority and natural-agent benefit open. No model call
+or prospective episode is added; earlier results below are dated milestones.
+
+**Earlier October 2 finite encoder (C68):** [a fixed trellis construction](research/FINITE_TRELLIS_CODE_2026-10-02.md)
 achieves 867,837 errors on all 3,145,728 four-block outcomes, versus the
 pair-product control's 869,376, with the same eight-bit parent and one-bit child.
 An exact 16-state encoder uses 1024*k branch relaxations; independent four-block

@@ -942,6 +942,18 @@ def main() -> int:
     counts["trellis_coding_packed_public_labels"] = regenerated_trellis["packed_public_label_bytes"]
     counts["trellis_coding_new_model_calls"] = regenerated_trellis["new_model_calls"]
 
+    from experiments.dependency_memory.conditional_coding import certificate as conditional_coding
+    regenerated_conditional = conditional_coding.certificate()
+    if json.loads(conditional_coding.OUTPUT.read_text(encoding="utf-8")) != regenerated_conditional:
+        errors.append("Conditional six-block code, component locality or provenance changed")
+    counts["conditional_coding_six_block_errors"] = regenerated_conditional["six_block"]["errors"]
+    counts["conditional_coding_component_errors"] = regenerated_conditional["component"]["errors"]
+    counts["conditional_coding_component_max_single_word_gain"] = regenerated_conditional["component_all_single_word_replacements"]["maximum_gain"]
+    counts["conditional_coding_physical_actor_queries"] = regenerated_conditional["six_block"]["physical_actor_query_calls"]
+    counts["conditional_coding_weighted_outcomes"] = regenerated_conditional["six_block"]["weighted_actor_outcomes"]
+    counts["conditional_coding_public_payload_bytes"] = regenerated_conditional["public_label_payload_bytes"]
+    counts["conditional_coding_new_model_calls"] = regenerated_conditional["new_model_calls"]
+
     import run_development_pilot
     fake_audit = run_development_pilot.offline_audit()
     fake_path = ROOT / "experiments/dependency_memory/results/development_pilot_audit.json"
