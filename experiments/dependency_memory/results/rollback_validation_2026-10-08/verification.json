@@ -1,0 +1,79 @@
+{
+  "as_of": "2026-10-08",
+  "kind": "offline_implementation_verification",
+  "implementation_commit": "aa1faaf",
+  "branch": "task/rollback-offline-e0",
+  "model_calls": 0,
+  "provider_spend_usd": "0",
+  "dependency_memory_tests": {
+    "tests": 663,
+    "passed": 663,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0,
+    "elapsed_seconds": 1250.4992266000045,
+    "record": "repository_tests.json"
+  },
+  "package_tests": {
+    "tests": 66,
+    "passed": 66,
+    "actual_docker_integration_tests_included": 9,
+    "record": "../rollback_e0_2026-10-08/package_checks.json"
+  },
+  "archive_evidence_probes": {
+    "tests": 5,
+    "passed": 5,
+    "elapsed_seconds": 64.759,
+    "module": "scripts/test_rollback_e0_evidence.py"
+  },
+  "existing_saved_evidence_tests": {
+    "tests": 16,
+    "passed": 16,
+    "record": "saved_evidence_unit_checks.json"
+  },
+  "scientific_regeneration": {
+    "status": "PASS",
+    "record": "scientific_regeneration.json",
+    "scope": "Full existing scientific regeneration; captured before the final E0 hook and catalog staging. Existing scientific package code and frozen numerical results did not change."
+  },
+  "sealed_e0_verification": {
+    "status": "PASS",
+    "independent_math_candidates": 210656,
+    "verified_dispatches": 144,
+    "archive_data_files": 334,
+    "source_bindings": 32,
+    "verified_calibration_requests": 8,
+    "live_ready": false
+  },
+  "final_navigation": {
+    "status": "PASS",
+    "scope": "navigation-only",
+    "scientific_results_checked": false,
+    "checks": {
+      "bibliography_entries": 63,
+      "markdown_documents": 460,
+      "local_links": 2533,
+      "paper_claims": 75,
+      "catalog_entries": 54,
+      "implementation_packages": 39,
+      "tracked_result_files": 1340
+    },
+    "errors": []
+  },
+  "paper_build": {
+    "status": "PASS",
+    "cited_sources": 48,
+    "outputs": "ignored build/paper"
+  },
+  "whitespace_check": {
+    "new_owned_files": "PASS after normalizing the new validator-test record to LF",
+    "preserved_history_snapshots": "Inherited line endings/whitespace retained to preserve the supplied archival bytes."
+  },
+  "scope_notes": [
+    "Overlapping checks must not be summed as independent trials.",
+    "No native-compaction or rollback-performance claim is supported by these fixtures.",
+    "Prior unrelated working-tree edits remain preserved and unstaged.",
+    "Real coding cohort and live API/tokenizer/access/pricing/allocation gates remain open."
+  ],
+  "pre_existing_scientific_files_changed": []
+}

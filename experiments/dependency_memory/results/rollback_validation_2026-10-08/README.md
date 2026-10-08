@@ -14,6 +14,8 @@ explains its limits.
   1,000 tracked result files because registration/staging continued while it ran.
 - [saved_evidence_unit_checks.json](saved_evidence_unit_checks.json): 16 existing
   Luna/revision saved-evidence validator tests pass after the integration change.
+- [verification.json](verification.json): final current catalog/navigation,
+  E0 archive/math bindings, paper build and explicit scope of the combined checks.
 
 Current catalog/navigation checks and the new sealed E0 mathematical/archive
 verifier are recorded separately in the final verification record. The pre-existing
