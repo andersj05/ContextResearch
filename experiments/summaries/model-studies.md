@@ -24,6 +24,22 @@ Protocol: [experiments/dependency_memory/rollback_pilot/subscription/CONTRACT.md
 
 Saved results: [experiments/dependency_memory/results/rollback_subscription_2026-10-08](../dependency_memory/results/rollback_subscription_2026-10-08).
 
+## rollback-recovery-v3
+
+**Harder-task rollback development study** — 2026-10-08 · prepared
+
+A new fixed 64-task development cohort is prepared: 32 coupled finite math tasks and 32 Python coding instances from eight shared algorithmic families. Independent graders agree on 1,111,296 finite candidates; 19 installed-client low/medium and expanded-input mock probes pass. Complete reference validation is underway.
+
+**Limits:** Unperformed model outcomes. Initial low effort and medium recovery change the actor policy; no incorrect branch is forced. Coding variants are clustered. All tasks and 832 possible episode identities must be frozen before dispatch. No reliable rollback, native-harness or benchmark result is claimed.
+
+Read first: [experiments/dependency_memory/rollback_recovery_v3/PROTOCOL.md](../dependency_memory/rollback_recovery_v3/PROTOCOL.md).
+
+Implementation: [experiments/dependency_memory/rollback_recovery_v3](../dependency_memory/rollback_recovery_v3).
+
+Protocol: [experiments/dependency_memory/rollback_recovery_v3/PROTOCOL.md](../dependency_memory/rollback_recovery_v3/PROTOCOL.md).
+
+Saved results: [experiments/dependency_memory/results/rollback_recovery_v3_2026-10-08](../dependency_memory/results/rollback_recovery_v3_2026-10-08).
+
 ## rollback-python-retest
 
 **Corrected Python-language subscription engineering retest** — 2026-10-08 · completed
