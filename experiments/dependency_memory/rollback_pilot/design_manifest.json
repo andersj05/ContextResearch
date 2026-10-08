@@ -1,0 +1,64 @@
+{
+  "schema_version": "rollback-design-0.2",
+  "as_of": "2026-10-08",
+  "status": "review_design_unperformed",
+  "launch_authorized": false,
+  "model": {
+    "requested_alias": "gpt-6-luna",
+    "reasoning_effort": "medium",
+    "processing": "standard",
+    "immutable_revision": null,
+    "provider_sampling_seed": null,
+    "selected_transport": null,
+    "input_token_cap": 32768,
+    "generated_token_cap_including_reasoning": 16384,
+    "lesson_visible_token_cap": 1024,
+    "summary_visible_token_cap": 1024
+  },
+  "pilot": {
+    "initial_tasks": 24,
+    "math_tasks": 12,
+    "coding_tasks": 12,
+    "conditions": ["K", "R", "Z", "G"],
+    "terminal_draws_per_condition": 2,
+    "max_calls_per_task": {"checkpoint": 1, "branch": 2, "lesson": 1, "summary": 1, "continuations": 8},
+    "calibration_calls": 8,
+    "maximum_generation_calls": 320,
+    "proposed_api_ceiling_usd": "5.00",
+    "minimum_eligible_per_domain_for_feasibility_screen": 6,
+    "local_schedule_seed": 20261007,
+    "math_base_seed": 20261008,
+    "descriptive_bootstrap_seed": 20261009,
+    "descriptive_bootstrap_resamples": 10000
+  },
+  "billing_assumptions": {
+    "reviewed_on": "2026-10-08",
+    "source": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+    "usd_per_million": {"input": "0.10", "cached_input": "0.01", "cache_write": "0.125", "output": "0.50"},
+    "reserved_input_rate": "0.125",
+    "per_call_upper_usd": "0.012288",
+    "pilot_upper_usd": "3.93216",
+    "automatic_retries": false,
+    "paid_model_tools": false,
+    "regional_or_speed_premiums": false,
+    "subscription_credit_budget": null
+  },
+  "cohort_freeze": {
+    "math_generator_hash": null,
+    "math_grader_hashes": null,
+    "coding_dataset": "livecodebench/code_generation_lite",
+    "proposed_release": "release_v6",
+    "dataset_commit": null,
+    "task_ids": [],
+    "task_and_test_hashes": null,
+    "license_review": "unresolved",
+    "coding_runner_image_digest": null,
+    "reference_solution_hashes": null,
+    "exposed_atcoder_ids_excluded": ["abc301_a", "abc301_b", "abc301_c", "abc301_d", "abc301_e", "abc301_f", "abc302_a", "abc302_d", "abc302_e", "abc302_f"]
+  },
+  "later_stages": {
+    "E3": {"selected_initial_tasks": null, "max_calls_per_initial_task": 6, "planning_example_tasks_per_domain": 1000, "planning_example_calls_including_calibration": 12008, "planning_example_upper_usd": "147.554304", "approved_allocation": null},
+    "E4": {"development_tasks": 60, "policies": ["A", "K", "R", "G", "I"], "episode_api_ceiling_usd": "0.10", "calls_per_episode_ceiling": 24, "calibration_calls": 8, "request_ceiling": 7208, "proposed_api_ceiling_usd": "31.00", "approved_allocation": null},
+    "E5": {"development_tasks": 60, "policies": ["append", "automatic_rollback", "chosen_rollback"], "episode_api_ceiling_usd": "0.10", "calls_per_episode_ceiling": 24, "rollbacks_per_episode_ceiling": 3, "calibration_calls": 8, "authored_decision_probe_calls": 12, "request_ceiling": 4340, "model_usage_upper_usd": "18.24576", "proposed_api_ceiling_usd": "19.00", "native_arm_included": false, "approved_allocation": null}
+  }
+}

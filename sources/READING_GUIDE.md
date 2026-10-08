@@ -278,3 +278,50 @@ rates remain 2.5/0.25/12.5 credits per million input/cached/output tokens; the p
 distinguishes credit rates from included-usage consumption. The fresh local CLI
 0.159.2 loopback audit is a separate client observation. No server-internal
 isolation or attributable account debit is inferred.
+
+## October 7 rollback pilot design
+
+The [design review](../research/ROLLBACK_PILOT_DESIGN_2026-10-07.md) and
+[unperformed protocol](../experiments/dependency_memory/rollback_pilot/DRAFT_PROTOCOL.md)
+compare retaining a failed branch against removing it with an identical lesson.
+These are bounded primary readings; no paper was replicated, inherited archive
+review label upgraded, or new experimental result added.
+
+| Source | Reading on October 7, 2026 | Relevance |
+|---|---|---|
+| [Thought Rollback v1](https://arxiv.org/html/2412.19707v1) [@chen2024thoughtrollback] | Sections 3.3 and 4.1-4.4 | Checkpoint revision and error analysis are prior art |
+| [LongSeeker v1](https://arxiv.org/html/2605.05191v1) [@lu2026longseeker] | Sections 3.1-3.4 and 4.1-4.2 | Direct suffix-removal precedent within a larger operation set |
+| [ARC v1](https://arxiv.org/html/2601.12030v1) [@arc2026] | Sections 3.1-3.3 reread; Section 4.3 ablation read | Active memory revision and summary/checklist controls |
+| [SCoRe v2](https://arxiv.org/html/2409.12917v2) [@kumar2024score] | Abstract, Section 3 and Sections 6.1-6.2 | Self-correction assumptions, regressions and parallel-attempt controls |
+| [EvalPlus](https://arxiv.org/abs/2305.01210v3) [@liu2023evalplus] | v3 abstract/metadata and [official repository](https://github.com/evalplus/evalplus) evaluation/Docker sections | Tests for terminal grading; full paper and implementation unreviewed |
+| [LiveCodeBench](https://arxiv.org/abs/2403.07974v2) [@jain2024livecodebench] | v2 abstract/metadata and [author project page](https://livecodebench.github.io/) evaluation/date filtering | Candidate coding cohort; release, task IDs and license remain unpinned |
+| [MATH-500](https://huggingface.co/datasets/HuggingFaceH4/MATH-500) [@math500dataset] | Publisher schema/viewer | Candidate later transfer set; no corpus downloaded or evaluated |
+
+Rechecked the official [Luna page](https://developers.openai.com/api/docs/models/gpt-6-luna),
+[app-server documentation](https://learn.chatgpt.com/docs/app-server) and
+[Codex pricing](https://learn.chatgpt.com/docs/pricing), using existing bibliography
+keys. Read the [reasoning guide](https://developers.openai.com/api/docs/guides/reasoning)
+for output caps, incomplete responses and stateless encrypted reasoning
+[@openai-reasoning2026]. The design separates API dollars from subscription
+planning credits and public documentation from the local CLI/schema observations.
+No present account access, enforceable app-server output cap or private provider
+mechanism is established by these readings.
+
+## October 8 rollback experiment review
+
+The [review handoff](../docs/ROLLBACK_REVIEW_HANDOFF_2026-10-08.md) expands the
+unperformed pilot into task, controller, analysis and later-policy specifications.
+Reopened the official Luna model and reasoning guides for pricing and total
+generated-token limits; existing keys `openai-gpt6-luna2026` and
+`openai-reasoning2026` apply. No current account or live endpoint was tested.
+
+Read the [official LiveCodeBench README](https://github.com/LiveCodeBench/LiveCodeBench),
+Dataset Versions and Evaluation sections, and the
+[lite dataset card](https://huggingface.co/datasets/livecodebench/code_generation_lite)
+and [original dataset card/viewer](https://huggingface.co/datasets/livecodebench/code_generation)
+[@livecodebench-datasets2026]. This establishes the variant distinction and
+available metadata, not a pinned release or verified runner. The original viewer
+exposed partial reserved-test fields for ten preview tasks; their IDs are excluded
+in [the task specification](../experiments/dependency_memory/rollback_pilot/TASKS_AND_GRADING.md).
+No full source review, source-code execution, corpus download, license resolution,
+model result or inherited archive-review upgrade is added.
