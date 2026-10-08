@@ -58,15 +58,15 @@ Saved results: [experiments/dependency_memory/results/rollback_subscription_2026
 
 ## rollback-math-followup-v4
 
-**Instrumented mathematical rollback follow-up** — 2026-10-08 · prepared
+**Instrumented mathematical rollback follow-up** — 2026-10-08 · checkpoint
 
-A separate 32-task mathematical development cohort is prepared under new seeds and identities. The actor policy and safety checks are unchanged; observation adds only whitelisted protocol reason codes and event counts. Nine invariant tests, 19 installed-client probes and independent agreement on 1,111,296 finite candidates pass.
+All 32 new mathematical tasks and 424 possible identities are frozen in commit 1e927f8 before outcomes. Eight excluded live calibration calls pass format and independent grading verification; cohort execution is in progress. Nine invariant tests, 19 installed-client probes and independent agreement on 1,111,296 finite candidates pass. Sanitized observation preserves the original collector's acceptance rules.
 
-**Limits:** Model outcomes unperformed. Math-only scope is a post-observation development choice, not held-out confirmation or a coding claim. The v3 allocation and unknown reservation remain closed and unresolved. Freeze all 424 possible calls before dispatch; no task replacement, retry, native-harness or manuscript upgrade.
+**Limits:** Final outcomes pending. Math-only scope is a post-observation development choice, not confirmation or a coding claim. The v3 allocation and unknown reservation remain closed and unresolved. A frozen README link typo requires post-execution documentation repair with original-source verifier replay. No task replacement, retry, native-harness or manuscript upgrade.
 
-Read first: [experiments/dependency_memory/rollback_math_followup_v4/README.md](../dependency_memory/rollback_math_followup_v4/README.md).
+Read first: [research/ROLLBACK_MATH_FOLLOWUP_2026-10-08.md](../../research/ROLLBACK_MATH_FOLLOWUP_2026-10-08.md); [experiments/dependency_memory/rollback_math_followup_v4/PROTOCOL.md](../dependency_memory/rollback_math_followup_v4/PROTOCOL.md).
 
-Implementation: [experiments/dependency_memory/rollback_math_followup_v4](../dependency_memory/rollback_math_followup_v4).
+Implementation: [experiments/dependency_memory/rollback_math_followup_v4](../dependency_memory/rollback_math_followup_v4); [scripts/verify_rollback_math_v4.py](../../scripts/verify_rollback_math_v4.py); [scripts/test_verify_rollback_math_v4.py](../../scripts/test_verify_rollback_math_v4.py).
 
 Protocol: [experiments/dependency_memory/rollback_math_followup_v4/PROTOCOL.md](../dependency_memory/rollback_math_followup_v4/PROTOCOL.md).
 
