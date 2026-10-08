@@ -1521,3 +1521,33 @@ never retain raw provider messages, arguments, credentials or reasoning logs.
 Nine new invariant tests and 19 installed-client probes pass. Independently
 certify the entire new finite task set before freezing all 424 possible calls.
 The complete-pair screen is now coded separately from scheduled-pair metadata.
+
+## October 8: close the full math follow-up with a qualified resource result
+
+The fixed 32-task allocation completes without unknown calls: 27 recovery pairs,
+three initial successes, one malformed branch and one task without a candidate.
+All four recovery arms have 54 known draws. R=47/54 and K=46/54 give +1.85 pp,
+with a conditional descriptive task interval [-7.41,+11.11] pp. Four task-level
+benefits, three drawbacks and twenty ties establish neither a reliable quality
+advantage nor equivalence. Do not enlarge this cohort to seek a positive mean.
+
+Actual matched terminal inputs total 171,406 tokens in R versus 181,170 in K,
+a 5.39% reduction under this serialization/client. Keep those recorded calls
+separate from standalone policy projections, complete-policy costs, stochastic
+output differences and actual account charges. Study plus excluded calibration
+usage is 7.5049380 calculated planning credits, with no API-key spend; v3's
+unknown reservation remains unresolved and separate.
+
+The first K-better case retains an explicitly unverified impossibility hypothesis
+in both the lesson and generic summary. Public enumeration finds 24 satisfying
+assignments, so deleting the trial record does not erase every branch-derived
+hypothesis. Treat possible anchoring as an untested mechanism; optional independent
+ratings and a lesson ablation remain unperformed. A new ablation requires a new
+frozen design rather than silently changing this completed study.
+
+After all model calls ended, repair the public package README's relative-link
+typo. Preserve the original bytes in commit 1e927f8 and replay the unchanged
+original verifier from that source: all 93 source bindings, 819 evidence files,
+416 task slots, durable accounting, 345 unique threads and candidate regrading
+pass. All 718 repository tests and two replay-boundary tests pass. Preserve all
+earlier archives and leave C75, draft v0.42 and benchmark work unchanged.

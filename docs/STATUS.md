@@ -9,10 +9,14 @@ pairs show one benefit, one drawback and three ties, averaging 0 pp R-minus-K.
 Six coding candidates pass; 51 tasks never start. The complete-pair screen fails,
 and the full-cohort effect is unidentified. All 709 tests, full scientific
 validation and independent archive/Docker regrading pass. A separate [instrumented
-32-task math follow-up](../research/ROLLBACK_MATH_FOLLOWUP_2026-10-08.md) is running;
-its full allocation and source were frozen before outcomes. The closed v3
-allocation will not be resumed. C75,
-draft v0.42 and the unperformed benchmark proposal are unchanged.
+32-task math follow-up](../research/ROLLBACK_MATH_FOLLOWUP_2026-10-08.md) completes
+27 recovery pairs: R=47/54 versus K=46/54, a +1.85 pp mean with descriptive
+interval [-7.41,+11.11] pp. Four tasks favor R, three favor K and twenty tie;
+no reliable quality advantage or equivalence is established. R uses 5.39% fewer
+recorded terminal input tokens on those pairs. All 345 generations are known;
+whole-archive historical-source replay/regrading and 718 tests pass. Full
+scientific validation is pending. The closed v3 allocation remains untouched.
+C75, draft v0.42 and the unperformed benchmark proposal are unchanged.
 
 October 8 implementation checkpoint: [rollback E0](../research/ROLLBACK_E0_IMPLEMENTATION_2026-10-08.md)
 is implemented and passes 66 package tests, including nine actual isolated Docker
