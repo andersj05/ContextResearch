@@ -12,13 +12,14 @@ this catalog; see [scope and maintenance](README.md).
 
 ## Model studies
 
-[Read all 14 summaries](summaries/model-studies.md).
+[Read all 15 summaries](summaries/model-studies.md).
 
 | Study | Evidence date | Status |
 |---|---|---|
 | [Rollback subscription adapter and E1 calibration](summaries/model-studies.md#rollback-subscription) | 2026-10-08 | completed |
 | [Harder-task rollback development study](summaries/model-studies.md#rollback-recovery-v3) | 2026-10-08 | closed-with-gaps |
 | [Corrected Python-language subscription engineering retest](summaries/model-studies.md#rollback-python-retest) | 2026-10-08 | completed |
+| [Instrumented mathematical rollback follow-up](summaries/model-studies.md#rollback-math-followup-v4) | 2026-10-08 | prepared |
 | [Authored subscription rollback engineering pilot](summaries/model-studies.md#rollback-authored-pilot) | 2026-10-08 | completed |
 | [Source-only scope inference and launch phases](summaries/model-studies.md#scope-inference) | 2026-10-01 | closed-with-gaps |
 | [Executed-workflow comparison and stopped suffix](summaries/model-studies.md#workflow-executed) | 2026-09-29 | closed-with-gaps |

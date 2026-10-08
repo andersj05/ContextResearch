@@ -1506,3 +1506,18 @@ ProtocolError or clear its reservation. Before a distinct follow-up, capture
 whitelisted protocol reason codes and event counts without credentials, provider
 messages or opaque session logs. Freeze any new source and whole allocation
 before outcomes; no task substitution, significance stopping or manuscript upgrade.
+
+## October 8: freeze a separate instrumented math follow-up
+
+The user-requested search for useful results continues with 32 new mathematical
+tasks under seed 2026100851 and new identities. Math-only scope is chosen after
+v3's prefix produced recovery pairs while six coding attempts passed. This is
+development evidence, not confirmation or a coding-performance comparison.
+
+Preserve actor prompts, low initial effort, medium writers/recovery, schemas,
+isolation, one-generation/one-usage acceptance and no-retry unknown stopping.
+Observe only whitelisted reason codes, fixed RPC/numeric codes and event counts;
+never retain raw provider messages, arguments, credentials or reasoning logs.
+Nine new invariant tests and 19 installed-client probes pass. Independently
+certify the entire new finite task set before freezing all 424 possible calls.
+The complete-pair screen is now coded separately from scheduled-pair metadata.

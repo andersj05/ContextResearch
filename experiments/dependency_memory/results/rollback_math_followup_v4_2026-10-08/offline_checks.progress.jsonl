@@ -1,0 +1,9 @@
+{"test_id":"experiments.dependency_memory.rollback_math_followup_v4.test_followup.FollowupTests.test_complete_pair_screen_rejects_six_scheduled_but_only_five_complete","status":"passed","elapsed_seconds":0.1242019000055734}
+{"test_id":"experiments.dependency_memory.rollback_math_followup_v4.test_followup.FollowupTests.test_complete_synthetic_32_task_run_and_archive","status":"passed","elapsed_seconds":64.33140260000073}
+{"test_id":"experiments.dependency_memory.rollback_math_followup_v4.test_followup.FollowupTests.test_duplicate_metering_remains_unknown_with_useful_counts","status":"passed","elapsed_seconds":0.00038240000139921904}
+{"test_id":"experiments.dependency_memory.rollback_math_followup_v4.test_followup.FollowupTests.test_new_whole_cohort_disjoint_and_416_identities_fixed","status":"passed","elapsed_seconds":0.0877695999952266}
+{"test_id":"experiments.dependency_memory.rollback_math_followup_v4.test_followup.FollowupTests.test_observation_preserves_complete_queued_reply_and_metering","status":"passed","elapsed_seconds":0.0002314000012120232}
+{"test_id":"experiments.dependency_memory.rollback_math_followup_v4.test_followup.FollowupTests.test_only_fixed_rpc_methods_and_numeric_codes_are_retained","status":"passed","elapsed_seconds":0.0003919000009773299}
+{"test_id":"experiments.dependency_memory.rollback_math_followup_v4.test_followup.FollowupTests.test_provider_error_messages_and_unknown_codes_are_never_retained","status":"passed","elapsed_seconds":0.00011339999036863446}
+{"test_id":"experiments.dependency_memory.rollback_math_followup_v4.test_followup.FollowupTests.test_tool_and_unrecognized_item_still_rejected_without_arguments","status":"passed","elapsed_seconds":0.00018509999790694565}
+{"test_id":"experiments.dependency_memory.rollback_math_followup_v4.test_followup.FollowupTests.test_unknown_records_sanitized_reason_and_stops_second_block","status":"passed","elapsed_seconds":12.469885899990913}

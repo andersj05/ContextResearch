@@ -56,6 +56,22 @@ Protocol: [experiments/dependency_memory/rollback_pilot/cohort_v2/CONTRACT.md](.
 
 Saved results: [experiments/dependency_memory/results/rollback_subscription_2026-10-08/pilot_python_v2](../dependency_memory/results/rollback_subscription_2026-10-08/pilot_python_v2); [experiments/dependency_memory/results/rollback_subscription_2026-10-08/corrected_reference_checks.json](../dependency_memory/results/rollback_subscription_2026-10-08/corrected_reference_checks.json); [experiments/dependency_memory/results/rollback_subscription_2026-10-08/language_offline_checks.json](../dependency_memory/results/rollback_subscription_2026-10-08/language_offline_checks.json).
 
+## rollback-math-followup-v4
+
+**Instrumented mathematical rollback follow-up** — 2026-10-08 · prepared
+
+A separate 32-task mathematical development cohort is prepared under new seeds and identities. The actor policy and safety checks are unchanged; observation adds only whitelisted protocol reason codes and event counts. Nine invariant tests, 19 installed-client probes and independent agreement on 1,111,296 finite candidates pass.
+
+**Limits:** Model outcomes unperformed. Math-only scope is a post-observation development choice, not held-out confirmation or a coding claim. The v3 allocation and unknown reservation remain closed and unresolved. Freeze all 424 possible calls before dispatch; no task replacement, retry, native-harness or manuscript upgrade.
+
+Read first: [experiments/dependency_memory/rollback_math_followup_v4/README.md](../dependency_memory/rollback_math_followup_v4/README.md).
+
+Implementation: [experiments/dependency_memory/rollback_math_followup_v4](../dependency_memory/rollback_math_followup_v4).
+
+Protocol: [experiments/dependency_memory/rollback_math_followup_v4/PROTOCOL.md](../dependency_memory/rollback_math_followup_v4/PROTOCOL.md).
+
+Saved results: [experiments/dependency_memory/results/rollback_math_followup_v4_2026-10-08](../dependency_memory/results/rollback_math_followup_v4_2026-10-08).
+
 ## rollback-authored-pilot
 
 **Authored subscription rollback engineering pilot** — 2026-10-08 · completed
