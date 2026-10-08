@@ -1,0 +1,56 @@
+{
+  "status": "authored_review_fixture_not_model_observation",
+  "excluded_from_all_model_study_cohorts": true,
+  "task": {
+    "domain": "math",
+    "variables": ["x", "y"],
+    "bounds": {"minimum": 0, "maximum": 9},
+    "constraints": [
+      {"id": "q1", "coefficients": [1, 1], "equals": 10},
+      {"id": "q2", "coefficients": [1, 2], "equals": 14}
+    ]
+  },
+  "checkpoint": {
+    "facts": [{"statement": "Both variables are integers from 0 to 9.", "source_ids": ["task"]}],
+    "open_requirements": ["Find an assignment satisfying both equations."],
+    "tentative_options": [
+      {"id": "O1", "method": "Eliminate one variable using the equations.", "unverified_assumptions": []},
+      {"id": "O2", "method": "Try equal values as a candidate.", "unverified_assumptions": ["Equality is a guess, not a task requirement."]}
+    ],
+    "possible_checks": ["Substitute the candidate into q1 and q2."]
+  },
+  "branch": [
+    {
+      "status": "candidate",
+      "chosen_option": "O2",
+      "assumptions": ["Try x equal to y."],
+      "observations": [{"statement": "The equal-value trial satisfying q1 is x=5, y=5. ROUTING_MARKER_7Q9", "source_ids": ["q1"]}],
+      "artifact": {"values": [5, 5]}
+    }
+  ],
+  "feedback": {
+    "receipt_id": "F1",
+    "candidate_id": "B1",
+    "status": "public_mismatch",
+    "check_id": "q2",
+    "observed": 15,
+    "expected": 14,
+    "detail": "For x=5 and y=5, x+2y=15; residual is 1.",
+    "truncated": false
+  },
+  "lesson": {
+    "failure_kind": "public_constraint_violation",
+    "evidence_ids": ["F1"],
+    "refuted_claims": ["The equal-value candidate x=5, y=5 satisfies every task constraint."],
+    "retained_observations": ["That candidate satisfies q1 but fails q2."],
+    "uncertainties": ["A complete satisfying assignment remains to be found."]
+  },
+  "summary": {"summary": "An equal-value trial satisfying q1 gave x=5 and y=5. Public check F1 found q2 evaluates to 15 instead of 14. Both constraints still govern the task."},
+  "evaluator_only": {"illustrative_valid_artifact": {"values": [6, 4]}, "claims_about_model_performance": "none"},
+  "continuation_field_map": {
+    "K": {"trial": "branch", "feedback": "feedback", "lesson": "lesson", "summary": null},
+    "R": {"trial": null, "feedback": "feedback", "lesson": "lesson", "summary": null},
+    "Z": {"trial": null, "feedback": "feedback", "lesson": null, "summary": null},
+    "G": {"trial": null, "feedback": "feedback", "lesson": null, "summary": "summary"}
+  }
+}
