@@ -1486,3 +1486,23 @@ means and use a descriptive family interval only with six represented complete
 eligible families. Do not count terminal draws or variants as independent
 families. Preserve earlier bundles, public-pass stopping and all failures;
 optional human ratings, benchmark tasks and manuscript upgrades remain separate.
+
+## October 8: preserve the interrupted harder study and instrument future failures
+
+An unknown Z terminal dispatch stops the fixed 64-task v3 study after thirteen
+tasks start. Preserve all 64 dispositions, 832 task slots, 86 completed
+generations including calibration and one unresolved 4.225-credit reservation.
+Do not resume the allocation, retry its identity or launch its later blocks.
+
+Five completed math pairs give K=9/10 and R=9/10, with one benefit, one drawback
+and three ties. Only five pairs complete, so the new protocol's complete-pair
+screen fails despite the inherited scheduled-pair flag being true. Bounds over
+six scheduled pairs do not cover unstarted tasks. The full-cohort effect remains
+unidentified. Six started coding tasks pass, leaving no coding recovery pair.
+
+All 709 tests and independent archive/isolated regrading pass. Current read-only
+subscription allowance is available; that does not identify the earlier generic
+ProtocolError or clear its reservation. Before a distinct follow-up, capture
+whitelisted protocol reason codes and event counts without credentials, provider
+messages or opaque session logs. Freeze any new source and whole allocation
+before outcomes; no task substitution, significance stopping or manuscript upgrade.

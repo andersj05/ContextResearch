@@ -26,11 +26,11 @@ Saved results: [experiments/dependency_memory/results/rollback_subscription_2026
 
 ## rollback-recovery-v3
 
-**Harder-task rollback development study** — 2026-10-08 · checkpoint
+**Harder-task rollback development study** — 2026-10-08 · closed-with-gaps
 
-All 64 new tasks and 840 possible identities were frozen before outcomes. Eight excluded live Luna subscription calibration calls have valid formats and complete metering; fixed-cohort execution is underway. All 416 reference Docker executions and 19 installed-client probes pass; independent graders agree on 1,111,296 finite candidates. Eight controller invariants and the corrected six-mutation archive probe pass.
+Thirteen of 64 fixed tasks start before an unknown terminal ProtocolError stops the study. Five complete math pairs give K=9/10 and R=9/10 with one benefit, one drawback and three ties; six coding candidates pass retained suites. All 709 tests, full scientific validation and independent archive/Docker regrading pass. There are 86 completed generations including calibration and one unknown dispatch.
 
-**Limits:** Final study outcomes pending. Initial low effort and medium recovery change the actor policy; no incorrect branch is forced. Coding variants share eight templates. The initial failed Windows cleanup test is retained and repaired. No reliable rollback, native-harness or benchmark result is claimed.
+**Limits:** Fifty-one tasks never start; no retry or later-block evasion. Only five math pairs complete, failing the complete-pair screen; no coding pair exists. Scheduled-pair bounds do not cover unstarted tasks. Known usage is 1.7534130 planning credits with one 4.225-credit unresolved reservation; actual charges and the past protocol reason are unknown. No superiority, equivalence, native-harness or benchmark claim.
 
 Read first: [research/ROLLBACK_HARDER_DEVELOPMENT_2026-10-08.md](../../research/ROLLBACK_HARDER_DEVELOPMENT_2026-10-08.md); [experiments/dependency_memory/rollback_recovery_v3/README.md](../dependency_memory/rollback_recovery_v3/README.md).
 

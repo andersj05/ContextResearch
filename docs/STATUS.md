@@ -4,12 +4,13 @@ October 8 subscription checkpoint: [the earlier engineering runs](../research/RO
 complete 115 metered Luna generations but yield only one math recovery pair and
 no coding pairs, establishing no reliable rollback advantage. At the user's
 request to continue, [a new 64-task development study](../research/ROLLBACK_HARDER_DEVELOPMENT_2026-10-08.md)
-is running with low initial effort and medium recovery. All 416 coding reference
-executions, 1,111,296 finite math candidates and 19 installed-client probes pass.
-The full allocation was frozen before outcomes; all eight excluded live
-calibration calls have valid formats and metering. Final results are pending.
-Earlier archives and 700-test verification
-remain intact. C75, draft v0.42 and the unperformed benchmark proposal are unchanged.
+closed with gaps after an unknown terminal protocol failure: five math recovery
+pairs show one benefit, one drawback and three ties, averaging 0 pp R-minus-K.
+Six coding candidates pass; 51 tasks never start. The complete-pair screen fails,
+and the full-cohort effect is unidentified. All 709 tests, full scientific
+validation and independent archive/Docker regrading pass. A separate instrumented
+follow-up is being prepared; the closed allocation will not be resumed. C75,
+draft v0.42 and the unperformed benchmark proposal are unchanged.
 
 October 8 implementation checkpoint: [rollback E0](../research/ROLLBACK_E0_IMPLEMENTATION_2026-10-08.md)
 is implemented and passes 66 package tests, including nine actual isolated Docker
