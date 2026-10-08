@@ -1382,3 +1382,31 @@ limitations. Launch no new full-population extension, runtime measurement,
 model call or natural episode. The proposed next steps remain unperformed.
 Practical benefit and external review remain open; this is a daily
 checkpoint, not completion of the research objective.
+
+## October 8: implement offline rollback E0 and keep live gates explicit
+
+At the user's request, implement and test the first stage of the review handoff,
+using only a fake transport. Save [the implementation finding](../research/ROLLBACK_E0_IMPLEMENTATION_2026-10-08.md)
+and a separately cataloged controlled engineering archive. Preserve historical
+allocations, supplied design bytes, source provenance and other working-tree edits.
+
+Use immutable typed actor/evaluator records and a strict renderer; K/R retain
+identical task/checkpoint/feedback/lesson and instructions. Append transactional
+call events before dispatch, preserve ambiguous reservations, and never retry a
+possibly dispatched identity. Writer failures block only dependent conditions;
+K capacity loss blocks the pair before either continuation. Grade after generation,
+retain the full cohort, and report fixed-denominator missingness and policy projections.
+
+Bring up the installed Docker engine and pin an official Python 3.11 image. Actual
+reference, incorrect-program, resource, channel and teardown probes pass. The
+66 package tests and five archive probes validate engineering; 210,656 enumerated
+finite candidates and 144 scripted calls are not independent LLM observations.
+Preserve development-check errors and fixes rather than presenting a flawless
+first start. Actual provider spend and model calls are zero.
+
+The prepared bundle has 12 real generated math tasks and eight calibration
+requests. Authored coding doubles do not replace the benchmark cohort. A bounded
+static intake pins a candidate dataset revision/loader hash but does not resolve
+source-specific rights, references or retained-test completeness. Keep these gates,
+live endpoint/retry/tokenization/account checks, fresh pricing and a new allocation
+open. E3/E4/E5 remain separate. No new paper claim or rollback-benefit assertion.

@@ -1,5 +1,13 @@
 # Current research status
 
+October 8 implementation checkpoint: [rollback E0](../research/ROLLBACK_E0_IMPLEMENTATION_2026-10-08.md)
+is implemented and passes 66 package tests, including nine actual isolated Docker
+checks, plus five archive evidence probes. The saved bundle binds 12 math tasks
+and eight unsent calibration requests. This supersedes the controller-implementation
+item below: next prepare the real coding cohort and audit live transport/accounting
+before a separate launch allocation. Zero model calls or measured rollback benefit;
+C75 and draft v0.42 remain unchanged. All 663 repository tests pass with no skips.
+
 Updated: October 2, 2026. This document is the current handoff; older scope documents are historical.
 
 **End of day:** Experimentation stopped on October 2 at the user's request.

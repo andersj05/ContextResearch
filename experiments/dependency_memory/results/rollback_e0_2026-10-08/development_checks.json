@@ -1,0 +1,18 @@
+{
+  "as_of": "2026-10-08",
+  "kind": "bounded_engineering_check_history_not_model_experiments",
+  "model_calls": 0,
+  "checks": [
+    {"scope": "records_renderer_math", "tests": 14, "passed": 14},
+    {"scope": "first_controller_check", "tests": 17, "errors": 15, "failures": 0, "resolution": "Corrected an append-event parameter name collision and rejected unsupported transports before creating a ledger connection."},
+    {"scope": "second_controller_check", "tests": 17, "errors": 0, "failures": 1, "resolution": "Corrected the authored test writer to cite F2 after a second branch; a fixed F1 citation had correctly blocked K/R as an unusable lesson."},
+    {"scope": "controller_and_analysis_after_fixes", "tests": 26, "passed": 26},
+    {"scope": "coding_preparation_and_checker", "tests": 11, "passed": 11},
+    {"scope": "actual_docker_integration", "tests": 9, "passed": 9},
+    {"scope": "preparation_bundle", "tests": 6, "passed": 6},
+    {"scope": "navigation_before_registration", "status": "failed", "resolution": "Registered the newly tracked rollback implementation package in the editable catalog and regenerated its views."},
+    {"scope": "final_bound_package_check", "tests": 66, "passed": 66, "skipped": 0, "source": "package_checks.json"},
+    {"scope": "independent_archive_evidence_probes", "tests": 5, "passed": 5, "elapsed_seconds": 64.759, "test_module": "scripts/test_rollback_e0_evidence.py"}
+  ],
+  "interpretation": "Counts from repeated checks overlap and must not be summed as independent tests or trials. Failures were implementation or authored-fixture issues, not observed model failures."
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": "2026-10-08",
+  "kind": "additional_repository_saved_evidence_unit_checks",
+  "tests_run": 16,
+  "passed": 16,
+  "failures": 0,
+  "errors": 0,
+  "elapsed_seconds": 0.562,
+  "modules": [
+    "scripts/test_validate_luna_evidence.py",
+    "scripts/test_validate_revision_runs.py"
+  ],
+  "model_calls": 0,
+  "provider_spend_usd": "0"
+}

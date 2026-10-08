@@ -325,3 +325,17 @@ exposed partial reserved-test fields for ten preview tasks; their IDs are exclud
 in [the task specification](../experiments/dependency_memory/rollback_pilot/TASKS_AND_GRADING.md).
 No full source review, source-code execution, corpus download, license resolution,
 model result or inherited archive-review upgrade is added.
+
+## October 8 rollback implementation intake
+
+The [bounded source record](../provenance/rollback_coding_source_review_2026-10-08.json)
+pins candidate lite dataset revision `0fe84c3912ea0c4d4a78037083943e8f0c4dd505`.
+Statically read its [loader](https://huggingface.co/datasets/livecodebench/code_generation_lite/blob/0fe84c3912ea0c4d4a78037083943e8f0c4dd505/code_generation_lite.py)
+release selector, feature declaration and file iteration, plus the pinned card.
+This is a bounded implementation reading; no loader execution or corpus import.
+
+The selector includes six files for release_v6. The loader's MIT label and card's
+generic Creative Commons tag do not resolve source-specific permissions. No
+dedicated reference-solution field is declared; opaque metadata contents remain
+uninspected. No new task/private-test preview IDs are exposed. Keep the real coding
+cohort gate open; do not treat metadata as a reference or licensing audit.

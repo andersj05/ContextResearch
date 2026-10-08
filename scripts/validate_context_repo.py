@@ -17,6 +17,7 @@ from urllib.parse import unquote
 # Validation must not write bytecode into the repository.
 sys.dont_write_bytecode = True
 from build_paper import citation_keys, read_bibliography
+from build_experiment_index import read_catalog, validate as validate_experiment_catalog
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -371,7 +372,11 @@ def validate_revision_artifacts(results: Path) -> tuple[dict, list[str]]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--exact-chain-compiler", help="Also rerun the full partition search with this C99 compiler")
+    parser.add_argument("--navigation-only", action="store_true",
+                        help="Check documentation and catalog only; skip scientific results and source hashes")
     args = parser.parse_args()
+    if args.navigation_only and args.exact_chain_compiler:
+        parser.error("--navigation-only cannot be combined with --exact-chain-compiler")
     errors = []
     counts = {}
     bibliography = read_bibliography(ROOT / "paper/references.bib")
@@ -384,7 +389,7 @@ def main() -> int:
             errors.append(f"Missing required document: {name}")
 
     documents = [ROOT / "README.md", ROOT / "AGENTS.md", ROOT / "HARNESS_CORPUS_README.md"]
-    for directory in ["docs", "paper", "research", "provenance", "catalog", "paper-notes", "source-notes", "synthesis", "papers", "experiments"]:
+    for directory in ["docs", "paper", "research", "provenance", "catalog", "paper-notes", "source-notes", "synthesis", "papers", "experiments", "scripts"]:
         documents.extend((ROOT / directory).rglob("*.md"))
     documents.extend((ROOT / "sources").glob("*.md"))
     documents.append(ROOT / "sources/harness-snapshots/2026-09-16/README.md")
@@ -429,6 +434,23 @@ def main() -> int:
             if key not in bibliography:
                 errors.append(f"{row['claim_id']}: unknown source {key}")
     counts["paper_claims"] = len(claims)
+
+    catalog_counts, catalog_errors = validate_experiment_catalog(read_catalog())
+    counts.update(catalog_counts)
+    errors.extend(catalog_errors)
+    if args.navigation_only:
+        print(json.dumps({"status": "FAIL" if errors else "PASS", "scope": "navigation-only",
+                          "scientific_results_checked": False, "checks": counts, "errors": errors}, indent=2))
+        return bool(errors)
+
+    rollback_e0_path = ROOT / "experiments/dependency_memory/results/rollback_e0_2026-10-08"
+    if (rollback_e0_path / "summary.json").is_file():
+        from verify_rollback_e0 import verify as verify_rollback_e0
+        try:
+            checked_rollback_e0 = verify_rollback_e0(rollback_e0_path)
+            counts.update({"rollback_e0_" + key: value for key, value in checked_rollback_e0.items()})
+        except (ValueError, OSError, KeyError, TypeError) as exc:
+            errors.append(f"Rollback E0 evidence validation failed: {exc}")
 
     inventory = rows("catalog/pdf-inventory.csv")
     for row in inventory:
