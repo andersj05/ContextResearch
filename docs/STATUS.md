@@ -1,22 +1,20 @@
 # Current research status
 
-October 8 subscription checkpoint: [the earlier engineering runs](../research/ROLLBACK_SUBSCRIPTION_2026-10-08.md)
-complete 115 metered Luna generations but yield only one math recovery pair and
-no coding pairs, establishing no reliable rollback advantage. At the user's
-request to continue, [a new 64-task development study](../research/ROLLBACK_HARDER_DEVELOPMENT_2026-10-08.md)
-closed with gaps after an unknown terminal protocol failure: five math recovery
-pairs show one benefit, one drawback and three ties, averaging 0 pp R-minus-K.
-Six coding candidates pass; 51 tasks never start. The complete-pair screen fails,
-and the full-cohort effect is unidentified. All 709 tests, full scientific
-validation and independent archive/Docker regrading pass. A separate [instrumented
-32-task math follow-up](../research/ROLLBACK_MATH_FOLLOWUP_2026-10-08.md) completes
-27 recovery pairs: R=47/54 versus K=46/54, a +1.85 pp mean with descriptive
+October 8 subscription checkpoint: [the completed 32-task mathematical study](../research/ROLLBACK_MATH_FOLLOWUP_2026-10-08.md)
+has 27 recovery pairs, with R=47/54 versus K=46/54: +1.85 pp and a descriptive
 interval [-7.41,+11.11] pp. Four tasks favor R, three favor K and twenty tie;
 no reliable quality advantage or equivalence is established. R uses 5.39% fewer
 recorded terminal input tokens on those pairs. All 345 generations are known;
-whole-archive historical-source replay/regrading and 718 tests pass. Full
-scientific validation is pending. The closed v3 allocation remains untouched.
-C75, draft v0.42 and the unperformed benchmark proposal are unchanged.
+historical-source archive replay/regrading, 718 repository tests and two separate
+replay-boundary tests, full scientific validation, catalog check and paper
+assembly pass.
+
+[Earlier engineering runs](../research/ROLLBACK_SUBSCRIPTION_2026-10-08.md) yield
+only one math pair and no coding pairs. The [64-task v3 study](../research/ROLLBACK_HARDER_DEVELOPMENT_2026-10-08.md)
+remains closed after an unknown protocol failure: five complete math pairs,
+six coding successes and 51 unstarted tasks leave its full-cohort effect
+unidentified. Its unknown reservation is preserved separately. C75, draft v0.42
+and the unperformed benchmark proposal are unchanged.
 
 October 8 implementation checkpoint: [rollback E0](../research/ROLLBACK_E0_IMPLEMENTATION_2026-10-08.md)
 is implemented and passes 66 package tests, including nine actual isolated Docker

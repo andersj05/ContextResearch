@@ -5,8 +5,8 @@ R=47/54 versus K=46/54 gives +1.85 pp, with a descriptive task interval
 [-7.41,+11.11] pp. Four tasks favor R, three favor K and twenty tie; no reliable
 quality advantage or equivalence is established. All 345 generations, including
 eight excluded calibration calls, are known. Whole-archive source replay and
-independent regrading pass. Full scientific validation is pending; all 718
-repository tests pass without skips.
+independent regrading, full scientific validation, catalog check and paper
+assembly pass; all 718 repository tests pass without skips.
 
 ## Navigation
 
@@ -28,7 +28,12 @@ repository tests pass without skips.
   [whole-archive verification with regrading](archive_verification.json).
 - [Recorded K/R terminal resources](terminal_resource_audit.json) and
   [reproducible extraction](../../../../scripts/audit_rollback_math_v4.py).
+- [Independent SQL totals and original-source replay metadata](supplemental_verification.json).
 - [Full repository test results](repository_checks.json): 718 passed, no skips.
+- [Separate replay-boundary checks](replay_boundary_checks.json): two passed.
+- [Full scientific validation, paper build and catalog check](scientific_validation.json).
+- [Final package inventory and hashes](package_manifest.json), including ledgers
+  and current report/helper bindings.
 - [Qualified coloring case](coloring10_case_note.json): model observation,
   public finite check and an explicitly untested mechanism hypothesis.
 - [Historical source replay readiness](source_replay_readiness.json);

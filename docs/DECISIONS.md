@@ -1551,3 +1551,7 @@ original verifier from that source: all 93 source bindings, 819 evidence files,
 416 task slots, durable accounting, 345 unique threads and candidate regrading
 pass. All 718 repository tests and two replay-boundary tests pass. Preserve all
 earlier archives and leave C75, draft v0.42 and benchmark work unchanged.
+
+Final full scientific validation, paper assembly and catalog checks pass. Seal
+the post-outcome package inventory including durable ledgers and check records;
+keep it distinct from the immutable pre-outcome source and launch freeze.

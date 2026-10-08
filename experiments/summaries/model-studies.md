@@ -60,9 +60,9 @@ Saved results: [experiments/dependency_memory/results/rollback_subscription_2026
 
 **Instrumented mathematical rollback follow-up** — 2026-10-08 · completed
 
-All 32 fixed tasks complete with 27 recovery pairs: R=47/54 versus K=46/54, a +1.85 pp conditional mean with descriptive task interval [-7.41,+11.11] pp. Four tasks favor R, three favor K and twenty tie. R uses 5.39% fewer recorded terminal input tokens. All 345 generations are known; immutable-source archive replay/regrading, 718 repository tests and two replay-boundary tests pass.
+All 32 fixed tasks complete with 27 recovery pairs: R=47/54 versus K=46/54, a +1.85 pp conditional mean with descriptive task interval [-7.41,+11.11] pp. Four tasks favor R, three favor K and twenty tie. R uses 5.39% fewer recorded terminal input tokens. All 345 generations are known; immutable-source archive replay/regrading, 718 repository tests, two replay-boundary tests, full scientific validation, catalog check and paper assembly pass.
 
-**Limits:** Math-only scope is a post-observation development choice with three fixed construction strata, not confirmation or a coding claim. No reliable quality advantage or equivalence; a retained unverified hypothesis is a qualified case, not a proven mechanism. Known allocation usage is 7.5049380 planning credits, not account charges. The v3 unknown reservation remains unresolved. Full scientific validation is pending; no benchmark, native-harness or manuscript upgrade.
+**Limits:** Math-only scope is a post-observation development choice with three fixed construction strata, not confirmation or a coding claim. No reliable quality advantage or equivalence; a retained unverified hypothesis is a qualified case, not a proven mechanism. Known allocation usage is 7.5049380 planning credits, not account charges. The v3 unknown reservation remains unresolved. No benchmark, native-harness or manuscript upgrade.
 
 Read first: [research/ROLLBACK_MATH_FOLLOWUP_2026-10-08.md](../../research/ROLLBACK_MATH_FOLLOWUP_2026-10-08.md); [experiments/dependency_memory/rollback_math_followup_v4/PROTOCOL.md](../dependency_memory/rollback_math_followup_v4/PROTOCOL.md).
 

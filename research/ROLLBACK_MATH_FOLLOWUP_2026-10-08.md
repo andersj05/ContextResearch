@@ -1,8 +1,8 @@
 # Instrumented mathematical rollback follow-up
 
 October 8, 2026. Status: all 32 selected tasks are complete; whole-archive
-verification and independent regrading pass. Full repository scientific
-validation is pending. This is mathematical development evidence from GPT-6
+verification, independent regrading, full scientific validation, catalog checks
+and paper assembly pass. This is mathematical development evidence from GPT-6
 Luna through the user's existing Codex subscription.
 
 Rollback removes the explicit trial record while retaining the same checkpoint,
@@ -115,6 +115,11 @@ pairs. It excludes shared initial work and lesson writing.
 | Output tokens, including reasoning | 101,237 | 91,673 | -9,564 (-9.45%) |
 | Calculated planning credits | 1.5939715 | 1.4517395 | -0.1422320 (-8.92%) |
 
+The recorded non-reasoning output count is 1,822 tokens in each arm; the entire
+9,564-token output difference lies in the reasoning count. Of the -0.1422320
+credit difference, -0.0226820 comes from input/cache accounting and -0.1195500
+from output. These are elementary decompositions of the saved telemetry.
+
 The input reduction is observed under this serialization and pinned client.
 Output and credit differences also depend on stochastic continuations; they
 do not prove reproducible quality-preserving cost savings. These actual calls
@@ -132,6 +137,13 @@ agreement on 1,111,296 finite candidates pass. All eight calibration formats
 and both terminal scores pass independent regrading. The full repository suite
 passes **718/718 tests, with zero failures, errors or skips**; two additional
 historical-replay extraction and boundary tests also pass.
+
+[The final offline validation record](../experiments/dependency_memory/results/rollback_math_followup_v4_2026-10-08/scientific_validation.json)
+saves the actual full scientific validator output, catalog check and paper build,
+all with exit code zero. A [post-outcome package inventory](../experiments/dependency_memory/results/rollback_math_followup_v4_2026-10-08/package_manifest.json)
+binds the final evidence and check files, durable ledgers, report and helpers.
+It supplements the original frozen source and sealed launch evidence; it is
+not a replacement pre-outcome freeze.
 
 [Whole-archive verification](../experiments/dependency_memory/results/rollback_math_followup_v4_2026-10-08/archive_verification.json)
 reconciles all 32 tasks, 416 slots, 93 source bindings, 819 sealed evidence files,
