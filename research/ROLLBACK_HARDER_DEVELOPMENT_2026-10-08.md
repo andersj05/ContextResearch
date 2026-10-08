@@ -1,6 +1,6 @@
 # Harder-task rollback development study
 
-October 8, 2026. Status: prepared; new live outcomes are unperformed.
+October 8, 2026. Status: fixed-cohort execution in progress; final outcomes pending.
 
 The [earlier subscription pilot](ROLLBACK_SUBSCRIPTION_2026-10-08.md) produced
 only one eligible math recovery pair and no coding pairs. It did not establish
@@ -47,3 +47,8 @@ are repeated measurements on a task. Optional independent human ratings remain
 unperformed. Any result describes this development cohort; it does not establish
 benchmark performance or improvements over native compaction. The original
 LiveCodeBench proposal and later policy/confirmation stages remain unperformed.
+
+The complete cohort and all identities were frozen in commit `3c8a1ee` before
+live outcomes. All eight separate subscription calibration calls completed with
+valid formats and complete usage; they are excluded from study outcomes. The
+study then proceeds through all 64 tasks without adapting selection to answers.

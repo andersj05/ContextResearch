@@ -26,11 +26,11 @@ Saved results: [experiments/dependency_memory/results/rollback_subscription_2026
 
 ## rollback-recovery-v3
 
-**Harder-task rollback development study** — 2026-10-08 · prepared
+**Harder-task rollback development study** — 2026-10-08 · checkpoint
 
-A new fixed 64-task development cohort is prepared: 32 coupled finite math tasks and 32 Python coding instances from eight shared algorithmic families. Independent graders agree on 1,111,296 finite candidates; all 416 reference Docker executions and 19 installed-client low/medium and expanded-input mock probes pass.
+All 64 new tasks and 840 possible identities were frozen before outcomes. Eight excluded live Luna subscription calibration calls have valid formats and complete metering; fixed-cohort execution is underway. All 416 reference Docker executions and 19 installed-client probes pass; independent graders agree on 1,111,296 finite candidates. Eight controller invariants and the corrected six-mutation archive probe pass.
 
-**Limits:** Unperformed model outcomes. Initial low effort and medium recovery change the actor policy; no incorrect branch is forced. Coding variants are clustered. All tasks and 832 possible episode identities plus eight separate calibration calls must be frozen before dispatch. No reliable rollback, native-harness or benchmark result is claimed.
+**Limits:** Final study outcomes pending. Initial low effort and medium recovery change the actor policy; no incorrect branch is forced. Coding variants share eight templates. The initial failed Windows cleanup test is retained and repaired. No reliable rollback, native-harness or benchmark result is claimed.
 
 Read first: [research/ROLLBACK_HARDER_DEVELOPMENT_2026-10-08.md](../../research/ROLLBACK_HARDER_DEVELOPMENT_2026-10-08.md); [experiments/dependency_memory/rollback_recovery_v3/README.md](../dependency_memory/rollback_recovery_v3/README.md).
 

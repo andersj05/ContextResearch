@@ -4,10 +4,11 @@ October 8 subscription checkpoint: [the earlier engineering runs](../research/RO
 complete 115 metered Luna generations but yield only one math recovery pair and
 no coding pairs, establishing no reliable rollback advantage. At the user's
 request to continue, [a new 64-task development study](../research/ROLLBACK_HARDER_DEVELOPMENT_2026-10-08.md)
-is prepared with low initial effort and medium recovery. All 416 coding reference
+is running with low initial effort and medium recovery. All 416 coding reference
 executions, 1,111,296 finite math candidates and 19 installed-client probes pass.
-New model outcomes are unperformed; whole-cohort source/allocation freezing and
-archive verification precede dispatch. Earlier archives and 700-test verification
+The full allocation was frozen before outcomes; all eight excluded live
+calibration calls have valid formats and metering. Final results are pending.
+Earlier archives and 700-test verification
 remain intact. C75, draft v0.42 and the unperformed benchmark proposal are unchanged.
 
 October 8 implementation checkpoint: [rollback E0](../research/ROLLBACK_E0_IMPLEMENTATION_2026-10-08.md)
