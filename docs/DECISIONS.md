@@ -1447,3 +1447,21 @@ Keep task contents, references, retained tests, IDs and order identical. This is
 a disclosed post-observation engineering correction, not independent confirmation
 or a new cohort. Repeat all reference checks before freezing. Report both runs'
 actual usage and preserve every earlier error rather than hiding the first run.
+
+## October 8: close the engineering tests without a superiority claim
+
+The corrected full-cohort retest completes 57 metered generations: twelve coding
+successes, ten initial math successes, one eligible math failure and one task
+without a candidate. The single paired task has K=[1,1], R=[1,1], Z=[1,0]; an
+oversized generic summary blocks G. Both domains fail the six-pair feasibility
+screen. Report the tie and all missing/unperformed conditions without a general
+rollback advantage, equivalence or lesson-benefit claim. Do not expand the cohort
+according to this observed direction; a harder/longer study needs a new design.
+
+All 700 current repository tests, six archive probes per version, independent
+isolated regrading, full scientific validation and paper assembly pass. Preserve
+the 115-generation combined accounting (2.1885340 calculated planning credits),
+the language-gap run, the same-cohort correction and all source/evidence hashes.
+Actual account charges remain unavailable; these are not independent cohorts.
+The benchmark source and later stages remain unperformed; no manuscript claim
+is upgraded.

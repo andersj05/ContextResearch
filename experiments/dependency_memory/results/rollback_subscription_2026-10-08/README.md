@@ -1,7 +1,24 @@
-# Rollback subscription verification and E1
+# Rollback subscription implementation and live results
 
 October 8, 2026. The [finding](../../../../research/ROLLBACK_SUBSCRIPTION_2026-10-08.md)
 describes the user's selected subscription route and its limitations.
+
+Implementation and testing are complete: **700 repository tests pass**, and
+115 GPT-6 Luna medium generations have known metering. The corrected 24-task
+run has one paired math recovery case, K=[1,1] and R=[1,1], too few to establish
+an advantage. All twelve corrected coding candidates pass their retained suites.
+This is an authored engineering pilot and same-cohort retest; the proposed
+LiveCodeBench comparison remains unperformed.
+
+| Stage | Complete generations | Calculated planning credits |
+|---|---:|---:|
+| Excluded E1 calibration | 8 | 0.0727825 |
+| Preserved instruction-gap run | 50 | 1.0515735 |
+| Corrected Python-language retest | 57 | 1.0641780 |
+| Total | 115 | 2.1885340 |
+
+Actual subscription account charges are unavailable. Reasoning is part of output,
+and retesting these 24 tasks does not create 48 independent tasks.
 
 - [Offline checks](offline_checks.json): 19 scientific access, accounting and
   failure-semantics tests pass; no model calls.
@@ -28,6 +45,18 @@ describes the user's selected subscription route and its limitations.
   tests and two cohort-wide correction checks pass.
 - [Corrected frozen retest](pilot_python_v2/manifest.json): explicit Python 3.11
   requirement, same 24 tasks and exact suites, new launch identities before answers.
+- [Corrected outcomes](pilot_python_v2/report.md) and [full analysis](pilot_python_v2/analysis.json):
+  every task, all four conditions, paired and secondary denominators, missingness
+  and resource projections. G is unscheduled after an oversized summary.
+- [Corrected archive probes](archive_checks_v2.json) and [independent Docker regrading](verification_pilot_v2.json):
+  six probes pass; all public dispositions and scored retained suites agree.
+- [First-run independent regrading](verification_pilot_v1.json): earlier C++
+  syntax outcomes and successful retained grades are reproduced.
+- [Current repository tests](final_repository_checks.json): 700/700 pass, no
+  failures, errors or skips; [structured progress](final_repository_checks.progress.jsonl).
+- [Full scientific validation](repository_validation.json) and [paper build](paper_build.json).
+- [Final navigation and catalog validation](navigation_checks.json).
+- [Combined machine-readable summary](summary.json) and [implementation issues](implementation_notes.json).
 
 E1 used 21,568 input and 1,509 output tokens (514 reasoning included in output),
 calculated as 0.0727825 planning credits. Actual account charges are unavailable.

@@ -1,7 +1,10 @@
 # Rollback subscription implementation and calibration
 
-October 8, 2026. E1 and the first authored engineering run are complete;
-the corrected-language retest is frozen before generation.
+October 8, 2026. Implementation, E1 calibration and both authored engineering
+runs are complete and verified. **All 700 repository tests pass.** The corrected
+run has one paired math recovery task: K and R each succeed on both draws.
+That denominator fails the proposed feasibility screen and establishes no
+reliable rollback advantage. The planned LiveCodeBench comparison is unperformed.
 The user selected their existing Codex
 subscription for GPT-6 Luna and explicitly removed token/cost budget concerns
 for completing these tests. This supersedes the direct-API preference and
@@ -90,3 +93,71 @@ pass. The new [manifest](../experiments/dependency_memory/results/rollback_subsc
 binds the complete corrected cohort, sources and separate 312-call allocation
 before outcomes. This is a post-observation engineering retest of the same tasks;
 the two runs cannot be added as independent cohorts or called confirmation.
+
+## Corrected run: objective results
+
+The [corrected run](../experiments/dependency_memory/results/rollback_subscription_2026-10-08/pilot_python_v2/report.md)
+completed **57 generations**, with no unknown dispatch or metering. All twelve
+coding candidates passed their thirteen retained tests. Math had ten correct
+initial candidates, one eligible public failure and one task without a candidate
+after both allowed branch steps. No task was replaced and no failure was forced.
+
+| Domain | Selected tasks | Initial correct | Public failure tasks | Paired K/R tasks | R minus K |
+|---|---:|---:|---:|---:|---|
+| Math | 12 | 10 | 1 | 1 | 0 percentage points, one observed task |
+| Coding | 12 | 12 | 0 | 0 | Unidentified |
+
+The sole paired task is `math-coloring-02`, the first tie in frozen task order.
+The model encoded entire allowed-color lists as integers outside the public
+bounds. Its public receipt reported value 3 outside [0,2]. With identical C/F/L,
+K scores [1,1], R [1,1] and Z [1,0]. G is unperformed because the generated
+summary exceeded the 1,024-visible-byte cap; its paid generation is retained.
+No continuation repeats the exact rejected candidate. Optional blinded human
+measures remain unreviewed and are not used as evidence of a mechanism.
+
+R minus Z is 50 percentage points on this same single task. It is a descriptive
+observation, not a general lesson-benefit claim. There is no eligible R/G
+comparison, bootstrap interval or confirmatory p-value. The observed [0,0]
+missingness bounds for R minus K concern missing data, not statistical uncertainty.
+Both domains fall below the prespecified six-pair feasibility screen.
+
+R used 3,260 input tokens per terminal draw versus K's 3,522, but produced more
+output tokens. The two R terminal calls used 0.05225 calculated planning credits
+versus K's 0.0413725. Shorter input did not produce lower calculated terminal
+cost in this case. Standalone policy projections are separate views of observed
+episodes; they are not independently run policies or additive actual charges.
+
+## Combined usage and verification
+
+| Stage | Complete generations | Calculated planning credits |
+|---|---:|---:|
+| E1 calibration | 8 | 0.0727825 |
+| First authored instruction-gap run | 50 | 1.0515735 |
+| Corrected same-cohort retest | 57 | 1.0641780 |
+| Total | 115 | 2.1885340 |
+
+Combined usage is 348,967 input tokens (50,176 cached), 114,321 output tokens
+and a 79,448-token reasoning subset already included in output. There were no
+API-key calls, API-dollar charges, unknown dispatches or identity retries.
+Calculated credits are not actual subscription account charges. These are 24
+unique study tasks retested, plus excluded calibration fixtures; they are not
+48 independent tasks.
+
+The [machine-readable summary](../experiments/dependency_memory/results/rollback_subscription_2026-10-08/summary.json)
+independently prices the combined exclusive token buckets and reconciles the
+stage ledgers. The complete current repository suite passes **700/700**, with
+zero failures, errors or skips. Ten installed-client localhost probes and all
+156 reference-test executions per version pass. Both archives pass one positive
+verification plus five semantic tamper probes, and every scored retained suite
+and public candidate disposition was independently rechecked in isolated Docker.
+The corrected archive binds 63 source files, 179 evidence files and all 312
+possible call slots. The original E0 and E1 archives remain verifiable.
+
+Full scientific repository regeneration and paper assembly pass; the updated
+navigation/catalog check is recorded separately. There are still 75 manuscript
+claims, 63 bibliography entries and 48 cited paper sources. No claim was upgraded.
+The [implementation notes](../experiments/dependency_memory/results/rollback_subscription_2026-10-08/implementation_notes.json)
+retain development errors and the language correction. E3/E4/E5 remain plans.
+The implementation is ready for a separately designed harder/longer task cohort;
+this small engineering study does not justify a rollback-superiority or native
+harness-performance assertion.

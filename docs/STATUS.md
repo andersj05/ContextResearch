@@ -1,12 +1,13 @@
 # Current research status
 
-October 8 subscription checkpoint: [E1 and the first authored 24-task run](../research/ROLLBACK_SUBSCRIPTION_2026-10-08.md)
-are complete. Eight calibration and 50 task generations have full metering; the
-first run has zero paired recovery cases and revealed an omitted Python-language
-instruction. A cohort-wide corrected retest is separately frozen. The 682-test
-repository suite, ten runner tests, two language checks and six archive probes
-pass; a full current rerun is ongoing. The planned LiveCodeBench cohort remains
-unperformed. No rollback-benefit claim or manuscript upgrade is established.
+October 8 subscription checkpoint: [implementation and both authored engineering runs](../research/ROLLBACK_SUBSCRIPTION_2026-10-08.md)
+are complete. All 700 repository tests pass with no skips; 115 GPT-6 Luna medium
+generations have complete metering. The corrected 24-task retest has 12/12 coding
+successes and one paired math recovery case, K=[1,1], R=[1,1]. This fails the
+six-pair feasibility screen and establishes no reliable rollback advantage.
+The earlier language-instruction gap is preserved; both archives and independent
+Docker regrading pass. The planned LiveCodeBench cohort remains unperformed.
+C75 and draft v0.42 are unchanged; later E3/E4/E5 stages remain plans.
 
 October 8 implementation checkpoint: [rollback E0](../research/ROLLBACK_E0_IMPLEMENTATION_2026-10-08.md)
 is implemented and passes 66 package tests, including nine actual isolated Docker

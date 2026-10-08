@@ -14,7 +14,7 @@ production or native-compaction gains. Missing answers remain missing.
 
 All eight live GPT-6 Luna medium subscription E1 requests completed with valid formats and complete metering; both terminal answers passed grading. Nineteen offline adapter tests and ten installed-client unauthenticated localhost probes pass. Calculated usage is 0.0727825 planning credits; the archive verifies 45 source bindings and 32 evidence files.
 
-**Limits:** Calibration fixtures are excluded from study cohorts. No configurable 16384-token output cap or immutable server revision is established. Planning credits are not actual account charges. E2 task/source and protocol-amendment gates remain open; no historical allocation is reopened.
+**Limits:** E1 fixtures are excluded from study cohorts. Later authored-source engineering runs are cataloged separately. No configurable 16384-token output cap or immutable server revision is established. Planning credits are not actual charges. Original LiveCodeBench source/reference gates remain open; no historical allocation is reopened.
 
 Read first: [research/ROLLBACK_SUBSCRIPTION_2026-10-08.md](../../research/ROLLBACK_SUBSCRIPTION_2026-10-08.md); [experiments/dependency_memory/rollback_pilot/subscription/README.md](../dependency_memory/rollback_pilot/subscription/README.md).
 
@@ -26,11 +26,11 @@ Saved results: [experiments/dependency_memory/results/rollback_subscription_2026
 
 ## rollback-python-retest
 
-**Corrected Python-language subscription engineering retest** — 2026-10-08 · prepared
+**Corrected Python-language subscription engineering retest** — 2026-10-08 · completed
 
-All 24 original task IDs, problem contents and tests are retained; every coding statement now requires Python 3.11 standard library. Two amendment invariants and all 156 repeated isolated reference tests pass. Exact corrected actors, source files and a separate 312-call schedule are frozen before generation.
+Corrected 24-task same-cohort retest completes 57 metered GPT-6 Luna medium subscription generations. All twelve coding candidates pass retained suites; math has ten initial successes, one eligible failure and one task without a candidate. The single paired math task gives K=[1,1], R=[1,1], Z=[1,0]; an oversized summary blocks G. All 700 current repository tests, six archive probes per version and independent Docker regrading pass.
 
-**Limits:** Post-observation retest of the same tasks after correcting version 1; not an independent cohort or confirmation. Original benchmark source remains unperformed. Planning credits are not actual account charges; provider-default output and unavailable immutable revision remain disclosed.
+**Limits:** One math pair and zero coding pairs fail the six-pair feasibility screen: no reliable rollback advantage or equivalence is established. Same tasks retested after a language-contract correction, not independent confirmation. LiveCodeBench remains unperformed. Calculated run usage is 1.0641780 planning credits, not actual account charges; provider-default output and unavailable immutable revision remain disclosed.
 
 Read first: [experiments/dependency_memory/rollback_pilot/cohort_v2/README.md](../dependency_memory/rollback_pilot/cohort_v2/README.md); [research/ROLLBACK_SUBSCRIPTION_2026-10-08.md](../../research/ROLLBACK_SUBSCRIPTION_2026-10-08.md).
 
