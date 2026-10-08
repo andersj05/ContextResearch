@@ -95,7 +95,7 @@ class ActorTask:
         if domain == "math":
             data = obj(public, ("domain", "statement", "family", "variables", "bounds",
                                 "constraints", "allowed_colors", "edges"))
-            if data["family"] not in {"integer", "modular", "coloring"}:
+            if string(data["family"]) not in {"integer", "modular", "coloring"}:
                 raise InterfaceError("unknown math family")
             data["variables"] = strings(data["variables"])
             n = len(data["variables"])
