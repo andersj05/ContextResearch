@@ -1,13 +1,14 @@
 # Current research status
 
-October 8 subscription checkpoint: [implementation and both authored engineering runs](../research/ROLLBACK_SUBSCRIPTION_2026-10-08.md)
-are complete. All 700 repository tests pass with no skips; 115 GPT-6 Luna medium
-generations have complete metering. The corrected 24-task retest has 12/12 coding
-successes and one paired math recovery case, K=[1,1], R=[1,1]. This fails the
-six-pair feasibility screen and establishes no reliable rollback advantage.
-The earlier language-instruction gap is preserved; both archives and independent
-Docker regrading pass. The planned LiveCodeBench cohort remains unperformed.
-C75 and draft v0.42 are unchanged; later E3/E4/E5 stages remain plans.
+October 8 subscription checkpoint: [the earlier engineering runs](../research/ROLLBACK_SUBSCRIPTION_2026-10-08.md)
+complete 115 metered Luna generations but yield only one math recovery pair and
+no coding pairs, establishing no reliable rollback advantage. At the user's
+request to continue, [a new 64-task development study](../research/ROLLBACK_HARDER_DEVELOPMENT_2026-10-08.md)
+is prepared with low initial effort and medium recovery. All 416 coding reference
+executions, 1,111,296 finite math candidates and 19 installed-client probes pass.
+New model outcomes are unperformed; whole-cohort source/allocation freezing and
+archive verification precede dispatch. Earlier archives and 700-test verification
+remain intact. C75, draft v0.42 and the unperformed benchmark proposal are unchanged.
 
 October 8 implementation checkpoint: [rollback E0](../research/ROLLBACK_E0_IMPLEMENTATION_2026-10-08.md)
 is implemented and passes 66 package tests, including nine actual isolated Docker

@@ -1465,3 +1465,24 @@ the language-gap run, the same-cohort correction and all source/evidence hashes.
 Actual account charges remain unavailable; these are not independent cohorts.
 The benchmark source and later stages remain unperformed; no manuscript claim
 is upgraded.
+
+## October 8: freeze a harder development cohort before further outcomes
+
+The user asked to keep going to find useful results using the existing Luna
+subscription. The earlier corrected pilot has one paired math task and no coding
+pairs. Prepare 64 new tasks and change initial checkpoint/branch effort to low,
+with identical medium recovery settings for all arms. Both difficulty and effort
+change; do not attribute an eligibility change to effort alone or call this
+held-out confirmation of the original policy. Never force an incorrect branch.
+
+Freeze all tasks, eight excluded calibration requests and 832 possible study
+identities before outcomes. Four 16-task ledgers are accounting partitions of
+one fixed cohort; an unresolved call stops every later block. Complete all tasks
+regardless of direction. Explicitly tell both writers the same 4,096-byte limit.
+Keep subscription planning credits separate from actual account charges.
+
+Coding has four variants of each of eight templates. Report family counts and
+means and use a descriptive family interval only with six represented complete
+eligible families. Do not count terminal draws or variants as independent
+families. Preserve earlier bundles, public-pass stopping and all failures;
+optional human ratings, benchmark tasks and manuscript upgrades remain separate.

@@ -49,13 +49,20 @@ conditional published 1,050,000-input / 128,000-output envelope remain declared.
 Calculated subscription credits are separate from unavailable account charges;
 reasoning is a subset of output. No credit purchase, fallback or API-key billing.
 
-All 832 possible call identities (64 x 13) are frozen. Four sequential blocks
+Eight separate live format/transport calibration calls use the existing fixtures
+and are excluded from every study outcome. Freeze their exact requests and
+identities too; an invalid format or unknown dispatch stops the whole study.
+The total possible allocation is 840 calls, including calibration.
+
+All 832 possible study call identities (64 x 13) are frozen. Four sequential blocks
 of 16 tasks have separate at-most-208-call ledgers, within the tested ledger's
 existing 320-call capacity. Blocks are an accounting partition, not an adaptive
 sampling policy. Every block and task belongs to one fixed cohort. Unknown
 dispatch/usage stops the entire study and leaves all remaining slots unperformed;
 never launch a later block to evade an unresolved reservation. An exclusive
 study marker prevents relaunch. No cost ceiling or significance stopping rule.
+The response observation deadline is 900 seconds per dispatched call; expiry is
+unknown dispatch, never a zero score or authorization to retry.
 
 Primary outcome: task-level R-minus-K conditional recovery, separately for math
 and coding, with every selected task's initial disposition, preparation failure,
