@@ -1433,3 +1433,17 @@ not fulfill or relabel the proposed LiveCodeBench comparison. Freeze all tasks,
 source hashes and possible call identities before outcomes; preserve public-pass
 stops and every skipped task/condition. Later stages and manuscript claims remain
 separate decisions.
+
+## October 8: preserve the instruction-gap run and freeze a complete language retest
+
+The first authored run returned six C++ programs to a Python-only grader because
+the coding actor statements omitted the Python requirement. Preserve all 24 tasks,
+50 metered generations and every disposition; do not label that mismatch a clean
+coding-ability result. No public mismatch was eligible for recovery in this run.
+
+Correct the language contract in every coding statement and retest all 24 tasks
+under new frozen sources, actor bindings, launch identities and a separate ledger.
+Keep task contents, references, retained tests, IDs and order identical. This is
+a disclosed post-observation engineering correction, not independent confirmation
+or a new cohort. Repeat all reference checks before freezing. Report both runs'
+actual usage and preserve every earlier error rather than hiding the first run.

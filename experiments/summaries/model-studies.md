@@ -24,13 +24,29 @@ Protocol: [experiments/dependency_memory/rollback_pilot/subscription/CONTRACT.md
 
 Saved results: [experiments/dependency_memory/results/rollback_subscription_2026-10-08](../dependency_memory/results/rollback_subscription_2026-10-08).
 
+## rollback-python-retest
+
+**Corrected Python-language subscription engineering retest** — 2026-10-08 · prepared
+
+All 24 original task IDs, problem contents and tests are retained; every coding statement now requires Python 3.11 standard library. Two amendment invariants and all 156 repeated isolated reference tests pass. Exact corrected actors, source files and a separate 312-call schedule are frozen before generation.
+
+**Limits:** Post-observation retest of the same tasks after correcting version 1; not an independent cohort or confirmation. Original benchmark source remains unperformed. Planning credits are not actual account charges; provider-default output and unavailable immutable revision remain disclosed.
+
+Read first: [experiments/dependency_memory/rollback_pilot/cohort_v2/README.md](../dependency_memory/rollback_pilot/cohort_v2/README.md); [research/ROLLBACK_SUBSCRIPTION_2026-10-08.md](../../research/ROLLBACK_SUBSCRIPTION_2026-10-08.md).
+
+Implementation: [experiments/dependency_memory/rollback_pilot/cohort_v2](../dependency_memory/rollback_pilot/cohort_v2); [experiments/dependency_memory/rollback_pilot/verification_v1](../dependency_memory/rollback_pilot/verification_v1).
+
+Protocol: [experiments/dependency_memory/rollback_pilot/cohort_v2/CONTRACT.md](../dependency_memory/rollback_pilot/cohort_v2/CONTRACT.md).
+
+Saved results: [experiments/dependency_memory/results/rollback_subscription_2026-10-08/pilot_python_v2](../dependency_memory/results/rollback_subscription_2026-10-08/pilot_python_v2); [experiments/dependency_memory/results/rollback_subscription_2026-10-08/corrected_reference_checks.json](../dependency_memory/results/rollback_subscription_2026-10-08/corrected_reference_checks.json); [experiments/dependency_memory/results/rollback_subscription_2026-10-08/language_offline_checks.json](../dependency_memory/results/rollback_subscription_2026-10-08/language_offline_checks.json).
+
 ## rollback-authored-pilot
 
-**Authored subscription rollback engineering pilot** — 2026-10-08 · prepared
+**Authored subscription rollback engineering pilot** — 2026-10-08 · completed
 
-A source-amended cohort freezes all 24 tasks and 312 possible call slots before generation. Twelve original coding references pass 156 isolated retained-test executions; ten subscription runner invariants pass. The twelve math tasks retain their independently checked E0 hashes.
+All 24 authored-source engineering tasks are preserved; 50 GPT-6 Luna medium subscription generations have complete metering and no unknown dispatch. Eleven math candidates and six Python coding candidates passed grading; six other coding candidates were C++ under actor statements that omitted the Python language requirement. Zero eligible public mismatches produced no K/R pairs. Six archive probes pass.
 
-**Limits:** Repository-authored structural strata are not benchmark difficulty ratings. The planned LiveCodeBench comparison remains unperformed. Subscription planning credits are not actual charges; provider output cap and immutable revision are unavailable. No model outcome or general rollback benefit is claimed by preparation.
+**Limits:** This instruction-gap run is not a clean coding-ability comparison. It used 1.0515735 calculated planning credits, not measured account charges. Zero recovery pairs leaves R minus K unidentified and fails the feasibility screen. Coding structural strata are not benchmark ratings; LiveCodeBench remains unperformed. A corrected-language retest is separately recorded.
 
 Read first: [experiments/dependency_memory/rollback_pilot/cohort_v1/README.md](../dependency_memory/rollback_pilot/cohort_v1/README.md); [research/ROLLBACK_SUBSCRIPTION_2026-10-08.md](../../research/ROLLBACK_SUBSCRIPTION_2026-10-08.md).
 

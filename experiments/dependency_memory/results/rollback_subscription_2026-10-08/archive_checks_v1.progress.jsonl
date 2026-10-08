@@ -1,0 +1,6 @@
+{"test_id":"experiments.dependency_memory.rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_complete_live_archive_verifies","status":"passed","elapsed_seconds":2.4481479999958538}
+{"test_id":"experiments.dependency_memory.rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_erased_task_rejected_after_resealing","status":"passed","elapsed_seconds":3.8865829999995185}
+{"test_id":"experiments.dependency_memory.rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_inconsistent_coding_success_rejected_after_resealing","status":"passed","elapsed_seconds":4.72045259999868}
+{"test_id":"experiments.dependency_memory.rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_lost_skipped_slot_rejected_after_resealing","status":"passed","elapsed_seconds":3.6893828000029316}
+{"test_id":"experiments.dependency_memory.rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_private_payload_rejected_even_with_rebound_request_hash","status":"passed","elapsed_seconds":3.8483504000032553}
+{"test_id":"experiments.dependency_memory.rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_shared_thread_rejected_with_consistent_export_and_response","status":"passed","elapsed_seconds":4.1056119999993825}

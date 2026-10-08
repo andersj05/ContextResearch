@@ -18,9 +18,23 @@ describes the user's selected subscription route and its limitations.
   files; 45 frozen source bindings; append-only ledger reconciled with exports.
 - [Authored coding references](authored_reference_checks.json): 12 reference
   programs pass all 156 retained test executions in Docker; zero model calls.
+- [First authored run](pilot_authored_v1/report.md): all 24 tasks preserved,
+  50 complete generations, no eligible paired recovery cases. Six coding answers
+  were C++ under statements that omitted the Python execution-language contract.
+- [First archive probes](archive_checks_v1.json): one positive verification and
+  five semantic tamper probes pass; no model calls.
+- [Corrected references](corrected_reference_checks.json) and
+  [language invariants](language_offline_checks.json): all 156 retained reference
+  tests and two cohort-wide correction checks pass.
+- [Corrected frozen retest](pilot_python_v2/manifest.json): explicit Python 3.11
+  requirement, same 24 tasks and exact suites, new launch identities before answers.
 
 E1 used 21,568 input and 1,509 output tokens (514 reasoning included in output),
 calculated as 0.0727825 planning credits. Actual account charges are unavailable.
 The E0 archive and old studies are preserved. Calibration and reference checks
 do not establish rollback benefit; the authored pilot is a disclosed change from
 the proposed benchmark task source.
+
+The first run is retained as evidence of the instruction gap. Its calculated
+usage is 1.0515735 planning credits. Version 2 is a post-observation engineering
+retest of the same tasks; it is not an independent cohort or confirmation.

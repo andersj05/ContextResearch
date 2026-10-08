@@ -1,11 +1,12 @@
 # Current research status
 
-October 8 subscription checkpoint: [eight live GPT-6 Luna medium calibration calls](../research/ROLLBACK_SUBSCRIPTION_2026-10-08.md)
-passed every format check; both terminal answers passed grading. Nineteen adapter
-tests and ten installed-client isolation/retry probes pass. An authored 24-task
-engineering pilot is being prepared under a disclosed task-source amendment;
-the proposed LiveCodeBench comparison remains unperformed. No rollback-benefit
-claim or manuscript upgrade is established.
+October 8 subscription checkpoint: [E1 and the first authored 24-task run](../research/ROLLBACK_SUBSCRIPTION_2026-10-08.md)
+are complete. Eight calibration and 50 task generations have full metering; the
+first run has zero paired recovery cases and revealed an omitted Python-language
+instruction. A cohort-wide corrected retest is separately frozen. The 682-test
+repository suite, ten runner tests, two language checks and six archive probes
+pass; a full current rerun is ongoing. The planned LiveCodeBench cohort remains
+unperformed. No rollback-benefit claim or manuscript upgrade is established.
 
 October 8 implementation checkpoint: [rollback E0](../research/ROLLBACK_E0_IMPLEMENTATION_2026-10-08.md)
 is implemented and passes 66 package tests, including nine actual isolated Docker

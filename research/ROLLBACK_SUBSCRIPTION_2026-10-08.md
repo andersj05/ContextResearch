@@ -1,6 +1,7 @@
 # Rollback subscription implementation and calibration
 
-October 8, 2026. E1 calibration complete; authored E2 engineering pilot in preparation.
+October 8, 2026. E1 and the first authored engineering run are complete;
+the corrected-language retest is frozen before generation.
 The user selected their existing Codex
 subscription for GPT-6 Luna and explicitly removed token/cost budget concerns
 for completing these tests. This supersedes the direct-API preference and
@@ -57,5 +58,35 @@ reference programs are unresolved. A separately disclosed [authored source amend
 provides twelve original coding tasks alongside the specified twelve math tasks
 for a complete engineering pilot. Every coding reference passed all 13 retained
 tests in Docker (156 executions total); ten additional runner invariants pass.
-Its structural difficulty labels are not benchmark ratings. E2 outcomes will be
-reported separately after the exact cohort and new 312-call allocation are frozen.
+Its structural difficulty labels are not benchmark ratings.
+
+## First authored run and language-contract correction
+
+The [first 24-task run](../experiments/dependency_memory/results/rollback_subscription_2026-10-08/pilot_authored_v1/report.md)
+completed 50 generations with no unknown usage or dispatches. Eleven math tasks
+produced correct candidates; one produced no candidate after both allowed branch
+steps. Six coding candidates passed all retained tests. Six other coding answers
+were C++ and were rejected as syntax errors by the Python grader. The coding
+actor statements omitted the Python 3.11 requirement: **this is an implementation
+instruction gap**, not a clean measure of programming ability. Every response,
+candidate, task disposition and unused call slot is preserved.
+
+There were zero eligible public mismatches and therefore zero paired recovery
+tasks. R minus K is unidentified, not zero. This fails the six-task feasibility
+screen in both domains and does not establish rollback superiority or equivalence.
+Six archive verification/tamper probes pass. Independent public checks and
+retained-suite grading are repeated in Docker without any model request.
+
+Version 1 used 151,734 input tokens (12,544 cached) and 56,037 output tokens
+(38,868 reasoning included), calculated as **1.0515735 planning credits**.
+Its 50 generations are separate from eight E1 calibration generations.
+
+A [version-2 amendment](../experiments/dependency_memory/rollback_pilot/cohort_v2/CONTRACT.md)
+adds the explicit Python 3.11 standard-library requirement to every coding actor
+statement. All 24 tasks are retested, including previous successes; problem
+contents, reference programs, reserved tests, task IDs and ordering are identical.
+Two language-contract invariants and all 156 repeated reference-test executions
+pass. The new [manifest](../experiments/dependency_memory/results/rollback_subscription_2026-10-08/pilot_python_v2/manifest.json)
+binds the complete corrected cohort, sources and separate 312-call allocation
+before outcomes. This is a post-observation engineering retest of the same tasks;
+the two runs cannot be added as independent cohorts or called confirmation.
