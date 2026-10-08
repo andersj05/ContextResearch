@@ -339,3 +339,19 @@ generic Creative Commons tag do not resolve source-specific permissions. No
 dedicated reference-solution field is declared; opaque metadata contents remain
 uninspected. No new task/private-test preview IDs are exposed. Keep the real coding
 cohort gate open; do not treat metadata as a reference or licensing audit.
+
+## October 8 subscription route refresh
+
+Read the official [authentication](https://learn.chatgpt.com/docs/auth),
+[app-server](https://learn.chatgpt.com/docs/app-server),
+[configuration](https://learn.chatgpt.com/docs/config-file/config-reference),
+[model selection](https://learn.chatgpt.com/docs/models) and
+[subscription pricing](https://learn.chatgpt.com/docs/pricing) pages for the
+user-selected GPT-6 Luna route. Reopened the
+[model page](https://developers.openai.com/api/docs/models/gpt-6-luna) for its
+published envelope. The bounded reading establishes documented subscription
+sign-in, scriptable protocol, current credit rates and rollout tracking. It
+does not establish a configurable per-response output cap or an immutable
+subscription model revision. The [versioned implementation finding](../research/ROLLBACK_SUBSCRIPTION_2026-10-08.md)
+separates those sources from actual installed-client mock observations and live
+calibration. No inherited source-review status is upgraded.

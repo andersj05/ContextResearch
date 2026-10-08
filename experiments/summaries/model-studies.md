@@ -8,6 +8,22 @@ contracts remain authoritative. Summaries describe the dated study scope.
 Reported costs and counts are study-specific. These studies do not establish
 production or native-compaction gains. Missing answers remain missing.
 
+## rollback-subscription
+
+**Rollback subscription adapter and E1 calibration** — 2026-10-08 · prepared
+
+Versioned GPT-6 Luna medium subscription adapter passes 19 offline invariants and ten installed-client unauthenticated localhost probes. Eight separate E1 requests are frozen before generation under the user's new authorization.
+
+**Limits:** Calibration fixtures are excluded from study cohorts. No configurable 16384-token output cap or immutable server revision is established. Planning credits are not actual account charges. E2 task/source and protocol-amendment gates remain open; no historical allocation is reopened.
+
+Read first: [research/ROLLBACK_SUBSCRIPTION_2026-10-08.md](../../research/ROLLBACK_SUBSCRIPTION_2026-10-08.md); [experiments/dependency_memory/rollback_pilot/subscription/README.md](../dependency_memory/rollback_pilot/subscription/README.md).
+
+Implementation: [experiments/dependency_memory/rollback_pilot/subscription](../dependency_memory/rollback_pilot/subscription).
+
+Protocol: [experiments/dependency_memory/rollback_pilot/subscription/CONTRACT.md](../dependency_memory/rollback_pilot/subscription/CONTRACT.md).
+
+Saved results: [experiments/dependency_memory/results/rollback_subscription_2026-10-08](../dependency_memory/results/rollback_subscription_2026-10-08).
+
 ## scope-inference
 
 **Source-only scope inference and launch phases** — 2026-10-01 · closed-with-gaps

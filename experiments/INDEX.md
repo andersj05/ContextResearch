@@ -12,10 +12,11 @@ this catalog; see [scope and maintenance](README.md).
 
 ## Model studies
 
-[Read all 10 summaries](summaries/model-studies.md).
+[Read all 11 summaries](summaries/model-studies.md).
 
 | Study | Evidence date | Status |
 |---|---|---|
+| [Rollback subscription adapter and E1 calibration](summaries/model-studies.md#rollback-subscription) | 2026-10-08 | prepared |
 | [Source-only scope inference and launch phases](summaries/model-studies.md#scope-inference) | 2026-10-01 | closed-with-gaps |
 | [Executed-workflow comparison and stopped suffix](summaries/model-studies.md#workflow-executed) | 2026-09-29 | closed-with-gaps |
 | [Observed-handoff development comparison](summaries/model-studies.md#workflow-live) | 2026-09-29 | completed |
