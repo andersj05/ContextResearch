@@ -60,9 +60,9 @@ Saved results: [experiments/dependency_memory/results/rollback_subscription_2026
 
 **Instrumented mathematical rollback follow-up** — 2026-10-08 · checkpoint
 
-All 32 new mathematical tasks and 424 possible identities are frozen in commit 1e927f8 before outcomes. Eight excluded live calibration calls pass format and independent grading verification; cohort execution is in progress. Nine invariant tests, 19 installed-client probes and independent agreement on 1,111,296 finite candidates pass. Sanitized observation preserves the original collector's acceptance rules.
+The first fixed 16-task block verifies 183 completed generations and 15 complete recovery pairs: K=26/30 and R=26/30, a 0 pp conditional difference with descriptive task interval [-10,+10] pp. Second-block execution continues. All 718 repository tests, nine added invariants, 19 installed-client probes and independent finite certification pass; eight excluded calibration calls regrade successfully.
 
-**Limits:** Final outcomes pending. Math-only scope is a post-observation development choice, not confirmation or a coding claim. The v3 allocation and unknown reservation remain closed and unresolved. A frozen README link typo requires post-execution documentation repair with original-source verifier replay. No task replacement, retry, native-harness or manuscript upgrade.
+**Limits:** Interim outcomes only; final cohort pending. Math-only scope is a post-observation development choice, not confirmation or a coding claim. The v3 unknown reservation remains unresolved. Original source reconstructs byte-for-byte from commit 1e927f8 for verifier replay after a frozen README link repair. No superiority, equivalence, task replacement, retry, native-harness or manuscript upgrade.
 
 Read first: [research/ROLLBACK_MATH_FOLLOWUP_2026-10-08.md](../../research/ROLLBACK_MATH_FOLLOWUP_2026-10-08.md); [experiments/dependency_memory/rollback_math_followup_v4/PROTOCOL.md](../dependency_memory/rollback_math_followup_v4/PROTOCOL.md).
 

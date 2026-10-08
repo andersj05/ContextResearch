@@ -3,6 +3,13 @@
 October 8, 2026. Status: the frozen 32-task development run is in progress;
 final outcomes and independent whole-archive regrading are pending.
 
+The completed first 16-task accounting block has 15 complete paired recovery
+cases and one malformed initial record. Independent source, canonical-input,
+ledger and candidate rechecks pass. K=26/30, R=26/30, Z=25/30 and G=24/30 known
+draws. Its conditional R-minus-K mean is 0 pp, with a descriptive task-resampling
+interval [-10, +10] pp. These are interim block results, not the final cohort,
+equivalence or a stopping criterion. The second block continues unchanged.
+
 The [earlier 64-task development study](ROLLBACK_HARDER_DEVELOPMENT_2026-10-08.md)
 closed with an unknown protocol failure after five complete math pairs and six
 coding successes. Its gaps, source files and unresolved reservation remain
