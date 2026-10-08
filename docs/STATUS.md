@@ -1,5 +1,12 @@
 # Current research status
 
+October 8 subscription checkpoint: [eight live GPT-6 Luna medium calibration calls](../research/ROLLBACK_SUBSCRIPTION_2026-10-08.md)
+passed every format check; both terminal answers passed grading. Nineteen adapter
+tests and ten installed-client isolation/retry probes pass. An authored 24-task
+engineering pilot is being prepared under a disclosed task-source amendment;
+the proposed LiveCodeBench comparison remains unperformed. No rollback-benefit
+claim or manuscript upgrade is established.
+
 October 8 implementation checkpoint: [rollback E0](../research/ROLLBACK_E0_IMPLEMENTATION_2026-10-08.md)
 is implemented and passes 66 package tests, including nine actual isolated Docker
 checks, plus five archive evidence probes. The saved bundle binds 12 math tasks

@@ -1,6 +1,7 @@
 # Rollback subscription implementation and calibration
 
-October 8, 2026. Work in progress. The user selected their existing Codex
+October 8, 2026. E1 calibration complete; authored E2 engineering pilot in preparation.
+The user selected their existing Codex
 subscription for GPT-6 Luna and explicitly removed token/cost budget concerns
 for completing these tests. This supersedes the direct-API preference and
 credential question; no API key is needed for this route.
@@ -25,8 +26,36 @@ published model envelope as a conditional planning assumption. Byte admission,
 token telemetry, calculated credits and actual account usage remain separate.
 The original API USD estimate cannot price these subscription calls.
 
-Saved artifacts and final outcomes will be recorded under
-`experiments/dependency_memory/results/rollback_subscription_2026-10-08/`.
-Calibration outcomes do not measure a rollback benefit. The real coding cohort,
-source/reference/test verification and a frozen E2 amendment remain required
-before the complete task comparison.
+All **eight live E1 requests completed**, passed their strict format checks and
+returned complete token telemetry. The two terminal candidates were correct;
+the coding answer passed all three retained tests in isolated Docker. No tool
+items, unknown usage or identity retry was observed. The archive verifies eight
+identities, 45 source bindings and 32 evidence files. This is calibration success,
+not evidence of a rollback benefit.
+
+| E1 usage | Observed value |
+|---|---:|
+| Input tokens | 21,568 |
+| Cached input tokens | 0 |
+| Output tokens, including reasoning | 1,509 |
+| Reasoning subset | 514 |
+| Calculated subscription planning credits | 0.0727825 |
+| API-key model calls / API-dollar spend | 0 / 0 |
+
+Actual subscription account charges are unavailable. The calculation uses
+dated published credit rates, not API token prices, and does not add reasoning
+twice. There was no token or cost budget stopping gate; unknown transport or
+metering would still have stopped the allocation for scientific validity.
+
+The [result bundle](../experiments/dependency_memory/results/rollback_subscription_2026-10-08/README.md)
+keeps raw structured requests, visible final answers, usage events, append-only
+SQLite accounting and verification separate from this finding. No opaque
+reasoning transcript or credentials are archived.
+
+The proposed LiveCodeBench cohort remains unprepared: source permissions and
+reference programs are unresolved. A separately disclosed [authored source amendment](../experiments/dependency_memory/rollback_pilot/cohort_v1/CONTRACT.md)
+provides twelve original coding tasks alongside the specified twelve math tasks
+for a complete engineering pilot. Every coding reference passed all 13 retained
+tests in Docker (156 executions total); ten additional runner invariants pass.
+Its structural difficulty labels are not benchmark ratings. E2 outcomes will be
+reported separately after the exact cohort and new 312-call allocation are frozen.

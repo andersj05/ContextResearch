@@ -11,7 +11,7 @@ contracts remain authoritative. Summaries describe the dated study scope.
 
 Review packet v0.2 specifies the 24-task four-condition pilot and separate later stages. The offline controller, typed contexts, exact math graders, isolated coding runner, durable accounting and analysis are implemented; E0 verification is reported separately.
 
-**Limits:** E1/E2 and all later model stages remain unperformed. The coding source/license/reference cohort, audited live transport, tokenizer, account/model revision and new launch allocation remain open. The proposed 320-call / USD 5 envelope is not an allocation.
+**Limits:** The original LiveCodeBench v0.2 cohort and later stages remain unperformed. E1 subscription calibration is reported separately; a disclosed authored-source engineering amendment is prepared. The original API USD estimate is not subscription accounting.
 
 Read first: [docs/ROLLBACK_REVIEW_HANDOFF_2026-10-08.md](../../docs/ROLLBACK_REVIEW_HANDOFF_2026-10-08.md); [experiments/dependency_memory/rollback_pilot/README.md](../dependency_memory/rollback_pilot/README.md); [research/ROLLBACK_PILOT_DESIGN_2026-10-07.md](../../research/ROLLBACK_PILOT_DESIGN_2026-10-07.md).
 

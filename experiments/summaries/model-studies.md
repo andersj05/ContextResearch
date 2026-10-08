@@ -10,9 +10,9 @@ production or native-compaction gains. Missing answers remain missing.
 
 ## rollback-subscription
 
-**Rollback subscription adapter and E1 calibration** — 2026-10-08 · prepared
+**Rollback subscription adapter and E1 calibration** — 2026-10-08 · completed
 
-Versioned GPT-6 Luna medium subscription adapter passes 19 offline invariants and ten installed-client unauthenticated localhost probes. Eight separate E1 requests are frozen before generation under the user's new authorization.
+All eight live GPT-6 Luna medium subscription E1 requests completed with valid formats and complete metering; both terminal answers passed grading. Nineteen offline adapter tests and ten installed-client unauthenticated localhost probes pass. Calculated usage is 0.0727825 planning credits; the archive verifies 45 source bindings and 32 evidence files.
 
 **Limits:** Calibration fixtures are excluded from study cohorts. No configurable 16384-token output cap or immutable server revision is established. Planning credits are not actual account charges. E2 task/source and protocol-amendment gates remain open; no historical allocation is reopened.
 
@@ -23,6 +23,22 @@ Implementation: [experiments/dependency_memory/rollback_pilot/subscription](../d
 Protocol: [experiments/dependency_memory/rollback_pilot/subscription/CONTRACT.md](../dependency_memory/rollback_pilot/subscription/CONTRACT.md).
 
 Saved results: [experiments/dependency_memory/results/rollback_subscription_2026-10-08](../dependency_memory/results/rollback_subscription_2026-10-08).
+
+## rollback-authored-pilot
+
+**Authored subscription rollback engineering pilot** — 2026-10-08 · prepared
+
+A source-amended cohort freezes all 24 tasks and 312 possible call slots before generation. Twelve original coding references pass 156 isolated retained-test executions; ten subscription runner invariants pass. The twelve math tasks retain their independently checked E0 hashes.
+
+**Limits:** Repository-authored structural strata are not benchmark difficulty ratings. The planned LiveCodeBench comparison remains unperformed. Subscription planning credits are not actual charges; provider output cap and immutable revision are unavailable. No model outcome or general rollback benefit is claimed by preparation.
+
+Read first: [experiments/dependency_memory/rollback_pilot/cohort_v1/README.md](../dependency_memory/rollback_pilot/cohort_v1/README.md); [research/ROLLBACK_SUBSCRIPTION_2026-10-08.md](../../research/ROLLBACK_SUBSCRIPTION_2026-10-08.md).
+
+Implementation: [experiments/dependency_memory/rollback_pilot/cohort_v1](../dependency_memory/rollback_pilot/cohort_v1).
+
+Protocol: [experiments/dependency_memory/rollback_pilot/cohort_v1/CONTRACT.md](../dependency_memory/rollback_pilot/cohort_v1/CONTRACT.md).
+
+Saved results: [experiments/dependency_memory/results/rollback_subscription_2026-10-08/pilot_authored_v1](../dependency_memory/results/rollback_subscription_2026-10-08/pilot_authored_v1); [experiments/dependency_memory/results/rollback_subscription_2026-10-08/authored_reference_checks.json](../dependency_memory/results/rollback_subscription_2026-10-08/authored_reference_checks.json); [experiments/dependency_memory/results/rollback_subscription_2026-10-08/cohort_offline_checks.json](../dependency_memory/results/rollback_subscription_2026-10-08/cohort_offline_checks.json).
 
 ## scope-inference
 

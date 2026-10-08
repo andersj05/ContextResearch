@@ -1410,3 +1410,26 @@ static intake pins a candidate dataset revision/loader hash but does not resolve
 source-specific rights, references or retained-test completeness. Keep these gates,
 live endpoint/retry/tokenization/account checks, fresh pricing and a new allocation
 open. E3/E4/E5 remain separate. No new paper claim or rollback-benefit assertion.
+
+## October 8: use the requested subscription and disclose the engineering amendment
+
+The user selected their existing Codex subscription for GPT-6 Luna and removed
+token/cost budget concerns for completing implementation and tests. Use the
+official installed app-server and existing ChatGPT sign-in; no API credential or
+historical allocation is needed. Preserve the completed eight-call E1 separately
+from a new at-most-312-call engineering pilot allocation. Unknown dispatch or
+metering still stops for evidential validity; no purchase or credit fallback.
+
+The installed client has no established configurable 16,384-output-token ceiling.
+Declare provider-default output, UTF-8-byte admission, unavailable immutable model
+revision and calculated subscription planning credits in a versioned amendment.
+Never call those credits actual account charges or reuse API-dollar estimates.
+
+The original benchmark source still lacks verified permissions and reference
+programs. Prepare twelve original coding tasks for a clearly labeled engineering
+pilot, alongside the original twelve math tasks, with independent finite oracles
+and complete reference checks in Docker before freezing. This source change does
+not fulfill or relabel the proposed LiveCodeBench comparison. Freeze all tasks,
+source hashes and possible call identities before outcomes; preserve public-pass
+stops and every skipped task/condition. Later stages and manuscript claims remain
+separate decisions.
