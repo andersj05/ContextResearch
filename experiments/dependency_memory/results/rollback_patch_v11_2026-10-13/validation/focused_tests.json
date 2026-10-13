@@ -1,0 +1,24 @@
+{
+  "evidence_kind": "offline_unittest",
+  "model_calls": 0,
+  "passed": true,
+  "tests_run": 12,
+  "skips": 0,
+  "failures": 0,
+  "errors": 0,
+  "wall_seconds": 47.095633199991425,
+  "test_ids": [
+    "experiments.dependency_memory.rollback_patch_v11.test_allocation.ExploratoryAllocationTests.test_all_256_tasks_receive_four_arms_and_a_fixed_3584_identity_ceiling",
+    "experiments.dependency_memory.rollback_patch_v11.test_allocation.ExploratoryAllocationTests.test_different_failure_or_repair_counts_do_not_match_the_observed_departure",
+    "experiments.dependency_memory.rollback_patch_v11.test_allocation.ExploratoryAllocationTests.test_failed_departure_gate_does_not_generate_or_grade_a_new_allocation",
+    "experiments.dependency_memory.rollback_patch_v11.test_allocation.ExploratoryAllocationTests.test_original_gate_stays_failed_and_exact_audited_departure_is_preserved",
+    "experiments.dependency_memory.rollback_patch_v11.test_allocation.ExploratoryAllocationTests.test_other_gate_failures_cannot_be_waived_as_a_headroom_departure",
+    "experiments.dependency_memory.rollback_patch_v11.test_allocation.ExploratoryAllocationTests.test_same_engine_and_same_source_capacity_and_attempt_contract",
+    "experiments.dependency_memory.rollback_patch_v11.test_allocation.ExploratoryAllocationTests.test_schedule_is_outcome_free_reproducible_and_children_match_their_prefix",
+    "experiments.dependency_memory.rollback_patch_v11.test_allocation.ExploratoryAllocationTests.test_unsupported_cohort_seed_calibration_and_workers_fail_before_grading",
+    "experiments.dependency_memory.rollback_patch_v11.test_tasks.DevelopmentTaskTests.test_all_public_contexts_unique_and_disjoint_from_both_closed_calibrations",
+    "experiments.dependency_memory.rollback_patch_v11.test_tasks.DevelopmentTaskTests.test_fixed_study_seed_ids_hashes_and_development_provenance",
+    "experiments.dependency_memory.rollback_patch_v11.test_tasks.DevelopmentTaskTests.test_fixture_has_four_tasks_and_unchanged_component_oracles_verify",
+    "experiments.dependency_memory.rollback_patch_v11.test_tasks.DevelopmentTaskTests.test_unsupported_calibration_cohort_or_seed_is_rejected"
+  ]
+}

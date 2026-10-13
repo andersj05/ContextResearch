@@ -1,0 +1,1 @@
+{"job":{"arm":"KE","dependency":"0f6072f5bdb0bd7b47026144b08dd623cc42ec379148fc4f4e0308bc7b09ea8b","job_id":"3a1b41532ec30880e3637fdf59f4bdb0731d7fc699fa9c8fdca7dc8d1f789333","task_id":"v5-resolver-medium-hard-1","track":"mechanism"},"result":{"call_ids":[],"disposition":"ineligible_prefix:initial_public_pass","score":null}}

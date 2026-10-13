@@ -1,0 +1,44 @@
+{
+  "completed_test_ids": [
+    "workflow_intake.test_views.SerializedViewsTests.test_future_observations_and_labels_are_not_disclosed_early",
+    "workflow_intake.test_views.SerializedViewsTests.test_memory_limits_count_utf8_bytes",
+    "workflow_intake.test_views.SerializedViewsTests.test_unknown_stage_and_hidden_memory_are_rejected",
+    "workflow_intake.test_views.SerializedViewsTests.test_views_do_not_mutate_source_or_share_state"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "workflow_intake.test_views.SerializedViewsTests.test_future_observations_and_labels_are_not_disclosed_early": "passed",
+    "workflow_intake.test_views.SerializedViewsTests.test_memory_limits_count_utf8_bytes": "passed",
+    "workflow_intake.test_views.SerializedViewsTests.test_unknown_stage_and_hidden_memory_are_rejected": "passed",
+    "workflow_intake.test_views.SerializedViewsTests.test_views_do_not_mutate_source_or_share_state": "passed"
+  },
+  "elapsed_seconds": 0.0016921999922487885,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "workflow_intake.test_views.SerializedViewsTests.test_future_observations_and_labels_are_not_disclosed_early",
+    "workflow_intake.test_views.SerializedViewsTests.test_memory_limits_count_utf8_bytes",
+    "workflow_intake.test_views.SerializedViewsTests.test_unknown_stage_and_hidden_memory_are_rejected",
+    "workflow_intake.test_views.SerializedViewsTests.test_views_do_not_mutate_source_or_share_state"
+  ],
+  "planned_test_ids": [
+    "workflow_intake.test_views.SerializedViewsTests.test_future_observations_and_labels_are_not_disclosed_early",
+    "workflow_intake.test_views.SerializedViewsTests.test_memory_limits_count_utf8_bytes",
+    "workflow_intake.test_views.SerializedViewsTests.test_unknown_stage_and_hidden_memory_are_rejected",
+    "workflow_intake.test_views.SerializedViewsTests.test_views_do_not_mutate_source_or_share_state"
+  ],
+  "process_id": 58860,
+  "skips": 0,
+  "started_test_ids": [
+    "workflow_intake.test_views.SerializedViewsTests.test_future_observations_and_labels_are_not_disclosed_early",
+    "workflow_intake.test_views.SerializedViewsTests.test_memory_limits_count_utf8_bytes",
+    "workflow_intake.test_views.SerializedViewsTests.test_unknown_stage_and_hidden_memory_are_rejected",
+    "workflow_intake.test_views.SerializedViewsTests.test_views_do_not_mutate_source_or_share_state"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\da5bda6fb83c4eb0\\tmp",
+  "tests_run": 4,
+  "unexpected_successes": 0
+}

@@ -1,0 +1,20 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\2e930baa443a2c45\\job.json",
+  "module": "rollback_parallel_v8.test_scheduler",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\2e930baa443a2c45\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\2e930baa443a2c45\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\2e930baa443a2c45\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\2e930baa443a2c45\\tmp",
+  "test_ids": [
+    "rollback_parallel_v8.test_scheduler.DependencySchedulerTests.test_continuation_runs_while_unrelated_prefix_is_still_blocked",
+    "rollback_parallel_v8.test_scheduler.DependencySchedulerTests.test_empty_schedule_and_submission_notifications",
+    "rollback_parallel_v8.test_scheduler.DependencySchedulerTests.test_failed_persistence_never_releases_children",
+    "rollback_parallel_v8.test_scheduler.DependencySchedulerTests.test_global_admission_stop_keeps_fixed_job_dispositions",
+    "rollback_parallel_v8.test_scheduler.DependencySchedulerTests.test_invalid_schedule_rejected_before_any_submission",
+    "rollback_parallel_v8.test_scheduler.DependencySchedulerTests.test_one_arm_error_is_callback_owned_and_does_not_drop_other_dispositions",
+    "rollback_parallel_v8.test_scheduler.DependencySchedulerTests.test_ready_pair_precedes_unstarted_prefix_and_keeps_frozen_arm_order",
+    "rollback_parallel_v8.test_scheduler.DependencySchedulerTests.test_sixteen_and_thirty_two_actual_workers_without_duplicate_jobs",
+    "rollback_parallel_v8.test_scheduler.DependencySchedulerTests.test_unknown_prefix_still_materializes_both_skips_without_retry"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

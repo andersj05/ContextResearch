@@ -1,0 +1,21 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\4831f63f19d40430\\job.json",
+  "module": "experiments.dependency_memory.rollback_development_v5_continuation.test_continuation",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\4831f63f19d40430\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\4831f63f19d40430\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\4831f63f19d40430\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\4831f63f19d40430\\tmp",
+  "test_ids": [
+    "experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.ContinuationTests.test_cumulative_ceiling_includes_completed_and_unknown_admissions",
+    "experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.ContinuationTests.test_diagnostics_exclude_untrusted_strings",
+    "experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.ContinuationTests.test_historical_request_tampering_is_rejected",
+    "experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.ContinuationTests.test_historical_response_reconstructs_without_transport_or_admission",
+    "experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.ContinuationTests.test_partial_episode_restoration_sends_only_next_unsent_identity",
+    "experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.ContinuationTests.test_scheduler_finishes_all_tracks_after_local_shared_writer_failure",
+    "experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.ContinuationTests.test_subscription_or_information_contract_failures_stop_globally",
+    "experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.ContinuationTests.test_unknown_call_leaves_independent_work_admissible",
+    "experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.ContinuationTests.test_unknown_common_lesson_blocks_only_dependent_arms",
+    "experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.EvidenceReplayTest.test_complete_continuation_and_independent_replay_preserve_unknown"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

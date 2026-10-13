@@ -1,0 +1,20 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\3df78b90de0b08cc\\job.json",
+  "module": "tie_coding.test_tie",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\3df78b90de0b08cc\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\3df78b90de0b08cc\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\3df78b90de0b08cc\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\3df78b90de0b08cc\\tmp",
+  "test_ids": [
+    "tie_coding.test_tie.TieCodingTests.test_complete_arithmetic_populations_and_scalar_code_control",
+    "tie_coding.test_tie.TieCodingTests.test_entropy_plans_have_public_slack_and_growing_group_tables_are_polynomial",
+    "tie_coding.test_tie.TieCodingTests.test_finite_controls_diagnostic_routes_and_every_small_parent",
+    "tie_coding.test_tie.TieCodingTests.test_first_compatible_rank_and_prefix_bounds_support_the_entropy_limit",
+    "tie_coding.test_tie.TieCodingTests.test_fraction_intervals_find_the_first_charged_grid_point_independently",
+    "tie_coding.test_tie.TieCodingTests.test_information_contract_invalid_states_and_immutable_discovery",
+    "tie_coding.test_tie.TieCodingTests.test_pair_entropy_optimum_has_universal_mass_bounds_and_feasible_extremum",
+    "tie_coding.test_tie.TieCodingTests.test_root_moment_enclosures_and_small_tail_population_bounds",
+    "tie_coding.test_tie.TieCodingTests.test_weighted_cover_and_literal_source_queries_agree"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

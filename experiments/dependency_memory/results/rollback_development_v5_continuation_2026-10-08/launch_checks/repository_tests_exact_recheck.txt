@@ -1,0 +1,7 @@
+test_full_suffix_dry_run_without_model_or_original_mutation (experiments.dependency_memory.cross_record_continuation.test_continuation.ContinuationTests.test_full_suffix_dry_run_without_model_or_original_mutation) ... ok
+test_budget_reservation_and_failed_attempts_do_not_retry (test_development_pilot.DevelopmentPilotTests.test_budget_reservation_and_failed_attempts_do_not_retry) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.894s
+
+OK

@@ -1,0 +1,17 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\ae41df7e8b991125\\job.json",
+  "module": "schema_checks.test_schema_checks",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\ae41df7e8b991125\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\ae41df7e8b991125\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\ae41df7e8b991125\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\ae41df7e8b991125\\tmp",
+  "test_ids": [
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_checker_does_not_certify_unannotated_state",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_dev_memory_fits_and_second_boundary_uses_parent_only",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_dev_request_envelopes_and_local_handoff",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_exact_id_and_owned_reference_mutations_fail",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_frozen_file_hashes_and_split",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_independent_terminal_controls"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

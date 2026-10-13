@@ -1,0 +1,64 @@
+{
+  "completed_test_ids": [
+    "test_exact_chain.ExactChainTests.test_binary_cuts_cover_all_child_functions_up_to_exchange",
+    "test_exact_chain.ExactChainTests.test_certificate_rejects_invalid_count_and_score_domains",
+    "test_exact_chain.ExactChainTests.test_certificate_rejects_witness_exceeding_declared_capacity",
+    "test_exact_chain.ExactChainTests.test_four_bit_witness_is_graded_on_all_192_outcomes",
+    "test_exact_chain.ExactChainTests.test_gain_identity_matches_all_decoders_on_three_bit_cuts",
+    "test_exact_chain.ExactChainTests.test_invalid_and_incomplete_certificates_are_rejected",
+    "test_exact_chain.ExactChainTests.test_partition_enumerator_matches_labeled_functions_independently",
+    "test_exact_chain.ExactChainTests.test_small_complete_search_matches_outcome_grading"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "test_exact_chain.ExactChainTests.test_binary_cuts_cover_all_child_functions_up_to_exchange": "passed",
+    "test_exact_chain.ExactChainTests.test_certificate_rejects_invalid_count_and_score_domains": "passed",
+    "test_exact_chain.ExactChainTests.test_certificate_rejects_witness_exceeding_declared_capacity": "passed",
+    "test_exact_chain.ExactChainTests.test_four_bit_witness_is_graded_on_all_192_outcomes": "passed",
+    "test_exact_chain.ExactChainTests.test_gain_identity_matches_all_decoders_on_three_bit_cuts": "passed",
+    "test_exact_chain.ExactChainTests.test_invalid_and_incomplete_certificates_are_rejected": "passed",
+    "test_exact_chain.ExactChainTests.test_partition_enumerator_matches_labeled_functions_independently": "passed",
+    "test_exact_chain.ExactChainTests.test_small_complete_search_matches_outcome_grading": "passed"
+  },
+  "elapsed_seconds": 0.7585172999824863,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "test_exact_chain.ExactChainTests.test_binary_cuts_cover_all_child_functions_up_to_exchange",
+    "test_exact_chain.ExactChainTests.test_certificate_rejects_invalid_count_and_score_domains",
+    "test_exact_chain.ExactChainTests.test_certificate_rejects_witness_exceeding_declared_capacity",
+    "test_exact_chain.ExactChainTests.test_four_bit_witness_is_graded_on_all_192_outcomes",
+    "test_exact_chain.ExactChainTests.test_gain_identity_matches_all_decoders_on_three_bit_cuts",
+    "test_exact_chain.ExactChainTests.test_invalid_and_incomplete_certificates_are_rejected",
+    "test_exact_chain.ExactChainTests.test_partition_enumerator_matches_labeled_functions_independently",
+    "test_exact_chain.ExactChainTests.test_small_complete_search_matches_outcome_grading"
+  ],
+  "planned_test_ids": [
+    "test_exact_chain.ExactChainTests.test_binary_cuts_cover_all_child_functions_up_to_exchange",
+    "test_exact_chain.ExactChainTests.test_certificate_rejects_invalid_count_and_score_domains",
+    "test_exact_chain.ExactChainTests.test_certificate_rejects_witness_exceeding_declared_capacity",
+    "test_exact_chain.ExactChainTests.test_four_bit_witness_is_graded_on_all_192_outcomes",
+    "test_exact_chain.ExactChainTests.test_gain_identity_matches_all_decoders_on_three_bit_cuts",
+    "test_exact_chain.ExactChainTests.test_invalid_and_incomplete_certificates_are_rejected",
+    "test_exact_chain.ExactChainTests.test_partition_enumerator_matches_labeled_functions_independently",
+    "test_exact_chain.ExactChainTests.test_small_complete_search_matches_outcome_grading"
+  ],
+  "process_id": 54904,
+  "skips": 0,
+  "started_test_ids": [
+    "test_exact_chain.ExactChainTests.test_binary_cuts_cover_all_child_functions_up_to_exchange",
+    "test_exact_chain.ExactChainTests.test_certificate_rejects_invalid_count_and_score_domains",
+    "test_exact_chain.ExactChainTests.test_certificate_rejects_witness_exceeding_declared_capacity",
+    "test_exact_chain.ExactChainTests.test_four_bit_witness_is_graded_on_all_192_outcomes",
+    "test_exact_chain.ExactChainTests.test_gain_identity_matches_all_decoders_on_three_bit_cuts",
+    "test_exact_chain.ExactChainTests.test_invalid_and_incomplete_certificates_are_rejected",
+    "test_exact_chain.ExactChainTests.test_partition_enumerator_matches_labeled_functions_independently",
+    "test_exact_chain.ExactChainTests.test_small_complete_search_matches_outcome_grading"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\1683b8080b7307a6\\tmp",
+  "tests_run": 8,
+  "unexpected_successes": 0
+}

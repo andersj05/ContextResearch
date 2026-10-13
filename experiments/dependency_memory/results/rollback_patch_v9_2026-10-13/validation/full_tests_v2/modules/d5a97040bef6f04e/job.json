@@ -1,0 +1,27 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\d5a97040bef6f04e\\job.json",
+  "module": "rollback_patch_v9.test_engine",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\d5a97040bef6f04e\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\d5a97040bef6f04e\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\d5a97040bef6f04e\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\d5a97040bef6f04e\\tmp",
+  "test_ids": [
+    "rollback_patch_v9.test_engine.PatchEngineTests.test_factorial_contract_checks_task_and_diff_against_authoritative_source",
+    "rollback_patch_v9.test_engine.PatchEngineTests.test_first_four_requests_vary_only_deletion_and_lesson_and_keep_source_facts",
+    "rollback_patch_v9.test_engine.PatchEngineTests.test_hidden_outcome_does_not_change_prefix_eligibility_or_writer_input",
+    "rollback_patch_v9.test_engine.PatchEngineTests.test_initial_public_failure_feedback_survives_later_feedback_in_every_arm",
+    "rollback_patch_v9.test_engine.PatchEngineTests.test_invalid_lesson_cannot_reinsert_patch_content",
+    "rollback_patch_v9.test_engine.PatchEngineTests.test_malformed_and_capped_received_actions_each_consume_one_attempt",
+    "rollback_patch_v9.test_engine.PatchEngineTests.test_natural_executable_mismatch_and_substantive_ast_change_are_required",
+    "rollback_patch_v9.test_engine.PatchEngineTests.test_public_acceptance_stops_even_when_hidden_tests_fail",
+    "rollback_patch_v9.test_engine.PatchEngineTests.test_public_pass_or_execution_failure_does_not_create_a_fork",
+    "rollback_patch_v9.test_engine.PatchEngineTests.test_standalone_strings_and_comments_do_not_count_as_structural_work",
+    "rollback_patch_v9.test_engine.PatchEngineTests.test_three_public_failures_exhaust_the_budget_and_do_not_use_private_feedback",
+    "rollback_patch_v9.test_engine.PatchEngineTests.test_three_repair_attempts_permit_delayed_recovery_and_keep_each_public_fact",
+    "rollback_patch_v9.test_engine.PatchEngineTests.test_unknown_arm_remains_missing_instead_of_becoming_budget_failure",
+    "rollback_patch_v9.test_engine.PatchEngineTests.test_unknown_prefix_has_unknown_outcome_and_no_known_eligibility",
+    "rollback_patch_v9.test_engine.PatchEngineTests.test_unknown_writer_leaves_only_lesson_arms_missing",
+    "rollback_patch_v9.test_engine.PatchEngineTests.test_unterminated_diff_lines_remain_separate_and_mark_the_missing_newline"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

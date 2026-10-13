@@ -1,0 +1,17 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\18e0131a3a59c622\\job.json",
+  "module": "joint_coding.test_joint_block_coding",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\18e0131a3a59c622\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\18e0131a3a59c622\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\18e0131a3a59c622\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\18e0131a3a59c622\\tmp",
+  "test_ids": [
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_every_source_and_route_against_separate_formulation",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_permutation_and_complement_symmetries",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_product_control",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_rational_channel_information_and_loss",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_reject_overcapacity_and_invalid_messages",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_signature_fibers_and_isolated_loss"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

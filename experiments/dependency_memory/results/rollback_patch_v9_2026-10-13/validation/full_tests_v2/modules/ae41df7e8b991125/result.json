@@ -1,0 +1,54 @@
+{
+  "completed_test_ids": [
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_checker_does_not_certify_unannotated_state",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_dev_memory_fits_and_second_boundary_uses_parent_only",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_dev_request_envelopes_and_local_handoff",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_exact_id_and_owned_reference_mutations_fail",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_frozen_file_hashes_and_split",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_independent_terminal_controls"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_checker_does_not_certify_unannotated_state": "passed",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_dev_memory_fits_and_second_boundary_uses_parent_only": "passed",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_dev_request_envelopes_and_local_handoff": "passed",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_exact_id_and_owned_reference_mutations_fail": "passed",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_frozen_file_hashes_and_split": "passed",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_independent_terminal_controls": "passed"
+  },
+  "elapsed_seconds": 0.11936119999154471,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_checker_does_not_certify_unannotated_state",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_dev_memory_fits_and_second_boundary_uses_parent_only",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_dev_request_envelopes_and_local_handoff",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_exact_id_and_owned_reference_mutations_fail",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_frozen_file_hashes_and_split",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_independent_terminal_controls"
+  ],
+  "planned_test_ids": [
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_checker_does_not_certify_unannotated_state",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_dev_memory_fits_and_second_boundary_uses_parent_only",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_dev_request_envelopes_and_local_handoff",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_exact_id_and_owned_reference_mutations_fail",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_frozen_file_hashes_and_split",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_independent_terminal_controls"
+  ],
+  "process_id": 41692,
+  "skips": 0,
+  "started_test_ids": [
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_checker_does_not_certify_unannotated_state",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_dev_memory_fits_and_second_boundary_uses_parent_only",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_dev_request_envelopes_and_local_handoff",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_exact_id_and_owned_reference_mutations_fail",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_frozen_file_hashes_and_split",
+    "schema_checks.test_schema_checks.SchemaCheckTests.test_independent_terminal_controls"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\ae41df7e8b991125\\tmp",
+  "tests_run": 6,
+  "unexpected_successes": 0
+}

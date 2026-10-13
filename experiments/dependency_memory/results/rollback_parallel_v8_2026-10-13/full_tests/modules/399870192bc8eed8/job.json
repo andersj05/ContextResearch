@@ -1,0 +1,21 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\399870192bc8eed8\\job.json",
+  "module": "test_transfer_interface",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\399870192bc8eed8\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\399870192bc8eed8\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\399870192bc8eed8\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\399870192bc8eed8\\tmp",
+  "test_ids": [
+    "test_transfer_interface.TransferRequestTests.test_all_factor_conditions_preserve_model_records_and_priority_mapping",
+    "test_transfer_interface.TransferRequestTests.test_factor_and_evaluator_labels_are_absent_from_serialized_requests",
+    "test_transfer_interface.TransferRequestTests.test_first_and_last_are_public_priority_rules_not_key_or_display_order",
+    "test_transfer_interface.TransferRequestTests.test_frame_changes_only_wording_and_fixed_context",
+    "test_transfer_interface.TransferRequestTests.test_guarantee_and_guidance_change_only_prespecified_advice",
+    "test_transfer_interface.TransferRequestTests.test_invalid_counts_priorities_orders_and_records_fail_closed",
+    "test_transfer_interface.TransferRequestTests.test_invalid_inbound_model_metadata_and_schema_are_rejected",
+    "test_transfer_interface.TransferRequestTests.test_nested_evaluator_and_extra_information_channels_are_rejected",
+    "test_transfer_interface.TransferRequestTests.test_payload_and_order_changes_affect_only_declared_visible_records",
+    "test_transfer_interface.TransferRequestTests.test_response_validation_returns_only_canonical_valid_selections"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

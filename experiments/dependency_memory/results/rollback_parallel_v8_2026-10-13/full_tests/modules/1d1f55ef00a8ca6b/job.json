@@ -1,0 +1,29 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\1d1f55ef00a8ca6b\\job.json",
+  "module": "feedback_compaction.test_feedback_compaction",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\1d1f55ef00a8ca6b\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\1d1f55ef00a8ca6b\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\1d1f55ef00a8ca6b\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\1d1f55ef00a8ca6b\\tmp",
+  "test_ids": [
+    "feedback_compaction.test_feedback_compaction.FeedbackTests.test_accumulated_feedback_preserves_prior_constraints",
+    "feedback_compaction.test_feedback_compaction.FeedbackTests.test_binding_child_cannot_be_fixed_by_parent_only_in_this_family",
+    "feedback_compaction.test_feedback_compaction.FeedbackTests.test_capacity_and_recovery_sweep_has_independent_feasibility_rule",
+    "feedback_compaction.test_feedback_compaction.FeedbackTests.test_complete_failure_feedback_is_sound_for_every_candidate",
+    "feedback_compaction.test_feedback_compaction.FeedbackTests.test_early_target_repairs_timing_with_one_child_record",
+    "feedback_compaction.test_feedback_compaction.FeedbackTests.test_every_catalog_answer_is_execution_graded",
+    "feedback_compaction.test_feedback_compaction.FeedbackTests.test_feedback_is_invalid_after_budget_change",
+    "feedback_compaction.test_feedback_compaction.FeedbackTests.test_forward_controllers_match_optimizer_for_all_subcells",
+    "feedback_compaction.test_feedback_compaction.FeedbackTests.test_identifier_channel_is_two_bits_in_one_tagged_record",
+    "feedback_compaction.test_feedback_compaction.FeedbackTests.test_invalid_contracts_and_round_limit",
+    "feedback_compaction.test_feedback_compaction.FeedbackTests.test_late_value_feedback_is_an_extra_channel",
+    "feedback_compaction.test_feedback_compaction.FeedbackTests.test_latest_only_repair_cycles",
+    "feedback_compaction.test_feedback_compaction.FeedbackTests.test_parent_and_child_do_not_see_late_target",
+    "feedback_compaction.test_feedback_compaction.FeedbackTests.test_proof_tampering_is_rejected",
+    "feedback_compaction.test_feedback_compaction.FeedbackTests.test_runtime_cost_includes_recovery_and_failed_runs",
+    "feedback_compaction.test_feedback_compaction.FeedbackTests.test_schema_replays_on_different_payloads_without_resynthesis",
+    "feedback_compaction.test_feedback_compaction.FeedbackTests.test_strong_baseline_matches_with_less_synthesis",
+    "feedback_compaction.test_feedback_compaction.FeedbackTests.test_unprobed_continuation_is_not_certified"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

@@ -1,0 +1,39 @@
+{
+  "completed_test_ids": [
+    "cross_record.test_run.RunTests.test_development_episode_and_full_group_recovery",
+    "cross_record.test_run.RunTests.test_global_client_rotates_before_adapter_cap",
+    "cross_record.test_run.RunTests.test_public_request_timing_and_bounds"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "cross_record.test_run.RunTests.test_development_episode_and_full_group_recovery": "passed",
+    "cross_record.test_run.RunTests.test_global_client_rotates_before_adapter_cap": "passed",
+    "cross_record.test_run.RunTests.test_public_request_timing_and_bounds": "passed"
+  },
+  "elapsed_seconds": 0.0424539000086952,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "cross_record.test_run.RunTests.test_development_episode_and_full_group_recovery",
+    "cross_record.test_run.RunTests.test_global_client_rotates_before_adapter_cap",
+    "cross_record.test_run.RunTests.test_public_request_timing_and_bounds"
+  ],
+  "planned_test_ids": [
+    "cross_record.test_run.RunTests.test_development_episode_and_full_group_recovery",
+    "cross_record.test_run.RunTests.test_global_client_rotates_before_adapter_cap",
+    "cross_record.test_run.RunTests.test_public_request_timing_and_bounds"
+  ],
+  "process_id": 16312,
+  "skips": 0,
+  "started_test_ids": [
+    "cross_record.test_run.RunTests.test_development_episode_and_full_group_recovery",
+    "cross_record.test_run.RunTests.test_global_client_rotates_before_adapter_cap",
+    "cross_record.test_run.RunTests.test_public_request_timing_and_bounds"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\a6e25c5798670911\\tmp",
+  "tests_run": 3,
+  "unexpected_successes": 0
+}

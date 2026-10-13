@@ -1,0 +1,18 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\74e684cda2b7ea3f\\job.json",
+  "module": "rollback_patch_v9.test_scheduler",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\74e684cda2b7ea3f\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\74e684cda2b7ea3f\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\74e684cda2b7ea3f\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\74e684cda2b7ea3f\\tmp",
+  "test_ids": [
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_all_four_arms_start_only_after_durable_parent",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_callback_failure_never_releases_children",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_control_only_calibration_has_same_dependency_guarantee",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_rejects_incomplete_arms_wrong_parent_duplicates_and_unsafe_workers",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_single_worker_prioritizes_ready_children_in_frozen_order",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_thirty_two_worker_bound_is_reached_without_exceeding",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_trace_rejects_missing_event_wrong_schema_and_changed_bound"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

@@ -1,0 +1,274 @@
+{
+  "all_passed": true,
+  "coverage_passed": true,
+  "discovered_test_count": 46,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "module_count": 8,
+  "modules": [
+    {
+      "coverage_passed": true,
+      "covered_test_outcomes": {
+        "test_audit.TraceTests.test_rejects_missing_duplicate_tampered_time_and_bound": "passed"
+      },
+      "elapsed_seconds": 0.6553206999960821,
+      "errors": 0,
+      "expected_failures": 0,
+      "failures": 0,
+      "module": "test_audit",
+      "process_id": 32304,
+      "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\72dee29495239f69\\result.json",
+      "returncode": 0,
+      "skips": 0,
+      "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\72dee29495239f69\\stderr.log",
+      "successful": true,
+      "terminal_test_ids": [
+        "test_audit.TraceTests.test_rejects_missing_duplicate_tampered_time_and_bound"
+      ],
+      "tests_run": 1,
+      "unexpected_successes": 0
+    },
+    {
+      "coverage_passed": true,
+      "covered_test_outcomes": {
+        "test_benchmark.TimingReplayTests.test_executable_sleep_workload_respects_dependencies_and_capacity": "passed",
+        "test_benchmark.TimingReplayTests.test_hand_calculated_phase_barrier_and_pipeline": "passed",
+        "test_benchmark.TimingReplayTests.test_invalid_dependency_and_durations_rejected": "passed",
+        "test_benchmark.TimingReplayTests.test_one_worker_has_no_parallel_speedup": "passed",
+        "test_benchmark.TimingReplayTests.test_sealed_fixture_import_recovers_observed_timing": "passed",
+        "test_benchmark.TimingReplayTests.test_tie_priority_prefers_ready_continuation": "passed",
+        "test_benchmark.TimingReplayTests.test_timing_json_tamper_is_rejected": "passed",
+        "test_benchmark.TimingReplayTests.test_timing_ledger_tamper_is_rejected": "passed",
+        "test_benchmark.TimingReplayTests.test_unlimited_workers_still_preserve_dependency_critical_path": "passed",
+        "test_benchmark.TimingReplayTests.test_zero_call_dispositions_are_included_without_service": "passed"
+      },
+      "elapsed_seconds": 1.0358947000058834,
+      "errors": 0,
+      "expected_failures": 0,
+      "failures": 0,
+      "module": "test_benchmark",
+      "process_id": 52228,
+      "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\d012ae1bab36ac5a\\result.json",
+      "returncode": 0,
+      "skips": 0,
+      "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\d012ae1bab36ac5a\\stderr.log",
+      "successful": true,
+      "terminal_test_ids": [
+        "test_benchmark.TimingReplayTests.test_executable_sleep_workload_respects_dependencies_and_capacity",
+        "test_benchmark.TimingReplayTests.test_hand_calculated_phase_barrier_and_pipeline",
+        "test_benchmark.TimingReplayTests.test_invalid_dependency_and_durations_rejected",
+        "test_benchmark.TimingReplayTests.test_one_worker_has_no_parallel_speedup",
+        "test_benchmark.TimingReplayTests.test_sealed_fixture_import_recovers_observed_timing",
+        "test_benchmark.TimingReplayTests.test_tie_priority_prefers_ready_continuation",
+        "test_benchmark.TimingReplayTests.test_timing_json_tamper_is_rejected",
+        "test_benchmark.TimingReplayTests.test_timing_ledger_tamper_is_rejected",
+        "test_benchmark.TimingReplayTests.test_unlimited_workers_still_preserve_dependency_critical_path",
+        "test_benchmark.TimingReplayTests.test_zero_call_dispositions_are_included_without_service"
+      ],
+      "tests_run": 10,
+      "unexpected_successes": 0
+    },
+    {
+      "coverage_passed": true,
+      "covered_test_outcomes": {
+        "test_live_benchmark.ProbeTests.test_four_batches_repeat_same_prompts_without_repeating_an_identity": "passed",
+        "test_live_benchmark.ProbeTests.test_incomplete_batches_cannot_claim_a_speed_ratio": "passed"
+      },
+      "elapsed_seconds": 1.1500053000054322,
+      "errors": 0,
+      "expected_failures": 0,
+      "failures": 0,
+      "module": "test_live_benchmark",
+      "process_id": 51928,
+      "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\38366721061e3feb\\result.json",
+      "returncode": 0,
+      "skips": 0,
+      "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\38366721061e3feb\\stderr.log",
+      "successful": true,
+      "terminal_test_ids": [
+        "test_live_benchmark.ProbeTests.test_four_batches_repeat_same_prompts_without_repeating_an_identity",
+        "test_live_benchmark.ProbeTests.test_incomplete_batches_cannot_claim_a_speed_ratio"
+      ],
+      "tests_run": 2,
+      "unexpected_successes": 0
+    },
+    {
+      "coverage_passed": true,
+      "covered_test_outcomes": {
+        "test_live_benchmark_review.LiveProbeReviewTests.test_all_64_fixture_admissions_are_unique_and_identically_prompted": "passed",
+        "test_live_benchmark_review.LiveProbeReviewTests.test_eight_worker_batch_cannot_hide_sixteen_concurrent_admissions": "passed",
+        "test_live_benchmark_review.LiveProbeReviewTests.test_global_failure_keeps_all_dispositions_without_replacements": "passed",
+        "test_live_benchmark_review.LiveProbeReviewTests.test_one_unknown_preserves_reservation_and_removes_speed_ratio": "passed",
+        "test_live_benchmark_review.LiveProbeReviewTests.test_preflight_rejects_wrong_parallelism_authorization_and_channel_inventory": "passed",
+        "test_live_benchmark_review.LiveProbeReviewTests.test_saved_request_mutation_is_rejected_even_after_resealing": "passed",
+        "test_live_benchmark_review.LiveProbeReviewTests.test_wrong_elapsed_metric_is_rejected_after_analysis_and_seal_refresh": "passed"
+      },
+      "elapsed_seconds": 28.233333700016374,
+      "errors": 0,
+      "expected_failures": 0,
+      "failures": 0,
+      "module": "test_live_benchmark_review",
+      "process_id": 50592,
+      "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\e74702bc5500d8fa\\result.json",
+      "returncode": 0,
+      "skips": 0,
+      "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\e74702bc5500d8fa\\stderr.log",
+      "successful": true,
+      "terminal_test_ids": [
+        "test_live_benchmark_review.LiveProbeReviewTests.test_all_64_fixture_admissions_are_unique_and_identically_prompted",
+        "test_live_benchmark_review.LiveProbeReviewTests.test_eight_worker_batch_cannot_hide_sixteen_concurrent_admissions",
+        "test_live_benchmark_review.LiveProbeReviewTests.test_global_failure_keeps_all_dispositions_without_replacements",
+        "test_live_benchmark_review.LiveProbeReviewTests.test_one_unknown_preserves_reservation_and_removes_speed_ratio",
+        "test_live_benchmark_review.LiveProbeReviewTests.test_preflight_rejects_wrong_parallelism_authorization_and_channel_inventory",
+        "test_live_benchmark_review.LiveProbeReviewTests.test_saved_request_mutation_is_rejected_even_after_resealing",
+        "test_live_benchmark_review.LiveProbeReviewTests.test_wrong_elapsed_metric_is_rejected_after_analysis_and_seal_refresh"
+      ],
+      "tests_run": 7,
+      "unexpected_successes": 0
+    },
+    {
+      "coverage_passed": true,
+      "covered_test_outcomes": {
+        "test_runner.PipelineControllerTests.test_preflight_exercises_sixteen_sessions_and_both_request_schemas": "passed",
+        "test_runner.PipelineControllerTests.test_serial_and_pipelined_engines_render_identical_full_contexts_and_usage": "passed",
+        "test_runner.PipelineControllerTests.test_sixteen_calls_pipeline_around_slow_prefix_and_preserve_one_unknown": "passed",
+        "test_runner.PipelineControllerTests.test_thirty_two_admissions_are_bounded_and_unknown_keeps_its_reservation": "passed",
+        "test_runner.PipelineControllerTests.test_unknown_continuation_preserves_mate_and_unrelated_task": "passed"
+      },
+      "elapsed_seconds": 22.719696200016188,
+      "errors": 0,
+      "expected_failures": 0,
+      "failures": 0,
+      "module": "test_runner",
+      "process_id": 31288,
+      "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\7b18a9328f1dab77\\result.json",
+      "returncode": 0,
+      "skips": 0,
+      "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\7b18a9328f1dab77\\stderr.log",
+      "successful": true,
+      "terminal_test_ids": [
+        "test_runner.PipelineControllerTests.test_preflight_exercises_sixteen_sessions_and_both_request_schemas",
+        "test_runner.PipelineControllerTests.test_serial_and_pipelined_engines_render_identical_full_contexts_and_usage",
+        "test_runner.PipelineControllerTests.test_sixteen_calls_pipeline_around_slow_prefix_and_preserve_one_unknown",
+        "test_runner.PipelineControllerTests.test_thirty_two_admissions_are_bounded_and_unknown_keeps_its_reservation",
+        "test_runner.PipelineControllerTests.test_unknown_continuation_preserves_mate_and_unrelated_task"
+      ],
+      "tests_run": 5,
+      "unexpected_successes": 0
+    },
+    {
+      "coverage_passed": true,
+      "covered_test_outcomes": {
+        "test_scheduler.DependencySchedulerTests.test_continuation_runs_while_unrelated_prefix_is_still_blocked": "passed",
+        "test_scheduler.DependencySchedulerTests.test_empty_schedule_and_submission_notifications": "passed",
+        "test_scheduler.DependencySchedulerTests.test_failed_persistence_never_releases_children": "passed",
+        "test_scheduler.DependencySchedulerTests.test_global_admission_stop_keeps_fixed_job_dispositions": "passed",
+        "test_scheduler.DependencySchedulerTests.test_invalid_schedule_rejected_before_any_submission": "passed",
+        "test_scheduler.DependencySchedulerTests.test_one_arm_error_is_callback_owned_and_does_not_drop_other_dispositions": "passed",
+        "test_scheduler.DependencySchedulerTests.test_ready_pair_precedes_unstarted_prefix_and_keeps_frozen_arm_order": "passed",
+        "test_scheduler.DependencySchedulerTests.test_sixteen_and_thirty_two_actual_workers_without_duplicate_jobs": "passed",
+        "test_scheduler.DependencySchedulerTests.test_unknown_prefix_still_materializes_both_skips_without_retry": "passed"
+      },
+      "elapsed_seconds": 0.7241078000224661,
+      "errors": 0,
+      "expected_failures": 0,
+      "failures": 0,
+      "module": "test_scheduler",
+      "process_id": 42676,
+      "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\29db798d53ed6980\\result.json",
+      "returncode": 0,
+      "skips": 0,
+      "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\29db798d53ed6980\\stderr.log",
+      "successful": true,
+      "terminal_test_ids": [
+        "test_scheduler.DependencySchedulerTests.test_continuation_runs_while_unrelated_prefix_is_still_blocked",
+        "test_scheduler.DependencySchedulerTests.test_empty_schedule_and_submission_notifications",
+        "test_scheduler.DependencySchedulerTests.test_failed_persistence_never_releases_children",
+        "test_scheduler.DependencySchedulerTests.test_global_admission_stop_keeps_fixed_job_dispositions",
+        "test_scheduler.DependencySchedulerTests.test_invalid_schedule_rejected_before_any_submission",
+        "test_scheduler.DependencySchedulerTests.test_one_arm_error_is_callback_owned_and_does_not_drop_other_dispositions",
+        "test_scheduler.DependencySchedulerTests.test_ready_pair_precedes_unstarted_prefix_and_keeps_frozen_arm_order",
+        "test_scheduler.DependencySchedulerTests.test_sixteen_and_thirty_two_actual_workers_without_duplicate_jobs",
+        "test_scheduler.DependencySchedulerTests.test_unknown_prefix_still_materializes_both_skips_without_retry"
+      ],
+      "tests_run": 9,
+      "unexpected_successes": 0
+    },
+    {
+      "coverage_passed": true,
+      "covered_test_outcomes": {
+        "test_transport.StreamingTransportTests.test_32_transports_keep_distinct_sessions_and_full_checks": "passed",
+        "test_transport.StreamingTransportTests.test_all_client_instruction_configuration_and_registry_pins_remain": "passed",
+        "test_transport.StreamingTransportTests.test_empty_exact_multiple_and_tail_files_hash_every_byte": "passed",
+        "test_transport.StreamingTransportTests.test_observed_file_change_during_hash_is_rejected": "passed",
+        "test_transport.StreamingTransportTests.test_same_size_change_with_restored_mtime_is_rehashed_and_rejected": "passed",
+        "test_transport.StreamingTransportTests.test_streamed_digest_matches_independent_sha_and_uses_one_bounded_buffer": "passed",
+        "test_transport.StreamingTransportTests.test_unchanged_generation_checks_each_time_closes_and_never_retries": "passed"
+      },
+      "elapsed_seconds": 1.961277299997164,
+      "errors": 0,
+      "expected_failures": 0,
+      "failures": 0,
+      "module": "test_transport",
+      "process_id": 51400,
+      "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\215c8326d925a5b6\\result.json",
+      "returncode": 0,
+      "skips": 0,
+      "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\215c8326d925a5b6\\stderr.log",
+      "successful": true,
+      "terminal_test_ids": [
+        "test_transport.StreamingTransportTests.test_32_transports_keep_distinct_sessions_and_full_checks",
+        "test_transport.StreamingTransportTests.test_all_client_instruction_configuration_and_registry_pins_remain",
+        "test_transport.StreamingTransportTests.test_empty_exact_multiple_and_tail_files_hash_every_byte",
+        "test_transport.StreamingTransportTests.test_observed_file_change_during_hash_is_rejected",
+        "test_transport.StreamingTransportTests.test_same_size_change_with_restored_mtime_is_rehashed_and_rejected",
+        "test_transport.StreamingTransportTests.test_streamed_digest_matches_independent_sha_and_uses_one_bounded_buffer",
+        "test_transport.StreamingTransportTests.test_unchanged_generation_checks_each_time_closes_and_never_retries"
+      ],
+      "tests_run": 7,
+      "unexpected_successes": 0
+    },
+    {
+      "coverage_passed": true,
+      "covered_test_outcomes": {
+        "test_validation_runner.ParallelValidationTests.test_all_ids_run_once_with_independent_process_temp_roots_and_skips": "passed",
+        "test_validation_runner.ParallelValidationTests.test_child_allocation_mismatch_cannot_be_green": "passed",
+        "test_validation_runner.ParallelValidationTests.test_discovery_failure_stops_before_any_child": "passed",
+        "test_validation_runner.ParallelValidationTests.test_failure_error_and_fixture_skip_are_complete_but_not_green": "passed",
+        "test_validation_runner.ParallelValidationTests.test_fixture_error_covers_blocked_tests_without_pretending_they_ran": "passed"
+      },
+      "elapsed_seconds": 5.272142400004668,
+      "errors": 0,
+      "expected_failures": 0,
+      "failures": 0,
+      "module": "test_validation_runner",
+      "process_id": 408,
+      "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\df6ff9ca17e96e87\\result.json",
+      "returncode": 0,
+      "skips": 0,
+      "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\df6ff9ca17e96e87\\stderr.log",
+      "successful": true,
+      "terminal_test_ids": [
+        "test_validation_runner.ParallelValidationTests.test_all_ids_run_once_with_independent_process_temp_roots_and_skips",
+        "test_validation_runner.ParallelValidationTests.test_child_allocation_mismatch_cannot_be_green",
+        "test_validation_runner.ParallelValidationTests.test_discovery_failure_stops_before_any_child",
+        "test_validation_runner.ParallelValidationTests.test_failure_error_and_fixture_skip_are_complete_but_not_green",
+        "test_validation_runner.ParallelValidationTests.test_fixture_error_covers_blocked_tests_without_pretending_they_ran"
+      ],
+      "tests_run": 5,
+      "unexpected_successes": 0
+    }
+  ],
+  "outcomes": {
+    "passed": 46
+  },
+  "retries": 0,
+  "skips": 0,
+  "terminal_test_count": 46,
+  "tests_run": 46,
+  "unexpected_successes": 0,
+  "version": 1,
+  "wall_seconds": 28.236593000008725,
+  "workers": 8
+}

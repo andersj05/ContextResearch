@@ -1,0 +1,21 @@
+Failed to find real location of C:\Python314\python.exe
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\rollback_development_v5\run.py", line 126, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\rollback_development_v5\run.py", line 115, in main
+    result = audit(args.bundle, args.output)
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\rollback_development_v5\audit.py", line 88, in audit
+    inventory = read(folder / "evidence_manifest.json")
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\rollback_development_v5\common.py", line 36, in read
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+                      ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\pathlib\__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\pathlib\__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'tmp\\v5-request-simulation-2026-10-08\\evidence_manifest.json'

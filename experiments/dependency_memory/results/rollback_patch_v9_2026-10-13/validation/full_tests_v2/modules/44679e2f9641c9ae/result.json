@@ -1,0 +1,49 @@
+{
+  "completed_test_ids": [
+    "test_compatibility.CompatibilityTests.test_child_optima_agree_with_independent_frontier_enumeration",
+    "test_compatibility.CompatibilityTests.test_every_choice_of_optimal_branch_code_was_enumerated",
+    "test_compatibility.CompatibilityTests.test_projection_positions",
+    "test_compatibility.CompatibilityTests.test_three_bit_witness_directly_attains_optimum",
+    "test_compatibility.CompatibilityTests.test_two_bits_cannot_reach_child_optimum"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "test_compatibility.CompatibilityTests.test_child_optima_agree_with_independent_frontier_enumeration": "passed",
+    "test_compatibility.CompatibilityTests.test_every_choice_of_optimal_branch_code_was_enumerated": "passed",
+    "test_compatibility.CompatibilityTests.test_projection_positions": "passed",
+    "test_compatibility.CompatibilityTests.test_three_bit_witness_directly_attains_optimum": "passed",
+    "test_compatibility.CompatibilityTests.test_two_bits_cannot_reach_child_optimum": "passed"
+  },
+  "elapsed_seconds": 0.04805630000191741,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "test_compatibility.CompatibilityTests.test_child_optima_agree_with_independent_frontier_enumeration",
+    "test_compatibility.CompatibilityTests.test_every_choice_of_optimal_branch_code_was_enumerated",
+    "test_compatibility.CompatibilityTests.test_projection_positions",
+    "test_compatibility.CompatibilityTests.test_three_bit_witness_directly_attains_optimum",
+    "test_compatibility.CompatibilityTests.test_two_bits_cannot_reach_child_optimum"
+  ],
+  "planned_test_ids": [
+    "test_compatibility.CompatibilityTests.test_child_optima_agree_with_independent_frontier_enumeration",
+    "test_compatibility.CompatibilityTests.test_every_choice_of_optimal_branch_code_was_enumerated",
+    "test_compatibility.CompatibilityTests.test_projection_positions",
+    "test_compatibility.CompatibilityTests.test_three_bit_witness_directly_attains_optimum",
+    "test_compatibility.CompatibilityTests.test_two_bits_cannot_reach_child_optimum"
+  ],
+  "process_id": 44084,
+  "skips": 0,
+  "started_test_ids": [
+    "test_compatibility.CompatibilityTests.test_child_optima_agree_with_independent_frontier_enumeration",
+    "test_compatibility.CompatibilityTests.test_every_choice_of_optimal_branch_code_was_enumerated",
+    "test_compatibility.CompatibilityTests.test_projection_positions",
+    "test_compatibility.CompatibilityTests.test_three_bit_witness_directly_attains_optimum",
+    "test_compatibility.CompatibilityTests.test_two_bits_cannot_reach_child_optimum"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\44679e2f9641c9ae\\tmp",
+  "tests_run": 5,
+  "unexpected_successes": 0
+}

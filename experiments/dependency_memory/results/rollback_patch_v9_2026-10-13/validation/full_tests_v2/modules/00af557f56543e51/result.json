@@ -1,0 +1,39 @@
+{
+  "completed_test_ids": [
+    "test_scope_codebook_control.ExistingCodebookTests.test_codec_roundtrip_preserves_absence_and_nonempty_unknown_metadata",
+    "test_scope_codebook_control.ExistingCodebookTests.test_no_parent_or_wrong_request_identity_cannot_recover",
+    "test_scope_codebook_control.ExistingCodebookTests.test_packed_public_schema_survives_both_caps_and_all_late_queries"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "test_scope_codebook_control.ExistingCodebookTests.test_codec_roundtrip_preserves_absence_and_nonempty_unknown_metadata": "passed",
+    "test_scope_codebook_control.ExistingCodebookTests.test_no_parent_or_wrong_request_identity_cannot_recover": "passed",
+    "test_scope_codebook_control.ExistingCodebookTests.test_packed_public_schema_survives_both_caps_and_all_late_queries": "passed"
+  },
+  "elapsed_seconds": 0.23360249999677762,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "test_scope_codebook_control.ExistingCodebookTests.test_codec_roundtrip_preserves_absence_and_nonempty_unknown_metadata",
+    "test_scope_codebook_control.ExistingCodebookTests.test_no_parent_or_wrong_request_identity_cannot_recover",
+    "test_scope_codebook_control.ExistingCodebookTests.test_packed_public_schema_survives_both_caps_and_all_late_queries"
+  ],
+  "planned_test_ids": [
+    "test_scope_codebook_control.ExistingCodebookTests.test_codec_roundtrip_preserves_absence_and_nonempty_unknown_metadata",
+    "test_scope_codebook_control.ExistingCodebookTests.test_no_parent_or_wrong_request_identity_cannot_recover",
+    "test_scope_codebook_control.ExistingCodebookTests.test_packed_public_schema_survives_both_caps_and_all_late_queries"
+  ],
+  "process_id": 43576,
+  "skips": 0,
+  "started_test_ids": [
+    "test_scope_codebook_control.ExistingCodebookTests.test_codec_roundtrip_preserves_absence_and_nonempty_unknown_metadata",
+    "test_scope_codebook_control.ExistingCodebookTests.test_no_parent_or_wrong_request_identity_cannot_recover",
+    "test_scope_codebook_control.ExistingCodebookTests.test_packed_public_schema_survives_both_caps_and_all_late_queries"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\00af557f56543e51\\tmp",
+  "tests_run": 3,
+  "unexpected_successes": 0
+}

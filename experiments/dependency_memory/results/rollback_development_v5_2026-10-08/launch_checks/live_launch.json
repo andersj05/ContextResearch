@@ -1,0 +1,22 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "experiments.dependency_memory.rollback_development_v5.run",
+    "launch",
+    "--bundle",
+    "experiments/dependency_memory/results/rollback_development_v5_2026-10-08/prepared",
+    "--output",
+    "experiments/dependency_memory/results/rollback_development_v5_2026-10-08/live",
+    "--workers",
+    "4",
+    "--live"
+  ],
+  "console_path": "live_launch.txt",
+  "console_sha256": "95b2d6538f0f9e4e464ae62b61e5fe98d043bd9da59619d8f52c64b243b6aee0",
+  "cwd": "C:\\Users\\jense\\Desktop\\ContextResearch",
+  "elapsed_seconds": 969.0955577999994,
+  "exit_code": 0,
+  "finished_utc": "2026-10-09T02:34:13.330663+00:00",
+  "started_utc": "2026-10-09T02:18:04.235110+00:00"
+}

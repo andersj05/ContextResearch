@@ -1383,6 +1383,123 @@ model call or natural episode. The proposed next steps remain unperformed.
 Practical benefit and external review remain open; this is a daily
 checkpoint, not completion of the research objective.
 
+## October 7: centralize experiment navigation and keep evidence paths stable
+
+The user requested a repository structure that research agents can navigate and
+a clear home for summaries of completed experiments. The prior README, status
+and research map duplicated milestone histories, while the implementation README
+mainly described the earliest diagnostics.
+
+Add [the study registry and generated catalog](../experiments/README.md), with
+separate model, mathematical, offline, prepared-study and infrastructure views.
+The initial inventory has 52 study/diagnostic/support entries, covering 38 tracked
+implementation packages and 1,000 tracked result files. These are navigation
+counts, not independent trials. Related launch phases share a summary but retain
+their original ledgers, permanent failures and never-dispatched identities.
+
+Replace the three startup documents with concise routing and current scope.
+Archive the former status and map in [docs/history](history/README.md), with
+relative links rebased and original-file hashes recorded. Add explicit
+[placement rules](REPOSITORY_STRUCTURE.md) and update agent/maintenance guidance.
+The registry is the sole editable source for generated experiment summaries;
+primary protocols, reports and the claim register remain authoritative evidence.
+
+Preserve scientific code, frozen contracts, saved result bytes, imported sources
+and claim records at their existing paths. A wholesale physical move would affect
+imports, source bindings and frozen manifests. The fast catalog/navigation check
+detects missing paths, duplicate IDs, unknown claims, stale views and uncataloged
+tracked packages/results without running experiments. The default validator keeps
+its full scientific checks; navigation-only validation does not substitute for them.
+
+This is organizational work only. C75 and draft v0.42 remain the scientific
+checkpoint; no model launch, new natural episode, source-review upgrade or
+scientific result is added, and no closed allocation is reopened.
+
+Organization validation passes: catalog coverage/freshness, local documentation
+links and claim paths, generated study anchors, and archival content comparison.
+Five negative probes confirm rejection of duplicate IDs, missing evidence, unknown
+claims, uncataloged results and stale views. The existing 16 saved-evidence
+validator tests pass with temporary fixtures placed under workspace `tmp/` after
+the sandbox's default temporary directory denied access. Paper assembly passes
+with 48 cited sources. The full 597-test scientific suite and numerical result
+regeneration were not rerun for this organization-only change.
+
+## October 7: isolate branch removal in a small rollback pilot
+
+The user requested research into testing checkpoint rollback on Luna with math
+and coding tasks. Prepare a [design review](../research/ROLLBACK_PILOT_DESIGN_2026-10-07.md),
+[draft protocol](../experiments/dependency_memory/rollback_pilot/DRAFT_PROTOCOL.md)
+and [prompt interfaces](../experiments/dependency_memory/rollback_pilot/PROMPTS.md).
+This resumes scoped research/design; no model calls, generated-code execution or
+historical allocation are authorized by the draft itself.
+
+The primary comparison keeps or removes the same failed branch while holding
+checkpoint, public failure feedback, lesson and continuation allowance fixed.
+Both arms reconstruct visible input without carried opaque reasoning. A generic
+summary and removal without a generated lesson provide secondary controls.
+Save the checkpoint before route selection so a committed failed assumption is
+not accidentally retained in the prefix being tested.
+
+Propose 12 exactly checkable constructive math tasks and 12 pinned coding tasks,
+with two terminal draws per arm. Report all initial task dispositions; public
+failure eligibility cannot use reserved test outcomes or reference answers.
+The development pilot tests conditional recovery and feasibility, not autonomous
+rollback selection or end-to-end efficiency. Stronger held-out repair/retry and
+native-context comparisons remain separate later work.
+
+Thought Rollback, LongSeeker and ARC establish close prior mechanisms. Record
+bounded source readings in the [focused guide](../sources/READING_GUIDE.md#october-7-rollback-pilot-design)
+and bibliography. No general rollback novelty, measured benefit or new paper
+claim follows. C75 and living draft v0.42 remain unchanged.
+
+The existing subscription adapter is historical. Local CLI/schema observations
+do not establish the proposed output cap; Docker's engine was not reachable.
+The protocol therefore requires fresh transport/runner checks and a separate
+bounded launch manifest. The proposed 320-call / USD 5 direct-API envelope is a
+conditional design calculation, not an active allocation or a subscription-credit
+conversion. No credentials or account entitlement were tested.
+
+## October 8: prepare the rollback experiment suite for user review
+
+The user requested the experiment designs and a handoff before reviewing how
+the work will run. Add the [review handoff](ROLLBACK_REVIEW_HANDOFF_2026-10-08.md)
+and expand the unfrozen pilot to v0.2 with separate task/grading, controller,
+analysis and later-policy specifications. Keep model calls and coding execution
+unperformed; leave actual launch identities, data hashes and access unset.
+
+Use E0 offline acceptance, E1 eight-call calibration and E2 the 24-task conditional
+recovery pilot as the first implementation sequence. E3 confirmation, E4 complete
+policies and E5 checkpoint choice have separate designs and resources. The USD 5
+proposal covers E1/E2 only. A large E3 sample-size example illustrates sensitivity
+to eligibility and discordance; it is not an allocated or selected cohort.
+
+Keep the failed trial before its evidence and lesson in the serialized control
+input. Alphabetical top-level JSON ordering would put the trial after the lesson
+and change the intended comparison. Generic-summary failure blocks G only;
+otherwise it would discard valid K/R comparisons for an unrelated writer failure.
+Capacity-infeasible pairs and unknown dispatches retain explicit denominators.
+
+Specify generated math families and deterministic coding selection. The proposed
+LiveCodeBench lite release_v6 uses pruned retained tests; do not imply access to
+full original suites. Record the distinction, unresolved data provenance/license
+fields, and ten preview-exposed IDs excluded from new model cohorts. No corpus
+was downloaded or used for inference. Refresh official rate/cap readings without
+testing credentials or reusing historical subscription allocations.
+
+The autonomous loop stops after a public pass, so rejection of a completed correct
+answer is unobservable there. Add a separately labeled 12-call authored decision
+probe with withheld correctness feedback; never pool it with natural policy
+episodes. E5's proposed USD 19 ceiling includes this probe and calibration.
+
+The authored JSON example and design manifest make context contents and resource
+arithmetic reviewable. They are not evidence of model behavior, implementation
+acceptance or an empirical effect. C75 and living draft v0.42 remain unchanged.
+
+Design validation passes: 53-entry catalog freshness, navigation and citations
+(63 bibliography entries and 75 claims), 48-source paper assembly, JSON parsing,
+budget arithmetic and authored-example consistency. This is document validation,
+not E0 acceptance, a scientific-result regeneration or a rerun of the 597-test suite.
+
 ## October 8: implement offline rollback E0 and keep live gates explicit
 
 At the user's request, implement and test the first stage of the review handoff,
@@ -1555,3 +1672,526 @@ earlier archives and leave C75, draft v0.42 and benchmark work unchanged.
 Final full scientific validation, paper assembly and catalog checks pass. Seal
 the post-outcome package inventory including durable ledgers and check records;
 keep it distinct from the immutable pre-outcome source and launch freeze.
+
+## October 8, 2026: prepare staged development before increasing confirmation size
+
+The user requests implementation of the proposed development tasks and parallel
+Luna setup, with the model launch to follow. Build a separate v5 package and
+48-task cohort instead of extending the completed v4 allocation. Preserve its
+observations, historical sources and the unresolved v3 reservation.
+
+Use four authored families (scheduling, routing, event-ledger repair, dependency
+resolver repair), two difficulty settings, three disclosure/action horizons and
+two replicates per cell. The short control needs one disclosure and two actions
+so a failed first proposal leaves a genuine recovery opportunity. Medium and
+long have four/eight disclosures and ten/thirty actions. Horizon alters timing
+and allowed computation together, so no pure text-length causal claim follows.
+Every model stage is medium effort; future difficulty calibration uses control
+performance, not selection for an observed rollback benefit.
+
+Separate a shared-failure mechanism track from independently started complete
+policies and a repeated-compression track. Keep K/R, removal alone, generic
+summary and a fresh solve from released public evidence. Add the same mechanical
+receipt lesson to both KE/RE as a separately labelled lesson ablation. Every
+future packet and reserved expected output stays outside actor access.
+
+Parallelize independent episodes with a central atomic ledger, four workers by
+default and an eight-worker maximum. Dependent steps and shared writers remain
+ordered; unknown dispatch stops new admission and drains already admitted calls.
+Freeze every possible identity, preserve non-execution dispositions, and never
+retry a dispatched identity or reuse an old allocation. The eight live format
+checks are excluded calibration and belong only to a future explicit launch.
+Preparation uses reference checks, local mock client probes and clearly labelled
+scripted simulations; none supplies model evidence or a manuscript upgrade.
+
+## October 8, 2026: launch the fixed staged-development allocation
+
+The user explicitly approves sending the 48 authored v5 task payloads through
+the existing Codex subscription and using at most 13,640 generations, including
+eight excluded calibration calls. Use Luna medium and four workers for all three
+frozen tracks. Fresh reference execution, Docker isolation and installed-client
+checks pass without source/client drift. This permission applies to the new v5
+freeze and does not reopen historical allocations or unknown reservations.
+
+Run the entire fixed cohort or honor its prespecified infrastructure stop; never
+retry a dispatched identity. Finish offline replay and accounting reconciliation
+before reporting final effects. Preserve all controls, ineligible prefixes,
+malformed received outputs, capacity failures and missing outcomes. Do not change
+the cohort or allocation in response to observed rollback performance. The
+[live result record](../experiments/dependency_memory/results/rollback_development_v5_2026-10-08/LIVE_RUN.md)
+will distinguish preparation, scripted rehearsal and model observations.
+
+## October 8, 2026: preserve the staged-development stop and its permanent gaps
+
+The approved v5 launch completes its eight excluded calibration calls and then
+stops after 227 metered study completions and one unknown policy K action on
+`v5-ledger-long-hard-2`. Already admitted calls drain; no identity is retried.
+The exact safe transport diagnostic was not persisted beyond its exception class.
+Preserve its 4.225 planning-credit reservation and the unknown request. The
+allocation remains closed even though the user requested the complete test suite.
+
+No complete R/K pair exists in any track. Report fixed-denominator missingness
+bounds, all controls and unstarted outcomes; raw R/K pass counts are different
+task subsets and cannot show an advantage. Three common prefixes ran: two initial
+successes and one eligible mismatch, with all matched continuations unstarted.
+Correct the frozen analysis's unstarted-prefix label defect in an explicitly
+separate diagnostic, without editing its original bytes or primary denominators.
+
+Independent live replay/accounting, all 744 distinct offline repository tests,
+fresh task/client checks and full scientific validation pass. Keep sandbox test
+failures and exact passing rechecks visible. A later allocation needs safe error
+diagnostic retention, earlier paired coverage and a separately reviewed freeze;
+neither improvement retrospectively resolves the missing outcome. The
+[finding](../research/ROLLBACK_STAGED_DEVELOPMENT_2026-10-08.md) records the evidence.
+
+## October 8, 2026: continue v5 under the user's explicit amendment
+
+The user rejects the global-unknown stop and explicitly requests amending it so
+all experiments run, authorizing thousands of Luna calls for useful results.
+This supersedes the earlier v5 closed-allocation decision. Its original phase,
+unknown request/reservation, completed results and frozen source remain intact.
+
+Use the [continuation amendment](../experiments/dependency_memory/rollback_development_v5_continuation/PROTOCOL.md):
+an unknown response ends that trajectory while independent jobs continue. Import
+receipts into a fresh cumulative ledger, carry completed outcomes forward, and
+restore healthy partial trajectories only from verified saved responses. Send
+only never-admitted identities. Reuse the eight passed calibration identities;
+refresh client mocks without additional calibration generations. Retain all
+48 tasks, 768 jobs, four workers and Luna medium, with original admissions counted
+against the 13,640 ceiling. Account/source/isolation/invariant failures remain
+global stops. Report the post-observation amendment and phase effects explicitly.
+
+Complete the fixed cohort before judging its difficulty from controls. Any task
+redesign needs new IDs and a separate bounded freeze; a useful negative result
+does not require a favorable rollback effect. The user's live authorization
+already covers this continuation; no further permission gate is imposed.
+## October 9, 2026: preserve the completed v5 ceiling result
+
+The user-authorized amendment finishes every runnable job without a repeated
+identity: 2,124 metered completions and four retained unknowns. Independent
+replay/regrading reconciles all calls, 453 executed jobs, 315 ineligible
+continuations and every fixed slot. No global stop or unstarted runnable job
+remains; all 754 distinct tests have passing results after two unchanged Windows
+rechecks. Original phase bytes and its unresolved reservation remain intact.
+
+Policy has 46 complete R/K pairs with one benefit, one drawback and 44 ties;
+memory has 48 all-success ties; three mechanism pairs also tie at success.
+Report zero means, policy interval [-6.52,+6.52] pp, fixed-denominator bounds
+[-2.08,+2.08] pp and the memory ceiling explicitly. A zero bootstrap interval
+from all-success observed outcomes is not equivalence. All twelve K/F cells
+exceed the 40–75% target; nominal long controls usually use eight actions and
+only 2–3 KB median raw history. Retain this calibration failure rather than
+changing the fixed cohort to produce a favorable effect.
+
+On complete pairs, R input-token totals change by -34.62% in the three-task
+mechanism set, +5.17% in policy and +4.22% in memory. Keep conditional resource
+reductions separate from whole-policy and compression results; planning credits
+are calculated units, not charges. A harder cohort, semantic ratings and
+confirmation remain unperformed. C75 and manuscript v0.42 are unchanged. The
+[dated finding](../research/ROLLBACK_STAGED_CONTINUATION_2026-10-09.md) is the entry point.
+
+## October 9, 2026: calibrate new questions without selecting for a rollback win
+
+The user asks for harder questions and an efficient testing environment. Add the
+separate [v6 challenge package](../experiments/dependency_memory/rollback_challenge_v6/README.md),
+preserving all v5 sources and results. Constraint grids, finite bitvector programs
+and revision ledgers have exact public graders and independent reference checks.
+Their levels remain difficulty hypotheses until live control observations exist.
+
+Screen K/F only, validate nominated cells on new seeds, then freeze an independent
+fixed-size R/K comparison. Do not select or extend tasks based on treatment gains
+or a p-value. Keep missing scores missing and disable confirmatory inference when
+selected paired outcomes are incomplete. All other comparisons are descriptive.
+Statistical significance cannot be guaranteed by engineering the environment.
+
+The concrete initial preparation has eighteen tasks, three stages, five actions,
+and at most 252 generations including writers. Live model/budget choices remain
+pending; the current artifacts contain only offline fixtures and power calculations.
+Use the existing subscription route provisionally, without API purchases or model
+fallbacks. A later larger validation/confirmation allocation must be separately
+bounded. See the [dated preparation note](../research/ROLLBACK_CHALLENGE_PREPARATION_2026-10-09.md).
+
+Before any live v6 generation, the offline size probe finds reachable capacity
+stops with maximum-size notes/lessons, although all tested concise paths fit.
+Keep such failures in end-to-end scores and fixed denominators, but do not use
+them to establish that a question is difficult for the model. Screening cannot
+nominate a cell with a K/F capacity failure; validation fails the whole nominated
+mixture if one appears. Preserve the earlier freezes and replay them historically;
+the new `prepared_screen_v2` has the same 18 tasks and 252-generation ceiling.
+
+The user then explicitly approves: "Run the Luna screen, capped at 252 generations."
+Record that approval against the revised manifest and launch its complete fixed
+K/F schedule through the existing subscription. This resolves the earlier model
+and screen-budget gate. It does not authorize a larger validation or confirmation
+allocation, nor extra samples selected from partial outcomes.
+
+The completed screen admits 165 calls, with 161 metered completions and four
+unknowns. Each control solves 6/16 known episodes, but the selection is empty.
+Ninety-two of 154 received actions defer a candidate; 17 of 20 known failures
+never trigger the public checker. Retain this finding and the empty selection.
+Prepare a separate six-task screen on new seeds, requiring a best complete
+candidate each action and explicitly forbidding intentional wrong attempts.
+Use bitvector level 1, grid level 2 and ledger level 2 based on the observed
+control behavior, before any R outcome. Preserve the response contract through
+later validation/confirmation. Its maximum 84 calls need separate authorization;
+unused slots from the closed initial screen are not a transferable allocation.
+
+The six-task follow-up is now frozen at manifest
+`bdb1fd85c55aefe82fc44b3949faa76298a2e65add602ff43d5062ee4a10c7d6`.
+All 33 package tests, 576 independent-formulation task checks, 259 scientific
+validation categories, installed-client probes and the 54-response fixture replay
+pass. Historical-source replay also preserves the initial screen's 161 known
+calls and four unknowns. Register the [prepared follow-up](../experiments/dependency_memory/results/rollback_challenge_v6_candidates_2026-10-09/README.md)
+separately and request its 84-generation allocation; no follow-up model calls
+have been made at this preparation checkpoint.
+
+The user subsequently says: "Stop asking me to approve this you can use thousands
+of luna requests it doesnt matter." Treat this as authorization for the Luna
+development screens, independent difficulty validation and fixed-size rollback
+comparison needed for the research goal, without per-run reconfirmation. Adopt
+a transparent 6,000-additional-admission working ceiling within that broad
+authorization; this exact number is an agent accounting choice, not a quoted
+user cap. Include writers and unknowns. Keep each cohort frozen before dispatch,
+selection restricted to controls, and the confirmatory sample fixed before R/K
+outcomes. Launch the prepared 84-generation candidate-required screen now.
+The [authorization record](../experiments/dependency_memory/results/rollback_challenge_v6_candidates_2026-10-09/campaign_authorization.json)
+supersedes the earlier pending-approval state without reopening any closed run.
+
+The candidate-required screen finishes with 56 metered calls, no unknowns,
+K=5/6 and F=4/6. All 49 actions submit candidates, but its original selection
+remains empty. Ledger level 2 has K=1/2, F=2/2 and public mismatches in both K
+episodes. This motivates a prospective calibration change, before any R outcome:
+allow F to establish solvability at ceiling while retaining K's required
+headroom. Preserve the old gate and empty selection; do not relabel inspected
+tasks as an eligible cohort. Freeze `allow_fresh_ceiling=true` in a new screen
+and inherit it in validation/confirmation. K retains its old rate bounds; F
+retains its lower bounds, completeness and capacity requirements. Public
+mismatches and whole-mixture validation remain required.
+
+The [new screen](../experiments/dependency_memory/results/rollback_challenge_v6_headroom_2026-10-09/README.md)
+has levels 2 and 3 from all three families, four replicates each, seed
+2026100959, three stages/five actions and a 336-generation ceiling. Use sixteen
+independent validation tasks per nominated cell. Its 37 package tests, 2,304
+independent-formulation task checks and 216-response fixture replay pass before
+launch. Historical-source replay preserves all 56 completed follow-up calls.
+The campaign records 56 admissions plus 336 reserved against its 6,000-call
+working ceiling. This is control-informed design development, not a rollback
+benefit or a guarantee of a qualifying distribution.
+
+Before any v6 R-arm observation, prepare a separate conservative inference
+option for missing terminal scores. The [completion bound](../experiments/dependency_memory/results/rollback_missingness_bound_2026-10-09/README.md)
+maximizes the existing exact paired-test p-value over every feasible binary
+completion and retains sharp fixed-denominator missingness bounds. Five tests
+and 1,118,481 enumerated complete assignments support the implementation; the
+general justification is an elementary supremum-p-value argument, not a novelty
+claim. This never lowers the complete-case p-value or imputes/retries a missing
+score. Applying it to a future confirmation requires a separately source-bound
+analysis amendment before the first confirmatory dispatch. Existing reports and
+the live control screen stay unchanged. Complete-observation power assumptions
+must not be presented as power guarantees under arbitrary missingness.
+
+Freeze the [prospective confirmation amendment](../experiments/dependency_memory/results/rollback_challenge_v6_headroom_2026-10-09/confirmation_analysis_precommit.json)
+while the 24-question control screen is running and no v6 R-arm outcome exists.
+The future single primary decision is the worst-completion exact two-sided test
+at alpha 1/20, with the original complete-observation power plan and fixed sample
+rounding rule. It reduces to the original test for complete data. Keep the
+engine's report unchanged and produce a separately labelled amendment report;
+bind the exact selected cohort and analysis source before its first R/K call.
+Do not infer significance from an unresolved source, information-access or
+accounting stop, or extend the sample in response to any observed p-value.
+
+## October 9: failed five-action validation and new six-action screen
+
+The independently replayed ledger validation has K=3/16 and F=7/16, with 190
+known calls and no missing outcomes. Preserve the failed frozen gate; do not
+advance its selection to confirmation. Twelve of thirteen K failures had
+passed two stages. Test one additional action on eight new tasks, keeping the
+three-stage generator, information contract and candidate requirement unchanged.
+The [new freeze](../experiments/dependency_memory/results/rollback_challenge_v6_six_actions_2026-10-09/README.md)
+uses seed 2026100987 and at most 136 K/F calls. Require sixteen new validation
+tasks if it screens successfully, then a new fixed 260-pair comparison. This is
+control-informed development with no R outcomes, not evidence that the extra
+action helps. No completed allocation or negative selection is changed.
+
+Raise the assistant-selected working ceiling from 6,000 to 8,000 within the
+user's explicit authorization for thousands of Luna requests. The complete
+possible screen, validation and six-action confirmation total 6,691 admissions
+including the 563 already used. This is an accounting amendment, not a request
+for another approval or an exact number specified by the user. No purchases,
+API fallback, unknown retries or significance-dependent sample extensions.
+The separately frozen missingness inference rule and fixed power assumptions
+remain; bind the exact future cohort before its first R/K dispatch.
+
+## October 9: intermediate ledger profile and bounded missing controls
+
+The closed six-action screen has K=2/8 and F=5/7 known, with one missing F
+score and 104 admissions. Its original complete-outcome selection stays empty.
+Both original-source and historical replay pass. Reducing question size is the
+next control-informed change: the new intermediate ledger profile has
+22/28/34 transaction IDs over 5/6/7 accounts, preserving original revision and
+amount rules. The standard profile and its identities are unchanged. The new
+screen uses eight level-2 tasks, seed 2026101001, three stages and five actions,
+with at most 112 K/F calls. No v6 R-arm outcome has been observed.
+
+For newly frozen controls, require at least seven eighths of scheduled scores
+observed and every binary completion to satisfy the original rate bounds.
+Screening requires at least eight scheduled tasks per arm/cell; validation
+requires sixteen. Mismatches use scheduled denominators, capacity failures and
+global stops remain disqualifying, and the whole mixture must pass. This is a
+conservative fixed-denominator missingness check, not favorable imputation,
+retry, confidence interval or retroactive reclassification. The new flag and
+size profile are inherited unchanged. All 42 package tests, 768 independent
+task checks and the 72-response replay pass before launch. Full scientific
+validation is being rerun after the source changes. The campaign records 667
+prior admissions against the existing 8,000-call assistant working ceiling.
+
+The 28-transaction screen closes with K=F=8/8 and all 68 calls known; its K
+ceiling disqualifies it. Audit passes, and the empty selection is preserved.
+Next use eight new intermediate-profile level-3 tasks (34 IDs, seven accounts,
+up to five revisions and amounts through 200), seed 2026101011, three stages
+and five actions, maximum 112 calls. These are multiple task-distribution
+parameters, not an isolated count effect. No source change is needed: the
+42-test implementation and all source bindings are identical. The campaign
+now has 735 admissions; no R outcome has been observed.
+
+The 34-transaction screen finishes with K=3/8, F=5/8 and 88 known calls;
+independent replay passes and the cell qualifies. Preserve its wide uncertainty
+and K point rate below the later validation minimum. Proceed to sixteen new
+validation tasks (seed 2026101023), retaining all generator, action and access
+settings and the conservative missing-control gate. The 32 K/F episodes have
+a 224-call bound. All 1,536 task checks and the 144-response replay pass;
+the unchanged source has 42 passing package tests and 259 passing scientific
+check categories. The campaign has 823 prior admissions, including one unknown.
+No v6 R-arm observation or rollback-effect estimate exists.
+
+The independent 34-transaction validation closes with K=5/16 and F=9/16,
+181 known calls and passing replay. Its K lower-bound gate fails and remains
+closed. Next test eight new 28-transaction level-2 tasks with four actions over
+three stages (seed 2026101037, maximum 88 calls). In the earlier five-action
+28-transaction run, six K and seven F episodes finished within four actions.
+These are observed completion timings, not counterfactual four-action outcomes;
+remaining-action prompts can change behavior. The new design must screen and
+validate independently. No source change is needed, and no R outcome exists.
+The campaign records 1,004 admissions, including the earlier unknown, against
+the unchanged 8,000-call assistant working ceiling.
+
+The new four-action screen qualifies at K=5/8 and F=7/8, with 60 known calls
+and passing replay. Proceed to sixteen new validation tasks using seed
+2026101049 and the identical three-stage/four-action intermediate level-2
+setting. The 32 K/F episodes have a 176-call bound; all 1,536 task checks and
+the 144-response rehearsal pass. The full unchanged-source unittest suite
+finishes with 792 passes and nine optional Docker skips; 259 scientific check
+categories and paper assembly pass. The campaign has 1,064 prior admissions,
+including the earlier unknown. No R outcome is available or used in this choice.
+
+The independent four-action validation passes with K=9/16 and F=12/16,
+130 known calls and passing replay. Thirteen K episodes have public mismatches;
+there are no capacity or malformed-record failures. Freeze exactly 260 new
+R/K pairs (seed 2026101063), three stages/four actions, intermediate level 2,
+and a full 3,640-generation bound. Bind the prior maximum-completion exact-test
+amendment, its source/proof, cohort and source snapshot in the
+[confirmation envelope](../experiments/dependency_memory/results/rollback_challenge_v6_four_actions_confirmation_2026-10-09/confirmation_envelope.json) before first
+live R dispatch. The 2,600-response rehearsal passes. No R observation informed
+this choice; no interim effects, significance stopping or sample extension is
+allowed. The standing human authorization covers this allocation, with 1,194
+prior campaign admissions and 4,834 used/reserved against the 8,000-call ceiling.
+
+The fixed 260-task comparison closes at 2026-10-10T03:09:05.759896+00:00 with the result
+recorded in [LIVE_RUN](../experiments/dependency_memory/results/rollback_challenge_v6_four_actions_confirmation_2026-10-09/LIVE_RUN.md). K succeeds on 122/254 known
+tasks and R on 64/258. Replay passes for 2,496 responses; eight unknowns are
+preserved. The worst-completion paired p-value is 2.4820775e-7, with R lower
+under every feasible completion. Report this negative result and finish the
+fixed study; do not extend the sample or seek a favorable replacement cohort.
+The full campaign uses 3,698 admissions, including nine unknowns. The result
+concerns whole-history deletion with lesson retention on one authored family,
+not every possible rollback design or an isolated mechanism diagnosis.
+
+## October 12: preserve the pre-failure information in a new rollback pilot
+
+The user's review of the v6 result exposed a construct limitation: history
+deletion removes old public transaction packets, while the accepted balance
+vector does not preserve transaction-level facts needed for later revisions.
+This explains an available information-loss path; it does not apportion the
+observed deficit among causes or invalidate the measured whole-policy result.
+
+Create [v7](../experiments/dependency_memory/rollback_checkpoint_v7/PROTOCOL.md)
+as a new study without editing frozen v4-v6 evidence. Save the exact successful
+pre-failure checkpoint and retain every released packet separately from model
+trials. At the first natural rejection, generate one common lesson and compare
+K with R from that same failure. Only the failed visible trial differs. Both
+requests must fit and match byte-for-byte after removing that trial; independent
+source comparisons also reject a symmetric omission from both requests.
+
+Freeze 24 new intermediate level-2 ledgers with three stages, four actions,
+seed 2026101267, eight workers and a 192-admission ceiling. Run the fixed pilot
+under existing subscription authorization, with no retry, replacement or
+sample extension. Prefix/writer unknowns prevent their dependent pairs; arm
+unknowns stay missing while independent work continues. Account, source,
+isolation and accounting faults stop admission globally. Offline oracle
+fixtures are controller checks, not model observations.
+
+Report all prefix dispositions and conditional paired recovery, with separate
+shared-prefix costs and branch-size diagnostics. Six complete pairs permits
+only a descriptive bootstrap interval, not a confirmatory claim. Shared lessons
+may retain branch-derived details, and private reasoning is inaccessible. Full
+evidence access differs from v6; do not attribute cross-study rate changes to a
+single repair or update manuscript claim C75 from this small pilot.
+
+The [completed pilot](../experiments/dependency_memory/results/rollback_checkpoint_v7_2026-10-12/LIVE_PILOT.md)
+has 16 complete eligible pairs: K=10/16, R=8/16, three K-only and one R-only
+success. All 130 admitted calls completed, peak concurrency was eight, and
+frozen-source replay plus 114 independent action grades pass. Retain the
+negative point estimate and wide descriptive interval; do not extend the
+allocation or turn this development check into confirmation.
+
+Preserve the initial zero-admission preflight failure. The installed client
+advertised three generic resource helpers; the v7-only compatibility adapter
+pins their declarations and checks an empty disabled inventory. Freeze the
+amended source before calls, keeping the same cohort. Record the separate
+clock-plus-answer diagnostic as an observation limitation: the one-generation
+boundary prevents consumption of a later tool result, but tool-attempt
+observability is not universal. Historical transport modules stay unchanged.
+
+A post hoc literal check finds the failed balance vector in 15/16 shared
+lessons. This was permitted by the frozen protocol, but the result therefore
+concerns raw-record retention conditional on a lesson, often retaining the
+same incorrect values. A future study should separate branch removal from
+lesson content and use substantive visible failed work; a sufficient-memory
+comparison is a distinct experiment. Those studies remain unperformed.
+
+After the live allocation closed, repair only v7 test import paths for normal
+repository-root discovery. Preserve the archived source snapshot for replay;
+do not rewrite frozen manifests or raw results to match later test maintenance.
+
+## October 13: improve execution and keep the rollback question explicit
+
+The user's request for more workers leads to a separately frozen v8 engineering
+allocation: a 64-call ABBA speed check followed by a 24-task pipeline capped at
+192 calls. Keep the v7 prompts and intervention unchanged so scheduling work
+does not silently become a new scientific treatment. Use sixteen workers,
+durably release continuations after their own prefixes, retain bounded identity
+admissions and stream complete executable hashes through a 1 MiB buffer.
+
+The user explicitly renewed permission to send the synthetic prompts through
+the existing Luna subscription, authorized thousands of calls and higher
+parallelism, and asked for faster execution. Do not request per-run permission
+again within that scope. Each new allocation still fixes its own cohort, access
+contract, worker count and call ceiling before dispatch. The completed v8
+allocation uses 200 admissions, with 199 known and one unknown; no retry or
+extension. It does not open an API-key route or purchase credits.
+
+The live speed comparison records 71.802 pooled seconds at eight workers versus
+52.879 at sixteen, a descriptive 26.36% reduction. Cache, output, provider/order
+effects and concurrent offline host validation limit causal interpretation.
+The pipeline reaches sixteen admissions and starts 49 continuation calls before
+the last prefix completion. Frozen-source audits and all 902 test dispositions
+reconcile; nine optional Docker tests skip. Source and hash-memory changes have
+separate offline diagnostics. [Completed engineering evidence](../experiments/dependency_memory/results/rollback_parallel_v8_2026-10-13/README.md).
+
+The [information audit](../research/ROLLBACK_INFORMATION_BOUNDARY_2026-10-13.md)
+clarifies the scientific target. Both v7 arms already retain the accepted
+artifact; a failed candidate never overwrites it. The shared lesson repeats the
+failed vector in 15/16 pairs. Post hoc eventual repair is 14/16 in each arm,
+whereas immediate repair is 13/16 versus 10/16 and final completion 10/16 versus
+8/16. Four actions for three stages leave no spare action after the shared
+failure. Do not interpret every terminal failure as information becoming
+unavailable or the test as rollback of private reasoning or a damaged workspace.
+
+The next scientific proposal should separate raw-record retention, lesson
+content and compact-state sufficiency. It should use substantive visible work
+and report immediate recovery, later-stage errors and complete-policy resources.
+It remains unperformed. V8's K=11/19 versus R=8/19 is descriptive engineering
+evidence under the same limited intervention; do not pool it into a retroactive
+confirmatory test or upgrade manuscript C75.
+
+
+## October 13, 2026 — Separate larger-project rollback calibration
+
+The resumed v9 live calibration produced sixteen initial patches, all passing
+public and private tests. Its predeclared main-study gate therefore fails;
+there is no factorial effect to interpret. Preserve its source and all results.
+Under the user's renewed subscription authorization, prepare a separate v10
+study with eight-component, two-file Python projects. Keep all specifications,
+original code, examples and public feedback available. Cross failed-patch
+deletion with categorical lesson presence, and allow three repairs of the same
+task. Workspace restoration is identical in all arms.
+
+Difficulty changes are informed by control-only task feasibility, before any
+rollback outcomes. Calibration and main study use distinct seeded pools;
+components recur within each allocation, so task-level bootstrap intervals are
+descriptive and do not remove dependence. Coarse lesson categories cannot name
+a particular component. Increase the new version's complete request-body bound
+consistently in both controller and transport, including JSON escaping and
+later patch history, while preserving old adapters. This avoids a client-size
+artifact being interpreted as useful information deletion. No source packets,
+patches or feedback are truncated to fit.
+
+
+## October 13, 2026 — Explicit exploratory departure after v10 shortfall
+
+V10 produced three substantive natural failures among sixteen prefixes, and
+all three retained/no-lesson controls repaired correctly on the next attempt.
+All 22 calls and replay are known; no capacity stops occurred. The original
+four-failure feasibility rule fails and its main allocation remains closed.
+
+Before observing any deletion or lesson-arm outcome, freeze a separate v11
+exploratory cohort of 256 fresh tasks at seed 2026101312, with a 3,584-call
+ceiling and the same four-arm intervention. This is an explicitly unplanned,
+control-informed relaxation of the feasibility policy, not the originally
+gated study or confirmatory evidence. Preserve the original failed gate inside
+the new manifest; verify its only failure is the original headroom minimum.
+All outcomes, missingness and component-family concentration must be reported.
+Do not extend or replace the cohort based on treatment outcomes.
+
+The client also has a one-million-character input limit. Enforce a conservative
+1,048,576 UTF-8 request-text byte cap as well as the 4 MiB complete-body bound.
+Complete ordinary histories fit; pathological histories may not. Any capacity
+stop prevents interpreting a contrast as an isolated content effect. Never
+truncate task facts, patches or feedback to fit.
+
+
+## October 13, 2026 — Resume only unsent v11 work after client RPC stop
+
+The initial v11 phase sealed 289 admissions (284 completed, five unknown)
+before an internal account/rateLimits/read RPC error stopped admission. A
+separate native check found ordinary included usage available (21% weekly
+used). Original-source replay reconstructed every admission and all 256 task
+dispositions. Only counts and transport diagnostics were inspected before
+this recovery decision; no four-arm scores or contrasts informed it.
+
+Freeze an [operational amendment](../experiments/dependency_memory/rollback_patch_v11_resume/PROTOCOL.md)
+to finish the original cohort. Retain all terminal and unknown-containing
+jobs; reconstruct healthy partial trajectories from their exact saved receipts
+and dispatch only never-admitted identities. Preserve every old row and receipt,
+the original 3,584-call cumulative ceiling and all five unknown calls. The
+client's global-stop classification remains unchanged. This is no new cohort
+or treatment change. The historical global stop permanently fails the original
+isolated-content interpretation gate, even if recovery completes; report
+exploratory descriptions and missingness bounds with that limitation.
+
+
+## October 13, 2026 — Close the patch factorial with a repair ceiling
+
+The original 256-task v11 allocation is complete across two sealed phases:
+417 admissions, 408 known responses and nine preserved unknowns. Every call and
+received patch replays; cumulative and independent arithmetic audits pass.
+Twenty-eight eligible failures yield K0 27/27 known (+1 missing), R0 27/27
+(+1 missing), KL 28/28 and RL 27/28. No deletion advantage is observed. Do not
+interpret near-universal repair or all-tie bootstrap intervals as equivalence,
+and do not extend the cohort to obtain a desired contrast.
+
+The one failed RL trajectory disabled refund handling that the initial failed
+patch had already corrected. Its original dependency defect was fixed later,
+but the refund regression persisted. This establishes the content of one lost
+partial fix and one subsequent regression, not a causal mediation result; R0
+also deleted the patch and succeeded. The complete task specification remained
+available in every arm. The lesson treatment is presence of a coarse categorical
+hint, not a general test of lesson semantic quality or complete progress summaries.
+
+Keep the original global-stop interpretation gate failed. The earlier v10
+feasibility departure, related authored tasks, unknown prefix eligibility,
+missing arm outcomes, provider revision uncertainty and repair ceiling remain
+visible in the [result report](../experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/README.md).
+Posthoc source/component inspections are diagnostics on the same saved data,
+not additional model trials or new confirmatory endpoints. No paper claim is
+upgraded from these exploratory observations.

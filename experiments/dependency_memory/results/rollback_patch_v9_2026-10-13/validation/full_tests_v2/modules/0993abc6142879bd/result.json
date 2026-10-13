@@ -1,0 +1,44 @@
+{
+  "completed_test_ids": [
+    "test_scaling_audit.ScalingAuditTests.test_abstract_antipodal_fibers_match_concrete_extremum",
+    "test_scaling_audit.ScalingAuditTests.test_leave_one_out_excludes_two_bit_counterexample",
+    "test_scaling_audit.ScalingAuditTests.test_noncomplementary_decoders_including_degenerate_ones",
+    "test_scaling_audit.ScalingAuditTests.test_sign_formulation_covers_all_orientations"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "test_scaling_audit.ScalingAuditTests.test_abstract_antipodal_fibers_match_concrete_extremum": "passed",
+    "test_scaling_audit.ScalingAuditTests.test_leave_one_out_excludes_two_bit_counterexample": "passed",
+    "test_scaling_audit.ScalingAuditTests.test_noncomplementary_decoders_including_degenerate_ones": "passed",
+    "test_scaling_audit.ScalingAuditTests.test_sign_formulation_covers_all_orientations": "passed"
+  },
+  "elapsed_seconds": 0.17881489999126643,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "test_scaling_audit.ScalingAuditTests.test_abstract_antipodal_fibers_match_concrete_extremum",
+    "test_scaling_audit.ScalingAuditTests.test_leave_one_out_excludes_two_bit_counterexample",
+    "test_scaling_audit.ScalingAuditTests.test_noncomplementary_decoders_including_degenerate_ones",
+    "test_scaling_audit.ScalingAuditTests.test_sign_formulation_covers_all_orientations"
+  ],
+  "planned_test_ids": [
+    "test_scaling_audit.ScalingAuditTests.test_abstract_antipodal_fibers_match_concrete_extremum",
+    "test_scaling_audit.ScalingAuditTests.test_leave_one_out_excludes_two_bit_counterexample",
+    "test_scaling_audit.ScalingAuditTests.test_noncomplementary_decoders_including_degenerate_ones",
+    "test_scaling_audit.ScalingAuditTests.test_sign_formulation_covers_all_orientations"
+  ],
+  "process_id": 54892,
+  "skips": 0,
+  "started_test_ids": [
+    "test_scaling_audit.ScalingAuditTests.test_abstract_antipodal_fibers_match_concrete_extremum",
+    "test_scaling_audit.ScalingAuditTests.test_leave_one_out_excludes_two_bit_counterexample",
+    "test_scaling_audit.ScalingAuditTests.test_noncomplementary_decoders_including_degenerate_ones",
+    "test_scaling_audit.ScalingAuditTests.test_sign_formulation_covers_all_orientations"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\0993abc6142879bd\\tmp",
+  "tests_run": 4,
+  "unexpected_successes": 0
+}

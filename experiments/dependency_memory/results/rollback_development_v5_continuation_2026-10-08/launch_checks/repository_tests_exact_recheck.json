@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python",
+    "tmp/recheck_v5_cont_tests.py"
+  ],
+  "console_path": "repository_tests_exact_recheck.txt",
+  "console_sha256": "e34450c9303855f65a55fac917ced87d8cfa106a7cc91c62ead7ed22f7e9c764",
+  "cwd": "C:\\Users\\jense\\Desktop\\ContextResearch",
+  "elapsed_seconds": 1.7349066000024322,
+  "exit_code": 0,
+  "finished_utc": "2026-10-09T03:55:45.319098+00:00",
+  "started_utc": "2026-10-09T03:55:43.584219+00:00"
+}

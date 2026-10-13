@@ -1,0 +1,69 @@
+{
+  "completed_test_ids": [
+    "test_transfer_continuation.ContinuationTests.test_every_manifest_and_initial_ledger_exists_before_first_decision",
+    "test_transfer_continuation.ContinuationTests.test_exact_case_filtering_and_global_original_order",
+    "test_transfer_continuation.ContinuationTests.test_live_execute_defensively_rejects_wrong_wire_contract_before_dispatch",
+    "test_transfer_continuation.ContinuationTests.test_policy_failures_remain_without_replacement",
+    "test_transfer_continuation.ContinuationTests.test_residual_budget_does_not_renew_original_worker_allocation",
+    "test_transfer_continuation.ContinuationTests.test_saved_raw_audit_reaches_client_attestation_before_launch_readiness",
+    "test_transfer_continuation.ContinuationTests.test_uncertain_attempt_retains_residual_reservation",
+    "test_transfer_continuation.ContinuationTests.test_wrong_wire_contract_is_rejected_before_client_or_process_creation",
+    "test_transfer_continuation.ContinuationTests.test_wrong_worker_certificate_is_rejected"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "test_transfer_continuation.ContinuationTests.test_every_manifest_and_initial_ledger_exists_before_first_decision": "passed",
+    "test_transfer_continuation.ContinuationTests.test_exact_case_filtering_and_global_original_order": "passed",
+    "test_transfer_continuation.ContinuationTests.test_live_execute_defensively_rejects_wrong_wire_contract_before_dispatch": "passed",
+    "test_transfer_continuation.ContinuationTests.test_policy_failures_remain_without_replacement": "passed",
+    "test_transfer_continuation.ContinuationTests.test_residual_budget_does_not_renew_original_worker_allocation": "passed",
+    "test_transfer_continuation.ContinuationTests.test_saved_raw_audit_reaches_client_attestation_before_launch_readiness": "passed",
+    "test_transfer_continuation.ContinuationTests.test_uncertain_attempt_retains_residual_reservation": "passed",
+    "test_transfer_continuation.ContinuationTests.test_wrong_wire_contract_is_rejected_before_client_or_process_creation": "passed",
+    "test_transfer_continuation.ContinuationTests.test_wrong_worker_certificate_is_rejected": "passed"
+  },
+  "elapsed_seconds": 17.318867300025886,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "test_transfer_continuation.ContinuationTests.test_every_manifest_and_initial_ledger_exists_before_first_decision",
+    "test_transfer_continuation.ContinuationTests.test_exact_case_filtering_and_global_original_order",
+    "test_transfer_continuation.ContinuationTests.test_live_execute_defensively_rejects_wrong_wire_contract_before_dispatch",
+    "test_transfer_continuation.ContinuationTests.test_policy_failures_remain_without_replacement",
+    "test_transfer_continuation.ContinuationTests.test_residual_budget_does_not_renew_original_worker_allocation",
+    "test_transfer_continuation.ContinuationTests.test_saved_raw_audit_reaches_client_attestation_before_launch_readiness",
+    "test_transfer_continuation.ContinuationTests.test_uncertain_attempt_retains_residual_reservation",
+    "test_transfer_continuation.ContinuationTests.test_wrong_wire_contract_is_rejected_before_client_or_process_creation",
+    "test_transfer_continuation.ContinuationTests.test_wrong_worker_certificate_is_rejected"
+  ],
+  "planned_test_ids": [
+    "test_transfer_continuation.ContinuationTests.test_every_manifest_and_initial_ledger_exists_before_first_decision",
+    "test_transfer_continuation.ContinuationTests.test_exact_case_filtering_and_global_original_order",
+    "test_transfer_continuation.ContinuationTests.test_live_execute_defensively_rejects_wrong_wire_contract_before_dispatch",
+    "test_transfer_continuation.ContinuationTests.test_policy_failures_remain_without_replacement",
+    "test_transfer_continuation.ContinuationTests.test_residual_budget_does_not_renew_original_worker_allocation",
+    "test_transfer_continuation.ContinuationTests.test_saved_raw_audit_reaches_client_attestation_before_launch_readiness",
+    "test_transfer_continuation.ContinuationTests.test_uncertain_attempt_retains_residual_reservation",
+    "test_transfer_continuation.ContinuationTests.test_wrong_wire_contract_is_rejected_before_client_or_process_creation",
+    "test_transfer_continuation.ContinuationTests.test_wrong_worker_certificate_is_rejected"
+  ],
+  "process_id": 54564,
+  "skips": 0,
+  "started_test_ids": [
+    "test_transfer_continuation.ContinuationTests.test_every_manifest_and_initial_ledger_exists_before_first_decision",
+    "test_transfer_continuation.ContinuationTests.test_exact_case_filtering_and_global_original_order",
+    "test_transfer_continuation.ContinuationTests.test_live_execute_defensively_rejects_wrong_wire_contract_before_dispatch",
+    "test_transfer_continuation.ContinuationTests.test_policy_failures_remain_without_replacement",
+    "test_transfer_continuation.ContinuationTests.test_residual_budget_does_not_renew_original_worker_allocation",
+    "test_transfer_continuation.ContinuationTests.test_saved_raw_audit_reaches_client_attestation_before_launch_readiness",
+    "test_transfer_continuation.ContinuationTests.test_uncertain_attempt_retains_residual_reservation",
+    "test_transfer_continuation.ContinuationTests.test_wrong_wire_contract_is_rejected_before_client_or_process_creation",
+    "test_transfer_continuation.ContinuationTests.test_wrong_worker_certificate_is_rejected"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\5a358c1d02260c79\\tmp",
+  "tests_run": 9,
+  "unexpected_successes": 0
+}

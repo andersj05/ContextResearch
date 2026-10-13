@@ -1,0 +1,16 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\44679e2f9641c9ae\\job.json",
+  "module": "test_compatibility",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\44679e2f9641c9ae\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\44679e2f9641c9ae\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\44679e2f9641c9ae\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\44679e2f9641c9ae\\tmp",
+  "test_ids": [
+    "test_compatibility.CompatibilityTests.test_child_optima_agree_with_independent_frontier_enumeration",
+    "test_compatibility.CompatibilityTests.test_every_choice_of_optimal_branch_code_was_enumerated",
+    "test_compatibility.CompatibilityTests.test_projection_positions",
+    "test_compatibility.CompatibilityTests.test_three_bit_witness_directly_attains_optimum",
+    "test_compatibility.CompatibilityTests.test_two_bits_cannot_reach_child_optimum"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

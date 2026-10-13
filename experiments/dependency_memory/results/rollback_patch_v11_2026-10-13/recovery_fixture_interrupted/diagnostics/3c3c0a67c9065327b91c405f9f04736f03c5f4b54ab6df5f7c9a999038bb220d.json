@@ -1,0 +1,1 @@
+{"observation":{},"phase":"quota","reason_code":"rpc_error","rpc_method":"account/rateLimits/read","rpc_numeric_code":-32603,"version":1}

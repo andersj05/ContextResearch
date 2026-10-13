@@ -1,0 +1,1 @@
+{"all_passed":true,"evidence_kind":"offline_replay_and_accounting_verification","jobs":768,"known_generations_replayed":235,"live_evidence":true,"model_calls":0,"peak_admitted_calls":4,"replayed_jobs":52,"reported_analysis_and_usage_reconciled":true,"source_manifest_sha256":"0b89302a75c7d79132d6e52dce1cca69e6bb6033c2395d536b9b23e1b97c29d0","tasks":48}

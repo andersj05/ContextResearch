@@ -1,0 +1,21 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\95ab161057df484d\\job.json",
+  "module": "test_codex_subscription",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\95ab161057df484d\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\95ab161057df484d\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\95ab161057df484d\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\95ab161057df484d\\tmp",
+  "test_ids": [
+    "test_codex_subscription.SubscriptionEventTests.test_every_tool_and_unknown_item_is_quarantined",
+    "test_codex_subscription.SubscriptionEventTests.test_failures_and_multi_turn_runs_cannot_masquerade_as_one_request",
+    "test_codex_subscription.SubscriptionEventTests.test_rejects_bad_usage_missing_reply_and_duplicate_json_keys",
+    "test_codex_subscription.SubscriptionEventTests.test_usage_preserves_overlap_and_unknown_subscription_charge",
+    "test_codex_subscription.SubscriptionGateTests.test_api_key_probe_never_echoes_key_or_switches_to_api",
+    "test_codex_subscription.SubscriptionGateTests.test_complete_cannot_dispatch_even_with_valid_credentials_or_bad_input",
+    "test_codex_subscription.SubscriptionGateTests.test_contract_does_not_equate_subscription_with_free_or_api_prices",
+    "test_codex_subscription.SubscriptionGateTests.test_login_probe_returns_only_classification_not_auth_output",
+    "test_codex_subscription.SubscriptionGateTests.test_preparation_uses_only_canonical_public_stdin_and_no_resume",
+    "test_codex_subscription.SubscriptionGateTests.test_sandbox_home_failure_is_unverified_not_failed_login"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

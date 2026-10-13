@@ -1,0 +1,373 @@
+def _build_component_01():
+    POLICY = {'revision_priority': 'revision_first', 'tax_base': 'original'}
+
+    def rounded(numerator, denominator, mode):
+        if mode == "half_up":
+            return numerator // denominator
+        return numerator // denominator
+
+    def winner_key(event, position):
+        if POLICY["revision_priority"] == "sequence_first":
+            return (event.get("sequence", 0), event.get("revision", 0), position)
+        return (event.get("revision", 0), position)
+
+    def amount(event, mode):
+        raw = event["price"] * event.get("quantity", 1)
+        discount = max(0, event.get("discount_bp", 0))
+        net = rounded(raw * (10000 - discount), 10000, mode)
+        base = net if POLICY["tax_base"] == "discounted" else raw
+        tax = rounded(base * event.get("tax_bp", 0), 10000, mode)
+        gross = net + tax
+        return -gross if event.get("kind") == "refund" else gross
+
+
+    def solve(data):
+        chosen = {}
+        cutoff = data.get("cutoff", 10**9)
+        for position, event in enumerate(data["events"]):
+            if event.get("sequence", 0) < 0:
+                continue
+            event_id = event.get("id", "anonymous:" + str(position))
+            key = winner_key(event, position)
+            if event_id not in chosen or key < chosen[event_id][0]:
+                chosen[event_id] = (key, event)
+        balances = {}
+        for _, event in chosen.values():
+            if event.get("void", False):
+                continue
+            account = event.get("account", "default")
+            currency = event.get("currency", "USD")
+            key = account + "|" + currency
+            balances[key] = balances.get(key, 0) + amount(event, data["rounding"])
+        return {"balances": balances}
+    return solve
+
+
+def _build_component_02():
+    POLICY = {'revision_priority': 'sequence_first', 'tax_base': 'original'}
+
+    def rounded(numerator, denominator, mode):
+        if mode == "half_up":
+            return (numerator + denominator // 2) // denominator
+        return numerator // denominator
+
+    def winner_key(event, position):
+        if POLICY["revision_priority"] == "sequence_first":
+            return (event.get("sequence", 0), event.get("revision", 0), position)
+        return (event.get("revision", 0), position)
+
+    def amount(event, mode):
+        raw = event["price"] * event.get("quantity", 1)
+        discount = max(0, event.get("discount_bp", 0))
+        net = rounded(raw * (10000 - discount), 10000, mode)
+        base = net if POLICY["tax_base"] == "discounted" else raw
+        tax = rounded(base * event.get("tax_bp", 0), 10000, mode)
+        gross = net + tax
+        return gross
+
+
+    def solve(data):
+        chosen = {}
+        cutoff = data.get("cutoff", 10**9)
+        for position, event in enumerate(data["events"]):
+            if event.get("sequence", 0) < 0:
+                continue
+            event_id = event.get("id", "anonymous:" + str(position))
+            key = winner_key(event, position)
+            if event_id not in chosen or key > chosen[event_id][0]:
+                chosen[event_id] = (key, event)
+        balances = {}
+        for _, event in chosen.values():
+            if event.get("void", False):
+                continue
+            account = event.get("account", "default")
+            currency = event.get("currency", "USD")
+            key = account + "|" + currency
+            balances[key] = balances.get(key, 0) + amount(event, data["rounding"])
+        return {"balances": balances}
+    return solve
+
+
+def _build_component_03():
+    POLICY = {'revision_priority': 'revision_first', 'tax_base': 'discounted'}
+
+    def rounded(numerator, denominator, mode):
+        if mode == "half_up":
+            return numerator // denominator
+        return numerator // denominator
+
+    def winner_key(event, position):
+        if POLICY["revision_priority"] == "sequence_first":
+            return (event.get("sequence", 0), event.get("revision", 0), position)
+        return (event.get("revision", 0), position)
+
+    def amount(event, mode):
+        raw = event["price"] * event.get("quantity", 1)
+        discount = max(0, event.get("discount_bp", 0))
+        net = rounded(raw * (10000 - discount), 10000, mode)
+        base = net if POLICY["tax_base"] == "discounted" else raw
+        tax = rounded(base * event.get("tax_bp", 0), 10000, mode)
+        gross = net + tax
+        return -gross if event.get("kind") == "refund" else gross
+
+
+    def solve(data):
+        chosen = {}
+        cutoff = data.get("cutoff", 10**9)
+        for position, event in enumerate(data["events"]):
+            if event.get("sequence", 0) < 0:
+                continue
+            event_id = event.get("id", "anonymous:" + str(position))
+            key = winner_key(event, position)
+            if event_id not in chosen or key < chosen[event_id][0]:
+                chosen[event_id] = (key, event)
+        balances = {}
+        for _, event in chosen.values():
+            if event.get("void", False):
+                continue
+            account = event.get("account", "default")
+            currency = event.get("currency", "USD")
+            key = account + "|" + currency
+            balances[key] = balances.get(key, 0) + amount(event, data["rounding"])
+        return {"balances": balances}
+    return solve
+
+
+def _build_component_04():
+    POLICY = {'revision_priority': 'sequence_first', 'tax_base': 'discounted'}
+
+    def rounded(numerator, denominator, mode):
+        if mode == "half_up":
+            return (numerator + denominator // 2) // denominator
+        return numerator // denominator
+
+    def winner_key(event, position):
+        if POLICY["revision_priority"] == "sequence_first":
+            return (event.get("sequence", 0), event.get("revision", 0), position)
+        return (event.get("revision", 0), position)
+
+    def amount(event, mode):
+        raw = event["price"] * event.get("quantity", 1)
+        discount = max(0, event.get("discount_bp", 0))
+        net = rounded(raw * (10000 - discount), 10000, mode)
+        base = net if POLICY["tax_base"] == "discounted" else raw
+        tax = rounded(base * event.get("tax_bp", 0), 10000, mode)
+        gross = net + tax
+        return gross
+
+
+    def solve(data):
+        chosen = {}
+        cutoff = data.get("cutoff", 10**9)
+        for position, event in enumerate(data["events"]):
+            if event.get("sequence", 0) < 0:
+                continue
+            event_id = event.get("id", "anonymous:" + str(position))
+            key = winner_key(event, position)
+            if event_id not in chosen or key < chosen[event_id][0]:
+                chosen[event_id] = (key, event)
+        balances = {}
+        for _, event in chosen.values():
+            if event.get("void", False):
+                continue
+            account = event.get("account", "default")
+            currency = event.get("currency", "USD")
+            key = account + "|" + currency
+            balances[key] = balances.get(key, 0) + amount(event, data["rounding"])
+        return {"balances": balances}
+    return solve
+
+
+def _build_component_05():
+    POLICY = {'revision_priority': 'revision_first', 'tax_base': 'original'}
+
+    def rounded(numerator, denominator, mode):
+        if mode == "half_up":
+            return (numerator + denominator // 2) // denominator
+        return numerator // denominator
+
+    def winner_key(event, position):
+        if POLICY["revision_priority"] == "sequence_first":
+            return (event.get("sequence", 0), event.get("revision", 0), position)
+        return (event.get("revision", 0), position)
+
+    def amount(event, mode):
+        raw = event["price"] * event.get("quantity", 1)
+        discount = max(0, event.get("discount_bp", 0))
+        net = rounded(raw * (10000 - discount), 10000, mode)
+        base = net if POLICY["tax_base"] == "discounted" else raw
+        tax = rounded(base * event.get("tax_bp", 0), 10000, mode)
+        gross = net + tax
+        return gross
+
+
+    def solve(data):
+        chosen = {}
+        cutoff = data.get("cutoff", 10**9)
+        for position, event in enumerate(data["events"]):
+            if event.get("sequence", 0) < 0:
+                continue
+            event_id = event.get("id", "anonymous:" + str(position))
+            key = winner_key(event, position)
+            if event_id not in chosen or key < chosen[event_id][0]:
+                chosen[event_id] = (key, event)
+        balances = {}
+        for _, event in chosen.values():
+            if event.get("void", False):
+                continue
+            account = event.get("account", "default")
+            currency = event.get("currency", "USD")
+            key = account + "|" + currency
+            balances[key] = balances.get(key, 0) + amount(event, data["rounding"])
+        return {"balances": balances}
+    return solve
+
+
+def _build_component_06():
+    POLICY = {'preference': 'maximum', 'name_order': 'descending'}
+
+    def active_dependencies(row, features):
+        return [dependency for dependency in row.get("deps", [])
+                if not dependency.get("feature")]
+
+    def acyclic(edges):
+        finished, active = set(), set()
+        def visit(name):
+            if name in active:
+                return False
+            if name in finished:
+                return True
+            active.add(name)
+            if any(not visit(other) for other in edges.get(name, [])):
+                return False
+            active.remove(name)
+            finished.add(name)
+            return True
+        return all(visit(name) for name in edges)
+
+
+    def solve(data):
+        chosen = {}
+        pending = [(name, bounds[0], bounds[1]) for name, bounds in data["roots"].items()]
+        seen = set()
+        while pending:
+            name, low, high = pending.pop()
+            if name in seen:
+                continue
+            seen.add(name)
+            rows = [row for row in data["packages"].get(name, []) if low <= row["version"] <= high]
+            rows = [row for row in rows if row["version"] not in data.get("blocked", {}).get(name, [])]
+            if name in data.get("pins", {}):
+                rows = [row for row in rows if row["version"] == data["pins"][name]]
+            if not rows:
+                return {"error": "unsatisfiable"}
+            row = max(rows, key=lambda item: item["version"])
+            chosen[name] = row["version"]
+            for dependency in active_dependencies(row, set(data.get("features", []))):
+                pending.append((dependency["name"], dependency["min"], dependency["max"]))
+        return {"versions": chosen}
+    return solve
+
+
+def _build_component_07():
+    import heapq
+    from collections import Counter
+    POLICY = {'capacity': 2, 'tie': 'largest'}
+
+    def allowed(selected, data):
+        ids = {job["id"] for job in selected}
+        if not set(data.get("mandatory", [])).issubset(ids):
+            return False
+        counts = Counter(job["group"] for job in selected)
+        for group, (low, high) in data.get("quotas", {}).items():
+            if not low <= counts.get(group, low) <= high:
+                return False
+        active_ends = []
+        for job in sorted(selected, key=lambda row: (row["start"], row["end"], row["id"])):
+            while active_ends and active_ends[0] < job["start"]:
+                heapq.heappop(active_ends)
+            heapq.heappush(active_ends, job["end"])
+            if len(active_ends) > POLICY["capacity"]:
+                return False
+        return True
+
+
+    def solve(data):
+        chosen = []
+        options = [job for job in data["jobs"] if job["id"] not in data.get("blocked", [])]
+        options.sort(key=lambda row: (-row["value"], row["id"]), reverse=False)
+        for job in options:
+            if len(chosen) == data["k"]:
+                break
+            if job["value"] < 0:
+                continue
+            trial = chosen + [job]
+            # Build a locally compatible choice, then check the final quotas.
+            stripped = {"mandatory": [], "quotas": {}}
+            if allowed(trial, stripped):
+                chosen = trial
+        if len(chosen) != data["k"] or not allowed(chosen, data):
+            return {"error": "impossible"}
+        return {"selected": sorted(job["id"] for job in chosen),
+                "value": sum(job["value"] for job in chosen)}
+    return solve
+
+
+def _build_component_08():
+    POLICY = {'coupon_rule': 'at_most', 'minimum_duration': 1}
+
+    def departures(edge, arrival, coupons_left):
+        depart = max(arrival, edge["open"])
+        if depart > edge["close"]:
+            return []
+        choices = [(depart + edge["duration"], coupons_left)]
+        if coupons_left:
+            duration = max(POLICY["minimum_duration"], edge["duration"] - edge.get("discount", 0))
+            choices.append((depart + duration, coupons_left - 1))
+        return choices
+
+    def visit_mask(node, required):
+        mask = 0
+        for index, name in enumerate(required):
+            if node == name:
+                mask |= 1 << index
+        return mask
+
+    import heapq
+
+    def solve(data):
+        required = data.get("required", [])
+        full = (1 << len(required)) - 1
+        graph = [[] for _ in range(data["n"])]
+        for edge in data["edges"]:
+            graph[edge["u"]].append(edge)
+        distance = {data["source"]: data["start"]}
+        queue = [(data["start"], data["source"], 0, data["coupons"])]
+        while queue:
+            arrival, node, mask, remaining = heapq.heappop(queue)
+            if distance.get(node) != arrival:
+                continue
+            if node == data["target"] and mask == full:
+                return {"arrival": arrival}
+            for edge in graph[node]:
+                for next_time, next_remaining in departures(edge, arrival, remaining):
+                    if next_time > data["deadline"]:
+                        continue
+                    if next_time < distance.get(edge["v"], float("inf")):
+                        distance[edge["v"]] = next_time
+                        heapq.heappush(queue, (next_time, edge["v"],
+                                              mask | visit_mask(edge["v"], required), next_remaining))
+        return {"arrival": None}
+    return solve
+
+
+SOLVERS = {
+    'component_01': _build_component_01(),
+    'component_02': _build_component_02(),
+    'component_03': _build_component_03(),
+    'component_04': _build_component_04(),
+    'component_05': _build_component_05(),
+    'component_06': _build_component_06(),
+    'component_07': _build_component_07(),
+    'component_08': _build_component_08()
+}

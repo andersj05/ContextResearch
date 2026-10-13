@@ -1,0 +1,349 @@
+Failed to find real location of C:\Python314\python.exe
+test_cumulative_ceiling_includes_completed_and_unknown_admissions (experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.ContinuationTests.test_cumulative_ceiling_includes_completed_and_unknown_admissions) ... ok
+test_diagnostics_exclude_untrusted_strings (experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.ContinuationTests.test_diagnostics_exclude_untrusted_strings) ... ok
+test_historical_request_tampering_is_rejected (experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.ContinuationTests.test_historical_request_tampering_is_rejected) ... ok
+test_historical_response_reconstructs_without_transport_or_admission (experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.ContinuationTests.test_historical_response_reconstructs_without_transport_or_admission) ... ok
+test_partial_episode_restoration_sends_only_next_unsent_identity (experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.ContinuationTests.test_partial_episode_restoration_sends_only_next_unsent_identity) ... ok
+test_subscription_or_information_contract_failures_stop_globally (experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.ContinuationTests.test_subscription_or_information_contract_failures_stop_globally) ... ok
+test_unknown_call_leaves_independent_work_admissible (experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.ContinuationTests.test_unknown_call_leaves_independent_work_admissible) ... ok
+test_unknown_common_lesson_blocks_only_dependent_arms (experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.ContinuationTests.test_unknown_common_lesson_blocks_only_dependent_arms) ... ok
+test_complete_continuation_and_independent_replay_preserve_unknown (experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.EvidenceReplayTest.test_complete_continuation_and_independent_replay_preserve_unknown) ... completed_jobs=1/240 active=3 stopped=True
+completed_jobs=2/240 active=2 stopped=True
+completed_jobs=3/240 active=1 stopped=True
+completed_jobs=4/240 active=0 stopped=True
+resolved_jobs=2/240 active=3 global_stop=False
+resolved_jobs=3/240 active=3 global_stop=False
+resolved_jobs=4/240 active=3 global_stop=False
+resolved_jobs=5/240 active=3 global_stop=False
+resolved_jobs=6/240 active=3 global_stop=False
+resolved_jobs=7/240 active=3 global_stop=False
+resolved_jobs=8/240 active=3 global_stop=False
+resolved_jobs=9/240 active=3 global_stop=False
+resolved_jobs=10/240 active=3 global_stop=False
+resolved_jobs=11/240 active=3 global_stop=False
+resolved_jobs=12/240 active=3 global_stop=False
+resolved_jobs=13/240 active=3 global_stop=False
+resolved_jobs=14/240 active=3 global_stop=False
+resolved_jobs=15/240 active=3 global_stop=False
+resolved_jobs=16/240 active=3 global_stop=False
+resolved_jobs=17/240 active=3 global_stop=False
+resolved_jobs=18/240 active=3 global_stop=False
+resolved_jobs=19/240 active=3 global_stop=False
+resolved_jobs=20/240 active=3 global_stop=False
+resolved_jobs=21/240 active=3 global_stop=False
+resolved_jobs=22/240 active=3 global_stop=False
+resolved_jobs=23/240 active=3 global_stop=False
+resolved_jobs=24/240 active=3 global_stop=False
+resolved_jobs=25/240 active=3 global_stop=False
+resolved_jobs=26/240 active=3 global_stop=False
+resolved_jobs=27/240 active=3 global_stop=False
+resolved_jobs=28/240 active=3 global_stop=False
+resolved_jobs=29/240 active=3 global_stop=False
+resolved_jobs=30/240 active=3 global_stop=False
+resolved_jobs=31/240 active=3 global_stop=False
+resolved_jobs=32/240 active=3 global_stop=False
+resolved_jobs=33/240 active=3 global_stop=False
+resolved_jobs=34/240 active=3 global_stop=False
+resolved_jobs=35/240 active=3 global_stop=False
+resolved_jobs=36/240 active=3 global_stop=False
+resolved_jobs=37/240 active=3 global_stop=False
+resolved_jobs=38/240 active=3 global_stop=False
+resolved_jobs=39/240 active=3 global_stop=False
+resolved_jobs=40/240 active=3 global_stop=False
+resolved_jobs=41/240 active=3 global_stop=False
+resolved_jobs=42/240 active=3 global_stop=False
+resolved_jobs=43/240 active=3 global_stop=False
+resolved_jobs=44/240 active=3 global_stop=False
+resolved_jobs=45/240 active=3 global_stop=False
+resolved_jobs=46/240 active=3 global_stop=False
+resolved_jobs=47/240 active=3 global_stop=False
+resolved_jobs=48/240 active=3 global_stop=False
+resolved_jobs=49/240 active=3 global_stop=False
+resolved_jobs=50/240 active=3 global_stop=False
+resolved_jobs=51/240 active=3 global_stop=False
+resolved_jobs=52/240 active=3 global_stop=False
+resolved_jobs=53/240 active=3 global_stop=False
+resolved_jobs=54/240 active=3 global_stop=False
+resolved_jobs=55/240 active=3 global_stop=False
+resolved_jobs=56/240 active=3 global_stop=False
+resolved_jobs=57/240 active=3 global_stop=False
+resolved_jobs=58/240 active=3 global_stop=False
+resolved_jobs=59/240 active=3 global_stop=False
+resolved_jobs=60/240 active=3 global_stop=False
+resolved_jobs=61/240 active=3 global_stop=False
+resolved_jobs=62/240 active=3 global_stop=False
+resolved_jobs=63/240 active=3 global_stop=False
+resolved_jobs=64/240 active=3 global_stop=False
+resolved_jobs=65/240 active=3 global_stop=False
+resolved_jobs=66/240 active=3 global_stop=False
+resolved_jobs=67/240 active=3 global_stop=False
+resolved_jobs=68/240 active=3 global_stop=False
+resolved_jobs=69/240 active=3 global_stop=False
+resolved_jobs=70/240 active=3 global_stop=False
+resolved_jobs=71/240 active=3 global_stop=False
+resolved_jobs=72/240 active=3 global_stop=False
+resolved_jobs=73/240 active=3 global_stop=False
+resolved_jobs=74/240 active=3 global_stop=False
+resolved_jobs=75/240 active=3 global_stop=False
+resolved_jobs=76/240 active=3 global_stop=False
+resolved_jobs=77/240 active=3 global_stop=False
+resolved_jobs=78/240 active=3 global_stop=False
+resolved_jobs=79/240 active=3 global_stop=False
+resolved_jobs=80/240 active=3 global_stop=False
+resolved_jobs=81/240 active=3 global_stop=False
+resolved_jobs=82/240 active=3 global_stop=False
+resolved_jobs=83/240 active=3 global_stop=False
+resolved_jobs=84/240 active=3 global_stop=False
+resolved_jobs=85/240 active=3 global_stop=False
+resolved_jobs=86/240 active=3 global_stop=False
+resolved_jobs=87/240 active=3 global_stop=False
+resolved_jobs=88/240 active=3 global_stop=False
+resolved_jobs=89/240 active=3 global_stop=False
+resolved_jobs=90/240 active=3 global_stop=False
+resolved_jobs=91/240 active=3 global_stop=False
+resolved_jobs=92/240 active=3 global_stop=False
+resolved_jobs=93/240 active=3 global_stop=False
+resolved_jobs=94/240 active=3 global_stop=False
+resolved_jobs=95/240 active=3 global_stop=False
+resolved_jobs=96/240 active=3 global_stop=False
+resolved_jobs=97/240 active=3 global_stop=False
+resolved_jobs=98/240 active=3 global_stop=False
+resolved_jobs=99/240 active=3 global_stop=False
+resolved_jobs=100/240 active=3 global_stop=False
+resolved_jobs=101/240 active=3 global_stop=False
+resolved_jobs=102/240 active=3 global_stop=False
+resolved_jobs=103/240 active=3 global_stop=False
+resolved_jobs=104/240 active=3 global_stop=False
+resolved_jobs=105/240 active=3 global_stop=False
+resolved_jobs=106/240 active=3 global_stop=False
+resolved_jobs=107/240 active=3 global_stop=False
+resolved_jobs=108/240 active=3 global_stop=False
+resolved_jobs=109/240 active=3 global_stop=False
+resolved_jobs=110/240 active=3 global_stop=False
+resolved_jobs=111/240 active=3 global_stop=False
+resolved_jobs=112/240 active=3 global_stop=False
+resolved_jobs=113/240 active=3 global_stop=False
+resolved_jobs=114/240 active=3 global_stop=False
+resolved_jobs=115/240 active=3 global_stop=False
+resolved_jobs=116/240 active=3 global_stop=False
+resolved_jobs=117/240 active=3 global_stop=False
+resolved_jobs=118/240 active=3 global_stop=False
+resolved_jobs=119/240 active=3 global_stop=False
+resolved_jobs=120/240 active=3 global_stop=False
+resolved_jobs=121/240 active=3 global_stop=False
+resolved_jobs=122/240 active=3 global_stop=False
+resolved_jobs=123/240 active=3 global_stop=False
+resolved_jobs=124/240 active=3 global_stop=False
+resolved_jobs=125/240 active=3 global_stop=False
+resolved_jobs=126/240 active=3 global_stop=False
+resolved_jobs=127/240 active=3 global_stop=False
+resolved_jobs=128/240 active=3 global_stop=False
+resolved_jobs=129/240 active=3 global_stop=False
+resolved_jobs=130/240 active=3 global_stop=False
+resolved_jobs=131/240 active=3 global_stop=False
+resolved_jobs=132/240 active=3 global_stop=False
+resolved_jobs=133/240 active=3 global_stop=False
+resolved_jobs=134/240 active=3 global_stop=False
+resolved_jobs=135/240 active=3 global_stop=False
+resolved_jobs=136/240 active=3 global_stop=False
+resolved_jobs=137/240 active=3 global_stop=False
+resolved_jobs=138/240 active=3 global_stop=False
+resolved_jobs=139/240 active=3 global_stop=False
+resolved_jobs=140/240 active=3 global_stop=False
+resolved_jobs=141/240 active=3 global_stop=False
+resolved_jobs=142/240 active=3 global_stop=False
+resolved_jobs=143/240 active=3 global_stop=False
+resolved_jobs=144/240 active=3 global_stop=False
+resolved_jobs=145/240 active=3 global_stop=False
+resolved_jobs=146/240 active=3 global_stop=False
+resolved_jobs=147/240 active=3 global_stop=False
+resolved_jobs=148/240 active=3 global_stop=False
+resolved_jobs=149/240 active=3 global_stop=False
+resolved_jobs=150/240 active=3 global_stop=False
+resolved_jobs=151/240 active=3 global_stop=False
+resolved_jobs=152/240 active=3 global_stop=False
+resolved_jobs=153/240 active=3 global_stop=False
+resolved_jobs=154/240 active=3 global_stop=False
+resolved_jobs=155/240 active=3 global_stop=False
+resolved_jobs=156/240 active=3 global_stop=False
+resolved_jobs=157/240 active=3 global_stop=False
+resolved_jobs=158/240 active=3 global_stop=False
+resolved_jobs=159/240 active=3 global_stop=False
+resolved_jobs=160/240 active=3 global_stop=False
+resolved_jobs=161/240 active=3 global_stop=False
+resolved_jobs=162/240 active=3 global_stop=False
+resolved_jobs=163/240 active=3 global_stop=False
+resolved_jobs=164/240 active=3 global_stop=False
+resolved_jobs=165/240 active=3 global_stop=False
+resolved_jobs=166/240 active=3 global_stop=False
+resolved_jobs=167/240 active=3 global_stop=False
+resolved_jobs=168/240 active=3 global_stop=False
+resolved_jobs=169/240 active=3 global_stop=False
+resolved_jobs=170/240 active=3 global_stop=False
+resolved_jobs=171/240 active=3 global_stop=False
+resolved_jobs=172/240 active=3 global_stop=False
+resolved_jobs=173/240 active=3 global_stop=False
+resolved_jobs=174/240 active=3 global_stop=False
+resolved_jobs=175/240 active=3 global_stop=False
+resolved_jobs=176/240 active=3 global_stop=False
+resolved_jobs=177/240 active=3 global_stop=False
+resolved_jobs=178/240 active=3 global_stop=False
+resolved_jobs=179/240 active=3 global_stop=False
+resolved_jobs=180/240 active=3 global_stop=False
+resolved_jobs=181/240 active=3 global_stop=False
+resolved_jobs=182/240 active=3 global_stop=False
+resolved_jobs=183/240 active=3 global_stop=False
+resolved_jobs=184/240 active=3 global_stop=False
+resolved_jobs=185/240 active=3 global_stop=False
+resolved_jobs=186/240 active=3 global_stop=False
+resolved_jobs=187/240 active=3 global_stop=False
+resolved_jobs=188/240 active=3 global_stop=False
+resolved_jobs=189/240 active=3 global_stop=False
+resolved_jobs=190/240 active=3 global_stop=False
+resolved_jobs=191/240 active=3 global_stop=False
+resolved_jobs=192/240 active=3 global_stop=False
+resolved_jobs=193/240 active=3 global_stop=False
+resolved_jobs=194/240 active=3 global_stop=False
+resolved_jobs=195/240 active=3 global_stop=False
+resolved_jobs=196/240 active=3 global_stop=False
+resolved_jobs=197/240 active=3 global_stop=False
+resolved_jobs=198/240 active=3 global_stop=False
+resolved_jobs=199/240 active=3 global_stop=False
+resolved_jobs=200/240 active=3 global_stop=False
+resolved_jobs=201/240 active=3 global_stop=False
+resolved_jobs=202/240 active=3 global_stop=False
+resolved_jobs=203/240 active=3 global_stop=False
+resolved_jobs=204/240 active=3 global_stop=False
+resolved_jobs=205/240 active=3 global_stop=False
+resolved_jobs=206/240 active=3 global_stop=False
+resolved_jobs=207/240 active=3 global_stop=False
+resolved_jobs=208/240 active=3 global_stop=False
+resolved_jobs=209/240 active=3 global_stop=False
+resolved_jobs=210/240 active=3 global_stop=False
+resolved_jobs=211/240 active=3 global_stop=False
+resolved_jobs=212/240 active=3 global_stop=False
+resolved_jobs=213/240 active=3 global_stop=False
+resolved_jobs=214/240 active=3 global_stop=False
+resolved_jobs=215/240 active=3 global_stop=False
+resolved_jobs=216/240 active=3 global_stop=False
+resolved_jobs=217/240 active=3 global_stop=False
+resolved_jobs=218/240 active=3 global_stop=False
+resolved_jobs=219/240 active=3 global_stop=False
+resolved_jobs=220/240 active=3 global_stop=False
+resolved_jobs=221/240 active=3 global_stop=False
+resolved_jobs=222/240 active=3 global_stop=False
+resolved_jobs=223/240 active=3 global_stop=False
+resolved_jobs=224/240 active=3 global_stop=False
+resolved_jobs=225/240 active=3 global_stop=False
+resolved_jobs=226/240 active=3 global_stop=False
+resolved_jobs=227/240 active=3 global_stop=False
+resolved_jobs=228/240 active=3 global_stop=False
+resolved_jobs=229/240 active=3 global_stop=False
+resolved_jobs=230/240 active=3 global_stop=False
+resolved_jobs=231/240 active=3 global_stop=False
+resolved_jobs=232/240 active=3 global_stop=False
+resolved_jobs=233/240 active=3 global_stop=False
+resolved_jobs=234/240 active=3 global_stop=False
+resolved_jobs=235/240 active=3 global_stop=False
+resolved_jobs=236/240 active=3 global_stop=False
+resolved_jobs=237/240 active=3 global_stop=False
+resolved_jobs=238/240 active=2 global_stop=False
+resolved_jobs=239/240 active=1 global_stop=False
+resolved_jobs=240/240 active=0 global_stop=False
+ERROR
+test_concurrent_admission_is_bounded_and_duplicate_safe (experiments.dependency_memory.rollback_development_v5.test_design.AccountingTests.test_concurrent_admission_is_bounded_and_duplicate_safe) ... ok
+test_existing_dispatch_cannot_be_reopened_or_retried (experiments.dependency_memory.rollback_development_v5.test_design.AccountingTests.test_existing_dispatch_cannot_be_reopened_or_retried) ... ok
+test_missing_usage_and_reused_provider_thread_are_not_completed (experiments.dependency_memory.rollback_development_v5.test_design.AccountingTests.test_missing_usage_and_reused_provider_thread_are_not_completed) ... ok
+test_report_charges_received_work_even_when_episode_state_is_missing (experiments.dependency_memory.rollback_development_v5.test_design.AccountingTests.test_report_charges_received_work_even_when_episode_state_is_missing) ... ok
+test_unknown_stops_new_work_and_drain_keeps_other_usage (experiments.dependency_memory.rollback_development_v5.test_design.AccountingTests.test_unknown_stops_new_work_and_drain_keeps_other_usage) ... ok
+test_K_R_initial_inputs_differ_only_in_raw_history (experiments.dependency_memory.rollback_development_v5.test_design.DesignTests.test_K_R_initial_inputs_differ_only_in_raw_history) ... ok
+test_all_math_references_pass_independent_formulation_at_all_stages (experiments.dependency_memory.rollback_development_v5.test_design.DesignTests.test_all_math_references_pass_independent_formulation_at_all_stages) ... ok
+test_ambiguous_duplicate_json_fields_are_not_silently_accepted (experiments.dependency_memory.rollback_development_v5.test_design.DesignTests.test_ambiguous_duplicate_json_fields_are_not_silently_accepted) ... ok
+test_every_stage_uses_medium_and_initial_requests_fit (experiments.dependency_memory.rollback_development_v5.test_design.DesignTests.test_every_stage_uses_medium_and_initial_requests_fit) ... ok
+test_evidence_lesson_factor_keeps_K_R_contrast_identical (experiments.dependency_memory.rollback_development_v5.test_design.DesignTests.test_evidence_lesson_factor_keeps_K_R_contrast_identical) ... ok
+test_exhaustive_small_routes_agree_with_production (experiments.dependency_memory.rollback_development_v5.test_design.DesignTests.test_exhaustive_small_routes_agree_with_production) ... ok
+test_factorial_balance_and_unique_seeded_instances (experiments.dependency_memory.rollback_development_v5.test_design.DesignTests.test_factorial_balance_and_unique_seeded_instances) ... ok
+test_fresh_restart_has_all_released_requirements_and_no_trials (experiments.dependency_memory.rollback_development_v5.test_design.DesignTests.test_fresh_restart_has_all_released_requirements_and_no_trials) ... ok
+test_frozen_bundle_binds_readable_catalog_and_retained_source (experiments.dependency_memory.rollback_development_v5.test_design.DesignTests.test_frozen_bundle_binds_readable_catalog_and_retained_source) ... ok
+test_frozen_schedule_has_no_duplicate_or_shared_call_identity (experiments.dependency_memory.rollback_development_v5.test_design.DesignTests.test_frozen_schedule_has_no_duplicate_or_shared_call_identity) ... ok
+test_generator_reproducible_and_hashes_bind_every_field (experiments.dependency_memory.rollback_development_v5.test_design.DesignTests.test_generator_reproducible_and_hashes_bind_every_field) ... ok
+test_horizon_and_difficulty_have_explicit_distinct_controls (experiments.dependency_memory.rollback_development_v5.test_design.DesignTests.test_horizon_and_difficulty_have_explicit_distinct_controls) ... ok
+test_perfect_actor_can_finish_early_without_padding (experiments.dependency_memory.rollback_development_v5.test_design.DesignTests.test_perfect_actor_can_finish_early_without_padding) ... ok
+test_private_and_future_mutations_cannot_change_current_request (experiments.dependency_memory.rollback_development_v5.test_design.DesignTests.test_private_and_future_mutations_cannot_change_current_request) ... ok
+test_repeated_compression_is_separate_and_counted (experiments.dependency_memory.rollback_development_v5.test_design.DesignTests.test_repeated_compression_is_separate_and_counted) ... ok
+test_short_control_has_room_for_real_recovery (experiments.dependency_memory.rollback_development_v5.test_design.DesignTests.test_short_control_has_room_for_real_recovery) ... ok
+test_source_paths_and_boolean_integer_candidates_are_rejected (experiments.dependency_memory.rollback_development_v5.test_design.DesignTests.test_source_paths_and_boolean_integer_candidates_are_rejected) ... ok
+test_unknowns_preserve_fixed_denominator_bounds (experiments.dependency_memory.rollback_development_v5.test_design.DesignTests.test_unknowns_preserve_fixed_denominator_bounds) ... ok
+test_writer_overflow_and_continue_with_candidate_fail (experiments.dependency_memory.rollback_development_v5.test_design.DesignTests.test_writer_overflow_and_continue_with_candidate_fail) ... ok
+test_parallel_unknown_does_not_start_another_job_or_erase_inflight (experiments.dependency_memory.rollback_development_v5.test_design.ParallelTests.test_parallel_unknown_does_not_start_another_job_or_erase_inflight) ... completed_jobs=1/20 active=2 stopped=True
+completed_jobs=2/20 active=1 stopped=True
+completed_jobs=3/20 active=0 stopped=True
+ok
+test_scheduler_overlaps_independent_tasks_and_forks_only_after_shared_prefix (experiments.dependency_memory.rollback_development_v5.test_design.ParallelTests.test_scheduler_overlaps_independent_tasks_and_forks_only_after_shared_prefix) ... completed_jobs=1/52 active=3 stopped=False
+completed_jobs=2/52 active=3 stopped=False
+completed_jobs=3/52 active=3 stopped=False
+completed_jobs=4/52 active=3 stopped=False
+completed_jobs=5/52 active=3 stopped=False
+completed_jobs=6/52 active=3 stopped=False
+completed_jobs=7/52 active=3 stopped=False
+completed_jobs=8/52 active=3 stopped=False
+completed_jobs=9/52 active=3 stopped=False
+completed_jobs=10/52 active=3 stopped=False
+completed_jobs=11/52 active=3 stopped=False
+completed_jobs=12/52 active=3 stopped=False
+completed_jobs=13/52 active=3 stopped=False
+completed_jobs=14/52 active=3 stopped=False
+completed_jobs=15/52 active=3 stopped=False
+completed_jobs=16/52 active=3 stopped=False
+completed_jobs=17/52 active=3 stopped=False
+completed_jobs=18/52 active=3 stopped=False
+completed_jobs=19/52 active=3 stopped=False
+completed_jobs=20/52 active=3 stopped=False
+completed_jobs=21/52 active=3 stopped=False
+completed_jobs=22/52 active=3 stopped=False
+completed_jobs=23/52 active=3 stopped=False
+completed_jobs=24/52 active=3 stopped=False
+completed_jobs=25/52 active=2 stopped=False
+completed_jobs=26/52 active=3 stopped=False
+completed_jobs=27/52 active=2 stopped=False
+completed_jobs=28/52 active=3 stopped=False
+completed_jobs=29/52 active=2 stopped=False
+completed_jobs=30/52 active=3 stopped=False
+completed_jobs=31/52 active=3 stopped=False
+completed_jobs=32/52 active=3 stopped=False
+completed_jobs=33/52 active=3 stopped=False
+completed_jobs=34/52 active=3 stopped=False
+completed_jobs=35/52 active=3 stopped=False
+completed_jobs=36/52 active=3 stopped=False
+completed_jobs=37/52 active=3 stopped=False
+completed_jobs=38/52 active=3 stopped=False
+completed_jobs=39/52 active=3 stopped=False
+completed_jobs=40/52 active=2 stopped=False
+completed_jobs=41/52 active=3 stopped=False
+completed_jobs=42/52 active=3 stopped=False
+completed_jobs=43/52 active=3 stopped=False
+completed_jobs=44/52 active=3 stopped=False
+completed_jobs=45/52 active=3 stopped=False
+completed_jobs=46/52 active=3 stopped=False
+completed_jobs=47/52 active=3 stopped=False
+completed_jobs=48/52 active=3 stopped=False
+completed_jobs=49/52 active=3 stopped=False
+completed_jobs=50/52 active=2 stopped=False
+completed_jobs=51/52 active=1 stopped=False
+completed_jobs=52/52 active=0 stopped=False
+ok
+
+======================================================================
+ERROR: test_complete_continuation_and_independent_replay_preserve_unknown (experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.EvidenceReplayTest.test_complete_continuation_and_independent_replay_preserve_unknown)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\rollback_development_v5_continuation\test_continuation.py", line 214, in test_complete_continuation_and_independent_replay_preserve_unknown
+    audited = audit(prepared, output)
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\rollback_development_v5_continuation\audit.py", line 178, in audit
+    raise ReplayMismatch("analysis and durable usage/outcomes differ")
+experiments.dependency_memory.rollback_development_v5.audit.ReplayMismatch: analysis and durable usage/outcomes differ
+
+----------------------------------------------------------------------
+Ran 35 tests in 153.841s
+
+FAILED (errors=1)

@@ -1,0 +1,15 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\a756fbfc2b027bb0\\job.json",
+  "module": "cross_record_continuation.test_continuation",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\a756fbfc2b027bb0\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\a756fbfc2b027bb0\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\a756fbfc2b027bb0\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\a756fbfc2b027bb0\\tmp",
+  "test_ids": [
+    "cross_record_continuation.test_continuation.ContinuationTests.test_controller_accepts_only_next_identity_and_never_retries",
+    "cross_record_continuation.test_continuation.ContinuationTests.test_frozen_prefix_suffix_and_permanent_failure",
+    "cross_record_continuation.test_continuation.ContinuationTests.test_full_suffix_dry_run_without_model_or_original_mutation",
+    "cross_record_continuation.test_continuation.ContinuationTests.test_provider_error_is_permanent_and_advances_once"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

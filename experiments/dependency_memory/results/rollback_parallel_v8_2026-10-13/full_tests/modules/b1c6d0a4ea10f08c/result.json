@@ -1,0 +1,49 @@
+{
+  "completed_test_ids": [
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_complete_data_reduces_to_the_existing_exact_test",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_effect_direction_is_symmetric_and_all_missing_is_uninformative",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_exhaustive_small_completion_enumeration",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_invalid_scores_and_counts_cannot_enter_the_test",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_one_unknown_can_preserve_or_remove_a_rejection"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_complete_data_reduces_to_the_existing_exact_test": "passed",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_effect_direction_is_symmetric_and_all_missing_is_uninformative": "passed",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_exhaustive_small_completion_enumeration": "passed",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_invalid_scores_and_counts_cannot_enter_the_test": "passed",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_one_unknown_can_preserve_or_remove_a_rejection": "passed"
+  },
+  "elapsed_seconds": 0.5850365000078455,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_complete_data_reduces_to_the_existing_exact_test",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_effect_direction_is_symmetric_and_all_missing_is_uninformative",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_exhaustive_small_completion_enumeration",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_invalid_scores_and_counts_cannot_enter_the_test",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_one_unknown_can_preserve_or_remove_a_rejection"
+  ],
+  "planned_test_ids": [
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_complete_data_reduces_to_the_existing_exact_test",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_effect_direction_is_symmetric_and_all_missing_is_uninformative",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_exhaustive_small_completion_enumeration",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_invalid_scores_and_counts_cannot_enter_the_test",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_one_unknown_can_preserve_or_remove_a_rejection"
+  ],
+  "process_id": 57112,
+  "skips": 0,
+  "started_test_ids": [
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_complete_data_reduces_to_the_existing_exact_test",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_effect_direction_is_symmetric_and_all_missing_is_uninformative",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_exhaustive_small_completion_enumeration",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_invalid_scores_and_counts_cannot_enter_the_test",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_one_unknown_can_preserve_or_remove_a_rejection"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\b1c6d0a4ea10f08c\\tmp",
+  "tests_run": 5,
+  "unexpected_successes": 0
+}

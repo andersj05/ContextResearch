@@ -1,0 +1,9 @@
+{
+  "check_categories": 259,
+  "checked_utc": "2026-10-09T22:41:54.683751+00:00",
+  "log": "scientific_validation.txt",
+  "log_sha256": "cd61d1c95bf720a7141d8038dac4ceafb4d8cbae4f27c8759dfc8d4bb3e70d64",
+  "model_calls": 0,
+  "scope": "Full scientific repository validator after the intermediate-profile and robust-control-gate source change. Separately registered later allocations retain their own task checks and replay.",
+  "status": "passed"
+}

@@ -1,0 +1,7 @@
+Failed to find real location of C:\Python314\python.exe
+test_wrong_thread_is_rejected (test_luna_appserver.LunaAppServerTests.test_wrong_thread_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.018s
+
+OK

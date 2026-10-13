@@ -1,0 +1,17 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\fc992700e3ba3f2a\\job.json",
+  "module": "joint_coding_finite3.test_finite3",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\fc992700e3ba3f2a\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\fc992700e3ba3f2a\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\fc992700e3ba3f2a\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\fc992700e3ba3f2a\\tmp",
+  "test_ids": [
+    "joint_coding_finite3.test_finite3.FiniteThreeBlockTests.test_capacity_and_malformed_states_rejected",
+    "joint_coding_finite3.test_finite3.FiniteThreeBlockTests.test_child_is_one_bit_and_fixed_before_every_late_coordinate",
+    "joint_coding_finite3.test_finite3.FiniteThreeBlockTests.test_discovery_source_binding_and_bounded_search_disposition",
+    "joint_coding_finite3.test_finite3.FiniteThreeBlockTests.test_generator_against_each_direct_route_and_all_nearest_assignments",
+    "joint_coding_finite3.test_finite3.FiniteThreeBlockTests.test_historical_concatenation_and_independent_product_control",
+    "joint_coding_finite3.test_finite3.FiniteThreeBlockTests.test_public_relabelling_block_permutation_and_complement_keep_error"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

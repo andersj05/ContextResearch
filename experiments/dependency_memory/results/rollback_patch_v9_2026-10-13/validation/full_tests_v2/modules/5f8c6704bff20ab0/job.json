@@ -1,0 +1,25 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\5f8c6704bff20ab0\\job.json",
+  "module": "workflow_prospective.test_method",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\5f8c6704bff20ab0\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\5f8c6704bff20ab0\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\5f8c6704bff20ab0\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\5f8c6704bff20ab0\\tmp",
+  "test_ids": [
+    "workflow_prospective.test_method.MethodTests.test_canonical_shadow_matches_direct_for_valid_invalid_and_binding_proposals",
+    "workflow_prospective.test_method.MethodTests.test_correct_prose_can_be_uncheckable_and_is_not_scored_as_repaired",
+    "workflow_prospective.test_method.MethodTests.test_empty_parent_cannot_be_resurrected_in_direct_child",
+    "workflow_prospective.test_method.MethodTests.test_final_veto_is_recorded_without_a_repair_or_another_call",
+    "workflow_prospective.test_method.MethodTests.test_later_failure_overrides_success_even_if_older_success_matches_artifacts",
+    "workflow_prospective.test_method.MethodTests.test_public_requests_exclude_evaluator_labels_and_observe_order",
+    "workflow_prospective.test_method.MethodTests.test_request_budget_stops_before_callback_without_clipping",
+    "workflow_prospective.test_method.MethodTests.test_requested_archive_preserves_later_failures_and_order",
+    "workflow_prospective.test_method.MethodTests.test_reverse_specification_and_latest_projection_on_small_complete_grid",
+    "workflow_prospective.test_method.MethodTests.test_runtime_imports_no_evaluator_or_provider",
+    "workflow_prospective.test_method.MethodTests.test_saved_replay_rejects_a_response_from_another_public_request",
+    "workflow_prospective.test_method.MethodTests.test_scope_and_utf8_caps_are_enforced_without_truncation",
+    "workflow_prospective.test_method.MethodTests.test_screen_distinguishes_full_refresh_and_actual_parent_dependence",
+    "workflow_prospective.test_method.MethodTests.test_transport_stop_keeps_exact_prefix_and_never_retries"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

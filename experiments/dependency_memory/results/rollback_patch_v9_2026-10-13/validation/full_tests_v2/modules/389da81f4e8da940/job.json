@@ -1,0 +1,20 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\389da81f4e8da940\\job.json",
+  "module": "workflow_eval_live.test_live",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\389da81f4e8da940\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\389da81f4e8da940\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\389da81f4e8da940\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\389da81f4e8da940\\tmp",
+  "test_ids": [
+    "workflow_eval_live.test_live.LiveTests.test_checker_rejects_wrong_state_and_does_not_resurrect_deleted_source",
+    "workflow_eval_live.test_live.LiveTests.test_final_index_and_full_views_preserve_every_record_and_later_failure",
+    "workflow_eval_live.test_live.LiveTests.test_four_conditions_have_independently_expected_required_work",
+    "workflow_eval_live.test_live.LiveTests.test_isolation_audit_rejects_extra_message_and_external_registry",
+    "workflow_eval_live.test_live.LiveTests.test_normalization_only_removes_nulls_from_exact_provider_keys",
+    "workflow_eval_live.test_live.LiveTests.test_oversize_or_malformed_prose_is_not_clipped_or_retried",
+    "workflow_eval_live.test_live.LiveTests.test_request_rejects_evaluator_metadata_and_large_body",
+    "workflow_eval_live.test_live.LiveTests.test_saved_answer_replay_and_accounting_reject_tampering",
+    "workflow_eval_live.test_live.LiveTests.test_schedule_is_complete_unique_and_replayed_without_grader_feedback"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

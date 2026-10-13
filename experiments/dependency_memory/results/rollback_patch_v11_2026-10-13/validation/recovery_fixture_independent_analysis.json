@@ -1,0 +1,682 @@
+{
+  "actual_study_resources": {
+    "admitted_calls": 24,
+    "inflight_calls": 0,
+    "known_calls": 23,
+    "known_planning_credits": "2.5030850",
+    "known_usage": {
+      "cached_input": 0,
+      "input_tokens": 637349,
+      "output": 72777,
+      "reasoning": 0
+    },
+    "sum_known_call_elapsed_seconds": 0.13180649999412708,
+    "unknown_calls": 1,
+    "unknown_locked_planning_credits": "4.225"
+  },
+  "arms": {
+    "K0": {
+      "finite_cohort_success_fraction_bounds": [
+        1.0,
+        1.0
+      ],
+      "known": 4,
+      "known_success_fraction": 1.0,
+      "missing": 0,
+      "passed": 4,
+      "planned_conditional_tasks": 4
+    },
+    "KL": {
+      "finite_cohort_success_fraction_bounds": [
+        0.75,
+        1.0
+      ],
+      "known": 3,
+      "known_success_fraction": 1.0,
+      "missing": 1,
+      "passed": 3,
+      "planned_conditional_tasks": 4
+    },
+    "R0": {
+      "finite_cohort_success_fraction_bounds": [
+        1.0,
+        1.0
+      ],
+      "known": 4,
+      "known_success_fraction": 1.0,
+      "missing": 0,
+      "passed": 4,
+      "planned_conditional_tasks": 4
+    },
+    "RL": {
+      "finite_cohort_success_fraction_bounds": [
+        1.0,
+        1.0
+      ],
+      "known": 4,
+      "known_success_fraction": 1.0,
+      "missing": 0,
+      "passed": 4,
+      "planned_conditional_tasks": 4
+    }
+  },
+  "audit_script_sha256": "cf66124116e0ed65944d1682080bb7b3fa0df02ea43c1236a79139c84dc1c100",
+  "bundle": "experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/recovery_fixture_bundle",
+  "candidate_code_executed_by_audit": false,
+  "capacity_interpretation_gate": {
+    "capacity_stops": [],
+    "global_stop": true,
+    "passed": false
+  },
+  "constructed_self_test": {
+    "constructed_checks": 20,
+    "model_calls": 0,
+    "passed": true
+  },
+  "disjoint_resource_categories": {
+    "K0": {
+      "admitted_calls": 4,
+      "inflight_calls": 0,
+      "known_calls": 4,
+      "known_planning_credits": "0.5450375",
+      "known_usage": {
+        "cached_input": 0,
+        "input_tokens": 122210,
+        "output": 19161,
+        "reasoning": 0
+      },
+      "sum_known_call_elapsed_seconds": 0.023030400014249608,
+      "unknown_calls": 0,
+      "unknown_locked_planning_credits": "0"
+    },
+    "KL": {
+      "admitted_calls": 4,
+      "inflight_calls": 0,
+      "known_calls": 3,
+      "known_planning_credits": "0.4189850",
+      "known_usage": {
+        "cached_input": 0,
+        "input_tokens": 93344,
+        "output": 14850,
+        "reasoning": 0
+      },
+      "sum_known_call_elapsed_seconds": 0.01711710001109168,
+      "unknown_calls": 1,
+      "unknown_locked_planning_credits": "4.225"
+    },
+    "R0": {
+      "admitted_calls": 4,
+      "inflight_calls": 0,
+      "known_calls": 4,
+      "known_planning_credits": "0.5014275",
+      "known_usage": {
+        "cached_input": 0,
+        "input_tokens": 104766,
+        "output": 19161,
+        "reasoning": 0
+      },
+      "sum_known_call_elapsed_seconds": 0.025587999989511445,
+      "unknown_calls": 0,
+      "unknown_locked_planning_credits": "0"
+    },
+    "RL": {
+      "admitted_calls": 4,
+      "inflight_calls": 0,
+      "known_calls": 4,
+      "known_planning_credits": "0.5017850",
+      "known_usage": {
+        "cached_input": 0,
+        "input_tokens": 104909,
+        "output": 19161,
+        "reasoning": 0
+      },
+      "sum_known_call_elapsed_seconds": 0.0214550000091549,
+      "unknown_calls": 0,
+      "unknown_locked_planning_credits": "0"
+    },
+    "shared_lesson": {
+      "admitted_calls": 4,
+      "inflight_calls": 0,
+      "known_calls": 4,
+      "known_planning_credits": "0.3077550",
+      "known_usage": {
+        "cached_input": 0,
+        "input_tokens": 122462,
+        "output": 128,
+        "reasoning": 0
+      },
+      "sum_known_call_elapsed_seconds": 0.02315920000546612,
+      "unknown_calls": 0,
+      "unknown_locked_planning_credits": "0"
+    },
+    "shared_prefix": {
+      "admitted_calls": 4,
+      "inflight_calls": 0,
+      "known_calls": 4,
+      "known_planning_credits": "0.2280950",
+      "known_usage": {
+        "cached_input": 0,
+        "input_tokens": 89658,
+        "output": 316,
+        "reasoning": 0
+      },
+      "sum_known_call_elapsed_seconds": 0.021456799964653328,
+      "unknown_calls": 0,
+      "unknown_locked_planning_credits": "0"
+    }
+  },
+  "eligible_leading_family_counts": {
+    "composite_dependency_resolver": 1,
+    "composite_quota_intervals": 1,
+    "composite_revision_ledger": 1,
+    "composite_temporal_routes": 1
+  },
+  "eligible_natural_failures": 4,
+  "eligible_task_outcomes": [
+    {
+      "K0": 1,
+      "KL": null,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_quota_intervals",
+      "task_id": "v11-fixture-composite_quota_intervals-708161322e57eb8d"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_revision_ledger",
+      "task_id": "v11-fixture-composite_revision_ledger-64b64e45d2f8f786"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_temporal_routes",
+      "task_id": "v11-fixture-composite_temporal_routes-74832a79930ecd68"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_dependency_resolver",
+      "task_id": "v11-fixture-composite_dependency_resolver-5625fb0e03d960a8"
+    }
+  ],
+  "evidence_kind": "independent_offline_reconciliation_of_scripted_fixture",
+  "factorial_contrasts": {
+    "deletion_main": {
+      "complete_case_family_counts": {
+        "composite_dependency_resolver": 1,
+        "composite_revision_ledger": 1,
+        "composite_temporal_routes": 1
+      },
+      "complete_case_mean": 0.0,
+      "complete_case_mean_exact": "0",
+      "complete_tasks": 3,
+      "eligible_tasks": 4,
+      "finite_cohort_missingness_bounds": [
+        0.0,
+        0.125
+      ],
+      "finite_cohort_missingness_bounds_exact": [
+        "0",
+        "1/8"
+      ],
+      "incomplete_tasks": 1,
+      "scope": "Bounds enumerate missing binary outcomes in the fixed eligible cohort; not confidence intervals. Complete-case means can have a smaller denominator.",
+      "units": "difference in binary success proportions; multiply by 100 for percentage points"
+    },
+    "deletion_with_lesson": {
+      "complete_case_family_counts": {
+        "composite_dependency_resolver": 1,
+        "composite_revision_ledger": 1,
+        "composite_temporal_routes": 1
+      },
+      "complete_case_mean": 0.0,
+      "complete_case_mean_exact": "0",
+      "complete_tasks": 3,
+      "eligible_tasks": 4,
+      "finite_cohort_missingness_bounds": [
+        0.0,
+        0.25
+      ],
+      "finite_cohort_missingness_bounds_exact": [
+        "0",
+        "1/4"
+      ],
+      "incomplete_tasks": 1,
+      "scope": "Bounds enumerate missing binary outcomes in the fixed eligible cohort; not confidence intervals. Complete-case means can have a smaller denominator.",
+      "units": "difference in binary success proportions; multiply by 100 for percentage points"
+    },
+    "deletion_without_lesson": {
+      "complete_case_family_counts": {
+        "composite_dependency_resolver": 1,
+        "composite_quota_intervals": 1,
+        "composite_revision_ledger": 1,
+        "composite_temporal_routes": 1
+      },
+      "complete_case_mean": 0.0,
+      "complete_case_mean_exact": "0",
+      "complete_tasks": 4,
+      "eligible_tasks": 4,
+      "finite_cohort_missingness_bounds": [
+        0.0,
+        0.0
+      ],
+      "finite_cohort_missingness_bounds_exact": [
+        "0",
+        "0"
+      ],
+      "incomplete_tasks": 0,
+      "scope": "Bounds enumerate missing binary outcomes in the fixed eligible cohort; not confidence intervals. Complete-case means can have a smaller denominator.",
+      "units": "difference in binary success proportions; multiply by 100 for percentage points"
+    },
+    "interaction": {
+      "complete_case_family_counts": {
+        "composite_dependency_resolver": 1,
+        "composite_revision_ledger": 1,
+        "composite_temporal_routes": 1
+      },
+      "complete_case_mean": 0.0,
+      "complete_case_mean_exact": "0",
+      "complete_tasks": 3,
+      "eligible_tasks": 4,
+      "finite_cohort_missingness_bounds": [
+        0.0,
+        0.25
+      ],
+      "finite_cohort_missingness_bounds_exact": [
+        "0",
+        "1/4"
+      ],
+      "incomplete_tasks": 1,
+      "scope": "Bounds enumerate missing binary outcomes in the fixed eligible cohort; not confidence intervals. Complete-case means can have a smaller denominator.",
+      "units": "difference in binary success proportions; multiply by 100 for percentage points"
+    },
+    "lesson_main": {
+      "complete_case_family_counts": {
+        "composite_dependency_resolver": 1,
+        "composite_revision_ledger": 1,
+        "composite_temporal_routes": 1
+      },
+      "complete_case_mean": 0.0,
+      "complete_case_mean_exact": "0",
+      "complete_tasks": 3,
+      "eligible_tasks": 4,
+      "finite_cohort_missingness_bounds": [
+        -0.125,
+        0.0
+      ],
+      "finite_cohort_missingness_bounds_exact": [
+        "-1/8",
+        "0"
+      ],
+      "incomplete_tasks": 1,
+      "scope": "Bounds enumerate missing binary outcomes in the fixed eligible cohort; not confidence intervals. Complete-case means can have a smaller denominator.",
+      "units": "difference in binary success proportions; multiply by 100 for percentage points"
+    },
+    "lesson_when_keeping": {
+      "complete_case_family_counts": {
+        "composite_dependency_resolver": 1,
+        "composite_revision_ledger": 1,
+        "composite_temporal_routes": 1
+      },
+      "complete_case_mean": 0.0,
+      "complete_case_mean_exact": "0",
+      "complete_tasks": 3,
+      "eligible_tasks": 4,
+      "finite_cohort_missingness_bounds": [
+        -0.25,
+        0.0
+      ],
+      "finite_cohort_missingness_bounds_exact": [
+        "-1/4",
+        "0"
+      ],
+      "incomplete_tasks": 1,
+      "scope": "Bounds enumerate missing binary outcomes in the fixed eligible cohort; not confidence intervals. Complete-case means can have a smaller denominator.",
+      "units": "difference in binary success proportions; multiply by 100 for percentage points"
+    },
+    "lesson_when_removing": {
+      "complete_case_family_counts": {
+        "composite_dependency_resolver": 1,
+        "composite_quota_intervals": 1,
+        "composite_revision_ledger": 1,
+        "composite_temporal_routes": 1
+      },
+      "complete_case_mean": 0.0,
+      "complete_case_mean_exact": "0",
+      "complete_tasks": 4,
+      "eligible_tasks": 4,
+      "finite_cohort_missingness_bounds": [
+        0.0,
+        0.0
+      ],
+      "finite_cohort_missingness_bounds_exact": [
+        "0",
+        "0"
+      ],
+      "incomplete_tasks": 0,
+      "scope": "Bounds enumerate missing binary outcomes in the fixed eligible cohort; not confidence intervals. Complete-case means can have a smaller denominator.",
+      "units": "difference in binary success proportions; multiply by 100 for percentage points"
+    }
+  },
+  "failure_and_repair_process": {
+    "initial_attempt": {
+      "no_received_initial_attempt": 0,
+      "planned_tasks": 4,
+      "private_score_counts": {
+        "0": 4
+      },
+      "public_and_private_pass": 0,
+      "public_pass_but_private_fail": 0,
+      "public_private_joint": {
+        "public_mismatch|private=0": 4
+      },
+      "public_status_counts": {
+        "public_mismatch": 4
+      },
+      "received_attempts": 4
+    },
+    "repairs_conditional_on_eligible_prefix": {
+      "K0": {
+        "accepted_private_failures": 0,
+        "accepted_private_successes": 4,
+        "all_received_public_statuses": {
+          "public_pass": 4
+        },
+        "eligible_tasks": 4,
+        "first_public_pass_step_counts": {
+          "1": 4
+        },
+        "first_received_public_private_joint": {
+          "public_pass|private=1": 4
+        },
+        "first_received_public_statuses": {
+          "public_pass": 4
+        },
+        "first_repair_public_and_private_pass": 4,
+        "publicly_accepted_repairs": 4,
+        "received_attempt_count_distribution": {
+          "1": 4
+        },
+        "terminal_dispositions": {
+          "correct": 4
+        }
+      },
+      "KL": {
+        "accepted_private_failures": 0,
+        "accepted_private_successes": 3,
+        "all_received_public_statuses": {
+          "public_pass": 3
+        },
+        "eligible_tasks": 4,
+        "first_public_pass_step_counts": {
+          "1": 3,
+          "None": 1
+        },
+        "first_received_public_private_joint": {
+          "public_pass|private=1": 3
+        },
+        "first_received_public_statuses": {
+          "public_pass": 3
+        },
+        "first_repair_public_and_private_pass": 3,
+        "publicly_accepted_repairs": 3,
+        "received_attempt_count_distribution": {
+          "0": 1,
+          "1": 3
+        },
+        "terminal_dispositions": {
+          "correct": 3,
+          "infrastructure_stop": 1
+        }
+      },
+      "R0": {
+        "accepted_private_failures": 0,
+        "accepted_private_successes": 4,
+        "all_received_public_statuses": {
+          "public_pass": 4
+        },
+        "eligible_tasks": 4,
+        "first_public_pass_step_counts": {
+          "1": 4
+        },
+        "first_received_public_private_joint": {
+          "public_pass|private=1": 4
+        },
+        "first_received_public_statuses": {
+          "public_pass": 4
+        },
+        "first_repair_public_and_private_pass": 4,
+        "publicly_accepted_repairs": 4,
+        "received_attempt_count_distribution": {
+          "1": 4
+        },
+        "terminal_dispositions": {
+          "correct": 4
+        }
+      },
+      "RL": {
+        "accepted_private_failures": 0,
+        "accepted_private_successes": 4,
+        "all_received_public_statuses": {
+          "public_pass": 4
+        },
+        "eligible_tasks": 4,
+        "first_public_pass_step_counts": {
+          "1": 4
+        },
+        "first_received_public_private_joint": {
+          "public_pass|private=1": 4
+        },
+        "first_received_public_statuses": {
+          "public_pass": 4
+        },
+        "first_repair_public_and_private_pass": 4,
+        "publicly_accepted_repairs": 4,
+        "received_attempt_count_distribution": {
+          "1": 4
+        },
+        "terminal_dispositions": {
+          "correct": 4
+        }
+      }
+    },
+    "scope": "Public acceptance ends an arm even if its held-out grade fails. Initial public passes are ineligible for the rollback comparison. First-repair correctness and final accepted correctness are distinct observed endpoints.",
+    "shared_lesson_content": {
+      "category_counts": {
+        "confidence": {
+          "high": 4
+        },
+        "diagnosis": {
+          "uncertain": 4
+        },
+        "focus": {
+          "unresolved": 4
+        },
+        "location": {
+          "uncertain": 4
+        },
+        "next_check": {
+          "rederive_from_contract": 4
+        }
+      },
+      "eligible_tasks": 4,
+      "missing_by_disposition": {},
+      "scope": "One categorical lesson per eligible prefix is shared by KL and RL. Counts describe saved hints, not truth, independent treatment replicates, or evidence that a category causes an effect.",
+      "tasks": [
+        {
+          "leading_family": "composite_quota_intervals",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "uncertain",
+            "focus": "unresolved",
+            "location": "uncertain",
+            "next_check": "rederive_from_contract"
+          },
+          "task_id": "v11-fixture-composite_quota_intervals-708161322e57eb8d"
+        },
+        {
+          "leading_family": "composite_revision_ledger",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "uncertain",
+            "focus": "unresolved",
+            "location": "uncertain",
+            "next_check": "rederive_from_contract"
+          },
+          "task_id": "v11-fixture-composite_revision_ledger-64b64e45d2f8f786"
+        },
+        {
+          "leading_family": "composite_temporal_routes",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "uncertain",
+            "focus": "unresolved",
+            "location": "uncertain",
+            "next_check": "rederive_from_contract"
+          },
+          "task_id": "v11-fixture-composite_temporal_routes-74832a79930ecd68"
+        },
+        {
+          "leading_family": "composite_dependency_resolver",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "uncertain",
+            "focus": "unresolved",
+            "location": "uncertain",
+            "next_check": "rederive_from_contract"
+          },
+          "task_id": "v11-fixture-composite_dependency_resolver-5625fb0e03d960a8"
+        }
+      ],
+      "valid_lessons": 4
+    }
+  },
+  "first_failing_public_case_diagnostics": {
+    "classification_counts": {
+      "whole_compound_output_not_object": 4
+    },
+    "mismatching_components_by_family": {},
+    "scope": "Only the first reported public mismatch per eligible prefix. Whole-output shape errors are not attributed to component algorithms. A component can differ in several tasks; these are descriptive counts, not independent trials or internal-cause diagnoses.",
+    "tasks": [
+      {
+        "candidate_source_utf8_bytes": 155,
+        "changed_nonempty_lines": 337,
+        "classification": "whole_compound_output_not_object",
+        "differing_components": [],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 15251,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_quota_intervals",
+        "task_id": "v11-fixture-composite_quota_intervals-708161322e57eb8d"
+      },
+      {
+        "candidate_source_utf8_bytes": 155,
+        "changed_nonempty_lines": 333,
+        "classification": "whole_compound_output_not_object",
+        "differing_components": [],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 15404,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_revision_ledger",
+        "task_id": "v11-fixture-composite_revision_ledger-64b64e45d2f8f786"
+      },
+      {
+        "candidate_source_utf8_bytes": 155,
+        "changed_nonempty_lines": 349,
+        "classification": "whole_compound_output_not_object",
+        "differing_components": [],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 15640,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_temporal_routes",
+        "task_id": "v11-fixture-composite_temporal_routes-74832a79930ecd68"
+      },
+      {
+        "candidate_source_utf8_bytes": 155,
+        "changed_nonempty_lines": 341,
+        "classification": "whole_compound_output_not_object",
+        "differing_components": [],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 15446,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_dependency_resolver",
+        "task_id": "v11-fixture-composite_dependency_resolver-5625fb0e03d960a8"
+      }
+    ],
+    "tasks_with_mismatching_component_family": {}
+  },
+  "lesson_dispositions_on_eligible_prefixes": {
+    "valid": 4
+  },
+  "live_model_admissions_in_audited_run": 0,
+  "manifest_sha256": "412c25c17d0ea94692be4f1cd0aa1031a3a6a9306f690a66b655a6c69b0247b6",
+  "model_calls_performed_by_audit": 0,
+  "operational_recovery_accounting": {
+    "causal_interpretation_gate_permanently_failed": true,
+    "cumulative_admissions": 24,
+    "historical_receipts_replayed_without_new_admission": 0,
+    "new_phase": {
+      "admitted_calls": 20,
+      "inflight_calls": 0,
+      "known_calls": 20,
+      "known_planning_credits": "2.2605400",
+      "known_usage": {
+        "cached_input": 0,
+        "input_tokens": 562441,
+        "output": 68355,
+        "reasoning": 0
+      },
+      "sum_known_call_elapsed_seconds": 0.11439580001751892,
+      "unknown_calls": 0,
+      "unknown_locked_planning_credits": "0"
+    },
+    "original_job_rows_retained": 3,
+    "original_phase": {
+      "admitted_calls": 4,
+      "inflight_calls": 0,
+      "known_calls": 3,
+      "known_planning_credits": "0.2425450",
+      "known_usage": {
+        "cached_input": 0,
+        "input_tokens": 74908,
+        "output": 4422,
+        "reasoning": 0
+      },
+      "sum_known_call_elapsed_seconds": 0.017410699976608157,
+      "unknown_calls": 1,
+      "unknown_locked_planning_credits": "4.225"
+    },
+    "original_unknown_rows_unchanged": true,
+    "phase_wall_seconds": [
+      6.840434799989453,
+      48.194238900003256
+    ],
+    "prior_stop": "systemic_transport_failure",
+    "resumed_job_rows": 17,
+    "retained_job_bytes_unchanged": true,
+    "scope": "Cumulative resources partition into original and new admissions. Historical receipt reconstruction is not a new model call; phase wall times exclude offline recovery preparation."
+  },
+  "passed": true,
+  "peak_simultaneous_admissions": 1,
+  "planned_tasks": 4,
+  "prefix_dispositions": {
+    "natural_substantive_patch_mismatch": 4
+  },
+  "run": "experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/recovery_fixture_run",
+  "scope": [
+    "All contrasts are conditional on the fixed cohort's observed eligible naturally failed prefixes. Unknown prefix eligibility is reported through dispositions, not included as a known failed prefix.",
+    "Finite-cohort bounds enumerate missing binary outcomes; they are not confidence intervals. This independent script does not recompute bootstrap intervals or assign confirmatory p-values.",
+    "Token units are provider-recorded counts: cached_input is a subset of input_tokens and reasoning is a subset of output. Planning credits and unknown reservations are bookkeeping units, not actual subscription charges or dollars.",
+    "Shared prefix and lesson calls are counted once in actual spend. Resource categories partition calls; no overlapping standalone-policy projections are added together.",
+    "This checks outcomes from saved public/private receipts and durable accounting. It does not replace isolated source regrading, request replay, or verification of inaccessible provider internals.",
+    "Any operational recovery retains the original failed interpretation gate. Descriptive contrasts can span provider time and operational phases; resumption does not turn them into isolated causal estimates."
+  ],
+  "sealed_evidence_manifest_sha256": "a89e2b0875589811dbcea9c3a0cab755567cd92456de6e6f610ec9a3203c4104"
+}

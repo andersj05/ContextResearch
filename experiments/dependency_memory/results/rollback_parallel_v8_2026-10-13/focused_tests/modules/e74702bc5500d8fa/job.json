@@ -1,0 +1,18 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\e74702bc5500d8fa\\job.json",
+  "module": "test_live_benchmark_review",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\e74702bc5500d8fa\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\e74702bc5500d8fa\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\e74702bc5500d8fa\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\e74702bc5500d8fa\\tmp",
+  "test_ids": [
+    "test_live_benchmark_review.LiveProbeReviewTests.test_all_64_fixture_admissions_are_unique_and_identically_prompted",
+    "test_live_benchmark_review.LiveProbeReviewTests.test_eight_worker_batch_cannot_hide_sixteen_concurrent_admissions",
+    "test_live_benchmark_review.LiveProbeReviewTests.test_global_failure_keeps_all_dispositions_without_replacements",
+    "test_live_benchmark_review.LiveProbeReviewTests.test_one_unknown_preserves_reservation_and_removes_speed_ratio",
+    "test_live_benchmark_review.LiveProbeReviewTests.test_preflight_rejects_wrong_parallelism_authorization_and_channel_inventory",
+    "test_live_benchmark_review.LiveProbeReviewTests.test_saved_request_mutation_is_rejected_even_after_resealing",
+    "test_live_benchmark_review.LiveProbeReviewTests.test_wrong_elapsed_metric_is_rejected_after_analysis_and_seal_refresh"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\rollback_parallel_v8"
+}

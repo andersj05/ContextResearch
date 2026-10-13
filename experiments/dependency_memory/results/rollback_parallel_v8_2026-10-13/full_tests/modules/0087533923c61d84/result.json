@@ -1,0 +1,64 @@
+{
+  "completed_test_ids": [
+    "priced_coding.test_priced.PricedCodingTests.test_final_actor_and_invalid_information_states",
+    "priced_coding.test_priced.PricedCodingTests.test_fraction_intervals_and_grid_points_agree_with_full_small_actors_and_tails",
+    "priced_coding.test_priced.PricedCodingTests.test_generic_weighted_bounds_and_convex_search_match_complete_small_lists",
+    "priced_coding.test_priced.PricedCodingTests.test_masked_loss_equals_independent_omission_query_matrices",
+    "priced_coding.test_priced.PricedCodingTests.test_packed_dictionary_has_no_full_source_assignment",
+    "priced_coding.test_priced.PricedCodingTests.test_separate_entropy_slack_schedule_and_limit",
+    "priced_coding.test_priced.PricedCodingTests.test_shift_price_order_matches_fraction_products_including_ties",
+    "priced_coding.test_priced.PricedCodingTests.test_small_price_maps_equal_independent_fraction_minima_and_public_counts"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "priced_coding.test_priced.PricedCodingTests.test_final_actor_and_invalid_information_states": "passed",
+    "priced_coding.test_priced.PricedCodingTests.test_fraction_intervals_and_grid_points_agree_with_full_small_actors_and_tails": "passed",
+    "priced_coding.test_priced.PricedCodingTests.test_generic_weighted_bounds_and_convex_search_match_complete_small_lists": "passed",
+    "priced_coding.test_priced.PricedCodingTests.test_masked_loss_equals_independent_omission_query_matrices": "passed",
+    "priced_coding.test_priced.PricedCodingTests.test_packed_dictionary_has_no_full_source_assignment": "passed",
+    "priced_coding.test_priced.PricedCodingTests.test_separate_entropy_slack_schedule_and_limit": "passed",
+    "priced_coding.test_priced.PricedCodingTests.test_shift_price_order_matches_fraction_products_including_ties": "passed",
+    "priced_coding.test_priced.PricedCodingTests.test_small_price_maps_equal_independent_fraction_minima_and_public_counts": "passed"
+  },
+  "elapsed_seconds": 10.951954100019066,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "priced_coding.test_priced.PricedCodingTests.test_final_actor_and_invalid_information_states",
+    "priced_coding.test_priced.PricedCodingTests.test_fraction_intervals_and_grid_points_agree_with_full_small_actors_and_tails",
+    "priced_coding.test_priced.PricedCodingTests.test_generic_weighted_bounds_and_convex_search_match_complete_small_lists",
+    "priced_coding.test_priced.PricedCodingTests.test_masked_loss_equals_independent_omission_query_matrices",
+    "priced_coding.test_priced.PricedCodingTests.test_packed_dictionary_has_no_full_source_assignment",
+    "priced_coding.test_priced.PricedCodingTests.test_separate_entropy_slack_schedule_and_limit",
+    "priced_coding.test_priced.PricedCodingTests.test_shift_price_order_matches_fraction_products_including_ties",
+    "priced_coding.test_priced.PricedCodingTests.test_small_price_maps_equal_independent_fraction_minima_and_public_counts"
+  ],
+  "planned_test_ids": [
+    "priced_coding.test_priced.PricedCodingTests.test_final_actor_and_invalid_information_states",
+    "priced_coding.test_priced.PricedCodingTests.test_fraction_intervals_and_grid_points_agree_with_full_small_actors_and_tails",
+    "priced_coding.test_priced.PricedCodingTests.test_generic_weighted_bounds_and_convex_search_match_complete_small_lists",
+    "priced_coding.test_priced.PricedCodingTests.test_masked_loss_equals_independent_omission_query_matrices",
+    "priced_coding.test_priced.PricedCodingTests.test_packed_dictionary_has_no_full_source_assignment",
+    "priced_coding.test_priced.PricedCodingTests.test_separate_entropy_slack_schedule_and_limit",
+    "priced_coding.test_priced.PricedCodingTests.test_shift_price_order_matches_fraction_products_including_ties",
+    "priced_coding.test_priced.PricedCodingTests.test_small_price_maps_equal_independent_fraction_minima_and_public_counts"
+  ],
+  "process_id": 43852,
+  "skips": 0,
+  "started_test_ids": [
+    "priced_coding.test_priced.PricedCodingTests.test_final_actor_and_invalid_information_states",
+    "priced_coding.test_priced.PricedCodingTests.test_fraction_intervals_and_grid_points_agree_with_full_small_actors_and_tails",
+    "priced_coding.test_priced.PricedCodingTests.test_generic_weighted_bounds_and_convex_search_match_complete_small_lists",
+    "priced_coding.test_priced.PricedCodingTests.test_masked_loss_equals_independent_omission_query_matrices",
+    "priced_coding.test_priced.PricedCodingTests.test_packed_dictionary_has_no_full_source_assignment",
+    "priced_coding.test_priced.PricedCodingTests.test_separate_entropy_slack_schedule_and_limit",
+    "priced_coding.test_priced.PricedCodingTests.test_shift_price_order_matches_fraction_products_including_ties",
+    "priced_coding.test_priced.PricedCodingTests.test_small_price_maps_equal_independent_fraction_minima_and_public_counts"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\0087533923c61d84\\tmp",
+  "tests_run": 8,
+  "unexpected_successes": 0
+}

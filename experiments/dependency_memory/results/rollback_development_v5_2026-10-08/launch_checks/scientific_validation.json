@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python",
+    "scripts/validate_context_repo.py"
+  ],
+  "console_path": "scientific_validation.txt",
+  "console_sha256": "f04a05601525fe2412844d8f8fbb81a6883178d79e23f010cdc3580d221020ed",
+  "cwd": "C:\\Users\\jense\\Desktop\\ContextResearch",
+  "elapsed_seconds": 1281.7841731999943,
+  "exit_code": 0,
+  "finished_utc": "2026-10-09T02:38:51.794825+00:00",
+  "started_utc": "2026-10-09T02:17:30.010648+00:00"
+}

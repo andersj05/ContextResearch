@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "experiments.dependency_memory.rollback_development_v5.run",
+    "preflight",
+    "--bundle",
+    "experiments/dependency_memory/results/rollback_development_v5_2026-10-08/prepared",
+    "--output",
+    "experiments/dependency_memory/results/rollback_development_v5_2026-10-08/launch_checks/client_preflight"
+  ],
+  "console_path": "client_preflight_command.txt",
+  "console_sha256": "a9083da9e5d6fc11b86ed77aa45bc903414f4f894139b8e4b98e0abca58a9671",
+  "cwd": "C:\\Users\\jense\\Desktop\\ContextResearch",
+  "elapsed_seconds": 41.3337051999988,
+  "exit_code": 0,
+  "finished_utc": "2026-10-09T02:15:12.348226+00:00",
+  "started_utc": "2026-10-09T02:14:31.014508+00:00"
+}

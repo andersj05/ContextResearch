@@ -1,0 +1,22 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\966d76669a8f80aa\\job.json",
+  "module": "rollback_checkpoint_v7.test_client",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\966d76669a8f80aa\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\966d76669a8f80aa\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\966d76669a8f80aa\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\966d76669a8f80aa\\tmp",
+  "test_ids": [
+    "rollback_checkpoint_v7.test_client.ClientIsolationTests.test_configuration_requires_inherited_contract_and_only_disabled_server",
+    "rollback_checkpoint_v7.test_client.ClientIsolationTests.test_eight_transports_preserve_fresh_isolation_without_historical_global_mutation",
+    "rollback_checkpoint_v7.test_client.ClientIsolationTests.test_even_same_name_declaration_changes_fail_exact_pin",
+    "rollback_checkpoint_v7.test_client.ClientIsolationTests.test_exact_registry_adapter_preserves_sent_body_and_original_bytes",
+    "rollback_checkpoint_v7.test_client.ClientIsolationTests.test_inventory_requires_complete_explicit_empty_disabled_result",
+    "rollback_checkpoint_v7.test_client.ClientIsolationTests.test_legacy_history_tools_model_and_schema_rejections_still_apply",
+    "rollback_checkpoint_v7.test_client.ClientIsolationTests.test_live_transport_checks_inventory_before_turn_and_rejects_bad_inventory",
+    "rollback_checkpoint_v7.test_client.ClientIsolationTests.test_original_metadata_cannot_disappear_from_byte_limit",
+    "rollback_checkpoint_v7.test_client.ClientIsolationTests.test_preflight_requires_composite_diagnostic_separate_from_negative_successes",
+    "rollback_checkpoint_v7.test_client.ClientIsolationTests.test_resource_negative_probe_requires_specific_failure_and_observed_item",
+    "rollback_checkpoint_v7.test_client.ClientIsolationTests.test_transport_binds_client_config_instructions_and_registry_preflight"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

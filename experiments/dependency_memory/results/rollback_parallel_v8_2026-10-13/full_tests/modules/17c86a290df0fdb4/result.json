@@ -1,0 +1,39 @@
+{
+  "completed_test_ids": [
+    "workflow_executed_continuation.test_continuation.ContinuationTests.test_original_evidence_changes_invalidate_continuation",
+    "workflow_executed_continuation.test_continuation.ContinuationTests.test_suffix_never_dispatches_original_gap_and_analysis_keeps_missing_denominator",
+    "workflow_executed_continuation.test_continuation.ContinuationTests.test_unknown_reservation_prevents_dispatch_when_combined_ceiling_would_be_exceeded"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "workflow_executed_continuation.test_continuation.ContinuationTests.test_original_evidence_changes_invalidate_continuation": "passed",
+    "workflow_executed_continuation.test_continuation.ContinuationTests.test_suffix_never_dispatches_original_gap_and_analysis_keeps_missing_denominator": "passed",
+    "workflow_executed_continuation.test_continuation.ContinuationTests.test_unknown_reservation_prevents_dispatch_when_combined_ceiling_would_be_exceeded": "passed"
+  },
+  "elapsed_seconds": 4.587235100014368,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "workflow_executed_continuation.test_continuation.ContinuationTests.test_original_evidence_changes_invalidate_continuation",
+    "workflow_executed_continuation.test_continuation.ContinuationTests.test_suffix_never_dispatches_original_gap_and_analysis_keeps_missing_denominator",
+    "workflow_executed_continuation.test_continuation.ContinuationTests.test_unknown_reservation_prevents_dispatch_when_combined_ceiling_would_be_exceeded"
+  ],
+  "planned_test_ids": [
+    "workflow_executed_continuation.test_continuation.ContinuationTests.test_original_evidence_changes_invalidate_continuation",
+    "workflow_executed_continuation.test_continuation.ContinuationTests.test_suffix_never_dispatches_original_gap_and_analysis_keeps_missing_denominator",
+    "workflow_executed_continuation.test_continuation.ContinuationTests.test_unknown_reservation_prevents_dispatch_when_combined_ceiling_would_be_exceeded"
+  ],
+  "process_id": 55372,
+  "skips": 0,
+  "started_test_ids": [
+    "workflow_executed_continuation.test_continuation.ContinuationTests.test_original_evidence_changes_invalidate_continuation",
+    "workflow_executed_continuation.test_continuation.ContinuationTests.test_suffix_never_dispatches_original_gap_and_analysis_keeps_missing_denominator",
+    "workflow_executed_continuation.test_continuation.ContinuationTests.test_unknown_reservation_prevents_dispatch_when_combined_ceiling_would_be_exceeded"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\17c86a290df0fdb4\\tmp",
+  "tests_run": 3,
+  "unexpected_successes": 0
+}

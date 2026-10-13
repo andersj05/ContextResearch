@@ -1,0 +1,24 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\a71aef2fd20383b2\\job.json",
+  "module": "rollback_checkpoint_v7.test_runner",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\a71aef2fd20383b2\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\a71aef2fd20383b2\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\a71aef2fd20383b2\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\a71aef2fd20383b2\\tmp",
+  "test_ids": [
+    "rollback_checkpoint_v7.test_runner.RunnerTests.test_archive_detects_grader_request_and_inventory_tampering",
+    "rollback_checkpoint_v7.test_runner.RunnerTests.test_concurrency_bound_supports_sixteen_and_never_overadmits",
+    "rollback_checkpoint_v7.test_runner.RunnerTests.test_eight_simultaneous_admissions_one_unknown_then_independent_completion",
+    "rollback_checkpoint_v7.test_runner.RunnerTests.test_generation_ceiling_counts_unknowns_and_prevents_repeated_identity",
+    "rollback_checkpoint_v7.test_runner.RunnerTests.test_independent_regrading_preserves_capped_malformed_and_invalid_candidates",
+    "rollback_checkpoint_v7.test_runner.RunnerTests.test_independent_regrading_rejects_a_consistently_replayed_checker_defect",
+    "rollback_checkpoint_v7.test_runner.RunnerTests.test_midstage_fixture_archives_and_replays_exact_pairs",
+    "rollback_checkpoint_v7.test_runner.RunnerTests.test_no_failed_prefix_keeps_explicit_fixed_denominator_skips",
+    "rollback_checkpoint_v7.test_runner.RunnerTests.test_no_second_launch_and_frozen_workers",
+    "rollback_checkpoint_v7.test_runner.RunnerTests.test_quota_isolation_and_source_faults_stop_global_admission",
+    "rollback_checkpoint_v7.test_runner.RunnerTests.test_real_client_preflight_schedules_frozen_concurrency_and_both_schemas",
+    "rollback_checkpoint_v7.test_runner.RunnerTests.test_unknown_arm_preserves_its_mate_and_no_replacement",
+    "rollback_checkpoint_v7.test_runner.RunnerTests.test_unknown_shared_lesson_skips_only_dependent_pair"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

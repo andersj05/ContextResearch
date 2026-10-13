@@ -1,0 +1,6 @@
+test_original_missing_directory_fails_before_generation (experiments.dependency_memory.scope_inference_v2.test_runtime.CorrectedLaunchTests.test_original_missing_directory_fails_before_generation) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.054s
+
+OK

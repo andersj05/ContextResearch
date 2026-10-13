@@ -1,0 +1,39 @@
+{
+  "completed_test_ids": [
+    "scope_inference_v2.test_runtime.CorrectedLaunchTests.test_corrected_cold_directory_saves_reservation_before_generation_and_metering",
+    "scope_inference_v2.test_runtime.CorrectedLaunchTests.test_new_local_identities_preserve_every_public_request_byte",
+    "scope_inference_v2.test_runtime.CorrectedLaunchTests.test_original_missing_directory_fails_before_generation"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "scope_inference_v2.test_runtime.CorrectedLaunchTests.test_corrected_cold_directory_saves_reservation_before_generation_and_metering": "passed",
+    "scope_inference_v2.test_runtime.CorrectedLaunchTests.test_new_local_identities_preserve_every_public_request_byte": "passed",
+    "scope_inference_v2.test_runtime.CorrectedLaunchTests.test_original_missing_directory_fails_before_generation": "passed"
+  },
+  "elapsed_seconds": 0.3885979999904521,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "scope_inference_v2.test_runtime.CorrectedLaunchTests.test_corrected_cold_directory_saves_reservation_before_generation_and_metering",
+    "scope_inference_v2.test_runtime.CorrectedLaunchTests.test_new_local_identities_preserve_every_public_request_byte",
+    "scope_inference_v2.test_runtime.CorrectedLaunchTests.test_original_missing_directory_fails_before_generation"
+  ],
+  "planned_test_ids": [
+    "scope_inference_v2.test_runtime.CorrectedLaunchTests.test_corrected_cold_directory_saves_reservation_before_generation_and_metering",
+    "scope_inference_v2.test_runtime.CorrectedLaunchTests.test_new_local_identities_preserve_every_public_request_byte",
+    "scope_inference_v2.test_runtime.CorrectedLaunchTests.test_original_missing_directory_fails_before_generation"
+  ],
+  "process_id": 33004,
+  "skips": 0,
+  "started_test_ids": [
+    "scope_inference_v2.test_runtime.CorrectedLaunchTests.test_corrected_cold_directory_saves_reservation_before_generation_and_metering",
+    "scope_inference_v2.test_runtime.CorrectedLaunchTests.test_new_local_identities_preserve_every_public_request_byte",
+    "scope_inference_v2.test_runtime.CorrectedLaunchTests.test_original_missing_directory_fails_before_generation"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\2507ae3270b90043\\tmp",
+  "tests_run": 3,
+  "unexpected_successes": 0
+}

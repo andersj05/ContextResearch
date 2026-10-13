@@ -1,0 +1,20 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\60dea951c82e4440\\job.json",
+  "module": "rollback_pilot.test_docker",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\60dea951c82e4440\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\60dea951c82e4440\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\60dea951c82e4440\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\60dea951c82e4440\\tmp",
+  "test_ids": [
+    "rollback_pilot.test_docker.DockerIntegrationTests.test_candidate_cannot_leave_a_container_running_after_completion",
+    "rollback_pilot.test_docker.DockerIntegrationTests.test_cpu_memory_pids_and_cpu_allocation_are_enforced_in_runtime",
+    "rollback_pilot.test_docker.DockerIntegrationTests.test_each_test_has_fresh_scratch",
+    "rollback_pilot.test_docker.DockerIntegrationTests.test_invalid_utf8_is_not_silently_normalized_into_correct_output",
+    "rollback_pilot.test_docker.DockerIntegrationTests.test_nonroot_readonly_no_host_files_or_credentials_and_no_external_network",
+    "rollback_pilot.test_docker.DockerIntegrationTests.test_process_limit_denies_excess_children_and_tears_them_down",
+    "rollback_pilot.test_docker.DockerIntegrationTests.test_public_syntax_runtime_and_wall_timeout_never_qualify_as_mismatch",
+    "rollback_pilot.test_docker.DockerIntegrationTests.test_reference_passes_full_frozen_authored_suite_and_wrong_program_fails",
+    "rollback_pilot.test_docker.DockerIntegrationTests.test_stdout_and_stderr_each_have_bounded_capture"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

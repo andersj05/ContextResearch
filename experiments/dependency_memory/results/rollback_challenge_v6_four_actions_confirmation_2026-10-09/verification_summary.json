@@ -1,0 +1,24 @@
+{
+  "catalog_check": "PASS",
+  "check_categories": 259,
+  "checked_utc": "2026-10-10T03:22:34.321254+00:00",
+  "diff_check": "PASS",
+  "exit_code": 0,
+  "live_replay": {
+    "jobs": 520,
+    "passed": true,
+    "responses": 2496,
+    "unknowns_preserved": 8
+  },
+  "log_sha256": "36708f31cade61e698b8121203ee306a25d267520c0fffaa659db4bf711d8a96",
+  "model_calls": 0,
+  "navigation_check": "PASS",
+  "paper_build_exit_code": 0,
+  "source_unit_suite": {
+    "evidence": "../rollback_challenge_v6_intermediate_2026-10-09/full_unit_tests_summary.json",
+    "optional_docker_skips": 9,
+    "passed": 792,
+    "source_unchanged": true
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python",
+    "scripts/build_experiment_index.py"
+  ],
+  "console_path": "final_catalog_build.txt",
+  "console_sha256": "7ce51ef3a8d95325de9cc9d911d2ca58317051dbfc132a447d42e489c35f163b",
+  "cwd": "C:\\Users\\jense\\Desktop\\ContextResearch",
+  "elapsed_seconds": 2.0737058999948204,
+  "exit_code": 0,
+  "finished_utc": "2026-10-09T02:51:39.218724+00:00",
+  "started_utc": "2026-10-09T02:51:37.145016+00:00"
+}

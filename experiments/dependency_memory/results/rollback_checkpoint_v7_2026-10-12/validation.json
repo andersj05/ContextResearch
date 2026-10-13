@@ -1,0 +1,77 @@
+{
+  "scope": "Offline validation and post-run test maintenance; live evidence and experimental implementation unchanged.",
+  "full_scientific_validator": {
+    "passed": true,
+    "categories": 259,
+    "log": "scientific_validation.log"
+  },
+  "paper_build": {
+    "passed": true,
+    "cited_sources": 48,
+    "log": "paper_build.log"
+  },
+  "initial_full_repository_unittest": {
+    "tests": 815,
+    "failures": 2,
+    "errors": 77,
+    "skipped": 9,
+    "passed": false,
+    "log": "full_unittest.log",
+    "classification": "75 temporary-directory permission errors, 2 v7 discovery import errors, 2 subtest assertions; all failing identities rechecked outside sandbox."
+  },
+  "targeted_failure_recheck": {
+    "passed": true,
+    "selected_unique_identities": 63,
+    "tests": 92,
+    "errors": 0,
+    "failures": 0,
+    "log": "full_unittest_failed_recheck.log"
+  },
+  "final_v7_repository_discovery": {
+    "passed": true,
+    "total_repository_tests_discovered_not_all_executed": 856,
+    "discovery_errors": 0,
+    "v7_tests_executed": 55,
+    "errors": 0,
+    "failures": 0,
+    "log": "v7_repository_discovery_final.log"
+  },
+  "post_run_source_changes": [
+    "experiments/dependency_memory/rollback_checkpoint_v7/test_audit.py",
+    "experiments/dependency_memory/rollback_checkpoint_v7/test_client.py",
+    "experiments/dependency_memory/rollback_checkpoint_v7/test_engine.py",
+    "experiments/dependency_memory/rollback_checkpoint_v7/test_runner.py"
+  ],
+  "source_change_scope": "Only test imports changed after completion; use frozen-snapshot audit for historical evidence.",
+  "live_audit": "live_pilot_audit.json",
+  "final_navigation_validation": {
+    "passed": true,
+    "scientific_results_checked": false,
+    "checks": {
+      "bibliography_entries": 63,
+      "markdown_documents": 522,
+      "local_links": 3205,
+      "paper_claims": 75,
+      "catalog_entries": 73,
+      "implementation_packages": 41,
+      "tracked_result_files": 2849
+    },
+    "log": "final_navigation.log"
+  },
+  "final_index_check": {
+    "passed": true,
+    "catalog_entries": 73,
+    "implementation_packages": 41,
+    "tracked_result_files": 2849
+  },
+  "evidence_files_sha256": {
+    "live_pilot_audit.json": "35bf3a882c132874ad47a28e4ed1f6dea5434cf2d3b9612249a024072f343c99",
+    "v7_final_unittest.log": "39cc2bded974fc2d1dd4b447ca870c5ac54b4c3fedb2ba9d925c20d707fdd7b3",
+    "full_unittest.log": "bab24aa6dd01e37ed0cd7bcad4f4603f9f5d3cf1ee20c2ea7f58a92608bac835",
+    "full_unittest_failed_recheck.log": "33ad74b3f40225faa4588fdf49f799c482ef652b991196a67a63a014efe14525",
+    "v7_repository_discovery_final.log": "2f34930b3723ccd4f6d35ef8f771b22379d971473a0a8c56c4c3facc49770191",
+    "scientific_validation.log": "c020f01cb9e8c6d2489b905b9009f6acf40c8708bbfce49ee1d018936cb64927",
+    "paper_build.log": "d0d76a7dda831f16a7a2ecd72a88eba90b2fdfe3998d0fb0085150a182650945",
+    "final_navigation.log": "ba72715dc2ae4760880719bbbb4a55d9d4ee4f776b1043773bb524af8fc810f0"
+  }
+}

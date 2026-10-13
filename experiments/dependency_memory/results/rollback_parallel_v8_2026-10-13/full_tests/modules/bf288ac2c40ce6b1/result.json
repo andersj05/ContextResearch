@@ -1,0 +1,69 @@
+{
+  "completed_test_ids": [
+    "greedy_coding.test_greedy.GreedyCodingTests.test_all_tensor_layers_and_greedy_choices",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_boundary_access_payload_and_invalid_states",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_complete_tiny_cover_recurrence",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_discovery_negative_controls_and_source_bindings",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_entire_small_actor_populations_and_tail",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_every_small_public_parent_state",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_growth_and_all_length_tiling",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_rational_channel_and_conservative_bounds",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_scalar_loss_is_literal_query_error"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "greedy_coding.test_greedy.GreedyCodingTests.test_all_tensor_layers_and_greedy_choices": "passed",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_boundary_access_payload_and_invalid_states": "passed",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_complete_tiny_cover_recurrence": "passed",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_discovery_negative_controls_and_source_bindings": "passed",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_entire_small_actor_populations_and_tail": "passed",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_every_small_public_parent_state": "passed",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_growth_and_all_length_tiling": "passed",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_rational_channel_and_conservative_bounds": "passed",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_scalar_loss_is_literal_query_error": "passed"
+  },
+  "elapsed_seconds": 29.490302099991823,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "greedy_coding.test_greedy.GreedyCodingTests.test_all_tensor_layers_and_greedy_choices",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_boundary_access_payload_and_invalid_states",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_complete_tiny_cover_recurrence",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_discovery_negative_controls_and_source_bindings",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_entire_small_actor_populations_and_tail",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_every_small_public_parent_state",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_growth_and_all_length_tiling",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_rational_channel_and_conservative_bounds",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_scalar_loss_is_literal_query_error"
+  ],
+  "planned_test_ids": [
+    "greedy_coding.test_greedy.GreedyCodingTests.test_all_tensor_layers_and_greedy_choices",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_boundary_access_payload_and_invalid_states",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_complete_tiny_cover_recurrence",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_discovery_negative_controls_and_source_bindings",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_entire_small_actor_populations_and_tail",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_every_small_public_parent_state",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_growth_and_all_length_tiling",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_rational_channel_and_conservative_bounds",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_scalar_loss_is_literal_query_error"
+  ],
+  "process_id": 48536,
+  "skips": 0,
+  "started_test_ids": [
+    "greedy_coding.test_greedy.GreedyCodingTests.test_all_tensor_layers_and_greedy_choices",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_boundary_access_payload_and_invalid_states",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_complete_tiny_cover_recurrence",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_discovery_negative_controls_and_source_bindings",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_entire_small_actor_populations_and_tail",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_every_small_public_parent_state",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_growth_and_all_length_tiling",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_rational_channel_and_conservative_bounds",
+    "greedy_coding.test_greedy.GreedyCodingTests.test_scalar_loss_is_literal_query_error"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\bf288ac2c40ce6b1\\tmp",
+  "tests_run": 9,
+  "unexpected_successes": 0
+}

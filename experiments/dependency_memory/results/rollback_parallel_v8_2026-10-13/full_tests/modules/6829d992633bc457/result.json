@@ -1,0 +1,64 @@
+{
+  "completed_test_ids": [
+    "conditional_coding.test_conditional.ConditionalTests.test_all_branch_losses_and_public_response_words",
+    "conditional_coding.test_conditional.ConditionalTests.test_component_complete_single_replacement_screen_and_direct_spots",
+    "conditional_coding.test_conditional.ConditionalTests.test_encoder_matches_complete_parent_book_with_declared_ties",
+    "conditional_coding.test_conditional.ConditionalTests.test_group_factorization_and_lowest_parent_tie_order",
+    "conditional_coding.test_conditional.ConditionalTests.test_local_component_product_has_an_improving_single_joint_word",
+    "conditional_coding.test_conditional.ConditionalTests.test_product_segments_without_extra_instance_state_and_failed_search_provenance",
+    "conditional_coding.test_conditional.ConditionalTests.test_public_label_payload_and_information_access_boundaries",
+    "conditional_coding.test_conditional.ConditionalTests.test_weighted_actor_population_and_stronger_common_length_control"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "conditional_coding.test_conditional.ConditionalTests.test_all_branch_losses_and_public_response_words": "passed",
+    "conditional_coding.test_conditional.ConditionalTests.test_component_complete_single_replacement_screen_and_direct_spots": "passed",
+    "conditional_coding.test_conditional.ConditionalTests.test_encoder_matches_complete_parent_book_with_declared_ties": "passed",
+    "conditional_coding.test_conditional.ConditionalTests.test_group_factorization_and_lowest_parent_tie_order": "passed",
+    "conditional_coding.test_conditional.ConditionalTests.test_local_component_product_has_an_improving_single_joint_word": "passed",
+    "conditional_coding.test_conditional.ConditionalTests.test_product_segments_without_extra_instance_state_and_failed_search_provenance": "passed",
+    "conditional_coding.test_conditional.ConditionalTests.test_public_label_payload_and_information_access_boundaries": "passed",
+    "conditional_coding.test_conditional.ConditionalTests.test_weighted_actor_population_and_stronger_common_length_control": "passed"
+  },
+  "elapsed_seconds": 48.697489999991376,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "conditional_coding.test_conditional.ConditionalTests.test_all_branch_losses_and_public_response_words",
+    "conditional_coding.test_conditional.ConditionalTests.test_component_complete_single_replacement_screen_and_direct_spots",
+    "conditional_coding.test_conditional.ConditionalTests.test_encoder_matches_complete_parent_book_with_declared_ties",
+    "conditional_coding.test_conditional.ConditionalTests.test_group_factorization_and_lowest_parent_tie_order",
+    "conditional_coding.test_conditional.ConditionalTests.test_local_component_product_has_an_improving_single_joint_word",
+    "conditional_coding.test_conditional.ConditionalTests.test_product_segments_without_extra_instance_state_and_failed_search_provenance",
+    "conditional_coding.test_conditional.ConditionalTests.test_public_label_payload_and_information_access_boundaries",
+    "conditional_coding.test_conditional.ConditionalTests.test_weighted_actor_population_and_stronger_common_length_control"
+  ],
+  "planned_test_ids": [
+    "conditional_coding.test_conditional.ConditionalTests.test_all_branch_losses_and_public_response_words",
+    "conditional_coding.test_conditional.ConditionalTests.test_component_complete_single_replacement_screen_and_direct_spots",
+    "conditional_coding.test_conditional.ConditionalTests.test_encoder_matches_complete_parent_book_with_declared_ties",
+    "conditional_coding.test_conditional.ConditionalTests.test_group_factorization_and_lowest_parent_tie_order",
+    "conditional_coding.test_conditional.ConditionalTests.test_local_component_product_has_an_improving_single_joint_word",
+    "conditional_coding.test_conditional.ConditionalTests.test_product_segments_without_extra_instance_state_and_failed_search_provenance",
+    "conditional_coding.test_conditional.ConditionalTests.test_public_label_payload_and_information_access_boundaries",
+    "conditional_coding.test_conditional.ConditionalTests.test_weighted_actor_population_and_stronger_common_length_control"
+  ],
+  "process_id": 59220,
+  "skips": 0,
+  "started_test_ids": [
+    "conditional_coding.test_conditional.ConditionalTests.test_all_branch_losses_and_public_response_words",
+    "conditional_coding.test_conditional.ConditionalTests.test_component_complete_single_replacement_screen_and_direct_spots",
+    "conditional_coding.test_conditional.ConditionalTests.test_encoder_matches_complete_parent_book_with_declared_ties",
+    "conditional_coding.test_conditional.ConditionalTests.test_group_factorization_and_lowest_parent_tie_order",
+    "conditional_coding.test_conditional.ConditionalTests.test_local_component_product_has_an_improving_single_joint_word",
+    "conditional_coding.test_conditional.ConditionalTests.test_product_segments_without_extra_instance_state_and_failed_search_provenance",
+    "conditional_coding.test_conditional.ConditionalTests.test_public_label_payload_and_information_access_boundaries",
+    "conditional_coding.test_conditional.ConditionalTests.test_weighted_actor_population_and_stronger_common_length_control"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\6829d992633bc457\\tmp",
+  "tests_run": 8,
+  "unexpected_successes": 0
+}

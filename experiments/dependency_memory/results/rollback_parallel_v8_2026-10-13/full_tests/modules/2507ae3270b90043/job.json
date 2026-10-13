@@ -1,0 +1,14 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\2507ae3270b90043\\job.json",
+  "module": "scope_inference_v2.test_runtime",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\2507ae3270b90043\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\2507ae3270b90043\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\2507ae3270b90043\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\2507ae3270b90043\\tmp",
+  "test_ids": [
+    "scope_inference_v2.test_runtime.CorrectedLaunchTests.test_corrected_cold_directory_saves_reservation_before_generation_and_metering",
+    "scope_inference_v2.test_runtime.CorrectedLaunchTests.test_new_local_identities_preserve_every_public_request_byte",
+    "scope_inference_v2.test_runtime.CorrectedLaunchTests.test_original_missing_directory_fails_before_generation"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

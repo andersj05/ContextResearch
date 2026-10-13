@@ -1,0 +1,15 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\da5bda6fb83c4eb0\\job.json",
+  "module": "workflow_intake.test_views",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\da5bda6fb83c4eb0\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\da5bda6fb83c4eb0\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\da5bda6fb83c4eb0\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\da5bda6fb83c4eb0\\tmp",
+  "test_ids": [
+    "workflow_intake.test_views.SerializedViewsTests.test_future_observations_and_labels_are_not_disclosed_early",
+    "workflow_intake.test_views.SerializedViewsTests.test_memory_limits_count_utf8_bytes",
+    "workflow_intake.test_views.SerializedViewsTests.test_unknown_stage_and_hidden_memory_are_rejected",
+    "workflow_intake.test_views.SerializedViewsTests.test_views_do_not_mutate_source_or_share_state"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

@@ -1,0 +1,64 @@
+{
+  "completed_test_ids": [
+    "trellis_coding.test_trellis.TrellisTests.test_every_one_two_three_block_source_matches_exhaustive_messages",
+    "trellis_coding.test_trellis.TrellisTests.test_four_block_segment_product_has_no_group_state_overhead",
+    "trellis_coding.test_trellis.TrellisTests.test_four_six_block_diagnostics_and_long_closed_encoder",
+    "trellis_coding.test_trellis.TrellisTests.test_no_extra_start_state_and_child_formed_before_query",
+    "trellis_coding.test_trellis.TrellisTests.test_pre_tuning_three_block_identity_and_failed_initial_search",
+    "trellis_coding.test_trellis.TrellisTests.test_public_label_packing_and_memory_contract_rejections",
+    "trellis_coding.test_trellis.TrellisTests.test_response_lookup_and_all_one_block_losses_against_bit_routes",
+    "trellis_coding.test_trellis.TrellisTests.test_selected_population_and_product_controls"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "trellis_coding.test_trellis.TrellisTests.test_every_one_two_three_block_source_matches_exhaustive_messages": "passed",
+    "trellis_coding.test_trellis.TrellisTests.test_four_block_segment_product_has_no_group_state_overhead": "passed",
+    "trellis_coding.test_trellis.TrellisTests.test_four_six_block_diagnostics_and_long_closed_encoder": "passed",
+    "trellis_coding.test_trellis.TrellisTests.test_no_extra_start_state_and_child_formed_before_query": "passed",
+    "trellis_coding.test_trellis.TrellisTests.test_pre_tuning_three_block_identity_and_failed_initial_search": "passed",
+    "trellis_coding.test_trellis.TrellisTests.test_public_label_packing_and_memory_contract_rejections": "passed",
+    "trellis_coding.test_trellis.TrellisTests.test_response_lookup_and_all_one_block_losses_against_bit_routes": "passed",
+    "trellis_coding.test_trellis.TrellisTests.test_selected_population_and_product_controls": "passed"
+  },
+  "elapsed_seconds": 30.340196000004653,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "trellis_coding.test_trellis.TrellisTests.test_every_one_two_three_block_source_matches_exhaustive_messages",
+    "trellis_coding.test_trellis.TrellisTests.test_four_block_segment_product_has_no_group_state_overhead",
+    "trellis_coding.test_trellis.TrellisTests.test_four_six_block_diagnostics_and_long_closed_encoder",
+    "trellis_coding.test_trellis.TrellisTests.test_no_extra_start_state_and_child_formed_before_query",
+    "trellis_coding.test_trellis.TrellisTests.test_pre_tuning_three_block_identity_and_failed_initial_search",
+    "trellis_coding.test_trellis.TrellisTests.test_public_label_packing_and_memory_contract_rejections",
+    "trellis_coding.test_trellis.TrellisTests.test_response_lookup_and_all_one_block_losses_against_bit_routes",
+    "trellis_coding.test_trellis.TrellisTests.test_selected_population_and_product_controls"
+  ],
+  "planned_test_ids": [
+    "trellis_coding.test_trellis.TrellisTests.test_every_one_two_three_block_source_matches_exhaustive_messages",
+    "trellis_coding.test_trellis.TrellisTests.test_four_block_segment_product_has_no_group_state_overhead",
+    "trellis_coding.test_trellis.TrellisTests.test_four_six_block_diagnostics_and_long_closed_encoder",
+    "trellis_coding.test_trellis.TrellisTests.test_no_extra_start_state_and_child_formed_before_query",
+    "trellis_coding.test_trellis.TrellisTests.test_pre_tuning_three_block_identity_and_failed_initial_search",
+    "trellis_coding.test_trellis.TrellisTests.test_public_label_packing_and_memory_contract_rejections",
+    "trellis_coding.test_trellis.TrellisTests.test_response_lookup_and_all_one_block_losses_against_bit_routes",
+    "trellis_coding.test_trellis.TrellisTests.test_selected_population_and_product_controls"
+  ],
+  "process_id": 51084,
+  "skips": 0,
+  "started_test_ids": [
+    "trellis_coding.test_trellis.TrellisTests.test_every_one_two_three_block_source_matches_exhaustive_messages",
+    "trellis_coding.test_trellis.TrellisTests.test_four_block_segment_product_has_no_group_state_overhead",
+    "trellis_coding.test_trellis.TrellisTests.test_four_six_block_diagnostics_and_long_closed_encoder",
+    "trellis_coding.test_trellis.TrellisTests.test_no_extra_start_state_and_child_formed_before_query",
+    "trellis_coding.test_trellis.TrellisTests.test_pre_tuning_three_block_identity_and_failed_initial_search",
+    "trellis_coding.test_trellis.TrellisTests.test_public_label_packing_and_memory_contract_rejections",
+    "trellis_coding.test_trellis.TrellisTests.test_response_lookup_and_all_one_block_losses_against_bit_routes",
+    "trellis_coding.test_trellis.TrellisTests.test_selected_population_and_product_controls"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\5a78fbf8d3f2cbc8\\tmp",
+  "tests_run": 8,
+  "unexpected_successes": 0
+}

@@ -1,0 +1,267 @@
+{
+  "arithmetic_from_public_spec": {
+    "correct_balance": 680,
+    "other_charge": 1998,
+    "overstatement": 2636,
+    "refund_gross": 1318,
+    "refund_raw": 1122,
+    "refund_tax": 196,
+    "rl_wrong_balance": 3316
+  },
+  "bug": "RL disables refund negation using its refunds=False argument for component_05 in all three repair attempts. The original checkpoint also omitted refund negation, while the shared initial failed patch and each other arm first repair implement it.",
+  "candidate_code_executed": false,
+  "checkpoint_omitted_refund_return_line": 201,
+  "complete_quartet_standalone_resource_comparison": {
+    "R0_over_K0": {
+      "admitted_calls": 1.0,
+      "input_tokens": 0.8860406311429623,
+      "output_tokens": 0.9840727294194044,
+      "planning_credits": "0.9142854847861260693073324545",
+      "sum_known_call_elapsed_seconds": 1.0384053182596371
+    },
+    "known_successes": {
+      "K0": 26,
+      "R0": 26
+    },
+    "projections": {
+      "K0": {
+        "admitted_calls": 56,
+        "inflight_calls": 0,
+        "known_calls": 56,
+        "known_planning_credits": "7.2206790",
+        "known_usage": {
+          "cached_input": 77056,
+          "input_tokens": 2110647,
+          "output": 169395,
+          "reasoning": 43604
+        },
+        "sum_known_call_elapsed_seconds": 2146.671068900003,
+        "unknown_calls": 0,
+        "unknown_locked_planning_credits": "0"
+      },
+      "R0": {
+        "admitted_calls": 56,
+        "inflight_calls": 0,
+        "known_calls": 56,
+        "known_planning_credits": "6.6017620",
+        "known_usage": {
+          "cached_input": 69888,
+          "input_tokens": 1870119,
+          "output": 166697,
+          "reasoning": 39789
+        },
+        "sum_known_call_elapsed_seconds": 2229.114654499863,
+        "unknown_calls": 0,
+        "unknown_locked_planning_credits": "0"
+      }
+    },
+    "scope": "Descriptive on 26 complete quartets only, including each shared prefix and no lesson writer. Overlapping projections must not be added to actual spend. Time is summed per-call elapsed time, not concurrent wall time or an identified latency effect. Planning credits are bookkeeping units, not actual subscription charges.",
+    "tasks": 26
+  },
+  "evidence_kind": "posthoc_source_inspection_and_elementary_arithmetic",
+  "interpretation": "This shows loss of a useful refund implementation from the supplied failed patch and reintroduction of a checkpoint defect in one RL trajectory. All public requirements and error feedback remained supplied. It does not establish that deletion or the lesson caused this single sampled failure; R0 also deleted the patch and succeeded. Private scores describe the authored test suite, not proof for every valid input.",
+  "model_calls": 0,
+  "other_correct_refund_branch_lines": {
+    "K0": 37,
+    "KL": 37,
+    "R0": 30
+  },
+  "prefix_component_binding_line": 211,
+  "prefix_correct_refund_branch_line": 36,
+  "public_case_id": "public-01",
+  "public_component_input": {
+    "cutoff": 6,
+    "events": [
+      {
+        "account": "acct-0",
+        "currency": "USD",
+        "discount_bp": 0,
+        "kind": "refund",
+        "price": 374,
+        "quantity": 3,
+        "revision": 0,
+        "sequence": 3,
+        "tax_bp": 1750
+      },
+      {
+        "account": "acct-1",
+        "currency": "USD",
+        "discount_bp": 10000,
+        "id": "tx-1",
+        "price": 452,
+        "quantity": 5,
+        "revision": 2,
+        "sequence": 5,
+        "tax_bp": 0
+      },
+      {
+        "account": "acct-0",
+        "currency": "USD",
+        "discount_bp": 3333,
+        "id": "tx-2",
+        "price": 407,
+        "quantity": 1,
+        "revision": 2,
+        "sequence": 7,
+        "tax_bp": 0
+      },
+      {
+        "account": "acct-1",
+        "currency": "EUR",
+        "discount_bp": 5000,
+        "id": "tx-0",
+        "kind": "refund",
+        "price": 112,
+        "quantity": 3,
+        "revision": 4,
+        "sequence": 7,
+        "tax_bp": 1750
+      },
+      {
+        "account": "acct-0",
+        "currency": "USD",
+        "discount_bp": 3333,
+        "price": 869,
+        "quantity": 3,
+        "revision": 2,
+        "sequence": 3,
+        "tax_bp": 1000
+      },
+      {
+        "account": "acct-1",
+        "currency": "EUR",
+        "discount_bp": 3333,
+        "id": "tx-2",
+        "price": 731,
+        "quantity": 5,
+        "revision": 3,
+        "sequence": 1,
+        "tax_bp": 0
+      },
+      {
+        "id": "tx-special",
+        "price": 3,
+        "revision": 5,
+        "sequence": 1
+      },
+      {
+        "id": "tx-special",
+        "price": 99,
+        "revision": 99,
+        "sequence": 100
+      }
+    ],
+    "opening": {
+      "acct-0|USD": 0,
+      "reserve|JPY": 24
+    },
+    "rounding": "floor"
+  },
+  "reviewed_component": {
+    "component_id": "component_05",
+    "family": "revision_ledger",
+    "policy": {
+      "revision_priority": "revision_first",
+      "tax_base": "original"
+    },
+    "requirements": [
+      "Input events is a list of records. Return {balances:{account|currency:integer}}. JSON object key order is irrelevant. Keep zero balances and opening-only keys.",
+      "Filter events whose sequence exceeds cutoff BEFORE choosing revisions. Defaults: sequence=0, revision=0, cutoff=10**9. For each ID choose greatest (revision, original input position).",
+      "Explicit IDs are strings starting tx-. A missing ID is unique anonymous:<original input position>. After revision selection, void=true removes the winning event; never restore an older revision.",
+      "Compute raw=price*quantity, quantity default1. Clamp discount_bp to [0,10000] and round raw*(10000-discount_bp)/10000 to get net. rounding is floor or half_up (ties upward), independently at every rounding operation.",
+      "Compute tax on the original price times quantity: round(base*tax_bp/10000), tax_bp default0. Add tax to net, then negate the total only for kind=refund. Other/missing kinds are charges.",
+      "Aggregate by account (default default) and currency (default USD). Add opening balances, which may be negative. Do not convert currencies or drop zero keys.",
+      "Bounds: at most24 events; nonnegative integer prices<=9999, quantity<=5, tax_bp<=2500, revision/sequence<=100; discount_bp may be negative or exceed10000. Names contain no |. All inputs are valid JSON within these bounds."
+    ]
+  },
+  "rl_binding_lines": {
+    "attempt1": 220,
+    "attempt2": 230,
+    "attempt3": 229
+  },
+  "rl_refund_branch_lines": {
+    "attempt1": 37,
+    "attempt2": 37,
+    "attempt3": 37
+  },
+  "source_extracts": [
+    {
+      "path": "experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/inspection/sole_failure_source_review/checkpoint_rules.py.txt",
+      "selector": "base_files[path=rules.py].text",
+      "source_file": "experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/recovery_bundle/tasks.json",
+      "source_text_sha256": "5511232eb4065bf9c238530858b4bed9b95ddd272f6b17122d9bbaa3ea0efa8c",
+      "task_id": "v11-study-composite_revision_ledger-83e899db4637da30"
+    },
+    {
+      "arm": "prefix",
+      "attempt": 1,
+      "path": "experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/inspection/sole_failure_source_review/prefix_attempt1_rules.py.txt",
+      "selector": "result.attempts[step=1].candidate.files[path=rules.py].text",
+      "source_file": "experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/study_live_recovered/jobs/9de383127ee1ab53216e847023d76bef29b2bf3eac39d7bcc8766eb6fcf7b772.json",
+      "source_file_sha256": "a65902b786470b5a004de39d36f3be76b5c25551d6edb62514ad072e4fda239d",
+      "source_text_sha256": "bb49c03f0905e30d9fe58b4c6e9c001decaca1d692cc8cbeb07ab82f195a13e8",
+      "task_id": "v11-study-composite_revision_ledger-83e899db4637da30"
+    },
+    {
+      "arm": "KL",
+      "attempt": 1,
+      "path": "experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/inspection/sole_failure_source_review/KL_attempt1_rules.py.txt",
+      "selector": "result.attempts[step=1].candidate.files[path=rules.py].text",
+      "source_file": "experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/study_live_recovered/jobs/277c99d4f11b23afab181fa95ac17ae0d0f7675ed86b9cec4137eb019bc3ef35.json",
+      "source_file_sha256": "8f8e9348efc6a7bab3193b672d3a1fa61e0bd81c7a1e62307541847ed621abc2",
+      "source_text_sha256": "eafa797844fea84dd9131e433a07c818605e5691a708a76e0be1e87af28cc58c",
+      "task_id": "v11-study-composite_revision_ledger-83e899db4637da30"
+    },
+    {
+      "arm": "R0",
+      "attempt": 1,
+      "path": "experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/inspection/sole_failure_source_review/R0_attempt1_rules.py.txt",
+      "selector": "result.attempts[step=1].candidate.files[path=rules.py].text",
+      "source_file": "experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/study_live_recovered/jobs/63a415164c892ae10d479a44a472d7427eabfdddba06488f45b09672d51aae48.json",
+      "source_file_sha256": "58a70bdafb0ea493af80528054fb78fd829768fcdfcdf1a4fda141303cecaba4",
+      "source_text_sha256": "403affa42219b10562a5b6446412c8355dcd31c7e5041778901bfb5d1a16d22d",
+      "task_id": "v11-study-composite_revision_ledger-83e899db4637da30"
+    },
+    {
+      "arm": "RL",
+      "attempt": 1,
+      "path": "experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/inspection/sole_failure_source_review/RL_attempt1_rules.py.txt",
+      "selector": "result.attempts[step=1].candidate.files[path=rules.py].text",
+      "source_file": "experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/study_live_recovered/jobs/761c8e4e8236bef88fe63525b80d34f20c09500003091b953937b263a15904bd.json",
+      "source_file_sha256": "155a72cbff3c0c7f28d83b086b197eb042e0eaff7f0a8d70d5cf020b051f3005",
+      "source_text_sha256": "858340112eaf503cadfc9e3b4ced2e6b06a7fab7303113d1e57970594e6e08e1",
+      "task_id": "v11-study-composite_revision_ledger-83e899db4637da30"
+    },
+    {
+      "arm": "RL",
+      "attempt": 2,
+      "path": "experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/inspection/sole_failure_source_review/RL_attempt2_rules.py.txt",
+      "selector": "result.attempts[step=2].candidate.files[path=rules.py].text",
+      "source_file": "experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/study_live_recovered/jobs/761c8e4e8236bef88fe63525b80d34f20c09500003091b953937b263a15904bd.json",
+      "source_file_sha256": "155a72cbff3c0c7f28d83b086b197eb042e0eaff7f0a8d70d5cf020b051f3005",
+      "source_text_sha256": "77dee639fe51cfab72f3f6a112545efd8a041d35be30a76b578f17e640ab0fa4",
+      "task_id": "v11-study-composite_revision_ledger-83e899db4637da30"
+    },
+    {
+      "arm": "RL",
+      "attempt": 3,
+      "path": "experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/inspection/sole_failure_source_review/RL_attempt3_rules.py.txt",
+      "selector": "result.attempts[step=3].candidate.files[path=rules.py].text",
+      "source_file": "experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/study_live_recovered/jobs/761c8e4e8236bef88fe63525b80d34f20c09500003091b953937b263a15904bd.json",
+      "source_file_sha256": "155a72cbff3c0c7f28d83b086b197eb042e0eaff7f0a8d70d5cf020b051f3005",
+      "source_text_sha256": "37539a7b7849a02b15335d78bbdea62e24a75df35a8bba71a8b1793c71099aba",
+      "task_id": "v11-study-composite_revision_ledger-83e899db4637da30"
+    },
+    {
+      "arm": "K0",
+      "attempt": 1,
+      "path": "experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/inspection/sole_failure_source_review/K0_attempt1_rules.py.txt",
+      "selector": "result.attempts[step=1].candidate.files[path=rules.py].text",
+      "source_file": "experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/study_live_recovered/jobs/bad4358f6c5a0289300ce003361091a047c9309cdf75da709ed1690bbe7fb6a3.json",
+      "source_file_sha256": "c728005c5297e127585e46c857baf1bd04a811748283773d2d29ff1879c0ab36",
+      "source_text_sha256": "f807556d59556e3c153a0c77173cf62727c4fec11aae996e26fee8e1700c01e6",
+      "task_id": "v11-study-composite_revision_ledger-83e899db4637da30"
+    }
+  ],
+  "task_id": "v11-study-composite_revision_ledger-83e899db4637da30"
+}

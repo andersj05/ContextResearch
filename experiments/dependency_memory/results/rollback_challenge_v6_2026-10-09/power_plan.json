@@ -1,0 +1,1 @@
+{"alpha":0.05,"delta":0.1,"discordance":0.3,"grid_increment":20,"method":"exact unconditional power of two-sided conditional McNemar test","pairs":260,"power":0.8188401579007178,"scope":"independent task pairs; assumed discordance and effect, not empirical assurance","target_power":0.8}

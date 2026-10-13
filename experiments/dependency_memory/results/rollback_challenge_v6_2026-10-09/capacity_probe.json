@@ -1,0 +1,2631 @@
+{
+  "evidence_kind": "offline_scripted_capacity_probe",
+  "model_generations": 0,
+  "bundle": "experiments/dependency_memory/results/rollback_challenge_v6_2026-10-09/prepared_screen",
+  "manifest_sha256": "4ea215e13736ba998976295a8551ea9b453d509ab0163633de05d64442ac9205",
+  "method": "Run the actual engine for all P/M/C scripted paths, stopping at all stages passed or action cap. P uses an evaluator witness, M a same-shape candidate mutation verified to fail, C an empty continue action. All writers pass the actual parser. No provider calls.",
+  "limitations": [
+    "These are fixtures, not model observations or a probability distribution.",
+    "Stress padding tests schema-valid sizes, not semantic writer compliance.",
+    "Candidate lengths and integer widths stay near the witnesses; this is not a bound over all accepted outputs.",
+    "Paths can share prefixes and become identical when admission fails; counts are not independent trials.",
+    "The maximum is the largest attempted admission bound before the actual engine stops."
+  ],
+  "rows": [
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-bitvector_program-6f588938a279ccd0",
+      "family": "bitvector_program",
+      "level": 3,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 34693,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-bitvector_program-6f588938a279ccd0",
+      "family": "bitvector_program",
+      "level": 3,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 32568,
+      "largest_request": {
+        "path": "PPCCP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-bitvector_program-6f588938a279ccd0",
+      "family": "bitvector_program",
+      "level": 3,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 29270,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-revision_ledger-50b6752b91391c43",
+      "family": "revision_ledger",
+      "level": 1,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 35896,
+      "largest_request": {
+        "path": "PMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 2
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-revision_ledger-50b6752b91391c43",
+      "family": "revision_ledger",
+      "level": 1,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 34091,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-revision_ledger-50b6752b91391c43",
+      "family": "revision_ledger",
+      "level": 1,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 30500,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-revision_ledger-cf8abd5d3e153952",
+      "family": "revision_ledger",
+      "level": 2,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 60618,
+      "largest_request": {
+        "path": "PMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 2
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-revision_ledger-cf8abd5d3e153952",
+      "family": "revision_ledger",
+      "level": 2,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 58779,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-revision_ledger-cf8abd5d3e153952",
+      "family": "revision_ledger",
+      "level": 2,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 50211,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-constraint_grid-40b7472caf73d37a",
+      "family": "constraint_grid",
+      "level": 1,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 27120,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-constraint_grid-40b7472caf73d37a",
+      "family": "constraint_grid",
+      "level": 1,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 25125,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-constraint_grid-40b7472caf73d37a",
+      "family": "constraint_grid",
+      "level": 1,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 23266,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-revision_ledger-61c47d78065d35c4",
+      "family": "revision_ledger",
+      "level": 3,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 113892,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-revision_ledger-61c47d78065d35c4",
+      "family": "revision_ledger",
+      "level": 3,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 112484,
+      "largest_request": {
+        "path": "PPCCP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-revision_ledger-61c47d78065d35c4",
+      "family": "revision_ledger",
+      "level": 3,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 93085,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-revision_ledger-438240a4050a3ab6",
+      "family": "revision_ledger",
+      "level": 1,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 38663,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-revision_ledger-438240a4050a3ab6",
+      "family": "revision_ledger",
+      "level": 1,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 36353,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-revision_ledger-438240a4050a3ab6",
+      "family": "revision_ledger",
+      "level": 1,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 32346,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-constraint_grid-da67373b316a648f",
+      "family": "constraint_grid",
+      "level": 2,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 29610,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-constraint_grid-da67373b316a648f",
+      "family": "constraint_grid",
+      "level": 2,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 27254,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-constraint_grid-da67373b316a648f",
+      "family": "constraint_grid",
+      "level": 2,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 24884,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-bitvector_program-914abaa4db5ce266",
+      "family": "bitvector_program",
+      "level": 2,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 29822,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-bitvector_program-914abaa4db5ce266",
+      "family": "bitvector_program",
+      "level": 2,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 27806,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-bitvector_program-914abaa4db5ce266",
+      "family": "bitvector_program",
+      "level": 2,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 25487,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-constraint_grid-50c286c83a9300d1",
+      "family": "constraint_grid",
+      "level": 1,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 27110,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-constraint_grid-50c286c83a9300d1",
+      "family": "constraint_grid",
+      "level": 1,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 25126,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-constraint_grid-50c286c83a9300d1",
+      "family": "constraint_grid",
+      "level": 1,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 23260,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-bitvector_program-de081ac6886b69b5",
+      "family": "bitvector_program",
+      "level": 1,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 27571,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-bitvector_program-de081ac6886b69b5",
+      "family": "bitvector_program",
+      "level": 1,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 25477,
+      "largest_request": {
+        "path": "PPCCP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-bitvector_program-de081ac6886b69b5",
+      "family": "bitvector_program",
+      "level": 1,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 23640,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-bitvector_program-56fb86589292bfd4",
+      "family": "bitvector_program",
+      "level": 3,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 34715,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-bitvector_program-56fb86589292bfd4",
+      "family": "bitvector_program",
+      "level": 3,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 32575,
+      "largest_request": {
+        "path": "PPCCP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-bitvector_program-56fb86589292bfd4",
+      "family": "bitvector_program",
+      "level": 3,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 29269,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-constraint_grid-4c2165152ec63241",
+      "family": "constraint_grid",
+      "level": 2,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 29590,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-constraint_grid-4c2165152ec63241",
+      "family": "constraint_grid",
+      "level": 2,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 27270,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-constraint_grid-4c2165152ec63241",
+      "family": "constraint_grid",
+      "level": 2,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 24885,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-revision_ledger-0a15e895a1694c73",
+      "family": "revision_ledger",
+      "level": 2,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 59217,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-revision_ledger-0a15e895a1694c73",
+      "family": "revision_ledger",
+      "level": 2,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 56939,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-revision_ledger-0a15e895a1694c73",
+      "family": "revision_ledger",
+      "level": 2,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 48778,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-bitvector_program-ac67711c29056c6d",
+      "family": "bitvector_program",
+      "level": 1,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 27576,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-bitvector_program-ac67711c29056c6d",
+      "family": "bitvector_program",
+      "level": 1,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 25474,
+      "largest_request": {
+        "path": "PPCCP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-bitvector_program-ac67711c29056c6d",
+      "family": "bitvector_program",
+      "level": 1,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 23640,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-revision_ledger-b820d370fecc155c",
+      "family": "revision_ledger",
+      "level": 3,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 105724,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-revision_ledger-b820d370fecc155c",
+      "family": "revision_ledger",
+      "level": 3,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 104245,
+      "largest_request": {
+        "path": "PPCCP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-revision_ledger-b820d370fecc155c",
+      "family": "revision_ledger",
+      "level": 3,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 86503,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-bitvector_program-be08f3da3de20b47",
+      "family": "bitvector_program",
+      "level": 2,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 29801,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-bitvector_program-be08f3da3de20b47",
+      "family": "bitvector_program",
+      "level": 2,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 27817,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-bitvector_program-be08f3da3de20b47",
+      "family": "bitvector_program",
+      "level": 2,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 25488,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-constraint_grid-cf3a4cf185823a5d",
+      "family": "constraint_grid",
+      "level": 3,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 34190,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-constraint_grid-cf3a4cf185823a5d",
+      "family": "constraint_grid",
+      "level": 3,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 31842,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-constraint_grid-cf3a4cf185823a5d",
+      "family": "constraint_grid",
+      "level": 3,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 28329,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-constraint_grid-7c7c529be039927f",
+      "family": "constraint_grid",
+      "level": 3,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 34250,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-constraint_grid-7c7c529be039927f",
+      "family": "constraint_grid",
+      "level": 3,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 31852,
+      "largest_request": {
+        "path": "PPCCP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "concise",
+      "task_id": "v6-screen-constraint_grid-7c7c529be039927f",
+      "family": "constraint_grid",
+      "level": 3,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 28360,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-bitvector_program-6f588938a279ccd0",
+      "family": "bitvector_program",
+      "level": 3,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 57565,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-bitvector_program-6f588938a279ccd0",
+      "family": "bitvector_program",
+      "level": 3,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 40468,
+      "largest_request": {
+        "path": "PPCCP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-bitvector_program-6f588938a279ccd0",
+      "family": "bitvector_program",
+      "level": 3,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 29270,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-revision_ledger-50b6752b91391c43",
+      "family": "revision_ledger",
+      "level": 1,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 58447,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-revision_ledger-50b6752b91391c43",
+      "family": "revision_ledger",
+      "level": 1,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 41991,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-revision_ledger-50b6752b91391c43",
+      "family": "revision_ledger",
+      "level": 1,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 30500,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-revision_ledger-cf8abd5d3e153952",
+      "family": "revision_ledger",
+      "level": 2,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 83157,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-revision_ledger-cf8abd5d3e153952",
+      "family": "revision_ledger",
+      "level": 2,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 66679,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-revision_ledger-cf8abd5d3e153952",
+      "family": "revision_ledger",
+      "level": 2,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 50211,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-constraint_grid-40b7472caf73d37a",
+      "family": "constraint_grid",
+      "level": 1,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 50016,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-constraint_grid-40b7472caf73d37a",
+      "family": "constraint_grid",
+      "level": 1,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 38549,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-constraint_grid-40b7472caf73d37a",
+      "family": "constraint_grid",
+      "level": 1,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 23266,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-revision_ledger-61c47d78065d35c4",
+      "family": "revision_ledger",
+      "level": 3,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 27,
+      "maximum_attempted_body_bound": 132876,
+      "largest_request": {
+        "path": "PMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 2
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-revision_ledger-61c47d78065d35c4",
+      "family": "revision_ledger",
+      "level": 3,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 120384,
+      "largest_request": {
+        "path": "PPCCP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-revision_ledger-61c47d78065d35c4",
+      "family": "revision_ledger",
+      "level": 3,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 93085,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-revision_ledger-438240a4050a3ab6",
+      "family": "revision_ledger",
+      "level": 1,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 61543,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-revision_ledger-438240a4050a3ab6",
+      "family": "revision_ledger",
+      "level": 1,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 44253,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-revision_ledger-438240a4050a3ab6",
+      "family": "revision_ledger",
+      "level": 1,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 32346,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-constraint_grid-da67373b316a648f",
+      "family": "constraint_grid",
+      "level": 2,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 52506,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-constraint_grid-da67373b316a648f",
+      "family": "constraint_grid",
+      "level": 2,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 39015,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-constraint_grid-da67373b316a648f",
+      "family": "constraint_grid",
+      "level": 2,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 24884,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-bitvector_program-914abaa4db5ce266",
+      "family": "bitvector_program",
+      "level": 2,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 52694,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-bitvector_program-914abaa4db5ce266",
+      "family": "bitvector_program",
+      "level": 2,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 39255,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-bitvector_program-914abaa4db5ce266",
+      "family": "bitvector_program",
+      "level": 2,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 25487,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-constraint_grid-50c286c83a9300d1",
+      "family": "constraint_grid",
+      "level": 1,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 50006,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-constraint_grid-50c286c83a9300d1",
+      "family": "constraint_grid",
+      "level": 1,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 38547,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-constraint_grid-50c286c83a9300d1",
+      "family": "constraint_grid",
+      "level": 1,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 23260,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-bitvector_program-de081ac6886b69b5",
+      "family": "bitvector_program",
+      "level": 1,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 50443,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-bitvector_program-de081ac6886b69b5",
+      "family": "bitvector_program",
+      "level": 1,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 38812,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-bitvector_program-de081ac6886b69b5",
+      "family": "bitvector_program",
+      "level": 1,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 23640,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-bitvector_program-56fb86589292bfd4",
+      "family": "bitvector_program",
+      "level": 3,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 57587,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-bitvector_program-56fb86589292bfd4",
+      "family": "bitvector_program",
+      "level": 3,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 40475,
+      "largest_request": {
+        "path": "PPCCP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-bitvector_program-56fb86589292bfd4",
+      "family": "bitvector_program",
+      "level": 3,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 29269,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-constraint_grid-4c2165152ec63241",
+      "family": "constraint_grid",
+      "level": 2,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 52486,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-constraint_grid-4c2165152ec63241",
+      "family": "constraint_grid",
+      "level": 2,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 39011,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-constraint_grid-4c2165152ec63241",
+      "family": "constraint_grid",
+      "level": 2,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 24885,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-revision_ledger-0a15e895a1694c73",
+      "family": "revision_ledger",
+      "level": 2,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 82097,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-revision_ledger-0a15e895a1694c73",
+      "family": "revision_ledger",
+      "level": 2,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 64839,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-revision_ledger-0a15e895a1694c73",
+      "family": "revision_ledger",
+      "level": 2,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 48778,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-bitvector_program-ac67711c29056c6d",
+      "family": "bitvector_program",
+      "level": 1,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 50448,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-bitvector_program-ac67711c29056c6d",
+      "family": "bitvector_program",
+      "level": 1,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 38813,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-bitvector_program-ac67711c29056c6d",
+      "family": "bitvector_program",
+      "level": 1,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 23640,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-revision_ledger-b820d370fecc155c",
+      "family": "revision_ledger",
+      "level": 3,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 128604,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-revision_ledger-b820d370fecc155c",
+      "family": "revision_ledger",
+      "level": 3,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 112145,
+      "largest_request": {
+        "path": "PPCCP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-revision_ledger-b820d370fecc155c",
+      "family": "revision_ledger",
+      "level": 3,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 86503,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-bitvector_program-be08f3da3de20b47",
+      "family": "bitvector_program",
+      "level": 2,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 52673,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-bitvector_program-be08f3da3de20b47",
+      "family": "bitvector_program",
+      "level": 2,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 39250,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-bitvector_program-be08f3da3de20b47",
+      "family": "bitvector_program",
+      "level": 2,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 25488,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-constraint_grid-cf3a4cf185823a5d",
+      "family": "constraint_grid",
+      "level": 3,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 57086,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-constraint_grid-cf3a4cf185823a5d",
+      "family": "constraint_grid",
+      "level": 3,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 39993,
+      "largest_request": {
+        "path": "MMPPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-constraint_grid-cf3a4cf185823a5d",
+      "family": "constraint_grid",
+      "level": 3,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 28329,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-constraint_grid-7c7c529be039927f",
+      "family": "constraint_grid",
+      "level": 3,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 57146,
+      "largest_request": {
+        "path": "MMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-constraint_grid-7c7c529be039927f",
+      "family": "constraint_grid",
+      "level": 3,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 39994,
+      "largest_request": {
+        "path": "MMPPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_plain",
+      "task_id": "v6-screen-constraint_grid-7c7c529be039927f",
+      "family": "constraint_grid",
+      "level": 3,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 28360,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-bitvector_program-6f588938a279ccd0",
+      "family": "bitvector_program",
+      "level": 3,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 27,
+      "maximum_attempted_body_bound": 146921,
+      "largest_request": {
+        "path": "PMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 2
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-bitvector_program-6f588938a279ccd0",
+      "family": "bitvector_program",
+      "level": 3,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 97812,
+      "largest_request": {
+        "path": "PPCCP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-bitvector_program-6f588938a279ccd0",
+      "family": "bitvector_program",
+      "level": 3,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 29270,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-revision_ledger-50b6752b91391c43",
+      "family": "revision_ledger",
+      "level": 1,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 99,
+      "maximum_attempted_body_bound": 147884,
+      "largest_request": {
+        "path": "MMMPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 2
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-revision_ledger-50b6752b91391c43",
+      "family": "revision_ledger",
+      "level": 1,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 99335,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-revision_ledger-50b6752b91391c43",
+      "family": "revision_ledger",
+      "level": 1,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 30500,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-revision_ledger-cf8abd5d3e153952",
+      "family": "revision_ledger",
+      "level": 2,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 183,
+      "maximum_attempted_body_bound": 140572,
+      "largest_request": {
+        "path": "PPCMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-revision_ledger-cf8abd5d3e153952",
+      "family": "revision_ledger",
+      "level": 2,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 124023,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-revision_ledger-cf8abd5d3e153952",
+      "family": "revision_ledger",
+      "level": 2,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 50211,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-constraint_grid-40b7472caf73d37a",
+      "family": "constraint_grid",
+      "level": 1,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 27,
+      "maximum_attempted_body_bound": 139710,
+      "largest_request": {
+        "path": "PMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 2
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-constraint_grid-40b7472caf73d37a",
+      "family": "constraint_grid",
+      "level": 1,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 90369,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-constraint_grid-40b7472caf73d37a",
+      "family": "constraint_grid",
+      "level": 1,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 23266,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-revision_ledger-61c47d78065d35c4",
+      "family": "revision_ledger",
+      "level": 3,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 222,
+      "maximum_attempted_body_bound": 159348,
+      "largest_request": {
+        "path": "PMPP",
+        "next_kind": "action",
+        "used": 3,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-revision_ledger-61c47d78065d35c4",
+      "family": "revision_ledger",
+      "level": 3,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 142,
+      "maximum_attempted_body_bound": 159355,
+      "largest_request": {
+        "path": "MPPCP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-revision_ledger-61c47d78065d35c4",
+      "family": "revision_ledger",
+      "level": 3,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 93085,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-revision_ledger-438240a4050a3ab6",
+      "family": "revision_ledger",
+      "level": 1,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 99,
+      "maximum_attempted_body_bound": 134547,
+      "largest_request": {
+        "path": "PPMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-revision_ledger-438240a4050a3ab6",
+      "family": "revision_ledger",
+      "level": 1,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 101597,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-revision_ledger-438240a4050a3ab6",
+      "family": "revision_ledger",
+      "level": 1,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 32346,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-constraint_grid-da67373b316a648f",
+      "family": "constraint_grid",
+      "level": 2,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 27,
+      "maximum_attempted_body_bound": 141920,
+      "largest_request": {
+        "path": "PMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 2
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-constraint_grid-da67373b316a648f",
+      "family": "constraint_grid",
+      "level": 2,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 92498,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-constraint_grid-da67373b316a648f",
+      "family": "constraint_grid",
+      "level": 2,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 24884,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-bitvector_program-914abaa4db5ce266",
+      "family": "bitvector_program",
+      "level": 2,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 27,
+      "maximum_attempted_body_bound": 142381,
+      "largest_request": {
+        "path": "PMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 2
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-bitvector_program-914abaa4db5ce266",
+      "family": "bitvector_program",
+      "level": 2,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 93050,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-bitvector_program-914abaa4db5ce266",
+      "family": "bitvector_program",
+      "level": 2,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 25487,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-constraint_grid-50c286c83a9300d1",
+      "family": "constraint_grid",
+      "level": 1,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 27,
+      "maximum_attempted_body_bound": 139716,
+      "largest_request": {
+        "path": "PMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 2
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-constraint_grid-50c286c83a9300d1",
+      "family": "constraint_grid",
+      "level": 1,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 90370,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-constraint_grid-50c286c83a9300d1",
+      "family": "constraint_grid",
+      "level": 1,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 23260,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-bitvector_program-de081ac6886b69b5",
+      "family": "bitvector_program",
+      "level": 1,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 27,
+      "maximum_attempted_body_bound": 139788,
+      "largest_request": {
+        "path": "PMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 2
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-bitvector_program-de081ac6886b69b5",
+      "family": "bitvector_program",
+      "level": 1,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 90721,
+      "largest_request": {
+        "path": "PPCCP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-bitvector_program-de081ac6886b69b5",
+      "family": "bitvector_program",
+      "level": 1,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 23640,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-bitvector_program-56fb86589292bfd4",
+      "family": "bitvector_program",
+      "level": 3,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 27,
+      "maximum_attempted_body_bound": 146940,
+      "largest_request": {
+        "path": "MMPMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 2
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-bitvector_program-56fb86589292bfd4",
+      "family": "bitvector_program",
+      "level": 3,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 97819,
+      "largest_request": {
+        "path": "PPCCP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-bitvector_program-56fb86589292bfd4",
+      "family": "bitvector_program",
+      "level": 3,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 29269,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-constraint_grid-4c2165152ec63241",
+      "family": "constraint_grid",
+      "level": 2,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 27,
+      "maximum_attempted_body_bound": 141944,
+      "largest_request": {
+        "path": "PMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 2
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-constraint_grid-4c2165152ec63241",
+      "family": "constraint_grid",
+      "level": 2,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 92514,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-constraint_grid-4c2165152ec63241",
+      "family": "constraint_grid",
+      "level": 2,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 24885,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-revision_ledger-0a15e895a1694c73",
+      "family": "revision_ledger",
+      "level": 2,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 183,
+      "maximum_attempted_body_bound": 147962,
+      "largest_request": {
+        "path": "MMMPP",
+        "next_kind": "action",
+        "used": 3,
+        "stage": 1
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-revision_ledger-0a15e895a1694c73",
+      "family": "revision_ledger",
+      "level": 2,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 122183,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-revision_ledger-0a15e895a1694c73",
+      "family": "revision_ledger",
+      "level": 2,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 48778,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-bitvector_program-ac67711c29056c6d",
+      "family": "bitvector_program",
+      "level": 1,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 27,
+      "maximum_attempted_body_bound": 139783,
+      "largest_request": {
+        "path": "PMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 2
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-bitvector_program-ac67711c29056c6d",
+      "family": "bitvector_program",
+      "level": 1,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 90718,
+      "largest_request": {
+        "path": "PPCCP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-bitvector_program-ac67711c29056c6d",
+      "family": "bitvector_program",
+      "level": 1,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 23640,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-revision_ledger-b820d370fecc155c",
+      "family": "revision_ledger",
+      "level": 3,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 222,
+      "maximum_attempted_body_bound": 152743,
+      "largest_request": {
+        "path": "PMPP",
+        "next_kind": "action",
+        "used": 3,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-revision_ledger-b820d370fecc155c",
+      "family": "revision_ledger",
+      "level": 3,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 142,
+      "maximum_attempted_body_bound": 152763,
+      "largest_request": {
+        "path": "MPPCP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-revision_ledger-b820d370fecc155c",
+      "family": "revision_ledger",
+      "level": 3,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 86503,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-bitvector_program-be08f3da3de20b47",
+      "family": "bitvector_program",
+      "level": 2,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 27,
+      "maximum_attempted_body_bound": 142397,
+      "largest_request": {
+        "path": "PMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 2
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-bitvector_program-be08f3da3de20b47",
+      "family": "bitvector_program",
+      "level": 2,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 93061,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-bitvector_program-be08f3da3de20b47",
+      "family": "bitvector_program",
+      "level": 2,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 25488,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-constraint_grid-cf3a4cf185823a5d",
+      "family": "constraint_grid",
+      "level": 3,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 27,
+      "maximum_attempted_body_bound": 146691,
+      "largest_request": {
+        "path": "PMMMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 2
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-constraint_grid-cf3a4cf185823a5d",
+      "family": "constraint_grid",
+      "level": 3,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 97086,
+      "largest_request": {
+        "path": "PCCPP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-constraint_grid-cf3a4cf185823a5d",
+      "family": "constraint_grid",
+      "level": 3,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 28329,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-constraint_grid-7c7c529be039927f",
+      "family": "constraint_grid",
+      "level": 3,
+      "arm": "K",
+      "scripted_paths": 223,
+      "capacity_paths": 27,
+      "maximum_attempted_body_bound": 146589,
+      "largest_request": {
+        "path": "MMPMP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 2
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-constraint_grid-7c7c529be039927f",
+      "family": "constraint_grid",
+      "level": 3,
+      "arm": "R",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 97096,
+      "largest_request": {
+        "path": "PPCCP",
+        "next_kind": "action",
+        "used": 4,
+        "stage": 3
+      }
+    },
+    {
+      "profile": "maximum_escaped",
+      "task_id": "v6-screen-constraint_grid-7c7c529be039927f",
+      "family": "constraint_grid",
+      "level": 3,
+      "arm": "F",
+      "scripted_paths": 223,
+      "capacity_paths": 0,
+      "maximum_attempted_body_bound": 28360,
+      "largest_request": {
+        "path": "PPP",
+        "next_kind": "action",
+        "used": 2,
+        "stage": 3
+      }
+    }
+  ],
+  "probe_source_sha256": "52c5f3e24393a612c7e3e57179c1230e752a45999605b647bbaf51d323c50b97",
+  "probe_archive_sha256": "4f5e208beffd7e8f34c1f012b327ea18a82cc075b00445e867c777096776545a",
+  "probe_archive": "capacity_probe_source.zip",
+  "summary": {
+    "concise": {
+      "task_arm_rows": 54,
+      "scripted_paths": 12042,
+      "capacity_rows": 0,
+      "maximum_attempted_body_bound": 113892
+    },
+    "maximum_plain": {
+      "task_arm_rows": 54,
+      "scripted_paths": 12042,
+      "capacity_rows": 1,
+      "maximum_attempted_body_bound": 132876
+    },
+    "maximum_escaped": {
+      "task_arm_rows": 54,
+      "scripted_paths": 12042,
+      "capacity_rows": 20,
+      "maximum_attempted_body_bound": 159355
+    }
+  }
+}

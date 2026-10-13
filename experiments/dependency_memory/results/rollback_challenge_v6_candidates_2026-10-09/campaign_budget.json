@@ -1,0 +1,127 @@
+{
+  "additional_admission_ceiling": 8000,
+  "allocations": [
+    {
+      "admitted_calls": 56,
+      "bundle": "prepared",
+      "completed_calls": 56,
+      "label": "candidate-required-screen",
+      "manifest_sha256": "bdb1fd85c55aefe82fc44b3949faa76298a2e65add602ff43d5062ee4a10c7d6",
+      "maximum_admissions": 84,
+      "run": "live_screen",
+      "status": "completed",
+      "unknowns": 0
+    },
+    {
+      "admitted_calls": 317,
+      "bundle": "../rollback_challenge_v6_headroom_2026-10-09/prepared",
+      "completed_calls": 317,
+      "label": "headroom-screen",
+      "manifest_sha256": "8a1dc0eed43e950eec80ce716af2c53273afbc24954e54bde8c7a3dc9727b8a9",
+      "maximum_admissions": 336,
+      "run": "../rollback_challenge_v6_headroom_2026-10-09/live_screen",
+      "status": "completed",
+      "unknowns": 0
+    },
+    {
+      "admitted_calls": 190,
+      "bundle": "../rollback_challenge_v6_validation_2026-10-09/prepared",
+      "completed_calls": 190,
+      "label": "ledger-validation",
+      "manifest_sha256": "756813e6dc53e35dfb10ff7f6910fa8d445374c6b13583ccb37fbe64f4cd1dac",
+      "maximum_admissions": 224,
+      "run": "../rollback_challenge_v6_validation_2026-10-09/live_validation",
+      "status": "completed",
+      "unknowns": 0
+    },
+    {
+      "admitted_calls": 104,
+      "bundle": "../rollback_challenge_v6_six_actions_2026-10-09/prepared",
+      "completed_calls": 103,
+      "label": "six-action-screen",
+      "manifest_sha256": "42bdeb30ab80b8695e5b58273d1aee23760dff2f62eb7f4a54f7aab81cc8a7fa",
+      "maximum_admissions": 136,
+      "run": "../rollback_challenge_v6_six_actions_2026-10-09/live_screen",
+      "status": "completed",
+      "unknowns": 1
+    },
+    {
+      "admitted_calls": 68,
+      "bundle": "../rollback_challenge_v6_intermediate_2026-10-09/prepared",
+      "completed_calls": 68,
+      "label": "intermediate-ledger-screen",
+      "manifest_sha256": "bfcc8994ad28fa85dfe2d6a6e7e16e27f1f9d3ae5fefce114cf91b3bbaff695e",
+      "maximum_admissions": 112,
+      "run": "../rollback_challenge_v6_intermediate_2026-10-09/live_screen",
+      "status": "completed",
+      "unknowns": 0
+    },
+    {
+      "admitted_calls": 88,
+      "bundle": "../rollback_challenge_v6_intermediate34_2026-10-09/prepared",
+      "completed_calls": 88,
+      "label": "intermediate34-ledger-screen",
+      "manifest_sha256": "1429dad37ed292ae9dd5b52e6d7362dc9827c8429ecf487943114fada1e88a69",
+      "maximum_admissions": 112,
+      "run": "../rollback_challenge_v6_intermediate34_2026-10-09/live_screen",
+      "status": "completed",
+      "unknowns": 0
+    },
+    {
+      "admitted_calls": 181,
+      "bundle": "../rollback_challenge_v6_intermediate34_validation_2026-10-09/prepared",
+      "completed_calls": 181,
+      "label": "intermediate34-ledger-validation",
+      "manifest_sha256": "a1d087ac77f58d36539010cf911c550f6c1742d2f73d7681a908a6ec2d6a4fa7",
+      "maximum_admissions": 224,
+      "run": "../rollback_challenge_v6_intermediate34_validation_2026-10-09/live_validation",
+      "status": "completed",
+      "unknowns": 0
+    },
+    {
+      "admitted_calls": 60,
+      "bundle": "../rollback_challenge_v6_four_actions_2026-10-09/prepared",
+      "completed_calls": 60,
+      "label": "four-action-ledger-screen",
+      "manifest_sha256": "bff1f8082ca320e91cf7010d27828dff957a9c2bc973efa30befe8055dd6a62f",
+      "maximum_admissions": 88,
+      "run": "../rollback_challenge_v6_four_actions_2026-10-09/live_screen",
+      "status": "completed",
+      "unknowns": 0
+    },
+    {
+      "admitted_calls": 130,
+      "bundle": "../rollback_challenge_v6_four_actions_validation_2026-10-09/prepared",
+      "completed_calls": 130,
+      "label": "four-action-ledger-validation",
+      "manifest_sha256": "c1b0b2ce09ecda320f9efeb2ee5b8edd5ab51f6420f6371ed05eb10623082323",
+      "maximum_admissions": 176,
+      "run": "../rollback_challenge_v6_four_actions_validation_2026-10-09/live_validation",
+      "status": "completed",
+      "unknowns": 0
+    },
+    {
+      "admitted_calls": 2504,
+      "bundle": "../rollback_challenge_v6_four_actions_confirmation_2026-10-09/prepared",
+      "completed_calls": 2496,
+      "confirmation_envelope_byte_sha256": "db73cb030615b40a58051ce64e7f4257e0971d47d55d4a5adc32b5557eba9dc1",
+      "label": "four-action-ledger-confirmation",
+      "manifest_sha256": "64cf6a5de2af437daef899a4f92520d2d702586d079fb1aacf97ef25b50244d8",
+      "maximum_admissions": 3640,
+      "run": "../rollback_challenge_v6_four_actions_confirmation_2026-10-09/live_confirmation",
+      "status": "completed",
+      "unknowns": 8
+    }
+  ],
+  "authorization": "campaign_authorization.json",
+  "ceiling_amendment": "campaign_budget_amendment_2026-10-09.json",
+  "closed_previous_allocations_excluded": true,
+  "count_includes": [
+    "actions",
+    "writers",
+    "unknown_admissions"
+  ],
+  "reserved_maximum": 3698,
+  "unreserved_remaining": 4302,
+  "updated_utc": "2026-10-10T03:09:05.759896+00:00"
+}

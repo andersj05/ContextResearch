@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "unittest",
+    "experiments.dependency_memory.rollback_development_v5_continuation.test_continuation.ContinuationTests",
+    "-v"
+  ],
+  "console_path": "v5-continuation-scheduler-tests.txt",
+  "console_sha256": "86c43893211d93f07f473bd7d10202f733b82d0c355dfbd7b6f765ee93f24398",
+  "cwd": "C:\\Users\\jense\\Desktop\\ContextResearch",
+  "elapsed_seconds": 4.487515000015264,
+  "exit_code": 0,
+  "finished_utc": "2026-10-09T03:31:40.361699+00:00",
+  "started_utc": "2026-10-09T03:31:35.874184+00:00"
+}

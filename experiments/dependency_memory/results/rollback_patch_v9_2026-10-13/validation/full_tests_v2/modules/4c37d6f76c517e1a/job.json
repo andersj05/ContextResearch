@@ -1,0 +1,19 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\4c37d6f76c517e1a\\job.json",
+  "module": "luna6_revision.test_study",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\4c37d6f76c517e1a\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\4c37d6f76c517e1a\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\4c37d6f76c517e1a\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\4c37d6f76c517e1a\\tmp",
+  "test_ids": [
+    "luna6_revision.test_study.StudyChecks.test_grader_rejects_missing_and_duplicate_obligations",
+    "luna6_revision.test_study.StudyChecks.test_independent_gate_truth_table",
+    "luna6_revision.test_study.StudyChecks.test_late_events_include_directional_and_irrelevant_controls",
+    "luna6_revision.test_study.StudyChecks.test_projection_sufficiency_and_capacity",
+    "luna6_revision.test_study.StudyChecks.test_reasoning_charged_once_and_bad_usage_rejected",
+    "luna6_revision.test_study.StudyChecks.test_repairs_use_available_view_and_are_idempotent",
+    "luna6_revision.test_study.StudyChecks.test_utf8_prefix_budget",
+    "luna6_revision.test_study.StudyChecks.test_wire_bounds_and_disclosure"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

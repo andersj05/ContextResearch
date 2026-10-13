@@ -1,0 +1,15 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\9c6d0e5e70ba4831\\job.json",
+  "module": "joint_coding_cover.test_bounds",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\9c6d0e5e70ba4831\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\9c6d0e5e70ba4831\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\9c6d0e5e70ba4831\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\9c6d0e5e70ba4831\\tmp",
+  "test_ids": [
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_all_column_rewards_by_source_enumeration_without_histogram_convolution",
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_missing_constant_fibers_and_saved_upper_witness",
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_oracle_and_score_profiles_against_every_direct_one_block_route",
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_public_bit_relabellings_allowed_but_coordinate_dependent_prediction_rejected"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

@@ -1,0 +1,54 @@
+{
+  "completed_test_ids": [
+    "rollback_pilot.test_prepare.PreparationTests.test_all_eight_calibration_requests_are_independent_and_fixture_excluded",
+    "rollback_pilot.test_prepare.PreparationTests.test_artifact_tampering_is_detected_without_repairing_a_frozen_bundle",
+    "rollback_pilot.test_prepare.PreparationTests.test_bundle_freezes_twelve_real_generated_math_tasks_and_no_substitute_coding_cohort",
+    "rollback_pilot.test_prepare.PreparationTests.test_manifest_cannot_turn_itself_into_launch_authorization",
+    "rollback_pilot.test_prepare.PreparationTests.test_second_preparation_never_overwrites_prior_bundle",
+    "rollback_pilot.test_prepare.PreparationTests.test_source_digest_mismatch_is_detected"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "rollback_pilot.test_prepare.PreparationTests.test_all_eight_calibration_requests_are_independent_and_fixture_excluded": "passed",
+    "rollback_pilot.test_prepare.PreparationTests.test_artifact_tampering_is_detected_without_repairing_a_frozen_bundle": "passed",
+    "rollback_pilot.test_prepare.PreparationTests.test_bundle_freezes_twelve_real_generated_math_tasks_and_no_substitute_coding_cohort": "passed",
+    "rollback_pilot.test_prepare.PreparationTests.test_manifest_cannot_turn_itself_into_launch_authorization": "passed",
+    "rollback_pilot.test_prepare.PreparationTests.test_second_preparation_never_overwrites_prior_bundle": "passed",
+    "rollback_pilot.test_prepare.PreparationTests.test_source_digest_mismatch_is_detected": "passed"
+  },
+  "elapsed_seconds": 1.2653333999915048,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "rollback_pilot.test_prepare.PreparationTests.test_all_eight_calibration_requests_are_independent_and_fixture_excluded",
+    "rollback_pilot.test_prepare.PreparationTests.test_artifact_tampering_is_detected_without_repairing_a_frozen_bundle",
+    "rollback_pilot.test_prepare.PreparationTests.test_bundle_freezes_twelve_real_generated_math_tasks_and_no_substitute_coding_cohort",
+    "rollback_pilot.test_prepare.PreparationTests.test_manifest_cannot_turn_itself_into_launch_authorization",
+    "rollback_pilot.test_prepare.PreparationTests.test_second_preparation_never_overwrites_prior_bundle",
+    "rollback_pilot.test_prepare.PreparationTests.test_source_digest_mismatch_is_detected"
+  ],
+  "planned_test_ids": [
+    "rollback_pilot.test_prepare.PreparationTests.test_all_eight_calibration_requests_are_independent_and_fixture_excluded",
+    "rollback_pilot.test_prepare.PreparationTests.test_artifact_tampering_is_detected_without_repairing_a_frozen_bundle",
+    "rollback_pilot.test_prepare.PreparationTests.test_bundle_freezes_twelve_real_generated_math_tasks_and_no_substitute_coding_cohort",
+    "rollback_pilot.test_prepare.PreparationTests.test_manifest_cannot_turn_itself_into_launch_authorization",
+    "rollback_pilot.test_prepare.PreparationTests.test_second_preparation_never_overwrites_prior_bundle",
+    "rollback_pilot.test_prepare.PreparationTests.test_source_digest_mismatch_is_detected"
+  ],
+  "process_id": 27284,
+  "skips": 0,
+  "started_test_ids": [
+    "rollback_pilot.test_prepare.PreparationTests.test_all_eight_calibration_requests_are_independent_and_fixture_excluded",
+    "rollback_pilot.test_prepare.PreparationTests.test_artifact_tampering_is_detected_without_repairing_a_frozen_bundle",
+    "rollback_pilot.test_prepare.PreparationTests.test_bundle_freezes_twelve_real_generated_math_tasks_and_no_substitute_coding_cohort",
+    "rollback_pilot.test_prepare.PreparationTests.test_manifest_cannot_turn_itself_into_launch_authorization",
+    "rollback_pilot.test_prepare.PreparationTests.test_second_preparation_never_overwrites_prior_bundle",
+    "rollback_pilot.test_prepare.PreparationTests.test_source_digest_mismatch_is_detected"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\9d7f16a6b413bf9d\\tmp",
+  "tests_run": 6,
+  "unexpected_successes": 0
+}

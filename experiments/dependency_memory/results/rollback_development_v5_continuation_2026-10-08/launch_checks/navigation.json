@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python",
+    "scripts/validate_context_repo.py",
+    "--navigation-only"
+  ],
+  "console_path": "navigation.txt",
+  "console_sha256": "3d0e8dbf4581b63ab418fb496e7cafba1d03528d529914a1c38fbba7c49761d0",
+  "cwd": "C:\\Users\\jense\\Desktop\\ContextResearch",
+  "elapsed_seconds": 19.024953199987067,
+  "exit_code": 0,
+  "finished_utc": "2026-10-09T05:47:59.784412+00:00",
+  "started_utc": "2026-10-09T05:47:40.759450+00:00"
+}

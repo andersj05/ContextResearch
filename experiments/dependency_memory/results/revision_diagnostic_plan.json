@@ -9,6 +9,7 @@
   "schedule_seed": 2026091907,
   "payload_seed": 2026091908,
   "source_sha256": {
+    "experiments/dependency_memory/__init__.py": "e333cbd25bfa680e3a902a026d94a24aeea305f78b75019b071203165e6924e2",
     "experiments/dependency_memory/artifact_workflow.py": "27a9791f7f15e430724f00aa8aeff71d0203cee1a51e5295159cbc17eb9b7554",
     "experiments/dependency_memory/audit_heldout_renderers.py": "1b3838a215b3459f976a02ffe7ae95947e3970b1ec4a9758a90d9b06dccbe69a",
     "experiments/dependency_memory/audit_luna_transport.py": "e3b4d115705e4d86341d8dd048f69b9ebed806df6cd6238038f3928cfda99f3d",

@@ -1,0 +1,25 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\6ddaa5dbeca3ff72\\job.json",
+  "module": "rollback_pilot.test_records_math",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\6ddaa5dbeca3ff72\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\6ddaa5dbeca3ff72\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\6ddaa5dbeca3ff72\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\6ddaa5dbeca3ff72\\tmp",
+  "test_ids": [
+    "rollback_pilot.test_records_math.GeneratedMathTests.test_independent_exhaustive_agreement_over_every_finite_candidate",
+    "rollback_pilot.test_records_math.GeneratedMathTests.test_out_of_bounds_candidates_are_public_mismatches_not_format_errors",
+    "rollback_pilot.test_records_math.GeneratedMathTests.test_prespecified_dimensions_seeds_and_private_witness_separation",
+    "rollback_pilot.test_records_math.RecordAndRoutingTests.test_branch_candidate_continue_and_option_contract",
+    "rollback_pilot.test_records_math.RecordAndRoutingTests.test_checkpoint_limits_options_and_source_ids",
+    "rollback_pilot.test_records_math.RecordAndRoutingTests.test_malicious_trial_text_stays_inside_one_json_string",
+    "rollback_pilot.test_records_math.RecordAndRoutingTests.test_nested_schema_order_is_canonical_without_rewriting_text",
+    "rollback_pilot.test_records_math.RecordAndRoutingTests.test_primary_inputs_differ_only_in_branch_and_canary",
+    "rollback_pilot.test_records_math.RecordAndRoutingTests.test_receipts_first_public_constraint_and_bounded_utf8",
+    "rollback_pilot.test_records_math.RecordAndRoutingTests.test_renderer_rejects_evaluator_and_nested_private_fields",
+    "rollback_pilot.test_records_math.RecordAndRoutingTests.test_semantically_bad_lesson_remains_valid_and_unknown_evidence_does_not",
+    "rollback_pilot.test_records_math.RecordAndRoutingTests.test_strict_json_rejects_duplicates_nonfinite_and_surrounding_text",
+    "rollback_pilot.test_records_math.RecordAndRoutingTests.test_terminal_rejects_wrong_types_lengths_and_unknown_fields",
+    "rollback_pilot.test_records_math.RecordAndRoutingTests.test_writer_token_counter_and_complete_input_count_are_explicit"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

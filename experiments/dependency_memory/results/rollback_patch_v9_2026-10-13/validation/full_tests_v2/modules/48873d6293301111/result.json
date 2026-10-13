@@ -1,0 +1,49 @@
+{
+  "completed_test_ids": [
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_preflight_exercises_sixteen_sessions_and_both_request_schemas",
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_serial_and_pipelined_engines_render_identical_full_contexts_and_usage",
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_sixteen_calls_pipeline_around_slow_prefix_and_preserve_one_unknown",
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_thirty_two_admissions_are_bounded_and_unknown_keeps_its_reservation",
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_unknown_continuation_preserves_mate_and_unrelated_task"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_preflight_exercises_sixteen_sessions_and_both_request_schemas": "passed",
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_serial_and_pipelined_engines_render_identical_full_contexts_and_usage": "passed",
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_sixteen_calls_pipeline_around_slow_prefix_and_preserve_one_unknown": "passed",
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_thirty_two_admissions_are_bounded_and_unknown_keeps_its_reservation": "passed",
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_unknown_continuation_preserves_mate_and_unrelated_task": "passed"
+  },
+  "elapsed_seconds": 33.75977989999228,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_preflight_exercises_sixteen_sessions_and_both_request_schemas",
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_serial_and_pipelined_engines_render_identical_full_contexts_and_usage",
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_sixteen_calls_pipeline_around_slow_prefix_and_preserve_one_unknown",
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_thirty_two_admissions_are_bounded_and_unknown_keeps_its_reservation",
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_unknown_continuation_preserves_mate_and_unrelated_task"
+  ],
+  "planned_test_ids": [
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_preflight_exercises_sixteen_sessions_and_both_request_schemas",
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_serial_and_pipelined_engines_render_identical_full_contexts_and_usage",
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_sixteen_calls_pipeline_around_slow_prefix_and_preserve_one_unknown",
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_thirty_two_admissions_are_bounded_and_unknown_keeps_its_reservation",
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_unknown_continuation_preserves_mate_and_unrelated_task"
+  ],
+  "process_id": 41308,
+  "skips": 0,
+  "started_test_ids": [
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_preflight_exercises_sixteen_sessions_and_both_request_schemas",
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_serial_and_pipelined_engines_render_identical_full_contexts_and_usage",
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_sixteen_calls_pipeline_around_slow_prefix_and_preserve_one_unknown",
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_thirty_two_admissions_are_bounded_and_unknown_keeps_its_reservation",
+    "rollback_parallel_v8.test_runner.PipelineControllerTests.test_unknown_continuation_preserves_mate_and_unrelated_task"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\48873d6293301111\\tmp",
+  "tests_run": 5,
+  "unexpected_successes": 0
+}

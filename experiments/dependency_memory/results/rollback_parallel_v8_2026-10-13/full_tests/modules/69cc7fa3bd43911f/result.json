@@ -1,0 +1,59 @@
+{
+  "completed_test_ids": [
+    "joint_coding_general.test_cover.GeneralCoverTests.test_all_pair_oracles_and_orbit_census_against_branch_polynomial",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_binary_reward_identity_on_all_score_basis_triples",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_every_near_one_block_route_and_exact_loss_function_identification",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_every_quarter_unit_case_by_direct_source_triple_sums",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_preserved_auxiliary_native_books_and_rational_duals",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_saved_all_decoder_certificate_and_invalid_target_shapes",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_tied_ideal_union_inequality_source_by_source"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "joint_coding_general.test_cover.GeneralCoverTests.test_all_pair_oracles_and_orbit_census_against_branch_polynomial": "passed",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_binary_reward_identity_on_all_score_basis_triples": "passed",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_every_near_one_block_route_and_exact_loss_function_identification": "passed",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_every_quarter_unit_case_by_direct_source_triple_sums": "passed",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_preserved_auxiliary_native_books_and_rational_duals": "passed",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_saved_all_decoder_certificate_and_invalid_target_shapes": "passed",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_tied_ideal_union_inequality_source_by_source": "passed"
+  },
+  "elapsed_seconds": 113.9294399000064,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "joint_coding_general.test_cover.GeneralCoverTests.test_all_pair_oracles_and_orbit_census_against_branch_polynomial",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_binary_reward_identity_on_all_score_basis_triples",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_every_near_one_block_route_and_exact_loss_function_identification",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_every_quarter_unit_case_by_direct_source_triple_sums",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_preserved_auxiliary_native_books_and_rational_duals",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_saved_all_decoder_certificate_and_invalid_target_shapes",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_tied_ideal_union_inequality_source_by_source"
+  ],
+  "planned_test_ids": [
+    "joint_coding_general.test_cover.GeneralCoverTests.test_all_pair_oracles_and_orbit_census_against_branch_polynomial",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_binary_reward_identity_on_all_score_basis_triples",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_every_near_one_block_route_and_exact_loss_function_identification",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_every_quarter_unit_case_by_direct_source_triple_sums",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_preserved_auxiliary_native_books_and_rational_duals",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_saved_all_decoder_certificate_and_invalid_target_shapes",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_tied_ideal_union_inequality_source_by_source"
+  ],
+  "process_id": 11392,
+  "skips": 0,
+  "started_test_ids": [
+    "joint_coding_general.test_cover.GeneralCoverTests.test_all_pair_oracles_and_orbit_census_against_branch_polynomial",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_binary_reward_identity_on_all_score_basis_triples",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_every_near_one_block_route_and_exact_loss_function_identification",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_every_quarter_unit_case_by_direct_source_triple_sums",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_preserved_auxiliary_native_books_and_rational_duals",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_saved_all_decoder_certificate_and_invalid_target_shapes",
+    "joint_coding_general.test_cover.GeneralCoverTests.test_tied_ideal_union_inequality_source_by_source"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\69cc7fa3bd43911f\\tmp",
+  "tests_run": 7,
+  "unexpected_successes": 0
+}

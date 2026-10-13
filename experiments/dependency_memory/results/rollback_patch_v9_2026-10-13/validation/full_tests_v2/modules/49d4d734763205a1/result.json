@@ -1,0 +1,39 @@
+{
+  "completed_test_ids": [
+    "evidence_use.test_replay.RetrospectiveReplayTests.test_minimized_witnesses_preserve_original_diagnostic",
+    "evidence_use.test_replay.RetrospectiveReplayTests.test_missing_outcomes_cannot_be_repaired_by_replay",
+    "evidence_use.test_replay.RetrospectiveReplayTests.test_vetoes_and_readout_are_separate_from_task_success"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "evidence_use.test_replay.RetrospectiveReplayTests.test_minimized_witnesses_preserve_original_diagnostic": "passed",
+    "evidence_use.test_replay.RetrospectiveReplayTests.test_missing_outcomes_cannot_be_repaired_by_replay": "passed",
+    "evidence_use.test_replay.RetrospectiveReplayTests.test_vetoes_and_readout_are_separate_from_task_success": "passed"
+  },
+  "elapsed_seconds": 4.216515400010394,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "evidence_use.test_replay.RetrospectiveReplayTests.test_minimized_witnesses_preserve_original_diagnostic",
+    "evidence_use.test_replay.RetrospectiveReplayTests.test_missing_outcomes_cannot_be_repaired_by_replay",
+    "evidence_use.test_replay.RetrospectiveReplayTests.test_vetoes_and_readout_are_separate_from_task_success"
+  ],
+  "planned_test_ids": [
+    "evidence_use.test_replay.RetrospectiveReplayTests.test_minimized_witnesses_preserve_original_diagnostic",
+    "evidence_use.test_replay.RetrospectiveReplayTests.test_missing_outcomes_cannot_be_repaired_by_replay",
+    "evidence_use.test_replay.RetrospectiveReplayTests.test_vetoes_and_readout_are_separate_from_task_success"
+  ],
+  "process_id": 35084,
+  "skips": 0,
+  "started_test_ids": [
+    "evidence_use.test_replay.RetrospectiveReplayTests.test_minimized_witnesses_preserve_original_diagnostic",
+    "evidence_use.test_replay.RetrospectiveReplayTests.test_missing_outcomes_cannot_be_repaired_by_replay",
+    "evidence_use.test_replay.RetrospectiveReplayTests.test_vetoes_and_readout_are_separate_from_task_success"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\49d4d734763205a1\\tmp",
+  "tests_run": 3,
+  "unexpected_successes": 0
+}

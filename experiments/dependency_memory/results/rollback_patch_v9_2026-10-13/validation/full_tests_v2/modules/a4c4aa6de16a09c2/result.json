@@ -1,0 +1,54 @@
+{
+  "completed_test_ids": [
+    "rate_spectrum.test_spectrum.SpectrumTests.test_class_kernels_match_all_actual_source_word_routes",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_odd_domination_has_independent_positive_factor_identities",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_optimizer_brackets_and_exact_gibbs_constant_marginal",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_saved_all_decoder_cover_and_strict_rate_slack",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_supporting_inequality_on_independent_channels",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_transition_and_endpoint_derivatives_factor_exactly"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "rate_spectrum.test_spectrum.SpectrumTests.test_class_kernels_match_all_actual_source_word_routes": "passed",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_odd_domination_has_independent_positive_factor_identities": "passed",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_optimizer_brackets_and_exact_gibbs_constant_marginal": "passed",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_saved_all_decoder_cover_and_strict_rate_slack": "passed",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_supporting_inequality_on_independent_channels": "passed",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_transition_and_endpoint_derivatives_factor_exactly": "passed"
+  },
+  "elapsed_seconds": 29.23253469998599,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "rate_spectrum.test_spectrum.SpectrumTests.test_class_kernels_match_all_actual_source_word_routes",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_odd_domination_has_independent_positive_factor_identities",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_optimizer_brackets_and_exact_gibbs_constant_marginal",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_saved_all_decoder_cover_and_strict_rate_slack",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_supporting_inequality_on_independent_channels",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_transition_and_endpoint_derivatives_factor_exactly"
+  ],
+  "planned_test_ids": [
+    "rate_spectrum.test_spectrum.SpectrumTests.test_class_kernels_match_all_actual_source_word_routes",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_odd_domination_has_independent_positive_factor_identities",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_optimizer_brackets_and_exact_gibbs_constant_marginal",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_saved_all_decoder_cover_and_strict_rate_slack",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_supporting_inequality_on_independent_channels",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_transition_and_endpoint_derivatives_factor_exactly"
+  ],
+  "process_id": 53688,
+  "skips": 0,
+  "started_test_ids": [
+    "rate_spectrum.test_spectrum.SpectrumTests.test_class_kernels_match_all_actual_source_word_routes",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_odd_domination_has_independent_positive_factor_identities",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_optimizer_brackets_and_exact_gibbs_constant_marginal",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_saved_all_decoder_cover_and_strict_rate_slack",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_supporting_inequality_on_independent_channels",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_transition_and_endpoint_derivatives_factor_exactly"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\a4c4aa6de16a09c2\\tmp",
+  "tests_run": 6,
+  "unexpected_successes": 0
+}

@@ -1,0 +1,274 @@
+Failed to find real location of C:\Python314\python.exe
+test_run (unittest.loader._FailedTest.test_run) ... ERROR
+test_continuation (unittest.loader._FailedTest.test_continuation) ... ERROR
+test_continuation (unittest.loader._FailedTest.test_continuation) ... ERROR
+test_continuation (unittest.loader._FailedTest.test_continuation) ... ERROR
+test_compatibility (unittest.loader._FailedTest.test_compatibility) ... ERROR
+test_dev_request_envelopes_and_local_handoff (schema_checks.test_schema_checks.SchemaCheckTests.test_dev_request_envelopes_and_local_handoff) ... ok
+test_failure_replacement_uses_only_bounded_parent_at_child (schema_transfer.test_run.RunnerDevelopmentTests.test_failure_replacement_uses_only_bounded_parent_at_child) ... ok
+test_suffix (unittest.loader._FailedTest.test_suffix) ... ERROR
+test_runtime (unittest.loader._FailedTest.test_runtime) ... ERROR
+test_runtime (unittest.loader._FailedTest.test_runtime) ... ERROR
+test_preparation_uses_only_canonical_public_stdin_and_no_resume (test_codex_subscription.SubscriptionGateTests.test_preparation_uses_only_canonical_public_stdin_and_no_resume) ... ok
+test_budget_reservation_and_failed_attempts_do_not_retry (test_development_pilot.DevelopmentPilotTests.test_budget_reservation_and_failed_attempts_do_not_retry) ... ERROR
+test_api_key_authentication_never_dispatches (test_luna_appserver.LunaAppServerTests.test_api_key_authentication_never_dispatches) ... ok
+test_both_runners_keep_invalid_json_in_denominator_and_continue_without_retry (test_luna_appserver.LunaAppServerTests.test_both_runners_keep_invalid_json_in_denominator_and_continue_without_retry) ... ok
+test_completed_json_with_controlled_harness_stop_is_accepted (test_luna_appserver.LunaAppServerTests.test_completed_json_with_controlled_harness_stop_is_accepted) ... ok
+test_controlled_stop_without_completed_answer_or_usage_is_rejected (test_luna_appserver.LunaAppServerTests.test_controlled_stop_without_completed_answer_or_usage_is_rejected) ... ok
+test_credit_permission_never_overrides_provider_rejection_or_retries (test_luna_appserver.LunaAppServerTests.test_credit_permission_never_overrides_provider_rejection_or_retries) ... ok
+test_credit_rejection_keeps_before_and_after_snapshots_and_accounting (test_luna_appserver.LunaAppServerTests.test_credit_rejection_keeps_before_and_after_snapshots_and_accounting) ... ok
+test_effective_isolation_drift_never_dispatches (test_luna_appserver.LunaAppServerTests.test_effective_isolation_drift_never_dispatches) ... ok
+test_empty_or_eighty_percent_quota_never_dispatches (test_luna_appserver.LunaAppServerTests.test_empty_or_eighty_percent_quota_never_dispatches) ... ok
+test_empty_quota_after_completion_stops_future_calls (test_luna_appserver.LunaAppServerTests.test_empty_quota_after_completion_stops_future_calls) ... ok
+test_existing_credits_allow_exhaustion_without_changing_route (test_luna_appserver.LunaAppServerTests.test_existing_credits_allow_exhaustion_without_changing_route) ... ok
+test_explicit_ordinary_usage_denial_never_dispatches (test_luna_appserver.LunaAppServerTests.test_explicit_ordinary_usage_denial_never_dispatches) ... ok
+test_included_to_credit_transition_is_recorded (test_luna_appserver.LunaAppServerTests.test_included_to_credit_transition_is_recorded) ... ok
+test_invalid_json_is_a_settled_policy_failure_and_next_request_can_run (test_luna_appserver.LunaAppServerTests.test_invalid_json_is_a_settled_policy_failure_and_next_request_can_run) ... ok
+test_invalid_json_with_missing_usage_still_stops_with_uncertain_reservation (test_luna_appserver.LunaAppServerTests.test_invalid_json_with_missing_usage_still_stops_with_uncertain_reservation) ... ok
+test_missing_one_generation_guard_stop_is_rejected (test_luna_appserver.LunaAppServerTests.test_missing_one_generation_guard_stop_is_rejected) ... ok
+test_missing_quota_rpc_after_completion_stops_future_calls (test_luna_appserver.LunaAppServerTests.test_missing_quota_rpc_after_completion_stops_future_calls) ... ok
+test_missing_usage_counter_is_not_silently_replaced_with_zero (test_luna_appserver.LunaAppServerTests.test_missing_usage_counter_is_not_silently_replaced_with_zero) ... ok
+test_new_quota_policy_keeps_provider_denials_and_rejects_unreviewed_limits (test_luna_appserver.LunaAppServerTests.test_new_quota_policy_keeps_provider_denials_and_rejects_unreviewed_limits) ... ok
+test_provider_retry_or_endpoint_change_never_dispatches (test_luna_appserver.LunaAppServerTests.test_provider_retry_or_endpoint_change_never_dispatches) ... ok
+test_quota_failure_snapshots_survive_before_and_after_checks (test_luna_appserver.LunaAppServerTests.test_quota_failure_snapshots_survive_before_and_after_checks) ... ok
+test_rerouted_model_is_rejected_before_credit_release (test_luna_appserver.LunaAppServerTests.test_rerouted_model_is_rejected_before_credit_release) ... ok
+test_tool_item_stops_batch_with_full_reservation (test_luna_appserver.LunaAppServerTests.test_tool_item_stops_batch_with_full_reservation) ... ok
+test_transfer_quota_policy_allows_85_but_stops_at_100 (test_luna_appserver.LunaAppServerTests.test_transfer_quota_policy_allows_85_but_stops_at_100) ... ok
+test_unrelated_provider_failure_is_not_a_controlled_stop (test_luna_appserver.LunaAppServerTests.test_unrelated_provider_failure_is_not_a_controlled_stop) ... ok
+test_wrong_thread_is_rejected (test_luna_appserver.LunaAppServerTests.test_wrong_thread_is_rejected) ... ok
+test_wrong_turn_in_usage_or_completion_is_rejected (test_luna_appserver.LunaAppServerTests.test_wrong_turn_in_usage_or_completion_is_rejected) ... ok
+test_zero_input_cannot_release_a_nonempty_request_reservation (test_luna_appserver.LunaAppServerTests.test_zero_input_cannot_release_a_nonempty_request_reservation) ... ok
+test_fresh_no_environment_thread_and_bounded_public_turn (test_luna_isolation.LunaIsolationTests.test_fresh_no_environment_thread_and_bounded_public_turn) ... ok
+test_saved_content_hash_tampering_is_rejected (test_revision_analysis.RevisionAnalysisTests.test_saved_content_hash_tampering_is_rejected) ... ok
+test_manifest_and_each_reservation_are_persisted_before_client_call (test_revision_diagnostic.RevisionRunnerTests.test_manifest_and_each_reservation_are_persisted_before_client_call) ... ok
+test_nonempty_output_is_preserved_and_cannot_resume (test_revision_diagnostic.RevisionRunnerTests.test_nonempty_output_is_preserved_and_cannot_resume) ... ok
+test_supplied_audit_must_match_frozen_bytes_before_any_client_or_process (test_revision_diagnostic.RevisionRunnerTests.test_supplied_audit_must_match_frozen_bytes_before_any_client_or_process) ... ok
+test_every_manifest_and_initial_ledger_exists_before_first_decision (test_transfer_continuation.ContinuationTests.test_every_manifest_and_initial_ledger_exists_before_first_decision) ... ok
+test_exact_case_filtering_and_global_original_order (test_transfer_continuation.ContinuationTests.test_exact_case_filtering_and_global_original_order) ... ok
+test_live_execute_defensively_rejects_wrong_wire_contract_before_dispatch (test_transfer_continuation.ContinuationTests.test_live_execute_defensively_rejects_wrong_wire_contract_before_dispatch) ... ok
+test_policy_failures_remain_without_replacement (test_transfer_continuation.ContinuationTests.test_policy_failures_remain_without_replacement) ... ok
+test_saved_raw_audit_reaches_client_attestation_before_launch_readiness (test_transfer_continuation.ContinuationTests.test_saved_raw_audit_reaches_client_attestation_before_launch_readiness) ... ok
+test_completed_malformed_response_does_not_stop_other_workers (test_transfer_runner.TransferGateTests.test_completed_malformed_response_does_not_stop_other_workers) ... ok
+test_dispatch_rpc_failure_closes_gate_before_cleanup (test_transfer_runner.TransferGateTests.test_dispatch_rpc_failure_closes_gate_before_cleanup) ... ok
+test_stop_blocks_luna_after_preflight_before_generation_reservation (test_transfer_runner.TransferGateTests.test_stop_blocks_luna_after_preflight_before_generation_reservation) ... ok
+test_all_manifests_and_request_reservation_exist_before_any_call (test_transfer_runner.TransferRunnerTests.test_all_manifests_and_request_reservation_exist_before_any_call) ... ok
+test_capture_output_tampering_is_detected_independently_of_lock (workflow_eval.test_packet.PacketTests.test_capture_output_tampering_is_detected_independently_of_lock) ... ok
+test_lock_detects_changed_and_unlisted_packet_inputs (workflow_eval.test_packet.PacketTests.test_lock_detects_changed_and_unlisted_packet_inputs) ... ok
+test_live (unittest.loader._FailedTest.test_live) ... ERROR
+test_executed (unittest.loader._FailedTest.test_executed) ... ERROR
+test_executed (unittest.loader._FailedTest.test_executed) ... ERROR
+test_continuation (unittest.loader._FailedTest.test_continuation) ... ERROR
+test_continuation (unittest.loader._FailedTest.test_continuation) ... ERROR
+test_continuation (unittest.loader._FailedTest.test_continuation) ... ERROR
+
+======================================================================
+ERROR: test_run (unittest.loader._FailedTest.test_run)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_run
+Traceback (most recent call last):
+  File "C:\Python314\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\cross_record\test_run.py", line 8, in <module>
+    from . import memory, run
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\cross_record\memory.py", line 12, in <module>
+    from experiments.dependency_memory.schema_transfer import memory as base
+ModuleNotFoundError: No module named 'experiments'
+
+
+======================================================================
+ERROR: test_continuation (unittest.loader._FailedTest.test_continuation)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_continuation
+Traceback (most recent call last):
+  File "C:\Python314\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\cross_record_continuation\test_continuation.py", line 8, in <module>
+    from experiments.dependency_memory.cross_record import memory
+ModuleNotFoundError: No module named 'experiments'
+
+
+======================================================================
+ERROR: test_continuation (unittest.loader._FailedTest.test_continuation)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_continuation
+Traceback (most recent call last):
+  File "C:\Python314\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\cross_record_continuation\test_continuation.py", line 8, in <module>
+    from experiments.dependency_memory.cross_record import memory
+ModuleNotFoundError: No module named 'experiments'
+
+
+======================================================================
+ERROR: test_continuation (unittest.loader._FailedTest.test_continuation)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_continuation
+Traceback (most recent call last):
+  File "C:\Python314\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\cross_record_continuation\test_continuation.py", line 8, in <module>
+    from experiments.dependency_memory.cross_record import memory
+ModuleNotFoundError: No module named 'experiments'
+
+
+======================================================================
+ERROR: test_compatibility (unittest.loader._FailedTest.test_compatibility)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_compatibility
+Traceback (most recent call last):
+  File "C:\Python314\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\cross_record_v2\test_compatibility.py", line 9, in <module>
+    from experiments.dependency_memory.cross_record import memory as frozen
+ModuleNotFoundError: No module named 'experiments'
+
+
+======================================================================
+ERROR: test_suffix (unittest.loader._FailedTest.test_suffix)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_suffix
+Traceback (most recent call last):
+  File "C:\Python314\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\scope_inference_suffix\test_suffix.py", line 9, in <module>
+    from experiments.dependency_memory.scope_inference import profile, protocol, transport
+ModuleNotFoundError: No module named 'experiments'
+
+
+======================================================================
+ERROR: test_runtime (unittest.loader._FailedTest.test_runtime)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_runtime
+Traceback (most recent call last):
+  File "C:\Python314\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\scope_inference_v2\test_runtime.py", line 9, in <module>
+    from experiments.dependency_memory.scope_inference import profile, protocol, transport
+ModuleNotFoundError: No module named 'experiments'
+
+
+======================================================================
+ERROR: test_runtime (unittest.loader._FailedTest.test_runtime)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_runtime
+Traceback (most recent call last):
+  File "C:\Python314\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\scope_inference_v2\test_runtime.py", line 9, in <module>
+    from experiments.dependency_memory.scope_inference import profile, protocol, transport
+ModuleNotFoundError: No module named 'experiments'
+
+
+======================================================================
+ERROR: test_budget_reservation_and_failed_attempts_do_not_retry (test_development_pilot.DevelopmentPilotTests.test_budget_reservation_and_failed_attempts_do_not_retry)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\test_development_pilot.py", line 80, in test_budget_reservation_and_failed_attempts_do_not_retry
+    summary, ledger = execute(FakeClient("optimal"), cap=13, output=Path(folder) / "run")
+                      ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\run_development_pilot.py", line 218, in execute
+    decision = ledger.complete(inspection_request(config, calibration=True),
+                               item["decision_id"], validate_inspection_response)
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\run_development_pilot.py", line 119, in complete
+    self._persist()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\run_development_pilot.py", line 81, in _persist
+    temporary.replace(self.path)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Python314\Lib\pathlib\__init__.py", line 1091, in replace
+    os.replace(self, target)
+    ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\jense\\Desktop\\ContextResearch\\tmp\\v5-test-temp\\tmp4s8fd3mb\\run\\requests.part' -> 'C:\\Users\\jense\\Desktop\\ContextResearch\\tmp\\v5-test-temp\\tmp4s8fd3mb\\run\\requests.jsonl'
+
+======================================================================
+ERROR: test_live (unittest.loader._FailedTest.test_live)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_live
+Traceback (most recent call last):
+  File "C:\Python314\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\workflow_eval_live\test_live.py", line 11, in <module>
+    from . import study, profile
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\workflow_eval_live\study.py", line 8, in <module>
+    from experiments.dependency_memory.workflow_eval.grader import CHECKS, RECEIPT_FIELDS, strict_json, validate_records, wire
+ModuleNotFoundError: No module named 'experiments'
+
+
+======================================================================
+ERROR: test_executed (unittest.loader._FailedTest.test_executed)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_executed
+Traceback (most recent call last):
+  File "C:\Python314\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\workflow_executed\test_executed.py", line 12, in <module>
+    from . import study
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\workflow_executed\study.py", line 5, in <module>
+    from experiments.dependency_memory.workflow_eval_live.study import (
+    ...<2 lines>...
+    )
+ModuleNotFoundError: No module named 'experiments'
+
+
+======================================================================
+ERROR: test_executed (unittest.loader._FailedTest.test_executed)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_executed
+Traceback (most recent call last):
+  File "C:\Python314\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\workflow_executed\test_executed.py", line 12, in <module>
+    from . import study
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\workflow_executed\study.py", line 5, in <module>
+    from experiments.dependency_memory.workflow_eval_live.study import (
+    ...<2 lines>...
+    )
+ModuleNotFoundError: No module named 'experiments'
+
+
+======================================================================
+ERROR: test_continuation (unittest.loader._FailedTest.test_continuation)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_continuation
+Traceback (most recent call last):
+  File "C:\Python314\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\workflow_executed_continuation\test_continuation.py", line 9, in <module>
+    from .run import original, study, GAP, SuffixClient, prepare, verify, RESERVATION
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\workflow_executed_continuation\run.py", line 8, in <module>
+    from experiments.dependency_memory.workflow_executed import run as original
+ModuleNotFoundError: No module named 'experiments'
+
+
+======================================================================
+ERROR: test_continuation (unittest.loader._FailedTest.test_continuation)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_continuation
+Traceback (most recent call last):
+  File "C:\Python314\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\workflow_executed_continuation\test_continuation.py", line 9, in <module>
+    from .run import original, study, GAP, SuffixClient, prepare, verify, RESERVATION
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\workflow_executed_continuation\run.py", line 8, in <module>
+    from experiments.dependency_memory.workflow_executed import run as original
+ModuleNotFoundError: No module named 'experiments'
+
+
+======================================================================
+ERROR: test_continuation (unittest.loader._FailedTest.test_continuation)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_continuation
+Traceback (most recent call last):
+  File "C:\Python314\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\workflow_executed_continuation\test_continuation.py", line 9, in <module>
+    from .run import original, study, GAP, SuffixClient, prepare, verify, RESERVATION
+  File "C:\Users\jense\Desktop\ContextResearch\experiments\dependency_memory\workflow_executed_continuation\run.py", line 8, in <module>
+    from experiments.dependency_memory.workflow_executed import run as original
+ModuleNotFoundError: No module named 'experiments'
+
+
+----------------------------------------------------------------------
+Ran 61 tests in 16.335s
+
+FAILED (errors=15)

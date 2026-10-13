@@ -1,0 +1,69 @@
+{
+  "completed_test_ids": [
+    "tie_coding.test_tie.TieCodingTests.test_complete_arithmetic_populations_and_scalar_code_control",
+    "tie_coding.test_tie.TieCodingTests.test_entropy_plans_have_public_slack_and_growing_group_tables_are_polynomial",
+    "tie_coding.test_tie.TieCodingTests.test_finite_controls_diagnostic_routes_and_every_small_parent",
+    "tie_coding.test_tie.TieCodingTests.test_first_compatible_rank_and_prefix_bounds_support_the_entropy_limit",
+    "tie_coding.test_tie.TieCodingTests.test_fraction_intervals_find_the_first_charged_grid_point_independently",
+    "tie_coding.test_tie.TieCodingTests.test_information_contract_invalid_states_and_immutable_discovery",
+    "tie_coding.test_tie.TieCodingTests.test_pair_entropy_optimum_has_universal_mass_bounds_and_feasible_extremum",
+    "tie_coding.test_tie.TieCodingTests.test_root_moment_enclosures_and_small_tail_population_bounds",
+    "tie_coding.test_tie.TieCodingTests.test_weighted_cover_and_literal_source_queries_agree"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "tie_coding.test_tie.TieCodingTests.test_complete_arithmetic_populations_and_scalar_code_control": "passed",
+    "tie_coding.test_tie.TieCodingTests.test_entropy_plans_have_public_slack_and_growing_group_tables_are_polynomial": "passed",
+    "tie_coding.test_tie.TieCodingTests.test_finite_controls_diagnostic_routes_and_every_small_parent": "passed",
+    "tie_coding.test_tie.TieCodingTests.test_first_compatible_rank_and_prefix_bounds_support_the_entropy_limit": "passed",
+    "tie_coding.test_tie.TieCodingTests.test_fraction_intervals_find_the_first_charged_grid_point_independently": "passed",
+    "tie_coding.test_tie.TieCodingTests.test_information_contract_invalid_states_and_immutable_discovery": "passed",
+    "tie_coding.test_tie.TieCodingTests.test_pair_entropy_optimum_has_universal_mass_bounds_and_feasible_extremum": "passed",
+    "tie_coding.test_tie.TieCodingTests.test_root_moment_enclosures_and_small_tail_population_bounds": "passed",
+    "tie_coding.test_tie.TieCodingTests.test_weighted_cover_and_literal_source_queries_agree": "passed"
+  },
+  "elapsed_seconds": 52.85154380000313,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "tie_coding.test_tie.TieCodingTests.test_complete_arithmetic_populations_and_scalar_code_control",
+    "tie_coding.test_tie.TieCodingTests.test_entropy_plans_have_public_slack_and_growing_group_tables_are_polynomial",
+    "tie_coding.test_tie.TieCodingTests.test_finite_controls_diagnostic_routes_and_every_small_parent",
+    "tie_coding.test_tie.TieCodingTests.test_first_compatible_rank_and_prefix_bounds_support_the_entropy_limit",
+    "tie_coding.test_tie.TieCodingTests.test_fraction_intervals_find_the_first_charged_grid_point_independently",
+    "tie_coding.test_tie.TieCodingTests.test_information_contract_invalid_states_and_immutable_discovery",
+    "tie_coding.test_tie.TieCodingTests.test_pair_entropy_optimum_has_universal_mass_bounds_and_feasible_extremum",
+    "tie_coding.test_tie.TieCodingTests.test_root_moment_enclosures_and_small_tail_population_bounds",
+    "tie_coding.test_tie.TieCodingTests.test_weighted_cover_and_literal_source_queries_agree"
+  ],
+  "planned_test_ids": [
+    "tie_coding.test_tie.TieCodingTests.test_complete_arithmetic_populations_and_scalar_code_control",
+    "tie_coding.test_tie.TieCodingTests.test_entropy_plans_have_public_slack_and_growing_group_tables_are_polynomial",
+    "tie_coding.test_tie.TieCodingTests.test_finite_controls_diagnostic_routes_and_every_small_parent",
+    "tie_coding.test_tie.TieCodingTests.test_first_compatible_rank_and_prefix_bounds_support_the_entropy_limit",
+    "tie_coding.test_tie.TieCodingTests.test_fraction_intervals_find_the_first_charged_grid_point_independently",
+    "tie_coding.test_tie.TieCodingTests.test_information_contract_invalid_states_and_immutable_discovery",
+    "tie_coding.test_tie.TieCodingTests.test_pair_entropy_optimum_has_universal_mass_bounds_and_feasible_extremum",
+    "tie_coding.test_tie.TieCodingTests.test_root_moment_enclosures_and_small_tail_population_bounds",
+    "tie_coding.test_tie.TieCodingTests.test_weighted_cover_and_literal_source_queries_agree"
+  ],
+  "process_id": 39184,
+  "skips": 0,
+  "started_test_ids": [
+    "tie_coding.test_tie.TieCodingTests.test_complete_arithmetic_populations_and_scalar_code_control",
+    "tie_coding.test_tie.TieCodingTests.test_entropy_plans_have_public_slack_and_growing_group_tables_are_polynomial",
+    "tie_coding.test_tie.TieCodingTests.test_finite_controls_diagnostic_routes_and_every_small_parent",
+    "tie_coding.test_tie.TieCodingTests.test_first_compatible_rank_and_prefix_bounds_support_the_entropy_limit",
+    "tie_coding.test_tie.TieCodingTests.test_fraction_intervals_find_the_first_charged_grid_point_independently",
+    "tie_coding.test_tie.TieCodingTests.test_information_contract_invalid_states_and_immutable_discovery",
+    "tie_coding.test_tie.TieCodingTests.test_pair_entropy_optimum_has_universal_mass_bounds_and_feasible_extremum",
+    "tie_coding.test_tie.TieCodingTests.test_root_moment_enclosures_and_small_tail_population_bounds",
+    "tie_coding.test_tie.TieCodingTests.test_weighted_cover_and_literal_source_queries_agree"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\3df78b90de0b08cc\\tmp",
+  "tests_run": 9,
+  "unexpected_successes": 0
+}

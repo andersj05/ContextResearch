@@ -1,0 +1,29 @@
+{
+  "completed_test_ids": [
+    "test_audit.TraceTests.test_rejects_missing_duplicate_tampered_time_and_bound"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "test_audit.TraceTests.test_rejects_missing_duplicate_tampered_time_and_bound": "passed"
+  },
+  "elapsed_seconds": 0.003610499989008531,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "test_audit.TraceTests.test_rejects_missing_duplicate_tampered_time_and_bound"
+  ],
+  "planned_test_ids": [
+    "test_audit.TraceTests.test_rejects_missing_duplicate_tampered_time_and_bound"
+  ],
+  "process_id": 32304,
+  "skips": 0,
+  "started_test_ids": [
+    "test_audit.TraceTests.test_rejects_missing_duplicate_tampered_time_and_bound"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\72dee29495239f69\\tmp",
+  "tests_run": 1,
+  "unexpected_successes": 0
+}

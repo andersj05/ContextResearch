@@ -1,0 +1,19 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\5a78fbf8d3f2cbc8\\job.json",
+  "module": "trellis_coding.test_trellis",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\5a78fbf8d3f2cbc8\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\5a78fbf8d3f2cbc8\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\5a78fbf8d3f2cbc8\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\5a78fbf8d3f2cbc8\\tmp",
+  "test_ids": [
+    "trellis_coding.test_trellis.TrellisTests.test_every_one_two_three_block_source_matches_exhaustive_messages",
+    "trellis_coding.test_trellis.TrellisTests.test_four_block_segment_product_has_no_group_state_overhead",
+    "trellis_coding.test_trellis.TrellisTests.test_four_six_block_diagnostics_and_long_closed_encoder",
+    "trellis_coding.test_trellis.TrellisTests.test_no_extra_start_state_and_child_formed_before_query",
+    "trellis_coding.test_trellis.TrellisTests.test_pre_tuning_three_block_identity_and_failed_initial_search",
+    "trellis_coding.test_trellis.TrellisTests.test_public_label_packing_and_memory_contract_rejections",
+    "trellis_coding.test_trellis.TrellisTests.test_response_lookup_and_all_one_block_losses_against_bit_routes",
+    "trellis_coding.test_trellis.TrellisTests.test_selected_population_and_product_controls"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

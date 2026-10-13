@@ -1,0 +1,121 @@
+{
+  "calibration_Docker_evidence": {
+    "all_row_task_bindings_match": true,
+    "base_public_failures": 16,
+    "calibration_task_list_binding_matches": true,
+    "evidence_path": "experiments/dependency_memory/results/rollback_patch_v9_2026-10-13/validation/task_validation.json",
+    "evidence_sha256": "4ba6d86c5b1717bdb3d058df1ecb48051d1f718a3f090fa6a322a30e9c7351ac",
+    "fresh_docker_executions_by_this_review": 0,
+    "reference_private_cases_passed": 288,
+    "reference_private_programs_passing": 16,
+    "reference_public_cases_passed": 96,
+    "reference_public_programs_passing": 16,
+    "saved_runtime_statistics": {
+      "active_containers": 0,
+      "executions": 48,
+      "maximum_containers": 4,
+      "peak_containers": 4
+    },
+    "saved_source_bindings_match_current": true
+  },
+  "candidate_or_reference_code_executed_on_host": false,
+  "checks": {
+    "all_saved_bases_fail_publicly": true,
+    "all_saved_reference_private_cases_passed": true,
+    "all_saved_reference_public_cases_passed": true,
+    "all_saved_sources_bound": true,
+    "calibration_full_context_overlap_zero": true,
+    "calibration_id_overlap_zero": true,
+    "calibration_list_bound": true,
+    "calibration_seed_overlap_zero": true,
+    "fixed_study_denominator": true,
+    "individual_tasks_bound": true,
+    "study_structure_and_oracle_values_pass": true,
+    "unique_study_public_contexts": true
+  },
+  "created_utc": "2026-10-13T13:47:13.522679+00:00",
+  "evidence_kind": "independent_read_only_task_source_and_saved_Docker_evidence_review",
+  "fresh_unit_test_rerun": {
+    "command": "python -m unittest experiments.dependency_memory.rollback_patch_v9.test_tasks.AuthoredPatchTaskTests -v",
+    "errors": 0,
+    "failures": 0,
+    "note": "Observed in this review before this report was saved; no new Docker execution is included.",
+    "observed_exit_code": 0,
+    "passed": 12,
+    "tests": 12
+  },
+  "limitations": [
+    "Four authored synthetic task families and 63 distinct study base programs, not 256 independent real projects.",
+    "Distinct full public contexts do not imply disjoint semantic algorithms or disjoint individual public examples across tasks.",
+    "The deliberately buggy supplied bases establish repairability; only live model-generated failed patches establish natural failure headroom.",
+    "Saved Docker receipts were source- and task-bound and inspected, not newly re-executed by this review.",
+    "Study generation/oracle verification is offline evidence, not model performance or proof of exhaustive correctness across all allowed inputs.",
+    "Scientific conclusions remain conditional on the fixed eligibility rule and received live outcomes; no treatment-based tuning was performed."
+  ],
+  "model_calls": 0,
+  "passed": true,
+  "review_generation_and_verification_seconds": 27.61405420000665,
+  "review_generation_seconds": 13.727525200025411,
+  "scientific_review": {
+    "contract": "Public specifications cover tested policies, defaults, exact objectives and boundaries; public_task uses a complete allowlist projection. Full task information remains available independently of failed patches.",
+    "independent_formulations": {
+      "dependency_resolver": "Constraint traversal and DFS cycle check versus simultaneous version assignments, explicit dependency checking and iterative leaf removal.",
+      "quota_intervals": "Combinations and active-end heap versus bitsets and signed endpoint sweep.",
+      "revision_ledger": "Streaming winning-event selection versus grouped reduction; alternative rounding and clamping formulations.",
+      "temporal_routes": "Dijkstra over resource/visit states versus exhaustive integer-time reachability."
+    },
+    "study_reference_gate": "prepare.verify executes every selected study reference in Docker before freezing that allocation; this review does not extrapolate calibration Docker passes to all future study references."
+  },
+  "sources": [
+    {
+      "path": "experiments/dependency_memory/rollback_patch_v9/tasks.py",
+      "sha256": "4fb9704709050e64eeb574c298ff06f2472f5d6bf5d8181fdaab8da17c1913a2"
+    },
+    {
+      "path": "experiments/dependency_memory/rollback_patch_v9/test_tasks.py",
+      "sha256": "9f6a0d9d2e940fe61365b788ed32d60e78de0d778b62300ab9266550cd67658f"
+    },
+    {
+      "path": "experiments/dependency_memory/rollback_patch_v9/runtime.py",
+      "sha256": "d737fbc5d52e96d55c2edbba0fce8cf8c1cd3ad5ffa754865baca4ad2a98288f"
+    },
+    {
+      "path": "experiments/dependency_memory/rollback_pilot/code_runner.py",
+      "sha256": "0bd421bd924ae335a35df9ab436afa82b3a96d2b34559f9a019ae8e59c930859"
+    },
+    {
+      "path": "experiments/dependency_memory/rollback_patch_v9/common.py",
+      "sha256": "e7f7269befb37d770572c8317a52abc9d43df806c7a39e6ba181e9c27143acb9"
+    },
+    {
+      "path": "experiments/dependency_memory/rollback_patch_v9/prepare.py",
+      "sha256": "f93709c85aff8afcfb9296262fc654b4eb110e028aed4cf215fdfa73f14fdfcd"
+    }
+  ],
+  "study_counts": {
+    "calibration_full_public_context_overlap": 0,
+    "calibration_generator_seed_overlap": 0,
+    "calibration_id_overlap": 0,
+    "family_counts": {
+      "dependency_resolver": 64,
+      "quota_intervals": 64,
+      "revision_ledger": 64,
+      "temporal_routes": 64
+    },
+    "tasks": 256,
+    "unique_base_programs": 63,
+    "unique_public_contexts_excluding_task_id": 256,
+    "unique_task_ids": 256
+  },
+  "study_oracle_verification": {
+    "candidate_code_executed_on_host": false,
+    "model_calls": 0,
+    "passed": true,
+    "private_cases": 4608,
+    "public_cases": 1536,
+    "scope": "offline task structure and independent oracle values; Docker reference execution is a separate required gate",
+    "tasks": 256
+  },
+  "study_seed": 2026101392,
+  "study_task_list_sha256": "46f2aa23dc743d0038aad3a4d5ab406ae5c4e9b07a334826c9fe23cb66177f7c"
+}

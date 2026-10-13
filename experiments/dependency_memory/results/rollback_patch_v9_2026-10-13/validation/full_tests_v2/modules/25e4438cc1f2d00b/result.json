@@ -1,0 +1,54 @@
+{
+  "completed_test_ids": [
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_complete_live_archive_verifies",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_erased_task_rejected_after_resealing",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_inconsistent_coding_success_rejected_after_resealing",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_lost_skipped_slot_rejected_after_resealing",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_private_payload_rejected_even_with_rebound_request_hash",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_shared_thread_rejected_with_consistent_export_and_response"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_complete_live_archive_verifies": "passed",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_erased_task_rejected_after_resealing": "passed",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_inconsistent_coding_success_rejected_after_resealing": "passed",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_lost_skipped_slot_rejected_after_resealing": "passed",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_private_payload_rejected_even_with_rebound_request_hash": "passed",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_shared_thread_rejected_with_consistent_export_and_response": "passed"
+  },
+  "elapsed_seconds": 35.715568200015696,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_complete_live_archive_verifies",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_erased_task_rejected_after_resealing",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_inconsistent_coding_success_rejected_after_resealing",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_lost_skipped_slot_rejected_after_resealing",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_private_payload_rejected_even_with_rebound_request_hash",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_shared_thread_rejected_with_consistent_export_and_response"
+  ],
+  "planned_test_ids": [
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_complete_live_archive_verifies",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_erased_task_rejected_after_resealing",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_inconsistent_coding_success_rejected_after_resealing",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_lost_skipped_slot_rejected_after_resealing",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_private_payload_rejected_even_with_rebound_request_hash",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_shared_thread_rejected_with_consistent_export_and_response"
+  ],
+  "process_id": 42904,
+  "skips": 0,
+  "started_test_ids": [
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_complete_live_archive_verifies",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_erased_task_rejected_after_resealing",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_inconsistent_coding_success_rejected_after_resealing",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_lost_skipped_slot_rejected_after_resealing",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_private_payload_rejected_even_with_rebound_request_hash",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_shared_thread_rejected_with_consistent_export_and_response"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\25e4438cc1f2d00b\\tmp",
+  "tests_run": 6,
+  "unexpected_successes": 0
+}

@@ -1,0 +1,64 @@
+{
+  "completed_test_ids": [
+    "luna6_revision.test_study.StudyChecks.test_grader_rejects_missing_and_duplicate_obligations",
+    "luna6_revision.test_study.StudyChecks.test_independent_gate_truth_table",
+    "luna6_revision.test_study.StudyChecks.test_late_events_include_directional_and_irrelevant_controls",
+    "luna6_revision.test_study.StudyChecks.test_projection_sufficiency_and_capacity",
+    "luna6_revision.test_study.StudyChecks.test_reasoning_charged_once_and_bad_usage_rejected",
+    "luna6_revision.test_study.StudyChecks.test_repairs_use_available_view_and_are_idempotent",
+    "luna6_revision.test_study.StudyChecks.test_utf8_prefix_budget",
+    "luna6_revision.test_study.StudyChecks.test_wire_bounds_and_disclosure"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "luna6_revision.test_study.StudyChecks.test_grader_rejects_missing_and_duplicate_obligations": "passed",
+    "luna6_revision.test_study.StudyChecks.test_independent_gate_truth_table": "passed",
+    "luna6_revision.test_study.StudyChecks.test_late_events_include_directional_and_irrelevant_controls": "passed",
+    "luna6_revision.test_study.StudyChecks.test_projection_sufficiency_and_capacity": "passed",
+    "luna6_revision.test_study.StudyChecks.test_reasoning_charged_once_and_bad_usage_rejected": "passed",
+    "luna6_revision.test_study.StudyChecks.test_repairs_use_available_view_and_are_idempotent": "passed",
+    "luna6_revision.test_study.StudyChecks.test_utf8_prefix_budget": "passed",
+    "luna6_revision.test_study.StudyChecks.test_wire_bounds_and_disclosure": "passed"
+  },
+  "elapsed_seconds": 0.0123950999986846,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "luna6_revision.test_study.StudyChecks.test_grader_rejects_missing_and_duplicate_obligations",
+    "luna6_revision.test_study.StudyChecks.test_independent_gate_truth_table",
+    "luna6_revision.test_study.StudyChecks.test_late_events_include_directional_and_irrelevant_controls",
+    "luna6_revision.test_study.StudyChecks.test_projection_sufficiency_and_capacity",
+    "luna6_revision.test_study.StudyChecks.test_reasoning_charged_once_and_bad_usage_rejected",
+    "luna6_revision.test_study.StudyChecks.test_repairs_use_available_view_and_are_idempotent",
+    "luna6_revision.test_study.StudyChecks.test_utf8_prefix_budget",
+    "luna6_revision.test_study.StudyChecks.test_wire_bounds_and_disclosure"
+  ],
+  "planned_test_ids": [
+    "luna6_revision.test_study.StudyChecks.test_grader_rejects_missing_and_duplicate_obligations",
+    "luna6_revision.test_study.StudyChecks.test_independent_gate_truth_table",
+    "luna6_revision.test_study.StudyChecks.test_late_events_include_directional_and_irrelevant_controls",
+    "luna6_revision.test_study.StudyChecks.test_projection_sufficiency_and_capacity",
+    "luna6_revision.test_study.StudyChecks.test_reasoning_charged_once_and_bad_usage_rejected",
+    "luna6_revision.test_study.StudyChecks.test_repairs_use_available_view_and_are_idempotent",
+    "luna6_revision.test_study.StudyChecks.test_utf8_prefix_budget",
+    "luna6_revision.test_study.StudyChecks.test_wire_bounds_and_disclosure"
+  ],
+  "process_id": 54776,
+  "skips": 0,
+  "started_test_ids": [
+    "luna6_revision.test_study.StudyChecks.test_grader_rejects_missing_and_duplicate_obligations",
+    "luna6_revision.test_study.StudyChecks.test_independent_gate_truth_table",
+    "luna6_revision.test_study.StudyChecks.test_late_events_include_directional_and_irrelevant_controls",
+    "luna6_revision.test_study.StudyChecks.test_projection_sufficiency_and_capacity",
+    "luna6_revision.test_study.StudyChecks.test_reasoning_charged_once_and_bad_usage_rejected",
+    "luna6_revision.test_study.StudyChecks.test_repairs_use_available_view_and_are_idempotent",
+    "luna6_revision.test_study.StudyChecks.test_utf8_prefix_budget",
+    "luna6_revision.test_study.StudyChecks.test_wire_bounds_and_disclosure"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\4c37d6f76c517e1a\\tmp",
+  "tests_run": 8,
+  "unexpected_successes": 0
+}

@@ -1,0 +1,34 @@
+{
+  "completed_test_ids": [
+    "cross_record.test_casebook.CasebookTests.test_development_hashes_and_public_reconstruction",
+    "cross_record.test_casebook.CasebookTests.test_seed_commit_conditioning"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "cross_record.test_casebook.CasebookTests.test_development_hashes_and_public_reconstruction": "passed",
+    "cross_record.test_casebook.CasebookTests.test_seed_commit_conditioning": "passed"
+  },
+  "elapsed_seconds": 0.011595499992836267,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "cross_record.test_casebook.CasebookTests.test_development_hashes_and_public_reconstruction",
+    "cross_record.test_casebook.CasebookTests.test_seed_commit_conditioning"
+  ],
+  "planned_test_ids": [
+    "cross_record.test_casebook.CasebookTests.test_development_hashes_and_public_reconstruction",
+    "cross_record.test_casebook.CasebookTests.test_seed_commit_conditioning"
+  ],
+  "process_id": 15600,
+  "skips": 0,
+  "started_test_ids": [
+    "cross_record.test_casebook.CasebookTests.test_development_hashes_and_public_reconstruction",
+    "cross_record.test_casebook.CasebookTests.test_seed_commit_conditioning"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\74c44d1ecb9c2797\\tmp",
+  "tests_run": 2,
+  "unexpected_successes": 0
+}

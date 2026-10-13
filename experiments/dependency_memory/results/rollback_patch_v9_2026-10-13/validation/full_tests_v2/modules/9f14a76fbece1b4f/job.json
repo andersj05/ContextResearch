@@ -1,0 +1,21 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\9f14a76fbece1b4f\\job.json",
+  "module": "test_luna_isolation",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\9f14a76fbece1b4f\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\9f14a76fbece1b4f\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\9f14a76fbece1b4f\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\9f14a76fbece1b4f\\tmp",
+  "test_ids": [
+    "test_luna_isolation.LunaIsolationTests.test_declared_background_and_intrinsics_are_exactly_allowlisted",
+    "test_luna_isolation.LunaIsolationTests.test_deleted_data_or_skill_context_injected_into_input_is_rejected",
+    "test_luna_isolation.LunaIsolationTests.test_effective_config_checks_every_override_without_echoing_values",
+    "test_luna_isolation.LunaIsolationTests.test_effective_config_rejects_added_skill_or_enabled_mcp_server",
+    "test_luna_isolation.LunaIsolationTests.test_fresh_no_environment_thread_and_bounded_public_turn",
+    "test_luna_isolation.LunaIsolationTests.test_hidden_nested_tool_and_top_level_tool_are_rejected",
+    "test_luna_isolation.LunaIsolationTests.test_missing_critical_flag_bool_integer_confusion_and_guard_drift_fail",
+    "test_luna_isolation.LunaIsolationTests.test_prior_response_storage_and_unknown_fields_are_rejected",
+    "test_luna_isolation.LunaIsolationTests.test_schema_projection_preserves_host_constraint",
+    "test_luna_isolation.LunaIsolationTests.test_unknown_embedded_input_type_and_changed_global_context_are_rejected"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

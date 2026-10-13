@@ -1,0 +1,49 @@
+{
+  "completed_test_ids": [
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_all_ids_run_once_with_independent_process_temp_roots_and_skips",
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_child_allocation_mismatch_cannot_be_green",
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_discovery_failure_stops_before_any_child",
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_failure_error_and_fixture_skip_are_complete_but_not_green",
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_fixture_error_covers_blocked_tests_without_pretending_they_ran"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_all_ids_run_once_with_independent_process_temp_roots_and_skips": "passed",
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_child_allocation_mismatch_cannot_be_green": "passed",
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_discovery_failure_stops_before_any_child": "passed",
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_failure_error_and_fixture_skip_are_complete_but_not_green": "passed",
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_fixture_error_covers_blocked_tests_without_pretending_they_ran": "passed"
+  },
+  "elapsed_seconds": 6.439832200005185,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_all_ids_run_once_with_independent_process_temp_roots_and_skips",
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_child_allocation_mismatch_cannot_be_green",
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_discovery_failure_stops_before_any_child",
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_failure_error_and_fixture_skip_are_complete_but_not_green",
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_fixture_error_covers_blocked_tests_without_pretending_they_ran"
+  ],
+  "planned_test_ids": [
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_all_ids_run_once_with_independent_process_temp_roots_and_skips",
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_child_allocation_mismatch_cannot_be_green",
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_discovery_failure_stops_before_any_child",
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_failure_error_and_fixture_skip_are_complete_but_not_green",
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_fixture_error_covers_blocked_tests_without_pretending_they_ran"
+  ],
+  "process_id": 29948,
+  "skips": 0,
+  "started_test_ids": [
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_all_ids_run_once_with_independent_process_temp_roots_and_skips",
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_child_allocation_mismatch_cannot_be_green",
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_discovery_failure_stops_before_any_child",
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_failure_error_and_fixture_skip_are_complete_but_not_green",
+    "rollback_parallel_v8.test_validation_runner.ParallelValidationTests.test_fixture_error_covers_blocked_tests_without_pretending_they_ran"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\882209ae3365be66\\tmp",
+  "tests_run": 5,
+  "unexpected_successes": 0
+}

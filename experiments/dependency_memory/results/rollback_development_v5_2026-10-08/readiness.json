@@ -1,0 +1,47 @@
+{
+  "checked_utc": "2026-10-09T02:06:08.716228+00:00",
+  "client_mock_cases": 36,
+  "difficulty_calibration": "unperformed",
+  "evidence_kind": "offline_preparation_verification",
+  "final_navigation_and_catalog_checks": [
+    {
+      "command": "python scripts/build_experiment_index.py",
+      "exit_code": 0,
+      "stderr": "Failed to find real location of C:\\Python314\\python.exe\n",
+      "stdout": "Built: catalog_entries=60, implementation_packages=41, tracked_result_files=2849\n"
+    },
+    {
+      "command": "python scripts/build_experiment_index.py --check",
+      "exit_code": 0,
+      "stderr": "Failed to find real location of C:\\Python314\\python.exe\n",
+      "stdout": "PASS: catalog_entries=60, implementation_packages=41, tracked_result_files=2849\n"
+    },
+    {
+      "command": "python scripts/validate_context_repo.py --navigation-only",
+      "exit_code": 0,
+      "stderr": "Failed to find real location of C:\\Python314\\python.exe\n",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"scope\": \"navigation-only\",\n  \"scientific_results_checked\": false,\n  \"checks\": {\n    \"bibliography_entries\": 63,\n    \"markdown_documents\": 483,\n    \"local_links\": 2716,\n    \"paper_claims\": 75,\n    \"catalog_entries\": 60,\n    \"implementation_packages\": 41,\n    \"tracked_result_files\": 2849\n  },\n  \"errors\": []\n}\n"
+    }
+  ],
+  "generation_ceiling_including_calibration": 13640,
+  "jobs": 768,
+  "live_launch_marker_present": false,
+  "model_calls": 0,
+  "new_v5_tests": 26,
+  "paper_assembly": {
+    "cited_sources": 48,
+    "command": "python scripts/build_paper.py",
+    "evidence": "Observed command completion during this preparation; no manuscript or claim changes.",
+    "exit_code": 0
+  },
+  "scripted_generations_replayed": 4080,
+  "source_manifest_sha256": "0b89302a75c7d79132d6e52dce1cca69e6bb6033c2395d536b9b23e1b97c29d0",
+  "status": "prepared_and_verified_for_explicit_launch",
+  "task_and_source_bindings_checked": true,
+  "tasks": 48,
+  "tests": 744,
+  "workers": {
+    "default": 4,
+    "maximum": 8
+  }
+}

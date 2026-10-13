@@ -1,0 +1,44 @@
+{
+  "completed_test_ids": [
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_all_column_rewards_by_source_enumeration_without_histogram_convolution",
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_missing_constant_fibers_and_saved_upper_witness",
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_oracle_and_score_profiles_against_every_direct_one_block_route",
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_public_bit_relabellings_allowed_but_coordinate_dependent_prediction_rejected"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_all_column_rewards_by_source_enumeration_without_histogram_convolution": "passed",
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_missing_constant_fibers_and_saved_upper_witness": "passed",
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_oracle_and_score_profiles_against_every_direct_one_block_route": "passed",
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_public_bit_relabellings_allowed_but_coordinate_dependent_prediction_rejected": "passed"
+  },
+  "elapsed_seconds": 2.9111506000044756,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_all_column_rewards_by_source_enumeration_without_histogram_convolution",
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_missing_constant_fibers_and_saved_upper_witness",
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_oracle_and_score_profiles_against_every_direct_one_block_route",
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_public_bit_relabellings_allowed_but_coordinate_dependent_prediction_rejected"
+  ],
+  "planned_test_ids": [
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_all_column_rewards_by_source_enumeration_without_histogram_convolution",
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_missing_constant_fibers_and_saved_upper_witness",
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_oracle_and_score_profiles_against_every_direct_one_block_route",
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_public_bit_relabellings_allowed_but_coordinate_dependent_prediction_rejected"
+  ],
+  "process_id": 16148,
+  "skips": 0,
+  "started_test_ids": [
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_all_column_rewards_by_source_enumeration_without_histogram_convolution",
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_missing_constant_fibers_and_saved_upper_witness",
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_oracle_and_score_profiles_against_every_direct_one_block_route",
+    "joint_coding_cover.test_bounds.CoverBoundTests.test_public_bit_relabellings_allowed_but_coordinate_dependent_prediction_rejected"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\9c6d0e5e70ba4831\\tmp",
+  "tests_run": 4,
+  "unexpected_successes": 0
+}

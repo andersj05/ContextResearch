@@ -1,0 +1,14 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\00af557f56543e51\\job.json",
+  "module": "test_scope_codebook_control",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\00af557f56543e51\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\00af557f56543e51\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\00af557f56543e51\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\00af557f56543e51\\tmp",
+  "test_ids": [
+    "test_scope_codebook_control.ExistingCodebookTests.test_codec_roundtrip_preserves_absence_and_nonempty_unknown_metadata",
+    "test_scope_codebook_control.ExistingCodebookTests.test_no_parent_or_wrong_request_identity_cannot_recover",
+    "test_scope_codebook_control.ExistingCodebookTests.test_packed_public_schema_survives_both_caps_and_all_late_queries"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

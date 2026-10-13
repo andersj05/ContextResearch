@@ -1,0 +1,64 @@
+{
+  "completed_test_ids": [
+    "test_transfer_study.TransferScientificTests.test_bootstrap_is_seeded_and_does_not_modify_values_or_global_randomness",
+    "test_transfer_study.TransferScientificTests.test_failures_and_incomplete_cases_preserve_denominators_and_block_coverage",
+    "test_transfer_study.TransferScientificTests.test_fake_controls_separate_optimality_from_key_and_display_preferences",
+    "test_transfer_study.TransferScientificTests.test_formula_matches_independent_latest_revision_outcomes_for_every_selection",
+    "test_transfer_study.TransferScientificTests.test_full_pair_normalization_endpoints_and_underfilled_outcomes",
+    "test_transfer_study.TransferScientificTests.test_full_schedule_is_balanced_reproducible_and_four_worker_partitioned",
+    "test_transfer_study.TransferScientificTests.test_materials_are_paired_within_block_size_and_vary_across_blocks",
+    "test_transfer_study.TransferScientificTests.test_primary_known_guidance_contrast_has_exact_normalized_and_raw_effects"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "test_transfer_study.TransferScientificTests.test_bootstrap_is_seeded_and_does_not_modify_values_or_global_randomness": "passed",
+    "test_transfer_study.TransferScientificTests.test_failures_and_incomplete_cases_preserve_denominators_and_block_coverage": "passed",
+    "test_transfer_study.TransferScientificTests.test_fake_controls_separate_optimality_from_key_and_display_preferences": "passed",
+    "test_transfer_study.TransferScientificTests.test_formula_matches_independent_latest_revision_outcomes_for_every_selection": "passed",
+    "test_transfer_study.TransferScientificTests.test_full_pair_normalization_endpoints_and_underfilled_outcomes": "passed",
+    "test_transfer_study.TransferScientificTests.test_full_schedule_is_balanced_reproducible_and_four_worker_partitioned": "passed",
+    "test_transfer_study.TransferScientificTests.test_materials_are_paired_within_block_size_and_vary_across_blocks": "passed",
+    "test_transfer_study.TransferScientificTests.test_primary_known_guidance_contrast_has_exact_normalized_and_raw_effects": "passed"
+  },
+  "elapsed_seconds": 13.734247699991101,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "test_transfer_study.TransferScientificTests.test_bootstrap_is_seeded_and_does_not_modify_values_or_global_randomness",
+    "test_transfer_study.TransferScientificTests.test_failures_and_incomplete_cases_preserve_denominators_and_block_coverage",
+    "test_transfer_study.TransferScientificTests.test_fake_controls_separate_optimality_from_key_and_display_preferences",
+    "test_transfer_study.TransferScientificTests.test_formula_matches_independent_latest_revision_outcomes_for_every_selection",
+    "test_transfer_study.TransferScientificTests.test_full_pair_normalization_endpoints_and_underfilled_outcomes",
+    "test_transfer_study.TransferScientificTests.test_full_schedule_is_balanced_reproducible_and_four_worker_partitioned",
+    "test_transfer_study.TransferScientificTests.test_materials_are_paired_within_block_size_and_vary_across_blocks",
+    "test_transfer_study.TransferScientificTests.test_primary_known_guidance_contrast_has_exact_normalized_and_raw_effects"
+  ],
+  "planned_test_ids": [
+    "test_transfer_study.TransferScientificTests.test_bootstrap_is_seeded_and_does_not_modify_values_or_global_randomness",
+    "test_transfer_study.TransferScientificTests.test_failures_and_incomplete_cases_preserve_denominators_and_block_coverage",
+    "test_transfer_study.TransferScientificTests.test_fake_controls_separate_optimality_from_key_and_display_preferences",
+    "test_transfer_study.TransferScientificTests.test_formula_matches_independent_latest_revision_outcomes_for_every_selection",
+    "test_transfer_study.TransferScientificTests.test_full_pair_normalization_endpoints_and_underfilled_outcomes",
+    "test_transfer_study.TransferScientificTests.test_full_schedule_is_balanced_reproducible_and_four_worker_partitioned",
+    "test_transfer_study.TransferScientificTests.test_materials_are_paired_within_block_size_and_vary_across_blocks",
+    "test_transfer_study.TransferScientificTests.test_primary_known_guidance_contrast_has_exact_normalized_and_raw_effects"
+  ],
+  "process_id": 3000,
+  "skips": 0,
+  "started_test_ids": [
+    "test_transfer_study.TransferScientificTests.test_bootstrap_is_seeded_and_does_not_modify_values_or_global_randomness",
+    "test_transfer_study.TransferScientificTests.test_failures_and_incomplete_cases_preserve_denominators_and_block_coverage",
+    "test_transfer_study.TransferScientificTests.test_fake_controls_separate_optimality_from_key_and_display_preferences",
+    "test_transfer_study.TransferScientificTests.test_formula_matches_independent_latest_revision_outcomes_for_every_selection",
+    "test_transfer_study.TransferScientificTests.test_full_pair_normalization_endpoints_and_underfilled_outcomes",
+    "test_transfer_study.TransferScientificTests.test_full_schedule_is_balanced_reproducible_and_four_worker_partitioned",
+    "test_transfer_study.TransferScientificTests.test_materials_are_paired_within_block_size_and_vary_across_blocks",
+    "test_transfer_study.TransferScientificTests.test_primary_known_guidance_contrast_has_exact_normalized_and_raw_effects"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\ef48df028fc7399f\\tmp",
+  "tests_run": 8,
+  "unexpected_successes": 0
+}

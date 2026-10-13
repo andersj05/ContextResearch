@@ -1,0 +1,21 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\8c2924ce1a1d841a\\job.json",
+  "module": "joint_coding.test_decoder_frontier",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\8c2924ce1a1d841a\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\8c2924ce1a1d841a\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\8c2924ce1a1d841a\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\8c2924ce1a1d841a\\tmp",
+  "test_ids": [
+    "joint_coding.test_decoder_frontier.DecoderFrontierTests.test_all_symmetry_actions_against_coordinate_dictionaries",
+    "joint_coding.test_decoder_frontier.DecoderFrontierTests.test_bound_compatible_with_independent_known_codes",
+    "joint_coding.test_decoder_frontier.DecoderFrontierTests.test_complete_decoder_certificate",
+    "joint_coding.test_decoder_frontier.DecoderFrontierTests.test_dual_rounding_dominates_exact_fraction_formulation",
+    "joint_coding.test_decoder_frontier.DecoderFrontierTests.test_gibbs_channel_from_direct_routes_and_actual_marginal",
+    "joint_coding.test_decoder_frontier.DecoderFrontierTests.test_log_intervals_against_separate_high_precision_library",
+    "joint_coding.test_decoder_frontier.DecoderFrontierTests.test_loss_against_direct_routes",
+    "joint_coding.test_decoder_frontier.DecoderFrontierTests.test_orbit_count_by_independent_burnside_fixed_points",
+    "joint_coding.test_decoder_frontier.DecoderFrontierTests.test_reject_invalid_witness_parameters",
+    "joint_coding.test_decoder_frontier.DecoderFrontierTests.test_symmetry_preserves_actual_prediction_loss"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

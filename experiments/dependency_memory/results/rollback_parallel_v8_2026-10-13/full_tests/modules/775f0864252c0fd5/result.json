@@ -1,0 +1,49 @@
+{
+  "completed_test_ids": [
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_all_56_cover_cases_by_direct_source_sums_and_expanded_top_columns",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_coordinate_dependent_pairs_admitted_noncomplementary_rejected",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_every_one_block_route_and_unique_oracle",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_independent_symmetry_partition_covers_all_complementary_tables",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_per_source_inequality_and_missing_center_correction"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_all_56_cover_cases_by_direct_source_sums_and_expanded_top_columns": "passed",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_coordinate_dependent_pairs_admitted_noncomplementary_rejected": "passed",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_every_one_block_route_and_unique_oracle": "passed",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_independent_symmetry_partition_covers_all_complementary_tables": "passed",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_per_source_inequality_and_missing_center_correction": "passed"
+  },
+  "elapsed_seconds": 4.871558000013465,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_all_56_cover_cases_by_direct_source_sums_and_expanded_top_columns",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_coordinate_dependent_pairs_admitted_noncomplementary_rejected",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_every_one_block_route_and_unique_oracle",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_independent_symmetry_partition_covers_all_complementary_tables",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_per_source_inequality_and_missing_center_correction"
+  ],
+  "planned_test_ids": [
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_all_56_cover_cases_by_direct_source_sums_and_expanded_top_columns",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_coordinate_dependent_pairs_admitted_noncomplementary_rejected",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_every_one_block_route_and_unique_oracle",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_independent_symmetry_partition_covers_all_complementary_tables",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_per_source_inequality_and_missing_center_correction"
+  ],
+  "process_id": 56492,
+  "skips": 0,
+  "started_test_ids": [
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_all_56_cover_cases_by_direct_source_sums_and_expanded_top_columns",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_coordinate_dependent_pairs_admitted_noncomplementary_rejected",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_every_one_block_route_and_unique_oracle",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_independent_symmetry_partition_covers_all_complementary_tables",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_per_source_inequality_and_missing_center_correction"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\775f0864252c0fd5\\tmp",
+  "tests_run": 5,
+  "unexpected_successes": 0
+}

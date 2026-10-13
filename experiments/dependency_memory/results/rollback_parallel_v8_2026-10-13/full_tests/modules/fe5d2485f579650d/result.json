@@ -1,0 +1,49 @@
+{
+  "completed_test_ids": [
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_cohort_and_schedule_reproduce_and_use_both_orders",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_conditional_missingness_excludes_ineligible_pairs",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_hard_budget_and_worker_contract",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_pilot_allocation_is_192_admissions_not_312_observations",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_tight_bound_covers_every_failure_location"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_cohort_and_schedule_reproduce_and_use_both_orders": "passed",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_conditional_missingness_excludes_ineligible_pairs": "passed",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_hard_budget_and_worker_contract": "passed",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_pilot_allocation_is_192_admissions_not_312_observations": "passed",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_tight_bound_covers_every_failure_location": "passed"
+  },
+  "elapsed_seconds": 0.7763491999940015,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_cohort_and_schedule_reproduce_and_use_both_orders",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_conditional_missingness_excludes_ineligible_pairs",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_hard_budget_and_worker_contract",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_pilot_allocation_is_192_admissions_not_312_observations",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_tight_bound_covers_every_failure_location"
+  ],
+  "planned_test_ids": [
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_cohort_and_schedule_reproduce_and_use_both_orders",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_conditional_missingness_excludes_ineligible_pairs",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_hard_budget_and_worker_contract",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_pilot_allocation_is_192_admissions_not_312_observations",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_tight_bound_covers_every_failure_location"
+  ],
+  "process_id": 41768,
+  "skips": 0,
+  "started_test_ids": [
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_cohort_and_schedule_reproduce_and_use_both_orders",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_conditional_missingness_excludes_ineligible_pairs",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_hard_budget_and_worker_contract",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_pilot_allocation_is_192_admissions_not_312_observations",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_tight_bound_covers_every_failure_location"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\fe5d2485f579650d\\tmp",
+  "tests_run": 5,
+  "unexpected_successes": 0
+}

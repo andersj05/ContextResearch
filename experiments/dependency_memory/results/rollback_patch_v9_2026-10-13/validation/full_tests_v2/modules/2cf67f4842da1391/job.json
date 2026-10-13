@@ -1,0 +1,13 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\2cf67f4842da1391\\job.json",
+  "module": "rollback_pilot.cohort_v2.test_language",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\2cf67f4842da1391\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\2cf67f4842da1391\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\2cf67f4842da1391\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\2cf67f4842da1391\\tmp",
+  "test_ids": [
+    "rollback_pilot.cohort_v2.test_language.LanguageAmendmentTests.test_language_is_public_and_every_problem_test_and_reference_is_retained",
+    "rollback_pilot.cohort_v2.test_language.LanguageAmendmentTests.test_schedule_order_matches_original_and_independent_math_hashes_are_identical"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

@@ -1,0 +1,64 @@
+{
+  "completed_test_ids": [
+    "test_request_contracts.RequestContractTests.test_all_recorded_pilot_requests_remain_byte_identical",
+    "test_request_contracts.RequestContractTests.test_contract_version_relabeling_does_not_bypass_validation",
+    "test_request_contracts.RequestContractTests.test_evaluator_channels_and_answer_hints_rejected_for_both_contracts",
+    "test_request_contracts.RequestContractTests.test_invalid_contract_is_rejected_before_process_or_generation",
+    "test_request_contracts.RequestContractTests.test_new_contract_preserves_declared_rule_record_order_and_payload",
+    "test_request_contracts.RequestContractTests.test_revision_request_reaches_turn_without_extra_context",
+    "test_request_contracts.RequestContractTests.test_synthetic_final_is_valid_without_an_answer_oracle",
+    "test_request_contracts.RequestContractTests.test_unknown_missing_or_nonstring_contract_cannot_fall_through"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "test_request_contracts.RequestContractTests.test_all_recorded_pilot_requests_remain_byte_identical": "passed",
+    "test_request_contracts.RequestContractTests.test_contract_version_relabeling_does_not_bypass_validation": "passed",
+    "test_request_contracts.RequestContractTests.test_evaluator_channels_and_answer_hints_rejected_for_both_contracts": "passed",
+    "test_request_contracts.RequestContractTests.test_invalid_contract_is_rejected_before_process_or_generation": "passed",
+    "test_request_contracts.RequestContractTests.test_new_contract_preserves_declared_rule_record_order_and_payload": "passed",
+    "test_request_contracts.RequestContractTests.test_revision_request_reaches_turn_without_extra_context": "passed",
+    "test_request_contracts.RequestContractTests.test_synthetic_final_is_valid_without_an_answer_oracle": "passed",
+    "test_request_contracts.RequestContractTests.test_unknown_missing_or_nonstring_contract_cannot_fall_through": "passed"
+  },
+  "elapsed_seconds": 0.07235000000218861,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "test_request_contracts.RequestContractTests.test_all_recorded_pilot_requests_remain_byte_identical",
+    "test_request_contracts.RequestContractTests.test_contract_version_relabeling_does_not_bypass_validation",
+    "test_request_contracts.RequestContractTests.test_evaluator_channels_and_answer_hints_rejected_for_both_contracts",
+    "test_request_contracts.RequestContractTests.test_invalid_contract_is_rejected_before_process_or_generation",
+    "test_request_contracts.RequestContractTests.test_new_contract_preserves_declared_rule_record_order_and_payload",
+    "test_request_contracts.RequestContractTests.test_revision_request_reaches_turn_without_extra_context",
+    "test_request_contracts.RequestContractTests.test_synthetic_final_is_valid_without_an_answer_oracle",
+    "test_request_contracts.RequestContractTests.test_unknown_missing_or_nonstring_contract_cannot_fall_through"
+  ],
+  "planned_test_ids": [
+    "test_request_contracts.RequestContractTests.test_all_recorded_pilot_requests_remain_byte_identical",
+    "test_request_contracts.RequestContractTests.test_contract_version_relabeling_does_not_bypass_validation",
+    "test_request_contracts.RequestContractTests.test_evaluator_channels_and_answer_hints_rejected_for_both_contracts",
+    "test_request_contracts.RequestContractTests.test_invalid_contract_is_rejected_before_process_or_generation",
+    "test_request_contracts.RequestContractTests.test_new_contract_preserves_declared_rule_record_order_and_payload",
+    "test_request_contracts.RequestContractTests.test_revision_request_reaches_turn_without_extra_context",
+    "test_request_contracts.RequestContractTests.test_synthetic_final_is_valid_without_an_answer_oracle",
+    "test_request_contracts.RequestContractTests.test_unknown_missing_or_nonstring_contract_cannot_fall_through"
+  ],
+  "process_id": 2592,
+  "skips": 0,
+  "started_test_ids": [
+    "test_request_contracts.RequestContractTests.test_all_recorded_pilot_requests_remain_byte_identical",
+    "test_request_contracts.RequestContractTests.test_contract_version_relabeling_does_not_bypass_validation",
+    "test_request_contracts.RequestContractTests.test_evaluator_channels_and_answer_hints_rejected_for_both_contracts",
+    "test_request_contracts.RequestContractTests.test_invalid_contract_is_rejected_before_process_or_generation",
+    "test_request_contracts.RequestContractTests.test_new_contract_preserves_declared_rule_record_order_and_payload",
+    "test_request_contracts.RequestContractTests.test_revision_request_reaches_turn_without_extra_context",
+    "test_request_contracts.RequestContractTests.test_synthetic_final_is_valid_without_an_answer_oracle",
+    "test_request_contracts.RequestContractTests.test_unknown_missing_or_nonstring_contract_cannot_fall_through"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\f1ea90faccff691b\\tmp",
+  "tests_run": 8,
+  "unexpected_successes": 0
+}

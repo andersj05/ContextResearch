@@ -1,0 +1,34 @@
+{
+  "completed_test_ids": [
+    "test_live_benchmark.ProbeTests.test_four_batches_repeat_same_prompts_without_repeating_an_identity",
+    "test_live_benchmark.ProbeTests.test_incomplete_batches_cannot_claim_a_speed_ratio"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "test_live_benchmark.ProbeTests.test_four_batches_repeat_same_prompts_without_repeating_an_identity": "passed",
+    "test_live_benchmark.ProbeTests.test_incomplete_batches_cannot_claim_a_speed_ratio": "passed"
+  },
+  "elapsed_seconds": 0.08332700000028126,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "test_live_benchmark.ProbeTests.test_four_batches_repeat_same_prompts_without_repeating_an_identity",
+    "test_live_benchmark.ProbeTests.test_incomplete_batches_cannot_claim_a_speed_ratio"
+  ],
+  "planned_test_ids": [
+    "test_live_benchmark.ProbeTests.test_four_batches_repeat_same_prompts_without_repeating_an_identity",
+    "test_live_benchmark.ProbeTests.test_incomplete_batches_cannot_claim_a_speed_ratio"
+  ],
+  "process_id": 51928,
+  "skips": 0,
+  "started_test_ids": [
+    "test_live_benchmark.ProbeTests.test_four_batches_repeat_same_prompts_without_repeating_an_identity",
+    "test_live_benchmark.ProbeTests.test_incomplete_batches_cannot_claim_a_speed_ratio"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\38366721061e3feb\\tmp",
+  "tests_run": 2,
+  "unexpected_successes": 0
+}

@@ -12,10 +12,27 @@ this catalog; see [scope and maintenance](README.md).
 
 ## Model studies
 
-[Read all 15 summaries](summaries/model-studies.md).
+[Read all 32 summaries](summaries/model-studies.md).
 
 | Study | Evidence date | Status |
 |---|---|---|
+| [Fact-preserving patch rollback factorial](summaries/model-studies.md#rollback-patch-v9) | 2026-10-13 | completed |
+| [Exploratory patch deletion and lesson factorial](summaries/model-studies.md#rollback-patch-v11) | 2026-10-13 | completed |
+| [Composite fact-preserving patch rollback factorial](summaries/model-studies.md#rollback-patch-v10) | 2026-10-13 | completed |
+| [Parallel rollback runner efficiency development](summaries/model-studies.md#rollback-parallel-v8) | 2026-10-13 | completed |
+| [Matched checkpoint rollback development pilot](summaries/model-studies.md#rollback-checkpoint-v7) | 2026-10-13 | completed |
+| [V6 fixed four-action rollback confirmation](summaries/model-studies.md#rollback-challenge-v6-four-actions-confirmation) | 2026-10-10 | completed |
+| [Staged rollback development v5](summaries/model-studies.md#rollback-development-v5) | 2026-10-09 | completed |
+| [V6 independent revision-ledger validation](summaries/model-studies.md#rollback-challenge-v6-validation) | 2026-10-09 | completed |
+| [V6 six-action ledger calibration](summaries/model-studies.md#rollback-challenge-v6-six-actions) | 2026-10-09 | completed |
+| [V6 independent thirty-four-transaction validation](summaries/model-studies.md#rollback-challenge-v6-intermediate34-validation) | 2026-10-09 | completed |
+| [V6 thirty-four-transaction ledger calibration](summaries/model-studies.md#rollback-challenge-v6-intermediate34) | 2026-10-09 | completed |
+| [V6 intermediate ledger calibration with bounded missing controls](summaries/model-studies.md#rollback-challenge-v6-intermediate) | 2026-10-09 | completed |
+| [V6 retained-history difficulty screen](summaries/model-studies.md#rollback-challenge-v6-headroom) | 2026-10-09 | completed |
+| [V6 independent four-action ledger validation](summaries/model-studies.md#rollback-challenge-v6-four-actions-validation) | 2026-10-09 | completed |
+| [V6 four-action intermediate-ledger calibration](summaries/model-studies.md#rollback-challenge-v6-four-actions) | 2026-10-09 | completed |
+| [V6 candidate-required development screen](summaries/model-studies.md#rollback-challenge-v6-candidates) | 2026-10-09 | completed |
+| [Rollback challenge v6 difficulty screen](summaries/model-studies.md#rollback-challenge-v6) | 2026-10-09 | completed |
 | [Rollback subscription adapter and E1 calibration](summaries/model-studies.md#rollback-subscription) | 2026-10-08 | completed |
 | [Harder-task rollback development study](summaries/model-studies.md#rollback-recovery-v3) | 2026-10-08 | closed-with-gaps |
 | [Corrected Python-language subscription engineering retest](summaries/model-studies.md#rollback-python-retest) | 2026-10-08 | completed |
@@ -34,10 +51,11 @@ this catalog; see [scope and maintenance](README.md).
 
 ## Mathematical checks and coding constructions
 
-[Read all 21 summaries](summaries/mathematical-checks.md).
+[Read all 22 summaries](summaries/mathematical-checks.md).
 
 | Study | Evidence date | Status |
 |---|---|---|
+| [Conservative exact paired-test completion bound](summaries/mathematical-checks.md#rollback-missingness-bound) | 2026-10-09 | offline-complete |
 | [Exact-priced larger-group construction](summaries/mathematical-checks.md#priced-code) | 2026-10-02 | completed |
 | [Loss-weighted overflow and allocation bounds](summaries/mathematical-checks.md#weighted-overflow) | 2026-10-02 | completed |
 | [Deterministic convergence construction](summaries/mathematical-checks.md#greedy-code) | 2026-10-02 | completed |

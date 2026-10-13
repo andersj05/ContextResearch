@@ -1,0 +1,14 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\17c86a290df0fdb4\\job.json",
+  "module": "workflow_executed_continuation.test_continuation",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\17c86a290df0fdb4\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\17c86a290df0fdb4\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\17c86a290df0fdb4\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\17c86a290df0fdb4\\tmp",
+  "test_ids": [
+    "workflow_executed_continuation.test_continuation.ContinuationTests.test_original_evidence_changes_invalidate_continuation",
+    "workflow_executed_continuation.test_continuation.ContinuationTests.test_suffix_never_dispatches_original_gap_and_analysis_keeps_missing_denominator",
+    "workflow_executed_continuation.test_continuation.ContinuationTests.test_unknown_reservation_prevents_dispatch_when_combined_ceiling_would_be_exceeded"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

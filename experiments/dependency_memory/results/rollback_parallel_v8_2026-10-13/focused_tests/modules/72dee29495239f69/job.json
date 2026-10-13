@@ -1,0 +1,12 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\72dee29495239f69\\job.json",
+  "module": "test_audit",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\72dee29495239f69\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\72dee29495239f69\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\72dee29495239f69\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\72dee29495239f69\\tmp",
+  "test_ids": [
+    "test_audit.TraceTests.test_rejects_missing_duplicate_tampered_time_and_bound"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\rollback_parallel_v8"
+}

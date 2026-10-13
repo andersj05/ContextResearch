@@ -1,0 +1,15 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\0993abc6142879bd\\job.json",
+  "module": "test_scaling_audit",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\0993abc6142879bd\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\0993abc6142879bd\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\0993abc6142879bd\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\0993abc6142879bd\\tmp",
+  "test_ids": [
+    "test_scaling_audit.ScalingAuditTests.test_abstract_antipodal_fibers_match_concrete_extremum",
+    "test_scaling_audit.ScalingAuditTests.test_leave_one_out_excludes_two_bit_counterexample",
+    "test_scaling_audit.ScalingAuditTests.test_noncomplementary_decoders_including_degenerate_ones",
+    "test_scaling_audit.ScalingAuditTests.test_sign_formulation_covers_all_orientations"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

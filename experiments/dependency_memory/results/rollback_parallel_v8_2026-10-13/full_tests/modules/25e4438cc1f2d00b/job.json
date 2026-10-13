@@ -1,0 +1,17 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\25e4438cc1f2d00b\\job.json",
+  "module": "rollback_pilot.verification_v1.test_evidence",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\25e4438cc1f2d00b\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\25e4438cc1f2d00b\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\25e4438cc1f2d00b\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\25e4438cc1f2d00b\\tmp",
+  "test_ids": [
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_complete_live_archive_verifies",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_erased_task_rejected_after_resealing",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_inconsistent_coding_success_rejected_after_resealing",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_lost_skipped_slot_rejected_after_resealing",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_private_payload_rejected_even_with_rebound_request_hash",
+    "rollback_pilot.verification_v1.test_evidence.EvidenceTests.test_shared_thread_rejected_with_consistent_export_and_response"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

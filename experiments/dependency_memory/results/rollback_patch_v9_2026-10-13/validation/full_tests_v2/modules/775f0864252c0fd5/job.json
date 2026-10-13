@@ -1,0 +1,16 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\775f0864252c0fd5\\job.json",
+  "module": "joint_coding_complement.test_cover",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\775f0864252c0fd5\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\775f0864252c0fd5\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\775f0864252c0fd5\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\775f0864252c0fd5\\tmp",
+  "test_ids": [
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_all_56_cover_cases_by_direct_source_sums_and_expanded_top_columns",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_coordinate_dependent_pairs_admitted_noncomplementary_rejected",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_every_one_block_route_and_unique_oracle",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_independent_symmetry_partition_covers_all_complementary_tables",
+    "joint_coding_complement.test_cover.ComplementaryCoverTests.test_per_source_inequality_and_missing_center_correction"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

@@ -1,0 +1,14 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\e711a16035a65f87\\job.json",
+  "module": "schema_transfer.test_casebook",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\e711a16035a65f87\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\e711a16035a65f87\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\e711a16035a65f87\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\e711a16035a65f87\\tmp",
+  "test_ids": [
+    "schema_transfer.test_casebook.FrozenCasebookTests.test_distinct_schema_structures_and_terminal_patterns",
+    "schema_transfer.test_casebook.FrozenCasebookTests.test_independent_scope_and_state_controls",
+    "schema_transfer.test_casebook.FrozenCasebookTests.test_split_hashes_and_no_custom_role_annotations"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

@@ -9,6 +9,22 @@ These are local derivations and finite computational checks, not model trials.
 External proof and priority review remain open. Later constructions can improve
 earlier bounds without changing the earlier certificates.
 
+## rollback-missingness-bound
+
+**Conservative exact paired-test completion bound** — 2026-10-09 · offline-complete
+
+An elementary completion argument gives the largest exact two-sided paired-test p-value over every feasible assignment of missing binary outcomes, plus sharp fixed-denominator empirical effect bounds. Five tests pass. Exhaustive enumeration checks 66430 observed patterns and 1118481 complete assignments through five pairs with zero mismatches. Prepared before any v6 R-arm observation; zero model calls.
+
+**Limits:** Not a new statistical method or a model result. Validity still requires the underlying complete-data paired test assumptions. Missingness bounds are not population confidence intervals. Any application to confirmation needs a separately frozen prospective analysis amendment; earlier reports are unchanged. The complete-data 260-pair power assumption does not guarantee 80 percent power with arbitrary missingness.
+
+Read first: [experiments/dependency_memory/results/rollback_missingness_bound_2026-10-09/README.md](../dependency_memory/results/rollback_missingness_bound_2026-10-09/README.md).
+
+Implementation: [experiments/dependency_memory/rollback_missingness_bound](../dependency_memory/rollback_missingness_bound).
+
+Protocol: [experiments/dependency_memory/results/rollback_missingness_bound_2026-10-09/README.md](../dependency_memory/results/rollback_missingness_bound_2026-10-09/README.md).
+
+Saved results: [experiments/dependency_memory/results/rollback_missingness_bound_2026-10-09](../dependency_memory/results/rollback_missingness_bound_2026-10-09).
+
 ## priced-code
 
 **Exact-priced larger-group construction** — 2026-10-02 · completed

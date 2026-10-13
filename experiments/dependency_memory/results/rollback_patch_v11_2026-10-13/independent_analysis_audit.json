@@ -1,0 +1,1716 @@
+{
+  "actual_study_resources": {
+    "admitted_calls": 417,
+    "inflight_calls": 0,
+    "known_calls": 408,
+    "known_planning_credits": "47.5989520",
+    "known_usage": {
+      "cached_input": 526848,
+      "input_tokens": 13620089,
+      "output": 1178731,
+      "reasoning": 318067
+    },
+    "sum_known_call_elapsed_seconds": 15457.042980799713,
+    "unknown_calls": 9,
+    "unknown_locked_planning_credits": "38.025"
+  },
+  "arms": {
+    "K0": {
+      "finite_cohort_success_fraction_bounds": [
+        0.9642857142857143,
+        1.0
+      ],
+      "known": 27,
+      "known_success_fraction": 1.0,
+      "missing": 1,
+      "passed": 27,
+      "planned_conditional_tasks": 28
+    },
+    "KL": {
+      "finite_cohort_success_fraction_bounds": [
+        1.0,
+        1.0
+      ],
+      "known": 28,
+      "known_success_fraction": 1.0,
+      "missing": 0,
+      "passed": 28,
+      "planned_conditional_tasks": 28
+    },
+    "R0": {
+      "finite_cohort_success_fraction_bounds": [
+        0.9642857142857143,
+        1.0
+      ],
+      "known": 27,
+      "known_success_fraction": 1.0,
+      "missing": 1,
+      "passed": 27,
+      "planned_conditional_tasks": 28
+    },
+    "RL": {
+      "finite_cohort_success_fraction_bounds": [
+        0.9642857142857143,
+        0.9642857142857143
+      ],
+      "known": 28,
+      "known_success_fraction": 0.9642857142857143,
+      "missing": 0,
+      "passed": 27,
+      "planned_conditional_tasks": 28
+    }
+  },
+  "audit_script_sha256": "cf66124116e0ed65944d1682080bb7b3fa0df02ea43c1236a79139c84dc1c100",
+  "bundle": "experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/recovery_bundle",
+  "candidate_code_executed_by_audit": false,
+  "capacity_interpretation_gate": {
+    "capacity_stops": [],
+    "global_stop": true,
+    "passed": false
+  },
+  "constructed_self_test": {
+    "constructed_checks": 20,
+    "model_calls": 0,
+    "passed": true
+  },
+  "disjoint_resource_categories": {
+    "K0": {
+      "admitted_calls": 32,
+      "inflight_calls": 0,
+      "known_calls": 31,
+      "known_planning_credits": "4.5359930",
+      "known_usage": {
+        "cached_input": 46592,
+        "input_tokens": 1382000,
+        "output": 94866,
+        "reasoning": 25652
+      },
+      "sum_known_call_elapsed_seconds": 1164.1472520000534,
+      "unknown_calls": 1,
+      "unknown_locked_planning_credits": "4.225"
+    },
+    "KL": {
+      "admitted_calls": 34,
+      "inflight_calls": 0,
+      "known_calls": 34,
+      "known_planning_credits": "5.0838065",
+      "known_usage": {
+        "cached_input": 41216,
+        "input_tokens": 1544592,
+        "output": 105205,
+        "reasoning": 28856
+      },
+      "sum_known_call_elapsed_seconds": 1518.430449599924,
+      "unknown_calls": 0,
+      "unknown_locked_planning_credits": "0"
+    },
+    "R0": {
+      "admitted_calls": 34,
+      "inflight_calls": 0,
+      "known_calls": 33,
+      "known_planning_credits": "4.1886245",
+      "known_usage": {
+        "cached_input": 43008,
+        "input_tokens": 1218707,
+        "output": 99090,
+        "reasoning": 23708
+      },
+      "sum_known_call_elapsed_seconds": 1318.7473735999374,
+      "unknown_calls": 1,
+      "unknown_locked_planning_credits": "4.225"
+    },
+    "RL": {
+      "admitted_calls": 33,
+      "inflight_calls": 0,
+      "known_calls": 33,
+      "known_planning_credits": "4.2932155",
+      "known_usage": {
+        "cached_input": 46592,
+        "input_tokens": 1243314,
+        "output": 103181,
+        "reasoning": 27029
+      },
+      "sum_known_call_elapsed_seconds": 1308.5603869000333,
+      "unknown_calls": 0,
+      "unknown_locked_planning_credits": "0"
+    },
+    "shared_lesson": {
+      "admitted_calls": 28,
+      "inflight_calls": 0,
+      "known_calls": 28,
+      "known_planning_credits": "3.1690715",
+      "known_usage": {
+        "cached_input": 14336,
+        "input_tokens": 1209686,
+        "output": 14169,
+        "reasoning": 13067
+      },
+      "sum_known_call_elapsed_seconds": 338.50267459996394,
+      "unknown_calls": 0,
+      "unknown_locked_planning_credits": "0"
+    },
+    "shared_prefix": {
+      "admitted_calls": 256,
+      "inflight_calls": 0,
+      "known_calls": 249,
+      "known_planning_credits": "26.3282410",
+      "known_usage": {
+        "cached_input": 335104,
+        "input_tokens": 7021790,
+        "output": 762220,
+        "reasoning": 199755
+      },
+      "sum_known_call_elapsed_seconds": 9808.654844099801,
+      "unknown_calls": 7,
+      "unknown_locked_planning_credits": "29.575"
+    }
+  },
+  "eligible_leading_family_counts": {
+    "composite_dependency_resolver": 10,
+    "composite_revision_ledger": 15,
+    "composite_temporal_routes": 3
+  },
+  "eligible_natural_failures": 28,
+  "eligible_task_outcomes": [
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_revision_ledger",
+      "task_id": "v11-study-composite_revision_ledger-fa97093e93b996b6"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_revision_ledger",
+      "task_id": "v11-study-composite_revision_ledger-aff6cca91b44cdcf"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_revision_ledger",
+      "task_id": "v11-study-composite_revision_ledger-d7a82b9d86fa3fa8"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_dependency_resolver",
+      "task_id": "v11-study-composite_dependency_resolver-eb32522e174697a4"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_temporal_routes",
+      "task_id": "v11-study-composite_temporal_routes-97675a0080d4f4f9"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_dependency_resolver",
+      "task_id": "v11-study-composite_dependency_resolver-f8e60a74cdf8899f"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_dependency_resolver",
+      "task_id": "v11-study-composite_dependency_resolver-10434e9e1e63e17c"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_revision_ledger",
+      "task_id": "v11-study-composite_revision_ledger-b700ff6926a229b1"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": null,
+      "RL": 1,
+      "family": "composite_revision_ledger",
+      "task_id": "v11-study-composite_revision_ledger-4fd1ec56fe5d9f42"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_revision_ledger",
+      "task_id": "v11-study-composite_revision_ledger-a71a30a64f3635ae"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 0,
+      "family": "composite_revision_ledger",
+      "task_id": "v11-study-composite_revision_ledger-83e899db4637da30"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_revision_ledger",
+      "task_id": "v11-study-composite_revision_ledger-f8a862369185a6c0"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_dependency_resolver",
+      "task_id": "v11-study-composite_dependency_resolver-83ae070958df011c"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_revision_ledger",
+      "task_id": "v11-study-composite_revision_ledger-cb88824faca5e2cd"
+    },
+    {
+      "K0": null,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_revision_ledger",
+      "task_id": "v11-study-composite_revision_ledger-e378f552e9d0db22"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_dependency_resolver",
+      "task_id": "v11-study-composite_dependency_resolver-1ce48d32efde5f3d"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_temporal_routes",
+      "task_id": "v11-study-composite_temporal_routes-fdd6e94940af328d"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_dependency_resolver",
+      "task_id": "v11-study-composite_dependency_resolver-286b266419c94d57"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_revision_ledger",
+      "task_id": "v11-study-composite_revision_ledger-9e31fe1f759f33d8"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_revision_ledger",
+      "task_id": "v11-study-composite_revision_ledger-858fd218fb7b71bd"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_temporal_routes",
+      "task_id": "v11-study-composite_temporal_routes-2ed14ff6763655a2"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_dependency_resolver",
+      "task_id": "v11-study-composite_dependency_resolver-de95b50de10252dd"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_revision_ledger",
+      "task_id": "v11-study-composite_revision_ledger-701853e7f36bca78"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_revision_ledger",
+      "task_id": "v11-study-composite_revision_ledger-6314654a12c1da9b"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_dependency_resolver",
+      "task_id": "v11-study-composite_dependency_resolver-f87a1a27e4b82812"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_dependency_resolver",
+      "task_id": "v11-study-composite_dependency_resolver-e34d9a5a34fc9bba"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_revision_ledger",
+      "task_id": "v11-study-composite_revision_ledger-6b934e086e3d9a49"
+    },
+    {
+      "K0": 1,
+      "KL": 1,
+      "R0": 1,
+      "RL": 1,
+      "family": "composite_dependency_resolver",
+      "task_id": "v11-study-composite_dependency_resolver-1bc7ec187490f596"
+    }
+  ],
+  "evidence_kind": "independent_offline_reconciliation_of_live_observations",
+  "factorial_contrasts": {
+    "deletion_main": {
+      "complete_case_family_counts": {
+        "composite_dependency_resolver": 10,
+        "composite_revision_ledger": 13,
+        "composite_temporal_routes": 3
+      },
+      "complete_case_mean": -0.019230769230769232,
+      "complete_case_mean_exact": "-1/52",
+      "complete_tasks": 26,
+      "eligible_tasks": 28,
+      "finite_cohort_missingness_bounds": [
+        -0.03571428571428571,
+        0.0
+      ],
+      "finite_cohort_missingness_bounds_exact": [
+        "-1/28",
+        "0"
+      ],
+      "incomplete_tasks": 2,
+      "scope": "Bounds enumerate missing binary outcomes in the fixed eligible cohort; not confidence intervals. Complete-case means can have a smaller denominator.",
+      "units": "difference in binary success proportions; multiply by 100 for percentage points"
+    },
+    "deletion_with_lesson": {
+      "complete_case_family_counts": {
+        "composite_dependency_resolver": 10,
+        "composite_revision_ledger": 15,
+        "composite_temporal_routes": 3
+      },
+      "complete_case_mean": -0.03571428571428571,
+      "complete_case_mean_exact": "-1/28",
+      "complete_tasks": 28,
+      "eligible_tasks": 28,
+      "finite_cohort_missingness_bounds": [
+        -0.03571428571428571,
+        -0.03571428571428571
+      ],
+      "finite_cohort_missingness_bounds_exact": [
+        "-1/28",
+        "-1/28"
+      ],
+      "incomplete_tasks": 0,
+      "scope": "Bounds enumerate missing binary outcomes in the fixed eligible cohort; not confidence intervals. Complete-case means can have a smaller denominator.",
+      "units": "difference in binary success proportions; multiply by 100 for percentage points"
+    },
+    "deletion_without_lesson": {
+      "complete_case_family_counts": {
+        "composite_dependency_resolver": 10,
+        "composite_revision_ledger": 13,
+        "composite_temporal_routes": 3
+      },
+      "complete_case_mean": 0.0,
+      "complete_case_mean_exact": "0",
+      "complete_tasks": 26,
+      "eligible_tasks": 28,
+      "finite_cohort_missingness_bounds": [
+        -0.03571428571428571,
+        0.03571428571428571
+      ],
+      "finite_cohort_missingness_bounds_exact": [
+        "-1/28",
+        "1/28"
+      ],
+      "incomplete_tasks": 2,
+      "scope": "Bounds enumerate missing binary outcomes in the fixed eligible cohort; not confidence intervals. Complete-case means can have a smaller denominator.",
+      "units": "difference in binary success proportions; multiply by 100 for percentage points"
+    },
+    "interaction": {
+      "complete_case_family_counts": {
+        "composite_dependency_resolver": 10,
+        "composite_revision_ledger": 13,
+        "composite_temporal_routes": 3
+      },
+      "complete_case_mean": -0.038461538461538464,
+      "complete_case_mean_exact": "-1/26",
+      "complete_tasks": 26,
+      "eligible_tasks": 28,
+      "finite_cohort_missingness_bounds": [
+        -0.07142857142857142,
+        0.0
+      ],
+      "finite_cohort_missingness_bounds_exact": [
+        "-1/14",
+        "0"
+      ],
+      "incomplete_tasks": 2,
+      "scope": "Bounds enumerate missing binary outcomes in the fixed eligible cohort; not confidence intervals. Complete-case means can have a smaller denominator.",
+      "units": "difference in binary success proportions; multiply by 100 for percentage points"
+    },
+    "lesson_main": {
+      "complete_case_family_counts": {
+        "composite_dependency_resolver": 10,
+        "composite_revision_ledger": 13,
+        "composite_temporal_routes": 3
+      },
+      "complete_case_mean": -0.019230769230769232,
+      "complete_case_mean_exact": "-1/52",
+      "complete_tasks": 26,
+      "eligible_tasks": 28,
+      "finite_cohort_missingness_bounds": [
+        -0.017857142857142856,
+        0.017857142857142856
+      ],
+      "finite_cohort_missingness_bounds_exact": [
+        "-1/56",
+        "1/56"
+      ],
+      "incomplete_tasks": 2,
+      "scope": "Bounds enumerate missing binary outcomes in the fixed eligible cohort; not confidence intervals. Complete-case means can have a smaller denominator.",
+      "units": "difference in binary success proportions; multiply by 100 for percentage points"
+    },
+    "lesson_when_keeping": {
+      "complete_case_family_counts": {
+        "composite_dependency_resolver": 10,
+        "composite_revision_ledger": 14,
+        "composite_temporal_routes": 3
+      },
+      "complete_case_mean": 0.0,
+      "complete_case_mean_exact": "0",
+      "complete_tasks": 27,
+      "eligible_tasks": 28,
+      "finite_cohort_missingness_bounds": [
+        0.0,
+        0.03571428571428571
+      ],
+      "finite_cohort_missingness_bounds_exact": [
+        "0",
+        "1/28"
+      ],
+      "incomplete_tasks": 1,
+      "scope": "Bounds enumerate missing binary outcomes in the fixed eligible cohort; not confidence intervals. Complete-case means can have a smaller denominator.",
+      "units": "difference in binary success proportions; multiply by 100 for percentage points"
+    },
+    "lesson_when_removing": {
+      "complete_case_family_counts": {
+        "composite_dependency_resolver": 10,
+        "composite_revision_ledger": 14,
+        "composite_temporal_routes": 3
+      },
+      "complete_case_mean": -0.037037037037037035,
+      "complete_case_mean_exact": "-1/27",
+      "complete_tasks": 27,
+      "eligible_tasks": 28,
+      "finite_cohort_missingness_bounds": [
+        -0.03571428571428571,
+        0.0
+      ],
+      "finite_cohort_missingness_bounds_exact": [
+        "-1/28",
+        "0"
+      ],
+      "incomplete_tasks": 1,
+      "scope": "Bounds enumerate missing binary outcomes in the fixed eligible cohort; not confidence intervals. Complete-case means can have a smaller denominator.",
+      "units": "difference in binary success proportions; multiply by 100 for percentage points"
+    }
+  },
+  "failure_and_repair_process": {
+    "initial_attempt": {
+      "no_received_initial_attempt": 7,
+      "planned_tasks": 256,
+      "private_score_counts": {
+        "0": 36,
+        "1": 213
+      },
+      "public_and_private_pass": 213,
+      "public_pass_but_private_fail": 4,
+      "public_private_joint": {
+        "public_mismatch|private=0": 28,
+        "public_pass|private=0": 4,
+        "public_pass|private=1": 213,
+        "runtime_error|private=0": 2,
+        "syntax_error|private=0": 1,
+        "timeout|private=0": 1
+      },
+      "public_status_counts": {
+        "public_mismatch": 28,
+        "public_pass": 217,
+        "runtime_error": 2,
+        "syntax_error": 1,
+        "timeout": 1
+      },
+      "received_attempts": 249
+    },
+    "repairs_conditional_on_eligible_prefix": {
+      "K0": {
+        "accepted_private_failures": 0,
+        "accepted_private_successes": 27,
+        "all_received_public_statuses": {
+          "public_mismatch": 4,
+          "public_pass": 27
+        },
+        "eligible_tasks": 28,
+        "first_public_pass_step_counts": {
+          "1": 23,
+          "2": 4,
+          "None": 1
+        },
+        "first_received_public_private_joint": {
+          "public_mismatch|private=0": 4,
+          "public_pass|private=1": 23
+        },
+        "first_received_public_statuses": {
+          "public_mismatch": 4,
+          "public_pass": 23
+        },
+        "first_repair_public_and_private_pass": 23,
+        "publicly_accepted_repairs": 27,
+        "received_attempt_count_distribution": {
+          "0": 1,
+          "1": 23,
+          "2": 4
+        },
+        "terminal_dispositions": {
+          "correct": 27,
+          "unknown_dispatch": 1
+        }
+      },
+      "KL": {
+        "accepted_private_failures": 0,
+        "accepted_private_successes": 28,
+        "all_received_public_statuses": {
+          "public_mismatch": 5,
+          "public_pass": 28,
+          "runtime_error": 1
+        },
+        "eligible_tasks": 28,
+        "first_public_pass_step_counts": {
+          "1": 23,
+          "2": 4,
+          "3": 1
+        },
+        "first_received_public_private_joint": {
+          "public_mismatch|private=0": 4,
+          "public_pass|private=1": 23,
+          "runtime_error|private=0": 1
+        },
+        "first_received_public_statuses": {
+          "public_mismatch": 4,
+          "public_pass": 23,
+          "runtime_error": 1
+        },
+        "first_repair_public_and_private_pass": 23,
+        "publicly_accepted_repairs": 28,
+        "received_attempt_count_distribution": {
+          "1": 23,
+          "2": 4,
+          "3": 1
+        },
+        "terminal_dispositions": {
+          "correct": 28
+        }
+      },
+      "R0": {
+        "accepted_private_failures": 0,
+        "accepted_private_successes": 27,
+        "all_received_public_statuses": {
+          "public_mismatch": 6,
+          "public_pass": 27
+        },
+        "eligible_tasks": 28,
+        "first_public_pass_step_counts": {
+          "1": 22,
+          "2": 5,
+          "None": 1
+        },
+        "first_received_public_private_joint": {
+          "public_mismatch|private=0": 6,
+          "public_pass|private=1": 22
+        },
+        "first_received_public_statuses": {
+          "public_mismatch": 6,
+          "public_pass": 22
+        },
+        "first_repair_public_and_private_pass": 22,
+        "publicly_accepted_repairs": 27,
+        "received_attempt_count_distribution": {
+          "1": 23,
+          "2": 5
+        },
+        "terminal_dispositions": {
+          "correct": 27,
+          "unknown_dispatch": 1
+        }
+      },
+      "RL": {
+        "accepted_private_failures": 0,
+        "accepted_private_successes": 27,
+        "all_received_public_statuses": {
+          "public_mismatch": 6,
+          "public_pass": 27
+        },
+        "eligible_tasks": 28,
+        "first_public_pass_step_counts": {
+          "1": 24,
+          "2": 3,
+          "None": 1
+        },
+        "first_received_public_private_joint": {
+          "public_mismatch|private=0": 4,
+          "public_pass|private=1": 24
+        },
+        "first_received_public_statuses": {
+          "public_mismatch": 4,
+          "public_pass": 24
+        },
+        "first_repair_public_and_private_pass": 24,
+        "publicly_accepted_repairs": 27,
+        "received_attempt_count_distribution": {
+          "1": 24,
+          "2": 3,
+          "3": 1
+        },
+        "terminal_dispositions": {
+          "correct": 27,
+          "repair_budget_exhausted": 1
+        }
+      }
+    },
+    "scope": "Public acceptance ends an arm even if its held-out grade fails. Initial public passes are ineligible for the rollback comparison. First-repair correctness and final accepted correctness are distinct observed endpoints.",
+    "shared_lesson_content": {
+      "category_counts": {
+        "confidence": {
+          "high": 28
+        },
+        "diagnosis": {
+          "missing_constraint": 20,
+          "wrong_order": 2,
+          "wrong_selection": 4,
+          "wrong_state_update": 2
+        },
+        "focus": {
+          "algorithm": 1,
+          "dependencies": 5,
+          "ordering": 2,
+          "requirements": 16,
+          "state_invariants": 4
+        },
+        "location": {
+          "rules.py": 28
+        },
+        "next_check": {
+          "check_all_constraints": 12,
+          "trace_failed_example": 16
+        }
+      },
+      "eligible_tasks": 28,
+      "missing_by_disposition": {},
+      "scope": "One categorical lesson per eligible prefix is shared by KL and RL. Counts describe saved hints, not truth, independent treatment replicates, or evidence that a category causes an effect.",
+      "tasks": [
+        {
+          "leading_family": "composite_revision_ledger",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "missing_constraint",
+            "focus": "requirements",
+            "location": "rules.py",
+            "next_check": "check_all_constraints"
+          },
+          "task_id": "v11-study-composite_revision_ledger-fa97093e93b996b6"
+        },
+        {
+          "leading_family": "composite_revision_ledger",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "missing_constraint",
+            "focus": "requirements",
+            "location": "rules.py",
+            "next_check": "check_all_constraints"
+          },
+          "task_id": "v11-study-composite_revision_ledger-aff6cca91b44cdcf"
+        },
+        {
+          "leading_family": "composite_revision_ledger",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "missing_constraint",
+            "focus": "requirements",
+            "location": "rules.py",
+            "next_check": "trace_failed_example"
+          },
+          "task_id": "v11-study-composite_revision_ledger-d7a82b9d86fa3fa8"
+        },
+        {
+          "leading_family": "composite_dependency_resolver",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "wrong_selection",
+            "focus": "state_invariants",
+            "location": "rules.py",
+            "next_check": "trace_failed_example"
+          },
+          "task_id": "v11-study-composite_dependency_resolver-eb32522e174697a4"
+        },
+        {
+          "leading_family": "composite_temporal_routes",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "missing_constraint",
+            "focus": "dependencies",
+            "location": "rules.py",
+            "next_check": "trace_failed_example"
+          },
+          "task_id": "v11-study-composite_temporal_routes-97675a0080d4f4f9"
+        },
+        {
+          "leading_family": "composite_dependency_resolver",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "missing_constraint",
+            "focus": "dependencies",
+            "location": "rules.py",
+            "next_check": "trace_failed_example"
+          },
+          "task_id": "v11-study-composite_dependency_resolver-f8e60a74cdf8899f"
+        },
+        {
+          "leading_family": "composite_dependency_resolver",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "wrong_selection",
+            "focus": "requirements",
+            "location": "rules.py",
+            "next_check": "check_all_constraints"
+          },
+          "task_id": "v11-study-composite_dependency_resolver-10434e9e1e63e17c"
+        },
+        {
+          "leading_family": "composite_revision_ledger",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "missing_constraint",
+            "focus": "requirements",
+            "location": "rules.py",
+            "next_check": "check_all_constraints"
+          },
+          "task_id": "v11-study-composite_revision_ledger-b700ff6926a229b1"
+        },
+        {
+          "leading_family": "composite_revision_ledger",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "missing_constraint",
+            "focus": "requirements",
+            "location": "rules.py",
+            "next_check": "check_all_constraints"
+          },
+          "task_id": "v11-study-composite_revision_ledger-4fd1ec56fe5d9f42"
+        },
+        {
+          "leading_family": "composite_revision_ledger",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "missing_constraint",
+            "focus": "requirements",
+            "location": "rules.py",
+            "next_check": "check_all_constraints"
+          },
+          "task_id": "v11-study-composite_revision_ledger-a71a30a64f3635ae"
+        },
+        {
+          "leading_family": "composite_revision_ledger",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "missing_constraint",
+            "focus": "dependencies",
+            "location": "rules.py",
+            "next_check": "trace_failed_example"
+          },
+          "task_id": "v11-study-composite_revision_ledger-83e899db4637da30"
+        },
+        {
+          "leading_family": "composite_revision_ledger",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "missing_constraint",
+            "focus": "dependencies",
+            "location": "rules.py",
+            "next_check": "trace_failed_example"
+          },
+          "task_id": "v11-study-composite_revision_ledger-f8a862369185a6c0"
+        },
+        {
+          "leading_family": "composite_dependency_resolver",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "wrong_selection",
+            "focus": "dependencies",
+            "location": "rules.py",
+            "next_check": "trace_failed_example"
+          },
+          "task_id": "v11-study-composite_dependency_resolver-83ae070958df011c"
+        },
+        {
+          "leading_family": "composite_revision_ledger",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "missing_constraint",
+            "focus": "requirements",
+            "location": "rules.py",
+            "next_check": "check_all_constraints"
+          },
+          "task_id": "v11-study-composite_revision_ledger-cb88824faca5e2cd"
+        },
+        {
+          "leading_family": "composite_revision_ledger",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "missing_constraint",
+            "focus": "requirements",
+            "location": "rules.py",
+            "next_check": "check_all_constraints"
+          },
+          "task_id": "v11-study-composite_revision_ledger-e378f552e9d0db22"
+        },
+        {
+          "leading_family": "composite_dependency_resolver",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "missing_constraint",
+            "focus": "requirements",
+            "location": "rules.py",
+            "next_check": "trace_failed_example"
+          },
+          "task_id": "v11-study-composite_dependency_resolver-1ce48d32efde5f3d"
+        },
+        {
+          "leading_family": "composite_temporal_routes",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "missing_constraint",
+            "focus": "requirements",
+            "location": "rules.py",
+            "next_check": "check_all_constraints"
+          },
+          "task_id": "v11-study-composite_temporal_routes-fdd6e94940af328d"
+        },
+        {
+          "leading_family": "composite_dependency_resolver",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "wrong_order",
+            "focus": "ordering",
+            "location": "rules.py",
+            "next_check": "trace_failed_example"
+          },
+          "task_id": "v11-study-composite_dependency_resolver-286b266419c94d57"
+        },
+        {
+          "leading_family": "composite_revision_ledger",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "missing_constraint",
+            "focus": "requirements",
+            "location": "rules.py",
+            "next_check": "check_all_constraints"
+          },
+          "task_id": "v11-study-composite_revision_ledger-9e31fe1f759f33d8"
+        },
+        {
+          "leading_family": "composite_revision_ledger",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "missing_constraint",
+            "focus": "requirements",
+            "location": "rules.py",
+            "next_check": "check_all_constraints"
+          },
+          "task_id": "v11-study-composite_revision_ledger-858fd218fb7b71bd"
+        },
+        {
+          "leading_family": "composite_temporal_routes",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "wrong_state_update",
+            "focus": "state_invariants",
+            "location": "rules.py",
+            "next_check": "trace_failed_example"
+          },
+          "task_id": "v11-study-composite_temporal_routes-2ed14ff6763655a2"
+        },
+        {
+          "leading_family": "composite_dependency_resolver",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "wrong_selection",
+            "focus": "algorithm",
+            "location": "rules.py",
+            "next_check": "trace_failed_example"
+          },
+          "task_id": "v11-study-composite_dependency_resolver-de95b50de10252dd"
+        },
+        {
+          "leading_family": "composite_revision_ledger",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "missing_constraint",
+            "focus": "requirements",
+            "location": "rules.py",
+            "next_check": "check_all_constraints"
+          },
+          "task_id": "v11-study-composite_revision_ledger-701853e7f36bca78"
+        },
+        {
+          "leading_family": "composite_revision_ledger",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "missing_constraint",
+            "focus": "requirements",
+            "location": "rules.py",
+            "next_check": "trace_failed_example"
+          },
+          "task_id": "v11-study-composite_revision_ledger-6314654a12c1da9b"
+        },
+        {
+          "leading_family": "composite_dependency_resolver",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "wrong_state_update",
+            "focus": "state_invariants",
+            "location": "rules.py",
+            "next_check": "trace_failed_example"
+          },
+          "task_id": "v11-study-composite_dependency_resolver-f87a1a27e4b82812"
+        },
+        {
+          "leading_family": "composite_dependency_resolver",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "missing_constraint",
+            "focus": "state_invariants",
+            "location": "rules.py",
+            "next_check": "trace_failed_example"
+          },
+          "task_id": "v11-study-composite_dependency_resolver-e34d9a5a34fc9bba"
+        },
+        {
+          "leading_family": "composite_revision_ledger",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "missing_constraint",
+            "focus": "requirements",
+            "location": "rules.py",
+            "next_check": "trace_failed_example"
+          },
+          "task_id": "v11-study-composite_revision_ledger-6b934e086e3d9a49"
+        },
+        {
+          "leading_family": "composite_dependency_resolver",
+          "lesson": {
+            "confidence": "high",
+            "diagnosis": "wrong_order",
+            "focus": "ordering",
+            "location": "rules.py",
+            "next_check": "trace_failed_example"
+          },
+          "task_id": "v11-study-composite_dependency_resolver-1bc7ec187490f596"
+        }
+      ],
+      "valid_lessons": 28
+    }
+  },
+  "first_failing_public_case_diagnostics": {
+    "classification_counts": {
+      "component_value_mismatch": 28
+    },
+    "mismatching_components_by_family": {
+      "dependency_resolver": 14,
+      "quota_intervals": 3,
+      "revision_ledger": 19,
+      "temporal_routes": 9
+    },
+    "scope": "Only the first reported public mismatch per eligible prefix. Whole-output shape errors are not attributed to component algorithms. A component can differ in several tasks; these are descriptive counts, not independent trials or internal-cause diagnoses.",
+    "tasks": [
+      {
+        "candidate_source_utf8_bytes": 8168,
+        "changed_nonempty_lines": 499,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_01",
+            "family": "revision_ledger",
+            "kind": "wrong_component_value"
+          },
+          {
+            "component_id": "component_05",
+            "family": "revision_ledger",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 23268,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_revision_ledger",
+        "task_id": "v11-study-composite_revision_ledger-fa97093e93b996b6"
+      },
+      {
+        "candidate_source_utf8_bytes": 7665,
+        "changed_nonempty_lines": 468,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_01",
+            "family": "revision_ledger",
+            "kind": "wrong_component_value"
+          },
+          {
+            "component_id": "component_03",
+            "family": "revision_ledger",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 22432,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_revision_ledger",
+        "task_id": "v11-study-composite_revision_ledger-aff6cca91b44cdcf"
+      },
+      {
+        "candidate_source_utf8_bytes": 7973,
+        "changed_nonempty_lines": 493,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_02",
+            "family": "revision_ledger",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 22909,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_revision_ledger",
+        "task_id": "v11-study-composite_revision_ledger-d7a82b9d86fa3fa8"
+      },
+      {
+        "candidate_source_utf8_bytes": 9764,
+        "changed_nonempty_lines": 485,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_07",
+            "family": "quota_intervals",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 24294,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_dependency_resolver",
+        "task_id": "v11-study-composite_dependency_resolver-eb32522e174697a4"
+      },
+      {
+        "candidate_source_utf8_bytes": 7168,
+        "changed_nonempty_lines": 481,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_07",
+            "family": "dependency_resolver",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 22183,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_temporal_routes",
+        "task_id": "v11-study-composite_temporal_routes-97675a0080d4f4f9"
+      },
+      {
+        "candidate_source_utf8_bytes": 7750,
+        "changed_nonempty_lines": 500,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_03",
+            "family": "dependency_resolver",
+            "kind": "wrong_component_value"
+          },
+          {
+            "component_id": "component_05",
+            "family": "dependency_resolver",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 22902,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_dependency_resolver",
+        "task_id": "v11-study-composite_dependency_resolver-f8e60a74cdf8899f"
+      },
+      {
+        "candidate_source_utf8_bytes": 8565,
+        "changed_nonempty_lines": 500,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_07",
+            "family": "quota_intervals",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 23578,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_dependency_resolver",
+        "task_id": "v11-study-composite_dependency_resolver-10434e9e1e63e17c"
+      },
+      {
+        "candidate_source_utf8_bytes": 7863,
+        "changed_nonempty_lines": 498,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_03",
+            "family": "revision_ledger",
+            "kind": "wrong_component_value"
+          },
+          {
+            "component_id": "component_04",
+            "family": "revision_ledger",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 22881,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_revision_ledger",
+        "task_id": "v11-study-composite_revision_ledger-b700ff6926a229b1"
+      },
+      {
+        "candidate_source_utf8_bytes": 8870,
+        "changed_nonempty_lines": 461,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_01",
+            "family": "revision_ledger",
+            "kind": "wrong_component_value"
+          },
+          {
+            "component_id": "component_04",
+            "family": "revision_ledger",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 23087,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_revision_ledger",
+        "task_id": "v11-study-composite_revision_ledger-4fd1ec56fe5d9f42"
+      },
+      {
+        "candidate_source_utf8_bytes": 9007,
+        "changed_nonempty_lines": 476,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_02",
+            "family": "revision_ledger",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 23565,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_revision_ledger",
+        "task_id": "v11-study-composite_revision_ledger-a71a30a64f3635ae"
+      },
+      {
+        "candidate_source_utf8_bytes": 7845,
+        "changed_nonempty_lines": 501,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_06",
+            "family": "dependency_resolver",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 22992,
+        "first_failing_public_case": "public-02",
+        "leading_family": "composite_revision_ledger",
+        "task_id": "v11-study-composite_revision_ledger-83e899db4637da30"
+      },
+      {
+        "candidate_source_utf8_bytes": 7504,
+        "changed_nonempty_lines": 476,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_06",
+            "family": "dependency_resolver",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 22399,
+        "first_failing_public_case": "public-03",
+        "leading_family": "composite_revision_ledger",
+        "task_id": "v11-study-composite_revision_ledger-f8a862369185a6c0"
+      },
+      {
+        "candidate_source_utf8_bytes": 7819,
+        "changed_nonempty_lines": 503,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_02",
+            "family": "dependency_resolver",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 23068,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_dependency_resolver",
+        "task_id": "v11-study-composite_dependency_resolver-83ae070958df011c"
+      },
+      {
+        "candidate_source_utf8_bytes": 8108,
+        "changed_nonempty_lines": 482,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_04",
+            "family": "revision_ledger",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 22867,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_revision_ledger",
+        "task_id": "v11-study-composite_revision_ledger-cb88824faca5e2cd"
+      },
+      {
+        "candidate_source_utf8_bytes": 8078,
+        "changed_nonempty_lines": 480,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_01",
+            "family": "revision_ledger",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 22895,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_revision_ledger",
+        "task_id": "v11-study-composite_revision_ledger-e378f552e9d0db22"
+      },
+      {
+        "candidate_source_utf8_bytes": 8205,
+        "changed_nonempty_lines": 503,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_03",
+            "family": "dependency_resolver",
+            "kind": "wrong_component_value"
+          },
+          {
+            "component_id": "component_05",
+            "family": "dependency_resolver",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 23384,
+        "first_failing_public_case": "public-02",
+        "leading_family": "composite_dependency_resolver",
+        "task_id": "v11-study-composite_dependency_resolver-1ce48d32efde5f3d"
+      },
+      {
+        "candidate_source_utf8_bytes": 8200,
+        "changed_nonempty_lines": 509,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_01",
+            "family": "temporal_routes",
+            "kind": "wrong_component_value"
+          },
+          {
+            "component_id": "component_04",
+            "family": "temporal_routes",
+            "kind": "wrong_component_value"
+          },
+          {
+            "component_id": "component_05",
+            "family": "temporal_routes",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 23439,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_temporal_routes",
+        "task_id": "v11-study-composite_temporal_routes-fdd6e94940af328d"
+      },
+      {
+        "candidate_source_utf8_bytes": 8587,
+        "changed_nonempty_lines": 515,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_02",
+            "family": "dependency_resolver",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 23582,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_dependency_resolver",
+        "task_id": "v11-study-composite_dependency_resolver-286b266419c94d57"
+      },
+      {
+        "candidate_source_utf8_bytes": 7637,
+        "changed_nonempty_lines": 498,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_01",
+            "family": "revision_ledger",
+            "kind": "wrong_component_value"
+          },
+          {
+            "component_id": "component_03",
+            "family": "revision_ledger",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 22646,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_revision_ledger",
+        "task_id": "v11-study-composite_revision_ledger-9e31fe1f759f33d8"
+      },
+      {
+        "candidate_source_utf8_bytes": 7905,
+        "changed_nonempty_lines": 501,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_03",
+            "family": "revision_ledger",
+            "kind": "wrong_component_value"
+          },
+          {
+            "component_id": "component_04",
+            "family": "revision_ledger",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 23076,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_revision_ledger",
+        "task_id": "v11-study-composite_revision_ledger-858fd218fb7b71bd"
+      },
+      {
+        "candidate_source_utf8_bytes": 8513,
+        "changed_nonempty_lines": 475,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_01",
+            "family": "temporal_routes",
+            "kind": "wrong_component_value"
+          },
+          {
+            "component_id": "component_02",
+            "family": "temporal_routes",
+            "kind": "wrong_component_value"
+          },
+          {
+            "component_id": "component_03",
+            "family": "temporal_routes",
+            "kind": "wrong_component_value"
+          },
+          {
+            "component_id": "component_04",
+            "family": "temporal_routes",
+            "kind": "wrong_component_value"
+          },
+          {
+            "component_id": "component_05",
+            "family": "temporal_routes",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 23169,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_temporal_routes",
+        "task_id": "v11-study-composite_temporal_routes-2ed14ff6763655a2"
+      },
+      {
+        "candidate_source_utf8_bytes": 9310,
+        "changed_nonempty_lines": 469,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_07",
+            "family": "quota_intervals",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 23657,
+        "first_failing_public_case": "public-06",
+        "leading_family": "composite_dependency_resolver",
+        "task_id": "v11-study-composite_dependency_resolver-de95b50de10252dd"
+      },
+      {
+        "candidate_source_utf8_bytes": 8919,
+        "changed_nonempty_lines": 506,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_01",
+            "family": "revision_ledger",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 23792,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_revision_ledger",
+        "task_id": "v11-study-composite_revision_ledger-701853e7f36bca78"
+      },
+      {
+        "candidate_source_utf8_bytes": 7987,
+        "changed_nonempty_lines": 506,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_03",
+            "family": "revision_ledger",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 23096,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_revision_ledger",
+        "task_id": "v11-study-composite_revision_ledger-6314654a12c1da9b"
+      },
+      {
+        "candidate_source_utf8_bytes": 9024,
+        "changed_nonempty_lines": 512,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_08",
+            "family": "temporal_routes",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 24084,
+        "first_failing_public_case": "public-02",
+        "leading_family": "composite_dependency_resolver",
+        "task_id": "v11-study-composite_dependency_resolver-f87a1a27e4b82812"
+      },
+      {
+        "candidate_source_utf8_bytes": 8073,
+        "changed_nonempty_lines": 502,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_04",
+            "family": "dependency_resolver",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 23224,
+        "first_failing_public_case": "public-06",
+        "leading_family": "composite_dependency_resolver",
+        "task_id": "v11-study-composite_dependency_resolver-e34d9a5a34fc9bba"
+      },
+      {
+        "candidate_source_utf8_bytes": 9562,
+        "changed_nonempty_lines": 483,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_03",
+            "family": "revision_ledger",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 23917,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_revision_ledger",
+        "task_id": "v11-study-composite_revision_ledger-6b934e086e3d9a49"
+      },
+      {
+        "candidate_source_utf8_bytes": 8203,
+        "changed_nonempty_lines": 498,
+        "classification": "component_value_mismatch",
+        "differing_components": [
+          {
+            "component_id": "component_01",
+            "family": "dependency_resolver",
+            "kind": "wrong_component_value"
+          },
+          {
+            "component_id": "component_02",
+            "family": "dependency_resolver",
+            "kind": "wrong_component_value"
+          },
+          {
+            "component_id": "component_03",
+            "family": "dependency_resolver",
+            "kind": "wrong_component_value"
+          },
+          {
+            "component_id": "component_05",
+            "family": "dependency_resolver",
+            "kind": "wrong_component_value"
+          }
+        ],
+        "extra_component_keys": [],
+        "failed_patch_utf8_bytes": 22951,
+        "first_failing_public_case": "public-01",
+        "leading_family": "composite_dependency_resolver",
+        "task_id": "v11-study-composite_dependency_resolver-1bc7ec187490f596"
+      }
+    ],
+    "tasks_with_mismatching_component_family": {
+      "dependency_resolver": 9,
+      "quota_intervals": 3,
+      "revision_ledger": 13,
+      "temporal_routes": 3
+    }
+  },
+  "lesson_dispositions_on_eligible_prefixes": {
+    "valid": 28
+  },
+  "live_model_admissions_in_audited_run": 417,
+  "manifest_sha256": "e181685f3edc984f316bd63b00d21445ac0128187e5723f18bae7f798c4b4087",
+  "model_calls_performed_by_audit": 0,
+  "operational_recovery_accounting": {
+    "causal_interpretation_gate_permanently_failed": true,
+    "cumulative_admissions": 417,
+    "historical_receipts_replayed_without_new_admission": 5,
+    "new_phase": {
+      "admitted_calls": 128,
+      "inflight_calls": 0,
+      "known_calls": 124,
+      "known_planning_credits": "15.4622095",
+      "known_usage": {
+        "cached_input": 141568,
+        "input_tokens": 4585330,
+        "output": 345393,
+        "reasoning": 92164
+      },
+      "sum_known_call_elapsed_seconds": 4574.0921591000515,
+      "unknown_calls": 4,
+      "unknown_locked_planning_credits": "16.900"
+    },
+    "original_job_rows_retained": 1005,
+    "original_phase": {
+      "admitted_calls": 289,
+      "inflight_calls": 0,
+      "known_calls": 284,
+      "known_planning_credits": "32.1367425",
+      "known_usage": {
+        "cached_input": 385280,
+        "input_tokens": 9034759,
+        "output": 833338,
+        "reasoning": 225903
+      },
+      "sum_known_call_elapsed_seconds": 10882.950821699662,
+      "unknown_calls": 5,
+      "unknown_locked_planning_credits": "21.125"
+    },
+    "original_unknown_rows_unchanged": true,
+    "phase_wall_seconds": [
+      416.0334295000066,
+      326.4840439000109
+    ],
+    "prior_stop": "systemic_transport_failure",
+    "resumed_job_rows": 275,
+    "retained_job_bytes_unchanged": true,
+    "scope": "Cumulative resources partition into original and new admissions. Historical receipt reconstruction is not a new model call; phase wall times exclude offline recovery preparation."
+  },
+  "passed": true,
+  "peak_simultaneous_admissions": 32,
+  "planned_tasks": 256,
+  "prefix_dispositions": {
+    "infrastructure_stop": 1,
+    "natural_substantive_patch_mismatch": 28,
+    "public_pass": 217,
+    "runtime_error": 2,
+    "syntax_error": 1,
+    "timeout": 1,
+    "unknown_dispatch": 6
+  },
+  "run": "experiments/dependency_memory/results/rollback_patch_v11_2026-10-13/study_live_recovered",
+  "scope": [
+    "All contrasts are conditional on the fixed cohort's observed eligible naturally failed prefixes. Unknown prefix eligibility is reported through dispositions, not included as a known failed prefix.",
+    "Finite-cohort bounds enumerate missing binary outcomes; they are not confidence intervals. This independent script does not recompute bootstrap intervals or assign confirmatory p-values.",
+    "Token units are provider-recorded counts: cached_input is a subset of input_tokens and reasoning is a subset of output. Planning credits and unknown reservations are bookkeeping units, not actual subscription charges or dollars.",
+    "Shared prefix and lesson calls are counted once in actual spend. Resource categories partition calls; no overlapping standalone-policy projections are added together.",
+    "This checks outcomes from saved public/private receipts and durable accounting. It does not replace isolated source regrading, request replay, or verification of inaccessible provider internals.",
+    "Any operational recovery retains the original failed interpretation gate. Descriptive contrasts can span provider time and operational phases; resumption does not turn them into isolated causal estimates."
+  ],
+  "sealed_evidence_manifest_sha256": "2d615f0164300ed8f0e4b686a4e23e9e32fb3924150f04273f28b1ef22cac062"
+}

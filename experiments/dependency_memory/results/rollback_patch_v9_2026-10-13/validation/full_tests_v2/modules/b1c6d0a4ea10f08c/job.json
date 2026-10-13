@@ -1,0 +1,16 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\b1c6d0a4ea10f08c\\job.json",
+  "module": "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\b1c6d0a4ea10f08c\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\b1c6d0a4ea10f08c\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\b1c6d0a4ea10f08c\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\b1c6d0a4ea10f08c\\tmp",
+  "test_ids": [
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_complete_data_reduces_to_the_existing_exact_test",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_effect_direction_is_symmetric_and_all_missing_is_uninformative",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_exhaustive_small_completion_enumeration",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_invalid_scores_and_counts_cannot_enter_the_test",
+    "experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_one_unknown_can_preserve_or_remove_a_rejection"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

@@ -1,0 +1,21 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\14c63393796b7be4\\job.json",
+  "module": "test_revision_analysis",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\14c63393796b7be4\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\14c63393796b7be4\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\14c63393796b7be4\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\14c63393796b7be4\\tmp",
+  "test_ids": [
+    "test_revision_analysis.RevisionAnalysisTests.test_capacity_one_and_ample_parent_controls",
+    "test_revision_analysis.RevisionAnalysisTests.test_child_tie_is_not_a_conditional_error",
+    "test_revision_analysis.RevisionAnalysisTests.test_invalid_fixed_sets_and_nonpublic_routes_are_rejected",
+    "test_revision_analysis.RevisionAnalysisTests.test_pair_formula_matches_every_fixed_set_for_small_populations",
+    "test_revision_analysis.RevisionAnalysisTests.test_parent_value_matches_independent_environment_and_child_decisions",
+    "test_revision_analysis.RevisionAnalysisTests.test_public_manifest_conditions_the_comparison",
+    "test_revision_analysis.RevisionAnalysisTests.test_revision_asymmetry_and_symmetric_ties",
+    "test_revision_analysis.RevisionAnalysisTests.test_revision_with_manifest_spares_the_refreshed_record",
+    "test_revision_analysis.RevisionAnalysisTests.test_saved_content_hash_tampering_is_rejected",
+    "test_revision_analysis.RevisionAnalysisTests.test_saved_evidence_separates_only_three_strict_parent_deficits"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

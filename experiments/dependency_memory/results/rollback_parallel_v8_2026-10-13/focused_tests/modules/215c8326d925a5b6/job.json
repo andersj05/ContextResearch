@@ -1,0 +1,18 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\215c8326d925a5b6\\job.json",
+  "module": "test_transport",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\215c8326d925a5b6\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\215c8326d925a5b6\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\215c8326d925a5b6\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\215c8326d925a5b6\\tmp",
+  "test_ids": [
+    "test_transport.StreamingTransportTests.test_32_transports_keep_distinct_sessions_and_full_checks",
+    "test_transport.StreamingTransportTests.test_all_client_instruction_configuration_and_registry_pins_remain",
+    "test_transport.StreamingTransportTests.test_empty_exact_multiple_and_tail_files_hash_every_byte",
+    "test_transport.StreamingTransportTests.test_observed_file_change_during_hash_is_rejected",
+    "test_transport.StreamingTransportTests.test_same_size_change_with_restored_mtime_is_rehashed_and_rejected",
+    "test_transport.StreamingTransportTests.test_streamed_digest_matches_independent_sha_and_uses_one_bounded_buffer",
+    "test_transport.StreamingTransportTests.test_unchanged_generation_checks_each_time_closes_and_never_retries"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\rollback_parallel_v8"
+}

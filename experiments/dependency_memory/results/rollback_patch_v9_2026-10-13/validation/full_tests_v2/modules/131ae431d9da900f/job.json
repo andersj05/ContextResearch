@@ -1,0 +1,18 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\131ae431d9da900f\\job.json",
+  "module": "workflow_executed.test_executed",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\131ae431d9da900f\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\131ae431d9da900f\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\131ae431d9da900f\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\131ae431d9da900f\\tmp",
+  "test_ids": [
+    "workflow_executed.test_executed.ExecutedTests.test_checked_child_uses_only_scoped_bounded_parent_and_new_records",
+    "workflow_executed.test_executed.ExecutedTests.test_expected_work_and_last_failure_are_independently_specified",
+    "workflow_executed.test_executed.ExecutedTests.test_full_saved_ledger_replay_reconciles_usage_and_rejects_answer_tampering",
+    "workflow_executed.test_executed.ExecutedTests.test_index_preserves_chronology_and_excludes_unrequested_checks",
+    "workflow_executed.test_executed.ExecutedTests.test_reexecute_captured_sources_and_runtime_to_verify_actual_outcomes",
+    "workflow_executed.test_executed.ExecutedTests.test_schedule_and_scope_revelation_do_not_leak_final_state",
+    "workflow_executed.test_executed.ExecutedTests.test_source_and_artifact_evidence_tampering_is_rejected"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

@@ -1,0 +1,20 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\1404f56269382f27\\job.json",
+  "module": "rollback_pilot.test_analysis",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\1404f56269382f27\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\1404f56269382f27\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\1404f56269382f27\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\1404f56269382f27\\tmp",
+  "test_ids": [
+    "rollback_pilot.test_analysis.AnalysisTests.test_analysis_rejects_duplicate_tasks_wrong_types_and_primary_slot_mismatch",
+    "rollback_pilot.test_analysis.AnalysisTests.test_bootstrap_uses_six_complete_tasks_and_is_seeded_and_descriptive",
+    "rollback_pilot.test_analysis.AnalysisTests.test_cost_ledger_charges_shared_prep_once_and_projects_only_needed_writer",
+    "rollback_pilot.test_analysis.AnalysisTests.test_domain_reports_do_not_pool_draws_or_replace_uneligible_tasks",
+    "rollback_pilot.test_analysis.AnalysisTests.test_every_unknown_slot_spans_full_interval_and_known_failures_stay_zero",
+    "rollback_pilot.test_analysis.AnalysisTests.test_first_example_is_selected_by_frozen_order_not_largest_effect",
+    "rollback_pilot.test_analysis.AnalysisTests.test_known_task_differences_not_independent_draw_samples",
+    "rollback_pilot.test_analysis.AnalysisTests.test_missingness_bounds_keep_scheduled_denominator_and_known_answers",
+    "rollback_pilot.test_analysis.AnalysisTests.test_summary_failure_keeps_primary_and_uses_secondary_intersection"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

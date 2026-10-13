@@ -1,5 +1,26 @@
 # Research and drafting workflow
 
+## Navigation and experiment summaries
+
+Use [current status](STATUS.md) for the latest checkpoint and the
+[experiment catalog](../experiments/INDEX.md) to select a study. Detailed outcomes
+belong in its registry summary and primary finding, rather than in repeated
+milestone blocks across the README, status and research map. Follow the
+[placement rules](REPOSITORY_STRUCTURE.md) when adding files.
+
+Update [experiments/registry.csv](../experiments/registry.csv) whenever a study is
+added, completed, stopped or reinterpreted. Preserve incomplete and negative
+outcomes and the paths to every frozen launch phase. Run
+`python scripts/build_experiment_index.py` to regenerate the index and summaries;
+do not edit those generated views by hand. See the [field contract](../experiments/README.md).
+
+For navigation-only edits, run `python scripts/validate_context_repo.py --navigation-only`
+and, if documentation affects paper assembly, `python scripts/build_paper.py`.
+The quick check validates links, citations, claim paths and catalog coverage;
+it neither grades scientific outputs nor verifies imported bytes. Use the full
+offline workflow below for scientific code/evidence changes. Keep dated validation
+counts separate from the checks actually run for the current edit.
+
 ## Reading and adding evidence
 
 Start from the [research map](RESEARCH_MAP.md) and [focused sources](../sources/READING_GUIDE.md). Record a source's canonical URL, version or commit, access/review date, relevant claim, and limitations. For a new paper, reuse [the note template](../paper-notes/TEMPLATE.md) when a full note is useful; brief focused notes may live in `sources/notes/`.
@@ -17,7 +38,8 @@ For a new derivation, use [the derivation template](../paper/templates/derivatio
 ## Reproduction
 
 ```powershell
-python -m unittest discover -s experiments/dependency_memory -v
+python scripts/build_experiment_index.py --check
+python -m unittest discover -s experiments/dependency_memory -t . -v
 python experiments/dependency_memory/experiment.py
 python experiments/dependency_memory/compatibility.py
 python experiments/dependency_memory/compatibility_scaling.py

@@ -1,0 +1,11 @@
+Failed to find real location of C:\Python314\python.exe
+test_complete_data_reduces_to_the_existing_exact_test (experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_complete_data_reduces_to_the_existing_exact_test) ... ok
+test_effect_direction_is_symmetric_and_all_missing_is_uninformative (experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_effect_direction_is_symmetric_and_all_missing_is_uninformative) ... ok
+test_exhaustive_small_completion_enumeration (experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_exhaustive_small_completion_enumeration) ... ok
+test_invalid_scores_and_counts_cannot_enter_the_test (experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_invalid_scores_and_counts_cannot_enter_the_test) ... ok
+test_one_unknown_can_preserve_or_remove_a_rejection (experiments.dependency_memory.rollback_missingness_bound.test_rollback_missingness.MissingnessTests.test_one_unknown_can_preserve_or_remove_a_rejection) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.347s
+
+OK

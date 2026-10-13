@@ -1,0 +1,44 @@
+{
+  "completed_test_ids": [
+    "cross_record.test_memory.MemoryTests.test_identifier_corruption_is_detected",
+    "cross_record.test_memory.MemoryTests.test_identifier_swap_preserves_bag_but_breaks_relationships",
+    "cross_record.test_memory.MemoryTests.test_missing_component_is_unknown_not_certified",
+    "cross_record.test_memory.MemoryTests.test_order_independent_join_and_complete_projection"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "cross_record.test_memory.MemoryTests.test_identifier_corruption_is_detected": "passed",
+    "cross_record.test_memory.MemoryTests.test_identifier_swap_preserves_bag_but_breaks_relationships": "passed",
+    "cross_record.test_memory.MemoryTests.test_missing_component_is_unknown_not_certified": "passed",
+    "cross_record.test_memory.MemoryTests.test_order_independent_join_and_complete_projection": "passed"
+  },
+  "elapsed_seconds": 0.00921099999686703,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "cross_record.test_memory.MemoryTests.test_identifier_corruption_is_detected",
+    "cross_record.test_memory.MemoryTests.test_identifier_swap_preserves_bag_but_breaks_relationships",
+    "cross_record.test_memory.MemoryTests.test_missing_component_is_unknown_not_certified",
+    "cross_record.test_memory.MemoryTests.test_order_independent_join_and_complete_projection"
+  ],
+  "planned_test_ids": [
+    "cross_record.test_memory.MemoryTests.test_identifier_corruption_is_detected",
+    "cross_record.test_memory.MemoryTests.test_identifier_swap_preserves_bag_but_breaks_relationships",
+    "cross_record.test_memory.MemoryTests.test_missing_component_is_unknown_not_certified",
+    "cross_record.test_memory.MemoryTests.test_order_independent_join_and_complete_projection"
+  ],
+  "process_id": 23144,
+  "skips": 0,
+  "started_test_ids": [
+    "cross_record.test_memory.MemoryTests.test_identifier_corruption_is_detected",
+    "cross_record.test_memory.MemoryTests.test_identifier_swap_preserves_bag_but_breaks_relationships",
+    "cross_record.test_memory.MemoryTests.test_missing_component_is_unknown_not_certified",
+    "cross_record.test_memory.MemoryTests.test_order_independent_join_and_complete_projection"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\18797f58937c9956\\tmp",
+  "tests_run": 4,
+  "unexpected_successes": 0
+}

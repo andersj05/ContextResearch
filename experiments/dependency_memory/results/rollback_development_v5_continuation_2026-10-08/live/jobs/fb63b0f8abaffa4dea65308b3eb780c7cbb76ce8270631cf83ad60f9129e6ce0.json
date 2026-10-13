@@ -1,0 +1,1 @@
+{"job":{"arm":"R","dependency":"60cf1b82faa80ecae92738394fa3f0bf05825c6bbd3d22a44c206e6c01050116","job_id":"fb63b0f8abaffa4dea65308b3eb780c7cbb76ce8270631cf83ad60f9129e6ce0","task_id":"v5-resolver-short-hard-2","track":"mechanism"},"result":{"call_ids":[],"disposition":"ineligible_prefix:initial_public_pass","score":null}}

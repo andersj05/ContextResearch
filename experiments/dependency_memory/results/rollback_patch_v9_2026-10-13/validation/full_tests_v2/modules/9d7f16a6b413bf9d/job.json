@@ -1,0 +1,17 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\9d7f16a6b413bf9d\\job.json",
+  "module": "rollback_pilot.test_prepare",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\9d7f16a6b413bf9d\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\9d7f16a6b413bf9d\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\9d7f16a6b413bf9d\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\9d7f16a6b413bf9d\\tmp",
+  "test_ids": [
+    "rollback_pilot.test_prepare.PreparationTests.test_all_eight_calibration_requests_are_independent_and_fixture_excluded",
+    "rollback_pilot.test_prepare.PreparationTests.test_artifact_tampering_is_detected_without_repairing_a_frozen_bundle",
+    "rollback_pilot.test_prepare.PreparationTests.test_bundle_freezes_twelve_real_generated_math_tasks_and_no_substitute_coding_cohort",
+    "rollback_pilot.test_prepare.PreparationTests.test_manifest_cannot_turn_itself_into_launch_authorization",
+    "rollback_pilot.test_prepare.PreparationTests.test_second_preparation_never_overwrites_prior_bundle",
+    "rollback_pilot.test_prepare.PreparationTests.test_source_digest_mismatch_is_detected"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

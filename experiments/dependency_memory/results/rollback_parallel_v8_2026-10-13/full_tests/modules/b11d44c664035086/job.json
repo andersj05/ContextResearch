@@ -1,0 +1,29 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\b11d44c664035086\\job.json",
+  "module": "rollback_checkpoint_v7.test_engine",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\b11d44c664035086\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\b11d44c664035086\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\b11d44c664035086\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\b11d44c664035086\\tmp",
+  "test_ids": [
+    "rollback_checkpoint_v7.test_engine.CheckpointEngineTests.test_candidate_only_schema_and_complete_body_bound_are_used",
+    "rollback_checkpoint_v7.test_engine.CheckpointEngineTests.test_context_capacity_is_checked_before_dispatch",
+    "rollback_checkpoint_v7.test_engine.CheckpointEngineTests.test_continue_action_cannot_manufacture_a_qualifying_failure",
+    "rollback_checkpoint_v7.test_engine.CheckpointEngineTests.test_first_mismatch_at_last_action_has_no_lesson_or_pair",
+    "rollback_checkpoint_v7.test_engine.CheckpointEngineTests.test_initial_actor_has_only_first_packet_and_allowlisted_channels",
+    "rollback_checkpoint_v7.test_engine.CheckpointEngineTests.test_initial_requests_are_byte_identical_after_removing_only_trial",
+    "rollback_checkpoint_v7.test_engine.CheckpointEngineTests.test_local_unknown_and_global_stop_are_missing_not_observed_failures",
+    "rollback_checkpoint_v7.test_engine.CheckpointEngineTests.test_malformed_and_capped_actions_are_failures_and_consume_action",
+    "rollback_checkpoint_v7.test_engine.CheckpointEngineTests.test_new_packets_append_and_checkpoint_remains_fixed_after_recovery",
+    "rollback_checkpoint_v7.test_engine.CheckpointEngineTests.test_no_failure_prefix_is_ineligible_and_continuations_make_no_calls",
+    "rollback_checkpoint_v7.test_engine.CheckpointEngineTests.test_pair_contract_also_blocks_larger_k_request_when_only_r_fits",
+    "rollback_checkpoint_v7.test_engine.CheckpointEngineTests.test_pair_contract_rejects_packet_checkpoint_feedback_and_lesson_drift",
+    "rollback_checkpoint_v7.test_engine.CheckpointEngineTests.test_public_packet_bytes_survive_failure_at_every_stage",
+    "rollback_checkpoint_v7.test_engine.CheckpointEngineTests.test_render_and_both_continuations_do_not_mutate_shared_input",
+    "rollback_checkpoint_v7.test_engine.CheckpointEngineTests.test_second_failure_retained_without_another_writer_or_deletion",
+    "rollback_checkpoint_v7.test_engine.CheckpointEngineTests.test_shared_lesson_is_generated_once_with_global_step_and_identity",
+    "rollback_checkpoint_v7.test_engine.CheckpointEngineTests.test_successful_prefix_records_and_exact_pre_failure_context_survive",
+    "rollback_checkpoint_v7.test_engine.CheckpointEngineTests.test_unusable_lesson_stops_pair_and_is_never_silently_replaced"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

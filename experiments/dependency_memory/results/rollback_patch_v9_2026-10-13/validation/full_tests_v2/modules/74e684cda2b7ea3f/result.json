@@ -1,0 +1,59 @@
+{
+  "completed_test_ids": [
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_all_four_arms_start_only_after_durable_parent",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_callback_failure_never_releases_children",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_control_only_calibration_has_same_dependency_guarantee",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_rejects_incomplete_arms_wrong_parent_duplicates_and_unsafe_workers",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_single_worker_prioritizes_ready_children_in_frozen_order",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_thirty_two_worker_bound_is_reached_without_exceeding",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_trace_rejects_missing_event_wrong_schema_and_changed_bound"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_all_four_arms_start_only_after_durable_parent": "passed",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_callback_failure_never_releases_children": "passed",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_control_only_calibration_has_same_dependency_guarantee": "passed",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_rejects_incomplete_arms_wrong_parent_duplicates_and_unsafe_workers": "passed",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_single_worker_prioritizes_ready_children_in_frozen_order": "passed",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_thirty_two_worker_bound_is_reached_without_exceeding": "passed",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_trace_rejects_missing_event_wrong_schema_and_changed_bound": "passed"
+  },
+  "elapsed_seconds": 0.12591020000400022,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_all_four_arms_start_only_after_durable_parent",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_callback_failure_never_releases_children",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_control_only_calibration_has_same_dependency_guarantee",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_rejects_incomplete_arms_wrong_parent_duplicates_and_unsafe_workers",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_single_worker_prioritizes_ready_children_in_frozen_order",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_thirty_two_worker_bound_is_reached_without_exceeding",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_trace_rejects_missing_event_wrong_schema_and_changed_bound"
+  ],
+  "planned_test_ids": [
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_all_four_arms_start_only_after_durable_parent",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_callback_failure_never_releases_children",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_control_only_calibration_has_same_dependency_guarantee",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_rejects_incomplete_arms_wrong_parent_duplicates_and_unsafe_workers",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_single_worker_prioritizes_ready_children_in_frozen_order",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_thirty_two_worker_bound_is_reached_without_exceeding",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_trace_rejects_missing_event_wrong_schema_and_changed_bound"
+  ],
+  "process_id": 29908,
+  "skips": 0,
+  "started_test_ids": [
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_all_four_arms_start_only_after_durable_parent",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_callback_failure_never_releases_children",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_control_only_calibration_has_same_dependency_guarantee",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_rejects_incomplete_arms_wrong_parent_duplicates_and_unsafe_workers",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_single_worker_prioritizes_ready_children_in_frozen_order",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_thirty_two_worker_bound_is_reached_without_exceeding",
+    "rollback_patch_v9.test_scheduler.FactorialSchedulerTests.test_trace_rejects_missing_event_wrong_schema_and_changed_bound"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\74e684cda2b7ea3f\\tmp",
+  "tests_run": 7,
+  "unexpected_successes": 0
+}

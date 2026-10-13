@@ -1,0 +1,19 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\6829d992633bc457\\job.json",
+  "module": "conditional_coding.test_conditional",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\6829d992633bc457\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\6829d992633bc457\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\6829d992633bc457\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\6829d992633bc457\\tmp",
+  "test_ids": [
+    "conditional_coding.test_conditional.ConditionalTests.test_all_branch_losses_and_public_response_words",
+    "conditional_coding.test_conditional.ConditionalTests.test_component_complete_single_replacement_screen_and_direct_spots",
+    "conditional_coding.test_conditional.ConditionalTests.test_encoder_matches_complete_parent_book_with_declared_ties",
+    "conditional_coding.test_conditional.ConditionalTests.test_group_factorization_and_lowest_parent_tie_order",
+    "conditional_coding.test_conditional.ConditionalTests.test_local_component_product_has_an_improving_single_joint_word",
+    "conditional_coding.test_conditional.ConditionalTests.test_product_segments_without_extra_instance_state_and_failed_search_provenance",
+    "conditional_coding.test_conditional.ConditionalTests.test_public_label_payload_and_information_access_boundaries",
+    "conditional_coding.test_conditional.ConditionalTests.test_weighted_actor_population_and_stronger_common_length_control"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

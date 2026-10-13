@@ -1,0 +1,64 @@
+{
+  "completed_test_ids": [
+    "rate_curve.test_curve.CurveTests.test_cleared_dual_products_match_direct_query_routes",
+    "rate_curve.test_curve.CurveTests.test_exact_one_factors_and_closed_interval_seams",
+    "rate_curve.test_curve.CurveTests.test_family_interval_cover_retains_every_inactive_word",
+    "rate_curve.test_curve.CurveTests.test_gibbs_marginal_and_strict_rate_slack_on_actual_channels",
+    "rate_curve.test_curve.CurveTests.test_interval_transform_has_independent_binomial_coefficients",
+    "rate_curve.test_curve.CurveTests.test_saved_exact_continuum_certificate_and_frozen_discovery_match",
+    "rate_curve.test_curve.CurveTests.test_signed_kronecker_products_match_naive_convolution",
+    "rate_curve.test_curve.CurveTests.test_zero_rate_and_oracle_endpoints_have_actual_information_and_loss"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "rate_curve.test_curve.CurveTests.test_cleared_dual_products_match_direct_query_routes": "passed",
+    "rate_curve.test_curve.CurveTests.test_exact_one_factors_and_closed_interval_seams": "passed",
+    "rate_curve.test_curve.CurveTests.test_family_interval_cover_retains_every_inactive_word": "passed",
+    "rate_curve.test_curve.CurveTests.test_gibbs_marginal_and_strict_rate_slack_on_actual_channels": "passed",
+    "rate_curve.test_curve.CurveTests.test_interval_transform_has_independent_binomial_coefficients": "passed",
+    "rate_curve.test_curve.CurveTests.test_saved_exact_continuum_certificate_and_frozen_discovery_match": "passed",
+    "rate_curve.test_curve.CurveTests.test_signed_kronecker_products_match_naive_convolution": "passed",
+    "rate_curve.test_curve.CurveTests.test_zero_rate_and_oracle_endpoints_have_actual_information_and_loss": "passed"
+  },
+  "elapsed_seconds": 57.514698999992106,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "rate_curve.test_curve.CurveTests.test_cleared_dual_products_match_direct_query_routes",
+    "rate_curve.test_curve.CurveTests.test_exact_one_factors_and_closed_interval_seams",
+    "rate_curve.test_curve.CurveTests.test_family_interval_cover_retains_every_inactive_word",
+    "rate_curve.test_curve.CurveTests.test_gibbs_marginal_and_strict_rate_slack_on_actual_channels",
+    "rate_curve.test_curve.CurveTests.test_interval_transform_has_independent_binomial_coefficients",
+    "rate_curve.test_curve.CurveTests.test_saved_exact_continuum_certificate_and_frozen_discovery_match",
+    "rate_curve.test_curve.CurveTests.test_signed_kronecker_products_match_naive_convolution",
+    "rate_curve.test_curve.CurveTests.test_zero_rate_and_oracle_endpoints_have_actual_information_and_loss"
+  ],
+  "planned_test_ids": [
+    "rate_curve.test_curve.CurveTests.test_cleared_dual_products_match_direct_query_routes",
+    "rate_curve.test_curve.CurveTests.test_exact_one_factors_and_closed_interval_seams",
+    "rate_curve.test_curve.CurveTests.test_family_interval_cover_retains_every_inactive_word",
+    "rate_curve.test_curve.CurveTests.test_gibbs_marginal_and_strict_rate_slack_on_actual_channels",
+    "rate_curve.test_curve.CurveTests.test_interval_transform_has_independent_binomial_coefficients",
+    "rate_curve.test_curve.CurveTests.test_saved_exact_continuum_certificate_and_frozen_discovery_match",
+    "rate_curve.test_curve.CurveTests.test_signed_kronecker_products_match_naive_convolution",
+    "rate_curve.test_curve.CurveTests.test_zero_rate_and_oracle_endpoints_have_actual_information_and_loss"
+  ],
+  "process_id": 16544,
+  "skips": 0,
+  "started_test_ids": [
+    "rate_curve.test_curve.CurveTests.test_cleared_dual_products_match_direct_query_routes",
+    "rate_curve.test_curve.CurveTests.test_exact_one_factors_and_closed_interval_seams",
+    "rate_curve.test_curve.CurveTests.test_family_interval_cover_retains_every_inactive_word",
+    "rate_curve.test_curve.CurveTests.test_gibbs_marginal_and_strict_rate_slack_on_actual_channels",
+    "rate_curve.test_curve.CurveTests.test_interval_transform_has_independent_binomial_coefficients",
+    "rate_curve.test_curve.CurveTests.test_saved_exact_continuum_certificate_and_frozen_discovery_match",
+    "rate_curve.test_curve.CurveTests.test_signed_kronecker_products_match_naive_convolution",
+    "rate_curve.test_curve.CurveTests.test_zero_rate_and_oracle_endpoints_have_actual_information_and_loss"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\7b2726de7fa8283e\\tmp",
+  "tests_run": 8,
+  "unexpected_successes": 0
+}

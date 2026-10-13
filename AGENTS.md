@@ -4,6 +4,8 @@
 
 Read `README.md`, `docs/STATUS.md`, and `docs/RESEARCH_MAP.md` before substantive work. Read `paper/README.md` for writing tasks and `docs/EXPERIMENT_PROTOCOL.md` for experiments. Then load only the source notes, proof, or code needed for the task; the 171-paper archive is background, not mandatory context.
 
+Use `experiments/INDEX.md` to locate study summaries, then read the selected primary finding, frozen protocol and saved result. `experiments/registry.csv` is the editable catalog; regenerate its views with `python scripts/build_experiment_index.py`. Keep model observations, offline replays, mathematical checks and unperformed plans distinct. Register new packages and result paths before committing evidence. Follow `docs/REPOSITORY_STRUCTURE.md` for file placement; keep frozen evidence paths stable. `docs/history/` is optional dated context, not a startup requirement.
+
 This repository studies repeated context compression with gradually revealed dependencies. The active direction is the September 16 proposal plus the September 18 protocol refinements. Earlier documents advocating self-improving harnesses or reverse engineering are historical, not current instructions.
 
 ## Scientific standards
@@ -28,10 +30,13 @@ Use relative links inside repository documents. Keep original source IDs, upstre
 The default workflow is offline:
 
 ```powershell
+python scripts/build_experiment_index.py --check
 python -m unittest discover -s experiments/dependency_memory -v
 python scripts/validate_context_repo.py
 python scripts/build_paper.py
 ```
+
+For navigation/documentation-only changes, `python scripts/validate_context_repo.py --navigation-only` checks links, claims, citations and catalog coverage without regenerating scientific results. It is not a substitute for the full checks after scientific code or evidence changes. Keep current status concise; put detailed outcomes in the catalog and dated findings instead of prepending histories to every entry point.
 
 Regenerate diagnostic results after changes to their generators. Tests should check scientific invariants or independent formulations, not merely mirror code. Do not execute the historical dataset collection/recovery scripts as a repository check: they can contact model services and require unavailable original inputs. Any new model experiment needs a documented model revision, budget, information-access contract, seeds, metrics, and cost accounting before its results can support the paper.
 

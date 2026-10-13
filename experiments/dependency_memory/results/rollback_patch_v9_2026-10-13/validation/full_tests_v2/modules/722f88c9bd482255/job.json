@@ -1,0 +1,25 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\722f88c9bd482255\\job.json",
+  "module": "test_transfer_runner",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\722f88c9bd482255\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\722f88c9bd482255\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\722f88c9bd482255\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\722f88c9bd482255\\tmp",
+  "test_ids": [
+    "test_transfer_runner.TransferBudgetTests.test_commit_attestation_rejects_uncommitted_or_changed_fingerprinted_sources",
+    "test_transfer_runner.TransferBudgetTests.test_new_allocation_does_not_expand_old_default_or_old_explicit_cap",
+    "test_transfer_runner.TransferBudgetTests.test_uncertainty_stops_one_worker_without_spending_another_budget",
+    "test_transfer_runner.TransferGateTests.test_completed_malformed_response_does_not_stop_other_workers",
+    "test_transfer_runner.TransferGateTests.test_dispatch_rpc_failure_closes_gate_before_cleanup",
+    "test_transfer_runner.TransferGateTests.test_stop_blocks_luna_after_preflight_before_generation_reservation",
+    "test_transfer_runner.TransferRunnerTests.test_all_manifests_and_request_reservation_exist_before_any_call",
+    "test_transfer_runner.TransferRunnerTests.test_complete_optimal_control_preserves_all_blocks_and_denominators",
+    "test_transfer_runner.TransferRunnerTests.test_inflight_workers_finish_but_shared_failure_prevents_their_next_request",
+    "test_transfer_runner.TransferRunnerTests.test_invalid_policy_continues_and_empty_or_partial_caps_keep_1536_rows",
+    "test_transfer_runner.TransferRunnerTests.test_plan_rejects_split_blocks_and_changed_request_before_any_worker",
+    "test_transfer_runner.TransferRunnerTests.test_reused_client_invalid_limit_and_fake_live_are_rejected",
+    "test_transfer_runner.TransferRunnerTests.test_stale_frozen_plan_rejects_before_client_or_process_creation",
+    "test_transfer_runner.TransferRunnerTests.test_third_contract_serializes_without_expanding_wire_or_tool_access"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

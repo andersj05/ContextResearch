@@ -1,0 +1,215 @@
+from itertools import product
+
+
+def _round(numerator, mode):
+    if mode == "half_up":
+        return (numerator + 5000) // 10000
+    return numerator // 10000
+
+
+def _ledger(data, sequence_first=False, discounted_tax=False, refunds=True):
+    chosen = {}
+    cutoff = data.get("cutoff", 10**9)
+    for position, event in enumerate(data["events"]):
+        sequence = event.get("sequence", 0)
+        if sequence > cutoff:
+            continue
+        event_id = event.get("id", "anonymous:" + str(position))
+        if sequence_first:
+            order = (sequence, event.get("revision", 0), position)
+        else:
+            order = (event.get("revision", 0), position)
+        if event_id not in chosen or order > chosen[event_id][0]:
+            chosen[event_id] = (order, event)
+
+    balances = dict(data.get("opening", {}))
+    mode = data["rounding"]
+    for _, event in chosen.values():
+        if event.get("void", False):
+            continue
+        raw = event["price"] * event.get("quantity", 1)
+        discount = min(10000, max(0, event.get("discount_bp", 0)))
+        net = _round(raw * (10000 - discount), mode)
+        tax_base = net if discounted_tax else raw
+        tax = _round(tax_base * event.get("tax_bp", 0), mode)
+        total = net + tax
+        if refunds and event.get("kind") == "refund":
+            total = -total
+        key = event.get("account", "default") + "|" + event.get("currency", "USD")
+        balances[key] = balances.get(key, 0) + total
+    return {"balances": balances}
+
+
+def _component_06(data):
+    packages = data["packages"]
+    names = sorted(packages, reverse=True)
+    features = set(data.get("features", []))
+    rows_by_version = {
+        name: {row["version"]: row for row in rows}
+        for name, rows in packages.items()
+    }
+    choices = [sorted(rows_by_version[name], reverse=True) + [-1]
+               for name in names]
+
+    for values in product(*choices):
+        selected = {name: version for name, version in zip(names, values)
+                    if version != -1}
+        if any(name not in selected or not low <= selected[name] <= high
+               for name, (low, high) in data["roots"].items()):
+            continue
+        if any(name in selected and selected[name] != version
+               for name, version in data.get("pins", {}).items()):
+            continue
+
+        edges = {name: [] for name in selected}
+        valid = True
+        for name, version in selected.items():
+            row = rows_by_version[name][version]
+            for dep in row.get("deps", []):
+                feature = dep.get("feature", "")
+                if feature and feature not in features:
+                    continue
+                other = dep["name"]
+                low, high = dep["min"], dep["max"]
+                if other not in selected or not low <= selected[other] <= high:
+                    valid = False
+                    break
+                edges[name].append(other)
+            if not valid:
+                break
+        if not valid:
+            continue
+
+        visiting, done = set(), set()
+        def acyclic(name):
+            if name in visiting:
+                return False
+            if name in done:
+                return True
+            visiting.add(name)
+            if any(not acyclic(other) for other in edges[name]):
+                return False
+            visiting.remove(name)
+            done.add(name)
+            return True
+
+        if not all(acyclic(name) for name in edges):
+            continue
+
+        reachable = set()
+        stack = list(data["roots"])
+        while stack:
+            name = stack.pop()
+            if name in reachable:
+                continue
+            reachable.add(name)
+            stack.extend(edges[name])
+        if reachable != set(selected):
+            continue
+        return {"versions": selected}
+    return {"error": "unsatisfiable"}
+
+
+def _component_07(data):
+    jobs = [job for job in data["jobs"]
+            if job["id"] not in data.get("blocked", [])]
+    mandatory = set(data.get("mandatory", []))
+    quotas = data.get("quotas", {})
+    best_value = None
+    best_ids = None
+    n = len(jobs)
+
+    for mask in range(1 << n):
+        if mask.bit_count() != data["k"]:
+            continue
+        chosen = [jobs[i] for i in range(n) if mask & (1 << i)]
+        ids = {job["id"] for job in chosen}
+        if not mandatory.issubset(ids):
+            continue
+        counts = {}
+        for job in chosen:
+            counts[job["group"]] = counts.get(job["group"], 0) + 1
+        if any(not low <= counts.get(group, 0) <= high
+               for group, (low, high) in quotas.items()):
+            continue
+
+        events = []
+        for job in chosen:
+            events.append((job["start"], 1))
+            events.append((job["end"], -1))
+        active = 0
+        feasible = True
+        for _, change in sorted(events):
+            active += change
+            if active > 2:
+                feasible = False
+                break
+        if not feasible:
+            continue
+
+        value = sum(job["value"] for job in chosen)
+        sorted_ids = sorted(ids)
+        if (best_value is None or value > best_value or
+                (value == best_value and sorted_ids > best_ids)):
+            best_value, best_ids = value, sorted_ids
+
+    if best_value is None:
+        return {"error": "impossible"}
+    return {"selected": best_ids, "value": best_value}
+
+
+def _component_08(data):
+    import heapq
+
+    required = data.get("required", [])
+    bit_for = {node: 1 << i for i, node in enumerate(required)}
+    full = (1 << len(required)) - 1
+    graph = [[] for _ in range(data["n"])]
+    for edge in data["edges"]:
+        graph[edge["u"]].append(edge)
+
+    source = data["source"]
+    initial_mask = bit_for.get(source, 0)
+    initial = (source, initial_mask, data["coupons"])
+    distances = {initial: data["start"]}
+    queue = [(data["start"], source, initial_mask, data["coupons"])]
+
+    while queue:
+        arrival, node, mask, remaining = heapq.heappop(queue)
+        state = (node, mask, remaining)
+        if distances.get(state) != arrival:
+            continue
+        if node == data["target"] and mask == full:
+            return {"arrival": arrival}
+        for edge in graph[node]:
+            depart = max(arrival, edge["open"])
+            if depart >= edge["close"]:
+                continue
+            options = [(edge["duration"], remaining)]
+            if remaining:
+                options.append((max(1, edge["duration"] - edge.get("discount", 0)),
+                                remaining - 1))
+            next_mask = mask | bit_for.get(edge["v"], 0)
+            for duration, next_remaining in options:
+                next_time = depart + duration
+                if next_time > data["deadline"]:
+                    continue
+                next_state = (edge["v"], next_mask, next_remaining)
+                if next_time < distances.get(next_state, float("inf")):
+                    distances[next_state] = next_time
+                    heapq.heappush(queue, (next_time, edge["v"], next_mask,
+                                          next_remaining))
+    return {"arrival": None}
+
+
+SOLVERS = {
+    "component_01": lambda data: _ledger(data),
+    "component_02": lambda data: _ledger(data, sequence_first=True),
+    "component_03": lambda data: _ledger(data, discounted_tax=True),
+    "component_04": lambda data: _ledger(data, sequence_first=True,
+                                           discounted_tax=True),
+    "component_05": lambda data: _ledger(data),
+    "component_06": _component_06,
+    "component_07": _component_07,
+    "component_08": _component_08,
+}

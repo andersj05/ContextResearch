@@ -1,0 +1,25 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\5a65b27e828cc12c\\job.json",
+  "module": "test_luna_budget",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\5a65b27e828cc12c\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\5a65b27e828cc12c\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\5a65b27e828cc12c\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\5a65b27e828cc12c\\tmp",
+  "test_ids": [
+    "test_luna_budget.CreditBudgetTests.test_attempt_cap_independent_from_credit_cap",
+    "test_luna_budget.CreditBudgetTests.test_constructor_and_ticket_domains",
+    "test_luna_budget.CreditBudgetTests.test_credit_cap_can_stop_before_attempt_cap",
+    "test_luna_budget.CreditBudgetTests.test_credit_estimates_keep_reasoning_within_output",
+    "test_luna_budget.CreditBudgetTests.test_decimal_boundary_and_no_dispatch_on_shortfall",
+    "test_luna_budget.CreditBudgetTests.test_failure_retains_full_reservation_and_stops",
+    "test_luna_budget.CreditBudgetTests.test_invalid_token_counts_and_relationships",
+    "test_luna_budget.CreditBudgetTests.test_invalid_usage_preserves_reservation_for_failure_accounting",
+    "test_luna_budget.CreditBudgetTests.test_optional_cache_write_measurement_distinguishes_unknown_zero_and_positive",
+    "test_luna_budget.CreditBudgetTests.test_reservation_matches_independent_maximum_calculation",
+    "test_luna_budget.CreditBudgetTests.test_settled_and_failed_tickets_cannot_be_reused",
+    "test_luna_budget.CreditBudgetTests.test_settlement_releases_reservation_then_allows_next",
+    "test_luna_budget.CreditBudgetTests.test_unknown_cache_write_price_keeps_conservative_margin",
+    "test_luna_budget.CreditBudgetTests.test_valid_edges_and_json_roundtrip"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

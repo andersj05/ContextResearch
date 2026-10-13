@@ -1,0 +1,12 @@
+{
+  "evidence_kind": "offline_test_coverage_reconciliation",
+  "passed": true,
+  "discovered_ids": 1028,
+  "covered_ids": 1028,
+  "passes": 1014,
+  "optional_skips": 14,
+  "missing": [],
+  "extra": [],
+  "scope": "Earlier 980-test full run plus 36 v10 and 12 v11 focused tests; existing frozen source remains unchanged. Full current discovery uses the repository package root (-t .), supported by the new empty dependency_memory package marker. IDs normalized only by a common module prefix. No old scientific tests were repeated or imputed.",
+  "model_calls": 0
+}

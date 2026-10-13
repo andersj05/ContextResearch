@@ -1,0 +1,19 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\7434dece05d25e1e\\job.json",
+  "module": "weighted_overflow.test_weighted",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\7434dece05d25e1e\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\7434dece05d25e1e\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\7434dece05d25e1e\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\7434dece05d25e1e\\tmp",
+  "test_ids": [
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_cell_losses_equal_literal_routed_populations",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_complete_small_actors_bound_weighted_overflow_not_only_probability",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_cost_cap_moving_mass_into_largest_cell_has_majorization",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_discrete_convex_search_matches_independent_complete_allocation_lists",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_larger_code_is_provably_better_at_768_and_smaller_codes_remain_losses",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_no_discovery_tables_enter_the_deployed_code",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_oracle_weighted_moment_is_independent_of_public_fallback",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_public_selector_preserves_actors_and_final_information_contract"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

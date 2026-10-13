@@ -1,0 +1,201 @@
+{
+  "evidence_kind": "actual_pinned_Docker_isolation_and_batched_code_grading_checks",
+  "checked_utc": "2026-10-13T03:25:36.635336+00:00",
+  "model_calls": 0,
+  "host_candidate_execution": false,
+  "image_pull": false,
+  "runtime_audit": {
+    "configuration": {
+      "runtime": {
+        "image": "python:3.11-slim@sha256:0dd364ba7e10242f07755449e3a3d0e35f9efd987952737b90def6709ab0c5ce",
+        "python_required": "3.11",
+        "cpu_allocation": 1,
+        "memory_mib": 512,
+        "pids": 32,
+        "cpu_seconds_per_test": 5,
+        "wall_seconds_per_test": 10,
+        "suite_wall_seconds": 120,
+        "stdout_bytes": 65536,
+        "stderr_bytes": 65536,
+        "scratch_mib": 16,
+        "network": "none",
+        "user": "65534:65534",
+        "read_only": true,
+        "host_mounts": [],
+        "launcher_sha256": "209ed64301c71dd7fc65c5553047d47a1e9f8578e28cf709bbd71afc12de86f6"
+      },
+      "allowed_files": [
+        "engine.py",
+        "rules.py"
+      ],
+      "source_bytes": 32768,
+      "maximum_suite_cases": 128,
+      "suite_input_bytes": 131072,
+      "maximum_concurrent_containers": 4,
+      "wrapper_sha256": "2cff0df3d803f2982745c51f0c2b62a1ef512894db4ed4ffd87990e9b741c1bf",
+      "access": "all inputs from one suite are available to the program in a fresh container; expected values never enter it; shared process/module state within that suite is permitted",
+      "comparison": "exact typed canonical JSON values; no token or float tolerance",
+      "model_private_feedback": "none; private grading returns aggregate score and disposition only"
+    },
+    "container_audit": {
+      "configuration": {
+        "image": "python:3.11-slim@sha256:0dd364ba7e10242f07755449e3a3d0e35f9efd987952737b90def6709ab0c5ce",
+        "python_required": "3.11",
+        "cpu_allocation": 1,
+        "memory_mib": 512,
+        "pids": 32,
+        "cpu_seconds_per_test": 5,
+        "wall_seconds_per_test": 10,
+        "suite_wall_seconds": 120,
+        "stdout_bytes": 65536,
+        "stderr_bytes": 65536,
+        "scratch_mib": 16,
+        "network": "none",
+        "user": "65534:65534",
+        "read_only": true,
+        "host_mounts": [],
+        "launcher_sha256": "209ed64301c71dd7fc65c5553047d47a1e9f8578e28cf709bbd71afc12de86f6"
+      },
+      "docker_version": {
+        "Client": {
+          "Version": "29.7.2",
+          "ApiVersion": "1.55",
+          "DefaultAPIVersion": "1.55",
+          "GitCommit": "a7dcaa6",
+          "GoVersion": "go1.26.5",
+          "Os": "windows",
+          "Arch": "amd64",
+          "BuildTime": "Wed Aug  5 18:31:33 2026",
+          "Context": "desktop-linux"
+        },
+        "Server": {
+          "Platform": {
+            "Name": "Docker Desktop 4.86.0 (236216)"
+          },
+          "Version": "29.7.2",
+          "ApiVersion": "1.55",
+          "MinAPIVersion": "1.40",
+          "Os": "linux",
+          "Arch": "amd64",
+          "Components": [
+            {
+              "Name": "Engine",
+              "Version": "29.7.2",
+              "Details": {
+                "ApiVersion": "1.55",
+                "Arch": "amd64",
+                "BuildTime": "Wed Aug  5 18:28:36 2026",
+                "Experimental": "false",
+                "GitCommit": "6a43e3d",
+                "GoVersion": "go1.26.5",
+                "KernelVersion": "6.6.87.2-microsoft-standard-WSL2",
+                "MinAPIVersion": "1.40",
+                "Module": "github.com/moby/moby/v2",
+                "ModuleVersion": "v2.0.0+unknown",
+                "Os": "linux"
+              }
+            },
+            {
+              "Name": "containerd",
+              "Version": "v2.2.5",
+              "Details": {
+                "GitCommit": "e53c7c1516c3b2bff98eb76f1f4117477e6f4e66"
+              }
+            },
+            {
+              "Name": "runc",
+              "Version": "1.3.6",
+              "Details": {
+                "GitCommit": "v1.3.6-0-g491b69ba"
+              }
+            },
+            {
+              "Name": "docker-init",
+              "Version": "0.19.0",
+              "Details": {
+                "GitCommit": "de40ad0"
+              }
+            }
+          ],
+          "GitCommit": "6a43e3d",
+          "GoVersion": "go1.26.5",
+          "KernelVersion": "6.6.87.2-microsoft-standard-WSL2",
+          "BuildTime": "2026-08-05T18:28:36.000000000+00:00"
+        }
+      },
+      "image_id": "sha256:0dd364ba7e10242f07755449e3a3d0e35f9efd987952737b90def6709ab0c5ce",
+      "repo_digests": [
+        "python@sha256:0dd364ba7e10242f07755449e3a3d0e35f9efd987952737b90def6709ab0c5ce"
+      ],
+      "runtime_python": "3.11.17",
+      "image_environment": [
+        "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "LANG=C.UTF-8",
+        "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D",
+        "PYTHON_VERSION=3.11.17",
+        "PYTHON_SHA256=bfb74ad39efae27cda510f134ab408e00f9992c56851cfc0b1cdb5646da11599"
+      ]
+    },
+    "model_calls": 0,
+    "host_candidate_execution": false
+  },
+  "test_ids": [
+    "experiments.dependency_memory.rollback_pilot.test_docker.DockerIntegrationTests.test_candidate_cannot_leave_a_container_running_after_completion",
+    "experiments.dependency_memory.rollback_pilot.test_docker.DockerIntegrationTests.test_cpu_memory_pids_and_cpu_allocation_are_enforced_in_runtime",
+    "experiments.dependency_memory.rollback_pilot.test_docker.DockerIntegrationTests.test_each_test_has_fresh_scratch",
+    "experiments.dependency_memory.rollback_pilot.test_docker.DockerIntegrationTests.test_invalid_utf8_is_not_silently_normalized_into_correct_output",
+    "experiments.dependency_memory.rollback_pilot.test_docker.DockerIntegrationTests.test_nonroot_readonly_no_host_files_or_credentials_and_no_external_network",
+    "experiments.dependency_memory.rollback_pilot.test_docker.DockerIntegrationTests.test_process_limit_denies_excess_children_and_tears_them_down",
+    "experiments.dependency_memory.rollback_pilot.test_docker.DockerIntegrationTests.test_public_syntax_runtime_and_wall_timeout_never_qualify_as_mismatch",
+    "experiments.dependency_memory.rollback_pilot.test_docker.DockerIntegrationTests.test_reference_passes_full_frozen_authored_suite_and_wrong_program_fails",
+    "experiments.dependency_memory.rollback_pilot.test_docker.DockerIntegrationTests.test_stdout_and_stderr_each_have_bounded_capture",
+    "experiments.dependency_memory.rollback_patch_v9.test_runtime.DockerRuntimeTests.test_both_file_syntax_errors_are_classified_without_wrong_answer_eligibility",
+    "experiments.dependency_memory.rollback_patch_v9.test_runtime.DockerRuntimeTests.test_concurrent_suites_keep_separate_scratch_and_inputs",
+    "experiments.dependency_memory.rollback_patch_v9.test_runtime.DockerRuntimeTests.test_module_runtime_error_is_distinct_and_private_error_has_no_details",
+    "experiments.dependency_memory.rollback_patch_v9.test_runtime.DockerRuntimeTests.test_two_files_batch_inputs_typed_outputs_and_true_mismatch",
+    "experiments.dependency_memory.rollback_patch_v9.test_runtime.RuntimeTests.test_32_parallel_gradings_never_exceed_four_containers_or_mix_results",
+    "experiments.dependency_memory.rollback_patch_v9.test_runtime.RuntimeTests.test_bad_candidate_never_reaches_runner_and_bad_trusted_tests_raise",
+    "experiments.dependency_memory.rollback_patch_v9.test_runtime.RuntimeTests.test_exact_files_and_bytes_without_host_compile_import_or_execute",
+    "experiments.dependency_memory.rollback_patch_v9.test_runtime.RuntimeTests.test_execution_failures_and_output_errors_never_become_wrong_answer_eligibility",
+    "experiments.dependency_memory.rollback_patch_v9.test_runtime.RuntimeTests.test_infrastructure_errors_propagate_and_release_bounded_slot",
+    "experiments.dependency_memory.rollback_patch_v9.test_runtime.RuntimeTests.test_only_batch_inputs_enter_container_and_private_outputs_are_aggregate",
+    "experiments.dependency_memory.rollback_patch_v9.test_runtime.RuntimeTests.test_public_first_mismatch_has_public_evidence_and_complete_counts",
+    "experiments.dependency_memory.rollback_patch_v9.test_runtime.RuntimeTests.test_typed_json_comparison_rejects_bool_for_integer"
+  ],
+  "tests_run": 21,
+  "failures": 0,
+  "errors": 0,
+  "skips": 0,
+  "successful": true,
+  "elapsed_seconds": 41.226585199998226,
+  "source_bindings": [
+    {
+      "path": "experiments/dependency_memory/rollback_patch_v9/runtime.py",
+      "sha256": "d737fbc5d52e96d55c2edbba0fce8cf8c1cd3ad5ffa754865baca4ad2a98288f"
+    },
+    {
+      "path": "experiments/dependency_memory/rollback_patch_v9/test_runtime.py",
+      "sha256": "e61064aa81871116906ba8adc01039d6f9c2383faa4377293fcbfec0aa21eea2"
+    },
+    {
+      "path": "experiments/dependency_memory/rollback_pilot/code_runner.py",
+      "sha256": "0bd421bd924ae335a35df9ab436afa82b3a96d2b34559f9a019ae8e59c930859"
+    },
+    {
+      "path": "experiments/dependency_memory/rollback_pilot/test_docker.py",
+      "sha256": "2fe3ef16c5b20f37349bd225d99520e510c8cb00d0d9d4502a8a231ddc9a07b6"
+    }
+  ],
+  "recovery": {
+    "initial_engine_state": "stopped",
+    "startup_fault": "Windows error1920 accessing stale Unix-socket reparse points",
+    "preserved_socket_directories": [
+      "C:/Users/jense/AppData/Local/Docker/run.stale-20261013-v9",
+      "C:/Users/jense/AppData/Local/Docker/run.stale-20261013-v9-second",
+      "C:/Users/jense/AppData/Local/docker-secrets-engine.stale-20261013-v9"
+    ],
+    "factory_reset": false,
+    "image_or_container_data_reset": false,
+    "settings_changed": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\478b47bcf25a7d83\\job.json",
+  "module": "novelty_audit.test_novelty_audit",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\478b47bcf25a7d83\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\478b47bcf25a7d83\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\478b47bcf25a7d83\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\478b47bcf25a7d83\\tmp",
+  "test_ids": [
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_all_existing_fixtures_match_partition_optimizer",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_forward_strategies_and_colorings_all_small_relations",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_public_cells_allow_reusing_labels",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_reject_nonhereditary_safe_family_and_impossible_singleton",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_repair_precedes_future_task",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_strategy_alphabet_respects_cost_and_useless_tools",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_triple_is_weak_not_strong_or_pair_only_coloring"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

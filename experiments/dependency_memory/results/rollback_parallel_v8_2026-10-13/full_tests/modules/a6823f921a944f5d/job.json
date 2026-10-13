@@ -1,0 +1,22 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\a6823f921a944f5d\\job.json",
+  "module": "scope_static.test_static",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\a6823f921a944f5d\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\a6823f921a944f5d\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\a6823f921a944f5d\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\a6823f921a944f5d\\tmp",
+  "test_ids": [
+    "scope_static.test_static.StaticScopeTests.test_aliases_and_helper_contexts_against_independent_generated_programs",
+    "scope_static.test_static.StaticScopeTests.test_branch_join_and_malformed_alias_types_preserve_outcomes",
+    "scope_static.test_static.StaticScopeTests.test_empty_memory_identity_and_duplicate_readout_have_no_source_fallback",
+    "scope_static.test_static.StaticScopeTests.test_late_key_retains_unannounced_values_without_root_noise",
+    "scope_static.test_static.StaticScopeTests.test_presence_truth_overlap_does_not_turn_empty_dict_into_true",
+    "scope_static.test_static.StaticScopeTests.test_public_codec_roundtrip_and_fixed_schema_without_instance_values",
+    "scope_static.test_static.StaticScopeTests.test_saved_catalog_audit_uniform_codec_and_preserved_model_gap",
+    "scope_static.test_static.StaticScopeTests.test_source_is_never_executed_and_record_data_is_not_an_argument",
+    "scope_static.test_static.StaticScopeTests.test_unrepresentable_keys_and_reserved_marker_keep_the_whole_base",
+    "scope_static.test_static.StaticScopeTests.test_unsupported_iteration_mutation_and_recursion_keep_whole_input",
+    "scope_static.test_static.StaticScopeTests.test_unused_subscript_preserves_missing_key_exception"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

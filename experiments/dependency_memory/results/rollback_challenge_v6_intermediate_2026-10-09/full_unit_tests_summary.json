@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-10-09T23:11:04.907573+00:00",
+  "command": "python -X utf8 -m unittest discover -s experiments/dependency_memory -v",
+  "distinct_test_ids": 801,
+  "exit_code": 0,
+  "log": "full_unit_tests.txt",
+  "log_sha256": "7e23dc84dcee6cc7002d0cd8f4d77372488209612b32b0330c73277b2b9e0b55",
+  "model_calls": 0,
+  "paper_build_log": "paper_build.txt",
+  "passed": 792,
+  "scope": "Complete repository offline unittest discovery on the host; optional Docker tests retain their explicit skip reasons. The separate paper build passes with 48 cited sources. No scientific manuscript claim was added.",
+  "skipped": 9,
+  "skipped_cases": [
+    "test_candidate_cannot_leave_a_container_running_after_completion (rollback_pilot.test_docker.DockerIntegrationTests.test_candidate_cannot_leave_a_container_running_after_completion) ... skipped 'set ROLLBACK_E0_DOCKER_IMAGE to a locally available audited digest for isolated integration checks'",
+    "test_cpu_memory_pids_and_cpu_allocation_are_enforced_in_runtime (rollback_pilot.test_docker.DockerIntegrationTests.test_cpu_memory_pids_and_cpu_allocation_are_enforced_in_runtime) ... skipped 'set ROLLBACK_E0_DOCKER_IMAGE to a locally available audited digest for isolated integration checks'",
+    "test_each_test_has_fresh_scratch (rollback_pilot.test_docker.DockerIntegrationTests.test_each_test_has_fresh_scratch) ... skipped 'set ROLLBACK_E0_DOCKER_IMAGE to a locally available audited digest for isolated integration checks'",
+    "test_invalid_utf8_is_not_silently_normalized_into_correct_output (rollback_pilot.test_docker.DockerIntegrationTests.test_invalid_utf8_is_not_silently_normalized_into_correct_output) ... skipped 'set ROLLBACK_E0_DOCKER_IMAGE to a locally available audited digest for isolated integration checks'",
+    "test_nonroot_readonly_no_host_files_or_credentials_and_no_external_network (rollback_pilot.test_docker.DockerIntegrationTests.test_nonroot_readonly_no_host_files_or_credentials_and_no_external_network) ... skipped 'set ROLLBACK_E0_DOCKER_IMAGE to a locally available audited digest for isolated integration checks'",
+    "test_process_limit_denies_excess_children_and_tears_them_down (rollback_pilot.test_docker.DockerIntegrationTests.test_process_limit_denies_excess_children_and_tears_them_down) ... skipped 'set ROLLBACK_E0_DOCKER_IMAGE to a locally available audited digest for isolated integration checks'",
+    "test_public_syntax_runtime_and_wall_timeout_never_qualify_as_mismatch (rollback_pilot.test_docker.DockerIntegrationTests.test_public_syntax_runtime_and_wall_timeout_never_qualify_as_mismatch) ... skipped 'set ROLLBACK_E0_DOCKER_IMAGE to a locally available audited digest for isolated integration checks'",
+    "test_reference_passes_full_frozen_authored_suite_and_wrong_program_fails (rollback_pilot.test_docker.DockerIntegrationTests.test_reference_passes_full_frozen_authored_suite_and_wrong_program_fails) ... skipped 'set ROLLBACK_E0_DOCKER_IMAGE to a locally available audited digest for isolated integration checks'",
+    "test_stdout_and_stderr_each_have_bounded_capture (rollback_pilot.test_docker.DockerIntegrationTests.test_stdout_and_stderr_each_have_bounded_capture) ... skipped 'set ROLLBACK_E0_DOCKER_IMAGE to a locally available audited digest for isolated integration checks'"
+  ],
+  "tests_run": 801,
+  "wall_seconds": 1406.092
+}

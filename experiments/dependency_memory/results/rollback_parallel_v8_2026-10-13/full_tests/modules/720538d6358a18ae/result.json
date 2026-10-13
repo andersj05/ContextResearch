@@ -1,0 +1,29 @@
+{
+  "completed_test_ids": [
+    "rollback_checkpoint_v7.test_audit.LiveEvidenceTests.test_valid_metering_cannot_hide_missing_or_enabled_mcp_inventory"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "rollback_checkpoint_v7.test_audit.LiveEvidenceTests.test_valid_metering_cannot_hide_missing_or_enabled_mcp_inventory": "passed"
+  },
+  "elapsed_seconds": 0.12433039999450557,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "rollback_checkpoint_v7.test_audit.LiveEvidenceTests.test_valid_metering_cannot_hide_missing_or_enabled_mcp_inventory"
+  ],
+  "planned_test_ids": [
+    "rollback_checkpoint_v7.test_audit.LiveEvidenceTests.test_valid_metering_cannot_hide_missing_or_enabled_mcp_inventory"
+  ],
+  "process_id": 54484,
+  "skips": 0,
+  "started_test_ids": [
+    "rollback_checkpoint_v7.test_audit.LiveEvidenceTests.test_valid_metering_cannot_hide_missing_or_enabled_mcp_inventory"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\720538d6358a18ae\\tmp",
+  "tests_run": 1,
+  "unexpected_successes": 0
+}

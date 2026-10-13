@@ -1,0 +1,28 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\86f7b4c06da44ca6\\job.json",
+  "module": "test_artifact_workflow",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\86f7b4c06da44ca6\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\86f7b4c06da44ca6\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\86f7b4c06da44ca6\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\86f7b4c06da44ca6\\tmp",
+  "test_ids": [
+    "test_artifact_workflow.ArtifactWorkflowTests.test_ample_memory_makes_probe_unnecessary_and_costly",
+    "test_artifact_workflow.ArtifactWorkflowTests.test_blocked_probe_is_charged_and_budget_can_terminate",
+    "test_artifact_workflow.ArtifactWorkflowTests.test_checkpoint_rejects_different_instance",
+    "test_artifact_workflow.ArtifactWorkflowTests.test_early_clue_prevents_late_unrecoverable_failure",
+    "test_artifact_workflow.ArtifactWorkflowTests.test_final_target_is_not_disclosed_in_the_shared_prefix",
+    "test_artifact_workflow.ArtifactWorkflowTests.test_future_query_and_nonce_values_do_not_steer_prefix_policy",
+    "test_artifact_workflow.ArtifactWorkflowTests.test_invalid_configuration_is_rejected",
+    "test_artifact_workflow.ArtifactWorkflowTests.test_out_of_order_submission_cannot_skip_obligations",
+    "test_artifact_workflow.ArtifactWorkflowTests.test_policy_api_and_window_reset_exclude_old_history",
+    "test_artifact_workflow.ArtifactWorkflowTests.test_probe_only_reveals_manifest_and_cannot_reread_receipts",
+    "test_artifact_workflow.ArtifactWorkflowTests.test_revision_is_used_and_old_observation_cannot_overwrite_it",
+    "test_artifact_workflow.ArtifactWorkflowTests.test_seeded_runs_are_reproducible_with_boundary_capacity_enforced",
+    "test_artifact_workflow.ArtifactWorkflowTests.test_small_child_still_fails_after_successful_probe",
+    "test_artifact_workflow.ArtifactWorkflowTests.test_snapshot_restores_environment_context_and_cost",
+    "test_artifact_workflow.ArtifactWorkflowTests.test_terminal_verifier_checks_key_revision_and_exact_token",
+    "test_artifact_workflow.ArtifactWorkflowTests.test_unsorted_candidates_cannot_change_public_revision_rule",
+    "test_artifact_workflow.ArtifactWorkflowTests.test_zero_capacity_and_zero_delay"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

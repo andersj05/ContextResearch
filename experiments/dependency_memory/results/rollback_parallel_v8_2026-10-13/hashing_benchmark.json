@@ -1,0 +1,89 @@
+{
+  "evidence_kind": "offline_local_executable_hash_memory_and_timing_diagnostic",
+  "model_calls": 0,
+  "scope": "Fresh Python processes, one full executable hash each, sequential alternating order; native peak working set includes interpreter/imports. No model-throughput claim. No simultaneous whole-buffer stress run.",
+  "executable_bytes": 334121776,
+  "executable_sha256": "d13914ced6c7af174d8d638db938284231227312104b06a25e9608c632a7daec",
+  "chunk_bytes": 1048576,
+  "runs": [
+    {
+      "method": "whole_bytes",
+      "sha256": "d13914ced6c7af174d8d638db938284231227312104b06a25e9608c632a7daec",
+      "elapsed_seconds": 0.3916808000067249,
+      "python_allocation_peak_bytes": 334122804,
+      "working_set_before_bytes": 28581888,
+      "native_process_peak_working_set_bytes": 362795008,
+      "sequence": 1
+    },
+    {
+      "method": "stream_1mib",
+      "sha256": "d13914ced6c7af174d8d638db938284231227312104b06a25e9608c632a7daec",
+      "elapsed_seconds": 0.3489543999894522,
+      "python_allocation_peak_bytes": 1051085,
+      "working_set_before_bytes": 28844032,
+      "native_process_peak_working_set_bytes": 30023680,
+      "sequence": 2
+    },
+    {
+      "method": "stream_1mib",
+      "sha256": "d13914ced6c7af174d8d638db938284231227312104b06a25e9608c632a7daec",
+      "elapsed_seconds": 0.3622627000149805,
+      "python_allocation_peak_bytes": 1051085,
+      "working_set_before_bytes": 28729344,
+      "native_process_peak_working_set_bytes": 29908992,
+      "sequence": 3
+    },
+    {
+      "method": "whole_bytes",
+      "sha256": "d13914ced6c7af174d8d638db938284231227312104b06a25e9608c632a7daec",
+      "elapsed_seconds": 0.39691619999939576,
+      "python_allocation_peak_bytes": 334122804,
+      "working_set_before_bytes": 28790784,
+      "native_process_peak_working_set_bytes": 363003904,
+      "sequence": 4
+    },
+    {
+      "method": "whole_bytes",
+      "sha256": "d13914ced6c7af174d8d638db938284231227312104b06a25e9608c632a7daec",
+      "elapsed_seconds": 0.450803999992786,
+      "python_allocation_peak_bytes": 334122804,
+      "working_set_before_bytes": 28782592,
+      "native_process_peak_working_set_bytes": 362995712,
+      "sequence": 5
+    },
+    {
+      "method": "stream_1mib",
+      "sha256": "d13914ced6c7af174d8d638db938284231227312104b06a25e9608c632a7daec",
+      "elapsed_seconds": 0.3896200999733992,
+      "python_allocation_peak_bytes": 1051085,
+      "working_set_before_bytes": 28635136,
+      "native_process_peak_working_set_bytes": 29814784,
+      "sequence": 6
+    }
+  ],
+  "summary": {
+    "whole_bytes": {
+      "elapsed_seconds": 0.39691619999939576,
+      "python_allocation_peak_bytes": 334122804,
+      "native_process_peak_working_set_bytes": 362995712
+    },
+    "stream_1mib": {
+      "elapsed_seconds": 0.3622627000149805,
+      "python_allocation_peak_bytes": 1051085,
+      "native_process_peak_working_set_bytes": 29908992
+    }
+  },
+  "theoretical_concurrent_hash_input_buffers": [
+    {
+      "workers": 16,
+      "whole_file_bytes": 5345948416,
+      "streamed_bytes": 16777216
+    },
+    {
+      "workers": 32,
+      "whole_file_bytes": 10691896832,
+      "streamed_bytes": 33554432
+    }
+  ],
+  "source_sha256": "1edc624f2ed84c954f50db713d8feae4c9461502c9f010d294a636db517394d7"
+}

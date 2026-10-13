@@ -1,5 +1,10 @@
 # Dependency-memory diagnostics
 
+For the complete current inventory, start with the [experiment catalog](../INDEX.md)
+and its [study summaries](../summaries/). This implementation guide describes the
+original diagnostics and their commands; later study packages are indexed centrally.
+Keep code, frozen contracts and saved outputs at these stable paths.
+
 Offline diagnostics and a separately invoked development model runner for the September 16 research proposal. Python 3.11+ runs the complete test suite; the mathematical diagnostics remain compatible with Python 3.10. The standard library suffices. The offline commands below use no network, model calls, API credentials, training, or package installation.
 
 Run from the repository root:
@@ -83,6 +88,6 @@ Tests cross-check codebook enumeration against independent enumeration of binary
 
 The [development implementation](../../docs/DEVELOPMENT_PILOT.md) supplies the direct-artifact template, strict public requests, a 96-request fake-client runner, and a reproducible [three-control audit](results/development_pilot_audit.json). The older `codex_subscription.py` remains a non-dispatching preflight. The separately audited `luna_appserver.py` and explicit `run_luna_pilot.py --run` entry point completed the [first live Luna tranche](results/luna_development_2026-09-19/report.md): 96 valid requests, 36 completed workflow episodes, 21 with evidence before recovery. These are one-route development observations. Model calls are excluded from every default offline check; another live tranche needs a new frozen budget and manifest.
 
-The [post-hoc revision analysis](results/revision_analysis_report.md) grades all 36 saved parent selections under their original public views: three have strict deficits and all observed child choices are conditionally optimal. It makes no new model calls. A separate [24-request revision diagnostic](../../docs/REVISION_DIAGNOSTIC.md) is prepared with five offline fake controls; its new model allocation remains pending.
+The [post-hoc revision analysis](results/revision_analysis_report.md) grades all 36 saved parent selections under their original public views: three have strict deficits and all observed child choices are conditionally optimal. It makes no new model calls. The separate [24-request revision diagnostic](../../research/REVISION_LUNA_FINDINGS_2026-09-19.md) subsequently completed with 24 optimal selections. That simplified diagnostic does not establish a causal repair of the earlier workflow errors; its allocation is closed.
 
 Next work includes external review and novelty comparison of the scaling derivation and held-out task templates. Keep raw transcripts outside the compiler's accessible inputs when testing irreversible memory; enabling retrieval requires a separately declared and metered condition. Automatic witness minimization and native-provider baselines remain unimplemented.

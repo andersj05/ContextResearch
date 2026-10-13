@@ -1,0 +1,59 @@
+{
+  "completed_test_ids": [
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_all_existing_fixtures_match_partition_optimizer",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_forward_strategies_and_colorings_all_small_relations",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_public_cells_allow_reusing_labels",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_reject_nonhereditary_safe_family_and_impossible_singleton",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_repair_precedes_future_task",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_strategy_alphabet_respects_cost_and_useless_tools",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_triple_is_weak_not_strong_or_pair_only_coloring"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_all_existing_fixtures_match_partition_optimizer": "passed",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_forward_strategies_and_colorings_all_small_relations": "passed",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_public_cells_allow_reusing_labels": "passed",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_reject_nonhereditary_safe_family_and_impossible_singleton": "passed",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_repair_precedes_future_task": "passed",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_strategy_alphabet_respects_cost_and_useless_tools": "passed",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_triple_is_weak_not_strong_or_pair_only_coloring": "passed"
+  },
+  "elapsed_seconds": 0.383075399993686,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_all_existing_fixtures_match_partition_optimizer",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_forward_strategies_and_colorings_all_small_relations",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_public_cells_allow_reusing_labels",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_reject_nonhereditary_safe_family_and_impossible_singleton",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_repair_precedes_future_task",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_strategy_alphabet_respects_cost_and_useless_tools",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_triple_is_weak_not_strong_or_pair_only_coloring"
+  ],
+  "planned_test_ids": [
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_all_existing_fixtures_match_partition_optimizer",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_forward_strategies_and_colorings_all_small_relations",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_public_cells_allow_reusing_labels",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_reject_nonhereditary_safe_family_and_impossible_singleton",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_repair_precedes_future_task",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_strategy_alphabet_respects_cost_and_useless_tools",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_triple_is_weak_not_strong_or_pair_only_coloring"
+  ],
+  "process_id": 9528,
+  "skips": 0,
+  "started_test_ids": [
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_all_existing_fixtures_match_partition_optimizer",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_forward_strategies_and_colorings_all_small_relations",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_public_cells_allow_reusing_labels",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_reject_nonhereditary_safe_family_and_impossible_singleton",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_repair_precedes_future_task",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_strategy_alphabet_respects_cost_and_useless_tools",
+    "novelty_audit.test_novelty_audit.NoveltyAuditTests.test_triple_is_weak_not_strong_or_pair_only_coloring"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\478b47bcf25a7d83\\tmp",
+  "tests_run": 7,
+  "unexpected_successes": 0
+}

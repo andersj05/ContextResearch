@@ -1,0 +1,69 @@
+{
+  "completed_test_ids": [
+    "test_scheduler.DependencySchedulerTests.test_continuation_runs_while_unrelated_prefix_is_still_blocked",
+    "test_scheduler.DependencySchedulerTests.test_empty_schedule_and_submission_notifications",
+    "test_scheduler.DependencySchedulerTests.test_failed_persistence_never_releases_children",
+    "test_scheduler.DependencySchedulerTests.test_global_admission_stop_keeps_fixed_job_dispositions",
+    "test_scheduler.DependencySchedulerTests.test_invalid_schedule_rejected_before_any_submission",
+    "test_scheduler.DependencySchedulerTests.test_one_arm_error_is_callback_owned_and_does_not_drop_other_dispositions",
+    "test_scheduler.DependencySchedulerTests.test_ready_pair_precedes_unstarted_prefix_and_keeps_frozen_arm_order",
+    "test_scheduler.DependencySchedulerTests.test_sixteen_and_thirty_two_actual_workers_without_duplicate_jobs",
+    "test_scheduler.DependencySchedulerTests.test_unknown_prefix_still_materializes_both_skips_without_retry"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "test_scheduler.DependencySchedulerTests.test_continuation_runs_while_unrelated_prefix_is_still_blocked": "passed",
+    "test_scheduler.DependencySchedulerTests.test_empty_schedule_and_submission_notifications": "passed",
+    "test_scheduler.DependencySchedulerTests.test_failed_persistence_never_releases_children": "passed",
+    "test_scheduler.DependencySchedulerTests.test_global_admission_stop_keeps_fixed_job_dispositions": "passed",
+    "test_scheduler.DependencySchedulerTests.test_invalid_schedule_rejected_before_any_submission": "passed",
+    "test_scheduler.DependencySchedulerTests.test_one_arm_error_is_callback_owned_and_does_not_drop_other_dispositions": "passed",
+    "test_scheduler.DependencySchedulerTests.test_ready_pair_precedes_unstarted_prefix_and_keeps_frozen_arm_order": "passed",
+    "test_scheduler.DependencySchedulerTests.test_sixteen_and_thirty_two_actual_workers_without_duplicate_jobs": "passed",
+    "test_scheduler.DependencySchedulerTests.test_unknown_prefix_still_materializes_both_skips_without_retry": "passed"
+  },
+  "elapsed_seconds": 0.0487462000164669,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "test_scheduler.DependencySchedulerTests.test_continuation_runs_while_unrelated_prefix_is_still_blocked",
+    "test_scheduler.DependencySchedulerTests.test_empty_schedule_and_submission_notifications",
+    "test_scheduler.DependencySchedulerTests.test_failed_persistence_never_releases_children",
+    "test_scheduler.DependencySchedulerTests.test_global_admission_stop_keeps_fixed_job_dispositions",
+    "test_scheduler.DependencySchedulerTests.test_invalid_schedule_rejected_before_any_submission",
+    "test_scheduler.DependencySchedulerTests.test_one_arm_error_is_callback_owned_and_does_not_drop_other_dispositions",
+    "test_scheduler.DependencySchedulerTests.test_ready_pair_precedes_unstarted_prefix_and_keeps_frozen_arm_order",
+    "test_scheduler.DependencySchedulerTests.test_sixteen_and_thirty_two_actual_workers_without_duplicate_jobs",
+    "test_scheduler.DependencySchedulerTests.test_unknown_prefix_still_materializes_both_skips_without_retry"
+  ],
+  "planned_test_ids": [
+    "test_scheduler.DependencySchedulerTests.test_continuation_runs_while_unrelated_prefix_is_still_blocked",
+    "test_scheduler.DependencySchedulerTests.test_empty_schedule_and_submission_notifications",
+    "test_scheduler.DependencySchedulerTests.test_failed_persistence_never_releases_children",
+    "test_scheduler.DependencySchedulerTests.test_global_admission_stop_keeps_fixed_job_dispositions",
+    "test_scheduler.DependencySchedulerTests.test_invalid_schedule_rejected_before_any_submission",
+    "test_scheduler.DependencySchedulerTests.test_one_arm_error_is_callback_owned_and_does_not_drop_other_dispositions",
+    "test_scheduler.DependencySchedulerTests.test_ready_pair_precedes_unstarted_prefix_and_keeps_frozen_arm_order",
+    "test_scheduler.DependencySchedulerTests.test_sixteen_and_thirty_two_actual_workers_without_duplicate_jobs",
+    "test_scheduler.DependencySchedulerTests.test_unknown_prefix_still_materializes_both_skips_without_retry"
+  ],
+  "process_id": 42676,
+  "skips": 0,
+  "started_test_ids": [
+    "test_scheduler.DependencySchedulerTests.test_continuation_runs_while_unrelated_prefix_is_still_blocked",
+    "test_scheduler.DependencySchedulerTests.test_empty_schedule_and_submission_notifications",
+    "test_scheduler.DependencySchedulerTests.test_failed_persistence_never_releases_children",
+    "test_scheduler.DependencySchedulerTests.test_global_admission_stop_keeps_fixed_job_dispositions",
+    "test_scheduler.DependencySchedulerTests.test_invalid_schedule_rejected_before_any_submission",
+    "test_scheduler.DependencySchedulerTests.test_one_arm_error_is_callback_owned_and_does_not_drop_other_dispositions",
+    "test_scheduler.DependencySchedulerTests.test_ready_pair_precedes_unstarted_prefix_and_keeps_frozen_arm_order",
+    "test_scheduler.DependencySchedulerTests.test_sixteen_and_thirty_two_actual_workers_without_duplicate_jobs",
+    "test_scheduler.DependencySchedulerTests.test_unknown_prefix_still_materializes_both_skips_without_retry"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\29db798d53ed6980\\tmp",
+  "tests_run": 9,
+  "unexpected_successes": 0
+}

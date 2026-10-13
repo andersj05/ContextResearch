@@ -1,0 +1,20 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\5a358c1d02260c79\\job.json",
+  "module": "test_transfer_continuation",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\5a358c1d02260c79\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\5a358c1d02260c79\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\5a358c1d02260c79\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\5a358c1d02260c79\\tmp",
+  "test_ids": [
+    "test_transfer_continuation.ContinuationTests.test_every_manifest_and_initial_ledger_exists_before_first_decision",
+    "test_transfer_continuation.ContinuationTests.test_exact_case_filtering_and_global_original_order",
+    "test_transfer_continuation.ContinuationTests.test_live_execute_defensively_rejects_wrong_wire_contract_before_dispatch",
+    "test_transfer_continuation.ContinuationTests.test_policy_failures_remain_without_replacement",
+    "test_transfer_continuation.ContinuationTests.test_residual_budget_does_not_renew_original_worker_allocation",
+    "test_transfer_continuation.ContinuationTests.test_saved_raw_audit_reaches_client_attestation_before_launch_readiness",
+    "test_transfer_continuation.ContinuationTests.test_uncertain_attempt_retains_residual_reservation",
+    "test_transfer_continuation.ContinuationTests.test_wrong_wire_contract_is_rejected_before_client_or_process_creation",
+    "test_transfer_continuation.ContinuationTests.test_wrong_worker_certificate_is_rejected"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

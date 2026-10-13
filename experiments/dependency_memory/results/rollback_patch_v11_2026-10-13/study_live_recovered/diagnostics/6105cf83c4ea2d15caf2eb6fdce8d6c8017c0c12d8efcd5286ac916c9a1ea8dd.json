@@ -1,0 +1,1 @@
+{"observation":{"item_counts":{"reasoning":4,"userMessage":2},"method_counts":{"error":1,"item/completed":3,"item/started":3,"other":8,"thread/tokenUsage/updated":1,"turn/completed":1},"server_error_codes":["sessionBudgetExceeded"],"turn_statuses":["failed"]},"phase":"collect","reason_code":"single_answer_and_usage_required","version":1}

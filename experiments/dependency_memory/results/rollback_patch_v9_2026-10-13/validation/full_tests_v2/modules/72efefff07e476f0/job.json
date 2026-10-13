@@ -1,0 +1,30 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\72efefff07e476f0\\job.json",
+  "module": "rollback_pilot.subscription.test_subscription",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\72efefff07e476f0\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\72efefff07e476f0\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\72efefff07e476f0\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\72efefff07e476f0\\tmp",
+  "test_ids": [
+    "rollback_pilot.subscription.test_subscription.SubscriptionTests.test_actual_telemetry_settles_without_API_conversion",
+    "rollback_pilot.subscription.test_subscription.SubscriptionTests.test_body_bound_counts_escaping_and_duplicated_schema",
+    "rollback_pilot.subscription.test_subscription.SubscriptionTests.test_calibration_fixtures_are_excluded_and_private_fields_unsent",
+    "rollback_pilot.subscription.test_subscription.SubscriptionTests.test_crash_reservation_survives_reopening_and_blocks_admissions",
+    "rollback_pilot.subscription.test_subscription.SubscriptionTests.test_credit_ceiling_rejects_the_next_whole_reservation",
+    "rollback_pilot.subscription.test_subscription.SubscriptionTests.test_dispatch_failure_is_durable_and_blocks_the_next_identity",
+    "rollback_pilot.subscription.test_subscription.SubscriptionTests.test_evaluator_cannot_cross_actor_render_boundary",
+    "rollback_pilot.subscription.test_subscription.SubscriptionTests.test_exclusive_cached_and_reasoning_buckets",
+    "rollback_pilot.subscription.test_subscription.SubscriptionTests.test_existing_allocation_configuration_cannot_increase",
+    "rollback_pilot.subscription.test_subscription.SubscriptionTests.test_frozen_calibration_rejects_tampering_and_E2_authorization",
+    "rollback_pilot.subscription.test_subscription.SubscriptionTests.test_invalid_metering_cannot_settle",
+    "rollback_pilot.subscription.test_subscription.SubscriptionTests.test_known_malformed_text_is_a_format_failure",
+    "rollback_pilot.subscription.test_subscription.SubscriptionTests.test_only_supplied_lists_have_source_aliases",
+    "rollback_pilot.subscription.test_subscription.SubscriptionTests.test_quota_cannot_silently_switch_to_credits",
+    "rollback_pilot.subscription.test_subscription.SubscriptionTests.test_renderer_rejects_forged_private_record_fields",
+    "rollback_pilot.subscription.test_subscription.SubscriptionTests.test_response_saved_before_invalid_usage_stops_allocation",
+    "rollback_pilot.subscription.test_subscription.SubscriptionTests.test_shared_primary_context_and_deleted_branch_routing",
+    "rollback_pilot.subscription.test_subscription.SubscriptionTests.test_unknown_dispatch_keeps_reserve_and_never_replays",
+    "rollback_pilot.subscription.test_subscription.SubscriptionTests.test_writer_limit_is_explicitly_bytes_without_repair"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

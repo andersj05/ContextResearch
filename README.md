@@ -1,297 +1,76 @@
 # ContextResearch
 
-Research on memory, compaction, and context management for long-running language-model agents. This is the working repository for the paper and its evidence, experiments, and drafts.
-
-**Current question:** When future task dependencies become known gradually, which compressed representations can survive successive memory limits without additional decision error, and how much extra memory is needed when they cannot?
-
-**October 2 exact-priced finite code:** [the larger-group construction](research/EXACT_PRICED_GROUP_CODE_2026-10-02.md)
-lowers the 12288-block error bound to 27.047565%, with the same 2k-bit
-parent and one-bit child. Its upper bound is below the named C74 code's
-base lower bound. The gain is small: about 0.017105 percentage points
-between upper bounds, with 94754 packed public bytes including planning
-weights versus 1288 before. Local large encodes take 11–19 seconds.
-All ten starts and 41943040 complete source assignments retain independent
-minimum checks. A separate actual-limit family reaches 26.901709%;
-C72 growing remains better. Claim C75; no model calls or natural episodes.
-Near-C67 coding, external review and practical-agent benefit remain open.
-
-**Earlier October 2 stronger finite overflow certificates:** [the loss-weighted construction](research/LOSS_WEIGHTED_OVERFLOW_2026-10-02.md)
-uses the unchanged C72 actors with a new public allocation. Error is at most
-27.450867% at 768 blocks, below C69's exact 27.472579%, and at most 27.064671%
-at 12,288 blocks. Parent capacity stays exactly 2k bits including the flag,
-then one child bit before J. The same 1,288 public table bytes suffice.
-Exact convex search minimizes five outward bounds over every integer
-allocation; actual-risk optimality is open. Three smaller checked lengths
-still lose to C69. All 384 unsuccessful ECVQ/fixed-response starts survive
-with exact population-map grading. Claim C74; zero new model calls or natural
-episodes. All 583 offline tests, repository validation and paper assembly
-pass. Useful near-C67 coding and practical-agent benefit remain open.
-
-**Earlier October 2 deterministic code reaches the limiting optimum:** [the construction and proof](research/DETERMINISTIC_NEAR_LIMIT_CODE_2026-10-02.md)
-give an implemented polynomial public builder and actors at exactly 2k parent
-bits and one child bit before J. The actual family tends to C67's unchanged
-26.189898% optimum at every integer input length. This is a constructive
-application of established greedy coverage/source coding, not a new generic
-algorithm. Useful finite convergence stays open: the small three-block code
-loses to C69, and one conservative bound below 26.560821% uses group size 10^10,
-which first occurs at k=2^(99,999,999,999) under the public schedule.
-Large codebooks were not built. Claim C73; 16 bindings, 454848 complete small
-actor queries and retained negative controls. Zero new model calls or natural
-episodes; external review/priority and practical-agent benefits remain open.
-
-**Earlier October 2 coordinated tied-answer code:** [the construction and proof](research/COORDINATED_TIE_CODE_2026-10-02.md)
-coordinate equally good constant responses across blocks. Their error stays
-5/16 while entropy falls; two-block compatible entropy is exactly minimized
-by counts [121,85,25,25]/256. A fixed eight-block arithmetic code has error
-at most 27.080384% at k=12,288, below both C71 codes' base-error lower bounds,
-with the same 2k-bit parent including its flag and one-bit child before J.
-Its limit is 26.929308%; a separate implemented polynomial growing-group
-family tends to 26.782918%, still above C67. Public fixed-eight data increase
-to 1,288 packed bytes versus C71's 10. Forty finite bounds preserve smaller
-failures; published greedy cover and generic entropy coding remain precedents.
-Claim C72; external review and natural-agent benefit open. Zero new model
-calls or prospective natural episodes.
-
-**Earlier October 2 implemented hard-cap entropy code:** [the construction and proof](research/HARD_CAP_ENTROPY_CODE_2026-10-02.md)
-give a polynomial algorithm with exactly 2k parent bits, including its fallback
-flag, and one child bit before the final query. At k=12,288 a retained public
-schedule has error at most 27.198892%, below the earlier repeated six-block
-code's 27.472579%. The default implemented schedule tends to 27.075301%; it
-still stays above the optimal 26.189898% limit. Sixteen exact finite bounds
-include four smaller lengths that provably lose and a stronger finite control.
-Public response/probability tables use 10 packed bytes, with program/framing
-separate. Claim C71; this is a uniform bit-model result, with external review,
-near-optimal coding and natural-agent benefit open. Zero new model calls or
-prospective natural episodes; entropy coding and time sharing are established.
-
-**Earlier October 2 query-prior and timing extension:** [the new deductions and controls](research/QUERY_PRIOR_TIMING_2026-10-02.md)
-separate known query probabilities, unknown-prior minimax and an actual class
-cue before compression. Known 25%/75% queries have optimal limiting error near
-25.718661%; unknown-prior minimax retains the uniform 26.189898% limit. An
-early realized class cue reaches 25% using 3n bits inside the same 4n cap.
-A deterministic opposite-orientation pair preserves the finite 27.472579%
-error for every source-independent class prior without extra instance state.
-Unequal allocation beats it at skewed known priors. Five exact asymptotic
-witnesses and 52 exact finite segments are checked; these are scoped C33/C67
-consequences and fixed-book controls, with external review and efficient
-near-curve codes open. Claim C70; zero new model calls or natural episodes.
-
-**Earlier October 2 stronger finite code:** the [conditional six-block construction](research/CONDITIONAL_SIX_BLOCK_CODE_2026-10-02.md)
-has 331,857,648 errors on 1,207,959,552 outcomes, versus 331,890,688 for two
-refined three-block components, at the same 12-bit parent and one-bit child.
-An independent complete component replacement screen finds no improvement,
-yet its product has an improving single joint word. Eight changes give
-27.472579% error; independent six-block segments preserve it at k=6*n and beat
-the stronger three-block control at k=12*n. Labels use 120 public payload bytes.
-The three-block unrestricted bracket tightens to [40,072,40,514]/147,456.
-This is a small finite gain and a scoped counterexample, with optimality,
-external correctness/priority and natural-agent benefit open. No model call
-or prospective episode is added; earlier results below are dated milestones.
-
-**Earlier October 2 finite encoder (C68):** [a fixed trellis construction](research/FINITE_TRELLIS_CODE_2026-10-02.md)
-achieves 867,837 errors on all 3,145,728 four-block outcomes, versus the
-pair-product control's 869,376, with the same eight-bit parent and one-bit child.
-An exact 16-state encoder uses 1024*k branch relaxations; independent four-block
-groups preserve this error for k=4*n at two parent bits per block. Labels occupy
-96 packed public data bytes. At common lengths k=12*n, the existing three-block
-product remains better. Smaller cycles perform worse, and optimality,
-quality near the asymptotic curve and publication priority remain open. No
-model call or natural workflow is added; generic trellis coding is established.
-
-**October 2 full asymptotic curve:** [the unrestricted rate theorem](research/UNRESTRICTED_RATE_CURVE_2026-10-02.md)
-extends the unsigned scalar formula to every parent rate in the uniform four-bit
-model with a one-bit child before the final query. Forty-eight exact polynomial
-comparisons certify decoder dominance over the whole parameter interval. The
-limiting error runs from 1/2 at zero rate to 1/4 at about 2.548795 bits per block;
-the support transition is near 0.620690 bits per block. Finite optimal codes,
-external correctness and publication priority remain open. No model or natural
-workflow result is added; earlier milestone scopes below remain dated history.
-
-**October 2 decoder reduction:** [complementary completion](research/COMPLEMENTARY_COMPLETION_2026-10-02.md)
-proves that complementary final endpoints suffice for every block count and
-parent capacity under the balanced-source, average-error contract. The old
-encoder stays fixed, and child labels only receive public swaps. The remaining
-all-rate comparison has six families. A biased-source counterexample and
-individual harms delimit the result; the existing numerical frontier is unchanged.
-No model call or natural workflow is added.
-
-**October 1 parent-rate spectrum:** [new exact support certificates](research/PARENT_RATE_SPECTRUM_2026-10-01.md)
-enclose limiting error at eight rational parent rates, each checking every
-allowed decoder. A separate analytic reduction gives a unique two-word/eight-word
-support transition for the unsigned decoder near 0.620690001029 information bits
-per block. The final memory is still one bit. The unrestricted curve between
-checked slopes, efficient finite codes and publication priority remain open.
-This is a mathematical result, with zero new model calls or natural tasks.
-
-**October 1 stronger scope control:** [AST access-use analysis](research/STATIC_SCOPE_CONTROL_2026-10-01.md)
-agrees with three inspected repository programs and one constructed late-key
-family on 51,566 finite input/query rows. With one shared codec, it answers
-24/24 imposed dispatch queries at 1,958 parent and 950–1,009 child bytes,
-matching the authored contract and five fitting saved model contracts.
-Quota uses whole-input fallback; two model contracts remain oversized.
-This is a stronger zero-model control, not universal semantic proof or a new
-natural task. The original model criterion and permanent gap stay unchanged.
-
-**October 1 finite coding advance:** a [fixed three-block code](research/JOINT_THREE_BLOCK_WITNESS_2026-10-01.md)
-reduces exact average bit error from 27.7995% to 27.4855% using the same six-bit
-parent and one-bit child. All 147,456 outcomes are checked; this is an achievable
-construction, with finite optimality and publication priority still open.
-The [all-decoder finite converse](research/ALL_DECODER_THREE_BLOCK_COVER_2026-10-01.md)
-now encloses the unrestricted three-block optimum in [27.1756%, 27.4855%],
-including noncomplementary and repeated endpoints. An oracle gate and 46,492
-near mixed orbit cases cover every final decoder; exact finite optimality and
-external proof/priority review remain open. This extends the earlier
-[restricted](research/JOINT_THREE_BLOCK_COVER_2026-10-01.md) and
-[complementary](research/COMPLEMENTARY_DECODER_COVER_2026-10-01.md) converses.
-The asymptotic frontier is unchanged.
-
-**October 1 serialization control:** the [existing public schema](research/SCOPE_CODEBOOK_CONTROL_2026-10-01.md)
-answers all 24 constructed late queries under unchanged byte caps, as do cached
-public-program outcomes; ordinary authored JSON answers 12/24. This narrows the
-remaining question to complete automatic scope inference and changing query
-demands. The [eight-call source-only study](experiments/dependency_memory/scope_inference/PROTOCOL.md)
-was specifically approved, then stopped before dispatch due to a missing
-reservation directory. The [separate corrected launch](experiments/dependency_memory/scope_inference_v2/README.md)
-preserves all scientific inputs and has new local identities.
-The [completed dispatch findings](research/SCOPE_INFERENCE_FINDINGS_2026-10-01.md)
-combine that launch with its separately frozen unattempted suffix: eight
-dispatches, seven catalog-complete contracts and one permanent timeout. Two
-contracts exceed the parent cap; five answer 12/24 late queries. The primary
-criterion remains unassessable. No new natural task is added.
-
-**October 1 method audit:** the [local derivation and finite comparisons](research/WORKFLOW_METHOD_AUDIT_2026-10-01.md)
-show that exact checked tables with fallback add no receipt state over direct
-projection in this known format. E0001's actual query is answerable from B alone.
-The [new frozen offline runtime](experiments/dependency_memory/workflow_prospective/README.md)
-uses four proposed model arms and screens actual parent dependence before a
-future study. No provider generation or prospective outcome is added.
-
-**October 1 evidence-use investigation:** a [post-hoc offline audit](research/EVIDENCE_USE_AUDIT_2026-10-01.md)
-reconciles 319 observed final answers and 53 errors. A hand-written check of
-retained public-rule evidence contradicts 32 wrong proposals, while leaving 39
-correct proposals uncheckable. No repaired-task or new model gain is measured.
-The [new intake segments](experiments/dependency_memory/workflow_intake/README.md)
-keep actual research workflows, evaluator labels and actor inputs in this one
-repository. This task is inspected development evidence; future prospective
-tasks and the old private held-out study remain unperformed.
-The first registered task has two pinned checkpoints and six successful actual
-command runs. Direct receipts fit both memory limits. All 434 tests pass at the
-second checkpoint; repository validation and paper assembly also pass.
-
-**September 29 executed-workflow follow-up:** the [108-call plan](research/EXECUTED_WORKFLOW_COMPARISON_2026-09-29.md)
-stopped after 26 dispatches across two frozen launches: 24 metered answers, two
-transport failures and 82 never-dispatched identities. One direct-record final
-answer is wrong despite sufficient retained evidence. Only one case is fully
-paired, so there is no method ranking. The twelve scripted scenarios include
-48 actual command executions and remain separate from untouched real workflows.
-
-**September 29 live development comparison:** [36 Luna 6 medium calls](research/WORKFLOW_LUNA6_COMPARISON_2026-09-29.md)
-complete for 1.0105070 token-derived planning credits. Checked memory, direct
-records, indexed recovery and full history each score 4/4; strong prose scores
-3/4. Direct records use the fewest model credits in both cache views. The four
-cases share one observed local capture and three constructed continuations;
-they do not complete the held-out study or establish production savings.
-
-**September 29 evaluation packet:** the [observed-workflow packet](experiments/dependency_memory/workflow_eval/README.md)
-adds a frozen offline design, independent receipt grader and one real local
-test/validate/build development capture. It compares five proposed methods under
-two memory limits, with an explicit proposed run budget and go/no-go criteria.
-The packet remains checkable offline. Its held-out intake and evaluation remain
-unfinished; the separately frozen development launch above preserves the
-original packet's evidence and zero-call historical state.
-
-**September 24 handoff correction:** A [versioned decoder-compatible parent check](research/DECODER_COMPATIBILITY_REPLAY_2026-09-24.md)
-closes the specific checked-arm parent/child mismatch found in the cross-record
-study. Offline replay of its saved parents rejects six proposals the old ID
-check accepted, then verifies all 252 possible two-owner child handoffs after
-fallback. This does not change the original terminal results. The next
-empirical milestone is an actual subsequent executable workflow with a
-frozen grader and equally informed direct/indexed controls.
-
-**Latest September 22 test:** [cross-record dependency stress test](research/CROSS_RECORD_RECOVERY_2026-09-22.md) freezes twelve constructed retry, CI and data-job traces with evidence split across shuffled tool results. The original 348-call schedule stopped on one provider error; a separately frozen extension dispatched only the 149 never-attempted calls. On 35 fully answered paired cases, automatic direct records fail 7 times versus 3 for strong prose prompting, 4 for hand-written direct records and 1 for raw full-workflow indexed recovery. Automatic records retain enough facts for all 36 futures, but final-model decisions still fail. The original primary criterion is unassessable, and the exploratory paired comparison does **not** establish the candidate contribution. The checked proposal arm has a recorded parent-check/child-decoder defect. These are constructed traces with known domain grammars, not production workflows.
-
-The earlier [annotated-schema test](research/SCHEMA_CHECKS_UNSEEN_TRACES_2026-09-22.md) completed 72 calls and tied all arms at 12/12; the [different-schema prospective test](research/SCHEMA_TRANSFER_PROSPECTIVE_2026-09-22.md) completed 126 calls and met a narrow criterion, while indexed recovery remained cheaper and more accurate.
-
-**Latest September 22 milestone:** [141 new GPT-6 Luna medium calls](research/LUNA6_DELAYED_FAILURES_2026-09-22.md) expose delayed blocker loss, exact-identifier corruption and artifact/approval confusion. In the fixed pilot, checked replacement reaches 16/16 decisions versus 8/16 for structured memory while using 8.9% fewer model credits. Direct dependency rows and indexed recovery are much cheaper successful controls. A stronger 24-call prompt control eliminates clipping but reaches 12/16, leaving semantic failures. These are constructed development workflows, not native-compaction or production-total-cost gains. [Combined results](experiments/dependency_memory/results/luna6_memory_report.md).
-
-The earlier [historical workflow replay](research/HISTORICAL_WORKFLOW_REPLAY_2026-09-22.md) preserves eight actual attempt records and synthetic matched-resource comparisons; its direct-receipt baseline also outperforms iterative repair costs.
-
-The earlier [strict novelty audit](research/FEEDBACK_NOVELTY_AUDIT_2026-09-22.md) finds close precedents and explicitly reformulates our finite repair objective as accepted recovery strategies and weak hypergraph coloring. No general feedback-algorithm novelty or practical superiority is established. Automatic extraction on unseen workflow structures and measured production benefit remain open.
-
-The [feedback-before-forgetting adapter](research/FEEDBACK_BEFORE_FORGETTING_2026-09-22.md) closes a propose-audit-repair loop through two record-memory boundaries. Accumulated failure constraints repair a weak schema; latest-only feedback cycles. A strong critical-field baseline matches the loop across all 48 constructed contracts. Controls expose missed obligations and extra information carried by record identity or oracle feedback. [Run it](experiments/dependency_memory/feedback_compaction/README.md).
-
-The [September 21 collision auditor](research/COMPACTION_COLLISION_AUDIT_2026-09-21.md) supplies whole-group recovery certificates and minimum extra-state repairs. The feedback extension adapts it to the existing constructed workflow; natural-task extraction, scalability and publication novelty remain open.
-
-The repository contains an exact finite-chain computation (9/32 error versus a 1/4 isolated-child optimum), a scaling derivation with a uniform error gap, and a [joint-coding extension](research/JOINT_BLOCK_CODING_2026-09-21.md): two blocks improve on the one-block loss, while the asymptotic threshold for approaching the child optimum is about 2.5488 bits per block. The [decoder-complete follow-up](research/DECODER_COMPLETE_FRONTIER_2026-09-21.md) now certifies the limiting error at two bits per block within **(0.2618989799, 0.2618989801)**, covering all 1,679,616 decoder tables and arbitrary joint encoders. A deterministic artifact/manifest environment supplies an exact restricted recovery reference. Start with the [living findings draft](paper/findings-draft.md). External proof review and novelty assessment remain open. The project does **not** yet establish an LLM performance improvement or savings over native Codex or Claude compaction.
+Research on repeated context compression when future task dependencies become
+known gradually. We study which representations survive successive memory limits,
+what information must be retained, and whether the mechanism helps real agents.
 
 ## Start here
 
-For a nontechnical explanation of the question, completed findings, and remaining work, read [What this research is trying to find out](research/PLAIN_LANGUAGE_GUIDE_2026-09-19.md).
+For a visual introduction, open the [research overview](docs/research-overview.html):
+the question, results, key decisions, searchable study library and next steps.
+It is a self-contained HTML snapshot as of October 9, 2026.
 
-1. [Current status and next work](docs/STATUS.md) — the shortest reliable handoff.
-2. [Research map](docs/RESEARCH_MAP.md) — active work, background, and evidence limitations.
-3. [Paper workspace](paper/README.md) — outline, manuscript starter, bibliography, and claim register.
-4. [Detailed research proposal](research/LIVE_DEPENDENCY_RESEARCH_PROPOSAL_2026-09-16.md) — model, proof, and experiment design.
-5. [Experiment protocol](docs/EXPERIMENT_PROTOCOL.md) — information access, native reasoning state, cache costs, and controls.
-6. [Proof audit](research/PROOF_AUDIT_2026-09-18.md) and [deterministic environment results](experiments/dependency_memory/results/artifact_workflow_report.md) — the latest completed work.
-7. [Recovery comparison](experiments/dependency_memory/results/recovery_frontier_report.md) and [literature positioning](research/LITERATURE_POSITIONING_2026-09-18.md) — when early inspection is worth its cost, and what remains unresolved.
-8. [Exact finite-chain optimum](research/EXACT_CHAIN_OPTIMUM_2026-09-19.md) — exhaustive search and a simple attaining construction.
-9. [Pilot specification](docs/LLM_PILOT_SPEC.md) and [Luna development contract](docs/LUNA_DEVELOPMENT_RUN.md) — staged decision/retention evaluation, schedule, and bounded subscription transport.
-10. [Revision analysis](experiments/dependency_memory/results/revision_analysis_report.md) and [completed follow-up](research/REVISION_LUNA_FINDINGS_2026-09-19.md) — three early-retention deficits in the first run, followed by 24 optimal selections in a separate simplified diagnostic.
-11. [Held-out clue checkpoint](docs/HELDOUT_RENDERERS.md) — four implemented offline dependency formats; provider integration and evaluation remain unfinished.
-12. [Completed matched retention study](research/TRANSFER_LUNA_FINDINGS_2026-09-19.md) — 1,536 Luna requests, 1,533 valid responses, and no established benefit from prospective guidance in the primary comparison.
+1. [Current status](docs/STATUS.md): scientific checkpoint, open questions and next gates.
+2. [Research map](docs/RESEARCH_MAP.md): choose the evidence relevant to your task.
+3. [Experiment catalog](experiments/INDEX.md): summaries of every registered local
+   study and diagnostic family, including negative results, interrupted runs and plans.
 
-Agents should first read [AGENTS.md](AGENTS.md). Historical notes are evidence and background; they do not override the current direction in `docs/STATUS.md`.
+For research agents, read [AGENTS.md](AGENTS.md), then the three entry points above.
+Load the selected summary and its primary evidence before making a claim. The
+171-paper inherited library is available for targeted retrieval, not required context.
+
+## Current evidence
+
+The scientific checkpoint is October 2, 2026: C75, living draft v0.42. The local
+theory includes the exact four-bit chain optimum **9/32**, the full asymptotic
+rate curve, and finite coding constructions. Model studies contain useful failure
+observations and strong direct-retention/recovery controls. **Practical improvement
+over deployed or native compaction remains unestablished.** External proof and
+priority review remain open. See [status](docs/STATUS.md) for the current scope;
+the [historical handoff](docs/history/STATUS_2026-10-02.md) retains earlier milestones.
 
 ## Repository map
 
-| Directory | Contents |
+| Location | Purpose and entry point |
 |---|---|
-| `paper/` | Editable paper documents, references, and claim tracking |
-| `docs/` | Current status, decisions, protocols, and contribution workflow |
-| `experiments/dependency_memory/` | Standard-library Python diagnostics, tested workflow environment, and reproducible results |
-| `research/` | Compaction survey, mathematics, proposal, and earlier research notes |
-| `sources/` | Focused reading guide and pinned Codex, Pi, and OMP source snapshots |
-| `papers/`, `paper-notes/` | Inherited library of 171 academic PDFs and associated notes |
-| `source-notes/`, `synthesis/`, `catalog/` | Broader harness research, source metadata, and earlier claim ledger |
-| `compaction_frontier_v1/` | Historical third-party release; read the evidence limitations before using it |
-| `scripts/` | Offline validation, paper assembly, and earlier corpus utilities |
-| `provenance/` | Migration manifest, source hashes, and setup validation |
+| [docs/](docs/README.md) | Current status, decisions, protocols and research workflow |
+| [experiments/](experiments/README.md) | Study registry and categorized summaries |
+| [experiments/dependency_memory/](experiments/dependency_memory/README.md) | Executable code, frozen contracts and saved results at stable paths |
+| [research/](research/README.md) | Derivations, findings, source comparisons and dated audits |
+| [paper/](paper/README.md) | Manuscript, living findings, authoritative claim register and bibliography |
+| [sources/](sources/READING_GUIDE.md) | Focused readings and pinned implementation snapshots |
+| [papers/](papers/), [paper-notes/](paper-notes/INDEX.md) | Inherited academic library and notes |
+| [source-notes/](source-notes/INDEX.md), [synthesis/](synthesis/00-executive-map.md), [catalog/](catalog/sources.csv) | Inherited implementation notes, synthesis and source metadata |
+| [provenance/](provenance/README.md) | Import records, source hashes and setup history |
+| [compaction_frontier_v1/](compaction_frontier_v1/docs/README.md) | Historical supplied release; read its [evidence limitations](research/COMPACTION_FRONTIER_REVERSE_ENGINEERING.md) |
+| [scripts/](scripts/README.md) | Index maintenance, validation and paper assembly |
+
+See [where files belong](docs/REPOSITORY_STRUCTURE.md) before adding or moving files.
+Use ignored `build/` for generated previews and `tmp/` for disposable work.
 
 ## Reproduce the completed work
 
-Python 3.11 or newer runs the complete current test suite, including the subscription adapter's offline TOML configuration checks. The mathematical diagnostics themselves remain compatible with Python 3.10. The offline commands below need no packages, model API, network, credentials, or GPU.
-
-The executed-workflow artifact-reproduction checks use the recorded Windows
-environment and its native line endings; byte-identical build output on other
-operating systems is not established.
+Run from the repository root with Python 3.11+. These checks are offline and
+require no model credentials, packages or GPU:
 
 ```powershell
-python -m unittest discover -s experiments/dependency_memory -v
-python experiments/dependency_memory/experiment.py
-python experiments/dependency_memory/compatibility.py
-python experiments/dependency_memory/compatibility_scaling.py
-python experiments/dependency_memory/audit_scaling.py
-python experiments/dependency_memory/joint_coding/coding.py
-python experiments/dependency_memory/joint_coding/decoder_frontier.py
-python -m experiments.dependency_memory.collision_audit.run
-python -m experiments.dependency_memory.feedback_compaction.run
-python -m experiments.dependency_memory.workflow_replay.run
-python experiments/dependency_memory/run_artifact_workflow.py
-python experiments/dependency_memory/run_recovery_frontier.py
-python experiments/dependency_memory/pilot_plan.py
+python scripts/build_experiment_index.py --check
+python -m unittest discover -s experiments/dependency_memory -t . -v
 python scripts/validate_context_repo.py
 python scripts/build_paper.py
 ```
 
-The experiment scripts regenerate their committed diagnostic results. The paper builder writes an assembled Markdown draft and a self-contained HTML preview under ignored `build/paper/`. The validator is read-only. See [the workflow](docs/RESEARCH_WORKFLOW.md) for details.
-
-To rerun the full 171,798,901-partition search efficiently, use an installed C99 compiler: `python experiments/dependency_memory/exact_chain.py --compiler clang --output experiments/dependency_memory/results/exact_chain_certificate.json`. The recorded run used Clang 19.1.0. The standard test/validation workflow needs no compiler and checks the search source hash, count, and complete witness rather than rerunning the full search. The script also supplies a slower standard-library Python backend.
-
-For a read-only comparison of a fresh full search against the committed certificate, run `python scripts/validate_context_repo.py --exact-chain-compiler clang`. The ordinary validator also regenerates the original 14-row coding frontier, six timing comparisons, and all 810 record-policy configurations in memory; row-count agreement alone is not sufficient.
+The full scientific checks can take many minutes. The index check is fast and
+does not run experiments. The paper builder writes ignored `build/paper/` previews.
+For scoped checks and deliberate result regeneration, follow the selected study's
+README and [research workflow](docs/RESEARCH_WORKFLOW.md). Frozen model launches
+and historical collection scripts are not repository checks. Byte-identical
+executed-workflow reproduction was recorded on Windows; portability is not established.
 
 ## Evidence and provenance
 
-The active compaction investigation began September 16–19, 2026, with the joint-coding extension on September 21. The broader inherited literature snapshot is dated September 4, 2026; its review labels have not been upgraded by moving the files. Read the [migration record](provenance/README.md) and [historical corpus overview](HARNESS_CORPUS_README.md) for provenance and scope.
-
-This repository preserves the existing `ContextResearch` Git history. The imported `HarnessResearch` folder remains available as a migration backup. Continue this paper here to avoid divergent working copies. Historical setup commits are on `codex/context-research-setup`; current work uses `task/` branches per the user's preference. The audit and initial environment are on `task/proof-audit-environment`; recovery and the first living draft are on `task/recovery-frontier-draft`; the exact finite optimum and staged pilot continue on `task/pilot-calibration-exact-chain`; the completed matched retention study is on `task/retention-transfer-study`. No remote publication was requested.
+[paper/claims.csv](paper/claims.csv) governs substantive claims. The experiment
+catalog routes to evidence; it does not replace raw results, protocols or claims.
+Imported material retains its original IDs, hashes and review status. See the
+[migration record](provenance/README.md) and [inherited corpus overview](HARNESS_CORPUS_README.md).
+This remains the sole working repository; use `task/` for new branches.

@@ -1,0 +1,54 @@
+{
+  "completed_test_ids": [
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_every_source_and_route_against_separate_formulation",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_permutation_and_complement_symmetries",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_product_control",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_rational_channel_information_and_loss",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_reject_overcapacity_and_invalid_messages",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_signature_fibers_and_isolated_loss"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_every_source_and_route_against_separate_formulation": "passed",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_permutation_and_complement_symmetries": "passed",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_product_control": "passed",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_rational_channel_information_and_loss": "passed",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_reject_overcapacity_and_invalid_messages": "passed",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_signature_fibers_and_isolated_loss": "passed"
+  },
+  "elapsed_seconds": 0.19000560001586564,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_every_source_and_route_against_separate_formulation",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_permutation_and_complement_symmetries",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_product_control",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_rational_channel_information_and_loss",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_reject_overcapacity_and_invalid_messages",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_signature_fibers_and_isolated_loss"
+  ],
+  "planned_test_ids": [
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_every_source_and_route_against_separate_formulation",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_permutation_and_complement_symmetries",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_product_control",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_rational_channel_information_and_loss",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_reject_overcapacity_and_invalid_messages",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_signature_fibers_and_isolated_loss"
+  ],
+  "process_id": 45040,
+  "skips": 0,
+  "started_test_ids": [
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_every_source_and_route_against_separate_formulation",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_permutation_and_complement_symmetries",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_product_control",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_rational_channel_information_and_loss",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_reject_overcapacity_and_invalid_messages",
+    "joint_coding.test_joint_block_coding.JointBlockCodingTests.test_signature_fibers_and_isolated_loss"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\18e0131a3a59c622\\tmp",
+  "tests_run": 6,
+  "unexpected_successes": 0
+}

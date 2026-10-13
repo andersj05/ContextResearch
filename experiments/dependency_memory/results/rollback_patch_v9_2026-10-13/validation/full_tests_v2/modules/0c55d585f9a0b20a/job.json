@@ -1,0 +1,24 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\0c55d585f9a0b20a\\job.json",
+  "module": "rollback_patch_v9.test_analysis",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\0c55d585f9a0b20a\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\0c55d585f9a0b20a\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\0c55d585f9a0b20a\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\0c55d585f9a0b20a\\tmp",
+  "test_ids": [
+    "rollback_patch_v9.test_analysis.FactorialAnalysisTests.test_calibration_reports_no_factorial_effects",
+    "rollback_patch_v9.test_analysis.FactorialAnalysisTests.test_heldout_pass_without_public_pass_is_only_diagnostic",
+    "rollback_patch_v9.test_analysis.FactorialAnalysisTests.test_inconsistent_acceptance_or_success_is_rejected",
+    "rollback_patch_v9.test_analysis.FactorialAnalysisTests.test_later_unknown_keeps_observed_early_failure_and_missing_later_curve",
+    "rollback_patch_v9.test_analysis.FactorialAnalysisTests.test_missing_lesson_does_not_drop_known_no_lesson_pair",
+    "rollback_patch_v9.test_analysis.FactorialAnalysisTests.test_missingness_bounds_equal_exhaustive_binary_completions",
+    "rollback_patch_v9.test_analysis.FactorialAnalysisTests.test_opposite_simple_effects_are_visible_despite_zero_main_effect",
+    "rollback_patch_v9.test_analysis.FactorialAnalysisTests.test_public_acceptance_does_not_imply_heldout_success",
+    "rollback_patch_v9.test_analysis.FactorialAnalysisTests.test_shared_costs_count_once_and_lesson_absent_from_no_lesson_projection",
+    "rollback_patch_v9.test_analysis.FactorialAnalysisTests.test_stratified_bootstrap_preserves_pairing_and_reproduces",
+    "rollback_patch_v9.test_analysis.FactorialAnalysisTests.test_three_attempts_allow_delayed_repair",
+    "rollback_patch_v9.test_analysis.FactorialAnalysisTests.test_unknown_prefix_is_reported_without_inventing_eligibility",
+    "rollback_patch_v9.test_analysis.FactorialAnalysisTests.test_unknown_writer_cost_is_retained_without_dropping_no_lesson_results"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

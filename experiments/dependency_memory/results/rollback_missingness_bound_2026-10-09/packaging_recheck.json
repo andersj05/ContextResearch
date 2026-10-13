@@ -1,0 +1,24 @@
+{
+  "checked_utc": "2026-10-09T21:34:45.231357+00:00",
+  "historical_evidence_modified": false,
+  "model_calls": 0,
+  "revision_checks": {
+    "revision_diagnostic_fake_requests": 120,
+    "revision_diagnostic_model_requests_in_offline_artifacts": 0,
+    "revision_diagnostic_planned_cases": 24,
+    "revision_diagnostic_planned_request_ceiling": 24,
+    "revision_posthoc_manifest_conditioned_selections": 19,
+    "revision_posthoc_new_model_requests": 0,
+    "revision_posthoc_population_selections": 17,
+    "revision_posthoc_saved_parent_selections": 36,
+    "revision_posthoc_strict_parent_deficits": 3
+  },
+  "revision_errors": [],
+  "scope": "Only the four affected historical fingerprint checks; offline fixtures only.",
+  "transfer_checks": {
+    "transfer_fake_requests": 6144,
+    "transfer_offline_model_requests": 0,
+    "transfer_planned_cases": 1536
+  },
+  "transfer_errors": []
+}

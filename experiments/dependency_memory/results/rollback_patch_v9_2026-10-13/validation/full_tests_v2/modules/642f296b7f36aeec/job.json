@@ -1,0 +1,23 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\642f296b7f36aeec\\job.json",
+  "module": "test_experiment",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\642f296b7f36aeec\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\642f296b7f36aeec\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\642f296b7f36aeec\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\642f296b7f36aeec\\tmp",
+  "test_ids": [
+    "test_experiment.ExactChannelTests.test_coding_can_beat_fixed_coordinate_retention",
+    "test_experiment.ExactChannelTests.test_finite_optimum_respects_information_lower_bound",
+    "test_experiment.ExactChannelTests.test_independent_encoder_enumeration",
+    "test_experiment.ExactChannelTests.test_information_timing_changes_optimum",
+    "test_experiment.ExactChannelTests.test_no_memory_and_full_memory",
+    "test_experiment.RecordStreamTests.test_eviction_cannot_recover_from_identifier",
+    "test_experiment.RecordStreamTests.test_insufficient_capacity_breaks_the_upper_bound_assumption",
+    "test_experiment.RecordStreamTests.test_lifecycle_policy_matches_width_upper_bound",
+    "test_experiment.RecordStreamTests.test_lru_can_lose_long_lived_fact_with_same_record_budget",
+    "test_experiment.RecordStreamTests.test_query_events_do_not_expose_grading_values",
+    "test_experiment.RecordStreamTests.test_repeated_exact_compaction_does_not_cause_decay",
+    "test_experiment.RecordStreamTests.test_revision_and_retirement"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

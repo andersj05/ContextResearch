@@ -1,0 +1,21 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\c0aa7a8996c9b07f\\job.json",
+  "module": "test_development_pilot",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\c0aa7a8996c9b07f\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\c0aa7a8996c9b07f\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\c0aa7a8996c9b07f\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\c0aa7a8996c9b07f\\tmp",
+  "test_ids": [
+    "test_development_pilot.DevelopmentPilotTests.test_all_manager_requests_invariant_to_final_target",
+    "test_development_pilot.DevelopmentPilotTests.test_budget_reservation_and_failed_attempts_do_not_retry",
+    "test_development_pilot.DevelopmentPilotTests.test_complete_fake_tranche_and_pairing",
+    "test_development_pilot.DevelopmentPilotTests.test_deleted_receipts_do_not_reappear_in_actual_second_requests",
+    "test_development_pilot.DevelopmentPilotTests.test_failed_attempt_cannot_inherit_previous_usage",
+    "test_development_pilot.DevelopmentPilotTests.test_fixtures_share_payloads_across_paired_revision_conditions",
+    "test_development_pilot.DevelopmentPilotTests.test_full_memory_and_answer_visible_controls_all_routes",
+    "test_development_pilot.DevelopmentPilotTests.test_invalid_policy_records_failures_without_corrective_calls",
+    "test_development_pilot.DevelopmentPilotTests.test_live_execution_is_blocked_before_any_dispatch",
+    "test_development_pilot.DevelopmentPilotTests.test_verifier_rejects_incorrect_and_stale_payloads"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

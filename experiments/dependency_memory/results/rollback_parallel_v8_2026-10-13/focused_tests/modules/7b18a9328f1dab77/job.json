@@ -1,0 +1,16 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\7b18a9328f1dab77\\job.json",
+  "module": "test_runner",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\7b18a9328f1dab77\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\7b18a9328f1dab77\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\7b18a9328f1dab77\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\7b18a9328f1dab77\\tmp",
+  "test_ids": [
+    "test_runner.PipelineControllerTests.test_preflight_exercises_sixteen_sessions_and_both_request_schemas",
+    "test_runner.PipelineControllerTests.test_serial_and_pipelined_engines_render_identical_full_contexts_and_usage",
+    "test_runner.PipelineControllerTests.test_sixteen_calls_pipeline_around_slow_prefix_and_preserve_one_unknown",
+    "test_runner.PipelineControllerTests.test_thirty_two_admissions_are_bounded_and_unknown_keeps_its_reservation",
+    "test_runner.PipelineControllerTests.test_unknown_continuation_preserves_mate_and_unrelated_task"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\rollback_parallel_v8"
+}

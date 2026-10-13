@@ -1,0 +1,39 @@
+{
+  "completed_test_ids": [
+    "schema_transfer.test_memory.GenericMemoryTests.test_development_projections_fit_and_certify_twice",
+    "schema_transfer.test_memory.GenericMemoryTests.test_exact_identity_and_owner_relationship_are_distinct",
+    "schema_transfer.test_memory.GenericMemoryTests.test_unstructured_and_unknown_coverage_fail_closed"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "schema_transfer.test_memory.GenericMemoryTests.test_development_projections_fit_and_certify_twice": "passed",
+    "schema_transfer.test_memory.GenericMemoryTests.test_exact_identity_and_owner_relationship_are_distinct": "passed",
+    "schema_transfer.test_memory.GenericMemoryTests.test_unstructured_and_unknown_coverage_fail_closed": "passed"
+  },
+  "elapsed_seconds": 0.010366400005295873,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "schema_transfer.test_memory.GenericMemoryTests.test_development_projections_fit_and_certify_twice",
+    "schema_transfer.test_memory.GenericMemoryTests.test_exact_identity_and_owner_relationship_are_distinct",
+    "schema_transfer.test_memory.GenericMemoryTests.test_unstructured_and_unknown_coverage_fail_closed"
+  ],
+  "planned_test_ids": [
+    "schema_transfer.test_memory.GenericMemoryTests.test_development_projections_fit_and_certify_twice",
+    "schema_transfer.test_memory.GenericMemoryTests.test_exact_identity_and_owner_relationship_are_distinct",
+    "schema_transfer.test_memory.GenericMemoryTests.test_unstructured_and_unknown_coverage_fail_closed"
+  ],
+  "process_id": 56316,
+  "skips": 0,
+  "started_test_ids": [
+    "schema_transfer.test_memory.GenericMemoryTests.test_development_projections_fit_and_certify_twice",
+    "schema_transfer.test_memory.GenericMemoryTests.test_exact_identity_and_owner_relationship_are_distinct",
+    "schema_transfer.test_memory.GenericMemoryTests.test_unstructured_and_unknown_coverage_fail_closed"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\182f55921585b1c1\\tmp",
+  "tests_run": 3,
+  "unexpected_successes": 0
+}

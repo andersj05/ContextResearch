@@ -1,0 +1,17 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\73130d4b46d9de50\\job.json",
+  "module": "test_pilot_plan",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\73130d4b46d9de50\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\73130d4b46d9de50\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\73130d4b46d9de50\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\73130d4b46d9de50\\tmp",
+  "test_ids": [
+    "test_pilot_plan.PilotPlanTests.test_calibration_costs_are_attained_through_complete_environment",
+    "test_pilot_plan.PilotPlanTests.test_heldout_routes_are_disjoint_and_arms_are_paired",
+    "test_pilot_plan.PilotPlanTests.test_positive_null_and_adverse_controls_survive",
+    "test_pilot_plan.PilotPlanTests.test_reliable_recovery_masks_forgetting_in_all_pilot_regimes",
+    "test_pilot_plan.PilotPlanTests.test_request_ceiling_and_development_precedence",
+    "test_pilot_plan.PilotPlanTests.test_sample_composition_does_not_inherit_population_preferences"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

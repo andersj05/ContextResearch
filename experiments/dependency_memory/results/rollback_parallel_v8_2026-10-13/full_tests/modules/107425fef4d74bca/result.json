@@ -1,0 +1,59 @@
+{
+  "completed_test_ids": [
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_32_transports_keep_distinct_sessions_and_full_checks",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_all_client_instruction_configuration_and_registry_pins_remain",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_empty_exact_multiple_and_tail_files_hash_every_byte",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_observed_file_change_during_hash_is_rejected",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_same_size_change_with_restored_mtime_is_rehashed_and_rejected",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_streamed_digest_matches_independent_sha_and_uses_one_bounded_buffer",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_unchanged_generation_checks_each_time_closes_and_never_retries"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_32_transports_keep_distinct_sessions_and_full_checks": "passed",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_all_client_instruction_configuration_and_registry_pins_remain": "passed",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_empty_exact_multiple_and_tail_files_hash_every_byte": "passed",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_observed_file_change_during_hash_is_rejected": "passed",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_same_size_change_with_restored_mtime_is_rehashed_and_rejected": "passed",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_streamed_digest_matches_independent_sha_and_uses_one_bounded_buffer": "passed",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_unchanged_generation_checks_each_time_closes_and_never_retries": "passed"
+  },
+  "elapsed_seconds": 0.7312430999882054,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_32_transports_keep_distinct_sessions_and_full_checks",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_all_client_instruction_configuration_and_registry_pins_remain",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_empty_exact_multiple_and_tail_files_hash_every_byte",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_observed_file_change_during_hash_is_rejected",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_same_size_change_with_restored_mtime_is_rehashed_and_rejected",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_streamed_digest_matches_independent_sha_and_uses_one_bounded_buffer",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_unchanged_generation_checks_each_time_closes_and_never_retries"
+  ],
+  "planned_test_ids": [
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_32_transports_keep_distinct_sessions_and_full_checks",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_all_client_instruction_configuration_and_registry_pins_remain",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_empty_exact_multiple_and_tail_files_hash_every_byte",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_observed_file_change_during_hash_is_rejected",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_same_size_change_with_restored_mtime_is_rehashed_and_rejected",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_streamed_digest_matches_independent_sha_and_uses_one_bounded_buffer",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_unchanged_generation_checks_each_time_closes_and_never_retries"
+  ],
+  "process_id": 37580,
+  "skips": 0,
+  "started_test_ids": [
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_32_transports_keep_distinct_sessions_and_full_checks",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_all_client_instruction_configuration_and_registry_pins_remain",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_empty_exact_multiple_and_tail_files_hash_every_byte",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_observed_file_change_during_hash_is_rejected",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_same_size_change_with_restored_mtime_is_rehashed_and_rejected",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_streamed_digest_matches_independent_sha_and_uses_one_bounded_buffer",
+    "rollback_parallel_v8.test_transport.StreamingTransportTests.test_unchanged_generation_checks_each_time_closes_and_never_retries"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\107425fef4d74bca\\tmp",
+  "tests_run": 7,
+  "unexpected_successes": 0
+}

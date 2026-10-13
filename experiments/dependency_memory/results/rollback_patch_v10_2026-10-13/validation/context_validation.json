@@ -1,0 +1,2468 @@
+{
+  "candidate_code_executed_on_host": false,
+  "declared_body_bound_bytes": 4194304,
+  "evidence_kind": "offline_serialization_capacity_check",
+  "maxima": {
+    "maximum_third_repair_bytes": 2186030,
+    "maximum_writer_bytes": 1006032,
+    "reference_third_repair_bytes": 273479,
+    "reference_writer_bytes": 187114
+  },
+  "maximum_candidate_utf8_bytes": 32768,
+  "maximum_fixture_original_stdout_bytes": 65535,
+  "model_calls": 0,
+  "passed": true,
+  "scope": "All 16 calibration and 256 study tasks; third-repair KL includes initial failed patch, two later patches, initial/latest feedback and complete public facts. Other arms omit optional fields. A 32 KiB source with JSON-expanding valid-Python comment and a parsed receipt derived from <=64 KiB output are conservative serialization fixtures, not observed model work.",
+  "tasks": [
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169798,
+      "maximum_writer_bytes": 993565,
+      "reference_third_repair_bytes": 269101,
+      "reference_writer_bytes": 185554,
+      "split": "calibration",
+      "task_id": "v10-calibration-composite_dependency_resolver-59ecd2e588710ad8"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152679,
+      "maximum_writer_bytes": 979478,
+      "reference_third_repair_bytes": 242106,
+      "reference_writer_bytes": 168175,
+      "split": "calibration",
+      "task_id": "v10-calibration-composite_quota_intervals-29df826c5ac4b46f"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139463,
+      "maximum_writer_bytes": 968340,
+      "reference_third_repair_bytes": 215582,
+      "reference_writer_bytes": 152601,
+      "split": "calibration",
+      "task_id": "v10-calibration-composite_temporal_routes-f813d99eb8ba7624"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185873,
+      "maximum_writer_bytes": 1006032,
+      "reference_third_repair_bytes": 249239,
+      "reference_writer_bytes": 186042,
+      "split": "calibration",
+      "task_id": "v10-calibration-composite_revision_ledger-14e6394c0d922a2d"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185825,
+      "maximum_writer_bytes": 1005832,
+      "reference_third_repair_bytes": 251435,
+      "reference_writer_bytes": 186590,
+      "split": "calibration",
+      "task_id": "v10-calibration-composite_revision_ledger-c067bcbe3bd1060c"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152123,
+      "maximum_writer_bytes": 979092,
+      "reference_third_repair_bytes": 238586,
+      "reference_writer_bytes": 166801,
+      "split": "calibration",
+      "task_id": "v10-calibration-composite_quota_intervals-663291f3ca851d57"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169576,
+      "maximum_writer_bytes": 993421,
+      "reference_third_repair_bytes": 269077,
+      "reference_writer_bytes": 185476,
+      "split": "calibration",
+      "task_id": "v10-calibration-composite_dependency_resolver-b7eb33b3962f79bf"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2183803,
+      "maximum_writer_bytes": 1004532,
+      "reference_third_repair_bytes": 245348,
+      "reference_writer_bytes": 183935,
+      "split": "calibration",
+      "task_id": "v10-calibration-composite_revision_ledger-d9f0573241cb3c28"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169322,
+      "maximum_writer_bytes": 993291,
+      "reference_third_repair_bytes": 270611,
+      "reference_writer_bytes": 185942,
+      "split": "calibration",
+      "task_id": "v10-calibration-composite_dependency_resolver-605255a8f87f4e93"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138366,
+      "maximum_writer_bytes": 967681,
+      "reference_third_repair_bytes": 217341,
+      "reference_writer_bytes": 152894,
+      "split": "calibration",
+      "task_id": "v10-calibration-composite_temporal_routes-4ac7aa05d0b3e09a"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139395,
+      "maximum_writer_bytes": 968296,
+      "reference_third_repair_bytes": 216927,
+      "reference_writer_bytes": 153028,
+      "split": "calibration",
+      "task_id": "v10-calibration-composite_temporal_routes-455094d0220329c4"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169859,
+      "maximum_writer_bytes": 993494,
+      "reference_third_repair_bytes": 269375,
+      "reference_writer_bytes": 185554,
+      "split": "calibration",
+      "task_id": "v10-calibration-composite_dependency_resolver-39eeef95f78f0012"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138601,
+      "maximum_writer_bytes": 967788,
+      "reference_third_repair_bytes": 214027,
+      "reference_writer_bytes": 151818,
+      "split": "calibration",
+      "task_id": "v10-calibration-composite_temporal_routes-9e0b4bde62a03869"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152840,
+      "maximum_writer_bytes": 979585,
+      "reference_third_repair_bytes": 240602,
+      "reference_writer_bytes": 167727,
+      "split": "calibration",
+      "task_id": "v10-calibration-composite_quota_intervals-01a179f839a5fa1d"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185375,
+      "maximum_writer_bytes": 1005494,
+      "reference_third_repair_bytes": 250781,
+      "reference_writer_bytes": 186184,
+      "split": "calibration",
+      "task_id": "v10-calibration-composite_revision_ledger-f8c3b70aa06678f0"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2153117,
+      "maximum_writer_bytes": 979692,
+      "reference_third_repair_bytes": 239379,
+      "reference_writer_bytes": 167334,
+      "split": "calibration",
+      "task_id": "v10-calibration-composite_quota_intervals-3d8e812f113ea389"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152390,
+      "maximum_writer_bytes": 979275,
+      "reference_third_repair_bytes": 239876,
+      "reference_writer_bytes": 167325,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-20e3f41f70bd698f"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184421,
+      "maximum_writer_bytes": 1005004,
+      "reference_third_repair_bytes": 248315,
+      "reference_writer_bytes": 185190,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-181b66e18a92a88c"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2151593,
+      "maximum_writer_bytes": 978778,
+      "reference_third_repair_bytes": 237477,
+      "reference_writer_bytes": 166294,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-0703f49df7675807"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152842,
+      "maximum_writer_bytes": 979599,
+      "reference_third_repair_bytes": 238738,
+      "reference_writer_bytes": 167119,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-acbb490970723dc6"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184511,
+      "maximum_writer_bytes": 1005032,
+      "reference_third_repair_bytes": 248081,
+      "reference_writer_bytes": 185110,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-d25a595457b4129f"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138745,
+      "maximum_writer_bytes": 967932,
+      "reference_third_repair_bytes": 216166,
+      "reference_writer_bytes": 152627,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-ca52c59acd7d9cd7"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139656,
+      "maximum_writer_bytes": 968421,
+      "reference_third_repair_bytes": 213774,
+      "reference_writer_bytes": 152015,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-281fa25078ed98c9"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169375,
+      "maximum_writer_bytes": 993104,
+      "reference_third_repair_bytes": 268915,
+      "reference_writer_bytes": 185172,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-ce9f673b9389a33e"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138449,
+      "maximum_writer_bytes": 967768,
+      "reference_third_repair_bytes": 217718,
+      "reference_writer_bytes": 153079,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-6a9d92b1a3a9e034"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185526,
+      "maximum_writer_bytes": 1005619,
+      "reference_third_repair_bytes": 246915,
+      "reference_writer_bytes": 184970,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-cc8254dc33ebb52a"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169640,
+      "maximum_writer_bytes": 993369,
+      "reference_third_repair_bytes": 273479,
+      "reference_writer_bytes": 186870,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-886b26d08d770cd4"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138405,
+      "maximum_writer_bytes": 967700,
+      "reference_third_repair_bytes": 218583,
+      "reference_writer_bytes": 153314,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-b20c88081022b0a3"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2170262,
+      "maximum_writer_bytes": 993863,
+      "reference_third_repair_bytes": 272112,
+      "reference_writer_bytes": 186701,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-e23ffdfaba542b92"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2168454,
+      "maximum_writer_bytes": 992583,
+      "reference_third_repair_bytes": 269050,
+      "reference_writer_bytes": 185003,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-6b6955c338f57c5f"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152443,
+      "maximum_writer_bytes": 979280,
+      "reference_third_repair_bytes": 241441,
+      "reference_writer_bytes": 167834,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-74e16caa99db7def"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2153410,
+      "maximum_writer_bytes": 979979,
+      "reference_third_repair_bytes": 242837,
+      "reference_writer_bytes": 168676,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-25877c7f24ac8dd2"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152625,
+      "maximum_writer_bytes": 979486,
+      "reference_third_repair_bytes": 240639,
+      "reference_writer_bytes": 167712,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-0340d54450c7cd02"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138266,
+      "maximum_writer_bytes": 967547,
+      "reference_third_repair_bytes": 217025,
+      "reference_writer_bytes": 152688,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-15f09ebc8962cece"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138993,
+      "maximum_writer_bytes": 967990,
+      "reference_third_repair_bytes": 215505,
+      "reference_writer_bytes": 152382,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-c7d57bd4023659e2"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169644,
+      "maximum_writer_bytes": 993325,
+      "reference_third_repair_bytes": 271821,
+      "reference_writer_bytes": 186272,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-eecb5f055219669f"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152967,
+      "maximum_writer_bytes": 979694,
+      "reference_third_repair_bytes": 240624,
+      "reference_writer_bytes": 167801,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-bfd4f83ed6c9c623"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169187,
+      "maximum_writer_bytes": 993016,
+      "reference_third_repair_bytes": 268361,
+      "reference_writer_bytes": 184962,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-5d8d4abcdd84d936"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2140022,
+      "maximum_writer_bytes": 968655,
+      "reference_third_repair_bytes": 216390,
+      "reference_writer_bytes": 152999,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-450a586ced5f44da"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2137986,
+      "maximum_writer_bytes": 967451,
+      "reference_third_repair_bytes": 217036,
+      "reference_writer_bytes": 152689,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-36ec62554f4f6401"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138733,
+      "maximum_writer_bytes": 967880,
+      "reference_third_repair_bytes": 216262,
+      "reference_writer_bytes": 152611,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-671f5988479f01af"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169181,
+      "maximum_writer_bytes": 993048,
+      "reference_third_repair_bytes": 268364,
+      "reference_writer_bytes": 184997,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-3a4196d433bad440"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152604,
+      "maximum_writer_bytes": 979385,
+      "reference_third_repair_bytes": 237072,
+      "reference_writer_bytes": 166429,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-2a8fbdf7e9bb91be"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152266,
+      "maximum_writer_bytes": 979223,
+      "reference_third_repair_bytes": 239974,
+      "reference_writer_bytes": 167347,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-9813f8423b92a94c"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138681,
+      "maximum_writer_bytes": 967848,
+      "reference_third_repair_bytes": 216759,
+      "reference_writer_bytes": 152762,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-28dbd6bf41cde3a4"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152737,
+      "maximum_writer_bytes": 979410,
+      "reference_third_repair_bytes": 238873,
+      "reference_writer_bytes": 167010,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-c3825df88e238c0a"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2153448,
+      "maximum_writer_bytes": 979993,
+      "reference_third_repair_bytes": 239587,
+      "reference_writer_bytes": 167594,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-3f61d12b61ba608b"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185373,
+      "maximum_writer_bytes": 1005540,
+      "reference_third_repair_bytes": 247881,
+      "reference_writer_bytes": 185264,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-e0c4ab966fef6a7c"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139114,
+      "maximum_writer_bytes": 968135,
+      "reference_third_repair_bytes": 216535,
+      "reference_writer_bytes": 152830,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-fa1c3e06e9a29629"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169748,
+      "maximum_writer_bytes": 993441,
+      "reference_third_repair_bytes": 269465,
+      "reference_writer_bytes": 185568,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-17558c5d423d7caf"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139077,
+      "maximum_writer_bytes": 968068,
+      "reference_third_repair_bytes": 218055,
+      "reference_writer_bytes": 153282,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-8264ad026f301363"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2168596,
+      "maximum_writer_bytes": 992663,
+      "reference_third_repair_bytes": 272072,
+      "reference_writer_bytes": 186043,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-920e362f6f3cf3a3"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169195,
+      "maximum_writer_bytes": 992986,
+      "reference_third_repair_bytes": 271264,
+      "reference_writer_bytes": 185897,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-ade244f291baabf1"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185065,
+      "maximum_writer_bytes": 1005350,
+      "reference_third_repair_bytes": 250105,
+      "reference_writer_bytes": 185918,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-3a2da74a94e84386"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2170382,
+      "maximum_writer_bytes": 993743,
+      "reference_third_repair_bytes": 272448,
+      "reference_writer_bytes": 186653,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-7796d09c34cfaa2c"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2170468,
+      "maximum_writer_bytes": 993835,
+      "reference_third_repair_bytes": 269096,
+      "reference_writer_bytes": 185599,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-1b8a820bd3800f5f"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184197,
+      "maximum_writer_bytes": 1004772,
+      "reference_third_repair_bytes": 246672,
+      "reference_writer_bytes": 184485,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-df3a918b41f8a730"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185171,
+      "maximum_writer_bytes": 1005406,
+      "reference_third_repair_bytes": 247295,
+      "reference_writer_bytes": 185002,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-64c0dfee23bf9960"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2168503,
+      "maximum_writer_bytes": 992546,
+      "reference_third_repair_bytes": 270464,
+      "reference_writer_bytes": 185421,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-9721d742dbe1a21b"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139011,
+      "maximum_writer_bytes": 968036,
+      "reference_third_repair_bytes": 218280,
+      "reference_writer_bytes": 153347,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-b03862c7eca1b580"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138656,
+      "maximum_writer_bytes": 967869,
+      "reference_third_repair_bytes": 215390,
+      "reference_writer_bytes": 152335,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-ab075eedf26eafd7"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152289,
+      "maximum_writer_bytes": 979184,
+      "reference_third_repair_bytes": 237963,
+      "reference_writer_bytes": 166630,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-d671f7a61481942d"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152129,
+      "maximum_writer_bytes": 979058,
+      "reference_third_repair_bytes": 239678,
+      "reference_writer_bytes": 167129,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-707c665c0723b587"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152313,
+      "maximum_writer_bytes": 979210,
+      "reference_third_repair_bytes": 238503,
+      "reference_writer_bytes": 166828,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-c655192d40cc4324"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152944,
+      "maximum_writer_bytes": 979665,
+      "reference_third_repair_bytes": 241798,
+      "reference_writer_bytes": 168171,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-95e7938cbd020f93"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139097,
+      "maximum_writer_bytes": 968088,
+      "reference_third_repair_bytes": 215315,
+      "reference_writer_bytes": 152382,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-8adb5e916be57c6b"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152891,
+      "maximum_writer_bytes": 979536,
+      "reference_third_repair_bytes": 240377,
+      "reference_writer_bytes": 167586,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-d12b2d3f68627929"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185868,
+      "maximum_writer_bytes": 1005941,
+      "reference_third_repair_bytes": 250329,
+      "reference_writer_bytes": 186316,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-beaa4fbdc7978fd9"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169192,
+      "maximum_writer_bytes": 993071,
+      "reference_third_repair_bytes": 270028,
+      "reference_writer_bytes": 185571,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-a9f28ba81c0ce23e"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185115,
+      "maximum_writer_bytes": 1005326,
+      "reference_third_repair_bytes": 248040,
+      "reference_writer_bytes": 185189,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-89d6a20046b990db"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139287,
+      "maximum_writer_bytes": 968256,
+      "reference_third_repair_bytes": 218052,
+      "reference_writer_bytes": 153399,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-ddf9a8769d191c61"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184481,
+      "maximum_writer_bytes": 1004944,
+      "reference_third_repair_bytes": 248360,
+      "reference_writer_bytes": 185125,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-0cc9dfc36726f62e"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184370,
+      "maximum_writer_bytes": 1004943,
+      "reference_third_repair_bytes": 247229,
+      "reference_writer_bytes": 184784,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-05244e0077a2fd86"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152416,
+      "maximum_writer_bytes": 979289,
+      "reference_third_repair_bytes": 241852,
+      "reference_writer_bytes": 167989,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-9791ce874a73abed"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2168844,
+      "maximum_writer_bytes": 992845,
+      "reference_third_repair_bytes": 270889,
+      "reference_writer_bytes": 185748,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-64c7e1553969594b"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2168300,
+      "maximum_writer_bytes": 992463,
+      "reference_third_repair_bytes": 268677,
+      "reference_writer_bytes": 184810,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-88c5b88294b24042"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169342,
+      "maximum_writer_bytes": 993163,
+      "reference_third_repair_bytes": 270076,
+      "reference_writer_bytes": 185629,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-950d42fada2383eb"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138138,
+      "maximum_writer_bytes": 967515,
+      "reference_third_repair_bytes": 214866,
+      "reference_writer_bytes": 151979,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-40c6d2e3bee47a9e"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138646,
+      "maximum_writer_bytes": 967781,
+      "reference_third_repair_bytes": 214399,
+      "reference_writer_bytes": 151920,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-4f3a3cfa07c5b9ad"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152481,
+      "maximum_writer_bytes": 979276,
+      "reference_third_repair_bytes": 241695,
+      "reference_writer_bytes": 167902,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-ab2115f36c6684b3"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138763,
+      "maximum_writer_bytes": 967898,
+      "reference_third_repair_bytes": 215638,
+      "reference_writer_bytes": 152411,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-348accffd2072d6f"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184659,
+      "maximum_writer_bytes": 1005022,
+      "reference_third_repair_bytes": 249687,
+      "reference_writer_bytes": 185586,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-827340c2bdf620e6"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139148,
+      "maximum_writer_bytes": 968171,
+      "reference_third_repair_bytes": 216344,
+      "reference_writer_bytes": 152791,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-fc1e70b92fefea5f"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152506,
+      "maximum_writer_bytes": 979333,
+      "reference_third_repair_bytes": 240211,
+      "reference_writer_bytes": 167456,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-49d1c20b36b2b58c"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169917,
+      "maximum_writer_bytes": 993620,
+      "reference_third_repair_bytes": 272865,
+      "reference_writer_bytes": 186824,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-41827ac62922bbfa"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185045,
+      "maximum_writer_bytes": 1005370,
+      "reference_third_repair_bytes": 246935,
+      "reference_writer_bytes": 184888,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-8def99ebfbd87ac3"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169760,
+      "maximum_writer_bytes": 993375,
+      "reference_third_repair_bytes": 269591,
+      "reference_writer_bytes": 185540,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-79c468f5a8ef87ee"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184369,
+      "maximum_writer_bytes": 1004792,
+      "reference_third_repair_bytes": 247684,
+      "reference_writer_bytes": 184785,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-19a6ee462aa10689"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185331,
+      "maximum_writer_bytes": 1005590,
+      "reference_third_repair_bytes": 246363,
+      "reference_writer_bytes": 184822,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-1d7ac04ff897ef44"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139961,
+      "maximum_writer_bytes": 968680,
+      "reference_third_repair_bytes": 213539,
+      "reference_writer_bytes": 152094,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-3643f5c8da6c0d5c"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169959,
+      "maximum_writer_bytes": 993518,
+      "reference_third_repair_bytes": 269832,
+      "reference_writer_bytes": 185697,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-a734f7936f68cfd1"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2151642,
+      "maximum_writer_bytes": 978843,
+      "reference_third_repair_bytes": 240490,
+      "reference_writer_bytes": 167347,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-6d9dd46107ac1dcc"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2140262,
+      "maximum_writer_bytes": 968825,
+      "reference_third_repair_bytes": 213762,
+      "reference_writer_bytes": 152213,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-4e26ffc9e92b7ccd"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169058,
+      "maximum_writer_bytes": 992813,
+      "reference_third_repair_bytes": 269585,
+      "reference_writer_bytes": 185210,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-79c5da9624668fa2"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152739,
+      "maximum_writer_bytes": 979508,
+      "reference_third_repair_bytes": 238947,
+      "reference_writer_bytes": 167132,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-3458e9f027dc67f8"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139120,
+      "maximum_writer_bytes": 968201,
+      "reference_third_repair_bytes": 217732,
+      "reference_writer_bytes": 153293,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-abe0277f3204f7c8"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152734,
+      "maximum_writer_bytes": 979481,
+      "reference_third_repair_bytes": 240658,
+      "reference_writer_bytes": 167677,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-6d477fccb62ed3ff"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152961,
+      "maximum_writer_bytes": 979672,
+      "reference_third_repair_bytes": 240615,
+      "reference_writer_bytes": 167778,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-3146c3453ee03ba9"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2183803,
+      "maximum_writer_bytes": 1004538,
+      "reference_third_repair_bytes": 247553,
+      "reference_writer_bytes": 184676,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-7f1031109876b70f"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185138,
+      "maximum_writer_bytes": 1005283,
+      "reference_third_repair_bytes": 247571,
+      "reference_writer_bytes": 184982,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-e9af1c919dbbdc50"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152547,
+      "maximum_writer_bytes": 979410,
+      "reference_third_repair_bytes": 242688,
+      "reference_writer_bytes": 168345,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-683b3b28db37c5b5"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152456,
+      "maximum_writer_bytes": 979283,
+      "reference_third_repair_bytes": 240155,
+      "reference_writer_bytes": 167404,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-27b8987dd4ddb1e1"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139075,
+      "maximum_writer_bytes": 968068,
+      "reference_third_repair_bytes": 216853,
+      "reference_writer_bytes": 152882,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-51f41c2cfd96fda0"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2168737,
+      "maximum_writer_bytes": 992726,
+      "reference_third_repair_bytes": 272588,
+      "reference_writer_bytes": 186231,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-3f80d70f56c213ca"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2170556,
+      "maximum_writer_bytes": 993917,
+      "reference_third_repair_bytes": 272373,
+      "reference_writer_bytes": 186744,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-7e5c5d658ee0541e"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185199,
+      "maximum_writer_bytes": 1005476,
+      "reference_third_repair_bytes": 246663,
+      "reference_writer_bytes": 184852,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-ea0497b261e89568"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2140206,
+      "maximum_writer_bytes": 968839,
+      "reference_third_repair_bytes": 213784,
+      "reference_writer_bytes": 152253,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-7748f54b1930c1f9"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138353,
+      "maximum_writer_bytes": 967576,
+      "reference_third_repair_bytes": 216755,
+      "reference_writer_bytes": 152598,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-ed1666949363f02a"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185316,
+      "maximum_writer_bytes": 1005523,
+      "reference_third_repair_bytes": 249918,
+      "reference_writer_bytes": 185945,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-654049ce8195d8e2"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152165,
+      "maximum_writer_bytes": 979072,
+      "reference_third_repair_bytes": 239858,
+      "reference_writer_bytes": 167191,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-e3604d1b606919ef"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2168423,
+      "maximum_writer_bytes": 992452,
+      "reference_third_repair_bytes": 272046,
+      "reference_writer_bytes": 185881,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-407496ba32d6eff2"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139715,
+      "maximum_writer_bytes": 968452,
+      "reference_third_repair_bytes": 217280,
+      "reference_writer_bytes": 153195,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-0f12d2346127bfc5"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184548,
+      "maximum_writer_bytes": 1005005,
+      "reference_third_repair_bytes": 248895,
+      "reference_writer_bytes": 185342,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-73e164e4ab9b06fa"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138586,
+      "maximum_writer_bytes": 967799,
+      "reference_third_repair_bytes": 215569,
+      "reference_writer_bytes": 152348,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-cd1132e42e1560fb"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152955,
+      "maximum_writer_bytes": 979608,
+      "reference_third_repair_bytes": 243681,
+      "reference_writer_bytes": 168738,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-ffb11f4268e45441"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138133,
+      "maximum_writer_bytes": 967468,
+      "reference_third_repair_bytes": 218308,
+      "reference_writer_bytes": 153081,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-9d190de89c6d9a24"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169427,
+      "maximum_writer_bytes": 993180,
+      "reference_third_repair_bytes": 270161,
+      "reference_writer_bytes": 185646,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-9c9db78dfb5218c7"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152473,
+      "maximum_writer_bytes": 979360,
+      "reference_third_repair_bytes": 241465,
+      "reference_writer_bytes": 167912,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-93fd902914f48d18"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184923,
+      "maximum_writer_bytes": 1005246,
+      "reference_third_repair_bytes": 249315,
+      "reference_writer_bytes": 185598,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-68670529042a24fa"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184756,
+      "maximum_writer_bytes": 1005087,
+      "reference_third_repair_bytes": 247996,
+      "reference_writer_bytes": 185055,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-8ff2c47068f546fe"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2170320,
+      "maximum_writer_bytes": 993793,
+      "reference_third_repair_bytes": 269485,
+      "reference_writer_bytes": 185736,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-f90d40959fb53779"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138581,
+      "maximum_writer_bytes": 967758,
+      "reference_third_repair_bytes": 216437,
+      "reference_writer_bytes": 152598,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-479b2d3737d32522"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139395,
+      "maximum_writer_bytes": 968232,
+      "reference_third_repair_bytes": 215400,
+      "reference_writer_bytes": 152455,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-0bef2e764856814b"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152783,
+      "maximum_writer_bytes": 979560,
+      "reference_third_repair_bytes": 239213,
+      "reference_writer_bytes": 167258,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-19d4ecc6445503fd"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2170168,
+      "maximum_writer_bytes": 993877,
+      "reference_third_repair_bytes": 273215,
+      "reference_writer_bytes": 187114,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-a8a60b8fcd7a79d9"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169189,
+      "maximum_writer_bytes": 993044,
+      "reference_third_repair_bytes": 268807,
+      "reference_writer_bytes": 185138,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-c1f897a2f475cb33"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138188,
+      "maximum_writer_bytes": 967585,
+      "reference_third_repair_bytes": 217463,
+      "reference_writer_bytes": 152898,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-d6064f7f10c3c81f"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152750,
+      "maximum_writer_bytes": 979577,
+      "reference_third_repair_bytes": 241961,
+      "reference_writer_bytes": 168202,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-ebd7962cd7e1f9a2"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2168851,
+      "maximum_writer_bytes": 992796,
+      "reference_third_repair_bytes": 268532,
+      "reference_writer_bytes": 184911,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-ba663e66a45b72b9"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152413,
+      "maximum_writer_bytes": 979196,
+      "reference_third_repair_bytes": 239971,
+      "reference_writer_bytes": 167270,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-cc0db142ad5982ad"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169128,
+      "maximum_writer_bytes": 992931,
+      "reference_third_repair_bytes": 268965,
+      "reference_writer_bytes": 185098,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-a834b9feb812914e"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138355,
+      "maximum_writer_bytes": 967604,
+      "reference_third_repair_bytes": 215632,
+      "reference_writer_bytes": 152251,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-759e261e4a3d4387"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184074,
+      "maximum_writer_bytes": 1004705,
+      "reference_third_repair_bytes": 247833,
+      "reference_writer_bytes": 184846,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-52c03c3da99324c2"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185658,
+      "maximum_writer_bytes": 1005715,
+      "reference_third_repair_bytes": 249912,
+      "reference_writer_bytes": 186021,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-5758993222a43d4b"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139286,
+      "maximum_writer_bytes": 968229,
+      "reference_third_repair_bytes": 216851,
+      "reference_writer_bytes": 152972,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-f6f3c8c43fa585ac"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184228,
+      "maximum_writer_bytes": 1004815,
+      "reference_third_repair_bytes": 245488,
+      "reference_writer_bytes": 184123,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-4a95dbf8c40c1332"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138774,
+      "maximum_writer_bytes": 967889,
+      "reference_third_repair_bytes": 213402,
+      "reference_writer_bytes": 151653,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-cbe66f41de7bf791"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152888,
+      "maximum_writer_bytes": 979635,
+      "reference_third_repair_bytes": 239312,
+      "reference_writer_bytes": 167331,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-499e8bf9907c85fa"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184017,
+      "maximum_writer_bytes": 1004634,
+      "reference_third_repair_bytes": 246870,
+      "reference_writer_bytes": 184473,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-c1adbe501bff6523"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184038,
+      "maximum_writer_bytes": 1004725,
+      "reference_third_repair_bytes": 248169,
+      "reference_writer_bytes": 184990,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-0358927c9abd4151"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2153276,
+      "maximum_writer_bytes": 979773,
+      "reference_third_repair_bytes": 242484,
+      "reference_writer_bytes": 168397,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-8ac9f2824797d527"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152503,
+      "maximum_writer_bytes": 979344,
+      "reference_third_repair_bytes": 241924,
+      "reference_writer_bytes": 168039,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-e0568c5bd86c3ad1"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139497,
+      "maximum_writer_bytes": 968310,
+      "reference_third_repair_bytes": 216630,
+      "reference_writer_bytes": 152909,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-eeca2d275a9d11b4"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169580,
+      "maximum_writer_bytes": 993323,
+      "reference_third_repair_bytes": 270314,
+      "reference_writer_bytes": 185789,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-4025497fb8ac8b24"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184934,
+      "maximum_writer_bytes": 1005307,
+      "reference_third_repair_bytes": 248825,
+      "reference_writer_bytes": 185492,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-9f99b14c933a0b50"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185395,
+      "maximum_writer_bytes": 1005556,
+      "reference_third_repair_bytes": 248674,
+      "reference_writer_bytes": 185537,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-b5c87f3fb68f0e11"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139254,
+      "maximum_writer_bytes": 968161,
+      "reference_third_repair_bytes": 214314,
+      "reference_writer_bytes": 152069,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-0dc3fb0f5195c018"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169349,
+      "maximum_writer_bytes": 993162,
+      "reference_third_repair_bytes": 269429,
+      "reference_writer_bytes": 185410,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-462243f6f72e01fd"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184203,
+      "maximum_writer_bytes": 1004776,
+      "reference_third_repair_bytes": 248106,
+      "reference_writer_bytes": 184965,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-e50ee7b4fa873557"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184034,
+      "maximum_writer_bytes": 1004705,
+      "reference_third_repair_bytes": 248150,
+      "reference_writer_bytes": 184965,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-e764705aaca3c9ea"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152627,
+      "maximum_writer_bytes": 979376,
+      "reference_third_repair_bytes": 240329,
+      "reference_writer_bytes": 167498,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-6bb7ab5318a4a147"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2168750,
+      "maximum_writer_bytes": 992629,
+      "reference_third_repair_bytes": 271479,
+      "reference_writer_bytes": 185760,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-f359ba5d07aaf09d"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184341,
+      "maximum_writer_bytes": 1004884,
+      "reference_third_repair_bytes": 246684,
+      "reference_writer_bytes": 184553,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-8cd15adad83ca3f4"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184560,
+      "maximum_writer_bytes": 1005011,
+      "reference_third_repair_bytes": 246657,
+      "reference_writer_bytes": 184598,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-92312760ce031361"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138667,
+      "maximum_writer_bytes": 967888,
+      "reference_third_repair_bytes": 216598,
+      "reference_writer_bytes": 152753,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-9f1d66ecfd45d012"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169145,
+      "maximum_writer_bytes": 993068,
+      "reference_third_repair_bytes": 270995,
+      "reference_writer_bytes": 185906,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-5268071c6ded81f5"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152840,
+      "maximum_writer_bytes": 979503,
+      "reference_third_repair_bytes": 239342,
+      "reference_writer_bytes": 167225,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-6d6ab515e015c395"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2168872,
+      "maximum_writer_bytes": 992885,
+      "reference_third_repair_bytes": 266900,
+      "reference_writer_bytes": 184449,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-673140b2b2f70674"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152223,
+      "maximum_writer_bytes": 979146,
+      "reference_third_repair_bytes": 241281,
+      "reference_writer_bytes": 167720,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-136faf79a0bd9d54"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2151974,
+      "maximum_writer_bytes": 979047,
+      "reference_third_repair_bytes": 237951,
+      "reference_writer_bytes": 166594,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-7e97f8219bfe43cb"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185323,
+      "maximum_writer_bytes": 1005490,
+      "reference_third_repair_bytes": 248380,
+      "reference_writer_bytes": 185397,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-fc319b6e6932f818"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184170,
+      "maximum_writer_bytes": 1004773,
+      "reference_third_repair_bytes": 246582,
+      "reference_writer_bytes": 184465,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-6d1d5e886febd81b"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184908,
+      "maximum_writer_bytes": 1005231,
+      "reference_third_repair_bytes": 249363,
+      "reference_writer_bytes": 185604,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-ecf206c15eeb9964"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139514,
+      "maximum_writer_bytes": 968267,
+      "reference_third_repair_bytes": 215882,
+      "reference_writer_bytes": 152611,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-a5baeaf8ea2b0385"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184871,
+      "maximum_writer_bytes": 1005252,
+      "reference_third_repair_bytes": 247676,
+      "reference_writer_bytes": 185075,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-d0903c719638e234"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2168142,
+      "maximum_writer_bytes": 992309,
+      "reference_third_repair_bytes": 270538,
+      "reference_writer_bytes": 185329,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-3cbc720e1ebfb269"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138031,
+      "maximum_writer_bytes": 967466,
+      "reference_third_repair_bytes": 217984,
+      "reference_writer_bytes": 153005,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-5daf29d77471f1dd"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2183989,
+      "maximum_writer_bytes": 1004730,
+      "reference_third_repair_bytes": 247523,
+      "reference_writer_bytes": 184796,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-a023aa113d240359"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184689,
+      "maximum_writer_bytes": 1005048,
+      "reference_third_repair_bytes": 247158,
+      "reference_writer_bytes": 184759,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-a17ccf12c4ccaa29"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185254,
+      "maximum_writer_bytes": 1005411,
+      "reference_third_repair_bytes": 249634,
+      "reference_writer_bytes": 185759,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-1fab185eb4514f26"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152294,
+      "maximum_writer_bytes": 979111,
+      "reference_third_repair_bytes": 239945,
+      "reference_writer_bytes": 167216,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-3b9f935890084209"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2168616,
+      "maximum_writer_bytes": 992731,
+      "reference_third_repair_bytes": 269323,
+      "reference_writer_bytes": 185188,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-e4925f336775560f"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185467,
+      "maximum_writer_bytes": 1005650,
+      "reference_third_repair_bytes": 250294,
+      "reference_writer_bytes": 186147,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-16db4fd636bdbaaa"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169809,
+      "maximum_writer_bytes": 993470,
+      "reference_third_repair_bytes": 270867,
+      "reference_writer_bytes": 186044,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-59c2fa97730c4035"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185038,
+      "maximum_writer_bytes": 1005337,
+      "reference_third_repair_bytes": 246829,
+      "reference_writer_bytes": 184822,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-2d6c34dcc483ae6a"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185230,
+      "maximum_writer_bytes": 1005501,
+      "reference_third_repair_bytes": 248710,
+      "reference_writer_bytes": 185549,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-e9d515a86515fe08"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2168243,
+      "maximum_writer_bytes": 992426,
+      "reference_third_repair_bytes": 269847,
+      "reference_writer_bytes": 185182,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-2b9fbf7cf178e158"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152653,
+      "maximum_writer_bytes": 979424,
+      "reference_third_repair_bytes": 240148,
+      "reference_writer_bytes": 167477,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-404c17625f43bdfa"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152899,
+      "maximum_writer_bytes": 979608,
+      "reference_third_repair_bytes": 242338,
+      "reference_writer_bytes": 168309,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-41d91ae97fe759cd"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169674,
+      "maximum_writer_bytes": 993237,
+      "reference_third_repair_bytes": 269625,
+      "reference_writer_bytes": 185442,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-4a389abd2b030559"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139432,
+      "maximum_writer_bytes": 968307,
+      "reference_third_repair_bytes": 216313,
+      "reference_writer_bytes": 152822,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-7d20cd5b10a42c07"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2168658,
+      "maximum_writer_bytes": 992819,
+      "reference_third_repair_bytes": 269260,
+      "reference_writer_bytes": 185241,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-666dfd4401b9b331"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184064,
+      "maximum_writer_bytes": 1004719,
+      "reference_third_repair_bytes": 247259,
+      "reference_writer_bytes": 184672,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-71058250cba50a9e"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184813,
+      "maximum_writer_bytes": 1005140,
+      "reference_third_repair_bytes": 247609,
+      "reference_writer_bytes": 184960,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-fba312ac29264997"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152331,
+      "maximum_writer_bytes": 979250,
+      "reference_third_repair_bytes": 242466,
+      "reference_writer_bytes": 168183,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-bd6e2410a538fe9c"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2168800,
+      "maximum_writer_bytes": 992829,
+      "reference_third_repair_bytes": 270770,
+      "reference_writer_bytes": 185707,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-3d990bf85e70aff8"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184865,
+      "maximum_writer_bytes": 1005248,
+      "reference_third_repair_bytes": 248336,
+      "reference_writer_bytes": 185293,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-cbfefc094965a95e"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152864,
+      "maximum_writer_bytes": 979529,
+      "reference_third_repair_bytes": 237554,
+      "reference_writer_bytes": 166647,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-4c50e43df1621178"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185211,
+      "maximum_writer_bytes": 1005526,
+      "reference_third_repair_bytes": 249246,
+      "reference_writer_bytes": 185759,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-749fce88977724ff"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139240,
+      "maximum_writer_bytes": 968233,
+      "reference_third_repair_bytes": 216226,
+      "reference_writer_bytes": 152783,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-f9625878ae32d901"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2170189,
+      "maximum_writer_bytes": 993656,
+      "reference_third_repair_bytes": 272252,
+      "reference_writer_bytes": 186565,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-5962ddd9ac9f10b0"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138621,
+      "maximum_writer_bytes": 967818,
+      "reference_third_repair_bytes": 216798,
+      "reference_writer_bytes": 152765,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-715a3958f5c9e441"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2151873,
+      "maximum_writer_bytes": 978886,
+      "reference_third_repair_bytes": 237706,
+      "reference_writer_bytes": 166385,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-651fcd537affaae7"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152795,
+      "maximum_writer_bytes": 979434,
+      "reference_third_repair_bytes": 242102,
+      "reference_writer_bytes": 168091,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-75b6c98de7bdfd41"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139357,
+      "maximum_writer_bytes": 968234,
+      "reference_third_repair_bytes": 216556,
+      "reference_writer_bytes": 152855,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-2f57f739c5c0f078"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2168433,
+      "maximum_writer_bytes": 992438,
+      "reference_third_repair_bytes": 267895,
+      "reference_writer_bytes": 184480,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-0811bd080f9ad228"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169388,
+      "maximum_writer_bytes": 993073,
+      "reference_third_repair_bytes": 272798,
+      "reference_writer_bytes": 186431,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-f488e6cef3396df0"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2168840,
+      "maximum_writer_bytes": 992753,
+      "reference_third_repair_bytes": 271014,
+      "reference_writer_bytes": 185699,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-17ab1a40b2f5dbb6"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138668,
+      "maximum_writer_bytes": 967817,
+      "reference_third_repair_bytes": 217433,
+      "reference_writer_bytes": 152960,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-bc8eb36b4bf4c33f"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2168776,
+      "maximum_writer_bytes": 992693,
+      "reference_third_repair_bytes": 272048,
+      "reference_writer_bytes": 186005,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-951453733a504ba5"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152474,
+      "maximum_writer_bytes": 979373,
+      "reference_third_repair_bytes": 240230,
+      "reference_writer_bytes": 167513,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-833f8cd3ffa067e8"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2168814,
+      "maximum_writer_bytes": 992837,
+      "reference_third_repair_bytes": 272446,
+      "reference_writer_bytes": 186269,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-2f3d613f5453fd0d"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185362,
+      "maximum_writer_bytes": 1005551,
+      "reference_third_repair_bytes": 249979,
+      "reference_writer_bytes": 185978,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-d7b964bc4112414e"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2153124,
+      "maximum_writer_bytes": 979765,
+      "reference_third_repair_bytes": 240994,
+      "reference_writer_bytes": 167943,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-f2516df869bda211"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185407,
+      "maximum_writer_bytes": 1005630,
+      "reference_third_repair_bytes": 248689,
+      "reference_writer_bytes": 185612,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-caa7d3288fa3f2f6"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2170035,
+      "maximum_writer_bytes": 993712,
+      "reference_third_repair_bytes": 273076,
+      "reference_writer_bytes": 186947,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-c41b873621bd21d2"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139242,
+      "maximum_writer_bytes": 968223,
+      "reference_third_repair_bytes": 214998,
+      "reference_writer_bytes": 152363,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-3b454484f7658c2f"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185031,
+      "maximum_writer_bytes": 1005366,
+      "reference_third_repair_bytes": 248589,
+      "reference_writer_bytes": 185440,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-ec580f16fa081e97"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184236,
+      "maximum_writer_bytes": 1004851,
+      "reference_third_repair_bytes": 246333,
+      "reference_writer_bytes": 184438,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-58084deafb8db9e6"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184819,
+      "maximum_writer_bytes": 1005136,
+      "reference_third_repair_bytes": 249079,
+      "reference_writer_bytes": 185444,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-24cf7605df5079f3"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139421,
+      "maximum_writer_bytes": 968274,
+      "reference_third_repair_bytes": 216002,
+      "reference_writer_bytes": 152689,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-a9689894299a3e6b"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2140039,
+      "maximum_writer_bytes": 968658,
+      "reference_third_repair_bytes": 215423,
+      "reference_writer_bytes": 152674,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-4e31dab20583461b"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169756,
+      "maximum_writer_bytes": 993477,
+      "reference_third_repair_bytes": 268720,
+      "reference_writer_bytes": 185353,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-86f38cc5feccc2a5"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138323,
+      "maximum_writer_bytes": 967686,
+      "reference_third_repair_bytes": 218060,
+      "reference_writer_bytes": 153153,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-2d63939a147c64d7"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169264,
+      "maximum_writer_bytes": 993117,
+      "reference_third_repair_bytes": 270226,
+      "reference_writer_bytes": 185659,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-5ef2b1e416a2b66d"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138802,
+      "maximum_writer_bytes": 967979,
+      "reference_third_repair_bytes": 217420,
+      "reference_writer_bytes": 153073,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-563f49423da32dd0"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152121,
+      "maximum_writer_bytes": 979076,
+      "reference_third_repair_bytes": 240750,
+      "reference_writer_bytes": 167507,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-c9eb8e7ee2f538f8"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152913,
+      "maximum_writer_bytes": 979566,
+      "reference_third_repair_bytes": 240255,
+      "reference_writer_bytes": 167568,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-c9971c96617f9bf4"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2140321,
+      "maximum_writer_bytes": 968876,
+      "reference_third_repair_bytes": 214661,
+      "reference_writer_bytes": 152544,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-381ef8a101e67820"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185542,
+      "maximum_writer_bytes": 1005607,
+      "reference_third_repair_bytes": 248143,
+      "reference_writer_bytes": 185362,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-407e619422a5cfd3"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2183739,
+      "maximum_writer_bytes": 1004504,
+      "reference_third_repair_bytes": 245395,
+      "reference_writer_bytes": 183944,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-67a886d3bf2e8e34"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185146,
+      "maximum_writer_bytes": 1005431,
+      "reference_third_repair_bytes": 248695,
+      "reference_writer_bytes": 185502,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-e0f9ae96cb544cf5"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184984,
+      "maximum_writer_bytes": 1005343,
+      "reference_third_repair_bytes": 245683,
+      "reference_writer_bytes": 184464,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-907b01838af61e8d"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139127,
+      "maximum_writer_bytes": 968228,
+      "reference_third_repair_bytes": 219305,
+      "reference_writer_bytes": 153842,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-6042ac4d86a858f9"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139532,
+      "maximum_writer_bytes": 968413,
+      "reference_third_repair_bytes": 216329,
+      "reference_writer_bytes": 152900,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-5e34ab390395717f"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152978,
+      "maximum_writer_bytes": 979573,
+      "reference_third_repair_bytes": 239171,
+      "reference_writer_bytes": 167192,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-1b92e85246e8df6c"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152807,
+      "maximum_writer_bytes": 979536,
+      "reference_third_repair_bytes": 241856,
+      "reference_writer_bytes": 168107,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-1b092ddc074edb1d"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152502,
+      "maximum_writer_bytes": 979357,
+      "reference_third_repair_bytes": 238905,
+      "reference_writer_bytes": 167046,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-192dbeb5405fdc9f"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152465,
+      "maximum_writer_bytes": 979300,
+      "reference_third_repair_bytes": 240113,
+      "reference_writer_bytes": 167404,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-1a054046dd8efb8a"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184037,
+      "maximum_writer_bytes": 1004730,
+      "reference_third_repair_bytes": 246884,
+      "reference_writer_bytes": 184567,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-6896a842d658402d"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169752,
+      "maximum_writer_bytes": 993449,
+      "reference_third_repair_bytes": 268935,
+      "reference_writer_bytes": 185398,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-4797db606a0e25ba"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139426,
+      "maximum_writer_bytes": 968373,
+      "reference_third_repair_bytes": 217642,
+      "reference_writer_bytes": 153333,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-4caa39d6ccfda300"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152808,
+      "maximum_writer_bytes": 979587,
+      "reference_third_repair_bytes": 240504,
+      "reference_writer_bytes": 167707,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-e5de2648bbb974d7"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152202,
+      "maximum_writer_bytes": 979181,
+      "reference_third_repair_bytes": 239760,
+      "reference_writer_bytes": 167255,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-9959a30c82663aa5"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138485,
+      "maximum_writer_bytes": 967738,
+      "reference_third_repair_bytes": 216128,
+      "reference_writer_bytes": 152507,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-3e94578d6b57c594"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169510,
+      "maximum_writer_bytes": 993257,
+      "reference_third_repair_bytes": 269452,
+      "reference_writer_bytes": 185459,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-c372dd721f30f983"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138843,
+      "maximum_writer_bytes": 967982,
+      "reference_third_repair_bytes": 215109,
+      "reference_writer_bytes": 152292,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-e4a2c64d7ccdd5b9"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152569,
+      "maximum_writer_bytes": 979382,
+      "reference_third_repair_bytes": 238612,
+      "reference_writer_bytes": 166951,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-093fb7da56615626"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184513,
+      "maximum_writer_bytes": 1004884,
+      "reference_third_repair_bytes": 248185,
+      "reference_writer_bytes": 184996,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-fcc329eff093faeb"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169895,
+      "maximum_writer_bytes": 993586,
+      "reference_third_repair_bytes": 271718,
+      "reference_writer_bytes": 186415,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-0ad37d1e6ea96f75"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138967,
+      "maximum_writer_bytes": 968010,
+      "reference_third_repair_bytes": 214498,
+      "reference_writer_bytes": 152075,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-1b82306301f5ca1b"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138766,
+      "maximum_writer_bytes": 967819,
+      "reference_third_repair_bytes": 217162,
+      "reference_writer_bytes": 152839,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-e4ac557b3209b19a"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185951,
+      "maximum_writer_bytes": 1006020,
+      "reference_third_repair_bytes": 248093,
+      "reference_writer_bytes": 185622,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-880a8b90d6dd0143"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152517,
+      "maximum_writer_bytes": 979408,
+      "reference_third_repair_bytes": 239697,
+      "reference_writer_bytes": 167356,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-b05fbd2678b88e75"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169780,
+      "maximum_writer_bytes": 993241,
+      "reference_third_repair_bytes": 270769,
+      "reference_writer_bytes": 185792,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-a9ef2cb62f0063ea"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139659,
+      "maximum_writer_bytes": 968476,
+      "reference_third_repair_bytes": 215883,
+      "reference_writer_bytes": 152772,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-3edba102bb0e899b"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169183,
+      "maximum_writer_bytes": 993034,
+      "reference_third_repair_bytes": 272230,
+      "reference_writer_bytes": 186271,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-b060e3ec8757213e"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138462,
+      "maximum_writer_bytes": 967689,
+      "reference_third_repair_bytes": 216855,
+      "reference_writer_bytes": 152708,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-ef308c03d9afd997"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152311,
+      "maximum_writer_bytes": 979234,
+      "reference_third_repair_bytes": 239863,
+      "reference_writer_bytes": 167306,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-f495763f81b7372a"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184355,
+      "maximum_writer_bytes": 1004904,
+      "reference_third_repair_bytes": 244961,
+      "reference_writer_bytes": 183994,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-a120f6169838f0ac"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2186030,
+      "maximum_writer_bytes": 1005967,
+      "reference_third_repair_bytes": 249648,
+      "reference_writer_bytes": 186061,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-3268a1caddfdfa8b"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184357,
+      "maximum_writer_bytes": 1004930,
+      "reference_third_repair_bytes": 247045,
+      "reference_writer_bytes": 184714,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-fcf6f737359c4b4d"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138622,
+      "maximum_writer_bytes": 967849,
+      "reference_third_repair_bytes": 216148,
+      "reference_writer_bytes": 152579,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-065b952c1121fb05"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2185555,
+      "maximum_writer_bytes": 1005652,
+      "reference_third_repair_bytes": 248843,
+      "reference_writer_bytes": 185636,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-175bf2000218abcd"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152275,
+      "maximum_writer_bytes": 979198,
+      "reference_third_repair_bytes": 241438,
+      "reference_writer_bytes": 167807,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-026c48c32da45725"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139335,
+      "maximum_writer_bytes": 968198,
+      "reference_third_repair_bytes": 214101,
+      "reference_writer_bytes": 152008,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-01c3cdadd482ce5d"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2153013,
+      "maximum_writer_bytes": 979706,
+      "reference_third_repair_bytes": 239161,
+      "reference_writer_bytes": 167310,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-584233375b6fd860"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2168881,
+      "maximum_writer_bytes": 992834,
+      "reference_third_repair_bytes": 268070,
+      "reference_writer_bytes": 184785,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-9bb2e1aea771687b"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152552,
+      "maximum_writer_bytes": 979411,
+      "reference_third_repair_bytes": 241766,
+      "reference_writer_bytes": 168037,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-5bb4e88043865f5e"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2139075,
+      "maximum_writer_bytes": 968144,
+      "reference_third_repair_bytes": 215587,
+      "reference_writer_bytes": 152536,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-3e4f908597eede43"
+    },
+    {
+      "family": "composite_temporal_routes",
+      "maximum_third_repair_bytes": 2138772,
+      "maximum_writer_bytes": 967863,
+      "reference_third_repair_bytes": 216187,
+      "reference_writer_bytes": 152556,
+      "split": "study",
+      "task_id": "v10-study-composite_temporal_routes-5fa746faec03f347"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169252,
+      "maximum_writer_bytes": 992981,
+      "reference_third_repair_bytes": 272194,
+      "reference_writer_bytes": 186183,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-39188f67146df644"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169860,
+      "maximum_writer_bytes": 993565,
+      "reference_third_repair_bytes": 267597,
+      "reference_writer_bytes": 185032,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-9820c8f3b728bd31"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169561,
+      "maximum_writer_bytes": 993272,
+      "reference_third_repair_bytes": 271534,
+      "reference_writer_bytes": 186151,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-20bdcc68c0f70334"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169555,
+      "maximum_writer_bytes": 993334,
+      "reference_third_repair_bytes": 270295,
+      "reference_writer_bytes": 185802,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-1465a4a2997b5324"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169302,
+      "maximum_writer_bytes": 993019,
+      "reference_third_repair_bytes": 272022,
+      "reference_writer_bytes": 186147,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-658a79deaa735e97"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2153254,
+      "maximum_writer_bytes": 979759,
+      "reference_third_repair_bytes": 239759,
+      "reference_writer_bytes": 167482,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-03a0011c20960d30"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169380,
+      "maximum_writer_bytes": 993271,
+      "reference_third_repair_bytes": 271455,
+      "reference_writer_bytes": 186184,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-5acf16cb40cf5f4b"
+    },
+    {
+      "family": "composite_revision_ledger",
+      "maximum_third_repair_bytes": 2184572,
+      "maximum_writer_bytes": 1004965,
+      "reference_third_repair_bytes": 247794,
+      "reference_writer_bytes": 184927,
+      "split": "study",
+      "task_id": "v10-study-composite_revision_ledger-fef6b2533bbb7472"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152323,
+      "maximum_writer_bytes": 979188,
+      "reference_third_repair_bytes": 240337,
+      "reference_writer_bytes": 167414,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-352637ca8e2ef951"
+    },
+    {
+      "family": "composite_quota_intervals",
+      "maximum_third_repair_bytes": 2152967,
+      "maximum_writer_bytes": 979684,
+      "reference_third_repair_bytes": 240405,
+      "reference_writer_bytes": 167718,
+      "split": "study",
+      "task_id": "v10-study-composite_quota_intervals-800410d18c84232a"
+    },
+    {
+      "family": "composite_dependency_resolver",
+      "maximum_third_repair_bytes": 2169465,
+      "maximum_writer_bytes": 993312,
+      "reference_third_repair_bytes": 271642,
+      "reference_writer_bytes": 186259,
+      "split": "study",
+      "task_id": "v10-study-composite_dependency_resolver-47c57dba09978c27"
+    }
+  ],
+  "tasks_checked": 272,
+  "test_count": 7
+}

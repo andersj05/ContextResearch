@@ -1,0 +1,18 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\198dd6a13af5a305\\job.json",
+  "module": "rollback_checkpoint_v7.test_contract_review",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\198dd6a13af5a305\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\198dd6a13af5a305\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\198dd6a13af5a305\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\198dd6a13af5a305\\tmp",
+  "test_ids": [
+    "rollback_checkpoint_v7.test_contract_review.IndependentContractReview.test_conditional_denominator_retains_missing_pairs_and_excludes_initial_success",
+    "rollback_checkpoint_v7.test_contract_review.IndependentContractReview.test_lesson_may_retain_failed_values_and_forks_are_independent",
+    "rollback_checkpoint_v7.test_contract_review.IndependentContractReview.test_pair_gate_failure_escapes_prefix_policy_failure_handling",
+    "rollback_checkpoint_v7.test_contract_review.IndependentContractReview.test_shared_writer_unknown_prevents_both_continuations",
+    "rollback_checkpoint_v7.test_contract_review.IndependentContractReview.test_stage_two_and_three_restore_every_packet_and_successful_record",
+    "rollback_checkpoint_v7.test_contract_review.IndependentContractReview.test_symmetric_render_omissions_cannot_pass_pair_gate",
+    "rollback_checkpoint_v7.test_contract_review.IndependentContractReview.test_unknown_in_one_arm_does_not_remove_its_paired_observation"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

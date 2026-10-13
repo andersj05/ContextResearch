@@ -1,0 +1,59 @@
+{
+  "completed_test_ids": [
+    "workflow_executed.test_executed.ExecutedTests.test_checked_child_uses_only_scoped_bounded_parent_and_new_records",
+    "workflow_executed.test_executed.ExecutedTests.test_expected_work_and_last_failure_are_independently_specified",
+    "workflow_executed.test_executed.ExecutedTests.test_full_saved_ledger_replay_reconciles_usage_and_rejects_answer_tampering",
+    "workflow_executed.test_executed.ExecutedTests.test_index_preserves_chronology_and_excludes_unrequested_checks",
+    "workflow_executed.test_executed.ExecutedTests.test_reexecute_captured_sources_and_runtime_to_verify_actual_outcomes",
+    "workflow_executed.test_executed.ExecutedTests.test_schedule_and_scope_revelation_do_not_leak_final_state",
+    "workflow_executed.test_executed.ExecutedTests.test_source_and_artifact_evidence_tampering_is_rejected"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "workflow_executed.test_executed.ExecutedTests.test_checked_child_uses_only_scoped_bounded_parent_and_new_records": "passed",
+    "workflow_executed.test_executed.ExecutedTests.test_expected_work_and_last_failure_are_independently_specified": "passed",
+    "workflow_executed.test_executed.ExecutedTests.test_full_saved_ledger_replay_reconciles_usage_and_rejects_answer_tampering": "passed",
+    "workflow_executed.test_executed.ExecutedTests.test_index_preserves_chronology_and_excludes_unrequested_checks": "passed",
+    "workflow_executed.test_executed.ExecutedTests.test_reexecute_captured_sources_and_runtime_to_verify_actual_outcomes": "passed",
+    "workflow_executed.test_executed.ExecutedTests.test_schedule_and_scope_revelation_do_not_leak_final_state": "passed",
+    "workflow_executed.test_executed.ExecutedTests.test_source_and_artifact_evidence_tampering_is_rejected": "passed"
+  },
+  "elapsed_seconds": 21.68845620000502,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "workflow_executed.test_executed.ExecutedTests.test_checked_child_uses_only_scoped_bounded_parent_and_new_records",
+    "workflow_executed.test_executed.ExecutedTests.test_expected_work_and_last_failure_are_independently_specified",
+    "workflow_executed.test_executed.ExecutedTests.test_full_saved_ledger_replay_reconciles_usage_and_rejects_answer_tampering",
+    "workflow_executed.test_executed.ExecutedTests.test_index_preserves_chronology_and_excludes_unrequested_checks",
+    "workflow_executed.test_executed.ExecutedTests.test_reexecute_captured_sources_and_runtime_to_verify_actual_outcomes",
+    "workflow_executed.test_executed.ExecutedTests.test_schedule_and_scope_revelation_do_not_leak_final_state",
+    "workflow_executed.test_executed.ExecutedTests.test_source_and_artifact_evidence_tampering_is_rejected"
+  ],
+  "planned_test_ids": [
+    "workflow_executed.test_executed.ExecutedTests.test_checked_child_uses_only_scoped_bounded_parent_and_new_records",
+    "workflow_executed.test_executed.ExecutedTests.test_expected_work_and_last_failure_are_independently_specified",
+    "workflow_executed.test_executed.ExecutedTests.test_full_saved_ledger_replay_reconciles_usage_and_rejects_answer_tampering",
+    "workflow_executed.test_executed.ExecutedTests.test_index_preserves_chronology_and_excludes_unrequested_checks",
+    "workflow_executed.test_executed.ExecutedTests.test_reexecute_captured_sources_and_runtime_to_verify_actual_outcomes",
+    "workflow_executed.test_executed.ExecutedTests.test_schedule_and_scope_revelation_do_not_leak_final_state",
+    "workflow_executed.test_executed.ExecutedTests.test_source_and_artifact_evidence_tampering_is_rejected"
+  ],
+  "process_id": 56424,
+  "skips": 0,
+  "started_test_ids": [
+    "workflow_executed.test_executed.ExecutedTests.test_checked_child_uses_only_scoped_bounded_parent_and_new_records",
+    "workflow_executed.test_executed.ExecutedTests.test_expected_work_and_last_failure_are_independently_specified",
+    "workflow_executed.test_executed.ExecutedTests.test_full_saved_ledger_replay_reconciles_usage_and_rejects_answer_tampering",
+    "workflow_executed.test_executed.ExecutedTests.test_index_preserves_chronology_and_excludes_unrequested_checks",
+    "workflow_executed.test_executed.ExecutedTests.test_reexecute_captured_sources_and_runtime_to_verify_actual_outcomes",
+    "workflow_executed.test_executed.ExecutedTests.test_schedule_and_scope_revelation_do_not_leak_final_state",
+    "workflow_executed.test_executed.ExecutedTests.test_source_and_artifact_evidence_tampering_is_rejected"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\131ae431d9da900f\\tmp",
+  "tests_run": 7,
+  "unexpected_successes": 0
+}

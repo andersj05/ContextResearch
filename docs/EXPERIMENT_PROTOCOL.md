@@ -101,3 +101,20 @@ The [metered recovery reference](../experiments/dependency_memory/RECOVERY_FRONT
 ## Claim boundary
 
 The Theo/Jev criticism was supplied by the user; the specific Jev implementation and original post were not independently audited. It motivates failure cases but is not a citable measurement. No universal claim that filtering always harms performance, that native compaction is optimal, or that cache writes occupy a fixed share of spending follows from that discussion.
+
+## October 8, 2026: user-authorized v5 continuation amendment
+
+The user explicitly amends the v5 global stop rule and requests completion of
+all remaining experiments. For this continuation, an unknown generation stops
+only its affected trajectory and preserves its missing score and reservation.
+Independent jobs continue. Authentication, exhausted account allowance, source
+or isolation drift, accounting failures and the cumulative allocation ceiling
+remain global stops.
+
+The [v5 continuation protocol](../experiments/dependency_memory/rollback_development_v5_continuation/PROTOCOL.md)
+supersedes the original v5 global-unknown-stop and no-continuation rule. Preserve
+the original frozen phase; reconstruct interrupted healthy trajectories using
+verified receipts and send only never-admitted identities. Completed and unknown
+calls are never repeated. The 48 tasks, 768 jobs, Luna medium, four workers,
+information-access contract and 13,640 cumulative generation ceiling remain.
+The amendment follows observed outcomes and is disclosed development work.

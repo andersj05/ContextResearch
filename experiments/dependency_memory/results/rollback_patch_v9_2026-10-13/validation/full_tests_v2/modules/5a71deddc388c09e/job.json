@@ -1,0 +1,18 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\5a71deddc388c09e\\job.json",
+  "module": "rollback_patch_v9.test_prepare",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\5a71deddc388c09e\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\5a71deddc388c09e\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\5a71deddc388c09e\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\5a71deddc388c09e\\tmp",
+  "test_ids": [
+    "rollback_patch_v9.test_prepare.AllocationTests.test_deterministic_jobs_depend_only_on_own_prefix",
+    "rollback_patch_v9.test_prepare.AllocationTests.test_exact_call_caps_and_distinct_four_arm_identities",
+    "rollback_patch_v9.test_prepare.AllocationTests.test_fixed_live_cohort_and_seed_cannot_silently_change",
+    "rollback_patch_v9.test_prepare.AllocationTests.test_freeze_roundtrip_and_tamper_rejection",
+    "rollback_patch_v9.test_prepare.CalibrationGateTests.test_bound_positive_control_gate",
+    "rollback_patch_v9.test_prepare.CalibrationGateTests.test_public_repair_alone_cannot_pass_primary_endpoint_gate",
+    "rollback_patch_v9.test_prepare.CalibrationGateTests.test_simulation_and_unbound_audit_cannot_authorize_main"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

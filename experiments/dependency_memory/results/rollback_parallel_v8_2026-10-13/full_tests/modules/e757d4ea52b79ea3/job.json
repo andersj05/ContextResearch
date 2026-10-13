@@ -1,0 +1,26 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\e757d4ea52b79ea3\\job.json",
+  "module": "collision_audit.test_collision_audit",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\e757d4ea52b79ea3\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\e757d4ea52b79ea3\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\e757d4ea52b79ea3\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\e757d4ea52b79ea3\\tmp",
+  "test_ids": [
+    "collision_audit.test_collision_audit.CollisionAuditTests.test_adaptive_recovery_is_strictly_cheaper_than_fixed_batch",
+    "collision_audit.test_collision_audit.CollisionAuditTests.test_all_repairs_are_jointly_valid_before_task_reveal",
+    "collision_audit.test_collision_audit.CollisionAuditTests.test_binary_calibration_matches_independent_leaf_count",
+    "collision_audit.test_collision_audit.CollisionAuditTests.test_current_recovery_is_not_original_version_recovery",
+    "collision_audit.test_collision_audit.CollisionAuditTests.test_every_pair_can_pass_while_full_group_fails",
+    "collision_audit.test_collision_audit.CollisionAuditTests.test_exact_channels_control_collision_membership",
+    "collision_audit.test_collision_audit.CollisionAuditTests.test_forward_enumeration_all_343_accepted_action_tables",
+    "collision_audit.test_collision_audit.CollisionAuditTests.test_infinite_cost_has_a_budget_independent_certificate",
+    "collision_audit.test_collision_audit.CollisionAuditTests.test_lower_proof_rejects_tampering_and_omitted_tools",
+    "collision_audit.test_collision_audit.CollisionAuditTests.test_negative_controls_do_not_demand_extra_memory",
+    "collision_audit.test_collision_audit.CollisionAuditTests.test_nonrefining_tools_cannot_manufacture_information",
+    "collision_audit.test_collision_audit.CollisionAuditTests.test_proof_size_does_not_grow_with_a_useless_query_budget",
+    "collision_audit.test_collision_audit.CollisionAuditTests.test_rejects_undeclared_encoder_access_and_nonpositive_costs",
+    "collision_audit.test_collision_audit.CollisionAuditTests.test_repair_cannot_know_which_future_task_is_coming",
+    "collision_audit.test_collision_audit.CollisionAuditTests.test_tool_and_observation_renaming_preserves_cost"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

@@ -1,0 +1,1 @@
+{"observation":{"item_counts":{"reasoning":2,"userMessage":2},"method_counts":{"error":1,"item/completed":2,"item/started":2,"other":8},"server_error_codes":["other"],"turn_statuses":[]},"phase":"collect","reason_code":"provider_or_generation_failure","version":1}

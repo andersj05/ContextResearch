@@ -1,0 +1,44 @@
+{
+  "completed_test_ids": [
+    "cross_record_continuation.test_continuation.ContinuationTests.test_controller_accepts_only_next_identity_and_never_retries",
+    "cross_record_continuation.test_continuation.ContinuationTests.test_frozen_prefix_suffix_and_permanent_failure",
+    "cross_record_continuation.test_continuation.ContinuationTests.test_full_suffix_dry_run_without_model_or_original_mutation",
+    "cross_record_continuation.test_continuation.ContinuationTests.test_provider_error_is_permanent_and_advances_once"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "cross_record_continuation.test_continuation.ContinuationTests.test_controller_accepts_only_next_identity_and_never_retries": "passed",
+    "cross_record_continuation.test_continuation.ContinuationTests.test_frozen_prefix_suffix_and_permanent_failure": "passed",
+    "cross_record_continuation.test_continuation.ContinuationTests.test_full_suffix_dry_run_without_model_or_original_mutation": "passed",
+    "cross_record_continuation.test_continuation.ContinuationTests.test_provider_error_is_permanent_and_advances_once": "passed"
+  },
+  "elapsed_seconds": 1.4070553000201471,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "cross_record_continuation.test_continuation.ContinuationTests.test_controller_accepts_only_next_identity_and_never_retries",
+    "cross_record_continuation.test_continuation.ContinuationTests.test_frozen_prefix_suffix_and_permanent_failure",
+    "cross_record_continuation.test_continuation.ContinuationTests.test_full_suffix_dry_run_without_model_or_original_mutation",
+    "cross_record_continuation.test_continuation.ContinuationTests.test_provider_error_is_permanent_and_advances_once"
+  ],
+  "planned_test_ids": [
+    "cross_record_continuation.test_continuation.ContinuationTests.test_controller_accepts_only_next_identity_and_never_retries",
+    "cross_record_continuation.test_continuation.ContinuationTests.test_frozen_prefix_suffix_and_permanent_failure",
+    "cross_record_continuation.test_continuation.ContinuationTests.test_full_suffix_dry_run_without_model_or_original_mutation",
+    "cross_record_continuation.test_continuation.ContinuationTests.test_provider_error_is_permanent_and_advances_once"
+  ],
+  "process_id": 14428,
+  "skips": 0,
+  "started_test_ids": [
+    "cross_record_continuation.test_continuation.ContinuationTests.test_controller_accepts_only_next_identity_and_never_retries",
+    "cross_record_continuation.test_continuation.ContinuationTests.test_frozen_prefix_suffix_and_permanent_failure",
+    "cross_record_continuation.test_continuation.ContinuationTests.test_full_suffix_dry_run_without_model_or_original_mutation",
+    "cross_record_continuation.test_continuation.ContinuationTests.test_provider_error_is_permanent_and_advances_once"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\a756fbfc2b027bb0\\tmp",
+  "tests_run": 4,
+  "unexpected_successes": 0
+}

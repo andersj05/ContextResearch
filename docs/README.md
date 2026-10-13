@@ -2,6 +2,7 @@
 
 | Need | Read |
 |---|---|
+| A visual overview of the research so far | [Research overview (HTML)](research-overview.html) |
 | Current checkpoint and next work | [Status](STATUS.md) |
 | Choose evidence for a research task | [Research map](RESEARCH_MAP.md) |
 | Find experiment outcomes | [Experiment catalog](../experiments/INDEX.md) |
@@ -10,6 +11,13 @@
 | Understand a research choice | [Decision record](DECISIONS.md) |
 | Review the rollback experiment design | [October 8 review handoff](ROLLBACK_REVIEW_HANDOFF_2026-10-08.md) |
 | Inspect an older handoff | [History index](history/README.md), [October 2 closeout](END_OF_DAY_2026-10-02.md) |
+
+The [HTML overview](research-overview.html) is an offline, self-contained snapshot.
+Its study library is generated from the registry with
+`python scripts/build_research_overview.py`; use `--check` to check freshness and
+evidence links without writing. The dated narrative lives in
+[the HTML template](../scripts/templates/research_overview.html) and needs review
+when research conclusions change. This builder does not run experiments.
 
 ## Shared experiment design
 

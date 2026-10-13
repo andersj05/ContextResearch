@@ -1,0 +1,54 @@
+{
+  "completed_test_ids": [
+    "priced_coding.test_evidence.PricedEvidenceTests.test_complete_population_minima_and_separately_scoped_training",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_complete_small_weighted_events_and_large_constructed_routes",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_finite_bound_improvement_and_preserved_failed_starts",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_inclusive_public_payload_and_independent_root_certificates",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_separate_actual_limit_and_no_discovery_access_in_actors",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_two_complete_native_calibrations"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "priced_coding.test_evidence.PricedEvidenceTests.test_complete_population_minima_and_separately_scoped_training": "passed",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_complete_small_weighted_events_and_large_constructed_routes": "passed",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_finite_bound_improvement_and_preserved_failed_starts": "passed",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_inclusive_public_payload_and_independent_root_certificates": "passed",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_separate_actual_limit_and_no_discovery_access_in_actors": "passed",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_two_complete_native_calibrations": "passed"
+  },
+  "elapsed_seconds": 398.0437529000046,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "priced_coding.test_evidence.PricedEvidenceTests.test_complete_population_minima_and_separately_scoped_training",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_complete_small_weighted_events_and_large_constructed_routes",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_finite_bound_improvement_and_preserved_failed_starts",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_inclusive_public_payload_and_independent_root_certificates",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_separate_actual_limit_and_no_discovery_access_in_actors",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_two_complete_native_calibrations"
+  ],
+  "planned_test_ids": [
+    "priced_coding.test_evidence.PricedEvidenceTests.test_complete_population_minima_and_separately_scoped_training",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_complete_small_weighted_events_and_large_constructed_routes",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_finite_bound_improvement_and_preserved_failed_starts",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_inclusive_public_payload_and_independent_root_certificates",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_separate_actual_limit_and_no_discovery_access_in_actors",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_two_complete_native_calibrations"
+  ],
+  "process_id": 57028,
+  "skips": 0,
+  "started_test_ids": [
+    "priced_coding.test_evidence.PricedEvidenceTests.test_complete_population_minima_and_separately_scoped_training",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_complete_small_weighted_events_and_large_constructed_routes",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_finite_bound_improvement_and_preserved_failed_starts",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_inclusive_public_payload_and_independent_root_certificates",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_separate_actual_limit_and_no_discovery_access_in_actors",
+    "priced_coding.test_evidence.PricedEvidenceTests.test_two_complete_native_calibrations"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\e8225120e35667c3\\tmp",
+  "tests_run": 6,
+  "unexpected_successes": 0
+}

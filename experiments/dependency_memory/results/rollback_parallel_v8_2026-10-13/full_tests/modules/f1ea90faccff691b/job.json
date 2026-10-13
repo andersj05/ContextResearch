@@ -1,0 +1,19 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\f1ea90faccff691b\\job.json",
+  "module": "test_request_contracts",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\f1ea90faccff691b\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\f1ea90faccff691b\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\f1ea90faccff691b\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\f1ea90faccff691b\\tmp",
+  "test_ids": [
+    "test_request_contracts.RequestContractTests.test_all_recorded_pilot_requests_remain_byte_identical",
+    "test_request_contracts.RequestContractTests.test_contract_version_relabeling_does_not_bypass_validation",
+    "test_request_contracts.RequestContractTests.test_evaluator_channels_and_answer_hints_rejected_for_both_contracts",
+    "test_request_contracts.RequestContractTests.test_invalid_contract_is_rejected_before_process_or_generation",
+    "test_request_contracts.RequestContractTests.test_new_contract_preserves_declared_rule_record_order_and_payload",
+    "test_request_contracts.RequestContractTests.test_revision_request_reaches_turn_without_extra_context",
+    "test_request_contracts.RequestContractTests.test_synthetic_final_is_valid_without_an_answer_oracle",
+    "test_request_contracts.RequestContractTests.test_unknown_missing_or_nonstring_contract_cannot_fall_through"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

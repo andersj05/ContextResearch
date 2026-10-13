@@ -1,0 +1,42 @@
+{
+  "alpha_fraction": {
+    "denominator": 20,
+    "numerator": 1
+  },
+  "calibration_requirement": "Current source-verified K/F screen and independent 16-task-per-cell validation pass the manifest-bound require_candidates/allow_fresh_ceiling design. No selecting or tuning on R outcomes.",
+  "campaign_authorization": "../rollback_challenge_v6_candidates_2026-10-09/campaign_authorization.json",
+  "confirmation_arms": [
+    "K",
+    "R"
+  ],
+  "effort": "medium",
+  "eligibility": "Require independent receipt/source/accounting replay to pass and no unresolved global source, information-access or accounting stop. Systemic validity failures do not become an inferential result.",
+  "frozen_utc": "2026-10-09T21:34:52.051175+00:00",
+  "inference_source": "experiments/dependency_memory/rollback_missingness_bound/rollback_missingness.py",
+  "inference_source_sha256": "2080cd0e6403ef84a6c24364a1f348e029edb93c1950f3b7ca8d4024f0ec6086",
+  "missingness": "Keep unknown scores missing; no imputation, retry or outcome-dependent replacement. The maximum-completion p-value equals the standard exact test when every pair is observed and never reduces the complete-case p-value.",
+  "model": "gpt-6-luna",
+  "power_limitation": "The planned 80% target assumes complete observation and its stated alternative. No 80% power guarantee under arbitrary missingness.",
+  "power_plan": {
+    "alpha": 0.05,
+    "delta": 0.1,
+    "discordance": 0.3,
+    "grid_increment": 20,
+    "method": "exact unconditional power of two-sided conditional McNemar test",
+    "pairs": 260,
+    "power": 0.8188401579007178,
+    "scope": "independent task pairs; assumed discordance and effect, not empirical assurance",
+    "target_power": 0.8
+  },
+  "primary_contrast": "Complete-episode binary success R minus K on every fixed selected task.",
+  "primary_decision": "Two-sided exact paired test at alpha=1/20; reject only when the maximum p-value over every feasible completion of missing binary scores is <=1/20. Direction follows the sharp fixed-denominator effect bounds.",
+  "proof_and_finite_checks": "experiments/dependency_memory/results/rollback_missingness_bound_2026-10-09/verification_v3.json",
+  "proof_verification_sha256": "c290135b70700cf77c6d4c70e46e2ecf87754f5b29147cae45e685a388582ee0",
+  "sample_rule": "Equal tasks per validated cell; ceil(planned_pairs / number_of_cells) replicates per cell. Freeze the resulting exact N, seed, manifest and full generation bound before first confirmation dispatch.",
+  "scope": "Future fixed-size confirmation only; existing control results and original engine reports remain unchanged.",
+  "secondary": "Arm rates, family diagnostics and recorded resources are descriptive. Missingness bounds are not population confidence intervals.",
+  "standard_engine_report": "Preserve its original confirmatory-p suppression when any score is missing; produce a separately labelled amendment report bound to this precommit.",
+  "status": "prospective_analysis_amendment_before_any_v6_R_arm_observation",
+  "stopping": "Run the entire fixed allocation; no interim significance stopping or extension to obtain significance.",
+  "supersedes": "confirmation_analysis_precommit.json; package/source paths and proof binding only; statistical method unchanged; still before any v6 R-arm observation"
+}

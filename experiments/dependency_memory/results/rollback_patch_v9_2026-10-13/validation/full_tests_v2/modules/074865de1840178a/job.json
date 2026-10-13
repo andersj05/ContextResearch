@@ -1,0 +1,28 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\074865de1840178a\\job.json",
+  "module": "evidence_use.test_guard",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\074865de1840178a\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\074865de1840178a\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\074865de1840178a\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\074865de1840178a\\tmp",
+  "test_ids": [
+    "evidence_use.test_guard.CrossRecordExecutionTests.test_duplicate_paths_overlapping_paths_and_owners_abstain",
+    "evidence_use.test_guard.CrossRecordExecutionTests.test_every_fixture_row_and_late_event_against_independent_executor",
+    "evidence_use.test_guard.CrossRecordExecutionTests.test_late_event_changes_scope_before_action",
+    "evidence_use.test_guard.CrossRecordExecutionTests.test_missing_state_and_wrong_boolean_type_abstain",
+    "evidence_use.test_guard.CrossRecordExecutionTests.test_predicate_sweeps_against_independent_executor",
+    "evidence_use.test_guard.CrossRecordExecutionTests.test_public_rule_copy_matches_historical_instructions",
+    "evidence_use.test_guard.CrossRecordExecutionTests.test_raw_tool_joins_match_independent_truth",
+    "evidence_use.test_guard.CrossRecordExecutionTests.test_unknown_rule_and_extra_actor_truth_abstain",
+    "evidence_use.test_guard.ReceiptExecutionTests.test_boolean_answer_cannot_be_integer",
+    "evidence_use.test_guard.ReceiptExecutionTests.test_correct_proposal_can_be_vetoed_by_lossy_memory",
+    "evidence_use.test_guard.ReceiptExecutionTests.test_duplicate_keys_nonfinite_and_bool_returncode",
+    "evidence_use.test_guard.ReceiptExecutionTests.test_extra_proposal_fields_and_malformed_proposal",
+    "evidence_use.test_guard.ReceiptExecutionTests.test_forged_well_formed_receipt_is_not_authenticated",
+    "evidence_use.test_guard.ReceiptExecutionTests.test_independent_grader_on_scope_revision_and_artifacts",
+    "evidence_use.test_guard.ReceiptExecutionTests.test_no_filesystem_or_grader_access",
+    "evidence_use.test_guard.ReceiptExecutionTests.test_omission_is_indistinguishable_to_actor",
+    "evidence_use.test_guard.ReceiptExecutionTests.test_prose_can_be_correct_but_uncheckable"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

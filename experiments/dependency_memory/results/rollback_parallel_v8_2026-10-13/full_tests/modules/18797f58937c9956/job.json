@@ -1,0 +1,15 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\18797f58937c9956\\job.json",
+  "module": "cross_record.test_memory",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\18797f58937c9956\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\18797f58937c9956\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\18797f58937c9956\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\18797f58937c9956\\tmp",
+  "test_ids": [
+    "cross_record.test_memory.MemoryTests.test_identifier_corruption_is_detected",
+    "cross_record.test_memory.MemoryTests.test_identifier_swap_preserves_bag_but_breaks_relationships",
+    "cross_record.test_memory.MemoryTests.test_missing_component_is_unknown_not_certified",
+    "cross_record.test_memory.MemoryTests.test_order_independent_join_and_complete_projection"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

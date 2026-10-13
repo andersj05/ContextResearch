@@ -1,0 +1,14 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\49d4d734763205a1\\job.json",
+  "module": "evidence_use.test_replay",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\49d4d734763205a1\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\49d4d734763205a1\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\49d4d734763205a1\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\49d4d734763205a1\\tmp",
+  "test_ids": [
+    "evidence_use.test_replay.RetrospectiveReplayTests.test_minimized_witnesses_preserve_original_diagnostic",
+    "evidence_use.test_replay.RetrospectiveReplayTests.test_missing_outcomes_cannot_be_repaired_by_replay",
+    "evidence_use.test_replay.RetrospectiveReplayTests.test_vetoes_and_readout_are_separate_from_task_success"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

@@ -1,0 +1,700 @@
+[
+  {
+    "label": "ERROR: test_development_episode_and_full_group_recovery (cross_record.test_run.RunTests.test_development_episode_and_full_group_recovery)",
+    "test": "cross_record.test_run.RunTests.test_development_episode_and_full_group_recovery",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpvvk9x3qv\\\\package-61011-episode.json.tmp'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpvvk9x3qv'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpvvk9x3qv'"
+    ]
+  },
+  {
+    "label": "ERROR: test_controller_accepts_only_next_identity_and_never_retries (cross_record_continuation.test_continuation.ContinuationTests.test_controller_accepts_only_next_identity_and_never_retries)",
+    "test": "cross_record_continuation.test_continuation.ContinuationTests.test_controller_accepts_only_next_identity_and_never_retries",
+    "exceptions": [
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpg38smbum\\\\calls'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpg38smbum'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpg38smbum'"
+    ]
+  },
+  {
+    "label": "ERROR: test_full_suffix_dry_run_without_model_or_original_mutation (cross_record_continuation.test_continuation.ContinuationTests.test_full_suffix_dry_run_without_model_or_original_mutation)",
+    "test": "cross_record_continuation.test_continuation.ContinuationTests.test_full_suffix_dry_run_without_model_or_original_mutation",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpfou9mh01\\\\instructions.txt'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpfou9mh01'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpfou9mh01'"
+    ]
+  },
+  {
+    "label": "ERROR: test_provider_error_is_permanent_and_advances_once (cross_record_continuation.test_continuation.ContinuationTests.test_provider_error_is_permanent_and_advances_once)",
+    "test": "cross_record_continuation.test_continuation.ContinuationTests.test_provider_error_is_permanent_and_advances_once",
+    "exceptions": [
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpc_d31o7y\\\\calls'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpc_d31o7y'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpc_d31o7y'"
+    ]
+  },
+  {
+    "label": "ERROR: test_saved_replay_validation_rejects_missing_and_changed_results (cross_record_v2.test_compatibility.CompatibilityTests.test_saved_replay_validation_rejects_missing_and_changed_results)",
+    "test": "cross_record_v2.test_compatibility.CompatibilityTests.test_saved_replay_validation_rejects_missing_and_changed_results",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpvxxztauv\\\\replay.json'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpvxxztauv'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpvxxztauv'"
+    ]
+  },
+  {
+    "label": "ERROR: rollback_checkpoint_v7.test_engine (unittest.loader._FailedTest.rollback_checkpoint_v7.test_engine)",
+    "test": "unittest.loader._FailedTest.rollback_checkpoint_v7.test_engine",
+    "exceptions": [
+      "ImportError: Failed to import test module: rollback_checkpoint_v7.test_engine",
+      "ImportError: attempted relative import beyond top-level package"
+    ]
+  },
+  {
+    "label": "ERROR: rollback_checkpoint_v7.test_runner (unittest.loader._FailedTest.rollback_checkpoint_v7.test_runner)",
+    "test": "unittest.loader._FailedTest.rollback_checkpoint_v7.test_runner",
+    "exceptions": [
+      "ImportError: Failed to import test module: rollback_checkpoint_v7.test_runner",
+      "ImportError: attempted relative import beyond top-level package"
+    ]
+  },
+  {
+    "label": "ERROR: test_dev_request_envelopes_and_local_handoff (schema_checks.test_schema_checks.SchemaCheckTests.test_dev_request_envelopes_and_local_handoff)",
+    "test": "schema_checks.test_schema_checks.SchemaCheckTests.test_dev_request_envelopes_and_local_handoff",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpb4qfpqiz\\\\retry-development-41011-episode.json.tmp'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpb4qfpqiz'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpb4qfpqiz'"
+    ]
+  },
+  {
+    "label": "ERROR: test_failure_replacement_uses_only_bounded_parent_at_child (schema_transfer.test_run.RunnerDevelopmentTests.test_failure_replacement_uses_only_bounded_parent_at_child)",
+    "test": "schema_transfer.test_run.RunnerDevelopmentTests.test_failure_replacement_uses_only_bounded_parent_at_child",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpctc63h1j\\\\escrow-52011-episode.json.tmp'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpctc63h1j'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpctc63h1j'"
+    ]
+  },
+  {
+    "label": "ERROR: test_frozen_manifest_rejects_erased_unknown_usage_and_failed_identity (scope_inference_suffix.test_suffix.SuffixControls.test_frozen_manifest_rejects_erased_unknown_usage_and_failed_identity)",
+    "test": "scope_inference_suffix.test_suffix.SuffixControls.test_frozen_manifest_rejects_erased_unknown_usage_and_failed_identity",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpt16qb90p\\\\preflight.json'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpt16qb90p'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpt16qb90p'"
+    ]
+  },
+  {
+    "label": "ERROR: test_corrected_cold_directory_saves_reservation_before_generation_and_metering (scope_inference_v2.test_runtime.CorrectedLaunchTests.test_corrected_cold_directory_saves_reservation_before_generation_and_metering)",
+    "test": "scope_inference_v2.test_runtime.CorrectedLaunchTests.test_corrected_cold_directory_saves_reservation_before_generation_and_metering",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmp35ayow8n\\\\dummy-executable'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmp35ayow8n'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmp35ayow8n'"
+    ]
+  },
+  {
+    "label": "ERROR: test_original_missing_directory_fails_before_generation (scope_inference_v2.test_runtime.CorrectedLaunchTests.test_original_missing_directory_fails_before_generation)",
+    "test": "scope_inference_v2.test_runtime.CorrectedLaunchTests.test_original_missing_directory_fails_before_generation",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmp2xnqpbl1\\\\dummy-executable'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmp2xnqpbl1'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmp2xnqpbl1'"
+    ]
+  },
+  {
+    "label": "ERROR: test_preparation_uses_only_canonical_public_stdin_and_no_resume (test_codex_subscription.SubscriptionGateTests.test_preparation_uses_only_canonical_public_stdin_and_no_resume)",
+    "test": "test_codex_subscription.SubscriptionGateTests.test_preparation_uses_only_canonical_public_stdin_and_no_resume",
+    "exceptions": [
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpv_7a91cg\\\\empty'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpv_7a91cg'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpv_7a91cg'"
+    ]
+  },
+  {
+    "label": "ERROR: test_budget_reservation_and_failed_attempts_do_not_retry (test_development_pilot.DevelopmentPilotTests.test_budget_reservation_and_failed_attempts_do_not_retry)",
+    "test": "test_development_pilot.DevelopmentPilotTests.test_budget_reservation_and_failed_attempts_do_not_retry",
+    "exceptions": [
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpcbtxy4z_\\\\run'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpcbtxy4z_'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpcbtxy4z_'"
+    ]
+  },
+  {
+    "label": "ERROR: test_api_key_authentication_never_dispatches (test_luna_appserver.LunaAppServerTests.test_api_key_authentication_never_dispatches)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_api_key_authentication_never_dispatches",
+    "exceptions": [
+      "luna_appserver.TransportError: chatgpt_subscription_required",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-mihlfw9a'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-mihlfw9a'"
+    ]
+  },
+  {
+    "label": "ERROR: test_completed_json_with_controlled_harness_stop_is_accepted (test_luna_appserver.LunaAppServerTests.test_completed_json_with_controlled_harness_stop_is_accepted)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_completed_json_with_controlled_harness_stop_is_accepted",
+    "exceptions": [
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-z1_ewfzz'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-z1_ewfzz'"
+    ]
+  },
+  {
+    "label": "ERROR: test_controlled_stop_without_completed_answer_or_usage_is_rejected (test_luna_appserver.LunaAppServerTests.test_controlled_stop_without_completed_answer_or_usage_is_rejected) (missing='item/completed')",
+    "test": "test_luna_appserver.LunaAppServerTests.test_controlled_stop_without_completed_answer_or_usage_is_rejected",
+    "exceptions": [
+      "luna_appserver.TransportError: missing_usage_or_ambiguous_answer",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-rpxdtpwl'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-rpxdtpwl'"
+    ]
+  },
+  {
+    "label": "ERROR: test_controlled_stop_without_completed_answer_or_usage_is_rejected (test_luna_appserver.LunaAppServerTests.test_controlled_stop_without_completed_answer_or_usage_is_rejected) (missing='thread/tokenUsage/updated')",
+    "test": "test_luna_appserver.LunaAppServerTests.test_controlled_stop_without_completed_answer_or_usage_is_rejected",
+    "exceptions": [
+      "luna_appserver.TransportError: missing_usage_or_ambiguous_answer",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-lzgrrwg_'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-lzgrrwg_'"
+    ]
+  },
+  {
+    "label": "ERROR: test_credit_permission_never_overrides_provider_rejection_or_retries (test_luna_appserver.LunaAppServerTests.test_credit_permission_never_overrides_provider_rejection_or_retries)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_credit_permission_never_overrides_provider_rejection_or_retries",
+    "exceptions": [
+      "luna_appserver.TransportError: provider_error",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-0k1tgdpo'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-0k1tgdpo'"
+    ]
+  },
+  {
+    "label": "ERROR: test_credit_rejection_keeps_before_and_after_snapshots_and_accounting (test_luna_appserver.LunaAppServerTests.test_credit_rejection_keeps_before_and_after_snapshots_and_accounting) (phase='before')",
+    "test": "test_luna_appserver.LunaAppServerTests.test_credit_rejection_keeps_before_and_after_snapshots_and_accounting",
+    "exceptions": [
+      "luna_appserver.TransportError: existing_codex_credits_unavailable",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-u2kkhpr_'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-u2kkhpr_'"
+    ]
+  },
+  {
+    "label": "ERROR: test_credit_rejection_keeps_before_and_after_snapshots_and_accounting (test_luna_appserver.LunaAppServerTests.test_credit_rejection_keeps_before_and_after_snapshots_and_accounting) (phase='after')",
+    "test": "test_luna_appserver.LunaAppServerTests.test_credit_rejection_keeps_before_and_after_snapshots_and_accounting",
+    "exceptions": [
+      "luna_appserver.TransportError: existing_codex_credits_unavailable",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-7fcbqs_z'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-7fcbqs_z'"
+    ]
+  },
+  {
+    "label": "ERROR: test_effective_isolation_drift_never_dispatches (test_luna_appserver.LunaAppServerTests.test_effective_isolation_drift_never_dispatches) (change=<function LunaAppServerTests.test_effective_isolation_drift_never_dispatches.<locals>.<lambda> at 0x0000024F18334250>)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_effective_isolation_drift_never_dispatches",
+    "exceptions": [
+      "ValueError: Isolation configuration drift: features.shell_tool",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-60vb5al1'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-60vb5al1'"
+    ]
+  },
+  {
+    "label": "ERROR: test_effective_isolation_drift_never_dispatches (test_luna_appserver.LunaAppServerTests.test_effective_isolation_drift_never_dispatches) (change=<function LunaAppServerTests.test_effective_isolation_drift_never_dispatches.<locals>.<lambda> at 0x0000024F19A6E4B0>)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_effective_isolation_drift_never_dispatches",
+    "exceptions": [
+      "ValueError: Isolation configuration drift: features.rollout_budget.enabled",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-5ahm_pf8'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-5ahm_pf8'"
+    ]
+  },
+  {
+    "label": "ERROR: test_effective_isolation_drift_never_dispatches (test_luna_appserver.LunaAppServerTests.test_effective_isolation_drift_never_dispatches) (change=<function LunaAppServerTests.test_effective_isolation_drift_never_dispatches.<locals>.<lambda> at 0x0000024F19A6C250>)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_effective_isolation_drift_never_dispatches",
+    "exceptions": [
+      "ValueError: Isolation configuration drift: features.rollout_budget.prefill_token_weight",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-axt63f6z'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-axt63f6z'"
+    ]
+  },
+  {
+    "label": "ERROR: test_effective_isolation_drift_never_dispatches (test_luna_appserver.LunaAppServerTests.test_effective_isolation_drift_never_dispatches) (change=<function LunaAppServerTests.test_effective_isolation_drift_never_dispatches.<locals>.<lambda> at 0x0000024F19A6C300>)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_effective_isolation_drift_never_dispatches",
+    "exceptions": [
+      "ValueError: Unexpected enabled MCP server",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-7u_h0lun'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-7u_h0lun'"
+    ]
+  },
+  {
+    "label": "ERROR: test_empty_or_eighty_percent_quota_never_dispatches (test_luna_appserver.LunaAppServerTests.test_empty_or_eighty_percent_quota_never_dispatches) (before={})",
+    "test": "test_luna_appserver.LunaAppServerTests.test_empty_or_eighty_percent_quota_never_dispatches",
+    "exceptions": [
+      "luna_appserver.TransportError: missing_quota_snapshot",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-06pk1kkf'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-06pk1kkf'"
+    ]
+  },
+  {
+    "label": "ERROR: test_empty_or_eighty_percent_quota_never_dispatches (test_luna_appserver.LunaAppServerTests.test_empty_or_eighty_percent_quota_never_dispatches) (before={'ordinaryUsageAllowed': True, 'rateLimits': {'primary': {'usedPercent': 80, 'windowDurationMins': 10080, 'resetsAt': 9999999999}, 'secondary': None, 'rateLimitReachedType': None, 'spendControlReached': False, 'individualLimit': None, 'credits': {'hasCredits': True, 'unlimited': False, 'balance': '100'}}, 'rateLimitsByLimitId': {'codex': {'primary': {'usedPercent': 80, 'windowDurationMins': 10080, 'resetsAt': 9999999999}, 'secondary': None, 'rateLimitReachedType': None, 'spendControlReached': False, 'individualLimit': None, 'credits': {'hasCredits': True, 'unlimited': False, 'balance': '100'}}}})",
+    "test": "test_luna_appserver.LunaAppServerTests.test_empty_or_eighty_percent_quota_never_dispatches",
+    "exceptions": [
+      "luna_appserver.TransportError: quota_guard_80_percent",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-dn0k9bud'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-dn0k9bud'"
+    ]
+  },
+  {
+    "label": "ERROR: test_empty_or_eighty_percent_quota_never_dispatches (test_luna_appserver.LunaAppServerTests.test_empty_or_eighty_percent_quota_never_dispatches) (before={'ordinaryUsageAllowed': True, 'rateLimits': {'primary': {'usedPercent': 100, 'windowDurationMins': 10080, 'resetsAt': 9999999999}, 'secondary': None, 'rateLimitReachedType': None, 'spendControlReached': False, 'individualLimit': None, 'credits': {'hasCredits': True, 'unlimited': False, 'balance': '100'}}, 'rateLimitsByLimitId': {'codex': {'primary': {'usedPercent': 100, 'windowDurationMins': 10080, 'resetsAt': 9999999999}, 'secondary': None, 'rateLimitReachedType': None, 'spendControlReached': False, 'individualLimit': None, 'credits': {'hasCredits': True, 'unlimited': False, 'balance': '100'}}}})",
+    "test": "test_luna_appserver.LunaAppServerTests.test_empty_or_eighty_percent_quota_never_dispatches",
+    "exceptions": [
+      "luna_appserver.TransportError: quota_guard_80_percent",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-3_4ae4n6'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-3_4ae4n6'"
+    ]
+  },
+  {
+    "label": "ERROR: test_empty_quota_after_completion_stops_future_calls (test_luna_appserver.LunaAppServerTests.test_empty_quota_after_completion_stops_future_calls)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_empty_quota_after_completion_stops_future_calls",
+    "exceptions": [
+      "luna_appserver.TransportError: missing_quota_snapshot",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-brp6wqmw'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-brp6wqmw'"
+    ]
+  },
+  {
+    "label": "ERROR: test_existing_credits_allow_exhaustion_without_changing_route (test_luna_appserver.LunaAppServerTests.test_existing_credits_allow_exhaustion_without_changing_route)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_existing_credits_allow_exhaustion_without_changing_route",
+    "exceptions": [
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-o_z4fzgk'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-o_z4fzgk'"
+    ]
+  },
+  {
+    "label": "ERROR: test_explicit_ordinary_usage_denial_never_dispatches (test_luna_appserver.LunaAppServerTests.test_explicit_ordinary_usage_denial_never_dispatches)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_explicit_ordinary_usage_denial_never_dispatches",
+    "exceptions": [
+      "luna_appserver.TransportError: ordinary_usage_not_allowed",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-l6ooiyx_'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-l6ooiyx_'"
+    ]
+  },
+  {
+    "label": "ERROR: test_included_to_credit_transition_is_recorded (test_luna_appserver.LunaAppServerTests.test_included_to_credit_transition_is_recorded)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_included_to_credit_transition_is_recorded",
+    "exceptions": [
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-rrvoanry'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-rrvoanry'"
+    ]
+  },
+  {
+    "label": "ERROR: test_invalid_json_is_a_settled_policy_failure_and_next_request_can_run (test_luna_appserver.LunaAppServerTests.test_invalid_json_is_a_settled_policy_failure_and_next_request_can_run) (text='{')",
+    "test": "test_luna_appserver.LunaAppServerTests.test_invalid_json_is_a_settled_policy_failure_and_next_request_can_run",
+    "exceptions": [
+      "json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+      "luna_appserver.ResponseFormatError: invalid_response_json",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-mxv6ljtv'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-mxv6ljtv'"
+    ]
+  },
+  {
+    "label": "ERROR: test_invalid_json_is_a_settled_policy_failure_and_next_request_can_run (test_luna_appserver.LunaAppServerTests.test_invalid_json_is_a_settled_policy_failure_and_next_request_can_run) (text='{\"inspect\":true,\"inspect\":false}')",
+    "test": "test_luna_appserver.LunaAppServerTests.test_invalid_json_is_a_settled_policy_failure_and_next_request_can_run",
+    "exceptions": [
+      "ValueError: Duplicate response key",
+      "luna_appserver.ResponseFormatError: invalid_response_json",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-kbe1jhdf'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-kbe1jhdf'"
+    ]
+  },
+  {
+    "label": "ERROR: test_invalid_json_is_a_settled_policy_failure_and_next_request_can_run (test_luna_appserver.LunaAppServerTests.test_invalid_json_is_a_settled_policy_failure_and_next_request_can_run) (text='{\"inspect\":NaN}')",
+    "test": "test_luna_appserver.LunaAppServerTests.test_invalid_json_is_a_settled_policy_failure_and_next_request_can_run",
+    "exceptions": [
+      "ValueError: Nonfinite JSON",
+      "luna_appserver.ResponseFormatError: invalid_response_json",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-8jeqltxs'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-8jeqltxs'"
+    ]
+  },
+  {
+    "label": "ERROR: test_invalid_json_with_missing_usage_still_stops_with_uncertain_reservation (test_luna_appserver.LunaAppServerTests.test_invalid_json_with_missing_usage_still_stops_with_uncertain_reservation)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_invalid_json_with_missing_usage_still_stops_with_uncertain_reservation",
+    "exceptions": [
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-0tdrxqtu'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-0tdrxqtu'"
+    ]
+  },
+  {
+    "label": "ERROR: test_missing_one_generation_guard_stop_is_rejected (test_luna_appserver.LunaAppServerTests.test_missing_one_generation_guard_stop_is_rejected)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_missing_one_generation_guard_stop_is_rejected",
+    "exceptions": [
+      "luna_appserver.TransportError: missing_audited_generation_guard_termination",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-j3tcaqhu'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-j3tcaqhu'"
+    ]
+  },
+  {
+    "label": "ERROR: test_missing_quota_rpc_after_completion_stops_future_calls (test_luna_appserver.LunaAppServerTests.test_missing_quota_rpc_after_completion_stops_future_calls)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_missing_quota_rpc_after_completion_stops_future_calls",
+    "exceptions": [
+      "luna_appserver.TransportError: quota_after_unavailable",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-gy_elxuz'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-gy_elxuz'"
+    ]
+  },
+  {
+    "label": "ERROR: test_missing_usage_counter_is_not_silently_replaced_with_zero (test_luna_appserver.LunaAppServerTests.test_missing_usage_counter_is_not_silently_replaced_with_zero) (field='cachedInputTokens')",
+    "test": "test_luna_appserver.LunaAppServerTests.test_missing_usage_counter_is_not_silently_replaced_with_zero",
+    "exceptions": [
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-9m5gxyzs'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-9m5gxyzs'"
+    ]
+  },
+  {
+    "label": "ERROR: test_missing_usage_counter_is_not_silently_replaced_with_zero (test_luna_appserver.LunaAppServerTests.test_missing_usage_counter_is_not_silently_replaced_with_zero) (field='outputTokens')",
+    "test": "test_luna_appserver.LunaAppServerTests.test_missing_usage_counter_is_not_silently_replaced_with_zero",
+    "exceptions": [
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-1s50sobr'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-1s50sobr'"
+    ]
+  },
+  {
+    "label": "ERROR: test_missing_usage_counter_is_not_silently_replaced_with_zero (test_luna_appserver.LunaAppServerTests.test_missing_usage_counter_is_not_silently_replaced_with_zero) (field='reasoningOutputTokens')",
+    "test": "test_luna_appserver.LunaAppServerTests.test_missing_usage_counter_is_not_silently_replaced_with_zero",
+    "exceptions": [
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-gcxdl9hh'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-gcxdl9hh'"
+    ]
+  },
+  {
+    "label": "ERROR: test_new_quota_policy_keeps_provider_denials_and_rejects_unreviewed_limits (test_luna_appserver.LunaAppServerTests.test_new_quota_policy_keeps_provider_denials_and_rejects_unreviewed_limits)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_new_quota_policy_keeps_provider_denials_and_rejects_unreviewed_limits",
+    "exceptions": [
+      "luna_appserver.TransportError: ordinary_usage_not_allowed",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-zx3b9coy'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-zx3b9coy'"
+    ]
+  },
+  {
+    "label": "ERROR: test_provider_retry_or_endpoint_change_never_dispatches (test_luna_appserver.LunaAppServerTests.test_provider_retry_or_endpoint_change_never_dispatches) (name='request_max_retries')",
+    "test": "test_luna_appserver.LunaAppServerTests.test_provider_retry_or_endpoint_change_never_dispatches",
+    "exceptions": [
+      "luna_appserver.TransportError: provider_contract_mismatch",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-gr0yh7qy'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-gr0yh7qy'"
+    ]
+  },
+  {
+    "label": "ERROR: test_provider_retry_or_endpoint_change_never_dispatches (test_luna_appserver.LunaAppServerTests.test_provider_retry_or_endpoint_change_never_dispatches) (name='stream_max_retries')",
+    "test": "test_luna_appserver.LunaAppServerTests.test_provider_retry_or_endpoint_change_never_dispatches",
+    "exceptions": [
+      "luna_appserver.TransportError: provider_contract_mismatch",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-1wim4zk2'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-1wim4zk2'"
+    ]
+  },
+  {
+    "label": "ERROR: test_provider_retry_or_endpoint_change_never_dispatches (test_luna_appserver.LunaAppServerTests.test_provider_retry_or_endpoint_change_never_dispatches) (name='base_url')",
+    "test": "test_luna_appserver.LunaAppServerTests.test_provider_retry_or_endpoint_change_never_dispatches",
+    "exceptions": [
+      "luna_appserver.TransportError: provider_contract_mismatch",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-d_s6mfoq'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-d_s6mfoq'"
+    ]
+  },
+  {
+    "label": "ERROR: test_provider_retry_or_endpoint_change_never_dispatches (test_luna_appserver.LunaAppServerTests.test_provider_retry_or_endpoint_change_never_dispatches) (name='requires_openai_auth')",
+    "test": "test_luna_appserver.LunaAppServerTests.test_provider_retry_or_endpoint_change_never_dispatches",
+    "exceptions": [
+      "luna_appserver.TransportError: provider_contract_mismatch",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-oduz37yo'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-oduz37yo'"
+    ]
+  },
+  {
+    "label": "ERROR: test_quota_failure_snapshots_survive_before_and_after_checks (test_luna_appserver.LunaAppServerTests.test_quota_failure_snapshots_survive_before_and_after_checks)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_quota_failure_snapshots_survive_before_and_after_checks",
+    "exceptions": [
+      "luna_appserver.TransportError: quota_guard_80_percent",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-tf95fx50'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-tf95fx50'"
+    ]
+  },
+  {
+    "label": "ERROR: test_rerouted_model_is_rejected_before_credit_release (test_luna_appserver.LunaAppServerTests.test_rerouted_model_is_rejected_before_credit_release)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_rerouted_model_is_rejected_before_credit_release",
+    "exceptions": [
+      "luna_appserver.TransportError: model_rerouted",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-zv57v11n'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-zv57v11n'"
+    ]
+  },
+  {
+    "label": "ERROR: test_tool_item_stops_batch_with_full_reservation (test_luna_appserver.LunaAppServerTests.test_tool_item_stops_batch_with_full_reservation)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_tool_item_stops_batch_with_full_reservation",
+    "exceptions": [
+      "luna_appserver.TransportError: tool_or_unknown_item:mcpToolCall",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-nqatjjeb'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-nqatjjeb'"
+    ]
+  },
+  {
+    "label": "ERROR: test_transfer_quota_policy_allows_85_but_stops_at_100 (test_luna_appserver.LunaAppServerTests.test_transfer_quota_policy_allows_85_but_stops_at_100)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_transfer_quota_policy_allows_85_but_stops_at_100",
+    "exceptions": [
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-afci3pns'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-afci3pns'"
+    ]
+  },
+  {
+    "label": "ERROR: test_unrelated_provider_failure_is_not_a_controlled_stop (test_luna_appserver.LunaAppServerTests.test_unrelated_provider_failure_is_not_a_controlled_stop)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_unrelated_provider_failure_is_not_a_controlled_stop",
+    "exceptions": [
+      "luna_appserver.TransportError: provider_error",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-uj_kgci9'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-uj_kgci9'"
+    ]
+  },
+  {
+    "label": "ERROR: test_wrong_thread_is_rejected (test_luna_appserver.LunaAppServerTests.test_wrong_thread_is_rejected)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_wrong_thread_is_rejected",
+    "exceptions": [
+      "luna_appserver.TransportError: unexpected_thread_event",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-gnd0ojr4'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-gnd0ojr4'"
+    ]
+  },
+  {
+    "label": "ERROR: test_wrong_turn_in_usage_or_completion_is_rejected (test_luna_appserver.LunaAppServerTests.test_wrong_turn_in_usage_or_completion_is_rejected) (events=[{'method': 'item/completed', 'params': {'threadId': 'synthetic-thread', 'turnId': 'synthetic-turn', 'item': {'type': 'agentMessage', 'id': 'answer', 'text': '{\"inspect\":true}'}}}, {'method': 'thread/tokenUsage/updated', 'params': {'threadId': 'synthetic-thread', 'turnId': 'other-turn', 'tokenUsage': {'total': {'inputTokens': 1000, 'cachedInputTokens': 100, 'outputTokens': 40, 'reasoningOutputTokens': 20, 'totalTokens': 1040}, 'last': {'inputTokens': 1000, 'cachedInputTokens': 100, 'outputTokens': 40, 'reasoningOutputTokens': 20, 'totalTokens': 1040}}}}, {'method': 'error', 'params': {'threadId': 'synthetic-thread', 'turnId': 'synthetic-turn', 'error': {'codexErrorInfo': 'sessionBudgetExceeded', 'message': 'synthetic guard'}, 'willRetry': False}}, {'method': 'turn/completed', 'params': {'threadId': 'synthetic-thread', 'turnId': 'synthetic-turn', 'turn': {'id': 'synthetic-turn', 'status': 'failed', 'error': {'codexErrorInfo': 'sessionBudgetExceeded', 'message': 'synthetic guard'}}}}])",
+    "test": "test_luna_appserver.LunaAppServerTests.test_wrong_turn_in_usage_or_completion_is_rejected",
+    "exceptions": [
+      "luna_appserver.TransportError: unexpected_turn_event",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-yuie69ti'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-yuie69ti'"
+    ]
+  },
+  {
+    "label": "ERROR: test_wrong_turn_in_usage_or_completion_is_rejected (test_luna_appserver.LunaAppServerTests.test_wrong_turn_in_usage_or_completion_is_rejected) (events=[{'method': 'item/completed', 'params': {'threadId': 'synthetic-thread', 'turnId': 'synthetic-turn', 'item': {'type': 'agentMessage', 'id': 'answer', 'text': '{\"inspect\":true}'}}}, {'method': 'thread/tokenUsage/updated', 'params': {'threadId': 'synthetic-thread', 'turnId': 'synthetic-turn', 'tokenUsage': {'total': {'inputTokens': 1000, 'cachedInputTokens': 100, 'outputTokens': 40, 'reasoningOutputTokens': 20, 'totalTokens': 1040}, 'last': {'inputTokens': 1000, 'cachedInputTokens': 100, 'outputTokens': 40, 'reasoningOutputTokens': 20, 'totalTokens': 1040}}}}, {'method': 'error', 'params': {'threadId': 'synthetic-thread', 'turnId': 'synthetic-turn', 'error': {'codexErrorInfo': 'sessionBudgetExceeded', 'message': 'synthetic guard'}, 'willRetry': False}}, {'method': 'turn/completed', 'params': {'threadId': 'synthetic-thread', 'turnId': 'synthetic-turn', 'turn': {'id': 'other-turn', 'status': 'failed', 'error': {'codexErrorInfo': 'sessionBudgetExceeded', 'message': 'synthetic guard'}}}}])",
+    "test": "test_luna_appserver.LunaAppServerTests.test_wrong_turn_in_usage_or_completion_is_rejected",
+    "exceptions": [
+      "luna_appserver.TransportError: unexpected_completed_turn",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-mcsajmkm'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-mcsajmkm'"
+    ]
+  },
+  {
+    "label": "ERROR: test_zero_input_cannot_release_a_nonempty_request_reservation (test_luna_appserver.LunaAppServerTests.test_zero_input_cannot_release_a_nonempty_request_reservation)",
+    "test": "test_luna_appserver.LunaAppServerTests.test_zero_input_cannot_release_a_nonempty_request_reservation",
+    "exceptions": [
+      "luna_appserver.TransportError: nonpositive_input_usage_invalidates_generation_guard",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-cm6moswi'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-cm6moswi'"
+    ]
+  },
+  {
+    "label": "ERROR: test_fresh_no_environment_thread_and_bounded_public_turn (test_luna_isolation.LunaIsolationTests.test_fresh_no_environment_thread_and_bounded_public_turn)",
+    "test": "test_luna_isolation.LunaIsolationTests.test_fresh_no_environment_thread_and_bounded_public_turn",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpvzmjyqc9\\\\private.txt'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpvzmjyqc9'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpvzmjyqc9'"
+    ]
+  },
+  {
+    "label": "ERROR: test_saved_content_hash_tampering_is_rejected (test_revision_analysis.RevisionAnalysisTests.test_saved_content_hash_tampering_is_rejected)",
+    "test": "test_revision_analysis.RevisionAnalysisTests.test_saved_content_hash_tampering_is_rejected",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpjiwbox2a\\\\summary.json'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpjiwbox2a'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpjiwbox2a'"
+    ]
+  },
+  {
+    "label": "ERROR: test_manifest_and_each_reservation_are_persisted_before_client_call (test_revision_diagnostic.RevisionRunnerTests.test_manifest_and_each_reservation_are_persisted_before_client_call)",
+    "test": "test_revision_diagnostic.RevisionRunnerTests.test_manifest_and_each_reservation_are_persisted_before_client_call",
+    "exceptions": [
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpwbpebmsp\\\\new-run'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpwbpebmsp'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpwbpebmsp'"
+    ]
+  },
+  {
+    "label": "ERROR: test_nonempty_output_is_preserved_and_cannot_resume (test_revision_diagnostic.RevisionRunnerTests.test_nonempty_output_is_preserved_and_cannot_resume)",
+    "test": "test_revision_diagnostic.RevisionRunnerTests.test_nonempty_output_is_preserved_and_cannot_resume",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpj4z8dhok\\\\existing.txt'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpj4z8dhok'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpj4z8dhok'"
+    ]
+  },
+  {
+    "label": "ERROR: test_supplied_audit_must_match_frozen_bytes_before_any_client_or_process (test_revision_diagnostic.RevisionRunnerTests.test_supplied_audit_must_match_frozen_bytes_before_any_client_or_process)",
+    "test": "test_revision_diagnostic.RevisionRunnerTests.test_supplied_audit_must_match_frozen_bytes_before_any_client_or_process",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmp9ft_oilq\\\\other-audit.json'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmp9ft_oilq'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmp9ft_oilq'"
+    ]
+  },
+  {
+    "label": "ERROR: test_every_manifest_and_initial_ledger_exists_before_first_decision (test_transfer_continuation.ContinuationTests.test_every_manifest_and_initial_ledger_exists_before_first_decision)",
+    "test": "test_transfer_continuation.ContinuationTests.test_every_manifest_and_initial_ledger_exists_before_first_decision",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmp8g4jlx_o\\\\manifest.json.part'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmp8g4jlx_o'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmp8g4jlx_o'"
+    ]
+  },
+  {
+    "label": "ERROR: test_exact_case_filtering_and_global_original_order (test_transfer_continuation.ContinuationTests.test_exact_case_filtering_and_global_original_order)",
+    "test": "test_transfer_continuation.ContinuationTests.test_exact_case_filtering_and_global_original_order",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpwj6ph5vn\\\\manifest.json.part'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpwj6ph5vn'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpwj6ph5vn'"
+    ]
+  },
+  {
+    "label": "ERROR: test_live_execute_defensively_rejects_wrong_wire_contract_before_dispatch (test_transfer_continuation.ContinuationTests.test_live_execute_defensively_rejects_wrong_wire_contract_before_dispatch)",
+    "test": "test_transfer_continuation.ContinuationTests.test_live_execute_defensively_rejects_wrong_wire_contract_before_dispatch",
+    "exceptions": [
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmplgai_xf8'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmplgai_xf8'"
+    ]
+  },
+  {
+    "label": "ERROR: test_policy_failures_remain_without_replacement (test_transfer_continuation.ContinuationTests.test_policy_failures_remain_without_replacement)",
+    "test": "test_transfer_continuation.ContinuationTests.test_policy_failures_remain_without_replacement",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpy9on_msr\\\\manifest.json.part'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpy9on_msr'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpy9on_msr'"
+    ]
+  },
+  {
+    "label": "ERROR: test_saved_raw_audit_reaches_client_attestation_before_launch_readiness (test_transfer_continuation.ContinuationTests.test_saved_raw_audit_reaches_client_attestation_before_launch_readiness)",
+    "test": "test_transfer_continuation.ContinuationTests.test_saved_raw_audit_reaches_client_attestation_before_launch_readiness",
+    "exceptions": [
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-continuation-catalog-u8tts0j0'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-continuation-catalog-u8tts0j0'"
+    ]
+  },
+  {
+    "label": "ERROR: test_completed_malformed_response_does_not_stop_other_workers (test_transfer_runner.TransferGateTests.test_completed_malformed_response_does_not_stop_other_workers)",
+    "test": "test_transfer_runner.TransferGateTests.test_completed_malformed_response_does_not_stop_other_workers",
+    "exceptions": [
+      "json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+      "luna_appserver.ResponseFormatError: invalid_response_json",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-5zw8hi1p'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-5zw8hi1p'"
+    ]
+  },
+  {
+    "label": "ERROR: test_dispatch_rpc_failure_closes_gate_before_cleanup (test_transfer_runner.TransferGateTests.test_dispatch_rpc_failure_closes_gate_before_cleanup)",
+    "test": "test_transfer_runner.TransferGateTests.test_dispatch_rpc_failure_closes_gate_before_cleanup",
+    "exceptions": [
+      "luna_appserver.TransportError: synthetic_dispatch_failure",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-j2m_5u1o'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-j2m_5u1o'"
+    ]
+  },
+  {
+    "label": "ERROR: test_stop_blocks_luna_after_preflight_before_generation_reservation (test_transfer_runner.TransferGateTests.test_stop_blocks_luna_after_preflight_before_generation_reservation)",
+    "test": "test_transfer_runner.TransferGateTests.test_stop_blocks_luna_after_preflight_before_generation_reservation",
+    "exceptions": [
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-8i4737sx'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\contextresearch-luna-8i4737sx'"
+    ]
+  },
+  {
+    "label": "ERROR: test_all_manifests_and_request_reservation_exist_before_any_call (test_transfer_runner.TransferRunnerTests.test_all_manifests_and_request_reservation_exist_before_any_call)",
+    "test": "test_transfer_runner.TransferRunnerTests.test_all_manifests_and_request_reservation_exist_before_any_call",
+    "exceptions": [
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpzqt_v3gt\\\\study'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpzqt_v3gt'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpzqt_v3gt'"
+    ]
+  },
+  {
+    "label": "ERROR: test_capture_output_tampering_is_detected_independently_of_lock (workflow_eval.test_packet.PacketTests.test_capture_output_tampering_is_detected_independently_of_lock)",
+    "test": "workflow_eval.test_packet.PacketTests.test_capture_output_tampering_is_detected_independently_of_lock",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpxazjoo3l\\\\capture.json'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpxazjoo3l'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpxazjoo3l'"
+    ]
+  },
+  {
+    "label": "ERROR: test_lock_detects_changed_and_unlisted_packet_inputs (workflow_eval.test_packet.PacketTests.test_lock_detects_changed_and_unlisted_packet_inputs)",
+    "test": "workflow_eval.test_packet.PacketTests.test_lock_detects_changed_and_unlisted_packet_inputs",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpjfihgjeh\\\\example.txt'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpjfihgjeh'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpjfihgjeh'"
+    ]
+  },
+  {
+    "label": "ERROR: test_saved_answer_replay_and_accounting_reject_tampering (workflow_eval_live.test_live.LiveTests.test_saved_answer_replay_and_accounting_reject_tampering)",
+    "test": "workflow_eval_live.test_live.LiveTests.test_saved_answer_replay_and_accounting_reject_tampering",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmp22cm07m_\\\\fake-preflight.json.tmp'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmp22cm07m_'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmp22cm07m_'"
+    ]
+  },
+  {
+    "label": "ERROR: test_full_saved_ledger_replay_reconciles_usage_and_rejects_answer_tampering (workflow_executed.test_executed.ExecutedTests.test_full_saved_ledger_replay_reconciles_usage_and_rejects_answer_tampering)",
+    "test": "workflow_executed.test_executed.ExecutedTests.test_full_saved_ledger_replay_reconciles_usage_and_rejects_answer_tampering",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmp8xtzcssx\\\\preflight.json.tmp'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmp8xtzcssx'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmp8xtzcssx'"
+    ]
+  },
+  {
+    "label": "ERROR: test_reexecute_captured_sources_and_runtime_to_verify_actual_outcomes (workflow_executed.test_executed.ExecutedTests.test_reexecute_captured_sources_and_runtime_to_verify_actual_outcomes)",
+    "test": "workflow_executed.test_executed.ExecutedTests.test_reexecute_captured_sources_and_runtime_to_verify_actual_outcomes",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\workflow-reproduction-qa93sjas\\\\README.md'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\workflow-reproduction-qa93sjas'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\workflow-reproduction-qa93sjas'"
+    ]
+  },
+  {
+    "label": "ERROR: test_original_evidence_changes_invalidate_continuation (workflow_executed_continuation.test_continuation.ContinuationTests.test_original_evidence_changes_invalidate_continuation)",
+    "test": "workflow_executed_continuation.test_continuation.ContinuationTests.test_original_evidence_changes_invalidate_continuation",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpijdnxntx\\\\fake-preflight.json.tmp'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpijdnxntx'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpijdnxntx'"
+    ]
+  },
+  {
+    "label": "ERROR: test_suffix_never_dispatches_original_gap_and_analysis_keeps_missing_denominator (workflow_executed_continuation.test_continuation.ContinuationTests.test_suffix_never_dispatches_original_gap_and_analysis_keeps_missing_denominator)",
+    "test": "workflow_executed_continuation.test_continuation.ContinuationTests.test_suffix_never_dispatches_original_gap_and_analysis_keeps_missing_denominator",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpk9xw_qee\\\\fake-preflight.json.tmp'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpk9xw_qee'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpk9xw_qee'"
+    ]
+  },
+  {
+    "label": "ERROR: test_unknown_reservation_prevents_dispatch_when_combined_ceiling_would_be_exceeded (workflow_executed_continuation.test_continuation.ContinuationTests.test_unknown_reservation_prevents_dispatch_when_combined_ceiling_would_be_exceeded)",
+    "test": "workflow_executed_continuation.test_continuation.ContinuationTests.test_unknown_reservation_prevents_dispatch_when_combined_ceiling_would_be_exceeded",
+    "exceptions": [
+      "PermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpnbpkp78q\\\\fake-preflight.json.tmp'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpnbpkp78q'",
+      "PermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\jense\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{9a65570d-bb19-4004-b76a-1ab1b53ca381}\\\\AC\\\\Temp\\\\tmpnbpkp78q'"
+    ]
+  },
+  {
+    "label": "FAIL: test_both_runners_keep_invalid_json_in_denominator_and_continue_without_retry (test_luna_appserver.LunaAppServerTests.test_both_runners_keep_invalid_json_in_denominator_and_continue_without_retry) (runner='run_development_pilot')",
+    "test": "test_luna_appserver.LunaAppServerTests.test_both_runners_keep_invalid_json_in_denominator_and_continue_without_retry",
+    "exceptions": [
+      "AssertionError: 1 != 2"
+    ]
+  },
+  {
+    "label": "FAIL: test_both_runners_keep_invalid_json_in_denominator_and_continue_without_retry (test_luna_appserver.LunaAppServerTests.test_both_runners_keep_invalid_json_in_denominator_and_continue_without_retry) (runner='run_revision_diagnostic')",
+    "test": "test_luna_appserver.LunaAppServerTests.test_both_runners_keep_invalid_json_in_denominator_and_continue_without_retry",
+    "exceptions": [
+      "AssertionError: 1 != 2"
+    ]
+  }
+]

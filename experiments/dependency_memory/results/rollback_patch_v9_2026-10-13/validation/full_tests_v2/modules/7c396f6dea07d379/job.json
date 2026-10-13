@@ -1,0 +1,20 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\7c396f6dea07d379\\job.json",
+  "module": "experiments.dependency_memory.rollback_recovery_v3.test_study",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\7c396f6dea07d379\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\7c396f6dea07d379\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\7c396f6dea07d379\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\7c396f6dea07d379\\tmp",
+  "test_ids": [
+    "experiments.dependency_memory.rollback_recovery_v3.test_study.StudyTests.test_archive_rejects_six_independent_mutations_even_when_resigned",
+    "experiments.dependency_memory.rollback_recovery_v3.test_study.StudyTests.test_complete_synthetic_study_keeps_64_tasks_and_every_unsent_slot",
+    "experiments.dependency_memory.rollback_recovery_v3.test_study.StudyTests.test_family_interval_requires_families_rather_than_many_variants",
+    "experiments.dependency_memory.rollback_recovery_v3.test_study.StudyTests.test_independent_oracles_expose_required_nonstandard_edge_cases",
+    "experiments.dependency_memory.rollback_recovery_v3.test_study.StudyTests.test_new_writer_cap_accepts_1500_byte_summary_and_retains_all_arms",
+    "experiments.dependency_memory.rollback_recovery_v3.test_study.StudyTests.test_private_material_never_serialized_for_new_tasks",
+    "experiments.dependency_memory.rollback_recovery_v3.test_study.StudyTests.test_renderer_preserves_primary_contrast_and_explicit_effort_and_writer_units",
+    "experiments.dependency_memory.rollback_recovery_v3.test_study.StudyTests.test_unknown_in_first_block_stops_all_later_blocks_without_new_dispatch",
+    "experiments.dependency_memory.rollback_recovery_v3.test_study.StudyTests.test_whole_cohort_and_all_832_identities_fixed_with_shared_families"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

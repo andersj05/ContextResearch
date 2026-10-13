@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "unittest",
+    "test_luna_appserver.LunaAppServerTests.test_wrong_thread_is_rejected",
+    "-v"
+  ],
+  "console_path": "mock_cleanup_workspace_probe.txt",
+  "console_sha256": "c59fc41022be0c0665ab8674b9e70d06388fa65aaf55d411d3897a029f1b79b5",
+  "cwd": "C:\\Users\\jense\\Desktop\\ContextResearch",
+  "elapsed_seconds": 0.925114499987103,
+  "exit_code": 0,
+  "finished_utc": "2026-10-09T02:39:35.144999+00:00",
+  "started_utc": "2026-10-09T02:39:34.219881+00:00"
+}

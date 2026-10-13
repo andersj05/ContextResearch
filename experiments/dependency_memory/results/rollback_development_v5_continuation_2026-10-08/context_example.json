@@ -1,0 +1,99 @@
+{
+  "after_history_entries": 0,
+  "arm": "R",
+  "before_history_entries": 8,
+  "before_writer_request": "live/requests/cc42c8720108351ba11a81ad3a84c575c79568840e4fefb82b0d85d34fe1c1d9.json",
+  "before_writer_request_sha256": "565a6b02de3bf429ddf4d8b5b2449e94e18548dd603651e007ca488719384838",
+  "checkpoint_artifact_after": {
+    "files": [],
+    "order": [],
+    "values": [
+      26,
+      9,
+      25,
+      0,
+      20,
+      4,
+      15
+    ]
+  },
+  "checkpoint_artifact_before": {
+    "files": [],
+    "order": [],
+    "values": [
+      26,
+      9,
+      25,
+      0,
+      20,
+      4,
+      15
+    ]
+  },
+  "created_utc": "2026-10-10T00:03:51.923833+00:00",
+  "current_packet_unchanged": true,
+  "evidence_kind": "derived_inspection_of_existing_v5_observed_requests",
+  "feedback": {
+    "check": "precedence-1-6",
+    "detail": "Candidate violates this previously released requirement.",
+    "status": "public_mismatch"
+  },
+  "feedback_unchanged": true,
+  "independent_public_rule_check": {
+    "arithmetic": "13 + 4 + 2 = 19 > 18",
+    "minimum_start": 19,
+    "predecessor_duration": 4,
+    "predecessor_start": 13,
+    "rejected_start": 18,
+    "requirement": {
+      "a": 1,
+      "b": 6,
+      "id": "precedence-1-6",
+      "kind": "precedence",
+      "lag": 2
+    },
+    "verified_from_public_request_not_only_writer_lesson": true
+  },
+  "last_rejected_candidate": {
+    "files": [],
+    "order": [],
+    "values": [
+      29,
+      13,
+      28,
+      3,
+      22,
+      7,
+      18
+    ]
+  },
+  "new_model_calls": 0,
+  "next_action_request": "live/requests/ab996ae5aac0d695569d3144fc38b27d8838240d263b8f692c3de0053725883f.json",
+  "next_action_request_sha256": "1e25d1ce531fd5aeda50794f4c61493c9781919f9c74465b34ed9986ac8dfc66",
+  "not_a_new_rollback_effect_estimate": true,
+  "retained_lesson": {
+    "content": {
+      "established": [
+        "Public receipts report passes through stage 7, covering 14 checks; stage 8 reports a public mismatch on precedence-1-6.",
+        "The stage 8 candidate [29,13,28,3,22,7,18] violates precedence 1\u21926 with lag 2: job 1 finishes at 17, so job 6 must start at or after 19, but starts at 18.",
+        "The checkpoint candidate [26,9,25,0,20,4,15] is the stage 7 candidate that received a public pass. Passes are provisional, not evidence that later requirements are satisfied."
+      ],
+      "retained_observations": [
+        "Candidate format: values are integer start times in job order [0\u20136]; order and files must be empty. Durations are [2,4,1,4,3,4,2], starts are bounded [0,36], and finish=start+duration. Precedence requires start[b]\u2265finish[a]+lag; same-machine intervals may touch but not overlap; linear bounds are inclusive.",
+        "Disclosed windows: job 0 [25,35], job 1 [9,18], job 2 [25,31], job 3 [0,10], job 4 [20,28], job 5 [3,13], job 6 [14,26], as release\u2013deadline pairs.",
+        "Machine assignments by job are [0,0,1,0,1,0,1].",
+        "Disclosed precedence constraints: 3\u21925 lag 0; 5\u21921 lag 0; 1\u21926 lag 2; 6\u21924 lag 0; 4\u21922 lag 1; 2\u21920 lag 0.",
+        "Stage 8 linear constraints: coefficients [0,3,-3,1,-3,2,0] in [-94,-92]; [3,0,3,3,-1,0,3] in [210,212]; [-1,1,-2,2,3,-1,0] in [-8,-5].",
+        "The stage 7 candidate [26,9,25,0,20,4,15] meets the disclosed 1\u21926 relation exactly: job 1 finishes at 13 and lag 2 requires job 6 to start at least 15."
+      ],
+      "uncertainties": [
+        "No stage 8 pass or final overall assessment is supplied; the three linear constraints have no individual reported results.",
+        "Candidate notes are unverified; the receipts establish only the stated public pass or mismatch outcomes."
+      ]
+    },
+    "kind": "lesson"
+  },
+  "scope": "Actual saved before-writer and next-action public payloads. Provider hidden reasoning is neither inspected nor represented. This demonstrates visible-state deletion, not efficacy.",
+  "task_id": "v5-scheduling-long-hard-2",
+  "track": "policy"
+}

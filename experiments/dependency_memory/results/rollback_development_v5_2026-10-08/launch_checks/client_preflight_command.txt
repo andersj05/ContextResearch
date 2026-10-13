@@ -1,0 +1,11 @@
+{"mock_case":"final_message","pass":true}
+{"mock_case":"tool_call","pass":true}
+{"mock_case":"http_503","pass":true}
+{"mock_case":"truncated_sse","pass":true}
+{"mock_case":"missing_usage","pass":true}
+{"mock_case":"duplicate_answer","pass":true}
+{"serialization_call":2,"pass":true}
+{"serialization_call":5,"pass":true}
+{"serialization_call":7,"pass":true}
+{"serialization_call":8,"pass":true}
+{"passed":true,"real_model_generations":0}

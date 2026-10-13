@@ -1,0 +1,21 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\bb5e9f8fbc09f66f\\job.json",
+  "module": "rollback_patch_v9.test_audit",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\bb5e9f8fbc09f66f\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\bb5e9f8fbc09f66f\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\bb5e9f8fbc09f66f\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\bb5e9f8fbc09f66f\\tmp",
+  "test_ids": [
+    "rollback_patch_v9.test_audit.EvidenceAuditTests.test_changed_saved_accounting_is_rejected",
+    "rollback_patch_v9.test_audit.EvidenceAuditTests.test_completed_and_unknown_calls_reconcile_without_imputation",
+    "rollback_patch_v9.test_audit.EvidenceAuditTests.test_duplicate_saved_calls_are_rejected_before_dictionary_collapse",
+    "rollback_patch_v9.test_audit.EvidenceAuditTests.test_extra_unadmitted_response_is_rejected",
+    "rollback_patch_v9.test_audit.EvidenceAuditTests.test_request_tampering_and_duplicate_replay_cannot_be_candidate_failures",
+    "rollback_patch_v9.test_audit.EvidenceAuditTests.test_reservation_loss_or_thread_table_tampering_is_rejected",
+    "rollback_patch_v9.test_audit.EvidenceAuditTests.test_seal_rejects_extra_missing_and_changed_json_evidence",
+    "rollback_patch_v9.test_audit.EvidenceAuditTests.test_terminal_sqlite_event_payload_must_equal_call_payload",
+    "rollback_patch_v9.test_audit.EvidenceAuditTests.test_unadmitted_request_after_global_stop_preserves_stop",
+    "rollback_patch_v9.test_audit.EvidenceAuditTests.test_unadmitted_request_without_stop_is_not_swallowed_by_engine"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

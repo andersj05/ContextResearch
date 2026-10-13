@@ -1,0 +1,19 @@
+{
+  "arms": {
+    "F": {
+      "observed_successes_finished_within_four": 7,
+      "scheduled": 8
+    },
+    "K": {
+      "observed_successes_finished_within_four": 6,
+      "scheduled": 8
+    }
+  },
+  "checked_utc": "2026-10-09T23:04:27.260375+00:00",
+  "completion_threshold": 4,
+  "evidence_kind": "posthoc_observed_completion_timing_diagnostic",
+  "model_calls": 0,
+  "original_action_allowance": 5,
+  "scope": "Counts when observed five-action-policy episodes finished. Not a replay or measured success rate under a four-action prompt; changing remaining_actions can change model behavior.",
+  "source_execution_sha256": "28e87b182a44da2493fa7349d0e97a289f018d978021084f21450705831071af"
+}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "unittest",
+    "experiments.dependency_memory.rollback_pilot.test_docker",
+    "-v"
+  ],
+  "console_path": "docker_tests.txt",
+  "console_sha256": "b2925ee92ddd67c7713e43b018bfeda5eb78224143f2b768ee33814fd71540bb",
+  "cwd": "C:\\Users\\jense\\Desktop\\ContextResearch",
+  "elapsed_seconds": 36.311206700018374,
+  "exit_code": 0,
+  "finished_utc": "2026-10-09T02:15:46.662241+00:00",
+  "started_utc": "2026-10-09T02:15:10.351030+00:00"
+}

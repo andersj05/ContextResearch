@@ -1,0 +1,20 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\29db798d53ed6980\\job.json",
+  "module": "test_scheduler",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\29db798d53ed6980\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\29db798d53ed6980\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\29db798d53ed6980\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\29db798d53ed6980\\tmp",
+  "test_ids": [
+    "test_scheduler.DependencySchedulerTests.test_continuation_runs_while_unrelated_prefix_is_still_blocked",
+    "test_scheduler.DependencySchedulerTests.test_empty_schedule_and_submission_notifications",
+    "test_scheduler.DependencySchedulerTests.test_failed_persistence_never_releases_children",
+    "test_scheduler.DependencySchedulerTests.test_global_admission_stop_keeps_fixed_job_dispositions",
+    "test_scheduler.DependencySchedulerTests.test_invalid_schedule_rejected_before_any_submission",
+    "test_scheduler.DependencySchedulerTests.test_one_arm_error_is_callback_owned_and_does_not_drop_other_dispositions",
+    "test_scheduler.DependencySchedulerTests.test_ready_pair_precedes_unstarted_prefix_and_keeps_frozen_arm_order",
+    "test_scheduler.DependencySchedulerTests.test_sixteen_and_thirty_two_actual_workers_without_duplicate_jobs",
+    "test_scheduler.DependencySchedulerTests.test_unknown_prefix_still_materializes_both_skips_without_retry"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\rollback_parallel_v8"
+}

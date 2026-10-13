@@ -1,0 +1,12 @@
+{
+  "evidence_kind": "offline_test_coverage_reconciliation",
+  "passed": true,
+  "discovered_ids": 1052,
+  "covered_ids": 1052,
+  "passes": 1038,
+  "optional_skips": 14,
+  "missing": [],
+  "extra": [],
+  "scope": "Earlier 980-test full run, 36 v10 and 12 v11 focused tests, and all 24 recovery tests. Exact IDs reconciled against fresh repository-root discovery; unchanged earlier tests are not represented as rerun. Actual Docker fixtures and model-response replay are separate.",
+  "model_calls": 0
+}

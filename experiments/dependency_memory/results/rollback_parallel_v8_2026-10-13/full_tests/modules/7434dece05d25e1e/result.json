@@ -1,0 +1,64 @@
+{
+  "completed_test_ids": [
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_cell_losses_equal_literal_routed_populations",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_complete_small_actors_bound_weighted_overflow_not_only_probability",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_cost_cap_moving_mass_into_largest_cell_has_majorization",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_discrete_convex_search_matches_independent_complete_allocation_lists",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_larger_code_is_provably_better_at_768_and_smaller_codes_remain_losses",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_no_discovery_tables_enter_the_deployed_code",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_oracle_weighted_moment_is_independent_of_public_fallback",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_public_selector_preserves_actors_and_final_information_contract"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_cell_losses_equal_literal_routed_populations": "passed",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_complete_small_actors_bound_weighted_overflow_not_only_probability": "passed",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_cost_cap_moving_mass_into_largest_cell_has_majorization": "passed",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_discrete_convex_search_matches_independent_complete_allocation_lists": "passed",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_larger_code_is_provably_better_at_768_and_smaller_codes_remain_losses": "passed",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_no_discovery_tables_enter_the_deployed_code": "passed",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_oracle_weighted_moment_is_independent_of_public_fallback": "passed",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_public_selector_preserves_actors_and_final_information_contract": "passed"
+  },
+  "elapsed_seconds": 191.39295010000933,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_cell_losses_equal_literal_routed_populations",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_complete_small_actors_bound_weighted_overflow_not_only_probability",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_cost_cap_moving_mass_into_largest_cell_has_majorization",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_discrete_convex_search_matches_independent_complete_allocation_lists",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_larger_code_is_provably_better_at_768_and_smaller_codes_remain_losses",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_no_discovery_tables_enter_the_deployed_code",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_oracle_weighted_moment_is_independent_of_public_fallback",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_public_selector_preserves_actors_and_final_information_contract"
+  ],
+  "planned_test_ids": [
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_cell_losses_equal_literal_routed_populations",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_complete_small_actors_bound_weighted_overflow_not_only_probability",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_cost_cap_moving_mass_into_largest_cell_has_majorization",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_discrete_convex_search_matches_independent_complete_allocation_lists",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_larger_code_is_provably_better_at_768_and_smaller_codes_remain_losses",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_no_discovery_tables_enter_the_deployed_code",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_oracle_weighted_moment_is_independent_of_public_fallback",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_public_selector_preserves_actors_and_final_information_contract"
+  ],
+  "process_id": 1876,
+  "skips": 0,
+  "started_test_ids": [
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_cell_losses_equal_literal_routed_populations",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_complete_small_actors_bound_weighted_overflow_not_only_probability",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_cost_cap_moving_mass_into_largest_cell_has_majorization",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_discrete_convex_search_matches_independent_complete_allocation_lists",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_larger_code_is_provably_better_at_768_and_smaller_codes_remain_losses",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_no_discovery_tables_enter_the_deployed_code",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_oracle_weighted_moment_is_independent_of_public_fallback",
+    "weighted_overflow.test_weighted.WeightedOverflowTests.test_public_selector_preserves_actors_and_final_information_contract"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\7434dece05d25e1e\\tmp",
+  "tests_run": 8,
+  "unexpected_successes": 0
+}

@@ -1,0 +1,10 @@
+{
+  "checked_utc": "2026-10-09T21:42:44.835877+00:00",
+  "command": "python -X utf8 -m unittest discover -s experiments/dependency_memory -p test_rollback_missingness.py -v",
+  "log": "discovery_tests.txt",
+  "log_sha256": "65f9f0931161d1b0425065685dd350d3e3821ed672760d720428898f208030af",
+  "model_calls": 0,
+  "scope": "Pattern-filtered discovery also reaches existing package load_tests hooks. This is not a claim that the entire repository unittest suite ran.",
+  "status": "passed",
+  "tests_run": 96
+}

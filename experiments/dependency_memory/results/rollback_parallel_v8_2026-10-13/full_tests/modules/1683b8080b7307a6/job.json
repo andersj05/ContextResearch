@@ -1,0 +1,19 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\1683b8080b7307a6\\job.json",
+  "module": "test_exact_chain",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\1683b8080b7307a6\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\1683b8080b7307a6\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\1683b8080b7307a6\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\1683b8080b7307a6\\tmp",
+  "test_ids": [
+    "test_exact_chain.ExactChainTests.test_binary_cuts_cover_all_child_functions_up_to_exchange",
+    "test_exact_chain.ExactChainTests.test_certificate_rejects_invalid_count_and_score_domains",
+    "test_exact_chain.ExactChainTests.test_certificate_rejects_witness_exceeding_declared_capacity",
+    "test_exact_chain.ExactChainTests.test_four_bit_witness_is_graded_on_all_192_outcomes",
+    "test_exact_chain.ExactChainTests.test_gain_identity_matches_all_decoders_on_three_bit_cuts",
+    "test_exact_chain.ExactChainTests.test_invalid_and_incomplete_certificates_are_rejected",
+    "test_exact_chain.ExactChainTests.test_partition_enumerator_matches_labeled_functions_independently",
+    "test_exact_chain.ExactChainTests.test_small_complete_search_matches_outcome_grading"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

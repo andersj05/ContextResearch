@@ -1,0 +1,19 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\4cf06136e25da781\\job.json",
+  "module": "query_weighting.test_weighting",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\4cf06136e25da781\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\4cf06136e25da781\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\4cf06136e25da781\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\4cf06136e25da781\\tmp",
+  "test_ids": [
+    "query_weighting.test_weighting.QueryWeightingTests.test_actual_class_early_not_prior_only_and_quarter_error",
+    "query_weighting.test_weighting.QueryWeightingTests.test_all_orientations_and_source_free_boundary_with_parent_padding",
+    "query_weighting.test_weighting.QueryWeightingTests.test_balanced_products_fit_capacity_and_grade_actual_routes",
+    "query_weighting.test_weighting.QueryWeightingTests.test_entire_exact_envelope_continuity_concavity_and_frozen_failure",
+    "query_weighting.test_weighting.QueryWeightingTests.test_invalid_channels_and_preserved_discovery_failure",
+    "query_weighting.test_weighting.QueryWeightingTests.test_named_allocations_and_strict_comparison_regions",
+    "query_weighting.test_weighting.QueryWeightingTests.test_rational_supporting_bounds_slack_and_independent_channel_entropy",
+    "query_weighting.test_weighting.QueryWeightingTests.test_weighted_encoder_matches_all_messages_and_lowest_ties"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

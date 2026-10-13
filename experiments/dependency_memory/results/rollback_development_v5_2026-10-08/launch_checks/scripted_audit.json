@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "experiments.dependency_memory.rollback_development_v5.run",
+    "audit",
+    "--bundle",
+    "tmp/v5-request-review-2026-10-08",
+    "--output",
+    "tmp/v5-request-simulation-2026-10-08"
+  ],
+  "console_path": "scripted_audit.txt",
+  "console_sha256": "d5b2e273027b39a5e50f2ec1b11568108248109eb71c4d2271cf1810271e0dd6",
+  "cwd": "C:\\Users\\jense\\Desktop\\ContextResearch",
+  "elapsed_seconds": 1.1875583000073675,
+  "exit_code": 1,
+  "finished_utc": "2026-10-09T02:18:47.227962+00:00",
+  "started_utc": "2026-10-09T02:18:46.040392+00:00"
+}

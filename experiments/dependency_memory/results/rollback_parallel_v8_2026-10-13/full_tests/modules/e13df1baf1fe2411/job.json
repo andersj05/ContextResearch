@@ -1,0 +1,14 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\e13df1baf1fe2411\\job.json",
+  "module": "scope_inference_suffix.test_suffix",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\e13df1baf1fe2411\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\e13df1baf1fe2411\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\e13df1baf1fe2411\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\e13df1baf1fe2411\\tmp",
+  "test_ids": [
+    "scope_inference_suffix.test_suffix.SuffixControls.test_another_unknown_reservation_stops_before_any_server_or_hash_read",
+    "scope_inference_suffix.test_suffix.SuffixControls.test_frozen_manifest_rejects_erased_unknown_usage_and_failed_identity",
+    "scope_inference_suffix.test_suffix.SuffixControls.test_only_never_dispatched_identities_and_original_order"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

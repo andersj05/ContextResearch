@@ -1,0 +1,16 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\fe5d2485f579650d\\job.json",
+  "module": "rollback_checkpoint_v7.test_preparation",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\fe5d2485f579650d\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\fe5d2485f579650d\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\fe5d2485f579650d\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\fe5d2485f579650d\\tmp",
+  "test_ids": [
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_cohort_and_schedule_reproduce_and_use_both_orders",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_conditional_missingness_excludes_ineligible_pairs",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_hard_budget_and_worker_contract",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_pilot_allocation_is_192_admissions_not_312_observations",
+    "rollback_checkpoint_v7.test_preparation.PreparationTests.test_tight_bound_covers_every_failure_location"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python",
+    "scripts/build_paper.py"
+  ],
+  "console_path": "paper_build.txt",
+  "console_sha256": "9f3753b04921711c49391d5d84d2ee9dd21e50d6647033244087c0b796897647",
+  "cwd": "C:\\Users\\jense\\Desktop\\ContextResearch",
+  "elapsed_seconds": 0.20162780000828207,
+  "exit_code": 0,
+  "finished_utc": "2026-10-09T03:49:19.021188+00:00",
+  "started_utc": "2026-10-09T03:49:18.819562+00:00"
+}

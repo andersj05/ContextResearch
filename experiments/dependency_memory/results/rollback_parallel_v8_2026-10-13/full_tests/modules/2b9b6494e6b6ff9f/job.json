@@ -1,0 +1,20 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\2b9b6494e6b6ff9f\\job.json",
+  "module": "test_pilot_report",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\2b9b6494e6b6ff9f\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\2b9b6494e6b6ff9f\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\2b9b6494e6b6ff9f\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\2b9b6494e6b6ff9f\\tmp",
+  "test_ids": [
+    "test_pilot_report.PilotReportTests.test_budget_stop_keeps_partial_and_unstarted_episodes_without_false_cost_gain",
+    "test_pilot_report.PilotReportTests.test_complete_control_preserves_stage_counts_and_exact_comparisons",
+    "test_pilot_report.PilotReportTests.test_forget_all_control_makes_success_saturation_explicit",
+    "test_pilot_report.PilotReportTests.test_inconsistent_reference_and_accounting_fail_closed",
+    "test_pilot_report.PilotReportTests.test_invalid_schema_failures_are_counted_and_not_dropped",
+    "test_pilot_report.PilotReportTests.test_luna_contract_aliases_keep_planning_equivalents_separate_from_charges",
+    "test_pilot_report.PilotReportTests.test_partial_usage_is_a_reported_subtotal_with_coverage",
+    "test_pilot_report.PilotReportTests.test_transport_failure_stays_in_denominator_and_unknown_usage",
+    "test_pilot_report.PilotReportTests.test_zero_budget_is_not_thirty_six_failed_completed_episodes"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

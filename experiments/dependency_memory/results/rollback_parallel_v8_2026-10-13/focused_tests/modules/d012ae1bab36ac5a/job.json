@@ -1,0 +1,21 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\d012ae1bab36ac5a\\job.json",
+  "module": "test_benchmark",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\d012ae1bab36ac5a\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\d012ae1bab36ac5a\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\d012ae1bab36ac5a\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\focused_tests\\modules\\d012ae1bab36ac5a\\tmp",
+  "test_ids": [
+    "test_benchmark.TimingReplayTests.test_executable_sleep_workload_respects_dependencies_and_capacity",
+    "test_benchmark.TimingReplayTests.test_hand_calculated_phase_barrier_and_pipeline",
+    "test_benchmark.TimingReplayTests.test_invalid_dependency_and_durations_rejected",
+    "test_benchmark.TimingReplayTests.test_one_worker_has_no_parallel_speedup",
+    "test_benchmark.TimingReplayTests.test_sealed_fixture_import_recovers_observed_timing",
+    "test_benchmark.TimingReplayTests.test_tie_priority_prefers_ready_continuation",
+    "test_benchmark.TimingReplayTests.test_timing_json_tamper_is_rejected",
+    "test_benchmark.TimingReplayTests.test_timing_ledger_tamper_is_rejected",
+    "test_benchmark.TimingReplayTests.test_unlimited_workers_still_preserve_dependency_critical_path",
+    "test_benchmark.TimingReplayTests.test_zero_call_dispositions_are_included_without_service"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\rollback_parallel_v8"
+}

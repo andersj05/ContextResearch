@@ -1,0 +1,29 @@
+{
+  "completed_test_ids": [
+    "rollback_parallel_v8.test_audit.TraceTests.test_rejects_missing_duplicate_tampered_time_and_bound"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "rollback_parallel_v8.test_audit.TraceTests.test_rejects_missing_duplicate_tampered_time_and_bound": "passed"
+  },
+  "elapsed_seconds": 0.004049999988637865,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "rollback_parallel_v8.test_audit.TraceTests.test_rejects_missing_duplicate_tampered_time_and_bound"
+  ],
+  "planned_test_ids": [
+    "rollback_parallel_v8.test_audit.TraceTests.test_rejects_missing_duplicate_tampered_time_and_bound"
+  ],
+  "process_id": 7880,
+  "skips": 0,
+  "started_test_ids": [
+    "rollback_parallel_v8.test_audit.TraceTests.test_rejects_missing_duplicate_tampered_time_and_bound"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\5b63dc364a903c23\\tmp",
+  "tests_run": 1,
+  "unexpected_successes": 0
+}

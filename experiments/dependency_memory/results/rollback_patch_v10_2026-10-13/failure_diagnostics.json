@@ -1,0 +1,1116 @@
+{
+  "K0_first_repair_correct": 3,
+  "actual_deletion_arm_observations": 0,
+  "actual_lesson_arm_observations": 0,
+  "created_utc": "2026-10-13T14:43:58.124271+00:00",
+  "diagnostics": [
+    {
+      "K0_final_score": 1,
+      "K0_first_pass_attempt": 1,
+      "K0_first_repair_terminal_result": {
+        "disposition": "correct",
+        "score": 1
+      },
+      "K0_repair_patch_utf8_bytes_against_base": 22025,
+      "actual_information_boundary": {
+        "actual_K0_request_path": "experiments/dependency_memory/results/rollback_patch_v10_2026-10-13/calibration_live/requests/faa31d84a3a8d3b35b91da72ae16a73c8e97ef3223073ecb0ed12f52e780f3b4.json",
+        "failed_diff_and_note_present": true,
+        "full_public_task_preserved": true,
+        "initial_public_feedback_preserved": true,
+        "lesson_absent": true,
+        "original_base_files_preserved": true
+      },
+      "changed_files_between_submissions": [
+        "rules.py"
+      ],
+      "diagnosis_classification": "late_dependency_constraint_not_rechecked",
+      "failed_to_K0_repair_changed_nonempty_lines": 124,
+      "failed_to_K0_repair_diff_sha256": "084ad4898828d30b3cf6daf4904c5bf3097abf1f9cdcbbc197820df158a1fcad",
+      "failed_to_K0_repair_diff_utf8_bytes": 8182,
+      "first_reported_mismatch_case": "public-06",
+      "human_review": "The failed resolver appends newly discovered version constraints, but skips a package immediately when it is already in reachable. A dependency discovered later can therefore escape validation. On public-06 it chooses pkg-a version1, whose active dependency requires pkg-t version2, while returning pkg-t version1. The repair checks each incoming range before the completed-visit shortcut. This visible code defect agrees with the observed mismatch; no private reasoning is inferred.",
+      "matching_components_on_this_case": [
+        "component_01",
+        "component_02",
+        "component_03",
+        "component_04",
+        "component_05",
+        "component_07",
+        "component_08"
+      ],
+      "mismatching_components": [
+        {
+          "component_id": "component_06",
+          "differing_output_keys": [
+            {
+              "expected": 2,
+              "observed": 1,
+              "path": [
+                "versions",
+                "pkg-a"
+              ]
+            }
+          ],
+          "expected": {
+            "versions": {
+              "pkg-a": 2,
+              "pkg-e": 3,
+              "pkg-f": 1,
+              "pkg-t": 1
+            }
+          },
+          "family": "dependency_resolver",
+          "observed": {
+            "versions": {
+              "pkg-a": 1,
+              "pkg-e": 3,
+              "pkg-f": 1,
+              "pkg-t": 1
+            }
+          },
+          "policy": {
+            "name_order": "descending",
+            "preference": "minimum"
+          },
+          "public_input": {
+            "features": [
+              "extra"
+            ],
+            "packages": {
+              "pkg-a": [
+                {
+                  "deps": [
+                    {
+                      "max": 2,
+                      "min": 2,
+                      "name": "pkg-t"
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 2,
+                      "min": 1,
+                      "name": "pkg-t"
+                    }
+                  ],
+                  "version": 2
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 2,
+                      "min": 1,
+                      "name": "pkg-t"
+                    }
+                  ],
+                  "version": 3
+                }
+              ],
+              "pkg-e": [
+                {
+                  "deps": [
+                    {
+                      "max": 1,
+                      "min": 1,
+                      "name": "pkg-e"
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 2,
+                      "min": 2,
+                      "name": "pkg-f"
+                    }
+                  ],
+                  "version": 2
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 3,
+                      "min": 1,
+                      "name": "pkg-f"
+                    }
+                  ],
+                  "version": 3
+                }
+              ],
+              "pkg-f": [
+                {
+                  "deps": [
+                    {
+                      "max": 3,
+                      "min": 1,
+                      "name": "pkg-a"
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 3,
+                      "min": 2,
+                      "name": "pkg-a"
+                    }
+                  ],
+                  "version": 2
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 3,
+                      "min": 2,
+                      "name": "pkg-a"
+                    }
+                  ],
+                  "version": 3
+                }
+              ],
+              "pkg-t": [
+                {
+                  "deps": [],
+                  "version": 1
+                },
+                {
+                  "deps": [],
+                  "version": 2
+                },
+                {
+                  "deps": [],
+                  "version": 3
+                }
+              ]
+            },
+            "roots": {
+              "pkg-e": [
+                1,
+                3
+              ],
+              "pkg-t": [
+                1,
+                3
+              ]
+            }
+          }
+        }
+      ],
+      "prefix_changed_nonempty_lines_against_base": 490,
+      "prefix_failed_patch_utf8_bytes": 22559,
+      "prefix_public_case_count": 6,
+      "prefix_public_case_statuses": [
+        {
+          "id": "public-01",
+          "status": "public_pass"
+        },
+        {
+          "id": "public-02",
+          "status": "public_pass"
+        },
+        {
+          "id": "public-03",
+          "status": "public_pass"
+        },
+        {
+          "id": "public-04",
+          "status": "public_pass"
+        },
+        {
+          "id": "public-05",
+          "status": "public_pass"
+        },
+        {
+          "id": "public-06",
+          "status": "public_mismatch"
+        }
+      ],
+      "prefix_public_cases_passed": 5,
+      "prefix_submitted_source_utf8_bytes": 7442,
+      "prefix_terminal_result": {
+        "disposition": "test_failure",
+        "score": 0
+      },
+      "public_witness": {
+        "active_dependency": "pkg-t",
+        "observed_dependency_version": 1,
+        "observed_selected_version": 1,
+        "required_interval": [
+          2,
+          2
+        ],
+        "selected_package": "pkg-a"
+      },
+      "scope_of_matching_components": "Equality on this reported case only; this does not establish global correctness of a component. Other failed public cases are not localized here.",
+      "source_evidence": {
+        "failed_snippets": [
+          {
+            "excerpt_start_line": 70,
+            "matched_line": 71,
+            "needle": "if name in reachable:",
+            "text": "            name = pending.pop()\n            if name in reachable:\n                continue\n            reachable.add(name)"
+          },
+          {
+            "excerpt_start_line": 85,
+            "matched_line": 86,
+            "needle": "constraints[other].append((lo, hi))",
+            "text": "                lo, hi = dep[\"min\"], dep[\"max\"]\n                constraints[other].append((lo, hi))\n                edges[name].append(other)\n                pending.append(other)"
+          }
+        ],
+        "path_within_submission": "rules.py",
+        "repair_snippets": [
+          {
+            "excerpt_start_line": 69,
+            "matched_line": 70,
+            "needle": "if version == -1 or not low <= version <= high:",
+            "text": "            version = chosen[name]\n            if version == -1 or not low <= version <= high:\n                valid = False\n                return"
+          },
+          {
+            "excerpt_start_line": 75,
+            "matched_line": 76,
+            "needle": "if state.get(name) == 2:",
+            "text": "                return\n            if state.get(name) == 2:\n                return\n            state[name] = 1"
+          }
+        ]
+      },
+      "task_family": "composite_revision_ledger",
+      "task_id": "v10-calibration-composite_revision_ledger-f8c3b70aa06678f0",
+      "task_sha256": "e12722fa57d0c5a068bdd5aedbdf2de1b858f278aae8f4aa9d212baf61bda9eb",
+      "unchanged_files_between_submissions": [
+        "engine.py"
+      ]
+    },
+    {
+      "K0_final_score": 1,
+      "K0_first_pass_attempt": 1,
+      "K0_first_repair_terminal_result": {
+        "disposition": "correct",
+        "score": 1
+      },
+      "K0_repair_patch_utf8_bytes_against_base": 23679,
+      "actual_information_boundary": {
+        "actual_K0_request_path": "experiments/dependency_memory/results/rollback_patch_v10_2026-10-13/calibration_live/requests/91a308ed67312bd03b34e7a422a8efa38186a81db07397591d34c9453af9063c.json",
+        "failed_diff_and_note_present": true,
+        "full_public_task_preserved": true,
+        "initial_public_feedback_preserved": true,
+        "lesson_absent": true,
+        "original_base_files_preserved": true
+      },
+      "changed_files_between_submissions": [
+        "rules.py"
+      ],
+      "diagnosis_classification": "active_feature_dependencies_disabled_for_two_components",
+      "failed_to_K0_repair_changed_nonempty_lines": 179,
+      "failed_to_K0_repair_diff_sha256": "1c98f357eeb38ca9b196d85b0e04636fd2fe433f2e7f2339949195a2f2dc960c",
+      "failed_to_K0_repair_diff_utf8_bytes": 12317,
+      "first_reported_mismatch_case": "public-02",
+      "human_review": "The failed shared resolver takes feature_filter=False for components02 and05. Its condition skips every dependency with a nonempty feature when that flag is false, even if the input enables that feature. Public-02 enables extra for both components, but their outputs omit required transitive packages. The repair removes this flag and skips a conditional dependency only when its feature is absent. Additional formatting/refactoring also occurred; this is a code-supported local diagnosis, not a claim that every possible failure has been identified.",
+      "matching_components_on_this_case": [
+        "component_01",
+        "component_03",
+        "component_04",
+        "component_06",
+        "component_07",
+        "component_08"
+      ],
+      "mismatching_components": [
+        {
+          "component_id": "component_02",
+          "differing_output_keys": [
+            {
+              "expected": 2,
+              "observed": 1,
+              "path": [
+                "versions",
+                "pkg-e"
+              ]
+            },
+            {
+              "expected": 3,
+              "observed_missing": true,
+              "path": [
+                "versions",
+                "pkg-p"
+              ]
+            },
+            {
+              "expected": 1,
+              "observed_missing": true,
+              "path": [
+                "versions",
+                "pkg-w"
+              ]
+            },
+            {
+              "expected": 2,
+              "observed": 1,
+              "path": [
+                "versions",
+                "pkg-y"
+              ]
+            }
+          ],
+          "expected": {
+            "versions": {
+              "pkg-e": 2,
+              "pkg-p": 3,
+              "pkg-w": 1,
+              "pkg-y": 2
+            }
+          },
+          "family": "dependency_resolver",
+          "observed": {
+            "versions": {
+              "pkg-e": 1,
+              "pkg-y": 1
+            }
+          },
+          "policy": {
+            "name_order": "ascending",
+            "preference": "maximum"
+          },
+          "public_input": {
+            "blocked": {
+              "pkg-e": [
+                3
+              ]
+            },
+            "features": [
+              "extra"
+            ],
+            "packages": {
+              "pkg-e": [
+                {
+                  "deps": [
+                    {
+                      "feature": "extra",
+                      "max": 1,
+                      "min": 1,
+                      "name": "pkg-w"
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "deps": [
+                    {
+                      "feature": "extra",
+                      "max": 1,
+                      "min": 1,
+                      "name": "pkg-w"
+                    }
+                  ],
+                  "version": 2
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 3,
+                      "min": 1,
+                      "name": "pkg-w"
+                    }
+                  ],
+                  "version": 3
+                }
+              ],
+              "pkg-p": [
+                {
+                  "deps": [],
+                  "version": 1
+                },
+                {
+                  "deps": [],
+                  "version": 2
+                },
+                {
+                  "deps": [],
+                  "version": 3
+                }
+              ],
+              "pkg-w": [
+                {
+                  "deps": [
+                    {
+                      "max": 3,
+                      "min": 2,
+                      "name": "pkg-p"
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 3,
+                      "min": 1,
+                      "name": "pkg-p"
+                    }
+                  ],
+                  "version": 2
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 3,
+                      "min": 2,
+                      "name": "pkg-p"
+                    }
+                  ],
+                  "version": 3
+                }
+              ],
+              "pkg-y": [
+                {
+                  "deps": [
+                    {
+                      "max": 1,
+                      "min": 1,
+                      "name": "pkg-e"
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "deps": [
+                    {
+                      "feature": "extra",
+                      "max": 2,
+                      "min": 2,
+                      "name": "pkg-e"
+                    }
+                  ],
+                  "version": 2
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 3,
+                      "min": 3,
+                      "name": "pkg-e"
+                    }
+                  ],
+                  "version": 3
+                }
+              ]
+            },
+            "roots": {
+              "pkg-y": [
+                1,
+                3
+              ]
+            }
+          }
+        },
+        {
+          "component_id": "component_05",
+          "differing_output_keys": [
+            {
+              "expected": 2,
+              "observed_missing": true,
+              "path": [
+                "versions",
+                "pkg-b"
+              ]
+            },
+            {
+              "expected": 1,
+              "observed_missing": true,
+              "path": [
+                "versions",
+                "pkg-w"
+              ]
+            },
+            {
+              "expected": 1,
+              "observed_missing": true,
+              "path": [
+                "versions",
+                "pkg-z"
+              ]
+            }
+          ],
+          "expected": {
+            "versions": {
+              "pkg-b": 2,
+              "pkg-w": 1,
+              "pkg-y": 1,
+              "pkg-z": 1
+            }
+          },
+          "family": "dependency_resolver",
+          "observed": {
+            "versions": {
+              "pkg-y": 1
+            }
+          },
+          "policy": {
+            "name_order": "descending",
+            "preference": "minimum"
+          },
+          "public_input": {
+            "blocked": {
+              "pkg-z": [
+                3
+              ]
+            },
+            "features": [
+              "extra"
+            ],
+            "packages": {
+              "pkg-b": [
+                {
+                  "deps": [],
+                  "version": 1
+                },
+                {
+                  "deps": [],
+                  "version": 2
+                },
+                {
+                  "deps": [],
+                  "version": 3
+                }
+              ],
+              "pkg-w": [
+                {
+                  "deps": [
+                    {
+                      "max": 3,
+                      "min": 2,
+                      "name": "pkg-b"
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "deps": [
+                    {
+                      "feature": "extra",
+                      "max": 1,
+                      "min": 1,
+                      "name": "pkg-b"
+                    }
+                  ],
+                  "version": 2
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 3,
+                      "min": 1,
+                      "name": "pkg-b"
+                    }
+                  ],
+                  "version": 3
+                }
+              ],
+              "pkg-y": [
+                {
+                  "deps": [
+                    {
+                      "feature": "extra",
+                      "max": 3,
+                      "min": 1,
+                      "name": "pkg-z"
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 3,
+                      "min": 1,
+                      "name": "pkg-z"
+                    }
+                  ],
+                  "version": 2
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 3,
+                      "min": 3,
+                      "name": "pkg-z"
+                    }
+                  ],
+                  "version": 3
+                }
+              ],
+              "pkg-z": [
+                {
+                  "deps": [
+                    {
+                      "max": 3,
+                      "min": 1,
+                      "name": "pkg-w"
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 1,
+                      "min": 1,
+                      "name": "pkg-w"
+                    }
+                  ],
+                  "version": 2
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 2,
+                      "min": 2,
+                      "name": "pkg-w"
+                    }
+                  ],
+                  "version": 3
+                }
+              ]
+            },
+            "roots": {
+              "pkg-y": [
+                1,
+                3
+              ]
+            }
+          }
+        }
+      ],
+      "prefix_changed_nonempty_lines_against_base": 514,
+      "prefix_failed_patch_utf8_bytes": 23612,
+      "prefix_public_case_count": 6,
+      "prefix_public_case_statuses": [
+        {
+          "id": "public-01",
+          "status": "public_pass"
+        },
+        {
+          "id": "public-02",
+          "status": "public_mismatch"
+        },
+        {
+          "id": "public-03",
+          "status": "public_pass"
+        },
+        {
+          "id": "public-04",
+          "status": "public_pass"
+        },
+        {
+          "id": "public-05",
+          "status": "public_pass"
+        },
+        {
+          "id": "public-06",
+          "status": "public_mismatch"
+        }
+      ],
+      "prefix_public_cases_passed": 4,
+      "prefix_submitted_source_utf8_bytes": 8372,
+      "prefix_terminal_result": {
+        "disposition": "test_failure",
+        "score": 0
+      },
+      "public_witness": {
+        "affected_components": [
+          "component_02",
+          "component_05"
+        ],
+        "component_02_missing_packages": [
+          "pkg-p",
+          "pkg-w"
+        ],
+        "component_05_missing_packages": [
+          "pkg-b",
+          "pkg-w",
+          "pkg-z"
+        ],
+        "enabled_feature": "extra"
+      },
+      "scope_of_matching_components": "Equality on this reported case only; this does not establish global correctness of a component. Other failed public cases are not localized here.",
+      "source_evidence": {
+        "failed_snippets": [
+          {
+            "excerpt_start_line": 19,
+            "matched_line": 20,
+            "needle": "if feature and (not feature_filter or feature not in features):",
+            "text": "                    feature = dep.get(\"feature\", \"\")\n                    if feature and (not feature_filter or feature not in features):\n                        continue\n                    deps.append(dep)"
+          },
+          {
+            "excerpt_start_line": 207,
+            "matched_line": 208,
+            "needle": "\"component_02\": _dependency_solver(\"maximum\", \"ascending\", False),",
+            "text": "    \"component_01\": _dependency_solver(\"minimum\", \"descending\"),\n    \"component_02\": _dependency_solver(\"maximum\", \"ascending\", False),\n    \"component_03\": _dependency_solver(\"minimum\", \"ascending\"),\n    \"component_04\": _dependency_solver(\"maximum\", \"descending\"),"
+          },
+          {
+            "excerpt_start_line": 210,
+            "matched_line": 211,
+            "needle": "\"component_05\": _dependency_solver(\"minimum\", \"descending\", False),",
+            "text": "    \"component_04\": _dependency_solver(\"maximum\", \"descending\"),\n    \"component_05\": _dependency_solver(\"minimum\", \"descending\", False),\n    \"component_06\": _component_06,\n    \"component_07\": _component_07,"
+          }
+        ],
+        "path_within_submission": "rules.py",
+        "repair_snippets": [
+          {
+            "excerpt_start_line": 47,
+            "matched_line": 48,
+            "needle": "if feature and feature not in features:",
+            "text": "                    feature = dep.get(\"feature\", \"\")\n                    if feature and feature not in features:\n                        continue\n                    other = dep[\"name\"]"
+          },
+          {
+            "excerpt_start_line": 218,
+            "matched_line": 219,
+            "needle": "\"component_02\": _dependency_solver(\"maximum\", \"ascending\"),",
+            "text": "    \"component_01\": _dependency_solver(\"minimum\", \"descending\"),\n    \"component_02\": _dependency_solver(\"maximum\", \"ascending\"),\n    \"component_03\": _dependency_solver(\"minimum\", \"ascending\"),\n    \"component_04\": _dependency_solver(\"maximum\", \"descending\"),"
+          },
+          {
+            "excerpt_start_line": 221,
+            "matched_line": 222,
+            "needle": "\"component_05\": _dependency_solver(\"minimum\", \"descending\"),",
+            "text": "    \"component_04\": _dependency_solver(\"maximum\", \"descending\"),\n    \"component_05\": _dependency_solver(\"minimum\", \"descending\"),\n    \"component_06\": _component_06,\n    \"component_07\": _component_07,"
+          }
+        ]
+      },
+      "task_family": "composite_dependency_resolver",
+      "task_id": "v10-calibration-composite_dependency_resolver-59ecd2e588710ad8",
+      "task_sha256": "92a0615607864c87f6c197664a23a87b0349474d94cad56285902d44f85498e6",
+      "unchanged_files_between_submissions": [
+        "engine.py"
+      ]
+    },
+    {
+      "K0_final_score": 1,
+      "K0_first_pass_attempt": 1,
+      "K0_first_repair_terminal_result": {
+        "disposition": "correct",
+        "score": 1
+      },
+      "K0_repair_patch_utf8_bytes_against_base": 23344,
+      "actual_information_boundary": {
+        "actual_K0_request_path": "experiments/dependency_memory/results/rollback_patch_v10_2026-10-13/calibration_live/requests/36b9c9e9130d628ce55908ff0298ed78e957161a7854632e77e362abe22a5596.json",
+        "failed_diff_and_note_present": true,
+        "full_public_task_preserved": true,
+        "initial_public_feedback_preserved": true,
+        "lesson_absent": true,
+        "original_base_files_preserved": true
+      },
+      "changed_files_between_submissions": [
+        "rules.py"
+      ],
+      "diagnosis_classification": "root_version_intervals_not_enforced",
+      "failed_to_K0_repair_changed_nonempty_lines": 98,
+      "failed_to_K0_repair_diff_sha256": "7b7af2a5457edc255ed3a9e4d90618ea605abde4f27da0156ea3836ae6c6b571",
+      "failed_to_K0_repair_diff_utf8_bytes": 9628,
+      "first_reported_mismatch_case": "public-01",
+      "human_review": "The failed resolver checks that root packages are installed but does not check their required version intervals. On public-01 it returns root pkg-r version1 although the public input requires [2,3]. The repair adds the root bounds check before accepting any version assignment. This directly explains the displayed constraint violation; terminal correctness remains limited to the saved finite test suite.",
+      "matching_components_on_this_case": [
+        "component_01",
+        "component_02",
+        "component_03",
+        "component_04",
+        "component_05",
+        "component_07",
+        "component_08"
+      ],
+      "mismatching_components": [
+        {
+          "component_id": "component_06",
+          "differing_output_keys": [
+            {
+              "expected": 2,
+              "observed": 1,
+              "path": [
+                "versions",
+                "pkg-r"
+              ]
+            }
+          ],
+          "expected": {
+            "versions": {
+              "pkg-c": 1,
+              "pkg-g": 2,
+              "pkg-m": 2,
+              "pkg-r": 2
+            }
+          },
+          "family": "dependency_resolver",
+          "observed": {
+            "versions": {
+              "pkg-c": 1,
+              "pkg-g": 2,
+              "pkg-m": 2,
+              "pkg-r": 1
+            }
+          },
+          "policy": {
+            "name_order": "ascending",
+            "preference": "minimum"
+          },
+          "public_input": {
+            "features": [],
+            "packages": {
+              "pkg-c": [
+                {
+                  "deps": [
+                    {
+                      "max": 3,
+                      "min": 2,
+                      "name": "pkg-m"
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 2,
+                      "min": 2,
+                      "name": "pkg-m"
+                    }
+                  ],
+                  "version": 2
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 3,
+                      "min": 1,
+                      "name": "pkg-m"
+                    }
+                  ],
+                  "version": 3
+                }
+              ],
+              "pkg-g": [
+                {
+                  "deps": [
+                    {
+                      "max": 1,
+                      "min": 1,
+                      "name": "pkg-r"
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 2,
+                      "min": 1,
+                      "name": "pkg-r"
+                    }
+                  ],
+                  "version": 2
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 2,
+                      "min": 2,
+                      "name": "pkg-r"
+                    }
+                  ],
+                  "version": 3
+                }
+              ],
+              "pkg-m": [
+                {
+                  "deps": [
+                    {
+                      "max": 3,
+                      "min": 2,
+                      "name": "pkg-g"
+                    }
+                  ],
+                  "version": 1
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 2,
+                      "min": 2,
+                      "name": "pkg-g"
+                    }
+                  ],
+                  "version": 2
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 2,
+                      "min": 2,
+                      "name": "pkg-g"
+                    }
+                  ],
+                  "version": 3
+                }
+              ],
+              "pkg-r": [
+                {
+                  "deps": [],
+                  "version": 1
+                },
+                {
+                  "deps": [],
+                  "version": 2
+                },
+                {
+                  "deps": [
+                    {
+                      "max": 3,
+                      "min": 1,
+                      "name": "pkg-c"
+                    }
+                  ],
+                  "version": 3
+                }
+              ]
+            },
+            "roots": {
+              "pkg-c": [
+                1,
+                3
+              ],
+              "pkg-r": [
+                2,
+                3
+              ]
+            }
+          }
+        }
+      ],
+      "prefix_changed_nonempty_lines_against_base": 484,
+      "prefix_failed_patch_utf8_bytes": 23479,
+      "prefix_public_case_count": 6,
+      "prefix_public_case_statuses": [
+        {
+          "id": "public-01",
+          "status": "public_mismatch"
+        },
+        {
+          "id": "public-02",
+          "status": "public_pass"
+        },
+        {
+          "id": "public-03",
+          "status": "public_mismatch"
+        },
+        {
+          "id": "public-04",
+          "status": "public_pass"
+        },
+        {
+          "id": "public-05",
+          "status": "public_pass"
+        },
+        {
+          "id": "public-06",
+          "status": "public_pass"
+        }
+      ],
+      "prefix_public_cases_passed": 4,
+      "prefix_submitted_source_utf8_bytes": 8765,
+      "prefix_terminal_result": {
+        "disposition": "test_failure",
+        "score": 0
+      },
+      "public_witness": {
+        "expected_version": 2,
+        "observed_version": 1,
+        "required_interval": [
+          2,
+          3
+        ],
+        "root_package": "pkg-r"
+      },
+      "scope_of_matching_components": "Equality on this reported case only; this does not establish global correctness of a component. Other failed public cases are not localized here.",
+      "source_evidence": {
+        "failed_snippets": [
+          {
+            "excerpt_start_line": 77,
+            "matched_line": 78,
+            "needle": "if any(name not in installed for name in roots):",
+            "text": "                         if version != -1}\n            if any(name not in installed for name in roots):\n                continue\n            if any(name in installed and installed[name] in blocked.get(name, [])"
+          }
+        ],
+        "path_within_submission": "rules.py",
+        "repair_snippets": [
+          {
+            "excerpt_start_line": 79,
+            "matched_line": 80,
+            "needle": "if any(name not in installed or",
+            "text": "                         if version != -1}\n            if any(name not in installed or\n                   not bounds[0] <= installed[name] <= bounds[1]\n                   for name, bounds in roots.items()):"
+          },
+          {
+            "excerpt_start_line": 80,
+            "matched_line": 81,
+            "needle": "not bounds[0] <= installed[name] <= bounds[1]",
+            "text": "            if any(name not in installed or\n                   not bounds[0] <= installed[name] <= bounds[1]\n                   for name, bounds in roots.items()):\n                continue"
+          }
+        ]
+      },
+      "task_family": "composite_revision_ledger",
+      "task_id": "v10-calibration-composite_revision_ledger-d9f0573241cb3c28",
+      "task_sha256": "7d310a6ff7960b76a413512eb279d5a433e294834ffba673f0f544130688d2ba",
+      "unchanged_files_between_submissions": [
+        "engine.py"
+      ]
+    }
+  ],
+  "eligible_tasks": 3,
+  "evidence_kind": "posthoc_read_only_visible_source_and_public_receipt_diagnosis",
+  "information_loss_interpretation": {
+    "computational_progress": "The removed channel is partially completed computational work and its exact implementation, rather than externally supplied task facts. A deleted arm would have to reconstruct any useful progress from the retained task and original base.",
+    "countervailing_possibility": "The same failed diff can also preserve a misleading implementation. Deletion could avoid repeating it; this calibration contains no deletion continuation and cannot estimate that tradeoff.",
+    "lesson_scope": "The later factorial lesson is a coarse closed-category diagnostic with no component ID or source text; it does not recreate the removed patch.",
+    "removed_work_product": "Deletion removes the entire failed candidate diff and note, including derived implementations and architectural choices that already produced correct outputs on some tested cases, together with the local defect. Here the submitted rewrite is 7442 to 8765 UTF-8 bytes, represented by failed diffs of 22559 to 23612 bytes relative to the larger original project.",
+    "task_facts": "The actual K0 requests retain the complete public specifications, original two files and every public example. The frozen deletion treatment also retains these facts, the same checkpoint and initial public receipt.",
+    "what_the_three_repairs_show": "Retaining the failed work without a lesson allowed a correct next repair in all three observed controls. This does not prove retention caused the success or predict whether deletion would help or hurt."
+  },
+  "limitations": [
+    "The three cases were selected by natural executable public failure and a substantive-patch gate, not randomly from all tasks.",
+    "Two tasks are labelled composite_revision_ledger because of their majority component, but their displayed failures are in dependency_resolver components.",
+    "Matching outputs for the other components on one case do not prove those components correct on every public/private or possible input.",
+    "The K0 repair changed additional formatting and code as well as the diagnosed defect, so the exact minimal causal repair was not separately tested.",
+    "All three K0 terminal passes refer to the fixed finite public-plus-private suite, not exhaustive program correctness.",
+    "V10 has no deletion or lesson-arm observations; no rollback treatment benefit or harm can be inferred from these controls alone."
+  ],
+  "model_calls": 0,
+  "new_program_executions": 0,
+  "private_chain_of_thought_accessed": false,
+  "scope": "Three eligible naturally failed v10 calibration patches and their K0 first repairs. Only publicly reported first-mismatch component outputs are localized; original saved public and terminal grades are quoted without new execution. This is exploratory interpretation, not a new endpoint or treatment comparison.",
+  "source_bindings": [
+    {
+      "path": "experiments/dependency_memory/results/rollback_patch_v10_2026-10-13/calibration_bundle_v2/tasks.json",
+      "sha256": "856b9a6f1e1db205710f197cc6948c78f3492ee8967a1e6b54c7d4e3e515bc90"
+    },
+    {
+      "path": "experiments/dependency_memory/results/rollback_patch_v10_2026-10-13/calibration_bundle_v2/manifest.json",
+      "sha256": "c5bb19f4e0e67133a1312b71cbfb99921d253319f15e20017a2796a6a9792d5a"
+    },
+    {
+      "path": "experiments/dependency_memory/results/rollback_patch_v10_2026-10-13/calibration_live/execution.json",
+      "sha256": "cb5308f5bc4c6fb5b0a860e3387c31cc3f6a1b8f7a74696782e11d1027984539"
+    },
+    {
+      "path": "experiments/dependency_memory/results/rollback_patch_v10_2026-10-13/calibration_live/accounting.json",
+      "sha256": "d07f0fa3e2640a86ad50fe363ca5bfedad889da45d1bfe1cd9ba5310811d9961"
+    },
+    {
+      "path": "experiments/dependency_memory/results/rollback_patch_v10_2026-10-13/calibration_live/evidence_manifest.json",
+      "sha256": "988560d784328024709fe354fba402da3fb8a19096d7fa9bcb96b37f6b956398"
+    },
+    {
+      "path": "experiments/dependency_memory/results/rollback_patch_v10_2026-10-13/calibration_live_replay_audit.json",
+      "sha256": "261789f3a3fb6bbbdc940df8c35ab2f856691ec4c71ca8ce4eb26439c927fa4d"
+    }
+  ]
+}

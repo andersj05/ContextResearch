@@ -1,0 +1,19 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\b52e2e5a903ed1ea\\job.json",
+  "module": "entropy_coding.test_entropy",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\b52e2e5a903ed1ea\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\b52e2e5a903ed1ea\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\b52e2e5a903ed1ea\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\b52e2e5a903ed1ea\\tmp",
+  "test_ids": [
+    "entropy_coding.test_entropy.EntropyCodingTests.test_arithmetic_midpoints_against_independent_fraction_intervals",
+    "entropy_coding.test_entropy.EntropyCodingTests.test_binomial_tail_formula_against_direct_two_dimensional_sums",
+    "entropy_coding.test_entropy.EntropyCodingTests.test_complete_small_populations_bound_actual_risk_and_fallback",
+    "entropy_coding.test_entropy.EntropyCodingTests.test_information_access_invalid_states_and_preserved_discovery",
+    "entropy_coding.test_entropy.EntropyCodingTests.test_large_bounds_include_stronger_controls_and_proved_small_losses",
+    "entropy_coding.test_entropy.EntropyCodingTests.test_large_constructed_routes_and_every_valid_small_parent",
+    "entropy_coding.test_entropy.EntropyCodingTests.test_public_entropy_schedule_has_exact_slack_and_maximal_count",
+    "entropy_coding.test_entropy.EntropyCodingTests.test_quantizer_counts_and_conditional_excess_from_literal_query_losses"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

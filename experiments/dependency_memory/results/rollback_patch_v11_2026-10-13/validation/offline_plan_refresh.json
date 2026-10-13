@@ -1,0 +1,27 @@
+{
+  "evidence_kind": "offline_plan_and_fake_control_refresh",
+  "model_calls": 0,
+  "reason": "The package marker required for repository-root unittest discovery is the sole new plan source binding; scientific cases and old live observations are unchanged.",
+  "artifacts": [
+    {
+      "path": "experiments\\dependency_memory\\results\\revision_diagnostic_plan.json",
+      "before_sha256": "63875069057466ee1d587c428b0e2155950b944085ee888a221a40c449cfb294",
+      "after_sha256": "ae0a388d96b5f573fe7261902b359abd40f78d60cd00baace97e3f92d90c790c"
+    },
+    {
+      "path": "experiments\\dependency_memory\\results\\revision_diagnostic_audit.json",
+      "before_sha256": "d731210a243d2a879c4a02f40bf5acd2a38bd7e47697c2adeb9f7616d962ef91",
+      "after_sha256": "b3a41eb634000cf09921ee7b34ea01f04ff0844db355921b2650cf6bba688e86"
+    },
+    {
+      "path": "experiments\\dependency_memory\\results\\transfer_study_plan.json",
+      "before_sha256": "0e6e9c7a3f39d5b8fc18eb9d6c7594e9b31ff0955a9d96f59aac037d74852f08",
+      "after_sha256": "19effb73bb3d76946d3edc37e43d214c30a23970697a5f77722e6c4a050d2d13"
+    },
+    {
+      "path": "experiments\\dependency_memory\\results\\transfer_study_audit.json",
+      "before_sha256": "a706a0cd387b3268611883c4ec05364cd5c4782db958159cd74eeb342dfaa535",
+      "after_sha256": "f3abc9f716183ee95e080779a8f6f9961ab87f65e897d20ca1e2a22cd0625a72"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "completed_test_ids": [
+    "test_heldout_renderers.HeldoutRendererTests.test_all_thirty_routes_match_independent_semantics_and_revision_order",
+    "test_heldout_renderers.HeldoutRendererTests.test_fresh_catalogs_and_development_serializer_gate_remain_intact",
+    "test_heldout_renderers.HeldoutRendererTests.test_function_signatures_exclude_evaluator_channels",
+    "test_heldout_renderers.HeldoutRendererTests.test_hand_worked_paths_use_intermediate_relations",
+    "test_heldout_renderers.HeldoutRendererTests.test_invalid_pairs_and_clues_are_rejected_without_repair",
+    "test_heldout_renderers.HeldoutRendererTests.test_metadata_and_manifest_channels_are_strictly_allowlisted",
+    "test_heldout_renderers.HeldoutRendererTests.test_public_catalogs_bijectively_cover_all_fifteen_pairs",
+    "test_heldout_renderers.HeldoutRendererTests.test_target_and_payload_changes_cannot_change_metadata_or_clues"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "test_heldout_renderers.HeldoutRendererTests.test_all_thirty_routes_match_independent_semantics_and_revision_order": "passed",
+    "test_heldout_renderers.HeldoutRendererTests.test_fresh_catalogs_and_development_serializer_gate_remain_intact": "passed",
+    "test_heldout_renderers.HeldoutRendererTests.test_function_signatures_exclude_evaluator_channels": "passed",
+    "test_heldout_renderers.HeldoutRendererTests.test_hand_worked_paths_use_intermediate_relations": "passed",
+    "test_heldout_renderers.HeldoutRendererTests.test_invalid_pairs_and_clues_are_rejected_without_repair": "passed",
+    "test_heldout_renderers.HeldoutRendererTests.test_metadata_and_manifest_channels_are_strictly_allowlisted": "passed",
+    "test_heldout_renderers.HeldoutRendererTests.test_public_catalogs_bijectively_cover_all_fifteen_pairs": "passed",
+    "test_heldout_renderers.HeldoutRendererTests.test_target_and_payload_changes_cannot_change_metadata_or_clues": "passed"
+  },
+  "elapsed_seconds": 0.11084380000829697,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "test_heldout_renderers.HeldoutRendererTests.test_all_thirty_routes_match_independent_semantics_and_revision_order",
+    "test_heldout_renderers.HeldoutRendererTests.test_fresh_catalogs_and_development_serializer_gate_remain_intact",
+    "test_heldout_renderers.HeldoutRendererTests.test_function_signatures_exclude_evaluator_channels",
+    "test_heldout_renderers.HeldoutRendererTests.test_hand_worked_paths_use_intermediate_relations",
+    "test_heldout_renderers.HeldoutRendererTests.test_invalid_pairs_and_clues_are_rejected_without_repair",
+    "test_heldout_renderers.HeldoutRendererTests.test_metadata_and_manifest_channels_are_strictly_allowlisted",
+    "test_heldout_renderers.HeldoutRendererTests.test_public_catalogs_bijectively_cover_all_fifteen_pairs",
+    "test_heldout_renderers.HeldoutRendererTests.test_target_and_payload_changes_cannot_change_metadata_or_clues"
+  ],
+  "planned_test_ids": [
+    "test_heldout_renderers.HeldoutRendererTests.test_all_thirty_routes_match_independent_semantics_and_revision_order",
+    "test_heldout_renderers.HeldoutRendererTests.test_fresh_catalogs_and_development_serializer_gate_remain_intact",
+    "test_heldout_renderers.HeldoutRendererTests.test_function_signatures_exclude_evaluator_channels",
+    "test_heldout_renderers.HeldoutRendererTests.test_hand_worked_paths_use_intermediate_relations",
+    "test_heldout_renderers.HeldoutRendererTests.test_invalid_pairs_and_clues_are_rejected_without_repair",
+    "test_heldout_renderers.HeldoutRendererTests.test_metadata_and_manifest_channels_are_strictly_allowlisted",
+    "test_heldout_renderers.HeldoutRendererTests.test_public_catalogs_bijectively_cover_all_fifteen_pairs",
+    "test_heldout_renderers.HeldoutRendererTests.test_target_and_payload_changes_cannot_change_metadata_or_clues"
+  ],
+  "process_id": 19548,
+  "skips": 0,
+  "started_test_ids": [
+    "test_heldout_renderers.HeldoutRendererTests.test_all_thirty_routes_match_independent_semantics_and_revision_order",
+    "test_heldout_renderers.HeldoutRendererTests.test_fresh_catalogs_and_development_serializer_gate_remain_intact",
+    "test_heldout_renderers.HeldoutRendererTests.test_function_signatures_exclude_evaluator_channels",
+    "test_heldout_renderers.HeldoutRendererTests.test_hand_worked_paths_use_intermediate_relations",
+    "test_heldout_renderers.HeldoutRendererTests.test_invalid_pairs_and_clues_are_rejected_without_repair",
+    "test_heldout_renderers.HeldoutRendererTests.test_metadata_and_manifest_channels_are_strictly_allowlisted",
+    "test_heldout_renderers.HeldoutRendererTests.test_public_catalogs_bijectively_cover_all_fifteen_pairs",
+    "test_heldout_renderers.HeldoutRendererTests.test_target_and_payload_changes_cannot_change_metadata_or_clues"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\7675b5c350b28702\\tmp",
+  "tests_run": 8,
+  "unexpected_successes": 0
+}

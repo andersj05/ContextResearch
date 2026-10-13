@@ -1,0 +1,54 @@
+{
+  "completed_test_ids": [
+    "test_pilot_plan.PilotPlanTests.test_calibration_costs_are_attained_through_complete_environment",
+    "test_pilot_plan.PilotPlanTests.test_heldout_routes_are_disjoint_and_arms_are_paired",
+    "test_pilot_plan.PilotPlanTests.test_positive_null_and_adverse_controls_survive",
+    "test_pilot_plan.PilotPlanTests.test_reliable_recovery_masks_forgetting_in_all_pilot_regimes",
+    "test_pilot_plan.PilotPlanTests.test_request_ceiling_and_development_precedence",
+    "test_pilot_plan.PilotPlanTests.test_sample_composition_does_not_inherit_population_preferences"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "test_pilot_plan.PilotPlanTests.test_calibration_costs_are_attained_through_complete_environment": "passed",
+    "test_pilot_plan.PilotPlanTests.test_heldout_routes_are_disjoint_and_arms_are_paired": "passed",
+    "test_pilot_plan.PilotPlanTests.test_positive_null_and_adverse_controls_survive": "passed",
+    "test_pilot_plan.PilotPlanTests.test_reliable_recovery_masks_forgetting_in_all_pilot_regimes": "passed",
+    "test_pilot_plan.PilotPlanTests.test_request_ceiling_and_development_precedence": "passed",
+    "test_pilot_plan.PilotPlanTests.test_sample_composition_does_not_inherit_population_preferences": "passed"
+  },
+  "elapsed_seconds": 0.29121049999957904,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "test_pilot_plan.PilotPlanTests.test_calibration_costs_are_attained_through_complete_environment",
+    "test_pilot_plan.PilotPlanTests.test_heldout_routes_are_disjoint_and_arms_are_paired",
+    "test_pilot_plan.PilotPlanTests.test_positive_null_and_adverse_controls_survive",
+    "test_pilot_plan.PilotPlanTests.test_reliable_recovery_masks_forgetting_in_all_pilot_regimes",
+    "test_pilot_plan.PilotPlanTests.test_request_ceiling_and_development_precedence",
+    "test_pilot_plan.PilotPlanTests.test_sample_composition_does_not_inherit_population_preferences"
+  ],
+  "planned_test_ids": [
+    "test_pilot_plan.PilotPlanTests.test_calibration_costs_are_attained_through_complete_environment",
+    "test_pilot_plan.PilotPlanTests.test_heldout_routes_are_disjoint_and_arms_are_paired",
+    "test_pilot_plan.PilotPlanTests.test_positive_null_and_adverse_controls_survive",
+    "test_pilot_plan.PilotPlanTests.test_reliable_recovery_masks_forgetting_in_all_pilot_regimes",
+    "test_pilot_plan.PilotPlanTests.test_request_ceiling_and_development_precedence",
+    "test_pilot_plan.PilotPlanTests.test_sample_composition_does_not_inherit_population_preferences"
+  ],
+  "process_id": 25284,
+  "skips": 0,
+  "started_test_ids": [
+    "test_pilot_plan.PilotPlanTests.test_calibration_costs_are_attained_through_complete_environment",
+    "test_pilot_plan.PilotPlanTests.test_heldout_routes_are_disjoint_and_arms_are_paired",
+    "test_pilot_plan.PilotPlanTests.test_positive_null_and_adverse_controls_survive",
+    "test_pilot_plan.PilotPlanTests.test_reliable_recovery_masks_forgetting_in_all_pilot_regimes",
+    "test_pilot_plan.PilotPlanTests.test_request_ceiling_and_development_precedence",
+    "test_pilot_plan.PilotPlanTests.test_sample_composition_does_not_inherit_population_preferences"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\73130d4b46d9de50\\tmp",
+  "tests_run": 6,
+  "unexpected_successes": 0
+}

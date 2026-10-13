@@ -1,0 +1,19 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\ef48df028fc7399f\\job.json",
+  "module": "test_transfer_study",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\ef48df028fc7399f\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\ef48df028fc7399f\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\ef48df028fc7399f\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\ef48df028fc7399f\\tmp",
+  "test_ids": [
+    "test_transfer_study.TransferScientificTests.test_bootstrap_is_seeded_and_does_not_modify_values_or_global_randomness",
+    "test_transfer_study.TransferScientificTests.test_failures_and_incomplete_cases_preserve_denominators_and_block_coverage",
+    "test_transfer_study.TransferScientificTests.test_fake_controls_separate_optimality_from_key_and_display_preferences",
+    "test_transfer_study.TransferScientificTests.test_formula_matches_independent_latest_revision_outcomes_for_every_selection",
+    "test_transfer_study.TransferScientificTests.test_full_pair_normalization_endpoints_and_underfilled_outcomes",
+    "test_transfer_study.TransferScientificTests.test_full_schedule_is_balanced_reproducible_and_four_worker_partitioned",
+    "test_transfer_study.TransferScientificTests.test_materials_are_paired_within_block_size_and_vary_across_blocks",
+    "test_transfer_study.TransferScientificTests.test_primary_known_guidance_contrast_has_exact_normalized_and_raw_effects"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

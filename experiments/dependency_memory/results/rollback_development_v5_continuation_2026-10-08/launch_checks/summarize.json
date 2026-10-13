@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python",
+    "experiments/dependency_memory/results/rollback_development_v5_continuation_2026-10-08/launch_checks/summarize_continuation.py"
+  ],
+  "console_path": "summarize.txt",
+  "console_sha256": "284a7900174e3ca40ae3ddcf9b3f0b914a796fddc1e25783e23c652a93f1a0da",
+  "cwd": "C:\\Users\\jense\\Desktop\\ContextResearch",
+  "elapsed_seconds": 1.1207202000077814,
+  "exit_code": 0,
+  "finished_utc": "2026-10-09T05:45:05.872063+00:00",
+  "started_utc": "2026-10-09T05:45:04.751340+00:00"
+}

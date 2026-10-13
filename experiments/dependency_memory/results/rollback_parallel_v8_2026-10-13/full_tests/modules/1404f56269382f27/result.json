@@ -1,0 +1,69 @@
+{
+  "completed_test_ids": [
+    "rollback_pilot.test_analysis.AnalysisTests.test_analysis_rejects_duplicate_tasks_wrong_types_and_primary_slot_mismatch",
+    "rollback_pilot.test_analysis.AnalysisTests.test_bootstrap_uses_six_complete_tasks_and_is_seeded_and_descriptive",
+    "rollback_pilot.test_analysis.AnalysisTests.test_cost_ledger_charges_shared_prep_once_and_projects_only_needed_writer",
+    "rollback_pilot.test_analysis.AnalysisTests.test_domain_reports_do_not_pool_draws_or_replace_uneligible_tasks",
+    "rollback_pilot.test_analysis.AnalysisTests.test_every_unknown_slot_spans_full_interval_and_known_failures_stay_zero",
+    "rollback_pilot.test_analysis.AnalysisTests.test_first_example_is_selected_by_frozen_order_not_largest_effect",
+    "rollback_pilot.test_analysis.AnalysisTests.test_known_task_differences_not_independent_draw_samples",
+    "rollback_pilot.test_analysis.AnalysisTests.test_missingness_bounds_keep_scheduled_denominator_and_known_answers",
+    "rollback_pilot.test_analysis.AnalysisTests.test_summary_failure_keeps_primary_and_uses_secondary_intersection"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "rollback_pilot.test_analysis.AnalysisTests.test_analysis_rejects_duplicate_tasks_wrong_types_and_primary_slot_mismatch": "passed",
+    "rollback_pilot.test_analysis.AnalysisTests.test_bootstrap_uses_six_complete_tasks_and_is_seeded_and_descriptive": "passed",
+    "rollback_pilot.test_analysis.AnalysisTests.test_cost_ledger_charges_shared_prep_once_and_projects_only_needed_writer": "passed",
+    "rollback_pilot.test_analysis.AnalysisTests.test_domain_reports_do_not_pool_draws_or_replace_uneligible_tasks": "passed",
+    "rollback_pilot.test_analysis.AnalysisTests.test_every_unknown_slot_spans_full_interval_and_known_failures_stay_zero": "passed",
+    "rollback_pilot.test_analysis.AnalysisTests.test_first_example_is_selected_by_frozen_order_not_largest_effect": "passed",
+    "rollback_pilot.test_analysis.AnalysisTests.test_known_task_differences_not_independent_draw_samples": "passed",
+    "rollback_pilot.test_analysis.AnalysisTests.test_missingness_bounds_keep_scheduled_denominator_and_known_answers": "passed",
+    "rollback_pilot.test_analysis.AnalysisTests.test_summary_failure_keeps_primary_and_uses_secondary_intersection": "passed"
+  },
+  "elapsed_seconds": 0.34612319999723695,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "rollback_pilot.test_analysis.AnalysisTests.test_analysis_rejects_duplicate_tasks_wrong_types_and_primary_slot_mismatch",
+    "rollback_pilot.test_analysis.AnalysisTests.test_bootstrap_uses_six_complete_tasks_and_is_seeded_and_descriptive",
+    "rollback_pilot.test_analysis.AnalysisTests.test_cost_ledger_charges_shared_prep_once_and_projects_only_needed_writer",
+    "rollback_pilot.test_analysis.AnalysisTests.test_domain_reports_do_not_pool_draws_or_replace_uneligible_tasks",
+    "rollback_pilot.test_analysis.AnalysisTests.test_every_unknown_slot_spans_full_interval_and_known_failures_stay_zero",
+    "rollback_pilot.test_analysis.AnalysisTests.test_first_example_is_selected_by_frozen_order_not_largest_effect",
+    "rollback_pilot.test_analysis.AnalysisTests.test_known_task_differences_not_independent_draw_samples",
+    "rollback_pilot.test_analysis.AnalysisTests.test_missingness_bounds_keep_scheduled_denominator_and_known_answers",
+    "rollback_pilot.test_analysis.AnalysisTests.test_summary_failure_keeps_primary_and_uses_secondary_intersection"
+  ],
+  "planned_test_ids": [
+    "rollback_pilot.test_analysis.AnalysisTests.test_analysis_rejects_duplicate_tasks_wrong_types_and_primary_slot_mismatch",
+    "rollback_pilot.test_analysis.AnalysisTests.test_bootstrap_uses_six_complete_tasks_and_is_seeded_and_descriptive",
+    "rollback_pilot.test_analysis.AnalysisTests.test_cost_ledger_charges_shared_prep_once_and_projects_only_needed_writer",
+    "rollback_pilot.test_analysis.AnalysisTests.test_domain_reports_do_not_pool_draws_or_replace_uneligible_tasks",
+    "rollback_pilot.test_analysis.AnalysisTests.test_every_unknown_slot_spans_full_interval_and_known_failures_stay_zero",
+    "rollback_pilot.test_analysis.AnalysisTests.test_first_example_is_selected_by_frozen_order_not_largest_effect",
+    "rollback_pilot.test_analysis.AnalysisTests.test_known_task_differences_not_independent_draw_samples",
+    "rollback_pilot.test_analysis.AnalysisTests.test_missingness_bounds_keep_scheduled_denominator_and_known_answers",
+    "rollback_pilot.test_analysis.AnalysisTests.test_summary_failure_keeps_primary_and_uses_secondary_intersection"
+  ],
+  "process_id": 56756,
+  "skips": 0,
+  "started_test_ids": [
+    "rollback_pilot.test_analysis.AnalysisTests.test_analysis_rejects_duplicate_tasks_wrong_types_and_primary_slot_mismatch",
+    "rollback_pilot.test_analysis.AnalysisTests.test_bootstrap_uses_six_complete_tasks_and_is_seeded_and_descriptive",
+    "rollback_pilot.test_analysis.AnalysisTests.test_cost_ledger_charges_shared_prep_once_and_projects_only_needed_writer",
+    "rollback_pilot.test_analysis.AnalysisTests.test_domain_reports_do_not_pool_draws_or_replace_uneligible_tasks",
+    "rollback_pilot.test_analysis.AnalysisTests.test_every_unknown_slot_spans_full_interval_and_known_failures_stay_zero",
+    "rollback_pilot.test_analysis.AnalysisTests.test_first_example_is_selected_by_frozen_order_not_largest_effect",
+    "rollback_pilot.test_analysis.AnalysisTests.test_known_task_differences_not_independent_draw_samples",
+    "rollback_pilot.test_analysis.AnalysisTests.test_missingness_bounds_keep_scheduled_denominator_and_known_answers",
+    "rollback_pilot.test_analysis.AnalysisTests.test_summary_failure_keeps_primary_and_uses_secondary_intersection"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\1404f56269382f27\\tmp",
+  "tests_run": 9,
+  "unexpected_successes": 0
+}

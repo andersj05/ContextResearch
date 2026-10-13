@@ -1,0 +1,17 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\a4c4aa6de16a09c2\\job.json",
+  "module": "rate_spectrum.test_spectrum",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\a4c4aa6de16a09c2\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\a4c4aa6de16a09c2\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\a4c4aa6de16a09c2\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_patch_v9_2026-10-13\\validation\\full_tests_v2\\modules\\a4c4aa6de16a09c2\\tmp",
+  "test_ids": [
+    "rate_spectrum.test_spectrum.SpectrumTests.test_class_kernels_match_all_actual_source_word_routes",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_odd_domination_has_independent_positive_factor_identities",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_optimizer_brackets_and_exact_gibbs_constant_marginal",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_saved_all_decoder_cover_and_strict_rate_slack",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_supporting_inequality_on_independent_channels",
+    "rate_spectrum.test_spectrum.SpectrumTests.test_transition_and_endpoint_derivatives_factor_exactly"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}

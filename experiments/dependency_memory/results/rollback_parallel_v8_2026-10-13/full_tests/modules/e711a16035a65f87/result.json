@@ -1,0 +1,39 @@
+{
+  "completed_test_ids": [
+    "schema_transfer.test_casebook.FrozenCasebookTests.test_distinct_schema_structures_and_terminal_patterns",
+    "schema_transfer.test_casebook.FrozenCasebookTests.test_independent_scope_and_state_controls",
+    "schema_transfer.test_casebook.FrozenCasebookTests.test_split_hashes_and_no_custom_role_annotations"
+  ],
+  "coverage_passed": true,
+  "covered_test_outcomes": {
+    "schema_transfer.test_casebook.FrozenCasebookTests.test_distinct_schema_structures_and_terminal_patterns": "passed",
+    "schema_transfer.test_casebook.FrozenCasebookTests.test_independent_scope_and_state_controls": "passed",
+    "schema_transfer.test_casebook.FrozenCasebookTests.test_split_hashes_and_no_custom_role_annotations": "passed"
+  },
+  "elapsed_seconds": 0.15851320000365376,
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "fixture_events": [],
+  "loaded_test_ids": [
+    "schema_transfer.test_casebook.FrozenCasebookTests.test_distinct_schema_structures_and_terminal_patterns",
+    "schema_transfer.test_casebook.FrozenCasebookTests.test_independent_scope_and_state_controls",
+    "schema_transfer.test_casebook.FrozenCasebookTests.test_split_hashes_and_no_custom_role_annotations"
+  ],
+  "planned_test_ids": [
+    "schema_transfer.test_casebook.FrozenCasebookTests.test_distinct_schema_structures_and_terminal_patterns",
+    "schema_transfer.test_casebook.FrozenCasebookTests.test_independent_scope_and_state_controls",
+    "schema_transfer.test_casebook.FrozenCasebookTests.test_split_hashes_and_no_custom_role_annotations"
+  ],
+  "process_id": 37832,
+  "skips": 0,
+  "started_test_ids": [
+    "schema_transfer.test_casebook.FrozenCasebookTests.test_distinct_schema_structures_and_terminal_patterns",
+    "schema_transfer.test_casebook.FrozenCasebookTests.test_independent_scope_and_state_controls",
+    "schema_transfer.test_casebook.FrozenCasebookTests.test_split_hashes_and_no_custom_role_annotations"
+  ],
+  "successful": true,
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\e711a16035a65f87\\tmp",
+  "tests_run": 3,
+  "unexpected_successes": 0
+}

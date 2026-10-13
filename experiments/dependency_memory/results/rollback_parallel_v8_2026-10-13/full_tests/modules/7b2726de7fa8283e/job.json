@@ -1,0 +1,19 @@
+{
+  "job_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\7b2726de7fa8283e\\job.json",
+  "module": "rate_curve.test_curve",
+  "result_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\7b2726de7fa8283e\\result.json",
+  "stderr_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\7b2726de7fa8283e\\stderr.log",
+  "stdout_path": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\7b2726de7fa8283e\\stdout.log",
+  "temporary_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory\\results\\rollback_parallel_v8_2026-10-13\\full_tests\\modules\\7b2726de7fa8283e\\tmp",
+  "test_ids": [
+    "rate_curve.test_curve.CurveTests.test_cleared_dual_products_match_direct_query_routes",
+    "rate_curve.test_curve.CurveTests.test_exact_one_factors_and_closed_interval_seams",
+    "rate_curve.test_curve.CurveTests.test_family_interval_cover_retains_every_inactive_word",
+    "rate_curve.test_curve.CurveTests.test_gibbs_marginal_and_strict_rate_slack_on_actual_channels",
+    "rate_curve.test_curve.CurveTests.test_interval_transform_has_independent_binomial_coefficients",
+    "rate_curve.test_curve.CurveTests.test_saved_exact_continuum_certificate_and_frozen_discovery_match",
+    "rate_curve.test_curve.CurveTests.test_signed_kronecker_products_match_naive_convolution",
+    "rate_curve.test_curve.CurveTests.test_zero_rate_and_oracle_endpoints_have_actual_information_and_loss"
+  ],
+  "top_level_directory": "C:\\Users\\jense\\Desktop\\ContextResearch\\experiments\\dependency_memory"
+}
